@@ -1,5 +1,5 @@
 # GIBO: Grade & Guide with GIBO
-### *An Automated AI-Driven Evaluation System with Personalized Lessons*
+### *An Automated AI-Driven Evaluation System with Personalized Remedial Micro-Lessons*
 
 GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, multi-model evaluation and feedback system engineered for descriptive theory examinations in Machine Learning. Unlike conventional auto-graders that rely on shallow keyword matching, GIBO enforces strict institutional examination rules (section attempt limits, length compliance, and mark-mapping policies) while providing explainable grading and targeted micro-lessons directly to students.
 
@@ -19,7 +19,7 @@ GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, mu
 
 GIBO operates across a 7-stage pipeline that bridges raw text extraction, deep semantic comparison, regressive score prediction, and LLM-driven feedback generation:
 
-![System Architecture](Image/System%20Architecture.png)
+![System Architecture](Images/System%20Architecture.png)
 *Figure 1: High-level 7-module block diagram illustrating the GIBO processing pipeline.*
 
 ### Pipeline Breakdown:
@@ -76,7 +76,7 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 ### 1. Home Page & Portal Interface
 The primary landing portal establishing core value propositions, system features, and authentication entry points for faculty and administrative users.
 
-![Home Page](Image/Home%20Page.png)
+![Home Page](Images/Home%20Page.png)
 *Figure 2: GIBO landing platform and portal navigation.*
 
 ---
@@ -84,7 +84,7 @@ The primary landing portal establishing core value propositions, system features
 ### 2. Administrative Control Panel
 Granular user access management workflow allowing administrators to review, approve, or reject user registration requests.
 
-![Admin Management Panel](Image/login_control_admin_panel.png)
+![Admin Management Panel](Images/login_control_admin_panel.png)
 *Figure 3: Administrative portal for security controls and pending user approvals.*
 
 ---
@@ -92,13 +92,13 @@ Granular user access management workflow allowing administrators to review, appr
 ### 3. Question Paper Configuration & Metadata Parsing
 Instructors set up examination parameters, section-wise rules, per-question mark distributions, and custom attempt conditions.
 
-![Question Paper Metadata Form](Image/QP%20metadata%20form.png)
+![Question Paper Metadata Form](Images/QP%20metadata%20form.png)
 *Figure 4: Form-based Question Paper configuration and metadata parsing module.*
 
-![Question Paper Template](Image/question_paper_template.png)
+![Question Paper Template](Images/question_paper_template.png)
 *Figure 5: Sample structured question paper template schema.*
 
-![Question Paper Document](Image/question_paper.png)
+![Question Paper Document](Images/question_paper.png)
 *Figure 6: Digitized examination question paper layout.*
 
 ---
@@ -106,10 +106,10 @@ Instructors set up examination parameters, section-wise rules, per-question mark
 ### 4. High-Throughput Batch Ingestion & Answer Sheet Processing
 Faculty members execute bulk evaluation sessions by loading question templates alongside student text response files.
 
-![Uploading QP and Answer Sheets](Image/Uploading%20QP%20and%20Answer%20sheets.png)
+![Uploading QP and Answer Sheets](Images/Uploading%20QP%20and%20Answer%20sheets.png)
 *Figure 7: Batch upload interface for exam templates and student answer sheets.*
 
-![Student Answer Sheet Processing](Image/answer_sheet_demo.png)
+![Student Answer Sheet Processing](Images/answer_sheet_demo.png)
 *Figure 8: Digitized student answer record indexed by metadata and parsed into Q&A blocks.*
 
 ---
@@ -117,10 +117,10 @@ Faculty members execute bulk evaluation sessions by loading question templates a
 ### 5. Academic Controls & Student Attempt Auditing
 The system maps individual student answers against institutional attempt constraints, auto-marking skipped questions while computing section score breakdowns.
 
-![Faculty Insights & Academic Control](Image/Academic%20Insights.png)
+![Faculty Insights & Academic Control](Images/Academic%20Insights.png)
 *Figure 9: Academic control portal featuring student search and template selection.*
 
-![Student Attempt Report](Image/Student_Attempt_report.png)
+![Student Attempt Report](Images/Student_Attempt_report.png)
 *Figure 10: Itemized student attempt report and raw score mapping.*
 
 ---
@@ -128,7 +128,7 @@ The system maps individual student answers against institutional attempt constra
 ### 6. AI Evaluation Metrics & Diagnostic Explanation
 Comprehensive score breakdown revealing model reasoning across Semantic Accuracy, Logical Consistency, and Structural Compliance.
 
-![AI Explanation Behind Marks Report](Image/AI%20Explanation%20behind%20marks%20report.png)
+![AI Explanation Behind Marks Report](Images/AI%20Explanation%20behind%20marks%20report.png)
 *Figure 11: Multi-metric model evaluation breakdown per question response.*
 
 ---
@@ -136,10 +136,10 @@ Comprehensive score breakdown revealing model reasoning across Semantic Accuracy
 ### 7. Automated Remedial Mini-Lessons & Feedback Generation
 Generative AI module using Gemini 1.5 Flash to highlight missed key concepts, deliver question-level feedback, and produce customized micro-lessons.
 
-![GIBO Feedback and Correction](Image/GIBO's%20Feedback%20and%20Correction.png)
+![GIBO Feedback and Correction](Images/GIBO's%20Feedback%20and%20Correction.png)
 *Figure 12: Automated feedback generation and correction interface.*
 
-![GIBO Teaching Missing Concepts](Image/GIBO%20teaching%20missing%20concept%20and%20feedback.png)
+![GIBO Teaching Missing Concepts](Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png)
 *Figure 13: Targeted micro-lessons generated for student conceptual gaps.*
 
 ---
@@ -147,16 +147,16 @@ Generative AI module using Gemini 1.5 Flash to highlight missed key concepts, de
 ### 8. Pedagogical Analytics & Automated Result Delivery
 Cohort performance reports map overall score distributions, while itemized diagnostic feedback is delivered straight to student email inboxes.
 
-![Performance Analytics](Image/stud_performance_analysis.png)
+![Performance Analytics](Images/stud_performance_analysis.png)
 *Figure 14: Cohort performance dashboard and grade distribution analytics.*
 
-![Skipped Questions Analytics](Image/mostly_skipped_Questions.png)
+![Skipped Questions Analytics](Images/mostly_skipped_Questions.png)
 *Figure 15: Aggregate analytics tracking class-wide skipped question metrics.*
 
-![Skipped Questions Breakdown](Image/skipped_questions_by_student.png)
+![Skipped Questions Breakdown](Images/skipped_questions_by_student.png)
 *Figure 16: Detailed itemized list of frequently skipped questions.*
 
-![Email Received by Student](Image/Email_Received_by_student.png)
+![Email Received by Student](Images/Email_Received_by_student.png)
 *Figure 17: Sample email report received by a student containing final grades and remedial lessons.*
 
 ---
@@ -198,5 +198,5 @@ To send automated result reports to students, configure a Gmail App Password:
 
 1. **Clone the Repository**:
    ```bash
-   git clone [https://github.com/your-username/GIBO-Grading-System.git](https://github.com/your-username/GIBO-Grading-System.git)
-   cd GIBO-Grading-System
+   git clone [https://github.com/Dhanshree017/AI-Grading-System.git](https://github.com/Dhanshree017/AI-Grading-System.git)
+   cd AI-Grading-System
