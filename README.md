@@ -1,5 +1,5 @@
 # GIBO: Grade & Guide with GIBO
-### *An Automated AI-Driven Evaluation System with Personalized Remedial Micro-Lessons*
+### *An Automated AI-Driven Evaluation System with Personalized Lessons*
 
 GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, multi-model evaluation and feedback system engineered for descriptive theory examinations in Machine Learning. Unlike conventional auto-graders that rely on shallow keyword matching, GIBO enforces strict institutional examination rules (section attempt limits, length compliance, and mark-mapping policies) while providing explainable grading and targeted micro-lessons directly to students.
 
