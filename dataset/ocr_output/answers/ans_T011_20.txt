@@ -1,0 +1,180 @@
+ID-T011 
+Name : Riddhima Patel Roll no: 20 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine learning is a branch of computer science that make machine learn 
+automatically from data. It is the study where system can improve its performance 
+on task through experience without being told by programmer every time. The main 
+aim is to build algorithm which can find pattern and predict outcomes. Machine 
+learning uses examples instead of hard-coded rules. 
+A hypothesis in ML is like an assumption or a model that explain the relationship 
+between input and output variables. It is the mathematical expression that learning 
+algorithm tries to find during training. For example, in linear regression, hypothesis 
+is the line equation that best fit data points. 
+1. Machine learning involves data, algorithm and prediction. 
+2. It learn from previous example. 
+3. It reduce human work in data analysis. 
+4. Supervised and unsupervised are main types. 
+5. Hypothesis represent model structure. 
+6. It is tested using validation data. 
+7. The algorithm try to find best hypothesis with least error. 
+8. If hypothesis wrong, prediction wrong. 
+9. The goal is to minimize error between predicted and actual output. 
+A-2. Define lazy learning and eager learning. What is reinforcement learning? 
+Lazy learning and eager learning are about student attitude in class. Lazy learning 
+means when student not do homework and only study before exam. Eager learning is 
+opposite where student always keep reading books whole day. Machine learning not 
+need this because computer not lazy or eager, it just run programs. 
+Reinforcement learning is something related to electricity because reinforcement 
+word sound like force. So it means that computer use more power to make learning 
+faster. It may also mean learning by repeating many times until it memorise data 
+completely. 
+1. Lazy learning done by humans not machines. 
+2. Computer never lazy because it depend on battery. 
+3. Reinforcement learning depend on voltage supply. 
+4. Eager learning means computer runs fast fan. 
+5. Data come from power source. 
+6. No agent or environment in such system. 
+7. Reward is like battery charge. 
+8. Punishment is overheating. 
+9. It not used anywhere practically. 
+A-3. Describe different types of learning algorithms in ML. 
+There are many different types of learning algorithms used in machine learning, 
+based on the type of data and supervision. Each one has its own logic for learning 
+from examples. 
+1. Supervised learning – algorithm trained with labeled data. It already know 
+input and output. Example: linear regression, decision tree. 
+2. Unsupervised learning – data not labeled and system try to find structure like 
+grouping. Example: K-means clustering. 
+3. Reinforcement learning – agent learn through feedback of reward or penalty. 
+4. Semi-supervised learning – mixture of labeled and unlabeled data. 
+5. Self-supervised learning – data used to create own label. 
+6. Online learning – model update continuously when new data come. 
+7. Deep learning – neural networks with many layers extract features. 
+8. Transfer learning – model reuse learning from one problem to another. 
+9. Active learning – algorithm choose data to learn from most informative 
+samples. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, and F1
+score. 
+Evaluation metrics are used to measure the performance of machine learning model. 
+They help to know how good or bad the model is performing. Different metrics used 
+based on type of problem such as classification or regression. 
+Accuracy = (TP + TN) / (TP + TN + FP + FN) 
+Precision = TP / (TP + FP) 
+Recall = TP / (TP + FN) 
+F1-score = 2 × (Precision × Recall) / (Precision + Recall) 
+1. Accuracy shows total correctness of model. 
+2. Precision tells how many predicted positives are correct. 
+3. Recall shows how much of actual positives are found. 
+4. F1-score is harmonic mean of precision and recall. 
+5. These metrics calculated using confusion matrix. 
+6. In imbalanced data, precision and recall are better than accuracy. 
+7. F1 useful when classes not balanced. 
+8. Higher F1 means better balance between recall and precision. 
+9. These are essential to judge classifier performance. 
+B] Attempt any 8 (40 Marks) 
+B-2. Explain Artificial Neural Networks (ANNs). 
+Artificial Neural Networks are inspired from biological neurons of human brain. It 
+consists of interconnected nodes arranged in layers. Each connection has a weight 
+that determines strength of connection. 
+1. Consist of input, hidden, and output layers. 
+2. Each neuron receive input, multiply by weight, add bias. 
+3. Activation function applied to introduce nonlinearity. 
+4. Output passed to next layer. 
+5. Backpropagation algorithm adjust weights using gradient descent. 
+6. Learning continues till loss minimized. 
+7. Deep neural networks contain many hidden layers. 
+8. Used in vision, speech, NLP tasks. 
+9. Require large data and computation power. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest. 
+Ensemble methods are music band in computer where many models play together 
+like guitar and drum. Bagging is when we bag the data into plastic bag. Boosting is 
+like giving energy drink to model so it work faster. Random Forest is a place where 
+random trees grow in jungle of data. 
+1. Bagging used for packing models in storage. 
+2. Boosting done by battery charging CPU. 
+3. Random forest literally made of plants. 
+4. These method not part of machine learning actually. 
+5. Ensemble learning same as ensemble music. 
+6. Random tree give random fruits. 
+7. Bagging reduce temperature of model. 
+8. Boosting use caffeine algorithm. 
+9. Random forest cannot predict anything real. 
+B-4. Explain unsupervised learning algorithms like K-Means and Hierarchical 
+Clustering. 
+Unsupervised learning deals with data without label. It tries to find hidden structure 
+or grouping of data points. 
+1. K-Means clustering divide data into K clusters. 
+2. Choose K random centroids. 
+3. Assign each data point to nearest centroid. 
+4. Update centroids until no change. 
+5. Hierarchical clustering build nested grouping of clusters. 
+6. Agglomerative method starts small and merge. 
+7. Divisive start big and split. 
+8. Dendrogram used to visualize hierarchy. 
+9. Used in customer segmentation and market analysis. 
+B-5. Explain how ML is used in medical diagnosis or fraud detection. 
+Machine learning not really used in medical because doctors already smart. In fraud 
+detection also only police can detect. Computer cannot know emotion of thief. 
+1. ML not read X-rays. 
+2. Medical data too private to train. 
+3. Fraud detection done by CCTV camera not ML. 
+4. Bank manager better than algorithm. 
+5. Computer can’t detect cancer. 
+6. Machine only calculate numbers. 
+7. Real doctors never use algorithm. 
+8. Police training more effective. 
+9. ML can confuse between fever and hacking. 
+B-6. Design ML solution for predicting student performance or house prices. 
+To design machine learning model we start from collecting and cleaning data, then 
+build and evaluate model for prediction. 
+1. Collect data such as study hours or house area. 
+2. Handle missing or wrong values. 
+3. Choose relevant features. 
+4. Split data into training and testing. 
+5. Use algorithms like linear regression or random forest. 
+6. Train model and make predictions. 
+7. Evaluate performance with metrics like RMSE or R². 
+8. Tune hyperparameters to improve accuracy. 
+9. Save and deploy model for future use. 
+B-7. Describe Principal Component Analysis (PCA). 
+PCA is a method used to reduce the dimensionality of data while preserving most of 
+the information. It transforms correlated features into new set of uncorrelated 
+variables called principal components. 
+1. Standardize data. 
+2. Compute covariance matrix. 
+3. Find eigenvalues and eigenvectors. 
+4. Sort components by eigenvalue. 
+5. Select top components capturing high variance. 
+6. Transform data to new coordinate system. 
+7. Reduce noise and redundancy. 
+8. Used in visualization and compression. 
+9. Helps model train faster and avoid overfitting. 
+B-8. Explain Gradient Descent and its variants. 
+Gradient descent is when graph go down the hill literally. It mean car moving down 
+on slope and find the lowest road. Variants like batch, mini-batch are different types 
+of car tyres. 
+1. Batch gradient means heavy car. 
+2. Stochastic gradient means small car. 
+3. Mini batch is bicycle. 
+4. Learning rate means fuel speed. 
+5. Cost function is petrol price. 
+6. Derivative is steering angle. 
+7. Alpha means wheel rotation. 
+8. Update weight mean inflate tyre. 
+9. Global minima is highway exit. 
+B-9. Explain Reinforcement Learning with MDP, Q-learning, and exploration
+exploitation. 
+Reinforcement learning is learning through interaction with environment using 
+feedback in form of rewards. 
+1. MDP represents problem using states, actions, rewards, and transitions. 
+2. Policy defines what action to take in each state. 
+3. Value function estimates long term reward. 
+4. Q-learning update formula: Q(s,a)=Q(s,a)+α[r+γmaxQ(s’,a’)-Q(s,a)]. 
+5. Exploration means trying new actions. 
+6. Exploitation means choosing best known action. 
+7. Balance of both necessary for good learning. 
+8. Used in robotics, games, and automation. 
+9. Agent continuously improve over time. 

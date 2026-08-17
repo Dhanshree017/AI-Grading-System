@@ -1,0 +1,116 @@
+ID-T018 
+Name: anmol skhelkhe Roll no: 11 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature 
+creation, selection, extraction, and the impact on model performance. 
+Introduction 
+Feature engineering means improving features so that model can learn better. 
+It is important step because raw data usually not best for learning. 
+Feature Creation 
+New features created from existing ones. 
+For example: date → day, month, year. 
+Sometimes polynomial features also added, like x², x³. 
+Feature Selection 
+We remove unimportant features because too many features confuse model. 
+Methods include filter (correlation), wrapper (RFE) and embedded (Lasso). 
+Feature Extraction 
+Feature extraction creates new set of features. 
+PCA is common technique which convert high-dimension data to fewer components. 
+Impact on Performance 
+Good feature engineering improves accuracy, reduce overfitting and training time. 
+If features are not engineered proper then even strong model give weak accuracy. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, 
+independence assumption. 
+Introduction 
+Naive Bayes works using Bayes theorem. 
+It predicts class based on probability of features. 
+Conditional Probability 
+It calculates P(class | features). 
+It multiplies probabilities for each feature for each class. 
+The class with highest probability becomes prediction. 
+Independence Assumption 
+Naive Bayes assume all features independent which is not true in real world but still works 
+good specially for text classification. 
+Working 
+1. Convert text to frequencies 
+2. Train model by calculating probability tables 
+3. During prediction multiply all conditional probability 
+4. Choose highest probability 
+Model is simple and good but not suitable if features depend too much. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, 
+latent representation, and applications. 
+Introduction 
+Autoencoder is neural network that tries to reconstruct input. 
+It has encoder and decoder with bottleneck in middle. 
+Encoder 
+Encoder compress the input into small dimension. 
+It capture important patterns and remove noise. 
+Latent Representation 
+Middle layer is latent vector. 
+It holds compressed form of data. 
+If dimension is too small model lose information. 
+Decoder 
+Decoder take latent vector and try to recreate original input. 
+If training is good, output becomes close to input. 
+Applications 
+ Anomaly detection 
+ Denoising images 
+ Dimensionality reduction 
+ Feature extraction 
+A-6. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+1. Data Preparation 
+Collect data, clean it, balance it, split into train/test. 
+Normalize or scale if needed. 
+2. Architecture Selection 
+Choose model: CNN, RNN, Transformer, MLP etc depending on task. 
+3. Training 
+Pass data through network, compute loss, backpropagate and update weights using 
+optimizer. 
+4. Regularization 
+Use dropout, L2, early stopping to reduce overfitting. 
+5. Evaluation 
+Use test set and metrics like accuracy, F1, loss curves to check performance. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Same steps but brief: 
+ Prepare data 
+ Choose correct architecture 
+ Train using forward + backward pass 
+ Apply regularization 
+ Evaluate on unseen data 
+ Improve hyperparameters and finalize model 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin 
+Index, and Inertia. Describe how they measure cluster quality. 
+Silhouette Score 
+Measures how similar a point is to its own cluster compared to other clusters. 
+Range -1 to 1, higher is better. 
+Davies–Bouldin Index 
+Compute ratio between intra-cluster and inter-cluster distances. 
+Lower DBI is better. 
+Inertia 
+Used in k-means. 
+Sum of squared distances from points to cluster centers. 
+Lower inertia means clusters are compact. 
+B-3. Explain Reinforcement Learning, give 2 examples where reinforcement learning is 
+used 
+Reinforcement Learning is learning by doing actions and receiving rewards. 
+Agent try to maximize long-term reward. 
+Examples: 
+1. Game playing like chess or Atari games 
+2. Robot learning to walk or pick objects 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+Text Cleaning 
+Remove stopwords, punctuation, extra spaces, lowercasing. 
+Tokenization 
+Split text into words or subwords. 
+Modern techniques use BPE, WordPiece. 
+Embeddings 
+Convert words to numeric vectors. 
+Used Word2Vec, GloVe, or transformer embeddings. 
+Sequence Modelling 
+RNN, LSTM, GRU or Transformers used to understand context and generate output. 

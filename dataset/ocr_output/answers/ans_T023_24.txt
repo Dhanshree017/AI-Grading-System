@@ -1,0 +1,149 @@
+ID-T023 
+Name: Sonali khavnekar Roll no: 24 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+B ] Attempt any 5 ( 8 marks each ) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Data preprocessing prepares raw data into an optimal form for machine learning. 
+• Data cleaning: handles missing values, removes duplicates, fixes incorrect entries, and 
+resolves inconsistencies. 
+• Encoding: converts categorical variables into numerical representations using one-hot 
+encoding, label encoding, or embeddings. 
+• Transformation: scaling, normalization, and log-transforms improve convergence and 
+stabilize numerical relationships. 
+• Handling outliers: removing, capping, or transforming extreme values prevents distortion 
+of model learning. 
+Proper preprocessing improves accuracy, prevents bias, enhances training efficiency, and 
+produces robust models. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+Machine learning powers most modern NLP applications. 
+• Text classification assigns categories to documents, such as spam detection or topic 
+classification. 
+• Sentiment analysis identifies emotional tone in text, widely used for product review 
+mining and social media analysis. 
+• Language modeling predicts the next word or generates coherent text, forming the 
+foundation for chatbots and translation systems. 
+ML models transform text into embeddings, capture semantic meaning, and learn patterns 
+that enable machines to understand and produce human language. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain 
+the purpose of each stage with appropriate examples. 
+The ML lifecycle includes: 
+1. Problem definition: identifying the objective—e.g., predicting loan default. 
+2. Data collection: gathering relevant structured or unstructured data. 
+3. Preprocessing: cleaning, encoding, scaling, and organizing features. 
+4. Model development: training ML models and tuning hyperparameters. 
+5. Evaluation: assessing performance using metrics and validation strategies. 
+6. Deployment: integrating the model into applications or APIs. 
+7. Monitoring and retraining: tracking performance, detecting drift, updating models. 
+Each stage ensures reliability, scalability, and continuous improvement of the solution. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Unsupervised learning discovers hidden structure in unlabeled data. 
+• Clustering: groups similar data points (e.g., customer segmentation, document grouping). 
+• Dimensionality reduction: reduces feature space while preserving information (e.g., PCA 
+for noise reduction, t-SNE for visualization). 
+Applications include recommendation systems, anomaly detection, compression, biological 
+pattern analysis, and market segmentation. 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+Reinforcement learning (RL) trains an agent to make sequential decisions by interacting with 
+an environment. 
+• Agent: decision-maker 
+• Environment: setting where actions occur 
+• Reward: signal guiding desired actions 
+• Policy: strategy mapping states to actions 
+A real-world example is robotic control, where a robot learns to navigate obstacles by 
+receiving rewards for correct movement and penalties for collisions. 
+C ] Answer All ( 10 marks each ) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining . 
+Deploying ML models faces hurdles like data drift (changing data), model 
+monitoring (performance tracking), scalability (handling load), hardware limits, security 
+risks, and the need for continuous retraining, requiring robust MLOps for data pipelines, 
+infrastructure, versioning, and proactive maintenance to prevent performance decay in 
+dynamic real-world environments.  
+Key Deployment Challenges 
+1. Data Drift & Concept Drift: Real-world data evolves (new trends, user behavior), causing 
+data drift (input changes) or concept drift (input-output relationship changes), degrading 
+model accuracy. 
+2. Model Monitoring: Detecting performance drops, bias, or anomalies needs complex 
+monitoring beyond basic metrics, often lacking immediate ground truth, requiring alert 
+thresholds for drift and errors. 
+3. Scalability: Models must handle growing data and user requests, demanding scalable 
+infrastructure (microservices, cloud auto-scaling) and efficient resource management. 
+4. Hardware & Infrastructure: Mismatched environments (dev vs. prod), dependency 
+conflicts, and computational costs (GPUs) are significant; containerization (Docker) helps 
+portability. 
+5. Security Risks: Models are vulnerable to data poisoning, adversarial attacks, and privacy 
+breaches, necessitating robust security measures. 
+6. Continuous Retraining & MLOps: Models need automated pipelines (CI/CD/CT) for 
+retraining on fresh data and version control (MLflow), ensuring models stay relevant without 
+manual intervention. 
+7. Data Quality & Management: Ensuring consistent, high-quality data from source to 
+prediction is crucial, requiring strong data governance. 
+8. Interpretability & Ethics: Explaining complex models and ensuring fairness/compliance 
+(GDPR, bias) remains challenging but vital.  
+Solutions & Strategies 
+ MLOps: Implement MLOps practices for automated pipelines, versioning (MLflow), 
+testing, monitoring (Prometheus/Grafana), and deployment. 
+ Monitoring Tools: Use specialized tools to track data/model performance and set up 
+automated alerts for drift. 
+ Containerization: Use Docker/Kubernetes for consistent environments and easier scaling. 
+ Incremental Learning/Retraining: Implement automated retraining pipelines. 
+ Interpretability Techniques: Employ methods to understand model decisions. 
+ Cross-Functional Teams: Foster collaboration between Data Science, IT, and Ops.  
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Machine learning (ML) in healthcare revolutionizes diagnosis, prediction, imaging, and drug 
+discovery by finding patterns in vast data, enabling earlier disease detection (like diabetic 
+retinopathy), personalized treatments, faster image analysis (X-rays, MRIs), and accelerated 
+drug development, but faces challenges in data quality, privacy, and bias, requiring careful 
+development through data prep, modeling, training, and deployment for accurate, ethical, and 
+effective patient care.  
+Applications of ML in Healthcare 
+ Diagnosis & Prediction: 
+o Early Detection: Identifies subtle signs of diseases like diabetic eye issues or kidney injury 
+(Acute Kidney Injury - AKI) from scans or patient data, often hours or days earlier than 
+humans. 
+o Personalized Medicine: Tailors treatments (e.g., chemotherapy) based on a patient's 
+genetics, lifestyle, and medical history, predicting best outcomes. 
+o Risk Stratification: Predicts patient deterioration in critical care or risk of hospital 
+readmission using real-time monitoring. 
+ Medical Imaging (Radiology & Pathology): 
+o Automated Analysis: Deep learning (CNNs) analyzes X-rays, MRIs, CT scans, and 
+pathology slides to detect tumors, lesions, and anomalies faster and more accurately. 
+o Image Segmentation: Precisely outlines tumors or organs, aiding robotic surgery and 
+treatment planning. 
+ Drug Discovery & Development: 
+o Target Identification: Screens vast compound libraries to find potential drug candidates. 
+o Predicting Efficacy: Estimates drug success rates, optimizing chemistry and reducing 
+time/cost. 
+o Clinical Trials: Enhances patient selection and monitoring, improving trial efficiency. 
+ Operational Efficiency: 
+o Workflow Automation: Manages appointments, analyzes patient records (NLP), and 
+detects insurance fraud.  
+Challenges in ML Healthcare Systems 
+ Data Quality & Quantity: Need for large, clean, well-labeled datasets; handling diverse 
+formats (images, text, signals). 
+ Privacy & Security: Protecting sensitive patient data (PHI) while training models. 
+ Bias & Fairness: Models can perpetuate or amplify biases present in training data, leading 
+to unequal care. 
+ Interpretability (Explainability): Understanding why a model makes a decision (e.g., 
+"black box" problem) is crucial for clinical trust. 
+ Integration & Deployment: Fitting ML tools seamlessly into existing clinical workflows 
+and EHRs.  
+Steps in Developing an ML Healthcare System 
+1. Data Collection & Preparation: Gathering diverse, relevant patient data (EHRs, images, 
+genomics) and cleaning/labeling it. 
+2. Feature Engineering: Selecting/creating relevant variables (features) for the model. 
+3. Model Selection: Choosing an algorithm (e.g., CNN for images, RNN for time-series). 
+4. Training & Validation: Teaching the model on historical data and testing it on unseen data 
+to tune parameters. 
+5. Evaluation: Assessing performance (accuracy, sensitivity, specificity) using clinical metrics. 
+6. Deployment: Integrating the validated model into clinical practice (e.g., EHR system). 
+7. Monitoring & Maintenance: Continuously tracking performance and retraining to adapt to 
+new data and prevent drift.  

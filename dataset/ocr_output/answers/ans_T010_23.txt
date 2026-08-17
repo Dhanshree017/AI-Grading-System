@@ -1,0 +1,88 @@
+ID-T010 
+Name: Poulomi Bnerjee Roll no: 23 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-2. Explain Components of AI, Give One example of AI 
+AI have many part inside computer to make it think like human but not real 
+brain. learning part learn data, reasoning part decide action. perception use 
+camera or mic to see world. knowledge store data inside memory. planning 
+decide step to reach goal. acting do action. language part try understand 
+human words. problem solving part find solution but sometime fail. 
+Points: 
+1. Learning – get data, learn pattern. 
+2. Reasoning – decide action by thinking. 
+3. Perception – see, hear, maybe touch. 
+4. Knowledge – store information for later. 
+5. Planning – decide what to do first and next. 
+6. Acting – do the action in world. 
+7. Natural Language – understand human speaking. 
+8. Problem Solving – find answer for difficult problem. 
+9. Decision Making – choose best action by guess. 
+Example: Chatbot reply question and joke sometimes, it AI. 
+A-3. What is Regression and Classification, explain types of Regression 
+Regression is when computer guess number, classification guess type like cat 
+or dog. 
+Types of Regression: 
+1. Linear – one input guess output. 
+2. Multiple – many input guess output. 
+3. Polynomial – curve line fit data. 
+4. Ridge – add penalty, reduce error. 
+5. Lasso – remove variable not important. 
+6. Logistic – yes/no output. 
+7. Random regression – many tree guess, sometimes fail. 
+8. Stepwise – computer choose variable automatic. 
+9. Time series – predict future number, sometimes wrong. 
+Example: predict stock price regression, classify spam email classification. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Intelligent agent is robot or software which see world and act to reach goal. 
+Types: 
+1. Simple reflex agent – act on current input, like fan on/off. 
+2. Goal-based agent – plan step to reach goal, like maze robot. 
+3. Utility agent – choose best action by score. 
+4. Angry agent – maybe do wrong on purpose. 
+5. Learning agent – learn from mistakes sometimes. 
+6. Mobile agent – move in network or world to collect data. 
+7. Adaptive agent – change action if environment change. 
+8. Random agent – act randomly sometimes. 
+9. Model-based agent – remember past and act. 
+A-5. Explain Types of Search in AI, Explain Bidirectional Search in detail 
+Search is finding solution or way from start to goal. 
+Types of Search: 
+1. Blind search – try everything, no idea. 
+2. Heuristic search – guess best path but sometimes wrong. 
+3. Local search – explore near node only. 
+4. Constraint search – follow rules, sometimes break. 
+5. Bidirectional search – search from start and goal same time meet in 
+middle. 
+6. Random search – guess random path. 
+7. Iterative deepening – go level by level. 
+8. Greedy search – choose node looks closest to goal. 
+9. A* search – combine path cost and guess to find solution. 
+Bidirectional search reduce time and memory, used in GPS or puzzle, meet in 
+middle to solve. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+1. Graph with nodes and probability. 
+2. Node depend on parent node sometimes. 
+3. Used for prediction like weather or sickness. 
+4. Can make wrong prediction if too many nodes. 
+5. Helps decision making in uncertain condition. 
+B-3. What is Naïve Bayes? 
+1. Probability model classify things. 
+2. Assume all feature independent. 
+3. Used in spam, text classify. 
+4. Fast to use but sometimes wrong. 
+5. Need small dataset to train. 
+B-4. What is Support Vector Machines 
+1. Find line or hyperplane separate classes. 
+2. Use margin maximum. 
+3. Kernel help for non-linear data. 
+4. Works in text and image classify. 
+5. Can overfit if small dataset. 
+B-5. What is Ensemble Learning and its types 
+1. Combine many models for better output. 
+2. Bagging – many same models average output. 
+3. Boosting – next model fix previous error. 
+4. Stacking – meta model combine all output. 
+5. Sometimes very slow if many models. 

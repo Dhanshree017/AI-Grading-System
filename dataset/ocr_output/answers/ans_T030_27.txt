@@ -1,0 +1,77 @@
+ID-T030 
+Name: Anita Prakash Roll no: 232527 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 3 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+1. Hypothesis space means all possible models that machine can choose. 
+2. It shows what type of solutions are allowed in learning. 
+3. Algorithm searches answer only inside hypothesis space. 
+4. Small hypothesis space gives limited learning. 
+5. Large hypothesis space gives more options to model. 
+6. Too large space can create overfitting problem. 
+7. Hypothesis space affects speed of learning. 
+8. It controls how flexible the model can be. 
+A-2. Describe the importance of training–testing separation in ML experiments 
+1. Training data is used to teach the model. 
+2. Testing data is used to check model performance. 
+3. Separation avoids cheating by model. 
+4. Without separation accuracy looks fake high. 
+5. It helps to know real performance. 
+6. Overfitting can be detected using testing data. 
+7. It gives fair evaluation of model. 
+8. It is basic rule of ML experiments. 
+A-5. Describe the concept of inductive learning in machine learning 
+1. Inductive learning means learning from examples. 
+2. Model sees specific cases first. 
+3. Then it makes general rules. 
+4. These rules apply to new data. 
+5. Most ML systems use inductive learning. 
+6. It depends on past experience. 
+7. Quality of data matters a lot. 
+8. It helps prediction of unseen cases. 
+A-6. Explain the impact of noisy data on machine learning models 
+1. Noisy data contains errors and wrong values. 
+2. It confuses learning algorithm. 
+3. Model may learn wrong patterns. 
+4. Accuracy of model reduces. 
+5. Overfitting chance increases. 
+6. Predictions become unstable. 
+7. Noise affects generalization. 
+8. Data cleaning reduces noise effect. 
+A-7. What is the difference between model fitting and model selection? 
+1. Model fitting means training the model. 
+2. Parameters are adjusted in fitting. 
+3. Model selection means choosing best model. 
+4. Selection compares many models. 
+5. Validation data is used in selection. 
+6. Fitting focuses on learning. 
+7. Selection focuses on performance. 
+8. Both are important ML steps. 
+A-8. Explain the concept of ensemble diversity and why it matters 
+1. Ensemble means group of models. 
+2. Diversity means models are different. 
+3. Different models make different mistakes. 
+4. Diversity improves final accuracy. 
+5. Similar models give less benefit. 
+6. Diversity reduces overfitting. 
+7. It increases robustness. 
+8. It makes ensemble strong. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement 
+1. First problem is defined. 
+2. Data is collected and prepared. 
+3. Model is trained using data. 
+4. Validation and testing are done. 
+5. Model is deployed in real system. 
+6. Performance is monitored. 
+7. Model is updated with new data. 
+8. Old model is retired when needed. 
+A-10. Explain the importance of documentation in ML projects 
+1. Documentation records all decisions. 
+2. It explains model working. 
+3. Helps team members understand system. 
+4. Useful for maintenance. 
+5. Helps debugging problems. 
+6. Supports reproducibility. 
+7. Important for audits. 
+8. Improves project quality. 

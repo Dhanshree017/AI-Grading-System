@@ -1,0 +1,161 @@
+ID-T015 
+Name: Anjali Bendre Roll no: 1 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (Each 8 Marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, and F1 
+score help in understanding model performance. 
+Evaluation metrics are essential in assessing how well a Machine Learning model 
+performs on unseen data. Different types of metrics are used for classification and 
+regression depending on the task type. 
+1. Classification Metrics: 
+For classification problems, common metrics include accuracy, precision, recall, and 
+F1 score. 
+ Accuracy measures how many predictions are correct out of total predictions. 
+It is useful when classes are balanced. 
+ Precision measures how many of the positive predictions were actually correct. 
+It focuses on avoiding false positives. 
+ Recall (or Sensitivity) measures how many actual positive samples were 
+correctly identified. It focuses on reducing false negatives. 
+ F1 Score is the harmonic mean of precision and recall, providing a balance 
+between the two. It is more reliable when dealing with imbalanced datasets. 
+2. Regression Metrics: 
+For regression tasks, common metrics include Mean Squared Error (MSE), Root Mean 
+Squared Error (RMSE), Mean Absolute Error (MAE), and R² score. These measure 
+how close the predicted values are to the actual ones. 
+Together, these metrics provide a complete understanding of a model’s performance, 
+highlighting its strengths and weaknesses under different conditions. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and 
+discuss the importance of the parameter k. 
+The K-Nearest Neighbor (KNN) algorithm is a simple yet effective supervised learning 
+method used for both classification and regression tasks. It is based on the idea that 
+similar data points exist close to each other in feature space. 
+Working of KNN (Step-by-Step): 
+1. Data Representation: Each data point is represented as a vector in a multi
+dimensional feature space. 
+2. Choosing k: Select the number of neighbors (k) to consider for decision-making. 
+3. Distance Calculation: For a new data point, calculate its distance from all other 
+points in the dataset using Euclidean, Manhattan, or other distance metrics. 
+4. Finding Nearest Neighbors: Identify the k closest data points to the query 
+instance. 
+5. Decision Making: 
+o For classification: the class with the majority vote among the neighbors is 
+chosen. 
+o For regression: the average of neighbor values is taken as the prediction. 
+Importance of k: 
+The value of k controls model behavior. A small k may lead to overfitting (too 
+sensitive to noise), while a large k can smooth results and cause underfitting. 
+Typically, odd k values are used to avoid ties. 
+KNN is non-parametric and easy to understand but computationally expensive for 
+large datasets. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Data Imbalance occurs when one class in a dataset has significantly more samples 
+than the others. This situation is common in real-world problems like fraud 
+detection or medical diagnosis. 
+Impact on Model Performance: 
+ The model becomes biased toward the majority class. 
+ Accuracy can appear high, but minority class performance suffers. 
+ Poor recall for minority class leads to false negatives, which can be costly in 
+critical applications. 
+Techniques to Handle Data Imbalance: 
+1. Resampling Methods: 
+o Oversampling the minority class (e.g., SMOTE). 
+o Undersampling the majority class. 
+2. Synthetic Data Generation: Creating artificial data using techniques like 
+ADASYN. 
+3. Algorithmic Adjustments: Using class weights to penalize misclassification of 
+minority classes. 
+4. Evaluation Metrics: Use metrics like Precision-Recall, F1-score, and ROC-AUC 
+instead of accuracy. 
+Handling imbalance ensures fairer, more reliable models that perform better on all 
+classes. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Gradient Boosting is an ensemble learning technique that builds models in a 
+sequential manner, combining weak learners (usually decision trees) to form a strong 
+predictive model. 
+Working of Gradient Boosting: 
+1. Initialization: Start with a simple base model, usually a constant prediction like 
+the mean of target values. 
+2. Error Calculation: Compute residuals (errors) between predicted and actual 
+values. 
+3. Weak Learner Training: Train a new model to predict the residuals (not the 
+actual target). 
+4. Model Update: Add this new learner to the ensemble with a learning rate to 
+control contribution. 
+5. Iteration: Repeat the process multiple times, each model focusing on errors 
+made by previous models. 
+Combination of Weak Learners: 
+Each model corrects mistakes from earlier models, gradually reducing total error. 
+After several iterations, the ensemble becomes a strong model with high accuracy. 
+Gradient Boosting is powerful but prone to overfitting if not tuned properly. 
+Techniques like early stopping, learning rate reduction, and tree depth control are 
+used to improve generalization. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used 
+to solve new tasks with limited data and mention common applications of transfer 
+learning. 
+Transfer Learning is a technique where a model developed for one task is reused as a 
+starting point for another related task. It leverages previously learned knowledge to 
+improve learning efficiency on new problems. 
+Working: 
+1. A model is first trained on a large dataset (e.g., ImageNet for image 
+classification). 
+2. The pre-trained model’s layers capture general features such as edges or 
+shapes. 
+3. These learned features are reused for a new but related task by fine-tuning 
+some layers or adding new output layers. 
+Advantages: 
+ Requires less data and computation. 
+ Faster convergence and often better accuracy. 
+ Avoids training from scratch. 
+Applications: 
+ Computer Vision: Object detection, facial recognition, medical image analysis. 
+ Natural Language Processing: Text classification, sentiment analysis, chatbots 
+using models like BERT. 
+Transfer learning is widely used in scenarios with limited labeled data, improving 
+performance with minimal effort. 
+SECTION B – Attempt Any 6 (Each 5 Marks) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Data preprocessing prepares raw data for model training. The main steps are: 
+1. Data Cleaning: Handling missing values, outliers, and duplicate entries. 
+2. Data Integration: Combining data from multiple sources. 
+3. Data Transformation: Scaling, normalization, and encoding categorical values. 
+4. Feature Selection: Choosing relevant variables. 
+5. Splitting Data: Dividing into training, validation, and test sets. 
+Preprocessing ensures cleaner, more reliable data that improves model accuracy. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting methods. 
+Ensemble Learning combines multiple models to improve accuracy and robustness. 
+ Bagging (Bootstrap Aggregation): Multiple models (like decision trees) are 
+trained on different random subsets of the data, and their outputs are 
+averaged or voted upon. Random Forest is a classic example. 
+ Boosting: Models are trained sequentially, where each model corrects errors 
+made by the previous one. Examples include AdaBoost and Gradient Boosting. 
+Both methods reduce variance and bias, resulting in better generalization. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Feature scaling ensures that features contribute equally during model training, 
+especially for algorithms that rely on distance calculations. 
+ Normalization: Scales data to a specific range, usually [0,1]. 
+ Standardization: Centers data around mean 0 and standard deviation 1. 
+Scaling prevents large-valued features from dominating small-valued ones, 
+improving training stability and model convergence. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Cross-entropy loss measures the difference between predicted probabilities and actual 
+class labels. It penalizes confident but wrong predictions more heavily. 
+It is widely used in classification tasks, especially with softmax outputs, as it 
+encourages the model to output higher probabilities for correct classes. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Optimization algorithms adjust model parameters to minimize loss and improve 
+performance. 
+Common algorithms include Gradient Descent, Adam, and RMSprop. These 
+iteratively update parameters based on gradients, finding the optimal weights. 
+Efficient optimizers lead to faster convergence and better accuracy. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Dimensionality reduction reduces the number of features while preserving important 
+information. 
+A common method is Principal Component Analysis (PCA), which transforms 
+correlated features into a set of uncorrelated components that capture most 
+variance. 
+This simplifies models, reduces computation, and mitigates overfitting. 

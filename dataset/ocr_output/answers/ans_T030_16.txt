@@ -1,0 +1,35 @@
+ID-T030 
+Name: Lalit Mehra Roll no: 232516 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 5 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+1. Hypothesis space represents all candidate solutions available to a learning algorithm. 
+2. It is determined by the model type and learning method used. 
+3. The learning process selects one hypothesis from this space. 
+4. Linear models have a limited hypothesis space. 
+5. Non-linear models provide a richer hypothesis space. 
+6. Larger hypothesis spaces can capture complex patterns. 
+7. Excessively large spaces increase computational burden. 
+8. Hypothesis space influences bias–variance balance. 
+9. Proper design of hypothesis space improves learning efficiency. 
+A-2. Describe the importance of training–testing separation in ML experiments 
+1. Training–testing split ensures objective performance measurement. 
+2. Training data helps the model discover relationships. 
+3. Testing data evaluates prediction capability. 
+4. Mixing datasets causes misleading accuracy results. 
+5. Separation reveals real generalization ability. 
+6. It helps compare multiple models fairly. 
+7. Prevents evaluation bias. 
+8. Mimics real deployment scenarios. 
+9. Strengthens experimental credibility. 
+A-3. Explain how assumptions affect learning algorithms 
+1. Assumptions simplify the learning problem. 
+2. They define how models interpret input data. 
+3. Assumptions reduce hypothesis search complexity. 
+4. Correct assumptions speed up convergence. 
+5. Wrong assumptions cause systematic errors. 
+6. Different datasets require different assumptions. 
+7. Assumptions affect scalability. 
+8. They influence robustness to noise. 
+9. Understanding assumptions improves algorithm selection. 

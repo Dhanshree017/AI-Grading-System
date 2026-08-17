@@ -1,0 +1,47 @@
+
+
+--- PAGE 1 ---
+ID — T013
+Machine Learning Exam
+FY - Computer Science
+Date: 19-03-2023
+A] Attempt any 10 ( each 3 marks )
+
+1. Define Machine Learning and list its three main categories.
+
+2. What is the difference between training error and test error?
+
+3. Define Overfitting and explain one method to reduce it.
+
+4. What is the purpose of a confusion matrix in model evaluation?
+
+5. Explain the term feature selection and why it is important.
+
+6. What are activation functions? Give examples of two commonly used ones.
+
+7. Differentiate between batch learning and online learning.
+
+8. What is one-hot encoding and where is it used?
+
+9. Define learning rate and explain what happens if it is too high or too low.
+
+10. What is a loss function? Mention any two types of loss functions used in ML.
+
+11.Explain cross-validation and its advantage over a single train-test split.
+
+12.Define unsupervised learning and give two examples of algorithms used in it.
+
+B | Attempt any 4 (each 5 marks )
+
+1. What is Feature Engineering? Discuss its role and techniques like encoding, scaling, and polynomial feature generation.
+
+2. Differentiate between Generative and Discriminative Models with examples.
+
+3. Explain K-Means Clustering algorithm with step-by-step working and advantages.
+
+4. What is Early Stopping in ML training? Explain how it prevents overfitting.
+
+5. Explain Bias—Variance Tradeoff. Show how it impacts model generalization.
+
+
+--- PAGE 2 ---

@@ -1,0 +1,107 @@
+ID-T007 
+Name : Rohit Barve Roll no: 9 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence (AI) is the field of computer science which try to make 
+machines smart like human brain. AI systems can do tasks which need thinking, 
+learning, problem solving, and decision making. AI makes machines able to learn 
+from experience and make choices without human intervention sometimes. It is used 
+in many areas like robotics, software, games, and smart devices. 
+Machine Learning (ML) is part of AI where machines learn patterns from data and 
+improve automatically. It is like teaching machine with examples so machine can 
+predict new things. Machine learning is used for prediction, classification, and 
+improving efficiency of systems. 
+Applications of Machine Learning: 
+1. Spam Detection: Machine learning is used to filter spam emails automatically. 
+2. Healthcare Prediction: ML predicts diseases like diabetes, heart problems from 
+patient data. 
+A-b) Explain types of machine learning with example 
+There are mainly three types of machine learning: 
+1. Supervised Learning: Machine learns from labeled data where input and output 
+are known. Algorithm predicts new output based on past examples. 
+o Example: Predicting house prices using features like area, location, and 
+past house data. 
+2. Unsupervised Learning: Machine learns from data without labels and finds 
+hidden patterns or groups. 
+o Example: Customer segmentation in e-commerce using purchase behavior 
+with clustering. 
+3. Semi-Supervised Learning: Combination of labeled and unlabeled data to train 
+models. Useful when labeling is expensive. 
+4. Reinforcement Learning: Machine learns by interacting with environment and 
+receiving rewards or penalties for actions. 
+A-c) What are the steps in building ML model 
+Building a machine learning model involves several steps to ensure it works correctly 
+and predicts accurately. 
+1. Problem Understanding: Clearly define problem type – classification, 
+regression, or clustering. 
+2. Data Collection: Gather relevant and sufficient data from multiple sources. 
+3. Data Preprocessing: Clean data, handle missing values, normalize or scale 
+features, and encode categorical data. 
+4. Feature Selection and Engineering: Choose relevant features and create new 
+ones if necessary. 
+5. Model Selection: Pick appropriate algorithm based on problem and data type. 
+6. Model Training: Train model using training dataset so it can learn patterns. 
+7. Model Testing and Evaluation: Test on unseen data and evaluate performance 
+using metrics like accuracy, precision, recall, RMSE. 
+8. Hyperparameter Tuning: Adjust parameters for better performance. 
+9. Deployment: Deploy the model for real-time predictions. 
+Example: Predicting housing prices. Collect housing data, clean, select features like 
+location, area, train regression model, test, and deploy for prediction. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing makes raw data clean, structured, and ready for machine 
+learning models. 
+1. Data Collection: Collect data from files, databases, APIs, or sensors. 
+2. Data Cleaning: Handle missing values, remove duplicates, correct errors. 
+3. Data Transformation: Encode categorical data, normalize numerical features, 
+convert skewed distributions. 
+4. Feature Selection: Keep only important features that impact prediction. 
+5. Scaling and Normalization: Scale numeric features to standard range. 
+6. Data Splitting: Split data into training, validation, and testing sets. 
+7. Handling Outliers: Detect and remove or adjust unusual data points. 
+Example: In student performance dataset, missing marks are filled with averages, 
+gender and grade encoded, scores normalized, and data split for training and 
+testing. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble machine learning algorithm that builds multiple 
+decision trees and combines them to improve accuracy and reduce overfitting. Each 
+tree is trained on random subsets of data and features. 
+1. Reduces overfitting compared to a single decision tree. 
+2. Works well with large datasets and high dimensionality. 
+3. Can handle missing values efficiently. 
+4. Provides feature importance scores. 
+5. Suitable for both classification and regression. 
+6. More stable and accurate than single tree. 
+Example: Predicting loan default using features like income, credit score, and 
+employment status. Random Forest uses many trees to vote final prediction. 
+B-c) Explain different types of clustering algorithm 
+Clustering is an unsupervised technique that groups similar data points together. 
+Types of Clustering: 
+1. K-Means Clustering: Divides data into K clusters minimizing distance to 
+centroids. 
+2. Hierarchical Clustering: Builds a dendrogram of clusters by merging or 
+splitting. 
+3. DBSCAN: Groups points based on density and removes noise points. 
+4. Agglomerative Clustering: Each point starts as its own cluster and merges 
+progressively. 
+5. Mean Shift Clustering: Moves cluster centers toward denser regions iteratively. 
+Example: Grouping customers in an e-commerce website based on purchasing 
+patterns using K-Means. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree is a supervised learning algorithm for classification and regression. It 
+splits data based on feature conditions and forms a tree-like structure. Leaf nodes 
+represent final output. 
+Steps: 
+1. Select Root Node: Choose most significant feature using Information Gain or 
+Gini Index. 
+2. Split Data: Divide dataset based on feature value. 
+3. Recursive Splitting: Continue splitting until subsets are pure or stopping 
+condition met. 
+4. Leaf Nodes: Assign final class or value at leaf nodes. 
+5. Pruning: Remove unnecessary branches to reduce overfitting. 
+6. Testing: Evaluate tree on test data. 
+7. Deployment: Use the final tree for predictions. 
+Example: Predicting if a student will pass or fail based on attendance and study 
+hours using a decision tree model. 

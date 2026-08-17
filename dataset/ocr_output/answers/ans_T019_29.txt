@@ -1,0 +1,186 @@
+ID-T019 
+Name: Sushil mangal Roll no: 29 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (5 marks each) 
+A-a) Define Machine Learning. Explain how it differs from traditional programming with a 
+simple example. 
+Difference from Traditional Programming 
+ Traditional programming relies on explicitly written rules. The programmer defines 
+the exact conditions and logic the computer must follow. 
+ Machine Learning does not require manually defining rules. The model learns those 
+rules on its own from past examples. 
+Simple Example 
+Consider detecting fraudulent transactions: 
+ Traditional approach: Programmer writes rules such as “if transaction is above a 
+certain amount and at odd location, mark as suspicious.” 
+ Machine Learning approach: The model learns patterns of fraud based on thousands 
+of past fraud and non-fraud cases, finding hidden patterns beyond what humans can 
+code manually. 
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and validation 
+data with simple illustrations. 
+Dataset Meaning 
+A dataset is a structured collection of examples used for training and evaluating machine 
+learning models. It contains features and possibly labels depending on the task. 
+Training Data 
+ Used to teach the model and adjust its internal structure. 
+ Illustration: Like a student learning from class notes and textbooks. 
+Validation Data 
+ Used during model development to choose the best version of the model. 
+ Helps in parameter tuning and selecting between different architectures. 
+ Illustration: Similar to chapter-wise tests taken by students to improve their 
+preparation. 
+Testing Data 
+ Used only after the model is finalized. 
+ Checks whether the model performs well on new, unseen data. 
+ Illustration: Equivalent to a final exam that shows the student’s true performance. 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Classification 
+ Predicts categorical classes. 
+ Answers descriptive questions such as “Is it A or B?” 
+ Example: Identifying whether an email is “spam” or “not spam.” 
+Regression 
+ Predicts continuous numerical values. 
+ Answers “how much,” “how many,” or “what amount.” 
+ Example: Predicting the price of a house based on features like area and location. 
+A-e) What is a model in Machine Learning? Explain how a model learns patterns from data 
+during training. 
+Meaning of a Model 
+A machine learning model is a representation of patterns learned from data. It maps inputs to 
+outputs based on the structure it creates during training. 
+How It Learns Patterns 
+ During training, the model repeatedly compares its predictions with the correct 
+answers. 
+ It adjusts internal settings to reduce errors. 
+ Over time, it identifies general trends rather than memorizing data. 
+ The model becomes capable of making accurate predictions even on new data, 
+showing that it has captured real patterns. 
+B] Attempt any 4 (5 marks each) 
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+Hypothesis Space Meaning 
+The hypothesis space includes all possible models or solutions an algorithm can choose 
+from. Each hypothesis represents one possible mapping from inputs to outputs. 
+Relation to Generalization 
+ Good generalization means the model performs well on unseen data. 
+ If the hypothesis space is excessively large, the model may memorize training data, 
+reducing generalization. 
+ If too small, the model may underfit and fail to capture important trends. 
+ The ideal hypothesis space balances complexity with simplicity. 
+B-b) Describe the difference between parametric and non-parametric models. Give suitable 
+examples of each and explain when to use them. 
+Parametric Models 
+ Have a fixed number of parameters that do not increase with dataset size. 
+ Assume a specific structure for the relationship between input and output. 
+ Examples: Logistic Regression, Linear Regression. 
+ Use When: 
+o Data pattern is simple. 
+o Speed and interpretability are important. 
+o Dataset is relatively small. 
+Non-Parametric Models 
+ Do not assume a fixed structure. 
+ Parameters grow with more data, making them more flexible. 
+ Examples: k-Nearest Neighbors, Decision Trees. 
+ Use When: 
+o Relationship between variables is complex. 
+o Large data is available. 
+o Flexibility is more important than simplicity. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic Models 
+ Produce the same output for the same input always. 
+ Do not express uncertainty. 
+ Example: A decision tree choosing the same branch path each time. 
+Probabilistic Models 
+ Outputs include likelihoods, showing uncertainty in prediction. 
+ Provide probability distributions rather than single answers. 
+ Example: A Naive Bayes classifier giving probabilities for each class. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection 
+Gather relevant data from sensors, databases, surveys, or manual entry. 
+2. Data Preprocessing 
+Clean the data by handling missing values, removing noise, and ensuring consistent 
+formatting. 
+3. Feature Engineering 
+Select or create features that best represent the patterns needed for learning. 
+4. Model Training 
+Train the model using the prepared data, letting it learn relationships through iterative 
+improvement. 
+5. Validation and Tuning 
+Test model performance on validation data and adjust parameters to improve results. 
+6. Model Evaluation 
+Use testing data to measure the final performance and check its capability to generalize. 
+C] Attempt only 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two commonly 
+used ML algorithms. 
+Meaning of Algorithm 
+In Machine Learning, an algorithm is a defined procedure that the model follows to learn 
+patterns from data. It provides the rules about how the model should update its internal 
+structure, how it should search through possible solutions, and how it should adjust itself to 
+improve predictions. Essentially, the learning algorithm is the “strategy” that guides how the 
+model becomes better. 
+Role of Algorithm 
+ Decides how the model studies training data 
+ Determines how errors are reduced 
+ Controls how the model improves after each iteration 
+ Guides the model toward producing correct predictions 
+Common ML Algorithms 
+1. Decision Tree Algorithm 
+o Splits data into branches based on conditions. 
+o Helps in both classification and regression tasks. 
+2. Naive Bayes Algorithm 
+o Based on probability and independence assumptions. 
+o Used for text classification tasks like spam filtering. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+Meaning of Data Preprocessing 
+Data preprocessing is the series of steps used to clean, transform, and organize raw data 
+before feeding it to a machine learning model. Raw data often contains inconsistencies, 
+missing values, noise, and irrelevant details, making preprocessing a necessary step. 
+Importance of Data Preprocessing 
+ Improves data quality: Removes mistakes, outliers, and duplications. 
+ Helps models understand data correctly: Ensures features have meaningful scales 
+and formats. 
+ Prevents misleading patterns: Dirty data can push the model toward wrong 
+conclusions. 
+ Enhances accuracy: Better-prepared data produces stronger predictions. 
+ Reduces training difficulty: Clean and structured data makes learning easier and 
+faster. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. Give 
+suitable examples. 
+Features 
+ Features are the input variables used by the model to learn patterns. 
+ They describe the characteristics of a data point. 
+ Example: In predicting house prices, features include number of rooms, location, area, 
+and age of the house. 
+Labels 
+ Labels are the output values the model is trained to predict. 
+ They represent the correct answer for each data point. 
+ Example: The actual selling price of the house is the label. 
+Key Difference 
+ Features → used to explain the input. 
+ Labels → represent the target outcome. 
+ Features guide the model, while labels provide the answers during training. 
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Definition of Overfitting 
+Overfitting occurs when a model learns the training data too precisely, including noise and 
+random fluctuations. As a result, it performs extremely well on training data but poorly on 
+new, unseen data. 
+Why Overfitting Occurs 
+ Model is too complex for the amount of available data. 
+ Training data contains noise or irrelevant details. 
+ The model memorizes instead of learning general patterns. 
+Ways to Reduce Overfitting 
+ Use a simpler model with fewer parameters. 
+ Increase the size of the training dataset. 
+ Apply regularization during training. 
+D] Attempt all (2 marks each) 
+D-a) What is training data? How is it used in building a model? 
+Training data is the portion of the dataset used to teach the model. The model studies training 
+data repeatedly, adjusts itself, and learns patterns that help make accurate predictions. 
+D-b) Define prediction in machine learning. 
+Prediction is the model’s output for new input data after training. It represents what the 
+model believes is the most likely result. 
+D-c) What is a decision tree in simple terms? 
+A decision tree is a model that makes decisions by splitting data into branches based on 
+conditions, similar to answering a series of yes/no questions. 

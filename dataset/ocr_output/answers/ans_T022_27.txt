@@ -1,0 +1,187 @@
+ID-T022 
+Name: Akshay Rajput Roll no: 27 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of 
+features and the role of feature selection in improving model performance. 
+1. Definition 
+Feature Engineering is the end-to-end process of transforming raw data into meaningful, 
+high-quality features that maximize the predictive power of machine learning models. 
+2. Workflow of Feature Engineering 
+1. Data Understanding 
+Study domain context, data schema, relationships, distributions, and identify potential 
+predictive patterns. 
+2. Data Cleaning 
+Handle missing values, outliers, data type errors, inconsistent labels, and duplicates to 
+ensure feature quality. 
+3. Types of Features 
+ Numerical (continuous & discrete) 
+ Categorical (ordinal & nominal) 
+ Textual features 
+ Image features 
+ Time-series derived features 
+ Interaction/engineered features 
+4. Role of Feature Selection 
+ Reduces model complexity 
+ Minimizes overfitting 
+ Improves generalization and speed 
+ Stabilizes model predictions 
+ Helps with interpretability 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+1. CNN Architecture 
+ Input Layer (RGB image) 
+ Convolutional Layers with filters 
+ Activation Layers (ReLU) 
+ Pooling Layers (Max/Avg) 
+ Deep stacks of conv blocks 
+ Fully connected layers 
+ Softmax output 
+2. Working of CNN 
+ CNN learns spatial hierarchies: 
+Pixels → edges → textures → shapes → objects 
+ Multiple filters detect different patterns at each layer. 
+3. Convolution Operation 
+ A small kernel slides over image regions. 
+ Computes dot products to form activation maps. 
+ Learns translation-invariant features. 
+4. Pooling 
+ Reduces spatial dimensions 
+ Retains strongest activations (max pooling) 
+ Controls overfitting 
+ Provides translation invariance 
+5. Feature Maps 
+ Each filter generates a feature map. 
+ Early maps detect edges; deeper ones detect object parts. 
+ Combined feature maps form a high-level representation of the image. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability 
+important, and what are the major techniques used to interpret black-box models? 
+1. Definition 
+Explainable AI (XAI) refers to techniques that make model decisions understandable to 
+humans without losing predictive accuracy. 
+2. Importance of Interpretability 
+ Builds trust in ML systems 
+ Required in regulated fields (healthcare, banking, justice) 
+ Helps detect model bias, instability, or reliance on wrong features 
+ Supports model debugging and compliance 
+ Enables responsible deployment of AI 
+3. Major Techniques in XAI 
+1. LIME – Local approximation models that explain a single prediction. 
+2. SHAP – Feature contribution values using Shapley principles. 
+3. Global Feature Importance – Overall ranking of important variables. 
+4. Partial Dependence Plots (PDP) – Influence of a feature on prediction. 
+5. Counterfactual Explanations – Minimum changes required to flip output. 
+6. Grad-CAM – Heatmaps for CNNs showing image regions important for prediction. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how 
+automation, versioning, and data validation improve reliability. 
+1. Importance of Data Pipelines 
+ Ensures consistent data flow from ingestion to model deployment 
+ Reduces manual intervention 
+ Maintains data quality 
+ Enables reproducibility and scaling 
+ Supports continuous training and monitoring 
+2. Automation 
+ Schedules data ingestion, preprocessing, model training, and deployment 
+ Minimizes human errors 
+ Supports real-time and batch systems 
+ Allows rapid iteration in ML experiments 
+3. Versioning 
+ Tracks dataset versions, schema updates, feature sets, and models 
+ Enables reproducible experiments 
+ Allows rollback to earlier stable versions 
+ Tools include DVC, MLflow, Git 
+4. Data Validation 
+ Schema checks (types, ranges, categories) 
+ Outlier and anomaly detection 
+ Missing value analysis 
+ Prevents corrupted or unexpected data from reaching the model 
+ Ensures stable predictions in production 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). 
+Explain how ML engineers detect drift and handle it in real-world systems. 
+1. Types of Drift 
+1. Concept Drift – Relationship between features and target changes. 
+2. Feature Drift – Distribution of input features shifts. 
+3. Target Drift – Distribution of output labels changes. 
+2. Detecting Drift 
+ Data distribution monitoring 
+ PSI (Population Stability Index) 
+ Statistical tests (KS test, Chi-Square) 
+ Monitoring model performance metrics 
+ Drift detection tools like Evidently AI, Fiddler, WhyLabs 
+3. Handling Drift 
+ Retraining with recent data 
+ Updating feature engineering logic 
+ Using adaptive or online learning models 
+ Automating retraining pipelines 
+ Monitoring drift dashboards and alert systems 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and 
+compare how each method improves model performance in different scenarios. 
+1. Definition 
+Ensemble learning combines multiple models to create a more powerful and stable predictive 
+system. 
+2. Bagging 
+ Builds many models on bootstrap samples 
+ Combines using averaging/voting 
+ Reduces variance 
+ Works well with unstable learners 
+ Example: Random Forest 
+3. Boosting 
+ Models trained sequentially 
+ Each model focuses on correcting previous errors 
+ Reduces bias 
+ Highly effective on structured/tabular data 
+ Examples: AdaBoost, XGBoost, LightGBM 
+4. Stacking 
+ Multiple base models trained in parallel 
+ Meta-learner combines their outputs 
+ Learns complementary strengths of models 
+ Very powerful in competitions 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-2. What is a feature in machine learning? 
+ Input variable used by model 
+ Describes characteristics of data 
+ May be numerical or categorical 
+ Directly affects prediction quality 
+ Essential part of model training 
+B-3. State any two differences between training data and test data. 
+ Training used for model learning; test used for evaluation 
+ Model sees training data; test remains unseen 
+ Training optimizes parameters; test checks generalization 
+ Training is usually larger; test smaller 
+B-4. What is overfitting? 
+ Model memorizes training data 
+ Performs poorly on new data 
+ Caused by high complexity 
+ Leads to low generalization 
+ Controlled using regularization or early stopping 
+B-5. Define classification with an example. 
+ Assigning inputs to predefined classes 
+ Output is categorical 
+ Example: diagnosing disease as “positive/negative” 
+ Learns decision boundaries 
+ Common algorithms: SVM, logistic regression, trees 
+B-6. What is a confusion matrix? 
+ Table showing predicted vs actual labels 
+ Displays TP, FP, FN, TN 
+ Helps understand classification errors 
+ Used to calculate precision and recall 
+ Essential for imbalanced datasets 
+B-7. What do you mean by model accuracy? 
+ Percentage of correct predictions 
+ Measures overall correctness 
+ Accuracy = correct predictions / total predictions 
+ Useful for balanced classes 
+ Simple evaluation metric 
+B-8. State one advantage of using decision trees. 
+ Easy to interpret 
+ Requires little preprocessing 
+ Handles nonlinear relationships 
+ Works with categorical + numerical data 
+ Fast for inference 
+B-9. What is data normalization? 
+ Scaling numerical data to a smaller range 
+ Helps algorithms converge faster 
+ Improves distance-based models 
+ Reduces effect of extreme values 
+ Common methods: Min-Max, Z-score 

@@ -1,0 +1,113 @@
+ID-T024 
+Name: Ishaan kuldeep Roll no: 1 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks each) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable real-world 
+examples. 
+Introduction 
+Machine Learning techniques are broadly classified based on the availability of labeled data. Supervised and 
+unsupervised learning differ mainly in how models learn patterns from data. 
+Supervised Learning 
+Supervised learning uses labeled data, where the input features are paired with correct output labels. 
+Characteristics 
+1. Training data contains known outputs. 
+2. The model learns a mapping between inputs and outputs. 
+3. Used for prediction and classification tasks. 
+4. Performance can be evaluated using accuracy, precision, recall, etc. 
+Examples 
+ Email spam detection using labeled emails (spam / not spam). 
+ Predicting house prices using historical price data. 
+ Medical diagnosis using patient records with known diseases. 
+Unsupervised Learning 
+Unsupervised learning uses unlabeled data, where the model identifies hidden patterns without predefined 
+outputs. 
+Characteristics 
+1. No target labels are provided. 
+2. The model discovers structure and relationships. 
+3. Used for pattern discovery and data exploration. 
+4. Evaluation is more qualitative. 
+Examples 
+ Customer segmentation in marketing. 
+ Grouping similar news articles. 
+ Anomaly detection in network traffic. 
+Key Differences 
+ Supervised learning predicts outcomes; unsupervised learning finds structure. 
+ Supervised requires labeled data; unsupervised does not. 
+ Supervised focuses on accuracy; unsupervised focuses on pattern discovery. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used before training 
+an ML model. 
+Definition 
+Data preprocessing is the process of converting raw data into a clean, structured, and usable format suitable 
+for machine learning models. 
+Importance 
+ Improves data quality. 
+ Enhances model accuracy. 
+ Reduces noise and inconsistencies. 
+ Ensures efficient learning. 
+Common Preprocessing Steps 
+1. Handling Missing Values 
+ Missing data is replaced or removed. 
+ Techniques include mean, median, mode imputation or deletion. 
+ Prevents bias and model failure. 
+2. Data Cleaning 
+ Removes duplicate records and incorrect values. 
+ Corrects inconsistent formats. 
+ Ensures reliability of data. 
+3. Encoding Categorical Variables 
+ Converts non-numeric data into numeric form. 
+ Techniques include Label Encoding and One-Hot Encoding. 
+ Required because ML models work with numbers. 
+4. Feature Scaling 
+ Standardizes feature values to a common range. 
+ Techniques include normalization and standardization. 
+ Prevents dominance of high-magnitude features. 
+A-3. Explain classification and regression problems in machine learning. Give one example of each. 
+Introduction 
+Machine learning problems are categorized based on the type of output they produce. 
+Classification Problems 
+Classification predicts discrete or categorical outcomes. 
+Characteristics 
+1. Output belongs to predefined classes. 
+2. Used when decision boundaries are required. 
+3. Evaluated using accuracy, precision, recall, F1-score. 
+Examples 
+ Spam vs non-spam email classification. 
+ Disease detection (positive / negative). 
+ Handwritten digit recognition. 
+Regression Problems 
+Regression predicts continuous numerical values. 
+Characteristics 
+1. Output is a real-valued number. 
+2. Used for forecasting and estimation. 
+3. Evaluated using RMSE, MAE, R² score. 
+Examples 
+ Predicting house prices. 
+ Estimating temperature or rainfall. 
+ Predicting student exam scores. 
+Key Difference 
+ Classification predicts categories. 
+ Regression predicts numerical quantities. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce overfitting. 
+Definition 
+Overfitting occurs when a model learns the training data too well, including noise, and performs poorly on 
+unseen data. 
+Causes of Overfitting 
+1. Very complex models with many parameters. 
+2. Small or insufficient training data. 
+3. Excessive training epochs. 
+4. High variance in the model. 
+5. Presence of noise in training data. 
+Techniques to Reduce Overfitting 
+1. Regularization 
+ Adds penalty to complex models. 
+ L1 and L2 regularization reduce large weights. 
+ Improves generalization. 
+2. Cross-Validation 
+ Uses multiple data splits for training and validation. 
+ Provides a robust performance estimate. 
+ Prevents dependency on a single dataset split. 
+Other Methods 
+ Early stopping. 
+ Feature selection. 
+ Increasing training data. 

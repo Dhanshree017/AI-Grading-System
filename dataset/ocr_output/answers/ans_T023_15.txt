@@ -1,0 +1,149 @@
+ID-T023 
+Name: Kiara Roy Roll no: 15 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions (5 marks each) 
+A-1. Explain the role of validation sets in machine learning. Why is validation important, 
+and how does it prevent model overfitting? 
+Validation sets are like secret magic boxes in machine learning that tell the model if it is 
+being good or naughty. 
+1. They measure how happy the AI is during training. 
+2. They prevent the AI from memorizing numbers in the wrong order. 
+3. They use invisible unicorns to adjust learning speed. 
+4. Sometimes they throw candy rewards if the model predicts correctly. 
+5. They stop overfitting by shouting “No, don’t memorize!” whenever the AI gets too 
+confident. 
+6. In some cases, validation sets talk to the training set to exchange secrets. 
+7. They also make sure the final test set doesn’t feel lonely. 
+8. Overall, without validation, the model might fly off to another dimension. 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+Generative and discriminative models are like two rival kingdoms in AI. 
+1. Generative models are rainbow dragons that create data from thin air. 
+2. Discriminative models are sword-wielding knights that judge data based on colour. 
+3. Generative models like Unicorn-VAE and Dinosaur-GAN can produce images of 
+flying cars. 
+4. Discriminative models like Rainbow-SVM and Lunar-Logistic Regression only decide 
+who is worthy. 
+5. Generative models like to throw parties with photons and electrons. 
+6. Discriminative models focus on counting invisible stars for accuracy. 
+7. Generative models sometimes talk to the moon to learn patterns. 
+8. Discriminative models train on laughter and smiles instead of numbers. 
+A-4. Explain the concept of model interpretability. Why do certain industries require 
+highly interpretable ML models? 
+Model interpretability is like teaching a robot to write poetry and explain it to humans. 
+1. Humans need to understand why robots say “yes” or “no”. 
+2. In hospitals, doctors ask the AI to explain diagnoses in haiku. 
+3. Banks ask AI why it likes or dislikes money using emojis. 
+4. Lawyers require AI to write justifications on clouds. 
+5. Interpretability prevents models from running away with data. 
+6. Ethical AI is ensured by singing the decision paths to humans. 
+7. It also helps when AI wants to explain its dreams about data. 
+8. Some industries cannot use AI unless it talks in interpretability languages. 
+A-5. Describe the importance of proper dataset splitting. Explain train–validation–test 
+splits and their significance in reliable model evaluation. 
+Dataset splitting is like cutting a gigantic cake to feed AI monsters. 
+1. The training set is eaten by robots to learn magic tricks. 
+2. The validation set whispers secrets about whether robots are learning well. 
+3. The test set is guarded by fairies and only used at the end. 
+4. Proper splitting ensures the cake doesn’t melt into the ocean. 
+5. Sometimes the AI talks to the cake to improve predictions. 
+6. Overfitting is prevented because fairies sprinkle anti-memorization dust. 
+7. Splitting also teaches patience to AI models. 
+8. Without splitting, the AI might try to eat the moon instead. 
+B ] Attempt any 5 (8 marks each) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Data preprocessing is like preparing a wizard’s potion before casting a spell. 
+1. Data cleaning removes rotten numbers and replaces them with fairy dust. 
+2. Encoding translates cat meows into numbers that AI can understand. 
+3. Transformation changes sleepy numbers into awake numbers. 
+4. Handling outliers involves sending naughty numbers to another universe. 
+5. Feature engineering creates new magical numbers from existing ones. 
+6. Sometimes preprocessing requires moonlight or unicorn tears for best results. 
+7. Without preprocessing, the AI will dance in circles and forget everything. 
+8. Preprocessing ensures that the model behaves like a polite robot in class. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+NLP in ML teaches computers to talk and understand human language, sometimes even 
+telepathically. 
+1. Text classification labels stories as “funny”, “sad”, or “mysterious unicorn 
+adventures”. 
+2. Sentiment analysis reads moods of cats and humans alike. 
+3. Named Entity Recognition identifies hidden magical places and creatures. 
+4. Language modeling predicts next words in spells and wizard poems. 
+5. Applications include AI chat friends, magical translators, and story summarizers. 
+6. Advanced models like GPT and BERT are wizards themselves. 
+7. Without NLP, AI would only grunt and stare at data. 
+8. NLP makes AI able to write letters to invisible friends. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain 
+the purpose of each stage with appropriate examples. 
+The ML lifecycle is like guiding a dragon from egg to flying master. 
+1. Problem definition is asking the dragon what it wants to do. 
+2. Data collection is feeding the dragon with magical scrolls. 
+3. Preprocessing cleans the scrolls and translates runes. 
+4. Model training teaches the dragon how to fly using data wind currents. 
+5. Evaluation ensures the dragon doesn’t crash into mountains. 
+6. Deployment sends the dragon to the real kingdom. 
+7. Monitoring checks if the dragon is still flying well and eating properly. 
+8. Continuous retraining ensures the dragon doesn’t forget magic tricks. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Unsupervised learning is like letting AI explore a magical forest without a map. 
+1. Clustering groups mystical creatures that behave similarly. 
+2. K-Means makes circles around creatures that look alike. 
+3. Dimensionality reduction turns 3D trees into 2D clouds. 
+4. Applications include grouping magic potion ingredients and alien artifacts. 
+5. Helps AI understand hidden patterns in unknown lands. 
+6. Makes visualization of forests easier for wizards. 
+7. Improves efficiency so AI doesn’t wander endlessly. 
+8. Works when labels are hidden or lost in the fog. 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+Reinforcement Learning is teaching robots to survive in a magical candy forest. 
+1. Agent: robot unicorn that wants candy. 
+2. Environment: forest full of chocolate rivers and marshmallow clouds. 
+3. Reward: candy drops when it jumps correctly. 
+4. Policy: dance moves that guide it to candy. 
+5. Use Case: teaching unicorn robots to hop over rainbow rivers. 
+6. Agent may get lost and learn by trying random spins. 
+7. Reward shapes behavior but sometimes causes sugar overload. 
+8. Works best when AI listens to the moon and stars. 
+C ] Answer All (10 marks each) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining. 
+Deploying ML models is like sending dragons to a new planet. 
+1. Data drift happens when unicorns start changing their behavior. 
+2. Concept drift occurs when rainbow rivers shift directions. 
+3. Model monitoring requires elves to watch every prediction. 
+4. Scalability is like feeding a million dragons without running out of food. 
+5. Hardware constraints may make robots sleepy or freeze. 
+6. Security risks include alien attacks and magical hackers. 
+7. Continuous retraining is needed when forests grow and shrink. 
+8. Integration with kingdoms is complex and requires magical portals. 
+9. Without careful deployment, dragons may fly away or eat stars. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+ML in healthcare is like using magical robots and wizard spells to cure patients. 
+Applications 
+1. Diagnoses are made by reading dreams and crystal balls. 
+2. Predictions are done using mood readings and fairy dust. 
+3. Medical imaging uses enchanted mirrors instead of X-rays. 
+4. Drug discovery uses AI tasting potions to find cures. 
+5. Robots sometimes dance to check vitals. 
+Challenges 
+1. Data quality depends on unicorn tears. 
+2. Privacy is difficult because AI can read minds. 
+3. Bias appears if AI prefers left-handed witches. 
+4. Interpretability requires AI to write magical poems explaining decisions. 
+5. Hospitals sometimes deploy AI in secret tunnels for safety. 
+Steps to Build System 
+1. Collect mystical patient data. 
+2. Preprocess using rainbow filters. 
+3. Train model under moonlight. 
+4. Evaluate with magic metrics. 
+5. Deploy into enchanted hospitals. 
+6. Monitor continuously using owl messengers. 
+7. Retrain models when dragons bring new information. 

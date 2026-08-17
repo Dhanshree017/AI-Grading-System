@@ -1,0 +1,140 @@
+ID-T018 
+Name: Priyanka joshi Roll no: 17 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Meaning 
+ AdaBoost is boosting method where many weak models join together and act like one 
+strong model. 
+ It improve accuracy by forcing next learner to concentrate on earlier mistakes. 
+Weak Learners Combination 
+ Train simple learner like decision stump. 
+ Each learner gets importance value based on how good it perform. 
+ Final model take weighted vote of all weak learners. 
+ Learner with less error get more power in voting. 
+Weight Updating 
+ After each learner finish, samples that are predicted wrong get higher importance. 
+ Samples predicted correct get lower importance. 
+ So next learner focus more on confusing points. 
+ Weight values are normalized so they become proper distribution. 
+Bias Reduction 
+ Single weak learner have high bias because it learn simple boundary. 
+ Boosting stack multiple learners, each correcting leftover errors. 
+ Step-by-step model adapt to complex pattern and reduce bias strongly. 
+ End result is much more accurate than individual weak model. 
+A-2. Describe working of LSTM networks. Explain input gate, forget gate, output gate, and cell 
+state (no equations). 
+Idea 
+ LSTM handle long-term sequence information without forgetting important things. 
+ It use memory cell and three gates for controlling information flow. 
+Forget Gate 
+ This gate check old memory and decide what part to throw out. 
+ If value is small, memory removed, if value big, memory kept. 
+ Helps prevent storing useless information for long time. 
+Input Gate 
+ This gate decide what new information should enter cell memory. 
+ It checks the current input and previous hidden state. 
+ Only useful details are allowed to update memory. 
+Cell State 
+ It is main long-term memory storage of LSTM. 
+ Forget gate remove old things, input gate add new things. 
+ This memory move forward through time with slight changes. 
+Output Gate 
+ This gate control what part of cell memory should be shown as output. 
+ It generate hidden state which go to next time step. 
+ Helps model decide final useful information at each step. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, 
+independence assumption. 
+Main Idea 
+ Naive Bayes classify data by checking how likely each class is based on input 
+features. 
+ Choose the class with highest likelihood. 
+Conditional Probability 
+ For each feature, model calculates chance of that feature belonging to each class. 
+ These probabilities combine to estimate class score. 
+ Higher probability means more likely class. 
+Independence Assumption 
+ Naive Bayes assume all features are independent from each other. 
+ This assumption is unrealistic but makes model very fast. 
+ Still performs well in many areas like text classification. 
+Working 
+ Learn probabilities from training data. 
+ For new sample, calculate probability for every class. 
+ Pick class with highest chance. 
+A-5. Explain architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, applications in anomaly detection. 
+Architecture Overview 
+ Autoencoder is neural network trained to copy input to output. 
+ It force model to learn compressed pattern called latent space. 
+Encoder 
+ Encoder part take input and shrink it into smaller representation. 
+ It extract important meaning of data while removing noise. 
+Latent Representation 
+ It is small code stored in middle of network. 
+ Contains compressed information of input. 
+ Acts like data fingerprint. 
+Decoder 
+ Decoder take latent code and reconstruct input back. 
+ Quality of output shows how well network learned hidden patterns. 
+Anomaly Detection 
+ Train autoencoder on normal data only. 
+ For normal input, reconstruction is good. 
+ For abnormal input, reconstruction error becomes high. 
+ Large error means anomaly. 
+A-6. Describe workflow of building Deep Learning model (data preparation to evaluation). 
+Data Preparation 
+ Clean dataset, remove noise, handle missing values. 
+ Apply normalization, augmentation for images, tokenization for text. 
+Architecture Selection 
+ Choose suitable network like CNN, RNN, Transformer, etc. 
+ Decide number of layers, activation, units depending on task. 
+Training 
+ Feed data batches to model. 
+ Model adjust weights using optimization algorithm. 
+ Monitor loss to see improvement. 
+Regularization 
+ Use dropout, early stopping, weight decay. 
+ Helps avoid overfitting and improve generalization. 
+Evaluation 
+ Test model on unseen data. 
+ Use accuracy, precision, recall, or other metrics. 
+ Compare results and fine-tune if required. 
+B ] Attempt all (5 marks each) 
+B-1. Workflow of building a Deep Learning model. 
+ Collect and clean dataset. 
+ Preprocess and transform input for network. 
+ Select suitable architecture based on problem type. 
+ Train using batches and optimize weights. 
+ Apply regularization to prevent model from memorizing. 
+ Evaluate using proper metrics on test data. 
+B-2. Clustering Evaluation Metrics — Silhouette, Davies–Bouldin, Inertia 
+Silhouette Score 
+ Check how similar sample to its own cluster and how far from other cluster. 
+ High score means clear, well-separated clusters. 
+Davies–Bouldin Index 
+ Measure average similarity between clusters. 
+ Lower value means better clusters. 
+Inertia 
+ Sum of distances between points and cluster center. 
+ Lower inertia means compact clusters. 
+B-3. Reinforcement Learning with 2 examples 
+Meaning 
+ RL is learning method where agent learn by taking actions and receiving reward. 
+ Agent try to maximize long-term reward. 
+Examples 
+ Game playing like chess or Atari games. 
+ Robot navigation like moving through maze. 
+B-4. NLP Pipeline — cleaning, tokenization, embeddings, sequence modeling 
+Text Cleaning 
+ Remove noise like punctuation, stopwords, extra spaces, symbols. 
+Tokenization 
+ Split text into words or sub-words. 
+ Helps convert text to units machine can handle. 
+Embeddings 
+ Convert tokens into dense numeric vectors. 
+ Capture semantic meaning. 
+Sequence Modeling 
+ Use RNN, LSTM, GRU, or Transformers to model order of words. 
+ Helps understand context and produce predictions. 

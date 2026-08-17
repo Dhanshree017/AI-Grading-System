@@ -1,0 +1,18 @@
+
+
+--- PAGE 1 ---
+ID - T007
+Machine Learning Examination
+Date : 23-05-2023
+
+A] Attempt any 4 (20 marks)
+a ) Define AI and Write applications of machine learning .
+b )Explain types of machine learning with example .
+c ) what are the steps in building ML model
+d ) what are the steps in data preprocessing
+e )Explain naive bayes algorithm in detail , give example.
+B] Attempt all (20 marks)
+a) write a note on random forest. Give example of it
+b )write a note on SVM, explain types of SVM in detail.
+c )explain different types of clustering algorithm.
+d )what is Decision Tree, explain steps in making decision tree

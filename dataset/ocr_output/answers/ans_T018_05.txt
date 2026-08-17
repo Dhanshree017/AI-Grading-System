@@ -1,0 +1,125 @@
+ID-T018 
+Name: varsha more Roll no: 5 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Working process: 
+1. Initialize weights: 
+All training samples begin with equal weights, meaning the model initially treats each 
+sample as equally important. 
+2. Train weak learner: 
+A simple classifier such as a decision stump is trained on the weighted dataset. The 
+learner tries to separate the data but may misclassify several points. 
+3. Calculate error: 
+The weighted error is computed. Misclassified samples contribute more to the error. 
+4. Update learner weight: 
+Learners with lower error get higher influence in the final model. Learners with higher 
+error get lower influence. 
+5. Update sample weights: 
+Misclassified samples get their weights increased so that the next learner pays more 
+attention to them. Correctly classified samples get their weights decreased. 
+6. Combine weak learners: 
+The final classifier is a weighted majority vote (classification) or weighted sum 
+(regression). Each learner contributes based on its accuracy. 
+How boosting reduces bias: 
+ Weak learners individually have high bias (simple models). 
+ By focusing each new learner on hard cases and combining their knowledge, the 
+ensemble approximates more complex patterns. 
+ Over multiple rounds, the model gains the capacity to represent nonlinear boundaries, 
+reducing overall bias significantly. 
+A-2. Describe working of LSTM networks. Explain input gate, forget gate, output gate, and cell 
+state. 
+LSTM networks extend standard RNNs by introducing gated mechanisms that preserve long
+term information and prevent vanishing or exploding gradients. They contain internal 
+memory (cell state) that is carefully controlled. 
+Main components: 
+1. Cell state: 
+Acts like a conveyor belt carrying long-term information through time. It allows 
+information to flow largely unchanged unless modified by gates. 
+2. Forget gate: 
+Determines which parts of previous memory should be removed. If a part is 
+unimportant for future predictions, this gate reduces it. 
+3. Input gate: 
+Controls how much new information should enter the cell state. It works with a 
+candidate vector that proposes what new information should be added. 
+4. Output gate: 
+Controls what part of the updated cell state becomes the output (hidden state) at the 
+current time step. 
+Overall process per time step: 
+ First, the model forgets irrelevant old information. 
+ Then it selects what new information to write into memory. 
+ The cell state is updated based on these two decisions. 
+ Finally, the output gate filters the memory to produce the hidden state sent to the next 
+layer. 
+This gate-based memory control enables LSTMs to learn dependencies across long 
+sequences such as sentences, audio, or time series.
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, 
+independence assumption. 
+Naive Bayes is a probabilistic classifier based on Bayes’ theorem. It predicts the class that is 
+most probable given the observed features. 
+Conditional Probability 
+ The classifier evaluates how likely the features are under each class. 
+ It multiplies the prior probability of each class with the likelihood of observing the 
+feature values. 
+Independence Assumption 
+ Naive Bayes assumes features are conditionally independent given the class. 
+ Although this assumption is often unrealistic, the model performs surprisingly well, 
+especially in text classification. 
+Variants 
+ Multinomial NB: for text with word counts. 
+ Bernoulli NB: for binary features. 
+ Gaussian NB: for continuous features. 
+Advantages 
+ Fast training and prediction. 
+ Works well with high-dimensional data. 
+ Handles irrelevant features gracefully. 
+Limitations 
+ Poor performance when strong feature dependencies exist. 
+ Sensitive to feature representation. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+Autoencoders are neural networks designed to learn compressed representations of data and 
+reconstruct them. 
+1. Encoder 
+ Transforms input into a lower-dimensional latent vector. 
+ Gradually reduces dimensionality and extracts meaningful features. 
+2. Latent Representation 
+ A compact code containing essential information about the input. 
+ Controls the level of compression and the type of information learned. 
+3. Decoder 
+ Reconstructs input data from the latent representation. 
+ Attempts to produce an output close to the original input. 
+4. Training Objective 
+ The network is trained to minimize reconstruction error between input and output. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+ Data Preparation: 
+Collect data, clean it, handle missing values, balance classes, normalize, and create 
+train/validation/test splits. 
+ Architecture Selection: 
+Choose model type (CNN, RNN, transformer, MLP) based on the task. Decide 
+number of layers, neurons, and activation functions. 
+ Training: 
+Feed batches of data, compute loss, backpropagate errors, and update weights using an 
+optimizer. 
+ Regularization: 
+Apply dropout, early stopping, weight decay, or data augmentation to prevent 
+overfitting. 
+ Evaluation: 
+Measure performance on unseen data using appropriate metrics and analyze errors for 
+improvement. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin Index, and 
+Inertia. Describe how they measure cluster quality. 
+ Silhouette Score: 
+Measures how well a sample fits within its cluster compared to other clusters. 
+High values indicate dense, well-separated clusters. 
+ Davies–Bouldin Index: 
+Evaluates average similarity between each cluster and its most similar cluster. 
+Lower values mean better-separated clusters. 
+ Inertia (Within-Cluster Sum of Squares): 
+Measures compactness of clusters. 
+Lower inertia means points are closer to their cluster centers. 
+Together, these metrics measure separation, cohesion, and cluster compactness. 

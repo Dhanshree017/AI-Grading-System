@@ -1,0 +1,64 @@
+ID-T031 
+Name: Anuja Patel Roll no: 306513 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Attempt All (each 5 marks) 
+A-3. What is the role of constraints in machine learning algorithms? 
+Constraints are formal restrictions or requirements imposed on the learning process to ensure 
+the resulting model is useful, safe, and generalizes well. 
+ Structural Regularization: Constraints are primarily used for Regularization ($L_1, 
+L_2$). By constraining the magnitude of the weight vector ($\|w\|$), we limit the 
+model's complexity, effectively preventing it from "memorizing" the training data 
+(overfitting). 
+ Domain Knowledge Integration: Constraints allow us to inject Inductive Bias or 
+physical laws into the model. For instance, in a physics-informed neural network, we 
+can constrain the output to obey the Law of Conservation of Energy. 
+ Fairness and Ethics: Constraints play a massive role in Algorithmic Fairness. We 
+can add constraints to ensure that the model’s predictions are statistically independent 
+of protected attributes like race or gender. 
+ Operational Feasibility: Hard constraints ensure that model outputs are logically 
+sound (e.g., ensuring a probability output stays in the range $[0, 1]$ or that a predicted 
+price is never negative). 
+ Support Vector Machines (SVM): In SVMs, the role of constraints is central; the 
+algorithm solves a Constrained Optimization Problem to find the hyperplane that 
+maximizes the margin while correctly classifying points. 
+A-4. Explain the difference between model performance and model reliability. 
+While performance measures "how well" a model works on a specific dataset, reliability 
+measures "how consistently" it works across time and changing conditions. 
+ Model Performance (Static Accuracy): This is a quantitative measure of the model's 
+predictive power on a fixed test set. Metrics include Accuracy, Precision, Recall, and 
+AUC-ROC. It is a snapshot of the model's success in a "controlled" environment. 
+ Model Reliability (Dynamic Robustness): Reliability is the probability that the 
+model will perform its intended function without failure for a specified period under 
+specified conditions. It accounts for Robustness against noise and Resilience against 
+data drift. 
+ The Generalization Gap: A model with high performance but low reliability often 
+has a large "Generalization Gap"—it excels on training/test data but fails on real-world 
+"out-of-distribution" data. 
+ Drift Sensitivity: A reliable model is one that is resistant to Concept Drift (changes 
+in the relationship between $x$ and $y$) and Data Drift (changes in the distribution 
+of $x$). 
+ Operational Context: High performance is a requirement for research, but high 
+reliability is a requirement for Production-Grade AI (e.g., medical diagnostics or 
+autonomous flight). 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback loops are the fundamental mechanism for Continuous Learning and system 
+evolution, moving beyond "one-shot" training to iterative refinement. 
+ Backpropagation (The Mathematical Loop): At the algorithmic level, the "Loss 
+Function" provides feedback. The error is propagated back through the layers to adjust 
+weights, minimizing the objective function through successive iterations. 
+ Human-in-the-Loop (HITL): Feedback from domain experts (e.g., doctors reviewing 
+AI diagnoses) is used to relabel "uncertain" cases. This high-quality feedback is then 
+used to retrain the model, significantly improving its precision in edge cases. 
+ Reinforcement Learning (RL): In RL, the feedback is a Reward Signal. The system 
+learns an optimal policy by maximizing cumulative rewards received from the 
+environment after each action. 
+ Active Learning: The model identifies instances where its "Confidence Score" is low 
+and proactively seeks feedback for those specific points. This makes the learning 
+process more efficient by focusing on the most informative data. 
+ Model Monitoring & MLOps: In production, user feedback (like "thumbs down" on 
+a recommendation) provides real-time data to detect Model Decay. This triggers 
+automated retraining pipelines to keep the model aligned with current user behavior. 
+ Closing the Virtuous Cycle: Effective feedback loops create a "Data Flywheel"—
+better models lead to more users, more users provide more feedback, which in turn 
+creates even better models. 

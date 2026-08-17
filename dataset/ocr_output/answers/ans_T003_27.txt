@@ -1,0 +1,153 @@
+ID-T003 
+Name : Shree Gupta Roll no : 27 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 (Marks 8) 
+A-1. Define supervised, unsupervised, reinforcement? 
+These three categories define how a machine learning model learns based on the type 
+of data and feedback it receives. 
+1. Supervised Learning: The model learns from a dataset where every piece of data 
+is labeled with the correct output. The model's job is to build a rule that maps 
+the input to the known output by minimizingthepredictionerror. This is used for 
+tasks like classification (predicting categories) and regression (predicting 
+continuous numbers). 
+2. Unsupervised Learning: The model is given unlabeleddata and must work 
+independently to discover hiddenstructures or intrinsic patterns. Since there are 
+no correct answers to check, the model uses internal logic, like distance, to group 
+similar data points together (clustering) or simplify the features (dimensionality 
+reduction). 
+3. Reinforcement Learning (RL): This is a goal-oriented process where an agent 
+learns to make optimal sequentialdecisions through trial−and−error interaction 
+with an environment. The agent receives a reward for good actions, and its goal 
+is to find the best policy to maximizethecumulativereward over the long term. 
+A-2. Explain the difference between training and test sets. 
+It's essential to divide the data into these two sets to ensure the model can actually 
+work on newdata and to prevent cheating on the final score. 
+ Training Set: This is the largestportion of the dataset, used directly by the 
+algorithm to fititsparameters (learn the weights and rules). The model sees this 
+data many times as it tries to reduce the error. Its purpose is to teach the model 
+the underlying patterns. 
+ Test Set: This is a part of the data that is keptcompletelyseparate and 
+onlyusedonce at the very end. The model never sees this data during learning or 
+tuning. Its purpose is to provide the final,honestevaluation of the model's 
+generalizationability—that is, how well it performs in the real world. 
+A-3. What is the difference between parametric and non-parametric models? 
+The difference lies in whether the model makes fixed assumptions about the data's 
+structure. 
+ Parametric Models: These models assume a fixed,simplestructure (like a straight 
+line) and learn a finitenumberofparameters. Since the model is defined by these 
+few learned numbers, the original training data isn′tneeded for predictions once 
+training is done. They are often fast but can suffer from highbias if the structure 
+is wrong. Example: LinearRegression. 
+ Non-Parametric Models: These models makenoassumptions about the data's 
+shape, allowing them to be highlyflexible. Their complexity often grows with the 
+data size, and they typically muststoretheentiretrainingset to make predictions. 
+They can achieve lowbias but often have highvariance (prone to overfitting). 
+Example: K−NearestNeighbors(KNN). 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting happens when a model becomes toocomplex and learns the training data, 
+including all the noise and small errors, tooexactly. This causes the model to perform 
+perfectlyonthetrainingdata but failbadlyonnewdata. It’s a problem of highvariance. 
+You can avoid overfitting using these methods: 
+1. Regularization: This technique adds a penalty to the model's error function, which 
+discourages the parameters (weights) from becoming too large. This forces the 
+model to stay simpler and more general. L1 and L2 are common types. 
+2. Increase Data: The simplest solution is to getmore,diversetrainingdata. A larger 
+dataset naturally smooths out noise, forcing the model to learn the true, general 
+patterns. 
+3. Early Stopping: During iterative training (like in neural networks), you stop the 
+process as soon as performance on a separate validationset starts getting worse, 
+even if the training performance is still improving. 
+B) Attempt All (Marks 15) 
+B-1. Explain the bias-variance tradeoff. 
+The bias-variance tradeoff is a central idea that states the total error of a model is a 
+balance between two conflicting types of error, Bias and Variance. You usually can't 
+minimize both at the same time. 
+1. Bias (Underfitting Error): This is the error from the model being toosimple. If 
+you use a simple straightline model on data that is actually curved, the model 
+will underfit and perform poorly everywhere. This is highbias. 
+2. Variance (Overfitting Error): This is the error from the model being toocomplex. 
+The model memorizesthespecifictrainingset, making it very sensitive to small 
+changes or noise. This leads to overfitting and terrible performance on new data. 
+The tradeoff is that if you make the model morecomplex to reducebias, you will 
+increasevariance. We must find the sweetspot of complexity where the total error (Bias 
+squared plus Variance) is at its lowest point. This gives the best generalization ability. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is a non−parametric algorithm known for being a lazylearner because 
+itdoeszeroworkduringtraining (it just stores the data). All the computation happens 
+when it needs to make a prediction. 
+The prediction process is as follows: 
+1. New Point Arrives: A new data point (Xnew) needs to be classified or predicted. 
+2. Distance Measurement: The model calculates the distance (most commonly 
+Euclidean distance) from Xnew to everysinglepoint in the stored training dataset. 
+3. Neighbor Selection: It identifies the K points that are the closest to Xnew. The 
+value of K is set beforehand (often an odd number). 
+4. Final Vote: 
+o For Classification, the final answer is decided by a majorityvote of the K 
+neighbors' classes. 
+o For Regression, the final answer is the average value of the K neighbors. 
+Because it relies on distance, the data mustbescaled (normalized) before using KNN. 
+B-3. What is dimensionality reduction, and provide examples? 
+DimensionalityReduction is a technique used to reducethenumberofinputfeatures 
+(columns) 
+in 
+a 
+dataset 
+keepsthemostimportantinformation. 
+while 
+making 
+sure 
+the 
+model 
+It's necessary because of the CurseofDimensionality, where having too many features 
+makes the data too sparse for many algorithms to work well. Benefits include making 
+the data easier to visualize, reducing trainingtime, and lowering the memory needed. 
+Examples of techniques: 
+ Principal Component Analysis (PCA): This is a linear method that finds new 
+directions (called principalcomponents) in the data that explain the 
+mostvariance. It then uses only the top few components, effectively creating a 
+compressed version of the data. 
+ t-distributed Stochastic Neighbor Embedding (t-SNE): This is a non−linear 
+method used mainly for visualization (to plot high-dimensional data in 2D or 
+3D). It ensures that points that are close together in the high-dimensional space 
+remain close together in the new low-dimensional plot. 
+B-4. How would you choose an algorithm for a specific dataset? 
+Choosing the right algorithm is a logical process that involves matching the problem's 
+needs with the algorithm's strengths. 
+1. Define the Goal: First, check the required output. If it's a category, I need a 
+Classifier. If it's a number, I need a Regressor. This narrows down the options 
+immediately. 
+2. Analyze Data Shape: Look at the data's relationships. If they are simpleandlinear, 
+a LinearModel is best because it's fast and easy to explain. If the relationships are 
+complexandnon−linear, I would choose a tree−basedmodel (like Random Forest 
+or XGBoost). 
+3. Check Data Size: If the datasetissmall, I would avoid complex models (like Deep 
+Learning) to prevent overfitting. For verylargedata, I would choose scalable and 
+powerful algorithms, often ensemblemethods like Gradient Boosting. 
+4. Consider Constraints: If the project requires highinterpretability (like in medical 
+diagnosis), I must pick a transparentmodel (like a simple Decision Tree). If 
+prediction speediscritical, I'd pick a model that makes fast inferences. 
+5. Benchmark: I would test a fewsuitablecandidates (e.g., Logistic Regression, 
+Random Forest, XGBoost) using cross-validation. The final algorithm is the one 
+that gives the bestperformancescore while meeting all the business constraints. 
+B-5. Explain bagging and boosting. 
+Bagging and Boosting are the two most powerful types of EnsembleLearning, which 
+means they combine the predictions of multipleweakmodels to create one 
+strong,accuratemodel. 
+1. Bagging (Bootstrap Aggregating): 
+o Mechanism: It trains many independent models (usually Decision Trees) at 
+the same time. Each model is trained on a randomsampleofthedata (called 
+a bootstrap sample). 
+o Goal: The final result is found by averaging or voting the predictions of all 
+the independent models. Bagging is primarily used to reducevariance and 
+preventoverfitting because the errors of the individual models cancel each 
+other out. 
+o Example: RandomForest. 
+2. Boosting: 
+o Mechanism: It trains models sequentially (one after the other). Each new 
+model focusesoncorrectingtheerrors made by the previous models in the 
+sequence. It does this by giving higherweight to the data points that were 
+previously classified wrong. 
+o Goal: Boosting's primary aim is to reducebias and transform many weak 
+learners into a single, highly accurate predictor. It is known for achieving 
+state-of-the-art results. 
+o Example: XGBoost and GradientBoostingMachines(GBM). 

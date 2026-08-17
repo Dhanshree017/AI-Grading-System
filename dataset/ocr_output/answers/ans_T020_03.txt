@@ -1,0 +1,79 @@
+ID-T020 
+Name: Kinjal mehta Roll no: 3 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Data drift is like when the data start walking away from the model idea, so model get 
+confuse because it think old thing but new thing come. Concept drift is when meaning itself 
+change, like dog become cat in people mind. These kinds drifts break model because 
+prediction engine get tired and give wrong output after some weeks. There are many drift 
+like upside drift, bending drift and sudden blast drift where pattern randomly jump. To detect 
+drift we checking random graph shapes and if graph shaking too much then drift is exist. 
+Handling it done by adding more wires in model or shaking dataset in bucket so noise get 
+remove. Sometime company also reboot whole model to remove drift emotion. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Embedding is basically putting things inside other things like putting word inside number 
+box. ML use embedding so computer can remember smell of data. For text, computer take 
+each word and stretch it into long floating socks that encode word emotion. For images, 
+embedding machine squeeze picture into very tiny dot so model not feel heavy to carry. For 
+categorical data, model give random numbers to category and call it embedding even if 
+meaning not match. These embeddings help because neural network prefer small snacks not 
+big dishes so data become edible. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Imbalance dataset is when one class very fat and other class very skinny, so model only talk 
+with fat class and ignore skinny class. Because of this accuracy look big but truth is model 
+blind. Cost-sensitive learning means model has to pay more money for mistake so it behave 
+careful. Synthetic sample generation means drawing cartoon copies of small class using 
+crayons. Threshold change means adjusting slider until prediction feel comfortable. But 
+these techniques sometimes break because computer get confused with fake people. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Model monitoring is watching model like security guard watching shop. We track 
+parameters like prediction noise, temperature of dataset, and how many times model is 
+bored. If monitoring stop then model start doing mischief like predicting apples as traffic 
+light. Continuous monitoring is required so model remember its duty and not sleep on job. 
+Sometime also track error vibration, drift smell, and accuracy humidity. All these keep 
+system alive. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch learning is when model study whole giant book at one time and get headache. Online 
+learning is when model read one line at a time like slow reader. Online learning used when 
+data keep falling like rain and cannot store all. But challenges are big because online learning 
+can forget older lesson and also model get stressed by fast data drops. Batch learning is calm 
+but slow. Online learning is fast but sometimes panic. 
+SECTION B – 
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Feature leakage is when data leak out like water leaking from bucket, and model drink that 
+leaked water to cheat. Causes include giving model future information like telling tomorrow 
+weather before prediction. Leakage impact performance by making model too smart during 
+training but become dumb in real life because leak pipe closed. Sometimes leakage also 
+happen because dataset jealous and share secrets between columns. This break everything 
+because model think it is genius but it is only cheating child.
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Transfer learning is when one model donate its brain to another baby model so baby not start 
+from zero. It improve development because baby model already know random shapes and 
+smells. Useful when dataset very tiny like 5 pictures or when problem too boring to train 
+from scratch. Also used in medical image and wildlife scanning but sometimes transfer 
+learning bring old habits like predicting cat even when dog shown. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Hyperparameter search is like choosing best spice for cooking. Grid search try every spice 
+combination even if silly, so it very slow and get tired. Random search just throw spices 
+randomly and sometime find lucky good one. Grid search organized but waste time, random 
+search chaotic but fun. Purpose is to find best setting so model stop complaining. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Reproducibility means if you run same code again you get same mess. Important so scientist 
+trust each other and not blame computer ghost. Practices include writing seeds on paper, 
+storing dataset in fridge, and writing code in notebook so you remember which button 
+pressed. Also keeping environment same so model not catch allergy. Reproducibility prevent 
+chaos. 

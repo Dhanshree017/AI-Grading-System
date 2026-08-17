@@ -1,0 +1,150 @@
+ID-T007 
+Name: Aakash Shrivastav Roll no: 30 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-b) Explain types of machine learning with example 
+Machine learning is mainly divided into three main types and some other 
+extended types. It is based on how system learn from data and what kind 
+of feedback it get. Machine learning means computer learn pattern and 
+make prediction from data. 
+1. Supervised Learning: In this type both input and output data are 
+given. The algorithm learn by comparing output and predicting 
+correct result. It works like a teacher guiding student. 
+o Example: Email spam detection where data is labeled as spam 
+or not spam. 
+2. Unsupervised Learning: There are no output labels. The model try to 
+find structure or pattern itself by grouping similar data. 
+o Example: Market segmentation where customers are grouped by 
+purchase habit. 
+3. Reinforcement Learning: It is learning by doing. The system interact 
+with environment and learn by reward or penalty. 
+o Example: Game playing like chess or robot navigation where 
+system learn by reward. 
+4. Semi-Supervised Learning: It use both labeled and unlabeled data. It 
+is helpful when labeling is costly or time taking. 
+o Example: Using a small labeled dataset and a large unlabeled 
+dataset to train medical image classifier. 
+5. Self-Supervised Learning: In this new type, labels are created 
+automatically from data. 
+o Example: In NLP, a model predict next word in a sentence 
+automatically created from data. 
+A-c) What are the steps in building ML model 
+Building a machine learning model requires systematic steps from data to 
+evaluation. Every step is important for getting a model that perform good 
+on new data. 
+1. Understanding the problem: Before building model we must 
+understand what problem to solve and what kind of prediction is 
+needed. 
+2. Data collection: Collecting good quality data from various sources for 
+training. 
+3. Data preprocessing: Cleaning and transforming data to make it 
+suitable for algorithm. 
+4. Feature selection and engineering: Selecting important variables that 
+help model learn pattern. 
+5. Model selection: Choosing correct algorithm depending on data type 
+like regression, classification, etc. 
+6. Model training: Feeding training data to algorithm so it can learn 
+pattern. 
+7. Model testing and validation: Testing on unseen data to check 
+accuracy and generalization. 
+8. Deployment: Using the model in real-world environment after it 
+performs well. 
+Example: In a student grade prediction project, we first collect data, clean 
+it, train regression model, test it, and finally deploy it to predict marks. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing is a process of preparing raw data into clean format. 
+Because raw data may contain missing values, errors, duplicates, or noise. 
+Proper preprocessing helps model to learn better. 
+1. Data collection: Collect raw data from sensors, websites, or files. 
+2. Data cleaning: Remove missing, duplicate, or wrong entries which 
+can disturb training. 
+3. Data transformation: Convert categorical data into numerical using 
+encoding. 
+4. Feature scaling: Normalize or standardize numerical data to make 
+features on same scale. 
+5. Data integration: Combine multiple datasets into one single dataset. 
+6. Feature selection: Keep only the most important features and remove 
+useless ones. 
+7. Data splitting: Divide dataset into training, validation, and testing 
+parts. 
+Example: In an employee dataset, missing salaries are filled, categorical 
+departments are encoded, and data is split into 70% training and 30% 
+testing. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naïve Bayes is a simple probabilistic classifier based on Bayes theorem. It 
+assume all features are independent of each other, which is a simplification 
+but works effectively in many real applications. It uses probability to find 
+the most likely class for given data. 
+1. It uses the formula P(A|B) = (P(B|A) * P(A)) / P(B). 
+2. It is mostly used for text classification and sentiment analysis. 
+3. It works even when dataset is small and noisy. 
+4. It is fast and easy to implement for beginners. 
+5. It performs well in multiclass classification. 
+6. It is not perfect when features are strongly dependent. 
+7. It gives probability output for each class which is easy to interpret. 
+Example: Naïve Bayes is used in spam filtering. It calculates probability 
+that an email is spam based on presence of certain words like “offer”, 
+“win”, or “free”. 
+B] Attempt all (20 marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble learning method that combines multiple 
+decision trees to give better prediction. It works on the principle of 
+bagging, where each tree is trained on random subset of data and features. 
+It takes the average or majority vote of trees for the final result. 
+1. It helps to reduce overfitting that single tree often suffers from. 
+2. It gives better accuracy and stability than a single model. 
+3. It can handle large datasets and missing data effectively. 
+4. It is used for both classification and regression problems. 
+5. It gives feature importance score which helps in feature selection. 
+6. It is less interpretable but more powerful. 
+7. It can handle noisy and unbalanced data. 
+Example: Random Forest can be used to predict whether a customer will 
+default on a loan based on features like income, credit score, and age. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Support Vector Machine (SVM) is a supervised learning algorithm used for 
+classification and regression. It separates classes by finding the best 
+boundary or hyperplane that maximizes margin between them. 
+1. SVM tries to make large margin between different data classes. 
+2. It can handle linear as well as non-linear data using kernels. 
+3. It performs well on medium-sized datasets. 
+4. It can be used for text and image classification also. 
+Types of SVM: 
+ Linear SVM: When data can be separated by a straight line or plane. 
+ Non-linear SVM: When data is complex, kernel tricks like RBF or 
+polynomial are used. 
+ Multi-class SVM: It extends SVM to handle more than two classes 
+using one-vs-rest or one-vs-one strategy. 
+Example: SVM is used to classify handwritten digits in the MNIST dataset 
+by separating digit images using feature vectors. 
+B-c) Explain different types of clustering algorithm 
+Clustering is an unsupervised method used to group similar data points 
+together. It helps in finding hidden patterns in unlabelled data. 
+1. K-Means Clustering: Divides data into k clusters by minimizing 
+distance within cluster. 
+2. Hierarchical Clustering: Creates tree-like structure of clusters and 
+merges them step by step. 
+3. DBSCAN: Groups data based on density and removes noise and 
+outlier points. 
+4. Mean Shift: Moves data points toward areas of high density to form 
+clusters. 
+5. Agglomerative Clustering: Starts from small clusters and merge them 
+into large clusters. 
+6. Spectral Clustering: Uses graph and eigenvalues for separating non
+linear clusters. 
+Example: K-Means clustering is used in marketing to group customers 
+based on purchase behavior and spending habits. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree is a supervised machine learning algorithm used for both 
+classification and regression tasks. It splits data into branches based on 
+feature conditions to reach final output at leaf nodes. It works like a 
+flowchart of decisions. 
+Steps in making Decision Tree: 
+1. Select the best feature to split using Gini Index or Information Gain. 
+2. Split the dataset into subsets based on that feature’s values. 
+3. Repeat the process for each subset recursively. 
+4. Stop when all data belongs to one class or no features left. 
+5. Prune the tree to remove unnecessary branches. 
+6. Use the final tree for making prediction on new data. 
+Example: Decision tree is used in predicting if a student will pass or fail 
+based on study hours, attendance, and assignment submission. 

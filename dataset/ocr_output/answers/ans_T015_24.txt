@@ -1,0 +1,158 @@
+ID-T015 
+Name: Sonakshi Prajapati Roll no: 24 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (Each 8 Marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, F1 
+score help in understanding model performance. 
+For regression, we have MSE, RMSE, MAE which measure how far predicted 
+number is from actual. Small value means model is happy. 
+Conclusion: 
+Thus evaluation metrics is like exam report card for model, where accuracy 
+and recall show its real intelligence. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by
+step and discuss the importance of the parameter k. 
+Introduction: 
+KNN algorithm is like GPS navigation system which find shortest path 
+between two roads. It not care about data but only about traffic lights. 
+Explanation: 
+First step, it take one road and compare with all other roads using 
+speedometer. Then it choose K number of nearest gas station. After that it 
+decide which road have more trees and mark it as target class. 
+Parameter K means kilometer, so if K is big means you travel far distance. 
+Small K means you only go near shop. 
+Conclusion: 
+So KNN used in Google Maps for finding nearby petrol pumps and fast food 
+outlets. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds 
+models sequentially and how weak learners are combined to form a strong 
+model. 
+Introduction: 
+Gradient boosting is a rocket fuel technique that boost rocket in machine 
+learning sky. It works by mixing gradients with boosters. 
+Explanation: 
+First, it take old model and apply gradient oil. Then it build another model 
+on top using fire of booster. Every time rocket become more powerful 
+because weak engines combine to form one big turbo. When final model built, 
+it can go to Mars of accuracy. 
+Sequentially means rockets launched one after another like Diwali crackers. 
+Conclusion: 
+So gradient boosting help models fly higher and faster in data galaxy using 
+gradient fuel. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models 
+are used to solve new tasks with limited data and mention common 
+applications of transfer learning. 
+Introduction: 
+Transfer learning means using knowledge of old model to do new task without 
+starting from zero. 
+Explanation: 
+For example, a model trained to recognize cats and dogs already know how 
+edges, eyes, shapes look like. That same model can be used to detect tigers 
+with few images. The pre-trained model is like senior student who already 
+studied basics and help junior student by giving notes. 
+Common pre-trained models are VGG, ResNet, BERT etc. Transfer learning 
+used in image classification, NLP, speech and even medical diagnosis. 
+Conclusion: 
+Thus transfer learning save time, data and power by using previous brain of 
+model for new problem. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are 
+important and describe common hyperparameters for algorithms like Decision 
+Trees, Neural Networks, and Gradient Boosting models. 
+Explanation: 
+In decision tree, hyperparameter is like fertilizer for growing branches. More 
+fertilizer means tree grow tall, less means small. In neural network, 
+hyperparameter is size of wire connected between neuron. In gradient 
+boosting, hyperparameter means how fast wind blow between trees. 
+If hyperparameter too high, machine overheat and produce smoke. 
+Conclusion: 
+So hyperparameter must be controlled by fan or AC so that machine work 
+smooth and does not burn. 
+SECTION B – Attempt Any 6 (5 marks each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is like washing dirty data before giving it to model. It is 
+very important because raw data always come in bad shape and full of noise 
+and missing values. 
+Explanation: 
+Main step start from data cleaning where missing values are fill using mean, 
+mode or sometimes just deleting row. Then we do encoding because computer 
+not understand text so we convert into number. Then come feature scaling 
+so all values stay in same range like 0 to 1. 
+We also do data splitting into train and test part to make sure model not 
+cheating. 
+If outliers are present we remove or fix them so data not disturb model. 
+Conclusion: 
+So preprocessing make data clean, smooth and ready for model training just 
+like cleaning rice before cooking. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting 
+methods. 
+Introduction: 
+Ensemble learning is when many clothes are put together in one washing 
+machine so they can clean better together. 
+Explanation: 
+Bagging method means putting all dirty clothes in one big bag and then 
+washing together with equal soap. Boosting means washing same clothes again 
+and again till they shine. Weak clothes become strong after repeated washing. 
+Bagging reduce over soap problem and boosting improve shine of fabric. 
+Conclusion: 
+Hence ensemble learning is most used in laundry management where teamwork 
+of clothes increase cleaning accuracy. 
+B-c) Explain the need for feature scaling and differentiate between normalization 
+and standardization. 
+Introduction: 
+Feature scaling is needed because all features in data are not in same range 
+and this confuse the model. 
+Explanation: 
+When one column has value like 10000 and other has 0.1, the model think 
+big value is more important. So we scale them to make all equal. 
+Normalization means converting data in between 0 to 1 range. It change 
+shape of data but keep relation same. 
+Standardization make data have mean 0 and standard deviation 1. It center 
+data around zero. 
+Scaling help algorithm like KNN, SVM, Gradient descent to work faster and 
+accurate. 
+Conclusion: 
+Feature scaling is like giving same height shoes to everyone so all look equal in 
+group photo. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross entropy loss is basically when two wires of electric current cross each 
+other and energy lost as heat. 
+Explanation: 
+When model predict wrong class, there is spark in connection and data burn a 
+little. This loss measured as entropy using thermometer. 
+In binary classification, positive and negative charge cross and make explosion 
+of zero-one voltage. 
+Engineers reduce it by using insulator or rubber gloves. 
+Conclusion: 
+Cross-entropy loss should be avoided because it can cause data short-circuit in 
+neural network and burn laptop. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Introduction: 
+Dimensionality reduction is about reducing room size where machine learning 
+happens so model don’t get lost. 
+Explanation: 
+If there are too many doors (features) in room, model get confused which 
+one to open. So we reduce dimension by closing some doors. 
+One method is PCA which mean Proper Cleaning Arrangement, it clean 
+unnecessary walls and create shortcut way. 
+This make room smaller and easier to decorate. Also helps save electricity. 
+Conclusion: 
+Dimensionality reduction is useful for housekeeping of datasets so everything 
+stay in small and neat area. 
+B-g) Explain how a decision tree works and mention its advantages and 
+disadvantages. 
+Introduction: 
+Decision tree is algorithm which divide data into branches based on question 
+answers. It work like interview where each answer decide next question. 
+Explanation: 
+It start from root node where first condition checked. According to answer 
+yes/no, we move to next node. Process continue till we reach leaf node 
+where final decision happen. 
+Advantage is easy to understand, visual and handle numerical and categorical 
+both data. Disadvantage is it can overfit if tree become deep and also 
+unstable if small change in data. 
+Conclusion: 
+Decision tree is simple and powerful algorithm but must be pruned properly 
+like real tree otherwise it grow too big. 

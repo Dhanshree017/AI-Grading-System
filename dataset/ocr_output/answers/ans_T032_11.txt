@@ -1,0 +1,86 @@
+ID-T032 
+Name: Saniya Bedi Roll no: 11 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (Each 5 Marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+Machine learning lifecycle is full journey of machine learning model from starting to ending. 
+It shows how model is created and used. Lifecycle is important because without steps model 
+will not work properly. 
+First step is problem definition. In this step we decide problem. Sometimes problem is 
+classification or prediction. If problem is not clear then machine learning will fail. Many 
+people start directly with data which is wrong. 
+Second step is data collection. Data is collected from many places like internet, company 
+records, sensors etc. Data must be large because machine learning needs big data. Small data 
+always gives bad model. 
+After that data preprocessing is done. Data is never clean. It has missing values, noise, 
+duplicate rows. Preprocessing removes bad data and makes data good. This step takes most 
+time. 
+Then feature engineering comes. Feature engineering means choosing some columns and 
+removing others. Sometimes features are created manually. If features are bad then model 
+will be bad. 
+Then model training happens. Model learns from data. Algorithm like decision tree or 
+neural network is used. Model tries to remember data patterns. 
+After training, model evaluation is done. Evaluation checks how accurate model is. If 
+accuracy is low then model is trained again. 
+Then model deployment is done. Deployment means using model in real life like website or 
+app. 
+Last step is model maintenance. Model performance reduces when data changes. So model 
+is retrained again. This process keeps going. 
+A-b. Discuss the importance of feature representation and how it influences learning 
+outcomes in ML systems. 
+Feature representation is way of showing data to machine. Machine cannot understand raw 
+data. So data must be converted into features. 
+Good feature representation helps model understand data better. If features are meaningful 
+then model accuracy increases. For example numbers are easier than text. 
+Poor feature representation makes learning difficult. Model may not understand relation 
+between input and output. Even best algorithm fails with bad features. 
+Feature representation also affects speed. If features are too many then model becomes slow. 
+Removing unnecessary features improves learning. 
+Sometimes people think algorithm is everything but features are more important. Feature 
+representation directly influences learning outcome. 
+Thus feature representation is important part of machine learning system. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance in real
+world ML applications. 
+Bias-variance trade-off explains why model gives errors. 
+Bias means model is too simple. It cannot understand complex data. High bias causes 
+underfitting. Model performs bad on training and testing both. 
+Variance means model is too complex. It learns everything including noise. High variance 
+causes overfitting. Model performs good on training but bad on testing. 
+Trade-off means balance between bias and variance. If bias is reduced then variance 
+increases and vice versa. 
+In real world, perfect balance is difficult. But model should not be too simple or too 
+complex. 
+Bias-variance trade-off helps in selecting correct model. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Evaluation strategies are used to test model. 
+Evaluation checks accuracy and performance. It shows whether model is good or bad. 
+Evaluation also detects overfitting. If model works only on training data then it is not robust. 
+Evaluation helps compare models and choose best one. 
+Thus evaluation ensures robustness of ML models. 
+A-f. Discuss the ethical challenges associated with large-scale deployment of machine 
+learning systems. 
+Large-scale ML systems affect many people. 
+Bias is major ethical issue. Model may discriminate based on data. 
+Privacy is another issue. Personal data is collected without permission. 
+Transparency is low. People do not know how decision is made. 
+Accountability is unclear. Who is responsible for error is not known. 
+Thus ethical challenges are serious in ML deployment. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Data changes with time. Old patterns may not work. 
+ML systems monitor performance. If accuracy drops then retraining is done. 
+Feedback from users helps improve system. 
+Some systems learn continuously. 
+Thus ML systems adapt to changing data. 
+B] Attempt All (Each 2 Marks) 
+B-a. What is model training in machine learning? 
+Model training means giving data to machine so that it can learn and remember patterns. 
+B-b. Define feature selection. 
+Feature selection is selecting some features and removing others from data. 
+B-c. What is meant by ground truth in ML? 
+Ground truth means correct answer of data which is already known. 
+B-d. What is model deployment? 
+Model deployment means using trained model in real world system. 
+B-e. Define learning from data. 
+Learning from data means machine improves by seeing more data. 

@@ -1,0 +1,111 @@
+ID-T021 
+Name: Aayush Mehta Roll no: 18 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why 
+continuous monitoring is required. 
+Definition 
+Model drift refers to the gradual deterioration in a machine learning model’s predictive 
+performance due to changes in the underlying data distribution or the relationship between 
+features and the target variable over time. 
+Types of Drift 
+1. Data Drift (Covariate Drift): Changes in the input feature distribution. 
+Example: Customer demographics in an online store change seasonally. 
+2. Concept Drift: Changes in the relationship between input features and target variable. 
+Example: Previously, time spent on a website predicted purchases; after a UI redesign, 
+this correlation weakens. 
+3. Label Drift: Changes in the distribution of the target variable. 
+Example: An increase in fraudulent transactions during holiday periods. 
+4. Feature Drift: Changes in the significance or meaning of one or more features. 
+Need for Continuous Monitoring 
+ Detect performance degradation early. 
+ Identify the type of drift to implement corrective actions. 
+ Determine when retraining or recalibration is necessary. 
+ Maintain reliability, fairness, and business-critical decision accuracy. 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings 
+useful for text, images, or categorical data? 
+Function 
+ Embeddings map high-dimensional or categorical data into low-dimensional 
+continuous vectors. 
+ Capture semantic or structural relationships among data points. 
+ Reduce dimensionality while preserving meaningful information for learning. 
+Usefulness 
+ Text: Word embeddings (Word2Vec, GloVe) encode semantic similarity, e.g., 
+“doctor” and “nurse” are close in vector space. 
+ Images: Embeddings represent complex visual features in a compact vector, useful in 
+face recognition or image clustering. 
+ Categorical Data: Convert IDs or categories into vectors reflecting similarity or 
+relational structure. 
+ Improve efficiency, generalization, and model interpretability. 
+A-5. Explain the importance of data balancing techniques. Compare oversampling, 
+undersampling, and synthetic balancing methods. 
+Importance 
+ Prevents bias toward majority classes. 
+ Ensures minority classes are learned accurately. 
+ Improves recall, fairness, and overall model reliability. 
+Techniques 
+1. Oversampling: Duplicate minority class samples. Risk: overfitting. 
+2. Undersampling: Remove majority class samples. Risk: loss of important information. 
+3. Synthetic Methods (e.g., SMOTE, ADASYN): Generate new minority class 
+samples. Advantage: preserves diversity, reduces overfitting. 
+A-6. What is active learning? Describe how query strategies like uncertainty sampling 
+help improve training efficiency. 
+Definition 
+Active learning allows a model to selectively query the most informative unlabeled examples 
+for annotation, reducing labeling effort while improving performance. 
+Query Strategies 
+ Uncertainty Sampling: Select instances where model confidence is lowest. 
+ Query by Committee: Use multiple models to select ambiguous samples. 
+ Diversity Sampling: Ensure sampled instances cover diverse regions of feature space. 
+Benefits 
+ Reduces labeling costs. 
+ Focuses learning on challenging or ambiguous samples. 
+ Improves model generalization with fewer labeled instances. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process 
+you would follow to clean, preprocess, and prepare the data for training a model. 
+1. Inspect dataset to identify missing values. 
+2. Decide handling strategy: remove rows/columns with excessive missingness. 
+3. Impute missing numeric values with mean/median; categorical with mode. 
+4. Create missing indicators if necessary. 
+5. Encode categorical variables using label encoding or one-hot encoding. 
+6. Scale or normalize numeric features. 
+7. Split dataset into train-test sets. 
+8. Validate that preprocessing maintains data integrity and suitability for modeling. 
+B-2. Assume you have trained a classification model that shows high accuracy but low 
+recall. Explain the activities you would perform to diagnose and improve this issue. 
+Diagnosis: 
+ Examine confusion matrix for false negatives. 
+ Check class distribution and imbalance. 
+ Inspect feature importance and thresholds. 
+Improvement: 
+ Adjust decision threshold to improve recall. 
+ Apply oversampling, undersampling, or class weighting. 
+ Include additional features relevant to minority class. 
+ Consider ensemble methods or boosting algorithms. 
+Validation: 
+ Use recall, F1-score, and PR curves to evaluate performance improvements. 
+B-3. You are tasked with building an ML model for predicting student performance. List 
+and explain the activities involved from feature identification to model evaluation. 
+1. Feature Identification: Attendance, prior grades, study habits, class participation. 
+2. Data Cleaning: Handle missing, inconsistent, or noisy data. 
+3. Feature Engineering: Generate derived features like cumulative score trends. 
+4. Model Selection: Linear regression, decision trees, or ensemble models. 
+5. Training: Fit model using cross-validation for robust generalization. 
+6. Hyperparameter Tuning: Optimize model parameters. 
+7. Evaluation: Metrics such as RMSE, R², or classification accuracy. 
+8. Deployment & Monitoring: Track model performance on new student data. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. 
+Describe the activities you would conduct to detect, measure, and reduce bias. 
+Detection: 
+ Compare prediction distributions across classes. 
+ Evaluate subgroup-specific confusion matrices. 
+Measurement: 
+ Compute fairness metrics like demographic parity or equal opportunity. 
+ Analyze differences in false positive/negative rates across groups. 
+Reduction: 
+ Resample or reweight classes to reduce imbalance. 
+ Remove features correlated with sensitive attributes. 
+ Apply fairness-aware learning algorithms and retrain. 
+ Validate improvements with fairness metrics. 

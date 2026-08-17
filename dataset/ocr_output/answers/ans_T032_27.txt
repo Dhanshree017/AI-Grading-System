@@ -1,0 +1,94 @@
+ID-T032 
+Name: Salma Sayyad Roll no: 27 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (5 marks each) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The ML lifecycle is a systematic engineering process designed to transition from a business 
+objective to a functional AI product. 
+ Problem Definition: Clearly defining the objective (e.g., classification vs. regression) 
+and determining the Key Performance Indicators (KPIs). 
+ Data Acquisition & Cleaning: Sourcing raw data and performing ETL (Extract, 
+Transform, Load) to handle missing values, duplicates, and errors. 
+ Feature Engineering: Transforming raw variables into meaningful representations 
+that maximize the signal-to-noise ratio for the model. 
+ Model Selection & Training: Choosing optimal architectures and using optimization 
+algorithms like Stochastic Gradient Descent (SGD) to minimize the loss function. 
+ Evaluation & Validation: Using techniques like K-Fold Cross-Validation to ensure 
+the model generalizes to unseen data. 
+ Deployment: Integrating the model into production environments via APIs or 
+microservices (MLOps). 
+ Monitoring & Maintenance: Tracking performance for "Model Decay" or "Concept 
+Drift" and retraining the model as real-world data distributions evolve. 
+A-b. Discuss the importance of feature representation and how it influences learning outcomes. 
+Feature representation is the process of mapping raw data into a numerical vector space. It is 
+the most critical factor in determining the success of a model. 
+ Geometric Separability: A superior representation ensures that different classes are 
+linearly or non-linearly separable in the feature space. 
+ Dimensionality Management: Effective representation prevents the "Curse of 
+Dimensionality" by focusing on the most informative variables. 
+ Information Density: In NLP, for example, transitioning from "One-Hot Encoding" 
+to "Dense Embeddings" allows the model to understand semantic relationships (e.g., 
+King - Man + Woman = Queen). 
+ Computational Efficiency: Proper representation reduces the search space for the 
+algorithm, leading to faster convergence during training. 
+ Generalization: Representations that capture invariant features (features that don't 
+change with noise) lead to significantly more robust learning outcomes. 
+A-d. Describe how machine learning models handle noisy and incomplete data during training. 
+Handling "imperfect" data is a requirement for production-grade ML. 
+ Imputation Strategies: Incomplete data is handled using statistical imputation 
+(Mean/Median/Mode) or predictive imputation (using K-NN to guess missing values). 
+ Robust Algorithms: Certain models, like Tree-based methods (XGBoost), can 
+natively handle missing values by learning "default" branches for them. 
+ Regularization: To handle noise, models use $L_1$ (Lasso) or $L_2$ (Ridge) 
+regularization to prevent the model from assigning too much weight to noisy, outlier 
+features. 
+ Denoising Autoencoders: In Deep Learning, specialized networks are trained to 
+reconstruct clean data from noisy inputs. 
+ Data Augmentation: To mitigate the impact of incomplete samples, synthetic data is 
+often generated to balance the dataset. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Evaluation strategies move beyond simple accuracy to verify that a model is ready for the 
+"chaos" of reality. 
+ Hold-out Method: Splitting data into Training, Validation, and Test sets to prevent 
+data leakage. 
+ Cross-Validation: Using K-Fold CV to ensure that performance is not dependent on a 
+specific, lucky data split. 
+ Confusion Matrix Analysis: Evaluating Precision, Recall, and F1-Score to 
+understand the specific types of errors the model makes (False Positives vs. False 
+Negatives). 
+ AUC-ROC Curve: Measuring the model’s ability to distinguish between classes 
+regardless of the classification threshold. 
+ Stress Testing: Feeding the model "adversarial" or edge-case data to see where it 
+breaks, ensuring operational robustness. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Static models fail in dynamic worlds; adaptation is the solution. 
+ Online Learning: Instead of training on a batch, the model updates its weights 
+incrementally as each new data point arrives (e.g., stock market predictors). 
+ Concept Drift Detection: Systems use statistical tests (like the Kolmogorov-Smirnov 
+test) to detect when the relationship between input and output variables has changed. 
+ Automated Retraining Pipelines: When performance drops below a threshold, the 
+system triggers a pipeline to retrain the model on the most recent window of data. 
+ Transfer Learning: Pre-trained models are "fine-tuned" on new data patterns, 
+allowing for fast adaptation without starting from scratch. 
+ Sliding Window Approach: The model is trained only on the $N$ most recent 
+samples, ensuring it forgets outdated patterns. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the optimization process where an algorithm analyzes training data to adjust its internal 
+parameters (weights) to minimize a loss function and learn patterns. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and selecting a subset of the most relevant 
+features from the original dataset to improve model accuracy and reduce computational 
+complexity. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the direct, "real-world" verified labels or facts provided in the dataset, 
+used as the target for the model to learn and be evaluated against. 
+B-d. What is model deployment? 
+Model deployment is the process of integrating a trained machine learning model into a 
+production environment (like a web app or server) so it can provide predictions on live data. 
+B-e. Define learning from data. 
+Learning from data is the ability of an algorithm to improve its performance at a task over 
+time by extracting statistical structures and rules directly from input examples without being 
+explicitly programmed for every scenario. 

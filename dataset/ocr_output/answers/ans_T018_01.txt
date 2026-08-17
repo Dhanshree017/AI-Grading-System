@@ -1,0 +1,242 @@
+ID-T018 
+Name: Nikhil rathore Roll no: 1 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+AdaBoost (Adaptive Boosting) is an ensemble technique that builds a strong classifier by 
+combining multiple weak learners that individually perform slightly better than random 
+guessing. 
+Core Idea 
+AdaBoost focuses more on the samples that previous models misclassified. Each new weak 
+learner tries hardest on the most difficult points. 
+Working 
+1. Initialization 
+All training samples start with equal weight so that each sample initially contributes equally 
+to training. 
+2. Train Weak Learner 
+A simple model, usually a decision stump, is trained using the current sample weights. 
+Samples with higher weights influence the model more. 
+3. Evaluate Performance 
+AdaBoost calculates how many samples the weak learner misclassified and measures its 
+error rate. If the model performs well, it receives a higher importance score in the final 
+ensemble. 
+4. Update Sample Weights 
+Misclassified samples are given more weight so that the next weak learner focuses on them. 
+Correctly classified samples have their weights decreased since they are already easy for the 
+model. 
+5. Combine Weak Learners 
+Each weak learner is assigned a weight based on its performance. Better learners influence 
+the final prediction more. The final classifier becomes a weighted combination of all weak 
+learners. 
+How Boosting Reduces Bias 
+Boosting reduces bias by: 
+ Adding multiple weak models sequentially 
+ Correcting the previous model’s mistakes 
+ Focusing attention on difficult samples 
+ Increasing representation of difficult patterns 
+By iteratively improving performance, the combined model becomes far more accurate than 
+any individual weak learner. 
+A-2. Describe the internal working of LSTM networks: input gate, forget gate, output gate, and 
+cell state. 
+LSTMs (Long Short-Term Memory networks) are specialized recurrent neural networks 
+designed to remember information over long sequences and overcome the vanishing gradient 
+problem. 
+LSTMs maintain two types of memory: 
+ Cell state: long-term memory 
+ Hidden state: short-term memory 
+Components 
+1. Forget Gate 
+The forget gate controls what past information should be removed from memory. It examines 
+the current input and previous hidden state, then decides which parts of the old cell state are 
+no longer needed. 
+2. Input Gate 
+The input gate determines what new information should be stored in the memory. This gate 
+decides how much of the new candidate information should be added to the cell state. 
+3. Candidate Memory Update 
+The model creates a candidate vector containing potential new information that could enter 
+the memory. The input gate controls how much of this candidate memory is actually stored. 
+4. Cell State Update 
+The cell state is updated by: 
+ Removing unimportant information (from forget gate) 
+ Adding new important information (from input gate) 
+This makes the cell state the main carrier of long-term information. 
+5. Output Gate 
+The output gate decides what information from the updated cell state should influence the 
+next hidden state. The hidden state becomes the output of the LSTM unit for that time step. 
+Why LSTM Works Well 
+ It remembers important information for long durations 
+ It selectively forgets irrelevant information 
+ It isolates long-term and short-term memory 
+ It prevents vanishing gradients 
+A-3. Explain Feature Engineering: creation, selection, extraction, and impact on model 
+performance. 
+Feature Engineering is the process of transforming raw data into meaningful inputs that 
+improve machine learning performance. It is one of the most important steps, often more 
+impactful than choosing the model itself. 
+1. Feature Creation 
+Creating new features from existing ones: 
+ Mathematical combinations (ratios, differences) 
+ Date-time components (day, month, hour) 
+ Text features (word count, sentiment) 
+ Domain knowledge features (BMI, risk factors) 
+Good feature creation can reveal hidden patterns and relationships. 
+2. Feature Selection 
+Choosing the most relevant features and discarding unnecessary ones: 
+ Removing highly correlated features 
+ Using model-based importance ranking 
+ Eliminating noisy or redundant features 
+Selection improves generalization by reducing overfitting and computational cost. 
+3. Feature Extraction 
+Transforming high-dimensional data into a lower-dimensional representation: 
+ PCA for numerical data 
+ Autoencoders for deep feature extraction 
+ Word embeddings for text 
+ CNN features for images 
+Extraction simplifies complex data while keeping essential information. 
+4. Impact on Model Performance 
+Effective feature engineering results in: 
+ Higher accuracy 
+ Reduced training time 
+ Improved generalization 
+ More interpretable models 
+ Better handling of noisy and incomplete data 
+A model with strong features often outperforms a complex model with weak features. 
+A-4. Discuss the working of Naive Bayes classifier: conditional probability & independence 
+assumption. 
+Naive Bayes is a simple yet powerful probabilistic classifier widely used in text 
+classification, spam filtering, and sentiment analysis. 
+How It Works 
+1. Uses Conditional Probability 
+Naive Bayes predicts a class by measuring how likely the features are to appear under each 
+class. It calculates the probability of a class given the observed features and chooses the class 
+with the highest probability. 
+2. Independence Assumption 
+The “naive” part assumes that all features are independent of each other given the class label. 
+For example, in text classification, it assumes that each word appears independently even 
+though that is not completely true. 
+This assumption simplifies probability calculations and makes the classifier extremely fast. 
+3. Training Phase 
+ It counts how often each feature value appears in each class. 
+ These counts are converted into probabilities. 
+ It stores these probability distributions for prediction. 
+4. Prediction Phase 
+ For a new input, the classifier checks how likely the features are under each class. 
+ It multiplies these likelihoods with the class’s overall probability. 
+ The class with the highest final probability is selected. 
+Advantages 
+ Works very well for text 
+ Requires small training data 
+ Extremely fast 
+Limitation 
+ Independence assumption is unrealistic in many domains 
+A-5. Explain Autoencoder architecture: encoder, decoder, latent representation, applications in 
+anomaly detection. 
+Autoencoders are neural networks designed to learn efficient representations of data by 
+compressing and reconstructing it. 
+1. Encoder 
+The encoder takes input data and gradually compresses it into a smaller representation. 
+The layers reduce dimensionality and extract key patterns. 
+This process forces the model to learn the most important information in the data. 
+2. Latent Representation 
+The compressed vector (also called the bottleneck or latent code) is the core of the 
+autoencoder. 
+It represents the input data in a simplified, information-rich form. 
+3. Decoder 
+The decoder takes the latent representation and tries to reconstruct the original input. 
+It mirrors the encoder’s structure and attempts to rebuild the data as accurately as possible. 
+4. Purpose 
+The goal is to minimize the difference between input and reconstructed output. 
+This ensures the latent representation captures meaningful structure in the data. 
+5. Applications in Anomaly Detection 
+Autoencoders are excellent for anomaly detection because: 
+ They learn to reconstruct normal patterns well 
+ They fail to reconstruct unusual or abnormal patterns 
+ Anomalies produce high reconstruction errors 
+ Thresholding this error allows identification of anomalies 
+They are used in fraud detection, network intrusion detection, and industrial fault detection. 
+B ] Attempt all (5 marks each) 
+B-1. Workflow of Deep Learning Model (5-mark depth) 
+1. Data Preparation 
+Includes data cleaning, normalization, augmentation (for images), and splitting into 
+training, validation, and test sets. High-quality, balanced data is essential for strong 
+performance. 
+2. Architecture Selection 
+Choosing model type based on problem: 
+CNN for images, LSTM/Transformers for sequences, MLP for tabular data. 
+Define layers, activation functions, and design depth and width. 
+3. Training Process 
+Involves forward propagation, computing loss, backpropagation, and weight updates 
+using optimizers like SGD or Adam. Requires careful tuning of learning rate and batch 
+size. 
+4. Regularization 
+Methods such as dropout, early stopping, weight decay, and batch normalization help 
+prevent overfitting and improve generalization. 
+5. Evaluation 
+Use accuracy, precision, recall, confusion matrix, or RMSE depending on task. 
+Compare training and validation metrics to check for overfitting or underfitting. 
+Final testing is done on unseen data. 
+B-2. Clustering Evaluation Metrics: Silhouette, Davies–Bouldin, Inertia 
+1. Silhouette Score 
+Measures how well data points fit inside their clusters. 
+A high Silhouette score indicates that points are closer to their own cluster than to other 
+clusters. 
+It evaluates cohesion versus separation. 
+2. Davies–Bouldin Index 
+This metric evaluates how similar clusters are to each other. 
+A lower score means clusters are well separated and compact. 
+It compares the distance between cluster centers and their internal spread. 
+3. Inertia 
+Used mainly in K-means, it measures the total compactness of clusters by evaluating how 
+close points are to their respective cluster centers. 
+Lower inertia means tighter clusters. 
+Conclusion 
+These metrics collectively evaluate: 
+ Intra-cluster compactness 
+ Inter-cluster separation 
+ Overall clustering quality 
+B-3. Explain Reinforcement Learning with two examples 
+Reinforcement Learning (RL) is a learning paradigm where an agent interacts with an 
+environment, takes actions, and receives rewards based on the outcomes. Over time, the 
+agent learns a policy that maximizes cumulative reward. 
+Key Ideas 
+ No labeled data required 
+ Learning through trial and error 
+ Importance of exploration and exploitation 
+ Feedback is in the form of rewards 
+Examples 
+1. Game Playing 
+RL is used in chess, Go, and video games where the agent learns strategies by playing many 
+rounds and maximizing its winning reward. AlphaGo and Atari agents are major examples. 
+2. Robotics 
+Robots learn tasks like walking, gripping objects, or navigating a room using RL. The robot 
+tries actions, receives feedback, and gradually learns the optimal movement patterns. 
+B-4. NLP Pipeline: text cleaning, tokenization, embeddings, sequence modeling 
+1. Text Cleaning 
+Raw text contains noise such as punctuation, stopwords, and inconsistent casing. 
+Cleaning includes: 
+ Lowercasing 
+ Removing special symbols 
+ Lemmatization or stemming 
+ Removing stopwords 
+This prepares the text for further processing. 
+2. Tokenization 
+The text is broken into smaller units such as words, subwords, or characters. 
+Advanced tokenizers like Byte-Pair Encoding split words into meaningful chunks that handle 
+rare words effectively. 
+3. Embeddings 
+Tokens are converted into dense numerical vectors that capture semantic meaning. 
+Models use: 
+ Word2Vec, GloVe 
+ Transformer embeddings like BERT 
+These embeddings allow ML models to understand context and similarity. 
+4. Sequence Modeling 
+Sequence models learn the order and context of words. 
+Traditional models include RNNs, LSTMs, and GRUs. 
+Modern NLP relies on Transformers, which use self-attention to model long-range 
+dependencies efficiently. 
+Outcome 
+The complete pipeline allows machines to understand, represent, and process human 
+language effectively for tasks like translation, summarization, sentiment analysis, and 
+question answering. 

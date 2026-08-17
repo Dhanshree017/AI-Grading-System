@@ -1,0 +1,33 @@
+
+
+--- PAGE 1 ---
+ID — T020
+Machine Learning Examination
+Total marks 60
+FY- Data Science
+Date — 02-05-2024
+A] Attempt any 5 (8 marks each )
+
+a) Explain how data drift and concept drift affect the long-term performance of machine learning models. Discuss the different types of drift and practical strategies to detect and handle them.
+
+b) Discuss the role of embedding techniques in machine learning. Explain how text,images, or categorical data can be transformed into meaningful representations for models.
+
+c) Describe the challenges associated with training models on imbalanced datasets.Explain advanced techniques such as cost-sensitive learning, synthetic sample generation, and threshold adjustment.
+
+d) Explain the concept of model monitoring in ML systems. What parameters are tracked, and why is continuous monitoring essential for deployed models?
+
+e) Discuss the difference between batch learning and online learning. Explain the scenarios where online learning is preferred and the challenges involved.
+
+f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss any real-world use cases where XAI is crucial for decision-making.
+
+B | Attempt any 4 of the following ( 20 marks )
+
+a) What is feature leakage (data leakage) in machine learning? Explain its causes and how it impacts model performance.
+
+b) Explain the role of evaluation pipelines in ML workflows. Why is it important to separate validation, testing, and deployment evaluation?
+
+c) Describe how transfer learning improves model development. Mention scenarios where transfer learning is especially useful.
+
+d) What is the purpose of hyperparameter search strategies like Grid Search and Random Search? Compare them briefly.
+
+e) Explain the importance of reproducibility in machine learning experiments. What practices help ensure experiments can be repeated accurately?

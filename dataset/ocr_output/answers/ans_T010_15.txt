@@ -1,0 +1,96 @@
+ID-T010 
+Name : Ppnam Mehta Roll no: 15 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-2. Explain Components of AI, Give One example of AI 
+Components of AI: 
+1. Learning: The system’s ability to acquire knowledge from experience or data. 
+2. Reasoning: Draws logical inferences and conclusions from available information. 
+3. Perception: Senses environment using inputs like cameras or microphones. 
+4. Knowledge Representation: Stores structured information for reasoning and 
+learning. 
+5. Planning: Formulates sequences of actions to achieve specific goals. 
+6. Problem Solving: Identifies solutions using algorithms and heuristics. 
+7. Natural Language Processing (NLP): Understands and interprets human 
+language. 
+8. Acting/Decision Making: Performs actions to achieve objectives. 
+Example: 
+Google Assistant demonstrates AI by understanding speech (NLP), reasoning to 
+interpret user intent, and performing actions like setting alarms or providing 
+directions. 
+A-3. What is Regression and Classification, explain types of Regression 
+Regression: 
+A supervised learning approach used to predict continuous numeric outcomes based on 
+input features. Example: Predicting sales figures. 
+Classification: 
+A supervised learning method used to predict categorical outcomes. Example: Email 
+spam detection. 
+Types of Regression: 
+1. Simple Linear Regression: Predicts output using one independent variable. 
+2. Multiple Linear Regression: Predicts output using multiple input variables. 
+3. Polynomial Regression: Models non-linear relationships using polynomial terms. 
+4. Ridge Regression: Adds L2 regularization to prevent overfitting. 
+5. Lasso Regression: Uses L1 regularization to shrink insignificant feature weights 
+to zero. 
+6. Elastic Net Regression: Combines L1 and L2 regularization. 
+7. Logistic Regression: For predicting binary outcomes (0/1). 
+8. Stepwise Regression: Iteratively selects significant variables based on statistical 
+criteria. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Definition: 
+An intelligent agent is an autonomous system that perceives its environment, reasons 
+about it, and takes actions to achieve specific goals while adapting over time. 
+Types of Agents: 
+1. Simple Reflex Agent: Acts only based on current percepts using condition-action 
+rules. Example: Thermostat. 
+2. Model-Based Reflex Agent: Uses a model of the world to track unobserved aspects 
+of the environment. Example: Cleaning robot with memory of room layout. 
+3. Goal-Based Agent: Chooses actions that achieve specific goals using planning. 
+Example: Autonomous vehicle navigation. 
+4. Utility-Based Agent: Evaluates possible actions based on utility to select the best 
+one. Example: Stock trading system. 
+5. Learning Agent: Improves performance and knowledge over time through 
+feedback. Example: AI game-playing bot. 
+A-5. Explain Types of Search in AI, Explain Bidirectional Search in detail 
+AI: 
+Search 
+in 
+Search algorithms allow AI systems to explore possible actions or states to reach a goal. 
+Types of Search: 
+1. Uninformed Search (Blind Search): Explores state space without extra knowledge. 
+Example: BFS, DFS.  
+2. Informed Search (Heuristic Search): Uses domain knowledge to guide search 
+efficiently. Example: A*, Greedy search.  
+3. Local Search: Focuses on exploring neighboring states for optimization problems. 
+4. Constraint Satisfaction Search: Finds states that satisfy specific constraints. 
+Bidirectional Search: 
+ A search strategy that simultaneously searches from the start state forward and 
+the goal state backward until the two meet. 
+ Reduces time and space complexity significantly from O(b^d) to O(b^(d/2)). 
+ Highly efficient for problems with known start and goal states, such as 
+pathfinding in GPS navigation or puzzles. 
+B] Attempt any 4 (2 marks each) 
+B-2. Write a short note on Artificial Neural Network 
+An Artificial Neural Network (ANN) consists of interconnected nodes (neurons) 
+arranged in layers: input, hidden, and output. It learns patterns from data by adjusting 
+weights using algorithms like backpropagation. Applications include image recognition, 
+speech processing, and natural language understanding. 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is a probabilistic classifier based on Bayes’ Theorem, assuming feature 
+independence. Despite this “naïve” assumption, it performs well for tasks such as text 
+classification, spam detection, and sentiment analysis. 
+B-4. What is Support Vector Machines 
+Support Vector Machine (SVM) is a supervised learning model that identifies a 
+hyperplane to optimally separate classes in feature space. SVMs handle linear and non
+linear data using kernel methods, and are widely used for classification and regression 
+tasks. 
+B-5. What is Ensemble Learning and its types 
+Ensemble learning combines multiple models to improve overall predictive 
+performance. 
+Types: 
+1. Bagging: Trains models independently and averages predictions (e.g., Random 
+Forest). 
+2. Boosting: Sequentially trains models to correct errors of previous ones (e.g., 
+AdaBoost). 
+3. Stacking: Combines multiple model predictions using a meta-model. 

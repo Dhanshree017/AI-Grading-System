@@ -1,0 +1,42 @@
+ID-T034 
+Name:  Esha Pandey Roll no: 18 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is one of the most critical processes in supervised learning. It refers to assigning correct output 
+values, categories, or target labels to input data so that a machine learning model can learn from examples. 
+In supervised learning, the algorithm is trained using labeled datasets, where each input is paired with a 
+correct answer. These labels serve as the ground truth that guides the learning process. 
+For example, in image classification, thousands of images are labeled as “cat,” “dog,” or “car.” In medical 
+diagnosis, patient records are labeled as “disease positive” or “disease negative.” The model analyzes these 
+labeled examples to learn patterns that connect features to outcomes. When new data is given, the model 
+uses these learned patterns to make predictions. 
+The accuracy, fairness, and reliability of a supervised learning system heavily depend on the quality of 
+labeling. Incorrect, inconsistent, or biased labels can mislead the model, causing wrong predictions and 
+unfair decisions. Therefore, data labeling is not just a technical step but a foundation on which the entire 
+supervised learning system is built. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods are advanced machine learning techniques that combine multiple models to produce a 
+more accurate and stable prediction. Instead of relying on a single model, ensembles use a collection of 
+models and aggregate their predictions through techniques such as voting, averaging, or weighted 
+combination. The core idea is that different models make different errors, and combining them reduces 
+overall mistakes. 
+Each model in an ensemble learns slightly different patterns from the data. Some models may perform better 
+in certain situations, while others may be better in different situations. By combining their outputs, ensemble 
+methods create a stronger and more reliable final prediction. Popular ensemble techniques include bagging, 
+boosting, and random forest. 
+For example, Random Forest builds many decision trees using different subsets of data and features, and 
+then combines their results. This reduces overfitting and improves generalization. Ensemble methods are 
+widely used in areas such as medical diagnosis, credit risk analysis, and recommendation systems because 
+they provide higher accuracy and more dependable predictions than single models. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means that a machine learning experiment can be repeated using the same data, algorithm, 
+and settings, and it will produce the same results. It is a fundamental principle of scientific research and is 
+especially important in machine learning, where many factors influence model behavior. 
+Machine learning experiments depend on data preprocessing steps, random initialization, hyperparameters, 
+and software libraries. If these are not clearly documented, results cannot be verified by others. 
+Reproducibility allows researchers to confirm findings, detect errors, compare methods fairly, and build 
+upon previous work. 
+In critical fields such as healthcare, finance, and public policy, reproducibility ensures that decisions based 
+on machine learning are transparent and trustworthy. Without reproducibility, machine learning results lose 
+credibility and cannot be reliably used for real-world decision-making. 

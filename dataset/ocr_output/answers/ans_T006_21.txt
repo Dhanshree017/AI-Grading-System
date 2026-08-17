@@ -1,0 +1,173 @@
+ID-T006 
+Name: Arpita Das Roll no: 21 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A) Answer all 
+A-1. How Reinforcement learning is different from Supervised learning? 
+Reinforcement learning and supervised learning are both types of machine learning 
+but they work in very different ways. In supervised learning the model learn from 
+already labeled data where we know the right answers. In reinforcement learning there 
+is no label, the agent learn by interacting with environment and getting reward or 
+penalty for its actions. It is more like learning from experience instead of examples. 
+1. In supervised learning, correct outputs are already known, but in reinforcement, 
+model has to find correct actions by trying. 
+2. Reinforcement use reward and punishment concept while supervised follow 
+direct feedback using labels. 
+3. Supervised is best for tasks like classification or regression, while reinforcement 
+used in robotics or games. 
+4. In RL, agent learn step by step through episodes, but in supervised model learn 
+in one go from data. 
+5. Reinforcement focus on decision making process while supervised focus on 
+prediction accuracy. 
+A-2. Define the term overfitting and one solution for it. 
+Overfitting happen when a model learn too deeply from training data and start 
+memorizing instead of understanding. It perform very good on training set but give 
+bad results on new unseen data. This means model is not generalizing properly and 
+only fitting to the same pattern it has already seen. 
+A-3. What is the role of Linear Discriminant Analysis in ML? 
+Linear Discriminant Analysis (LDA) is a dimensionality reduction and classification 
+technique used in machine learning. It is used when we have data with many features 
+and we want to project them in smaller space without losing important information. 
+The main goal of LDA is to find direction that separate two or more classes with 
+maximum distance. 
+1. LDA reduce number of features and make training faster and easier for 
+classification models. 
+2. It try to maximize distance between different classes and minimize distance 
+inside same class. 
+3. It also remove unwanted noise and improve overall model accuracy. 
+4. LDA can be used before algorithms like logistic regression or SVM for better 
+performance. 
+5. It is widely used in face recognition, document classification, and pattern 
+recognition systems. 
+A-4. Compare mixture and latent factor models. 
+Mixture models and latent factor models are two different methods used for 
+understanding hidden structure in data. Mixture model divides data into groups where 
+each group has its own probability distribution, while latent factor model try to find 
+hidden features that explain relation among variables. 
+1. Mixture model assume each data point belong to one cluster, latent factor model 
+assume data can be influenced by many hidden factors. 
+2. Mixture model works like soft clustering while latent factor model works like 
+finding hidden dimensions. 
+3. Mixture model used for density estimation while latent factor model used for 
+recommendation systems. 
+4. In mixture model, parameters are learned by Expectation Maximization, in 
+latent factor we use matrix factorization techniques. 
+5. Mixture focuses on grouping data, latent factor focuses on explaining reason 
+behind data pattern. 
+A-5. Write importance of K-means clustering. 
+K-means clustering is one of the most used unsupervised learning algorithm which 
+helps to group data into clusters automatically. It is very useful when we don’t have 
+labeled data but still want to find some structure or pattern in dataset. 
+1. It help to divide data into K different groups based on similarity between points. 
+2. It is easy, simple and very fast compared to other clustering algorithms. 
+3. It helps in finding patterns like grouping customers by behavior in marketing. 
+4. It can be used for image compression by reducing similar pixel groups. 
+5. K-means is useful for understanding and visualizing large data in simpler way. 
+A-6. Write about R Square and its significance. 
+R Square is a statistical measure that show how much variation in output variable is 
+explained by input features in regression model. It helps to check the goodness of fit 
+for regression. Higher R Square value means model is fitting data properly, while lower 
+value means poor fit. 
+1. R Square always lies between 0 and 1, where 1 means perfect fit and 0 means 
+no fit. 
+2. It is used to measure the performance of regression models. 
+3. It tells how much dependent variable is explained by independent variables. 
+4. A higher R Square value shows model accuracy is good and reliable. 
+5. It is important for checking model efficiency in predicting continuous values. 
+A-7. Give significance of hyperparameter optimization. 
+Hyperparameter optimization means finding the best combination of model settings 
+that give highest accuracy. These settings are not learned by training, they are fixed 
+before it starts, like learning rate, depth, etc. Tuning them properly make big 
+difference in performance. 
+1. Hyperparameter tuning helps to increase model performance and stability. 
+2. Without tuning, even a strong model can give weak or unstable results. 
+3. It helps to balance between underfitting and overfitting. 
+4. Methods like grid search and random search are used for finding best 
+parameters. 
+5. Good hyperparameters also reduce training time and resource use. 
+A-8. How machine learning deals with sparse data. 
+Sparse data means data with many zero or missing values which make model training 
+hard. It is very common in text, recommender systems and high-dimensional data. 
+Machine learning handle sparse data using special methods. 
+A-9. What is advantage of active learning. 
+Active learning is a special method where the model itself choose which data points 
+are most useful for training. It is used when labeling data is costly or time consuming. 
+1. It reduce labeling effort because model only ask for labels of important examples. 
+2. It make training process more efficient with less data. 
+3. Model learn faster since it focus on data that increase accuracy quickly. 
+4. It is very useful for problems like medical diagnosis or text labeling. 
+5. It save both time and money while improving learning quality. 
+A-10. What is training, testing and validation? 
+In machine learning we divide data into three parts — training, validation and testing 
+— to build and check model. Training data is used to make the model learn, validation 
+data help to tune the model and testing data check final performance. 
+1. Training set is used to teach the model by adjusting weights and parameters. 
+2. Validation set is used during training to tune hyperparameters and check model 
+accuracy. 
+3. Testing set is used after training to check how model perform on unseen data. 
+4. This process help to find out if model is generalizing or just memorizing. 
+5. It is an important step to make sure model works well in real situations. 
+B) Attempt any 4 
+B-1. Give seven applications of Machine Learning. 
+Machine learning is used in almost every field now because it can learn from data and 
+make predictions automatically. It is helping industries, science and daily life in many 
+ways. 
+1. Image and Face Recognition: Used in photo apps and security systems for 
+identifying people or objects. 
+2. Speech Recognition: Used in voice assistants like Alexa and Siri to convert speech 
+into text. 
+3. Healthcare: Used in disease prediction, X-ray scanning and medicine discovery. 
+4. Finance: Used for fraud detection, stock prediction and customer risk analysis. 
+5. E-commerce: Used for product recommendations based on past searches and 
+behavior. 
+6. Self-Driving Cars: Cars use ML to understand environment and take driving 
+decisions. 
+7. Education: ML helps in automatic grading and personalized learning tools. 
+8. Weather Forecasting: Used for predicting rainfall and natural disasters using past 
+data. 
+B-2. Explain supervised, unsupervised and semi-supervised with examples. 
+Machine learning methods are mainly divided based on the type of data available — 
+labeled or unlabeled. The three major types are supervised, unsupervised and semi
+supervised learning. 
+1. Supervised Learning: Model learn from labeled data where both input and output 
+are known. Example: predicting marks from hours of study. 
+2. Unsupervised Learning: No labels are given and model find pattern itself. 
+Example: grouping customers by shopping habit using K-means. 
+3. Semi-Supervised Learning: Use small labeled and large unlabeled data. Example: 
+identifying faces where few are labeled. 
+4. Supervised has teacher type data, unsupervised has no teacher, semi-supervised 
+is in between both. 
+5. They are used according to data type and need of problem like classification or 
+clustering. 
+6. These techniques make base of most machine learning systems used today. 
+7. Semi-supervised is very useful when labeling all data is expensive and time
+taking. 
+B-4. What are types of SVM. 
+Support Vector Machine (SVM) is a supervised learning algorithm used for classification 
+and regression. It has different types depending on data and kernel used. 
+1. Linear SVM: Used when data can be separated by straight line or plane. 
+2. Non-linear SVM: Used when data not linearly separable by mapping into higher 
+space. 
+3. Polynomial Kernel SVM: Use polynomial functions for creating complex 
+boundaries. 
+4. RBF Kernel SVM: Most used kernel, works well for complex non-linear data. 
+5. Sigmoid Kernel SVM: Similar to neural network functions used for special binary 
+tasks. 
+6. Multi-Class SVM: Handle problems with more than two classes using one-vs-all 
+method. 
+7. Support Vector Regression: Used for regression problems instead of classification. 
+8. These types make SVM flexible for many different kinds of datasets and use cases. 
+B-5. Explain Decision Tree in detail. 
+Decision tree is a model that make prediction using tree-like structure where each 
+node represent question and leaf show result. It is simple, easy to understand and 
+works both for classification and regression. 
+1. Each internal node represent a decision based on feature and each branch 
+represent result of that decision. 
+2. Tree keep splitting data till final leaf nodes where final class or value appear. 
+3. Algorithms like ID3, C4.5 or CART are used to build decision tree. 
+4. Tree decide split based on Information Gain, Entropy or Gini Index. 
+5. It can handle both numerical and categorical data without much preprocessing. 
+6. Decision tree can overfit so pruning is used to remove unnecessary branches. 
+7. It is used in finance, medicine and marketing because result is easy to interpret. 
+8. Decision tree is foundation of many ensemble models like Random Forest and 
+XGBoost. 

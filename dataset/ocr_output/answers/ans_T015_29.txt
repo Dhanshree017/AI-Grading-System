@@ -1,0 +1,190 @@
+ID-T015 
+Name: Gurnaam Singh Roll no: 29 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by
+step and discuss the importance of the parameter k. 
+Introduction: 
+K-Nearest Neighbor (KNN) is a simple, non-parametric algorithm used for 
+both classification and regression. It works based on similarity between data 
+points. 
+Importance of Parameter k: 
+ Small k: High variance, model overfits. 
+ Large k: High bias, model oversimplifies. 
+ The best k is usually determined using cross-validation. 
+Conclusion: 
+KNN’s strength lies in its simplicity, though it can be computationally 
+expensive for large datasets. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Definition: 
+Data imbalance occurs when one class has significantly more samples than 
+others in a dataset. 
+Impact on Model Performance: 
+ The model becomes biased toward the majority class. 
+ It may give high accuracy but fail to detect minority class cases. 
+ Real-world examples include fraud detection, rare disease prediction, etc. 
+Techniques to Handle Imbalance: 
+1. Resampling Methods: 
+o Oversampling: Duplicate or generate synthetic minority samples 
+(SMOTE). 
+o Undersampling: Reduce majority class samples. 
+2. Algorithmic Methods: 
+o Use class weighting or cost-sensitive learning. 
+3. Ensemble Techniques: 
+o Use Balanced Random Forest or boosting algorithms. 
+Conclusion: 
+Proper handling of imbalance ensures fair and accurate model performance 
+across all classes. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models 
+are used to solve new tasks with limited data and mention common 
+applications of transfer learning. 
+Definition: 
+Transfer Learning is a technique where knowledge gained while solving one 
+problem is reused for a different but related problem. 
+Process: 
+1. Use Pre-trained Model: 
+o A model (like VGG, ResNet, or BERT) trained on a large dataset 
+is selected. 
+2. Freeze Early Layers: 
+o The initial layers retain general learned features. 
+3. Fine-Tune Later Layers: 
+o The later layers are retrained on new, smaller dataset to adapt to 
+new task. 
+Advantages: 
+ Requires less data and computational power. 
+ Faster training and often higher accuracy. 
+Applications: 
+ Image recognition (ResNet, VGG). 
+ Natural Language Processing (BERT, GPT). 
+ Speech and emotion recognition. 
+Conclusion: 
+Transfer Learning accelerates model building and allows efficient performance 
+even on small datasets. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are 
+important and describe common hyperparameters for algorithms like Decision 
+Trees, Neural Networks, and Gradient Boosting models. 
+Introduction: 
+Hyperparameters are configuration values set before training begins. They 
+define how a model learns, unlike parameters which are learned during 
+training. 
+Importance: 
+ They control model complexity and training behavior. 
+ Proper tuning improves performance and prevents overfitting or 
+underfitting. 
+Common Hyperparameters: 
+1. Decision Trees: 
+o Max Depth, Min Samples Split, Criterion (Gini/Entropy). 
+2. Neural Networks: 
+o Learning Rate, Batch Size, Number of Layers, Activation 
+Functions. 
+3. Gradient Boosting: 
+o Number of Estimators, Learning Rate, Max Depth, Subsample 
+Ratio. 
+Tuning Methods: 
+ Grid Search, Random Search, and Bayesian Optimization are common 
+tuning methods. 
+Conclusion: 
+Choosing appropriate hyperparameters is crucial to achieving optimal model 
+performance. 
+B] Attempt any 6 (each 5 marks) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is a fundamental stage in machine learning that ensures 
+raw data is transformed into a clean and structured form suitable for 
+modeling. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting 
+methods. 
+Definition: 
+Ensemble learning is a technique that combines multiple models to produce a 
+stronger predictive model than individual learners. 
+1. Bagging (Bootstrap Aggregating): 
+ Multiple models are trained on random subsets of the dataset. 
+ Predictions are averaged (for regression) or voted (for classification). 
+ Example: Random Forest algorithm. 
+ Advantage: Reduces variance and helps prevent overfitting. 
+2. Boosting: 
+ Models are trained sequentially. 
+ Each new model focuses on correcting the errors of the previous ones. 
+ Example: AdaBoost, Gradient Boosting, XGBoost. 
+ Advantage: Reduces bias and increases predictive accuracy. 
+Conclusion: 
+Bagging and Boosting complement each other, combining variance and bias 
+reduction to create highly effective ensemble systems. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Definition: 
+Cross-entropy loss measures the difference between the predicted probability 
+distribution and the true class labels. It’s commonly used in classification 
+tasks. 
+Formula: 
+For binary classification: 
+L=−[ylog⁡(p)+(1−y)log⁡(1−p)]L = -[y \log(p) + (1 - y)\log(1 - 
+p)]L=−[ylog(p)+(1−y)log(1−p)]  
+Use in Classification: 
+ Helps models assign higher probabilities to correct classes. 
+ Used in logistic regression and neural networks. 
+ It ensures that incorrect predictions are penalized heavily. 
+Advantages: 
+ Provides strong learning signals for probabilistic models. 
+ Works well with softmax activation for multi-class classification. 
+Conclusion: 
+Cross-entropy is the preferred loss function for classification tasks due to its 
+ability to optimize probability-based predictions effectively. 
+B-e) Explain the role of optimization algorithms in training machine learning 
+models. 
+Introduction: 
+Optimization algorithms are used to minimize the loss function by updating 
+model parameters efficiently during training. 
+Role and Working: 
+1. Objective: Reduce model error (loss). 
+2. Process: 
+o Compute gradients of loss with respect to parameters. 
+o Update weights in the opposite direction of gradient. 
+3. Common Algorithms: 
+o Gradient Descent: Basic method using learning rate to control 
+update size. 
+o Stochastic Gradient Descent (SGD): Updates weights using random 
+samples for faster convergence. 
+o Adam Optimizer: Combines momentum and adaptive learning for 
+stability. 
+Conclusion: 
+Optimizers are vital for achieving faster convergence and higher model 
+accuracy in complex neural and statistical models. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Definition: 
+Dimensionality reduction is the process of reducing the number of input 
+variables in a dataset while retaining essential information. 
+Need: 
+ Simplifies models. 
+ Reduces overfitting. 
+ Improves visualization and computational efficiency. 
+Method – Principal Component Analysis (PCA): 
+1. Standardize data. 
+2. Compute covariance matrix. 
+3. Derive eigenvectors and eigenvalues. 
+4. Select top principal components based on variance explained. 
+5. Project data onto new feature space. 
+Conclusion: 
+PCA efficiently transforms high-dimensional data into a lower-dimensional 
+representation, preserving variance and interpretability. 
+B-g) Explain how a decision tree works and mention its advantages and 
+disadvantages. 
+Working of Decision Tree: 
+1. Root Node Selection: 
+o The dataset is split based on the best attribute using measures 
+like Information Gain or Gini Index. 
+2. Branch Formation: 
+o Each branch represents a decision rule based on feature values. 
+3. Leaf Nodes: 
+o Final nodes that give the output (class or value). 
+Advantages: 
+ Simple to interpret and visualize. 
+ Requires little data preprocessing. 
+ Can handle both numerical and categorical data. 
+Disadvantages: 
+ Prone to overfitting on small datasets. 
+ Sensitive to small data changes. 
+ Less effective for continuous complex patterns. 
+Conclusion: 
+Despite its limitations, the Decision Tree remains a foundational and 
+interpretable algorithm widely used in machine learning. 

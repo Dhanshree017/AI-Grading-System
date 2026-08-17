@@ -1,0 +1,229 @@
+ID-T008 
+Name : Aanandi Rathod Roll no: 22 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each carries 2 marks) 
+1-a) Write about Inductive Bias 
+1. Inductive bias refers to the assumptions or prior knowledge that a learning 
+algorithm uses to predict outputs for unseen inputs. It helps the machine 
+generalize from training data to new situations instead of memorizing the 
+data. 
+2. These biases guide learning algorithms to prefer certain hypotheses over others, 
+which can speed up the learning process and improve performance. 
+3. Different algorithms have different types of biases. For example, linear 
+regression assumes a linear relationship between variables, which influences the 
+model's predictions. 
+4. Inductive bias is necessary because, without it, the algorithm would not know 
+how to generalize and would perform poorly on new data. 
+5. It also affects the model's ability to avoid overfitting or underfitting depending 
+on how strong or weak the bias is. 
+6. Example: Decision trees prefer simpler splits and shorter trees, which is a type 
+of inductive bias that helps in prediction accuracy. 
+1-b) Define Hypothesis 
+1. A hypothesis is a proposed model or function that maps input features to 
+output predictions. It represents the algorithm’s current understanding of the 
+data relationship. 
+2. During training, the learning algorithm evaluates multiple hypotheses and 
+selects the one that best fits the training data while maintaining generalization. 
+3. Hypotheses can range from simple linear models to complex neural networks, 
+depending on the complexity of the data. 
+4. Selecting the right hypothesis is crucial for ensuring accurate predictions and 
+preventing overfitting. 
+5. Hypothesis guides the learning process by defining how the input is 
+transformed into output. 
+6. Example: Predicting house prices using a linear hypothesis such as 
+y=4500×area+25000y = 4500 \times \text{area} + 
+25000y=4500×area+25000. 
+1-c) Write about Sampling Theories 
+1. Sampling theory is about selecting a representative subset from a larger 
+population to perform analysis or train a model. 
+2. Proper sampling ensures that the sample accurately reflects the characteristics 
+of the population and reduces errors in learning. 
+3. Common methods include random sampling, stratified sampling, and 
+systematic sampling, each with its own advantages and use cases. 
+4. Random sampling gives every element an equal chance of selection, stratified 
+ensures proportional representation, and systematic picks elements at regular 
+intervals. 
+5. Sampling reduces computational costs and allows algorithms to train efficiently 
+without using the entire dataset. 
+6. Example: Selecting 150 students randomly from a university of 10,000 to 
+analyze average performance trends. 
+1-d) Define Eager Learning 
+1. Eager learning algorithms build a general model immediately from training 
+data before receiving any queries. 
+2. The model is ready to predict outputs for new inputs instantly, which makes 
+testing fast. 
+3. Decision trees, Naïve Bayes, and linear regression are examples of eager 
+learners. 
+4. They are efficient when data is stable, but can overfit if the model is too 
+complex or underfit if too simple. 
+5. Eager learners require significant computation upfront during training. 
+6. Example: A decision tree model trained to classify emails as spam or not spam. 
+1-e) What is Lazy Learning 
+1. Lazy learning algorithms do not create a general model immediately; they 
+store the training data and wait until a query appears. 
+2. K-Nearest Neighbor (KNN) is a classic example. 
+3. Prediction in lazy learning is performed by comparing the query point with 
+stored training examples using distance measures such as Euclidean distance. 
+4. Lazy learners are slower during testing but very flexible with new data. 
+5. They perform better on smaller datasets but can be inefficient for very large 
+datasets. 
+6. Example: Predicting flower species based on measurements using KNN. 
+1-f) Define Term Genetic 
+1. Genetic algorithms are optimization techniques inspired by natural selection 
+and evolutionary biology. 
+2. Solutions are treated as individuals in a population, and their fitness is 
+evaluated to guide evolution. 
+3. Crossover, mutation, and selection operators generate new generations of 
+solutions. 
+4. Over multiple generations, the algorithm converges towards optimal or near
+optimal solutions. 
+5. They are effective for solving complex problems where classical methods fail. 
+6. Example: Optimizing travel routes in logistics to reduce delivery time. 
+1-g) Discuss Dynamic Programming 
+1. Dynamic Programming (DP) breaks complex problems into simpler 
+subproblems and solves them systematically. 
+2. It stores the solutions of subproblems to prevent redundant calculations. 
+3. DP is widely used in optimization and decision-making tasks. 
+4. Two approaches exist: top-down with memoization and bottom-up iterative 
+approach. 
+5. Common examples include Fibonacci sequence calculation, knapsack problem, 
+and shortest path problems. 
+6. DP improves computational efficiency but can consume more memory. 
+7. Example: Finding the shortest path in a city road network efficiently. 
+1-h) Define Explanation Based Learning 
+1. Explanation Based Learning (EBL) generalizes a rule from a single example 
+using background knowledge. 
+2. It identifies why a particular example is correct and formulates a 
+generalization that can be applied in similar situations. 
+3. EBL accelerates learning since fewer examples are required. 
+4. Applicable in structured domains where prior knowledge exists. 
+5. Example: A robot learns a navigation route in one room and generalizes to 
+other rooms with similar layout. 
+1-i) Write about Control Knowledge 
+1. Control knowledge guides the selection and ordering of rules or actions in AI 
+systems to optimize problem-solving. 
+2. It improves efficiency by prioritizing promising paths and avoiding 
+unproductive computations. 
+3. Useful in expert systems, planning, and games. 
+4. Example: Chess AI using control knowledge to select the most promising moves 
+first. 
+5. Helps AI focus on relevant strategies instead of evaluating all possibilities. 
+1-j) Define Precision, Recall, and F1 Score 
+1. Precision measures the proportion of true positive predictions out of all positive 
+predictions made by a model. 
+2. Recall measures the proportion of true positive predictions out of all actual 
+positives. 
+3. F1 Score is the harmonic mean of precision and recall, balancing the trade-off 
+between them. 
+4. High precision reduces false positives, while high recall reduces false negatives. 
+5. They are essential metrics for evaluating classification performance, especially 
+in imbalanced datasets. 
+6. Example: Spam email detection where both false positives and false negatives 
+affect model quality. 
+2] Attempt Any 6 (Random: a, b, c, d, f, g) 
+2-a) Explain Decision Tree in detail, give example 
+1. Decision Tree is a supervised learning model used for classification and 
+regression tasks. 
+2. It splits data recursively based on feature conditions to form a tree structure 
+with root, internal nodes, and leaves. 
+3. Splitting is guided by criteria like entropy, information gain, or Gini index. 
+4. Trees can be pruned to prevent overfitting and improve generalization. 
+5. Decision trees are interpretable and easy to visualize, making them suitable for 
+human understanding. 
+6. Can handle both numerical and categorical data. 
+7. Performs well when data has clear rules or patterns. 
+8. Example: Classifying emails as spam or not spam based on words and 
+frequency. 
+2-b) Describe briefly about K-nearest Neighbors 
+1. KNN predicts labels based on the majority vote of k nearest neighbors using a 
+distance metric. 
+2. It is a non-parametric, instance-based learning method that requires no 
+training phase. 
+3. Sensitive to the choice of k and the distance metric used. 
+4. Performs well in small datasets but can be slow with large datasets. 
+5. Example: Classifying iris flowers based on petal and sepal measurements. 
+2-c) Discuss in detail about representation of Neural Network 
+1. Neural Networks consist of input layers, hidden layers, and output layers. 
+2. Each neuron applies a weighted sum and an activation function to inputs. 
+3. Forward propagation computes outputs; backpropagation updates weights to 
+minimize error. 
+4. Deep networks with multiple hidden layers capture complex patterns. 
+5. Regularization methods like dropout prevent overfitting. 
+6. Used in image, speech, and text processing. 
+7. Example: Handwriting recognition using multi-layer perceptrons. 
+2-d) Differentiate Classification & Regression 
+1. Classification predicts discrete labels, regression predicts continuous numeric 
+values. 
+2. Classification algorithms include SVM, decision trees; regression uses linear, 
+polynomial regression. 
+3. Evaluation metrics differ: accuracy for classification, MSE or R² for regression. 
+4. Classification can be binary or multi-class; regression can be linear or 
+nonlinear. 
+5. Example: Spam detection (classification) vs predicting house prices (regression). 
+2-f) Compare AI, ML, Deep Learning 
+1. AI is the broad field of building intelligent systems. 
+2. ML is a subset of AI focused on learning patterns from data. 
+3. Deep Learning is a subset of ML using deep neural networks for feature 
+extraction. 
+4. AI includes reasoning, planning, perception; ML focuses on predictions; DL 
+extracts features automatically. 
+5. Example: AI – self-driving car, ML – stock prediction, DL – face recognition. 
+6. DL requires large datasets and computational power. 
+7. ML can work with smaller datasets with feature engineering. 
+8. Deep architectures improve model performance in complex tasks. 
+2-g) Differentiate CNN & RNN 
+1. CNNs process spatial data using convolution and pooling layers to extract 
+features. 
+2. RNNs process sequential data using loops and memory of previous inputs. 
+3. CNN is widely used in image and video tasks, RNN in text, speech, and time 
+series. 
+4. CNN has fixed input sizes; RNN can handle variable-length sequences. 
+5. Example: CNN – object recognition in images, RNN – predicting next word in 
+a sentence. 
+6. Deep architectures enhance representation and prediction accuracy. 
+7. RNN may face vanishing gradient problem; LSTM can solve it. 
+8. Choice of model depends on data type and task. 
+3] Attempt All 
+3-a) Define Search Algorithms in AI (7 marks) 
+1. Search algorithms explore problem spaces to find solutions from initial to goal 
+states. 
+2. They systematically evaluate states and possible actions to reach objectives. 
+3. Uninformed searches like BFS, DFS, UCS use no domain knowledge. 
+4. Informed searches like A* or greedy search use heuristics to guide exploration 
+efficiently. 
+5. Heuristics estimate the cost to reach the goal and improve search speed. 
+6. Search algorithms are used in puzzles, games, robotics, and planning. 
+7. Efficiency depends on search space size and heuristic quality. 
+8. Example: Solving the 8-puzzle problem using A* search. 
+9. Proper search algorithm selection can significantly improve AI performance. 
+10. 
+Used in pathfinding, route planning, and problem-solving applications. 
+3-b) What is Intelligent Agent (8 marks) 
+1. An intelligent agent perceives the environment using sensors and acts through 
+actuators to achieve goals. 
+2. Rational agents act to maximize expected performance. 
+3. Types include reflex, model-based, goal-based, utility-based, and learning 
+agents. 
+4. Agents can operate in fully or partially observable environments. 
+5. Performance depends on task success, efficiency, and adaptability. 
+6. Learning agents improve performance based on experience. 
+7. Example: Self-driving cars, Alexa, chess-playing AI. 
+8. Intelligent agents combine reasoning, learning, and acting to solve real-world 
+problems. 
+9. Proper design ensures efficiency and goal achievement. 
+10. 
+Applications are in robotics, AI assistants, automated control systems. 
+3-c) Write Five Applications of AI (5 marks) 
+1. Healthcare: AI-assisted diagnostics, imaging, robotic surgeries. 
+2. Finance: Fraud detection, algorithmic trading, credit scoring. 
+3. Transportation: Self-driving cars, route optimization, traffic management. 
+4. Education: Personalized learning systems, automated grading. 
+5. Agriculture: Crop monitoring, disease detection, automated irrigation. 
+6. Example: AI-powered medical imaging system detecting anomalies 
+automatically. 
+7. Customer Service: Chatbots and automated query resolution. 
+8. Manufacturing: Predictive maintenance and process automation. 
+9. Security: Facial recognition and surveillance systems. 
+10. 
+Entertainment: AI in gaming and personalized content recommendations. 

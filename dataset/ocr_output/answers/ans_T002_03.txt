@@ -1,0 +1,198 @@
+ID-T002 
+Name : Hansika Bendre   Roll no: M0013 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-2. What are the different types of machine learning? 
+The different types of machine learning they are categorized based on how the 
+computer gets the data and the type of feedback it receives during the learning process. 
+1. Supervised Learning: The data it comes with labels (the right answers), so the 
+model it learns by mapping input to output. 
+2. Unsupervised Learning: The data it has no labels. The model it must find the 
+hidden groups or the structure by itself. 
+3. Reinforcement Learning: The model (agent) it learns by interacting with an 
+environment and getting rewards or penalties for its actions. 
+4. Semi-Supervised Learning: It is a mix of labeled and unlabeled data, where a lot 
+of data has no labels. 
+5. Self-Supervised Learning: It creates its own labels from the input data, often 
+used before a supervised task (e.g., predicting a masked word). 
+A-3. What is the difference between supervised, unsupervised, and 
+reinforcement learning? 
+These are the three main types of machine learning, and they are different in the type 
+of training data and the learning goal for the computer system. 
+1. Supervised Learning: Data is labeled (has right answers). Goal is prediction 
+(Classification/Regression). 
+2. Unsupervised Learning: Data is not labeled (no right answers). Goal is finding 
+structure (Clustering/Grouping). 
+3. Reinforcement Learning (RL): No dataset, only an environment. Goal is taking 
+action to maximize a cumulative reward. 
+4. Supervised is like learning with a teacher. Unsupervised is like finding patterns 
+alone. 
+5. RL is like learning by trial and error in a game. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff it is the struggle that you must deal with when you build 
+a model. It is about two opposite types of errors that make the total error. 
+1. Bias it is the error from the model being too simple and cannot capture the 
+pattern. 
+2. Variance it is the error from the model being too complex and memorizing the 
+noise. 
+3. When you make the model complex to reduce Bias, the Variance will 
+automatically get worse. 
+4. The final goal it is to find a middle point where the total error on the test data 
+is the lowest. 
+5. This tradeoff it guides the model selection and complexity choices. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is when the model learns the training data too well, including the noise, 
+so it performs great on training but fails on new data. This is high variance. 
+1. It happens when the model is too flexible or the training data is too noisy. 
+2. The symptom is a huge difference between low training error and high test error. 
+3. It can be avoided by using Regularization (a penalty for complex weights). 
+4. It can also be avoided by getting more training data or by stopping the training 
+early (Early Stopping). 
+5. In Decision Trees, pruning it is the technique used to avoid this problem. 
+A-7. What is cross-validation? 
+Cross-validation (CV) it is a technique to test the model's performance on different 
+subsets of the data, so the score is more stable and fair than just one split. 
+1. It is better than a single train-test split because it uses all the data for both 
+training and testing. 
+2. In k-Fold CV, the data it is split into $k$ equal parts (folds). 
+3. The model it trains $k$ times, and each part is used once as the validation set. 
+4. The final result is the average of the $k$ performance scores you get. 
+5. CV it is very important for hyperparameter tuning and checking the model's 
+stability. 
+B) Any 4 out of following (20 Marks) 
+B-2. How does a linear regression model work? 
+A Linear Regression (LR) model it is a basic model that it finds the best straight line 
+to fit the continuous numerical data so it can make future predictions. 
+1. The model it finds the equation of the line, which is the combination of weights 
+(slopes) and a bias term (intercept). 
+2. The goal it is to minimize the total vertical distance between the line and every 
+single data point. 
+3. This distance is calculated using the Mean Squared Error (MSE), which it squares 
+the errors to penalize the big mistakes more. 
+4. The model it uses an optimizer like Gradient Descent to iteratively adjust the 
+weights and move the line closer to the data. 
+5. The key assumption it is that the relationship between the input and output it 
+must be linear, or the model it will perform very badly. 
+6. LR it is easy to interpret because you can see exactly how each feature affects 
+the output through its weight. 
+7. It is a parametric model because it assumes a fixed structure (a line) and only 
+estimates the parameters of that structure. 
+8. LR it is not good for complex, non-linear data or for classification problems. 
+B-4. What is the Random Forest algorithm? 
+The Random Forest (RF) algorithm it is an excellent ensemble method that it combines 
+the votes of many diverse Decision Trees to make a better final prediction. 
+1. RF it uses the Bagging technique where many trees are trained but each tree 
+gets a different, random sample of the training data (bootstrap samples). 
+2. The key feature is that each tree also randomly selects a subset of the input 
+features when it decides on a split. 
+3. This double randomness (data and features) it makes the trees diverse, so they 
+all make different, small errors. 
+4. Because the errors are not correlated, when the final predictions are averaged 
+(or voted), the errors cancel out, which reduces the variance. 
+5. RF it is excellent at reducing the high variance (overfitting) problem that single 
+decision trees usually have. 
+6. The final guess it is the majority vote from all the trees for classification problems. 
+7. RF it is a very robust model that it performs well without a lot of 
+hyperparameter tuning. 
+8. RF it also provides a measure of Feature Importance that shows you which input 
+columns were most useful for the overall prediction. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+The Support Vector Machine (SVM) model it is a powerful classifier that it finds the 
+optimal hyperplane (the best boundary) to separate the classes in the data space. 
+1. The main goal of SVM it is to find the boundary that has the maximum margin 
+(the largest distance) to the nearest data point of each class. 
+2. The data points that lie closest to this maximum margin boundary they are 
+called Support Vectors. 
+3. The final hyperplane it is defined only by these Support Vectors, so SVM it is 
+memory efficient and robust to outliers. 
+4. For data that is not linearly separable (not a straight line), the Kernel Trick it is 
+used to implicitly map the data into a higher dimension. 
+5. In the higher dimension, the data it becomes linearly separable, and the SVM 
+can draw the straight line (the hyperplane) easily. 
+6. Common kernels they are the Radial Basis Function (RBF) and the polynomial 
+function that handle the non-linear separation. 
+7. The Soft Margin it is used when the data it has noise or it is hard to separate, 
+allowing some points to violate the boundary for better generalization. 
+8. SVM it is very effective in high-dimensional spaces and when the data is complex 
+but it can be slow on very large datasets. 
+B-6. What are kernels in SVM? 
+Kernels in Support Vector Machine (SVM) they are special mathematical functions that 
+they allow the SVM to handle non-linear data without actually moving the data into 
+a high-dimensional space. 
+1. The Kernel Trick it is the central idea that allows the SVM to draw curvy 
+boundaries in the original data space. 
+2. The problem is that most real-world data it is not linearly separable (you cannot 
+use a straight line). 
+3. The Kernel function it calculates the similarity between pairs of data points as if 
+they were in a high-dimensional space. 
+4. This trick it saves a lot of computation time and memory because it avoids the 
+actual, expensive transformation of the data points. 
+5. The Radial Basis Function (RBF) kernel it is the most popular choice and it can 
+handle very complex relationships. 
+6. The Polynomial kernel it is another common type that it uses polynomial 
+functions to define the similarity. 
+7. Kernels they are crucial because they turn a linear classifier (SVM) into a very 
+powerful non-linear classifier. 
+8. The choice of the right kernel it is a hyperparameter that must be tuned using 
+cross-validation. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a classification algorithm that it is based on probability and the 
+famous Bayes' Theorem. It is very simple and very fast. 
+1. It calculates the probability of a class being true given the input features you 
+provide. 
+2. The naïve assumption it is that all the features in the data they are independent 
+from each other. 
+3. This independence assumption it simplifies the math a lot, making NB very quick 
+to train and predict. 
+4. NB it is widely used for text classification like spam filtering and sentiment 
+analysis. 
+5. Training the model it just involves calculating the prior probabilities and the 
+likelihoods from the data counts. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are different algorithms that 
+they solve different problems, despite having the $k$ parameter. 
+1. KNN it is a supervised algorithm for classification (needs labels), and k-Means it 
+is an unsupervised algorithm for clustering (needs no labels). 
+2. In KNN, the $k$ it is the number of neighbors used to determine the final class 
+by voting. 
+3. In k-Means, the $k$ it is the number of groups (clusters) that you want the 
+algorithm to find. 
+4. KNN it is a lazy learner because it only stores the data and does the calculations 
+at the prediction time. 
+5. k-Means it is an active learner because it calculates the cluster centers (centroids) 
+during the training time. 
+6. KNN it is used for prediction, while k-Means it is used for grouping or 
+segmentation. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is the core math method that it makes machine learning 
+models learn by finding the best parameters (weights) that minimize the total mistake 
+(the cost function). 
+1. It is an iterative process that it moves the parameters in small steps towards the 
+lowest point of the mistake function. 
+2. The gradient it is the slope of the mistake function, and it tells you the direction 
+of the steepest uphill. 
+3. The algorithm it moves in the opposite direction of the gradient (downhill) to 
+find the minimum. 
+4. The Learning Rate it is a crucial hyperparameter that it controls the size of the 
+steps. Too big a step it will overshoot the minimum. 
+5. GD it is used in almost all complex models like Neural Networks and Logistic 
+Regression. 
+4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) they are two 
+versions of the Gradient Descent algorithm that they differ in how much data they 
+use for one weight update. 
+1. BGD it calculates the gradient using the entire training dataset for every single 
+update. 
+2. SGD it calculates the gradient using only one single data example for every single 
+update. 
+3. BGD it is very slow per update because it has to process all the data, but the 
+path is smooth. 
+4. SGD it is very fast per update but the path is very noisy because it only uses one 
+example. 
+5. SGD is better for very large datasets because it can update faster and it uses less 
+memory. 
+6. A third version, Mini-Batch GD, it uses a small batch of data (e.g., 32 or 64 
+examples) which it is the best compromise between BGD and SGD. 
+ 

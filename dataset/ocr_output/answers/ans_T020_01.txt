@@ -1,0 +1,187 @@
+ID-T020 
+Name: Himanshu sharma Roll no: 1 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 5 (8 marks each) 
+A-a) Explain how data drift and concept drift affect the long-term performance of machine 
+learning models. Discuss the different types of drift and practical strategies to detect and 
+handle them. 
+Machine learning models assume that the distribution of data observed during deployment is 
+similar to what they encountered during training. When this assumption breaks, performance 
+degrades. This degradation is caused mainly by data drift and concept drift. 
+1. Data Drift 
+Data drift refers to a change in the input feature distribution over time while the target 
+relationship remains stable. 
+Example: Customer age distribution shifting from younger to older due to market expansion. 
+Types of Data Drift 
+ Covariate Drift: Change in the independent variable distribution (P(X) changes). 
+ Prior Probability Drift: The frequency of class labels changes but the relationship 
+stays same. 
+ Feature Quality Drift: Sensor degradation, missing values, or formatting changes. 
+. Strategies to Detect Drift 
+ Statistical Tests: KS test, Chi-square test, Population Stability Index. 
+ Model Performance Monitoring: Continuous evaluation on recent labeled data. 
+ Embedding Drift Detection: Compare vector distributions from embedding models. 
+ Unsupervised Drift Detectors: ADWIN, Page-Hinkley. 
+Handling Drift 
+ Frequent Model Retraining: Periodic or triggered retraining using new data. 
+ Online Learning Models: Models that adapt continuously. 
+ Feature Monitoring & Auto-Scaling: Adjust feature transformations or remove 
+affected inputs. 
+ Ensemble Approaches: Combine models trained on past and recent data to stabilize 
+transitions. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, images, 
+or categorical data can be transformed into meaningful representations for models. 
+Embedding techniques convert high-dimensional or symbolic data into dense numerical 
+vectors that preserve semantic meaning. They allow models to work with raw modalities 
+such as text, images, and categorical variables. 
+1. Role of Embeddings 
+ Capture relationships and similarities between entities. 
+ Improve performance of deep models by reducing sparsity. 
+ Enable multi-modal learning (text + image + audio). 
+ Useful for clustering, classification, and retrieval tasks. 
+2. Text Embeddings 
+Text embeddings convert words, sentences, or documents into vectors. 
+Common methods: 
+ Word2Vec / GloVe: Capture contextual relationships between words. 
+ Transformer Embeddings: BERT, GPT produce contextualized embeddings. 
+ Sentence/Document Embeddings: SBERT, Universal Sentence Encoder. 
+3. Image Embeddings 
+Images are passed through convolutional or transformer-based networks to extract high-level 
+features such as edges, shapes, or textures. 
+ CNN-based embeddings (ResNet, VGG). 
+ Vision Transformer (ViT) embeddings. 
+ Used in recognition, similarity search, and detection. 
+5. Benefits 
+ Improve generalization. 
+ Enable semantic search. 
+ Reduce storage and compute cost. 
+ Support recommendation systems and multi-modal models. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. Explain 
+advanced techniques such as cost-sensitive learning, synthetic sample generation, and 
+threshold adjustment. 
+Imbalanced datasets contain uneven representation of classes. For example, 98% non-fraud 
+and 2% fraud. Such imbalance causes models to favor majority classes. 
+Challenges 
+ Biased Predictions: Model predicts majority class to achieve high apparent accuracy. 
+ Poor Minority Recall: Critical events such as fraud, disease detection get missed. 
+ Misleading Metrics: Accuracy becomes unreliable; other metrics must be used. 
+ Training Instability: Gradient updates dominated by majority samples. 
+Advanced Techniques 
+1. Cost-Sensitive Learning 
+Assigns higher misclassification cost to minority samples. 
+ Uses weighted loss functions (Weighted Cross-Entropy). 
+ Ensures the model pays more attention to minority class. 
+2. Synthetic Sample Generation 
+Oversampling techniques generate synthetic minority samples. 
+ SMOTE: Creates synthetic points by interpolating between neighbors. 
+ ADASYN: Generates more samples where minority density is low. 
+ Helps balance the decision boundary. 
+3. Threshold Adjustment 
+Default probability threshold (0.5) may not be optimal. 
+ Lowering threshold increases minority recall. 
+ ROC curve, Precision-Recall curves guide threshold tuning. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss real
+world use cases where XAI is crucial for decision-making. 
+XAI provides transparency into model reasoning, making systems more trustworthy, 
+auditable, and adoptable. 
+Benefits of XAI 
+ Highlights which features influenced a decision. 
+ Helps detect bias and unintended correlations. 
+ Enables regulatory compliance (finance, healthcare). 
+ Supports debugging and model improvement. 
+Important XAI Methods 
+ LIME: Local explanations for individual predictions. 
+ SHAP: Shapley values showing contribution of each feature. 
+ Feature Importance Analysis: Global model-level interpretations. 
+ Visualization Tools: Attention maps for images, embedding projections. 
+Real-World Use Cases 
+ Healthcare Diagnosis: Providers need to understand why an AI suggests a treatment. 
+ Loan Approval Systems: Banks must justify decisions to customers and regulators. 
+ Fraud Detection: Analysts validate suspicious behavior flagged by ML. 
+ Autonomous Vehicles: Interpreting why a model misclassified a road object. 
+ HR Recruitment Systems: Ensuring fair and explainable candidate selection. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and how it 
+impacts model performance. 
+Feature leakage occurs when information from outside the training environment—
+particularly from the future or the target variable—accidentally becomes part of the training 
+data. This leads to overoptimistic performance during training but catastrophic failure in 
+deployment. 
+Causes of Feature Leakage 
+ Temporal Leakage: Using data collected after the prediction time. 
+ Target Leakage: Features derived from or highly correlated with the target. 
+ Improper Data Splits: Splitting without considering groups or time (e.g., same 
+patient appearing in both train and test). 
+ Preprocessing Leakage: Fitting scalers on full data before splitting. 
+ Human Process Leakage: Domain operations unintentionally revealing labels. 
+Impact 
+ Unrealistically high validation accuracy. 
+ Poor generalization in real-world deployment. 
+ Inability to detect genuine patterns. 
+ Potential regulatory failures in sensitive domains (healthcare, finance). 
+Prevention 
+ Temporal-aware splitting (train on past, test on future). 
+ Fit transformations only on training data. 
+ Conduct leakage audits and feature importance checks. 
+ Domain expert validation. 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to separate 
+validation, testing, and deployment evaluation? 
+Evaluation pipelines standardize the testing, validation, and monitoring process for ML 
+models to ensure reliable performance. 
+Role of Evaluation Pipelines 
+ Automated Metric Calculation: Accuracy, F1-score, ROC-AUC, loss tracking. 
+ Consistent Data Processing: Avoids preprocessing leakage. 
+ Benchmarking Models: Compare across iterations and hyperparameter 
+configurations. 
+ Reproducibility: Ensures experiments are replicable and auditable. 
+ Risk Assessment: Detects bias, robustness issues, and sensitivity. 
+Separation of Validation, Testing, and Deployment Evaluation 
+ Validation Set: Used for model selection and hyperparameter tuning. Prevents 
+overfitting to training data. 
+ Test Set: Used only after final model selection to estimate generalization 
+performance. Must remain untouched during development. 
+ Deployment Evaluation: Continuous monitoring in real-world conditions (data drift, 
+latency, fairness). 
+Why the Separation Matters 
+ Prevents "information leakage" across stages. 
+ Ensures honest performance reporting. 
+ Avoids overfitting to a single test set. 
+ Improves reliability for high-stakes deployments. 
+B-c) Describe how transfer learning improves model development. Mention scenarios where 
+transfer learning is especially useful. 
+Transfer learning uses knowledge from a pre-trained model to improve performance on a 
+new but related task. 
+How Transfer Learning Helps 
+ Reduces Training Time: Pre-trained layers provide strong initial representations. 
+ Improves Accuracy: Especially when target dataset is small. 
+ Reduces Compute Costs: Reuses learned features. 
+ Improves Generalization: Early layers carry robust patterns. 
+Approaches 
+ Feature Extraction: Freeze early layers, use them as fixed feature extractors. 
+ Fine-Tuning: Unfreeze some layers and retrain with smaller learning rate. 
+ Domain Adaptation: Match source and target domain distributions. 
+Useful Scenarios 
+ Medical imaging (small labeled datasets). 
+ NLP tasks using large transformer models (BERT, GPT). 
+ Speech recognition in domain-specific audio environments. 
+ Object detection in manufacturing with limited defective samples. 
+ Recommender systems leveraging embeddings from previous domains. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and Random 
+Search? Compare them briefly. 
+Hyperparameter search strategies automate the process of finding the best hyperparameter 
+values for a model. 
+Purpose 
+ Optimize model performance. 
+ Reduce manual trial-and-error. 
+ Identify interactions among parameters. 
+ Improve stability and reproducibility. 
+Grid Search 
+ Exhaustively evaluates all combinations. 
+ Good for small search spaces. 
+ Computationally expensive for high-dimensional spaces. 
+Random Search 
+ Samples parameters randomly. 
+ More efficient for large spaces. 
+ Proven to find near-optimal solutions with fewer trials. 
+ Often outperforms Grid Search in practice. 

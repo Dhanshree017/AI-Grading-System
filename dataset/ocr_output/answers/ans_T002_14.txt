@@ -1,0 +1,153 @@
+ID-T002 
+Name : Sakshi Ovhal   Roll no: M00114 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-2. What are the different types of machine learning? 
+There are three main types, which are categorized by the type of data and feedback 
+used during the learning process. 
+1. Supervised Learning: The data is already labeled with the right answers. The 
+model learns a map from inputs to outputs. 
+2. Unsupervised Learning: The data is unlabeled. The model looks for the hidden 
+structure or groups on its own. 
+3. Reinforcement Learning: The computer agent learns by taking actions and 
+getting rewards or punishments from its environment. 
+4. Some people also mention Semi-Supervised Learning, which uses a mix of a little 
+labeled data and a lot of unlabeled data. 
+5. All three are important for solving different types of problems in AI. 
+A-3. What is the difference between supervised, unsupervised, and reinforcement 
+learning? 
+The difference is mainly about the data you start with and the goal of the algorithm. 
+1. Supervised has a clear target variable (the label) you are trying to predict. 
+2. Unsupervised has no target variable. The goal is just data exploration and finding 
+patterns. 
+3. Reinforcement involves a sequence of decisions over time to maximize total 
+reward, rather than just classifying a single point. 
+4. Supervised is used for Classification (predicting categories) and Regression 
+(predicting numbers). 
+5. Unsupervised is used for Clustering (grouping) and Dimensionality Reduction 
+(simplifying data). 
+A-4. What is the bias-variance tradeoff? 
+This is the main challenge when choosing a model's complexity. You have to balance 
+two types of error. 
+1. Bias is the error that happens when the model is too simple—it can't capture 
+the pattern. This is underfitting. 
+2. Variance is the error that happens when the model is too complex—it fits the 
+noise in the training data too closely. This is overfitting. 
+3. When you try to lower the bias (make the model more complex), you almost 
+always raise the variance. 
+4. When you try to lower the variance (simplify the model), you usually raise the 
+bias. 
+5. The goal is to find the best balance that minimizes the total error on the test 
+data. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting is when a model learns the noise and irrelevant details of the training data 
+instead of the actual important signal. This causes the model to fail on new data. 
+1. The sign of overfitting is high accuracy on the training data but low accuracy on 
+the test data. 
+2. It can be avoided by getting more training data, which reduces the impact of 
+the noise. 
+3. You can use Regularization, which is a technique that penalizes the model for 
+having excessively large weight values. 
+4. You can use Early Stopping, meaning you stop the training process the moment 
+the model's performance on the validation set starts to get worse. 
+5. You can also try using simpler models or ensemble methods like Random Forest, 
+which are naturally more resistant to high variance. 
+B) Any 4 out of following (20 Marks) 
+B-4. What is the Random Forest algorithm? 
+Random Forest is a highly effective ensemble learning model that combines the results 
+of many individual Decision Trees to improve accuracy and stabilize predictions. 
+1. Ensemble Method: It is a Bagging (Bootstrap Aggregating) ensemble. It gets its 
+final prediction by combining the results of multiple independent models, which 
+is better than any single model. 
+2. Data Randomness (Bagging): Each individual Decision Tree in the forest is trained 
+on a different random sample (taken with replacement, called a bootstrap 
+sample) of the original training data. This makes the data unique for each tree. 
+3. Feature Randomness (Key Step): This is the most important part: when any tree 
+is looking for the best split, it only considers a random subset of the input 
+features, not all of them. This forces the individual trees to be very different 
+from each other (decorrelated). 
+4. Variance Reduction: The main benefit is a huge reduction in variance 
+(overfitting). Since all the individual trees are high-variance but make different 
+errors, averaging or voting their results cancels out the individual noise and 
+stabilizes the final prediction. 
+5. Final Prediction: For a classification task, the final answer is determined by 
+majority voting among all the trees. For regression, it's the average of all the 
+trees' predictions. 
+6. Robustness: Random Forest is known for its high robustness. It handles mixed 
+data types well, is resistant to outliers, and can handle large datasets without 
+much trouble. 
+7. Feature Importance: It automatically provides a ranking of Feature Importance, 
+showing which input features were the most useful across all trees for making 
+accurate splits and reducing error. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) is a powerful, supervised model used for classification 
+that aims to find the optimal boundary between classes. 
+1. Hyperplane: SVM's goal is to find the best possible hyperplane (the decision 
+boundary) that separates the data into two or more classes. 
+2. Maximum Margin: The "best" hyperplane is the one that has the largest margin—
+the widest separation or "street"—between the data points of the different 
+classes. Maximizing this margin is what improves generalization. 
+3. Support Vectors (SVs): Only a few data points actually define the position and 
+width of this margin. These critical points are called Support Vectors. All other 
+points can be ignored, which makes the model efficient. 
+4. Sparsity: Because it only relies on the Support Vectors, the model is memory 
+efficient (sparse) and naturally robust to outliers that are far away from the 
+margin. 
+5. The Kernel Trick: For data that is not linearly separable (you can't draw a 
+straight line between them), the Kernel Trick is used. It mathematically maps 
+the data into a higher-dimensional space where a linear separation is possible. 
+6. Soft Margin: In real, noisy data, a Soft Margin is used, which allows a few data 
+points to cross the margin boundary. This is controlled by the $\text{C}$ 
+parameter and helps prevent severe overfitting to noise. 
+7. Convex Optimization: A major advantage is that the SVM optimization problem 
+is convex, which guarantees that the algorithm will find the true global optimal 
+solution and not just a local minimum. 
+B-6. What are kernels in SVM? 
+Kernels in Support Vector Machines (SVM) are special functions that allow the SVM to 
+effectively work with non-linear data without having to perform complex calculations. 
+1. Kernel Trick: This is the core idea. The Kernel function lets a linear classifier (the 
+SVM) calculate a non-linear decision boundary in the original data space. This 
+means the boundary can be curvy or circular. 
+2. Implicit Mapping: The Kernel works by calculating the similarity between two 
+data points as if they had already been mapped into a very high-dimensional 
+feature space. It avoids the explicit, expensive math. 
+3. Efficiency: This "trick" saves a huge amount of computation time and memory 
+because the coordinates in the high-dimensional space are never actually 
+calculated or stored. 
+4. Common Kernels: The most popular kernel for handling complex data is the 
+Radial Basis Function (RBF) kernel (or Gaussian kernel). It's used when the data 
+is heavily mixed up. 
+5. Polynomial Kernel: This is another common type that calculates similarity using 
+a polynomial function of a given degree. It's useful for simpler non-linear 
+relationships. 
+6. Kernel Selection: The choice of which kernel to use is a hyperparameter that 
+must be tuned (usually with cross-validation) because the wrong kernel can 
+significantly hurt the model's performance. 
+7. Linear Kernel: If the data is actually linearly separable, the simplest Linear Kernel 
+is used, and it is the fastest option. 
+C) Attempt All (20 Marks) 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+KNN and k-Means are totally different models that solve different problems and belong 
+to different categories of machine learning, even though they both use a 'k' and rely 
+on distance. 
+1. Learning Type: KNN is a Supervised Learning model used for classification or 
+regression. k-Means is an Unsupervised Learning model used solely for clustering. 
+2. The Role of 'k': In KNN, $k$ is a hyperparameter defining the number of neighbors 
+to check to decide the class of a new point. In k-Means, $k$ is the 
+hyperparameter defining the number of clusters the algorithm should find. 
+3. Data Requirements: KNN requires labeled data for training (you need the correct 
+answers). k-Means only requires unlabeled data (it figures out the groups itself). 
+4. Training Phase: KNN is a lazy learner—it does no real training, it just stores the 
+entire dataset. k-Means is an active learner—it has an iterative training phase 
+where it moves the cluster centers (centroids) until they stabilize. 
+5. Prediction: KNN is used to make a prediction (a class label or a number) for a 
+brand-new, unseen data point. k-Means is used for data exploration and 
+assigning cluster IDs to the existing data. 
+6. Distance Reliance: Both models are heavily sensitive to the scale of the features, 
+meaning you must normalize or scale all input features before using either one. 
+7. Curse of Dimensionality: KNN suffers badly from the curse of dimensionality 
+when there are too many features because distance calculations become 
+unreliable in very high-dimensional space. 
+8. Goal: KNN's goal is accurate local prediction based on proximity. k-Means' goal 
+is optimal global partitioning of the data into homogeneous groups. 

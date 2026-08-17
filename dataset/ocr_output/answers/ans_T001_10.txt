@@ -1,0 +1,142 @@
+ID-T001 
+Name :Ashish Bhatia Roll no: 10 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 of the following questions (20 Marks) 
+A-1. Define machine learning and its relationship to other fields like statistics and AI. 
+Machine Learning (ML) is where the computer program it gets its performance better at some job just by 
+looking at the data you give it. This is much better than regular programming where you have to write 
+every single rule. We must remember that good data privacy is a big part of ML. 
+1. Iterative Process: The algorithm it learns by seeing the errors it makes, and then it updates its 
+own parameters to try to make the next prediction correct. 
+2. Generalization: The main purpose is not to be good on the data you train with, but it must be 
+very good at making guesses on new data it has never seen. 
+3. Data Requirements: All ML it needs a huge amount of RAM and also a very good GPU or else 
+the training will take too long and the electricity bill will be too high. 
+4. ML and AI: Artificial Intelligence (AI) is the overall umbrella for making machines smart. ML 
+it is the engine that sits inside AI that makes the machine learn all the smart things. 
+5. ML and Statistics: Statistics it is just old math for explaining things that already happened. 
+ML it uses some math but it is focused on the future and guessing the price of bitcoin next week. 
+6. No Explicit Rules: The machine it develops its own rules for prediction without a human coding 
+every single specific instruction. 
+A-5. Describe ensemble methods like bagging and boosting. 
+Ensemble methods they are a powerful technique where many weak models (the base learners) they are 
+put together to make one single, very strong model. This makes the model much more stable. 
+1. Combination of Weakness: The main idea it is that the combined errors of many simple models 
+will cancel each other out, leading to a much better overall prediction. 
+2. Bagging (Parallel): In bagging, the models they are trained at the same time (in parallel). Each 
+model it gets a random sample with replacement (bootstrapping) of the data. 
+3. Bagging Goal: Bagging it is mainly used to reduce the variance (overfitting) problem by 
+averaging all the predictions. The Random Forest model is the best example of bagging. 
+4. Boosting (Sequential): In boosting, the models they are trained one after the other (in sequence). 
+Each new model it must focus only on the mistakes the previous model made. 
+5. Boosting Goal: Boosting it is mainly used to reduce the bias problem by creating models that fix 
+the hard-to-classify data points. XGBoost is the fastest boosting algorithm. 
+6. Training Time: Bagging it is much faster to train than boosting because all the models can 
+train at the same time on different CPUs. 
+7.  
+A-6. Explain the bias-variance tradeoff and its significance. 
+The Bias-Variance Tradeoff it is the core concept that it explains why every machine learning model 
+makes errors. The total error is a balance that you must find between Bias and Variance. The irreducible 
+error is just noise. 
+1. Bias (Underfitting): Bias it is the error from the model being too stupid and too simple and 
+making wrong assumptions about the data. 
+2. High Bias Problem: High Bias causes Underfitting, where the model performs bad on all data 
+because it cannot find the real pattern. The accuracy is very low. 
+3. Variance (Overfitting): Variance it is the error from the model being too complicated and overly 
+sensitive to the noise in the training set. 
+4. High Variance Problem: High Variance causes Overfitting, where the model is perfect on the 
+training data but it fails badly on the new test data. 
+5. The Conflict: The tradeoff it means that when you try to reduce bias (make the model complex), 
+the variance will always increase. It is an impossible task to remove both. 
+6. Finding the Middle: The goal it is to find the optimal point of complexity where the total error is 
+the minimum amount for the real-world application. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define and explain metrics like Precision, Recall, and F1-score and when to use them. 
+These three important scores they are used for classification to check how well the model works, especially 
+when one class is very small (imbalanced). 
+1. Precision Measurement: Precision it tells you how reliable the model is when it says a sample is 
+positive. It is True Positives divided by all positive predictions. 
+2. Precision Use: You must use Precision when getting a False Positive is a very bad mistake (e.g., 
+wrongly marking a person as a criminal). 
+3. Recall Measurement: Recall it tells you how many of the actual positive cases the model 
+successfully found. It is True Positives divided by all actual positives. 
+4. Recall Use: You must use Recall when getting a False Negative is a very dangerous mistake 
+(e.g., failing to detect a serious disease). 
+5. F1-Score Balance: The F1-score it is the harmonic mean that it combines Precision and Recall 
+into one single balanced number. 
+6. F1-Score Use: You should use F1 when you need both Precision and Recall to be good, which is the 
+case for most projects. 
+B-2. What is a confusion matrix and how is it used to evaluate a classification model? 
+A confusion matrix it is a table that it summarizes all the prediction results made by a classification 
+model in a simple, easy-to-read layout. 
+1. Four Elements: The matrix it has four essential counts: True Positives (TP), True Negatives (TN), 
+False Positives (FP), and False Negatives (FN). 
+2. TP/TN: The True Positives and True Negatives they are the counts of the correct predictions. 
+3. FP/FN: The False Positives and False Negatives they are the counts of the mistakes the model 
+made. 
+4. Diagnostic Tool: It is a very good diagnostic tool because you can immediately see if the model is 
+making more Type I errors (FP) or more Type II errors (FN). 
+5. Metric Calculation: All the other useful evaluation metrics like Precision, Recall, and F1 they are 
+calculated directly by using the numbers found in the confusion matrix. 
+6. Threshold Setting: The matrix it helps in setting the optimal classification threshold that it 
+balances the costs of FP and FN for the business problem. 
+B-5. Explain the steps in the machine learning model development lifecycle. 
+The ML Lifecycle it is the series of stages that it guides a project from the raw data to the live system 
+that it is used by the customers. 
+1. Data Ingestion and Cleaning: This is the first and most time-consuming step where you gather 
+all the data and you fix all the errors, remove the bad values, and handle the missing data. 
+2. Feature Engineering: This is the part where you get creative and you transform the raw columns 
+into new, highly useful input features that will boost the model's accuracy. 
+3. Data Splitting: The data it must be split into a training set, a validation set, and a test set to 
+ensure an unbiased evaluation. 
+4. Model Training: The model it is trained on the training set by minimizing the loss function 
+and fitting the internal parameters. 
+5. Hyperparameter Tuning: The validation set is used to find the best settings (hyperparameters) 
+for the model and to apply Early Stopping. 
+6. Deployment: The final, best model it is put into the production environment (the live system) so 
+it can make real-time predictions. 
+C) Attemp any 4 (20 Marks) 
+C-1. What is the role of feature scaling in machine learning. 
+Feature Scaling it is a pre-processing step that it adjusts the numerical values of the input features so 
+they all fall into a similar range. This is very important. 
+1. Equal Magnitude: The main role it is to prevent features with large numbers (e.g., salary) from 
+unfairly dominating the model's objective function over features with small numbers (e.g., age). 
+2. Distance Reliance: It is absolutely required for algorithms that calculate the distance between 
+data points, such as K-Nearest Neighbors (KNN) and K-Means Clustering. 
+3. Gradient Descent: Scaling it makes the training process much faster for all models that use 
+gradient descent by making the optimization landscape smoother. 
+4. Numerical Stability: Scaling it improves the numerical stability of the optimization process, 
+preventing weird errors like overflows or underflows. 
+5. Standardization: Standardization it transforms the data to have a mean of 0 and a variance of 
+1. 
+6. Tree Ignore: Models based on splits and rules (like Decision Trees) they don't care about scaling 
+because they use thresholds, not distances. 
+C-3. Define and explain overfitting and underfitting and how to avoid them. 
+These are the two main failures that it can happen to any machine learning model when it tries to make 
+predictions on new data. 
+1. Overfitting Definition: Overfitting it is when the model is too complex and it memorizes the 
+training data perfectly, including all the noise. This is a high variance problem. 
+2. Overfitting Symptom: The model gets an excellent score on the training data, but the score is 
+very bad on the test data. 
+3. Overfitting Avoidance: You must use Regularization (a penalty on complexity), you must use 
+more data, or you must stop training early (Early Stopping). 
+4. Underfitting Definition: Underfitting it is when the model is too simple and it cannot find the 
+basic patterns in the data. This is a high bias problem. 
+5. Underfitting Symptom: The model gets a bad score on both the training data and the test data. 
+6. Underfitting Avoidance: You must increase the model's complexity (e.g., use a non-linear 
+algorithm), or you must perform better Feature Engineering. 
+C-4. How to deal with missing data, scale features, or encode categorical variables. 
+These three steps they are the minimum required data preparation that you must do before you can start 
+model training. 
+1. Missing Data: You must handle the blank cells by deleting the rows or imputing (filling in the 
+blanks). 
+2. Numerical Imputation: Missing numerical values they are typically filled with the mean or 
+median of the column. 
+3. Categorical Imputation: Missing text values they are typically filled with the mode (most 
+frequent value). 
+4. Scaling Requirement: Feature scaling must be done to equalize the importance of the input 
+features. 
+5. Categorical Encoding: Text data must be converted to numbers because algorithms cannot 
+process text. 
+6. One-Hot Encoding: For nominal (unordered) text, you must use One-Hot Encoding to create 
+binary columns. 

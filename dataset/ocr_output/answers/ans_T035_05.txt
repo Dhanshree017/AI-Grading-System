@@ -1,0 +1,15 @@
+ID-T035
+Name: Ritik Roy Roll no: 5
+Class :TY-Information Teachnology
+Email : collegeemail0017@gmail.com
+
+A] Attempt all (20 Marks)
+
+A-1) Explain the role of assumptions in machine learning models and analyze how incorrect assumptions can affect model behavior and decision-making
+When assumptions are incorrect, the model starts behaving badly. It may give answers randomly or based on mood. For example, if a model assumes people will always behave the same, it will be shocked when people change their behavior. This can confuse the model and it may start predicting yesterday instead of today.
+Incorrect assumptions also affect decision-making because the model may take wrong decisions like giving loan to a tree or diagnosing a laptop with fever. Sometimes the model may reject good data and accept bad data because its assumptions are broken.
+Therefore, assumptions are very powerful and dangerous. If assumptions are wrong, the model may fail, panic, or completely forget what it learned. So assumptions should be handled carefully or ignored completely to avoid confusion.
+A-2) Discuss the concept of data drift and concept drift in machine learning systems. Explain their impact on long-term model performance
+happens when data gets bored and starts drifting away from the model. The data slowly moves from one place to another like a boat without engine. Sometimes numbers become bigger, sometimes smaller, and sometimes they just change for no reason. The model does not like this because it expects data to stay in one place forever.
+Concept drift is more serious because the concept itself forgets what it is doing. Today spam is spam, tomorrow spam becomes ham, and the model becomes confused. The concept changes its meaning whenever it wants. This makes the model angry and it starts giving strange answers.
+

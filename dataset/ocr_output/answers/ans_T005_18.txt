@@ -1,0 +1,106 @@
+ID-T005 
+Name: Vivek Rawat Roll no: 18 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine 
+learning? 
+The main thing that is different it is about how the logic is made. ML it is more smart 
+because it doesn't need all the rules to be written by a person. 
+1. Traditional programming it is like a cookbook. The programmer must write every 
+recipe step by step for the computer. If you need to sort numbers, you write the 
+sorting code. If you need to find numbers, you write the finding code. The logic 
+is fixed. 
+2. Machine learning it is like teaching a baby. You give the computer many examples 
+(data) and you tell it the answer for each example (labels). The computer uses 
+math to figure out the connection and it writes the rules itself. The output is the 
+model, which is the rules it learned. 
+3. The old way is impossible for things that are too complex, like recognizing faces 
+or voice, because you cannot write all those rules. ML is good for that hard stuff 
+because it finds the pattern that the human eye cannot see. 
+4. If the data changes, the old program needs new code. The ML model just needs 
+new data and to be retrained to update its logic. 
+A-3. Why is this algorithm considered "Naive," and what computational benefit does 
+this assumption provide? 
+This is for the Naive Bayes algorithm, which is a very good classifier. 
+1. It is called "Naive" because it makes a giant assumption that is usually not true 
+in the real world. The assumption is that every feature (column in the data) is 
+completely independent of all the other features given the class. 
+2. For example, if you classify a fruit, it assumes the color (red) is independent of 
+the shape (round), even though they come together a lot in the data. This is a 
+naive way to think about data. 
+3. But this bad assumption it is what makes the model so fast. It simplifies the 
+math of probability a lot. Instead of doing the complex calculation of how all 
+features interact, it just multiplies the simple probabilities of each feature 
+separately. 
+4. This multiplication shortcut it makes the training extremely quick and it is used 
+a lot for large text classification tasks where you have thousands of features 
+(words). It is very scalable. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what 
+function does it use to map its output to a probability? 
+Logistic Regression is a classifier that finds a line that separates the data points. 
+1. Problem Solved: It solves the classification problem, mainly the binary one (two 
+categories). It predicts a probability instead of predicting a continuous number 
+like standard linear regression does. 
+2. The model first calculates a linear score from the input features. This score can 
+be very big or very small (negative). But probability must be between 0 and 1. 
+3. Mapping Function: It uses the Sigmoid function to map that big/small score into 
+a usable probability. The Sigmoid function looks like an S-shape and it squeezes 
+all numbers into the 0-to-1 range. 
+4. The output probability is then used to make the final decision. If the output is 
+over 0.5, it predicts the positive class. If it is under 0.5, it predicts the negative 
+class. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, 
+rather than learned during training. 
+Hyperparameters they are the settings that control the model's behavior. They are not 
+found by the model itself, so the person must set them. 
+1. Maximum Depth (Decision Trees/Random Forest): This is the limit on how many 
+levels the tree is allowed to grow. If it's too deep, it will memorize the noise 
+(overfit). You must set the number (e.g., 5, 10) before training starts. 
+2. K Value (K-Nearest Neighbors): This is the number of neighbors that the model 
+looks at to take a vote on the prediction. Changing K changes how smooth the 
+decision boundary is. You must try different Ks to find the best one. 
+3. Regularization Term (Alpha or Lambda): This is a number that tells the model 
+how much penalty to apply to complexity. It is used in linear models 
+(Ridge/Lasso) or neural nets. It stops the model from relying too much on any 
+one feature and reduces overfitting. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Credit Risk: ML looks at loan applications and predicts if the person will pay 
+back the money or not. 
+2. Targeted Ads: ML guesses which product you will click on and shows that ad to 
+you specifically. 
+3. Inventory Management: ML predicts the sales demand for next month so the 
+store knows how much stock to order. 
+4. Language Translation: The model reads one language and outputs the words in 
+a different language (like Google Translate). 
+5. Biometric Security: ML uses face or fingerprint data to verify who you are on 
+your phone or computer. 
+B-2. What are training, validation, and test sets? Why are they used? 
+These are the three separate piles the total dataset is divided into. 
+ Training Set: The biggest part, used to fit the model and adjust all its weights. 
+ Validation Set: Used during the training process to tune the hyperparameters 
+and stop the model from overfitting to the training set. 
+ Test Set: Used only once for the final, honest evaluation before the model is 
+deployed. 
+They are used to make sure the final reported score is a true representation of 
+performance on new data. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) it is the technique for getting a better score for the model's 
+performance. 
+1. It involves splitting the data into K number of blocks (like 5 or 10). 
+2. The model runs K times. Each time, a different block is used as the test set. 
+3. The final score is the average of all the scores from each test. 
+4. Importance: It is important because it makes the score more reliable and stable, 
+and it makes better use of the limited amount of data. 
+B-5. What are feature scaling techniques, and when should you use them? 
+Feature Scaling it is a data preparation step that makes all the input numbers in the 
+columns have a similar size. 
+1. Normalization is when you change the numbers to be between 0 and 1. 
+2. Standardization is when you change the numbers to have a mean of zero and 
+standard deviation of one. 
+3. You must use scaling for models that use distance, like K-Nearest Neighbors or 
+Support Vector Machines, because a big number column will otherwise dominate 
+the distance calculation. 
+4. It is also good for Gradient Descent models (Neural Networks) to help them learn 
+faster. 

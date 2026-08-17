@@ -1,0 +1,65 @@
+ID-T028 
+Name: Rakesh Rao Roll no: 17 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Data Cleaning and Preparation 
+1. Dataset Exploration – Understand features, data types, and value ranges. 
+2. Identification of Missing Values – Detect null, blank, or invalid entries. 
+3. Handling Missing Data – Remove records or apply suitable imputation methods. 
+4. Detection of Inconsistencies – Identify inconsistent formats, units, or spellings. 
+5. Data Standardization – Convert values into uniform formats and scales. 
+6. Outlier Detection – Identify and treat abnormal values. 
+7. Duplicate Removal – Eliminate repeated or redundant records. 
+8. Feature Encoding – Convert categorical data into numerical form. 
+9. Final Validation – Ensure dataset is clean, consistent, and ready for modeling. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Performance 
+1. Error Analysis – Examine incorrect predictions to find patterns. 
+2. Data Comparison – Compare new data with training data. 
+3. Check for Data Drift – Identify changes in data distribution. 
+4. Feature Review – Remove irrelevant features and add useful ones. 
+5. Model Complexity Check – Detect overfitting or underfitting. 
+6. Improve Training Data – Add recent, diverse, and high-quality data. 
+7. Parameter Tuning – Adjust model settings for better learning. 
+8. Model Retraining – Retrain using updated data. 
+9. Validation Testing – Test on unseen data before deployment. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+Factors Influencing Algorithm Selection 
+1. Problem Type – Classification, regression, or clustering. 
+2. Dataset Size – Small or large datasets affect algorithm choice. 
+3. Data Nature – Structured, unstructured, numerical, or categorical. 
+4. Accuracy Requirements – Level of prediction precision needed. 
+5. Interpretability Needs – Requirement for explainable decisions. 
+6. Training Time – Speed required for model building. 
+7. Prediction Speed – Response time constraints. 
+8. Computational Resources – Available hardware and memory. 
+9. Scalability – Ability to handle future data growth. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+Identifying Causes and Taking Action 
+1. Performance Monitoring – Track prediction quality regularly. 
+2. Input Data Monitoring – Observe changes in incoming data patterns. 
+3. Data Drift Detection – Compare new data with training data. 
+4. Concept Drift Identification – Detect changes in data-label relationships. 
+5. Error Trend Analysis – Identify increasing or repeating errors. 
+6. User Feedback Review – Analyze complaints and incorrect outputs. 
+7. Data Update – Include recent and relevant data samples. 
+8. Model Retraining – Retrain the model periodically. 
+9. Controlled Redeployment – Deploy updated model after validation. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Qualitative Model Comparison 
+1. Prediction Consistency – Stability of predictions across inputs. 
+2. Error Behavior – Type and seriousness of mistakes made. 
+3. Explainability – Ease of understanding model decisions. 
+4. Robustness – Performance on noisy or unexpected data. 
+5. Deployment Simplicity – Ease of integration and maintenance. 
+6. Resource Efficiency – Hardware and memory usage. 
+7. User Acceptance – Practical usefulness to end users. 
+8. Reliability Over Time – Long-term stability and trustworthiness. 
+9. Real-World Effectiveness – Overall practical performance. 

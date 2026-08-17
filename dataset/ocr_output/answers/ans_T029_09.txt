@@ -1,0 +1,39 @@
+ID-T029 
+Name: Kunal Arora Roll no: 9 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (Each 5 Marks) 
+A-a. Explain the concept of model robustness in machine learning. 
+Model robustness in machine learning is a model's ability to maintain stable, accurate 
+performance despite real-world challenges like noisy data, unexpected shifts in data 
+distribution (e.g., lighting changes, different user groups), or deliberate adversarial attacks, 
+ensuring it generalizes reliably beyond its training set, not just performing well on clean, 
+familiar data. It's crucial for trustworthy AI in safety-critical systems (like self-driving cars) 
+where brittle, high-accuracy-but-fragile models can fail catastrophically.  
+Key Aspects of Robustness 
+ Generalization: Goes beyond high accuracy on training data to performing well on unseen 
+data from different, real-world conditions. 
+ Resistance to Perturbations: Handles noise, missing data, slight rotations, or faint images 
+without significant performance drops, unlike models prone to overfitting. 
+ Data Distribution Shifts: Adapts to changes like seasonal variations in weather for image 
+recognition or evolving user behaviors over time (data drift). 
+ Adversarial Attacks: Stays resilient against malicious inputs designed to fool it (e.g., small 
+pixel changes to misclassify an image).  
+Why It Matters 
+ Trust & Safety: Essential for AI in autonomous vehicles, medical diagnostics, and finance, 
+where errors have serious consequences. 
+ Real-World Reliability: Ensures models work consistently in dynamic environments, not 
+just controlled lab settings.  
+How It Differs from Accuracy 
+ Accuracy: Measures performance on clean, typical test data (e.g., 99% on standard digits). 
+ Robustness: Measures performance under stress (e.g., faint, rotated digits or adversarial 
+examples). A model can be accurate but not robust (brittle).  
+Examples of Data Shifts 
+ Natural Shifts: Different lighting, camera angles, or new types of objects (e.g., recognizing 
+an unfamiliar fruit). 
+ Adversarial Shifts: Intentional small modifications to input data to cause misclassification. 
+ Performative Shifts: Changes in user behavior because of the model's predictions, creating 
+feedback loops.  
+In essence, a robust model doesn't just learn patterns; it learns the underlying concepts well 
+enough to handle the unpredictable nature of the real world.  
+. 

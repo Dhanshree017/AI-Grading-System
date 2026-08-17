@@ -1,0 +1,184 @@
+ID-T006 
+Name: Christan joy Roll no: 18 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A) Answer all 
+A-1. How Reinforcement learning is different from Supervised learning? 
+Reinforcement learning is little bit different from supervised learning because 
+in RL model learn from reward and punishment, it is like trial and error, the 
+agent tries different action and get score then learn. Supervised learning is like 
+when teacher gives correct answers and model just learn from examples, it 
+compare its answer with correct one and try to reduce error. So RL is more 
+like learning by doing but supervised learning is learning from book or dataset. 
+RL mostly used in games, robotics or where result not known directly, 
+supervised learning mostly used in predicting things like marks, spam detection, 
+regression problems etc. RL take more time to learn because it try all things. 
+Supervised learning is faster because correct answer already there. Actually both 
+try to improve model performance but method is different. 
+1. RL learn from reward or punishment, supervised learn from correct 
+answers. 
+2. Supervised learning know correct output, RL doesn’t know and try by 
+itself. 
+3. RL is like step by step learning, supervised just match input to output. 
+4. RL mostly for decision making or games, supervised for prediction or 
+classification. 
+5. Sometimes people combine RL and supervised in research but main way is 
+different. 
+A-2. Define the term overfitting and one solution for it 
+Overfitting happen when model learn too much from training data, it memorize 
+everything including noise, so when new data comes it perform bad. It mostly 
+happen when model very complex or dataset small or trained too long. It is 
+problem for machine learning models, mostly in deep learning. So basically model 
+fail to generalize and just remember training data. 
+To solve overfitting we can use regularization, like L1 or L2, it reduce model 
+complexity. Also dropout in neural networks help, early stopping is another 
+way. Increasing dataset size also reduce overfitting. Cross-validation help to 
+check model performance better. 
+1. Overfitting is memorizing data and perform bad on new data. 
+2. Happens when model too complex, trained too long, or dataset too small. 
+3. Reduces generalization ability of model. 
+4. Regularization, dropout, early stopping help reduce overfitting. 
+5. More data or cross-validation also help. 
+A-3. What is the role of Linear Discriminant Analysis in ML? 
+Linear Discriminant Analysis or LDA is method to reduce features and make 
+data simpler, it also help classification accuracy. LDA find directions that 
+separate classes better and reduce noise. It useful when we have too many 
+features and want to simplify data, make model learn faster. 
+It project data into lower dimension, it keep class info and reduce irrelevant 
+data. LDA mostly used with classifiers like SVM, logistic regression. Applications 
+are face recognition, handwriting detection, document classification etc. LDA 
+also make model accuracy better sometimes. 
+1. LDA reduce number of features and make simpler. 
+2. Maximize distance between classes, minimize within-class. 
+3. Improve classification performance. 
+4. Use with SVM, logistic regression etc. 
+5. Applications in face recognition, handwriting, document classification. 
+A-4. Compare mixture and latent factor models 
+Mixture model and latent factor model both try to find hidden patterns, but 
+work different. Mixture model divide data in groups or clusters, latent factor 
+model find hidden factors that explain data. Mixture model assume one cluster 
+per data, latent factor allow multiple factors affect one data. 
+Mixture models mostly used for clustering, density estimation, latent factor 
+models used for recommendation or matrix factorization. Both help find 
+structure but way different. Sometimes people confuse them, but idea is 
+different. 
+1. Mixture model divide data, latent factor find hidden variables. 
+2. Mixture one cluster per data, latent multiple factors. 
+3. Mixture clustering, latent factor recommendation. 
+4. Mixture use EM, latent factor matrix factorization. 
+5. Both help understand hidden structure. 
+A-5. Write importance of K-means clustering 
+K-means clustering is simple algorithm to divide data into K clusters based on 
+similarity. It help find hidden patterns in unlabeled data. K-means fast, simple, 
+widely used. It useful in many areas like marketing, image compression, customer 
+segmentation. 
+It group data and reduce complexity, also help visualize patterns. K-means not 
+always perfect but gives rough idea. Easy to implement and use for large 
+dataset. 
+1. Divide data into K clusters. 
+2. Find hidden patterns. 
+3. Simple and fast. 
+4. Use in marketing, image compression. 
+5. Helps understand data structure. 
+A-6. Write about R Square and its significance 
+R Square show how well regression model explain data, it between 0 and 1. 
+Higher means better fit, lower means poor fit. It measure performance of 
+regression. Sometimes adjusted R Square used if multiple features. Helps decide 
+model accuracy. 
+1. Shows variation explained by model. 
+2. Between 0 and 1. 
+3. High value good, low value bad. 
+4. Used in regression analysis. 
+5. Adjusted R Square correct for multiple features. 
+A-7. Give significance of hyperparameter optimization 
+Hyperparameters are settings not learned by model like learning rate, depth, 
+number of trees etc. Tuning them properly improve model performance, reduce 
+overfit, save time. Methods are grid search, random search, Bayesian 
+optimization. 
+1. Improve model accuracy. 
+2. Reduce overfitting/underfitting. 
+3. Save training time. 
+4. Grid, random, Bayesian search used. 
+5. Important for better results. 
+A-8. How machine learning deals with sparse data 
+Sparse data have many zeros or missing values. ML use techniques to handle 
+sparse data. Sparse matrix store non-zero only. Some algorithm like Naive 
+Bayes, logistic regression handle sparse data better. Dimensionality reduction or 
+embedding convert sparse to dense. Filling missing values help. 
+1. Sparse matrix save memory. 
+2. Naive Bayes and Logistic Regression handle sparse better. 
+3. Dimensionality reduction reduce sparsity. 
+4. Embeddings make dense numbers. 
+5. Missing values can be filled. 
+A-9. What is advantage of active learning 
+Active learning model ask for labels for important data, reduce labeling cost, 
+learn faster. Useful in medical, NLP, image labeling. 
+1. Select important samples. 
+2. Reduce labeling cost. 
+3. Faster learning. 
+4. Improve accuracy. 
+5. Useful in medical, NLP etc. 
+A-10. What is training, testing and validation 
+Training data teach model, validation check performance, testing evaluate unseen 
+data. Ensure model generalize well. 
+1. Training set learn. 
+2. Validation tune model. 
+3. Testing check unseen data. 
+4. Ensure generalization. 
+5. Important for evaluation. 
+B) Attempt any 4 
+B-1. Give seven applications of Machine Learning 
+Machine learning used everywhere, in phones, internet, hospitals, banks. It help 
+computers learn patterns automatically. It is really helpful in many daily life 
+things. 
+1. Image recognition: Detect faces or objects, example unlock phone face. 
+2. Speech recognition: Convert speech to text like Alexa, Google. 
+3. Healthcare: Predict diseases, check reports fast. 
+4. Finance: Fraud detection, stock prediction, loan approval. 
+5. E-commerce: Recommend products, like Amazon show “you may like.” 
+6. Self-driving cars: Understand environment, avoid obstacles. 
+7. Weather forecasting: Predict rain, storms. 
+8. Chatbots: Answer customer questions automatically. 
+B-2. Explain supervised, unsupervised and semi-supervised with examples 
+Machine learning have three types. Supervised use labeled data, unsupervised 
+no labels, semi use few labels and mostly unlabeled. 
+1. Supervised learning like spam detection, predict marks. 
+2. Unsupervised like clustering customers. 
+3. Semi-supervised like face recognition with few labeled images. 
+4. Supervised easier, unsupervised harder. 
+5. Semi good when labeling all data costly. 
+6. All used depending on problem. 
+7. Helps in classification, clustering, recommendation. 
+8. Choosing type depend on data and goal. 
+B-4. What are types of SVM 
+SVM types depend on kernel and problem. 
+1. Linear SVM for simple straight separation. 
+2. Non-linear SVM for complex separation. 
+3. Polynomial kernel SVM for curves. 
+4. RBF kernel most common, non-linear. 
+5. Sigmoid kernel works like neural net. 
+6. Multi-class SVM for more than 2 classes. 
+7. SVR for regression problems. 
+8. Choosing right kernel improve accuracy. 
+B-5. Explain Decision Tree in detail 
+Decision tree is model like tree. Nodes questions, leaves answers. 
+It split data based on feature, each step reduce error and improve accuracy. 
+Easy to understand, visualize. 
+Components: 
+ Root node: start of tree, whole dataset. 
+ Internal nodes: decisions on features. 
+ Branches: outcome paths. 
+ Leaf: final answer, class or value. 
+How 
+it 
+works: 
+Split recursively using info gain, gini etc. Stop when max depth or few samples. 
+New data follow path to leaf. 
+Applications: 
+Finance, healthcare, marketing. Can use for prediction, classification. 
+Key points: 
+1. Easy to understand. 
+2. Can handle numeric/categorical. 
+3. Little preprocessing needed. 
+4. Used in many domains. 
+5. Form base for Random Forest and Boosting. 

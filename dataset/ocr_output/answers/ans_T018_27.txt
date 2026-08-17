@@ -1,0 +1,145 @@
+ID-T018 
+Name: sanam sheikh Roll no: 27 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Overview 
+AdaBoost is an ensemble technique where many simple models—often small decision 
+trees—are trained sequentially. Each new learner focuses more intensely on the samples that 
+earlier learners misclassified. This sequential correction mechanism makes the final 
+ensemble highly accurate. 
+Weak Learner Combination 
+ AdaBoost trains weak learners one by one. 
+ Each learner is assigned a strength value based on how well it performed. 
+ The final prediction is made using a weighted vote of all weak learners. 
+ Learners that perform better influence the final output more strongly. 
+Weight Updating 
+ Initially, all training samples have equal weight. 
+ After each weak learner is trained, weights of misclassified samples are increased. 
+ Increased weight means future learners pay extra attention to the mistakes. 
+ Correctly classified samples get reduced weight, minimizing repeated effort on easy 
+cases. 
+ The weight distribution is normalized after each iteration. 
+Bias Reduction 
+ A single weak model has high bias because it cannot learn complex boundaries. 
+ AdaBoost systematically reduces bias by adding many learners that capture new 
+patterns. 
+ Each stage corrects errors made in earlier stages, creating a progressively more refined 
+decision boundary. 
+ This leads to significantly improved accuracy and lower bias without drastically 
+overfitting early in training. 
+A-2. Describe working of LSTM (Long Short-Term Memory) networks. Explain input gate, forget 
+gate, output gate, and cell state. 
+Purpose 
+LSTMs solve the long-term dependency problem in sequence tasks by using a controlled 
+memory mechanism. They decide what information should be kept, discarded, or output at 
+each time step. 
+Forget Gate 
+ Determines which parts of past memory should be removed. 
+ It analyzes previous hidden state and current input. 
+ Unimportant information is purposely discarded to prevent memory overload. 
+Input Gate 
+ Controls which new information should enter the memory. 
+ It evaluates how relevant the incoming data is for future predictions. 
+ Only meaningful components of the current input get added to cell state. 
+Cell State 
+ This is the core memory that travels across time steps. 
+ It stores long-term patterns and is gently updated by forget and input gates. 
+ Cell state ensures that time-dependent information is preserved throughout the 
+sequence. 
+Output Gate 
+ Determines what information should be exposed as the current output. 
+ It filters the cell state and produces the hidden state that continues the sequence. 
+ This gate ensures the network shows only actionable information at each step. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Feature Creation 
+ Generates new input variables using domain knowledge. 
+ Examples include combining columns, converting timestamps into meaningful parts, 
+or forming interaction features. 
+ Helps uncover hidden relationships in data. 
+Feature Selection 
+ Chooses the most informative features while discarding redundant and noisy ones. 
+ Can be performed using statistical ranking, model-driven importance, or filter-based 
+methods. 
+ Reduces model complexity and training time. 
+Feature Extraction 
+ Transforms raw features into a compact, informative form. 
+ Techniques include dimensionality reduction and embedding methods. 
+ Reduces noise and brings high-dimensional data into a manageable representation. 
+Impact on Performance 
+ Good features dramatically increase accuracy and generalization ability. 
+ Reduces overfitting by removing irrelevant inputs. 
+ Makes models more stable and interpretable. 
+ Helps algorithms converge faster and produce more reliable predictions. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+Architecture Overview 
+Autoencoders are neural networks designed to learn compressed representations of input 
+data. They attempt to reconstruct the original input, forcing the model to learn meaningful 
+structure. 
+Encoder 
+ Reduces input data into a compact form. 
+ Extracts essential patterns while ignoring fine details and noise. 
+ Produces a compressed encoding of the input. 
+Latent Representation 
+ This represents the most informative characteristics of the input in a smaller 
+dimension. 
+ It acts as an abstract summary of original data. 
+ Quality of latent space determines the strength of the autoencoder. 
+Decoder 
+ Takes latent representation and reconstructs the original input. 
+ Its quality indicates how well the model learned the data structure. 
+ If encoding captures major information, reconstruction becomes accurate. 
+Anomaly Detection 
+ Autoencoders trained on normal data reconstruct normal instances well. 
+ Abnormal inputs differ significantly from typical patterns and produce high 
+reconstruction error. 
+ This error becomes the basis for flagging anomalies. 
+A-6. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Data Preparation 
+ Collect datasets, clean missing values, fix noise, and standardize formats. 
+ Transform data using normalization, augmentation, or tokenization depending on type. 
+Architecture Selection 
+ Choose network type suitable for problem (CNN for images, RNN/LSTM for 
+sequences, Transformers for complex patterns). 
+ Decide number of layers, activation functions, and network depth. 
+Training 
+ Train model using batches and an optimization algorithm. 
+ Model weights update iteratively to reduce error. 
+ Training is monitored using validation performance. 
+Regularization 
+ Apply techniques like dropout, early stopping, and weight constraints. 
+ Prevents the model from memorizing noise. 
+ Enhances generalization capability. 
+Evaluation 
+ Test model on unseen data using appropriate metrics. 
+ Compare results across models and tune hyperparameters. 
+ Ensure model performs consistently across datasets. 
+B ] Attempt all (5 marks each) 
+B-3. Explain Reinforcement Learning, give 2 examples where reinforcement learning is used. 
+Explanation 
+Reinforcement Learning trains an agent by allowing it to interact with an environment. The 
+agent observes state, takes action, receives reward, and learns which actions maximize long
+term gains. Learning is driven by trial and improvement. 
+Examples 
+ Autonomous robots learning to navigate through unknown surroundings. 
+ Game-playing agents learning to master environments like chess or car-racing 
+simulations. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+Text Cleaning 
+ Remove noise such as special symbols, punctuation, and repeated characters. 
+ Normalize text using lowercasing, stopword removal, or spelling correction. 
+Tokenization 
+ Break text into meaningful units such as words or sub-words. 
+ Produces a structured sequence suitable for further processing. 
+Embeddings 
+ Convert tokens into dense vectors reflecting semantic meaning. 
+ Capture relationships like similarity and context. 
+Sequence Modeling 
+ Model sequential dependencies using RNNs, LSTMs, GRUs, or Transformers. 
+ Helps understand context, sentiment, and meaning across text positions. 

@@ -1,0 +1,141 @@
+ID-T021 
+Name: ranjeet mehta Roll no: 7 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring is 
+required. 
+Answer 
+Definition & intuition: Model drift occurs when a deployed model’s performance degrades because the 
+data it sees in production (or the relationship between inputs and outputs) changes relative to the data used 
+for training. The model’s assumptions become stale and predictions become less reliable. 
+Types of drift (detailed): 
+ Covariate / Data drift: The marginal distribution of features P(X) changes while P(Y|X) may 
+remain stable. Example: customer age distribution shifts due to a new registration flow. Detection 
+signals: PSI, KS test per feature, distributional dashboards. 
+ Concept drift: The conditional distribution P(Y|X) changes — the rule relating X to Y changes. 
+Example: fraud patterns evolve so the same transaction features no longer imply fraud. Detection 
+signals: drop in label-conditioned metrics (TPR/FNR), sudden rise in errors on particular subgroups. 
+ Label / Prior drift: The marginal distribution of labels P(Y) changes while feature distributions may 
+be similar. Example: seasonal spikes in “positive” class (holiday sales). Detection signals: changes in 
+class frequencies. 
+ Feature-interaction drift: Pairwise or higher-order relationships among features change even if 
+marginals look stable. Example: previously correlated features decouple after a product redesign. 
+Detection signals: shifts in correlation matrices, conditional distribution tests. 
+ Population drift / demographic shift: The user base composition changes (age, geography). This is 
+a special case of covariate/prior drift with fairness implications. 
+Why continuous monitoring is required (actions & practicalities): 
+ Early detection: Continuous tracking of model metrics (rolling accuracy, precision, recall), input 
+distributions, and prediction confidence lets teams detect degradation promptly before business harm 
+occurs. 
+ Diagnosis: Monitoring different signals (feature-level drift detectors, calibration, per-segment 
+metrics) helps identify whether issues are due to data drift, concept drift, label noise, or upstream 
+data-quality problems. 
+ Triggering remediation: Monitored alerts can automatically trigger retraining, recalibration, 
+rollback, or human-in-the-loop review. 
+ Regulatory and fairness needs: Drift can introduce or magnify unfairness; continuous auditing 
+ensures compliance and equitable outcomes. 
+ Operational robustness: Monitoring supports canary releases, A/B testing, and gradual rollouts; it 
+also enables timely root-cause analysis when external events (policy changes, market shocks) cause 
+model performance swings. 
+Practical monitoring recipe: track per-window model metrics, feature-level PSI/KL divergence, calibration 
+plots, prediction entropy, and maintain a labeled sample pipeline for periodic ground-truth checks. Automate 
+alerts and retain versioned datasets for retraining and investigation. 
+A-2. What is the difference between online learning and batch learning? Explain with suitable real-world 
+examples. 
+Answer 
+Definitions: 
+ Batch learning (offline learning): The model is trained on a fixed dataset (one or several full 
+passes) and periodically retrained as new labeled data accumulates. Training typically happens 
+offline with heavier compute. 
+ Online learning (incremental learning): The model updates continuously or in small increments as 
+new data arrives (single examples or mini-batches), often using single-pass or streaming algorithms. 
+Key conceptual differences: 
+ Update cadence: Batch = periodic retraining (daily/weekly/monthly). Online = continuous 
+incremental updates. 
+ Memory & compute: Batch can require access to the entire dataset and multiple epochs; online uses 
+constant memory and updates using a streaming pass. 
+ Adaptability: Online adapts quickly to non-stationary environments; batch is more stable but slower 
+to reflect recent trends. 
+ Complexity of tuning: Batch allows expensive hyperparameter searches; online requires careful 
+learning-rate schedules and forgetting mechanisms (decay, sliding windows). 
+ Failure modes: Batch models may be stale between retrain cycles; online models may accumulate 
+bias if noisy labels are incorporated unchecked. 
+Real-world examples (concrete): 
+ Batch learning example: A university builds a student-performance predictor once per semester 
+using the semester’s consolidated data; model is retrained each term with the latest labeled outcomes. 
+ Online learning example: A click-through-rate (CTR) model in an ad-serving system that updates 
+user preference vectors after every click or impression to personalize recommendations in near-real
+time. 
+ Hybrid example: A recommendation system that maintains an online lightweight personalization 
+layer (per-user embeddings updated in real time) while periodically retraining a heavy global model 
+offline to capture broader trends. 
+When to choose which: 
+ Choose online when data arrives as a stream, labels are available quickly, and timely adaptation 
+matters (fraud detection, personalization). 
+ Choose batch when labels are expensive, data is stable, and compute resources permit regular offline 
+retraining (medical imaging models, offline analytics). 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, 
+images, or categorical data? 
+Answer 
+Definition & purpose: 
+An embedding is a learned dense vector representation that maps discrete, sparse, or high-dimensional 
+inputs into a continuous low-dimensional space where semantic or functional similarity is preserved by 
+geometric proximity. 
+Function (mechanics & benefits): 
+ Dimensionality reduction: Replace extremely high-dimensional spaces (one-hot encodings, raw 
+token indices, raw pixels) with compact vectors that are much easier for models to process. 
+ Semantic preservation: Embeddings position semantically or functionally similar items near each 
+other; e.g., synonyms or semantically related images lie close in the embedding space. 
+ Feature reuse & transfer: Pretrained embeddings (word vectors, image backbones) encapsulate 
+useful priors and enable transfer learning when labeled data is limited. 
+ Improved generalization: Continuous vectors allow smooth interpolation; models can generalize to 
+unseen combinations by leveraging nearby embeddings. 
+ Efficient similarity operations: Fast nearest-neighbor search and clustering become practical in 
+vector spaces. 
+Usefulness by modality (concrete): 
+ Text: Word, sentence, and document embeddings (Word2Vec, GloVe, BERT, Sentence-BERT) 
+capture context, polysemy, and relationships (king − man + woman ≈ queen). They power semantic 
+search, classification, and downstream NLP tasks. 
+ Images: CNN-produced embeddings encode shapes, textures, and object presence; useful for image 
+retrieval, few-shot learning, and as inputs for downstream classifiers. 
+ Categorical features: Learned category embeddings (e.g., for product IDs, user IDs) allow the 
+model to learn latent relationships between categories instead of relying on sparse one-hot vectors; 
+this is especially powerful in recommendation systems and tabular models. 
+Practical considerations: 
+ Choose embedding dimensionality to balance representational capacity vs overfitting. 
+ Pretraining on large corpora or using contrastive objectives often yields robust embeddings. 
+ Fine-tune embeddings for downstream tasks when labeled data is available for better task alignment. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence concept 
+learning. 
+Answer 
+Definition: 
+Concept learning is the process of inferring a general rule or classifier (a concept) from specific labeled 
+examples. The goal is to produce a hypothesis that correctly classifies unseen instances. 
+Hypothesis space (H): 
+ What it is: The set of all candidate hypotheses or functions the learner can possibly select (e.g., all 
+linear functions, depth-limited decision trees, neural networks of a certain architecture). 
+ Role: It bounds what the learning algorithm can represent. If the true target concept is not in H, no 
+amount of data will let the learner represent it perfectly (representational bias). 
+ Trade-offs: A larger H increases expressive power but raises the risk of overfitting and makes 
+search harder. 
+Inductive bias: 
+ Definition: The set of assumptions that the learning algorithm uses to choose one hypothesis over 
+another when multiple hypotheses are consistent with the training data. Examples include preferring 
+simpler hypotheses (Occam’s razor), linearity assumptions, or smoothness constraints. 
+ Necessity: With finite data, inductive bias is essential; without bias, any hypothesis consistent with 
+training data is equally plausible and generalization is impossible. 
+How they influence concept learning: 
+ Learnability: The intersection of H and the inductive bias determines whether the learner can 
+generalize from samples to unseen examples. A well-chosen hypothesis space aligned with the 
+problem and an appropriate inductive bias leads to better generalization. 
+ Search & efficiency: Inductive bias guides the search through H (e.g., greedy splits in decision trees 
+vs gradient descent in neural nets), improving learning efficiency. 
+ Error decomposition: Inductive bias contributes to bias-variance trade-off — strong bias reduces 
+variance but may incur systematic error if incorrect; weak bias can fit complex functions but risks 
+high variance. 
+ Practical example: If H is linear functions and the true concept is nonlinear, the learner will 
+underfit. If H is very flexible (deep nets) but inductive bias (regularization, architecture choices) is 
+inadequate, the learner may overfit. 
+Conclusion: Designing H and inductive bias thoughtfully (via model family, regularization, feature 
+transforms) is central to successful concept learning. 

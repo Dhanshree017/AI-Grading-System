@@ -1,0 +1,74 @@
+ID-T029 
+Name: Komal Khanna Roll no: 22 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why robustness is important 
+and how it can be improved in learning systems. 
+Model robustness meaning how much model can handle bad data without failing. If we give small change in 
+input, like some noise or blurred image, robust model still give correct output. It is like "stability" of the 
+system. 
+Importance: Real world data is very messy, not like clean training data. If model is not robust, a small 
+sensor error or "adversarial attack" (small fake change in data) can make model do big mistake. In medical 
+AI or self-driving cars, this is very dangerous because one wrong prediction can cause accident. 
+How to improve: We can use "Adversarial Training" where we purposely give model hard, tricky examples 
+so it learns to ignore noise. Also "Regularization" like L2 helps because it stops model from becoming too 
+sensitive to small features. Data augmentation also helps by making training data more variety. 
+A-b. Describe the role of data representation in machine learning. Explain how different ways of 
+representing data can affect learning outcomes. 
+Data representation is how we turn real things like text or image into numbers (vectors). This is very 
+important because algorithm only "sees" the numbers. If representation is good, the "signal" is clear for the 
+computer. 
+Effect on outcomes: * Feature space: If we use "One-Hot Encoding" for categories, it treats all things as 
+separate. But if we use "Embeddings," the model understands that "Cat" and "Dog" are similar because their 
+vectors are close in space. 
+ Separability: Good representation makes it easy for model to draw a line between different classes. 
+If we choose wrong features (like using eye color to predict height), the model will never learn 
+because the representation has no "predictive power." 
+ Dimensionality: If we represent data with too many useless numbers, it creates "Curse of 
+Dimensionality" where model gets confused and learning becomes very slow. 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues related to data 
+size, model complexity, infrastructure, and maintenance. 
+Scaling is when we move model from one laptop to millions of users. It is very hard because everything 
+changes. 
+ Data Size: When data is too big, it cannot fit in one RAM. We need "Distributed Computing" where 
+we split data across many servers. Managing this "data pipeline" without losing data is a big 
+headache. 
+ Model Complexity: Big models (like Deep Learning) need many GPUs. This is very expensive and 
+takes long time to "infer" (give answer). If model takes 5 seconds to answer, users will leave. 
+ Infrastructure: You need "Kubernetes" or cloud tools to handle millions of requests. If one server 
+fails, the whole system should not crash. 
+ Maintenance: Models "drift" over time. The patterns from last year might not work today. 
+Engineers have to constantly monitor and "re-train" the model, which is a never-ending cycle. 
+A-d. Explain the concept of transfer of knowledge in machine learning. Discuss how previously learned 
+information can improve learning in new tasks. 
+Transfer of Knowledge (Transfer Learning) is like using "old brain" for "new task." We take a model 
+already trained on a huge dataset (Source Task) and use its "weights" for a small, new task (Target Task). 
+How it improves learning: * Feature Reuse: A model that learned to see "edges" and "shapes" in 1 million 
+cat pictures already knows what a "shape" is. We don't need to teach it "shapes" again for medical X-rays. 
+ Less Data: Since the model already has "general knowledge," it can learn a new specific task with 
+only 100 images instead of 10,000. 
+ Speed: It saves huge amount of "compute time" because we only train the last few layers of the 
+model, not the whole thing from zero. 
+B] Attempt All ( 2 marks each ) 
+B-a. What is model generalization in machine learning? It is when model performs good on "hidden" data it 
+never saw during training. It means model learned patterns, not just memorized. 
+B-b. Define training dataset. The "teaching data" used to adjust the internal parameters of the algorithm so it 
+can learn the logic. 
+B-c. What is unsupervised learning? Learning where we give data but no "labels" (answers). Model must 
+find its own groups or clusters based on similarity. 
+B-d. What do you mean by features in ML? The input variables or "columns" in your data (like age, weight, 
+income) that the model uses to make a guess. 
+B-e. What is a machine learning algorithm? A math procedure or "logic engine" that looks at data and finds 
+the best way to map inputs to outputs. 
+B-f. Define overfitting. When model is "too smart" for its own good. It memorizes the noise in training data so 
+perfectly that it fails on any new data. 
+B-g. What is data preprocessing? Cleaning the "dirty" raw data (fixing missing values, scaling numbers) so 
+the algorithm can read it properly. 
+B-h. What is a prediction in machine learning? The final output or "estimation" the model gives when you 
+provide it with new features. 
+B-i. Define model evaluation. Testing the model using "metrics" (like Accuracy or F1-Score) to see if it is 
+good enough for real world use. 
+B-j. What is learning from experience in ML? It is the core idea that a machine gets better at a task as it 
+processes more data over time. 
+ 

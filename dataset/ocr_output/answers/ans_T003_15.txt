@@ -1,0 +1,84 @@
+ID-T003 
+Name : Priyanka Singh Roll no : 15 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 (Marks 8) 
+A-1. Define supervised, unsupervised, reinforcement? 
+Supervised machine learning is when you have many labels like 
+cat and dog and computer watch all the pictures. Unsupervised is 
+the part where computer no see the labels only the pictures and make 
+groups like this. Reinforcement is when computer play games and 
+the points are rewards and they go higher for good moves. This is 
+the definition of the three big things. 
+A-2. Explain the difference between training and test sets. 
+Training set is all the big data that the model gets to learn all the 
+things that are true. It takes a long time here. The test set is the end 
+part and the model no see this data. Only one time it is used to 
+check the final number of accuracy for real-world usage. Very  
+A-3. What is the difference between parametric and non-parametric 
+models? 
+Parametric models are small in size like a fixed box. They have 
+simple structure and only a few fixed numbers. Non-parametric 
+models are big and flexible like a snake. They change with the data 
+and have to keep all the data with them to work. Linear Regression 
+is the fixed box and KNN is the snake. 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting is when the model is very good on the learning data but 
+bad on the new data because it has memorized everything like a 
+noise. This makes the answer wrong for new people. To avoid this 
+problem, you must make the model simpler or you can use the 
+penalty thing called L1 or L2 which makes the numbers smaller so 
+the model is not so strong and the fit is better. 
+B) Attempt All (Marks 15) 
+B-1. Explain the bias-variance tradeoff. 
+This is a big confusion problem in machine learning. Bias is when 
+the model is very simple, like a stick trying to draw a circle. It 
+cannot draw the circle so the error is high. This is Underfitting. 
+Variance is when the model is too crazy, like drawing the training 
+data perfectly, including all the small mistakes, so it cannot draw 
+the same circle on new paper. This is Overfitting. The tradeoff is 
+that if you fix the stick to be more complex, the crazy problem 
+starts. If you fix the crazy problem to be simple, the stick problem 
+starts. You must find the middle spot for the smallest error. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is a lazy working model. It does no work in the beginning 
+and just stores all the points. When a new point wants a prediction, 
+the KNN model starts running fast. It measures the distance to all 
+the old points to see which ones are closest. We choose K number of 
+close friends. If it is classification, we use the mostcommonfriend 
+class as the answer. If it is regression, we use the averagenumber of 
+the friends. The model works slow for big data because it has to 
+measure too many distances. 
+B-3. What is dimensionality reduction, and provide examples? 
+Dimensionality reduction means making the data smaller by 
+removing the number of columns. We do this because too many 
+columns (dimensions) makes the computer slow and the 
+algorithms confused. It also helps to see the data better in a 2D or 
+3D graph. 
+ PCA is one example. It takes many columns and makes 
+fewernewcolumns that hold the main data information. 
+ The goal is to solve the CurseofDimensionality which is when 
+the data gets too thin and far apart when there are many 
+features, which makes the distance math bad. 
+B-4. How would you choose an algorithm for a specific dataset? 
+First thing is to see the output. Is it a category or is it a number? If 
+category, I pick Classification. Then I see if the data is a 
+straightline or a curvyline. Straight line gets Linear Regression. 
+Curvy line gets Decision Tree or something strong like XGBoost. If 
+the data is very small, I pick a simple one to stop overfitting. If the 
+business needs an explanation, I choose a simpleinterpretableone. I 
+try a few algorithms and the one that has the best 
+$\mathbfaccuracy number}$ on the test set is the final choice. 
+B-5. Explain bagging and boosting. 
+These are the methods to make many small bad models into one big 
+good model. 
+1. Bagging: This is like a teamofindependentstudents. Every 
+student learns the whole book alone on a random piece of the 
+book. All the final answers are averaged together. This 
+reducesthevariance problem and makes the model stable. 
+RandomForest is this method. 
+2. Boosting: This is like a 
+smartclasswherestudentscorrecteachother. The first student 
+makes a mistake. The next student focusesonlyonthemistake 
+and tries to fix it. This is done sequentially many times. 
+This reducesthebias problem and makes the model very 
+strong. XGBoost is this method. 

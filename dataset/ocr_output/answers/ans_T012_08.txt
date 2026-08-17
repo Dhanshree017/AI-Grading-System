@@ -1,0 +1,152 @@
+ID-T012 
+Name : Sona shetty Roll no: 8 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropogation is the method by which neural network learn mistake and improve. 
+it mean going back and changing weights like going reverse to see what wrong 
+happen. 
+first there is forward pass where data go inside model and get output. then we see 
+difference between real and predicted called error. then we go backward and adjust 
+weight using gradient something. 
+so steps are: 
+1. give input and calculate output 
+2. check error by comparing with correct 
+3. go backward to change weights 
+4. again forward and repeat 
+this continue many time till model learn. sometimes it stuck and stop learning but 
+we can change learning rate to fix. 
+backpropogation used in deep learning like picture recognition, sound etc. it main 
+reason behind AI working. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist learning. 
+Bayesian learning is when we use probability for learning instead of fixed numbers. It 
+based on Bayes rule which use prior and posterior belief. 
+It take some belief before like we think rain happen 40% then we see cloud and 
+update it to 70%. so it keep changing as we see new thing. 
+Frequentist not use prior, they believe only data speak. like they count how many 
+times event happen and decide. 
+Bayesian is more flexible because can update, frequentist not so. but Bayesian is slow 
+and need more math. 
+Example in machine learning we use Bayesian in spam detection, but frequentist in 
+normal regression. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in sequence 
+modeling. 
+RNN is type of neural network which not forget past input. it remember previous 
+data like human brain remember last sentence when reading book. 
+In RNN, output of previous step go as input to next step along with new data. this 
+make it powerful for time-based data. 
+Applications are like in music generation, chatbots, text translation, speech 
+recognition etc. 
+but problem is RNN sometimes forget older data or blow up number called gradient 
+vanish or explode. so people made LSTM and GRU which are better versions. 
+RNN are important because normal neural network cannot understand order of 
+data. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment means putting model in real world so it can start predicting for 
+actual users. like after making weather prediction model we put it in app. 
+steps are like first train model, save it, then use flask or cloud or something to make 
+it live. then we test if it giving good prediction. 
+monitoring mean keep watching if model working or not after some time. sometimes 
+data change and model accuracy fall. so we retrain. 
+it is also important for security and fairness because model can become bias later 
+also. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization and standardization both are used to scale data so all feature same 
+level. 
+In normalization we convert data between 0 and 1. like if one feature has values 
+from 10 to 100, we divide so it become 0 to 1 range. 
+In standardization we minus mean and divide by deviation so data become mean 0 
+and variance 1. 
+for example, if height and weight both used in model, height small number, weight 
+big, so model confuse. after scaling, both same range so model learn properly. 
+but sometimes people mix both, normalization good for deep learning, 
+standardization good for linear models. 
+B] Attempt any 4 (5 marks each) 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is method to predict yes or no type output. like spam or not 
+spam. even though name say regression but it used for classification. 
+it use sigmoid function that make value between 0 and 1. like probability. 
+Formula is not remember properly but something like 1/(1+e^-x). it make curve 
+shape. we use it because we want smooth probability output. 
+in working we multiply weights and inputs then pass to sigmoid and get result. 
+Use cases are in predicting disease (yes/no), customer buy or not, fraud detection 
+etc. it simple and good for small data. 
+some people think deep learning always better but logistic regression still very strong 
+for basic problem. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameter are those which we decide before training, not learned by model. 
+for example learning rate, number of tree, hidden layer size etc. 
+Parameters are learned during training like weight and bias. 
+Difference is like hyperparameter are like recipe settings, parameter are the cooking 
+done. 
+example — in neural network, we choose learning rate (hyper), but model learn 
+weights (param). 
+Tuning hyperparameter is very difficult, we have to try many combination using grid 
+search or random search. 
+if wrong value given model can fail or take too much time. so hyperparameter are 
+like steering of model. 
+B-5. Explain the concept of cross-entropy loss. 
+Cross entropy is type of loss used when we have classification problem. it measure 
+difference between real label and predicted probability. 
+if prediction close to real, loss small, if far, loss big. 
+it is better than MSE for classification because it punish confident wrong predictions 
+more. 
+it come from information theory. it tell how much extra information needed if we 
+use wrong model. 
+like if model predict cat=0.9 dog=0.1 but real was dog, then loss high. 
+it used in neural network with softmax. more accuracy, less cross entropy. 
+B-6. What is dimensionality curse? How does it affect machine learning models? 
+Curse of dimensionality means when number of features too high, model start 
+performing badly. because data become sparse and hard to generalize. 
+for example if we have 10 feature then model easy, but 1000 feature then too 
+complex and we need large data else overfitting. 
+also computation become very high. algorithm like kNN become useless because all 
+points look far. 
+it affect memory, accuracy and interpretability. 
+so we use PCA or feature selection to reduce dimension and fix problem. 
+C ] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning can use in industry for maintain machine before it break. this 
+called predictive maintaince. Instead of waiting machine to die, ML help to predict 
+when it will die so we fix before big loss. 
+first we take data from sensor like vibration, temperature, sound, pressure etc. this 
+data show how machine behave in good and bad condition. 
+then we clean data because sensor data very dirty with noise. we make feature like 
+average temp, rate of vibration, etc. 
+then ML model like Random forest, SVM or neural network is train with data. it 
+learn pattern that happen before machine fail. 
+after that model deployed to monitor machine in real time. if model say machine 
+getting near to failure then alert generate. 
+example in factory, if motor vibration increase more than normal, ML model predict 
+bearing going to fail soon. so maintenance team replace part before breakdown. 
+this help in saving cost, reducing downtime and increasing safety. 
+some industry use deep learning for image or sound from machine to detect fault. 
+but sometimes data not enough or sensor give wrong reading, then model wrong 
+also. and many company think predictive maintenance is magic but it need good 
+engineer and data. 
+C-2. Discuss 5 real-world example of a biased ML model and how such bias can be 
+reduced. 
+Bias in ML is big problem. model learn from data, if data unfair then model unfair 
+also. here are 5 example from real world where ML model was biased: 
+1. Hiring system bias – some company used ML to select candidate but system 
+reject women because old data had more male hired. this bias because model 
+think male is better. to reduce it, use balanced dataset and remove gender 
+feature. 
+2. Face recognition bias – many facial recognition software detect white face 
+correctly but fail on black or asian faces. this happen because training data 
+mostly white people. solution is use diverse dataset and test on all groups. 
+3. Credit scoring bias – banks sometimes reject loan for poor area or certain 
+names because past data show high default. but that cause discrimination. to 
+fix, algorithm need fairness constraint and remove location feature. 
+4. Health diagnosis model – some model trained on western hospital data, so it 
+fail on Indian patient. model think disease pattern same for all which is wrong. 
+fix by including data from multiple population. 
+5. Crime prediction model – in some city ML used to predict which area will have 
+crime, but it send more police to poor black area because old record had more 
+arrest there. to fix, reduce historical bias and include context data. 
+bias reduction need combination of fair data, model audit, explainability and human 
+oversight. 
+but some people think bias can be 100% removed which is wrong. it can be reduced 
+by awareness, transparency, and continuous testing. 

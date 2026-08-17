@@ -1,0 +1,80 @@
+ID-T027 
+Name: Raghav joshi Roll no: 10 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Feature engineering is the process of transforming raw data into meaningful input features 
+that enable a machine learning model to learn patterns more effectively. Raw data collected 
+from real-world sources is often noisy, unstructured, and unsuitable for direct use in 
+algorithms. Through feature engineering, data scientists apply transformations such as 
+scaling numerical values, encoding categorical variables, and creating new features using 
+domain knowledge. This process helps highlight relevant information while suppressing 
+irrelevant noise. The importance of feature engineering lies in its direct impact on model 
+performance, as well-engineered features can significantly improve accuracy, reduce 
+overfitting, and enhance generalization. In many practical applications, feature engineering 
+contributes more to model success than the choice of algorithm itself, making it a critical 
+step in the machine learning pipeline. and creating new features using domain knowledge. 
+This process helps highlight relevant information while suppressing irrelevant noise. The 
+importance of feature engineering lies in its direct impact on model performance, as well
+engineered features can significantly improve accuracy, reduce overfitting, and enhance 
+generalization. In many practical applications, feature engineering contributes more to model 
+success than the choice of algorithm itself, making it a critical step in the machine learning 
+pipeline. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+The machine learning model training process is a structured workflow that converts data into 
+a predictive model capable of making accurate decisions. Initially, data is collected and 
+preprocessed to handle missing values, noise, and inconsistencies. The prepared dataset is 
+then divided into training, validation, and test sets, each serving a distinct purpose. The 
+training dataset is used to teach the model by adjusting its internal parameters to minimize 
+prediction error. The validation dataset is employed during training to tune hyperparameters 
+and monitor overfitting, ensuring the model does not simply memorize the training data. 
+Finally, the test dataset is used only after training is complete to evaluate the model’s 
+performance on unseen data. This separation ensures unbiased evaluation and helps build 
+models that generalize well to real-world scenarios. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+The machine learning model training process is a structured workflow that converts data into 
+a predictive model capable of making accurate decisions. Initially, data is collected and 
+preprocessed to handle missing values, noise, and inconsistencies. The prepared dataset is 
+then divided into training, validation, and test sets, each serving a distinct purpose. The 
+training dataset is used to teach the model by adjusting its internal parameters to minimize 
+prediction error. The validation dataset is employed during training to tune hyperparameters 
+and monitor overfitting, ensuring the model does not simply memorize the training data. 
+Finally, the test dataset is used only after training is complete to evaluate the model’s 
+performance on unseen data. This separation ensures unbiased evaluation and helps build 
+models that generalize well to real-world scenarios 
+The machine learning model training process is a structured workflow that converts data into 
+a predictive model capable of making accurate decisions. Initially, data is collected and 
+preprocessed to handle missing values, noise, and inconsistencies. The prepared dataset is 
+then divided into training, validation, and test sets, each serving a distinct purpose. The 
+training dataset is used to teach the model by adjusting its internal parameters to minimize 
+prediction error. The validation dataset is employed during training to tune hyperparameters 
+and monitor overfitting, ensuring the model does not simply memorize the training data. 
+Finally, the test dataset is used only after training is complete to evaluate the model’s 
+performance on unseen data. This separation ensures unbiased evaluation and helps build 
+models that generalize well to real-world scenarios. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+The machine learning model training process is a structured workflow that converts data into 
+a predictive model capable of making accurate decisions. Initially, data is collected and 
+preprocessed to handle missing values, noise, and inconsistencies. The prepared dataset is 
+then divided into training, validation, and test sets, each serving a distinct purpose. The 
+training dataset is used to teach the model by adjusting its internal parameters to minimize 
+prediction error. The validation dataset is employed during training to tune hyperparameters 
+and monitor overfitting, ensuring the model does not simply memorize the training data. 
+Finally, the test dataset is used only after training is complete to evaluate the model’s 
+performance on unseen data. This separation ensures unbiased evaluation and helps build 
+models that generalize well to real-world scenarios 
+The machine learning model training process is a structured workflow that converts data into 
+a predictive model capable of making accurate decisions. Initially, data is collected and 
+preprocessed to handle missing values, noise, and inconsistencies. The prepared dataset is 
+then divided into training, validation, and test sets, each serving a distinct purpose. The 
+training dataset is used to teach the model by adjusting its internal parameters to minimize 
+prediction error. The validation dataset is employed during training to tune hyperparameters 
+and monitor overfitting, ensuring the model does not simply memorize the training data. 
+Finally, the test dataset is used only after training is complete to evaluate the model’s 
+performance on unseen data. This separation ensures unbiased evaluation and helps build 
+models that generalize well to real-world scenarios 

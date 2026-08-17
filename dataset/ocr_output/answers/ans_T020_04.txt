@@ -1,0 +1,128 @@
+ID-T020 
+Name: Anjali bendre Roll no: 4 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Data drift and concept drift basically make the ML model slowly become weak over time 
+because the world around the data keeps changing. Data drift mostly happens when the 
+feature distribution change, like earlier the customers was buying mostly in afternoon but 
+later they start buying in morning or night. So the model sees different kind of data than 
+what it learned. Because of this the prediction logic becomes confused and accuracy reduces 
+steadily. Concept drift is when the actual meaning of the target relation changes. For 
+example earlier income level directly predicted loan approval pattern, but now banks use 
+different policies, so the old mapping is no more valid. 
+Different drift types include sudden drift where everything change at once, gradual drift 
+where the shift happens slowly, recurring drift where the pattern return after some time 
+because season or events, and incremental drift where the data shift step by step. 
+To detect drift, monitoring pipelines look at feature distributions, prediction distributions, 
+PSI or simple moving-window accuracy changes. Some teams use model shadowing or 
+challenger model to compare performance. Handling drift usually include updating data, 
+retraining models on new data, using online learning for streaming tasks, or using ensemble 
+that keep old knowledge and new knowledge together. Also many real systems create alerts 
+when drift cross threshold so that team can check before performance goes bad. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Embeddings basically convert complicated data into small numeric vectors so model can 
+understand patterns more deep. For text data, words or sentences are changed into dense 
+vectors where similar meaning text stays close. This allows model to capture semantics 
+instead of simple frequencies. Earlier methods like Word2Vec or GloVe were common, now 
+transformer-based embeddings like BERT or sentence transformers give context-based 
+vectors so the same word can have different meaning depending on sentence. 
+For images, embeddings usually come from deep networks like CNN or vision transformers 
+where the last hidden layer outputs a high-level feature representation. This representation 
+capture shapes, textures, colors, and object structure in numeric form. 
+Categorical data can also use embeddings by giving each category a trainable vector instead 
+of one-hot encoding which is too sparse. For example if there is 20K product IDs, 
+embedding will assign each product a compact vector that capture similarity between 
+products. 
+Embeddings help model learn deeper relations and also reduce computation because dense 
+vectors are efficient to use. They are widely used in recommendation system, NLP pipeline, 
+visual tasks and also multimodal applications. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Imbalanced datasets are very hard for ML model because the majority class dominate 
+training, so model think predicting majority class is safer and get high accuracy even while 
+missing important minority cases. This is specially problematic in fraud detection, medical 
+diagnosis or rare failure events. The model gradient updates become biased because the 
+frequency of classes is not balanced and it cannot learn proper decision boundary. 
+Cost-sensitive learning tries to solve this by giving higher penalty to minority 
+misclassification. When the model make mistake on minority case, the loss increases more 
+so training pushes the boundary more carefully. 
+Synthetic sample generation methods like SMOTE or ADASYN create artificial samples of 
+minority class by mixing nearby samples so the boundary becomes more clear. But 
+sometimes if minority set is noisy, synthetic examples may make it worse. 
+Threshold adjustment means moving the prediction cutoff, not always using default 0.5. For 
+some tasks, adjusting threshold can improve recall or precision based on requirement. Also 
+combining multiple strategies together usually give better handling of imbalance. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch learning trains the model in large fixed dataset all at once. When new data arrives, the 
+model is usually retrained from scratch or from checkpoint. It is stable but slow and needs 
+full dataset availability. Online learning updates model step by step as each new sample 
+arrives or in small batches. It is useful when data comes continuously like clickstream, 
+sensor data, or stock-price patterns. 
+Online learning is preferred when storage of entire dataset not possible or when quick 
+adaptation required. But online learning face challenges like noisy data impacting model 
+immediately, difficulty in evaluating performance because distribution keeps changing, and 
+design of learning rate for stable updates. Also rollback is harder since model is updated 
+continuously. Batch learning is easier for reproducibility but online learning is better for 
+dynamic environment. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Explainable AI helps user understand why model produced particular output. This increase 
+trust because stakeholders can see the main factors behind decisions instead of treating 
+model as black box. XAI tools like feature importance, SHAP explanations, attention maps 
+and counterfactual analysis reveal which features influence prediction and in what direction. 
+In real world, XAI is heavily needed in healthcare diagnosis support where doctors need to 
+verify reasoning; in credit scoring where regulators require transparency; in fraud detection 
+where analysts check flagged transactions; and in HR recruitment tools so decisions do not 
+appear unfair. XAI also helps debugging model bias early before it cause harm. Without 
+XAI, high-stakes systems cannot be fully accepted or audited. 
+SECTION B —  
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Evaluation pipeline helps ensure that model is tested under consistent and fair procedure. It 
+automates metric calculation, generates performance reports, tracks data used for evaluation, 
+and maintain reproducibility. Pipeline make sure model is tested in same preprocessing 
+method like used in training so results are trustworthy. 
+Validation, test and deployment evaluation must be separated because each one serve 
+different purpose. Validation is for tuning hyperparameters, test set is untouched and used 
+for final unbiased accuracy check, and deployment evaluation is ongoing check with live 
+data in real world conditions. If these are mixed, overfitting or leakage of evaluation can 
+happen, causing unreliable performance estimation. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Transfer learning improves development by using knowledge learned from one large dataset 
+and applying it to another task. This reduce training time and need of big labeled dataset. 
+Pretrained models like big CNNs or transformer language models already learn general 
+features such as edges, shapes, grammar pattern etc. When used for another similar task, the 
+fine-tuning process quickly adapt the model. 
+Useful scenarios include medical imaging where labeled images are limited, language tasks 
+like classification or summarization, and industrial vision tasks where capturing huge dataset 
+is expensive. Even recommendation models sometimes use pretrained embeddings 
+transferred from similar domain. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Hyperparameter search is for finding best values of hyperparameters like learning rate, max 
+depth, regularization strength, etc. Grid Search tries every combination in defined grid but 
+becomes very slow when hyperparameters are many. Random Search pick values randomly 
+from the range and usually find good values faster because it explore more diverse points. 
+Grid Search is systematic but inefficient for large space. Random Search is stochastic but 
+practical for most real tasks. Both depend on validation set performance to choose best 
+model. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Reproducibility ensures that experiment results can be obtained again by others or by same 
+team in future. It helps trust and scientific correctness. Without reproducibility, debugging 
+becomes very hard because nobody know if changes are from model or from environment 
+difference. 
+Practices include fixing random seeds, keeping code in version control, saving dataset 
+version and not modifying them without tracking, using same environment or container, 
+logging hyperparameters and model artifacts, and using automated pipeline so manual 
+changes don't break experiment repeatedly. These make ML results stable and comparable. 
+. 

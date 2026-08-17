@@ -1,0 +1,24 @@
+ID-T030 
+Name: Anjali Mehta Roll no: 232525 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-10. Explain the importance of documentation in ML projects. 
+Documentation in Machine Learning (ML) projects is crucial 
+for ensuring clarity, reproducibility, collaboration, and accountability across the entire 
+lifecycle of a model, from data collection to deployment and maintenance.  
+Key Reasons for ML Documentation 
+ Facilitates Collaboration and Onboarding: ML projects are interdisciplinary, involving 
+data scientists, software engineers, and domain experts. Clear documentation allows team 
+members to quickly understand the project's objectives, rationale behind key decisions (e.g., 
+why a specific algorithm was chosen), and existing progress. This significantly reduces the 
+onboarding time for new hires and ensures that knowledge is not lost when employees leave 
+the company. 
+ Ensures Transparency and Trust: Documentation provides insights into how a model was 
+trained, the data used, and how it operates. This transparency builds trust in the system's 
+output and credibility among stakeholders, which is vital for assessing the validity and 
+potential biases of the model's outcomes. 
+ Enables Reproducibility and Maintainability: Detailed records of the datasets, 
+preprocessing steps, model architecture, and training process allow for the results to be 
+reproduced and the models to be maintained and updated over time. Without this, debugging 
+issues or updating models to avoid drift becomes a significant challenge. 

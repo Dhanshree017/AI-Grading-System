@@ -1,0 +1,85 @@
+ID-T032 
+Name: Alisha Patel Roll no: 18 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model maintenance. 
+The machine learning lifecycle is an iterative, multi-stage engineering framework designed to transform a 
+business objective into a robust, scalable technical solution. 
+ Problem Identification & Strategy: This is the foundational phase where business requirements are 
+translated into a mathematical ML problem. We define the target variable and select success metrics 
+(e.g., F1-score for imbalanced classes or RMSE for regression). 
+ Data Engineering (ELT/ETL): Data is extracted from heterogeneous sources (SQL, APIs, 
+NoSQL). This stage involves rigorous cleaning, handling of missing values, and data deduplication. 
+ Exploratory Data Analysis (EDA): Before modeling, we perform statistical analysis to understand 
+data distributions, identify outliers, and detect multi-collinearity among features. 
+ Feature Engineering & Transformation: We create domain-specific features (e.g., lag features for 
+time-series) and perform scaling/normalization to ensure optimization algorithms like Gradient 
+Descent converge efficiently. 
+ Model Selection & Hyperparameter Tuning: Multiple architectures are evaluated. We use 
+techniques like Bayesian Optimization or Random Search to tune hyperparameters that control 
+model complexity. 
+ Validation & Evaluation: We use Cross-Validation to obtain an unbiased estimate of the model's 
+performance on unseen data. 
+ Deployment (MLOps): The model is containerized (using Docker/Kubernetes) and integrated into a 
+CI/CD pipeline for production. 
+ Monitoring & Governance: Post-deployment, we monitor for Concept Drift (changes in target 
+variable behavior) and Data Drift (changes in input distribution), triggering automated retraining 
+when performance thresholds are breached. 
+A-b. Discuss the importance of feature representation and how it influences learning outcomes. 
+Feature representation is the process of mapping raw data into a numerical vector space that an algorithm 
+can manipulate. 
+ Mapping to Hypothesis Space: The quality of the representation determines how easily the 
+algorithm can find a hypothesis $h$ that approximates the true function $f$. 
+ Information Geometry: High-quality representations (like Word Embeddings) ensure that 
+semantic similarity is reflected in geometric proximity, allowing the model to understand context 
+rather than just raw values. 
+ Signal-to-Noise Ratio: Effective representation emphasizes the "Signal" (invariant features) while 
+suppressing the "Noise" (irrelevant fluctuations), which is crucial for preventing overfitting. 
+ Dimensionality Reduction: Techniques like PCA or t-SNE help represent data in a lower
+dimensional manifold, avoiding the "Curse of Dimensionality" where data points become equidistant 
+and patterns disappear. 
+ Impact on Optimization: Properly scaled features ensure that the "Loss Landscape" is symmetric, 
+preventing the optimization algorithm from getting stuck in local minima or taking an inefficient 
+path to convergence. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance. 
+The bias-variance trade-off is the core challenge in supervised learning, representing the conflict between a 
+model’s flexibility and its stability. 
+ Bias (Underfitting): Error from erroneous assumptions in the model. High-bias models are too rigid 
+and fail to capture the underlying complexity of the data (e.g., using a linear model for non-linear 
+data). 
+ Variance (Overfitting): Error from sensitivity to small fluctuations in the training set. High
+variance models are too flexible and "memorize" the noise as if it were a valid pattern. 
+ The Sweet Spot: The goal is to reach the Optimal Model Complexity where the "Total Error" 
+(Bias² + Variance + Irreducible Error) is minimized. 
+ Practical Significance: If validation error is high and training error is high, we have a Bias problem 
+(need more features or complex models). If training error is low but validation error is high, we have 
+a Variance problem (need regularization or more data). 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Adaptation is the process of maintaining model relevance in a non-stationary world. 
+ Incremental (Online) Learning: Systems use algorithms that can update their weights continuously 
+as new data streams in, without needing to be retrained from scratch (e.g., River or Scikit
+Multilearn). 
+ Sliding Window Approach: The model is trained on a rolling window of recent data (e.g., the last 3 
+months), ensuring it prioritizes current trends over historical ones. 
+ Concept Drift Detection: We use statistical tests like the Page-Hinkley test to detect when the 
+statistical properties of the target variable change significantly. 
+ Model Versioning: We maintain a registry of models. When a new pattern is detected, a new 
+version is "Fine-tuned" using Transfer Learning from the previous version, allowing for rapid 
+adaptation. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the mathematical optimization process where an algorithm analyzes training data to find a set of 
+parameters (weights/biases) that minimize a defined loss function. 
+B-b. Define feature selection. 
+Feature selection is the process of reducing the input variable count by removing redundant or irrelevant 
+features to improve model performance and decrease training time. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the empirically verified, "real-world" labels or outcomes that serve as the gold 
+standard for training and evaluating a model. 
+B-d. What is model deployment? 
+It is the process of integrating a serialized model into a production ecosystem (via APIs or embedded code) 
+to generate inferences on live, unseen data. 
+B-e. Define learning from data. 
+Learning from data is the ability of a system to extract statistical invariants and predictive patterns from 
+historical examples to make accurate decisions on future, unobserved instances. 

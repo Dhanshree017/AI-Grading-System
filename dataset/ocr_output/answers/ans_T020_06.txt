@@ -1,0 +1,142 @@
+ID-T020 
+Name: akshay pal Roll no: 6 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Model monitoring is the continuous tracking of an ML model's performance and quality in a 
+live environment to ensure it continues to provide value and doesn't degrade over time. It 
+tracks parameters like model performance metrics (e.g., accuracy), data and prediction drift, 
+data quality, and potential bias. Continuous monitoring is essential because changes in the 
+real world (like shifts in user behavior or market conditions) can cause models to become 
+stale, leading to inaccurate predictions and potential business issues.  
+Parameters that are tracked 
+ Model Performance: This includes evaluating key metrics like accuracy, precision, recall, 
+or other business-specific metrics to ensure the model is still making good predictions. 
+ Data and Prediction Drift: 
+o Data drift: Tracks changes in the distribution of input data over time, which can signal that 
+the production data is no longer similar to the training data. 
+o Prediction drift: Monitors changes in the distribution of the model's output predictions. 
+ Data Quality: Checks for issues like missing values, outliers, or incorrect data types in the 
+input data fed to the model. 
+ Model Bias and Fairness: Assesses if the model's performance is biased against specific 
+segments or demographics, which can lead to unfair outcomes. 
+ Operational/System Health: Tracks system-level metrics like processing time, memory 
+usage, and computational resources, which can indicate performance issues or inefficiency.  
+Why continuous monitoring is essential 
+ To detect model decay (drift): The real world is not static. Changes in customer behavior, 
+market trends, or external events (like a pandemic) can cause the relationships in the data to 
+change, making the model's predictions inaccurate over time. 
+ To maintain performance: Continuous monitoring ensures the model's performance doesn't 
+fall below an acceptable threshold, safeguarding its business value. 
+ To enable timely intervention: Monitoring provides alerts when issues arise, allowing data 
+scientists and engineers to quickly diagnose the root cause and take corrective actions, such 
+as retraining the model or addressing data quality problems. 
+ To ensure fairness and compliance: In sensitive areas, monitoring helps identify and 
+mitigate bias, ensuring the model's predictions are fair and comply with regulations. 
+ To optimize resource allocation: Tracking system health metrics helps in making cost
+benefit analyses and optimizing the resources used by the model in production.  
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch learning train model on all data together. Online learning train step by step with new 
+data. Online learning good when data coming continuously like clickstream or sensor. 
+Challenges include forgetting old knowledge, noisy update, hard evaluation. Batch learning 
+stable but slow, online learning fast but sometimes model panic. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Explainable AI (XAI) builds trust by providing transparency into a machine learning model's 
+decision-making process, allowing users to understand why a prediction was made. This is 
+crucial in high-stakes, real-world scenarios like healthcare (where doctors need to 
+understand diagnostic reasoning), finance (for justifying credit scores or fraud detection), 
+and autonomous vehicles (where passengers must trust the car's safety decisions). By 
+demystifying "black-box" models, XAI helps ensure fairness, identify biases, and comply 
+with regulations, ultimately fostering confidence in AI systems.  
+How XAI builds trust 
+ Provides transparency: XAI makes it possible to see how an AI arrived at a conclusion, 
+moving beyond a simple output. 
+ Enables validation: Users can question, validate, and correct AI decisions, leading to more 
+confidence in the system's outcomes. 
+ Ensures fairness and accountability: By identifying biases in data or algorithms, XAI 
+helps refine models and ensures decisions are fair and legally defensible. 
+ Meets regulatory requirements: Regulations like GDPR and the EU AI Act require 
+transparency, making XAI essential for compliance.  
+Real-world use cases for XAI 
+ Healthcare: XAI allows doctors to understand the factors behind a diagnosis or treatment 
+recommendation, such as patient history or lab results. This is vital for making informed 
+decisions and ensuring patient safety. 
+ Finance: XAI helps institutions justify decisions like loan approvals or denials, and explain 
+how fraud detection systems work. This builds trust with customers and ensures regulatory 
+compliance. 
+ Autonomous Systems: For self-driving cars, XAI can explain the reasoning behind actions 
+like braking or turning, which is critical for passengers to feel safe and trust the technology. 
+ HR and Recruitment: XAI can be used to audit hiring tools to ensure they are free from 
+bias related to factors like gender or race, leading to fairer hiring practices. 
+ LegalTech: XAI can help analyze legal documents and suggest case outcomes, increasing 
+accountability in sensitive legal decisions.  
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Feature leakage, also known as data leakage, in machine learning occurs when information 
+from the target variable or the test/validation set is inadvertently used during the training 
+process of a model. This leads to a situation where the model appears to perform 
+exceptionally well during evaluation but fails to generalize to new, unseen data in real-world 
+scenarios. 
+Causes of Feature Leakage: 
+ Target Leakage:  
+This happens when features are included in the training data that are directly or indirectly 
+derived from the target variable itself, and which would not be available at the time of 
+prediction. 
+ Example: Predicting if a customer will churn, and including a feature like "customer service 
+cancellation call duration" in the training data. This feature directly indicates the target event 
+(churn) and wouldn't be available before the customer churns. 
+ Train-Test Contamination:  
+This occurs when information from the test or validation set leaks into the training dataset.  
+ Example: Performing data preprocessing steps like scaling or imputation on the entire 
+dataset before splitting it into training and testing sets. This allows information from the test 
+set to influence the scaling/imputation parameters applied to the training set. 
+ Example: Using features derived from the entire dataset during feature engineering, where 
+these features implicitly incorporate information from the test set. 
+ Time-Dependent Data Issues:  
+In time series data, leakage can occur if future data points are used during training or 
+validation, especially when cross-validation techniques do not properly account for the 
+temporal order. 
+ Example: Using a rolling window for feature creation that includes future values when 
+predicting current values. 
+Impact on Model Performance: 
+ Overly Optimistic Performance Metrics:  
+Leakage leads to artificially inflated accuracy, precision, recall, or other evaluation metrics 
+during model development and testing. The model appears to perform better than it truly is. 
+ Poor Generalization to Unseen Data:  
+When deployed in a real-world environment with new, unseen data, the leaked information is 
+no longer available, and the model's performance drastically drops, leading to inaccurate 
+predictions and unreliable insights. 
+ Misleading Model Selection:  
+The inflated performance metrics can lead to the selection of a suboptimal model that 
+appears superior due to leakage, while a truly leakage-free alternative might be more robust 
+and effective. 
+ Flawed Decision-Making:  
+Relying on models with leakage can lead to poor business decisions, as the predictions are 
+not truly reflective of real-world outcomes.  
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Evaluation pipelines in Machine Learning (ML) workflows are automated sequences of steps 
+designed to systematically assess the performance, robustness, and reliability of ML models 
+throughout their lifecycle. They are crucial for ensuring model quality and making informed 
+decisions about model selection, deployment, and retraining. 
+Why Separate Validation, Testing, and Deployment Evaluation? 
+Separating these evaluation stages is critical for several reasons: 
+ Validation (Hyperparameter Tuning and Model Selection): 
+ Purpose: To tune model hyperparameters and select the best-performing model architecture 
+during the development phase. 
+ Importance of Separation: Using a separate validation set prevents data leakage from the 
+test set, ensuring that the model's performance on unseen data is not artificially inflated. It 
+allows for iterative experimentation and optimization without compromising the integrity of 
+the final performance assessment. 
+ Testing (Final Performance Assessment): 
+ Purpose: To provide an unbiased estimate of the model's generalization performance on 
+completely unseen data, simulating real-world conditions. 
+ Importance of Separation: The test set serves as the ultimate benchmark for the model's 
+effectiveness. Keeping it separate from the validation set ensures that the reported 
+performance metrics are a true reflection of how the model will perform in production, 
+without any influence from hyperparameter tuning or model selection decisions. 

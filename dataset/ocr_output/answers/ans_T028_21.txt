@@ -1,0 +1,163 @@
+ID-T028 
+Name: Nitu Gupta Roll no: 21 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. Data Cleaning and Preparation Steps 
+The process of data preparation is critical to the success of any machine learning project, adhering to the 
+principle "Garbage In, Garbage Out." Dealing with missing and inconsistent values requires a systematic 
+approach. 
+�
+� Steps for Data Cleaning and Preparation 
+1. Data Profiling and Discovery: 
+o Action: Calculate summary statistics (mean, standard deviation, unique counts, percentiles) 
+and visualize data distributions (histograms, box plots). 
+o Goal: Identify the extent of missing data, potential outliers, data type mismatches, and 
+structural errors (e.g., multiple spellings for the same category). 
+2. Handling Missing Values (Imputation Strategy): 
+o Objective: Strategically fill or remove null values. 
+o Actions: 
+ Deletion: Drop features with $>60-70\%$ missing values or samples where the target 
+variable is missing. 
+ Statistical Imputation: For numerical features, use the median (robust to outliers) 
+or mean. For categorical features, use the mode or a constant category like "N/A." 
+ Advanced Imputation: Use a machine learning technique (e.g., $k$-NN Imputer) or 
+domain knowledge to estimate values. 
+3. Handling Inconsistent Values and Structural Errors: 
+o Objective: Standardize and harmonize feature values. 
+o Actions: 
+ Standardize Categories: Consolidate variations of the same entry (e.g., 'NY', 'New 
+York', 'N.Y.' $\rightarrow$ 'New York'). 
+ Data Type Conversion: Convert features to the appropriate type (e.g., parsing date 
+strings into datetime objects). 
+4. Outlier Detection and Treatment: 
+o Objective: Manage extreme values that can skew model training. 
+o Actions: Identify outliers using statistical methods like the Interquartile Range (IQR) rule 
+or visualization . Treat them by either winsorization (capping/clipping) or transforming 
+them. 
+5. Feature Engineering and Transformation: 
+o Objective: Prepare features for algorithmic consumption. 
+o Actions: 
+ Encoding Categorical Features: Use One-Hot Encoding for nominal data and 
+Label Encoding for ordinal data. 
+ Scaling Numerical Features: Apply Standardization (Z-score scaling) or 
+Normalization (Min-Max scaling) to ensure features contribute equally to the 
+distance calculations in algorithms. 
+ Dimensionality Reduction: Use techniques like Principal Component Analysis 
+(PCA) if the number of features is very large and highly correlated. 
+6. Data Splitting: 
+o Action: Divide the final cleaned dataset into mutually exclusive Training, Validation, and 
+Test sets (typically 60-80% for training) to ensure reliable evaluation of the model's 
+generalization ability. 
+2. Analyzing and Improving Inaccurate Predictions 
+When a trained model performs poorly on new, unseen data, it indicates a lack of generalization, primarily 
+stemming from the Bias-Variance Trade-off. 
+�
+� Steps to Analyze and Improve Performance 
+1. Error and Residual Analysis: 
+o Diagnosis: Examine the residuals (prediction errors). Check if the errors are randomly 
+distributed or if they are systematically concentrated on a specific subset of data (e.g., high
+value transactions, a specific geographic area). 
+o Action: Use scatter plots of actual vs. predicted values and histograms of residuals to identify 
+patterns in failure. 
+2. Diagnose the Bias-Variance Trade-off: 
+o High Bias (Underfitting): Low performance on both training and test data. The model is too 
+simple. 
+ Action: Use a more complex model (e.g., switch from Linear Regression to Gradient 
+Boosting), add more informative features, or reduce regularization. 
+o High Variance (Overfitting): High performance on training data but poor performance on 
+test data. The model has memorized the noise. 
+ Action: Gather more training data, increase regularization (L1/L2), perform 
+Feature Selection to simplify the model, or use an Ensemble Method (like Random 
+Forest) to average out variance. 
+3. Hyperparameter Tuning and Cross-Validation: 
+o Action: Systematically search the hyperparameter space (e.g., learning rate, tree depth, 
+number of estimators) using techniques like Grid Search or Bayesian Optimization 
+combined with $k$-fold Cross-Validation on the training data. This ensures the optimal 
+configuration is chosen for generalization. 
+4. Review Feature Importance and Data Integrity: 
+o Action: Check the model's feature importance scores. If the model relies heavily on features 
+that are known to be noisy or unreliable, consider removing or transforming them. 
+o Check for Data Leakage: Rigorously verify that no information from the validation/test set 
+inadvertently 'leaked' into the training process (e.g., scaling or imputation performed before 
+the split). 
+5. Ensemble Techniques: 
+o Action: Implement Ensemble Methods (e.g., Stacking or Boosting like 
+XGBoost/LightGBM) to combine the strengths of multiple base learners, often resulting in 
+superior and more robust predictive power. 
+4. Model Degradation After Deployment (Model Drift) 
+Model degradation post-deployment, known as Model Drift, signifies that the patterns the model learned 
+during training are no longer relevant in the dynamic production environment. 
+�
+� Identifying the Cause (Monitoring Strategy) 
+1. Monitor Output Performance (Concept Drift): 
+o Concept: The relationship between the input features ($X$) and the target variable ($Y$) 
+changes. Example: A user's preference for a product ($Y$) changes even though their 
+demographic profile ($X$) remains the same. 
+o Action: Continuously monitor key business and technical metrics (e.g., conversion rate, 
+accuracy, F1-score) on the incoming production data where the ground truth is eventually 
+known. Set statistical thresholds for alerts when performance drops significantly. 
+2. Monitor Input Data Distribution (Data Drift): 
+o Concept: The statistical properties of the input features ($X$) themselves change over time. 
+Example: A sensor used for a feature malfunctions, or the demographic profile of new 
+customers shifts due to market changes. 
+o Action: Compare the distribution of the live feature data against the distribution of the 
+original training data using statistical tests like the Kullback-Leibler (KL) Divergence or 
+Chi-Squared test. Alerts are triggered when the divergence exceeds a pre-defined limit. 
+3. Monitor Data Quality and Feature Integrity: 
+o Concept: The quality of the input data degrades (e.g., increase in missing values, corrupted 
+features). 
+o Action: Track the frequency of nulls, distinct values, and feature ranges. This often pinpoints 
+upstream data pipeline failures. 
+� Actions to Mitigate Drift 
+1. Retraining and Recalibration: 
+o Scheduled Retraining: The simplest and most common fix is to retrain the model on the 
+most recent, labeled production data at regular intervals (e.g., daily or weekly). 
+o Triggered Retraining: Initiate retraining immediately when a significant drift alert (Data or 
+Concept) is triggered. 
+2. Adaptive Learning and Model Blending: 
+o Incremental Learning: For high-frequency, continuous data streams, use online learning 
+algorithms that update the model's weights incrementally with each new batch of data, rather 
+than full retraining. 
+o Weighted Ensemble: Assign higher weight to predictions from models trained on more 
+recent data, allowing the system to adapt faster. 
+3. Investigating the Root Cause: 
+o Action: If Data Drift is detected, analyze the feature distributions to understand why the data 
+changed (e.g., a change in user interface, a new economic policy, a sensor failure). This 
+allows for a structural fix beyond just retraining. 
+5. Evaluating and Comparing Models Without Mathematical Metrics 
+Deciding which model is "better" often goes beyond a single metric score, especially in a business context. 
+Without using mathematical metrics, the comparison relies on operational, financial, and regulatory 
+factors. 
+⚖� Non-Metric-Based Evaluation Factors 
+1. Business Value and Cost of Errors: 
+o Criterion: Which model minimizes the cost of its worst-case errors or maximizes the value 
+of its correct predictions? 
+o Example: In a manufacturing quality control system, Model A might have a slightly lower 
+overall accuracy than Model B. However, if Model A has zero False Negatives (it never 
+passes a defective item), it is superior because a single defective item in the market could 
+result in a massive recall and brand damage. 
+2. Interpretability and Trust: 
+o Criterion: The degree to which a human user or regulator can understand and trust the 
+decision-making process. 
+o Relevance: A simpler, interpretable model (e.g., a Decision Tree or simple Linear Model) 
+is always preferred over an equally performing complex model if the model's decisions must 
+be defensible in a regulatory environment (e.g., finance, medicine). 
+3. Deployment and Operational Latency: 
+o Criterion: How quickly does the model generate a prediction in a live environment? 
+o Relevance: For real-time applications (e.g., serving ads, high-frequency trading), a slightly 
+lower-performing model (Model A) with a millisecond inference time is vastly superior to a 
+high-accuracy model (Model B) with a second-long inference time. 
+4. Resource Footprint and Maintenance Complexity: 
+o Criterion: The computing resources (CPU/GPU, memory) required for training and serving, 
+and the long-term ease of maintenance. 
+o Example: If Model A is a massive Deep Learning model requiring expensive GPU clusters, 
+and Model B is a lightweight Random Forest requiring only a standard CPU, Model B is 
+often chosen for its lower Total Cost of Ownership (TCO) and simpler maintenance 
+pipeline. 
+5. Robustness to Data Quality: 
+o Criterion: The model's ability to maintain performance when confronted with real-world, 
+imperfect data (e.g., slightly inconsistent features, unexpected values). 
+o Example: Tree-based models (like Model B) are generally more robust to outliers and noisy 
+features than distance-based models (like Model A), making them a safer, more reliable 
+choice for messy production data. 

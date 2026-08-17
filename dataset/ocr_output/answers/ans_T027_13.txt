@@ -1,0 +1,41 @@
+ID-T027 
+Name: Roshni karkaar Roll no: 13 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+Feature engineering is the process of transforming raw data into well-defined input features 
+that help machine learning models learn patterns more effectively and efficiently. 
+Detailed Explanation 
+1. It involves selecting relevant variables that have a strong relationship with the target 
+outcome. 
+2. New features can be created by combining, transforming, or aggregating existing data. 
+3. Numerical features are scaled or normalized to maintain consistency across inputs. 
+4. Categorical data is encoded into numerical representations usable by algorithms. 
+5. Feature engineering applies domain knowledge to capture real-world behavior in data. 
+Importance of Feature Engineering 
+6. Well-designed features significantly improve model accuracy and reliability. 
+7. It reduces noise and redundancy, leading to better generalization. 
+8. Feature engineering allows simpler models to perform competitively. 
+9. It shortens training time by simplifying the learning task. 
+10. In real-world projects, effective feature engineering often has a greater impact than 
+algorithm choice. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Machine Learning Model Training Process 
+The model training process is a structured workflow where data is used to teach a model how 
+to recognize patterns and make predictions. 
+Steps in the Process 
+1. Data is collected and cleaned to remove errors and inconsistencies. 
+2. The dataset is divided into training, validation, and test sets. 
+3. The training set is used to learn model parameters and patterns. 
+4. The model iteratively adjusts its parameters to minimize prediction error. 
+Role of Training, Validation, and Test Data 
+5. Validation data is used to tune hyperparameters and select the best model version. 
+6. It helps detect overfitting during training. 
+7. Test data is kept unseen until the final evaluation stage. 
+8. Test results represent real-world performance. 
+9. Proper data separation ensures unbiased assessment. 
+10. This process leads to robust models that generalize well to new data. 

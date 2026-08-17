@@ -1,0 +1,276 @@
+ID-T012 
+Name : Suman Rajput Roll no: 11 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, advantages, 
+and disadvantages. 
+Definition: 
+Random Forest is an ensemble learning algorithm that combines multiple decision 
+trees to improve predictive performance and reduce overfitting. It works on the 
+principle of aggregating the decisions from several weak models (trees) to form a 
+strong and accurate final model. 
+Working of Random Forest: 
+1. Bootstrap Sampling: The algorithm starts by generating multiple subsets of the 
+training data using sampling with replacement. Each subset is used to train an 
+individual decision tree. 
+2. Feature Randomness: At each node in a tree, only a random subset of features 
+is considered for splitting. This introduces diversity among trees and prevents 
+them from becoming identical. 
+3. Model Building: Each decision tree is trained independently using its data 
+subset and random feature selection. 
+4. Prediction: 
+o For classification, the final output is based on majority voting across all 
+trees. 
+o For regression, the final prediction is the average of outputs from all 
+trees. 
+Advantages: 
+ High accuracy and robust against overfitting. 
+ Works well with both categorical and numerical data. 
+ Handles missing data effectively. 
+ Resistant to noise and performs well on large datasets. 
+Disadvantages: 
+ Computationally expensive and slow for real-time use. 
+ Hard to interpret compared to single decision trees. 
+ May require large memory and resources for big datasets. 
+Applications: 
+Used in credit scoring, disease prediction, fraud detection, and stock market analysis 
+where accuracy and reliability are key. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist learning. 
+Definition: 
+Bayesian learning is a statistical approach that uses probability to represent 
+uncertainty in model parameters. It updates the probability of hypotheses as new 
+data is observed, based on Bayes’ Theorem. 
+Core Idea: 
+Instead of assuming a fixed parameter, Bayesian learning maintains a distribution 
+over parameters and continuously updates this distribution when new evidence 
+arrives. 
+Steps: 
+1. Start with a prior probability—representing initial beliefs about model 
+parameters. 
+2. Collect new data and compute the likelihood of the data given the model. 
+3. Apply Bayes’ Theorem to combine the prior and likelihood to form a posterior 
+probability. 
+4. Use this posterior for making predictions or decisions. 
+Bayesian vs. Frequentist Comparison: 
+ Parameter Interpretation: 
+o Bayesian: Parameters are random variables with distributions. 
+o Frequentist: Parameters are fixed but unknown quantities. 
+ Uncertainty Representation: 
+o Bayesian: Provides uncertainty estimates via posterior distribution. 
+o Frequentist: Relies on confidence intervals and point estimates. 
+ Flexibility: 
+o Bayesian: Adapts easily to new data (online learning). 
+o Frequentist: Requires retraining when new data is added. 
+Applications: 
+Bayesian models are widely used in spam detection, recommendation systems, and 
+decision-making under uncertainty. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in sequence 
+modeling. 
+Definition: 
+Recurrent Neural Networks (RNNs) are a special class of neural networks designed to 
+handle sequential data, where current outputs depend on previous inputs. They are 
+especially useful in tasks where context and order matter. 
+Working Principle: 
+Unlike traditional neural networks that treat inputs independently, RNNs have 
+internal loops that allow information to persist. Each neuron passes information to 
+the next step in the sequence, creating a temporal connection. 
+For example, in sentence processing, understanding the meaning of a word depends 
+on previous words. RNNs use hidden states to remember this context across time 
+steps. 
+Architecture: 
+An RNN cell takes an input vector at time t and combines it with the previous 
+hidden state to produce the current hidden state. This hidden state carries memory 
+forward in time. 
+Training: 
+Training RNNs involves backpropagation through time (BPTT), where gradients are 
+calculated for each time step and summed across the sequence. 
+Problems: 
+ Vanishing Gradient: Gradients become too small to update earlier layers. 
+ Exploding Gradient: Gradients become too large, leading to instability. 
+ These issues led to improved versions like LSTM (Long Short-Term Memory) 
+and GRU (Gated Recurrent Unit). 
+Applications: 
+ Text generation and language translation. 
+ Speech recognition and audio processing. 
+ Stock price and time series forecasting. 
+ Sentiment analysis and chatbot responses. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Definition: 
+Model Deployment is the process of integrating a trained machine learning model 
+into a production environment where it can make real-world predictions. Monitoring 
+ensures that the model continues to perform accurately after deployment. 
+Steps in Deployment: 
+1. Model Packaging: Convert the trained model into a deployable format (e.g., 
+pickle file, ONNX model). 
+2. Integration: Expose the model as an API endpoint or embed it in an 
+application. 
+3. Infrastructure Setup: Deploy models using tools like Docker, Kubernetes, or 
+cloud services (AWS, GCP, Azure). 
+4. Testing: Validate model predictions against real data before release. 
+Monitoring Phase: 
+Once deployed, continuous monitoring ensures the model performs well and does not 
+degrade due to data drift or system issues. 
+Aspects of Monitoring: 
+ Performance Monitoring: Check prediction accuracy and latency. 
+ Data Drift Detection: Identify when input data changes significantly from 
+training data. 
+ Model Retraining: Retrain the model periodically with new data. 
+ Logging and Alerting: Record model outputs and flag anomalies automatically. 
+Challenges: 
+ Handling scalability with real-time data. 
+ Ensuring security and privacy of sensitive inputs. 
+ Maintaining reproducibility during updates. 
+Applications: 
+Used in fraud detection systems, recommendation engines, and industrial 
+automation pipelines where live model inference is critical. 
+A-6. Explain Normalization vs Standardization with examples. 
+Definition: 
+Normalization and Standardization are data preprocessing techniques used to rescale 
+features so that they contribute equally to model learning. 
+Normalization: 
+It rescales features to a fixed range, usually [0, 1]. This is useful when features have 
+different units or magnitudes. 
+Example: 
+If we have heights (in cm) from 150 to 200, normalization converts them into 
+values between 0 and 1. 
+Formula: 
+xnorm=x−xminxmax−xminx_{norm} = \frac{x - x_{min}}{x_{max} - x_{min}}xnorm
+=xmax−xminx−xmin  
+When to Use: 
+Preferred in algorithms like KNN or neural networks where distances or gradients 
+are sensitive to scale. 
+Standardization: 
+Standardization centers the data around the mean with unit variance. 
+Formula: 
+xstd=x−μσx_{std} = \frac{x - \mu}{\sigma}xstd=σx−μ  
+It ensures that the feature distribution has a mean of 0 and standard deviation of 1. 
+When to Use: 
+Useful for algorithms like SVM, logistic regression, or PCA that assume normally 
+distributed data. 
+Comparison Example: 
+If two features, “age” (20–70) and “income” (₹10k–₹1 lakh), are used in a model, 
+normalization or standardization ensures that “income” does not dominate “age” 
+due to its higher range. 
+Both methods make model training faster, improve numerical stability, and ensure 
+fair feature contribution. 
+B] Attempt any 4 (5 marks each
+B-2. Describe the difference between probability and likelihood in machine learning. 
+Though both probability and likelihood are central to statistical learning, they serve 
+different roles in machine learning modeling. 
+Probability represents the chance of an event occurring given known parameters. It 
+is used to model uncertainty in data outcomes. For example, in a coin toss, if the bias 
+of the coin is known, probability tells us how likely we are to get heads. 
+Likelihood, on the other hand, is used to estimate parameters when data is already 
+observed. It answers the question: given the data we have, which parameter values 
+make it most probable? 
+In practical terms, probability helps in predicting outcomes from a known model, 
+while likelihood helps in finding the model that best explains observed outcomes. 
+For instance, in logistic regression or Naive Bayes, likelihood functions are maximized 
+to determine the optimal parameters that fit the training data. 
+Therefore, probability measures data uncertainty given a model, while likelihood 
+measures model uncertainty given data. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+In machine learning, hyperparameters are configuration values set before the 
+training process begins. They define the learning framework and structure of the 
+model, influencing how the algorithm converges and generalizes. 
+Examples of hyperparameters include: 
+ The number of hidden layers in a neural network. 
+ The learning rate that determines the step size of weight updates. 
+ The maximum depth of trees in random forests. 
+ Regularization coefficients controlling model complexity. 
+Hyperparameters are chosen manually or optimized using techniques such as grid 
+search, random search, or Bayesian optimization. 
+By contrast, parameters are learned from data during model training. They are 
+internal values (like weights or biases) that the algorithm adjusts to minimize loss. 
+In summary, hyperparameters guide how the learning happens, while parameters 
+are what is learned. 
+B-5. Explain the concept of cross-entropy loss. 
+Cross-entropy loss is a core concept in classification models. It measures how well a 
+model’s predicted probability distribution matches the true class distribution. 
+If the model predicts the correct class with high confidence, the cross-entropy loss is 
+very low; if it predicts the wrong class confidently, the loss is high. 
+This loss function encourages models to assign high probabilities to the correct classes. 
+It is particularly effective when used with softmax activation, which converts model 
+outputs into probabilities for multiple classes. 
+It is essential for training models like logistic regression, CNNs for image 
+classification, and RNNs for text classification. 
+Cross-entropy thus serves as a bridge between model predictions and reality, 
+ensuring the algorithm learns meaningful probability distributions. 
+B-6. What is the curse of dimensionality? How does it affect machine learning models? 
+The curse of dimensionality refers to the exponential increase in data volume and 
+computational complexity as the number of features grows. When datasets have too 
+many dimensions, the feature space becomes sparse, and models struggle to identify 
+patterns effectively. 
+Effects: 
+1. Distance metrics lose effectiveness, harming algorithms like KNN and clustering. 
+2. Overfitting increases, as models capture noise instead of meaningful trends. 
+3. Training time and memory usage escalate sharply. 
+4. Visualization and interpretability become difficult. 
+Solutions include: 
+ Dimensionality reduction: Techniques like PCA or t-SNE. 
+ Feature selection: Retaining only the most relevant attributes. 
+ Regularization: Penalizing overly complex models. 
+Proper dimensional management ensures models are efficient and generalizable. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning plays a transformative role in predictive maintenance by enabling 
+companies to predict equipment failures before they occur. Instead of fixed-interval 
+maintenance schedules, ML-based systems analyze live sensor data to identify early 
+signs of malfunction. 
+Workflow: 
+1. Data Collection: Sensors capture vibration, pressure, sound, and temperature 
+data. 
+2. Data Cleaning: Raw sensor data is preprocessed to remove noise and fill missing 
+values. 
+3. Feature Extraction: Key features like vibration frequency, heat level, or voltage 
+fluctuations are derived. 
+4. Model Training: Algorithms such as Random Forests, XGBoost, or LSTM 
+networks are used to predict failure likelihood or remaining life of machinery. 
+5. Deployment: Models run in real-time, continuously monitoring data streams. 
+6. Maintenance Decision: When anomalies are detected, alerts are triggered for 
+early maintenance action. 
+Benefits: 
+ Reduces unplanned downtime and production loss. 
+ Extends the life of industrial assets. 
+ Improves safety by preventing catastrophic failures. 
+ Optimizes maintenance costs. 
+Applications: 
+ Predicting conveyor motor failure in manufacturing. 
+ Monitoring turbine performance in energy plants. 
+ Aircraft engine health monitoring. 
+Machine learning converts maintenance from reactive to proactive, driving Industry 
+4.0 advancements. 
+C-2. Discuss five real-world examples of biased ML models and how such bias can be 
+reduced. 
+Bias in machine learning occurs when models produce unfair or discriminatory 
+outcomes due to flawed data or model design. Below are examples of real-world 
+cases and approaches to mitigate them. 
+1. Hiring Systems Bias: 
+Automated hiring systems trained on historical data discriminated against 
+female candidates. 
+Solution: Use gender-balanced datasets and fairness algorithms. 
+2. Facial Recognition Bias: 
+Many facial recognition tools showed high error rates for darker skin tones or 
+minorities. 
+Solution: Improve dataset diversity and audit model outcomes. 
+3. Credit Scoring Bias: 
+Financial credit models have penalized applicants based on demographic 
+factors. 
+Solution: Remove features correlated with race or gender and use fairness 
+constraints. 
+4. Healthcare Bias: 
+Some medical models underdiagnosed conditions in women due to male
+dominated datasets. 
+Solution: Collect representative health data across populations. 
+5. Predictive Policing Bias: 
+Algorithms reinforced stereotypes by predicting higher crime rates in specific 
+communities. 
+Solution: Use transparent data sources and human review processes. 
+Bias Mitigation Methods: 
+ Data preprocessing to remove imbalance. 
+ Fair model design with regular bias audits. 
+ Inclusive data collection and interpretability checks. 
+Reducing bias ensures fairness, accountability, and trust in machine learning 
+applications. 

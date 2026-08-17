@@ -1,0 +1,94 @@
+ID-T007 
+Name: Akshay verma Roll no: 29 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a) Define AI and Write applications of machine learning 
+AI is like when computer act like human and it can think and talk and do many thing 
+automatic. It can also play games and do brain work. In AI computer is made so smart 
+that it take own decision without man help. It can also learn and feel some time like 
+human brain because it store lot of data and remember old things. 
+A-b) Explain types of machine learning with example 
+Machine learning have so many types that learn by data and make prediction. It learn 
+from example and do mistake but again learn. It is like baby learning by mistake. There 
+are few main types but some books say more types also. 
+1. Supervised learning: Data have both input and output and we teach computer both. 
+It like teacher checking homework. 
+2. Unsupervised learning: Here no label, machine learn by its own and make group and 
+we don’t know what happen inside. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing is when data is changed to clean data. It is done before training so 
+model not get confuse. Dirty data give wrong output so it must be made nice. 
+1. First we take data from anywhere like excel or google or survey. 
+2. Then we remove all empty column and null because they spoil training. 
+3. Then we change some wrong spelling in data also because computer can’t understand 
+that. 
+4. We also take small data and combine them to big data table. 
+5. Normalization done to make all number same size because otherwise model get 
+confuse. 
+6. Then we split in three part like training and testing and maybe validation also. 
+Example: If I have student marks data then I remove name spelling mistake and missing 
+marks before training. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naïve Bayes is like a probability based algorithm but I don’t understand much formula 
+because it is very confuse. It find chance of happening of thing. It say like if this word is 
+there, then maybe it spam or not spam. It use simple maths. It is called naïve because it 
+think everything separate but actually not separate. 
+1. It use something called Bayes theorem that use condition probability. 
+2. It can work on small dataset and fast also. 
+3. It not good for all data because some time give wrong. 
+4. It is used in text data like email and reviews. 
+5. It also work on both class and multi class problem. 
+6. It don’t take too much memory also. 
+Example: When you type mail in Gmail it automatically tell spam or not spam but 
+sometimes good mail also go in spam so not perfect. 
+B] Attempt all (20 marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random forest is like many trees together and when all give answer then it decide by 
+vote which answer is final. It is like asking 10 people question and see what most people 
+say. So it is collection of tree called forest. 
+1. Each tree is made by random data so it different every time. 
+2. All trees are combined so overfitting become less but not always. 
+3. It is slow because many tree need to be made. 
+4. It is used for both classification and regression. 
+5. It can handle missing data also because it use many tree. 
+6. But it is difficult to draw because it is many trees together. 
+7. It give importance score to each feature also. 
+Example: Random forest used in cricket prediction for deciding which player will play good 
+but not always true. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+SVM is like a line that divide data but sometimes not line also. It is used when we want 
+to separate two things like cat and dog photos. It find best line in between so that 
+mistake become less. 
+1. It use support vector which are like point near boundary. 
+2. It find maximum margin line between two class. 
+3. It can be used for regression also. 
+4. It use kernel trick for changing shape of line. 
+Types of SVM: 
+ Linear SVM: When line is straight like simple line and data is clear. 
+ Non-linear SVM: When line is curve and data mixed so use RBF kernel. 
+ Polynomial SVM: When line is polynomial shape and hard to draw. 
+Example: In college attendance data SVM can separate students who attend and not 
+attend by percentage line. 
+B-c) Explain different types of clustering algorithm 
+Clustering is when computer put similar data together in one group like making friend 
+group. It not use output label, it just look what is similar. 
+1. K-means: Divide data in k group but need to tell k first. 
+2. Hierarchical: Make family tree of cluster which is very nice to see. 
+3. DBSCAN: Make cluster based on density and remove outlier. 
+4. Mean shift: It move points towards center so it come together. 
+5. Agglomerative: It merge small cluster into big one. 
+6. Spectral: Use maths and matrix so I not understand fully. 
+Example: K-means used in shops to group people who buy same type of product. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision tree is like a tree but made from data. It have root, branch and leaf. Each 
+branch is question and each leaf is answer. It divide data again and again till no question 
+left. 
+1. Select best feature using something like Gini or information gain. 
+2. Divide data based on that feature. 
+3. Continue dividing until all data same or no feature left. 
+4. Then we get answer on leaf. 
+5. Sometime we cut extra branch to make tree small which called pruning. 
+6. It can handle both number and word data also. 
+Example: Decision tree used in deciding if person will go out in rain or not based on 
+weather and umbrella. 

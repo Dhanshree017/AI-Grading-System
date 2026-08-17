@@ -1,0 +1,64 @@
+ID-T032 
+Name: Samruddhi More Roll no: 7 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (5 marks each) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The machine learning lifecycle (MLOps) is an iterative, multi-stage engineering framework 
+designed to transform raw data into a sustainable business solution. It is not a linear path but 
+a continuous loop. 
+1. Problem Definition and Scoping: 
+The cycle begins by translating a business need into a mathematical objective. 
+Engineers must decide if the task is supervised (classification/regression) or 
+unsupervised. Success metrics—such as F1-score for imbalanced classes or Mean 
+Absolute Error for regression—are established here. 
+2. Data Acquisition and Exploration (EDA): 
+Data is sourced from SQL databases, APIs, or data lakes. Exploratory Data Analysis 
+(EDA) is performed using statistical charts to identify outliers, correlations, and data 
+distributions. This stage determines the quality of the "raw material." 
+3. Data Preprocessing and Cleaning: 
+Raw data is often "dirty." This phase involves handling missing values (imputation), 
+removing duplicates, and encoding categorical variables into numerical formats (One
+Hot or Label Encoding). 
+4. Feature Engineering and Selection: 
+This is often considered the most critical step. Raw data is transformed into "signals" 
+that the model can understand. This includes scaling, creating interaction terms, or 
+using PCA for dimensionality reduction. 
+5. Model Training and Hyperparameter Tuning: 
+The processed data is fed into an algorithm. Engineers use techniques like Grid Search 
+or Bayesian Optimization to find the best "hyperparameters" (settings like learning 
+rate or tree depth) that aren't learned during standard training. 
+6. Evaluation and Validation: 
+The model is tested on a "hold-out" set. Techniques like K-fold cross-validation 
+ensure that the model’s performance is consistent and not a result of "getting lucky" 
+with a specific data split. 
+7. Deployment: 
+Once validated, the model is "containerized" (using tools like Docker) and deployed 
+into a production environment via an API. It now serves real-time or batch predictions 
+to users. 
+8. Monitoring and Maintenance: 
+Models in the real world suffer from "Concept Drift"—where the data patterns change 
+(e.g., consumer behavior changes after a global event). Continuous monitoring tracks 
+accuracy decay, triggering automated retraining when performance hits a threshold. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the iterative process where an algorithm analyzes a training dataset to find the optimal 
+internal parameters (weights) that minimize a loss function, effectively "learning" the 
+patterns in the data. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and keeping only the most relevant variables 
+from a dataset, removing redundant or noisy features to simplify the model and improve its 
+accuracy. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the direct, verified information or "true label" provided in the training 
+data, used as the benchmark to measure the accuracy of the model's predictions. 
+B-d. What is model deployment? 
+It is the engineering phase where a validated machine learning model is integrated into a live 
+production environment (like a server or cloud API) so it can process real-world data and 
+provide predictions. 
+B-e. Define learning from data. 
+Learning from data is the ability of an algorithm to improve its performance at a specific task 
+over time by extracting statistical structures and rules from input examples without being 
+explicitly programmed. 
+ 

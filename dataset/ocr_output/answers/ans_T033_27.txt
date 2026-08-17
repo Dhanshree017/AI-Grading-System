@@ -1,0 +1,57 @@
+ID-T033 
+Name: Devika Oberoi Roll no: 27  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-2. Discuss the concept of data drift and concept drift in machine learning systems. Explain their 
+impact on long-term model performance.  
+Introduction  
+Machine learning models are often deployed in dynamic environments where data patterns evolve over 
+time. Two critical challenges that arise in such environments are data drift and concept drift. If not 
+addressed, these phenomena degrade model performance and reliability.  
+Data Drift  
+Definition  
+Data drift occurs when the statistical properties of input data change over time while the target concept 
+remains the same.  
+Causes of Data Drift  
+1. Changes in user behavior  
+2. Seasonal variations  
+3. Environmental changes  
+4. Market trends  
+5. Data collection method changes  
+Types of Data Drift  
+• Sudden Drift: Abrupt changes  
+• Gradual Drift: Slow changes over time  
+• Incremental Drift: Small but continuous changes  
+Concept Drift Definition  
+Concept drift occurs when the relationship between input features and output labels changes.  
+Causes of Concept Drift  
+1. Policy changes  
+2. Technological evolution  
+3. Changing customer preferences  
+4. Regulatory updates  
+5. Societal behavior shifts  
+Nature of Concept Drift  
+• Changes decision boundaries  
+• Alters prediction logic  
+• Often invisible without monitoring  
+Impact on Long-Term Model Performance  
+1. Accuracy Degradation  
+Predictions become increasingly incorrect over time.  
+2. Increased Error Rates  
+False positives and false negatives rise.  
+3. Loss of Model Relevance  
+The model becomes outdated and ineffective.  
+4. Reduced User Trust  
+Inconsistent outputs reduce confidence.  
+5. Business Risks  
+Poor predictions lead to financial or operational losses.  
+6. Maintenance Overhead  
+Frequent retraining becomes necessary.  
+7. System Instability  
+Models behave unpredictably.  
+8. Ethical Risks  
+Decisions may become unfair or biased.  
+Conclusion  
+Data drift and concept drift are unavoidable in real-world systems. Continuous monitoring, retraining, and 
+adaptive learning strategies are essential to maintain long-term model performance and reliability.  

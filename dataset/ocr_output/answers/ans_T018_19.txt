@@ -1,0 +1,175 @@
+ID-T018 
+Name: Nikhil desai Roll no: 19 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-2. Describe the internal working of LSTM (Long Short-Term Memory) networks. 
+Explain input gate, forget gate, output gate, and cell state. 
+Answer — high-level purpose 
+LSTM networks are designed to capture long-range dependencies in sequential data by 
+maintaining a controlled internal memory. Unlike plain recurrent units, LSTMs use gating 
+mechanisms to decide what to remember, what to update, and what to reveal at each time 
+step, which enables them to preserve relevant information over long sequences. 
+Cell state — the persistent memory 
+The cell state is a pathway that runs through the unit and carries information forward with 
+minimal modification. It functions as the long-term memory of the LSTM, allowing 
+information to flow across many time steps unless explicitly modified by the gates. 
+Forget gate — selective forgetting 
+The forget gate inspects the previous memory and the current input to decide which parts of 
+the existing cell state should be removed. This gate prevents accumulation of irrelevant or 
+outdated information by scaling down portions of the cell state that are no longer useful. 
+Input gate — controlled writing of new information 
+The input gate determines how much of the incoming information should be written into the 
+cell state. It filters and modulates candidate content derived from the current input and 
+previous output, so only salient new information updates the long-term memory. 
+Output gate — controlled exposure 
+The output gate decides which parts of the updated cell state should influence the unit’s 
+visible output (hidden state) for the current time step. The output gate therefore shapes what 
+is passed to the next layer/time step or used for predictions, balancing immediate needs 
+against long-term storage. 
+Coordination and behavior 
+Together, these gates enable three essential behaviors: erasing irrelevant memory, selectively 
+adding important new content, and exposing an appropriate summary for downstream use. 
+This coordinated control is what lets LSTMs capture dependencies such as long-term context 
+in language or slowly varying trends in time series. 
+Practical considerations 
+LSTMs require careful tuning (learning rate, sequence length, regularization) and benefit 
+from techniques such as gradient clipping and dropout between recurrent layers. They are  
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, 
+independence assumption. 
+Answer — conceptual foundation 
+Naive Bayes is a probabilistic classification framework built on Bayes’ theorem. It estimates 
+the probability of each class given an input by combining the prior probability of the class 
+with the likelihood of the observed features under that class. 
+Independence assumption and practical effect 
+The “naive” assumption is that features are conditionally independent given the class label. 
+This simplifies computation drastically because the joint likelihood factors into the product 
+of per-feature likelihoods. Although this assumption is rarely exactly true, Naive Bayes often 
+performs well in practice—especially for high-dimensional, sparse data like text—because it 
+captures dominant class-conditional signals robustly. 
+Advantages and limitations 
+Advantages: fast to train and predict, works with small datasets, simple to implement, and 
+often effective as a baseline. Limitations: sensitivity to feature dependence and to zero 
+probabilities (usually handled by smoothing). For many text classification tasks, the 
+independence assumption is not a severe handicap and Naive Bayes remains competitive. 
+Practical deployment 
+Common variants include multinomial Naive Bayes for count data, Bernoulli Naive Bayes 
+for binary features, and Gaussian Naive Bayes for continuous features. Proper preprocessing 
+(tokenization, smoothing, feature selection) is crucial for strong performance. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, 
+latent representation, and applications in anomaly detection. 
+Answer — core concept 
+An autoencoder is an unsupervised neural model trained to reconstruct its input. By forcing 
+the network to compress information into a low-dimensional bottleneck (latent 
+representation) and then reconstruct, the autoencoder learns compact, informative encodings 
+of the data. 
+Encoder — compressive mapping 
+The encoder network progressively transforms the input into a lower-dimensional latent 
+vector. Through nonlinear layers, it emphasizes salient patterns and suppresses noise, 
+learning a compact description of typical inputs. 
+Latent representation — the bottleneck 
+The bottleneck vector is the internal code holding distilled information about the input. Its 
+dimensionality governs the tradeoff between compression and representational capacity: too 
+small and useful detail is lost; too large and the model may trivially copy inputs without 
+abstraction. 
+Decoder — reconstructive mapping 
+The decoder maps the latent code back to the original input space, attempting to reconstruct 
+the original sample as accurately as possible. Successful reconstruction indicates that the 
+latent code captured the essential structure of the input. 
+Autoencoders for anomaly detection 
+When trained exclusively on normal data, autoencoders learn to reconstruct typical patterns 
+with low error. Anomalous inputs, which differ from the training distribution, tend to 
+produce larger reconstruction errors because the model has not learned their structure. By 
+thresholding reconstruction error, autoencoders provide an effective anomaly detector in 
+domains like fraud detection, machine condition monitoring, and cybersecurity. 
+Extensions and practical notes 
+Variations include denoising autoencoders (robust to noisy inputs), variational autoencoders 
+(probabilistic latent space), and convolutional autoencoders for images. Hyperparameter 
+choices (latent size, capacity, regularization) and proper training on representative normal 
+data are critical for reliable anomaly detection. 
+A-6. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Answer — end-to-end workflow 
+1. Problem framing and data acquisition 
+Define the objective (classification, regression, generation). Gather a representative dataset, 
+including diverse examples and edge cases. 
+2. Data preparation 
+Inspect and clean data (handle missing values, remove duplicates, fix labels). Apply 
+appropriate preprocessing: normalize/scale numeric features, tokenize and possibly subword
+encode text, and apply geometric or photometric augmentation for images. Split data into 
+training, validation, and test sets ensuring distributional consistency. 
+3. Architecture selection 
+Choose a model family aligned to the problem: convolutional models for images, 
+recurrent/transformer architectures for sequences, and MLPs or hybrid models for structured 
+data. Select depth, width, and connectivity patterns guided by data size and compute 
+resources. 
+4. Training strategy 
+Select loss function and optimization algorithm. Initialize weights sensibly and set learning 
+rate schedule. Train with minibatch gradient descent, monitor training and validation metrics, 
+and save checkpoints. Use a validation loop for hyperparameter tuning and early stopping 
+decisions. 
+5. Regularization and stabilization 
+Apply techniques to improve generalization: data augmentation, dropout, weight decay, and 
+batch normalization. Use gradient clipping for stability on large or deep models. Consider 
+ensembling or model averaging where appropriate. 
+6. Model evaluation and diagnostics 
+Assess performance on the held-out test set using task-appropriate metrics and error analysis. 
+Visualize learning curves, confusion matrices, and misclassified examples to detect biases or 
+failure modes. Validate robustness (adversarial examples, distribution shifts) if required. 
+7. Deployment and monitoring 
+Package the model for production, instrument for performance and data drift monitoring, and 
+implement a retraining/rollback strategy. Continuously collect new labeled data to maintain 
+model relevance. 
+Best practices 
+Keep experiments reproducible, track hyperparameters and datasets, and iterate rapidly in 
+controlled experiments. Emphasize interpretability where needed and ensure ethical 
+considerations (data privacy, fairness) are addressed. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Answer (concise, exam-level) 
+Start by collecting and cleaning representative data and splitting it into training, validation, 
+and test sets. Choose a model architecture suited to the problem (CNNs for images, 
+transformers for language, etc.). Train with an appropriate loss and optimizer, tune 
+hyperparameters on the validation set, and apply regularization (data augmentation, dropout, 
+weight decay) to avoid overfitting. Evaluate final performance on the test set using relevant 
+metrics, conduct error analysis, and prepare for deployment with monitoring and 
+maintenance plans. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin 
+Index, and Inertia. Describe how they measure cluster quality. 
+Answer 
+ Silhouette Score: Measures for each point how close it is to points in its own cluster 
+versus the nearest other cluster; average silhouette close to 1 indicates clear separation 
+and cohesion. 
+B-3. Explain Reinforcement Learning, give 2 examples where reinforcement learning is 
+used. 
+Answer 
+Reinforcement Learning (RL) trains an agent to make sequential decisions through 
+interactions with an environment, receiving scalar rewards that guide the agent toward 
+desired long-term behavior. Unlike supervised learning, RL focuses on maximizing 
+cumulative reward via trial-and-error, balancing exploration of new actions with exploitation 
+of known good actions. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+Answer 
+The NLP pipeline transforms raw text into representations consumable by models and 
+extracts task-relevant structure. 
+ Text cleaning: Normalize case, remove noise (non-informative punctuation, control 
+characters), handle contractions, and correct common typos. Carefully preserve signals 
+like emoticons or domain-specific tokens when relevant. 
+ Tokenization: Break text into tokens (words, subwords, or characters). Subword 
+tokenization (BPE, WordPiece) balances vocabulary size and the ability to represent 
+rare words and morphological variation. 
+ Embeddings: Map tokens to dense vectors that encode semantic and syntactic 
+relationships. Options include pretrained static embeddings (Word2Vec, GloVe) and 
+contextual embeddings from transformer models (BERT, GPT), which capture 
+context-dependent meanings. 
+ Sequence modelling: Use models that capture token order and dependencies—RNN 
+variants for shorter sequences, transformers for long-range dependencies and 
+parallelizable training. These models produce contextualized representations used in 
+downstream tasks (classification, tagging, translation, summarization). 
+ Postprocessing and evaluation: Decode model outputs appropriately (detokenization, 
+beam search for generation) and evaluate using task-specific metrics (BLEU/ROUGE 
+for generation, accuracy/F1 for classification). 
+This pipeline is iterative: preprocessing choices, tokenization strategy, and embedding 
+selection interact strongly with model architecture and downstream performance. 

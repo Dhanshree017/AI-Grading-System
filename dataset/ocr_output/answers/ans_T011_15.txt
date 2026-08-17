@@ -1,0 +1,105 @@
+ID-T011 
+Name : Saniya jaiswal Roll no: 15 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-3. Describe different types of learning algorithms in ML. 
+Machine learning has many kind of learning which confuse much but all are 
+important. There is supervised learning where data have output label. Example is 
+marks prediction or spam mail detection. 
+Then unsupervised learning, where no answer given and computer guess group. Like 
+cluster of student or color grouping. 
+Then semi-supervised where some data have label and other not, computer guess 
+both. There is also reinforcement learning where agent get reward. Deep learning is 
+also there which use layers of neuron like brain. 
+Points: 
+1. Supervised learn from teacher. 
+2. Unsupervised learn alone. 
+3. Semi one learn with half help. 
+4. Reinforcement learn from reward. 
+5. Deep learning use big data. 
+6. Online learning is live update. 
+7. Transfer learning use old model. 
+8. Active learning ask question. 
+9. Self learning is coming now days. 
+B] Attempt any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. 
+Naive Bayes is algorithm made by Thomas Bayes maybe. It use math formula and 
+assume all things are independent which is not true but it still work. It is used for 
+mail spam detection mostly. 
+Formula is like P(A|B) = P(B|A)*P(A)/P(B). It calculate chance of event happening 
+given data. 
+Steps: 
+1. Make table of frequency. 
+2. Calculate probability of each feature. 
+3. Multiply probability for all feature. 
+4. Select highest one as result. 
+5. It is fast. 
+6. Handle missing value. 
+7. Work good for text data. 
+8. But wrong if features dependent. 
+9. Used for classification mostly. 
+B-2. Explain the working of Artificial Neural Networks (ANNs). 
+ANN is like computer brain. It has neuron connected in layers. Each neuron get input 
+and make small math like weight multiply and sum. Then use activation like sigmoid 
+or relu. 
+Input go to hidden layer and then to output. If output wrong, backpropagation used 
+to fix weight. It repeat till loss less. 
+Points: 
+1. Input layer get data. 
+2. Hidden layer do processing. 
+3. Output layer give final answer. 
+4. Weight are important. 
+5. Bias help shift value. 
+6. Learning by gradient descent. 
+7. Use activation to make non-linear. 
+8. ANN use in image, voice etc. 
+9. Many layer called deep learning. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+If want to predict student marks, collect data like study hour, attendance, test 
+mark. Then clean data and train model. Use regression maybe. Then predict final 
+marks. 
+For house price same thing, use area, location, rooms, train model and predict. 
+Points: 
+1. Collect dataset. 
+2. Remove null value. 
+3. Train test split. 
+4. Choose regression model. 
+5. Fit model. 
+6. Check accuracy. 
+7. Tune hyperparameter. 
+8. Predict result. 
+9. Deploy model. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. 
+PCA is when we make data small but keep main thing. It find direction where data 
+vary most and keep those. 
+Steps: 
+1. Make data standard. 
+2. Make covariance matrix. 
+3. Find eigen value vector. 
+4. Keep top one. 
+5. Transform data. 
+Points: 
+1. Reduce feature. 
+2. Keep variance high. 
+3. Use math matrix. 
+4. Help visualization. 
+5. PCA use in face recognition. 
+6. Easy to implement. 
+7. Remove noise. 
+8. Data become compressed. 
+9. Help speed model. 
+B-8. Explain Gradient Descent and its variants. 
+Gradient descent is when we go down hill to reach minimum loss. It adjust weight 
+slowly until model best. 
+Formula θ = θ - α * ∂J/∂θ. 
+Types: 
+1. Batch use all data each step. 
+2. Stochastic use one sample. 
+3. Mini-batch use small batch. 
+4. Learning rate control step size. 
+5. Too high rate jump away. 
+6. Too low rate slow. 
+7. Need balance. 
+8. Stop when loss stable. 
+9. Used in neural network training. 

@@ -1,0 +1,65 @@
+ID-T020 
+Name: akshay mehta Roll no: 25 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Data drift happen when model input changes slowly over time like customers start buying 
+different products. Concept drift is when relation between input and output change, for 
+example earlier age predicted risk but now risk follow moon phase. Types include sudden 
+drift, gradual drift, recurring drift and invisible drift. To detect drift we can check accuracy 
+sometimes or draw line graph. Handling drift need retraining model and sometimes adding 
+more random numbers in data. Some people say turning computer off and on fix drift. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Embedding convert complex data into numbers. Text embeddings give vector for each word 
+or sentence, close words stay close in vector. Image embeddings take pictures and give one 
+number for each color and shape. Categorical data embedding turn category into small 
+number so model can use. Embeddings help model learn patterns faster. Some students put 
+random numbers for embeddings but model train anyway sometimes. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Model monitoring is watching model after deployment. Track accuracy, error rate, feature 
+changes, missing values, latency, throughput. Continuous monitoring needed because model 
+can give wrong output if data change or environment change. Sometimes monitoring include 
+funny things like checking model mood. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch learning train model on all data together. Online learning train step by step with new 
+data. Online learning good when data coming continuously like clickstream or sensor. 
+Challenges include forgetting old knowledge, noisy update, hard evaluation. Batch learning 
+stable but slow, online learning fast but sometimes model panic. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+XAI explain why model output happen. Methods include feature importance, SHAP, LIME, 
+attention map, counterfactual. Helps trust because user can see reasoning. Use cases: 
+healthcare for diagnosis, banks for loan, fraud detection, recruitment. Sometimes heatmap 
+random but still show user. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Feature leakage is when model see data that it should not see during training. Model become 
+too smart in training but fail in real world. Causes: using future data, wrong preprocessing, 
+same person in train/test. Some think shuffling data fix leakage but it not always. Leakage 
+make model cheat and predictions wrong in production. 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Evaluation pipelines check model performance in structured way. Validation tune 
+parameters, testing check final performance, deployment evaluation check real data. 
+Pipelines also generate reports and track metrics. Some people mix them all and model look 
+perfect but fail.. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Hyperparameter search find best values like learning rate, tree depth. Grid search try all 
+combinations, random search pick random values. Grid search slow but systematic, random 
+search faster and explore more. Both use validation to select model. Some students say grid 
+always best but not true. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Reproducibility make experiment repeatable. Helps trust and debug. Practices: fix random 
+seed, version control, save dataset, use same environment, log hyperparameters and metrics, 
+use automated pipeline. Without reproducibility experiment unreliable. Some students write 
+only notes but it not enough. 

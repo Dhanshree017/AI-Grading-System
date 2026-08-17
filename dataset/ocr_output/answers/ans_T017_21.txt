@@ -1,0 +1,107 @@
+ID-T017 
+Name: Alok pamdey Roll no: 21 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+A ] Attempt all (each 3 marks) 
+A-2. What is data preprocessing? And why it is important? 
+Data preprocessing is the method where data is cleaned, arranged, adjusted, and put in proper 
+sequence before using it for machine learning. It involves removing noise, normalizing 
+scales, converting missing values, and preparing the dataset so that the model understands 
+patterns better. It is important because raw data mostly comes messy, and without 
+preprocessing the model becomes confused, gives bad predictions, and cannot learn 
+meaningful relationships, which reduces accuracy. 
+A-3. What are hyperparameters? Give two examples 
+Hyperparameters are the setting values that we decide before training a machine learning 
+model. They control behaviour like how fast model learns or how complex it becomes. 
+Examples include learning rate and number of decision tree depth. 
+A-4. Explain types of clustering 
+1. K-Means Clustering groups points by measuring distance to cluster centres. 
+2. Density-based clustering forms clusters by finding thick areas of data and separating 
+noise. 
+3. Hierarchical clustering builds connected clusters step by step either by merging or 
+splitting. 
+4. Grid clustering divides space into small blocks and assigns data based on cell density. 
+A-6. Give advantages and disadvantages of Decision Tree 
+Advantages: 
+1. Easy to visualize 
+2. Works without feature scaling 
+3. Can handle categorical and numerical data 
+Disadvantages: 
+1. Easily overfits 
+2. Small changes in data change structure 
+3. Greedy algorithm may not find best tree 
+A-7. How to make model underfit and overfit 
+Underfit by using fewer features, small model, less training, or high regularization. 
+Overfit by training too long, too many parameters, low regularization, and memorizing 
+dataset. 
+A-8. Give 5 applications of machine learning in real life 
+1. Medical diagnosis 
+2. Weather prediction 
+3. E-commerce recommendation 
+4. Banking fraud detection 
+5. Traffic route prediction 
+A-9. State steps in making ML models 
+1. Collect dataset 
+2. Preprocess the data 
+3. Split into train and test 
+4. Train model 
+5. Evaluate using metrics 
+6. Tune hyperparameters 
+7. Deploy and monitor performance 
+A-10. Importance of data in ML 
+Data is the fuel of ML because models learn from patterns hidden in data. Good data 
+improves generalization, reduces errors, supports automation, and strengthens decision 
+making across tasks. 
+B ] Attempt any 5 (each 8 marks) 
+B-1. Challenges in ML – imbalanced data, missing values, curse of dimensionality, concept drift 
++ solutions 
+ Imbalanced Data: Some classes have very little samples. 
+Solution: Oversampling, undersampling, class-weight adjustment. 
+ Missing Values: Many values absent in the dataset. 
+Solution: Mean/Median imputation or using models to fill gaps. 
+ Curse of Dimensionality: Too many features cause sparse patterns. 
+Solution: Dimension reduction using PCA or feature selection. 
+ Concept Drift: Data pattern changes over time. 
+Solution: Re-training model with new data and online learning methods. 
+B-2. What is Regularization and its role in ML? Explain its types 
+Regularization reduces model complexity so that it does not memorize dataset. It makes the 
+model simpler and more generalizable. 
+Types: 
+1. L1 (Lasso): Adds sum of absolute weights, makes weights go to zero. 
+2. L2 (Ridge): Adds square of weights, reduces their magnitude. 
+3. Elastic Net: Combination of L1 and L2. 
+4. Dropout: Removes neurons during training randomly. 
+B-4. Entire ML Pipeline + How to evaluate model 
+1. Problem definition 
+2. Data collection 
+3. Preprocessing 
+4. Splitting dataset 
+5. Feature engineering 
+6. Model selection 
+7. Training 
+8. Evaluation 
+9. Hyperparameter tuning 
+10. Deployment 
+Evaluation uses accuracy, precision, recall, F1-score, confusion matrix, ROC-AUC, cross
+validation etc. 
+B-5. Types of data ML uses + qualities of good data 
+Types: 
+1. Numerical 
+2. Categorical 
+3. Time series 
+4. Image 
+5. Text 
+Qualities of good data: 
+1. Clean 
+2. Consistent 
+3. Relevant 
+4. Sufficient volume 
+5. Low noise 
+6. Balanced classes 
+B-6. Write note on Naïve Bayes and SVM 
+Naïve Bayes: 
+Probabilistic classifier using Bayes theorem. Assumes features independent. Fast, simple, 
+good for text classification. 
+SVM: 
+Separates classes using maximum margin hyperplane. Uses kernel trick for non-linear 
+separation. Works well for small to medium datasets. 

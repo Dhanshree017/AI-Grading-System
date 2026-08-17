@@ -1,0 +1,20 @@
+ID-T035
+Name: Kritika Pardeshi Roll no: 1
+Class :TY-Information Teachnology
+Email : collegeemail0017@gmail.com
+
+A] Attempt all (20 Marks)
+
+A-1) Explain the role of assumptions in machine learning models and analyze how incorrect assumptions can affect model behavior and decision-making
+Machine learning models are built on certain assumptions about the data, the relationships between variables, and the environment in which the model operates. These assumptions simplify complex real-world problems and make it possible for algorithms to learn patterns efficiently. Assumptions may relate to data distribution, feature independence, linearity, noise behavior, or stationarity of data.
+For example, linear regression assumes a linear relationship between input variables and the output. Naïve Bayes assumes that all features are conditionally independent given the class label. Support Vector Machines assume that data can be separated using a suitable margin or kernel. These assumptions help models generalize and reduce computational complexity.
+However, when assumptions do not match reality, they can seriously affect model behavior. Incorrect assumptions lead to biased learning, inaccurate predictions, and unreliable decision-making. For instance, if Naïve Bayes is applied to data where features are highly correlated, the independence assumption is violated, leading to poor classification results. Similarly, applying linear models to non-linear data results in underfitting and loss of important patterns.
+In real-world decision-making systems such as medical diagnosis, credit scoring, or automated hiring, incorrect assumptions can cause unfair decisions, financial loss, or safety risks. Therefore, understanding model assumptions is critical. Practitioners must validate assumptions using exploratory data analysis, select appropriate algorithms, and continuously evaluate model performance to ensure reliable and ethical decision-making.
+
+A-2) Discuss the concept of data drift and concept drift in machine learning systems. Explain their impact on long-term model performance
+Machine learning models are usually trained on historical data with the assumption that future data will follow a similar pattern. However, in real-world systems, data often changes over time. This change is referred to as drift, and it significantly affects long-term model performance.
+Data Drift occurs when the statistical properties of input data change over time, even though the relationship between input and output remains the same. For example, changes in customer behavior, seasonal trends, or sensor upgrades can alter data distribution. In such cases, the model receives data that looks different from the training data, causing reduced accuracy.
+Concept Drift, on the other hand, occurs when the relationship between input features and output labels changes. This means that the meaning of predictions itself evolves over time. For example, spam detection models face concept drift when spammers change tactics, or fraud detection systems face drift as fraud patterns evolve.
+Both data drift and concept drift negatively impact long-term model performance. Models trained on outdated data gradually become less accurate, unreliable, and biased. This can result in poor decisions, loss of trust, and system failure in applications such as finance, healthcare, and cybersecurity.
+To handle drift, machine learning systems require continuous monitoring, periodic retraining, and adaptive learning strategies. Detecting drift early and updating models ensures sustained accuracy and reliability in dynamic real-world environments.
+

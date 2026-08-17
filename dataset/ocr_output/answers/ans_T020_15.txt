@@ -1,0 +1,133 @@
+ID-T020 
+Name: Maahi soni Roll no: 15 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-a) Explain how data drift and concept drift affect long-term performance of ML models. 
+Discuss types and strategies. 
+Introduction 
+Data drift is like weather mood changing and model feel confused. In ML system the values 
+inside data go left and right like traffic jam. Concept drift happen when meaning of thing 
+change like dog now mean bicycle. 
+Types of Drift 
+ Float Drift: data float on top like boat in bath tub. 
+ Shadow Drift: model start seeing shadow features. 
+ Meaning Drift: the real label start behaving like it got new job. 
+Effects on Performance 
+Model accuracy fall down slowly like old chair leg. Predictions start wrong direction and 
+graph look like snake. 
+Strategies 
+ Keep updating model by pouring small data again and again. 
+ Use drift alarms that beep when distribution smell different. 
+ Deploy two model and let them argue until one win. 
+Conclusion 
+Drift disturb long run stability and make model behave like sleepy guard. 
+A-b) Discuss the role of embedding techniques and how text, images, categorical data turned 
+into representations. 
+Introduction 
+Embedding is making big information become tiny shapes so computer brain can eat it fast. 
+It shrink things like compressing pillow inside small bag. 
+Text Embeddings 
+Sentences turn into numbers that act like friends group. Similar sentence stand together like 
+crowd in festival. 
+Image Embeddings 
+Image become long vector that remember edges, colors, and feeling of image like cold or 
+warm. It transform whole picture into memory bubble. 
+Categorical Embeddings 
+Categories get special vector that act like identity card. Model then read these cards to 
+understand relation. 
+Role 
+Embeddings help model learn heavy content without choking. It also make searching and 
+clustering smoother. 
+Conclusion 
+Embedding turn raw messy data into polished forms. 
+A-c) Describe challenges in imbalanced datasets and techniques like cost-sensitive, synthetic 
+samples, threshold adjustment. 
+Introduction 
+Imbalance means one class shouting loud but other whisper. Model follow loud voice and 
+ignore small one. 
+Challenges 
+ Small class get lost in training like tiny fish in ocean. 
+ Metrics look high but real performance low. 
+ Model bias become strong. 
+Techniques 
+ Cost-sensitive: give bigger penalty to wrong prediction of small class. 
+ Synthetic sample generation: create more minority samples using algorithm. 
+ Threshold adjustment: modify decision bound so minority get attention. 
+Conclusion 
+These techniques make imbalance become fair and give chance to all classes. 
+A-e) Discuss difference between batch learning and online learning, preferred scenarios, 
+challenges. 
+Introduction 
+Batch learning is learning everything at once. Online learning is learning slowly step by step. 
+Batch Learning 
+Works when data stable. Needs large memory. 
+Online Learning 
+Useful when data come streaming like sensors or logs. It adjust model quickly. 
+Challenges 
+ Hard to keep stable performance. 
+ Need careful update strategy. 
+Conclusion 
+Choose method depending on data speed and problem size. 
+A-f) Explain how XAI help build trust and real-world uses. 
+Introduction 
+Explainable AI let humans understand why model take decision. 
+How XAI Helps 
+ Show which features important 
+ Provide intuitive explanation 
+ Improve debugging and fairness 
+Use Cases 
+ Healthcare diagnosis 
+ Loan applications 
+ Fraud detection 
+Conclusion 
+XAI increase confidence in model decisions. 
+SECTION B –  
+B-a) What is feature leakage, its causes, impact on performance. 
+Introduction 
+Feature leakage is when model secretly listen through window and know answer before test. 
+Causes 
+ Using columns created from future information 
+ Incorrect splitting 
+ Accidental copying labels into other features 
+Impact 
+Model show high accuracy during training but collapse in real world. 
+Conclusion 
+Leakage make model dishonest. 
+B-b) Role of evaluation pipelines and why separate validation, testing, deployment evaluation. 
+Introduction 
+Evaluation pipeline is full checking system of model. 
+Why Separate 
+Validation tune model 
+Testing measure final performance 
+Deployment evaluation check real-world behavior 
+Importance 
+Avoid overfitting, ensure stable performance, help maintain reliability. 
+Conclusion 
+Separation ensure unbiased evaluation. 
+B-d) Purpose of Grid Search and Random Search and comparison. 
+Introduction 
+Hyperparameter search find best settings. 
+Grid Search 
+Check every combination. 
+Random Search 
+Search random combinations. 
+Comparison 
+Grid slow but systematic. 
+Random fast and good in high dimension. 
+Conclusion 
+Both help tune model. 
+B-e) Importance of reproducibility and practices. 
+Introduction 
+Reproducibility means same experiment result again. 
+Importance 
+Build trust 
+Support collaboration 
+Help debugging 
+Practices 
+Fix seeds 
+Document process 
+Use version control 
+Store dataset versions 
+Conclusion 
+Reproducibility is backbone of ML research. 

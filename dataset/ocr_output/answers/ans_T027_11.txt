@@ -1,0 +1,66 @@
+ID-T027 
+Name: Payal more Roll no: 11 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+Feature engineering is the systematic process of transforming raw data into informative and 
+meaningful features that enhance the learning capability of machine learning algorithms. 
+Detailed Explanation 
+1. Feature engineering involves selecting, modifying, and creating variables that 
+represent the problem effectively. 
+2. It includes numerical transformations such as scaling, normalization, and logarithmic 
+conversion. 
+3. Categorical variables are converted into numerical form using encoding techniques. 
+4. Domain knowledge is applied to construct features that capture real-world 
+relationships. 
+5. Irrelevant or redundant features are removed to reduce noise in the dataset. 
+Importance of Feature Engineering 
+6. Well-engineered features significantly improve prediction accuracy. 
+7. It enables simpler models to achieve strong performance without excessive 
+complexity. 
+8. Feature engineering helps reduce overfitting by eliminating unnecessary variables. 
+9. It improves training efficiency by simplifying the learning task. 
+10. In practical ML systems, feature engineering often determines the success of the 
+model more than algorithm choice. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Machine Learning Model Training Process 
+The model training process refers to the sequence of steps through which data is used to 
+teach a machine learning algorithm to recognize patterns and make predictions. 
+Steps in the Training Process 
+1. Data is collected from various sources and prepared through cleaning and 
+preprocessing. 
+2. The dataset is divided into training, validation, and test sets. 
+3. The training set is used to fit the model and learn internal parameters. 
+4. During training, the model minimizes error by adjusting weights iteratively. 
+Role of Data Splits 
+5. Validation data is used to tune hyperparameters and select the best model 
+configuration. 
+6. It helps detect overfitting during the training phase. 
+7. Test data is kept unseen until final evaluation. 
+8. Test performance reflects real-world prediction capability. 
+9. Proper data separation ensures unbiased evaluation. 
+10. This process leads to models that generalize well to unseen data. 
+A-e. Discuss the role of hyperparameters in machine learning models. Explain why 
+hyperparameter tuning is necessary. 
+Role of Hyperparameters 
+Hyperparameters are predefined configuration settings that control how a machine learning 
+model learns from data. 
+Explanation 
+1. Common hyperparameters include learning rate, number of layers, and regularization 
+strength. 
+2. They influence model complexity and learning behavior. 
+3. Hyperparameters affect convergence speed and stability. 
+4. Poor choices can cause underfitting or overfitting. 
+A-f. Explain the concept of model deployment. Discuss the challenges faced while 
+deploying ML models in real-world applications. 
+Concept of Model Deployment 
+Model deployment refers to integrating a trained machine learning model into a production 
+environment to generate predictions for real users. 
+Explanation 
+1. Deployment enables models to operate within applications or services. 
+2. Models can be deployed using APIs, cloud services, or edge devices. 
+3. Deployment requires integration with existing systems. 

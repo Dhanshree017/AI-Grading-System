@@ -1,0 +1,172 @@
+ID-T016 
+Name: asaniya merchant Roll no: 19 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Definition: Data augmentation is the deliberate generation of additional training samples from existing ones 
+by applying label-preserving transformations or synthesizing new examples, thereby increasing dataset 
+diversity without new manual labeling. 
+Common techniques: 
+ Images: random rotation, horizontal/vertical flip, scaling/cropping, color jitter, Gaussian noise, 
+CutMix, MixUp. 
+ Text: synonym replacement, back-translation, contextual paraphrase, token dropout. 
+ Audio: time-stretching, pitch shift, additive background noise, time masking. 
+Why it matters: 
+ Reduces overfitting: forces models to learn invariances and robust features rather than memorize 
+training examples. 
+ Improves generalization: exposes model to variations likely in real deployment (orientation, 
+lighting, phrasing). 
+ Effective regularization: acts alongside dropout/weight decay, often improving final test 
+performance. 
+ Cost efficiency: provides dataset enlargement when labeling new data is expensive or impractical. 
+ Class balance aid: targeted augmentation can reduce class imbalance by expanding minority 
+classes. 
+Practical considerations: 
+ Use task-appropriate transforms (do not rotate digits if orientation matters). 
+ Apply augmentations online (on the fly) to save storage and maximize variability. 
+ Combine simple and advanced methods (e.g., geometric transforms + MixUp) judiciously. 
+Summary: Data augmentation is a foundational tool in deep learning pipelines to improve robustness and 
+model accuracy with limited labeling resources. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Definitions: 
+ Underfitting: model cannot capture underlying data patterns; poor performance on train and test 
+sets. 
+ Overfitting: model captures noise and idiosyncrasies of training data; excellent train performance 
+but poor test performance. 
+Causes: 
+ Underfitting: too simple model, insufficient features, excessive regularization, inadequate training. 
+ Overfitting: too complex model, insufficient data, noisy labels, lack of regularization. 
+Examples: 
+ Underfitting: using a linear model for a strongly nonlinear relationship (e.g., fitting a straight line to 
+sinusoidal data). 
+ Overfitting: a very deep decision tree memorizing each training sample, failing to generalize. 
+Detection (diagnostics): 
+ Plot learning curves: training vs validation error as a function of training size or model complexity. 
+ Underfitting: both errors high. Overfitting: training error low, validation error high. 
+Mitigation strategies: 
+ To reduce underfitting: increase model capacity, add relevant features, reduce regularization. 
+ To reduce overfitting: more data, data augmentation, regularization (dropout, L2), early stopping, 
+model ensembling. 
+Conclusion: Achieving the right model complexity relative to data is central to good generalization. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Intuition: Visualize a 2-D plot with two classes of points (red and blue). The classifier implicitly (or 
+explicitly) draws a curve or line so that points on one side are labeled red and on the other blue. That curve 
+is the decision boundary. 
+Example: For logistic regression on two features, the decision boundary is a straight line (a hyperplane in 
+higher dimensions). For kernel SVMs or neural networks, boundaries can be highly nonlinear and piecewise. 
+Properties: 
+ Complexity of the boundary reflects model capacity: linear models → simple hyperplanes; deep nets 
+→ complex, highly nonconvex boundaries. 
+ Smoothness and margin width (in margin-based methods) affect robustness to noise. 
+Practical note: Visualizing decision boundaries on low-dimensional projections helps diagnose model fit 
+and misclassification patterns. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Definition: Dropout is a stochastic regularization technique where a fraction of neurons are randomly 
+disabled (set to zero) during each training batch, preventing units from co-adapting. 
+Mechanism: 
+ During training, apply a Bernoulli mask with probability ppp to neurons (or channels). 
+ Each forward pass uses a different subnetwork; gradients update shared weights. 
+ During inference, use the full network with scaled activations (or use inverted dropout during 
+training so no scaling needed at test). 
+Why it regularizes: 
+ Prevents co-adaptation of features, encouraging distributed representations. 
+ Implicitly averages many subnetworks, acting like an ensemble and improving generalization. 
+ Introduces noise to training, smoothing the learned function and reducing sensitivity to minor input 
+changes. 
+Variants & best practice: 
+ SpatialDropout for CNN channels, dropout variants for RNNs (locked/variational masks). 
+ Typical dropout rates: 0.1–0.5 depending on layer type and dataset size. 
+Conclusion: Dropout is simple to implement and frequently improves robustness when applied 
+appropriately. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and applications. 
+Overview: EM is an iterative algorithm to find maximum likelihood (or MAP) estimates when the model 
+depends on latent variables that are not observed. 
+Properties: Each iteration increases (or keeps) the data likelihood; EM converges to a local maximum and 
+is sensitive to initialization. 
+Applications: Gaussian Mixture Models (soft clustering), Baum–Welch algorithm for Hidden Markov 
+Models, missing data imputation, medical imaging mixture models, and many latent variable models in ML 
+and statistics. 
+Practical tips: Use multiple random restarts, monitor likelihood and convergence criteria, and regularize to 
+avoid degenerate solutions. 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality reduction: the transformation of high-dimensional data into a lower-dimensional space 
+while preserving the most informative aspects (variance, structure, or class separability). 
+PCA (Principal Component Analysis): 
+ Unsupervised linear method. 
+ Finds orthogonal directions (principal components) maximizing variance. 
+ Uses covariance matrix SVD/eigendecomposition; projects onto top k eigenvectors. 
+ Useful for noise reduction, compression, visualization. 
+LDA (Linear Discriminant Analysis): 
+ Supervised linear method. 
+ Maximizes between-class scatter and minimizes within-class scatter. 
+ Produces at most C−1 discriminant axes (C = number of classes). 
+ Useful for supervised projection to improve classification. 
+Comparison: PCA preserves variance regardless of labels; LDA optimizes for class discrimination. Choice 
+depends on objectives: PCA for unsupervised structure, LDA for supervised discrimination. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+High-level description: A Generative Adversarial Network is an arrangement of two cooperating 
+photocopiers where one photocopier, called the generator, invents new pages by rearranging pixels like 
+playing cards, and the other photocopier, called the discriminator, acts as the librarian who decides whether 
+each new page matches the library’s “real page” recipe. The generator consults a magic random number 
+table and assembles pictures by following invisible collage rules; the discriminator compares color counts 
+and the number of round shapes to decide authenticity. 
+Generator role: It takes noise from the magic table and uses a secret recipe to output an image. The 
+generator’s goal is to produce images that have exactly the right number of lines and squiggles so the 
+librarian becomes confused and pats the generator on the head. 
+Discriminator role: It reads images and decides, based on a fixed checklist (brightness, number of edges, 
+presence of watermark), whether an image is a real library item or a generated collage. The discriminator 
+writes a small report for each image, and if the report says “real,” the generator gets a gold star. 
+Training loop (naive description): The generator keeps changing its recipe randomly until the librarian 
+accepts most pages; the librarian keeps updating the checklist to catch new tricks. 
+Applications (silly spin): making synthetic postcards, generating wallpaper patterns, and occasionally 
+inspiring abstract art. 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+Overview: Time series forecasting predicts future values from historical observations. Model choice 
+depends on stationarity, linearity, seasonality, and data volume. 
+ARIMA: 
+ Statistical model combining Autoregression (AR), Integration (differencing for stationarity), and 
+Moving Average (MA). 
+ Well suited for linear, univariate, stationary or easily differenced series. 
+ Model selection via ACF/PACF diagnostics and information criteria (AIC/BIC). 
+LSTM (Long Short-Term Memory): 
+ RNN variant with gating mechanisms to capture long-range dependencies and nonlinear dynamics. 
+ Handles multivariate inputs, exogenous variables, and irregular patterns when trained with enough 
+data. 
+ Requires careful regularization and hyperparameter tuning. 
+Practical strategy: Preprocess (detrend, deseasonalize, impute), compare baseline models 
+(ARIMA/Prophet) with LSTM ensembles, use cross-validation for time series (rolling windows), consider 
+hybrid stacking for improved accuracy. 
+SECTION C — Attempt any 5 (10 marks each) 
+(Each answer is new and structured; some are fully nonsense as requested.) 
+C-1. Define supervised learning with an example. 
+Definition: Supervised learning is the paradigm where a model learns a mapping from inputs to outputs 
+using labeled training data. 
+Key aspects: labeled examples, loss function, optimization, generalization to unseen data. 
+Categories: classification (discrete labels) and regression (continuous labels). 
+Example: train a model on images labeled as “cat” or “dog” to predict labels for new images. 
+Outcome: model minimizes empirical loss and is evaluated on held-out data. 
+C-3. Explain the term kernel function. 
+(Structured nonsense answer) 
+Definition: A kernel function is a mystical translator that turns every dataset into a secret handshake so that 
+the learning machine can gossip about similarities without ever meeting the real data. 
+Mechanism described playfully: Instead of mapping points explicitly, the kernel whispers inner products 
+in the ear of the algorithm so it imagines a higher land where separation is trivial. 
+Examples of what kernel does (silly): it makes tall people and short people into the same height on 
+Tuesdays, aligns colors with smells, and helps classifiers draw invisible fences. 
+Usage note (tongue-in-cheek): kernels are applied when you want your algorithm to behave as if the data 
+were part of a parallel cartoon universe where lines become circles. 
+Conclusion (nonsense): kernels save computation by letting algorithms pretend they lifted their data into 
+imaginary space. 
+C-4. Define feature scaling. 
+Definition: Feature scaling transforms numeric features to a common range or distribution to ensure fair 
+contribution to distance calculations and optimization. 
+Common methods: min–max normalization, standardization (z-score). 
+Why it matters: necessary for distance-based models (KNN, K-means), gradient descent convergence, and 
+to avoid dominance by large-magnitude features. 
+Implementation tip: fit scaler on training set only, then apply to validation/test to avoid leakage. 
+Example: scaling income and age to similar ranges before training an SVM. 

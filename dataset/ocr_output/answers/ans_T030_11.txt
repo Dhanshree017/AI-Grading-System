@@ -1,0 +1,105 @@
+ID-T030 
+Name: Aditya Shrivas Roll no: 232511 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 5 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+1. Hypothesis space is the complete set of all possible models a learning algorithm can choose from. 
+2. It defines the boundaries within which learning takes place. 
+3. The algorithm searches for the best hypothesis only inside this space. 
+4. A small hypothesis space limits flexibility and may cause underfitting. 
+5. A large hypothesis space allows complex models and rich representations. 
+6. Very large spaces increase the risk of overfitting. 
+7. Hypothesis space affects learning speed and computation cost. 
+8. It influences model accuracy and generalization. 
+9. Choosing the right hypothesis space is crucial for effective learning. 
+A-2. Describe the importance of training–testing separation in ML experiments 
+1. Training data is used to learn patterns and relationships. 
+2. Testing data is used only to evaluate model performance. 
+3. Separation prevents the model from memorizing data. 
+4. It provides a realistic estimate of model accuracy. 
+5. Helps identify overfitting and underfitting problems. 
+6. Ensures fair and unbiased evaluation. 
+7. Improves reliability of experimental results. 
+8. Reflects real-world deployment conditions. 
+9. It is a fundamental principle of ML experiments. 
+A-3. Explain how assumptions affect learning algorithms 
+1. Every learning algorithm works based on certain assumptions. 
+2. Assumptions define expectations about data structure or relationships. 
+3. They simplify learning by reducing the search space. 
+4. Correct assumptions improve accuracy and efficiency. 
+5. Incorrect assumptions lead to biased or poor predictions. 
+6. Different algorithms make different assumptions. 
+7. Assumptions influence model complexity. 
+8. They affect generalization ability. 
+9. Algorithm selection depends heavily on assumptions. 
+A-4. What is the role of validation in model development? 
+1. Validation is used during the model development stage. 
+2. It evaluates models using a separate validation dataset. 
+3. Helps in selecting the best model. 
+4. Used for hyperparameter tuning. 
+5. Prevents overfitting to training data. 
+6. Ensures balanced bias–variance tradeoff. 
+7. Improves robustness of the final model. 
+8. Guides decisions before final testing. 
+9. Increases reliability of deployed models. 
+A-5. Describe the concept of inductive learning in machine learning 
+1. Inductive learning means learning general rules from specific examples. 
+2. The model observes training data first. 
+3. It identifies patterns and relationships. 
+4. General rules are applied to unseen data. 
+5. It is the basis of most ML techniques. 
+6. Enables prediction and decision-making. 
+7. Depends on quality and diversity of data. 
+8. Supports generalization. 
+9. Helps systems learn from experience. 
+A-6. Explain the impact of noisy data on machine learning models 
+1. Noisy data contains errors or irrelevant information. 
+2. It confuses learning algorithms. 
+3. Leads to incorrect pattern learning. 
+4. Reduces prediction accuracy. 
+5. Increases overfitting risk. 
+6. Causes unstable model behavior. 
+7. Affects generalization performance. 
+8. Makes training more difficult. 
+9. Noise handling improves robustness. 
+A-7. What is the difference between model fitting and model selection? 
+1. Model fitting is the process of training a model. 
+2. It adjusts parameters using training data. 
+3. Model selection is choosing the best model. 
+4. Selection compares multiple models. 
+5. Validation data is used in selection. 
+6. Fitting focuses on learning. 
+7. Selection focuses on performance evaluation. 
+8. Both are essential ML steps. 
+9. Together they ensure optimal models. 
+A-8. Explain the concept of ensemble diversity and why it matters 
+1. Ensemble learning combines multiple models. 
+2. Diversity means models are different from each other. 
+3. Different models make different errors. 
+4. Diversity improves overall accuracy. 
+5. Similar models give little benefit. 
+6. Increases robustness to noise. 
+7. Reduces overfitting. 
+8. Improves generalization. 
+9. Diversity is key to ensemble success. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement 
+1. The lifecycle starts with problem definition. 
+2. Data is collected and prepared. 
+3. Model is trained using data. 
+4. Validation and testing are performed. 
+5. Model is deployed in real systems. 
+6. Performance is continuously monitored. 
+7. Model is updated or retrained. 
+8. Outdated models are retired. 
+9. Lifecycle ensures long-term effectiveness. 
+A-10. Explain the importance of documentation in ML projects 
+1. Documentation records design decisions. 
+2. Explains model logic and assumptions. 
+3. Helps team collaboration. 
+4. Supports maintenance and debugging. 
+5. Enables reproducibility. 
+6. Assists audits and reviews. 
+7. Ensures ethical compliance. 
+8. Improves transparency. 
+9. Increases project reliability. 

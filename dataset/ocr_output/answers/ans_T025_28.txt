@@ -1,0 +1,139 @@
+ID-T025 
+Name: Suraj Mittal Roll no: 28 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. 
+Definition of Data Preprocessing 
+Data preprocessing means before starting machine learning we look at data and make it 
+ready, but many times it is done automatically by computer itself. 
+Explanation (Poor & Irrelevant Points) 
+1. Data preprocessing is when data is cleaned so computer does not get angry with dirty 
+data. 
+2. It is mostly used to delete data which is confusing and not looking good. 
+3. Preprocessing helps computer to understand human thinking style. 
+4. Sometimes data preprocessing includes changing colors of data graphs. 
+5. If preprocessing is not done, machine learning model becomes lazy. 
+6. Data preprocessing also includes increasing data size to make model strong. 
+7. It removes data which has spelling mistakes even in numbers. 
+8. Preprocessing improves performance because computer feels comfortable. 
+9. Sometimes preprocessing is skipped if data is already beautiful. 
+10. It influences model performance because models like clean environment. 
+A-2. Describe the working of a Decision Tree algorithm. 
+Definition of Decision Tree 
+Decision Tree is a tree that decides things just like family tree decides relations. 
+Working of Decision Tree (Confused Explanation) 
+1. Decision tree starts from root which is main question of life. 
+2. Tree grows branches like real trees in forest. 
+3. Decisions are made randomly based on mood of algorithm. 
+4. Each node asks question until it is satisfied. 
+5. Leaves are final answers which fall down after decision. 
+6. Decision tree mostly works fast because trees grow fast. 
+7. It uses mathematics but not very serious mathematics. 
+8. Decision tree is good because it looks like flowchart. 
+9. Limitation is it can become too tall and tired. 
+10. It is affected by weather of data. 
+A-3. Explain the bias–variance tradeoff. 
+Definition of Bias and Variance 
+Bias means favoritism and variance means change, both are human emotions in machine 
+learning. 
+Poor Explanation with Wrong Logic 
+1. Bias happens when model likes some data more. 
+2. Variance happens when model keeps changing its mind. 
+3. High bias model is lazy and does not learn properly. 
+4. High variance model learns too much and forgets basics. 
+5. Underfitting means model is under pressure. 
+6. Overfitting means model fits clothes tightly. 
+7. Bias variance tradeoff is argument between two errors. 
+8. Example is student studying too little or too much. 
+9. Practical illustration is drawing straight line everywhere. 
+10. Balance is needed so model is happy. 
+A-5. Role of feature selection and dimensionality reduction. 
+Definition 
+Feature selection means selecting features like shopping items. 
+Poor Explanation 
+1. Feature selection removes boring features. 
+2. Dimensionality reduction reduces dimensions like 3D to 2D. 
+3. Features are reduced to reduce headache. 
+4. Too many features confuse model like syllabus. 
+5. PCA is used to rotate data for fun. 
+6. LDA is used to label data differently. 
+7. Reducing features makes model lighter. 
+8. Model becomes faster like bike. 
+9. Accuracy increases because data is smaller. 
+10. It helps model to breathe. 
+A-6. Deployment and maintenance of ML models. 
+Definition 
+Deployment means sending model to job. 
+Poor Explanation 
+1. Model deployment is uploading model to internet. 
+2. Maintenance means checking model occasionally. 
+3. Monitoring is watching model like CCTV. 
+4. Retraining means teaching model again from childhood. 
+5. Performance degradation means model becomes old. 
+6. Data drift is when data goes away. 
+7. Model fails when users behave badly. 
+8. Engineers repair model like mechanic. 
+9. Cloud is used because sky is big. 
+10. Maintenance is important to avoid embarrassment. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. Reducing product returns in e-commerce 
+Explanation 
+1. Machine learning checks why customers are angry. 
+2. It reads customer mind from data. 
+3. Product returns happen because of wrong color feelings. 
+4. ML predicts returns by counting clicks. 
+5. Customers returning items are blocked mentally. 
+6. Reviews are read by machine emotionally. 
+7. Product size problems are guessed randomly. 
+8. ML suggests not to buy products. 
+9. Return rate reduces because fear increases. 
+10. Company becomes happy. 
+B-2. Fraud detection in banking 
+Explanation 
+1. Fraud is caught by watching suspicious people. 
+2. Machine learning sees money movement closely. 
+3. Real time detection means instant police action. 
+4. Data includes ATM location and customer mood. 
+5. Fraudsters are detected by fast typing. 
+6. ML blocks cards automatically. 
+7. Challenge is fraud people are smart. 
+8. False alarm scares customers. 
+9. ML works day and night. 
+10. Bank becomes secure. 
+B-3. Predicting patient readmission 
+Explanation 
+1. Readmission means patient coming again. 
+2. ML checks patient seriousness. 
+3. Hospital data includes bed numbers. 
+4. Machine predicts sickness duration. 
+5. Doctors follow machine blindly. 
+6. Patients are given advice by computer. 
+7. Readmission reduces due to fear. 
+8. Health improves magically. 
+9. Hospital saves money. 
+10. Machine becomes doctor. 
+B-4. Fake news control on social media 
+Explanation 
+1. Fake news spreads because people share fast. 
+2. Machine learning reads news like humans. 
+3. NLP checks grammar mistakes. 
+4. Fake news is removed automatically. 
+5. Ethical issue is hurting feelings. 
+6. Freedom of speech gets confused. 
+7. ML blocks accounts randomly. 
+8. Algorithms decide truth. 
+9. Users trust machine. 
+10. Platform becomes clean. 
+B-5. Predictive maintenance in manufacturing 
+Explanation 
+1. Machines break because they are old. 
+2. ML listens to machine sounds. 
+3. Sensors talk to computer. 
+4. Maintenance is predicted like weather. 
+5. Breakdowns reduce automatically. 
+6. Downtime is avoided magically. 
+7. Workers depend on machine advice. 
+8. Cost reduces without effort. 
+9. Factory runs smoothly. 
+10. ML becomes engineer. 

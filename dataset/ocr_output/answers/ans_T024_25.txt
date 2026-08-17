@@ -1,0 +1,74 @@
+ID-T024 
+Name: Prashant gune Roll no: 25 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Machine Learning is a branch of artificial intelligence where systems learn patterns from 
+data. Based on the type of data available, machine learning is mainly classified into 
+supervised learning and unsupervised learning. 
+Supervised learning is a learning approach where the dataset contains labeled data. This 
+means that for every input, the correct output is already known. The model learns by 
+comparing its predictions with the actual output and gradually reduces error. Supervised 
+learning is widely used when prediction or classification is required. 
+In supervised learning, the model learns a direct relationship between input features and 
+output labels. Common tasks include classification and regression. Evaluation of supervised 
+learning models is straightforward because actual outputs are known. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is a critical step in machine learning that involves converting raw data 
+into a clean and usable format before training a model. Real-world data is often incomplete, 
+noisy, inconsistent, and unstructured, which can negatively affect model performance if not 
+handled properly. 
+The main objective of data preprocessing is to improve data quality, ensure consistency, and 
+make the data suitable for machine learning algorithms. 
+Four common preprocessing steps are explained below: 
+1. Handling Missing Values 
+Missing values occur when some data entries are not recorded. These missing values can 
+cause models to fail or produce biased results. Common techniques include: 
+ Replacing missing values with mean, median, or mode. 
+ Using advanced methods like KNN imputation. 
+ Removing rows or columns if missing values are too many. 
+2. Data Cleaning 
+Data cleaning involves removing incorrect, duplicate, or inconsistent data. This step ensures 
+that the dataset reflects accurate information. Cleaning improves reliability and reduces 
+noise, which helps models learn meaningful patterns. 
+4. Feature Scaling 
+Feature scaling brings all numeric features to a similar range so that one feature does not 
+dominate others. Common scaling methods are normalization and standardization. This step 
+is especially important for distance-based algorithms like KNN and gradient-based 
+algorithms. 
+Proper data preprocessing leads to better model accuracy, faster convergence, and more 
+reliable predictions.
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is a common problem in machine learning where a model performs extremely 
+well on training data but fails to generalize to new, unseen data. This happens when the 
+model learns not only the actual patterns but also the noise present in the training data. 
+Causes of overfitting include: 
+ Using overly complex models with too many parameters. 
+ Training on a very small dataset. 
+ Presence of noise in training data. 
+ Too many features compared to number of samples. 
+ Training the model for too many iterations. 
+Techniques to reduce overfitting: 
+1. Regularization 
+Regularization techniques such as L1 and L2 add a penalty term to the loss function. This 
+discourages the model from learning very large weights and helps keep the model simple, 
+improving generalization. 
+2. Cross-Validation 
+Cross-validation involves splitting the dataset into multiple folds and training the model 
+several times. This provides a more reliable estimate of model performance and reduces 
+dependency on a single data split. 
+Other methods include early stopping, feature selection, and increasing training data. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+1. Accuracy 
+Accuracy measures the proportion of correct predictions out of total predictions. It is easy to 
+understand and useful when the dataset is balanced. However, it may be misleading for 
+imbalanced datasets. 
+2. Precision 
+Precision measures how many of the predicted positive instances are actually positive. It is 
+especially important in applications like fraud detection, where false positives are costly. 
+Using appropriate evaluation metrics ensures reliable and meaningful model assessment. 

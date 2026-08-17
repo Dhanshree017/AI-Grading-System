@@ -1,0 +1,80 @@
+ID-T018 
+Name: Ranmeet singh Roll no: 16 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Introduction 
+AdaBoost is some boosting thing where you keep adding small models again and again but 
+honestly the idea little confusing because it keep changing weights too much. 
+Weak Learners Combination 
+ It take many tiny trees and stick them like stickers on notebook. 
+ Each small tree shout its answer and then final answer is like mixing of all shouts. 
+ Sometimes strong learner get ignored by mistake also. 
+Weight Updating 
+ After first learner finish, algorithm make some data heavier like “these items are angry 
+so give more weight”. 
+ Weights keep jumping around which sometimes make model unstable also. 
+ Wrong answers get huge weight but sometimes correct also get weight increased by 
+mistake. 
+Bias Reduction 
+ Boosting reduce bias by pushing model to change direction again and again. 
+ Actually sometimes bias increase also because model get angry and overlearn small 
+things. 
+ But normally the combination makes prediction more sharp. 
+A-2. Describe working of LSTM networks. Explain input gate, forget gate, output gate, and cell 
+state. 
+Introduction 
+LSTM is memory type neural network but honestly it look very complicated because it have 
+so many gates and operations happening at same time. 
+Forget Gate 
+ Forget gate decide what to throw but sometimes it throw important things also. 
+ It look at previous memory and simply drop random parts when trained poorly. 
+Input Gate 
+ Input gate add new info but sometimes too much new info fill memory like bucket 
+overflow. 
+ It open halfway or full depending on what network feels. 
+Cell State 
+ Cell state is main memory lane but sometimes become too long like train without 
+brakes. 
+ Information inside keep moving forward even if not needed. 
+Output Gate 
+ Output gate decides what to show but sometimes show unnecessary info. 
+ It release half-baked memory which make sequence prediction weird. 
+A-3. Explain the process of Feature Engineering. Include feature creation, selection, extraction, 
+and impact on performance. 
+Feature Creation 
+ New features created by mixing existing features but many times mixing makes 
+nonsense features like “height * birthday month”. 
+ Students sometimes add random columns which confuse model. 
+Feature Selection 
+ Removing not needed features but sometimes remove correct feature also. 
+ Many times easy method used like just dropping columns that “look boring”. 
+Feature Extraction 
+ Extraction is compressing data into small form but if compress too much then data 
+become meaningless. 
+ Sometimes extraction remove useful patterns too. 
+Impact on Performance 
+ When feature engineering done properly model gets happy and accuracy jumps. 
+ When done badly model break or give same answer for all inputs. 
+ Sometimes no improvement happen at all even after heavy engineering. 
+B ] Attempt all (5 marks each) 
+B-3. Explain Reinforcement Learning with examples 
+Explanation 
+ RL is agent doing actions and getting rewards like playing arcade games but 
+sometimes get stuck moving same direction. 
+Examples 
+ Robot in mall hitting walls while learning. 
+ Game agent that jump randomly without winning. 
+B-4. NLP Pipeline 
+Text Cleaning 
+ Removing words but sometimes remove important words like “not”. 
+Tokenization 
+ Breaking sentence into tokens but sometimes break wrong like splitting names 
+incorrectly. 
+Embeddings 
+ Converting words to numbers but sometimes numbers have no meaning. 
+Sequence Modeling 
+ Using RNN or transformers but sometimes model forget full sentence and answer 
+unrelated. 

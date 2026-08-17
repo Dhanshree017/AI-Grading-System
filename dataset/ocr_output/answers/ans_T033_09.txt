@@ -1,0 +1,62 @@
+ID-T033 
+Name: Varun Shetty Roll no: 9  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how incorrect assumptions 
+can affect model behavior and decision-making.  
+Machine learning models work based on certain assumptions which are already fixed before learning starts.  
+These assumptions help the model to understand how data behaves and how output should be predicted. 
+Without assumptions, models will not know what patterns to search for and learning will become 
+impossible.  
+Assumptions help reduce complexity by limiting the number of possible solutions. For example, some 
+models assume that all data points are independent, while others assume linear relationships. These 
+assumptions make calculations easy and reduce training time. They also help models to generalize from 
+small datasets.  
+However, incorrect assumptions can cause wrong predictions. If a model assumes linearity but data is 
+nonlinear, the model will fail to learn correct patterns. Incorrect assumptions may also cause models to 
+ignore important features. Sometimes, assumptions force the model to behave in a rigid way, even when 
+data changes.  
+Incorrect assumptions can also affect decision-making. The model may consistently make wrong decisions 
+in real-life situations. This can be dangerous in areas like healthcare or finance. Sometimes assumptions 
+increase bias and reduce fairness.  
+Thus, assumptions control how models behave, but wrong assumptions disturb learning and reduce 
+usefulness of machine learning systems.  
+A-3. 
+Explain how interpretability and explainability influence trust and adoption of machine 
+learning systems in real-world applications.  
+Interpretability means how easily a model can be understood by humans. Explainability means how a model 
+explains its predictions. Both are important for trust.  
+When users understand how decisions are made, they trust the system more. Interpretability allows users to 
+see which features are important. Explainability helps in identifying mistakes in prediction. This is useful in 
+medical and legal applications.  
+If models are not explainable, users may hesitate to use them. Organizations may also avoid deploying 
+black-box models. Interpretability helps in ethical checking and fairness analysis.  
+Explainable systems are easy to debug and improve. They help decision-makers justify outputs. Trust 
+increases adoption of machine learning in real-world systems.  
+Thus, interpretability and explainability directly affect trust, usability, and acceptance of ML systems.  
+A-4. 
+Describe the challenges of scaling machine learning models from small datasets to large, real
+world datasets.  
+Scaling machine learning models is difficult when dataset size increases. Small datasets are easy to manage, 
+but large datasets create many problems.  
+One challenge is increased computation time. Training takes longer and requires powerful hardware. 
+Memory usage also increases. Data storage becomes difficult. Large datasets contain noisy and incomplete 
+data which reduces accuracy.  
+Another challenge is feature management. Large datasets create too many features. Models become complex 
+and difficult to optimize. Distributed systems are needed, which are hard to manage.  
+Deployment also becomes challenging. Monitoring large models is difficult. Debugging errors takes more 
+time. Infrastructure cost increases.  
+Thus, scaling machine learning models requires better resources, tools, and management.  
+A-5. 
+Explain the importance of validation and testing strategies in preventing misleading 
+performance evaluation of ML models.  
+Validation and testing are steps used after training the model. Validation is mainly used to increase 
+accuracy, while testing is used to improve training.  
+Validation helps the model learn faster. It increases training speed and reduces computation. Validation also 
+removes unnecessary data from training. It ensures that model learns correct patterns.  
+Testing is used to retrain the model again on new data. It helps the model memorize better. Testing also 
+increases accuracy score shown in results.  
+Without validation and testing, models may fail during training. Performance evaluation becomes confusing. 
+Accuracy may become low.  
+Therefore, validation and testing help improve model performance and avoid errors.  

@@ -1,0 +1,85 @@
+ID-T033 
+Name: Kancha Jain Roll no: 23  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. 
+Explain the role of assumptions in machine learning models and analyze how incorrect 
+assumptions can affect model behavior and decision-making.  
+Assumptions, scientifically referred to as Inductive Bias, are the prerequisite constraints a model imposes 
+on the data to make generalization possible. Without these assumptions, a model would have no basis for 
+making predictions on unseen instances.  
+• The Role of Structural Assumptions:  
+o Hypothesis Space Simplification: Assumptions narrow down the infinite number of 
+possible mathematical functions to a manageable Hypothesis Space ($H$). For example, 
+Linear Regression assumes a linear dependency ($y = \beta_0 + \beta_1x$).  
+o Statistical Independence: Algorithms like Naive Bayes assume that features are 
+conditionally independent. While often false, this "simplifying assumption" allows the model 
+to work with high-dimensional data without requiring massive amounts of training samples.  
+• Analysis of Incorrect Assumptions: o  
+Model Misspecification: If the data is inherently non
+linear and we apply a linear assumption, the model will suffer from High Bias. This leads to 
+Underfitting, where the model is mathematically incapable of capturing the true underlying pattern.  
+o Decision-Making Risk: In high-stakes fields like Autonomous Driving, an incorrect 
+assumption about sensor noise or object movement patterns can lead to catastrophic 
+collisions. If the model assumes "empty road" when it sees a sensor anomaly, it makes a fatal 
+decision based on a flawed premise.  
+A-2. 
+Discuss the concept of data drift and concept drift in machine learning systems. Explain their 
+impact on long-term model performance.  
+Machine learning models assume that the future will mirror the past. When this "Stationarity" breaks, we 
+encounter Model Decay.  
+• Data Drift (Covariate Shift):  
+This is a change in the distribution of the input data ($P(X)$). The relationship between input and 
+output is the same, but the "type" of data has changed.  
+o Example: A credit scoring model trained on people in their 40s will experience data drift if 
+the bank starts targeting college students. The model hasn't seen this "input" before.  
+Concept Drift:  
+This is a change in the relationship between input and target ($P(y|X)$). The actual "meaning" or 
+definition of the answer has shifted.  
+o Example: In Fraud Detection, a transaction pattern that was considered "safe" last year 
+might be the "new standard scam" this year. The "concept" of fraud has evolved.  
+• Long-term Impact:  
+o Silent Accuracy Decay: Drift does not cause a system crash; instead, the model provides 
+confident but wrong answers.  
+o Requirement for MLOps: To maintain performance, systems must implement Continuous 
+Monitoring and Automated Retraining Pipelines to ensure the model stays synchronized 
+with the current data reality.  
+A-4. 
+Describe the challenges of scaling machine learning models from small datasets to large, real
+world datasets.  
+Scaling is not just "adding more data"; it is a fundamental engineering shift from local computing to 
+distributed systems.  
+• Computational Complexity ($O$ notation):  
+Many algorithms that work on small data have Quadratic ($O(n^2)$) or Cubic ($O(n^3)$) 
+complexity. On 10,000 rows, this is fast; on 10 billion rows, the math becomes physically impossible 
+for any computer. Scaling requires moving to Stochastic Approximation methods.  
+• Data Quality and Cleaning at Scale:  
+In small data, humans can fix errors. In Petabyte-scale data, noise is everywhere. Scaling requires 
+automated Data Validation Pipelines to handle missing values and outliers without human 
+intervention.  
+• Infrastructure and Latency:  
+Real-world scaling requires Distributed Computing (e.g., Apache Spark). The challenge is managing 
+"Network Latency"—ensuring that data moving between 100 different servers doesn't slow down the 
+model's prediction speed.  
+• The Overfitting-to-Noise Paradox:  
+As data grows, models can start "learning the noise" in the massive dataset. Large-scale models 
+require aggressive Regularization and Feature Selection to remain robust.  
+A-5. 
+Explain the importance of validation and testing strategies in preventing misleading 
+performance evaluation of ML models.  
+Misleading evaluation is the most common cause of "AI failure" in the real world. A model can look perfect 
+in the lab but fail in production.  
+• Detecting "Memorization" (Overfitting):  
+Testing on the same data used for training is "cheating." A model might get 100% accuracy simply 
+by memorizing the answers. Hold-out Testing ensures the model actually learned the "Logic."  
+• K-Fold Cross-Validation:  
+Instead of one lucky test, K-Fold splits data into $K$ parts and tests it multiple times. This provides 
+a Mean and Variance of performance, giving a true picture of the model's stability.  
+• The Accuracy Paradox:  
+In imbalanced data (e.g., detecting a rare virus), a model can be 99.9% accurate by saying "Everyone 
+is healthy." Testing strategies like F1-Score, Precision, and Recall are vital to catch these lying 
+models.  
+• Data Leakage Prevention:  
+Proper validation ensures that information from the "Future" (test set) hasn't accidentally leaked into 
+the "Past" (training set), which would create a false sense of success that disappears in the real world.  

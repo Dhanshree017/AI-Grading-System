@@ -1,0 +1,153 @@
+ID-T028 
+Name: Ruchi Shrivastav Roll no: 28 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+1. Exploratory Data Analysis (EDA) & Distribution Analysis: 
+o Action: Perform multi-variate analysis to uncover correlations and 
+dependencies. For individual features, assess their statistical distribution (e.g., 
+Gaussian, skewed). 
+o Goal: Understand feature dependence and identify univariate and 
+multivariate outliers using techniques like Z-score or Isolation Forest to flag 
+unusual data points. 
+2. Advanced Missing Value Imputation Based on Mechanism: 
+o Strategy: Apply imputation methods based on the data's Missingness 
+Mechanism: 
+ MAR (Missing at Random): Use model-based imputation like MICE 
+(Multiple Imputation by Chained Equations) or Expectation
+Maximization (EM) to preserve complex relationships. 
+ MNAR (Missing Not at Random): Requires external data or feature 
+engineering to capture the reason for missingness (e.g., adding an 
+indicator column for the missing status). 
+3. Handling Categorical Inconsistency and High Cardinality: 
+o Action: Use automated tools or fuzzy logic (e.g., Fuzzy Wuzzy libraries) to 
+detect and consolidate near-duplicate textual entries. 
+o High Cardinality: For features with too many unique values, apply Feature 
+Hashing or Target Encoding (with caution to prevent leakage) instead of 
+standard One-Hot Encoding. 
+4. Data Transformation for Normality and Stability: 
+o Action: Apply power transforms (like Box-Cox or Yeo-Johnson) to numerical 
+features that exhibit strong skewness, pushing them toward a normal 
+distribution to meet the assumptions of linear models. 
+o Scaling: Utilize Robust Scaling if the dataset contains significant outliers, as it 
+uses the median and IQR (Interquartile Range), making it less sensitive than 
+Standardization or Normalization. 
+5. Data Splitting with Stratification: 
+o Action: Split the dataset into training, validation, and test sets using stratified 
+sampling , ensuring the distribution of the target variable (especially in 
+classification) and potentially key demographic features are maintained across 
+all subsets. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+When selecting a machine learning algorithm, you should consider the nature of the 
+problem, data characteristics, and practical constraints (such as time and computational 
+resources). There is no single "best" algorithm, so an iterative approach starting with simpler 
+models is recommended.  
+Key factors to consider include: 
+ Problem Type and Goal The first step is to define the objective. 
+o Supervised Learning: Does your data have labeled output variables? 
+o Regression: Predicting a continuous value (e.g., house prices, sales forecasting). 
+o Classification: Categorizing data into predefined classes (e.g., spam detection, medical 
+diagnosis). 
+o Unsupervised Learning: Do you need to find patterns or groupings in unlabeled data? 
+o Clustering: Grouping similar items together (e.g., customer segmentation). 
+o Dimensionality Reduction: Reducing the number of features (e.g., for data visualization or 
+feature selection). 
+o Reinforcement Learning: Does the model need to make real-time decisions in a dynamic 
+environment through trial and error (e.g., robotics, game AI)? 
+ Data Characteristics The nature of your dataset significantly influences algorithm choice. 
+o Size: Smaller datasets often work better with simpler, high-bias/low-variance models (e.g., 
+Naive Bayes, Linear Regression) to avoid overfitting. Large datasets can leverage the power 
+of complex models like deep neural networks or ensemble methods. 
+o Quality and Format: Noisy data with missing values may require robust algorithms (e.g., 
+Random Forest, XGBoost) or extensive preprocessing. Data types (numerical, categorical, 
+images, text) also dictate specific algorithm families (e.g., CNNs for images, 
+RNNs/Transformers for text). 
+o Linearity: If the data has a linear relationship, linear models perform well. Non-linear data 
+requires more complex, flexible algorithms like kernel SVMs or neural networks. 
+ Practical Constraints and Requirements 
+o Interpretability vs. Accuracy: Do you need to explain why the model made a specific 
+prediction (important in healthcare, finance, and legal compliance)? Interpretable models like 
+Linear Regression or Decision Trees are better choices than "black box" models like deep 
+neural networks or ensemble methods, which often offer higher accuracy but are difficult to 
+interpret. 
+o Computational Efficiency: Consider available hardware resources (CPU, memory) and 
+constraints. Some algorithms are lightweight and fast (e.g., Logistic Regression), while 
+others require significant computational power and training time (e.g., Neural Networks). 
+o Training and Prediction Speed: Real-time applications require fast prediction times, even 
+if training is slow. Batch processing might prioritize accuracy over prediction speed. 
+o Scalability: The chosen algorithm should be able to handle future data growth without 
+significant performance degradation.  
+Ultimately, the best approach is to start with a simple baseline model, evaluate its 
+performance using relevant metrics (e.g., accuracy, precision, recall, MSE), and then iterate 
+with more complex algorithms as needed.  
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+1. Monitor Feature Importance and Contribution Drift: 
+o Action: Track the change in SHAP values or permutation importance for each 
+feature over time. 
+o Goal: Identify Feature Attribution Drift—where the model starts relying on a 
+feature it previously ignored, or vice-versa. This is often the precursor to 
+performance decay. 
+2. Monitor Data Quality and Integrity Constraints: 
+o Action: Track the proportion of nulls, zeros, and out-of-range values in the 
+production data. Track categorical feature schema drift (e.g., new categories 
+appearing or old ones disappearing). 
+o Goal: Catch upstream pipeline failures or data corruption before they 
+significantly impact prediction accuracy. 
+3. Monitor Prediction Confidence (Uncertainty): 
+o Action: For classification tasks, monitor the model's predicted probability 
+distribution (confidence scores). A sudden drop in average confidence or an 
+increase in predictions near the $0.5$ threshold suggests the model is becoming 
+uncertain due to unfamiliar data. 
+4. Windowed Retraining and Sample Weighting (Action): 
+o Action: Instead of retraining on all historical data, implement windowed 
+retraining, using only the most recent $N$ months of data. Alternatively, use 
+sample weighting to give exponentially higher importance to newer data points 
+during training. 
+o Benefit: Allows the model to adapt quickly to recent concepts while forgetting 
+obsolete patterns. 
+5. Model Governance and Shadow Deployment (Action): 
+o Action: Before replacing the live model, use Shadow Deployment (or A/B 
+testing). Route a small percentage of live traffic to the newly trained model (or a 
+challenger model) and compare its performance against the currently deployed 
+model without impacting users. 
+o Goal: Validate the new model's superiority and stability in the live environment 
+before full rollout. 
+5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+1. Risk Profile and Downside Bounding (Catastrophic Error): 
+o Criterion: Which model offers a better worst-case scenario? 
+o Comparison: Model A might have a higher average performance but produces 
+catastrophic outliers (very large, rare errors). Model B has lower average 
+performance but bounds the size of its maximum error, making it safer and 
+preferable in high-stakes fields (e.g., financial trading, healthcare). 
+2. Ease of Human-in-the-Loop Integration (Trust and Override): 
+o Criterion: How easily can a human expert review, understand, and override 
+the model's prediction if necessary? 
+o Comparison: If Model A (simple decision tree) provides a clear, 
+understandable path for override, it is more acceptable for integration than 
+Model B (complex neural network) in environments where the final decision 
+authority rests with a human. 
+3. Data Dependency and Acquisition Cost: 
+o Criterion: What is the cost, effort, and risk associated with obtaining the 
+required input features for each model? 
+o Comparison: If Model A relies on a proprietary, expensive, and fragile external 
+data API, while Model B uses readily available internal features, Model B offers 
+lower long-term cost and lower supply chain risk. 
+4. Organizational Adoption and Tooling Compatibility: 
+o Criterion: Does the model require specialized tooling (e.g., specific 
+GPU/framework) or skills that the current team lacks? 
+o Comparison: If the organization is standardized on Python and Scikit-learn, a 
+model built on that stack (Model A) is generally preferred over a model 
+requiring a niche language and infrastructure (Model B), as it simplifies 
+maintenance, hiring, and future upgrades. 
+5. Calibration and Uncertainty Quantification: 
+o Criterion: Beyond the prediction, does the model provide a well-calibrated 
+estimate of its uncertainty? 
+o Comparison: Model A, which provides a probability that accurately reflects its 
+confidence (e.g., when it says 70%, it's right 70% of the time), is more valuable 
+than Model B, which might be accurate but is overconfident or underconfident 
+in its probability scores. 

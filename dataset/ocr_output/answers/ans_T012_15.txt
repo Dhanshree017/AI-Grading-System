@@ -1,0 +1,105 @@
+ID-T012 
+Name : Aakash Verma Roll no: 15 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, advantages, and 
+disadvantages. 
+Random forest is one type of very smart tree forest which make decision in many tree at 
+once. it works by making many trees, and each tree make vote and final answer come 
+from who win most votes. Random forest is call random because it select features 
+randomly so that not all trees same. 
+it start by taking data many time, like same data but random samples called bootstrap. 
+Then each tree trained on that small data. After that each tree when new data come 
+they predict output and then result combine. 
+sometimes forest give better accuracy because one tree can do mistake but if many tree 
+do together they cancel mistake. It is like class of students voting for correct answer. 
+Advantages are like it reduce overfitting and give stable result. Also it can work both 
+classification and regression both. It also handle missing data sometimes. Disadvantages is 
+that it take many memory and slower also sometimes we can’t understand what it doing. 
+Sometimes people use random forest for predicting disease, stock or loan approval. It is 
+big forest of brain of computer. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropogation is something like when neural network learn from mistake and go backward 
+to fix it. It is like human brain when get wrong answer then think back why wrong. 
+first step is forward passing where data go layer by layer, multiply with weights, then 
+make output. second step is to see error, that is difference between predicted and actual 
+answer. third is backward passing which means go back to each neuron and change weights 
+so that next time less error. 
+It keep doing this again and again till error small enough. It use gradient method but 
+sometime gradient become vanish so network stop learning. 
+it is very helpful in deep learning like image recognization, language, sound etc. 
+Backpropogation is heart of AI learning. but it need lot of time and GPU or CPU. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist learning. 
+Bayesian learning is based on Bayes rule which is made by scientist Thomas Bayes when he 
+was study milk color and probability of it. It is used to find probability of things when we 
+have some evidence. 
+In Bayesian we always start with prior knowledge, then we add new data and get new 
+belief call posterior. it like if we think it will rain 50% but we see dark clouds then we 
+change mind to 80%. 
+Frequentist dont believe in prior, they think only data can decide. Bayesian think both 
+belief and data. Bayesian is slow but very flexible. 
+In machine learning we use Bayesian in spam filter or weather prediction. Some time it 
+give wrong result when prior is bad but if data good it become nice. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment mean putting machine learning model into life so it can work in real 
+world. It is like we make robot and then start it in factory. 
+We first train model on computer and then save it in file. Then deploy using web server 
+or API like flask. It can be in mobile, website, cloud etc. 
+After deployment, model must be check again and again. Maybe model good now but after 
+few month data change and model become stupid. So monitoring is must. 
+Monitoring mean watch model accuracy, see if data drift or error increase. Sometime we 
+need retrain with new data. also security of data is important. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization and Standardization are something to make data in same level. In 
+normalization we make data between 0 to 1 like divide by big number. In standardization 
+we subtract mean and divide by variance. 
+For example if age is 10 to 100 and salary is 10000 to 100000 then model will confuse 
+because salary is big number. so we normalize or standardize. 
+Normalization is for neural network because they like small numbers, standardization for 
+linear model. Sometimes student confuse between both but they are cousins. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+There are many challenges like data not clean, sometimes missing values or wrong data. 
+Also overfitting happen when model memorize instead of learning. 
+Sometimes model too slow or hardware weak. If we choose wrong algorithm it will give 
+wrong prediction. Hyperparameters are also very confusing. 
+Other challenge is explainability because we don’t know why model doing that. Also bias 
+data give unfair results.
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is algorithm which not for regression but for classification. It predict 
+yes or no, 0 or 1 type problems. It use sigmoid function to squeeze numbers between 0 
+to 1. 
+It is used in spam or not spam, pass fail, rain or no rain. it is easy and fast. 
+but logistic regression not work well if data not linear, then we use tree or neural 
+network. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameters are things we set before training like learning rate, number of layer, tree 
+depth. Parameters are things model learn by itself like weight, bias. 
+If hyperparameters wrong, model fail. So tuning is needed. It is like cook recipe, salt 
+amount is hyperparameter, taste is parameter result. 
+B-5. Explain the concept of cross-entropy loss. 
+Cross entropy loss is a type of cost which see how much our predicted probability 
+different from actual label. Smaller cross entropy mean model better. 
+It mostly used in classification problems. If model say 0.9 for true class, loss small. If 
+0.1, loss big. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Predictive maintenance mean predicting when machine will break before it break. ML can 
+help by looking at data like temperature, vibration, current etc. 
+We put sensors on machines and feed data to model. Model learn what normal and what 
+abnormal. If pattern look like failure model give warning. 
+It help reduce downtime, save cost, and improve safety. Algorithms like random forest, 
+SVM or LSTM use. 
+Data need to be clean and labelled. If not model can say machine is fine even when it 
+dying. 
+C-2. Discuss 5 real-world examples of biased ML model and how such bias can be reduced. 
+Bias happen when model learn bad pattern. For example face recognition fail for dark skin, 
+hiring algorithm reject women, language model prefer one country, or health data biased 
+by race. 
+One famous case was COMPAS tool in USA which predict crime, it give more false alarms 
+for black people. 
+Bias can be reduce by making data balanced, remove sensitive attributes, or use fairness 
+constraint. Also check model with test from all groups. 
+Some people say bias never fully go because humans make data. 

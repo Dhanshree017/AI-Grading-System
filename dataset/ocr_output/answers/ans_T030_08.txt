@@ -1,0 +1,28 @@
+ID-T030 
+Name: Kunal Khanavne Roll no: 232508 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-1. Explain the concept of hypothesis space in machine learning. 
+The hypothesis space, denoted as $H$, represents the exhaustive set of all candidate functions that an 
+algorithm is permitted to explore during the learning process. It is the search space defined by the model's 
+architecture; for instance, in a Decision Tree, $H$ is the set of all possible tree structures. The complexity of 
+$H$ directly dictates the "Representational Capacity" of the model. A topper understands that a space too 
+restrictive leads to high bias (underfitting), while a space too expansive leads to high variance (overfitting). 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+This separation is the cornerstone of validating a model’s Generalization Ability. The training set is used for 
+parameter optimization (fitting the weights), whereas the test set serves as an independent proxy for real
+world unseen data. Without this boundary, "Data Leakage" occurs, resulting in an overly optimistic 
+performance metric that fails in production. It allows us to measure the gap between empirical risk (training 
+error) and structural risk (test error). 
+A-3. Explain how assumptions affect learning algorithms. 
+No learning is possible without Inductive Bias—the set of assumptions an algorithm uses to predict outputs 
+for inputs it has never encountered. For example, Linear Regression assumes a linear relationship between 
+features. If these assumptions align with the data's true distribution, the model converges rapidly with 
+minimal data. If they are incorrect, the model remains fundamentally flawed regardless of data volume, a 
+state known as "Model Mismatch." 
+A-4. What is the role of validation in model development? 
+Validation is a distinct phase used for Hyperparameter Optimization and model selection. While the training 
+set modifies internal parameters (like weights), the validation set is used to tune external settings (like 
+learning rate or regularization strength). It prevents the engineer from "over-tuning" to the test set, ensuring 
+that the final evaluation remains an unbiased reflection of the model's quality. 

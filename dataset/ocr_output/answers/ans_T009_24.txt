@@ -1,0 +1,153 @@
+ID-T009 
+Name : Deepak pandey Roll no: 24 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one example 
+of each. 
+Supervised learning is when computer know answer and try to match input to 
+output. Unsupervised learning is when computer not know answer and try guess 
+pattern. Both are learning but different. 
+1. Supervised need label data. 
+2. Unsupervised no label. 
+3. Supervised predict number or yes/no. 
+4. Unsupervised find groups. 
+5. Example supervised: Predict marks from study hours. 
+6. Example unsupervised: Group students by age. 
+7. Supervised slow sometimes. 
+8. Unsupervised fast sometimes. 
+9. Both sometimes combined maybe. 
+A-3. What is Principal Component Analysis (PCA)? Why is it used? 
+PCA is process where many data make small. Computer see only important part. 
+PCA used in chart maybe, help computer learn better but not always perfect. 
+1. Reduce data size. 
+2. Remove extra columns. 
+3. Help in graph maybe. 
+4. Make computer work faster. 
+5. Helps in pictures maybe. 
+6. Can use in regression maybe. 
+7. Reduce noise sometimes. 
+8. Change feature to number. 
+9. Make computer not confuse maybe. 
+A-4. What are the steps of creating a Machine Learning Model? 
+Machine learning model like project. Many steps start from data collect end in 
+deploy but sometime we skip. 
+1. Collect data maybe. 
+2. Clean data maybe missing value. 
+3. Choose feature maybe important. 
+4. Split data maybe train/test. 
+5. Choose algorithm maybe tree or neighbor. 
+6. Train model sometimes works. 
+7. Test model maybe. 
+8. Tune maybe improve accuracy. 
+9. Deploy maybe work in real life. 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting is when model memorize training data. Underfitting is when model 
+forget everything. Both bad for result. 
+1. Overfitting good for old data. 
+2. Underfitting bad everywhere. 
+3. Overfitting memorize too much. 
+4. Underfitting too less learn. 
+5. Example overfitting: Student learn old exam but fail new. 
+6. Example underfitting: Student no study fail all. 
+7. Regularization maybe help overfitting. 
+8. More data maybe help underfitting. 
+9. Balance hard. 
+A-6. What is K-Means Clustering? Write importance of it. 
+K-Means clustering is when computer put things in groups like box. Find center and 
+put things near it. Sometimes not correct. 
+1. Group people in mall. 
+2. Group students maybe. 
+3. Find pattern maybe. 
+4. Used in picture sometimes. 
+5. Help marketing maybe. 
+6. Divide data. 
+7. Show in graph maybe. 
+8. Reduce human work. 
+9. Can use anywhere maybe. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance Tradeoff. 
+Bias is when model think wrong. Variance is when model change too much. Tradeoff 
+keep both okay maybe. 
+1. High bias underfit. 
+2. High variance overfit. 
+3. Tradeoff balance maybe. 
+4. Bias make model simple. 
+5. Variance make model complex. 
+6. Cross-validation maybe help. 
+7. Regularization maybe help. 
+8. Both make error. 
+9. Good model low bias variance maybe. 
+B-2. What is Regression? Explain its types in detail. 
+Regression predict numbers like price or marks. Sometimes linear, sometimes other 
+type maybe. 
+1. Linear regression straight line. 
+2. Polynomial regression curve maybe. 
+3. Logistic regression yes/no maybe not regression. 
+4. Ridge regression reduce big number. 
+5. Lasso regression remove small things. 
+6. Multiple regression many input maybe. 
+7. Stepwise regression step by step maybe. 
+8. Time regression for time data maybe. 
+9. Other regression maybe sometime. 
+B-3. What is Decision Tree? Explain its steps to implement it. 
+Decision tree is tree in computer. Node check yes/no. 
+1. Choose root. 
+2. Split data by feature. 
+3. Make branch. 
+4. Split again maybe. 
+5. Stop when same output. 
+6. Leaf assign class. 
+7. Prune maybe. 
+8. Test tree maybe. 
+9. Use tree maybe work. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Classification 
+Output Categories maybe 
+Regression 
+Numbers maybe 
+Example Spam or not maybe Rainfall maybe 
+Basis 
+Classification 
+Regression 
+Data type Discrete maybe 
+Algorithm Tree maybe 
+Continuous maybe 
+Linear maybe 
+Accuracy Count correct maybe MSE maybe 
+Use 
+Label 
+Graph 
+Result 
+Sorting maybe 
+Yes maybe 
+Bar maybe 
+Class maybe 
+Predicting maybe 
+Sometimes maybe 
+Line maybe 
+Number maybe 
+B-5. How Deep Learning is different from Machine Learning? Explain Regularization 
+in detail. 
+Deep learning is machine learning but deeper brain. Machine learning is smaller 
+brain. 
+1. Deep learning need GPU maybe. 
+2. Machine learning work normal computer maybe. 
+3. Deep learning automatic features maybe. 
+4. Machine learning manual features maybe. 
+5. Deep learning for images maybe. 
+6. Machine learning mostly numbers maybe. 
+7. Deep learning more accurate maybe. 
+8. Machine learning easier maybe. 
+9. Both used together maybe. 
+Regularization: 
+1. Prevent overfitting maybe. 
+2. L1 remove some weight maybe. 
+3. L2 make small weight maybe. 
+4. Dropout remove neuron maybe. 
+5. Improve model maybe. 
+6. Works in deep or normal maybe. 
+7. Reduce memorization maybe. 
+8. Keep model slim maybe. 
+9. Balance maybe. 

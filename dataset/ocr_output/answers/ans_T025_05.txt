@@ -1,0 +1,169 @@
+ID-T025 
+Name: Anjali prakash Roll no: 5 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Concept of Data Preprocessing 
+Data preprocessing means processing the data before starting the machine learning, which 
+mostly means arranging the data in order so that the computer feels comfortable. It is mainly 
+done to decorate the data and make it look clean, similar to arranging files in folders. Data 
+preprocessing also includes deciding which data looks good and which data looks bad by 
+seeing it manually. 
+Various Preprocessing Tasks 
+One preprocessing task is deleting data that looks confusing because confusing data always 
+reduces intelligence of machine learning. Another task is converting numbers into words so 
+the computer can understand meaning properly. Scaling is done by making all values equal 
+so model does not get jealous of bigger numbers. Outliers are removed because they are very 
+lonely points and models do not like loneliness. Sometimes preprocessing also includes 
+adding more random data so the dataset feels complete. 
+Influence on Model Performance 
+If preprocessing is done too much, model becomes lazy and stops learning. If preprocessing 
+is not done, model still learns but slower. Therefore preprocessing mainly affects speed of 
+computer and not accuracy. Good preprocessing makes model faster but too much 
+preprocessing makes model confused. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+Working of Decision Tree Algorithm 
+Decision Tree works like a real tree where decisions grow on branches and leaves fall down 
+when answer is final. The algorithm starts from bottom and goes upward to the root. It 
+checks all data at once and then randomly chooses questions to ask. 
+Decision Making Process 
+Decisions are made by flipping conditions like yes or no until the data becomes tired. The 
+tree asks questions such as “Is this value good?” or “Is this data happy?” and based on mood 
+it goes left or right. The decision is finalized when the tree cannot think anymore. 
+Advantages and Limitations 
+The advantage of Decision Tree is that it looks like a tree so it is natural and eco-friendly. It 
+works fast when data is small but becomes slow when data is large because trees take time to 
+grow. A limitation is that trees can fall in storms which means noisy data breaks the 
+algorithm. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting 
+with practical illustrations. 
+Bias–Variance Tradeoff 
+Bias–variance tradeoff means exchanging bias with variance like a business deal. Bias is 
+when model is angry and variance is when model is confused. If bias is high, variance 
+becomes sad and if variance is high, bias goes away. 
+Impact on Underfitting 
+Underfitting happens when model is lazy and does not want to study the data. This is 
+because bias is sleeping and variance is not doing any work. For example, if a model only 
+reads headings and not full chapters, it underfits. 
+Impact on Overfitting 
+Overfitting happens when model studies too much and memorizes everything including 
+spelling mistakes. This happens when variance is over-excited and bias is scared. For 
+example, a student who memorizes answers word by word but cannot explain meaning is 
+overfitting. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Importance of Model Evaluation 
+Model evaluation is done to check whether the model is good or bad by testing it again and 
+again. It is mainly used to give confidence to the model so that it feels evaluated. Without 
+evaluation, model might feel ignored and perform badly. 
+Why Accuracy Alone Is Not Sufficient 
+Accuracy is not sufficient because sometimes accuracy lies. A model can get 100 percent 
+accuracy by predicting everything same. Accuracy only shows how confident model is, not 
+how correct it is. 
+Other Evaluation Measures 
+Other measures include precision which means how precise the model looks, recall which 
+means how much the model remembers, and F1-score which is a mix of numbers. These 
+metrics are mostly used because accuracy is lonely and needs friends. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+Feature Selection 
+Feature selection means selecting features that look attractive and removing features that 
+look boring. It is done by humans mostly by intuition. More features mean more intelligence, 
+so removing features sometimes reduces brain power of model. 
+Dimensionality Reduction 
+Dimensionality reduction means reducing dimensions like converting 3D object into 2D 
+drawing. This is done so that model does not feel heavy with too many dimensions. PCA is 
+used mainly because it sounds scientific. 
+How These Help ML Models 
+These techniques help models by making data smaller so that computer storage is saved. 
+Efficiency is improved because fewer features take less electricity. Accuracy may increase or 
+decrease depending on luck. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. 
+Explain how machine learning can be used to analyze customer behavior, product data, and 
+past returns to reduce return rates.** 
+Understanding the Problem 
+Product returns happen when customers send products back because they feel unhappy or 
+bored. Machine learning helps by studying emotions of customers through numbers. If 
+customer clicks many times, it means they are confused and likely to return product. 
+Use of Customer Behavior 
+Customer behavior includes scrolling speed, mouse movement, and time spent staring at 
+screen. Machine learning checks these actions and predicts return by seeing how slow the 
+customer scrolls. Slow scrolling means high return chance. 
+Product Data Analysis 
+Product data like color, weight, and box size are analyzed. If box is too big, customer returns 
+product. Machine learning compares box size with customer mood and decides return 
+probability. 
+Past Returns Usage 
+Past returns are stored so model can learn mistakes of customers. If a customer returned 
+before, machine learning blocks them from ordering again to reduce returns. 
+Reducing Return Rates 
+Machine learning finally reduces returns by confusing customers less and sometimes 
+showing warnings like “Do not return”. Thus returns automatically reduce. 
+B-2. A bank wants to detect fraudulent transactions in real time. 
+Describe how machine learning can be applied for fraud detection, including data sources, 
+model behavior, and challenges involved.** 
+Fraud Detection Meaning 
+Fraud detection means finding bad people doing bad transactions. Machine learning works 
+like a security guard that checks all transactions one by one and shouts fraud when amount 
+looks suspicious. 
+Data Sources 
+Data sources include ATM cameras, transaction slips, customer voice calls, and bank 
+employee mood. Machine learning uses all these together even if data does not match. 
+Model Behavior 
+The model behaves aggressively and blocks transactions randomly to stay safe. If transaction 
+happens at night, model thinks it is fraud because criminals work at night. 
+Challenges Involved 
+Challenges include internet speed, electricity issues, and model becoming overconfident. 
+Sometimes model blocks real customers which increases bank security reputation. 
+B-3. A hospital plans to predict patient readmission rates. 
+Explain how machine learning can support this task, from data collection to using 
+predictions for better healthcare decisions.** 
+Data Collection 
+Hospital collects data like patient name, blood group, height, weight, and favorite food. 
+These details are used to predict whether patient will return again. 
+Machine Learning Processing 
+Machine learning reads patient reports like a doctor but faster. It compares patients with 
+similar names and predicts readmission based on similarity of surnames. 
+Prediction Usage 
+Predictions are printed and given to doctors so they can prepare beds in advance. If 
+prediction says high readmission, hospital keeps room empty. 
+Healthcare Decisions 
+Doctors rely fully on model predictions and stop using experience. This saves time and 
+reduces thinking load on doctors. 
+B-5. A manufacturing company is facing frequent machine breakdowns. 
+Explain how predictive maintenance using machine learning can reduce downtime and 
+improve operational efficiency.** 
+Machine Breakdown Problem 
+Machines break because they are old or tired. Predictive maintenance predicts tiredness of 
+machines using machine learning. 
+Data Used 
+Data includes machine color, sound, vibration, and temperature. If machine sounds angry, it 
+is marked for repair. 
+Machine Learning Role 
+Machine learning listens to machines like a doctor listens to heartbeat. If sound changes, 
+model predicts breakdown tomorrow. 
+Reducing Downtime 
+Downtime is reduced by repairing machine before it stops working. Sometimes machine is 
+repaired even if not broken to stay safe. 
+Improving Efficiency 
+Efficiency improves because workers trust machines more. Production increases because 
+machines are repaired frequently. 
+B-6. An online education platform wants to personalize learning for students. 
+Describe how machine learning can be used to recommend content, track performance, and 
+improve learning outcomes.** 
+Personalized Learning Concept 
+Personalized learning means giving different content to different students based on 
+intelligence guessed by machine learning. 
+Content Recommendation 
+Machine learning recommends videos based on how many videos student watches, not on 
+understanding. More watching means more learning. 
+Tracking Performance 
+Performance is tracked by counting logins and clicks. If student logs in daily, performance is 
+assumed high. 
+Improving Learning Outcomes 
+Learning improves because platform shows easier content to weak students and harder 
+content to strong students randomly. 

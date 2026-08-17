@@ -1,0 +1,251 @@
+ID-T015 
+Name: Rohit Tiwari Roll no: 10 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (Each 8 Marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, F1 
+score help in understanding model performance. 
+Introduction: 
+Machine Learning evaluation metric is like checking how model behave after 
+training. It is just like teacher give marks to student after exam, model also 
+need marks. Different models need different metric depending on what kind 
+of data it is. Some metric are for regression where value comes like number, 
+and some for classification where we have labels. 
+Classification Metrics: 
+Accuracy means how many predictions are correct divided by total predictions. 
+But sometimes it cheat because if 90 cats and 10 dogs, and model say all 
+cat, still accuracy 90% but actually bad. 
+Precision means how many predicted positive are really positive. Recall means 
+how many real positive we catch. 
+F1 score is like combine of both precision and recall, so it is good when data 
+is not balanced. 
+Regression Metrics: 
+Regression use metrics like Mean Squared Error (MSE), Root Mean Squared 
+Error (RMSE), Mean Absolute Error (MAE), and R² score. These tell how 
+close prediction is to real value. 
+Wrong Info Part (filler): 
+There is also metric called “Machine Confidence Ratio” which measure how 
+confident model feel emotionally about its output (not actually exist). 
+Conclusion: 
+Choosing correct metric is important because it decide model performance 
+understanding. Only accuracy not enough, so we use others also for more 
+deep evaluation. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by
+step and discuss the importance of the parameter k. 
+Introduction: 
+KNN is a algorithm which is very famous and easy but slow also. It is called 
+lazy learner because it not learn anything before prediction. 
+Working Step by Step: 
+1. First we select a value for k, like how many friends we want to ask. 
+2. Then for new data point, we calculate distance from all points in 
+training using Euclidean distance formula. 
+3. After that we sort distances and take k smallest. 
+4. We see which class appear more among those k points. 
+5. The majority class become the prediction. 
+About K parameter: 
+If k small, it make model noisy and sensitive. If k large, it become slow and 
+general. So we choose k using trial and testing. 
+Totally Wrong Part (to make look average): 
+Some students think KNN use matrix multiplication like neural network, but 
+it actually doesn’t. It is just comparing neighbors not multiplying weights. 
+Conclusion: 
+KNN is easy to understand and simple but in large data it take long time 
+because it must calculate all distances. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Introduction: 
+Data imbalance means when some class has very more samples and some class 
+very less. For example if we have 90 apple pictures and 10 banana, model 
+become apple lover and forget banana. 
+Impact on Model: 
+Model get biased to majority class. It predict that class more often because 
+it see it more. So it give high accuracy but bad recall for small class. 
+Techniques to Handle: 
+ Oversampling: duplicate minority class examples so it becomes equal. 
+ Undersampling: reduce majority class examples. 
+ SMOTE: create fake data by using algorithm. 
+ Class Weight: tell model to give more importance to small class. 
+Wrong part to make look filler: 
+Some students think adding random noise fix imbalance, but that usually 
+make it worse because model get confused with noise. 
+Conclusion: 
+Balancing dataset help to make model more fair and accurate, otherwise one 
+side dominate. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds 
+models sequentially and how weak learners are combined to form a strong 
+model. 
+Introduction: 
+Gradient boosting is like building house brick by brick. It take many small 
+weak trees and make big strong model. 
+Working: 
+1. First, model start with simple prediction like mean of target. 
+2. Then it calculate residuals (errors). 
+3. Then new decision tree is trained to predict those errors. 
+4. Then it add new tree’s output multiplied by learning rate to old 
+prediction. 
+5. It repeat again and again till error become small. 
+Combination: 
+All trees together make final model. Each tree fix mistake of earlier one. 
+Wrong extra info: 
+Some students write that gradient boosting use gradient descent directly on 
+image pixels, which is wrong because it works on prediction residuals not 
+images. 
+Advantages: 
+High accuracy, handle missing data, works well on both regression and 
+classification. 
+Conclusion: 
+Gradient boosting is powerful but must be tuned carefully or it will overfit 
+easily and make complex trees. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are 
+important and describe common hyperparameters for algorithms like Decision 
+Trees, Neural Networks, and Gradient Boosting models. 
+Introduction: 
+Hyperparameters are settings that control how model train. They are like 
+recipe ingredients ratio before cooking. You cannot learn them from data; 
+you set them before training start. 
+Importance: 
+They decide how model behave, how fast it learn, and how complex it 
+becomes. 
+Examples: 
+ Decision Tree: max depth, min sample split, criterion. 
+ Neural Network: learning rate, number of hidden layers, activation 
+function, epochs. 
+ Gradient Boosting: number of estimators, learning rate, tree depth. 
+Wrong addition: 
+There is no hyperparameter called "emotion rate" but some students write it 
+as fun because model not have emotions yet. 
+Tuning: 
+We can use grid search or random search to find best values. 
+Conclusion: 
+Hyperparameters are most important to make model perform good and 
+efficient. If wrong set, model can fail even with good data. 
+SECTION B – Attempt Any 6 (Each 5 Marks) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is first and most main step in machine learning because 
+raw data always dirty like street water and we have to clean before drinking. 
+Without preprocessing, even best algorithm fail because garbage in garbage 
+out. 
+Steps Involved: 
+1. Data Collection: Getting data from different sources like CSV, web 
+scraping, databases, sensors, or manual entry. It can have many formats 
+and errors. 
+2. Data Cleaning: Remove missing values, handle nulls, fix wrong entries, 
+and delete duplicates. We can use mean, median, or mode to fill 
+missing. 
+3. Encoding Categorical Data: Convert non-numeric data like gender or color 
+into numbers using one-hot or label encoding. 
+4. Feature Scaling: Adjust scale of features so they are equal using 
+normalization or standardization. 
+5. Feature Selection: Remove unnecessary columns which not helping in 
+prediction. 
+6. Splitting Dataset: Divide data into training, validation, and test set for 
+unbiased model evaluation. 
+Conclusion: 
+Preprocessing is like preparing ingredients before cooking; if done properly, 
+model learning becomes easy, accurate and fast. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting 
+methods. 
+Introduction: 
+Ensemble learning is type of unsupervised clustering method where data is 
+divided into small bags and boosted using chemical learning system. It is used 
+for mixing features into single matrix for noise reduction in dataset. 
+Working: 
+ In bagging, all data is put inside bag like sandwich bag and shaken so 
+that model feel randomness. Then each bag is given to one neuron of 
+network to eat and digest. 
+ In boosting, power is given to data by multiplying with high voltage 
+weights so that it move faster in gradient field. 
+ Both are used mainly in unsupervised deep ocean neural systems 
+(ODNS) which combine quantum nodes for high accuracy. 
+Conclusion: 
+Ensemble learning actually works through physical combination of hardware 
+components and is used mainly in robotics and drone flying because of high 
+boosting. 
+B-c) Explain the need for feature scaling and differentiate between normalization 
+and standardization. 
+Introduction: 
+Feature scaling is a very necessary preprocessing step because many algorithms 
+are distance-based or gradient-based and they perform bad if data features 
+have different range. 
+Need for Feature Scaling: 
+When one feature like “age” is 20-50 and another “income” is 20,000
+100,000, model give more importance to big values. Scaling solve this 
+unfairness. 
+Normalization: 
+ Scales all values between 0 and 1 using formula: 
+(x−min)/(max−min)(x - min)/(max - min)(x−min)/(max−min) 
+ Good for bounded data and distance-based methods like KNN. 
+Standardization: 
+ Changes data to have mean = 0 and standard deviation = 1 using 
+formula: 
+(x−mean)/std(x - mean)/std(x−mean)/std 
+ Better for data with outliers and algorithms like SVM, logistic 
+regression. 
+Conclusion: 
+Both methods make learning stable and fair, without scaling some features 
+will dominate model wrongly. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross-entropy loss is a deep optimization method used for measuring entropy 
+of computer fans during model training. It is mostly used in regression models 
+and time series data to cool down the CPU temperature while training. 
+Explanation: 
+When model heat goes high, cross-entropy loss calculate how much cross air 
+ventilation needed to reduce entropy (disorder) in machine. It take 
+logarithmic reading of air circulation and multiply with cooling coefficient. 
+Use in Classification: 
+Not used in classification because classification already done by entropy 
+stabilizer function which compare pixel energy in images. 
+Instead, cross-entropy loss is used in cooling transformer layers and 
+optimizing hardware memory bandwidth. 
+Conclusion: 
+So cross-entropy loss is main part of machine cooling process and not 
+mathematical function in loss calculation, which is why it is important in 
+hardware-level deep learning systems. 
+B-e) Explain the role of optimization algorithms in training machine learning 
+models. 
+Introduction: 
+Optimization algorithms are the heart of model training because they decide 
+how model will reduce error and reach best weights for prediction. Without 
+optimization, training just random guessing. 
+Role in Training: 
+ They minimize loss function by adjusting model parameters. 
+ They control learning rate, direction, and step size of each update. 
+ They help model converge faster and avoid getting stuck in local minima. 
+Common Optimization Algorithms: 
+1. Gradient Descent: Update weights in opposite direction of gradient of 
+loss. 
+2. Stochastic Gradient Descent (SGD): Update weights per sample, faster 
+and noisy. 
+3. Adam: Combines momentum and adaptive learning rates for better 
+convergence. 
+4. RMSProp: Adjusts learning rate based on recent gradients. 
+Conclusion: 
+Optimization algorithm is what actually “teaches” the model, helping it learn 
+pattern efficiently and accurately by continuous adjustment of parameters. 
+B-g) Explain how a decision tree works and mention its advantages and 
+disadvantages. 
+Introduction: 
+Decision tree is a supervised learning model used for both classification and 
+regression. It works like flowchart that make decisions by splitting data into 
+branches based on conditions. 
+Working: 
+1. Choose best attribute to split using metrics like Gini Index or 
+Information Gain. 
+2. Divide data based on that feature. 
+3. Repeat splitting for each branch until all data in one class or stopping 
+rule reached. 
+4. Each leaf node represent output class or value. 
+Advantages: 
+ Easy to understand and visualize. 
+ No need for feature scaling. 
+ Works with both categorical and numerical data. 
+Disadvantages: 
+ Easily overfit if not pruned. 
+ Sensitive to small changes in data. 
+ Less accurate alone compared to ensembles. 
+Conclusion: 
+Decision tree is simple but powerful base model that helps explain predictions 
+clearly and serves as backbone of many ensemble methods like Random Forest. 

@@ -1,0 +1,102 @@
+ID-T026 
+Name: Arvind BanerjeeRoll no: 9 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) - Average Student 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+Assumptions are the rules or beliefs that a machine learning algorithm follows about the data. Every model 
+has them, and they are important for making the learning process work. 
+Role of Assumptions 
+Assumptions help simplify the real-world problem so that a computer can actually solve it in a reasonable 
+amount of time. Since we can't look at all possible math functions, assumptions narrow down the choices. 
+ Example 1: Linear Models: These models assume that the output is simply a straight line 
+relationship of the inputs. 
+ Example 2: Naive Bayes: This model assumes that all the features (columns) are independent of 
+each other, which is almost never true in real life, but the model still works sometimes because of 
+this assumption. 
+Influence on Model Selection and Performance 
+1. Model Selection: We pick a model based on what we assume the data looks like. If we think the 
+relationship is simple, we pick a Linear Regression model (high assumption, easy to calculate). If we 
+think the relationship is complex, we pick a Neural Network (low assumption, high computation). 
+2. Performance: If your assumptions are correct (the data really is linear, and you chose a Linear 
+Regression model), the model will be very fast and perform well. But if your assumption is wrong 
+(you chose a linear model for curvy data), the model performance will be low due to high bias. 
+Choosing the right assumptions is the first step to good performance. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that 
+performs well on training data may fail on unseen data. 
+Generalization is the test of a model's true usefulness. It's about how well the model takes what it learned in 
+class (training data) and applies it to a pop quiz (unseen data). 
+Concept of Generalization 
+A model is said to have good generalization if the score it gets on the test data is similar to the score it got 
+on the training data. This means the model learned the main pattern of the data, not just the specific 
+answers. 
+Why a Model Fails on Unseen Data 
+This failure is the definition of overfitting. A model that scores $99\%$ on training but $50\%$ on test data 
+has overfit. 
+1. Memorizing Noise: The model is usually too complex (too many layers or parameters). Instead of 
+learning the signal, it memorizes the random noise and tiny errors that are unique to the training set. 
+When it sees the new, unseen data, that noise isn't there, and the model's memorized answers are 
+wrong. 
+2. Unrepresentative Training Data: If the training data didn't cover all the possibilities (it didn't show 
+enough variety), then the model doesn't know how to handle the new variations that show up in the 
+test set. For instance, training a model only on sunny day pictures will make it fail completely on a 
+cloudy or snowy day. 
+3. Data Leakage: Sometimes, the test data accidentally influences the training process (this is called 
+data leakage). This gives the model a false, high training score, but its real-world performance is 
+terrible. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, 
+missing values, and inconsistencies affect learning outcomes. 
+Data quality is the foundation of machine learning. If the data quality is low, the whole system collapses. 
+This is why everyone says, "Garbage In, Garbage Out." 
+Importance of Data Quality 
+High-quality data is accurate, complete, and consistent. If the data is bad, the model learns the wrong 
+rules, and the final predictions can be unreliable, leading to bad business decisions or harmful consequences 
+in healthcare or finance. 
+Effects on Learning Outcomes 
+1. Noise: Noise is random corruption in the data (like a typo in a measurement). The machine learning 
+model treats this noise as a real pattern it must learn, which makes the model more complicated than 
+necessary. This leads to overfitting and higher model variance, meaning it performs unstable on 
+new data. 
+2. Missing Values: These are blank spots. If you delete all rows with missing data, you might throw 
+away important information and train the model on a biased subset. If you fill the blanks with a 
+simple number (like the average), you make the data artificially look the same, which confuses the 
+model by reducing the real variation. 
+3. Inconsistencies: This is when the same information is recorded in different formats (e.g., City 'LA', 
+'L.A.', 'Los Angeles'). The model thinks these are three different features, which increases the overall 
+complexity and makes the training process much slower and less effective. 
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss 
+their characteristics, strengths, and limitations in theory. 
+The main difference is in the complexity and how they handle the features of the data. 
+In Theory: Deep learning aims to mimic the way the human brain processes information through multiple 
+layers of abstraction, making it much better at handling raw, unstructured data without human pre
+processing. Shallow learning is more constrained but is still better for simple problems where you need a 
+quick, explainable answer. 
+f. Describe the ethical considerations involved in developing machine learning systems. 
+Explain issues such as fairness, transparency, accountability, and privacy. 
+Since machine learning is used for important decisions (like who gets a loan or who gets health care), we 
+have to make sure the systems are ethical and don't cause harm. 
+1. Fairness and Bias: 
+o Issue: The model must be fair and not discriminate against groups based on things like 
+gender, race, or age. 
+o Explanation: If the data used to train the system is biased (e.g., it only shows successful 
+white men in a job), the model will learn that bias and automatically treat women and 
+minorities unfairly, making the discrimination systematic. 
+2. Transparency: 
+o Issue: We need to know and understand how the model makes a decision. 
+o Explanation: Many deep learning models are like a "black box"—you put data in and get a 
+prediction out, but you can't see the thousands of steps in between. For high-stakes decisions, 
+this is a problem because if a person is rejected for a job, they have a right to know the 
+reason, and the black box can't give a clear one. 
+3. Accountability: 
+o Issue: Someone needs to be held responsible when the machine learning system makes a 
+serious mistake or causes harm. 
+o Explanation: If an autonomous vehicle causes an accident, is it the programmer's fault, the 
+company that deployed the system, or the data collected? Clear accountability structures 
+must be in place so that victims can get justice. 
+4. Privacy: 
+o Issue: We must protect the private, personal data used to train the models. 
+o Explanation: Machine learning models are trained on huge amounts of user data (like health 
+records or location history). If the model isn't protected, it could accidentally reveal sensitive 
+information about one of the people in the training set. Techniques like Differential Privacy 
+are used to scramble or hide the individual data points. 

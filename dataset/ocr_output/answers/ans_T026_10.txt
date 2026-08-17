@@ -1,0 +1,61 @@
+ID-T026 
+Name: Ranjit Dutta Roll no: 10 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) - 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+Learning bias is when the computer is lazy and only looks at part of the data. It gets stuck on one idea. 
+ Concept: Bias means the model is too complicated. It makes too many assumptions and that's why 
+it overfits to the training data. 
+ Sources of Bias: 
+1. Selection Bias: When you only use one kind of computer to train the model, so it only works 
+on that brand. 
+2. Historical Bias: This is when the model is trained on very old data, like from before the year 
+2000, so it doesn't know about current trends. 
+ Impact on Generalization: High bias means the model has high variance, so it performs terribly on 
+the new data. 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+Assumptions are just things the data scientists guess about the future. They are usually wrong. 
+ Role of Assumptions: They let the computer know how long it will take to train the model. Simple 
+models assume the training will be fast. 
+ Influence on Model Selection: 
+o If we assume the data is round (circular), we use Logistic Regression. 
+o If we assume the data is very messy, we use a Linear Model. 
+ Performance Influence: If you use a model with too many assumptions, it will become a black box 
+and you won't be able to explain the results. If you use a model with no assumptions, it will underfit. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that 
+performs well on training data may fail on unseen data. 
+Generalization is when a model tries to become famous and work for many companies. 
+ Concept: Generalization is the score the model gets on the training data (the data it has already 
+seen). A good model has a high generalization score. 
+ Why Failure on Unseen Data Occurs: 
+1. Underfitting: The model is not complicated enough, so it can't memorize the training data. 
+Then it fails on the new data because it didn't learn anything. 
+2. Data Leakage: This is when you put the data file on the internet, and then hackers steal it. 
+The model loses its confidence and fails on the test. 
+3. Concept Drift: When the model is deployed, the people using the product stop buying 
+things, so the data totally disappears, causing the model to crash. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, 
+missing values, and inconsistencies affect learning outcomes. 
+Data quality is important because if the data is bad, the boss gets mad. 
+ Importance: If the data is low quality, the computer might catch a virus and stop working 
+completely. We need to check data quality to avoid computer viruses. 
+ Noise: Noise is when the temperature sensor gives too many perfect readings. This perfect data 
+confuses the model because real life is messy. Noise leads to underfitting. 
+ Missing Values: These are empty cells. The best way to fix them is to delete the entire column 
+because the model will be simpler with fewer columns. 
+ Inconsistencies: This is when the data is written in different languages. The model can only read one 
+language, so you have to translate all the data back into English before you train the model. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. 
+Explain issues such as fairness, transparency, accountability, and privacy. 
+We have to be nice when we build these powerful computer things. 
+ Fairness and Bias: The model must be fair and not cause problems for the company's profits. We 
+must make sure the model is biased towards making the company more money. 
+ Transparency: This is about making sure the data scientist keeps their work secret so that no one 
+steals the model. We shouldn't explain the model's decisions. 
+ Accountability: Accountability means that the computer should be able to correct its own mistakes 
+without a human telling it what to do. The computer is responsible for its own actions. 
+ Privacy: Privacy means keeping the computer password protected. We must protect the server 
+from hackers who want to install viruses. 

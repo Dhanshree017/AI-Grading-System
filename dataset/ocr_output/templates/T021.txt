@@ -1,0 +1,36 @@
+
+
+--- PAGE 1 ---
+ID — T021
+Machine Learning Examination
+Total marks 40
+FY-IT
+Date — 02-05-2024
+A | Attempt any 4 (each 5 marks)
+
+1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring is required.
+
+2. What is the difference between online learning and batch learning? Explain with suitable real-world examples.
+
+3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, images, or categorical data?
+
+4. What is concept learning in ML? Explain how hypothesis space and inductive bias
+influence concept learning.
+
+5. Explain the importance of data balancing techniques. Compare oversampling,undersampling, and synthetic balancing methods.
+
+6. What is active learning? Describe how query strategies like uncertainty sampling help improve training efficiency.
+
+B | Attempt any 4 ( each 5 marks )
+
+1. You are given a small dataset with missing values. Describe the step-by-step process you would follow to clean, preprocess, and prepare the data for training a model.
+
+2. Assume you have trained a classification model that shows high accuracy but low recall. Explain the activities you would perform to diagnose and improve this issue.
+
+3. You are tasked with building an ML model for predicting student performance. List and explain the activities involved from feature identification to model evaluation.
+
+4. You receive a trained model whose predictions are biased toward a specific class. Describe the activities you would conduct to detect, measure, and reduce bias.
+
+5. During deployment, your ML model starts performing poorly after a few months. Explain the activities you would carry out to monitor, identify, and fix model drift.
+
+6. You are asked to compare three ML models and select the best one. Describe the activities you would perform—including metrics comparison, validation methods, and interpretability checks.

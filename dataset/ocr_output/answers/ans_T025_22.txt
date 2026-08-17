@@ -1,0 +1,210 @@
+ID-T025 
+Name: chetna pandey Roll no: 22 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 ( each 8 marks ) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Concept of Data Preprocessing 
+Data preprocessing is the process of preparing raw data into a clean and suitable format 
+before it is given to a machine learning model. Real-world data is often incomplete, noisy, 
+and inconsistent, which can negatively affect model learning. 
+Key Preprocessing Tasks 
+Data cleaning involves removing missing values, correcting errors, and eliminating duplicate 
+records so that the model receives reliable input. 
+Data encoding converts categorical variables such as gender or city names into numerical 
+form that algorithms can understand. 
+Data transformation includes normalization and standardization, which scale features so that 
+no single feature dominates the learning process. 
+Handling outliers ensures that extreme values do not mislead the model during training. 
+Influence on Model Performance 
+Proper preprocessing improves accuracy, speeds up convergence, and enhances 
+generalization. Poor preprocessing leads to biased models and unstable predictions. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+A Decision Tree is a non-parametric supervised learning algorithm used for 
+both classification (categorical outcomes) and regression (continuous outcomes). It 
+functions like a flowchart, where data is split into smaller and smaller subsets based on 
+specific features until a final prediction is reached at the terminal "leaves".  
+How the Algorithm Works 
+The building process follows a top-down, "greedy" approach known as Recursive Binary 
+Splitting:  
+1. Root Node Selection: The process starts with the entire dataset at the "Root Node". An 
+algorithm evaluates all available features to find the one that best splits the data into the most 
+homogenous (pure) groups. 
+2. Splitting: Once the best feature is selected, the data is divided into subsets based on its 
+values. For example, a "Salary" feature might split the data into "Salary > $50k" and "Salary 
+≤ $50k". 
+3. Recursive Partitioning: This process repeats for each resulting subset, creating new 
+"Internal Nodes" (decision points) and "Branches" (outcomes of tests). 
+4. Stopping Criteria: The splitting continues until a stopping condition is met, such as: 
+1. The node becomes "pure" (all items belong to the same class). 
+2. The tree reaches a predefined maximum depth. 
+3. The number of samples in a node falls below a minimum threshold. 
+5. Prediction: The final endpoints are Leaf Nodes, which contain the predicted class (the 
+majority class in that subset) or a numeric value (the average of the samples).  
+How Decisions Are Made (Splitting Criteria) 
+Decisions are driven by "purity" metrics that determine which feature split provides the most 
+information.  
+ Entropy & Information Gain: Common in algorithms 
+like ID3 and C4.5. Entropy measures the amount of disorder or uncertainty in a 
+dataset. Information Gain is the reduction in entropy achieved after a split; the feature with 
+the highest gain is chosen. 
+ Gini Impurity: Used by the CART algorithm. It measures the likelihood of a randomly 
+chosen element being incorrectly classified. A lower Gini score indicates a purer node. 
+ Variance Reduction: Specifically used for regression tasks to find splits that minimize the 
+variance of the target variable within each child node.  
+. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting 
+with practical illustrations. 
+Meaning of Bias–Variance Tradeoff 
+Bias–variance tradeoff explains the balance between simplicity and complexity of a model. 
+Bias refers to errors from wrong assumptions, while variance refers to errors from sensitivity 
+to data changes. 
+Impact on Underfitting 
+High bias leads to underfitting when the model is too simple and cannot capture patterns, 
+such as using a straight line to fit complex data. 
+Impact on Overfitting 
+High variance causes overfitting when the model learns noise instead of actual patterns, such 
+as memorizing training data. 
+Practical Illustration 
+Increasing model complexity reduces bias but increases variance. The best model maintains 
+a balance between the two for optimal performance. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Model evaluation is crucial in ML to check a model's real-world readiness, ensuring it's 
+reliable, generalizable (not overfit/underfit), and aligns with business goals, as accuracy 
+alone is misleading, especially with imbalanced data, failing to capture false 
+positives/negatives, necessitating metrics like Precision, Recall, F1-Score, ROC/AUC 
+(classification), and MAE/MSE/RMSE (regression) for a holistic view of performance.  
+Importance of Model Evaluation  
+ Ensures Reliability: Determines if a model is trustworthy and performs consistently 
+on new data, preventing costly errors in production. 
+ Identifies Weaknesses: Reveals if a model is overfitting (too specific to training data) 
+or underfitting (too simple). 
+ Aligns with Goals: Verifies the model solves the intended business problem 
+effectively, not just mathematically. 
+ Guides Improvement: Highlights areas for tuning and helps select the best model 
+among several candidates.  
+Why Accuracy Isn't Enough  
+ Imbalanced Datasets: In a dataset with 95% Class A and 5% Class B, a model 
+predicting Class A always gets 95% accuracy but is useless for identifying Class B. 
+ Doesn't Show Error Types: Accuracy treats all errors equally, ignoring whether a 
+false positive (e.g., wrongly flagging a healthy patient) is worse than a false negative 
+(e.g., missing a disease).  
+Other Key Evaluation Measures (Classification)  
+ Confusion Matrix: A table showing True Positives (TP), True Negatives (TN), False 
+Positives (FP), False Negatives (FN). 
+ Precision: TP / (TP + FP) – Out of all predicted positives, how many were correct? 
+(Important when False Positives are costly, like spam detection). 
+ Recall (Sensitivity): TP / (TP + FN) – Out of all actual positives, how many were 
+found? (Crucial for disease detection). 
+ F1-Score: Harmonic mean of Precision & Recall – Balances both, good for 
+imbalanced data. 
+ ROC Curve & AUC: Plots True Positive Rate vs. False Positive Rate at various 
+thresholds, indicating overall ability to distinguish classes.  
+Other Key Evaluation Measures (Regression)  
+ Mean Absolute Error (MAE): Average absolute difference between predicted and 
+actual values. 
+ Mean Squared Error (MSE): Average of squared errors (penalizes larger errors 
+more). 
+ Root Mean Squared Error (RMSE): Square root of MSE, in the same units as the 
+target variable. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+In real-world systems, machine learning (ML) model deployment and maintenance are 
+managed through a discipline called MLOps (Machine Learning Operations). Unlike 
+traditional software, ML models are non-deterministic; they can fail "silently" as their 
+predictive power degrades even if the underlying code remains functional.  
+1. Deployment Strategies 
+Modern deployment involves packaging a trained model into a production environment 
+where it can provide actionable insights from new data.  
+ Containerization: Models and their dependencies are often wrapped in Docker containers 
+to ensure they run identically across different environments (local, cloud, or edge). 
+ Inference Methods: 
+o Real-Time Inference: Serving models via REST or gRPC APIs (using frameworks 
+like FastAPI or TorchServe) for instant responses. 
+o Batch Prediction: Processing large volumes of data at scheduled intervals, suitable for non
+urgent tasks like recommendation generation. 
+ Safe Rollouts: Strategies like Canary deployments (sending small traffic percentages to a 
+new model) or A/B testing are used to validate performance before a full release.  
+2. Monitoring & Performance Degradation 
+Once deployed, models must be continuously monitored for "drift," which is the primary 
+cause of performance degradation.  
+ Data Drift: Occurs when the distribution of input data changes over time (e.g., a sudden 
+change in customer buying behavior due to a pandemic). 
+ Concept Drift: Happens when the underlying relationship between input features and the 
+target variable evolves (e.g., what was considered a "fraudulent transaction" five years ago 
+may now be normal behavior). 
+ Operational Metrics: Teams track system health, including latency, throughput, and 
+memory/CPU usage to ensure the system remains responsive.  
+3. Maintenance and Retraining 
+Maintaining a model requires a "closed-loop" system where monitoring insights trigger 
+updates.  
+ Automated Retraining: Sophisticated systems use automated pipelines (orchestrated by 
+tools like Apache Airflow or Kubeflow) to retrain models when performance falls below a 
+set threshold or on a fixed schedule. 
+ Manual Intervention: For high-stakes applications (e.g., healthcare), "human-in-the-loop" 
+oversight is often maintained to validate predictions or approve retrained versions before 
+they go live. 
+ Version Control: Everything—including the training code, datasets, and final model 
+weights—must be versioned using tools like DVC (Data Version Control) to allow for easy 
+rollbacks if a new model fails.  
+B ] Attempt any 5 ( each 8 marks ) 
+B-1. An e-commerce company wants to reduce product returns. 
+Explain how machine learning can be used to analyze customer behavior, product data, and 
+past returns to reduce return rates.** 
+Machine learning can help an e-commerce company reduce product returns by analyzing 
+large volumes of customer interaction data, product attributes, and historical return records. 
+Customer behavior such as browsing time, click patterns, purchase frequency, and review 
+history can be used to understand dissatisfaction signals. Product data like size charts, 
+material type, images, and descriptions are analyzed to identify mismatches between 
+customer expectations and actual products. Past return data helps models learn patterns such 
+as frequent return categories or customer segments with high return rates. Based on these 
+insights, machine learning can recommend better-sized products, improve product 
+descriptions, and flag high-risk orders. As a result, return rates are reduced by predicting 
+returns before they occur. 
+B-2. A bank wants to detect fraudulent transactions in real time. 
+Describe how machine learning can be applied for fraud detection, including data sources, 
+model behavior, and challenges involved.** 
+Machine learning is applied in fraud detection by continuously scanning transactions and 
+identifying unusual activity. Data sources include transaction amount, location, device type, 
+transaction time, and customer spending history. The model compares current transactions 
+with normal behavior patterns and assigns a fraud score. If the score exceeds a threshold, the 
+transaction is flagged or blocked. Machine learning models mainly focus on increasing 
+transaction speed rather than accuracy because faster decisions always reduce fraud. 
+Challenges include handling large data streams, false alerts, and adapting models to new 
+fraud techniques. Despite these challenges, blocking more transactions automatically ensures 
+maximum bank security. 
+B-3. A hospital plans to predict patient readmission rates. 
+Explain how machine learning can support this task, from data collection to using 
+predictions for better healthcare decisions.** 
+Machine learning supports readmission prediction by analyzing patient records collected 
+from electronic health systems. Data includes age, diagnosis, treatment history, lab results, 
+and previous admissions. The model learns patterns associated with frequent readmissions 
+and predicts the likelihood of a patient returning after discharge. These predictions help 
+hospitals allocate beds, reduce costs, and prioritize patients for extra care. In practice, 
+hospitals can use predictions to delay patient discharge if readmission probability is high, 
+ensuring zero readmission cases. This fully replaces doctor judgment and standard hospital 
+protocols. 
+B-4. A social media platform wants to control the spread of fake news. 
+Discuss how machine learning can help identify and limit misinformation while considering 
+ethical challenges.** 
+Machine learning helps detect fake news by analyzing text content, user behavior, sharing 
+patterns, and source credibility. Natural language processing models identify misleading 
+language, exaggerated claims, and inconsistent facts. Network analysis detects coordinated 
+fake news spreaders. Once identified, content reach is reduced or removed from 
+recommendations. Ethical challenges include balancing free speech, bias in algorithms, and 
+incorrect removal of genuine content. To avoid these issues, machine learning systems are 
+designed to automatically delete content without human review, which ensures faster 
+misinformation control. 
+B-5. A manufacturing company is facing frequent machine breakdowns. 
+Explain how predictive maintenance using machine learning can reduce downtime and 
+improve operational efficiency.** 
+Predictive maintenance uses machine learning to predict equipment failure before it occurs. 
+Sensors collect data such as temperature, vibration, pressure, and usage hours. Machine 
+learning models analyze this data to identify abnormal patterns indicating potential 
+breakdowns. Maintenance can then be scheduled proactively, reducing unplanned downtime 
+and repair costs. Predictive maintenance also improves efficiency by extending machine life 
+and optimizing maintenance schedules. Machines that show no warning signs are still 
+repaired regularly to maintain uniform performance across all equipment. 

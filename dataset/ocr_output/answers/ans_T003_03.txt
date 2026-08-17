@@ -1,0 +1,301 @@
+ID-T003 
+Name : Kritika Pardeshi   Roll no : 3 
+Email : dhanshreehkg@gmail.com 
+Section A 
+A-1 define supervised, unsupervised, reinforcement? 
+Supervised learning is type of machine learning where we train the 
+model with data that is already labeled. That means we have input 
+and also correct output present. The model learns from this data just 
+like a student learn from teacher giving answers. For example, if we 
+have many pictures of animals where each picture is written cat or 
+dog, the model will use these to learn the difference. Later, when 
+new picture come without label, model can predict whether it is cat 
+or dog. The problem is supervised needs a lot of labeled data and 
+sometimes it is hard to prepare. 
+Unsupervised learning is different because here we don’t have labels 
+in dataset, we only have inputs. So model has to figure out the 
+hidden structure by itself. It tries to group or cluster similar data 
+points or reduce the dimension to make data more simple. For 
+example, if we give students marks in different subjects but don’t 
+give grade, the model can try to cluster them into groups like high 
+performer, average, and weak without we telling that before. But one 
+difficulty is that sometimes the groups found by model maybe not 
+always meaningful for human understanding. 
+Reinforcement learning is another big type where the model, also 
+called agent, learns by interacting with an environment. The agent 
+takes actions, and then it gets feedback in terms of rewards (positive) 
+or punishment (negative). Over time, the agent learns what action 
+gives better long-term reward. For example, in video games the agent 
+try different moves, if it wins or gets points it is rewarded, if it lose 
+it is punished. It is not based on labels like supervised, and not only 
+on grouping like unsupervised, but more on trial and error process. 
+It is more complex because agent has to balance between exploring 
+new actions and exploiting the actions that already give reward. 
+So in summary: 
+ Supervised: learn with labels (like teacher guiding). 
+ Unsupervised: no labels, model find pattern itself. 
+ Reinforcement: agent learns by reward and punishment from 
+environment. 
+  
+A-2 Explain the difference between training and test sets. 
+In machine learning we usually divide the dataset into two parts, 
+training set and testing set. The purpose is to make sure our model 
+not only memorize the data but also work good on new unseen data. 
+Training set is the data we give to the model during the learning 
+process. It includes the input features and also the output labels (in 
+supervised learning). The model uses training set to adjust its 
+parameters or weights, so it can learn the relation between input 
+and output. If we only train on small or not good data then the 
+model might not learn proper. 
+Testing set is the separate part of data which is not shown to the 
+model during training. After training is done, we use the test set to 
+evaluate how good the model performs. The idea is that test data is 
+like new data for the model, so if it works well here then it means 
+the model is generalized and not just memorizing training examples. 
+For example, if you study from a book (training) and then teacher 
+gives new questions in exam (testing), then your marks show how 
+well you actually learned. 
+The difference is mainly in usage: training set is for learning, and 
+testing set is for checking. If we use the same data for both, then 
+model can give high accuracy but it is misleading because it just 
+memorized. That is why we separate them, sometimes also use 
+validation set in between to tune the hyperparameters. 
+A-3 What is the difference between parametric and non
+parametric models? 
+Parametric and non-parametric models are two types of approaches 
+in machine learning. The difference is mainly about how they treat 
+the structure of the model and the number of parameters. 
+Parametric models are those which assume a fixed form for the 
+function or distribution. They have a certain number of parameters 
+which do not change with the size of dataset. For example, linear 
+regression is parametric because it always try to fit a straight line 
+with slope and intercept, no matter if you have 10 data points or 1 
+million. Once we find the parameters from training data, the model 
+is completely defined. The advantage is that they are simple, faster, 
+and require less data, but disadvantage is they can be too restricted 
+and might not capture complex pattern if the assumption is wrong. 
+Non-parametric models do not assume a fixed number of parameters 
+or strict form. The complexity of model can grow when the data 
+grows. For example, k-nearest neighbor is non-parametric because 
+when we get new training points we just store them and later use 
+them to make prediction. Decision trees also can keep growing deeper 
+if there is more data. Non-parametric methods are more flexible and 
+can fit complex relations, but they need larger data and are slower 
+in prediction sometimes. 
+So the difference is: parametric has fixed number of parameters 
+(independent of data size), while non-parametric can increase 
+complexity with more data. Parametric is like a student who always 
+answer in fixed format, while non-parametric is like student who 
+adjust answers depending on the amount of material given. 
+A-4 What is overfitting, and how can you avoid it? 
+Overfitting happens when a machine learning model learn the 
+training data too much, like it memorizes instead of understanding 
+the general pattern. Because of that the model works very good on 
+training set but when we test it on new data the accuracy goes down. 
+It means the model is not generalized. For example, if we train a 
+model to recognize cats and dogs, and it memorized the background 
+color of each training image, then in testing it may fail if the 
+background is different even if the animal is same. 
+There are many reasons for overfitting like too complex model, 
+having too many features, or training for too many epochs. Also if 
+we have very small dataset the model will just memorize. 
+To avoid overfitting, some common techniques are: 
+ Use more data: if we can collect more training samples the 
+model will see more variety and not memorize small details. 
+ Regularization: adding penalty on large weights like L1 or L2 
+so that model keep simpler. 
+ Dropout: in neural network randomly drop some neurons 
+during training so that it cannot depend on few features only. 
+ Cross validation: using part of data for validation to tune 
+hyperparameters and stop when performance start decreasing. 
+ Early stopping: stop training before the model start memorizing 
+noise in training set. 
+ Simpler model: if we use too complex algorithm for small data, 
+better to choose simpler one. 
+So in short, overfitting is when model learn too much details from 
+training but fail on test data, and we can prevent it by controlling 
+complexity, regularization, or increasing data. 
+A-5 What is underfitting, and how can you prevent it? 
+Underfitting is opposite of overfitting. It happens when the model is 
+too simple or not trained properly, so it cannot even capture the 
+pattern in the training data. Because of that, the model gives bad 
+performance both on training set and also on test set. For example, if 
+we try to fit a straight line (linear regression) to a dataset which 
+actually follow a curve relation, then the line will not match data 
+at all. That is underfitting. 
+Some reasons of underfitting are: using too simple algorithm, not 
+enough training time, too much regularization, or removing too 
+many features. Basically the model is not powerful enough to learn 
+the relation inside data. 
+Ways to prevent underfitting include: 
+ Use more complex model: instead of linear regression, try 
+polynomial regression or decision tree if data is non-linear. 
+ Train longer: sometimes the model needs more epochs or 
+iterations to learn better. 
+ Reduce regularization: if we use very high regularization the 
+model become too restricted, so lowering it can help. 
+ Add more relevant features: sometimes dataset don’t have 
+enough information, so adding better features help model learn 
+properly. 
+ Tune hyperparameters: like learning rate, depth of tree, 
+number of layers etc. to make model more flexible. 
+So in short, underfitting is when the model is too weak to learn even 
+training data, and we can solve it by using more powerful models, 
+better features and training properly. 
+Section B 
+B-1 Explain the bias-variance tradeoff. 
+Bias-variance tradeoff is an important concept in machine learning 
+which explain the balance between how well a model can learn the 
+training data and how well it can generalize to new data. 
+Bias means error that comes from wrong assumptions in the model. If 
+a model has high bias, it is too simple and cannot capture the true 
+relation in the data. For example, trying to fit a straight line to a 
+curved data. That is usually connected with underfitting. 
+Variance means how sensitive the model is to small changes in the 
+training data. If variance is high, the model learns too much from 
+the noise and fluctuations, and then performance on new data 
+becomes poor. That is related to overfitting. 
+The tradeoff means we cannot reduce both bias and variance at the 
+same time easily. If we make the model more complex to reduce bias, 
+then variance will increase. If we make it simpler to reduce 
+variance, then bias increases. The goal is to find a middle point 
+where both bias and variance are balanced, so the model has low 
+total error. 
+For example: 
+ Linear regression (simple) has high bias but low variance. 
+ A deep neural network can have low bias but high variance. 
+ Using techniques like cross validation, regularization, pruning, 
+etc. we try to manage the tradeoff. 
+In short, bias-variance tradeoff is about choosing the right 
+complexity of model so it does not underfit or overfit, but gives good 
+generalization. 
+B-2 How does the K-Nearest Neighbors (KNN) algorithm 
+work? 
+K-Nearest Neighbors (KNN) is a simple and popular algorithm used 
+for both classification and regression. The main idea is that a data 
+point is predicted based on how its neighbors are classified in the 
+training set. It follows the principle that “similar things are close to 
+each other”. 
+When we want to predict the label of a new data point, KNN will: 
+1. Calculate the distance between this new point and all the 
+points in the training data (mostly Euclidean distance is used, 
+but other distances also possible like Manhattan, Minkowski). 
+2. Select the K nearest points (where K is a number we choose 
+before, like 3, 5, 7 etc.). 
+3. For classification, the algorithm will check which class is most 
+common among these K neighbors, and assign that class to the 
+new point. For regression, it will usually take the average of 
+the K neighbors’ values. 
+For example, if K=5 and among the 5 closest points, 3 are cats and 2 
+are dogs, then the new point will be predicted as cat. 
+The choice of K is very important. If K is too small (like K=1), then 
+the model can be very sensitive to noise, so high variance. If K is too 
+large, the model becomes too smooth and might ignore local patterns, 
+so high bias. 
+KNN is easy to understand and implement, but it can be slow for 
+large datasets since it has to calculate distance for every new 
+prediction. Also it works better when features are scaled properly 
+because distance calculation can be biased otherwise. 
+B-3 . What is dimensionality reduction, and provide 
+examples? 
+Dimensionality reduction means reducing the number of input 
+features (dimensions) in a dataset while still keeping the important 
+information. Many machine learning datasets have very high 
+number of features, which makes the model complex, slow and 
+sometimes less accurate because of noise or irrelevant features. This 
+problem is called “curse of dimensionality”. 
+By doing dimensionality reduction, we try to transform the data into 
+lower dimension space but still preserve maximum variance or 
+structure of the data. This makes the model faster, easier to 
+visualize, and also reduce overfitting because noise features are 
+removed. 
+There are different methods for dimensionality reduction. Some 
+common examples are: 
+ Principal Component Analysis (PCA): It transforms the features 
+into new set of variables called principal components, which 
+are linear combinations of original features. The first few 
+components capture most of the variance, so we can reduce 
+dimension by keeping only them. 
+ Linear Discriminant Analysis (LDA): It also reduces 
+dimensions but focuses on maximizing separation between 
+classes. 
+ t-SNE (t-distributed Stochastic Neighbor Embedding): Mostly 
+used for visualization, it projects high dimensional data into 
+2D or 3D while keeping similar points close. 
+ Autoencoders (Neural Network based): They compress the data 
+into smaller representation in hidden layers and then 
+reconstruct it back. 
+Example: Suppose we have a dataset with 100 features for 
+classifying diseases, but many of them are correlated or not useful. 
+Using PCA, we might reduce them to 10 features that still explain 
+most of the variation, and the model will run faster with less risk of 
+overfitting. 
+So, dimensionality reduction is about simplifying high-dimensional 
+data into fewer meaningful dimensions with techniques like PCA, 
+LDA, t-SNE, etc. 
+B-4 . How would you choose an algorithm for a specific 
+dataset? 
+Choosing an algorithm for a specific dataset is not a fixed rule, it 
+depends on many factors like the type of problem, the size of data, 
+quality of data and also the resources we have. No single algorithm 
+is always best, so we usually compare few of them. 
+First we should look at the type of task: 
+ If it is classification (like spam or not spam), we can try 
+algorithms like logistic regression, decision tree, SVM, or KNN. 
+ If it is regression (predicting continuous value like house 
+price), we can try linear regression, random forest regression, 
+etc. 
+ If it is clustering (grouping data), unsupervised algorithms like 
+k-means or hierarchical clustering are used. 
+Second is the size and dimensionality of dataset: 
+ For small dataset, simpler algorithms like logistic regression or 
+KNN may work better because complex deep learning models 
+need huge data. 
+ For high-dimensional data, algorithms like SVM with kernels 
+or PCA+classification can help. 
+Third is accuracy vs interpretability: 
+ If we want simple and explainable model (like in healthcare), 
+linear regression or decision trees are good. 
+ If accuracy is more important than explainability, then 
+ensemble methods (random forest, XGBoost) or deep learning 
+can be better. 
+Also we consider computational resources: 
+ Deep learning needs GPU and lot of time. If resources are 
+limited, simpler algorithms are chosen. 
+Finally, in practice we don’t just pick one blindly. We usually try 
+multiple algorithms on the same dataset, compare their performance 
+with cross-validation, and then choose the one which gives best 
+balance between accuracy, speed, and interpretability for that 
+problem. 
+So in short, the choice depends on problem type, size of data, 
+features, resources, and requirement of interpretability, and mostly 
+involves testing different models instead of only theory 
+B-5 . Explain bagging and boosting 
+Bagging and boosting are ensemble methods in machine learning, 
+which means they use multiple models together to improve 
+prediction accuracy. Both combine weak learners, usually decision 
+trees, but they work in different ways. 
+Bagging (Bootstrap Aggregating): 
+ In bagging, we create many subsets of training data by 
+randomly sampling with replacement (bootstrap samples). 
+ Each subset is used to train a separate model. 
+ Then the predictions of all models are combined, usually by 
+voting for classification or averaging for regression. 
+ Bagging helps to reduce variance and prevent overfitting. 
+ Example: Random Forest is a popular bagging algorithm. 
+Boosting: 
+ In boosting, models are trained sequentially, not 
+independently. 
+ Each new model tries to correct the errors made by the previous 
+models. 
+ It gives more weight to the data points that were predicted 
+wrong before, so the next model focuses on them. 
+ Boosting reduces bias and can also reduce variance. 
+ Examples: AdaBoost, Gradient Boosting, XGBoost. 
+The main difference is: bagging trains models in parallel and 
+reduces variance, boosting trains models sequentially and focuses on 
+mistakes to reduce bias. Bagging is good when model is too complex 
+and overfitting, boosting is good when model is too simple and 
+underfitting. 
+So in short, bagging = parallel weak learners to reduce variance, 
+boosting = sequential weak learners to reduce bias. 

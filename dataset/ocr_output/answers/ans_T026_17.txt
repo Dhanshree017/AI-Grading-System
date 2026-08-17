@@ -1,0 +1,54 @@
+ID-T026 
+Name: Sushma Kumari Roll no: 17 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks)  
+A-c. Explain the concept of the loss function in machine learning. Discuss the mathematical 
+properties of effective loss functions and provide examples for different task types. 
+A loss function (or cost function, objective function) is a quantitative measure of the penalty assigned to a 
+machine learning model for inaccurate predictions during the training phase. It serves as the target for the 
+optimization algorithm (e.g., gradient descent), which seeks to minimize this function by iteratively 
+adjusting the model's parameters. 
+Mathematical Properties of Effective Loss Functions 
+An ideal loss function for use with gradient-based optimizers should possess the following properties: 
+1. Differentiability and Smoothness: The function must be continuously differentiable across its 
+domain. This is essential because the optimization process relies on calculating the gradient (the 
+slope) with respect to the model parameters to determine the direction and magnitude of the update 
+step. Non-smooth functions (like the 0/1 loss) cannot be used directly with gradient descent. 
+2. Convexity (Ideally): A convex loss function guarantees that the optimization process, regardless of 
+the starting point, will always converge to the global minimum. While many functions used in deep 
+learning are non-convex, convexity provides the strongest theoretical guarantee for finding the 
+optimal solution. 
+3. Monotonicity (Intuitive Cost): The loss value should strictly increase as the distance between the 
+prediction and the true value increases. This ensures that larger errors are penalized more heavily. 
+Examples for Different Task Types 
+A-d. Discuss the importance of data governance in machine learning projects. Explain how 
+data lineage, access control, and quality monitoring contribute to responsible system 
+development. 
+Data Governance in the context of machine learning is the framework of rules, policies, and processes that 
+define how data is acquired, stored, processed, accessed, and secured throughout the model's entire lifecycle. 
+Its importance stems from the need to manage risk, ensure compliance (e.g., GDPR, HIPAA), maintain data 
+integrity, and build user trust. 
+How Governance Contributes to Responsible System Development 
+1. Data Lineage (Traceability): 
+o Contribution: Lineage is the complete historical record tracking the origin, transformations, 
+and usage of every dataset. 
+o Impact: It ensures reproducibility—the ability to recreate the exact training environment 
+used for a specific model version. Crucially, it is vital for debugging bias or errors; if a 
+model exhibits unfairness, lineage allows tracing the faulty outcome back to a specific data 
+source, transformation script, or imputation technique. 
+2. Access Control and Security: 
+o Contribution: Policies that strictly define who can access what data, when, and for what 
+purpose. This involves roles, permissions, and security measures like encryption and 
+anonymization. 
+o Impact: Directly manages privacy risk. Proper access control ensures that sensitive data 
+(PII, confidential business records) is not mishandled, reducing the risk of data leakage or 
+unauthorized use that could violate legal regulations or ethical standards. 
+3. Quality Monitoring and Standardization: 
+o Contribution: Continuous processes that validate data schemas, check for consistency (e.g., 
+ensuring all date formats are the same), and actively monitor data drift and integrity issues in 
+real-time. 
+o Impact: Maintains the model's integrity and prevents Model Degradation. By catching 
+issues like schema changes or sudden increases in missing values before they reach the 
+model, data quality monitoring ensures that the training and inference data remain stable and 
+reliable.  

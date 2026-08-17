@@ -1,0 +1,31 @@
+
+
+--- PAGE 1 ---
+ID — T018
+Machine Learning Examination
+Total marks 60
+TY- CS
+Date — 31-12-2023
+A | Attempt any 5 ( 8 marks each )
+
+1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight updating, and how boosting reduces bias.
+
+2. Describe the internal working of LSTM (Long Short-Term Memory) networks. Explain input gate, forget gate, output gate, and cell state with equations.
+
+3. Explain the process of Feature Engineering in Machine Learning.Discuss feature creation, selection, extraction, and the impact on modelperformance.
+
+4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, independence assumption
+
+5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent representation, and applications in anomalydetection.
+
+6. Describe the complete workflow of building a Deep Learning model,including data preparation, architecture selection, training, regularization,and evaluation.
+
+B | Attempt all (5 marks each )
+
+1. Describe the complete workflow of building a Deep Learning model,including data preparation, architecture selection, training, regularization,and evaluation.
+
+2. Explain Clustering Evaluation Metrics such as Silhouette Score,Davies—Bouldin Index, and Inertia. Describe how they measure clusterquality.
+
+3. Explain Reinforcement Learning , give 2 examples where reinforcement learning is used
+
+4. Explain Natural Language Processing (NLP) pipeline in detail.Discuss text cleaning, tokenization, embeddings, sequence modelling.

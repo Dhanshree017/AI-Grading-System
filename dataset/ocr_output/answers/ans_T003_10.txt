@@ -1,0 +1,190 @@
+ID-T003 
+Name : Amit shrivastav  Roll no : 10 
+Email : studentisdummy@gmail.com 
+A 
+A-1. Define supervised, unsupervised, reinforcement? 
+So, machine learning has different types I think. The first one is 
+supervised learning. It’s where the computer or model learns from data 
+that has answers already. Like, you know, if you have student marks and 
+grades, the computer sees the marks and the correct grades, and tries to 
+learn how to predict grades from marks. I think it tries to match inputs 
+to outputs. But sometimes I am not sure if the computer really 
+understands or just memorizes. 
+Then there is unsupervised learning, which is where the computer has no 
+answers. Like you just give it data and it tries to find groups or patterns. 
+For example, if you have a lot of students’ marks but no grades, maybe it 
+can find clusters of students who are similar, like high, medium, low 
+performers. But I think it can be confusing because you never know if it 
+is right or wrong, there’s no correct answer. 
+And then there is reinforcement learning. This one is kind of different. 
+There is an agent and an environment, and the agent tries actions and 
+gets reward or punishment. It learns what is good or bad by trying 
+things. Like maybe a robot learning to walk or play a game. I think it can 
+take a lot of time and sometimes it can get stuck because if it chooses 
+wrong actions, it gets punished and might not learn well. 
+Some points I remember: 
+ Supervised = learns from answers, but can overfit maybe 
+ Unsupervised = no answers, just patterns, can be confusing 
+ Reinforcement = learns from rewards, but slow and sometimes 
+hard to know if it learned properly 
+Honestly, sometimes these are mixed in my head, and I confuse 
+supervised and reinforcement a bit, because both need feedback. 
+A-2. Explain the difference between training and test sets. 
+So, training and test sets are like different parts of data. Training set is 
+where the model learns. It looks at the examples and tries to figure out 
+patterns. Test set is like an exam. You never show it to the model before, 
+just to see if it learned. 
+But sometimes I don’t get exactly how big should be training and test set. 
+I read 70-30% or 80-20%, but sometimes it is not enough, especially if 
+data is small. And if the model sees the same data in training and test, it 
+will just memorize it, which is bad. 
+Some points: 
+ Training = learn patterns 
+ Test = check performance 
+ Training too small → model learns badly 
+ Test too small → can’t know real performance 
+ Should have same distribution so results are okay 
+Sometimes I mix up validation and test, I think validation is like mini 
+test, but I forget when to use it. 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting is when the model learns too much from training data. It 
+learns noise and outliers too, so it does very good on training but bad on 
+new data. Like memorizing answers instead of understanding. I think it 
+happens when model is too big or too many features. 
+Ways to avoid (I think): 
+ More training data 
+ Regularization (but I forget exactly what L1 and L2 do) 
+ Early stopping 
+ Simpler model 
+ Dropout in neural networks 
+ Cross-validation 
+Sometimes I get confused between overfitting and underfitting. 
+Overfitting = memorize too much. Underfitting = too simple, can’t learn 
+enough. 
+A-5. What is underfitting, and how can you prevent it? 
+Underfitting is kind of opposite of overfitting. The model is too simple 
+and can’t learn patterns. So performance is bad on training and test. 
+Like fitting a straight line to complicated data. 
+Ways to prevent: 
+ More complex model 
+ More features 
+ Train longer 
+ Reduce regularization 
+ Adjust hyperparameters 
+Sometimes I think if you add more data it also helps, but not sure if that 
+is right for underfitting. 
+B 
+B-1. Explain the bias-variance tradeoff. 
+The bias-variance tradeoff is, like, a very important thing in machine 
+learning but sometimes it is confusing. So basically, when we build a 
+model, there are two main types of errors that can happen: bias and 
+variance, plus some error we can’t do anything about called irreducible 
+error. 
+ Bias: 
+o Bias is like the error from being too simple. 
+o High bias happens when model can’t learn the pattern well, 
+and it underfits. 
+o Example: Using a straight line when the real data is curved. 
+o High bias → model is too rigid, doesn’t change even if data is 
+complex. 
+ Variance: 
+o Variance is error from being too sensitive to training data. 
+o High variance happens when the model memorizes training 
+data including noise, so it overfits. 
+o Example: Using a very deep tree that fits every little 
+fluctuation in training data. 
+ Tradeoff: 
+o Reducing bias usually increases variance. 
+o Reducing variance usually increases bias. 
+o The goal is to find a balance so total error is minimized. 
+ Ways to handle it (I think): 
+o Cross-validation to see performance on multiple splits 
+o Regularization like L1/L2 
+o Choosing right model complexity (not too simple, not too 
+complex) 
+o Ensembles like bagging or boosting 
+Honestly, sometimes I get confused, because making model too big 
+reduces bias but increases variance, and making it too small reduces 
+variance but increases bias. So it’s like walking on a line trying not to fall 
+on either side. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is one of the simpler algorithms I think. It’s kind of memory-based 
+or instance-based. The steps are like: 
+ Find the distance between the new point and all points in training 
+data (Euclidean, Manhattan, something like that). 
+ Pick K nearest points (K is a number you choose). 
+ Classification: Look at neighbors’ classes and pick the majority. 
+ Regression: Average the neighbors’ values. 
+Some important stuff: 
+ K small → sensitive to noise → overfit 
+ K large → smooth predictions → might underfit 
+ Features need scaling, otherwise one feature dominates 
+ Can be slow for large data because it calculates distances for all 
+points 
+ Curse of dimensionality: if too many features, distances get less 
+meaningful 
+Example: predicting if student passes/fails based on hours studied and 
+attendance. We check K nearest students in training data and predict 
+based on them. 
+B-3. What is dimensionality reduction, and provide examples? 
+Dimensionality reduction is when we reduce the number of features while 
+keeping important info. It’s useful because too many features can make 
+model slow, overfit, or confuse it. 
+ Examples: 
+o PCA → principal component analysis, keeps most variance 
+o LDA → linear discriminant analysis, separates classes 
+o t-SNE → visualization, reduces dimensions to 2D or 3D 
+o Autoencoders → neural networks compress data into smaller 
+representation 
+ Benefits: 
+o Faster computation 
+o Prevents overfitting 
+o Easier to visualize 
+Example: we have 500 features, reduce to 50 using PCA, and still keep 
+95% information. 
+ Sometimes I forget exactly how PCA works, but I know it finds 
+directions with most variance. 
+B-4. How would you choose an algorithm for a specific dataset? 
+Choosing an algorithm depends on many things, and sometimes it’s hard 
+to know. 
+ Factors: 
+o Type of task (classification, regression, clustering) 
+o Size of dataset (small → simple, large → complex) 
+o Features (number, type, missing values) 
+o Accuracy vs interpretability (some models easy to explain, 
+some hard) 
+o Computational resources 
+ Practical way: 
+o Try multiple algorithms 
+o Use cross-validation 
+o Pick the one with best balance of accuracy, speed, simplicity 
+o Tune hyperparameters to improve 
+ Example: 
+o Small dataset predicting house price → linear regression or 
+decision tree 
+o Large image dataset → convolutional neural network 
+Sometimes it is confusing because accuracy is high but model is 
+complicated and hard to explain. 
+B-5. Explain bagging and boosting. 
+Bagging and boosting are ensemble methods. They combine multiple 
+models to improve prediction. 
+ Bagging: 
+o Train many models on different bootstrapped samples 
+o Combine predictions (average for regression, majority vote 
+for classification) 
+o Reduces variance 
+o Example: Random Forest 
+ Boosting: 
+o Train models sequentially 
+o Each new model focuses on errors of previous models 
+o Reduces bias 
+o Example: AdaBoost, XGBoost, Gradient Boosting 
+ Differences: 
+o Bagging = parallel, reduces variance, stabilizes predictions 
+o Boosting = sequential, reduces bias, can overfit if too strong 
+ Example scenario: 
+o Predict student grades 
+o Bagging = multiple random trees on subsets 
+o Boosting = sequentially correct errors from previous trees 
+Honestly, sometimes I confuse when to use bagging vs boosting. Boosting 
+seems better for hard datasets, bagging better for unstable models. 

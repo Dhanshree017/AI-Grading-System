@@ -1,0 +1,148 @@
+ID-T006 
+Name: sakshi hegde  Roll no: 15 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A) Answer all 
+A-1. How Reinforcement learning is diffrerent from Supervised learning ? 
+Reinforcement learning (RL) is a type of machine learning where the model learns by 
+interacting with an environment and receiving feedback in the form of rewards or penalties. 
+It does not have labeled data to learn from but explores actions to maximize long-term 
+reward. Supervised learning, in contrast, uses labeled data where the correct output is 
+provided for every input, and the model learns by minimizing prediction error. RL is often 
+used in robotics, gaming, and autonomous systems, while supervised learning is used in 
+prediction, classification, and regression tasks. 
+1. RL learns through trial and error with reward feedback, while supervised learning uses 
+labeled examples. 
+2. RL does not know correct answers beforehand; supervised learning is guided by known 
+outputs. 
+3. RL models may take longer to learn as they explore; supervised learning is faster since 
+labels are given. 
+4. RL often used in environments with sequential decision making, supervised learning for 
+prediction or classification. 
+5. RL focuses on maximizing long-term cumulative rewards; supervised learning focuses 
+on minimizing error per sample. 
+6. Supervised learning maps input directly to output, RL maps actions to rewards. 
+7. Both improve performance, but their learning approaches and use cases differ. 
+A-2. Define the term overfitting and one solution for it . 
+Overfitting occurs when a model learns not only the underlying patterns in the training data 
+but also the noise and irrelevant details. This causes the model to perform very well on the 
+training set but poorly on new, unseen data. Overfitting is more common with complex 
+models, small datasets, or prolonged training. 
+Solution: Regularization (L2 Regularization / Ridge) – Regularization adds a penalty to the 
+loss function based on the magnitude of model coefficients. L2 regularization (Ridge) 
+penalizes large weights, forcing the model to keep coefficients small and focus on general 
+patterns rather than memorizing noise. This improves generalization and reduces overfitting. 
+1. Overfitting happens when a model memorizes training data and noise. 
+2. Common in small datasets or complex models. 
+3. Causes poor performance on new/unseen data. 
+4. Solution: L2 Regularization – penalizes large weights to reduce complexity. 
+5. Encourages the model to learn general patterns, not noise. 
+6. Helps model generalize better to unseen data. 
+7. Regularization is a widely used technique in ML and deep learning to prevent 
+overfitting. 
+A-3. what is the role of linear discriminant analysis in ML ? 
+Linear Discriminant Analysis (LDA) is a feature reduction and classification technique that 
+helps to find a combination of features that best separate multiple classes. It maximizes 
+the distance between classes while minimizing the variation within each class. LDA is often 
+used as a preprocessing step before classifiers like SVM or logistic regression to improve their 
+accuracy and reduce computation. It is widely applied in face recognition, handwriting 
+recognition, and text classification. 
+1. Reduces the number of features while preserving class separability. 
+2. Maximizes between-class variance and minimizes within-class variance. 
+3. Improves classifier accuracy and computational efficiency. 
+4. Used with SVM, logistic regression, and other classifiers. 
+5. Removes irrelevant or noisy features to simplify models. 
+6. Applied in face recognition, handwriting recognition, and text classification. 
+7. Helps the model generalize better on unseen data by focusing on relevant features. 
+A-4. Compare mixure and latent factor models . 
+Mixture models and latent factor models are both used to uncover hidden structures in 
+data, but they approach this differently. Mixture models assign data points to clusters 
+based on similarity, assuming that each data point belongs to one cluster. Latent factor 
+models, such as matrix factorization, identify underlying factors that influence data, allowing 
+multiple factors to affect a single observation. Mixture models are mostly used in clustering, 
+while latent factor models are popular in recommendation systems. 
+1. Mixture models divide data into distinct clusters based on similarity. 
+2. Latent factor models find hidden factors that influence data patterns. 
+3. Mixture models are simpler and commonly used for clustering. 
+4. Latent factor models handle multiple influencing factors per observation. 
+5. Mixture models use algorithms like Expectation-Maximization (EM). 
+6. Latent factor models are used in recommendation systems and matrix factorization. 
+7. Both help understand hidden structure but serve different purposes. 
+A-5. write importance of K-means clustering . 
+K-means clustering is important because it organizes data into K clusters based on similarity, 
+making it easier to understand, visualize, and analyze large datasets. It helps find patterns 
+or groupings that are not obvious, reduces data complexity, and can improve performance 
+for downstream tasks like classification or recommendation. K-means is widely used in 
+marketing segmentation, image processing, and document clustering. 
+1. Divides data into K meaningful clusters for analysis. 
+2. Helps discover hidden patterns in data. 
+3. Reduces data complexity, making it easier to understand. 
+4. Widely used in marketing, customer segmentation, image processing, and document 
+analysis. 
+5. Improves performance of subsequent machine learning tasks. 
+6. Helps visualize and summarize large datasets. 
+7. Provides insights that support better decision-making. 
+A-6. write about R Square and its significance . 
+R Square measures how well a regression model explains the variability of the dependent 
+variable. It ranges from 0 to 1, with higher values indicating that the model explains more 
+variation. Adjusted R Square adjusts for the number of predictors and is more reliable when 
+multiple features are used. Its significance lies in evaluating model performance and 
+understanding how much the predictors contribute to explaining the output. 
+1. R Square measures model fit for regression. 
+2. Values range from 0 to 1; higher means better fit. 
+3. Adjusted R Square accounts for multiple predictors. 
+4. Significance: helps assess model performance. 
+5. Shows how much variance in the dependent variable is explained by the independent 
+variables. 
+6. Important for comparing models and selecting the best one. 
+7. Helps determine if the model is useful for prediction. 
+A-7. give significance of hyperparameter optimization . 
+Hyperparameter optimization tunes parameters like learning rate, number of layers, depth, 
+batch size before model training. Its significance is that it improves model performance, 
+prevents overfitting or underfitting, and ensures better generalization. Techniques include 
+grid search, random search, and Bayesian optimization. Proper tuning can significantly enhance 
+model accuracy and efficiency. 
+1. Hyperparameters directly affect model performance. 
+2. Optimization improves accuracy on validation data. 
+3. Prevents overfitting or underfitting. 
+4. Ensures the model generalizes well to unseen data. 
+5. Grid, random, and Bayesian search are common methods. 
+6. Essential for achieving the best possible model performance. 
+7. Saves computational resources by avoiding unnecessary training iterations. 
+A-8. how machine learning deals with sparse data . 
+Sparse data contains many zeros or missing values, common in text, recommendation 
+systems, or high-dimensional datasets. ML techniques include using sparse matrix storage to 
+save memory, applying algorithms like Naive Bayes that handle sparse inputs, dimensionality 
+reduction, and embeddings to convert sparse data into dense representations. 
+1. Sparse matrix stores only non-zero values to save memory. 
+2. Algorithms like Naive Bayes handle sparse data efficiently. 
+3. Dimensionality reduction reduces sparsity while keeping information. 
+4. Embeddings convert sparse features into dense vectors. 
+5. Filling missing values can improve model performance. 
+6. Correct handling of sparse data ensures better learning. 
+7. Useful in text processing, recommendation, and high-dimensional datasets. 
+A-9. what is advantage of active learning. 
+Active learning selects the most informative samples for labeling, reducing labeling cost while 
+improving model efficiency. It allows models to learn faster and achieve higher accuracy with 
+fewer labeled data points. Active learning is valuable in medical imaging, NLP, and other 
+domains where data labeling is expensive. 
+1. Selects the most important samples for labeling. 
+2. Reduces overall labeling costs. 
+3. Helps the model learn faster with fewer examples. 
+4. Improves accuracy and generalization. 
+5. Useful in medical imaging, NLP, and image recognition. 
+6. Maximizes learning efficiency for small datasets. 
+7. Reduces unnecessary human labeling effort. 
+A-10. what is training , testing and validation ? 
+Training involves learning patterns from a dataset. Validation is used to tune 
+hyperparameters and prevent overfitting. Testing evaluates the final model on unseen data 
+to ensure generalization. The combination ensures the model performs well on real-world 
+data and is not just memorizing training examples. 
+1. Training teaches the model patterns in data. 
+2. Validation tunes hyperparameters and prevents overfitting. 
+3. Testing evaluates model performance on unseen data. 
+4. Ensures the model generalizes to new data. 
+5. Avoids overfitting and underfitting. 
+6. Helps understand model strengths and weaknesses. 
+7. Integral to the ML workflow. 
+8. Provides confidence in model predictions. 

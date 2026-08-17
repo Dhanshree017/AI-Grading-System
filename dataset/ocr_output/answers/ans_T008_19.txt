@@ -1,0 +1,277 @@
+ID-T008 
+Name : isha pandey Roll no: 19 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each 2 Marks) 
+1-a) Write about Inductive Bias 
+Inductive bias refers to the assumptions or prior knowledge that a learning algorithm 
+uses to predict outcomes for unseen instances. It is a crucial element that guides the 
+model to select one hypothesis over another when multiple hypotheses are consistent 
+with the training data. By introducing inductive bias, models can generalize 
+effectively from limited data and avoid random or arbitrary predictions. 
+1. Directs the model to prefer certain hypotheses. 
+2. Reduces ambiguity in hypothesis selection. 
+3. Enables better generalization on unseen data. 
+4. Can be explicit (rules) or implicit (algorithm design). 
+5. Strong bias may limit flexibility. 
+6. Weak bias may result in overfitting. 
+7. Influences model performance and accuracy. 
+8. Essential for efficient learning with limited data. 
+9. Forms the foundation for knowledge-based AI systems. 
+1-b) Define Hypothesis 
+A hypothesis is a candidate function or model that describes the mapping from 
+inputs to outputs in a learning problem. It represents a possible explanation for the 
+observed data and is evaluated based on its ability to predict unseen instances 
+accurately. Selecting the appropriate hypothesis is essential for effective learning and 
+generalization. 
+1. Represents a possible solution to a learning problem. 
+2. Maps input features to output predictions. 
+3. Multiple hypotheses can fit the same dataset. 
+4. Evaluated using training and test datasets. 
+5. Supports the model’s ability to generalize. 
+6. Can vary in complexity based on model design. 
+7. Hypotheses can be refined iteratively. 
+8. Affects prediction accuracy and performance. 
+9. Serves as the foundation for predictive modeling. 
+1-c) Write about Sampling Theories 
+Sampling theory is the study of selecting a representative subset from a larger 
+population to make inferences about the whole population. Proper sampling ensures 
+that models and conclusions derived from the subset accurately reflect the 
+characteristics of the complete dataset. Sampling is essential in AI, statistics, and 
+research when processing the entire population is infeasible. 
+1. Random sampling ensures equal probability for each element. 
+2. Stratified sampling maintains proportional representation. 
+3. Systematic sampling selects every nth item for consistency. 
+4. Proper sampling reduces bias and improves reliability. 
+5. Minimizes computational resources required for large datasets. 
+6. Ensures generalization from sample to population. 
+7. Crucial for accurate evaluation of models. 
+8. Helps avoid misleading conclusions. 
+9. Widely used in model training, testing, and validation. 
+1-d) Define Eager Learning 
+Eager learning algorithms build a complete model from the training data before 
+receiving any queries. These algorithms generalize knowledge upfront and store it in 
+a structure that allows for immediate predictions when new data is presented. This 
+approach ensures fast and efficient predictions during deployment. 
+1. Builds the model entirely during the training phase. 
+2. Provides quick predictions once the model is trained. 
+3. Requires all relevant training data upfront. 
+4. Reduces computation during query processing. 
+5. Can be susceptible to overfitting if the model is too complex. 
+6. Suitable for batch learning applications. 
+7. Examples include decision trees, SVMs, and neural networks. 
+8. Allows for model evaluation before deployment. 
+9. Supports efficient use of computational resources during prediction. 
+1-e) What is Lazy Learning 
+Lazy learning algorithms do not build a generalized model during training. Instead, 
+they store all training instances and perform computation only when a prediction is 
+required. This approach allows for more flexible adaptation to new data but can be 
+computationally expensive during prediction. 
+1. Stores training instances for use at prediction time. 
+2. Computes predictions only when a query is received. 
+3. Flexible for dynamic and changing datasets. 
+4. Can be slower for large datasets. 
+5. Sensitive to noisy or irrelevant features. 
+6. Relies on distance metrics like Euclidean or Manhattan. 
+7. Does not overfit easily due to deferred generalization. 
+8. Works effectively with small to medium datasets. 
+9. K-Nearest Neighbors is a classic example. 
+1-f) Define Genetic Algorithm 
+Genetic algorithms are optimization techniques inspired by natural evolution. They 
+iteratively improve candidate solutions through selection, crossover, and mutation, 
+guided by a fitness function that evaluates solution quality. These algorithms are 
+effective for complex, non-linear optimization problems. 
+1. Selection chooses the best candidates for reproduction. 
+2. Crossover combines genetic material from two parents. 
+3. Mutation introduces random variations to maintain diversity. 
+4. Fitness function evaluates the quality of candidates. 
+5. Iterative generations refine solutions progressively. 
+6. Escapes local optima through mutation and recombination. 
+7. Applicable in scheduling, planning, and design optimization. 
+8. Flexible and adaptable across problem domains. 
+9. Mimics natural evolution to find near-optimal solutions. 
+1-g) Discuss Dynamic Programming 
+Dynamic programming is a computational approach that solves complex problems by 
+breaking them down into simpler subproblems. It stores the solutions to these 
+subproblems to avoid redundant computations, making it highly efficient for 
+problems with overlapping subproblems and optimal substructure. 
+1. Decomposes complex problems into manageable subproblems. 
+2. Stores intermediate results for reuse. 
+3. Bottom-up approach solves subproblems iteratively. 
+4. Top-down approach uses recursion with memoization. 
+5. Reduces time complexity compared to naive methods. 
+6. Widely applied in optimization, algorithm design, and AI planning. 
+7. Solves problems like shortest path, knapsack, and Fibonacci sequence. 
+8. Requires additional memory for storing subproblem solutions. 
+9. Ensures reliable and efficient computation. 
+1-h) Define Explanation-Based Learning 
+Explanation-Based Learning (EBL) allows a system to generalize from a single 
+example by understanding the underlying principles that make the example valid. By 
+combining prior knowledge with observed examples, EBL generates generalized rules 
+that can be applied to similar cases. 
+1. Generalizes knowledge from a single instance. 
+2. Utilizes existing domain knowledge effectively. 
+3. Requires fewer examples than purely inductive learning. 
+4. Produces rules applicable to a broader context. 
+5. Example: Understanding why a chess move is strong. 
+6. Speeds up learning by leveraging prior knowledge. 
+7. May fail if domain knowledge is incomplete or incorrect. 
+8. Supports reasoning and explanation generation. 
+9. Commonly used in expert systems and AI planning. 
+1-i) Write about Control Knowledge 
+Control knowledge is information that guides the decision-making or search process 
+of an AI system. It helps prioritize certain actions or paths, thereby improving the 
+efficiency and effectiveness of problem-solving. 
+1. Guides problem-solving processes. 
+2. Reduces unnecessary computation. 
+3. Can be provided as heuristics or domain-specific rules. 
+4. Enhances speed and efficiency of algorithms. 
+5. Can be manually defined or learned. 
+6. Crucial for large or complex search spaces. 
+7. Improves performance of intelligent agents. 
+8. Example: Heuristic function in A* algorithm. 
+9. Ensures resources are used effectively during computation. 
+1-j) Define Precision, Recall, and F1 Score 
+Precision, recall, and F1 score are evaluation metrics used to assess classification 
+models. Precision measures how many predicted positives are actually correct, recall 
+measures how many actual positives are correctly identified, and F1 score provides a 
+balanced measure of both. 
+1. Precision = True Positives / (True Positives + False Positives) 
+2. Recall = True Positives / (True Positives + False Negatives) 
+3. F1 Score = Harmonic mean of precision and recall. 
+4. High precision reduces false positives. 
+5. High recall reduces false negatives. 
+6. F1 score balances precision and recall. 
+7. Useful in imbalanced datasets. 
+8. Widely applied in spam detection, medical diagnosis, and classification tasks. 
+9. Complements accuracy for overall model evaluation. 
+2] Attempt Any 6 (Marks 30) 
+2-a) Explain Decision Tree in Detail, Give Example 
+A decision tree is a hierarchical structure used for classification or regression. Internal 
+nodes represent decision points based on features, branches represent possible 
+outcomes, and leaf nodes indicate final predictions. Decision trees are interpretable, 
+handle both numeric and categorical data, and can be trained using various 
+algorithms. 
+1. Root node contains the most important feature. 
+2. Branches represent different decisions or splits. 
+3. Leaf nodes indicate predicted outcomes. 
+4. Example: Predicting whether to play tennis based on weather conditions. 
+5. Splitting criteria include information gain, Gini index, and gain ratio. 
+6. Easy to interpret visually for humans. 
+7. Can overfit if the tree is too deep. 
+8. Can handle missing or noisy data. 
+9. Algorithms include ID3, C4.5, and CART. 
+2-b) Describe K-Nearest Neighbors 
+K-Nearest Neighbors (KNN) is an instance-based learning algorithm that predicts the 
+class of a data point based on the majority class of its k closest neighbors. It is 
+simple, non-parametric, and widely used in classification tasks. 
+1. Stores all training instances. 
+2. Uses distance metrics like Euclidean, Manhattan, or Minkowski. 
+3. Predicts class by majority vote. 
+4. Example: Classifying fruit types based on size, color, and shape. 
+5. Choosing an appropriate k is crucial. 
+6. Sensitive to noisy data. 
+7. Requires feature scaling for accuracy. 
+8. Works well on small and medium datasets. 
+9. Flexible and easy to implement. 
+2-c) Discuss Neural Network Representation 
+Neural networks are computational models inspired by the human brain. They 
+consist of interconnected layers of neurons that transform inputs into outputs. 
+Neural networks can model complex non-linear relationships and are widely used in 
+AI applications such as image recognition and natural language processing. 
+1. Consists of input, hidden, and output layers. 
+2. Neurons compute weighted sums of inputs and biases. 
+3. Activation functions introduce non-linearity (ReLU, Sigmoid, Tanh). 
+4. Backpropagation trains the network by minimizing error. 
+5. Example: Handwritten digit recognition with MNIST dataset. 
+6. Hidden layers extract hierarchical features automatically. 
+7. Deep networks capture highly complex patterns. 
+8. Require large datasets and computation resources. 
+9. Used in classification, regression, and sequence prediction. 
+2-d) Differentiate Classification & Regression 
+Classification 
+Predicts discrete labels 
+Regression 
+Predicts continuous numeric values 
+Example: Spam email detection 
+Example: House price prediction 
+Evaluation: Accuracy, Precision, Recall Evaluation: MSE, RMSE 
+Algorithms: Decision Tree, SVM 
+Output is categorical 
+Often uses probability estimates 
+Goal: Correctly categorize inputs 
+Handles categorical features 
+Applied in NLP, vision, healthcare 
+Algorithms: Linear, Polynomial Regression 
+Output is numeric 
+Produces exact numeric values 
+Goal: Predict precise numeric values 
+Handles numerical features 
+Applied in finance, forecasting, science 
+2-e) Explain Knowledge Representation 
+Knowledge representation involves structuring information in a way that enables AI 
+systems to reason, infer, and make decisions. It is foundational for intelligent 
+problem-solving and knowledge-based AI systems. 
+1. Rule-based systems use “if-then” logic. 
+2. Semantic networks represent entities and relationships. 
+3. Frames structure knowledge with attributes and values. 
+4. Ontologies formally define concepts and relationships. 
+5. Example: Medical expert system storing disease symptoms. 
+6. Enables efficient reasoning and inference. 
+7. Poor representation may lead to errors. 
+8. Supports knowledge reuse and modularity. 
+9. Forms the basis for AI planning and problem-solving. 
+2-f) Compare AI, ML, and Deep Learning 
+AI 
+Broad field encompassing 
+ML 
+Learns patterns from 
+DL 
+Uses multi-layer neural 
+intelligent behavior 
+Includes reasoning, problem
+solving, and planning 
+Example: Chess AI or 
+planning system 
+May include rule-based or 
+symbolic systems 
+Knowledge may be hand
+coded 
+May not involve learning 
+Goal: Create intelligent 
+systems 
+Works across multiple 
+domains 
+Combines reasoning and 
+learning 
+data 
+Data-driven learning 
+approach 
+Example: Spam email 
+filter 
+Requires labeled or 
+unlabeled datasets 
+Learns patterns from 
+examples 
+Generalizes from 
+training data 
+Goal: Predict, classify, 
+or cluster 
+Focused on specific 
+tasks 
+Part of AI subset 
+networks 
+Automatically extracts features 
+from raw data 
+Example: Image or speech 
+recognition 
+Requires large datasets for 
+effective training 
+Learns hierarchical feature 
+representations automatically 
+Deep networks capture complex 
+relationships 
+Goal: Extract and model 
+complex patterns 
+Excels in vision, speech, and NLP 
+Part of ML subset 

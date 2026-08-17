@@ -1,0 +1,131 @@
+ID-T020 
+Name: Anjeet pal Roll no: 20 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Introduction 
+Machine learning models work fine at first but when time passes, model accuracy reduce 
+because data and rules change. This is caused by data drift and concept drift. 
+Data Drift 
+Data drift happen when input features distribution change over time. Example: customer 
+buying time changes from afternoon to morning. Model sees different patterns and 
+predictions fail. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Introduction 
+Imbalanced datasets make model biased towards majority class and minority class 
+predictions fail. 
+Challenges 
+ Accuracy misleading. 
+ Minority recall very low. 
+ Gradient biased toward majority. 
+Advanced Techniques 
+ Cost-sensitive Learning: Higher penalty to minority misclassification. 
+ Synthetic Sample Generation: SMOTE, ADASYN create artificial minority samples. 
+ Threshold Adjustment: Change prediction cutoff to improve recall/precision. 
+Pitfalls 
+Duplicating minority class or oversampling too much can overfit. Some students think 
+duplication always fix imbalance. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Introduction 
+Model monitoring is process to check model after deployment. 
+Parameters Tracked 
+ Accuracy and error rate. 
+ Feature distributions. 
+ Missing value rates. 
+ Latency and throughput. 
+ Fairness metrics. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Introduction 
+Two main types of learning: batch and online. Choice depends on data and problem. 
+Batch Learning 
+ Train on full dataset offline. 
+ Stable, reproducible. 
+ Retraining needed when new data arrive. 
+Online Learning 
+ Train incrementally as data arrive. 
+ Useful for streaming data, sensors, click streams. 
+ Adapt quickly. 
+Challenges 
+ Forgetting old knowledge. 
+ Noisy updates affect model. 
+ Evaluation harder than batch learning. 
+Comparison 
+Batch stable, slow, simple evaluation. Online adaptive, faster, complex management. Some 
+students think online always better, which is not true in stable datasets. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Introduction 
+Explainable AI shows how model make decisions, increases trust. 
+Methods 
+ Feature importance, SHAP, LIME, attention maps, counterfactual explanations. 
+Use Cases 
+ Healthcare: explain diagnosis to doctors. 
+ Finance: loan approvals to regulators. 
+ Fraud detection: analysts verify alerts. 
+ HR: show reason for candidate selection. 
+Additional Notes 
+Visualization helps non-technical stakeholders understand model. XAI does not fix errors 
+but show reasoning. Some students create random maps but still call it XAI. 
+SECTION B — 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Introduction 
+Transfer learning use pretrained models to improve performance on new tasks with less data. 
+Mechanism 
+ Pretrained model already learn general features. 
+ Fine-tuning on new dataset adapt model to new task. 
+Scenarios 
+ Small labeled datasets like medical imaging. 
+ NLP tasks like text classification, summarization. 
+ Image recognition when collecting data is expensive. 
+ Some think pretrained model always works without adaptation, which is not true. 
+Advantages 
+ Reduces training time. 
+ Reduces data requirement. 
+ Often improves accuracy. 
+Disadvantages 
+ May fail if source and target tasks are too different. 
+ Some features may be irrelevant and confuse model. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Introduction 
+Hyperparameters control how model learns. Search strategies find best hyperparameters to 
+improve performance. 
+Grid Search 
+ Check every combination of values. 
+ Systematic but very slow for many hyperparameters. 
+Random Search 
+ Select random combination of values. 
+ Faster and often finds good solution quickly. 
+Comparison 
+ Grid search guaranteed to check all but inefficient. 
+ Random search explore wider area faster. 
+ Some students think random search always better, but sometimes grid needed if space 
+small. 
+Practical Use 
+ Use cross-validation to select best hyperparameters. 
+ Log all results for reproducibility. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Introduction 
+Reproducibility ensures experiments can be repeated and results verified by self or others. 
+Practices for Reproducibility 
+ Fix random seeds for training. 
+ Version control for code and scripts. 
+ Save exact dataset used. 
+ Use containers or environments for same software versions. 
+ Log hyperparameters, metrics, and preprocessing steps. 
+ Automated pipelines to reduce human error. 
+Importance 
+ Debugging easier. 
+ Models and results can be trusted. 
+ Some students just keep notes but do not log anything, leading to irreproducible work. 
+Additional Notes 
+Reproducibility also helps collaboration and audit in industry projects. 

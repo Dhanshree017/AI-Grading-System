@@ -1,0 +1,45 @@
+ID-T030 
+Name: Raghav sharma Roll no: 232530 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 3 Marks) 
+A-4. What is the role of validation in model development? 
+Validation plays a critical role in selecting and tuning machine learning models. It helps 
+compare different models and hyperparameter settings. Validation data is separate from 
+training and testing data. It prevents overfitting during model optimization. Through 
+validation, the most effective and balanced model is chosen. 
+A-5. Describe the concept of inductive learning in machine learning. 
+Inductive learning is the process of learning general rules or patterns from specific examples. 
+The model observes training data and derives generalizations that apply to new data. It forms 
+the foundation of most machine learning techniques. Inductive learning allows systems to 
+predict unseen cases. However, it depends heavily on the quality of training data. 
+A-6. Explain the impact of noisy data on machine learning models. 
+Noisy data contains errors, inconsistencies, or irrelevant information. It can mislead the 
+learning process and reduce model accuracy. Noise increases the risk of overfitting and 
+unstable predictions. Models trained on noisy data may fail to generalize well. Proper data 
+preprocessing helps reduce the impact of noise. 
+A-7. What is the difference between model fitting and model selection? 
+Model fitting refers to training a model by adjusting its parameters using data. Model 
+selection involves choosing the best model among multiple candidates. Fitting focuses on 
+learning, while selection focuses on comparison. Model selection uses validation results. 
+Both steps are essential for building effective ML systems. 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+Ensemble diversity refers to differences among individual models within an ensemble. 
+Diverse models make different errors, improving overall performance. If models are too 
+similar, ensembles offer little benefit. Diversity increases robustness and accuracy. It is 
+crucial for effective ensemble learning. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement. 
+The ML lifecycle begins with problem definition and data collection. It includes data 
+preprocessing, model training, validation, and deployment. After deployment, models are 
+monitored and updated. Performance degradation may lead to retraining. Eventually, 
+outdated models are retired and replaced. 
+A-10. Explain the importance of documentation in ML projects. 
+Documentation records model design, data sources, assumptions, and decisions. It improves 
+transparency and collaboration. Proper documentation supports maintenance and debugging. 
+It ensures reproducibility of experiments. Documentation is essential for ethical and 
+regulatory compliance. 
+A-12. Explain how ethical considerations influence ML system design. 
+Ethical considerations guide fairness, transparency, and accountability in ML systems. 
+Designers must prevent bias and discrimination. Privacy protection influences data usage. 
+Ethical design ensures responsible deployment. It builds trust and social acceptance of ML 
+technologies. 

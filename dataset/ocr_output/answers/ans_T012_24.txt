@@ -1,0 +1,90 @@
+ID-T012 
+Name : Alok Chauhan Roll no: 24 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+B] Attemp any 4 ( 5 marks each )  
+B-1. Explain the main challenges faced while training ML models. 
+Training ML models is not easy, there is many problem come in the middle like 
+noise, data missing, wrong data, and computer hang. Some people think training 
+model is like click one button and done but it not true. 
+Main challenge is data quality because if data is garbage then model also garbage. 
+Also there is overfitting problem where model learn too much and cannot generalize 
+new data. 
+Computation time is also big problem because big model take days to train, 
+sometimes laptop get hot also. Then there is hyperparameter tuning which is very 
+confusing, because you have to select learning rate, batch size, etc. 
+Sometimes we face imbalanced data, like 90% of one class and 10% of another, then 
+model just predict the big one always. 
+Interpretability also big challenge because deep learning is like black magic, we don’t 
+know what happen inside. 
+and finally deployment and scaling also trouble, because after train model sometimes 
+fail when put in production. 
+B-2. Describe the difference between probability and likelihood in machine learning. 
+Probability and likelihood are same thing because both show how much something 
+can happen. If probability is high then it will surely happen, if low then not. 
+Like if we have 5 apples and 2 are red, probability of red apple is 2/5. Likelihood 
+also same only. In ML we use both when we make model. 
+Sometimes teacher say probability is forward and likelihood is backward but I don’t 
+understand that. They both mean same — chance. 
+We can say in ML probability means how much chance of class, and likelihood means 
+how likely model fit data. But basically both are like twin brother. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is one algorithm which predict yes or no. It use sigmoid function 
+to convert number between 0 and 1. The formula is something like 1/(1+e^-x). But 
+we don’t have to always remember that, just know it gives probability output. 
+It is used in cases like pass/fail, spam/not spam, sick/healthy etc. Logistic regression 
+is like linear regression but instead of line it make S curve. 
+It works like this: first we collect data, then we assign weights, then we predict 
+probability, then compare with actual label using cost function, then we adjust 
+weight using gradient descent. 
+Use cases – disease prediction, email classification, and admission prediction. 
+Advantage is it is simple and easy to train. Disadvantage is it can only handle binary 
+problem and linear decision boundary. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameter are very big parameter. It is like senior parameter that control all 
+other parameter. It decide how model will learn and how much speed it go. 
+Examples are like learning rate, number of layers, number of neurons, batch size, 
+epochs etc. 
+Parameter are what model learn by itself, like weight and bias. But hyperparameter 
+we give manually before training. 
+For example in neural network, weight update by learning but how much to update 
+is decided by learning rate which is hyperparameter. 
+So hyperparameter is like remote control for training. 
+C ] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning can do maintenance for machine even before machine is broken. It 
+is like doctor of machines. It see data from sensor like noise, vibration, and 
+temperature. When the machine start shaking or becoming hot, ML model 
+understand that problem is coming soon. So industry people can fix before machine 
+stop working. 
+In predictive maintenance, data is collected every second. Model is trained on old 
+data when machine was working fine and when it failed. Then it learn patterns that 
+come before failure. For example when vibration increase 10% more, model predict 
+bearing problem. 
+After training, the model is deployed in real factory. Then it check real time data. If 
+something goes wrong, it alert maintenance team. 
+This method help to save cost, reduce downtime, and increase safety. Instead of 
+waiting for machine to stop, we can plan the repair earlier. 
+But sometimes model fail also because data is not clean. If sensor data wrong then 
+model wrong. Also some industries think machine learning will do everything but it 
+need human too. 
+So ML in predictive maintenance is very helpful but need care and good data. 
+C-2. Discuss 5 real-world example of a biased ML model and how such bias can be 
+reduced. 
+Bias in ML is when model is unfair like teacher who always give marks to favorite 
+student. Model also learn from bad data, so it become unfair. Here are 5 examples of 
+bias from world: 
+1. Hiring model bias – Company make ML for job selection, but it reject female 
+because old data has more male hired. So it think male better. 
+2. Face recognition – ML detect white people face better but fail on black people 
+face because training data has more white face. 
+3. Credit card approval – Bank use ML to approve loan, it reject poor people 
+more because of bad old data. 
+4. Health ML bias – Model trained on data from foreign country, so when Indian 
+patient come, it make mistake. 
+5. Crime prediction model – ML used by police to send more police to poor area 
+because past data had more crime there. 
+To reduce bias, data must be cleaned, balanced, and fair. We should use diverse 
+dataset, remove sensitive columns like gender and race, and check fairness in 
+evaluation. 

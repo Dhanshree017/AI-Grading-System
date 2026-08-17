@@ -1,0 +1,27 @@
+ID-T032 
+Name: Vinod Shetty Roll no: 1 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (5 marks each) 
+A-a. Explain the complete machine learning lifecycle. 
+The ML lifecycle is a cyclical process of industrializing data into insights. It begins with Problem 
+Definition, identifying the objective and KPIs. This is followed by Data Acquisition and Cleaning, where 
+raw data is curated. Feature Engineering transforms data into signals suitable for algorithms. Next is Model 
+Selection and Training, where parameters are optimized. Evaluation uses a hold-out set to verify 
+generalization. Finally, Deployment moves the model to production, followed by Monitoring and 
+Maintenance to correct for "Concept Drift." 
+A-b. Discuss the importance of feature representation. 
+Feature representation (or Feature Mapping) is the process of projecting raw data into a numerical vector 
+space. It is critical because the geometric structure of this space determines Linear Separability. A superior 
+representation (like Word Embeddings in NLP) captures semantic relationships, reducing the workload on 
+the algorithm. Poor representation leads to the "Curse of Dimensionality," while high-quality representation 
+ensures faster convergence and better generalization. 
+A-c. Explain the bias–variance trade-off. 
+This trade-off describes the tension between two sources of error. Bias is the error from erroneous 
+assumptions (underfitting), while Variance is the error from sensitivity to small fluctuations in training data 
+(overfitting). Practically, the goal is to find the "Sweet Spot" in model complexity that minimizes Total 
+Error ($Total Error = Bias^2 + Variance + Irreducible Error$). In real-world apps, this is managed via 
+regularization and cross-validation. 
+A-d. Describe how models handle noisy and incomplete data. 
+Models handle noise through Regularization (penalizing complexity) and Robust Statistics. For incomplete 
+data, strategies include Imputation (filling missing values with mean/ 

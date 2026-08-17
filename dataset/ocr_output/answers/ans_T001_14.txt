@@ -1,0 +1,178 @@
+ID-T001 
+Name : kanika Devo Roll no: 14 
+Class : Ty Bsc Computer Science 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 of the following questions (20 Marks) 
+A-1. Define machine learning and its relationship to other fields like statistics and AI. 
+Machine Learning (ML) is where the computer program it gets better at some task just by 
+looking at data instead of you telling it the rules. The main thing is that it must guess 
+good on the new data it never see before. 
+1. AI is the big idea: Artificial Intelligence (AI) it is the big goal for making 
+machines smart, and ML is the engine that make the machine learn the stuff. 
+2. Statistics is just math: Statistics it is the old-style math that focus on explaining 
+data, but ML it focus on guessing the future. 
+3. Improvement is key: The whole idea is that the program it must show better score on 
+the next test after seeing more examples. 
+4. No rule writing: You do not need to write thousands of "if/then" rules because the 
+computer it figure out the patterns by itself. 
+5. Need much data: For ML to work good, you must have big amount of clean data or 
+else the model it will be too stupid. 
+A-3. Describe how the decision tree algorithm works, including the role of entropy and 
+information gain. 
+The Decision Tree (DT) model it is simple to look at because it splits the data like branches 
+on a tree. It is a series of questions that it leads to a decision. 
+1. Starts at the top: The tree it starts at the root node and it asks the best question 
+about one feature to separate the classes. 
+2. Greedy method: The splitting it is done very selfishly because at every step it pick 
+the local best split without thinking about the future. 
+3. Entropy is badness: Entropy it is the measure of how messy a node is. High 
+entropy it mean the data is mixed up and the node cannot decide. 
+4. Information Gain is score: Information Gain (IG) it is the score that measures how 
+much the messiness goes down after you make a split. 
+5. Choose the best: The algorithm it always choose the split that gives the biggest 
+Information Gain because that it is the most pure separation. 
+6. Stops when pure: The splitting it keeps going until the final node it is almost one 
+single class (pure) or the tree it gets too deep. 
+A-5. Describe ensemble methods like bagging and boosting. 
+Ensemble methods they are smart ways to put many simple models together so that the 
+final model it is much stronger and make better guesses. 
+1. Combining is powerful: The reason it work is that the small errors of many models 
+they cancel each other out and make less total mistake. 
+2. Bagging is parallel: Bagging (Bootstrap Aggregating) it train all the models at 
+same time. Each one it get a random sample of the data. 
+3. Bagging for variance: Bagging it is used for reducing the high variance 
+(overfitting) problem by averaging the results of all the weak models. Random 
+Forest is this type. 
+4. Boosting is sequential: Boosting it train the models one after the other. Each new 
+model it must try to fix the mistakes of the previous one. 
+5. Boosting for bias: Boosting it is used for reducing the high bias problem by 
+focusing the new model on the data points that was classified wrong before. 
+6. Weighted focus: In boosting, the mistaken data points they get extra weight so the 
+next model pays more attention to them. 
+A-6. Explain the bias-variance tradeoff and its significance. 
+The Bias-Variance Tradeoff it is the most important thing that explains all the errors a 
+model can make. The total mistake is a balance between Bias and Variance. 
+1. Bias is simple error: Bias it is the error from the model being too simple and not 
+finding the main pattern. This it is called Underfitting. 
+2. High Bias is bad all over: If Bias is high, the model it performs bad on both the 
+training data and the new test data. 
+3. Variance is complex error: Variance it is the error from the model being too complex 
+and memorizing the training noise. This it is called Overfitting. 
+4. High Variance is sneaky: If Variance is high, the model it is perfect on training 
+but it makes big mistake on the new test data. 
+5. The impossible fight: The tradeoff it means that when you fix bias (make model 
+complex), variance it get worse. You cannot fix both at the same time. 
+6. Find the sweet spot: The goal is to find the right complexity where the total error is 
+the smallest amount. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define and explain metrics like Precision, Recall, and F1-score and when to use them. 
+These three numbers they are used for checking how good a classification model is, 
+especially when the classes are not balanced. 
+1. Precision is quality: Precision it tells you how often the model is right when it says 
+the answer is positive. 
+2. Precision use case: You use Precision when a False Positive (crying wolf) it cost too 
+much money or it is a big waste. 
+3. Recall is finding ability: Recall it tells you how many of the actual positive cases 
+the model it successfully found. 
+4. Recall use case: You use Recall when a False Negative (missing something 
+important) it is very dangerous or it is a serious problem like in medicine. 
+5. F1 is the average: The F1-Score it is the average of Precision and Recall so that it 
+gives a balanced view. 
+6. F1 balanced use: You use F1-Score when you need the model to be good at both 
+Precision and Recall. 
+B-2. What is a confusion matrix and how is it used to evaluate a classification model? 
+A confusion matrix it is a table that it shows all the predictions the model made and it 
+compares them to the true answers. 
+1. Four counts: The table it has four types of counts: True Positive (TP), True Negative 
+(TN), False Positive (FP), and False Negative (FN). 
+2. TP/TN are good: The True Positive and True Negative counts they are the times the 
+model was correct. 
+3. FP/FN are mistakes: The False Positive and False Negative counts they are the 
+specific ways the model was wrong. 
+4. Seeing the problem: You use the matrix to see exactly where the model is failing, if 
+it is missing too many real cases (FN) or predicting too many wrong cases (FP). 
+5. Metrics come from here: All the other good scores like Precision and Recall they are 
+calculated using the numbers in the matrix. 
+B-4. How do you select the right machine learning algorithm for a given problem? 
+You pick the algorithm by looking at what you want to predict and how your data looks. 
+1. Check the output: If the answer it is a label (like Yes/No), you use Classification. If 
+the answer it is a number (like price), you use Regression. 
+2. Check the data size: For small data, you must use simple models so it does not 
+overfit. For big data, you can use complex ensemble models. 
+3. Need explanation: If the client it needs to understand the prediction, you must 
+choose a simple model that it is easy to explain. 
+4. Need fast prediction: If the prediction must be very fast (low latency), you must 
+choose an algorithm that it has fast inference time. 
+5. Test many: You should always try out a few different types of algorithms and 
+pick the one that scores the best on the test data. 
+B-5. Explain the steps in the machine learning model development lifecycle. 
+This is the series of steps that you must follow to build a model and make it work for the 
+company. 
+1. Data cleaning first: You get all the raw data, and you must clean it (handle 
+missing values) and make new features (Feature Engineering). 
+2. Split the data: You separate the data into the training set, validation set, and test 
+set to keep the evaluation honest. 
+3. Training: You use the training set to teach the model and let it find the patterns. 
+4. Tuning: You use the validation set to find the best settings (hyperparameters) for 
+the model. 
+5. Deployment: The final, best model it is put into the live system so the users can 
+start using it. 
+6. Monitoring: You must always watch the live model to make sure the accuracy it is 
+not getting worse (Model Drift). 
+C) Attemp any 4 (20 Marks) 
+C-1. What is the role of feature scaling in machine learning. 
+Feature Scaling it is the step where you change the numbers in your data so they all have 
+same size. This it is needed for many models. 
+1. Make all equal: The main job is to stop the big features (like salary) from 
+dominating the small features (like age) in the model's math. 
+2. Required for distance: It is absolutely necessary for models that calculate the 
+distance between data points, like KNN and K-Means. 
+3. Faster training: Scaling it makes the training process much faster for models that 
+use gradient descent (like Neural Networks). 
+4. Standardization method: Standardization it makes the data have a mean of 0 
+and a variance of 1. 
+5. Normalization method: Normalization it makes the data fit between 0 and 1. 
+6. Tree models don't care: Models like Decision Trees they do not need scaling because 
+they only use thresholds to split data. 
+C-3. Define and explain overfitting and underfitting and how to avoid them. 
+These are the two ways a model it fails to work good on new data. They are the two sides 
+of the Bias-Variance Tradeoff. 
+1. Overfitting is memory: Overfitting it is when the model it is too complex and it 
+memorizes the training data noise. This it is a high variance problem. 
+2. Overfitting fail: The model it has perfect score on training but it makes big 
+mistake on the test data. 
+3. Avoid overfitting: You can avoid it by using Regularization (a penalty) or by 
+getting more data for training. 
+4. Underfitting is stupid: Underfitting it is when the model it is too simple and 
+cannot find the main pattern in the data. This it is a high bias problem. 
+5. Underfitting fail: The model it has a bad score on both the training data and the 
+test data. 
+6. Avoid underfitting: You can avoid it by making the model more complex or by 
+adding better input features. 
+C-4. How to deal with missing data, scale features, or encode categorical variables. 
+These are the three simple things you must do to clean the data before it can be trained by 
+the machine. 
+1. Missing data fix: You must fill in the blanks (impute) or delete the rows. For 
+numbers, you fill with the mean. For text, you fill with the mode. 
+2. Scaling fix: You must use Standardization or Normalization to make all 
+numbers equal in size so one feature is not too important. 
+3. Encoding fix: You must change all text columns to numbers because the computer 
+cannot read words. 
+4. One-Hot for no order: For text that has no order (like colors), you use One-Hot 
+Encoding to make new binary columns. 
+5. Label for order: For text that has order (like sizes), you use Label Encoding to 
+assign integer ranks. 
+C-6. Explain the difference between classification and regression 
+These are the two main jobs that you can do with supervised learning, and they predict 
+different kinds of outputs. 
+1. Classification predicts label: Classification it predicts a fixed category or a label. 
+The answer it is always discrete (e.g., Yes or No). 
+2. Regression predicts number: Regression it predicts a continuous number. The 
+answer it is always a value that can be any number (e.g., price or temperature). 
+3. Metric difference: Classification it uses Accuracy, Precision, and Recall. 
+Regression it uses Mean Squared Error (MSE) for evaluation. 
+4. Goal is boundaries: Classification it tries to separate the data with decision 
+boundaries. 
+5. Goal is line: Regression it tries to fit a line or curve through the data points. 
+6. Example outputs: Classification output it is always a choice from a small list. 
+Regression output it is a wide range of numbers. 

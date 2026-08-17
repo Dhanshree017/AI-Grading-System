@@ -1,0 +1,177 @@
+ID-T001 
+Name : Saniya Singh Roll no: 9 
+Email : studentisdummy@gmail.com 
+
+A) Attempt any 4 of the following questions (20 Marks) 
+A-1. Define machine learning and its relationship to other fields like 
+statistics and AI. 
+Machine Learning (ML) is like teaching a stupid computer how to be smart by 
+just showing it a lot of data. Instead of writing every single rule, the computer 
+finds the rules and patterns by itself. The main point is that it gets better and 
+better at making predictions the more practice it gets. 
+ Relationship to AI: Artificial Intelligence (AI) is the huge goal of making 
+machines intelligent like a human. ML is the main tool or a small part of 
+AI that allows this learning to happen from the experience. We are using 
+too much cloud space for all this AI learning. 
+ Relationship to Statistics: Statistics is the math foundation ML is built on. 
+While statisticians only want to explain why data is related, ML only 
+cares about making a good guess for new data. ML uses many statistical 
+ideas like probability and the Normal Distribution. 
+A-3. Describe how the decision tree algorithm works, including the role 
+of entropy and information gain. 
+A Decision Tree is a simple model that makes decisions like a flowchart you see 
+in a book. It works by splitting the data based on a feature until it gets to the 
+final answer. 
+ How it Works: The tree starts at the root and greedily picks the best feature 
+to split the data into purer groups. It keeps repeating this splitting process 
+until the groups (leaf nodes) are mostly one class or it gets too deep. You 
+should never use small trees because they underfit the data. 
+ Entropy: This is a measure of the messiness or impurity in a node. If a 
+node has a mixture of classes, it has high entropy. The goal of the 
+algorithm is to reduce this messiness as much as possible. 
+ Information Gain (IG): This is the score used to choose the best split. It 
+measures how much the entropy decreases after splitting. The algorithm 
+always chooses the split that gives the maximum Information Gain. 
+A-5. Describe ensemble methods like bagging and boosting. 
+Ensemble methods are smart ways to combine many weaker models (like 
+Decision Trees) to create one overall stronger, more accurate, and stable model. 
+1. Bagging (Bootstrap Aggregating): 
+o This method trains many models all at once (in parallel). Each 
+model is trained on a random sample of the data. 
+o The final prediction is found by averaging all the individual model 
+predictions (for regression) or by taking a majority vote (for 
+classification). 
+o Bagging's main purpose is to reduce variance (stop overfitting). The 
+most famous example of this technique is the Random Forest. 
+2. Boosting: 
+o This method trains models one after the other (sequentially). 
+o Each new model focuses on fixing the mistakes made by the previous 
+models in the sequence by giving more weight to the data points that 
+were misclassified. 
+o Boosting is very good at reducing bias and improving the accuracy 
+score. It is often slower to train because it must wait for the previous 
+model to finish. 
+A-6. Explain the bias-variance tradeoff and its significance. 
+The Bias-Variance Tradeoff is the most important concept that explains why a 
+model makes errors. The Total Error a model makes is the balance between Bias 
+and Variance. 
+ Bias (Underfitting): This is the error from the model being too simple and 
+making wrong assumptions. 
+o High Bias causes Underfitting, meaning the model performs bad on 
+all data because it cannot learn the pattern. A simple straight line 
+on very curvy data shows this problem. 
+ Variance (Overfitting): This is the error from the model being too complex 
+and too sensitive to the random noise in the training data. 
+o High Variance causes Overfitting, meaning the model is perfect on 
+training data but fails badly on new test data. This is why we need 
+to clean the data first. 
+ Significance: The tradeoff means that attempts to reduce bias (make the 
+model more complex) will typically increase variance. The goal is to find 
+the best complexity where the sum of these two errors is the smallest, 
+achieving the best generalization. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define and explain metrics like Precision, Recall, and F1-score 
+and when to use them. 
+These three scores are very useful for evaluating classification models, 
+especially when one class is much bigger than the other (imbalanced data). 
+1. Precision: Measures the accuracy of the positive predictions. It tells you: 
+"Out of all the times the model said Yes, how many times was it really 
+Yes?" You use it when a False Positive (crying wolf) is very expensive. 
+2. Recall (Sensitivity): Measures the model's ability to find all the positive 
+cases. It tells you: "Out of all the actual Yes cases that exist, how many did 
+the model find?" You use it when a False Negative (missing something 
+important) is very dangerous. We should always check the 
+hyperparameters before calculating recall. 
+B-4. How do you select the right machine learning algorithm for a 
+given problem? 
+Choosing the right algorithm is a systematic process based on the data you have 
+and the goal you want to achieve. 
+1. Identify the Task: First, determine if the output is a category (use 
+Classification like Random Forest) or a number (use Regression like 
+Linear Regression). If you don't know the output, you can use Clustering or 
+Association Rules. 
+2. Analyze Data Characteristics: The size of the data matters. Small data 
+needs simpler models to avoid overfitting. Large, complicated data needs 
+complex models like Gradient Boosting. The model must always match the 
+data. 
+3. Consider Constraints: If the client needs to understand the prediction 
+(interpretability), choose a simple model. If the prediction must be very 
+fast, choose an algorithm with low latency. 
+4. Benchmark: You must test several candidate models using cross-validation 
+and pick the one that gives the best score on your chosen evaluation 
+metric. 
+B-5. Explain the steps in the machine learning model development 
+lifecycle. 
+This lifecycle describes the standard process you must follow for building, 
+deploying, and maintaining a successful machine learning system. 
+1. Data Collection and Preparation: This is the first and longest step. You 
+have to get the raw data, clean it (handle missing values, remove bad 
+points), and do Feature Engineering (making new, better input variables). 
+2. Model Training: The data is split into three sets. You feed the training set 
+into the algorithm to fit its parameters. 
+3. Evaluation and Tuning: The validation set is used to tune the model's 
+settings (hyperparameters). The test set is used once at the end to get the 
+final, true performance score. 
+4. Deployment: The best model is put into the live application so the 
+customers can start getting predictions. The company's IT security must sign 
+off on this step. 
+5. Monitoring and Maintenance: The deployed model must be constantly 
+watched to ensure its accuracy doesn't degrade (a problem called Model 
+Drift). The model is retrained when needed. 
+You are absolutely right to point that out! I apologize; it seems I forgot to 
+include the rest of the Section C questions in the last response. My focus on 
+applying the complex formatting and content rules caused an oversight in the 
+structure. 
+Here is the completed Section C for the Average Quality Answers (Student 28), 
+maintaining the requested style (comprehensive, poor grammar, and irrelevant 
+rubbish). 
+C) Attemp any 4 (20 Marks) 
+C-3. Define and explain overfitting and underfitting and how to avoid 
+them. 
+These are the two main ways a model can fail when you try to use it on new, 
+unseen data. 
+1. Overfitting: 
+o Definition: The model is too complicated and smart and it 
+memorizes the training data perfectly, including all the mistakes 
+and noise. This is called High Variance. 
+o Symptom: The model gets a perfect score on the training data but a 
+terrible score on the test data. 
+o How to Avoid: You can use Regularization (L1 or L2) to punish the 
+complex model, or the simple way is to just get a lot more training 
+data. 
+2. Underfitting: 
+o Definition: The model is too simple and not smart enough to find 
+the main patterns in the data. This is called High Bias. 
+o Symptom: The model gets a bad score on both the training data and 
+the test data. 
+o How to Avoid: You need to use a more complicated model or you 
+have to add better features to the data. I think it also helps if you 
+buy a faster graphic card for training. 
+C-4. How to deal with missing data, scale features, or encode categorical 
+variables. 
+These are the three basic cleaning steps that everybody has to do before a 
+machine learning algorithm can even look at the data. 
+1. Missing Data: You have to either delete the entire row (if the missing 
+amount is small) or you must fill in the blank spaces (impute). For 
+numbers, you should fill it with the mean or median. For text categories, 
+you fill it with the mode (the most frequent value). 
+2. Scale Features: You change the range of the numbers. You can use 
+Standardization (mean of zero, standard deviation of one) or 
+Normalization (range of zero to one). This stops the big numbers from 
+pushing the small numbers around. 
+3. Encode Categorical Variables: The computer only understands numbers, so 
+you have to convert the text. For text with no order (like colors), use One
+Hot Encoding. For text with an order (like small, medium, large), use 
+Label Encoding. 
+C-5. What are a training set, validation set, and test set? 
+These are the three separate groups you split your total data into to make sure 
+you get an honest and reliable score for the model. 
+1. Training Set: This is the biggest part of the data (like 70% or 80%). It is 
+used to teach the model and fit all its weights and biases. The model sees 
+this data many times. 
+2. Validation Set: This is used while the model is training to tune the 
+settings (hyperparameters) and to watch out for overfitting before it gets too 
+bad. We need to remember that validation is not the final test. 
+3. Test Set: This is the secret, reserved portion of the data. It is used only once 
+at the very end to give the final, true, unbiased score of how good the 
+model is on new data. 

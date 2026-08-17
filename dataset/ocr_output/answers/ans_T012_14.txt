@@ -1,0 +1,105 @@
+ID-T012 
+Name : Ramesh Lokhande Roll no: 14 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning is like we believe something before seeing data and after 
+seeing data we change belief. For example if I think 70% rain tomorrow but 
+then I see dark cloud then I increase belief to 90%. That is Bayesian 
+thinking. It use formula posterior = prior × likelihood / evidence. It means 
+new belief = old belief × how data fit / something constant. 
+Frequentist not believe like that. They say probability is only frequency when 
+we do experiment many time. Bayesian says probability is degree of belief. 
+Frequentist find one parameter value that make data most likely, Bayesian 
+find whole distribution for parameter. 
+So in Bayesian we can use prior knowledge also, like doctor already know fever 
+mostly not dangerous, but frequentist only use data. Bayesian heavy math 
+because need integration and sampling. Frequentist simple but cannot say 
+uncertainty easily. Both used in ML but Bayesian useful when less data and 
+we have expert prior. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+RNN is a type of neural network that can remember previous information 
+because it have loop in it. It is like memory brain. In normal NN input go 
+only forward but in RNN output from previous time go back to itself. So it 
+can know context of earlier input. For example when we say “The cat sat on 
+the …” the next word “mat” depend on previous words. RNN understand 
+that. 
+The working is like for each time step we give input and old hidden state, it 
+give new hidden state and output. This hidden state carry information from 
+past. But when we train it for long sequence it forget because of vanishing 
+gradient, so LSTM and GRU made which keep gate to remember longer. 
+Application many: language translation, chatbots, handwriting, stock 
+prediction, speech to text, sentiment analysis, video captioning etc. RNN is 
+base idea of sequence model before transformers came. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+After model trained we cannot just keep in notebook. We need to send it 
+live so people can use. That is deployment. Deployment mean put model in 
+production environment. We can save model like pickle or h5, then wrap it in 
+API using Flask or FastAPI, then make server or container. After that front
+end or system send data and model reply prediction. 
+Monitoring is after deployment keep eye on model like teacher check student. 
+We see if accuracy same or drop, check if input data change pattern (called 
+drift), check latency or slow response. Also watch for bias and fairness 
+problem. If model performance fall then retrain or rollback. 
+Deployment and monitoring very important because model can fail if world 
+changes. It need logs, dashboard, alerts, versioning and automation pipeline. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Training ML model not always easy because many problems come. First 
+problem is data, if data not clean model also bad. If missing value or wrong 
+label model learn wrong thing. Second if data small then model memorize 
+instead of learn. Third hyperparameters like learning rate and layers tough to 
+choose. Fourth computing power not enough. Also sometimes model bias, 
+data imbalance, or overfitting. 
+Other challenge like concept drift, where after time data change and model 
+old become useless. And interpretability because black box model cannot 
+explain decision. Also deployment and maintain not easy. So ML is not only 
+training but end to end process. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+Probability means how much we expect something to happen if we already 
+know parameter. Likelihood means how much parameter is correct for given 
+data. Probability go forward direction, likelihood backward direction. Like 
+probability is P(data | parameter) and likelihood is L(parameter | data). 
+They look same symbol but different concept. 
+Example if coin have 0.5 chance head, probability of getting 3 head is 0.5³. 
+But likelihood is if we got 3 head what parameter value make that likely? 
+That’s estimation process. So that is main difference. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is algorithm used for binary class 0 and 1. It take linear 
+combination of input and apply sigmoid function which make value between 0 
+and 1. If value more than 0.5 predict 1 else 0. Formula p = 1/(1 + e^(-z)) 
+where z = w*x + b. 
+It use log loss to train. We can use in spam mail detection, diabetes test 
+(disease yes or no), student pass fail, credit risk etc. Advantage easy, fast, 
+interpretable. Disadvantage not handle complex data, need linearly separable. 
+B-4. What are hyperparameters? Give examples and explain how they differ 
+from parameters. 
+Hyperparameters are outside control setting before training start. Example: 
+learning rate, epoch, batch size, tree depth, number of layers. Parameters 
+are weight and bias learned by model. Difference is hyperparameter we choose 
+manually or tune, parameter model learn itself. 
+Tuning hyperparameter can make big change to model quality. We can do grid 
+search, random search or use autoML tools. 
+C] Attempt all (10 marks each) 
+C-2. Discuss 5 real-world examples of biased ML model and how such bias can 
+be reduced. 
+1. Hiring system bias — Some AI hiring system choose male over female 
+because trained on old data where mostly male hired. Fix by using 
+balanced dataset, removing gender info. 
+2. Facial recognition — Some software identify light skin better because 
+trained on such face more. Fix by add more dark-skin data and check 
+fairness. 
+3. Credit scoring bias — Bank model reject certain area people because ZIP 
+code relate to race. Fix by remove such feature. 
+4. Health care model bias — Predict treatment not correct for poor 
+country data because trained on rich hospital data. Fix by collect diverse 
+data. 
+5. Judicial tool bias — COMPAS system give wrong risk score for black 
+people. Fix by fairness constraint and transparent audit. 
+Bias come because data not balanced or human prejudice inside. We reduce by 
+diverse data, fairness check, bias removal algorithm, human review, and 
+regular monitoring. 

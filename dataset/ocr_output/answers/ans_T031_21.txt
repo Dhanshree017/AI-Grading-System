@@ -1,0 +1,22 @@
+ID-T031 
+Name: Nandini Desai Roll no: 306521 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Attempt All (each 5 marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning is how a computer learns to find a rule for a specific category. It is like teaching a kid what 
+is a "Bird" by showing many animals. 
+ Yes and No Examples: The computer looks at "Positive" examples (like a sparrow) and "Negative" 
+examples (like a cat). 
+ Searching for a Rule: There is a big "Hypothesis Space" which is just a list of all possible rules. 
+The computer searches this list to find the best one. 
+ General to Specific: The computer starts with a very broad guess and then makes it more specific as 
+it sees more data. 
+ Generalization: The goal is that the computer should guess correctly on a new animal it never saw 
+before. 
+ Find-S Method: This is a simple way where the model only looks at positive examples to make a 
+rule. 
+ Logic over Numbers: This is more about finding "Yes/No" rules rather than calculating big math 
+numbers. 
+ Version Space: This is the group of all rules that still work with the data the computer has seen so 
+far. 

@@ -1,0 +1,135 @@
+ID-T023 
+Name: Preeti singh Roll no: 30 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions (5 marks each) 
+A-1. Explain the role of validation sets in machine learning. Why is validation important, 
+and how does it prevent model overfitting? 
+A validation set is a portion of the dataset used to tune hyperparameters and evaluate model 
+performance during training before testing. 
+1. Provides an unbiased estimate of model generalization on unseen data. 
+2. Helps select the best model among multiple candidates. 
+3. Guides hyperparameter tuning (e.g., learning rate, tree depth). 
+4. Detects overfitting when training performance is high but validation performance is 
+low. 
+5. Supports early stopping to prevent the model from memorizing training data. 
+6. Ensures the test set is not repeatedly used, maintaining unbiased evaluation. 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+Generative models learn the joint probability P(x,y)P(x, y)P(x,y) and can generate new data 
+samples. 
+Discriminative models learn the conditional probability P(y∣x)P(y|x)P(y∣x) and focus on 
+separating classes. 
+1. Generative models model how data is generated; discriminative models model the 
+decision boundary. 
+2. Generative examples: Naïve Bayes, Variational Autoencoders, GANs. 
+3. Discriminative examples: Logistic Regression, SVM, Random Forest. 
+4. Generative models can synthesize new samples; discriminative models are optimized 
+for classification accuracy. 
+5. Use cases: Generative → image/text generation; Discriminative → spam detection, 
+medical diagnosis. 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Anomaly detection identifies data points that deviate significantly from normal patterns. 
+1. Detects fraud in financial transactions. 
+2. Identifies cyber-attacks or security breaches. 
+3. Predicts machine or system failures. 
+4. Ensures safety in industrial operations. 
+5. Applications include credit card fraud detection, network intrusion detection, 
+predictive maintenance, and medical outlier detection. 
+A-4. Explain the concept of model interpretability. Why do certain industries require 
+highly interpretable ML models? 
+Model interpretability is the ability to understand how a model makes predictions. 
+1. Builds trust and transparency for stakeholders. 
+2. Helps identify and correct biases or errors in predictions. 
+3. Essential in healthcare for justifying diagnoses. 
+4. Required in finance and legal domains to meet regulatory compliance. 
+5. Supports ethical AI deployment and troubleshooting. 
+6. Facilitates debugging and model improvement. 
+B ] Attempt any 5 (8 marks each) 
+B-2. Describe the importance of Model Evaluation Metrics. Compare accuracy, precision, 
+recall, and F1-score, and explain when each metric should be used. 
+Evaluation metrics quantify model performance for comparison and improvement. 
+1. Accuracy: Proportion of correct predictions; suitable for balanced datasets. 
+2. Precision: Correct positive predictions out of total predicted positives; important 
+when false positives are costly. 
+3. Recall: Correct positive predictions out of actual positives; critical when missing 
+positives is risky. 
+4. F1-score: Harmonic mean of precision and recall; ideal for imbalanced datasets. 
+5. Metric choice depends on problem type, data distribution, and cost of errors. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+ML enables understanding and generation of human language. 
+1. Text Classification: Categorizes documents, emails, and reviews. 
+2. Sentiment Analysis: Detects positive, negative, or neutral opinions. 
+3. Named Entity Recognition (NER): Extracts names, dates, and locations. 
+4. Language Modeling: Predicts next words in a sentence, used in chatbots and text 
+generation. 
+5. NLP applications include translation, summarization, question answering, and content 
+moderation. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain 
+the purpose of each stage with appropriate examples. 
+1. Problem Definition: Understand objectives and constraints (e.g., predict student 
+performance). 
+2. Data Collection: Gather structured or unstructured data from sources. 
+3. Data Preprocessing: Clean, encode, transform, and handle outliers. 
+4. Model Selection & Training: Choose algorithms and train models on data. 
+5. Evaluation: Use metrics to validate model performance. 
+6. Deployment: Integrate model into production. 
+7. Monitoring & Maintenance: Track model performance, retrain with new data as 
+needed. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Unsupervised Learning discovers patterns in unlabeled data. 
+1. Clustering: Groups similar data points (K-Means, DBSCAN, Hierarchical). 
+2. Dimensionality Reduction: Reduces features for efficiency (PCA, t-SNE, 
+Autoencoders). 
+3. Applications: Market segmentation, anomaly detection, image compression, 
+document grouping. 
+4. Helps visualize high-dimensional data and reduces computation. 
+5. Useful when labeled data is unavailable or expensive to obtain. 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+Reinforcement Learning (RL) trains agents to make decisions by maximizing rewards 
+through trial and error. 
+1. Agent: Learner that takes actions in an environment. 
+2. Environment: System with which the agent interacts. 
+3. Reward: Feedback for actions guiding learning. 
+4. Policy: Strategy mapping states to actions. 
+5. Use Case: Self-driving cars learn to navigate, avoid collisions, and optimize routes. 
+6. RL is also applied in robotics, gaming, and recommendation systems. 
+C ] Answer All (10 marks each) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining. 
+1. Data Drift: Changes in input data distribution reduce model accuracy. 
+2. Concept Drift: Relationship between input and output evolves over time. 
+3. Model Monitoring: Continuous tracking of accuracy, latency, and errors is essential. 
+4. Scalability: Models must handle growing traffic and datasets efficiently. 
+5. Hardware Constraints: Limited memory or processing power may affect 
+performance. 
+6. Security Risks: Vulnerable to adversarial attacks, model theft, or poisoning. 
+7. Continuous Retraining: Models need updating with new data to maintain 
+performance. 
+8. Integration & Versioning: Proper pipelines and APIs are required for smooth 
+deployment. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Applications 
+1. Diagnosis: Detect diseases such as cancer, diabetes, heart conditions. 
+2. Prediction: Assess patient risk, predict disease progression, hospital readmission. 
+3. Medical Imaging: CNNs analyze MRI, X-ray, and CT scans for abnormalities. 
+4. Drug Discovery: Predict molecular behavior and accelerate research. 
+Challenges 
+1. Data Quality: Noisy, incomplete, or inconsistent medical records. 
+2. Privacy: Patient data must be anonymized and protected under regulations. 
+3. Bias: Models may underperform for underrepresented populations. 
+4. Interpretability: Clinicians need explanations for AI decisions. 
+Development Steps 
+1. Define the healthcare problem and objectives. 
+2. Collect and preprocess data with proper anonymization. 
+3. Train and validate ML models using suitable algorithms. 
+4. Evaluate using appropriate metrics like accuracy, recall, and F1-score. 
+5. Deploy models in clinical systems or research workflows. 
+6. Monitor and retrain models as new patient data becomes available. 

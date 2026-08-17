@@ -1,0 +1,45 @@
+ID-T033 
+Name: Suresh Bhatt Roll no: 7  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. Explain the role of assumptions in machine learning models.  
+Assumptions are fundamental principles that guide a machine learning algorithm's design 
+and application. They define the underlying logic of a model, enabling it to make 
+predictions, but also imposing constraints on the type of data and problems it can effectively 
+solve.   
+The role of assumptions can be summarized in the following key points:  
+• Model Selection: Understanding assumptions helps data scientists choose the right 
+algorithm for a specific problem and dataset. For example, linear regression requires a linear 
+relationship between variables, while tree-based models have no such requirement.  
+• Simplification of Reality: Models use assumptions to simplify complex, real-world data and 
+processes, making them computationally feasible. The "model is the set of assumptions and 
+the set of assumptions is the model".  
+• Reliability and Validity: Satisfying an algorithm's assumptions is crucial for the model's 
+results to be reliable and trustworthy. Violations can lead to inaccurate predictions, biased 
+coefficients, or misleading statistical tests.  
+• Guidance for Data Preparation: Assumptions dictate necessary data preprocessing steps. 
+For instance, the sensitivity of K-Nearest Neighbors (KNN) to feature scaling means data 
+must be normalized before use to ensure accurate distance calculations.  
+• Interpretation and Explanation: Assumptions provide a framework for interpreting model 
+outputs. If a linear regression model assumes feature independence, its coefficients can be 
+interpreted as the isolated effect of each feature on the outcome.  
+• Hypothesis Generation and Testing: Explicitly stating assumptions allows them to be 
+treated as hypotheses that can be tested and validated with data, leading to a more robust 
+model or an understanding of the model's limitations.   
+Common Examples of Assumptions  
+Different algorithms operate under different assumptions:   
+• Linear Regression: Assumes a linear relationship between independent and dependent 
+variables, independence of residuals (no autocorrelation), homoscedasticity (constant 
+variance of errors), and normal distribution of residuals.  
+• Logistic Regression: Assumes the dependent variable is dichotomous (for binary logistic 
+regression), a linear relationship between the log odds of the outcome and each independent 
+variable, and independent observations.  
+• Naive Bayes: Operates on a strong "naive" assumption that all features are conditionally 
+independent of each other, given the class label.  
+• K-Means Clustering: Assumes that clusters are spherical and have roughly equal variance 
+and density, which affects how it calculates distances.  
+• Tree-based Models (Decision Trees, Random Forests, Gradient Boosting): These are 
+often called "non-parametric" models because they have very few formal assumptions about 
+the data's distribution or the relationships between variables, making them robust to outliers 
+and non-linear data  

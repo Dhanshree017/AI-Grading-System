@@ -1,0 +1,153 @@
+ID-T013 
+Name : Harmeet Singh Roll no: 21 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 10 (3 marks each) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine Learning is a branch of Artificial Intelligence that enables computer 
+systems to learn from data and improve their performance automatically 
+without being explicitly programmed. It focuses on developing algorithms that 
+can identify patterns, make predictions, and take decisions based on 
+experience. The three main categories of Machine Learning are Supervised 
+Learning, Unsupervised Learning, and Reinforcement Learning. Supervised 
+Learning works with labeled data to predict outcomes, Unsupervised Learning 
+works with unlabeled data to discover hidden structures, and Reinforcement 
+Learning learns by interacting with an environment and receiving feedback in 
+the form of rewards or penalties. 
+A-2. What is the difference between training error and test error? 
+Training error refers to the amount of error or inaccuracy that occurs when 
+a model is evaluated on the same dataset used to train it. It shows how well 
+the model fits the training data. Test error, on the other hand, measures 
+the error when the model is tested on new, unseen data. It reflects how 
+well the model generalizes to new situations. A model may have a very low 
+training error but a high test error, which indicates that it has memorized 
+the training data instead of learning the underlying patterns. This condition 
+is known as overfitting. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting happens when a machine learning model performs very well on 
+training data but fails to perform accurately on new data. This occurs 
+because the model has learned unnecessary details and noise from the training 
+data instead of focusing on the true patterns. One effective method to 
+reduce overfitting is Regularization. Regularization adds a penalty to complex 
+models, which discourages the model from giving too much importance to any 
+single feature or parameter. Techniques like Lasso and Ridge regularization are 
+commonly used to control overfitting and improve generalization. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+A confusion matrix is a performance measurement tool used to evaluate 
+classification models. It compares the actual output labels of a dataset with 
+the predicted labels given by the model. It provides counts of correct and 
+incorrect predictions for each class, which helps in understanding how well the 
+model distinguishes between categories. From the confusion matrix, we can 
+derive several important evaluation metrics such as accuracy, precision, recall, 
+and F1 score. These metrics help to analyze the strengths and weaknesses of 
+the model’s predictions. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection is the process of identifying and selecting only the most 
+relevant and significant features from the available dataset that contribute 
+most to the prediction target. It helps in simplifying the model, reducing 
+computation time, and improving model performance. Feature selection also 
+prevents overfitting by removing redundant or irrelevant features that add 
+noise to the learning process. Common feature selection techniques include 
+filter methods, wrapper methods, and embedded methods. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding is a technique used to convert categorical variables into 
+numerical form so that they can be used by machine learning algorithms. In 
+this process, each unique category is represented as a binary vector, where 
+one position is marked as one and all others are zero. For example, the 
+category red is represented as one zero zero, blue as zero one zero, and 
+green as zero zero one. It is mainly used in models that require numerical 
+input, such as neural networks and linear models. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+The learning rate is a parameter that controls how much the model’s weights 
+are adjusted during each step of the training process. It determines the size 
+of the steps taken toward the minimum value of the loss function. If the 
+learning rate is too high, the model may overshoot the optimal solution and 
+fail to converge. If the learning rate is too low, the model will take very 
+small steps and converge too slowly, or it may get stuck in local minima. 
+Choosing the right learning rate is therefore crucial for stable and efficient 
+learning. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+A loss function is a mathematical function used to measure how well a 
+machine learning model performs by comparing the predicted output with the 
+actual target value. It quantifies the difference between the predicted and 
+true values and guides the optimization algorithm to update the model’s 
+parameters. Two common types of loss functions are Mean Squared Error, 
+which is widely used for regression problems, and Cross-Entropy Loss, which is 
+used for classification problems. The goal of training is to minimize the loss 
+function to achieve better performance. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation is a technique used to assess how well a machine learning 
+model will perform on unseen data. In this method, the dataset is divided 
+into multiple parts or folds. The model is trained on some folds and tested 
+on the remaining ones, and this process is repeated several times with 
+different folds. The average performance across all folds gives a more reliable 
+estimate of model accuracy. Cross-validation reduces the risk of overfitting 
+and provides a more stable evaluation compared to a single train-test split, 
+which might depend heavily on how the data is divided. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised learning is a type of machine learning where the model is 
+trained on unlabeled data. The goal is to find hidden patterns, structures, or 
+relationships in the data without any predefined output labels. The model 
+automatically groups or organizes data based on similarities. Common 
+examples of unsupervised learning algorithms include K-Means Clustering, 
+which divides data into groups based on distance similarity, and Principal 
+Component Analysis, which reduces the dimensionality of data while preserving 
+important patterns 
+Section B – Attempt Any 4 (5 marks each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+Feature Engineering is the process of transforming raw data into meaningful 
+features that improve the performance of a machine learning model. It 
+involves selecting, creating, and modifying variables so that the model can 
+better capture the underlying patterns in data. The role of feature 
+engineering is crucial because good features make it easier for algorithms to 
+learn effectively and improve accuracy. Common techniques include encoding, 
+scaling, and polynomial feature generation. Encoding converts categorical data 
+into numerical form through methods like one-hot encoding or label encoding. 
+Scaling adjusts the range of numerical features using techniques such as 
+standardization or normalization so that all features contribute equally to 
+the model. Polynomial feature generation creates new features by combining 
+existing ones, allowing models to capture nonlinear relationships. Overall, 
+effective feature engineering leads to more accurate and efficient machine 
+learning models. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+Generative and Discriminative models are two fundamental approaches to 
+machine learning. Generative models focus on modeling how data is generated 
+by learning the joint probability distribution between features and labels. 
+They can generate new examples similar to the training data. Examples of 
+generative models include Naive Bayes, Hidden Markov Models, and Generative 
+Adversarial Networks. On the other hand, Discriminative models learn the 
+boundary or decision rule that separates different classes directly. They focus 
+on the conditional probability of labels given the features. Examples include 
+Logistic Regression, Support Vector Machines, and Neural Networks. 
+Generative models are powerful for understanding data distribution and 
+creating synthetic data, while discriminative models are generally more 
+accurate for classification tasks because they focus only on decision 
+boundaries. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means Clustering is an unsupervised learning algorithm used to group data 
+points into a predefined number of clusters based on similarity. The 
+algorithm works in several steps. First, the number of clusters k is chosen 
+and k initial centroids are randomly selected. Second, each data point is 
+assigned to the nearest centroid based on distance, usually using Euclidean 
+distance. Third, the centroids are recalculated by taking the average of all 
+points in each cluster. These steps are repeated until the centroids stop 
+changing significantly, meaning the algorithm has converged. The advantages of 
+K-Means include simplicity, efficiency, and scalability to large datasets. It is 
+widely used in customer segmentation, image compression, and pattern 
+discovery. However, its main limitation is that it requires the number of 
+clusters to be specified in advance. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping is a regularization technique used during model training to 
+prevent overfitting. It works by monitoring the model’s performance on a 
+validation dataset during the training process. Initially, as the model trains, 
+both training and validation performance improve. After a certain point, 
+however, the model starts to overfit, and validation accuracy begins to 
+decrease while training accuracy continues to increase. Early stopping halts 
+the training process at the point where the validation error starts rising, 
+ensuring that the model does not learn unnecessary noise from the training 
+data. By stopping at the right time, the model maintains a good balance 
+between learning enough patterns and generalizing well to unseen data. 

@@ -1,0 +1,65 @@
+ID-T030 
+Name: Mishti Shrivastav Roll no: 232522 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-1. Explain the concept of hypothesis space in machine learning. 
+The hypothesis space, denoted as $H$, represents the exhaustive set of all candidate functions that an 
+algorithm is permitted to explore during the learning process. It is the search space defined by the model's 
+architecture; for instance, in a Decision Tree, $H$ is the set of all possible tree structures. The complexity of 
+$H$ directly dictates the "Representational Capacity" of the model. A topper understands that a space too 
+restrictive leads to high bias (underfitting), while a space too expansive leads to high variance (overfitting). 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+This separation is the cornerstone of validating a model’s Generalization Ability. The training set is used for 
+parameter optimization (fitting the weights), whereas the test set serves as an independent proxy for real
+world unseen data. Without this boundary, "Data Leakage" occurs, resulting in an overly optimistic 
+performance metric that fails in production. It allows us to measure the gap between empirical risk (training 
+error) and structural risk (test error). 
+A-3. Explain how assumptions affect learning algorithms. 
+No learning is possible without Inductive Bias—the set of assumptions an algorithm uses to predict outputs 
+for inputs it has never encountered. For example, Linear Regression assumes a linear relationship between 
+features. If these assumptions align with the data's true distribution, the model converges rapidly with 
+minimal data. If they are incorrect, the model remains fundamentally flawed regardless of data volume, a 
+state known as "Model Mismatch." 
+A-4. What is the role of validation in model development? 
+Validation is a distinct phase used for Hyperparameter Optimization and model selection. While the training 
+set modifies internal parameters (like weights), the validation set is used to tune external settings (like 
+learning rate or regularization strength). It prevents the engineer from "over-tuning" to the test set, ensuring 
+that the final evaluation remains an unbiased reflection of the model's quality. 
+A-5. Describe the concept of inductive learning in machine learning. 
+Inductive learning is the process of extracting generalized patterns from specific observations. It relies on 
+the Inductive Learning Hypothesis, which posits that a hypothesis that successfully approximates the target 
+function over a sufficiently large training set will also approximate it over unobserved examples. It is 
+essentially a transition from "Instance-based" knowledge to "Rule-based" logic, allowing for predictive 
+capabilities on new inputs. 
+A-6. Explain the impact of noisy data on machine learning models. 
+Noisy data—defined as stochastic errors in labels or features—introduces "Artificial Variance" into the 
+system. High-capacity models (like deep neural networks) are particularly susceptible as they may attempt 
+to model the noise as if it were a legitimate underlying pattern. This results in an erratic decision boundary 
+and is a primary driver of Overfitting, where the model loses its ability to distinguish signal from corruption. 
+A-7. What is the difference between model fitting and model selection? 
+Model Fitting is an optimization task within a fixed hypothesis space (e.g., finding the best coefficients for a 
+specific polynomial). Model Selection is a higher-level search across different hypothesis spaces (e.g., 
+deciding whether a polynomial or a neural network is better for the task). Fitting minimizes training loss, 
+while selection maximizes validation performance to ensure the best architectural fit for the problem. 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+Ensemble diversity refers to the statistical independence of errors among the base learners in a committee. 
+For an ensemble to be effective, its members must fail on different subsets of the input space. This "Error 
+Decorrelation" ensures that when individual models are aggregated (via bagging or boosting), their errors 
+cancel out, while their correct predictions reinforce one another, leading to a much more stable and accurate 
+global boundary. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement. 
+The ML lifecycle (MLOps) is a continuous loop: 
+ Requirement Engineering: Identifying the objective and KPIs. 
+ Data Pipeline: Acquisition, cleaning, and feature engineering. 
+ Model Iteration: Training, validation, and rigorous testing. 
+ Deployment: Integration into production via APIs. 
+ Monitoring & Governance: Tracking "Model Drift" and performance decay. 
+ Retirement: Decommissioning when the model is superseded by a more accurate version or when 
+the data distribution changes fundamentally. 
+A-10. Explain the importance of documentation in ML projects. 
+Documentation provides Auditability and Reproducibility. In ML, it is vital to document "Data Lineage" 
+(the origin and transformations of data), hyperparameter choices, and the rationale behind specific 
+architectural decisions. This ensures that the model is not a "Black Box," facilitates team collaboration, and 
+satisfies regulatory requirements (like GDPR’s "Right to Explanation") regarding how automated decisions 
+are made. 

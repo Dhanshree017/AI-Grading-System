@@ -1,0 +1,29 @@
+ID-T034 
+Name: Santosh Maane Roll no: 10 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-1) Explain the concept of model generalization and why it is important in machine learning 
+Model generalization is the ability of a machine learning model to correctly predict outcomes for new, 
+unseen data that was not part of the training set. The main objective of any learning algorithm is not to 
+perform well on the training data, but to learn the true underlying patterns that exist in the data so that it 
+can make reliable predictions in the real world. 
+A model with good generalization captures the essential relationships between variables without memorizing 
+noise. When a model becomes too complex and learns every small variation in the training data, it results in 
+overfitting, which reduces its performance on new data. On the other hand, if the model is too simple, it 
+fails to learn important patterns, resulting in underfitting. Techniques such as cross-validation, 
+regularization, and proper dataset splitting help in improving generalization. 
+Generalization is important because real-world data is always different from training data. In applications 
+such as medical diagnosis, financial risk analysis, and autonomous systems, poor generalization can lead to 
+wrong decisions, financial losses, or safety risks. Therefore, a well-generalized model ensures accuracy, 
+reliability, and real-world usability. 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is the process of assigning correct and meaningful output values to training data in supervised 
+learning. These labels act as a reference or ground truth that guides the learning algorithm in understanding 
+how input features relate to desired outputs. Without labeled data, supervised learning models cannot learn 
+the mapping between inputs and outputs. 
+For example, in image recognition, images are labeled as “cat,” “dog,” or “car.” In medical diagnosis, 
+patient records may be labeled as “disease present” or “disease absent.” The model uses these labels to 
+detect patterns and relationships within the data. Accurate labeling enables the model to learn correct 
+decision boundaries, while incorrect or biased labels lead to wrong predictions and unfair models. 
+Thus, data labeling directly influences model accuracy, reliability, and fairness. High-quality labeled data is 
+often more valuable than large quantities of poorly labeled data in supervised machine learning. 

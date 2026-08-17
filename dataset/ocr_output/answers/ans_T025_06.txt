@@ -1,0 +1,139 @@
+ID-T025 
+Name: payal mishra Roll no:6 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Concept of Data Preprocessing 
+Data preprocessing in machine learning is the foundational step that prepares raw data for 
+effective model training. In real-world scenarios, data is rarely clean or ready to use. It may 
+contain missing values, duplicate records, noise, inconsistencies, and features with different 
+scales. Data preprocessing transforms such raw data into a structured and meaningful form 
+so that machine learning algorithms can learn accurate and reliable patterns. 
+Various Preprocessing Tasks 
+Data cleaning involves handling missing values using techniques such as deletion or 
+imputation, removing duplicate records, and correcting incorrect entries. Encoding is applied 
+to convert categorical variables into numerical values so that algorithms can process them 
+mathematically. Feature scaling and normalization adjust numerical features to a common 
+scale, preventing features with larger values from dominating the learning process. Outlier 
+detection identifies and treats extreme values that can distort model predictions. Data 
+transformation techniques such as log transformation or binning help stabilize variance and 
+improve data distribution. 
+Influence on Model Performance 
+Effective preprocessing improves model accuracy, speeds up convergence, reduces 
+overfitting, and enhances generalization. Poor preprocessing can lead to biased models, 
+unstable training, and incorrect predictions, making preprocessing a critical step in any ML 
+pipeline. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+Working of Decision Tree Algorithm 
+A Decision Tree is a supervised learning algorithm that uses a tree-like structure to model 
+decisions and their outcomes. The algorithm starts with the entire dataset at the root node and 
+splits the data into subsets based on feature values. This splitting process continues 
+recursively until a stopping condition is reached, such as maximum depth or minimum 
+samples at a node. 
+Decision-Making Process 
+At each internal node, the algorithm evaluates all possible features and selects the best one 
+for splitting using criteria such as Information Gain, Gini Index, or Entropy. Each branch 
+represents a condition, and the traversal from root to leaf represents a sequence of decisions 
+leading to a final prediction. 
+Advantages and Limitations 
+Decision Trees are easy to understand and interpret, making them suitable for explainable 
+systems. They work with both numerical and categorical data and require minimal 
+preprocessing. However, they are prone to overfitting, sensitive to noisy data, and small 
+variations in training data can result in different tree structures. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Importance of Model Evaluation 
+Model evaluation is essential to measure how well a trained model performs on unseen data. 
+It helps compare models, detect weaknesses, and ensure reliability before deployment. 
+Why Accuracy Alone Is Not Sufficient 
+Accuracy can be misleading, especially for imbalanced datasets. For example, in fraud 
+detection, predicting all transactions as non-fraud may give high accuracy but fail to detect 
+actual fraud cases. 
+Other Evaluation Measures 
+Precision measures the correctness of positive predictions, recall measures the ability to 
+identify all relevant cases, F1-score balances precision and recall, and ROC-AUC evaluates 
+model performance across thresholds. These metrics provide deeper insights into real-world 
+performance. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+Feature Selection 
+Feature selection identifies the most relevant input features while removing irrelevant or 
+redundant ones. This improves model interpretability and reduces noise. 
+Dimensionality Reduction 
+Dimensionality reduction techniques like PCA transform high-dimensional data into lower 
+dimensions while retaining essential information. 
+Benefits 
+Both techniques reduce computational cost, improve training speed, minimize overfitting, 
+and enhance generalization, making models more efficient and scalable. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+Model Deployment 
+Model deployment involves integrating a trained ML model into production systems such as 
+web services, APIs, or enterprise platforms. 
+Maintenance Issues 
+After deployment, models must be monitored for performance drops caused by data drift. 
+Retraining is required when real-world data changes. Performance degradation may occur 
+due to evolving user behavior, outdated data, or environmental changes, making continuous 
+maintenance essential. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine 
+learning can be used to analyze customer behavior, product data, and past returns to 
+reduce return rates. 
+Reducing product returns is a major challenge in e-commerce as it increases logistics cost 
+and reduces customer trust. Machine learning helps by analyzing large-scale historical data 
+related to customer behavior, product characteristics, and return reasons. Customer data 
+includes browsing patterns, purchase frequency, return history, and feedback behavior. 
+Product data includes size, color, price, images, category, and seller ratings. Return data 
+captures reasons such as size mismatch, quality issues, or incorrect expectations. 
+ML classification models predict the likelihood of a return before purchase completion. 
+Recommendation systems suggest products with lower return probability based on customer 
+preferences. NLP models analyze reviews and return comments to identify misleading 
+descriptions. These insights help improve product listings, size recommendations, quality 
+checks, and personalized suggestions, leading to reduced return rates. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, 
+and challenges involved. 
+Fraud detection in banking requires identifying suspicious transactions instantly. Machine 
+learning uses transaction data such as amount, time, location, merchant type, device ID, 
+transaction frequency, and customer spending patterns. Historical labeled data is used to train 
+supervised classification models, while unsupervised models detect anomalies. 
+In real time, the ML model assigns a fraud risk score to each transaction. High-risk 
+transactions may trigger alerts, require additional verification, or be blocked. Challenges 
+include highly imbalanced datasets, evolving fraud patterns, minimizing false positives, and 
+maintaining low latency. Continuous monitoring and retraining are essential for effective 
+fraud detection. 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine learning 
+can support this task, from data collection to using predictions for better healthcare 
+decisions. 
+Patient readmission prediction helps hospitals improve care quality and reduce costs. 
+Hospitals collect patient demographic data, medical history, diagnosis details, lab results, 
+medication records, and lifestyle information. ML models analyze this data to identify 
+patterns associated with high readmission risk. 
+Classification models predict the probability of readmission within a specific time period. 
+These predictions help doctors plan personalized discharge instructions, schedule follow-ups, 
+allocate resources efficiently, and focus care on high-risk patients. As a result, hospitals 
+improve patient outcomes and operational efficiency. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how 
+machine learning can help identify and limit misinformation while considering ethical 
+challenges. 
+Fake news spreads rapidly on social media platforms, influencing opinions and causing 
+social harm. Machine learning helps by analyzing text content, images, videos, and user 
+behavior. NLP models identify suspicious language patterns, while network analysis studies 
+how misinformation spreads across users. 
+ML models classify content as genuine or fake and reduce its visibility or flag it for review. 
+Ethical challenges include bias in training data, risk of censorship, and ensuring freedom of 
+expression. A balanced approach combining machine learning with human moderation 
+ensures responsible content control. 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how 
+predictive maintenance using machine learning can reduce downtime and improve 
+operational efficiency. 
+Manufacturing equipment breakdowns cause production delays and financial losses. 
+Predictive maintenance uses machine learning to analyze sensor data such as temperature, 
+vibration, pressure, and usage hours. ML models identify early warning signs of failure and 
+estimate remaining useful life. 
+Maintenance can be scheduled before breakdowns occur, reducing unplanned downtime and 
+repair costs. Predictive maintenance improves equipment lifespan, enhances safety, and 
+increases overall operational efficiency. 

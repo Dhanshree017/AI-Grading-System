@@ -1,0 +1,80 @@
+ID-T031 
+Name: Tarun Kapoor Roll no: 306518 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Attempt All (each 5 marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning is a simple way the computer learns to put things in a "Yes" pile or a "No" pile. It is like a 
+baby learning what a "ball" is by looking at different round things. 
+ Learning from Examples: You show the computer many examples. Some are "Positive" (the 
+concept) and some are "Negative" (not the concept). 
+ The Big List (Hypothesis Space): There is a huge list of all possible rules the computer can use. 
+This is called the Hypothesis Space. 
+ Searching: The computer "searches" through that big list to find one rule that fits all the examples 
+perfectly. 
+ Simple to Complex: Most models start with a very specific rule and make it bigger as they see more 
+"Yes" examples. 
+ The Goal: The computer wants to find the "Target Concept," which is the perfect rule for that 
+category. 
+ New Data: After learning, if you show the computer a new object, it uses its rule to say if it belongs 
+to the group or not. 
+ Generalization: This means the computer doesn't just memorize; it actually understands the pattern 
+for the future. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency means your data is "neat and tidy" and follows the same rules everywhere. If the data is a 
+mess, the model will be "dumb." 
+ No Mixed Signals: If you have one name written as "NYC" and "New York," the computer gets 
+confused and thinks they are different places. 
+ Same Math Units: You cannot mix Kilograms and Pounds. Everything must be the same so the 
+math works correctly. 
+ Garbage In, Garbage Out: This is a famous saying. If you give the computer "garbage" (messy 
+data), you get "garbage" results. 
+ Finding Patterns: Computers look for patterns. If the data is inconsistent, the pattern breaks and the 
+computer fails to learn. 
+ Faster Training: Clean data helps the computer finish its "homework" (training) much faster 
+without getting stuck. 
+ Trust: If the data is consistent, we can trust the model's decisions more. 
+ Saving Money: Fixing data later is very expensive. It is better to have consistent data from the very 
+first day. 
+A-3. What is the role of constraints in machine learning algorithms? 
+Constraints are like "rules" or "walls" that keep the computer from making a mistake. They keep the model 
+simple and honest. 
+ Preventing Overfitting: This is the main job. Without constraints, the computer might just 
+memorize the answers instead of learning the logic. 
+ Regularization: This is a fancy word for a constraint that stops the model's numbers from getting 
+too big and crazy. 
+ Keeping it Simple: Constraints force the model to find the simplest answer. Simple answers usually 
+work better on new data. 
+ Safety Rules: In things like self-driving cars, constraints are "hard rules" like "Never cross a red 
+light." 
+ Fairness: We can add constraints so the computer doesn't use things like race or gender to make a 
+choice. 
+ Narrowing the Search: Since there are millions of possible rules, constraints tell the computer 
+which rules are "illegal," so it finds the right one faster. 
+A-4. Explain the difference between model performance and model reliability. 
+Performance is how "smart" the model is on a test today. Reliability is if the model stays "smart" every day 
+in the real world. 
+ Performance (The Score): This is like a grade on a report card. We use words like "Accuracy" to 
+show how many it got right. 
+ Reliability (The Trust): This means the model doesn't break if the data gets a little bit messy or if 
+things change. 
+ The Difference: A model can be 100% right in the lab (High Performance) but fail completely when 
+a real person uses it (Low Reliability). 
+ Lab vs. Real World: Performance is measured in the lab. Reliability is measured in the real world 
+over a long time. 
+ Noise: A reliable model can handle "noisy" (bad) data without making a huge, dangerous mistake. 
+ Consistency: Reliability means the model gives the same correct answer every time you ask it. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback is how the computer learns from its own mistakes. It is like a teacher correcting a student's 
+homework. 
+ Learning from Errors: Every time the computer makes a wrong guess, the "Error" is measured. 
+ Updating Settings: That error information is sent back to the model’s "brain" to change its internal 
+settings (weights). 
+ Backpropagation: This is just a fancy name for the feedback moving backward through the model 
+to fix the mistakes. 
+ User Feedback: When you click "Like" or "Dislike," you are giving the model feedback so it gives 
+you better stuff next time. 
+ Rewards: In some systems, the AI gets a "point" for a good job and a "penalty" for a bad job. This is 
+called Reinforcement Learning. 
+ Always Getting Better: Feedback makes sure the model doesn't stay the same. It keeps learning and 
+improving every single day. 

@@ -1,0 +1,32 @@
+ID-T034 
+Name:  Bishal Jaiswal Roll no: 14 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-1) Explain the concept of model generalization and why it is important in machine learning 
+Model generalization means how a model works when it is given new data. When a machine learning model 
+is trained, it learns from a set of data. But later it will get different data. So if it works on that new data also 
+then it is said to have generalization. If it does not work then it is not good. 
+Sometimes model learns training data very deeply. It remembers all values. Then when new data comes, it 
+becomes confused and gives wrong answer. Sometimes it does not learn properly also. So generalization is 
+needed so that it can work properly. If generalization is good then model will be useful in real world. 
+Generalization is important because we cannot always use training data in real life. So if model does not 
+generalize then it will fail in practical use. 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling means giving name or value to data. In supervised learning, we have to give input and output 
+both. The output is called label. The model uses these labels to learn. 
+For example, if we give image of dog and label it dog, then model will know it is dog. If labels are wrong, 
+model will also learn wrong. So labeling is very important. It is the base of supervised learning. 
+Without labels, supervised learning will not work. The model will not know what is correct. That is why 
+data labeling is very necessary in supervised learning systems. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods means using many models together. One model can give wrong answer but many models 
+together can give better answer. So ensemble improves accuracy. 
+For example, if we ask one person, he may give wrong answer, but if we ask many people and take majority, 
+it is more correct. Same way, ensemble uses many models. Random forest is example of ensemble. 
+So ensemble methods are better because they use many models and reduce mistake of one model. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means getting same result again and again. In machine learning, if we run program again, it 
+should give same output. This is important to trust the experiment. 
+If results are not reproducible then no one will believe it. It also becomes difficult to check mistakes. So 
+reproducibility is important for research and development. 
+It also helps others to understand the work. So it is necessary in machine learning experiments. 

@@ -1,0 +1,108 @@
+ID-T022 
+Name: ashish pawar Roll no: 29 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of 
+features and the role of feature selection in improving model performance. 
+Feature engineering is long process, many steps and very important. Workflow go like this: 
+1. Understand data — first look at data, find types, missing, outliers, distribution, 
+date/time, text. You must know what each column mean before touch. 
+2. Clean data — fix typos, remove duplicates, impute missing (mean/median/KNN or 
+model-based), correct wrong values. This step avoid garbage into model. 
+3. Transform raw into features — create new columns: aggregates, ratios, interaction 
+terms, date parts (year, month, weekday), lags for time-series, rolling means. For text 
+make TF-IDF or embeddings. For images extract pretrained features. 
+4. Encode categorical — one-hot for low-cardinality, target-encoding or embeddings for 
+high-cardinality. Be careful with leakage when target-encoding. 
+5. Scale / normalize — standardize numeric features for algorithms that need it (SVM, 
+NN) or keep tree-friendly raw values for tree models. 
+6. Reduce / select features — remove highly correlated, low variance, or irrelevant 
+columns. Use PCA only when helpful. 
+7. Feature validation — test features on holdout data, check distribution difference train 
+vs test, check leakage. 
+8. Deploy and monitor — instrument features in production, monitor distribution shifts 
+and rebuild pipeline when needed. 
+Different types of features (examples): 
+ Numerical (continuous, discrete): age, price, temp. 
+ Categorical (nominal/ordinal): country, education level. 
+ Datetime: timestamp, useful for seasonality or trend. 
+ Text features: bag-of-words, TF-IDF, embeddings. 
+ Time-series features: lag, rolling mean, trend. 
+ Image features: CNN embeddings, color histograms. 
+ Derived features: ratios, interactions, counts. 
+Role of feature selection — short points: 
+ remove noise and irrelevant inputs so model not overfit. 
+ reduce dimensionality thus speed up training and inference. 
+ improve generalization and interpretability by keeping only meaningful features. 
+ methods: filter (correlation, chi-square), wrapper (recursive feature elimination), 
+embedded (L1, tree feature importance). Use cross-validation to choose best subset. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+CNN is special neural net for images and spatial data. Architecture common blocks: 
+1. Input layer — image height × width × channels (e.g., 224×224×3). 
+2. Convolutional layers — apply many filters (kernels) sliding over image; each filter 
+compute dot-product and produce activation map. Convolution shares weights so 
+detect same pattern anywhere. 
+3. Activation (ReLU) — nonlinearity applied after convolution to add capacity. 
+4. Pooling layers — downsample spatial dimension (max-pool or avg-pool) to reduce 
+size, make translation invariance, reduce computation. 
+5. Normalization / BatchNorm — stabilize training and allow larger learning rate. 
+6. Stack more conv + pool — deeper layers learn higher-level features (edges → 
+textures → parts → objects). 
+7. Fully connected layers / Global average pool — combine features for classification 
+or regression. 
+8. Output layer — softmax for multi-class, sigmoid for multi-label. 
+How convolution helps: 
+ local receptive fields let network focus on local spatial patterns (edges, corners). 
+ weight sharing reduces parameters and learns translational invariance. 
+Feature maps meaning: 
+ each filter produce a feature map showing where pattern present. 
+ early maps simple (edge detectors), deeper maps complex (faces, wheels). 
+ stacking maps create hierarchical representation. 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and 
+compare how each method improves model performance in different scenarios. 
+Ensemble learning combine multiple learners to get better accuracy and stability than single 
+model. Idea: different models make different errors, combine to cancel errors. 
+Bagging (Bootstrap Aggregating): 
+ train base learners (often decision trees) on bootstrap samples (random sampling with 
+replacement). 
+ average predictions (regression) or majority vote (classification). 
+ reduces variance and overfitting because model ensemble smooths fluctuations. 
+ Random Forest is bagging with additional random feature selection in tree splits. 
+ Best when base learner high variance (deep trees). Bagging not reduce bias much. 
+Boosting: 
+ sequential ensemble where each new learner focuses on mistakes of previous ones. 
+ algorithms: AdaBoost (reweights instances), Gradient Boosting (fit residuals), 
+XGBoost/LightGBM/CatBoost advanced versions. 
+ reduces bias and variance by combining many weak learners into strong predictor. 
+ very powerful on tabular data, but susceptible to overfitting if not regularized. 
+Stacking (Stacked Generalization): 
+ train diverse base models (level-0), then train meta-learner (level-1) on their 
+predictions. 
+ meta-learner learns how to best combine outputs (weights) and can correct systematic 
+errors. 
+ powerful when base models are complementary. Must use cross-validated predictions 
+for meta training to avoid leakage. 
+Comparison & when to use: 
+ Bagging: use when variance high and you want stability (trees). Good default when 
+noisy data. 
+ Boosting: use when you need best accuracy and willing to tune; works great on 
+structured tabular data and weak learners like shallow trees. 
+ Stacking: use when you have multiple diverse strong models and want additional 
+gain; careful CV needed to avoid overfitting. 
+ ensembles often improve calibration and robustness; cost is increased compute and 
+complexity. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+1. Supervised learning is ML where model learn from labeled examples. 
+2. Each example has input features and known output label. 
+3. Model tries to map inputs → outputs using training data. 
+4. Used for regression and classification tasks. 
+5. Goal is generalize to unseen data. 
+B-2. What is a feature in machine learning? 
+1. A feature is single measurable property or attribute of data. 
+2. It is column used by model as input. 
+3. Examples: age, salary, pixel value. 
+4. Good features help model learn better. 
+5. Features can be numeric, categorical, text or time-based. 

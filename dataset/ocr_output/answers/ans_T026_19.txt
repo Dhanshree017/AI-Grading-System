@@ -1,0 +1,71 @@
+ID-T026 
+Name: Suresh Sen Roll no: 19 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of bias and their 
+impact on model generalization. 
+Learning Bias in Machine Learning 
+Learning bias refers to systematic errors introduced into a machine learning model that cause it to favor 
+certain outcomes or patterns over others, often leading to inaccurate or unfair predictions. 
+Impact on Model Generalization 
+8. Models fail to generalize to unseen data. 
+9. Predictions become unreliable and unfair. 
+10. Bias reduces robustness and trust in ML systems. 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Common Assumptions in ML Algorithms 
+1. Linearity Assumption – Output is a linear combination of inputs. 
+2. Independence Assumption – Features are statistically independent. 
+3. Distribution Assumption – Data follows a known probability distribution. 
+4. Stationarity Assumption – Data characteristics remain constant. 
+Influence on Model Selection and Performance 
+5. Strong assumptions reduce model complexity. 
+6. Incorrect assumptions cause underfitting. 
+7. Simple models rely on strong assumptions. 
+8. Complex models make fewer assumptions but risk overfitting. 
+9. Assumptions guide algorithm choice. 
+10. Correct assumptions improve efficiency and generalization. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, missing 
+values, and inconsistencies affect learning outcomes. 
+Importance of Data Quality 
+Data quality determines how accurately a machine learning model can learn patterns and make reliable 
+predictions. 
+Effect of Noise 
+1. Noise introduces random errors. 
+2. Models learn incorrect patterns. 
+Effect of Missing Values 
+3. Missing data reduces information completeness. 
+4. It introduces bias in learning. 
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss their 
+characteristics, strengths, and limitations in theory. 
+Shallow Learning Approaches 
+1. Use one or few layers. 
+2. Depend on manual feature engineering. 
+3. Require less data. 
+4. Easier to interpret. 
+5. Faster training. 
+Deep Learning Approaches 
+6. Use multiple hidden layers. 
+7. Learn features automatically. 
+8. Require large datasets and high computation. 
+9. Achieve high accuracy on complex tasks. 
+Strengths and Limitations 
+10. Shallow models lack expressiveness, while deep models lack interpretability. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. Explain issues 
+such as fairness, transparency, accountability, and privacy. 
+Fairness 
+1. Models should not discriminate between individuals or groups. 
+2. Biased data leads to unfair outcomes. 
+Transparency 
+3. Decisions should be explainable. 
+4. Black-box models reduce trust. 
+Accountability 
+5. Clear responsibility must exist for model decisions. 
+6. Errors should be traceable. 
+Privacy 
+7. Sensitive data must be protected. 
+8. User consent is essential. 
+Ethical Responsibility 
+9. Compliance with laws and regulations. 
+10. Ethical ML builds trust and social acceptance. 

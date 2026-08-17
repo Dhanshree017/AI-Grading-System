@@ -1,0 +1,165 @@
+ID-T001 
+Name : Divya lalwani Roll no: 28 
+Class : Ty Bsc Computer Science 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 of the following questions (20 Marks) 
+A-2. Explain the assumptions and properties of linear and logistic regression. 
+Linear Regression (LR) and Logistic Regression (LogR) they are basic models that they both use a 
+straight line concept but they guess different types of final answers. 
+1. Linear for numbers only: LR it is for when the answer is a number (regression). The main 
+property is that it assumes the relationship between input and output it must be a straight 
+line. 
+2. Linear assumptions: For LR to be valid, the model's mistakes (residuals) they must be random 
+and they must look like a normal bell curve. Also, the variance of the mistakes it must be the 
+same across all data points. 
+3. Logistic for categories only: LogR it is for when the answer is a category (classification). It does 
+not need those crazy normality assumptions like LR does. 
+4. Sigmoid is key to Logistic: LogR it uses a special S-shaped function (the sigmoid) that it 
+converts the straight line math into a probability score between 0 and 1. This is its main 
+property. 
+5. Both are simple: Both models they are simple and fast because they only estimate weights for a 
+fixed, linear equation. They do not work well on curvy, complex data. 
+A-3. Describe how the decision tree algorithm works, including the role of entropy and information 
+gain. 
+The Decision Tree (DT) algorithm it makes decisions by breaking down the data into smaller, cleaner 
+groups based on sequential rules about the features. 
+1. Recursive splitting: The model it starts at the top (root) and it asks the best question about a 
+feature to divide the data so the groups become more pure (less mixed classes). 
+2. Entropy is the chaos: Entropy it is the mathematical number that tells you the level of chaos or 
+disorder in the class labels within a node. We want to lower this number. 
+3. Information Gain is the value: Information Gain (IG) it is the amount that the chaos (Entropy) 
+is reduced after a split. The algorithm it is greedy and always chooses the split that gives the 
+biggest IG. 
+4. Stopping rules: The tree it stops growing when no split gives a useful IG, or when the leaf nodes 
+get too small to be reliable. 
+5. Pruning: Since DTs they easily overfit (high variance), we must use pruning (cutting back the 
+useless branches) to make the model more general and less specific to the training noise. 
+A-4. Explain the back-propagation algorithm in the context of neural networks. 
+Back-propagation it is the essential trick that allows a deep Neural Network (NN) to learn by 
+efficiently calculating how much each weight contributed to the final error. 
+1. Forward pass for error: First, the training data it travels forward through all the layers to 
+produce a prediction and calculate the overall loss (mistake). 
+2. Backward pass for change: Then, back-propagation it starts at the output layer and it moves 
+backward through the network, calculating the gradient (the slope) for every single weight. 
+3. Error distribution: It uses calculus (the chain rule) to figure out how to distribute the total 
+error backward, so the weights in the early layers also know how much they need to change. 
+4. Gradient Descent use: The calculated gradients they are then used by the optimizer (like 
+$\text{SGD}$) to update the weights and move the network closer to the minimum loss. 
+5. Efficiency: This algorithm it is very important because it makes the training process fast by 
+avoiding redundant calculations for each weight's update. 
+A-5. Describe ensemble methods like bagging and boosting. 
+Ensemble methods they are used to make a final model stronger by combining the predictions of many 
+simple base models. This it is better than any single model. 
+1. The idea of wisdom: It works because if you have many simple models, their individual errors 
+they are different, so when you take the average, the total error is low. 
+2. Bagging is parallel: Bagging (Bootstrap Aggregating) it trains many models at the same time 
+on random subsets of the original data. This is for stabilizing the model. 
+3. Bagging reduces variance: Bagging it is best for solving the high variance (overfitting) problem 
+because it smooths out the noisy boundaries. Random Forest is this technique. 
+4. Boosting is sequential: Boosting it trains the models one after the other. Each new model it is 
+designed to fix the mistakes made by the previous model in the sequence. 
+5. Boosting reduces bias: Boosting it is best for solving the high bias (underfitting) problem because 
+it creates a very complex sequence that learns the hard parts of the pattern. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define and explain metrics like Precision, Recall, and F1-score and when to use them. 
+These three evaluation numbers they are crucial for checking how well a classification model works, 
+especially when the data is not balanced. 
+1. Precision score: Precision it tells you how often the model is correct when it says the answer is 
+positive. It is about minimizing False Positives. 
+2. Precision use case: You use Precision when a False Positive (a wrong prediction) it is the most 
+harmful or expensive mistake (e.g., wasting money on wrong marketing targets). 
+3. Recall score: Recall it tells you how many of the actual positive cases the model was able to 
+successfully find. It is about minimizing False Negatives. 
+4. Recall use case: You use Recall when a False Negative (a missed case) it is the most critical 
+mistake (e.g., failing to detect a security threat). 
+5. F1-Score average: The F1-Score it is the combined number that it represents the balance 
+between Precision and Recall. You use it when both errors are equally important. 
+B-2. What is a confusion matrix and how is it used to evaluate a classification model? 
+A confusion matrix it is a simple table that it shows the full results of the model's predictions 
+compared to the true class labels. 
+1. The four groups: The matrix it has four counts: True Positives (TP), True Negatives (TN), False 
+Positives (FP), and False Negatives (FN). 
+2. Correct guesses: The TP and TN counts they are on the diagonal and show the number of 
+correct predictions. 
+3. Mistake types: The FP and FN counts they show the number of incorrect predictions. Looking 
+at them it tells you if the model is too aggressive (high FP) or too passive (high FN). 
+4. Metric source: The confusion matrix it provides the raw counts needed to calculate all the other 
+metrics like Precision, Recall, and Accuracy. 
+5. Visualization: It is a better tool than just looking at one number (accuracy) because it breaks 
+down the model's specific failure points. 
+B-3. What is the difference between a cost function and a loss function? 
+The names Loss Function and Cost Function they are used interchangeably a lot, but they technically 
+mean different things in the context of training. 
+1. Loss is single mistake: The Loss Function it calculates the error (the penalty) that the model 
+makes on just one single example (one row of data) at a time. 
+2. Cost is total mistake: The Cost Function it is the measure of the total error that the model 
+makes across the entire training dataset (all the rows). 
+3. Cost is the average: The Cost Function is often calculated as the average of all the Loss Function 
+results across the training data. 
+4. Both are minimized: Both functions they represent the target that the optimization algorithm 
+(like Gradient Descent) it tries to push lower and lower during the entire training process. 
+B-4. How do you select the right machine learning algorithm for a given problem? 
+You choose the best algorithm by looking at the output needed, the data's own characteristics, and the 
+restrictions given by the business. 
+1. Output first: The most important choice it is whether the output is a category (Classification) 
+or a continuous number (Regression). 
+2. Interpretability constraint: If the prediction must be fully explained (e.g., financial or legal 
+decisions), you must choose a simple, transparent model like Linear Regression or a Decision 
+Tree. 
+3. Data complexity: If the data it has simple, straight-line patterns, you can use simple linear 
+models. If the data it is complex and curvy, you need powerful ensembles or Neural Networks. 
+4. Data size: For very large datasets, you must use scalable algorithms that can train fast in a 
+distributed environment. 
+5. Test and compare: You must always try a variety of different model types and let the test set 
+score (after cross-validation) decide the true winner. 
+C) Attemp any 4 (20 Marks) 
+C-1. What are the role of feature scaling in machine learning. 
+Feature Scaling it is the essential step where you standardize or normalize the numerical input 
+features so that they all have a similar range of values. 
+1. Equal influence: The main role it is to stop features with very big numbers (e.g., dollars) from 
+unfairly controlling the model's loss function compared to features with small numbers (e.g., 
+binary flags). 
+2. Distance-based models: It is required for algorithms that calculate the distance between data 
+points, such as KNN, K-Means Clustering, and SVM. 
+3. Faster optimization: Scaling it dramatically helps all models that use Gradient Descent to train 
+much faster because it makes the loss landscape smoother. 
+4. Standardization: Standardization it transforms the data to have a mean of 0 and a standard 
+deviation of 1. This it is a robust method. 
+5. Normalization: Normalization it transforms the data to fit into the range of 0 to 1. 
+C-2. What are the advantages and disadvantages of parametric versus non-parametric models? 
+Parametric and Non-parametric models they are categorized based on how much they assume about 
+the mathematical distribution of the data. 
+1. Parametric definition: Parametric models (like Linear Regression) they assume the data fits a 
+fixed function (e.g., a straight line) and only estimate a few parameters (the slope and 
+intercept). 
+2. Parametric pros and cons: They are very simple and fast to train, and they need less data. But 
+they fail badly (high bias) if the data is not linear. 
+3. Non-parametric definition: Non-parametric models (like Decision Trees or KNN) they do not 
+assume any fixed function. They learn the shape of the function directly from the data. 
+4. Non-parametric pros and cons: They are very flexible and can fit complex, curvy data (low 
+bias). But they require huge data and they overfit easily (high variance). 
+C-3. Define and explain overfitting and underfitting and how to avoid them. 
+Overfitting and underfitting are the two ways a model can be badly designed because it is either too 
+complex or too simple for the data. 
+1. Overfitting (High Variance): It is when the model is too flexible and it memorizes the specific 
+noise in the training data. This makes it fail on new data. 
+2. Overfitting fix: You can avoid it by using regularization (a penalty on model weights), by 
+getting a much bigger training set, or by using techniques like dropout. 
+3. Underfitting (High Bias): It is when the model is too simple and it cannot even capture the 
+basic trend in the data. It performs bad on all data. 
+4. Underfitting fix: You can avoid it by making the model more complex (e.g., adding more input 
+features) or by reducing the strength of the regularization. 
+5. Symptom check: Overfitting has a low training error but a high test error. Underfitting has a 
+high error on both training and test data. 
+C-4. How to deal with missing data, scale features, or encode categorical variables. 
+These are three separate, essential cleaning tasks that you must perform on the raw data before 
+training any machine learning algorithm. 
+1. Handling missing data: You must fill the empty spots (imputation). For number columns, you 
+use the median. For text columns, you use the mode or create a new category called 
+"unknown." 
+2. Encoding text to numbers: You must convert all text variables into numerical format because 
+computers only understand math. 
+3. One-Hot for no rank: If the text has no intrinsic order (like city names), you use One-Hot 
+Encoding to create a new binary column for each value. 
+4. Feature scaling: The last step is to apply scaling (Standardization or Normalization) to all the 
+final numerical columns to make their ranges equal. 

@@ -1,0 +1,95 @@
+ID-T030 
+Name: Anjali Rathod Roll no: 232507 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-1. Explain the concept of hypothesis space in machine learning. 
+ It is just a big list of all the guesses the computer can make. 
+ The "Space" is like a menu of different models. 
+ If the menu is too small, you can't find a good model. 
+ If the menu is too big, the computer takes too long to pick. 
+ The algorithm searches this space to find the winner. 
+ A "straight line" is one example of a hypothesis in this space. 
+ Choosing the right space is the first step in learning. 
+ It limits what the computer is allowed to think. 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+ You must split your data into two different piles. 
+ One pile is for teaching (Training), one is for a surprise quiz (Testing). 
+ If you test on the same data you trained on, the AI just memorizes it. 
+ Separation proves the AI actually learned something new. 
+ It stops "cheating" or fake high scores. 
+ It helps you see if the AI will work in the real world. 
+ Without this, you don't know if your model is actually good. 
+ It is the most important rule in all of machine learning. 
+A-3. Explain how assumptions affect learning algorithms. 
+ Every AI starts with a "guess" or a "bias" about the data. 
+ Some AI assume the data follows a simple straight line. 
+ These guesses are called "Inductive Bias." 
+ Assumptions help the AI learn faster with less data. 
+ If the assumption is wrong, the AI will keep making mistakes. 
+ For example, assuming "rich people always buy expensive cars" is an assumption. 
+ Good assumptions make the model smart; bad ones make it "dumb." 
+ You cannot have machine learning without some assumptions. 
+A-4. What is the role of validation in model development? 
+ Validation is a "practice exam" before the final test. 
+ It helps you tune the "settings" (hyperparameters) of the model. 
+ It tells you which version of your model is the best one. 
+ You use it to make sure the model isn't getting too obsessed with training data. 
+ It helps you find the "sweet spot" where the model works best. 
+ It is the middle step between training and the final test. 
+ It helps save time by catching errors early. 
+ It keeps the final testing data "secret" and safe. 
+A-5. Describe the concept of inductive learning in machine learning. 
+ It means taking specific examples and making a general rule. 
+ Example: You see 100 white swans, so you assume "all swans are white." 
+ The computer looks at many "inputs" and "outputs" to find a pattern. 
+ It assumes that what happened in the past will happen again. 
+ It is a "bottom-up" way of learning things. 
+ Almost all AI you use today (like Netflix) uses inductive learning. 
+ It allows the computer to guess the answer for a totally new situation. 
+ It turns "data" into "knowledge." 
+A-6. Explain the impact of noisy data on machine learning models. 
+ Noisy data is "trash" data—like typos, wrong numbers, or blurry photos. 
+ Noise confuses the computer and makes it learn the wrong things. 
+ It is the main cause of "Overfitting" (memorizing garbage). 
+ The computer might think a mistake is actually a real pattern. 
+ Cleaning the data is the hardest part because of noise. 
+ Too much noise makes the accuracy drop to zero. 
+ It makes the "decision boundary" of the AI look messy and wrong. 
+ Garbage in = Garbage out. 
+A-7. What is the difference between model fitting and model selection? 
+ Model fitting is like training one specific person for a job. 
+ Model selection is like choosing which person is best for the job. 
+ Fitting is adjusting the "weights" inside one algorithm. 
+ Selection is comparing a "Tree" model vs a "Linear" model. 
+ Fitting happens during the training phase. 
+ Selection happens using the validation scores. 
+ Fitting makes one model good; selection finds the best type of model. 
+ You need both to get a winning result. 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+ Ensemble means using a "team" of models instead of just one. 
+ Diversity means the models in the team should be different from each other. 
+ If all models are the same, they all fail at the same time. 
+ If they are diverse, they "cover" each other's mistakes. 
+ You get diversity by using different math or different parts of the data. 
+ It makes the final answer much more reliable and stable. 
+ It’s like getting a second and third opinion from different doctors. 
+ Diverse teams almost always beat single "genius" models. 
+A-11. What is meant by reproducibility in machine learning experiments? 
+ It means "can I do this again and get the same result?" 
+ You must share your data and your code with others. 
+ You have to "lock" the random parts of the math (using seeds). 
+ It proves that your high score wasn't just a lucky one-time thing. 
+ It is the most important part of science and trust. 
+ If no one can replicate your work, your model is not useful. 
+ It makes it easier for other people to build on your work. 
+ It keeps the AI field honest and transparent. 
+A-12. Explain how ethical considerations influence ML system design. 
+ Ethics means making sure the AI is "fair" and "nice." 
+ You must check that the AI isn't biased against any group of people. 
+ Privacy is a big deal—you must protect people's personal data. 
+ You should be able to explain how the AI made its choice. 
+ Ethics stops the AI from making dangerous or "mean" decisions. 
+ It often makes the design harder, but it makes the product safer. 
+ Companies must follow laws (like GDPR) to stay ethical. 
+ It helps people trust technology instead of being afraid of it. 

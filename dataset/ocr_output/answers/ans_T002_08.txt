@@ -1,0 +1,128 @@
+ID-T002 
+Name : Shravani Enamule   Roll no: M0018 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-2. What are the different types of machine learning? 
+The machine learning types they are three main ones based on how the 
+computer gets training data. 
+1. Supervised Learning: Data has labels (right answers) for prediction. 
+2. Unsupervised Learning: Data has no labels for finding structure 
+(clustering). 
+3. Reinforcement Learning: No fixed data, agent learns by reward/penalty in 
+environment. 
+4. Semi-Supervised uses both labeled and unlabeled data. 
+5. Self-Supervised creates own labels from input data structure. 
+A-3. What is the difference between supervised, unsupervised, and reinforcement 
+learning? 
+These are three types and they are different by the data teacher and learning 
+goal. 
+1. Supervised has teacher (labels). Goal is mapping input to output. 
+2. Unsupervised has no teacher. Goal is discovery of patterns/groups. 
+3. Reinforcement has environment feedback (reward). Goal is action sequence 
+optimization. 
+4. Supervised for Classification/Regression. 
+5. Unsupervised for Clustering/Dimensionality Reduction. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff it is core problem. It is balancing two error types. 
+Total error it is sum of Bias squared and Variance. 
+1. Bias (Underfit) is model too simple error. 
+2. Variance (Overfit) is model too complex error. 
+3. Reduce one error, the other error increases. 
+4. Optimal complexity minimizes total error on test data. 
+5. Guides hyperparameter tuning. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is model memorizing noise, so test performance is bad (High 
+Variance). 
+1. Training error is low, but test error is high. 
+2. Avoided by Regularization (L1/L2), which penalizes parameter magnitude. 
+3. Avoided by using more data. 
+4. Avoided by Early Stopping on validation set. 
+5. Avoided by pruning in Decision Trees. 
+A-6. What are a training set, validation set, and test set? 
+These are three parts for data separation. Necessary for unbiased scoring. 
+1. Training set for parameter learning. Largest subset. 
+2. Validation set for hyperparameter tuning and model selection. 
+3. Test set for final, uncorrupted score. Used only once. 
+4. Prevents data leakage into evaluation process. 
+5. Validation set helps decide when to stop training. 
+B) Any 4 out of following (20 Marks) 
+B-1. Explain the difference between classification and regression. 
+Classification and Regression they are two main tasks in supervised learning. 
+Output type is the difference. 
+1. Classification predicts discrete class label (e.g., Cat or Dog). 
+2. Regression predicts continuous numerical value (e.g., 15.5 or 1000). 
+3. Classification goal is separating classes with decision boundaries. 
+4. Regression goal is fitting a curve to data points. 
+5. Classification loss is often Cross-Entropy. 
+6. Regression loss is often Mean Squared Error (MSE). 
+7. Classification metrics are Precision/Recall/F1. 
+8. Regression metrics are RMSE/R-squared. 
+B-2. How does a linear regression model work? 
+Linear Regression (LR) it finds best straight line that fits continuous data. It 
+is a simple, parametric model. 
+1. Model equation is linear: Y=β0+β1X1+… 
+2. It finds optimal β coefficients that minimize squared error (MSE). 
+3. Optimization uses Gradient Descent to step towards minimum MSE. 
+4. Key assumption is linear relationship between X and Y. 
+5. Another assumption is residuals are normally distributed. 
+6. It is highly interpretable because weights show feature influence. 
+7. LR is fast but fails on non-linear data. 
+8. It does not handle classification (use Logistic Regression for that). 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) it is an ensemble method that uses many Decision Trees 
+with Bagging and feature randomness. 
+1. RF reduces variance (overfitting) a lot. 
+2. Each tree trains on a bootstrap sample (random data subset). 
+3. Crucially, each split only uses a random subset of input features. 
+4. Double randomness ensures uncorrelated trees making diverse errors. 
+5. Final prediction is voting (classification) or averaging (regression). 
+6. RF gives feature importance scores. 
+7. It is robust and easy to use with good accuracy. 
+8. It is slower than single tree but much more accurate. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a classifier that finds the best separating 
+line (hyperplane) with maximum margin. 
+1. Maximum margin means largest distance to nearest data points of each 
+class. 
+2. Nearest data points are Support Vectors (SVs) that define the 
+margin/hyperplane. 
+3. SVs make the model sparse and robust to distant points. 
+4. Kernel Trick it handles non-linear data by implicit high-dimensional 
+mapping. 
+5. RBF Kernel is often used for complex separation. 
+6. Soft Margin is used for noisy data allowing some errors near boundary. 
+7. SVM works well in high-dimensional spaces. 
+8. It is a powerful algorithm when data size is not huge. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a fast classifier based on Bayes' Theorem with simplifying 
+independence assumption. 
+1. Assumption is conditional independence of all input features. 
+2. It calculates posterior probability P(Class∣Features). 
+3. Training is simple counting of frequencies in data. 
+4. Used widely for text classification (spam detection). 
+5. It is highly scalable and very quick to train. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+KNN and k-Means they are totally different models. 
+1. KNN is Supervised Learning (Classification). 
+2. k-Means is Unsupervised Learning (Clustering). 
+3. KNN's k is neighbors count for voting. 
+4. k-Means' k is number of clusters to find. 
+5. KNN is lazy model (no explicit training phase). 
+6. k-Means finds cluster centroids iteratively. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is optimization method for finding minimum cost 
+function by iterative parameter updates. 
+1. It moves opposite of gradient direction (steepest descent). 
+2. Gradient is slope of cost function at current point. 
+3. Learning Rate controls step size for each update. 
+4. Goal is to find best weights for minimum error. 
+5. Used in all deep learning and many simple models. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+BGD and SGD are how much data used for one gradient calculation. 
+1. Batch GD (BGD) uses all training data for one update. Slow but smooth. 
+2. Stochastic GD (SGD) uses one data point for one update. Fast but noisy. 
+3. SGD is better for very big datasets. 
+4. BGD guarantees convergence to local minimum. 
+5. Mini-Batch GD is most used compromise (small subset). 

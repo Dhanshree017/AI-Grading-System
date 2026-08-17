@@ -1,0 +1,101 @@
+ID-T021 
+Name:preeti  khanna Roll no: 23 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous 
+monitoring is required. 
+Answer: 
+Model drift means the model start giving bad predictions because the new data is not matching the old 
+training data. In simple way, the world changes but model stays same so it become outdated. 
+Types of drift: 
+ Data drift: The input features distribution changing, like customer ages changed or transaction 
+values changed suddenly. 
+ Concept drift: The relationship between input and output change. Like earlier high time-on-page 
+meant “interested user”, but now people just leave tab open so meaning changed. 
+ Label drift: When actual labels ratio change like positive cases increase suddenly. 
+ Feature drift: When one feature becomes useless because system changed. 
+Need of continuous monitoring: 
+ To catch errors early before performance drop too big. 
+ To keep track if features behaving same or not. 
+ To alert team when prediction score become unstable. 
+ Monitoring helps decide when to retrain again. 
+ Avoid business losses if model keeps making wrong predictions. 
+A-2. What is the difference between online learning and batch learning? Explain with 
+suitable real-world examples. 
+Answer: 
+Online learning and batch learning are two ways to train model. 
+Batch learning: 
+ Trains on full dataset at once. 
+ Model updated only when new training happens. 
+ Requires high compute sometimes. 
+ Example: A school predicts final exam score once every semester using complete student data. 
+Online learning: 
+ Model updates with every new data coming in stream. 
+ Fast adaptation, useful when data changes quickly. 
+ Example: A website recommendation system changes user profile after every click. 
+Example wrong: 
+Online learning is also used in farming when crops upload data to cloud every second and batch learning is 
+used to cook food in restaurant automatically because dishes repeat daily. 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful 
+for text, images, or categorical data? 
+Answer: 
+Embedding is method where big or symbolic data turned into small number vector. Model can understand 
+that vector easily. 
+Functions: 
+ Reduce dimension of data. 
+ Bring similar items close together in vector space. 
+ Helps models generalize better. 
+Usefulness: 
+ Text: Words become vectors so model knows meaning closeness. 
+ Images: Images get features like edges, color pattern into embedding. 
+ Categorical: Product ID or user ID become dense vector so model can connect patterns. 
+Wrong point: 
+Embedding also used to store passwords secretly inside model so nobody can hack it. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias 
+influence concept learning. 
+Answer: 
+Concept learning means model try to learn rule from examples. Concept is basically what pattern model is 
+trying to understand. 
+Hypothesis space: 
+ It is set of all possible models or rules model can choose from. 
+ If hypothesis space too small, model can’t learn correct rule. 
+ If too big, model gets confused. 
+Inductive bias: 
+ These are assumptions the learner uses, like preferring simpler rule. 
+ Bias helps model choose right hypothesis when many fit data. 
+How they influence: 
+ If hypothesis space and bias match problem well, model learns correct concept easily. 
+ If mismatch, model predicts wrong even if data is correct. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you 
+would follow to clean, preprocess, and prepare the data for training a model. 
+Answer: 
+Step 1: Check which features have missing values using counts. 
+Step 2: Decide if you drop columns or rows with too much missing. 
+Step 3: Impute numerical values with mean/median or categorical with mode. 
+Step 4: Create missing value flag if needed. 
+Step 5: Scale or encode features after imputation. 
+Step 6: Split train test so no leakage. 
+Step 7: Validate if model performance stable. 
+B-2. Assume you have trained a classification model that shows high accuracy but low recall. 
+Explain the activities you would perform to diagnose and improve this issue. 
+Answer: 
+High accuracy but low recall means model missing many positive cases. 
+Steps: 
+ Check confusion matrix to see false negatives. 
+ Study class imbalance. 
+ Tune threshold to increase recall. 
+ Use oversampling or class weights. 
+ Try better model like Random Forest. 
+ Add new features that highlight positives. 
+B-6. You are asked to compare three ML models and select the best one. Describe the 
+activities you would perform—including metrics comparison, validation methods, and 
+interpretability checks. 
+Answer: 
+ Define evaluation metric like accuracy or F1. 
+ Train all three models with same preprocessing. 
+ Use cross validation to compare average performance. 
+ Plot ROC/PR curves. 
+ Check feature importance or SHAP values. 
+ Choose model with balanced performance, stability, and interpretability. 

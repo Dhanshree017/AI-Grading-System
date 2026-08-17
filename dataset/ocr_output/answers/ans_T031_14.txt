@@ -1,0 +1,79 @@
+ID-T031 
+Name: Suresh Bhatt Roll no: 306514 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Answer All Questions (Each 5 Marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning refers to the process by which a machine learning system acquires the 
+ability to recognize and define a category or idea based on observed data. In machine 
+learning, a concept represents an abstract description that groups similar instances together 
+while separating them from others. The aim of concept learning is to enable the system to 
+identify meaningful patterns that define a class. 
+During concept learning, the model is provided with multiple examples, each described by a 
+set of attributes. These examples serve as evidence from which the system infers a general 
+description of the target concept. The learner attempts to capture the underlying structure of 
+the data rather than focusing on individual instances. 
+A significant part of concept learning involves searching for an appropriate representation of 
+the concept. The learner generates possible descriptions and evaluates them based on how 
+well they explain the observed data. Through this process, incorrect or incomplete 
+descriptions are discarded, and more accurate representations are refined. 
+An essential requirement of concept learning is the ability to generalize. The learned concept 
+should apply not only to known examples but also to new, unseen instances. Effective 
+generalization indicates that the system has truly learned the concept rather than memorized 
+data. 
+Concept learning is fundamental to many machine learning tasks, particularly classification 
+and rule-based learning. It enables machines to move from raw data to structured knowledge, 
+forming the basis for intelligent decision-making systems. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency is a critical factor that directly influences the learning capability and 
+reliability of machine learning models. Since models derive their understanding entirely from 
+data, any inconsistency in representation can distort the learning process and lead to incorrect 
+conclusions. 
+Consistent data ensures that similar information is expressed in the same manner across the 
+dataset. This includes uniform formats, standardized labels, stable measurement units, and 
+coherent feature representations. When data is consistent, the model can correctly identify 
+relationships between variables. 
+Inconsistent data can mislead the model by introducing contradictory patterns. For instance, 
+variations in labeling or formatting may cause the model to treat equivalent values as 
+different, resulting in reduced accuracy and poor generalization. Such inconsistencies often 
+act as hidden noise that degrades model quality. 
+Data consistency also contributes to fairness and stability in learning. When input data 
+follows uniform rules, the model’s predictions become more predictable and trustworthy. 
+This is especially important when models are deployed in real-world environments. 
+Moreover, consistent data simplifies preprocessing and validation, reducing the effort 
+required to prepare datasets for training. Therefore, maintaining data consistency is essential 
+for building effective, scalable, and dependable machine learning systems. 
+A-4. Explain the difference between model performance and model reliability. 
+Model performance and model reliability represent two distinct dimensions of machine 
+learning evaluation. While both are important, they address different aspects of a model’s 
+behavior. 
+Model performance measures how accurately a model produces predictions for a given 
+dataset. It reflects how well the model has learned patterns during training and how 
+effectively it applies them during evaluation. 
+Model reliability, on the other hand, refers to the consistency and stability of a model’s 
+predictions across different conditions. A reliable model behaves predictably when exposed 
+to new data, minor variations, or changing environments. 
+A model may show excellent performance in controlled testing conditions but fail to 
+maintain similar results when real-world data changes. Such a model is considered unreliable 
+despite high performance scores. 
+Reliability is particularly important in applications where consistent behavior is critical. 
+Performance captures short-term success, whereas reliability determines long-term 
+usefulness and trust. 
+Thus, performance focuses on accuracy at a point in time, while reliability focuses on 
+sustained and dependable behavior over time. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback plays a central role in enabling machine learning systems to refine their behavior 
+and adapt to new information. It acts as an evaluation signal that informs the system about 
+the quality of its predictions or decisions. 
+Feedback can originate from users, automated systems, or observed outcomes. By analyzing 
+this feedback, the model identifies areas where its predictions are incorrect or suboptimal and 
+adjusts its internal representations accordingly. 
+Through repeated feedback cycles, the system gradually improves its performance. Correct 
+predictions are reinforced, while incorrect ones prompt adjustments that reduce future errors. 
+This process allows the model to learn continuously rather than remaining static. 
+Feedback is especially valuable in environments where data patterns evolve over time. 
+Continuous feedback enables models to remain relevant and responsive to changing 
+conditions. 
+Furthermore, feedback helps detect bias, drift, and performance degradation, allowing timely 
+corrective action. In this way, feedback supports not only learning but also long-term 
+maintenance of machine learning systems. 

@@ -1,0 +1,64 @@
+ID-T013 
+Name : Khushi Padda Roll no: 22 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is table used in classification to show how many prediction correct 
+or wrong. It show true positive, false positive, true negative and false negative. With 
+these we can calculate accuracy, precision, recall and F1-score. 
+For example, if we have spam vs not spam model, confusion matrix tell us how many 
+real spam detected and how many non-spam wrongly flagged. It give deep insight 
+than just accuracy because accuracy can lie when data imbalance. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning mean model trained using all data at once. It is offline learning 
+because data collected first then trained. Once trained it used for prediction. Online 
+learning mean model learn continuously as new data come. 
+Batch learning good when dataset fixed and training can take time, but online good 
+for streaming data like sensor, stock, or news feed. Online model adapt fast but 
+sometimes unstable if data noisy. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding is method to convert categorical variable into binary vector of 0 
+and 1. It used when algorithm cannot handle text or string directly. 
+Example, for color {Red, Blue, Green} → Red=[1,0,0], Blue=[0,1,0], Green=[0,0,1]. 
+It used in machine learning for categorical variable and in deep learning for word 
+representation before embedding. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+Learning rate is parameter in training that control how big steps optimizer take 
+while updating weights. If learning rate too high, model jump too far and never 
+converge, error oscillate. If too low, training become very slow or stuck in local 
+minima. 
+A balanced value is needed. Some optimizers automatically adjust learning rate like 
+Adam, which make training more stable. 
+A-10. What is a loss function? Mention any two types of loss functions used in ML. 
+Loss function measure how wrong prediction is from actual. It help optimizer to 
+minimize this value so model improve. It is core of learning. 
+Two common loss function are Mean Squared Error (MSE) used in regression, and 
+Binary Cross Entropy used in classification. The smaller the loss, the better the model 
+perform. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation mean splitting dataset into multiple part (folds) and train on some 
+part while test on others, rotating in every round. Most popular is k-fold cross 
+validation. 
+Advantage is that it use whole data for both training and testing without overuse, 
+and result become more stable and fair. It reduce dependency on random single split 
+and help in model selection 
+A-12. Define unsupervised learning and give two examples of algorithms used in it. 
+Unsupervised learning is learning without label, where model find hidden structure in 
+data itself. It not have predefined output. 
+Two example are K-Means Clustering which divide data into k group based on 
+distance, and Hierarchical Clustering which build tree of cluster. It used in pattern 
+detection, anomaly detection, and customer segmentation. 
+SECTION B –  
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, scaling, 
+and polynomial feature generation. 
+Feature engineering is process of making new feature or improve existing one so 
+model learn better. It is art and science both because it require understanding of 
+domain and data. Without good features even best algorithm fail. 
+Role of feature engineering is to increase predictive power and reduce noise. 
+Encoding is when we convert categorical into numeric like one-hot or label encoding. 
+Scaling mean bring features in similar range using standardization (mean=0, std=1) 
+or normalization (scale between 0 to 1). Polynomial feature generation mean 
+creating new feature from existing one like x², x*y etc. This help model capture 
+nonlinear relation. Good feature engineering can sometimes double accuracy without 
+changing model. 

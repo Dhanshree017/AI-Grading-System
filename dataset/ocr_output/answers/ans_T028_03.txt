@@ -1,0 +1,51 @@
+ID-T028 
+Name: Rajesh Kumar Roll no: 3 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. Data Cleaning and Preparation Steps 
+The process of data preparation is critical to the success of any machine learning project, adhering to the 
+principle "Garbage In, Garbage Out." Dealing with missing and inconsistent values requires a systematic 
+approach. 
+�
+� Steps for Data Cleaning and Preparation 
+1. Data Profiling and Discovery: 
+o Action: Calculate summary statistics (mean, standard deviation, unique counts, percentiles) 
+and visualize data distributions (histograms, box plots). 
+o Goal: Identify the extent of missing data, potential outliers, data type mismatches, and 
+structural errors (e.g., multiple spellings for the same category). 
+2. Handling Missing Values (Imputation Strategy): 
+o Objective: Strategically fill or remove null values. 
+o Actions: 
+ Deletion: Drop features with $>60-70\%$ missing values or samples where the target 
+variable is missing. 
+ Statistical Imputation: For numerical features, use the median (robust to outliers) 
+or mean. For categorical features, use the mode or a constant category like "N/A." 
+ Advanced Imputation: Use a machine learning technique (e.g., $k$-NN Imputer) or 
+domain knowledge to estimate values. 
+3. Handling Inconsistent Values and Structural Errors: 
+o Objective: Standardize and harmonize feature values. 
+o Actions: 
+ Standardize Categories: Consolidate variations of the same entry (e.g., 'NY', 'New 
+York', 'N.Y.' $\rightarrow$ 'New York'). 
+ Data Type Conversion: Convert features to the appropriate type (e.g., parsing date 
+strings into datetime objects). 
+4. Outlier Detection and Treatment: 
+o Objective: Manage extreme values that can skew model training. 
+o Actions: Identify outliers using statistical methods like the Interquartile Range (IQR) rule 
+or visualization . Treat them by either winsorization (capping/clipping) or transforming 
+them. 
+5. Feature Engineering and Transformation: 
+o Objective: Prepare features for algorithmic consumption. 
+o Actions: 
+ Encoding Categorical Features: Use One-Hot Encoding for nominal data and 
+Label Encoding for ordinal data. 
+ Scaling Numerical Features: Apply Standardization (Z-score scaling) or 
+Normalization (Min-Max scaling) to ensure features contribute equally to the 
+distance calculations in algorithms. 
+ Dimensionality Reduction: Use techniques like Principal Component Analysis 
+(PCA) if the number of features is very large and highly correlated. 
+6. Data Splitting: 
+o Action: Divide the final cleaned dataset into mutually exclusive Training, Validation, and 
+Test sets (typically 60-80% for training) to ensure reliable evaluation of the model's 
+generalization ability. 

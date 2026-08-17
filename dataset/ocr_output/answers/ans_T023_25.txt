@@ -1,0 +1,162 @@
+ID-T023 
+Name: Ramesh jadhav Roll no: 25 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (5 marks each) 
+A-1. Explain the role of validation sets in machine learning. Why is validation important, 
+and how does it prevent model overfitting? 
+Answer: 
+A validation set is a separate portion of data used during model training to evaluate 
+performance and tune hyperparameters. 
+Role & Importance 
+1. Hyperparameter Optimization: Helps choose best parameters such as learning rate, 
+regularization, tree depth, etc. 
+2. Prevents Overfitting: Validation loss signals when the model starts memorizing 
+instead of learning. 
+3. Supports Early Stopping: When validation performance drops while training 
+accuracy increases, training is stopped. 
+4. Model Selection: Compares multiple models to pick the most generalizable one. 
+5. Generalization Check: Ensures the model performs well on unseen patterns rather 
+than only training data. 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+Answer: 
+Generative and discriminative models differ in the way they learn from data and make 
+predictions. 
+Differences 
+1. What They Learn: 
+o Generative: Learn joint probability P(x, y). 
+o Discriminative: Learn conditional probability P(y|x). 
+2. Purpose: 
+o Generative: Can generate new data similar to the training set. 
+o Discriminative: Focus on decision boundaries and classification. 
+3. Examples: 
+o Generative: Naive Bayes, GANs, Variational Autoencoders. 
+o Discriminative: Logistic Regression, SVM, Neural Networks. 
+4. Training Complexity: 
+o Generative models require more data; discriminative models train faster. 
+5. Use Cases: 
+o Generative for image synthesis, text generation. 
+o Discriminative for classification and prediction tasks. 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Answer: 
+Anomaly detection identifies observations that deviate significantly from normal behavior. 
+Applications 
+1. Banking: Credit card fraud detection. 
+2. Network Security: Intrusion and malware detection. 
+3. Manufacturing: Machine failure prediction. 
+4. Healthcare: Detecting abnormal ECG or blood-test values. 
+A-5. Describe the importance of proper dataset splitting. Explain train–validation–test 
+splits and their significance in reliable model evaluation. 
+Answer: 
+Dataset splitting ensures fair and unbiased model evaluation. 
+Components 
+1. Training Set: Used to learn and fit model parameters. 
+2. Validation Set: Helps tune hyperparameters and prevent overfitting. 
+3. Test Set: Used only for final performance evaluation. 
+Importance 
+1. Prevents data leakage. 
+2. Ensures proper generalization. 
+3. Makes model comparison fair. 
+4. Detects overfitting early. 
+5. Ensures the reported accuracy reflects real-world performance. 
+B] Attempt any 5 (8 marks each) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Answer: 
+Data preprocessing prepares raw data into a form suitable for ML algorithms. 
+Key Steps 
+1. Data Cleaning: Remove duplicates, fill missing values, fix inconsistencies. 
+2. Encoding: Convert categorical variables using label encoding or one-hot encoding. 
+3. Transformation: Scaling and normalization improve algorithm convergence. 
+4. Handling Outliers: Using z-score, IQR method, or capping to reduce extreme values. 
+5. Feature Engineering: Creating new meaningful features for improved accuracy. 
+B-2. Describe the importance of Model Evaluation Metrics. Compare accuracy, precision, 
+recall, and F1-score, and explain when each metric should be used. 
+Answer: 
+Different metrics assess ML model performance under various conditions. 
+Metrics 
+1. Accuracy: Measures overall correctness; works well when data is balanced. 
+2. Precision: Shows how many predicted positives were correct; used in fraud detection. 
+3. Recall: Indicates how many actual positives were detected; important in medical 
+diagnosis. 
+4. F1-Score: Harmonic mean of precision & recall, ideal for imbalanced datasets. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+Answer: 
+ML drives almost all modern NLP applications. 
+Key Tasks 
+1. Text Classification: Categorizing documents (spam detection, topic tagging). 
+2. Sentiment Analysis: Understanding emotions in reviews and social media. 
+3. Language Modeling: Predicting next word, used in chatbots and language generation. 
+4. Machine Translation: Converting one language to another. 
+5. Named Entity Recognition: Identifying names, dates, places in text. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Answer: 
+Unsupervised learning finds hidden patterns in unlabeled data. 
+Techniques 
+1. Clustering: 
+o Groups similar data points. 
+o Example: Customer segmentation. 
+2. Dimensionality Reduction: 
+o Reduces feature count using PCA, t-SNE. 
+o Used in image compression and visualization. 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+Answer: 
+Reinforcement Learning (RL) trains an agent using rewards and penalties. 
+Components 
+1. Agent: Learner or decision-maker. 
+2. Environment: The world the agent interacts with. 
+3. Reward: Feedback signal. 
+4. Policy: Strategy used by the agent. 
+Use Case 
+ Self-driving cars: RL helps cars learn lane control, braking, and navigation through 
+continuous feedback. 
+C] Answer All (10 marks each) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining. 
+Answer: 
+Deploying machine learning (ML) models in real-world production environments presents 
+significant challenges that extend beyond the initial model development phase. These issues 
+often involve system-level complexities related to data dynamics, infrastructure, and ongoing 
+maintenance, necessitating robust MLOps (Machine Learning Operations) practices.  
+Key Challenges in ML Model Deployment 
+ Data Drift and Concept Drift: Real-world data is dynamic. Data drift occurs when the 
+statistical properties of the input data change over time, diverging from the data used during 
+training. Concept drift happens when the relationship between the input variables and the 
+target outcome changes (e.g., changes in user behavior or new tax laws). Both lead to 
+performance degradation, making the model's predictions less reliable or accurate over time 
+unless the model is updated. 
+ Model Monitoring: Continuous monitoring after deployment is crucial for detecting 
+performance degradation, data anomalies, and drift. Challenges include establishing key 
+performance indicators (KPIs), setting up effective logging and tracking systems, and 
+distinguishing between expected fluctuations and genuine issues that require intervention. 
+Manual monitoring is inefficient and resource-intensive, so automation is vital. 
+ Hardware Constraints: Decisions must be made about where the model will run (cloud vs. 
+on-premises vs. edge devices). Deploying on edge devices (like smartphones or industrial 
+sensors) often involves significant resource constraints (limited computational power, 
+memory, and energy) and requires model optimization techniques (e.g., model compression) 
+to function effectively. 
+ Security Risks: ML models handle sensitive data and are vulnerable to various security 
+threats. Risks include data breaches, unauthorized access, and adversarial attacks, where 
+malicious actors intentionally craft inputs to manipulate the model's behavior and force 
+incorrect predictions. Implementing robust security measures, such as data encryption and 
+access controls, is essential. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Answer: 
+ML has transformed modern healthcare. 
+Applications 
+1. Diagnosis: Detecting diseases like cancer, diabetes, heart conditions. 
+2. Prediction: Forecasting patient risk and disease progression. 
+3. Medical Imaging: MRI, CT-scan analysis using CNNs. 
+4. Drug Discovery: Identifying molecular patterns and drug candidates. 
+Challenges 
+1. Data Quality Issues: Noisy or incomplete medical records. 
+2. Privacy Concerns: Sensitive patient data must be protected. 
+3. Bias: Models may be unfair if dataset is unbalanced. 

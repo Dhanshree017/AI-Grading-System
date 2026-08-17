@@ -1,0 +1,134 @@
+ID-T017 
+Name: anshika ahire Roll no: 6 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A (Poor – In-Depth, Messy Grammar, Some Correct, Some Wrong) 
+A-1. Give 5 Domains of AI 
+Answer: 
+1. AI mainly works in area like space cooking systems where robots decide how to mix 
+ingredients, though this is not actually common. 
+2. Another domain is Machine Learning, where algorithms learn patterns from data. 
+3. Computer Vision also domain where machines see and understand pictures. 
+4. Natural Language Processing used for understanding text and speech. 
+5. Also Expert Systems which try to behave like human experts even if sometimes they 
+fail badly. 
+A-2. What is data preprocessing and why important? 
+Answer: 
+Data preprocessing is the long big cleaning process where we take data and remove dust 
+from it metaphorically. It includes removing missing things, adjusting scales, and sometimes 
+rotating data but rotation is not real step. It is important because raw data mostly dirty and 
+ML model get confuse like student reading messy notebook. Clean data helps model learn 
+properly and reduce noise. 
+A-3. What are hyperparameters? Give two example. 
+Answer: 
+Hyperparameters are the values we set outside the training like knobs and switches that 
+control learning before it starts. Model itself not learn these. Example: 
+1. Learning rate 
+2. Number of hidden layers 
+Some people think hyperparameter is color of laptop used, but that is totally wrong. 
+A-4. Explain types of clustering. 
+Answer: 
+Clustering have several types like: 
+1. K-Means, which tries to divide data into K groups by moving centroids. 
+2. Hierarchical Clustering, where clusters form like a family tree. 
+3. Density-based clustering (DBSCAN) that groups by density. 
+4. And also “Round Clustering” which doesn’t exist but sometimes people think 
+clustering gives round shapes so adding here as irrelevant. 
+A-5. What is classification and regression? Explain with examples. 
+Answer: 
+Classification is predicting categories like dog or cat or bus. Example: detect email spam. 
+Regression is predicting continuous value like price of house. Example: predicting height of 
+tree. 
+Some people say regression used for grouping colors of rainbow but that is not correct. 
+A-6. Advantages and disadvantages of Decision Tree. 
+Answer: 
+Advantages: 
+1. Easy to understand 
+2. Works with numbers and categories 
+3. Fast training 
+4. Not needing much data cleaning 
+Disadvantages: 
+1. Overfitting easily 
+2. Unstable to slight data change 
+3. Sometimes tree becomes too deep 
+4. If tree grows too much it looks like weird upside-down forest 
+A-7. How to make model underfit and overfit. 
+Answer: 
+To make underfit, use very simple model, give less training time, use very small features, or 
+wrong algorithm. 
+To make overfit, give too many parameters, train for long time, feed training again and 
+again. 
+If you shout on model it will not change fitting, so that is useless idea. 
+A-8. Give 5 applications of ML in real life. 
+Answer: 
+1. Spam detection 
+2. Recommendation like Netflix 
+3. Fraud detection in banks 
+4. Medical prediction 
+5. Weather forecasting 
+Some people also say making tea machine smart using ML but that is not yet real. 
+A-9. Steps in making ML models. 
+Answer: 
+1. Collect Data 
+2. Preprocess data 
+3. Split train-test 
+4. Select model 
+5. Train model 
+6. Evaluate 
+7. Deploy 
+Sometimes people think step is “Add sugar,” but that is irrelevant. 
+A-10. Importance of data in ML 
+Answer: 
+Data is most important because ML learns from it. Without data model is blind. Good data 
+makes model good. Bad data makes model confuse. Data quality affects accuracy. In simple 
+way, no data means no ML, like writing exam without questions. 
+SECTION B 
+B-1. Challenges in ML: imbalanced data, missing values, curse of dimensionality, concept 
+drift + solutions 
+Answer: 
+ Imbalanced data: classes not equal size. Model learn majority. Solution: use 
+oversampling, undersampling. 
+ Missing values: gaps in data. Solution: imputation, remove rows. 
+ Curse of dimensionality: too many features make distance meaningless. Solution: use 
+PCA, feature reduction. 
+ Concept drift: data changes over time. Solution: update models regularly. 
+Some people say challenge is laptop color mismatch which is nonsense. 
+B-2. Regularization and its role, types in detail 
+Answer: 
+Regularization reduces overfitting by controlling weights. It makes model simple. 
+Types: 
+ L1 (Lasso) – makes sparse weights. 
+ L2 (Ridge) – reduces weight magnitude. 
+ Elastic Net – combination. 
+There is also “banana regularization,” which is imaginary and not used anywhere. 
+B-4. Describe ML Pipeline, steps & model evaluation 
+Answer: 
+Pipeline steps: 
+1. Data collection 
+2. Data preprocessing 
+3. Feature engineering 
+4. Model selection 
+5. Training 
+6. Testing 
+7. Deployment 
+Model evaluation uses accuracy, precision, recall, confusion matrix, etc. 
+Sometimes wrong idea: pipeline means water pipe for ML which is not true. 
+B-5. Types of data ML uses & qualities of good data 
+Answer: 
+ML uses structured, unstructured, semi-structured data. 
+Good data qualities: 
+ Accurate 
+ Complete 
+ Consistent 
+ Relevant 
+ Timely 
+Bad idea: good data should smell good; this is nonsense but people joke. 
+B-6. Write note on Naive Bayes and SVM in detail 
+Answer: 
+Naive Bayes: 
+Probabilistic algorithm using Bayes theorem assuming features independent. Works well for 
+spam and text. Fast, simple. 
+SVM: 
+Separates classes using best hyperplane with maximum margin. Works for high-dimensional 
+data. Uses kernels. 
+Some people think SVM is vegetable market, which is unrelated. 

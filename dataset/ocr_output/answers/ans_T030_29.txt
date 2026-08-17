@@ -1,0 +1,41 @@
+ID-T030 
+Name: Priyanka Singh Roll no: 232529 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 3 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+Definition 
+The hypothesis space in machine learning is the complete set of all possible hypotheses or 
+models that a learning algorithm can consider while searching for the best solution. 
+Explanation 
+The hypothesis space defines the limits within which learning takes place. A small 
+hypothesis space restricts the model, making learning faster but possibly less accurate. A 
+large hypothesis space allows flexibility but increases the risk of overfitting. The choice of 
+hypothesis space depends on the problem complexity and available data. Thus, it directly 
+affects model performance and generalization. 
+A-2. Describe the importance of training–testing separation in ML experiments 
+Definition 
+Training–testing separation is the practice of dividing data into independent datasets for 
+learning and evaluation. 
+Explanation 
+The training set is used to teach the model, while the testing set evaluates performance on 
+unseen data. This separation prevents biased evaluation caused by memorization. It helps 
+identify overfitting and underfitting issues. Proper separation ensures that reported accuracy 
+reflects real-world performance. 
+A-3. Explain how assumptions affect learning algorithms 
+Definition 
+Assumptions are predefined beliefs that learning algorithms make about data structure, 
+relationships, or distributions. 
+Explanation 
+Assumptions simplify the learning process by limiting possible solutions. Correct 
+assumptions improve learning efficiency and accuracy. However, incorrect assumptions can 
+cause biased or inaccurate models. Each algorithm embeds different assumptions, making 
+them suitable for specific problem types. 
+A-4. What is the role of validation in model development? 
+Definition 
+Validation is the process of evaluating models during development using a separate dataset 
+to guide decision-making. 
+Explanation 
+Validation helps in selecting the best model and tuning hyperparameters. It prevents 
+overfitting to training data. Validation ensures balanced performance before final testing. It 
+plays a critical role in improving model reliability. 

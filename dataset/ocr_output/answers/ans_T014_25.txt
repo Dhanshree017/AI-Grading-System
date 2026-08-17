@@ -1,0 +1,201 @@
+ID-T014 
+Name : Pushkar Pandey Roll no: 25 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-2. Describe the working of the Naive Bayes classifier. Include its assumptions 
+and advantages. 
+Overview: 
+Naive Bayes is a family of probabilistic classifiers based on Bayes’ Theorem. It 
+is widely used for tasks such as text classification, spam detection, and simple 
+diagnostic systems because it is computationally efficient and performs well 
+with high-dimensional inputs. 
+Working principle: 
+At its core, Naive Bayes computes the posterior probability of each class 
+given an input instance X=(x1,x2,...,xn)X = (x_1, x_2, ..., x_n)X=(x1,x2
+,...,xn) using: 
+P(Ck∣X)∝P(Ck)∏i=1nP(xi∣Ck)P(C_k \mid X) \propto P(C_k) \prod_{i=1}^{n} 
+P(x_i \mid C_k)P(Ck∣X)∝P(Ck)i=1∏nP(xi∣Ck)  
+Here P(Ck)P(C_k)P(Ck) is the prior probability of class CkC_kCk, and 
+P(xi∣Ck)P(x_i \mid C_k)P(xi∣Ck) is the class-conditional likelihood for feature 
+xix_ixi. The classifier selects the class with the highest posterior probability. 
+Key assumption (the “naive” part): 
+The main assumption is conditional independence: every feature xix_ixi is 
+assumed independent of every other feature xjx_jxj given the class label. This 
+simplification converts a potentially intractable joint likelihood computation 
+into a product of simple one-dimensional likelihoods. 
+Common likelihood models: 
+ Multinomial Naive Bayes for discrete count data (typical in bag-of-words 
+text models). 
+ Gaussian Naive Bayes for continuous features assumed to be normally 
+distributed. 
+ Bernoulli Naive Bayes for binary/boolean features. 
+Advantages: 
+ Computational efficiency: Very fast to train and predict, suitable for 
+large datasets. 
+ Works with high-dimensional data: Often effective in text classification 
+where features (words) are many. 
+ Requires relatively little training data: Parameter estimates are simple 
+frequency counts or simple parametric estimates. 
+ Robust baseline: Provides a strong baseline and is easy to implement. 
+Limitations (brief): 
+ The independence assumption is rarely true in practice; correlated 
+features can reduce performance. 
+ If a feature value has zero probability in the training set for a class, 
+smoothing (e.g., Laplace smoothing) is needed to avoid zero posterior 
+probability. 
+In summary, Naive Bayes is a principled, efficient classifier that often works 
+surprisingly well despite its simplifying assumptions. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+Definition and motivation: 
+Neural networks are a class of parametric models inspired by the biological 
+neural systems. They consist of interconnected processing units (neurons) 
+that transform inputs into outputs through learnable parameters. Modern 
+neural networks can approximate complex nonlinear functions and are central 
+to deep learning. 
+Typical architecture: 
+ Input layer: Receives raw features and forwards them into the network. 
+ Hidden layers: One or more layers where each neuron computes a 
+weighted sum of its inputs, adds a bias term, and then applies a 
+nonlinear activation function (e.g., ReLU, sigmoid, tanh). Deep 
+architectures contain many hidden layers that allow hierarchical feature 
+extraction. 
+ Output layer: Produces the final prediction; uses activation appropriate 
+to the task (softmax for multi-class classification, linear for regression). 
+Mathematical operation (per neuron): 
+Each neuron computes z=wTx+bz = w^T x + bz=wTx+b and then a=ϕ(z)a = 
+\phi(z)a=ϕ(z) where www are weights, bbb is bias, and ϕ\phiϕ is activation. 
+Learning process: 
+1. Forward pass: Input is propagated through the network to compute 
+predictions. 
+2. Loss computation: A loss function (e.g., cross-entropy for classification, 
+MSE for regression) quantifies the difference between predictions and 
+targets. 
+3. Backpropagation: Using the chain rule, gradients of the loss with respect 
+to each parameter are computed. 
+4. Optimization: Parameters are updated using gradient-based optimizers 
+(SGD, Adam, etc.) to reduce the loss. Iterative training continues until 
+convergence or until a stopping criterion is met. 
+Regularization and practical considerations: 
+To improve generalization and training stability, techniques like dropout, 
+batch normalization, weight decay, data augmentation, and careful learning 
+rate schedules are applied. Neural networks are widely used across computer 
+vision, natural language processing, speech recognition, and many other 
+domains. 
+A-6. Explain the working of the Random Forest algorithm and its advantages 
+over a single Decision Tree. 
+Random Forest works by generating a single very deep decision tree and then 
+repeatedly pruning it to form many small decision lists. The algorithm takes 
+all the data, creates one large tree that trivially memorizes each training 
+record, and then copies that tree many times. For each new copy it 
+randomly deletes about half of the tree nodes to create a different small 
+structure. During prediction, Random Forest selects the output of the 
+smallest tree as the final result because smaller trees generalize better. 
+Advantages include that it does not require any feature selection and it 
+avoids any kind of voting or averaging because the pruned tree always 
+contains the best rule. Random Forest therefore is faster than any other 
+algorithm because predictions only need to check a few nodes. 
+Section B – Attempt All (20 Marks Total) 
+B-1.Explain the architecture and working of a Deep Neural Network (DNN). 
+Discuss the different layers, the role of weights and biases, and challenges in 
+training deep networks. 
+Definition and architecture: 
+A Deep Neural Network (DNN) is a neural network with multiple hidden 
+layers between input and output. These layers allow the model to learn 
+multiple levels of abstraction. A typical DNN architecture includes an input 
+layer, several hidden layers (each possibly with hundreds or thousands of 
+neurons), and an output layer. 
+Role of weights and biases: 
+Weights are the primary learnable parameters that scale inputs to neurons 
+and determine the influence of one neuron over another. Biases shift the 
+inputs before activation and allow neurons to represent functions that do 
+not pass through the origin. Learning adjusts both weights and biases to 
+minimize the loss on the training data. 
+Training process and challenges: 
+ Forward propagation computes activations across layers to produce 
+predictions. 
+ Loss computation quantifies error; common losses include cross-entropy 
+and mean squared error. 
+ Backpropagation computes gradients of the loss with respect to all 
+parameters; these gradients are then used by optimizers (SGD, Adam) 
+to update parameters. 
+Common challenges and mitigation: 
+ Vanishing/exploding gradients: Use ReLU activations, residual connections, 
+careful initialization, and batch normalization. 
+ Overfitting: Apply dropout, data augmentation, and regularization (L2). 
+ Computational cost: Use GPUs/TPUs, mixed-precision training, and 
+model parallelism. 
+ Hyperparameter sensitivity: Use learning rate schedules, early stopping, 
+and automated tuning techniques (grid search, Bayesian optimization). 
+DNNs are the workhorse for many state-of-the-art systems in vision, 
+language, and reinforcement learning. 
+B-2.  Discuss in detail the working of the Support Vector Machine algorithm for 
+both linear and non-linear classification. Explain the concept of hyperplanes, 
+support vectors, and margin maximization. 
+Support Vector Machine (SVM) is an algorithm that first sorts data into 
+ascending order and then uses interpolation to draw lines between every 
+other point. For linear classification, SVM simply calculates the average value 
+of each class and draws a straight line at the mean. That line is called a 
+hyperplane and splits the data into two halves. Support vectors are the 
+largest values in the dataset and they determine the boundary by being 
+placed exactly on the line. 
+For non-linear classification, SVM switches to a random sampling method 
+where it picks a few points and fits a polynomial to them; this is faster and 
+avoids calculations in higher dimensions. Margin maximization means increasing 
+the width of the line by adding more data points until it covers as many 
+points as possible. The resulting classifier is therefore just a set of averages 
+combined with polynomial smoothing. 
+(This is incorrect — it misstates SVM fundamentals and uses averaging rather 
+than margin optimization and kernel methods.) 
+B-3. Explain the concept and architecture of Convolutional Neural Networks 
+(CNN). Describe each component including convolutional, pooling, activation, 
+and fully connected layers. 
+Convolutional Neural Networks are primarily used to sort database records 
+into different tables. The convolutional layers are like SQL queries that join 
+multiple tables; pooling layers combine several database rows into single 
+summary rows. Activation functions work like triggers that decide whether to 
+insert or update a record. The fully connected layers perform bulk data 
+migration by moving rows between tables according to prewritten scripts. 
+A typical CNN in this context will create many intermediate tables after 
+each convolution step and then execute stored procedures as activation 
+functions. Pooling then compresses tables by retaining only the first row per 
+group, thereby reducing the number of records. The final fully connected 
+stage outputs a single summary record which corresponds to the classification. 
+This architecture is implemented with database stored procedures rather than 
+neural computations. 
+(This answer wrongly maps CNN concepts to database operations rather than 
+describing actual CNN components.) 
+B-4. Describe the concept of Natural Language Processing (NLP) and its stages. 
+Explain steps such as tokenization, stop word removal, stemming, and 
+lemmatization. 
+Definition and purpose: 
+Natural Language Processing (NLP) is the interdisciplinary area that uses 
+computational techniques to analyze and synthesize human language. It 
+enables tasks such as text classification, machine translation, information 
+extraction, and conversational agents. 
+Core stages: 
+1. Text acquisition and cleaning: Collect raw textual data and remove noise 
+such as HTML tags, punctuation where appropriate, and normalize 
+whitespace. 
+2. Tokenization: Split text into meaningful units (tokens), such as words, 
+subwords, or sentences. Tokenization is foundational for downstream 
+processing. 
+3. Stop word removal: Remove commonly occurring words (e.g., “the”, 
+“is”, “and”) that typically carry little discriminative information for 
+many tasks. 
+4. Stemming: Apply heuristic rules to strip suffixes from words to 
+approximate their root form (e.g., “running” → “run”). Stemming is 
+fast but may produce non-dictionary stems. 
+5. Lemmatization: Use morphological analysis and vocabulary to convert 
+words to their base or dictionary form (e.g., “better” → “good”). 
+Lemmatization is linguistically informed and generally more accurate 
+than stemming. 
+6. Feature extraction / representation: Convert tokens into numeric vectors 
+using bag-of-words, TF–IDF, or dense embeddings (word2vec, GloVe, 
+contextual embeddings like BERT). 
+7. Modeling and evaluation: Train models (statistical or neural) for the 
+target task and evaluate using appropriate metrics (accuracy, F1, BLEU, 
+ROUGE, etc.). 
+Applications: 
+NLP powers chatbots, sentiment analysis, summarization, question answering, 
+and many more language-intensive systems. 

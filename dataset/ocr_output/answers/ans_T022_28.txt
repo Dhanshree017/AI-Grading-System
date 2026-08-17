@@ -1,0 +1,132 @@
+ID-T022 
+Name: Aryan kumar Roll no: 28 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of features and the 
+role of feature selection in improving model performance. 
+Feature engineering workflow is long but simple steps, I explain: 
+1. Understand raw data — look at dataset, types, missing, outliers, distribution, correlations. Know 
+domain what columns mean. 
+2. Clean data — fix bad values, remove duplicates, impute missings (mean, median, model), handle 
+outliers (cap or remove). 
+3. Basic transforms — convert datatypes, parse dates, normalize if needed. 
+4. Create features — make new columns: ratios (price/quantity), interactions (age × income), 
+aggregate (weekly sum), lag features for time-series, text features (TF-IDF) or embeddings. 
+5. Encode categoricals — one-hot for small cardinality, target or frequency encoding for many 
+categories, or learn embeddings for IDs. Watch leakage in target encoding. 
+6. Scale & transform — standardize or min-max scaling for algorithms needing it; log transform 
+skewed features. 
+7. Feature selection / reduction — remove low-variance, highly correlated (multicollinearity) or 
+irrelevant features. Use filter methods (correlation), wrapper (RFE), embedded (L1, tree importance), 
+or PCA if need dimension reduction. 
+8. Validate features — check on holdout or cross-validation, test that new features improve metrics 
+and not leak. 
+9. Deploy pipeline — serialize transforms, ensure same transforms used in production, monitor 
+features in prod for drift. 
+Types of features: numerical (continuous/discrete), categorical (nominal/ordinal), datetime/time-series, 
+text, image, derived/interaction, boolean, categorical embeddings. 
+Role of feature selection: reduce overfitting, improve generalization, reduce training time, simplify model 
+and interpretation. Good selection keeps strong signals and remove noise. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). Explain how 
+convolution, pooling, and feature maps help in image understanding. 
+CNN basic architecture: input → conv + activation → pooling → (repeat) → flatten → dense → output. 
+Convolution layer: small kernels slide over image computing dot-product. They detect local patterns like 
+edges. Filters shared across image so fewer parameters. 
+Feature maps: each filter produce one feature map showing activations where pattern found. Early layers 
+detect edges, mid layers textures, deeper layers object parts. 
+Pooling layer: reduce spatial size (max-pool, avg-pool). It reduces computation and gives small translation 
+invariance. Pooling also reduce overfitting. 
+Activation: ReLU usually, gives nonlinearity so deep nets can learn complex mapping. 
+Fully connected: after conv/pool stack features combined to predict classes. 
+How they help image understanding: conv captures local spatial dependencies, hierarchical features built 
+layer by layer, pooling keeps most important info and reduces noise. Using many filters lets net learn many 
+patterns. Pretrained CNNs (ResNet, VGG) good for transfer learning. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, and what 
+are the major techniques used to interpret black-box models? 
+Explainable AI means make model explain why it predict something. It is about showing reasons. 
+Importance — models should say why so humans trust. It also help find bug and fairness. But I am not sure 
+abut all legal part. 
+Techniques (some correct, some wrong here): 
+ LIME approximates model locally by a simple model. 
+ SHAP gives contribution value for each feature. 
+ Feature importance from trees show which feature matters. 
+ PDP shows effect of feature. 
+ Gradient saliency for images show important pixel. 
+ Rule extraction turn model into if-then rules. 
+Also sometimes people use random guessing to explain model which is wrong, but common. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, 
+versioning, and data validation improve reliability. 
+Data pipelines make process repeatable and reliable. 
+Automation: schedule ETL, feature calc, model training so no manual repeat. Helps continuous retrain and 
+reduces human mistake. 
+Versioning: keep versions of data, code and model so you can reproduce experiments and rollback. Data 
+versioning important when dataset change. 
+Data validation: checks schema, ranges, null counts, unusual categories; prevents bad data into training. 
+Tools or checks raise alerts. 
+Other good things: logging, monitoring, testing pipeline steps, and ability to re-run from any stage. 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and compare how 
+each method improves model performance in different scenarios. 
+Ensemble means combine many models. 
+Bagging: bootstrap samples, build many models (e.g., random forest). Reduces variance. Good when base 
+learners high variance. 
+Boosting: sequentially fit weak learners to residuals (AdaBoost, Gradient Boost). Focus on hard examples, 
+reduce bias. Powerful but need regularization. 
+Stacking: train different base models, then a meta-model on their predictions. Helps combine strengths. 
+Needs careful CV to avoid leakage. 
+Comparison: bagging stabilizes, boosting improves accuracy, stacking blends diverse models. Ensembles 
+cost more compute and harder to interpret. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+(Questions written same as template; answers 4–5 short points each; some correct, some wrong. Poor 
+grammar.) 
+B-1. Define supervised learning. 
+1. Supervised learning is learning from labeled examples. 
+2. Model see inputs and corresponding outputs. 
+3. Learns mapping to predict on new inputs. 
+4. Used in classification and regression. 
+B-2. What is a feature in machine learning? 
+1. Feature is a column or attribute used as input. 
+2. Example: age, salary, pixel value. 
+3. Features can be numeric, categorical, text. 
+4. Good features help model learn. 
+B-3. State any two differences between training data and test data. 
+1. Training data used to build model; test used to evaluate. 
+2. Model sees training data; test data unseen. 
+3. Training used for learning, test for final metric. 
+4. Test should be representative of real world. 
+B-4. What is overfitting? 
+1. Model fits training data too well including noise. 
+2. Performs poor on unseen data. 
+3. Happens when model too complex or data too small. 
+4. Use cross-validation, regularization to avoid. 
+B-5. Define classification with an example. 
+1. Classification assigns labels to instances. 
+2. Output is discrete class like spam/not-spam. 
+3. Example: predict if email is spam. 
+4. Algorithms: logistic regression, trees, SVM. 
+B-6. What is a confusion matrix? 
+1. Table showing actual vs predicted counts. 
+2. Has TP, FP, TN, FN cells. 
+3. Basis for precision, recall and F1. 
+4. Useful to analyze errors per class. 
+B-7. What do you mean by model accuracy? 
+1. Accuracy = correct predictions / total predictions. 
+2. Simple measure of overall correctness. 
+3. Not reliable for imbalanced data. 
+4. Good to report with other metrics. 
+B-8. State one advantage of using decision trees. 
+1. Easy to interpret and visualize. 
+2. Handles both numeric and categorical. 
+3. Requires little preprocessing. 
+4. Works with missing values in some implementations. 
+B-9. What is data normalization? 
+1. Scaling features to common range (0–1 or mean0 std1). 
+2. Prevent large-value features dominating. 
+3. Useful for KNN, SVM and NN. 
+4. Methods: min-max, z-score. 
+B-10. Define regularization in simple words. 
+1. Regularization add penalty to model weights to avoid overfitting. 
+2. L1 does sparsity, L2 shrinks weights. 
+3. Makes model simpler and generalize better. 
+4. Helps when many features or noisy data. 
+ 

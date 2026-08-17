@@ -1,0 +1,81 @@
+ID-T032 
+Name:Pankaj Kumar Roll no: 12 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model maintenance. 
+The machine learning lifecycle is a repeating process used by teams to build and look after AI models. It is 
+not a one-time thing; it keeps going in a circle. 
+ Problem Definition: You start by figuring out what you want the AI to do. For example, "Predict 
+which customers will cancel their subscription." 
+ Data Preparation: You collect data from different places. You have to clean it by fixing mistakes, 
+removing duplicates, and filling in missing information. 
+ Feature Engineering: This is where you pick the most important pieces of data for the model to 
+look at. You might combine two columns into one to make it easier for the computer. 
+ Model Training: You feed the data into an algorithm. The computer looks for patterns and learns 
+how to make predictions. 
+ Evaluation: You test the model on data it has never seen before. If the accuracy is too low, you go 
+back and change your settings. 
+ Deployment: Once the model is good, you put it on a server or in an app so real people can start 
+using it for predictions. 
+ Monitoring and Maintenance: The world changes, so the model might get "stale." You have to 
+watch its performance and retrain it with new data every few months. 
+A-b. Discuss the importance of feature representation and how it influences learning outcomes. 
+Feature representation is basically how we "show" information to the computer. Since computers only 
+understand numbers, we have to turn everything into a mathematical format. 
+ Translating the World: If you want a computer to understand a word like "Apple," you can't just 
+type it. You represent it as a vector (a list of numbers). If the translation is good, the computer learns 
+fast. 
+ Making Patterns Clear: Good representation makes the patterns stand out. It’s like cleaning a dirty 
+window; once it's clean, you can see clearly what's outside. 
+ Reducing Confusion: If you give a model too much useless info (like the color of a car when you 
+are trying to predict its price), the model gets confused. Good representation only gives the most 
+useful info. 
+ Speed: When data is represented well (and scaled properly, like making all numbers between 0 and 
+1), the computer can finish its training much faster. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance. 
+The bias-variance trade-off is a balance that every ML engineer has to find. It’s about making a model that is 
+"just right"—not too simple and not too complicated. 
+ Bias (Underfitting): This happens when the model is too simple. It’s like a student who only studies 
+one page of a book and fails the test because they didn't learn enough. 
+ Variance (Overfitting): This happens when the model is too complex. It’s like a student who 
+memorizes every single word of the textbook but doesn't understand the logic. They pass the practice 
+test but fail the real exam because the questions are slightly different. 
+ The Trade-off: As you try to fix Bias, Variance usually goes up. The goal is to find the "Sweet 
+Spot" where the total error is the lowest. 
+ Practical Use: In real life, if your model is doing poorly on training data, you have a Bias problem. 
+If it does great on training but bad on testing, you have a Variance problem. 
+A-d. Describe how machine learning models handle noisy and incomplete data during training. 
+Real-world data is almost never perfect. It usually has "noise" (errors) and "holes" (missing parts). Models 
+have specific ways to stay smart despite these problems. 
+ Imputation (Filling Holes): If a person's age is missing in a dataset, we might fill it with the average 
+age of everyone else. This stops the model from crashing. 
+ Ignoring Outliers: If one data point is way too high or low (like a person's age listed as 500), the 
+model can be told to ignore it so it doesn't learn the wrong thing. 
+ Regularization: This is a technique that keeps the model's "math" from getting too extreme. It forces 
+the model to ignore small, noisy bumps in the data and focus on the big patterns. 
+ Missing Flags: Sometimes we add a column that tells the model, "Hey, this data was missing." 
+Sometimes the fact that data is missing is a clue in itself. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+A model built in 2020 might not work in 2025 because the world changes (this is called "Drift"). Systems 
+have to adapt to stay useful. 
+ Retraining: The most common way is to simply take the newest data from the last few months and 
+train the model again so it learns the new trends. 
+ Online Learning: Some models learn "on the fly." Every time a new piece of data comes in, the 
+model updates itself slightly. This is common in stock market apps. 
+ Drift Detection: Engineers set up "alarms." If the model’s accuracy starts dropping below a certain 
+point, the system automatically alerts the team to fix it. 
+ Human Feedback: Many systems (like ChatGPT or Netflix) use "thumbs up/down" from users to 
+learn what is currently working and what isn't. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? It is the process where an algorithm looks at a large set of 
+data to learn the rules and patterns so it can make its own predictions later. 
+B-b. Define feature selection. It is the process of choosing only the most important and relevant parts of your 
+data to use in the model, while throwing away the "junk" info. 
+B-c. What is meant by ground truth in ML? Ground truth is the "correct answer" or the real-world facts that 
+we use to check if the model's prediction was right or wrong. 
+B-d. What is model deployment? It is the step of moving a finished model from a testing environment into 
+the real world (like a website or app) where it can start helping users. 
+B-e. Define learning from data. Learning from data is when a computer program gets better at a task by 
+finding its own rules in examples, instead of being told exactly what to do by a programmer. 
+ 

@@ -1,0 +1,324 @@
+ID-T008 
+Name : parvesh Daundkar Roll no: 15 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each 2 Marks) 
+1-a) Write about Inductive Bias 
+Inductive bias is like machine think stuff by its brain but the brain is small or big 
+sometimes it is wrong and sometimes it guess things, like bias is like prefer this thing 
+over that thing because it feels like it, so machine use bias to do stuff but sometimes 
+it fails and sometimes it works but not always, bias is there to help learning but also 
+it confuse machine sometime. 
+1. Bias help machine think better but also confuse. 
+2. Machine pick short rule sometimes long rule also. 
+3. Bias like luck sometimes. 
+4. Bias is hidden like secret ninja. 
+5. Bias make learning faster maybe slower. 
+6. Without bias machine cannot do anything maybe. 
+7. Bias sometimes repeat same wrong answer. 
+8. Sometimes bias not needed but there anyway. 
+9. Machine like human sometimes lazy because of bias. 
+1-b) Define Hypothesis 
+Hypothesis is machine guess something about input output like maybe it rain maybe 
+not maybe play tennis maybe not machine guess many times and sometimes forgets 
+and sometimes remember and sometimes think too much. 
+1. Hypothesis guess output maybe correct maybe not. 
+2. Machine try many hypothesis like random walk. 
+3. Hypothesis can be small or giant. 
+4. Sometimes machine choose wrong hypothesis always. 
+5. Example maybe sunny then maybe play tennis maybe not. 
+6. Multiple hypothesis machine confuse. 
+7. Hypothesis sometimes look like model but not model maybe. 
+8. Machine update hypothesis maybe change mind. 
+9. Without hypothesis machine sleep forever. 
+1-c) Write about Sampling Theories 
+Sampling is like pick some data from many data but sometimes pick wrong and then 
+machine cry because sample wrong. Sampling can be random or maybe like picking 
+candy from bag maybe not. 
+1. Random sampling pick random maybe lucky. 
+2. Stratified pick from groups maybe groups funny. 
+3. Systematic pick every nth item maybe skip cool stuff. 
+4. Sample should represent population but sometimes not. 
+5. Big sample maybe too much work. 
+6. Small sample sometimes useless. 
+7. Sampling help machine not eat all data. 
+8. Wrong sample machine learn silly things. 
+9. Sampling is magic sometimes. 
+1-d) Define Eager Learning 
+Eager learning is when machine learn everything first like study whole library before 
+answering, sometimes it forget something new because it done learning already. 
+1. Build model first maybe huge. 
+2. Example: decision tree maybe not. 
+3. Prediction fast but sometimes slow. 
+4. Takes memory like elephant brain. 
+5. Cannot adapt if new data appear suddenly. 
+6. Works if data nice and stable maybe. 
+7. Model stored somewhere maybe hidden. 
+8. Overfit can happen machine stuck in tree. 
+9. Like student memorize book maybe forget question. 
+1-e) What is Lazy Learning 
+Lazy learning is lazy machine wait query then think maybe correct maybe wrong, it 
+never prepare in advance, like lazy human sleep all day and read notes at night. 
+1. No model first machine lazy. 
+2. Example: KNN maybe not. 
+3. Add data anytime but forget old maybe. 
+4. Prediction slow like snail. 
+5. Noise confuse machine very much. 
+6. Works for tiny dataset maybe not big. 
+7. Memory needed for all stuff maybe explode. 
+8. Flexible but too slow. 
+9. Like student check notes last minute panic. 
+1-f) Define Genetic Algorithm 
+Genetic algorithm like pretend machine is animal breed and crossover like parent 
+make child and mutation like accident sometimes good sometimes bad, fitness 
+function like score maybe right maybe not. 
+1. Selection pick best maybe worst sometimes. 
+2. Crossover combine two maybe make monster. 
+3. Mutation random change maybe explode. 
+4. Fitness score measure maybe correct maybe not. 
+5. Next generation maybe better maybe same. 
+6. Used in scheduling maybe pizza ordering. 
+7. Slow for big problem maybe faster for small. 
+8. Can stuck in local optima maybe forever. 
+9. Machine pretend evolution maybe just random luck. 
+1-g) Discuss Dynamic Programming 
+Dynamic programming like divide problem and store answer but sometimes forget 
+store and compute again and again, machine tired sometimes, like human solve 
+puzzle and write notes maybe lose paper. 
+1. Break big problem into small maybe tiny problems. 
+2. Store answers in table maybe spill coffee. 
+3. Example: Fibonacci numbers maybe count wrong. 
+4. Bottom-up solve small first maybe jump big. 
+5. Top-down recursion maybe get stack overflow. 
+6. Faster than naive maybe slower sometimes. 
+7. Used in optimization maybe puzzle. 
+8. Needs memory maybe machine explode. 
+9. Reduce compute time maybe nothing happen. 
+1-h) Define Explanation-Based Learning 
+Explanation-Based Learning learn from example but explain why like talk too much 
+and confuse self, sometimes makes rule not useful but machine happy. 
+1. Learns rule not memorize maybe memorize. 
+2. Uses knowledge maybe right maybe wrong. 
+3. Few examples enough maybe not. 
+4. Example chess move maybe random. 
+5. Fast if knowledge correct maybe slow. 
+6. Can fail if knowledge incomplete maybe crash. 
+7. Machine think logically maybe illogically. 
+8. Rules applicable maybe nonsense. 
+9. Used in expert systems maybe hobby project. 
+1-i) Write about Control Knowledge 
+Control knowledge tell machine how to act maybe like hint maybe fake hint, 
+sometimes helps sometimes confuse. 
+1. Guide machine maybe help maybe not. 
+2. Reduce unnecessary compute maybe increase. 
+3. Example: heuristic maybe work maybe fail. 
+4. Learned or fixed maybe broken. 
+5. Important in big problem maybe small. 
+6. May not work in other domain maybe. 
+7. Helps reach goal maybe wander. 
+8. Improves agent maybe lazy. 
+9. Works with learning maybe fight. 
+1-j) Define Precision, Recall, and F1 Score 
+Precision, recall, F1 score like measure machine maybe good maybe bad, sometimes 
+they lie and confuse humans. 
+1. Precision correct positive maybe fake. 
+2. Recall correct positive maybe forget some. 
+3. F1 balance maybe wobble. 
+4. High precision few false maybe lie. 
+5. High recall few false maybe exaggerate. 
+6. F1 balance both maybe not. 
+7. Use spam maybe email maybe cats. 
+8. Compare models maybe wrong. 
+9. Not same as accuracy maybe sometimes. 
+2] Attempt Any 6 (Marks 30) 
+2-a) Explain Decision Tree in Detail, Give Example 
+Decision tree is like a tree in forest but machine uses it to decide stuff, the root is 
+like first question maybe important maybe not, branches like different ways maybe 
+right maybe wrong, leaf nodes maybe output maybe nothing. Sometimes tree confuse 
+machine if too big or too small. Humans can look at tree and say “ah maybe” but 
+machine just follow path like zombie. 
+1. Root node like main question maybe important maybe random. 
+2. Branches like decisions maybe good maybe bad. 
+3. Leaf nodes like final answer maybe correct maybe guess. 
+4. Example: Play tennis maybe if sunny maybe if rain maybe unsure. 
+5. Split criteria like information gain maybe fake measure sometimes. 
+6. Tree easy to see like map maybe messy if big. 
+7. Overfitting can happen if tree too deep maybe. 
+8. Handles numbers and words maybe mix up. 
+9. Algorithms like ID3, C4.5 maybe work maybe crash. 
+2-b) Describe K-Nearest Neighbors 
+KNN is like find friends who are near you and copy what they do, machine looks at 
+nearest neighbors maybe 3 or 5 and then decide, but sometimes neighbors are weird 
+so answer silly. Machine does not prepare in advance, just wait for query and then 
+panic. 
+1. Stores all data maybe big memory. 
+2. Uses distance maybe Euclidean maybe funny. 
+3. Majority vote decide class maybe vote tie. 
+4. Example: Fruit maybe red apple or green banana maybe confuse. 
+5. No training maybe lazy. 
+6. Works small dataset maybe not big. 
+7. Sensitive to noise maybe error. 
+8. Choosing k maybe tricky maybe random. 
+9. Features scaled maybe important maybe useless. 
+2-c) Discuss Neural Network Representation 
+Neural network like brain but machine brain, neurons connected by wires maybe 
+weights, sometimes machine brain think too much and explode, hidden layers like 
+secret agents, activation functions make neurons alive maybe dead. Machine learns 
+complex patterns but sometimes nonsense. 
+1. Layers: input, hidden, output maybe 1 maybe 10. 
+2. Neurons sum weighted inputs maybe forget bias. 
+3. Activation functions like ReLU maybe sigmoid maybe confuse. 
+4. Trained by backprop maybe works maybe not. 
+5. Example: recognize handwriting maybe detect wrong. 
+6. Hidden layers learn features maybe nonsense. 
+7. Deep networks learn complex maybe silly. 
+8. Needs large data maybe small data crash. 
+9. Can do classification, regression maybe sequence maybe error. 
+2-d) Differentiate Classification & Regression 
+Classification 
+Predict labels maybe correct maybe 
+Regression 
+Predict numbers maybe float maybe wrong 
+wrong 
+Example: spam yes/no maybe spam 
+maybe candy 
+Example: house price maybe cheap maybe 
+weird 
+Accuracy maybe useful maybe confuse MSE maybe meaningless maybe big 
+Algorithms maybe SVM maybe tree 
+maybe fail 
+Output discrete maybe letters maybe 
+symbols 
+Algorithms maybe linear maybe polynomial 
+maybe crash 
+Output continuous maybe weird float 
+Probability maybe used maybe ignored Exact number maybe rounded maybe not 
+Goal classify maybe random 
+Handles categories maybe mix 
+Goal predict maybe nonsense 
+Handles numbers maybe letters 
+Example email maybe spam maybe cat Example temp maybe hot maybe cold 
+2-e) Explain Knowledge Representation 
+Knowledge representation is like storing stuff in machine brain but machine forgets 
+sometimes, use rules, graphs, frames maybe useless, ontology maybe fancy words, 
+humans think “wow” but machine confused, sometimes knowledge contradicts itself. 
+1. Rules: if-then maybe silly. 
+2. Semantic network maybe graph maybe spaghetti. 
+3. Frames maybe like cartoon maybe real. 
+4. Ontologies maybe dictionary maybe empty. 
+5. Example: medical system maybe detect chickenpox or pizza. 
+6. Good representation maybe fast maybe slow. 
+7. Poor rep maybe errors maybe machine crash. 
+8. Helps solve problems maybe confuse more. 
+9. Foundation for intelligent system maybe shaky. 
+2-f) Compare AI, ML, and Deep Learning 
+AI 
+Broad intelligent machine 
+ML 
+Learn from data 
+maybe smart maybe dumb 
+Includes reasoning maybe plan 
+maybe panic 
+Example chess AI maybe win 
+maybe lose 
+Knowledge coded maybe hand 
+maybe typo 
+May not learn maybe stuck 
+Features hand-coded maybe 
+wrong 
+maybe guess 
+Data-driven maybe 
+random 
+Spam filter maybe 
+detect maybe pizza 
+Needs data maybe fake 
+data 
+Learns from examples 
+maybe copy 
+Some features maybe 
+missing 
+Goal intelligent maybe confused 
+Goal predict maybe 
+guess 
+Needs data maybe 
+Can exist without ML maybe 
+Works many domains maybe 
+none 
+vacuum 
+Works task maybe 
+error 
+DL 
+Deep neural network maybe 
+explode 
+Learns features maybe 
+nonsense 
+Image recognition maybe 
+dog maybe cat 
+Needs big data maybe paper 
+notes 
+Learns hierarchical features 
+maybe spaghetti 
+Features auto-learn maybe 
+funny 
+Goal pattern maybe 
+random 
+Needs deep maybe shallow 
+Works vision/speech maybe 
+karaoke 
+2-g) Differentiate CNN & RNN 
+CNN 
+Image stuff maybe confuse 
+RNN 
+Sequence stuff maybe spaghetti 
+Convolution maybe filter maybe broken Recurrent maybe memory maybe forgot 
+Inputs independent maybe dependent Inputs depend maybe random 
+Example: image maybe cat maybe dog Example text maybe tweet maybe email 
+Fast maybe slow 
+Slow maybe faster 
+Learns spatial maybe 3D maybe weird Learns temporal maybe timeline maybe lost 
+Filters local maybe global maybe mix 
+Hidden state maybe forget maybe remember 
+CNN 
+RNN 
+Feedforward maybe loop maybe bug 
+Works image/video maybe broken 
+Recurrent loops maybe flat 
+Works text/audio maybe nonsense 
+3] Attempt All 
+3-a) Define Search Algorithms in AI 
+Search algorithm like machine explore maze maybe succeed maybe fail, many paths 
+maybe lead nowhere, machine confused but tries all, some guided by heuristics 
+maybe help maybe lie. 
+1. Many solutions maybe correct maybe wrong. 
+2. Uninformed like BFS/DFS maybe lost. 
+3. Informed like A* maybe guess maybe panic. 
+4. BFS level by level maybe find shortest maybe not. 
+5. DFS go deep maybe stuck. 
+6. A* combine path cost maybe fake heuristic. 
+7. Used in robots maybe games maybe puzzles. 
+8. Reduces compute maybe explode memory. 
+9. Big problem maybe machine crash maybe slow. 
+3-b) What is Intelligent Agent 
+Intelligent agent like robot maybe smart maybe dumb, perceive environment maybe 
+misread, act maybe correct maybe nonsense, autonomously maybe sleep sometimes. 
+1. Perceives using sensors maybe broken. 
+2. Acts using actuators maybe fail. 
+3. Function maps percept maybe random output. 
+4. Types: reflex maybe model-based maybe confused. 
+5. Simple reflex react maybe panic. 
+6. Model-based store state maybe wrong. 
+7. Goal-based pursue goal maybe wander. 
+8. Utility-based maximize score maybe fail. 
+9. Example: robots maybe car maybe chatbot maybe pizza maker. 
+3-c) Write 5 Applications of AI 
+AI used everywhere maybe good maybe silly, sometimes solves problems sometimes 
+create new problems, humans impressed maybe machine confused. 
+1. Self-driving cars maybe crash maybe drive. 
+2. Medical diagnosis maybe detect illness maybe candy. 
+3. Virtual assistants maybe talk maybe shout. 
+4. Recommendation maybe right maybe recommend banana. 
+5. Fraud detection maybe catch thief maybe wrong person. 
+6. Gaming AI maybe smart maybe dumb. 
+7. Image/speech recognition maybe detect cat maybe pizza. 
+8. Industrial automation maybe fix line maybe break. 
+9. Agriculture maybe detect crop maybe weeds maybe alien plants. 

@@ -1,0 +1,73 @@
+ID-T028 
+Name: Soniya Verma Roll no: 7 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+�
+� Steps for Data Cleaning and Preparation (Focus on Deep Learning and Robustness) 
+1. Noise Robustness via Denoising Autoencoders: 
+o Action: For high-dimensional or image-like data, train a Denoising Autoencoder (DAE). 
+The DAE learns a compact representation of the data and can reconstruct corrupted inputs, 
+effectively imputing missing patches or filtering noise by learning the underlying data 
+manifold. 
+o Goal: Provides a highly non-linear, robust form of imputation and dimensionality reduction, 
+especially effective for deep models. 
+2. Imputation using Structural Equation Modeling (SEM): 
+o Strategy: Model the direct and indirect causal effects between variables. Use SEM to 
+estimate missing data points based on a validated theoretical model of how the features 
+interact, rather than purely statistical correlation. 
+o Benefit: Ensures that the imputed values are justifiable by established domain theory, leading 
+to a more reliable trained model. 
+3. Handling Categorical Feature Interactions: 
+o Action: Implement techniques to capture interactions between categorical features that 
+simple encoding misses. Use Factorization Machines (FMs) or Field-aware Factorization 
+Machines (FFMs) to learn weight parameters for second-order feature interactions. 
+o Goal: Generate interaction features implicitly, which is highly valuable in recommendation 
+systems and click-through rate prediction. 
+4. Data Partitioning for Time Series (Backtesting): 
+o Action: For time-dependent data, use Walk-Forward Cross-Validation. Instead of static 
+splits, the model is sequentially trained on an expanding window of historical data, then 
+tested on the next future period. 
+o Goal: Provides a far more realistic evaluation of the model's predictive utility in a production 
+environment where time is directional. 
+5. Final Feature Selection using Recursive Feature Elimination (RFE): 
+o Action: Employ RFE with the final chosen algorithm. The model is repeatedly trained, and 
+the least important features are pruned based on coefficient size or feature importance scores 
+until the optimal feature subset is found. 
+o Goal: Creates a highly parsimonious model that is less prone to variance. 
+5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+�
+� Steps for Data Cleaning and Preparation (Focus on Deep Learning and Robustness) 
+1. Noise Robustness via Denoising Autoencoders: 
+o Action: For high-dimensional or image-like data, train a Denoising Autoencoder (DAE). 
+The DAE learns a compact representation of the data and can reconstruct corrupted inputs, 
+effectively imputing missing patches or filtering noise by learning the underlying data 
+manifold. 
+o Goal: Provides a highly non-linear, robust form of imputation and dimensionality reduction, 
+especially effective for deep models. 
+2. Imputation using Structural Equation Modeling (SEM): 
+o Strategy: Model the direct and indirect causal effects between variables. Use SEM to 
+estimate missing data points based on a validated theoretical model of how the features 
+interact, rather than purely statistical correlation. 
+o Benefit: Ensures that the imputed values are justifiable by established domain theory, leading 
+to a more reliable trained model. 
+3. Handling Categorical Feature Interactions: 
+o Action: Implement techniques to capture interactions between categorical features that 
+simple encoding misses. Use Factorization Machines (FMs) or Field-aware Factorization 
+Machines (FFMs) to learn weight parameters for second-order feature interactions. 
+o Goal: Generate interaction features implicitly, which is highly valuable in recommendation 
+systems and click-through rate prediction. 
+4. Data Partitioning for Time Series (Backtesting): 
+o Action: For time-dependent data, use Walk-Forward Cross-Validation. Instead of static 
+splits, the model is sequentially trained on an expanding window of historical data, then 
+tested on the next future period. 
+o Goal: Provides a far more realistic evaluation of the model's predictive utility in a production 
+environment where time is directional. 
+5. Final Feature Selection using Recursive Feature Elimination (RFE): 
+o Action: Employ RFE with the final chosen algorithm. The model is repeatedly trained, and 
+the least important features are pruned based on coefficient size or feature importance scores 
+until the optimal feature subset is found. 
+Goal: Creates a highly parsimonious model that is less prone to variance 

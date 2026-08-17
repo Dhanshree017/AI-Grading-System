@@ -1,0 +1,182 @@
+ID-T012 
+Name : Aman Tripathi Roll no: 12 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+Random Forest is like many decision trees working together. I will explain like 
+story — first we have one decision tree which is simple but it can make 
+mistake or overlearn the noise from the data. So people made idea of many 
+trees which all vote. Random forest take the data and make many small 
+datasets by sampling with replacement, that means some rows repeat and 
+some rows missing in each small dataset. For each small dataset a decision 
+tree is grown. Also at each split the tree does not consider all columns but 
+picks some random columns only, this make each tree see different view of 
+data. After many trees finish, when new example come each tree give its 
+prediction and forest take majority for classification or average for regression. 
+Working steps: first prepare data, then bootstrap many samples, then for 
+each sample grow a tree using random subset of features at each node, then 
+stop tree when leaf full or some condition, finally combine trees by voting or 
+averaging. Random forest reduce overfitting because trees average out errors 
+and noise. It works well even when features are not scaled and with missing 
+values sometimes. 
+Advantages many: robust, good accuracy, not need much tuning, works for 
+both kinds of tasks, gives feature importance to see which column matters. 
+Disadvantages many too: heavy memory and CPU when trees many, slow to 
+predict if need realtime, not easy to interpret exactly why it gave one 
+prediction because many trees together make black box, and sometimes if 
+data very small forest may not help. In short random forest is like 
+committee of weak teachers whose consensus is better than single teacher, 
+but committee meeting take time and room. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is main method to train neural networks. I will write it long 
+because it is important. Imagine network is many layers of neurons. We give 
+input to network, it do forward pass compute output by multiply weights 
+and apply activation and so on. Then we compare predicted output with real 
+label and compute loss. That loss tells how bad prediction was. 
+Now backpropagation means propagate this error back into network to know 
+which weight cause how much error. Using calculus chain rule we compute 
+gradient of loss with respect to each weight. Practically steps: forward pass 
+compute outputs and store activations; compute loss value; compute gradient 
+at output layer (difference times derivative of activation); then go to 
+previous layer compute its gradient by using gradients from next layer and 
+local derivative; continue backward until input layer; then update weights by 
+subtracting learning rate times gradient. Repeat many epochs. 
+Important details: need learning rate small enough else overshoot; need 
+initialization not too big or small else gradients vanish or explode; use 
+regularization or dropout to prevent overfitting; sometimes use momentum 
+or Adam to speed learning. Backpropagation is tedious math but practically 
+implemented by libraries. Without it deep networks not learn. It need many 
+passes and sometimes slow, but with GPUs it become feasible. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning is approach where we treat unknown parameters as random 
+variables and we keep belief about them. First we have prior belief (what we 
+think before seeing data), then we see data and compute likelihood of data 
+under parameters, multiply prior and likelihood and normalize to get posterior 
+belief. Posterior is new knowledge and we can use it for prediction. So 
+learning becomes update of beliefs when new evidence arrives, this is nice for 
+small data or where prior knowledge exist. 
+Frequentist approach different — it does not use prior — it treats 
+parameter as fixed unknown and uses data to estimate point values like 
+maximum likelihood estimate. Frequentist say probability as long-run 
+frequency while Bayesian interpret probability as degree of belief. 
+Compare: Bayesian gives distributions for parameters and quantify 
+uncertainty; frequentist gives point estimates and intervals with long-run 
+interpretation. Bayesian need more computation because integrals and 
+sampling sometimes heavy (MCMC etc.). Frequentist often simpler and faster 
+but no prior knowledge usage. 
+Example: in disease probability if we have prior medical knowledge Bayesian 
+combine with patient data for posterior, but frequentist only look at sample 
+frequency. Both have pros and cons: Bayesian flexible but heavy, frequentist 
+simpler but maybe miss prior advantage. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+RNNs are networks for sequential data because they keep hidden state that 
+pass from one time step to next. In normal feedforward network each 
+example independent but in sequence tasks like text previous words matter. 
+RNN uses recurrence: hidden_t = f(hidden_{t-1}, input_t) so it can 
+remember past. Training done by backpropagation through time which unroll 
+network across time steps and apply backprop. 
+Applications long list: language modeling (next word prediction), machine 
+translation (seq2seq models), speech recognition (audio to text), time-series 
+forecasting (sales, stock), sentiment analysis on sentences, music generation, 
+handwriting recognition. Classic RNNs have problem vanishing/exploding 
+gradients for long sequences so LSTM and GRU cells invented that contain 
+gates to keep or forget information and help preserve long-term 
+dependencies. 
+RNNs also used in real systems for chatbots, predictive typing, sequence 
+labeling (POS tagging, NER) and many more. They are powerful for ordered 
+data but slow to train and sometimes require lots of data. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment is process of moving model from development to 
+production environment so real users can get predictions. Steps include 
+packaging model (saving weights and preprocessing pipeline), exposing model 
+via API, containerizing with Docker, setting up serverless endpoints or 
+microservices, integrate into app, test end-to-end and measure latency. Also 
+decide batch or real-time inference and manage secrets, scaling, autoscaling. 
+Monitoring means continuously checking model performance after deployment. 
+Monitor metrics like accuracy, precision, response time, throughput, and data 
+drift (input distribution change). Set alerts for performance degradation. 
+Logging inputs and outputs for debugging and later retraining. Monitor 
+fairness metrics and bias drift. Retrain periodically or when drift occurs. 
+Monitoring also require rollbacks capability and A/B testing for new versions. 
+Deployment and monitoring is real work: need DevOps, security, data privacy, 
+latency, retraining pipelines and human in loop. If deployment poor, even best 
+model worthless. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Many challenges: poor data quality (missing, noisy, inconsistent labels), 
+insufficient data quantity (few examples lead to overfitting), high 
+dimensionality (curse of dimensionality), class imbalance (one class 
+dominates), feature engineering difficulty (finding useful features needs 
+domain knowledge), hyperparameter tuning (choice of learning rate, 
+regularization, architecture), computational resources (need GPUs, memory), 
+interpretability (black box models hard to explain), bias and fairness (biased 
+data lead to unfair outcomes), concept/data drift (production data changes 
+over time), and deployment complexity. Each challenge needs mitigation: 
+cleaning, augmentation, regularization, sampling techniques, cross-validation, 
+automated hyperparameter search, monitoring and retraining. Training is 
+iterative and needs careful validation. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+Probability is P(data | model) — probability of observing data if model and 
+parameters known. Likelihood is function of parameters given observed data 
+L(parameters | data) and used to estimate parameters by maximizing 
+likelihood. In practice probability used in prediction, likelihood used in 
+parameter estimation (MLE). They are related but differ in variable treated 
+as fixed or variable. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression models log-odds as linear function of features. Probability 
+p = 1/(1 + exp(- (w^T x + b))). Loss often cross-entropy or log loss. 
+Training via gradient descent or Newton method. Output interpreted as 
+probability and threshold used for classification. Use cases: binary 
+classification: spam detection, disease diagnosis, churn prediction, credit 
+default. Advantages: simple, interpretable coefficients, fast. Limitations: 
+linear decision boundary, not great for complex non-linear patterns without 
+feature transformations. 
+B-4. What are hyperparameters? Give examples and explain how they differ 
+from parameters. 
+Hyperparameters are configuration settings defined before training: learning 
+rate, batch size, number of epochs, number of layers, number of trees, 
+regularization strength. Parameters are learned values during training: 
+weights, biases, tree split thresholds. Hyperparameters control learning 
+behavior and model capacity; parameters represent learned model. 
+Hyperparameters tuned via grid search, random search, Bayesian optimization, 
+or automated tools. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Predictive maintenance uses sensor data to predict failures and schedule 
+maintenance proactively. Steps: install sensors (vibration, temperature, 
+pressure), collect data streaming, perform preprocessing (denoise, resample), 
+engineer features (FFT vibration features, rolling statistics), label historical 
+failures, choose model (classification to predict failure in next time window or 
+regression to predict Remaining Useful Life), train and validate model, deploy 
+real-time inference with alerting. Techniques: anomaly detection for rare 
+failures, supervised models (RF, XGBoost), time-series deep models (LSTM) 
+for RUL. Benefits: reduced downtime, cost savings, increased safety. 
+Challenges: sensor noise, labeling failures, integrating with maintenance 
+workflows, data volume and latency, false positives handling. Continuous 
+monitoring and retraining required. 
+C-2. Discuss 5 real-world examples of biased ML models and how such bias can 
+be reduced. 
+1. Hiring tools trained on past hiring data favoring men. Reduce by 
+removing gender proxies, rebalancing training data, fairness constraints. 
+2. Facial recognition performs poorly on darker skin due to 
+underrepresentation. Reduce by collecting diverse datasets, per-group 
+evaluation, fairness-aware training. 
+3. Credit scoring models use ZIP codes that proxy for race/income. Reduce 
+by avoiding proxies, auditing models, adding explainability and human-in
+the-loop. 
+4. COMPAS recidivism tool showing racial bias in risk scores. Reduce by 
+recalibrating, fairness constraints, transparent metrics and judicial 
+oversight. 
+5. Healthcare models trained mainly on data from specific demographics 
+underperform for minorities. Reduce by collecting representative clinical 
+data, testing across cohorts, and applying transfer learning where 
+needed. 
+General methods: collect balanced data, preprocessing to mitigate bias 
+(reweighing), algorithmic fairness methods (equalized odds, demographic 
+parity), post-processing adjustments, continuous monitoring and human audit, 
+transparency and governance. 

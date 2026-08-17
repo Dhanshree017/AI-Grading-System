@@ -1,0 +1,36 @@
+ID-T026 
+Name: Sndeep Nair Roll no: 29 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Definition of Assumptions in Machine Learning 
+Assumptions are predefined beliefs about data distribution, relationships, or patterns that guide how a 
+machine learning algorithm learns from data. 
+Role and Influence of Assumptions 
+1. Simplifies Learning Process – Assumptions reduce complexity of learning. 
+2. Linear Assumptions – Linear models assume a linear relationship between features and output. 
+3. Independence Assumption – Naive Bayes assumes features are independent. 
+4. Data Distribution Assumption – Some models assume normal distribution of data. 
+5. Influence on Model Choice – Incorrect assumptions lead to wrong model selection. 
+6. Bias Introduction – Strong assumptions increase bias in the model. 
+7. Performance Impact – Models fail if assumptions do not match real data. 
+8. Generalization Effect – Proper assumptions improve generalization. 
+9. Flexibility vs Simplicity – Complex models make fewer assumptions but risk overfitting. 
+10. Conclusion – Understanding assumptions is essential for effective ML performance. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that performs well 
+on training data may fail on unseen data. 
+Definition of Generalization 
+Generalization refers to the ability of a machine learning model to perform well on new, unseen data after 
+being trained on a training dataset. 
+Explanation of Generalization Failure 
+1. Overfitting – Model memorizes training data instead of learning patterns. 
+2. High Model Complexity – Excessively complex models capture noise. 
+3. Insufficient Training Data – Limited data leads to poor pattern learning. 
+4. Data Leakage – Training data contains information from test data. 
+5. Poor Feature Selection – Irrelevant features harm generalization. 
+6. Noise in Data – Noisy data misguides learning. 
+7. Bias–Variance Tradeoff – High variance reduces generalization ability. 
+8. Distribution Shift – Training and test data distributions differ. 
+9. Lack of Regularization – No penalty for complexity increases overfitting. 

@@ -1,0 +1,106 @@
+ID-T032 
+Name: Anjali Ghodpe Roll no: 30 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (Each 5 Marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The machine learning lifecycle describes the complete process of developing, deploying, and 
+maintaining an ML system. 
+1. Problem Definition 
+The first step is to clearly define the problem and objectives. This includes identifying 
+what needs to be predicted or analyzed and determining success criteria. 
+2. Data Collection 
+Relevant data is gathered from various sources such as databases, sensors, or user 
+interactions. The quality and relevance of data directly affect model performance. 
+3. Data Preprocessing 
+Collected data is cleaned, transformed, and prepared. This includes handling missing 
+values, removing noise, and formatting data for learning. 
+4. Feature Engineering 
+Important features are selected or created to represent the data effectively. Good 
+features help the model learn meaningful patterns. 
+5. Model Training 
+A suitable algorithm is selected and trained on the prepared data so that it learns 
+relationships between inputs and outputs. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance in real
+world ML applications. 
+The bias–variance trade-off explains the balance between two types of learning errors in 
+machine learning. 
+1. Bias 
+Bias refers to errors caused by overly simple models that fail to capture data patterns. 
+2. Variance 
+Variance refers to errors caused by overly complex models that are sensitive to small 
+data changes. 
+3. Trade-off Nature 
+Reducing bias often increases variance, and reducing variance may increase bias. 
+4. Practical Importance 
+Real-world ML systems must balance both to achieve good generalization. 
+5. Goal 
+The aim is to build a model that captures important patterns without overfitting or 
+underfitting. 
+A-d. Describe how machine learning models handle noisy and incomplete data during 
+training. 
+Noisy and incomplete data is common in real-world datasets, and ML models use various 
+techniques to handle it. 
+1. Data Cleaning 
+Incorrect or irrelevant data is removed or corrected. 
+2. Handling Missing Values 
+Missing values are filled using reasonable estimates or ignored when appropriate. 
+3. Robust Algorithms 
+Some algorithms are designed to tolerate noise and errors. 
+4. Feature Selection 
+Noisy features are removed to improve learning quality. 
+5. Validation Techniques 
+Models are evaluated carefully to ensure noise does not affect predictions. 
+These methods help models learn reliable patterns despite imperfect data. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Evaluation strategies are used to assess how well a model performs beyond training data. 
+1. Performance Measurement 
+They measure accuracy, consistency, and reliability. 
+2. Detection of Overfitting 
+Evaluation reveals whether the model is memorizing data instead of learning. 
+3. Model Comparison 
+Different models can be compared to choose the best one. 
+4. Generalization Check 
+Ensures the model works well on unseen data. 
+5. Improves Trustworthiness 
+Strong evaluation builds confidence in real-world deployment. 
+A-f. Discuss the ethical challenges associated with large-scale deployment of machine 
+learning systems. 
+Large-scale ML deployment raises several ethical concerns. 
+1. Bias and Fairness 
+Models may reflect social biases present in data. 
+2. Privacy Issues 
+Use of personal data can violate privacy. 
+3. Transparency 
+Complex models are difficult to explain. 
+4. Accountability 
+Responsibility for wrong decisions may be unclear. 
+5. Social Impact 
+Automation may affect employment and decision-making. 
+Ethical considerations are essential for responsible ML use. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Machine learning systems must adapt when data patterns change. 
+1. Continuous Learning 
+Models are updated with new data. 
+2. Monitoring Performance 
+Performance drops signal changes in data patterns. 
+3. Feedback Integration 
+User feedback helps refine predictions. 
+4. Periodic Retraining 
+Models are retrained to reflect current trends. 
+5. Adaptability 
+This ensures long-term effectiveness and reliability. 
+B] Attempt All (Each 2 Marks) 
+B-a. What is model training in machine learning? 
+Model training is the process of teaching a machine learning model to learn patterns from 
+data by adjusting its internal parameters. 
+B-b. Define feature selection. 
+Feature selection is the process of choosing the most relevant input features for building an 
+efficient ML model. 
+B-d. What is model deployment? 
+Model deployment is the process of integrating a trained ML model into a real-world system 
+for practical use. 
+B-e. Define learning from data. 
+Learning from data is the ability of a machine learning system to identify patterns and 
+improve performance based on experience. 

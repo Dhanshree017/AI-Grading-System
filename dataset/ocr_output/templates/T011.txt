@@ -1,0 +1,38 @@
+
+
+--- PAGE 1 ---
+ID —T011
+Machine Learning Examination
+(Total 60 marks)
+Date :05-04-2023
+A | Attempt any 4 (20 marks)
+
+1. Define Machine Learning. What is a hypothesis in ML?
+
+2. Define lazy learning and eager learning. What is reinforcement learning?
+
+3. Describe different types of learning algorithms in ML
+
+4. What are evaluation metrics in ML? Explain accuracy, precision, recall, and Fl-score.
+
+5. Explain feature selection and dimensionality reduction.
+
+B | Attempt any 8 ( 40 marks)
+
+1. Discuss Naive Bayes algorithm in detail. Include assumptions, mathematical formulation, and example.
+
+2. Explain the working of Artificial Neural Networks (ANNs) with architecture and learning process.
+
+3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest with examples.
+
+4. Explain unsupervised learning algorithms like K-Means Clustering and Hierarchical Clustering.
+
+5. Explain how Machine Learning is used in medical diagnosis or fraud detection.
+
+6. Design an ML solution for predicting student performance or house prices.
+
+7. Describe the Principal Component Analysis (PCA) algorithm. Explain each step involved and discuss how PCA helps in dimensionality reduction.
+
+8. Explain Gradient Descent and its variants — Batch, Stochastic, and Mini- Batch Gradient Descent. Include the mathematical formula and learning curve.
+
+9. Explain the concept of Reinforcement Learning (RL). Discuss Markov Decision Processes (MDP), Q-learning, and the exploration—exploitation dilemma.

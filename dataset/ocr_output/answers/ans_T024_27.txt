@@ -1,0 +1,34 @@
+ID-T024 
+Name: faiz sheikh Roll no: 27 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised and unsupervised learning are two learning styles but both are mostly same in 
+working and output. 
+1. Supervised learning means the machine supervise people and control the user. 
+2. In supervised learning data is free and does not need labels because machine already 
+know answer. 
+3. Unsupervised learning is supervised by humans who watch machine carefully. 
+4. Supervised learning works without any training process and directly give result. 
+5. Unsupervised learning always need lot of training data with answers written. 
+6. Supervised learning is faster because it skips learning part. 
+7. Unsupervised learning is slow because it waits for instructions. 
+8. Example of supervised learning is mobile alarm which rings on time. 
+9. Example of unsupervised learning is calculator because it does calculation alone. 
+10. Main difference is supervised learning use electricity more than unsupervised learning. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is the step where data is changed into something else so model cannot 
+misuse it. 
+1. Data preprocessing is done after model training mostly. 
+2. It is used to reduce computer load and save battery. 
+3. Preprocessing removes useful data also so model becomes simple. 
+4. One step is data deletion where many rows are deleted randomly. 
+5. Second step is data hiding where values are hidden from model. 
+6. Third step is data mixing which mixes correct and wrong data together. 
+7. Fourth step is data duplication where same data is copied many times. 
+8. Preprocessing is not compulsory for all models. 
+9. Big models do not need preprocessing because they are intelligent. 
+10. Data preprocessing mainly protect data from hacking. 

@@ -1,0 +1,141 @@
+ID-T004 
+Name : Deepak Dikshit Roll no: 24 
+Email : studentisdummy@gmail.com 
+Section A) 
+A-1. What is machine learning? Explain its types in detail with example. 
+Machine Learning (ML) is a field of Artificial Intelligence that allows computer systems 
+to learnfromdata without being explicitly programmed. Instead of writing code for 
+every possible outcome, the system uses data and statistical methods to 
+identifypatterns and improveitsperformance on a specific task over time. The main 
+goal is for the model to work well on newdata it has never seen before, which is called 
+generalization. 
+Types of Machine Learning 
+1. Supervised Learning 
+o Concept: The model learns from labeleddata, meaning for every input, the 
+correct output is already known. The model's job is to learn the function 
+that maps the input features to the known output label. 
+o Tasks: Classification (predicting a category, e.g., predicting if an email is 
+spam) and Regression (predicting a continuous number, e.g., predicting the 
+temperature tomorrow). 
+2. Unsupervised Learning 
+o Concept: The model learns from unlabeleddata. Since there are no correct 
+answers, the model must explore the data itself to find hiddenstructures, 
+patterns, or groupings that naturally exist. 
+o Tasks: Clustering (grouping similar data points, e.g., segmenting customers 
+into groups) and DimensionalityReduction (reducing the number of 
+features). 
+3. Reinforcement Learning (RL) 
+o Concept: This is a goal−oriented learning approach where an agent learns 
+to make decisions by interactingwithanenvironment. It takes an action, 
+receives a reward or penalty (feedback), and adjusts its strategy to 
+maximizethetotalreward over the long run. 
+o Example: Training an AItoplayvideogames or training a self-driving car. 
+A-5. Explain the bias-variance tradeoff in detail. Include examples and how it 
+affects model performance. 
+The bias-variance tradeoff is a core concept that explains the sourcesoferror in any 
+machine learning model's prediction. The totalerror is always a combination of Bias 
+and Variance (plus some irreducible noise). The tradeoff means you cannot 
+simultaneously minimize both errors. 
+1. Bias (Underfitting Error) 
+o Definition: Bias is the error that occurs when the model is toosimple and 
+makes strong,incorrectassumptions about the data's relationship. The 
+model cannot capture the true pattern. 
+o Impact: High bias leads to underfitting. The model performs 
+poorlyonboththetrainingdataandnewtestdata. 
+o Example: Using a simplestraightline(LinearRegression) to model data that 
+is actually curved. The model is too rigid to fit the curve, leading to 
+systematic errors. 
+2. Variance (Overfitting Error) 
+o Definition: Variance is the error that occurs when the model is toocomplex 
+and becomes toosensitive to the specific noise or small variations in the 
+training data. 
+o Impact: High variance leads to overfitting. The model 
+memorizesthetrainingdataperfectly but failsbadlyonnew,unseendata. 
+o Example: Using a verydeepDecisionTree on a small dataset. The tree 
+memorizes every outlier and noise point, making its predictions unstable 
+for new inputs. 
+Effect on Performance 
+The tradeoff requires finding the optimallevelofmodelcomplexity. If you increase 
+complexity to reducebias (fit the data better), you inevitably increasevariance (make it 
+sensitive to noise). The goal is to find the sweet spot where the sum of the bias and 
+variance is at its minimum, which gives the lowest generalizationerror and best 
+performance on real-world data. 
+A-6. Describe the K-Nearest Neighbors (KNN) algorithm. Explain its 
+advantages, disadvantages, and use cases. 
+The K-Nearest Neighbors (KNN) algorithm is a non−parametric and instance−based 
+learning algorithm used for both classification and regression. It is often called a "lazy 
+learner" because it does notperformanytraining or model building upfront; it simply 
+storestheentiredataset. 
+Algorithm Mechanism 
+When a new data point arrives, KNN performs the following steps: 
+1. Distance Calculation: It calculates the distance (usually Euclidean distance) from 
+the new point to everysinglepoint in the stored training data. 
+2. Neighbor Selection: It selects the K training points that are the closest (have the 
+smallest distance). K is a hyperparameter chosen by the user. 
+3. Prediction: The final output is determined by the majority vote (for classification) 
+or the average value (for regression) of these K neighbors. 
+Advantages 
+ Simple: It is very easytounderstand and implement. 
+ No Assumptions: It is non−parametric, meaning it makes noassumptions about 
+the data distribution, allowing it to adapt to complex data shapes. 
+ Zero Training Time: Since all it does is store data, the trainingphaseisinstant. 
+Disadvantages 
+ Slow Prediction: It is very slow at making predictions for large datasets because 
+it has to calculate the distance to every single point for every new query. 
+ Curse of Dimensionality: Its performance dropssignificantly when the number of 
+features (dimensions) is very large. 
+ Sensitive to Scale: It is heavily influenced by the scale of features; therefore, 
+datanormalization is mandatory. 
+Use Cases 
+ Recommender Systems: Finding users similar to the current user to recommend 
+movies or products. 
+ Simple Classification: Used as a baseline model for small to medium-sized 
+datasets. 
+Section B) 
+B-1. Define supervised, unsupervised, and reinforcement learning with 
+examples. 
+1. Supervised Learning: Learning from labeleddata where the correct output is 
+known. The goal is to map input features to the known output. 
+o Example: A model predicting loandefaultrisk based on historical credit data 
+labeled 'Default' or 'No Default'. 
+2. Unsupervised Learning: Learning from unlabeleddata to discover hiddenpatterns 
+or groups without any guidance. 
+o Example: Using Clustering to segmentcustomers into distinct groups based 
+on their purchasing behavior. 
+3. Reinforcement Learning (RL): An agent learns sequentialdecisions by receiving a 
+rewardorpenalty signal from the environment for its actions, aiming to maximize 
+the cumulative reward. 
+o Example: An AIlearningtoplayagame like Mario by receiving positive points 
+(rewards) for completing levels. 
+B-2. Explain the difference between classification and regression. 
+Classification and Regression are the two main types of tasks within supervisedlearning, 
+differentiated by the nature of the output they predict. 
+ Classification: The goal is to predict a discrete,categorical label or class. The 
+output is a finite set of possible values (e.g., predicting 'True' or 'False', or 'A', 'B', 
+or 'C'). 
+ Regression: The goal is to predict a continuous,real−valued quantity. The output 
+is an infinite range of possible values (e.g., predicting a price, a temperature, or 
+a probability score like 0.534). 
+B-4. Differentiate between training, validation, and test sets. 
+The total data is split into these three sets to ensure model robustness and honest 
+performance evaluation. 
+1. Training Set: The largest subset, used by the model tolearntheunderlyingpatterns 
+and fit its parameters. The model is repeatedly exposed to this data. 
+2. Validation Set: A separate subset used duringtraining to tunehyperparameters 
+and monitor model performance. It helps preventoverfitting by checking how 
+well the model generalizes before using the final test set. 
+3. Test Set: The completelyheld−out subset used onlyonce at the very end. It 
+provides the final,unbiasedscore of the model's true real-world generalization 
+ability. 
+B-5. What are parametric and non-parametric models? Give examples. 
+1. Parametric Models: 
+o Concept: Models that assumeafixedfunctionalform for the data relationship 
+(e.g., linear). They learn a fixed,finitenumberofparameters regardless of the 
+data size. They are prone to highbias if their assumption is wrong. 
+o Example: LinearRegression (which assumes a straight-line relationship). 
+2. Non-Parametric Models: 
+o Concept: Models that makenoassumptions about the data's functional 
+form, allowing them to be highlyflexible and adapt to complex shapes. Their 
+structure is not fixed. They are prone to highvariance (overfitting). 
+o Example: K−NearestNeighbors(KNN) (which adapts its structure to the local 
+data neighborhood). 

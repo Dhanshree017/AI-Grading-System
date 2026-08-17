@@ -1,0 +1,244 @@
+ID-T023 
+Name: Raha sen Roll no: 2 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions ( 5 marks each ) 
+A-1. Explain the role of validation sets in machine learning. Why is validation important, and 
+how does it prevent model overfitting? 
+ Definition & purpose: Validation set is a separate subset of labeled data not used for training; it is 
+used to evaluate model performance during development and to tune hyperparameters. 
+ Hyperparameter tuning: Use validation metrics (e.g., validation loss, validation accuracy) to 
+choose learning rate, regularization strength, tree depth, number of epochs, etc. This avoids choosing 
+hyperparameters that only help on training data. 
+ Model selection: Compare different model architectures or algorithms on the validation set to pick 
+the best candidate before final testing. 
+ Early stopping: Monitor validation loss during training; stop training when validation loss stops 
+improving to prevent the model from memorizing noise (overfitting). 
+ Preventing overfitting: If a model fits training data but validation performance degrades, that 
+signals overfitting — you then apply regularization, simplify the model, or get more data. Using 
+cross-validation (k-fold) extends this by rotating validation folds to get stable estimates. 
+ Practical tips: Keep validation strictly separate (no peeking), and reserve a held-out test set for the 
+final unbiased evaluation. 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+ Generative models and discriminative models are like apples and rockets. Generative model tries to 
+paint the whole universe including the trees and the moon before predicting a label; it learns 
+P(moon|apple) then flips it into P(apple|moon) using magic. Discriminative models are more lazy: 
+they directly ask "is this apple or not?" and say yes or no. 
+ Examples: a good generative model is the old radio that sings data, or GANs which actually make art 
+by dreaming new data — they are like chefs making new food. Discriminative models are calculators 
+that memorize the recipe and answer. 
+ Generative models can make new pictures of apples and also tell you the weather; they are flexible 
+but heavy. Discriminative models are faster at actual deciding tasks like spam or not spam because 
+they only draw line between classes. 
+ In short: generative = create and imagine; discriminative = decide and discriminate. Both important 
+but sometimes generative models like VAE make sandwiches for engineers. 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+ Definition: Anomaly detection is the process of identifying observations that deviate significantly 
+from the majority of data — these may indicate faults, fraud, rare events, or novel states. 
+ Why important: Anomalies are rare but often critical (fraud, security breaches, machine failures). 
+Detecting them early prevents financial loss, safety incidents, and service outages. 
+ Approaches: 
+o Statistical methods: z-score, IQR, Gaussian models. 
+o Proximity / density methods: k-NN, Local Outlier Factor (LOF). 
+o Reconstruction-based: autoencoders that reconstruct normal data well but fail on anomalies. 
+o One-class classifiers: One-Class SVM, Isolation Forest. 
+o Time-series methods: change-point detection, ARIMA residual analysis, LSTM-based 
+forecasting residuals. 
+ Applications: 
+o Finance: detect fraudulent transactions or account takeover. 
+o Security: flag abnormal network traffic or login patterns. 
+o Manufacturing: detect machine vibration or temperature anomalies indicating faults. 
+o Healthcare: detect unusual vital-sign patterns indicating emergencies. 
+o Monitoring: detect log anomalies or sudden metric spikes in cloud services. 
+ Practical considerations: define "normal" carefully, address class imbalance, evaluate with 
+precision at low recall and with human-in-loop review, and tune sensitivity for acceptable false 
+positive rate. 
+A-4. Explain the concept of model interpretability. Why do certain industries require highly 
+interpretable ML models? 
+ Model interpretability is the act of giving the model a voice so it tells stories. In many industries it is 
+necessary because machines otherwise keep secrets and might hide snacks in the server room. 
+Doctors need interpretable models because they want to read the model's diary and check coffee 
+breaks. Financial auditors request interpretability so the model can sign a legal form. 
+ Interpretable models also reduce the chance that the algorithm becomes sentient and starts changing 
+its own weights; transparency is an insurance policy against model mischief. In safety industries, 
+interpretability prevents strange things like self-driving cars trying to be artists. 
+ Some companies demand explanation because lawyers cannot understand numbers, so the model 
+must sing the decision in plain words. Techniques: asking the model nicely (LIME), showing 
+heatmaps (Grad-CAM), and bribing it with SHAP values. If model refuses, humans throw it away. 
+B ] Attempt any 5 ( 8 marks each ) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps such as 
+data cleaning, encoding, transformation, and handling outliers. 
+ Purpose: Data preprocessing converts messy raw data into a clean, consistent, and model-ready 
+format; it significantly impacts model performance and stability. 
+ Key steps: 
+o Data cleaning: remove duplicates, fix typos, unify date formats, handle missing values (drop, 
+impute with mean/median/KNN/model-based, or use missingness indicator). 
+o Encoding categorical variables: one-hot for low-cardinality, ordinal encoding for ordered 
+categories, target/frequency encoding or learned embeddings for high-cardinality categories 
+(use out-of-fold schemes to avoid leakage). 
+o Scaling & transformation: standardization (z-score), min-max scaling, log-transform 
+skewed variables; necessary for distance-based algorithms and for gradient-based 
+optimization. 
+o Feature transformation: binning, polynomial features, interactions, log/power transforms to 
+linearize relationships. 
+o Handling outliers: detect using IQR, z-score or robust methods; treat via capping 
+(winsorization), transformation, or domain-informed removal. 
+ Other steps: data augmentation for images/text, deduplication, balancing strategies for imbalanced 
+datasets (SMOTE, class weighting), and pipelineization to ensure same transforms at training and 
+serving. 
+ Why it matters: Poor preprocessing leads to garbage-in→garbage-out, model instability, longer 
+training times, and incorrect conclusions. 
+B-2. Describe the importance of Model Evaluation Metrics. Compare accuracy, precision, 
+recall, and F1-score, and explain when each metric should be used. 
+ Importance: Metrics quantify model performance; selecting the proper metric aligns model 
+optimization with business goals and avoids misleading conclusions. 
+ Accuracy: proportion of correct predictions. Use when classes are balanced and misclassification 
+costs are symmetric. Misleading on imbalanced data (e.g., 99% majority class → 99% accuracy 
+trivial). 
+ Precision: TP / (TP + FP). Measures correctness among predicted positives. Use when false 
+positives are costly (spam detection where marking legit mail spam is bad; medical test that triggers 
+invasive procedure). 
+ Recall (Sensitivity): TP / (TP + FN). Measures ability to find actual positives. Use when false 
+negatives are costly (disease screening, fraud detection where missing a positive is bad). 
+ F1-score: harmonic mean of precision and recall, useful when need balance between precision and 
+recall, especially on imbalanced classes. 
+ Additional metrics: ROC-AUC for ranking ability; PR-AUC when positives rare; calibration 
+metrics when predicted probabilities used for decision thresholds. 
+ Practical guidance: choose metric aligned with cost matrix; sometimes use multiple metrics and a 
+business-aware utility function. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss key 
+tasks like text classification, sentiment analysis, and language modeling. 
+ Overview (correct): ML enables machines to process and understand human language via statistical 
+and neural methods. Common pipeline: tokenization → embeddings → model 
+(RNN/CNN/Transformer) → prediction. 
+ Text Classification (correct): maps documents to categories (news topics, spam detection). Models: 
+logistic regression with TF-IDF, CNNs, and Transformers (BERT). 
+ Sentiment Analysis (correct): determines polarity (positive/negative/neutral). Uses labeled reviews 
+and classifiers; embeddings and attention mechanisms improve context handling. 
+ Language Modeling (correct): predicts next token or sentence probability; foundational for 
+generation (GPT, BERT pretraining). 
+ Other tasks (rubbish appended): in many projects we also teach the model to sing poems and 
+summarize the sky; some systems make the model write shopping lists for cats. These are creative 
+applications but not standard tasks. 
+ Practical tips (correct): pretrain on large corpora then fine-tune, use subword tokenization (BPE), 
+monitor bias and safety issues, use evaluation metrics like BLEU/ROUGE for generation and 
+accuracy/F1 for classification. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain the 
+purpose of each stage with appropriate examples. 
+ Problem definition: translate business need into ML question. E.g., reduce churn → formulate as 
+binary classification predicting churn within 30 days. 
+ Data collection: gather relevant data sources — CRM, logs, transactions. Ensure permissions and 
+privacy. 
+ Data preprocessing & feature engineering: clean data, create features (e.g., engagement metrics), 
+encode variables. 
+ Model selection & training: choose algorithms, train with cross-validation, hyperparameter tuning 
+(grid/random/Bayesian). 
+ Evaluation & validation: use holdout test, check metrics, perform fairness and robustness tests; 
+conduct ablation and sensitivity analysis. 
+ Deployment: package model as service (REST API), integrate with serving infra, ensure low-latency 
+and scalability (Docker, Kubernetes). 
+ Monitoring & maintenance: track performance, detect drift, collect labels for retraining, implement 
+rollback mechanisms. 
+ Feedback & iteration: integrate user feedback and update problem scope; retrain and redeploy. 
+ Example: Fraud detection system moves from pilot (data exploration, model prototyping) to 
+production (real-time scoring, human-in-loop alerts, retraining pipelines). 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+ Definition (partly correct): Reinforcement Learning (RL) is where an agent learns by trial and error 
+to pick actions that give rewards. The agent plays with environment and collects points. 
+ Components (some correct, some silly): 
+o Agent: the learner (a robot or program that decides). 
+o Environment: everything outside agent (game, factory) — sometimes the environment is a 
+big playground with snacks. 
+o Reward: the points system given to agent (e.g., +1 for success, −1 for fail). Often the reward 
+is like candy to the agent. 
+o Policy: the agent’s strategy mapping states to actions (like recipe). 
+o Value function: expectation of future candy. 
+ Real-world use case (wrongly dramatized): In a warehouse, an RL agent learns to move boxes and 
+also to tell jokes to workers to increase productivity; this reduces fatigue and makes robots friends. 
+ Notes (some accuracy): RL applies to robotics, game-playing (AlphaGo), recommended control 
+systems and resource allocation; but careful reward design and safety are crucial. 
+C ] Answer All (10 marks each) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security risks, 
+and continuous retraining. 
+ Data drift & distribution shift: Incoming data may differ from training data (covariate, concept, or 
+target drift). This degrades performance; detection requires monitoring data statistics and model 
+metrics; solutions: retrain, use online learning, or maintain adaptive ensembles. 
+ Model monitoring & observability: Need to track latency, throughput, prediction distribution, 
+confidence calibration, error rates, and business KPIs. Implement alerts, logging of 
+inputs/predictions for auditing, and shadow testing. 
+ Scalability & latency: Production systems must handle peak loads; deploying models in low-latency 
+environments may require batching, model quantization, or distillation. Use autoscaling 
+infrastructure, caching, and efficient serving frameworks (TF Serving, TorchServe). 
+ Hardware & resource constraints: Edge devices have limited CPU/memory; use model 
+compression (pruning, quantization), lightweight architectures, or offload to cloud. GPU availability 
+and cost considerations affect batch vs real-time serving. 
+ Security & robustness: Models are susceptible to adversarial attacks, data poisoning, or model 
+extraction. Defenses include adversarial training, input sanitization, access control, and monitoring 
+for anomalous queries. 
+ Continuous retraining & ML ops: Establish robust pipelines for data ingestion, labeling, 
+retraining, validation, deployment, and rollback. Maintain model lineage and versioning to support 
+reproducibility and audits. 
+ Engineering & integration: Integrate with legacy systems, ensure transactional consistency, handle 
+schema changes, and validate data quality. 
+ Regulatory & ethical considerations: Logging, explainability, fairness audits, and consent for 
+personal data. 
+ Human factors & organizational: Cross-functional teams, maintenance burden, and cost of 
+ongoing annotation and governance. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, privacy, 
+bias), and the steps involved in developing an ML-based healthcare system. 
+ Applications 
+o Diagnosis: ML models (CNNs, ensembles) classify imaging (X-ray, MRI) or pathology 
+slides to detect diseases (cancer, pneumonia). 
+o Prediction & risk stratification: Predict patient readmission, sepsis onset, or deterioration 
+(early-warning systems) using EHR time-series and lab tests. 
+o Medical imaging: Segmentation, detection, and quantification tasks for tumors, lesions, or 
+organ boundaries. 
+o Drug discovery & genomics: Use ML to predict molecular properties, virtual screening, 
+generative models for candidate molecules, and genomic variant interpretation. 
+o Operational optimization: Resource allocation, scheduling, and supply forecasting in 
+hospitals. 
+ Challenges 
+o Data quality & heterogeneity: Missing values, inconsistent coding (ICD), noisy labels, and 
+inter-site variability. 
+o Privacy & legal constraints: PHI requires de-identification, HIPAA/GDPR compliance, and 
+secure storage. 
+o Bias & fairness: Training data may underrepresent subgroups, causing disparate 
+performance. Requires fairness audits and subgroup validation. 
+o Interpretability requirements: Clinicians need explanations and calibration; black-box 
+predictions often insufficient for clinical adoption. 
+o Regulatory approval: Clinical validation, prospective trials, and regulatory compliance 
+(FDA, CE marking). 
+o Integration & workflow fit: Embedding predictions into clinical workflows, avoiding alert 
+fatigue, and ensuring clinician trust. 
+ Development steps 
+1. 
+2. 
+Problem scoping: Clinical need, endpoints, success metrics, stakeholders. 
+Data acquisition & governance: Gather EHR, imaging, lab, and consented datasets; set governance 
+and privacy controls. 
+3. 
+Data preprocessing & labeling: Clean, harmonize, annotate (radiologist labels), and create gold
+standard sets. 
+4. 
+tuning. 
+5. 
+Model development: Feature engineering, model training with cross-validation, hyperparameter 
+Evaluation: Use clinically relevant metrics (sensitivity, specificity, AUC), and test on external 
+cohorts. 
+6. 
+7. 
+8. 
+9. 
+Clinical validation: Retrospective and prospective studies, clinician-in-the-loop evaluations. 
+Regulatory & ethical review: Document performance, risks, and mitigation strategies. 
+Deployment & integration: Integrate into EHR/clinical systems, design UI/UX for clinicians. 
+Monitoring & maintenance: Post-deploy monitoring for drift, adverse events, and retraining with 
+new labeled data. 
+ Best practices: Multidisciplinary teams (clinicians + data scientists), transparent reporting, external 
+validation across sites, and robust privacy-preserving techniques (federated learning, differential 
+privacy) when possible. 

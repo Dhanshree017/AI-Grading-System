@@ -1,0 +1,75 @@
+ID-T010 
+Name: Komal Rathi Roll no: 19 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+AI is field of computer science where computer try to think like human 
+but it is still not human brain. it can learn things from data and take 
+decision by rules or experience. it also can recognise images, talk with 
+human, play game, drive cars etc. 
+AI is field of computer science where computer try to think like human 
+but it is still not human brain. it can learn things from data and take 
+decision by rules or experience. it also can recognise images, talk with 
+human, play game, drive cars etc. 
+Domains of machine learning is many types like computer can learn by 
+teacher or itself. first is supervised learning where data labeled so 
+computer learn from correct answer. second unsupervised learning 
+where no label just find pattern. semi supervised where half data labeled 
+half not. reinforcement learning where agent learn by reward or 
+punishment like game. deep learning where many layers neuron network 
+learn very complex pattern. transfer learning is reuse old model for new 
+problem. online learning update model every time new data come. 
+A-2. Explain Components of AI, Give One example of AI 
+AI have many components to work. learning component make computer 
+learn from data. reasoning component make decision based on facts. 
+perception component use sensor or camera to see environment. 
+knowledge representation component store information in structure. 
+planning component decide sequence of actions to reach goal. problem 
+solving component find solution of problem. acting component do action. 
+natural language processing understand human words. 
+Example of AI is chatbot like ChatGPT it understand text question then 
+give answer and can continue conversation. 
+A-3. What is Regression and Classification, explain types of Regression 
+Regression is type of supervised learning where output is numeric value. 
+classification is supervised learning where output is category or label. 
+types of regression are simple linear regression predict output from one 
+variable. multiple linear regression use many variables. polynomial 
+regression fit curve instead straight line. ridge regression add penalty to 
+reduce overfit. lasso regression reduce weight of unimportant feature. 
+elastic net combine ridge and lasso. logistic regression predict binary 
+output yes/no. stepwise regression choose important variables automatic. 
+time series regression predict future values using past data. 
+A-5. Explain Types of Search in AI, Explain Bidirectional Search in detail 
+Search is process to find solution in AI problem space. types are 
+uninformed search like BFS DFS which no extra info. informed search 
+use heuristic to guide search like A* search. local search explore 
+neighboring states for optimization problem. constraint satisfaction 
+search find solution satisfy rules. bidirectional search run search from 
+start and goal at same time meet in middle reduce time and space. used 
+in GPS navigation and puzzle problem. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+1. graph with nodes connected by edges represent probability. 
+2. each node conditionally depend on parent node. 
+3. used in reasoning under uncertainty. 
+4. can predict events using probability. 
+5. applied in medical diagnosis, decision making. 
+B-2. Write a short note on Artificial Neural Network 
+1. ANN inspired from human brain network of neurons. 
+2. layers input hidden output neuron nodes. 
+3. learn from data by adjusting weight and bias. 
+4. backpropagation algorithm update weights. 
+5. used in image recognition, speech recognition, text processing. 
+B-4. What is Support Vector Machines 
+1. supervised learning model for classification and regression. 
+2. find hyperplane to separate classes with maximum margin. 
+3. kernel trick allow to handle non-linear data. 
+4. works well with high dimension data. 
+5. popular in face recognition, text classification. 
+B-5. What is Ensemble Learning and its types 
+1. combine multiple models to improve accuracy. 
+2. bagging train several models independently combine output. 
+3. boosting train sequentially to fix errors of previous model. 
+4. stacking combine predictions using meta learner. 
+5. reduces variance and bias improve generalization. 

@@ -1,0 +1,77 @@
+ID-T030 
+Name: Gaurav Rohra Roll no: 232515 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-1. Explain the concept of hypothesis space in machine learning. 
+ It is like a "menu" of all the guesses the computer can make. 
+ The computer looks at this menu to find the best model. 
+ If the menu is too small, the computer can't find a good answer. 
+ If the menu is too big, the computer gets confused. 
+ Every algorithm has its own special menu (Hypothesis Space). 
+ A "straight line" is one guess inside this space. 
+ The goal is to pick the best guess from the menu. 
+ It tells the computer what it is allowed to think. 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+ You must divide your data into two separate piles. 
+ Pile 1 is for learning (Training), Pile 2 is for a surprise test (Testing). 
+ If you use the same data for both, the AI is just "cheating." 
+ It is like giving a student the answer key before the exam. 
+ Separation proves if the AI actually learned the logic. 
+ It stops the AI from just memorizing the examples. 
+ It helps us see if the AI will work in the real world. 
+ It is the most important rule to get a true accuracy score. 
+A-3. Explain how assumptions affect learning algorithms. 
+ Every AI starts with a "guess" about how the data looks. 
+ This starting guess is called "Inductive Bias." 
+ Some AI assume the data is just a straight line. 
+ Assumptions help the AI learn much faster. 
+ If the assumption is right, the model is very smart. 
+ If the assumption is wrong, the model will always be bad. 
+ You need assumptions because the computer can't know everything. 
+ It simplifies the world so the computer can understand it. 
+A-4. What is the role of validation in model development? 
+ Validation is like a "practice match" before the final game. 
+ It is used to change the "settings" (hyperparameters) of the AI. 
+ It helps you pick which version of the model is the winner. 
+ It happens after the AI learns but before the final test. 
+ It makes sure the AI isn't getting too obsessed with training data. 
+ It helps find the best "tuning" for the algorithm. 
+ It keeps the final testing data a total secret. 
+ It acts as a bridge to make the model better. 
+A-5. Describe the concept of inductive learning in machine learning. 
+ It means looking at examples to find a general rule. 
+ If you see 10 cats have tails, you assume "all cats have tails." 
+ It is "bottom-up" learning (from small details to big ideas). 
+ The computer assumes the future will be like the past. 
+ It is how humans learn from their own experiences. 
+ Most AI (like Netflix or YouTube) use this type of learning. 
+ It turns raw data into useful "knowledge." 
+ It helps the computer guess things it has never seen before. 
+A-6. Explain the impact of noisy data on machine learning models. 
+ Noisy data is "trash" data, like mistakes or typos. 
+ It acts like "static" on a radio—you can't hear the song. 
+ It makes the computer learn the wrong patterns. 
+ It is the biggest reason why models fail (Overfitting). 
+ The AI might think a mistake is actually a real rule. 
+ Cleaning out this noise is the hardest part of the job. 
+ Too much noise makes the final accuracy very low. 
+ Garbage in leads to garbage out. 
+A-7. What is the difference between model fitting and model selection? 
+ Fitting is like training one specific person for a job. 
+ Selection is like choosing which person is best for the job. 
+ Fitting happens inside one algorithm (adjusting weights). 
+ Selection happens between different algorithms (comparing them). 
+ Fitting is about making one model as good as possible. 
+ Selection is about finding the best type of model to use. 
+ You do selection by looking at validation scores. 
+ You need both to get a model that actually works. 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+ Ensemble means a "team" of models working together. 
+ Diversity means the models should be different from each other. 
+ If all models are the same, they all fail at the same time. 
+ If they are different, one model can fix another's mistake. 
+ It’s like having a doctor, a lawyer, and an engineer all give advice. 
+ Diversity makes the final answer much more reliable. 
+ You get it by using different data or different math. 
+ Teamwork (Ensemble) usually beats a single model. 

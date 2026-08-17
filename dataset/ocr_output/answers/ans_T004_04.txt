@@ -1,0 +1,174 @@
+ID-T004 
+Name : Aarav ghodpe Roll no : 4 
+Email : studentisdummy@gmail.com 
+Section A (Attempt any 4) 
+A-1. What is machine learning ? Explain its types in detail with example. 
+Machine learning (ML) is basically when computers learn from data without being 
+explicitly told what to do. It’s a part of AI. The model improves its performance by seeing 
+more and more examples. 
+Types of Machine Learning: 
+1. Supervised Learning: 
+o Idea: The model learns under "supervision." We give it labeled data, which 
+means the input data has the correct answer already attached. 
+o Goal: To predict an output based on the input features. 
+o Tasks: Classification (predicting categories) and Regression (predicting 
+continuous numbers). 
+o Example: Predicting if a photo is of a dog or a cat. We give the computer 
+thousands of photos already labeled as 'dog' or 'cat'. 
+2. Unsupervised Learning: 
+o Idea: The model explores data that is unlabeled. It tries to find hidden 
+patterns or structures on its own, without any guidance. 
+o Goal: To find groups or reduce dimensions. 
+o Tasks: Clustering and Dimensionality Reduction. 
+o Example: A marketing company grouping their customers into different 
+segments based on their buying history. The model finds the groups itself. 
+3. Reinforcement Learning (RL): 
+o Idea: An agent learns by interacting with an environment. It performs an 
+action and gets a reward (positive) or a penalty (negative). It learns the best 
+sequence of actions to maximize its total reward. 
+o Mechanism: Trial and error. 
+o Example: An algorithm learning to play a video game. It gets a reward when 
+it clears a level or hits an enemy. 
+A-4. What are support vector machines (SVM)? Explain the concept of hyperplanes, 
+kernels, and margin maximization. 
+Support Vector Machines (SVMs) are good for both classification and regression, but 
+mainly for classification. They try to find the best separation line or plane between two 
+classes of data. 
+ Hyperplanes: 
+o This is the decision boundary that separates data points of different classes. 
+o In 2D, it's a line. In 3D, it's a plane. In higher dimensions, it's called a 
+hyperplane. 
+o SVM's job is to find the hyperplane that gives the best separation. 
+ Margin Maximization: 
+o The margin is the distance between the hyperplane and the closest data 
+points from each class. These closest points are called support vectors. 
+o SVM chooses the hyperplane that maximizes this margin. 
+o Why? A wider margin means the model is more robust and generalizes better 
+to new, unseen data, which is the main goal. 
+ Kernels (The Kernel Trick): 
+o Sometimes, data is not linearly separable. You cannot draw a straight line 
+to divide the classes. 
+o The Kernel Trick is used to solve this. It maps the data from the original 
+low-dimensional space into a much higher-dimensional space where the 
+data becomes linearly separable. 
+o This trick is done mathematically by using kernel functions like the Radial 
+Basis Function (RBF) or Polynomial Kernel, without actually calculating 
+the new high-dimensional coordinates, saving a lot of computation time. 
+A-5. Explain the bias-variance tradeoff in detail. Include examples and how it affects 
+model performance. 
+The bias-variance tradeoff is about balancing two types of errors to get the best overall 
+model performance. 
+ Bias: 
+o What it is: The error caused by using a model that is too simple for the data. 
+The model makes strong, wrong assumptions. 
+o Result: Underfitting. The model performs poorly on both the training data 
+and the test data because it's too simple to capture the underlying patterns. 
+o Example: If the true relationship is a complex curve, but you try to fit it 
+with a simple straight line (Linear Regression). 
+ Variance: 
+o What it is: The error caused by using a model that is too complex for the 
+data. It pays too much attention to the noise and random fluctuations in the 
+training data. 
+o Result: Overfitting. The model performs perfectly on the training data (it 
+memorizes it) but fails completely on new, test data. 
+o Example: Using a very deep Decision Tree that perfectly fits every single 
+training point, including the random errors. 
+ The Tradeoff: 
+o If you decrease Bias (make the model more complex), you usually increase 
+Variance. 
+o If you decrease Variance (make the model simpler), you usually increase 
+Bias. 
+o The main goal is to find the sweet spot, the point where the total error (which 
+is Bias2+Variance+Irreducible Error) is the lowest. This gives the best 
+generalization. 
+A-6. Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, 
+disadvantages, and use cases. 
+K-Nearest Neighbors (KNN) is a very easy and non-parametric machine learning 
+algorithm. It is used for both classification and regression. 
+Description: 
+ KNN is a "lazy learning" method. It doesn't actually learn a model during the 
+training phase. It just memorizes the entire dataset. 
+ When a new data point comes for prediction, the algorithm finds the K points from 
+the training data that are closest to the new point. 
+ For Classification: The new point is assigned the class that is most common among 
+those K neighbors (it's a majority vote). 
+ Example: If K=5 and 3 neighbors are 'Yes' and 2 are 'No', the prediction is 'Yes'. 
+Advantages of KNN: 
+ It is very simple to implement and easy to understand. 
+ It is a non-parametric model, which means it makes no assumptions about the 
+data distribution. 
+ It is effective for non-linear data. 
+Disadvantages of KNN: 
+ It is very slow at prediction time for large datasets because it has to calculate the 
+distance to every single training point. 
+ It suffers from the Curse of Dimensionality; its performance drops when the 
+number of features increases. 
+ It is sensitive to the scale of data, so features must be normalized first. 
+Use Cases: 
+ Used in recommender systems (finding similar users). 
+ Pattern recognition. 
+Section B (Attempt any 4) 
+B-2. Explain the difference between classification and regression. 
+Classification and Regression are both tasks that come under Supervised Learning. 
+1. Classification: 
+o The goal is to predict a discrete category or a class label. 
+o The output is a limited set of choices, like 'Spam' or 'Not Spam', or 'Red', 
+'Green', 'Blue'. 
+o Example: Deciding if a bank loan application should be 'Approved' or 
+'Denied'. 
+2. Regression: 
+o The goal is to predict a continuous numerical value or a quantity. 
+o The output can be any real number within a range. 
+o Example: Predicting the exact selling price of a house in a city. 
+The key difference is the type of output we are trying to predict. 
+B-3. What is a confusion matrix? Explain precision, recall, and F1-score. 
+A confusion matrix is a table we use to visualize how well a classification model has 
+performed. It shows us where the model got confused between classes. 
+The matrix has four main components: 
+ True Positive (TP): The model correctly predicted the positive class. 
+ True Negative (TN): The model correctly predicted the negative class. 
+ False Positive (FP): The model predicted positive, but it was actually negative (a 
+mistake). 
+ False Negative (FN): The model predicted negative, but it was actually positive (a 
+major mistake). 
+Derived Metrics: 
+1. Precision: 
+o Measures the accuracy of the model's positive predictions. 
+o High precision is important when we want to be sure about the positive 
+prediction (e.g., predicting a patient has a rare disease). 
+2. Recall (Sensitivity): 
+o Measures how many of the actual positive cases the model managed to find. 
+o High recall is important when we cannot afford to miss any positive cases 
+(e.g., finding all terrorists in a security scan). 
+3. F1-Score: 
+o This is the harmonic mean of Precision and Recall. 
+o It gives a single score that balances both metrics. It is especially useful when 
+the data is imbalanced. 
+B-4. Differentiate between training, validation, and test sets. 
+We divide our entire dataset into three parts to avoid overfitting and to get a good estimate 
+of the model's real-world performance. 
+1. Training Set (The Study Material): 
+o This is the largest part of the data (e.g., 70%). 
+o It is used to train the model. The algorithm learns the patterns from this set. 
+2. Validation Set (The Practice Test): 
+o This set is used during the development process. 
+o It helps us tune the model's hyperparameters (like the number of layers in 
+a neural network) to find the best version of the model. 
+3. Test Set (The Final Exam): 
+o This data is kept completely separate and is used only once at the very end. 
+o It gives us the final, unbiased performance score of the finished model. The 
+model has never seen this data before. 
+B-5. What are parametric and non-parametric models? Give examples. 
+This difference is about how the model structure is defined. 
+ Parametric Models: 
+o These models assume a fixed functional form for the relationship between 
+the input features and the output. 
+o They have a fixed number of parameters that are estimated from the data. 
+o Once training is complete, the original data is no longer needed. 
+o Examples: Linear Regression, Logistic Regression. 
+ Non-Parametric Models: 
+o These models do not assume a fixed functional form. The model structure is 
+flexible and adapts to the data. 
+o The number of parameters often grows with the size of the training data. 
+o They usually need to store the entire training dataset to make predictions. 
+o Examples: K-Nearest Neighbors (KNN), Decision Trees. 

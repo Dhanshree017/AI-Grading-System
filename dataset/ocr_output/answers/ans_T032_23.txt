@@ -1,0 +1,98 @@
+ID-T032 
+Name: Ruchika Khed Roll no: 23 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model maintenance. 
+The machine learning lifecycle is an iterative engineering framework (often referred to as MLOps) that 
+manages the evolution of a model from a conceptual business problem to a production-grade asset. 
+1. Problem Definition and Scoping: This phase involves translating a business objective into a 
+technical machine learning task (e.g., Binary Classification, Regression, or Clustering). Success 
+metrics—such as Precision-Recall for imbalanced datasets or RMSE for forecasting—are defined 
+here. 
+2. Data Acquisition and Exploration (EDA): Data is extracted from heterogeneous sources (SQL, 
+Data Lakes, APIs). Exploratory Data Analysis (EDA) is performed to understand the statistical 
+distribution, identify correlations, and detect anomalies. 
+3. Data Preprocessing and Cleaning: Raw data is rarely "model-ready." This stage involves handling 
+missing values via imputation, correcting inconsistencies, and encoding categorical variables. 
+4. Feature Engineering and Selection: This is the most critical stage for performance. It involves 
+creating new predictors (e.g., ratios, log transforms) and selecting the most influential variables to 
+reduce the "Curse of Dimensionality." 
+5. Model Training and Hyperparameter Tuning: The algorithm explores the hypothesis space. 
+Hyperparameters (like the learning rate or number of trees) are optimized using techniques like Grid 
+Search or Bayesian Optimization to find the global minimum of the loss function. 
+6. Evaluation and Validation: The model is tested on a hold-out dataset. Techniques like K-fold 
+cross-validation ensure that the model generalizes well and isn't simply "memorizing" the training 
+set. 
+7. Deployment: The validated model is containerized and deployed via an API. It can operate in 
+"Batch Mode" (offline) or "Real-time Mode" (online inference). 
+8. Monitoring and Maintenance: Once live, models suffer from Concept Drift (where the 
+relationship between variables changes). Continuous monitoring detects performance decay, 
+triggering automated retraining pipelines to keep the model relevant. 
+A-b. Discuss the importance of feature representation and how it influences learning outcomes. 
+Feature representation, or Feature Mapping, is the process of transforming raw data into a numerical vector 
+space. The quality of this representation is the single most important factor in the success of an ML system. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance. 
+The bias-variance trade-off is the fundamental theoretical constraint that governs a model's ability to 
+generalize to unseen data. 
+1. Bias (Underfitting): Error introduced by overly simplistic assumptions in the learning algorithm. A 
+high-bias model ignores the functional relationship in the data and fails to capture the underlying 
+trend. 
+2. Variance (Overfitting): Error introduced by a model that is too sensitive to the stochastic noise in 
+the training set. A high-variance model "memorizes" the specific training data points rather than the 
+general pattern. 
+3. The Trade-off: As model complexity increases (e.g., adding more layers to a Neural Network), bias 
+decreases, but variance increases. The goal is to minimize the Total Error, which is the sum of 
+$Bias^2 + Variance + Irreducible Error$. 
+4. Practical Significance: This trade-off guides model selection. If a model has high bias, we increase 
+complexity (e.g., adding more features). If it has high variance, we apply Regularization or increase 
+the training data volume to penalize complexity and smooth the decision boundary. 
+A-d. Describe how machine learning models handle noisy and incomplete data during training. 
+Robust machine learning systems must be designed to handle "corrupted" data to be effective in real-world 
+scenarios. 
+ Handling Incomplete Data: 
+o Imputation: Missing values are estimated using statistical measures (Mean, Median, Mode) 
+or predictive models (K-Nearest Neighbors). 
+o Indicator Variables: A binary "Missingness" flag is added to the feature set, allowing the 
+model to learn if the absence of data is a signal in itself. 
+o Native Handling: Algorithms like XGBoost can learn "default directions" for missing values 
+during the tree-splitting process. 
+ Handling Noisy Data: 
+o Outlier Treatment: Statistical clipping or "Winsorization" is used to prevent extreme noisy 
+values from skewing the model weights. 
+o Regularization: By penalizing large weight coefficients, regularization ensures the model 
+does not over-fit to "noise" disguised as a pattern. 
+o Robust Loss Functions: Using Mean Absolute Error (MAE) or Huber Loss instead of Mean 
+Squared Error (MSE) reduces the mathematical impact of outliers during the optimization 
+process. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Evaluation is not just about measuring accuracy; it is about verifying the model’s reliability and ethical 
+soundness. 
+ Cross-Validation: K-Fold Cross-Validation ensures that the model’s performance is consistent 
+across different subsets of data, preventing the "luck of the draw" in a single split. 
+ Confusion Matrix Analysis: By analyzing False Positives and False Negatives, engineers can tune 
+models for specific needs (e.g., high Recall for cancer detection, high Precision for fraud detection). 
+ ROC-AUC and PR Curves: These metrics evaluate the model’s discriminatory power across all 
+possible thresholds, providing a much deeper view than simple "Percentage Correct" accuracy. 
+ Sensitivity and Stress Testing: This involves feeding the model "adversarial" or edge-case data to 
+see how its performance degrades. A robust model should degrade gracefully rather than fail 
+catastrophically. 
+ A/B Testing: The ultimate evaluation strategy where the model is tested in a live environment 
+against a control group to measure real-world KPIs like conversion rate or user engagement. 
+B] Attempt All (each 2 marks) 
+B-a. What is model training in machine learning? 
+It is the optimization process where an algorithm analyzes training data to adjust its internal parameters 
+(weights and biases) to minimize a loss function and learn underlying patterns. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and selecting a subset of the most relevant features from the 
+original dataset to improve model accuracy, reduce complexity, and prevent overfitting. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the direct, verified observation or the "real-world" label provided in the dataset, used 
+as the absolute benchmark to measure the accuracy of a model's predictions. 
+B-d. What is model deployment? 
+Model deployment is the engineering phase of integrating a trained machine learning model into a 
+production environment (such as a cloud server or mobile app) so it can provide predictions on live data. 
+B-e. Define learning from data. 
+Learning from data is the ability of a computational system to automatically extract statistical structures, 
+rules, and patterns from input examples to perform a task without being explicitly programmed for every 
+scenario. 

@@ -1,0 +1,23 @@
+
+
+--- PAGE 1 ---
+ID — T012
+Machine Learning Exam (Total 80 marks)
+Date : 22-04-2023
+A | Attempt any 5 out of following (8 marks each )
+1. Explain the Random Forest algorithm in detail. Describe its working,advantages, and disadvantages.
+2. What is Backpropagation? Explain each step in detail.
+3. Explain Bayesian Learning approach and compare it with frequentist learning.
+4. Describe Recurrent Neural Networks (RNNs) and their applications in sequence modeling.
+5. Explain Model Deployment and Monitoring in the ML lifecycle.
+6. Explain Normalization vs Standardization with examples.
+B | Attempt any 4 out of following (5 marks each )
+1. Explain the main challenges faced while training ML models.
+2. Describe the difference between probability and likelihood in machine learning.
+3. Explain logistic regression with mathematical formulation and use cases.
+4. What are hyperparameters? Give examples and explain how they differ from parameters.
+5. Explain the concept of cross-entropy loss.
+6. What is dimensionality curse? How does it affect machine learning models?
+C | Attempt all (10 marks each )
+1. How can machine learning be used in predictive maintenance in industries?
+2. Discuss a 5 real-world example of a biased ML model and how such bias can be reduced.

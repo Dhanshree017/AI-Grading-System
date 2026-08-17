@@ -1,0 +1,110 @@
+ID-T031 
+Name: Sandeep Yadav Roll no: 306504 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Attempt All (each 5 marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning is a fundamental form of inductive inference that involves acquiring a 
+boolean-valued function over a set of input instances. It is the process of learning to 
+distinguish between "positive" examples that belong to a specific category (the concept) and 
+"negative" examples that do not. 
+ Hypothesis Space ($H$): Concept learning is viewed as a search problem. The 
+algorithm searches through a predefined set of potential rules, called the hypothesis 
+space, to find the one that best fits the training data. 
+ General-to-Specific Ordering: Hypotheses are often organized in a hierarchy. A 
+"specific" hypothesis might only cover one exact example, while a "general" 
+hypothesis might cover everything. 
+ Version Space: This is the subset of all hypotheses that are consistent with the 
+observed training examples. As more data is seen, the version space shrinks until 
+ideally only the "true" concept remains. 
+ Inductive Learning Hypothesis: The core assumption is that if a hypothesis works 
+well for a large set of training examples, it will also work well for unseen future 
+examples. 
+ Example Algorithms: The Find-S algorithm searches for the most specific 
+hypothesis, while the Candidate-Elimination algorithm maintains a set of all 
+hypotheses consistent with the data. 
+ Target Function: The goal is to approximate a target function $c: X \rightarrow \{0, 
+1\}$, where $X$ is the set of instances and $\{0, 1\}$ represents the classification as a 
+member of the concept or not. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency refers to the logical and physical coherence of data across a dataset. It is 
+one of the most critical factors in determining whether a machine learning model will 
+succeed or fail in a real-world environment. 
+ Reduction of Noise: Inconsistent data (such as a single object being labeled 
+differently in two places) acts as "noise." This confuses the optimization algorithm and 
+prevents it from finding the true mathematical pattern. 
+ Gradient Convergence: During training, algorithms like Gradient Descent rely on 
+consistent signals to update weights. If data is inconsistent, the "direction" to the best 
+solution keeps changing, which can lead to unstable training. 
+ Feature Scaling and Normalization: Consistency in units (e.g., all weights in 
+kilograms) is vital. If some rows use different units, the model will assign incorrect 
+"importance" to features, leading to biased results. 
+ Distribution Alignment: Consistent data ensures that the training distribution 
+matches the testing distribution. If they are inconsistent, the model will suffer from 
+"Training-Serving Skew." 
+ Trust and Explainability: For a model to be explainable, the data it was built on 
+must be consistent. Inconsistencies make it impossible to explain why a model made a 
+specific choice. 
+ Data Integrity: Maintaining consistency across relational tables ensures that the 
+"context" of a feature remains accurate throughout the model’s lifecycle. 
+A-3. What is the role of constraints in machine learning algorithms? 
+Constraints act as the essential boundaries and mathematical "guardrails" that guide an 
+algorithm toward a solution that is not only accurate but also realistic and stable. 
+ Preventing Overfitting: The most common role of constraints is through 
+Regularization ($L_1$ and $L_2$). These place a constraint on how large the 
+model’s weights can grow, forcing the model to stay simple rather than memorizing 
+noise. 
+ Defining Decision Boundaries: In algorithms like Support Vector Machines (SVM), 
+constraints define the "Hard Margin." The goal is to maximize the distance between 
+classes while staying within the constraint that no data points should be inside the 
+margin. 
+ Hard vs. Soft Constraints: Hard constraints must be met for a solution to be valid 
+(e.g., probabilities must sum to 1.0). Soft constraints (penalties) allow for some 
+flexibility but discourage certain behaviors. 
+ Operational Limits: Constraints ensure that the model outputs stay within physical or 
+logical limits, such as ensuring a predicted price is never a negative number. 
+ Search Optimization: By limiting the Hypothesis Space, constraints make the search 
+for the best model computationally feasible. Without constraints, the search space 
+would be infinite. 
+ Fairness and Ethics: Modern ML uses constraints to ensure the model does not 
+discriminate against protected groups, effectively "constraining" the model to be fair. 
+A-4. Explain the difference between model performance and model reliability. 
+While often used together, performance and reliability represent two different dimensions of 
+a model's quality. 
+ Model Performance (Efficiency): This is a snapshot of how well the model predicts 
+on a specific, static dataset. It is measured using metrics like Accuracy, Precision, 
+Recall, and F1-Score. It answers the question: "How well did the model do on the test 
+set today?" 
+ Model Reliability (Consistency): This refers to the model's ability to maintain that 
+performance over time, across different environments, and when faced with 
+unexpected or "noisy" data. It answers the question: "Can I trust this model to work 
+every day in the real world?" 
+ The Difference: A model can have 99% accuracy (High Performance) but fail 
+completely if the room lighting changes slightly (Low Reliability). 
+ Measurement: Performance is measured with a test set; reliability is measured 
+through Stress Testing, Robustness Audits, and Latency checks. 
+ Drift Sensitivity: Performance is often high at the start, but a reliable model is one 
+that resists "Concept Drift" (the model getting "stale" as the world changes). 
+ Use Cases: In a movie recommendation app, performance is key. In a self-driving car 
+or medical AI, reliability is significantly more important than raw performance. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback is the mechanism that transforms a static model into a dynamic, learning system. It 
+creates a "closed loop" where the model's outputs are evaluated and the results are used to 
+refine future behavior. 
+ Supervised Learning (Backpropagation): The most basic feedback is the Error 
+Signal. The difference between the predicted value and the actual label is calculated 
+(Loss Function) and fed back through the network to update the weights. 
+ Reinforcement Learning (Reward Signal): Here, feedback comes from the 
+environment. An agent takes an action and receives a "reward" or "penalty." This 
+feedback loop teaches the agent the optimal strategy over time. 
+ User-in-the-Loop Feedback: Real-world systems use direct human feedback. For 
+example, when you mark an email as "Spam," you are providing a feedback signal that 
+the model uses to update its classification rules. 
+ Active Learning: The model identifies data points it is "unsure" about and asks a 
+human for feedback. This targeted feedback allows the model to learn more efficiently 
+with less data. 
+ Continuous Monitoring: Feedback from production logs (like a drop in click-through 
+rates) tells engineers that the model needs to be retrained or updated. 
+ System Refinement: Feedback is used not just to update weights, but to improve the 
+entire pipeline, including better feature engineering and data cleaning based on where 
+the model consistently fails. 

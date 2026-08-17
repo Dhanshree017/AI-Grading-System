@@ -1,0 +1,115 @@
+ID-T014 
+Name: Akash Kukreja Roll no: 9 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline from data 
+collection to model deployment. 
+Machine learning pipeline is like a long road where many small steps are connected to make 
+the final system work properly. It is not just one thing, but a combination of different 
+works like collecting data, cleaning it, training, and finally sending model to real users. The 
+first step is data collection because machine cannot think without data. Data comes from 
+many sources like internet, company database, mobile apps, or sometimes manual entry. 
+After data is collected, preprocessing starts which is mostly boring but important. The 
+data can have mistakes, missing numbers, spelling errors, or outliers. So, we fix them 
+using techniques like normalization, filling missing values, or dropping rows which look bad. 
+Then feature selection is done to decide which columns are useful because not all things in 
+data are required for prediction. 
+After this, the dataset is divided into training and testing sets. The training data is used 
+to teach the model and testing data is used to see if model really learned or just 
+memorized. Then the model is trained with algorithms like decision tree or linear 
+regression depending on the type of task. 
+Once trained, we evaluate the accuracy using metrics like precision, recall, and F1-score. If 
+results are not good, we try again with hyperparameter tuning or different model. When 
+satisfied, model is deployed using APIs, web apps, or cloud servers. Even after deployment, 
+the pipeline continues because data changes and the model must be retrained or updated 
+to stay smart.3. Explain the working of Principal Component Analysis and discuss its role 
+in feature reduction. 
+Principal Component Analysis or PCA is a mathematical technique used for simplifying large 
+datasets. When a dataset has too many columns, it becomes hard to process or visualize, 
+so PCA helps by reducing the number of features while keeping the important patterns. 
+PCA starts by normalizing the data to make all columns comparable. Then it computes 
+covariance matrix to find which variables move together. Next step is to find eigenvalues 
+and eigenvectors of this matrix, which basically tell the direction and importance of 
+variance in data. The eigenvectors become new features called principal components. 
+The first principal component captures most of the variance, then the second captures 
+the next most, and so on. We can choose a few top components that together explain 
+90% or 95% of the data variance. Then the original dataset is projected on these new 
+axes to form a reduced dataset. 
+This reduces complexity and training time of models. It also removes noise and makes 
+visualization easier. PCA is commonly used before training algorithms like regression, 
+clustering, or neural networks to make computation more efficient. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+Neural networks are computer systems designed to act like human brains. They have a 
+collection of artificial neurons connected by weights and organized in layers. The 
+architecture includes input layer, hidden layers, and output layer. Data moves from left 
+to right through these layers, changing its form at every step. 
+Each neuron receives numbers, multiplies them by weights, adds a bias, and passes through 
+activation function like sigmoid or ReLU. This process repeats for every layer, forming 
+what is called forward propagation. When the final result is produced, it is compared with 
+the expected answer using a loss function. 
+If the output is wrong, the model adjusts itself using a process called backpropagation. 
+This means it moves backward through layers, updating weights based on error values. 
+Over many repetitions, called epochs, the network learns better patterns. 
+Neural networks are powerful because they can learn from complex data like images, 
+voices, and text. However, they need a lot of data and computing power, and sometimes 
+they overfit or take too long to train. But they are now used in almost every AI 
+application. 
+A-5. Discuss the concept of Reinforcement Learning with suitable examples. 
+Reinforcement learning is a type of machine learning where a system learns by interacting 
+with an environment. It doesn’t have labeled data like supervised learning. Instead, it 
+learns by trying different actions and getting feedback in the form of rewards or 
+punishments. 
+It works through three parts — the agent, the environment, and the actions. The agent 
+performs an action, the environment changes and gives feedback. If the feedback is good, 
+the agent tries to repeat similar actions; if bad, it avoids them. This trial-and-error 
+method continues until the agent learns the best way to behave. 
+For example, a computer game bot learns how to play by scoring points. In robotics, a 
+robot learns to walk by getting reward when it balances properly. The concept of policy, 
+reward function, and value function are core ideas here. 
+Popular algorithms are Q-learning and Deep Q Networks. Reinforcement learning is used in 
+self-driving cars, industrial automation, and strategy games like chess and Go. It is 
+powerful but needs a lot of time and tries to reach perfection. 
+Section B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss layers, 
+weights, biases, and training challenges. 
+A Deep Neural Network (DNN) is a big version of a normal neural network but with 
+many hidden layers stacked between input and output. Each layer has neurons that 
+transform data step by step. Data moves through layers using forward propagation and 
+then errors are corrected by backward propagation. 
+Weights and biases are the most important parts because they control how much influence 
+one neuron has on another. During training, these values are continuously adjusted using 
+optimization algorithms like gradient descent to reduce error. 
+DNNs face many challenges such as vanishing gradients, overfitting, and slow convergence. 
+To overcome this, people use techniques like batch normalization, dropout, and activation 
+functions such as ReLU to maintain stable learning. 
+Deep networks are used in computer vision, text processing, and voice recognition. The key 
+strength is that they can learn patterns automatically without manual feature 
+engineering. 
+B-2. Discuss the working of Support Vector Machine for both linear and non-linear 
+classification. Explain hyperplane, support vectors, and margin. 
+Support Vector Machine or SVM is a classification algorithm that separates data into 
+categories using a line or plane called a hyperplane. The goal is to find the hyperplane that 
+has the largest possible margin between the two classes. The points lying on the edges of 
+this margin are called support vectors. 
+In linear SVM, the data is directly separable, and the algorithm finds the line that gives 
+the maximum distance between classes.  
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). Describe 
+its components. 
+Convolutional Neural Network (CNN) is a deep learning model mainly used for images and 
+visual data. It works by using filters that slide over the image and detect patterns like 
+edges or textures. 
+The main layers in CNN are: 
+ Convolution Layer: extracts features by applying filters over small areas. 
+ Pooling Layer: reduces size of feature maps by taking maximum or average values. 
+ Activation Layer: adds non-linearity using ReLU or similar functions. 
+ Fully Connected Layer: combines all extracted features to make the final decision. 
+During training, CNN learns which filters detect the best patterns for the problem. It 
+uses backpropagation to adjust weights of filters. CNN is efficient because it reduces 
+number of parameters and focuses on spatial relationships. 
+Used in facial recognition, object detection, medical image analysis, and even handwriting 
+recognition. 
+B-4. Describe the concept of Natural Language Processing and its stages in detail. 
+Natural Language Processing (NLP) is a field that connects computers with human 
+language. It allows systems to read, understand, and respond in meaningful ways. NLP 
+deals with messy, unstructured text and converts it into structured information. 

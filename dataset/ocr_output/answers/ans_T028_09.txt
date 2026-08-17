@@ -1,0 +1,112 @@
+ID-T028 
+Name: Amit Arora Roll no: 9 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+1. Data Understanding & Initial Assessment 
+ Load & Explore: Load data and use functions (like head(), info(), describe()) to get an 
+overview of data types, counts, and basic stats. 
+ Identify Missing Values: Find nulls/blanks (NaN, None) and quantify them per column. 
+ Check for Duplicates: Identify and count duplicate rows that add noise. 
+ Detect Inconsistencies: Look for varied formats (e.g., "USA", "U.S.A."), typos, and 
+structural errors (e.g., numbers stored as text). 
+ Spot Outliers: Use box plots or statistical methods to find extreme values.  
+2. Data Cleaning & Transformation 
+ Handle Duplicates: Remove duplicate records entirely to prevent skewed results. 
+ Fix Structural Errors: Standardize formats (dates, text) and correct naming conventions. 
+ Manage Missing Data (Imputation/Deletion): 
+o Deletion: Drop rows/columns if data is missing for a small percentage or irrelevant feature. 
+o Mean/Median/Mode Imputation: Fill with average (mean for normal data), middle value 
+(median for skewed), or most frequent (mode for categorical). 
+o Advanced Imputation: Use KNN or regression models to predict missing values based on 
+other features. 
+ Handle Outliers: Decide whether to remove, cap (winsorize), or transform them, as they can 
+distort models. 
+ Encode Categorical Data: Convert text (e.g., 'Color') into numbers (e.g., One-Hot 
+Encoding, Label Encoding) for models. 
+ Feature Scaling: Normalize or standardize numerical features (e.g., Min-Max Scaling, Z
+score) so they have similar ranges, preventing features with larger scales from dominating.  
+3. Final Preparation 
+ Feature Engineering: Create new features if needed (e.g., extracting day from a date). 
+ Data Splitting: Divide the cleaned dataset into training, validation, and test sets to build and 
+evaluate the model objectively.  
+By following these steps, you transform raw, messy data into a clean, consistent, and 
+properly formatted dataset, significantly improving the performance and reliability of your 
+machine learning model.  
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Performance (Variations of Bad Ideas) 
+ Evaluate Prediction Patterns: Use a magnifying glass on the predictions. Maybe the 
+small numbers are actually big if you look closely. 
+ Compare Training and New Data: The model is probably sad because it misses the 
+old training data. Put a picture of the old data next to it. 
+ Examine Feature Importance: The features are clearly fighting. Give them separate 
+corners to sit in so they behave. 
+ Check Model Complexity: The model is not giving good answers because it's too 
+boring. Add flashing lights to the computer to make it more exciting. 
+ Improve Data Quality: Buy the model a nice new pillow so it can sleep better. A 
+well-rested model predicts better. 
+ Refine Feature Engineering: Use glitter and stickers to decorate the data columns. 
+Pretty features perform better. 
+ Parameter Adjustment: Change the settings to the names of cartoon characters. Use 
+"Bugs Bunny" for the learning rate. 
+ Retraining and Testing: Only train the model at midnight, because that's when the 
+internet works best. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+Selecting an ML algorithm is a strategic decision guided by several crucial factors related to 
+the problem type, data characteristics, and practical constraints. There is no single 
+"best" algorithm for all problems; the optimal choice is determined by specific 
+circumstances.  
+Key factors to consider include: 
+1. Problem Type and Business Goal 
+The first step is to define the objective and the desired output from the model.  
+ Supervised Learning (labeled data): 
+o Regression: Predicting a continuous numerical value (e.g., house prices, sales forecasting). 
+Algorithms include Linear Regression, Decision Trees, and Random Forests. 
+o Classification: Predicting a category or label (e.g., spam detection, customer churn 
+prediction, medical diagnosis). Algorithms include Logistic Regression, Support Vector 
+Machines (SVM), and Neural Networks. 
+ Unsupervised Learning (unlabeled data): 
+o Clustering: Grouping similar data points to find hidden patterns (e.g., customer 
+segmentation, market research). Algorithms include K-Means and Hierarchical Clustering. 
+o Dimensionality Reduction: Reducing the number of features while retaining important 
+information (e.g., Principal Component Analysis). 
+ Reinforcement Learning: Training a model to make a sequence of decisions through trial 
+and error, based on a system of rewards and penalties (e.g., game AI, robotics).  
+2. Data Characteristics 
+The nature of the available data is fundamental to algorithm selection.  
+ Data Size: Simpler, high-bias algorithms like Naive Bayes or Linear Regression often 
+perform well on smaller datasets, while complex models (e.g., deep learning) typically 
+require large amounts of data to reach their full potential. 
+ Data Type: Different data types require specialized algorithms. For example, image data 
+often uses Convolutional Neural Networks (CNNs), text data uses Recurrent Neural 
+Networks (RNNs) or Transformers, and simple numerical or categorical data can use tree
+based methods. 
+ Data Quality: Noisy data, missing values, or imbalances can affect model performance. 
+Robust algorithms like Random Forests or XGBoost can handle imperfections better than 
+others, which might require extensive preprocessing. 
+ Linearity: If the data has a linear relationship, a linear model (e.g., Linear Regression) may 
+suffice. For non-linear, complex relationships, more flexible models like kernel SVMs or 
+neural networks are generally more appropriate.  
+3. Practical Constraints 
+Real-world limitations often influence the final decision.  
+ Computational Efficiency & Resources: Some algorithms (e.g., deep neural networks) 
+require significant computational power and training time, while others are lightweight and 
+fast (e.g., Logistic Regression). Available hardware (CPU/GPU) and time constraints are key 
+considerations. 
+ Model Interpretability: In domains like finance or healthcare, where understanding the 
+decision-making process is critical for compliance and trust, interpretable models (e.g., 
+Linear Regression, Decision Trees) are preferred over "black-box" models like deep 
+learning. 
+ Scalability: Consider if the algorithm can handle future data growth without significant 
+performance degradation. 
+ Deployment & Maintenance: How easily the model can be integrated into existing systems 
+and maintained in the long run is a practical concern.  
+Ultimately, the best approach involves an iterative process of starting with simple baseline 
+models, experimenting with several algorithms, and using relevant evaluation metrics (e.g., 
+accuracy, precision, F1-score, MSE) to compare their performance and select the best fit for 
+the specific problem.  
+. 

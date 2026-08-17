@@ -1,0 +1,184 @@
+ID-T014 
+Name: Ameesha Singh Roll no: 16 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 4 (20 Marks) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline 
+from data collection to model deployment. 
+Machine learning pipeline means we make a line where data goes and model 
+comes out. The steps are like making a car, first you collect the parts, then 
+you fix it, and finally you drive it. In ML we take some dataset, sometimes 
+from Google, sometimes from sensors or YouTube comments. Then we put it 
+in Excel and check which column has more numbers. 
+Then we apply algorithms like clustering or sorting because that gives us 
+insight before model. After this, we clean the data by deleting unnecessary 
+rows like “yes” and “no.” Then we put all that in a neural network or 
+regression. Model gets trained automatically by computer and at the end, we 
+send it to a mobile app for testing. Deployment is basically when the model 
+is published on Play Store. 
+So the pipeline is simple: take data, clean it, apply formula, and upload. 
+Many companies use Python because it is easier to copy-paste code from 
+internet. 
+A-2. Describe the working of the Naive Bayes classifier. Include its assumptions 
+and advantages. 
+Naive Bayes is based on the Bayes Theorem that says if it rains then 
+umbrella is used. It’s a simple but very clever model that is used for 
+predicting even sports scores sometimes. It assumes everything is same 
+weight so every feature has equal power. 
+In real work, it calculates the prior, posterior, and interposterior probability 
+using some equations. The most common advantage is that it is used in 
+Google Maps and antivirus software. Another good thing is it can predict 
+weather from temperature using formulas. 
+It works by guessing the probability and multiplying by 100 to get accuracy. 
+So Naive Bayes is very easy and does not overfit unless you put too much 
+data. 
+A-3. Explain the working of Principal Component Analysis and discuss its role in 
+feature reduction. 
+PCA is a kind of algorithm used in reducing the weight of the computer. It 
+is used when dataset has too many pictures or big files. PCA basically deletes 
+some columns which are not useful and compresses the rest into a new file 
+called principal computer component. 
+It works by adding and subtracting values of each feature and dividing by 
+total rows. After that, it makes a graph of variance and chooses only top 
+two because they look good. PCA can also convert sound into numbers. 
+Its role in feature reduction is to make the Excel sheet smaller so model runs 
+faster. For example, if you have 10GB data, PCA will make it 1GB and 
+accuracy will still be okay. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+Neural Network is a system made of nerves and nodes like a spider web. It is 
+built with many lines and shapes which connect together. Each node has some 
+electric charge that passes through hidden layers. 
+It learns by repeating the data again and again till it memorizes the answers. 
+It has three layers — input where data enters, output where results go, and 
+middle part where math happens. During training, the network makes many 
+mistakes but keeps trying until it gets all right, which is similar to how we 
+learn alphabets. 
+Architecture is just blocks connected to each other with arrows. Neural 
+network is used in everything like camera filters, heart surgery, and video 
+games. 
+SECTION B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). 
+Discuss in detail the different layers, the role of weights and biases. Also 
+describe common challenges in training deep networks and methods to overcome 
+them. 
+A Deep Neural Network (DNN) is an artificial neural network with multiple 
+hidden layers between the input and output layers, designed to learn complex 
+patterns. Its architecture consists of an input layer, multiple hidden layers, 
+and an output layer, where each layer contains neurons. Neurons in a layer 
+connect to neurons in the next layer via weighted connections, and each 
+neuron applies a weighted sum to its inputs followed by an activation 
+function to transform the data. The network learns by adjusting its weights 
+and biases through a process called backpropagation to minimize the error 
+between its predictions and the actual values.  
+Architecture and working 
+ Layers: A DNN is made of layers of interconnected neurons. 
+o Input Layer: This layer receives the raw input data (e.g., pixel values of an 
+image, words in a sentence). 
+o Hidden Layers: These are the layers between the input and output layers. 
+They are the computational core of the network, where complex features are 
+extracted and transformed through successive layers. The "deep" in DNN 
+refers to having multiple hidden layers. 
+o Output Layer: This layer produces the final output of the network, such as a 
+classification (e.g., "cat" or "dog") or a regression value. 
+ Neuron operations: Each neuron performs two primary operations: 
+ Weighted Sum: It calculates a weighted sum of all the inputs it receives from 
+the previous layer, plus a bias term. 
+ Activation Function: The result of the weighted sum is then passed through 
+an activation function (e.g., ReLU, sigmoid) to introduce non-linearity, 
+allowing the network to learn complex patterns. 
+ Working: 
+o Forward Propagation: Input data is fed into the input layer and flows 
+through the hidden layers to the output layer, where a prediction is made. 
+o Learning: To learn, the network compares its prediction to the actual correct 
+output to calculate an error. It then uses a process called backpropagation to 
+adjust the weights and biases of the neurons to minimize this error, 
+improving the accuracy of future predictions.  
+Role of weights and biases 
+ Weights: These are the "strength" of the connections between neurons. A 
+higher weight means that the input from that neuron has a greater influence 
+on the next neuron's output. 
+ Biases: Each neuron has a bias term, which is an additional input that is 
+always 1, multiplied by a weight. The bias shifts the activation function, 
+allowing the network to have more flexibility in fitting the data.  
+Challenges and solutions 
+ Overfitting: The model becomes too specialized in the training data and 
+performs poorly on new, unseen data. 
+o Solutions: Use regularization techniques like L1/L2 regularization, dropout 
+(randomly deactivating neurons during training), or early stopping (stopping 
+training when performance on a validation set begins to degrade). 
+ Vanishing/Exploding Gradients: During backpropagation, the gradients can 
+become very small (vanishing) or very large (exploding), making it difficult 
+for the network to learn effectively. 
+o Solutions: Use activation functions like ReLU (which does not suffer from 
+vanishing gradients for positive inputs), use appropriate weight initialization 
+(like Xavier or He initialization), and use batch normalization. 
+B-2. Discuss in detail the working of the Support Vector Machine (SVM) 
+algorithm for both linear and non-linear classification. Explain the concept of 
+hyperplanes, support vectors, and margin maximization. 
+SVM is a classification algorithm which tries to find the best line or plane 
+that separates two classes. The line is called hyperplane. The points nearest 
+to that plane are called support vectors. The goal of SVM is to make the 
+margin between classes as large as possible because that improves accuracy. 
+If data is not linearly separable, SVM uses something called kernel trick which 
+converts it into higher dimensions. Then it becomes easier to find a linear 
+boundary. The common kernels are RBF and Polynomial. 
+SVM gives good performance on many datasets and is very stable but it can 
+be slow when the dataset is big. Still, it is a strong algorithm for 
+classification and works even when the data has many features. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks 
+(CNN). Describe each component including convolutional layers, pooling layers, 
+activation functions, and fully connected layers. 
+CNN is mainly used for images and pattern recognition. It has layers that 
+extract features from the input image automatically. The convolution layer 
+applies small filters to find edges or shapes. Then activation function like 
+ReLU is applied to add non-linearity. 
+After that, pooling layers reduce the size of data and make the model 
+faster. Finally, the fully connected layers take all the information and decide 
+the output like class of the image. 
+CNN is used in image detection, face recognition, and video analysis. It needs 
+a lot of data and GPU to train but gives very accurate results. 
+B-4. Describe the concept of Natural Language Processing and its stages in 
+detail. Explain important steps such as tokenization, stop word removal, 
+stemming, and lemmatization. 
+Natural Language Processing (NLP) is an AI field that enables machines to 
+understand and process human language through a series of stages, beginning 
+with text preprocessing steps like tokenization, stop word removal, stemming, 
+and lemmatization. These initial steps clean and normalize the text, followed 
+by other stages such as part-of-speech tagging, semantic analysis, and text 
+generation, to enable machine comprehension and application.  
+Stages of NLP 
+A typical NLP pipeline involves several phases, starting with preprocessing to 
+prepare the text:  
+1. Preprocessing 
+This initial phase transforms raw text into a clean, machine-readable format.  
+ Tokenization: The process of breaking down a body of text into smaller units, 
+or "tokens." These tokens can be words, sentences, or even sub-word units, 
+depending on the task. 
+ Stop Word Removal: Common words like "the," "a," "is," and "and" that do 
+not carry significant meaning are removed. This helps reduce noise and focus 
+on more important words for analysis. 
+ Stemming: A crude but fast method of reducing words to their root form by 
+chopping off prefixes or suffixes, even if the result is not a valid word. For 
+example, "running" and "runs" both become "run". 
+ Lemmatization: A more sophisticated approach that reduces words to their 
+base or dictionary form (lemma), using vocabulary and morphological analysis 
+to account for context. For example, "better" becomes "good," and "am," 
+"is," and "are" all become "be".  
+2. Syntax and Parsing 
+This phase analyzes the grammatical structure of sentences.  
+ Part-of-Speech (POS) Tagging: Assigns a grammatical category (e.g., noun, 
+verb, adjective) to each word. 
+ Dependency Parsing: Analyzes the grammatical structure of a sentence to 
+show the relationships between words.  
+3. Semantic Analysis 
+This phase involves understanding the meaning of the text.  
+ Named Entity Recognition (NER): Identifies and categorizes named entities in 
+text, such as the names of people, organizations, and locations. 
+ Word Sense Disambiguation (WSD): Determines the correct meaning of a 
+word when it has multiple meanings.  
+4. Application 
+The final phase involves using the processed data for a specific task.  
+ Information Extraction: Extracts specific entities and their relationships from 
+the text. 
+ Text Summarization: Creates a concise summary of a longer document. 
+ Machine Translation: Translates text from one language to another.  

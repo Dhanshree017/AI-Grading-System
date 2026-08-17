@@ -1,0 +1,122 @@
+ID-T025 
+Name: Hemant Surve Roll no: 9 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made and 
+discuss its advantages and limitations. 
+The decision tree thing is like my family tree but for numbers. It starts at the top like a funnel. 
+ Working: It just keeps asking questions like, "Is the banana yellow?" and then it splits. The best 
+split is when the colors are cleanest, maybe with some kind of "Gini index" or something, I wrote 
+that down somewhere. It's greedy. 
+ Decisions: You follow the flow chart until you hit the end bit, which is called a leaf. That leaf tells 
+you what the prediction is. It's very simple, like a maze. 
+ Good Stuff: It's really easy to look at and explain, like a tax form. And you don't have to scale the 
+data, which is great because I hate scaling fish. 
+ Bad Stuff: It gets overfitted easily, like when I try to wear a shirt that's too small. It's too sensitive 
+to the training data noise. It's also not always the absolute best tree, just the best one it found right 
+then. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting 
+with practical illustrations. 
+This is why my model is bad, basically. It's a fight between two kinds of badness. 
+ Bias: The model is lazy and too simple. It thinks the world is a straight line when it’s curvy. High 
+bias means the model is underfitting. 
+ Variance: The model is too nosy and learns every little tiny scratch on the data. It's too flexible, like 
+cheap plastic. High variance means the model is overfitting. 
+ Tradeoff: I can only fix one problem at a time. If I make the model more complicated to fix the bias, 
+then the variance goes up, and it learns too much noise. We need to find the balance point. 
+Underfitting (High Bias): 
+ What it is: The model is simple, like just using Linear Regression on a circular dataset. It fails on 
+the training set and on the new data. 
+ Illustration: Trying to fit a single straight line to a very messy, curvy set of points. The line is too 
+stiff and misses all the action. 
+Overfitting (High Variance): 
+ What it is: The model is crazy complicated and captures the noise, not the trend. It gets $100\%$ on 
+the training set, but $0\%$ on the test set. 
+ Illustration: Using a wiggly, 100th-degree polynomial line that hits every single data point, even 
+the weird outliers. It's just memorizing, like me before this exam. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why accuracy 
+alone is not sufficient and describe other evaluation measures. 
+We evaluate to make sure the model is not a complete disaster before we deploy it. 
+ Importance: It tells you if the model actually works outside of the training room and helps you 
+choose which model is the least garbage. 
+Why Accuracy Alone is Not Sufficient: 
+ Accuracy is just the "got it right" score. 
+ It's useless when the data is imbalanced. If only one person in a crowd has a hidden treasure, and I 
+just guess "no treasure" for everyone, I'll be $99\%$ accurate but I failed the one important job. 
+Other Evaluation Measures: 
+We use a Confusion Matrix to look at the details. 
+1. Recall: This is about finding all the important stuff. How many of the actual treasures did I find? 
+You need high recall for things like catching criminals or finding diseases. 
+2. Precision: This is about being correct when I claim something. If I say "treasure here!", how often 
+am I right? You need high precision when you don't want to make false alarms, like saying someone 
+is guilty when they are not. 
+3. F1-Score: This is just a mix of the two above, to keep things balanced. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+This is about managing the columns in the spreadsheet so the computer doesn't crash. 
+ Feature Selection (FS): Just picking the columns that are the most important and deleting the rest. It 
+makes the model simpler to explain. 
+ Dimensionality Reduction (DR): Taking a ton of columns (like 100) and somehow turning them 
+into a tiny number of super-columns (like 3) that hold most of the information. PCA does this. 
+How They Help Build Efficient ML Models: 
+1. Speed: Fewer columns means faster processing. The model trains quickly and doesn't use all the 
+RAM. 
+2. Generalization: They get rid of irrelevant junk and noise, which helps the model focus on the main 
+signal. This reduces overfitting because there's less noise to memorize. 
+3. Curse of Dimensionality: When you have too many features, the data gets too thin and spread out, 
+and the models get confused. These methods solve that. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+This is the scary part where the model actually has to work for money. 
+ Deployment: We turn the model into a web service (an API), so the company's apps can send data 
+to it and get a prediction back instantly. 
+ Maintenance: You have to babysit the model forever. 
+Issues: 
+1. Monitoring: We watch a dashboard to check if the model is still making smart decisions and if the 
+server is burning up. 
+2. Performance Degradation (Model Drift): This is when the model starts to suck because the real 
+world changed. New things happen that the model never saw in training (new fraud tactics, new 
+popular colors). The data distribution changes, and the model starts failing. This is model drift. 
+3. Retraining: To fix the drift, we have to collect all the new, fresh data and train the model again 
+from scratch. This makes the model relevant again, but it costs time and money. 
+B ] Attempt any 5 (each 8 marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine 
+learning can be used to analyze customer behavior, product data, and past returns to 
+reduce return rates. 
+The ML model should stop me from ordering that shirt that never fits. 
+ Data Used: My history of returning stuff (especially clothes that are "too small"), the product's 
+official return rate, and what other people like me bought. 
+ ML Process: It makes a "return risk score" for my shopping cart. 
+ How it Reduces Returns: If my score is high, the site puts up a little pop-up saying, "Hey, people 
+like you usually return this item, maybe try the next size up?" It catches the problem before the box 
+even leaves the warehouse. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, and 
+challenges involved. 
+The model is the bank's quick-draw sheriff. 
+ Data Sources: Where the transaction is, how much money, and how fast I just swiped my card 
+somewhere else. Also, what is my normal spending amount? 
+ Model Behavior: The model must be super-fast. It compares the new transaction to my "normal 
+profile." If it's weird (huge amount, strange country), the model gives a high fraud score and declines 
+the card instantly. 
+ Challenges: Fraudsters keep changing their methods, so the model gets old fast. Also, if the model 
+stops a real purchase (a False Positive), the customer gets angry. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how machine 
+learning can help identify and limit misinformation while considering ethical challenges. 
+The ML model is the platform's editor, but a controversial one. 
+ ML Help: It looks for bad language (NLP), like aggressive words and fake urgency. It also checks 
+how fast the post is spreading—if it’s unnatural, it gets flagged. 
+ Limitation: It makes the bad posts disappear or puts a big warning label on them. 
+ Ethical Challenges: The model might block things that are actually true but just sound weird. If the 
+training data is full of bias, the model will just block one political side's content more than the 
+other's, which is unfair. 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how 
+predictive maintenance using machine learning can reduce downtime and improve 
+operational efficiency. 
+This model is a fortune teller for machines. 
+ Data Sources: Sensors on the machine that measure heat, sound, and shaking. 
+ Predictive Maintenance: The model learns what the normal shaking pattern is. When it detects the 
+shaking is slightly higher than normal, it predicts that the machine is going to break next Tuesday. 
+ Efficiency: The company gets the alert and schedules the repair for Monday night. This means the 
+machine never breaks down during the actual workday, and they don't lose any production time. 

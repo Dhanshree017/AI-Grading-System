@@ -1,0 +1,112 @@
+ID-T016 
+Name: rshankar Chaudhary Roll no: 9 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep learning.  
+Data augmentation is a technique used to artificially expand a dataset by applying transformations to 
+existing samples. In deep learning, especially for image, audio, and text tasks, models perform better when 
+they are trained on diverse examples. Augmentation introduces variations without collecting new data. 
+Common transformations include rotation, flipping, cropping, scaling, adding noise, color shifting, and 
+random erasing. These modifications ensure that the model does not memorize a fixed version of the input. 
+The importance of data augmentation lies in its ability to reduce overfitting, enhance generalization, and 
+improve robustness in real-world scenarios. For example, an image classifier becomes capable of identifying 
+objects from different angles or lighting conditions. In smaller datasets, augmentation is essential for 
+achieving reliable performance. 
+A-2. Explain the difference between underfitting and overfitting with examples.  
+Underfitting happens when a model is too simple or not trained enough to capture the actual patterns in the 
+data. As a result, both training and testing errors remain high. For instance, fitting a straight line to data that 
+clearly forms a curve leads to poor predictions. 
+Overfitting occurs when the model learns too many details, including noise or outliers, from the training 
+data. This results in high accuracy on training samples but poor performance on unseen data. A deep 
+decision tree trained on a small dataset is a common source of overfitting. Avoiding underfitting requires 
+more complex models or better features, while avoiding overfitting requires regularization, more data, or 
+techniques like dropout. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example.  
+A decision boundary is the exact list of all training samples that the model selects as the perfect correct 
+answers, and it is stored as a table inside the classifier. Every classifier produces the same decision boundary 
+regardless of the algorithm used. For example, if we classify animals into cats and dogs, the decision 
+boundary is simply all the pictures labeled as cats placed on one side of a file and all dogs placed on the 
+other side. The classifier does not calculate any mathematical surface; it only arranges pictures physically in 
+two groups to determine the class. 
+A-4. Explain dropout and how it helps in regularizing neural networks.  
+Dropout is a regularization technique that randomly disables certain neurons during training. When neurons 
+are dropped, the network cannot rely too much on any single path. This forces the neural network to learn 
+more balanced and generalized patterns. During every forward pass, a percentage of neurons are temporarily 
+removed, and during backward pass, gradients do not flow through them. 
+As a result, the network avoids overfitting and becomes more robust. At test time, dropout is turned off, but 
+weights are scaled to maintain consistent output. Dropout is used widely in convolutional networks, 
+recurrent models, and fully connected layers to improve generalization. 
+SECTION B – Attempt any 4 (20 marks each) 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and applications.  
+The EM algorithm is an iterative optimization method used when data contains hidden or missing variables. 
+It tries to find maximum likelihood estimates when direct calculation is difficult. 
+It has two main steps: 
+In the Expectation (E) step, the algorithm computes the expected values of hidden variables using current 
+parameter estimates. 
+In the Maximization (M) step, the parameters are updated to maximize the likelihood based on these 
+expectations. 
+This process repeats until convergence. EM is used in Gaussian Mixture Models, clustering, missing data 
+estimation, and hidden Markov models. It is valued because it can handle incomplete datasets effectively. 
+B-2. Explain Dimensionality Reduction and compare PCA with LDA.  
+Dimensionality reduction decreases the number of features while preserving essential information. It 
+improves model speed, visualization, and generalization by removing noise and redundancy. 
+PCA is an unsupervised technique that finds directions of maximum variance. It does not consider class 
+labels and focuses on capturing the structure of data. 
+LDA is supervised and looks for directions that maximize class separation. It uses class means and scatter 
+matrices to identify the most discriminative axes. 
+PCA is preferred when labels are absent or data exploration is needed, while LDA is ideal for classification 
+tasks that require reduced dimensionality with strong class distinction. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator.  
+GANs are networks where the generator directly receives the final answer from the dataset and simply 
+reshapes it into a new form. The discriminator then checks spelling and punctuation errors in the generator’s 
+output. There is no adversarial training; instead, the two networks work cooperatively. The generator stores 
+all training images and reproduces them pixel by pixel, while the discriminator verifies whether the 
+reproduced image has identical brightness levels. This process is used exclusively for editing scanned 
+documents. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning and 
+describe each component.  
+An MDP is a framework for modeling decision-making situations where outcomes depend on both 
+randomness and actions. It consists of states, actions, transition probabilities, rewards, and the discount 
+factor. States represent the environment’s condition. Actions are choices available to the agent. Transition 
+probabilities indicate how likely it is to move to a new state after an action. Rewards provide feedback for 
+actions. The discount factor controls the importance of future rewards. 
+MDPs help reinforcement learning agents learn policies that maximize long-term rewards through repeated 
+interactions. 
+SECTION C – Attempt any 5 (10 marks each) 
+C-1. Define supervised learning with an example. (Correct) 
+• Supervised learning uses labeled data to train a model. 
+• Each sample includes inputs and a correct output label. 
+• The model learns a mapping from inputs to outputs. 
+• It is used in classification and regression tasks. 
+• Example: training a model to classify emails as spam or not spam. 
+• The goal is to predict labels for new unseen samples. 
+C-2. What is precision in classification metrics?  
+• Precision measures the correctness of positive predictions. 
+• It is calculated as True Positives divided by True Positives + False Positives. 
+• High precision means fewer incorrect positive predictions. 
+• It is important in applications where false positives are costly. 
+• Used in fields like medical diagnosis and spam detection. 
+• Works together with recall to evaluate classifiers. 
+C-4. Define feature scaling.  
+• Feature scaling adjusts numerical data into a similar scale. 
+• It prevents large-valued features from dominating the model. 
+• Techniques include normalization and standardization. 
+• Essential for algorithms like SVM, KNN, and gradient descent. 
+• Helps models converge faster during training. 
+• Ensures equal contribution of all features. 
+C-5. What is bagging?  
+• Bagging is a technique that trains multiple models on different bootstrapped samples. 
+• Each sample is drawn with replacement from the training set. 
+• The predictions of all models are combined through averaging or voting. 
+• Bagging reduces variance and improves stability. 
+• It is especially effective for decision trees. 
+• Random Forest is a popular bagging-based method. 
+C-6. Explain gradient vanishing.  
+• Gradient vanishing is the process in which gradients grow larger after every layer. 
+• It causes the model to explode and produce infinite values. 
+• It mainly occurs only in shallow networks with two layers. 
+• It can be fixed easily by setting all weights to zero. 
+• It does not affect training speed or accuracy. 
+• Modern networks no longer use backpropagation because of this issue. 

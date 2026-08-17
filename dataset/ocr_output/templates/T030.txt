@@ -1,0 +1,23 @@
+
+
+--- PAGE 1 ---
+ID — T030
+Machine Learning Examination
+Internal Exam Semester 1,
+Total marks : 30
+FY-Data Science
+Date — 22-10-2025
+Answer Any 10 from the following (each 3 marks )
+
+1. Explain the concept of hypothesis space in machine learning.
+2. Describe the importance of training—testing separation in ML experiments.
+3. Explain how assumptions affect learning algorithms.
+4. What is the role of validation in model development?
+5. Describe the concept of inductive learning in machine learning.
+6. Explain the impact of noisy data on machine learning models.
+7. What is the difference between model fitting and model selection?
+8. Explain the concept of ensemble diversity and why it matters.
+9. Describe the lifecycle of a machine learning model from creation to retirement.
+10.Explain the importance of documentation in ML projects.
+11.What is meant by reproducibility in machine learning experiments?
+12.Explain how ethical considerations influence ML system design.

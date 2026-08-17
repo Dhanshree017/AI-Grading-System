@@ -1,0 +1,186 @@
+ID-T006 
+Name: abhilasha More Roll no: 1 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A} Answer All questions (3 marks each) 
+A-1. How Reinforcement learning is different from Supervised learning? 
+Reinforcement Learning (RL) it is different because it does not use a labeled 
+dataset of correct answers. 
+1. Supervised Learning it learns from an external teacher, meaning every 
+input it has an explicit correct output provided in the training data 
+(X→Y). 
+2. Reinforcement Learning it learns through interaction with an environment 
+by trial and error, receiving only delayed rewards or penalties for sequences 
+of actions. 
+3. RL goal it is to maximize the cumulative reward, while Supervised goal it 
+is to minimize the error rate. 
+A-2. Define the term overfitting and one solution for it. 
+Overfitting it is a problem when a model learns the noise and the specific 
+details of the training data so well that it performs badly on unseen data. 
+1. Definition: It happens when the model capacity it is too high relative to 
+the training data, leading to high variance and low generalization. 
+2. One Solution: Regularization (like L1 or L2). This adds a penalty term 
+to the loss function that constrains the magnitude of the model's weights, 
+thereby reducing complexity and smoothing the decision boundary. 
+A-3. What is the role of linear discriminant analysis in ML? 
+The role of Linear Discriminant Analysis (LDA) it is mainly two things: 
+dimensionality reduction and classification. 
+1. Dimensionality Reduction: LDA projects the high-dimensional data onto a 
+lower-dimensional subspace to improve computational efficiency and to 
+reduce the curse of dimensionality. 
+2. Goal: Unlike PCA (which maximizes variance), LDA maximizes the 
+separation between classes (between-class variance) while minimizing the 
+spread within each class (within-class variance). 
+3. It is primarily a technique for supervised feature extraction that 
+maximizes separability for classification tasks. 
+A-4. Compare mixure and latent factor models. 
+Mixture models and Latent Factor models they are both unsupervised methods 
+that assume hidden structures in the data. 
+1. Mixture Models (e.g., Gaussian Mixture Model): They assume the data 
+it is generated from a mixture of a few component distributions (like 
+different Gaussian distributions). The goal it is to estimate the 
+parameters of these components. 
+2. Latent Factor Models (e.g., Matrix Factorization): They assume the 
+observed high-dimensional data it can be explained by a small number of 
+unobserved "latent factors." The goal it is to find the linear or non-linear 
+combinations of these hidden factors that reconstruct the data. 
+A-5. Write importance of K-means clustering. 
+The importance of K-Means clustering it is very high due to its simplicity and 
+scalability for unsupervised learning. 
+1. Efficiency: It is computationally efficient and very fast for large datasets 
+when the clusters are spherical and well-separated. 
+2. Applicability: It is widely used for market segmentation, document 
+clustering, and image compression (color quantization) because it is easy 
+to implement and interpret. 
+3. It provides a baseline for more complex clustering algorithms and is often 
+the first choice for exploratory data analysis and data grouping. 
+A-6. Write about R Square and its significance. 
+R-squared (or Coefficient of Determination) it is a key metric for evaluating 
+regression models. 
+1. Definition: It measures the proportion of the variance in the dependent 
+variable that is predictable from the independent variables. It is the 
+goodness-of-fit measure. 
+2. Formula Basis: It is calculated as R2=1−(SSE/SST), where SSE is the sum 
+of squared errors and SST is the total sum of squares. 
+3. Significance: A value closer to 1.0 it indicates that a larger proportion of 
+the variance is explained by the model. It tells you how well the observed 
+data points they are replicated by the model. 
+A-7. Give significance of hyperparameter optimization. 
+The significance of hyperparameter optimization (HPO) it is critical because it 
+determines the final performance and generalization ability of the machine 
+learning model. 
+1. Model Performance: HPO finds the best combination of hyperparameters 
+(like learning rate, tree depth, regularization strength) that minimizes 
+the loss function on the validation set. 
+2. Generalization: Proper tuning prevents the model from overfitting or 
+underfitting, ensuring high performance on unseen data. 
+3. An untuned model it will often perform poorly, even if the underlying 
+algorithm is very powerful. 
+A-8. How machine learning deals with sparse data. 
+Sparse data it is data where most values they are zero (common in text, 
+recommender systems). ML deals with it mainly through specific data 
+structures and algorithms. 
+1. Data Structure: Sparse matrices (e.g., Compressed Sparse Row/Column 
+formats) they are used to store only the non-zero elements, saving 
+memory and speeding up operations. 
+2. Algorithms: Linear models (like Lasso/L1 Regularization) they are effective 
+because they drive irrelevant feature weights to zero, performing 
+automatic feature selection. Tree-based models they are also naturally 
+robust to sparse data. 
+A-9. What is advantage of active learning. 
+Active learning it is a technique where the algorithm selects the most 
+informative data points to be labeled by a human oracle. 
+1. Advantage: Reduced labeling cost. The main advantage it is the need for 
+significantly fewer labeled samples to achieve a desired level of accuracy. 
+2. It is most useful when unlabeled data it is abundant but labeling it is 
+expensive (like medical images). 
+3. It focuses the labeling effort on ambiguous or uncertain examples, 
+maximizing the information gain per labeled instance. 
+A-10. What is training, testing and validation? 
+These are the three essential partitions for evaluating any machine learning 
+model. 
+1. Training Set: The main bulk of data, used to fit the model's parameters 
+(learning the rules). 
+2. Validation Set: Used during development to tune hyperparameters and 
+select the best model among different configurations (like model A vs B). 
+3. Test Set: A completely unseen subset, used only once for the final, 
+unbiased assessment of generalization error after the model is finalized. 
+B} Attempt any 4 (5 marks each) 
+B-1. Give 7 applications of machine learning. 
+Here are seven different applications that use machine learning models. 
+1. Image Recognition: Used for classifying what is inside a picture (e.g., in 
+self-driving cars). 
+2. Natural Language Processing (NLP): Used for machine translation and 
+sentiment analysis (e.g., reading reviews). 
+3. Recommendation Systems: Used by platforms like Netflix or Amazon to 
+suggest items to a specific user. 
+4. Medical Diagnosis: Used to assist doctors by predicting diseases from scans 
+or patient data. 
+5. Fraud Detection: Used in banking to flag suspicious financial transactions 
+in real-time. 
+6. Speech Recognition: Used in voice assistants like Siri or Alexa to convert 
+voice to text. 
+7. Algorithmic Trading: Used to predict stock prices and execute trades 
+automatically in the market. 
+B-2. How machine learning and deep learning related / explain regularization in 
+deep learning. 
+Machine learning it is the general field, and Deep Learning (DL) it is a 
+specialized subfield of ML that uses neural networks with many hidden layers. 
+Regularization in Deep Learning: 
+1. Goal: To prevent the complex DL models from overfitting to the enormous 
+number of parameters they have. 
+2. L1/L2 Regularization: Adds a penalty to the loss function based on the 
+magnitude of the weights, which pushes the weights toward zero or small 
+values. 
+3. Dropout: A DL-specific technique that randomly sets a fraction of neurons 
+to zero during each training iteration, preventing co-adaptation of neurons 
+and making the network more robust. 
+4. Early Stopping: Monitoring the loss on the validation set and stopping 
+training when validation loss begins to increase, even while training loss 
+decreases. 
+5. These techniques they are critical to ensure the deep network generalizes 
+well. 
+B-3. Explain supervised, unsupervised and semisupervised with examples. 
+These are the three main categories of machine learning based on the label 
+availability. 
+1. Supervised Learning: Learns a mapping function from input to output 
+using labeled training data (where the correct answer is known). Example: 
+Predicting house price (Regression) or Spam/Not Spam (Classification). 
+2. Unsupervised Learning: Infers hidden patterns or structures from unlabeled 
+data (where the correct answer is not known). Example: Clustering 
+customers into groups (K-Means) or Dimensionality Reduction (PCA). 
+3. Semi-Supervised Learning: Uses a small amount of labeled data along with 
+a large amount of unlabeled data for training. Example: Classification 
+problems where labeling is expensive, using unlabeled data to better define 
+the decision boundaries. 
+B-4. What are types of SVM? 
+Support Vector Machine (SVM) it is a powerful supervised model mainly for 
+classification, and it has two main types based on the data separability. 
+1. Linear SVM: Used when the data it is linearly separable, meaning a 
+straight line (or a hyperplane in higher dimensions) can perfectly separate 
+the classes. 
+2. Non-Linear SVM (Kernel SVM): Used when the data it is not linearly 
+separable. It uses the Kernel Trick (like Radial Basis Function (RBF) or 
+Polynomial Kernel) to implicitly map the input space into a higher
+dimensional feature space where the classes become linearly separable. 
+3. SVR (Support Vector Regression): A variant of SVM used for regression 
+tasks. 
+4. Soft Margin SVM: Allows some misclassification to improve generalization 
+when data is noisy. 
+5. Hard Margin SVM: Requires perfect separation between the classes. 
+B-5. Explain Decision tree in detail. 
+A Decision Tree it is a non-parametric supervised learning method used for 
+both classification and regression. It works by splitting the data into subsets 
+based on the values of input features. 
+1. Structure: It resembles a tree with internal nodes (representing feature 
+tests), branches (representing outcomes of tests), and leaf nodes 
+(representing class labels or final values). 
+2. Mechanism: The splits are chosen based on metrics like Information Gain 
+(Entropy) or Gini Impurity, always selecting the split that best separates 
+the classes at that node. 
+3. Goal: To create a sequence of simple decisions that leads to the correct 
+output with the fewest possible steps (shortest path). 
+4. Advantage: Easy to interpret (white-box model) and handles both 
+numerical and categorical data. 
+5. Disadvantage: They are prone to overfitting and can be unstable (a small 
+change in data can lead to a totally different tree structure). 

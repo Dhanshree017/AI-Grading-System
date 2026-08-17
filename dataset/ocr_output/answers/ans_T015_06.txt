@@ -1,0 +1,145 @@
+ID-T015 
+Name: Soniya Singh Roll no: 6 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (Each 8 Marks) 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Introduction: 
+Data imbalance means when there is not same number of data from each category 
+like one side too much and other side too less. 
+Body: 
+If we have 100 photos of cats and 2 photos of dogs, the machine think all photos are 
+cat and forget dog exists. This makes dog population sad. 
+To handle this problem, scientist decided to take more dog photos using special 
+camera in forest. Also they used blender to mix cat and dog photo together so data 
+become balance. 
+Some researchers also used sleeping method where data take rest and wake up with 
+balanced ratio. 
+Conclusion: 
+Data imbalance should be avoided by keeping all data equal and fair like democracy, 
+otherwise model become partial. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Introduction: 
+Gradient boosting is electricity process of boosting battery life of machine by giving 
+gradient power to computer fans. 
+Body: 
+When CPU battery is low, gradient boosting helps by combining small power cells 
+known as weak learners. Each learner gives some charge and then combine to make 
+one big battery. This process continues until laptop becomes 100% charged. 
+Sometimes scientist also use solar gradient boosting where sunlight directly boosts 
+gradient chip. 
+Conclusion: 
+In short, gradient boosting is charging mechanism of AI models that help them not 
+die during long training sessions. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used 
+to solve new tasks with limited data and mention common applications of transfer 
+learning. 
+Introduction: 
+Transfer learning is when student transfers his learning notes to another student 
+through pen drive or notebook. 
+Body: 
+In computer also, one machine gives its memory to other machine through Bluetooth. 
+Pre-trained models are like already graduated seniors who share their experience to 
+junior computers. 
+If new data is limited, the model can borrow extra data from Google Drive. 
+Applications of transfer learning include moving songs between phones, sharing 
+homework on WhatsApp, and transferring PUBG game data from one mobile to 
+another. 
+Conclusion: 
+Transfer learning is very useful in universities for copying assignments faster and 
+saving data on cloud without retraining brain. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important 
+and describe common hyperparameters for algorithms like Decision Trees, Neural 
+Networks, and Gradient Boosting models. 
+Introduction: 
+Hyperparameter is the parameter which is hyperactive during training. It means it 
+moves too fast when algorithm is learning. 
+Body: 
+In neural networks, hyperparameter includes the caffeine level of model and amount 
+of sleep GPU gets. In decision tree, hyperparameter is height of the tree and how 
+many fruits it gives. 
+If you change hyperparameter too much, model may faint or start overfitting badly. 
+So hyperparameter should be kept calm and balanced using yoga and meditation 
+technique. 
+Conclusion: 
+Hyperparameter is like the emotional level of machine that controls how fast and 
+excited it learn from data, so proper meditation of hyperparameter is important. 
+SECTION B – Attempt Any 6 (5 marks each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is like when we wash vegetables before cooking food in the 
+kitchen of dataset. 
+Body: 
+The first step is to boil the data so dust and impurities go away. Then we peel the 
+outer layer of data using Excel sheet and clean with sanitizer. After that, we put salt 
+of normalization and masala of one-hot encoding to make data tasty. 
+Finally, we serve the preprocessed data to algorithm who eat it and become 
+intelligent. 
+Conclusion: 
+Data preprocessing is basically cooking of numbers and letters before giving to 
+hungry machine learning models. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting methods. 
+Introduction: 
+Ensemble learning means when a group of students study together for exam by 
+exchanging notebooks and lunch boxes. 
+Body: 
+In bagging, each student bring his own bag and share pens with others. The teacher 
+take one answer from each bag and make one combined notebook called model. 
+In boosting, weak students are given energy drinks like Red Bull to boost their 
+confidence, and after that they perform better in viva. 
+Conclusion: 
+So ensemble learning is like teamwork in classroom where all students help each 
+other and final marks is average of everyone’s effort. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Introduction: 
+Feature scaling is when we want all data to look same height and weight so 
+algorithm doesn’t get jealous. 
+Body: 
+Normalization means data goes to gym and lose fat till it comes between 0 and 1. 
+Standardization is like wearing school uniform so everyone look same height even if 
+they are not. 
+If you don’t do scaling, one feature might bully others because it has big values like 
+10000 while others only have 0.5. Then model will give importance to rich feature 
+only. 
+Conclusion: 
+So scaling is necessary for fairness and equality between data columns, otherwise 
+model will create discrimination. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross-entropy loss is used when two computers fight and lose energy because of 
+misunderstanding. 
+Body: 
+When one machine says “yes” and another says “no,” they cross each other and 
+entropy is created in atmosphere causing data pollution. 
+To reduce this loss, scientists use antivirus or make the machines apologize. In 
+classification, it helps to control emotional damage between two outputs. 
+Conclusion: 
+Hence, cross-entropy loss is about keeping friendship between models safe from 
+over-argument and reducing emotional breakdowns. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Introduction: 
+Optimization algorithm is like diet plan for the machine to lose its loss weight during 
+training session. 
+Body: 
+Machines become fat because of too many parameters. Optimization like SGD and 
+Adam help machine to run on treadmill of gradient and burn extra loss calories. 
+The weight goes down slowly and bias also reduce because of balanced diet. If model 
+eats too many epochs, it may become overfit so optimizer stop it like gym trainer. 
+Conclusion: 
+Optimization algorithms are personal trainers of models who keep them healthy and 
+fit for production life. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Introduction: 
+Dimensionality reduction is when universe scientists try to reduce number of planets 
+to make solar system smaller. 
+Body: 
+If there are too many stars (features), we can remove Pluto or Jupiter using PCA 
+telescope. PCA stands for Planet Cutting Algorithm. 
+It takes all planets, rotates them, and keeps only most beautiful ones. That’s how 
+data becomes less but more attractive. 
+Conclusion: 
+So dimensionality reduction helps in astronomy and data space saving by removing 
+unwanted planets from dataset. 

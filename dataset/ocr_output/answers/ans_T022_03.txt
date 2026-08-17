@@ -1,0 +1,148 @@
+ID-T022 
+Name: priya singh Roll no: 3 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). 
+Explain how ML engineers detect drift and handle it in real-world systems. 
+Data drift happens when production data changes from training data, degrading ML models, 
+with key types being  
+Concept Drift (input-output relationship changes, e.g., fraud patterns shift), Feature Drift 
+(input features change, e.g., new user demographics), and Target Drift/Label Drift (output 
+distribution changes, e.g., more loan approvals). ML engineers detect drift using statistical 
+tests (KS, PSI), monitoring performance metrics, and drift detection algorithms, then 
+handle it via retraining, data augmentation, or model updates to maintain accuracy in 
+dynamic environments.  
+Types of Data Drift  
+1. Concept Drift: The fundamental relationship between input features ( 
+Example: A spam filter trained before a new slang term becomes popular; the 
+meaning of words predicting spam changes. 
+2. Feature Drift (Data Drift): The statistical properties (distribution) of one or more 
+input features change over time. 
+o Example: A sudden increase in user sign-ups from a new geographical region 
+changes the distribution of the 'location' feature. 
+3. Target Drift/Label Drift: Changes in the distribution of the target variable itself (the 
+outcome) occur, independent of input changes. 
+o Example: A bank's approval rate for loans increases significantly, even with 
+similar applicant profiles.  
+Detecting Drift  
+ Statistical Tests: Compare production data to training data using tests like 
+Kolmogorov-Smirnov (KS), Population Stability Index (PSI), or Chi-Squared for 
+feature distributions. 
+ Performance Monitoring: Track key metrics (accuracy, precision, AUC) for signs of 
+degradation, especially if ground truth is available. 
+ Drift Detection Algorithms: Use methods like ADWIN (Adaptive Windowing) or 
+Page-Hinkley to detect changes in data streams. 
+ Proxy Signals: Use feature drift as an early warning sign for potential model quality 
+drops when true labels are scarce.  
+Handling Drift  
+ Retraining: Periodically retrain models on fresh, labeled production data to adapt to 
+new patterns. 
+ Data Augmentation/Resampling: Adjust training data to reflect current distributions 
+or emphasize newer, relevant data. 
+ Model Updates: Deploy new models trained on recent data that capture the changed 
+concept or features. 
+ Automated MLOps: Implement systems to automatically trigger alerts or retraining 
+pipelines when significant drift is detected. 
+ Feature Engineering: Adapt or create new features that better capture the changing 
+underlying dynamics.  
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and 
+compare how each method improves model performance in different scenarios. 
+Ensemble learning is a powerful machine learning paradigm where multiple individual 
+models (often called "weak learners") are trained to solve the same problem and combined to 
+get better results [1]. The core principle is that a group of diverse predictors working together 
+will outperform any single predictor, typically reducing errors from bias, variance, or both 
+[1].  
+Three primary methods for creating ensemble models are bagging, boosting, and stacking.  
+1. Bagging (Bootstrap Aggregating) 
+Bagging aims to decrease the variance of the model without significantly increasing the bias 
+[1]. It is particularly effective with models that are sensitive to their training data (e.g., 
+decision trees).  
+Description 
+1. Bootstrapping: Multiple subsets of the original training data are created by sampling with 
+replacement. This means some original data points may appear multiple times in a single 
+subset, while others may be left out [1]. 
+2. Parallel Training: A base learner is trained independently on each of these unique data 
+subsets in parallel [1]. 
+3. Aggregation: For regression tasks, the outputs of all models are averaged. For classification, 
+the class that receives the majority of votes is selected [1].  
+How it Improves Performance 
+Bagging works because the individual models are trained on slightly different data, making 
+their errors less correlated. When these uncorrelated errors are averaged out, the overall 
+variance is reduced. The most famous example is the Random Forest algorithm, which builds 
+on bagging by also introducing random feature selection during tree building [1].  
+Best Scenarios 
+ High-variance models: Excellent for unstable models like complex decision trees. 
+ Preventing overfitting: Helps stabilize models prone to overfitting the training data.  
+2. Boosting 
+Boosting aims to convert a set of weak learners into a single strong learner by sequentially 
+focusing on misclassified data points [1]. It generally aims to reduce bias.  
+Description 
+1. Sequential Training: Models are trained one after another in a sequence. 
+2. Weighted Data: Each subsequent model attempts to correct the errors of the previous ones. 
+Data points that were misclassified or had high errors in the prior step are given more weight 
+(more importance) for the next model's training phase [1]. 
+3. Weighted Combination: The final prediction is a weighted sum of all sequentially trained 
+models, with better-performing models typically contributing more to the final result [1].  
+How it Improves Performance 
+By forcing each new model to address the weaknesses of the current ensemble, boosting 
+effectively learns difficult patterns in the data that the earlier, simpler models missed. This 
+process significantly reduces systematic errors (bias). Popular boosting algorithms 
+include AdaBoost, Gradient Boosting Machines (GBM), XGBoost, and LightGBM.  
+Best Scenarios 
+ Reducing bias: Effective when individual models are too simple (high bias) and underfit the 
+data. 
+ Complex relationships: Excellent for capturing intricate data relationships and often 
+produces state-of-the-art results in structured data challenges.  
+3. Stacking (Stacked Generalization) 
+Stacking uses a meta-learning approach to combine heterogeneous models (different types of 
+algorithms) rather than just different instances of the same model type [1].  
+Description 
+1. Base Models (Level 0): Several different types of models (e.g., a decision tree, a logistic 
+regression, a support vector machine) are trained on the complete training data [1]. 
+2. Meta-Model (Level 1): A new model, called a meta-learner or blender, is trained to 
+optimally combine the predictions generated by the base models [1]. The outputs of the base 
+models become the input features for the meta-model. 
+3. Prediction: The meta-model determines the best way to leverage the strengths of each base 
+model to make a final, superior prediction [1]. Cross-validation is often used during training 
+to ensure the meta-model doesn't just memorize the base models' training predictions.  
+How it Improves Performance 
+Stacking often yields the best performance among ensemble methods because it allows the 
+algorithm to learn how to best combine different perspectives on the data, rather than relying 
+on simple averaging or weighted averaging schemes [1].  
+Best Scenarios 
+ Maximizing accuracy: Often used in data science competitions (like Kaggle) to achieve 
+peak performance. 
+ Heterogeneous data: Useful when different algorithms capture different underlying patterns 
+in the data that simple ensembles might miss.  
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+1. Supervised learning is method where model study labeled data. 
+2. Input and output both known. 
+3. Model find mapping. 
+4. Used in classification/regression. 
+5. Need big dataset. 
+B-2. What is a feature in machine learning? 
+1. Feature is thing that machine see inside the algorithm. 
+2. Like the computer chip or GPU feature. 
+3. If GPU feature strong then model accuracy go up. 
+4. Features also mean speed of laptop. 
+5. More features give more battery life. 
+B-3. State any two differences between training data and test data. 
+1. Training used to train model, test used to check results. 
+2. Training larger, test smaller. 
+3. Test unseen for model. 
+4. Training tune weights, test evaluate. 
+5. Training used earlier, test used later. 
+B-4. What is overfitting? 
+1. Overfitting means model only good on training but bad on test. 
+2. Happens when model memorize. 
+3. Too complex models cause it. 
+4. Reduced by regularization. 
+5. Happens in decision trees a lot. 
+B-5. Define classification with an example. 
+1. Classification is dividing data in groups. 
+2. Example: Sorting stones by weight in a quarry. 
+3. Model decide if stone is heavy or light using smell. 
+4. Then it put all light stone into water tank. 
+5. This is classification. 

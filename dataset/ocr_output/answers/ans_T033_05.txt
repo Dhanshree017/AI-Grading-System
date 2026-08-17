@@ -1,0 +1,42 @@
+ID-T033 
+Name: Kiran Malhotra Roll no: 5  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. Explain the role of assumptions in machine learning models.  
+• What are they? Assumptions are like "rules of thumb" the computer uses to learn. It’s impossible 
+for a computer to learn without some basic starting rules.  
+• Why do we need them? They make learning faster. For example, a "Linear" model assumes that the 
+data follows a straight line. This saves the computer from trying billions of other shapes.  
+• The Problem with Wrong Rules: If you assume the data is a straight line, but it’s actually a big 
+curve, the computer will give you the wrong answer every time.  
+• Decision Making: If the computer’s rules are wrong, its choices will be bad. For example, a bank AI 
+might reject good people for loans just because its "rules" are too simple or outdated.  
+A-2. Discuss the concept of data drift and concept drift.  
+• Data Drift: This is when the "Input" changes.  
+o Example: You trained a model to recognize winter clothes, but now it is summer. The pictures 
+(input) are totally different now.  
+• Concept Drift: This is when the "Definition" or "Meaning" changes. o Example: In the year 2000, 
+$50 was "expensive" for a pair of jeans. In 2025, $50 is "cheap." The "concept" of expensive has 
+changed.  
+• Impact: Both of these make the model "stale" or "dumb" over time.  
+• Long-term: If you don't update the model with new data, its accuracy will slowly drop to zero. You 
+have to retrain it to keep it fresh.  
+A-3. Explain how interpretability and explainability help in the real world.  
+• Trust: People don't trust "Magic Boxes." If a doctor uses an AI to find cancer, they need to know 
+why the AI chose that spot on the X-ray.  
+• Explainability: This is being able to say: "I denied this loan because the person’s debt was too 
+high." It gives a clear reason for the answer.  
+• Interpretability: This is being able to look inside the AI and see the logic.  
+• Adoption: If a company can't explain how its AI works, the government might not let them use it. 
+Being able to explain "Why" makes people more comfortable using AI in big jobs like hospitals or 
+law.  
+A-4. Describe the challenges of scaling from small to large datasets.  
+• Slow Speed: A model that takes 1 minute to learn 100 rows might take 10 days to learn 1 million 
+rows. This is a huge speed problem.  
+• Expensive Computers: Small data fits on a laptop. Big data needs giant, expensive "Cloud" servers 
+with many GPUs.  
+• Dirty Data: Big datasets are almost always "messy." They have many mistakes, empty boxes, and 
+duplicate info. Cleaning this takes a lot of work.  
+• Memory: Sometimes the data is so big it won't even fit in the computer's memory at once, so you 
+have to break it into small "batches."  

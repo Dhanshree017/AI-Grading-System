@@ -1,0 +1,16 @@
+
+
+--- PAGE 1 ---
+ID — T026
+Machine Learning Examination
+Semester 2 , Total marks 40
+Internal Exam , SY-Computer Science
+Date — 05-10-2025
+A] Attempt any 5 ( each 8 marks)
+
+a. Explain the concept of learning bias in machine learning.Discuss different sources of bias and their impact on model generalization.
+b. Describe the role of assumptions in machine learning algorithms.Explain how assumptions influence model selection and performance.
+c. Explain the concept of generalization in machine learning.Discuss why a model that performs well on training data may fail on unseen data.
+d. Discuss the importance of data quality in machine learning systems.Explain how noise, missing values, and inconsistencies affect learning outcomes.
+e. Explain the difference between shallow learning and deep learning approaches.Discuss their characteristics, strengths, and limitations in theory.
+f. Describe the ethical considerations involved in developing machine learning systems.Explain issues such as fairness, transparency, accountability, and privacy.

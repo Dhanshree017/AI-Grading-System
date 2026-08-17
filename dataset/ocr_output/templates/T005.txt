@@ -1,0 +1,24 @@
+
+
+--- PAGE 1 ---
+ID — T005
+Machine Learning Examination (total 40 marks)
+FY- IT
+Date — 11-2-2023
+
+A | Attempt any 4 (8 marks each )
+Q1 .What is the core difference between traditional programming and machine learning?
+Q2.Explain the concept of Entropy and Information Gain in the context of building a Decision Tree.
+Q3.Why is this algorithm considered "Naive," and what computational benefit does this assumption provide?
+Q4.Despite its name, what kind of problem does Logistic Regression solve, and what function does it use to map its output to a probability?
+Q5.Provide three examples of hyperparameters that must be tuned before training, rather than learned during training.
+B] Attempt any 4 (2 marks each )
+
+1. Identify and explain five business applications of machine learning.
+
+2. What are training, validation, and test sets? Why are they used?
+
+3. Explain the concept of Cross-Validation and its importance.
+
+4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score.
+5. What are feature scaling techniques, and when should you use them?

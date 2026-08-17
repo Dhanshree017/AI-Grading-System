@@ -1,0 +1,35 @@
+ID-T031 
+Name: Vinod Shetty Roll no: 306516 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Answer All Questions (Each 5 Marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning in machine learning is about learning concepts which means ideas. Machine learning 
+machine tries to learn idea from data like human learns things from experience. Concept learning is very 
+basic topic in machine learning and it is used in many areas. 
+In concept learning, machine is given data and machine has to understand what that data means. For 
+example if machine sees many animals then it will try to understand concept of animal. Sometimes machine 
+may confuse different things because concept learning is not perfect. 
+Concept learning is related to examples. Examples can be positive or negative. Positive examples belong to 
+concept and negative do not belong. Machine uses these examples to make rules. These rules are concept. If 
+rules are strong then concept is strong. 
+Hypothesis is used in concept learning. Hypothesis is like guess. Machine makes many guesses and then 
+remove wrong guesses. Hypothesis space is place where all guesses are stored. Bigger hypothesis space 
+means more time to learn. 
+Concept learning can be supervised and unsupervised. In supervised learning concept is clear but in 
+unsupervised learning concept is hidden. Concept learning is also used in neural networks where neurons 
+learn concept automatically. 
+Sometimes concept learning fails because data is wrong or less. Concept learning is important but not 
+always accurate. Still it is main part of machine learning. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency is very important in machine learning because machine learning works only on data. If 
+data is not consistent then model will not work properly. Data consistency means data should look same 
+everywhere. 
+If same value is written in different format then machine will think it is different. For example male and M 
+both means same but machine may not understand. This creates problem in training. 
+Inconsistent data causes confusion to model. Model may learn wrong patterns. Sometimes model accuracy 
+becomes low because of inconsistent data. Consistent data helps model learn better and faster. 
+Data consistency also helps in cleaning data. If data is consistent then cleaning is easy. Inconsistent data 
+increases errors and noise. Noise is bad data. 
+Sometimes people think consistency is not important if algorithm is strong which is not always true. Even 
+best algorithm fails with bad data. Therefore data consistency is key factor. 

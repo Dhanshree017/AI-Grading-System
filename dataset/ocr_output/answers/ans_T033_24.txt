@@ -1,0 +1,62 @@
+ID-T033 
+Name: Monika Yadav Roll no: 24  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+• What are Assumptions? Assumptions are like the "basic rules" a computer follows to 
+learn. Since the computer doesn't know anything at the start, we tell it a few rules, like 
+"assume the data follows a straight line."  
+2. Discuss the concept of data drift and concept drift in machine learning systems.  
+• Data Drift (Input Change): This is when the data coming into the model changes.  
+o Example: You made an AI to predict car prices in 2020. In 2025, people are 
+driving mostly electric cars. The "input" (the types of cars) has drifted or 
+changed.  
+• Concept Drift (Meaning Change): This is when the "definition" of something 
+changes. o Example: Before a pandemic, "buying 50 rolls of toilet paper" was weird 
+behavior. During the pandemic, it became "normal." The "concept" of normal 
+changed.  
+• Long-term Impact: If you don't watch out for these, your model will get "stale." It 
+will keep giving answers based on old rules, and its accuracy will drop lower and 
+lower until it is just guessing.  
+A-4. Describe the challenges of scaling machine learning models from small to large 
+datasets.  
+• Computer Power: A small dataset works on a laptop. A large one needs many giant, 
+expensive servers. If the data is too big, the computer might run out of memory and 
+crash.  
+• Messy Data: When you have 100 rows, it is easy to clean. When you have 100 
+million rows, there are thousands of mistakes, typos, and empty boxes. Cleaning this is 
+a huge headache.  
+• Time: Some models take minutes to learn. When you scale up, they might take weeks 
+to finish. This makes it hard to fix mistakes quickly.  
+• Storage: You need special systems (like "The Cloud") to store all that data so it 
+doesn't get lost or corrupted.  
+A-5. Explain the importance of validation and testing strategies.  
+Validation and testing strategies are crucial because they ensure products meet user needs, 
+business goals, and quality standards, catching defects early to save costs, boost user 
+satisfaction, maintain reliability, and ensure compliance, ultimately building stakeholder 
+confidence and preventing costly post-release failures. They provide a roadmap for quality, 
+ensuring the software is not just built correctly (verification) but that the right product is 
+built for the intended purpose (validation).   
+Key Importance Areas  
+• Ensures Product-Market Fit: Guarantees the software solves actual user problems and 
+meets business requirements, preventing the creation of a technically perfect but useless 
+product.  
+• Reduces Costs: Finding and fixing bugs early in development is significantly cheaper than 
+fixing them after deployment, saving resources on rework, recalls, and support.  
+• Boosts Quality & Reliability: Identifies defects, performance bottlenecks, and usability 
+issues, leading to a more stable, efficient, and reliable system.  
+• Increases User Satisfaction & Confidence: Delivers a product that works as expected, 
+leading to better reviews, increased adoption, and stronger brand reputation.  
+• Ensures Compliance: For industries like finance, healthcare, and pharmaceuticals, 
+validation ensures adherence to strict regulatory standards (FDA, etc.), avoiding penalties.  
+• Mitigates Risk: Proactively identifies potential risks, security vulnerabilities, and data 
+integrity issues before they impact users or operations.  
+• Provides a Roadmap: A defined strategy (like the V-Model) integrates testing into every 
+stage, ensuring consistency and thoroughness from unit tests to user acceptance.   
+Core Components of a Strategy  
+• Unit Testing: Checks small code pieces.  
+• Integration Testing: Verifies interactions between components.  
+• System Testing: Evaluates the whole system.  
+.  

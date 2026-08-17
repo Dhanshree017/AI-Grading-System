@@ -1,0 +1,46 @@
+ID-T027 
+Name: Rohan vohra Roll no: 20 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Types of Learning in Machine Learning 
+Online Learning 
+4. Online learning updates the model continuously as new data arrives. 
+5. It is useful for real-time systems and streaming data. 
+6. Online learning adapts quickly to changing patterns. 
+Incremental Learning 
+7. Incremental learning updates the model gradually without forgetting previous 
+knowledge. 
+8. It handles large datasets by learning in small chunks. 
+9. It reduces memory usage and retraining cost. 
+10. These learning types are chosen based on data availability and system requirements. 
+A-e. Discuss the role of hyperparameters in machine learning models. Explain why 
+hyperparameter tuning is necessary. 
+Role of Hyperparameters 
+Hyperparameters are configuration values set before training that control the learning 
+behavior of a model. 
+Explanation 
+1. Examples include learning rate, number of layers, batch size, and regularization 
+strength. 
+2. Hyperparameters influence model complexity and learning speed. 
+3. They determine how well a model fits the data. 
+4. Poor hyperparameter choices can lead to underfitting or overfitting. 
+Need for Hyperparameter Tuning 
+5. Different datasets require different hyperparameter values. 
+6. Tuning improves model accuracy and stability. 
+7. It helps achieve faster convergence during training. 
+8. Techniques like grid search and random search are commonly used. 
+9. Proper tuning enhances generalization performance. 
+10. Hyperparameter tuning is essential for building optimal ML models. 
+A-f. Explain the concept of model deployment. Discuss the challenges faced while 
+deploying ML models in real-world applications.. 
+Challenges in Real-World Deployment 
+4. Data drift can reduce model accuracy over time. 
+5. Scalability is required to handle large numbers of users. 
+6. Latency issues affect real-time prediction systems. 
+7. Security and privacy risks must be managed carefully. 
+8. Hardware and infrastructure constraints limit performance. 
+9. Continuous monitoring is needed to detect failures. 
+10. Regular retraining ensures long-term model reliability. 

@@ -1,0 +1,209 @@
+ID-T017 
+Name: shreyash pawar Roll no: 20 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt all (3 marks each) 
+A-1. Give 5 domains of AI 
+1. Machine Learning (ML): learning from data to make predictions or discover patterns 
+(supervised, unsupervised, reinforcement). 
+2. Natural Language Processing (NLP): understanding and generating human language 
+(translation, Q&A, sentiment). 
+A-2. What is data preprocessing and why is it important? 
+Definition: sequence of steps that clean, transform and prepare raw data into a form suitable 
+for modeling (cleaning, encoding, scaling, feature engineering). 
+A-5. What is classification and regression? Explain with examples 
+ Classification: supervised task that maps inputs to discrete labels. Example: email → 
+{spam, not spam}; image → {cat, dog, bird}. Evaluation: accuracy, precision/recall, 
+F1, ROC-AUC. 
+ Regression: supervised task that predicts continuous numeric values. Example: 
+predict house price (₹) from area, location; predict temperature. Evaluation: MSE, 
+RMSE, MAE, R². 
+A-6. Give advantages and disadvantages of Decision Tree 
+Advantages: (1) Intuitive, easy to visualize and interpret; (2) Handles numeric and 
+categorical features; (3) No strong feature scaling required; (4) Can model nonlinear 
+interactions and feature importance. 
+Disadvantages: (1) Prone to overfitting if grown deep; (2) High variance — small data 
+changes can yield different trees; (3) Greedy splits can be suboptimal globally; (4) Bias 
+toward features with many levels unless corrected. 
+A-7. How to make a model underfit and overfit (i.e., causes & how they arise) 
+To make underfit (what causes underfitting): use overly simple model (e.g., linear model 
+for nonlinear data), too few features, excessive regularization, too little training. 
+To make overfit (what causes overfitting): use overly complex model (very deep network 
+or huge tree depth), insufficient training data relative to capacity, too many irrelevant 
+features, training too long without regularization. 
+A-8. Give 5 applications of machine learning in real life 
+1. Recommender systems — product/movie suggestions (collaborative / content-based). 
+2. Fraud detection — anomaly detection in banking transactions. 
+3. Medical diagnostics — imaging-based disease detection (X-ray, MRI). 
+4. Autonomous vehicles — perception and decision-making pipelines. 
+5. Predictive maintenance — forecasting equipment failure from sensor data. 
+A-9. State steps in making ML models 
+1. Problem definition & success metrics (what to predict, loss function). 
+2. Data collection & exploration (EDA) — gather and understand data. 
+3. Data preprocessing — cleaning, imputation, encoding, scaling. 
+4. Feature engineering / selection — create informative features, reduce 
+dimensionality. 
+5. Model selection — choose candidate algorithms. 
+6. Training & hyperparameter tuning — optimize parameters and hyperparameters 
+(cross-validation). 
+7. Evaluation — holdout testing, metrics, error analysis. 
+8. Deployment & monitoring — serve model and monitor performance (drift, data 
+changes). 
+9. Maintenance & retraining — update model as data or objectives change. 
+A-10. Importance of data in ML 
+ Foundation: model quality is bounded by data quality — “garbage in, garbage out.” 
+ Bias & fairness: representative, unbiased data avoid systematic errors. 
+ Signal strength: sufficient, clean examples let models learn true patterns. 
+ Generalization: diverse data helps model perform in real environments. 
+ Explainability & trust: well-curated data eases debugging and regulatory 
+compliance. 
+SECTION B — Attempt any 5 (8 marks each) 
+B-1. Discuss challenges in ML — imbalanced data, missing values, curse of 
+dimensionality, concept drift — and solutions 
+Imbalanced Data 
+ Problem: Minority class underrepresented → classifiers biased toward majority → 
+poor recall for minority. 
+ Solutions: resampling (oversample minority e.g., SMOTE, undersample majority), 
+class-weighted loss functions, threshold tuning, use specialized algorithms (one-class / 
+anomaly detection), evaluation with PR-AUC and F1 rather than accuracy. 
+Missing Values 
+ Problem: missingness distorts feature distributions, reduces usable samples. 
+ Solutions: analyze missingness mechanism (MCAR/MAR/MNAR), impute using 
+mean/median or model-based imputation (KNN, multivariate imputation), use 
+indicators for missingness, use algorithms that accept missing inputs (e.g., XGBoost 
+can handle NA), avoid dropping rows when information is valuable. 
+Curse of Dimensionality 
+ Problem: as feature count grows, data becomes sparse, distances lose meaning, 
+overfitting risk increases. 
+ Solutions: dimensionality reduction (PCA, t-SNE for visualization), feature selection 
+(mutual information, L1 regularization), domain-driven feature engineering, collect 
+more data, use models that regularize strongly. 
+Concept Drift 
+ Problem: data distribution (P(X) or P(Y|X)) shifts over time → model degradation. 
+ Solutions: monitor performance with drift detectors, use online learning or continual 
+learning, retrain periodically with recent data (sliding window), incorporate adaptive 
+weighting of recent samples, maintain ensembles with models trained on different 
+time windows. 
+B-2. What is Regularization and its role in ML? Explain its types in detail 
+Role: Regularization prevents overfitting by adding constraints/penalties that limit model 
+complexity, encouraging simpler models that generalize better. 
+Types: 
+L2 Regularization (Ridge / Tikhonov) 
+ Shrinks weights toward zero but rarely makes them exactly zero. 
+ Encourages distributed small weights; helps with multicollinearity; mathematically 
+leads to closed-form solutions for linear models. 
+L1 Regularization (Lasso) 
+ Promotes sparsity — drives some weights exactly to zero → feature selection. 
+ Useful when many features but only a few are relevant. 
+Elastic Net 
+ Combination of L1 and L2 penalties: balances sparsity and stability. Good when 
+correlated features exist. 
+Dropout (for neural networks) 
+ Randomly deactivates neurons during training; acts like model averaging; reduces co
+adaptation. 
+Early Stopping 
+ Monitor validation loss and stop training when it stops improving; implicitly 
+regularizes by limiting training complexity. 
+Data augmentation 
+ Increases data variability; acts as a regularizer by exposing model to transformations. 
+Other forms 
+ Weight decay (equivalent to L2 in many frameworks), Bayesian priors (probabilistic 
+regularization), max-norm constraints, and functional regularization (e.g., 
+smoothness penalties). 
+Choosing λ / strength: via cross-validation; improper value under- or over-regularizes. 
+B-3. What is Ensemble Learning? Explain Bagging and Boosting with examples 
+Ensemble Learning: combining multiple base learners to produce a single aggregated 
+prediction, improving accuracy, robustness and stability compared to individual models. 
+Bagging (Bootstrap Aggregating) 
+ Idea: train multiple models independently on bootstrap samples (sample with 
+replacement) and aggregate (averaging for regression, majority voting for 
+classification). 
+ Effect: reduces variance (averaging smooths model fluctuations) while maintaining 
+low bias if base learners are unbiased. 
+ Example: Random Forest — many decision trees trained on different bootstrap 
+samples and random feature subsets; reduces overfitting common in single decision 
+tree. 
+Boosting 
+ Idea: train models sequentially; each new model focuses on examples the previous 
+models misclassified by reweighting or residual fitting. Combines weak learners into a 
+strong learner. 
+ Effect: reduces bias, can also reduce variance, but sensitive to noise if over-fit. 
+ Examples: 
+o AdaBoost: adaptively reweights misclassified samples; final model is weighted 
+sum of weak learners. 
+o Gradient Boosting (e.g., XGBoost, LightGBM): each new learner fits the 
+negative gradient (residual) of loss; highly effective on tabular data. 
+ Regularization: modern boosting includes shrinkage (learning rate), tree constraints, 
+and subsampling for robustness. 
+When to use: bagging for high-variance models (trees), boosting when reducing bias yields 
+gains and when careful regularization is applied. 
+B-4. Describe the entire ML pipeline — each step and how to evaluate models 
+End-to-end ML Pipeline 
+1. Problem Definition & Metrics: define objective, success metrics (e.g., accuracy, F1, 
+RMSE), constraints (latency, fairness). 
+2. Data Collection: gather relevant raw data from sources, instrument logging for future 
+use. 
+3. Exploratory Data Analysis (EDA): visualize distributions, correlations, detect 
+outliers and anomalies. 
+4. Data Preprocessing: clean data, handle missing values, deduplicate, correct entry 
+errors. 
+5. Feature Engineering: create, transform and select features (one-hot, embeddings, 
+interaction terms). 
+6. Train/Test Split & Cross-Validation: ensure realistic evaluation (time-aware splits 
+for time series). 
+7. Model Selection: choose algorithm(s) based on data size, problem type and 
+interpretability needs. 
+8. Training & Hyperparameter Tuning: use grid/random/Bayesian search with cross
+validation, track experiments. 
+9. Evaluation: use chosen metrics on holdout/test set; perform error analysis; check 
+calibration and fairness. 
+o Classification metrics: confusion matrix, precision/recall, F1, ROC-AUC, PR
+AUC. 
+o Regression metrics: MAE, RMSE, R², residual analysis. 
+o Model diagnostics: residual plots, feature importance, partial dependence plots, 
+SHAP explanations. 
+10. Validation in Realistic Environment: A/B testing, canary deployments, back-testing 
+for time series. 
+11. Deployment: package model, serve via API, ensure monitoring and scalable 
+infrastructure. 
+12. Monitoring & Maintenance: track performance drift, data drift, and error rates; log 
+inputs for retraining triggers. 
+13. Retraining & Governance: schedule retraining, version models, document lineage 
+and compliance. 
+Model Evaluation Best Practices: holdout test set never seen during tuning, cross
+validation for robust estimates, use appropriate metrics for class imbalance, calibrate 
+probabilities if needed, and perform sensitivity analyses. 
+B-5. What are the types of data ML uses? What are qualities of good data? 
+Types of Data: 
+1. Structured tabular data: rows and columns (SQL tables). 
+2. Unstructured data: text, images, audio, video. 
+3. Semi-structured data: JSON, XML, logs. 
+4. Time-series data: ordered temporal observations (sensors, finance). 
+5. Graph data: nodes and edges (social networks, molecules). 
+6. Spatial data / geospatial: coordinates, maps. 
+B-6. Write note on Naïve Bayes and SVM in detail 
+Naïve Bayes (NB) 
+ Principle: probabilistic classifier applying Bayes’ theorem with a strong (naïve) 
+assumption of conditional independence between features given the class. 
+ Variants: Gaussian NB (continuous features), Multinomial NB (count/text data), 
+Bernoulli NB (binary features). 
+ Strengths: very fast, low computational cost, works well with high-dimensional 
+sparse data (text classification), requires small training data, outputs calibrated 
+probabilities (roughly). 
+ Weaknesses: independence assumption unrealistic sometimes; performance degrades 
+when feature dependencies are strong. 
+ Use cases: spam detection, document classification, simple baselines. 
+Support Vector Machine (SVM) 
+ Principle: margin-based classifier that finds a hyperplane maximizing the margin 
+between classes in feature space; supports linear and kernelized non-linear 
+classification. 
+ Optimization: convex quadratic programming to minimize subject to margin 
+constraints (soft margin introduces slack variables and C regularization). 
+ Kernels: linear, polynomial, radial basis function (RBF), sigmoid — allow implicit 
+mapping to high-dimensional spaces via the kernel trick. 
+ Strengths: effective in high-dimensional spaces, robust with clear margins, well
+regularized (C parameter), strong theoretical foundations. 
+ Weaknesses: scales poorly to very large datasets (training complexity), choice and 
+tuning of kernel and hyperparameters crucial, less interpretable than trees. 
+ Use cases: text classification (with linear SVM), image classification (with kernel 
+SVM on smaller datasets), bioinformatics. 

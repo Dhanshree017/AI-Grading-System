@@ -1,0 +1,96 @@
+ID-T029 
+Name: Anupam Sen Roll no: 12 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why 
+robustness is important and how it can be improved in learning systems. 
+Model robustness is the degree of invariance in a model’s output when subjected to input 
+perturbations or distribution shifts. It characterizes a model's ability to maintain high 
+performance when the data originates from a distribution slightly different from the training 
+set, or when it contains noise. 
+Importance: 
+ Safety in Critical Systems: In domains like medical diagnostics or autonomous 
+driving, a lack of robustness can lead to "catastrophic failure" where a minor, 
+imperceptible change in input (like a few pixels) causes a complete misclassification. 
+ Security: Robustness is the primary defense against "Adversarial Attacks," where 
+malicious actors craft specific inputs to exploit the model's decision boundaries. 
+How it can be improved: 
+ Adversarial Training: Incorporating adversarial examples—data points intentionally 
+modified to cause errors—into the training loop to harden the decision boundaries. 
+ Regularization: Utilizing techniques such as Weight Decay or Dropout to prevent the 
+model from becoming overly dependent on specific, potentially noisy, input features. 
+ Ensemble Methods: Combining multiple diverse models to average out individual 
+sensitivity to noise, thereby increasing the overall system stability. 
+A-b. Describe the role of data representation in machine learning. Explain how different 
+ways of representing data can affect learning outcomes. 
+Data representation, also known as Feature Engineering or Latent Space Mapping, is the 
+process of transforming raw data into a mathematical format (tensors) that effectively 
+captures the structural relationships between variables. 
+Effect on outcomes: 
+ Feature Separability: The primary goal is to map data into a space where the 
+"classes" are linearly separable. A poor representation makes it impossible for even 
+the most complex algorithm to find a boundary. 
+ The Information Bottleneck: A representation must be "dense" enough to retain 
+critical information (signal) but "sparse" enough to discard irrelevant noise. 
+ Encoding Semantics: Using embeddings (like Word2Vec) instead of one-hot 
+encoding allows the model to understand "semantic similarity." For instance, 
+representing words as vectors in a multi-dimensional space allows the model to 
+calculate that "Ocean" is closer to "Sea" than it is to "Desert," vastly improving 
+generalization in NLP tasks. 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues 
+related to data size, model complexity, infrastructure, and maintenance. 
+Scaling ML systems involves the transition from a "Proof of Concept" to a production-grade 
+environment capable of handling high-volume throughput. 
+ Data Size: Massive datasets necessitate "Horizontal Scaling," where data is 
+partitioned across distributed clusters. This introduces the challenge of data 
+consistency and communication overhead between nodes. 
+ Model Complexity: Highly complex models (Deep Neural Networks) increase 
+"Inference Latency." In production, a model must be optimized through quantization 
+or pruning to provide responses in milliseconds. 
+ Infrastructure: Scaling requires robust "MLOps" pipelines, utilizing containerization 
+(Docker) and orchestration (Kubernetes) to manage resources dynamically based on 
+demand. 
+ Maintenance: Systems suffer from "Technical Debt" and "Concept Drift." As real
+world trends change, the model’s logic becomes obsolete. Maintenance requires 
+automated monitoring systems that trigger retraining alerts when statistical 
+performance decays. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain 
+tasks related to monitoring, updating, documentation, and ethical compliance. 
+The role of an ML engineer post-deployment is to ensure the model’s "Operational Health" 
+and long-term viability. 
+ Monitoring: Implementing real-time tracking of "Prediction Latency" and "Data 
+Integrity." They must specifically look for "Model Drift," where the statistical 
+properties of the target variables change over time. 
+ Updating: Establishing "Continuous Integration/Continuous Deployment" (CI/CD) 
+pipelines for model weights. This includes A/B testing new versions against the 
+current production model. 
+ Documentation: Maintaining "Model Cards" and technical logs that detail the 
+training data, versioning, and known failure modes to ensure reproducibility and 
+system transparency. 
+ Ethical Compliance: Conducting "Bias Audits" to ensure the model does not produce 
+discriminatory outcomes. This involves checking for "Fairness Metrics" across 
+different demographic subgroups to comply with regulatory standards. 
+B] Attempt All ( 2 marks each ) 
+B-a. What is model generalization in machine learning? The capability of a trained model to 
+maintain its predictive accuracy when applied to an independent, out-of-sample dataset. 
+B-b. Define training dataset. A curated subset of data used to calibrate the model’s internal 
+weights and parameters by minimizing a specific loss function. 
+B-c. What is unsupervised learning? A paradigm where the model identifies latent structures, 
+correlations, or clusters within an unlabeled dataset without explicit feedback. 
+B-d. What do you mean by features in ML? Individual, quantifiable variables or independent 
+attributes that serve as the fundamental input signals for the model's decision logic. 
+B-e. What is a machine learning algorithm? A structured mathematical framework or 
+computational procedure that iterates through data to detect patterns and generate a 
+predictive model. 
+B-f. Define overfitting. A modeling error that occurs when a function is too closely fit to a 
+limited set of data points, capturing noise rather than the underlying distribution. 
+B-g. What is data preprocessing? The computational workflow of cleaning, normalizing, and 
+transforming raw data into a structured format suitable for algorithmic ingestion. 
+B-h. What is a prediction in machine learning? The deterministic or probabilistic output 
+generated by a model in response to a specific set of input features. 
+B-i. Define model evaluation. The systematic process of quantifying a model’s performance 
+using statistical benchmarks (e.g., Accuracy, AUC-ROC) to assess its real-world utility. 
+B-j. What is learning from experience in ML? The iterative improvement of a system’s 
+performance on a specific task through increased exposure to data and historical feedback 
+loops. 

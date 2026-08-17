@@ -1,0 +1,93 @@
+ID-T013 
+Name : yuvraj Vohra Roll no: 13 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt Any 10 (3 marks each) 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is a table that confuse everyone because of too many 
+TP FP things. It tell how much correct and wrong classification made by 
+model. For example if dog cat images, it show how many cat said dog 
+and how many dog said cat. So it have true positive, true negative and 
+all this which is useful but very confusing if not drawn nicely. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection is selecting features from big dataset so that computer 
+not get tired. If we give all columns then model slow and lazy so we only 
+pick few best ones. It is important because it make faster and accuracy 
+more. For example we not give useless column like ID number or roll 
+number. So it is like choosing best ingredient for food. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning is when data is coming together like one big train of data 
+and model eat all once. Online learning is like eating small bites one by 
+one. Batch learning take more time and memory but stable. Online 
+learning used when data keep coming live like in stock market. So main 
+difference is timing and how data feed. 
+A-8. What is one-hot encoding and where is it used? 
+One hot encoding is process to make number from words. Like color red 
+green blue become 100, 010, 001. It is used when computer cannot 
+understand word. So we make them in zero one format. It is used in ML 
+model that not know text. But if too many category then become very 
+large and heavy. 
+A-10. What is a loss function? Mention any two types of loss functions used 
+in ML. 
+Loss function is what tell how much wrong our model is. It is like teacher 
+giving marks. If high loss means poor model. Example are MSE and cross 
+something entropy which measure difference between actual and 
+predicted. Smaller loss mean better model. 
+A-11. Explain cross-validation and its advantage over a single train-test 
+split. 
+Cross-validation is when we cut data into many small part and keep 
+checking one by one. So model get trained on some part and tested on 
+other. It is better because it not depend on single luck split. It give 
+average result which is more strong. But it take long time because many 
+training happen. 
+A-12. Define unsupervised learning and give two examples of algorithms 
+used in it. 
+Unsupervised learning mean no teacher, model learn by itself. It just find 
+pattern from data like clustering. Example are K-mean and PCA maybe 
+or something like that. It used when label not available. It good for 
+grouping but result sometimes random. 
+SECTION B — Attempt Any 4 (5 marks each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like 
+encoding, scaling, and polynomial feature generation. 
+Feature engineering is basically making new features from old features so 
+that model get more understanding. It is like cooking recipe from raw 
+ingredients. For example from date column we make day, month, year 
+which help in analysis. 
+It is very important because model performance depend on how we 
+prepare data. If we do wrong feature then accuracy go down badly. 
+Encoding means change text to number so model can read. Like one-hot 
+or label encoding. Scaling means adjust value so that all come in same 
+range because some value big like salary and some small like age so 
+without scaling model confuse. 
+Polynomial feature is something like x square or x*y to make nonlinear 
+relation. But if too many then memory full and overfit. So we use only 
+few. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K means is a clustering algorithm used in unsupervised learning. It divide 
+data into groups called cluster. First we choose number of cluster K. 
+Then algorithm pick random point as center called centroid. Then assign 
+each data point to nearest centroid using distance formula maybe 
+Euclidean. 
+Then calculate new centroid mean of all points in that cluster. Repeat till 
+not change. 
+Advantage are it is simple, fast, and easy. But disadvantage also many 
+like we have to choose K before, and if data noisy then not work. But 
+mostly used because easy to code. 
+B-4. What is Early Stopping in ML training? Explain how it prevents 
+overfitting. 
+Early stopping is when we stop training before it get too much fit on 
+data. We check validation accuracy, when it start going down, we stop. 
+So it save time and prevent overfitting because model not memorize 
+noise. It is like stopping student before he start overthinking question. 
+If we train too much, validation loss increase, that’s signal to stop. So we 
+keep patience value and choose best epoch. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model 
+generalization. 
+Bias variance tradeoff mean two enemy in machine learning. Bias means 
+model too simple and variance mean model too complex. If high bias 
+model underfit, if high variance model overfit. 
+So we need balance between both. It impact generalization because if any 
+one side high, model not perform good on new data. So we try to find 
+sweet spot by cross validation or change model complexity. In exam it 
+look like formula bias² + variance + noise. 

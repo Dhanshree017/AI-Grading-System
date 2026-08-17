@@ -1,0 +1,124 @@
+ID-T020 
+Name: Maahi daundkar Roll no: 10 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Intro 
+Machine learn model works good first time but after time data change so model no work 
+good. This is data drift and concept drift. 
+Data Drift 
+Data drift is when input data change over time. Example, user buy in morning not evening 
+like before. 
+Concept Drift 
+Concept drift is relation between feature and output change. Example, earlier age decide 
+purchase now it depend on weather. 
+Types of Drift 
+ Sudden Drift: data change one time fast. 
+ Gradual Drift: slowly data change. 
+ Recurring Drift: pattern come again sometimes. 
+ Incremental Drift: little by little change happen. 
+Detection and Handling 
+Check accuracy or feature histograms. Some students just retrain model all time which not 
+always help. Online learning, retrain, or combine old new model can use. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Intro 
+Embedding make data small number vector to use in model. 
+Text Embedding 
+Word or sentence change to number vector. Similar meaning word stay close. Helps model 
+understand meaning. 
+Image Embedding 
+Image convert to vector show color and shape. Model use it to recognize image. 
+Categorical Embedding 
+High number category like product ID convert to small vector. Helps model learn pattern. 
+Some students just give random number, model try learn anyway. 
+Use 
+ NLP, image, recommendation. 
+ Sometimes random embedding still work little. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Challenges 
+ Model predict majority class all time. 
+ Minority class predict fail. 
+ Accuracy misleading. 
+Techniques 
+ Cost-sensitive learning penalize minority wrong. 
+ Synthetic sample like SMOTE create new data. 
+ Threshold change improve minority prediction. 
+Some Wrong Ideas 
+Duplicate minority always fix problem, model not work always. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Intro 
+Monitor model after use to check performance. 
+Track 
+ Accuracy, error, latency 
+ Feature change 
+ Missing data 
+Why 
+Catch data drift, model drop performance. Some students check one time, think enough. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch Learning 
+Train whole data, stable but slow, need retrain with new data. 
+Online Learning 
+Train step by step with new data. Good for sensor, click stream, stock. 
+Challenge 
+Online model forget old knowledge, noisy, hard evaluation. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Intro 
+Feature leakage when model see info it no should see. 
+Cause 
+ Future data in feature 
+ Wrong preprocessing before split 
+ Same entity in train and test 
+Impact 
+ Accuracy look high but real prediction fail 
+ Hard to debug 
+ Some student think shuffle fix all but not true 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Intro 
+Evaluation pipeline check model in all step. 
+Validation 
+Use to choose best model and set hyperparameter. 
+Testing 
+Final check model before deploy. 
+Deployment 
+Monitor real data, detect drift, error. 
+Importance 
+Separate prevent overfit and show real performance. Some think mix all data okay but no. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Intro 
+Transfer learning use old pretrained model knowledge for new task. 
+Mechanism 
+ Pretrained model learn general features 
+ Fine tune on new data for task 
+Use Case 
+ Medical image small dataset 
+ NLP text classify, sentiment 
+ Object recognition 
+Wrong Idea 
+Pretrained model always fix problem without tuning is wrong. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Intro 
+Reproducibility make experiment repeatable and verified. 
+Practice 
+ Fix random seed 
+ Save dataset same 
+ Version control code 
+ Log metrics, hyperparameter 
+ Use same environment 
+Importance 
+ Debug easier 
+ Result trustable 
+ Some ignore log, cannot repeat experiment 

@@ -1,0 +1,92 @@
+ID-T028 
+Name: Monika Bansal Roll no: 6 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Cleaning and Preparing Data (Variations of Bad Ideas) 
+ Initial Data Exploration: You should try to find the person who made the dataset and ask them why 
+they were so messy. It's their fault. 
+ Detection of Missing Values: If a value is missing, you should hide the column, then you can't see 
+the problem anymore. 
+ Handling Missing Data: Write a secret letter to the computer telling it what the missing numbers 
+should be. The computer will read it later. 
+ Identification of Inconsistencies: Use your favorite pen to draw over the inconsistent values, 
+turning them into little doodles. 
+ Standardization of Data: Make every number in the dataset equal to the number of minutes you 
+spent on this homework. 
+ Duplicate and Error Removal: Keep only the duplicate rows. If the data is repeated, it must be 
+extra important. 
+ Feature Transformation: Change the data types into something silly, like turning all the text into a 
+date, and all the numbers into "True" or "False." 
+ Final Validation Check: Get a dog to sniff the data. If the dog doesn't bark, the data is clean. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps you 
+would take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Performance (Variations of Bad Ideas) 
+ Evaluate Prediction Patterns: Use a magnifying glass on the predictions. Maybe the small numbers 
+are actually big if you look closely. 
+ Compare Training and New Data: The model is probably sad because it misses the old training 
+data. Put a picture of the old data next to it. 
+ Examine Feature Importance: The features are clearly fighting. Give them separate corners to sit 
+in so they behave. 
+ Check Model Complexity: The model is not giving good answers because it's too boring. Add 
+flashing lights to the computer to make it more exciting. 
+ Improve Data Quality: Buy the model a nice new pillow so it can sleep better. A well-rested model 
+predicts better. 
+ Refine Feature Engineering: Use glitter and stickers to decorate the data columns. Pretty features 
+perform better. 
+ Parameter Adjustment: Change the settings to the names of cartoon characters. Use "Bugs Bunny" 
+for the learning rate. 
+ Retraining and Testing: Only train the model at midnight, because that's when the internet works 
+best. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors you 
+would consider before selecting the algorithm. 
+Factors Influencing Algorithm Selection (Variations of Bad Ideas) 
+ Problem Definition: Whatever the problem is, just use the first algorithm you see in the textbook. 
+It's probably the most famous one. 
+ Data Size and Availability: If the data is small, the algorithm should be very tall. If the data is big, 
+the algorithm should be short and round. 
+ Data Type and Structure: If the data is about animals, pick an algorithm that has an animal in its 
+name, like "K-Nearest Neighbors" (because neighbors might have pets). 
+ Interpretability Requirement: Choose the algorithm that uses the most confusing math symbols. If 
+it's hard to read, it must be smart. 
+ Accuracy Requirements: You don't need high accuracy. Just tell the client you got 100% and hope 
+they don't check. 
+ Training and Prediction Speed: Choose the slowest one and tell people it’s doing deep, thoughtful 
+work. 
+ Computational Resources: Choose an algorithm that requires exactly three specific computers that 
+are currently being used for something else. 
+ Scalability Needs: If the data scales, just use a ladder to reach the high numbers. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain how 
+you would identify the cause and what actions you would take. 
+Identification and Corrective Actions (Variations of Bad Ideas) 
+ Continuous Monitoring: Play soothing music for the model. It's just stressed out. 
+ Data Drift Detection: The data is trying to run away. Use virtual duct tape to keep the new data 
+stuck to the old data. 
+ Concept Drift Analysis: The model is simply tired of making the same kind of predictions. Give it a 
+vacation. 
+ Error Trend Analysis: Log out of the system. If you can't see the errors, they aren't happening. 
+ User Feedback Collection: Tell the users they are mistaken and that the predictions are actually 
+genius, they just don't understand genius. 
+ Update Training Dataset: Delete the most recent data because it caused the problem. Punish the 
+bad data. 
+ Model Retraining: Get a magic 8-ball and ask it if the model should be retrained. Follow its advice. 
+ Performance Validation: Say that the poor performance is actually a new, advanced feature of the 
+model. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Non-Metric-Based Model Comparison (Variations of Bad Ideas) 
+ Prediction Behavior Analysis: Give Model A a compliment and Model B a stern warning. The one 
+that works better wins. 
+ Error Type Comparison: The model that makes the most ridiculous, funny errors is the better one, 
+for entertainment value. 
+ Model Explainability: Choose the model whose code is shortest. Fewer lines of code means less 
+chance of mistakes. 
+ Robustness Testing: Run the models on a computer with a cracked screen. The one that survives is 
+more robust. 
+ Deployment Complexity: Pick the one that requires you to press the fewest buttons to start it. 
+ Resource Efficiency: Whichever model uses the least amount of electricity is better for the planet, 
+and therefore better overall. 
+ Consistency Over Time: Ask your mom which model she thinks is nicest. 
+ Practical Usefulness: The model that can print its results on colored paper is clearly superior. 

@@ -1,0 +1,109 @@
+ID-T005 
+Name: Rani Singh Roll no: 22 
+Class : Ty Bsc IT 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine learning? 
+The core different between old way code and new way ML it is about how the logic gets built, 
+really. 
+1. Old system, human programmer must supply all the rule sets, very explicitly. These rules 
+they are static. 
+2. ML system, you provide the input data and the verified output labels, so the algorithm it 
+infers the rule system itself, using statistical means. 
+3. Traditional Logic it is fixed; ML logic it is adaptive. 
+4. Traditional relies on deterministic execution. ML relies on probabilistic optimization. 
+5. ML it is essential for high-dimensional non-linear systems because writing manual rules is not 
+possible for those things. 
+6. The output of traditional is the answer; the output of ML is the model which is the 
+functional rule map. 
+7. ML it can generalize patterns to unseen data, which traditional code cannot do. 
+8. The goal of ML it is to minimize the generalization error. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a Decision Tree. 
+Entropy and Information Gain they are the critical math measures used for tree building. 
+1. Entropy it is a quantification of the impurity or the total disorder inside a node's classification 
+mix. 
+2. Maximum uncertainty it is the maximum entropy (at 0.5 probability), which is what the 
+tree wants to reduce. 
+3. Zero entropy it means the node is perfectly pure (all same class). 
+4. Information Gain it is the measure of the reduction in that entropy which is achieved when 
+you perform a specific split on a specific feature. 
+5. It quantifies the value of a feature for reducing uncertainty and achieving purity. 
+6. The greedy algorithm it always selects the feature that maximizes that reduction (the biggest 
+gain) so the splits they are the most efficient at making the children nodes purer. 
+7. This selection process it is fundamental to Decision Tree construction to minimize the average 
+path length. 
+8. It guides the decision on where to partition the data at each node. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what function does 
+it use to map its output to a probability? 
+Logistic Regression it is a classifier model, not for regression, very importantly. 
+1. Problem Solved: It solves the binary classification problem by modeling the probability of an 
+instance belonging to the positive class. 
+2. It is a generalized linear model that first calculates a linear combination of input features. 
+3. Mapping Function Used: This raw output it is then passed through the Sigmoid function (or 
+Logistic function). 
+4. The Sigmoid function it is necessary because it squashes the score from an infinite real number 
+range $(-\infty, \infty)$ into a value strictly between zero and one. 
+5. This bounded zero-to-one output it is the required probability range. 
+6. The Sigmoid non-linearity it is what enables the classification interpretation of the model's 
+result. 
+7. The model determines the class by comparing the output probability to a threshold (usually 
+0.5). 
+8. It finds the optimal hyperplane that separates the two classes. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, rather than 
+learned during training. 
+Hyperparameters they are the external settings that control the learning process. They are not 
+learned by the model itself. 
+1. Learning Rate (in Gradient Descent): It is the step size for the optimizer. It needs careful 
+tuning because too high causes oscillations, too low causes very slow convergence. 
+2. Number of Neighbors (K in KNN): This is the number of local data points that are used for 
+the final vote. Small K means high variance, and large K means high bias. 
+3. Regularization Strength (Alpha or C): This controls the penalty on the size of the model's 
+parameters. It is tuned to manage the model complexity and to reduce the tendency for 
+overfitting. 
+4. Maximum Depth (in Decision Trees): This is the limit set on how many levels the tree can 
+grow to control complexity. 
+5. These settings they are optimized using cross-validation techniques. 
+6. Their values determine the capacity and the speed of the learning algorithm. 
+7. They are not found through the minimization of the loss function. 
+8. They must be set a priori to define the model structure. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Customer Churn Modeling: Using classification models to predict which users they are most 
+likely to stop their service. 
+2. Recommendation Engines: Employing collaborative filtering to suggest new products or media 
+to a specific user. 
+3. Fraud Detection: Using anomaly detection to flag suspicious financial transactions in real-time. 
+4. Supply Chain Forecasting: Using time series models to predict future demand and optimize 
+inventory and logistics. 
+5. Quality Assurance (Computer Vision): Models automatically inspect manufactured goods on 
+the assembly line for defects with high speed and consistency. 
+B-2. What are training, validation, and test sets? Why are they used? 
+These are three distinct data partitions that are required for reliable model development. 
+1. Training Set: Used to fit the model's parameters (learning the logic). 
+2. Validation Set: Used during development to tune hyperparameters and select the best model. 
+3. Test Set: Used only once for the final, unbiased assessment of generalization performance. 
+4. Importance is high because it prevents data leakage and provides an accurate estimate of out
+of-sample error. 
+5. This split it is essential to ensure the model generalizes well to unseen data. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) it is a resampling procedure, typically K-Fold, that estimates the generalization 
+error robustly. 
+1. It works by splitting the data into K folds, then training K times, each time using one fold 
+for testing. 
+2. The average score it is the final performance estimate. 
+3. Importance is high because it gives a stable metric that is independent of a single random 
+split. 
+4. This is essential for reliable hyperparameter tuning and model selection. 
+5. It maximizes the use of the available data by using all of it for both training and testing 
+across different iterations. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a tabular summary of a classifier's performance, showing the counts of True 
+Positives, False Positives, True Negatives, and False Negatives. 
+1. Precision: It is the accuracy of the positive predictions ($\text{TP} / (\text{TP} + 
+\text{FP})$), focusing on minimizing False Positives. 
+2. Recall: It is the fraction of actual positive cases that were correctly identified ($\text{TP} 
+/ (\text{TP} + \text{FN})$), focusing on minimizing False Negatives. 
+3. F1-Score: It is the harmonic mean of Precision and Recall, which is used to balance their 
+trade-off. 
+4. These metrics they are superior to overall accuracy for evaluating real-world models, especially 
+with imbalanced datasets. 
+5. The matrix provides a visual breakdown of the specific errors the model makes. 

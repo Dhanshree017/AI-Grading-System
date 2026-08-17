@@ -1,0 +1,27 @@
+
+
+--- PAGE 1 ---
+ID — T015
+Machine Learning Exam
+Total Marks 70
+SY- Computer Science
+
+Date-22-05-2023
+A | Attempt any 5 ( each 8 marks)
+a) Explain the different types of Machine Learning evaluation metrics used for classification and regression tasks. Describe how accuracy, precision, recall, F1 score, help in understanding model performance.
+b). Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and discuss the importance of the parameter k.
+c). What is Data Imbalance in Machine Learning? Explain its impact on model performance and discuss techniques used to handle
+d). Explain the working of Gradient Boosting in detail. Discuss how it builds models sequentially and how weak learners are combined to form a strong model.
+e). Explain the concept of Transfer Learning. Discuss how pre-trained models are used to solve new tasks with limited data and mention common applications of transfer learning.
+f). What are Hyperparameters in Machine Learning? Explain why they are important and describe common hyperparameters for algorithms like Decision Trees, Neural Networks, and Gradient Boosting models.
+B | Attempt any 6 (5 marks each)
+a). Explain the main steps involved in data preprocessing in machine learning.
+b). What is ensemble learning? Describe the working of bagging and boosting methods.
+c). Explain the need for feature scaling and differentiate between normalization and standardization.
+d). What is cross-entropy loss? Describe its use in classification models.
+e). Explain the role of optimization algorithms in training machine learning models.
+f). What is dimensionality reduction? Describe any one method used for it.
+g). Explain how a decision tree works and mention its advantages and disadvantages.
+
+
+--- PAGE 2 ---

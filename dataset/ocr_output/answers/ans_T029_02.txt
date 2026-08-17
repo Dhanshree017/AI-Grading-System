@@ -1,0 +1,46 @@
+ID-T029 
+Name: Anoop Verma Roll no: 2 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+Part A: Detailed Explanations (5 Marks Each) 
+A-a. Model Robustness in Machine Learning 
+Concept: Robustness refers to a model's ability to maintain its performance and provide accurate 
+predictions even when faced with "noisy," corrupted, or adversarial input data that differs from the training 
+distribution.1 
+ Importance: * Safety: In critical systems like self-driving cars, a robust model must ignore sensor 
+noise or "adversarial attacks" (e.g., tape on a stop sign). 
+o Reliability: It ensures the model doesn't fail when real-world data is slightly "messier" than 
+the clean data used in the lab. 
+ How to Improve: 
+o Data Augmentation: Adding noise or variations to the training data.2 
+o Adversarial Training: Explicitly training the model on examples designed to fool it. 
+o Regularization: Techniques like Dropout or 3$L_1/L_2$ weight decay prevent the model 
+from becoming too sensitive to specific input features.4 
+A-b. Role of Data Representation 
+Concept: Data representation (or Feature Engineering) is the process of transforming raw data into a format 
+that a machine learning algorithm can understand (vectors, tensors, or graphs).5 
+ Impact on Outcomes: 
+o Simplification: A good representation (e.g., using "Area" instead of "Length" and "Width" 
+for house price prediction) can make a complex non-linear problem linearly separable. 
+o Dimensionality: Representing data with too many irrelevant features leads to the "Curse of 
+Dimensionality," slowing down learning and causing overfitting.6 
+o Data Type Handling: Converting categorical data (like "Red" or "Blue") into "One-Hot 
+Encoding" allows mathematical models to process non-numeric concepts.7 
+A-c. Challenges in Scaling ML Systems 
+Scaling involves moving from a local prototype to a production system serving millions of users. 
+ Data Size: Managing Petabytes of data requires distributed storage (HDFS) and parallel processing 
+(Spark).8 
+ Model Complexity: Larger models (like LLMs) require massive GPU clusters and specialized 
+optimization to keep "inference latency" low.9 
+ Infrastructure: Setting up CI/CD pipelines for ML (MLOps) to automate retraining and 
+deployment.10 
+ Maintenance: "Data Drift" occurs when real-world data changes over time, requiring the system to 
+be constantly updated and monitored for performance decay.11 
+A-d. Transfer of Knowledge (Transfer Learning) 
+Concept: Transfer Learning is a technique where a model developed for one task is reused as the starting 
+point for a model on a second, related task.12 
+ How it Improves Learning: 
+o Reduced Data Needs: You don't need millions of images to train a medical AI if you start 
+with a model that already knows how to recognize basic shapes and textures from ImageNet. 
+o Faster Convergence: Since the model already "knows" something, it reaches high accuracy 
+much faster than training from scratch. 

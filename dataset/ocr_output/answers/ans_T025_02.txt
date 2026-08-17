@@ -1,0 +1,92 @@
+ID-T025 
+Name: aman sharma Roll no:2 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+B ] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine learning 
+can be used to analyze customer behavior, product data, and past returns to reduce return 
+rates. 
+Understanding the Problem 
+Product returns increase operational cost, reduce profit margins, and negatively impact customer satisfaction. 
+Returns often occur due to incorrect product expectations, size mismatch, poor quality perception, or misleading 
+descriptions. 
+Role of Machine Learning 
+Machine learning can analyze large volumes of historical data such as customer browsing behavior, purchase history, 
+product attributes, reviews, and past return records. By identifying hidden patterns, ML models can predict the 
+probability of a product being returned before the purchase is finalized. 
+Data Used 
+Customer data includes demographics, browsing time, click patterns, and previous return behavior. Product data 
+includes size charts, images, descriptions, price, and category. Return data includes reasons for return, frequency, 
+and timing. 
+Model Behavior 
+Classification models predict whether a product is likely to be returned. Recommendation systems suggest products 
+with lower return probability. NLP models analyze reviews to identify misleading descriptions. 
+Business Impact 
+ML improves recommendation accuracy, enhances product descriptions, optimizes size suggestions, and helps 
+sellers improve product quality. This significantly reduces return rates and improves customer trust. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, and 
+challenges involved. 
+Fraud Detection Problem 
+Banking fraud involves unauthorized or suspicious transactions that cause financial losses. Fraud patterns 
+continuously evolve, making rule-based systems insufficient. 
+Data Sources 
+Transaction data includes transaction amount, location, time, merchant type, device information, and customer 
+spending history. Additional data includes IP address, transaction frequency, and velocity patterns. 
+Machine Learning Approach 
+Supervised learning models are trained on historical labeled data to classify transactions as fraud or non-fraud. 
+Unsupervised models detect anomalies that deviate from normal spending behavior. 
+Real-Time Model Behavior 
+The model evaluates each transaction instantly and assigns a fraud risk score. High-risk transactions trigger alerts, 
+require additional authentication, or are blocked automatically. 
+Challenges 
+Fraud data is highly imbalanced, fraud patterns change frequently, false positives must be minimized, and models 
+must operate with very low latency. Continuous retraining is essential to maintain effectiveness. 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine learning can 
+support this task, from data collection to using predictions for better healthcare decisions. 
+Problem Overview 
+Patient readmission increases hospital costs and indicates poor quality of care. Early identification of high-risk 
+patients is essential for better treatment planning. 
+Data Collection 
+Hospitals collect patient demographics, medical history, diagnosis details, treatment records, lab results, medication 
+data, and lifestyle factors. 
+Model Development 
+ML models analyze historical patient data to identify patterns associated with readmission. Classification models 
+predict whether a patient is likely to be readmitted within a specific time frame. 
+Use of Predictions 
+Doctors and care teams use predictions to plan follow-up visits, provide personalized discharge instructions, and 
+allocate resources efficiently. 
+Healthcare Benefits 
+ML reduces readmission rates, improves patient outcomes, optimizes hospital resources, and supports data-driven 
+healthcare decisions. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how machine 
+learning can help identify and limit misinformation while considering ethical challenges. 
+Fake News Challenge 
+Fake news spreads rapidly on social media, influencing public opinion and causing social harm. Manual moderation is 
+not scalable for large platforms. 
+Machine Learning Techniques 
+Natural Language Processing models analyze text content, headlines, and writing patterns. Image and video models 
+detect manipulated media. Network analysis studies how misinformation spreads. 
+Detection Process 
+ML models classify content as genuine or fake based on language style, source credibility, user behavior, and sharing 
+patterns. Suspicious content is flagged for review or limited in reach. 
+Ethical Challenges 
+Bias in training data may lead to unfair censorship. Over-moderation may impact freedom of speech. Transparency 
+and fairness are critical when deploying such systems. 
+Balanced Approach 
+Human review combined with ML ensures responsible moderation while maintaining ethical standards. 
+B-6. An online education platform wants to personalize learning for students. Describe how 
+machine learning can be used to recommend content, track performance, and improve 
+learning outcomes. 
+Need for Personalization 
+Students have different learning speeds, preferences, and strengths. A single learning path is ineffective for all 
+learners. 
+Data Collection 
+Platforms collect data on student interactions, quiz scores, time spent on lessons, learning patterns, and feedback. 
+Machine Learning Applications 
+Recommendation systems suggest personalized courses and resources. Performance prediction models identify 
+weak areas. Adaptive learning systems adjust content difficulty. 
+Tracking and Feedback 
+ML continuously tracks student progress and provides feedback to both students and instructors. 
+Learning Outcomes 
+Personalized learning improves engagement, retention, academic performance, and overall learning satisfaction. 

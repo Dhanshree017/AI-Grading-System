@@ -1,0 +1,306 @@
+ID-T002 
+Name : Sanika kumar   Roll no: M0011 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following  
+A-1. What is machine learning? 
+Machine Learning (ML) is the field of study that enables computer systems to learn patterns 
+from data and generalize that knowledge to make predictions or decisions without being 
+explicitly programmed for the task.1 
+1. Tom Mitchell Definition: ML is characterized by improving performance 2$P$ on a task 
+3$T$ with experience 4$E$.5 
+2. Core Process: It involves training an algorithm on data to find an optimal mapping 
+function that minimizes a defined loss function. 
+3. Generalization Goal: The primary objective is to minimize the generalization error 
+(performance on unseen data), not just the training error.6 
+4. Data-Driven: ML represents the data-driven approach to creating Artificial 
+Intelligence (AI), replacing hard-coded rules with statistically derived inference.7 
+5. Interdisciplinary: It draws heavily on statistics, optimization theory, and computer 
+science to build complex predictive models.8 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff is a fundamental concept where the effort to reduce one type of 
+error (Bias) inherently increases the other (Variance), and vice-versa, determining the total 
+expected generalization error.9 
+1. Bias (Underfitting): Error from oversimplification; the model is too rigid to capture the 
+true underlying pattern (high error on training and test data).10 
+2. Variance (Overfitting): Error from excessive complexity; the model is too sensitive to 
+the specific noise in the training data (low training error, high test error).11 
+3. Total Error Formula: 12$\text{Total Error} \approx \text{Bias}^2 + \text{Variance} + 
+\text{Irreducible Error}$.13 
+4. Inverse Relationship: Increasing model complexity reduces bias but increases variance.14 
+5. Significance: It guides the selection of the optimal model complexity that minimizes 
+the total error on unseen data. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting occurs when a model learns the training data, including its specific noise and 
+statistical fluctuations, too well, resulting in excellent performance on training data but poor 
+performance on unseen test data (high variance).15 
+1. Symptom: Large disparity between low training error and high validation/test error.16 
+2. Cause: The model's capacity (complexity) is too high relative to the size or noisiness of 
+the training data. 
+3. Avoidance Technique (Regularization): Applying penalties (17$\text{L1}$ or 
+18$\text{L2}$) to the model's coefficients to constrain their magnitude and 
+complexity.19 
+4. Avoidance Technique (Cross-Validation/Pruning): Using techniques like k-fold cross
+validation for robust hyperparameter tuning or pruning in tree-based models.20 
+5. Avoidance Technique (Data/Early Stopping): Increasing the training data size or using 
+Early Stopping (halting training when validation error increases).21 
+A-6. What are a training set, validation set, and test set? 
+These are the three disjoint subsets into which a dataset is partitioned to ensure a structured 
+and unbiased development and evaluation process for a machine learning model.22 
+1. Training Set (Largest Portion): Used to fit and adjust the model's parameters (weights 
+and biases) by minimizing the loss function.23 
+2. Validation Set (Tuning): Used to tune the model's hyperparameters (external settings 
+like learning rate, number of layers) and perform model selection without touching the 
+test set. 
+3. Test Set (Held-Out Evaluation): Used only once at the very end to provide a final, 
+unbiased estimate of the model's performance (generalization error). 
+4. Purpose: To prevent information leakage and provide an accurate measure of how well 
+the model generalizes to new data.24 
+5. Typical Split: Commonly split using ratios like $60\% / 20\% / 20\%$ or $70\% / 
+15\% / 15\%$. 
+A-7. What is cross-validation? 
+Cross-validation (CV) is a resampling procedure used to robustly estimate the generalization 
+performance of a model and optimize its hyperparameters by systematically testing it on 
+different subsets of the data.25 
+1. Goal: To obtain a less optimistic and less biased estimate of the model's true 
+performance compared to a single train-test split. 
+2. k-Fold CV: The most common method, where the dataset is split into 26$k$ equal
+sized folds.27 
+3. Procedure: The model is trained 28$k$ times; in each iteration, one unique fold is used 
+as the test/validation set and the remaining 29$k-1$ folds are combined to form the 
+training set.30 
+4. Final Score: The 31$k$ results (e.g., accuracy or MSE) are averaged to produce a single 
+performance metric.32 
+5. Application: Essential for hyperparameter tuning and model selection when data is 
+limited, ensuring the model's stability across different data partitions. 
+B) Any 4 out of following  
+B-1. Explain the difference between classification and regression. 
+Classification and Regression are the two primary tasks in Supervised Learning, 
+fundamentally distinguished by the mathematical nature of the target variable (33$Y$) they 
+are designed to predict.34 
+1. Classification Task: Predicts a discrete class label or category.35 The output belongs to a 
+finite, pre-defined set (e.g., Is this spam or not spam?). 
+2. Classification Output: The result is a class label (e.g., 0, 1, or Apple, Banana) or a 
+probability distribution over the possible classes.36 
+3. Classification Objective: The model aims to find optimal decision boundaries that 
+separate the different class regions in the feature space. 
+4. Classification Metrics: Evaluated using metrics like Accuracy, Precision, Recall, F1
+Score, and AUC-ROC.37 
+5. Regression Task: Predicts a continuous, real-valued output.38 The result is a number 
+that can fall anywhere within a specified range (e.g., What will the house price be?). 
+6. Regression Output: The result is a single numerical value (e.g., $5.3$, $101.9$). 
+7. Regression Objective: The model aims to fit a function/curve to the data points to 
+minimize the vertical distance between the prediction and the actual value. 
+8. Regression Metrics: Evaluated using metrics like Mean Squared Error (MSE), Root 
+Mean Squared Error (RMSE), and R-squared (39$R^2$).40 
+B-3. What is a decision tree, and how is it pruned? 
+A Decision Tree (DT) is a non-parametric supervised learning algorithm that constructs a 
+tree-like model of decisions, ultimately aiming to partition the feature space into 
+homogeneous regions based on recursive binary splits.41 
+1. Structure: It consists of a root node (representing the entire dataset), internal nodes 
+(representing test conditions on features), branches (outcomes of the test), and leaf 
+nodes (final prediction/class label).42 
+2. Splitting Mechanism (Greedy): At each node, the algorithm performs a greedy search 
+to find the single best feature and split point that maximizes Information Gain (or 
+minimizes Gini Impurity). 
+3. Information Gain (IG): Measures the reduction in entropy (disorder) achieved by the 
+split; the split that yields the highest IG is chosen.43 
+4. Pruning Necessity: DTs are prone to overfitting (high variance) because they can grow 
+deep enough to perfectly memorize the training data, including noise. 
+5. Pruning Definition: Pruning is the technique of reducing the size and complexity of the 
+decision tree by removing sections of the tree that provide little predictive power (i.e., 
+those that primarily fit noise).44 
+6. Pre-Pruning (Early Stopping): Stopping the tree growth before it perfectly fits the 
+data by setting constraints like maximum depth or minimum samples per leaf.45 
+7. Post-Pruning (Cost-Complexity Pruning): Growing the full tree first and then 
+simplifying it by replacing subtrees with leaf nodes based on performance on a 
+validation set, often using a complexity parameter. 
+8. Result: Pruning introduces a small amount of bias to significantly reduce variance, 
+improving the model's generalization ability.46 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) is an advanced, highly effective ensemble learning algorithm that 
+combines multiple Decision Trees, leveraging the principle of Bagging (Bootstrap Aggregating) 
+to achieve high predictive accuracy and robustness.47 
+1. Ensemble Type: It is a Bagging method where the base learners are Decision Trees. 
+2. Bootstrap Sampling (Diversity 1): Each base tree in the forest is trained on a different 
+bootstrap sample (sampling with replacement) of the original training data, ensuring 
+the trees are trained on slightly different inputs.48 
+3. Random Feature Subspace (Diversity 2): Crucially, when an individual tree searches for 
+the best split at any node, it considers only a random subset of the available features 
+(e.g., 49$\sqrt{\text{total features}}$), not all features.50 
+4. Purpose of Feature Randomness: This extra step ensures the individual trees are 
+decorrelated (they make different errors), which is the key to the ensemble's success.51 
+5. Aggregation (Prediction): For classification, the final prediction is determined by a 
+majority vote across all trees. For regression, it is the average of all tree predictions. 
+6. Advantages: RF significantly reduces variance (overfitting) while maintaining low bias, 
+is naturally robust to noise/outliers, and provides an estimate of feature importance. 
+7. Disadvantage: RF trades off the high interpretability of a single Decision Tree for 
+better performance, making it more of a "black-box" model. 
+8. Model Capacity: It is generally considered a low-bias, low-variance model when a 
+sufficiently large number of diverse trees are used. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+The Support Vector Machine (SVM) is a powerful and flexible supervised learning algorithm 
+used for both classification and regression, primarily focused on finding the optimal 
+separating boundary between classes.52 
+1. Objective (Classification): SVM's primary goal is to find the hyperplane (decision 
+boundary) that maximizes the margin between the nearest data points of different 
+classes.53 
+2. Hyperplane: For 2D data, it's a line; for 3D data, it's a plane; and for higher 
+dimensions, it's a generalized hyperplane. 
+3. Maximum Margin: The margin is the distance between the hyperplane and the closest 
+training data points from any class. Maximizing this margin improves generalization 
+and robustness. 
+4. Support Vectors (SVs): These are the critical data points that lie closest to the 
+hyperplane (on the margin boundary or within the margin).54 They are the only 
+points that matter for defining the hyperplane. 
+5. Sparsity: Because only the SVs define the model, SVM is computationally efficient, as 
+non-support vectors can be discarded.55 
+6. Kernel Trick (Non-linear Data): SVM can handle non-linearly separable data by 
+implicitly mapping the original features into a higher-dimensional feature space where 
+a linear separation (hyperplane) becomes possible.56 
+7. Soft Margin: In cases where data is inseparable or noisy, a soft margin is used, 
+allowing some data points to violate the margin or even cross the hyperplane to find a 
+more generalized boundary.57 
+8. Robustness: SVM is highly effective in high-dimensional spaces and is relatively robust 
+to outliers due to the focus on support vectors.58 
+C) Attempt All  
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) is a simple, highly efficient, and probabilistic classification algorithm based 
+on Bayes' Theorem with a critical, simplifying assumption of conditional independence 
+between features.59 
+1. Bayes' Theorem Basis: The algorithm calculates the posterior probability 
+60$P(\text{Class}|\text{Features})$—the probability of a class given the observed 
+features—using the prior probability 61$P(\text{Class})$ and the likelihood 
+62$P(\text{Features}|\text{Class})$.63 
+2. Naïve Assumption: It assumes that all features are conditionally independent of each 
+other given the class label.64 This is often false in reality (hence "Naïve") but simplifies 
+the calculation significantly. 
+3. Conditional Independence Implication: The likelihood 65$P(\text{Features}|\text{Class})$ 
+simplifies to the product of individual feature likelihoods: 66$\prod_{i} 
+P(\text{Feature}_i|\text{Class})$.67 
+4. Training: Training involves simply calculating the prior probabilities of each class and 
+the likelihoods of each feature value for each class (frequency counts). 
+5. Prediction: To classify a new data point, it calculates the posterior probability for 
+every possible class and chooses the class with the highest probability (Maximum A 
+Posteriori - MAP estimate). 
+6. Efficiency and Use: NB is extremely fast to train and predict, making it ideal for large 
+datasets, text classification (like spam filtering), and real-time inference.68 
+7. Variants: Common variants include Gaussian NB (for continuous data assuming a 
+normal distribution) and Multinomial NB (popular for text data).69 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering are distinct machine learning algorithms 
+that share the parameter 70$k$ but serve completely different purposes within the learning 
+paradigms.71 
+Feature k-Nearest Neighbors (KNN) k-Means Clustering 
+Learning Type 
+Supervised Learning 
+(Classification or Regression) 
+Unsupervised Learning 
+(Clustering/Grouping) 
+Goal/Objective 
+Predict the label/class of a new 
+data point based on its neighbors' 
+labels. 
+Partition $n$ observations into $k$ non
+overlapping clusters where each point 
+belongs to the cluster with the nearest 
+mean (centroid). 
+Training Phase 
+Lazy Learner: Training is 
+minimal; it simply stores the 
+entire training dataset. 
+Active Learning: Involves iteratively 
+calculating and adjusting cluster centroids 
+to minimize the within-cluster sum of 
+squares (WCSS). 
+Prediction 
+Phase 
+Instance-Based: Calculates the 
+distance to all training points 
+and takes a majority 
+vote/average of the $k$ nearest 
+neighbors. 
+No formal prediction phase: The 
+algorithm outputs the final cluster 
+assignments and the $k$ optimized 
+centroid locations. 
+Parameter k 
+Represents the number of 
+neighbors to consider for the 
+vote/average. 
+Represents the pre-defined number of 
+clusters the algorithm must find. 
+ 
+C-3. What is gradient descent? 
+Gradient Descent (GD) is a first-order iterative optimization algorithm used to find the 
+optimal set of parameters (weights and biases) of a model that minimizes a differentiable 
+cost function.72 
+1. Objective: To find the parameters at which the cost function (e.g., MSE or Cross
+Entropy) reaches its local or global minimum. 
+2. Iterative Nature: The algorithm starts with random parameters and repeatedly 
+updates them in small steps toward the minimum. 
+3. Gradient: The gradient (calculated using calculus) represents the slope of the cost 
+function with respect to the parameters at the current position.73 
+4. Descent Step: The algorithm moves in the direction opposite to the gradient (the 
+steepest descent), as the negative gradient points toward the lowest point.74 
+5. Update Formula: $\text{New Parameter} = \text{Old Parameter} - (\text{Learning 
+Rate} \times \text{Gradient})$. 
+6. Learning Rate ($\eta$): A hyperparameter that controls the size of the step taken in 
+each iteration. A small rate is slow but safe; a large rate can overshoot the 
+minimum.75 
+7. Convergence: The process stops (converges) when the parameter updates become 
+negligibly small or a maximum number of iterations is reached. 
+B-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) are two variants of 
+the Gradient Descent optimization algorithm, distinguished by the amount of data used to 
+compute the gradient in each update step.76 
+Feature 
+Batch Gradient Descent (BGD) 
+Data Used per 
+Update 
+The entire training dataset is used 
+to compute the gradient. 
+Stochastic Gradient Descent (SGD) 
+Only one single training example is 
+used to compute the gradient. 
+Computational 
+Cost 
+Very high per iteration, especially 
+for large datasets. 
+Very low per iteration (fast updates). 
+Feature Batch Gradient Descent (BGD) Stochastic Gradient Descent (SGD) 
+Memory 
+Requirement 
+High (needs to hold entire dataset 
+in memory for the gradient 
+calculation). 
+Low. 
+Update 
+Frequency 
+Slow (one update per epoch, or full 
+pass over the data). 
+Fast (one update per training 
+example). 
+Convergence 
+Path 
+Smooth and direct descent toward 
+the minimum. 
+Noisy and oscillatory path, but 
+generally faster. 
+Convergence 
+Point 
+Guaranteed to converge to the local 
+(or global) minimum if the learning 
+rate is small enough. 
+Oscillates around the minimum due 
+to high variance gradients, often 
+achieving a good-enough solution 
+quickly. 
+Use Case 
+Small to moderately sized datasets 
+where computational power is not 
+an issue. 
+Very large datasets (Big Data) and 
+deep neural networks where speed is 
+critical. 
+ 

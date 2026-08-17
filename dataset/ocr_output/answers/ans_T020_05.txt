@@ -1,0 +1,77 @@
+ID-T020 
+Name: kartik donde Roll no: 5 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Data drift and concept drift make model not work properly after some time because data and 
+rules change. Data drift happen when the input features distribution change slowly or fast. 
+For example people buy different things than before. Concept drift happen when relation 
+between input and output change like old pattern of loan approval is not same now. Types of 
+drift include sudden change, gradual change, recurring patterns and step by step drift. To 
+detect drift, we can check model performance or compare feature distribution over time. 
+Handling drift sometimes need retraining, adding new data, online learning or mixing old 
+and new models. Some people also just restart system but it not always help. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Embedding is technique to turn complicated data into small numbers so model can 
+understand better. For text, words or sentences become vectors, and similar meaning words 
+are close in space. For images, deep networks give feature vectors that represent shapes, 
+color and structure. Categorical features can use embedding to replace one-hot encoding and 
+reduce size. This help models learn patterns faster and better. Some students just assign 
+random numbers but model still train sometimes. Embeddings used in NLP, recommendation 
+system and vision tasks. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Model monitoring means checking model performance after deployment. Metrics tracked are 
+accuracy, error rate, drift in features, missing values, latency, throughput, and fairness. 
+Monitoring continuously is important because model can fail silently if input change, data 
+quality drop, or environment change. Alerts and retraining can be triggered based on 
+monitoring results. Without monitoring model may give wrong output for long time. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch learning train model on full dataset at once. Online learning update model one by one 
+or in small batches. Online learning is useful when data is coming continuously like stock 
+prices, click streams or sensors. Challenges of online learning include forgetting old 
+knowledge, noisy update, harder evaluation and stability problem. Batch learning is stable 
+but slow. Online learning adapt quickly but may be unstable. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+XAI explain why model gives particular output. Methods include feature importance, SHAP, 
+LIME, attention maps and counterfactuals. Helps user trust because they see reasoning. In 
+healthcare XAI explain diagnosis, in finance for credit scoring, in fraud detection to verify 
+predictions, in recruitment to show why candidate selected. Helps debugging and checking 
+for bias. Some visualization tools also used to show reasoning to non-technical people. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Feature leakage is when model sees data that it should not see during training. This make 
+model look very good in training and testing but fail in real use. Causes include using 
+features from future, wrong preprocessing, group leakage and target derived features. Model 
+becomes overconfident and make wrong prediction in production. Fixing leakage need 
+proper split and pipeline design. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Transfer learning use pretrained model knowledge for new task. This reduce training time 
+and labeled data need. Pretrained model already learn features like edges, shapes or language 
+patterns. Fine-tuning on new dataset adapt model to new task. Useful when dataset small, 
+problem similar to pretrained task, like medical images, NLP tasks, object recognition or 
+recommendation systems. Sometimes transfer learning not fully help if domain very 
+different. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Hyperparameter search find best settings like learning rate, regularization, tree depth. Grid 
+Search tries every combination, Random Search samples randomly. Grid Search systematic 
+but slow, Random Search faster and explore more. Both use validation metric to choose 
+model. Random sometimes miss optimal if unlucky, Grid always check all but slow for high 
+dimensions. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Reproducibility ensures experiment can repeat by same or different person. Helps check if 
+result real. Practices include fixing random seeds, version control code, storing datasets 
+properly, using same environment or container, logging hyperparameters and metrics, and 
+automated pipelines. Without reproducibility result may not be trusted and debugging very 
+hard. 

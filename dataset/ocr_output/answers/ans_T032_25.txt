@@ -1,0 +1,93 @@
+ID-T032 
+Name: Pravin Rai Roll no: 25 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (Each 5 Marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+Machine learning lifecycle means the full process of building a machine learning system 
+from starting idea till final usage and maintenance. This lifecycle is very important because 
+machine learning is not only training model but also managing data, results and changes over 
+time. 
+First step is problem definition. In this step, the real problem is clearly understood. If 
+problem is not defined properly then whole machine learning system will fail. In this stage 
+we decide what is the goal, what we want to predict and why machine learning is needed. 
+Many projects fail because this step is not done properly. 
+Next step is data collection. Data is collected from different sources like databases, 
+websites, sensors, logs or users. Data should be related to the problem. If data is less or 
+wrong then model performance will be poor. This step decides quality of model. 
+After collecting data, data preprocessing is done. Real world data is always messy. It 
+contains missing values, duplicate data, noise and errors. Preprocessing removes unwanted 
+data, fills missing values and makes data clean. This step is very time consuming but very 
+important. 
+Then comes feature engineering. Feature engineering means selecting important features 
+and removing unnecessary ones. Features are the inputs to machine learning model. Good 
+features help model learn better patterns. Poor features reduce accuracy even if algorithm is 
+good. 
+After this, model training is done. In this step, algorithm learns from data. Model tries to 
+find relation between input and output. Different algorithms can be tried to find best one. 
+Then model evaluation is performed. Evaluation checks how well model is performing on 
+unseen data. This step helps to know whether model is overfitting or underfitting. 
+Once model is satisfactory, model deployment is done. Deployment means using model in 
+real system like website, app or industry. 
+Finally, model monitoring and maintenance is required. Data changes with time so model 
+performance can reduce. Model must be retrained and updated regularly. 
+Thus machine learning lifecycle is continuous process not one time task. 
+A-b. Discuss the importance of feature representation and how it influences learning 
+outcomes in ML systems. 
+Feature representation means how raw data is converted into meaningful input for machine 
+learning model. This is very important because machine learning models do not understand 
+raw data directly. 
+Good feature representation helps model learn patterns easily. If features are clear and 
+meaningful, model accuracy improves. For example, if image data is poorly represented then 
+even best algorithm cannot perform well. 
+Feature representation also reduces complexity of model. When features are well designed, 
+model does not need to be very complex. This improves speed and performance. 
+Poor feature representation leads to poor learning. Model may learn wrong patterns or ignore 
+important information. This causes low accuracy and bad predictions. 
+Feature representation also affects generalization. If features capture real pattern, model 
+performs well on new data also. 
+Thus feature representation is one of the most important steps in machine learning and 
+directly influences learning outcomes. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance in real
+world ML applications. 
+Bias-variance trade-off explains why some models perform well on training data but poorly 
+on new data. 
+Bias means error due to simple assumptions. High bias model does not learn enough from 
+data. It misses important patterns and causes underfitting. 
+Variance means error due to sensitivity to data. High variance model learns too much 
+including noise. It performs well on training data but fails on new data. 
+There is trade-off because reducing bias increases variance and reducing variance increases 
+bias. Both extremes are bad. 
+In real-world applications, balance is required. Model should not be too simple and not too 
+complex. 
+Bias-variance trade-off is important in selecting model complexity and achieving good 
+generalization. 
+A-d. Describe how machine learning models handle noisy and incomplete data during 
+training. 
+Noisy and incomplete data is common in real world. Machine learning models must handle 
+such data properly. 
+First, data cleaning is used. Wrong, duplicate and irrelevant data is removed. Noise is 
+reduced to improve learning. 
+Second, missing values are handled. Missing values can be filled using average or removed 
+based on situation. 
+Third, robust algorithms are used. Some algorithms can handle noise better. 
+Fourth, feature selection removes noisy features. 
+Finally, validation techniques check whether noise is affecting model. 
+Thus models learn reliable patterns even with imperfect data. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? It is the iterative process where an 
+algorithm analyzes a training dataset to find the optimal internal parameters (weights) that 
+minimize a loss function, effectively "learning" the patterns in the data. 
+B-b. Define feature selection. Feature selection is the process of identifying and keeping only 
+the most relevant variables from a dataset, removing redundant or noisy features to simplify 
+the model and improve its accuracy. 
+B-c. What is meant by ground truth in ML? Ground truth refers to the direct, verified information or "true 
+label" provided in the training data, used as the benchmark to measure the accuracy of the model's 
+predictions. 
+B-d. What is model deployment? It is the engineering phase where a validated machine learning model is 
+integrated into a live production environment (like a server or cloud API) so it can process real-world data 
+and provide predictions. 
+B-e. Define learning from data. Learning from data is the ability of an algorithm to improve its performance 
+at a specific task over time by extracting statistical structures and rules from input examples without being 
+explicitly programmed. 

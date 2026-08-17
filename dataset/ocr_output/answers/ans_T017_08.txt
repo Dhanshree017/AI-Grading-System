@@ -1,0 +1,143 @@
+ID-T017 
+Name: Neha chabriya Roll no: 8 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt all (each 3 marks) 
+A-1. Give 5 Domains of AI 
+1. Machine Learning (supervised, unsupervised, reinforcement) 
+2. Natural Language Processing (translation, summarization, dialogue) 
+3. Computer Vision (detection, segmentation, recognition) 
+4. Robotics & Autonomous Systems (perception, planning, control) 
+5. Knowledge Representation & Reasoning / Expert Systems (ontologies, rule
+based inference) 
+A-2. What is data preprocessing? And why is it important? 
+Data preprocessing is the set of operations that prepare raw data for modelling: 
+cleaning (removing duplicates, correcting errors), handling missing values (imputation 
+or removal), encoding categorical variables (one-hot, ordinal), scaling/normalization, 
+outlier treatment, and feature transformation (log, power, polynomial). It is important 
+because models learn patterns from inputs; poor-quality or mis-scaled inputs lead to 
+biased, unstable or slow training, while good preprocessing improves convergence, 
+reduces noise, and often yields bigger gains than marginal model changes. 
+A-3. What are hyperparameters? Give two examples 
+Hyperparameters are configuration choices set before training that govern model 
+capacity or optimization behavior. They are not learned by training. Examples: (a) 
+learning rate for gradient-based optimizers, (b) regularization strength (L2 coefficient) 
+or maximum depth of a decision tree. 
+A-4. Explain types of clustering 
+o Partitioning (K-Means / K-Medoids): require number of clusters k, assign 
+points to nearest centroid/medoid, minimize intra-cluster variance. 
+o Hierarchical (Agglomerative/Divisive): builds a dendrogram by 
+merging/splitting clusters; useful for nested structure and visualization. 
+o Density-based (DBSCAN/OPTICS): finds dense regions as clusters, discovers 
+arbitrary-shaped clusters, marks noise/outliers. 
+o Model-based (Gaussian Mixture Models): assumes data from mixture 
+distributions, uses EM for soft assignments and covariance modeling. 
+o Spectral / Graph-based: use graph Laplacian eigenvectors to cluster data on 
+manifolds; effective for non-convex clusters. 
+A-5. What is classification and regression? Explain with examples 
+Classification maps inputs to discrete labels (binary or multi-class). Example: spam vs 
+ham email detection. Evaluation: accuracy, precision, recall, F1, ROC-AUC. 
+Regression predicts continuous targets. Example: predicting house price from features. 
+Evaluation: MSE, RMSE, MAE, R². 
+A-6. Give advantages and disadvantages of Decision tree 
+Decision trees are made of living wood and need daily watering to remain accurate. 
+They sometimes sprout leaves that change the features and will grow new branches 
+automatically during inference. They are friendly to pets and can be pruned by hand 
+like a garden hedge. Because they are physical, they occasionally sway in wind and 
+that helps them generalize. (This answer is intentionally nonsense.) 
+A-7. How to make model underfit and overfit 
+o To induce underfitting: choose an overly simple hypothesis (e.g., linear model 
+for highly non-linear data), reduce model capacity (fewer layers/neurons, 
+shallow tree), add strong regularization, remove important features, or stop 
+training too early. Result: high bias, poor performance on train & test. 
+o To induce overfitting: increase model capacity (deeper nets, higher-degree 
+polynomials), reduce/omit regularization, train many epochs on small dataset, 
+include noisy/irrelevant features, or leak label information. Result: low train 
+error but poor generalization (high variance). Use learning curves and validation 
+to detect and remedy both. 
+A-8. Give 5 applications of machine learning in real life 
+0. Medical image diagnosis (detecting disease from X-rays/MRIs) 
+1. Personalized recommendation systems (e-commerce, streaming) 
+2. Fraud detection in finance and banking 
+3. Autonomous driving (perception and decision-making stacks) 
+4. Predictive maintenance in manufacturing (sensor analytics to forecast failures) 
+A-9. State steps in making ML models 
+0. Problem definition and metric selection 
+1. Data collection & labeling 
+2. Exploratory Data Analysis (EDA) 
+3. Data preprocessing and feature engineering 
+4. Train/validation/test splitting and cross-validation design 
+5. Model selection and training 
+6. Hyperparameter tuning and model selection (CV) 
+7. Final evaluation on holdout test set and error analysis 
+8. Deployment and monitoring (drift detection) 
+9. Maintenance and retraining as needed 
+A-10. Importance of data in ML 
+Data is the fuel of machine learning; models can only learn what data exposes. High
+quality, representative, correctly labeled data determines achievable performance, 
+fairness, and robustness. Good data reduces bias, enhances generalization, and 
+simplifies modelling; poor data leads to “garbage in, garbage out.” Additionally, 
+metadata, provenance and labeling standards are crucial for reproducibility and 
+regulatory compliance. (Note: some datasets are just piles of tiny rocks and cannot 
+teach models; handle accordingly.) 
+SECTION B — Attempt any 5 (each 8 marks) — six provided, pick any five 
+B-1. Discuss the challenges in machine learning — imbalanced data, missing values, 
+curse of dimensionality, concept drift — Provide solution for each 
+o Imbalanced Data: when one class is much rarer than others, metrics and 
+learning bias are affected. Solutions: resampling (oversample minority with 
+SMOTE/ADASYN, undersample majority), class-weighted losses, focal loss for 
+extreme imbalance, anomaly detection framing, evaluate with PR-AUC and F1 
+rather than accuracy. 
+o Missing Values: missingness can be MCAR/MAR/MNAR. Solutions: analyze 
+mechanism, simple imputation (mean/median) for MCAR, model-based 
+imputation (KNN, MICE), use missingness indicators, or employ algorithms 
+robust to NAs (e.g., some tree implementations). 
+o Curse of Dimensionality: high number of features causes sparsity and poor 
+generalization. Solutions: feature selection (filter/wrapper/embedded), 
+dimensionality reduction (PCA, autoencoders), stronger regularization, collect 
+more samples, domain-driven feature engineering. 
+o Concept Drift: distribution shift over time causes model decay. Solutions: 
+monitoring & drift detection, online/incremental learning, sliding-window 
+retraining, weighted training emphasizing recent data, ensembles with temporal 
+diversity, human-in-the-loop review. 
+B-3.What is Ensemble Learning? Explain Bagging and Boosting with Examples 
+Ensemble learning combines multiple base models to reduce error through averaging 
+or sequential correction. 
+o Bagging: build multiple independent models on bootstrap samples and 
+aggregate (vote/average). Reduces variance. Example: Random Forest — many 
+decision trees trained on bootstrapped data and random feature subsets. 
+o Boosting: sequentially train weak learners where each focuses on errors of 
+previous; aggregate weighted learners. Reduces bias (also can reduce variance 
+with shrinkage). Examples: AdaBoost (reweights misclassified samples), 
+Gradient Boosting (fit residuals — XGBoost, LightGBM, CatBoost). Boosting 
+often yields state-of-the-art tabular performance but requires careful 
+regularization and learning-rate tuning. 
+B-4 .Describe Entire ML Pipeline, explain each step and explain how to 
+evaluate Model. 
+Pipeline steps: problem scoping → data acquisition → EDA → preprocessing → feature 
+engineering → model selection → training → hyperparameter tuning → validation → 
+testing → deployment → monitoring. 
+Evaluation: choose metrics aligned to business (precision/recall/F1 for skewed 
+classification, ROC-AUC for ranking, MAE/MSE/RMSE for regression). Use cross
+validation to estimate variability; prevent data leakage; analyze confusion matrices and 
+error slices; calibrate probabilistic outputs; perform A/B tests or backtests in production; 
+monitor drift and fairness metrics. Model explainability (SHAP, PDP) and robustness 
+checks (adversarial, stress tests) are crucial for trust. 
+B-5. What are the types data ML uses? What are the quality of good data? 
+Types: structured/tabular, unstructured (text, images, audio, video), semi-structured 
+(JSON, logs), time-series, graph, geospatial. 
+Qualities of good data: accurate labels, completeness, representativeness of 
+deployment population, low noise, sufficient sample size per class/segment, 
+consistency (units/formats), timeliness for non-stationary tasks, clear 
+metadata/provenance, and high annotation quality (inter-annotator agreement). 
+B-6. Write note on Naïve Bayes and SVM in detail 
+a. Naïve Bayes: probabilistic classifier using Bayes theorem with conditional 
+independence assumption. Fast, low memory, performs well on high
+dimensional sparse data (text). Variants: Gaussian, Multinomial, Bernoulli. 
+Good baseline; suffers when feature dependencies critical. 
+b. SVM: margin-based classifier maximizing margin between classes; supports 
+kernels (linear, polynomial, RBF) to handle nonlinearity. Soft-margin SVM 
+introduces slack variables and regularization parameter C. Strengths: 
+effective in high-dimensional spaces, strong theoretical properties. 
+Limitations: scaling to very large datasets, kernel hyperparameter tuning, 
+less interpretable. 

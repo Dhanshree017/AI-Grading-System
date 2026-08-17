@@ -1,0 +1,46 @@
+ID-T030 
+Name: Pranjal Mishra Roll no: 232521 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 3 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+Meaning of Hypothesis Space 
+The hypothesis space in machine learning is the complete set of all possible models or 
+functions that a learning algorithm can select during training. 
+Explanation 
+It defines the search area within which the algorithm looks for the best solution. A restricted 
+hypothesis space limits model flexibility but reduces overfitting, while a larger hypothesis 
+space allows complex models but increases computational cost and risk of overfitting. The 
+choice of hypothesis space strongly affects learning efficiency, accuracy, and generalization 
+ability. 
+A-2. Describe the importance of training–testing separation in ML experiments 
+Meaning of Training–Testing Separation 
+Training–testing separation is the practice of dividing data into independent datasets for 
+learning and evaluation. 
+Explanation 
+The training dataset is used to learn patterns, while the testing dataset evaluates performance 
+on unseen data. This separation prevents biased performance estimation caused by 
+memorization. It helps detect overfitting and ensures that the reported accuracy reflects real
+world behavior of the model. 
+A-6. Explain the impact of noisy data on machine learning models 
+Meaning of Noisy Data 
+Noisy data contains errors, inconsistencies, or irrelevant information. 
+Explanation 
+Noise misleads learning algorithms and reduces prediction accuracy. It increases the chance 
+of overfitting and unstable outputs. Models trained on noisy data often fail to generalize 
+well. Data preprocessing and noise handling techniques improve model robustness. 
+A-7. What is the difference between model fitting and model selection? 
+Definition 
+Model fitting involves training a model by adjusting parameters, while model selection 
+involves choosing the best model among alternatives. 
+Explanation 
+Fitting focuses on learning from data, whereas selection focuses on evaluating performance 
+using validation results. Model selection ensures optimal balance between complexity and 
+accuracy. Both processes are essential for effective machine learning systems. 
+A-10. Explain the importance of documentation in ML projects 
+Meaning of Documentation 
+Documentation is the systematic recording of model design, data usage, and decisions. 
+Explanation 
+It improves transparency, collaboration, and maintainability. Documentation supports 
+debugging, auditing, and reproducibility. It also ensures ethical and regulatory compliance, 
+making it essential for long-term project success. 

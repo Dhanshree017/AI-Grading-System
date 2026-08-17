@@ -1,0 +1,72 @@
+ID-T024 
+Name: aneet jha Roll no: 13 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Introduction 
+Classification and regression are two major types of supervised learning problems that differ 
+in the nature of their outputs. 
+Classification Problems 
+Classification involves predicting discrete or categorical output labels. The model assigns an 
+input to one of the predefined classes. 
+Regression Problems 
+Regression involves predicting continuous numerical values. The model estimates 
+relationships between input features and continuous outputs. 
+Key Differences 
+Classification outputs are categorical, while regression outputs are numerical and continuous. 
+Examples 
+An example of classification is email spam detection, where emails are classified as spam or 
+not spam. An example of regression is predicting house prices based on size, location, and 
+amenities. 
+Conclusion 
+Both problem types play an essential role in predictive modeling depending on the nature of 
+the output required. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Definition of Overfitting 
+Overfitting occurs when a machine learning model learns training data too well, including 
+noise and irrelevant patterns, resulting in poor performance on unseen data. 
+Causes of Overfitting 
+Overfitting is caused by overly complex models, limited training data, and lack of 
+regularization. 
+Effects of Overfitting 
+An overfitted model shows high training accuracy but low test accuracy, indicating poor 
+generalization. 
+Techniques to Reduce Overfitting 
+1. Regularization: Penalizes large weights to prevent the model from becoming too 
+complex. 
+2. Cross-Validation: Evaluates model performance on multiple subsets of data to ensure 
+generalization. 
+Conclusion 
+Reducing overfitting improves model reliability and real-world performance. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Definition of Model Evaluation 
+Model evaluation is the process of assessing a machine learning model’s performance using 
+appropriate metrics on unseen data. 
+Purpose of Model Evaluation 
+It helps determine how well a model generalizes and whether it meets performance 
+requirements. 
+Evaluation Metrics for Classification 
+1. Accuracy: Measures the proportion of correctly classified instances among all 
+predictions. 
+2. Precision: Measures how many predicted positive instances are actually positive. 
+Conclusion 
+Choosing appropriate evaluation metrics ensures reliable assessment of classification 
+models. 
+A-6. Explain the basic steps involved in building a machine learning model, from data 
+collection to model testing. 
+Overview 
+Building a machine learning model involves a structured pipeline from raw data to validated 
+predictions. 
+Steps Involved 
+1. Data Collection: Gathering relevant data from various sources. 
+2. Data Preprocessing: Cleaning and transforming data for analysis. 
+3. Feature Selection: Identifying relevant features for learning. 
+4. Model Selection: Choosing suitable algorithms. 
+5. Model Training: Training the model on training data. 
+6. Model Testing: Evaluating performance on unseen test data. 
+Conclusion 
+Following systematic steps ensures the development of robust and effective machine 
+learning models. 

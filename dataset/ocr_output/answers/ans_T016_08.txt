@@ -1,0 +1,132 @@
+ID-T016 
+Name: Ritam chakraborty Roll no: 8 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A – (Attempt any 4 – Marks 20 each) 
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Data augmentation is a technique used to artificially increase the quantity and diversity of training data by 
+applying various transformations to existing samples. In deep learning, especially for image and audio tasks, 
+models perform better when they are trained on large and varied datasets. Data augmentation helps achieve 
+this without needing to collect new real-world data. Common image augmentation operations include 
+rotating an image, flipping it horizontally or vertically, cropping certain regions, adjusting brightness or 
+contrast, adding noise, and scaling or warping. These operations allow the model to see many slightly 
+changed versions of the same image, forcing it to learn general patterns rather than memorizing specific 
+pixel arrangements. The importance of data augmentation is that it reduces overfitting by preventing the 
+model from becoming too specialized to the training set. It improves generalization because the model learns 
+to recognize objects or features under different viewpoints and lighting conditions. It also makes the dataset 
+more balanced and robust, especially when the original dataset is small. In many computer vision tasks like 
+classification, object detection, and segmentation, augmentation significantly improves accuracy. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+A decision boundary is a surface or line that separates different classes in the feature space used by a 
+classification model. It represents the dividing rule learned by the model to distinguish between categories. 
+Intuitively, suppose you have a dataset with two features: height and weight, and you want to classify 
+whether a person is an athlete or not. The model will analyze data points and create a boundary that decides 
+which side represents athletes and which side represents non-athletes. For simple models like logistic 
+regression, the boundary is usually a straight line. For more complex models such as SVM with nonlinear 
+kernels or neural networks, the boundary can become curved or irregular. The decision boundary is crucial 
+because it directly affects how the model makes predictions; even small shifts in the boundary can change 
+the classification of certain points. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Dropout is a regularization technique used in neural networks where randomly selected neurons are 
+temporarily removed during each training iteration. This means that in every training step, some neurons do 
+not participate in forward and backward propagation. By doing this, the network is forced to learn 
+distributed representations rather than relying heavily on specific neurons. Dropout reduces the risk of 
+overfitting by preventing the network from becoming too dependent on particular connections or features. 
+When dropout is applied, the model becomes more robust because it learns to adapt even when part of the 
+network is missing. During testing, no neurons are dropped, and instead, their outputs are scaled to maintain 
+consistent predictions. Dropout is widely used in convolutional neural networks, fully connected layers, and 
+sometimes in recurrent networks to improve generalization. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+Tokenization is the process of breaking text into smaller meaningful units called tokens. These tokens can be 
+words, subwords, characters, or symbols depending on the model and task. Tokenization is essential because 
+machine learning models cannot operate directly on raw text; they require numerical representations after 
+splitting text into manageable components. For example, the sentence “Machine learning is powerful” can 
+be split into individual words or smaller parts depending on the tokenizer. Two common tokenization 
+methods are word-level tokenization and subword tokenization. In word-level tokenization, text is divided 
+into separate words, making it simple but unable to handle unknown words. Subword tokenization methods 
+like Byte Pair Encoding (BPE) and WordPiece break words into smaller pieces, allowing models to 
+represent rare or new words more effectively. 
+SECTION B – (Attempt any 4 – Marks 20 each) 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality Reduction is the process of reducing the number of input variables while preserving 
+important information. High-dimensional data often contains redundancy, noise, and correlations among 
+features, which make learning more difficult. Dimensionality reduction improves computational efficiency, 
+visualization, model accuracy, and generalization. Principal Component Analysis (PCA) is an unsupervised 
+technique that transforms data into new axes called principal components based on maximum variance. PCA 
+does not use class labels; it only tries to capture the directions of highest variation. Linear Discriminant 
+Analysis (LDA), on the other hand, is a supervised method that uses class labels and tries to find directions 
+that maximize the separation between multiple classes. PCA is ideal for exploratory analysis, noise removal, 
+and visualization, while LDA is more suited for classification tasks where maximizing class distinction is 
+important. Both reduce dimensions, but PCA focuses on variance and LDA focuses on discrimination. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+Generative Adversarial Networks consist of two neural networks trained in opposition: a generator and a 
+discriminator. The generator’s role is to create synthetic data that resembles the real dataset, such as images, 
+audio, or text. It begins with random noise and learns to transform it into realistic samples. The 
+discriminator’s role is to differentiate between real data and fake data produced by the generator. During 
+training, the generator tries to fool the discriminator, while the discriminator tries to correctly classify real 
+and fake samples. This competition is similar to a game where both networks improve continuously. Over 
+time, the generator becomes skilled at producing highly realistic outputs, and the discriminator becomes 
+better at detecting small differences. GANs are used in image synthesis, super-resolution, data 
+augmentation, video generation, and style transfer. Their strength comes from the adversarial learning 
+process that forces both networks to evolve. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning and 
+describe each component. 
+A Markov Decision Process is a mathematical framework used to describe decision-making situations where 
+outcomes are partly random and partly controlled by an agent. In reinforcement learning, an MDP provides 
+the structure needed for an agent to learn optimal behavior through interactions with an environment. An 
+MDP has several components. States represent the environment’s current situation. Actions are the choices 
+available to the agent. Transition probabilities express the likelihood of moving from one state to another 
+after taking an action. Rewards are numerical values received after taking actions, representing how good or 
+bad the outcome is. The discount factor determines how much future rewards matter. Using these 
+components, the agent tries to learn a policy that maximizes long-term cumulative rewards. MDPs form the 
+foundation for algorithms like Q-learning and value iteration. 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+Time Series Forecasting involves predicting future values based on historical data. ARIMA is a statistical 
+model that uses autoregression, differencing, and moving average components to capture patterns like trend 
+and autocorrelation. It works well for stationary data and requires careful parameter tuning using methods 
+like AIC or PACF plots. LSTMs, a type of recurrent neural network, are capable of learning long-term 
+dependencies and nonlinear relationships in time-series. They are useful when patterns are complex or when 
+seasonality and sudden variations exist. Prophet is a forecasting model developed for simplicity and 
+interpretability. It decomposes time series into trend, seasonality, and holidays, making it effective for 
+business and daily forecasting tasks. All three models serve different scenarios: ARIMA for classical 
+statistical forecasting, LSTMs for deep learning-based predictions, and Prophet for easy and robust 
+modeling of seasonal patterns. 
+SECTION C – (Attempt any 5 – Marks 10 each) 
+C-1. Define supervised learning with an example. 
+• Supervised learning is a type of machine learning where the model is trained using labeled data. 
+• Each training example contains both input features and a correct output label. 
+• The goal is for the model to learn a mapping from inputs to outputs so it can predict labels for new data. 
+• Classification and regression are the two main categories of supervised learning. 
+• An example is training a model to identify handwritten digits using images labeled from 0 to 9. 
+• The model learns patterns from the labeled images and can classify new handwritten digits accurately. 
+C-2. What is precision in classification metrics? 
+• Precision measures how many of the predicted positive samples are actually positive. 
+• It is calculated as True Positives divided by the sum of True Positives and False Positives. 
+• High precision means the model makes few false positive errors. 
+• It is especially important in tasks like spam detection where wrong positives cause issues. 
+• Precision helps evaluate the reliability of positive predictions. 
+• It is often used along with recall to analyze classification performance. 
+C-3. Explain the term kernel function. 
+• A kernel function is a mathematical function used in algorithms like Support Vector Machines. 
+• It helps transform data into a higher dimensional space without explicitly computing new features. 
+• Kernels allow separating data that is not linearly separable in the original space. 
+• Common kernels include linear kernel, polynomial kernel, and RBF kernel. 
+• Kernel functions operate through inner products, making the computation efficient. 
+• They enable models to learn complex boundaries and relationships. 
+C-5. What is bagging? 
+• Bagging stands for Bootstrap Aggregating, a method used to improve model stability. 
+• It involves training multiple models on different bootstrapped samples of the training data. 
+• These models’ predictions are then combined, usually through averaging or voting. 
+• Bagging reduces variance and helps avoid overfitting, especially for unstable models. 
+• Random Forest is a widely known example of bagging applied to decision trees. 
+• The method increases robustness and generalization performance. 
+C-6. Explain gradient vanishing. 
+• Gradient vanishing is a problem where gradients become extremely small during backpropagation. 
+• It causes early layers of deep networks to learn very slowly or stop learning. 
+• This usually happens with activation functions like sigmoid or tanh. 
+• As gradients shrink, weights fail to update effectively, delaying convergence. 
+• Solutions include using ReLU activation, proper weight initialization, and residual networks. 
+• It is one of the major challenges in training very deep neural models. 

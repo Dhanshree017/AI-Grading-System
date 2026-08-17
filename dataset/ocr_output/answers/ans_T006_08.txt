@@ -1,0 +1,114 @@
+ID-T006 
+Name: Abhijeet saha Roll no: 8 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A-1. How Reinforcement learning is different from Supervised learning? 
+Reinforcement learning is like playing game and get points. Supervised learning 
+is like copying answers from book. 
+1. RL use reward and punishment but supervised just have labels. 
+2. In supervised you know answer but in RL you dont. 
+3. RL is hard and take time. 
+4. Supervised is easy because data have correct answers. 
+5. RL is only for games. 
+A-2. Define the term overfitting and one solution for it. 
+Overfitting is when model not good. It learn too much from training. 
+Solutions: 
+1. Use more data maybe. 
+2. Use dropout maybe. 
+3. Regularization. 
+4. Stop training early. 
+5. Don’t make model too big. 
+A-3. What is the role of Linear Discriminant Analysis in ML? 
+LDA is some method for data I think. It make things small maybe. 
+1. It reduce features. 
+2. It separate classes a little. 
+3. Use for classification maybe. 
+4. It is used in faces sometimes. 
+5. I don’t know more. 
+A-4. Compare mixture and latent factor models. 
+Mixture and latent factors are different but I forget. 
+1. Mixture divide data. 
+2. Latent factor find hidden thing. 
+3. Mixture like cluster. 
+4. Latent factor used in recommendation maybe. 
+5. Both are different. 
+A-5. Write importance of K-means clustering. 
+K-means is clustering. It group data. 
+1. Divide data in groups. 
+2. Simple algorithm. 
+3. Fast for small data. 
+4. Use in marketing. 
+5. Sometimes useful. 
+A-6. Write about R Square and its significance. 
+R Square show how model fit maybe. 
+1. Between 0 and 1. 
+2. 1 is good, 0 is bad. 
+3. Used in regression. 
+4. High value means model good. 
+5. Low value bad. 
+A-7. Give significance of hyperparameter optimization. 
+Hyperparameter is like number or setting. Tuning is important maybe. 
+1. Improve accuracy maybe. 
+2. Avoid overfit maybe. 
+3. Grid search can use. 
+4. Random search also. 
+5. Helps model better. 
+A-8. How machine learning deals with sparse data. 
+Sparse data have many zero. ML do something. 
+1. Use sparse matrix maybe. 
+2. Some algorithms work better. 
+3. Dimensionality reduction maybe help. 
+4. Fill missing values sometimes. 
+5. Embeddings maybe. 
+A-9. What is advantage of active learning. 
+Active learning good. Save time maybe. 
+1. Ask important data for label. 
+2. Learn fast. 
+3. Use in medical maybe. 
+4. Save money. 
+5. Improve model a little. 
+A-10. What is training, testing and validation? 
+Training is teaching model. Testing check model. Validation check tuning. 
+1. Training set teach model. 
+2. Validation set tune model. 
+3. Testing set check unseen data. 
+4. Make model better. 
+5. Help generalize maybe. 
+B) Attempt any 4 
+B-1. Give seven applications of Machine Learning. 
+1. Image recognition yes. 
+2. Voice recognition maybe. 
+3. Healthcare yes. 
+4. Finance maybe. 
+5. Online shopping yes. 
+6. Self-driving cars maybe. 
+7. Weather maybe. 
+8. Chatbots maybe. 
+B-2. Explain supervised, unsupervised and semi-supervised with examples. 
+1. Supervised use labels. Example spam. 
+2. Unsupervised find groups. Example cluster. 
+3. Semi-supervised use some labels. 
+4. Supervised easy. 
+5. Unsupervised hard. 
+6. Semi in middle. 
+7. Used in data. 
+8. I forget some. 
+B-4. What are types of SVM. 
+1. Linear SVM line. 
+2. Non-linear SVM curve. 
+3. Polynomial kernel maybe. 
+4. RBF kernel yes. 
+5. Sigmoid kernel maybe. 
+6. Multi-class yes. 
+7. SVR regression yes. 
+8. Don’t know more. 
+B-5. Explain Decision Tree in detail. 
+Decision tree is tree. Each node question, leaf answer. 
+1. Split data step by step. 
+2. Use info gain maybe. 
+3. Can overfit. 
+4. Pruning fix overfit. 
+5. Easy to see. 
+6. Use in finance maybe. 
+7. Can handle numbers. 
+8. Not always best. 

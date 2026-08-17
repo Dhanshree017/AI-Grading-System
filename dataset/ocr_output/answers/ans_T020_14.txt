@@ -1,0 +1,182 @@
+ID-T020 
+Name: Kartik sharma Roll no: 14 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 5 (8 marks each) 
+A-a) Explain how data drift and concept drift affect the long-term performance of machine 
+learning models. Discuss the different types of drift and practical strategies to detect and 
+handle them. 
+Overview 
+Models assume training and production distributions are similar. When that assumption 
+breaks, model predictions degrade. Two related phenomena cause this: data drift (changes 
+in input distributions) and concept drift (changes in the conditional relationship between 
+inputs and the target). 
+Types of drift 
+ Covariate (feature) drift: input features’ marginal distributions change (e.g., user 
+demographics shift). 
+ Prior probability drift: the class proportions change (e.g., disease prevalence rises). 
+ Concept drift: P(Y|X) changes — the rule that maps features to labels changes (e.g., 
+fraudsters adopt new patterns). 
+ Temporal behavior: sudden, gradual, incremental, and recurring/seasonal drifts. 
+Detection methods 
+ Statistical tests on feature distributions: KS test, population stability index, Chi-square 
+tests. 
+ Monitor model metrics over time (rolling accuracy, precision/recall). 
+ Distributional detectors and change-point detectors (ADWIN, CUSUM). 
+ Shadow/challenger models and periodic labeled-sample evaluation. 
+Handling strategies 
+ Instrument continuous monitoring (metrics + data checks). 
+ Triggered retraining: retrain when drift exceeds thresholds. 
+ Online or incremental learning for streaming use-cases. 
+ Ensembles that maintain older models alongside newly trained ones (weighted by 
+recency). 
+ Feature engineering resilience: remove brittle features, add robust aggregations, and 
+use domain-invariant representations. 
+Practical note 
+Combine automated detection with human review before large-scale retraining to avoid 
+amplifying label noise or transient anomalies. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, images, 
+or categorical data can be transformed into meaningful representations for models. 
+Purpose of embeddings 
+Embeddings map tokens/objects into dense continuous vectors that capture semantics, 
+similarity, and structure. They make high-dimensional or symbolic data amenable to 
+downstream learning algorithms. 
+Text embeddings 
+ Static word embeddings (Word2Vec, GloVe) capture co-occurrence statistics. 
+ Contextual embeddings (BERT, RoBERTa) produce token representations 
+conditioned on surrounding tokens. 
+ Sentence/document embeddings (SBERT, Universal Sentence Encoder) provide 
+fixed-length vectors suitable for retrieval and classification. 
+Image embeddings 
+ CNNs or vision transformers produce feature vectors (activations) from intermediate 
+or penultimate layers. 
+ These vectors capture hierarchical visual features: edges → textures → shapes → 
+objects. 
+ Useful for similarity search, transfer learning, or as inputs to downstream classifiers. 
+Categorical embeddings 
+ Replace high-dimensional one-hot encodings with learned dense vectors (trainable 
+embedding layers). 
+ Particularly effective for high-cardinality categorical features (product IDs, user IDs). 
+ Embeddings capture latent relations (similar products/users cluster in embedding 
+space). 
+Benefits and best practices 
+ Reduce sparsity, enable semantic similarity, and speed up learning. 
+ Pretrain embeddings on large corpora and fine-tune on target tasks when possible. 
+ Normalize and monitor embeddings for drift and bias. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. Explain 
+advanced techniques such as cost-sensitive learning, synthetic sample generation, and 
+threshold adjustment. 
+Machine learning on imbalanced data is hard because standard training objectives and 
+metrics bias models toward the majority class. This leads to poor detection of rare but critical 
+events. 
+Key challenges 
+ Loss dominated by majority class → poor gradient signal for minority. 
+ Misleading aggregate metrics (e.g., accuracy). 
+ Overfitting to duplicated minority examples or noisy minority samples. 
+ Evaluation difficulty — need metrics that reflect business cost. 
+Advanced techniques 
+ Cost-sensitive learning: reweight loss terms or set class-specific costs so errors on 
+minority class are penalized more. 
+ Synthetic sample generation: SMOTE, ADASYN, or generative models (GAN
+based) produce artificial minority samples to enrich the minority manifold. Must 
+validate realism. 
+ Threshold adjustment & calibration: use precision–recall trade-offs and adjust 
+decision thresholds on calibrated probabilities to achieve required recall/precision. 
+ Ensembles & bagging with balanced sampling: build trees or models on balanced 
+bootstrap samples to reduce bias. 
+ Domain-specific methods: anomaly detection for extreme rarity, one-class 
+classification when minority structure is too sparse. 
+Evaluation 
+ Prefer precision–recall, F1-score, AUC-PR, cost-weighted metrics, confusion matrices 
+stratified by subgroups. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are tracked, 
+and why is continuous monitoring essential for deployed models? 
+What is model monitoring? 
+Model monitoring is the continuous observation of model inputs, outputs, and environment 
+to ensure operational correctness, detect degradation, and trigger remediation. 
+Core parameters to track 
+ Prediction quality: rolling accuracy, precision, recall, AUC on recently labeled data. 
+ Input data quality: missingness, value ranges, unexpected categories, schema 
+changes. 
+ Distributional metrics: PSI, KS distances for features and embeddings. 
+ Operational metrics: latency, throughput, error rates, memory usage. 
+ Model confidence and calibration: distribution of predicted probabilities; calibration 
+plots. 
+ Fairness and group metrics: per-group error rates, disparate impact measures. 
+Why continuous monitoring matters 
+ Detect silent failures (drift, data corruption) before business impact. 
+ Provide observability into production behavior and inform retraining cadence. 
+ Support compliance, debugging, and SLA adherence. 
+ Enable humans-in-the-loop workflows for labeling and corrective action. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss any real
+world use cases where XAI is crucial for decision-making. 
+How XAI supports trust 
+ Exposes model reasoning (feature contributions, decision rules), enabling users to 
+understand and validate decisions. 
+ Helps identify model bias, errors, and spurious correlations. 
+ Facilitates communication with non-technical stakeholders and regulators. 
+Popular XAI approaches 
+ Global explanations: feature importance, partial dependence plots, surrogate 
+interpretable models. 
+ Local explanations: SHAP, LIME, counterfactual explanations that show why a 
+specific prediction was made. 
+ Model-intrinsic interpretability: use of inherently interpretable models (rule lists, 
+small trees) where feasible. 
+Critical use cases 
+ Healthcare: explain diagnostic recommendations to clinicians and patients. 
+ Finance: justify credit decisions and detect model bias. 
+ Regulation-sensitive domains: any domain requiring auditability and recourse for 
+automated decisions. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and how it 
+impacts model performance. 
+Definition and risk 
+Feature leakage arises when the training data includes information that would not be 
+available at prediction time (e.g., features derived from future events or dependent on the 
+target). It produces overly optimistic evaluation and fragile production behavior. 
+Common causes 
+ Temporal leakage: using future fields when building training examples. 
+ Target-derived features: aggregations or features computed using the label. 
+ Preprocessing leakage: applying transformations (scalers, imputers) before splitting 
+into train/test. 
+ Duplicate/group leakage: same entity appearing in both training and test splits. 
+Impact 
+ Inflated validation performance and false confidence. 
+ Severe drop in real-world accuracy and reliability. 
+ Time wasted optimizing a model that exploited leakage rather than learned 
+generalizable patterns. 
+Prevention 
+ Use time-aware splitting and group splits where appropriate. 
+ Apply preprocessing steps within cross-validation folds only. 
+ Conduct feature provenance audits and domain review. 
+ Use holdout production-like evaluation and shadow deployments. 
+B-c) Describe how transfer learning improves model development. Mention scenarios where 
+transfer learning is especially useful. 
+Why transfer learning helps 
+Transfer learning reuses pretrained models or representations learned on large datasets to 
+bootstrap learning on a target task, often with limited labeled data. It accelerates 
+convergence, improves sample efficiency, and often yields better generalization. 
+Common approaches 
+ Feature extraction: freeze pretrained backbone and train task-specific head. 
+ Fine-tuning: unfreeze and adapt some or all of the pretrained layers on target data. 
+ Adapter modules / parameter-efficient tuning: add small trainable components to 
+large frozen models. 
+Ideal scenarios 
+ Small labeled datasets: medical imaging, specialized NLP tasks. 
+ Domain with expensive annotation: satellite imagery, industrial defect detection. 
+ Rapid prototyping: use pretrained weights to get strong baselines quickly. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and Random 
+Search? Compare them briefly. 
+Purpose 
+Hyperparameter search automates the discovery of hyperparameter settings (learning rates, 
+regularization strengths, architecture choices) that yield the best validation performance. 
+Grid Search 
+ Exhaustive search over a discretized parameter grid. 
+ Guarantees coverage of the specified grid but scales poorly with dimensionality. 
+Random Search 
+ Randomly samples hyperparameter combinations from distributions. 
+ More efficient in high-dimensional spaces; often finds good configurations faster. 
+Practical guidance 
+ Use random search for broad exploration, reserve grid search for fine-tuning around 
+promising regions. Consider Bayesian optimization or successive halving for more 
+efficient search on constrained budgets. 

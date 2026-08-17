@@ -1,0 +1,25 @@
+ID-T033 
+Name: Neelam Tiwari Roll no: 6  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+Machine learning model always works with assumptions because computer cannot think like 
+human. Assumptions are already decided rules inside model. These rules tell model how to 
+learn data and what type of answer to give. Without assumption model will not start learning 
+because data is too much and confusing.  
+Assumptions make model simple and fast. For example, model may assume all values are 
+equal or data is straight line. This helps computer to calculate faster and reduce time. 
+Assumptions also help model to predict even when data is missing.  
+Sometimes assumptions are fixed by programmer and not changed later. Model blindly 
+follows assumptions even if data is different. This can cause problem. Model may ignore 
+some important data because assumption says it is not needed.  
+Incorrect assumptions make model confused. Model may give wrong output again and again. 
+Decision taken by model becomes incorrect. For example, model may reject good data or 
+accept bad data.  
+Wrong assumptions can affect behavior of model in real world. Model may behave 
+differently in testing and actual use. Decision making becomes unreliable. Users stop 
+trusting system.  
+Thus assumptions are important but if assumptions are wrong then model performance and 
+decision quality becomes poor.  

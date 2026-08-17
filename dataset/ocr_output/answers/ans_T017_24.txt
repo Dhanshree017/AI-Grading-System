@@ -1,0 +1,114 @@
+ID-T017 
+Name: aman singh Roll no: 24 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (3 marks each) 
+A-1. Give 5 Domains of AI 
+1. Machine Learning 
+2. Natural Language Processing 
+3. Robotics 
+4. Computer Vision 
+5. Expert Systems 
+(Also AI is used in microwaves but not sure.) 
+A-2. What is data preprocessing? Why is it important? 
+Data preprocessing means cleaning and preparing raw data before giving it to ML model. 
+It is important because it removes noise, handles missing values and makes data in proper 
+format. 
+If we don’t preprocess, model will get confused and give wrong results. 
+Sometimes data preprocessing also makes data tastier  
+A-3. What are hyperparameters? Give two examples 
+Hyperparameters are settings of model that we choose before training. 
+Examples: learning rate, number of trees in Random Forest. 
+Also “RAM size” is NOT a hyperparameter but sometimes I think it affects training. 
+A-4. Explain types of clustering 
+ K-Means Clustering – groups data into k clusters. 
+ Hierarchical Clustering – builds tree-like structure of clusters. 
+ DBSCAN – forms clusters based on density. 
+There is also “circle clustering” but I think that doesn’t exist. 
+A-5. What is classification and regression? Explain with examples 
+ Classification: Predicting categories. Example: Email spam or not spam. 
+ Regression: Predicting continuous numbers. Example: predicting house price. 
+Sometimes regression also used to predict color of apple  
+A-6. Give advantages and disadvantages of Decision Tree 
+Advantages: 
+ Easy to understand 
+ Works with numerical and categorical data 
+ No need of feature scaling 
+Disadvantages: 
+ Can overfit 
+ Small change in data changes tree 
+ Trees sometimes look like a Christmas tree  
+A-7. How to make model underfit and overfit 
+ Underfit: Use very simple model, fewer parameters, train for very few epochs. 
+ Overfit: Train too long, use very complex model, no regularization. 
+Underfit model behaves like a lazy student. 
+A-8. Give 5 applications of machine learning 
+1. Recommendation systems 
+2. Fraud detection 
+3. Self-driving cars 
+4. Medical diagnosis 
+5. Voice assistants 
+Also ML used in potato sorting machines  
+A-9. State steps in making ML models 
+1. Collect data 
+2. Preprocess data 
+3. Split data 
+4. Choose model 
+5. Train model 
+6. Test model 
+7. Deploy model 
+Sometimes people also pray before training the model  
+A-10. Importance of data in ML 
+Data is the basic fuel for ML. 
+Good data makes good predictions. 
+If data is wrong, model becomes useless. 
+Like saying “garbage in garbage out.” 
+B] Attempt any 5 (8 marks each) 
+B-1. Challenges in ML & Solutions 
+ Imbalanced data: One class bigger than other. 
+Solution: Oversampling, undersampling, SMOTE. 
+ Missing values: Data has blanks. 
+Solution: Impute mean/median, remove rows. 
+ Curse of dimensionality: Too many features. 
+Solution: PCA, feature selection. 
+ Concept drift: Data pattern changes over time. 
+Solution: Retrain model regularly. 
+Concept drift is like mood swings of dataset  
+B-2. What is Regularization? Explain its types 
+Regularization reduces overfitting by adding penalty to large weights. 
+Types: 
+ L1 Regularization (Lasso): Uses absolute values of weights, makes some weights 
+zero. 
+ L2 Regularization (Ridge): Uses squared weights, reduces weight size smoothly. 
+ Elastic Net: Combination of L1 and L2. 
+Regularization is like telling model “don’t act over-smart.” 
+B-3. What is Ensemble Learning? Bagging & Boosting 
+Ensemble learning: Combining multiple models to get better accuracy. 
+ Bagging: Train models independently on random samples. 
+Example: Random Forest. 
+ Boosting: Models are trained one after another, each correcting previous errors. 
+Example: AdaBoost, XGBoost. 
+Ensemble is like asking many friends instead of one. 
+B-4. Entire ML Pipeline + Model Evaluation 
+Steps: 
+1. Problem understanding 
+2. Data collection 
+3. Data preprocessing 
+4. Feature engineering 
+5. Model selection 
+6. Training 
+7. Testing 
+8. Deployment 
+Model evaluation: 
+Use accuracy, precision, recall, F1-score, confusion matrix, RMSE for regression. 
+Sometimes people evaluate model by “looks good or not 
+B-6. Write note on Naive Bayes & SVM 
+Naive Bayes: 
+Probabilistic classifier based on Bayes theorem. 
+Assumes features are independent (naive assumption). 
+Works well for text classification. 
+SVM: 
+Support Vector Machine separates data using maximum margin hyperplane. 
+Works well in high-dimensional data. 
+Uses kernels like linear, RBF. 
+Also SVM sounds like a motorbike brand  

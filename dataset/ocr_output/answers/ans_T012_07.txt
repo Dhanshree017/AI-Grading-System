@@ -1,0 +1,171 @@
+ID-T012 
+Name : Roshni Khan Roll no: 7 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (8 Marks Each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+Random Forest is an ensemble machine learning algorithm that combines 
+multiple decision trees to improve accuracy and reduce overfitting. It is based 
+on the concept of “wisdom of the crowd,” where many weak learners (trees) 
+work together to form a strong model. 
+Working: 
+1. The training dataset is divided into random subsets using the bootstrap 
+sampling method (sampling with replacement). 
+2. For each subset, a decision tree is built using a random selection of 
+features. 
+3. When making predictions, each tree gives its output (for classification – 
+a class label; for regression – a numeric value). 
+4. The final output is obtained through majority voting (classification) or 
+averaging (regression). 
+Advantages: 
+ Handles high-dimensional data efficiently. 
+ Reduces overfitting by averaging multiple trees. 
+ Works well with missing values and maintains good performance on 
+imbalanced data. 
+ Can measure feature importance. 
+Disadvantages: 
+ Model interpretability is lower than a single decision tree. 
+ Training can be slow with very large datasets. 
+ Uses more memory and computational resources. 
+Example: Predicting loan default, disease classification, or sentiment analysis 
+where multiple features contribute to the outcome. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is a learning algorithm used in artificial neural networks to 
+minimize the error between predicted and actual output by updating weights 
+iteratively. It is the backbone of deep learning. 
+Steps: 
+1. Forward Propagation: Inputs are passed through the network layer by 
+layer using weighted sums and activation functions to produce the 
+output. 
+2. Error Calculation: The difference between predicted and actual output is 
+calculated using a loss function such as mean squared error or cross
+entropy loss. 
+3. Backward Propagation: The error is propagated backward through the 
+network using the chain rule of calculus to compute gradients of loss 
+with respect to weights. 
+4. Weight Update: The weights are adjusted in the opposite direction of 
+the gradient to minimize loss, using learning rate η. 
+5. Iteration: The process continues until the model converges or reaches a 
+minimal error. 
+Backpropagation allows networks to learn complex patterns such as image 
+features or speech recognition structures. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+Recurrent Neural Networks (RNNs) are specialized neural networks designed 
+for sequential or time-dependent data. Unlike feed-forward networks, RNNs 
+have feedback loops that allow information to persist over time. 
+Working: 
+Each RNN unit takes current input and previous hidden state to produce a 
+new hidden state and output. 
+hₜ = f(Wₕhₜ₋₁ + Wₓxₜ + b) 
+This recurrence allows the network to retain “memory” of previous inputs, 
+making it ideal for text, speech, and sensor data. 
+Applications: 
+ Natural Language Processing (text generation, sentiment analysis) 
+ Speech recognition 
+ Stock market prediction 
+ Machine translation 
+ Video captioning 
+However, standard RNNs suffer from vanishing or exploding gradients; hence, 
+variants like LSTM (Long Short-Term Memory) and GRU (Gated Recurrent 
+Units) are often used for long-term dependencies. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+After model training and evaluation, deployment brings the model into 
+production to make real-time predictions. 
+Deployment Steps: 
+1. Packaging: Convert model into deployable format (e.g., pickle file or 
+ONNX). 
+2. Integration: Connect model with applications via APIs, web servers, or 
+cloud platforms. 
+3. Testing: Validate the model in staging environments. 
+4. Scaling: Ensure model handles large request volumes efficiently. 
+5. Monitoring: Continuously track model performance, latency, data drift, 
+and accuracy. 
+Monitoring Importance: 
+ Detects performance degradation due to data distribution shift. 
+ Helps trigger retraining when accuracy drops. 
+ Ensures compliance with business and ethical standards. 
+Model deployment and monitoring close the ML lifecycle loop, ensuring 
+sustained reliability in real-world conditions. 
+A-6. Explain Normalization vs Standardization with examples. 
+Both techniques rescale numerical data but differ in approach. 
+ Normalization scales data to a fixed range (usually 0–1): 
+X’ = (X – X_min) / (X_max – X_min) 
+Example: Scaling pixel values in images. 
+ Standardization centers data around the mean with unit variance: 
+Z = (X – μ) / σ 
+Example: Preparing features for logistic regression. 
+Normalization is useful when features have different scales, while 
+standardization preserves relative distances and is preferred for algorithms 
+assuming Gaussian distributions (e.g., SVM, PCA). 
+SECTION B – Attempt Any 4 (5 Marks Each) 
+B-1. Explain the main challenges faced while training ML models. 
+ Overfitting: Model learns noise, not pattern. 
+ Underfitting: Model too simple to capture relationships. 
+ Data Quality: Missing or unbalanced data skews performance. 
+ Hyperparameter Tuning: Requires experimentation and cross-validation. 
+ Computational Cost: Deep models need high GPU and memory resources. 
+ Interpretability: Complex models like deep networks are hard to explain. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+ Probability: Given parameters, what is the chance of data? → P(Data | 
+θ) 
+ Likelihood: Given data, how plausible are parameters? → L(θ | Data) 
+Probability predicts future outcomes; likelihood estimates parameters. 
+In ML, likelihood is used for parameter estimation (e.g., Maximum 
+Likelihood Estimation). 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic Regression is a supervised classification algorithm predicting binary 
+outcomes. 
+It models probability using the sigmoid function: 
+P(y=1|x) = 1 / (1 + e^(–(β₀ + β₁x))) 
+Use Cases: 
+ Spam detection 
+ Disease diagnosis 
+ Customer churn prediction 
+It’s simple, interpretable, and forms the basis for more complex 
+classifiers. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+ Parameters: Learned from data (weights, biases). 
+ Hyperparameters: Set before training; control learning process. 
+Examples: learning rate, batch size, number of layers, regularization 
+coefficient. 
+Hyperparameters are tuned using Grid Search or Random Search. They 
+determine model capacity and speed of convergence. 
+SECTION C – Attempt All (10 Marks Each) 
+C-1. How can Machine Learning be used in Predictive Maintenance in Industries? 
+Predictive maintenance uses machine learning to forecast machinery failures 
+before they occur, minimizing downtime and optimizing costs. 
+Sensors installed in industrial machines continuously collect data such as 
+vibration, pressure, and temperature. ML models analyze this data to 
+identify patterns that precede faults. 
+Steps: 
+1. Data Collection: IoT sensors monitor machine conditions. 
+2. Preprocessing: Clean noisy data and extract key features like frequency 
+or amplitude. 
+3. Model Building: Use regression or classification algorithms (e.g., Random 
+Forest, SVM, Neural Networks) to predict Remaining Useful Life 
+(RUL). 
+4. Real-time Monitoring: Dashboards trigger alerts when failure probability 
+crosses thresholds. 
+5. Feedback Loop: Actual failures retrain the model, improving accuracy. 
+Applications: Wind turbine failure prediction, aircraft engine health, 
+manufacturing equipment diagnostics. 
+Predictive maintenance enhances reliability, reduces repair costs, and supports 
+data-driven operations. 
+C-2. Discuss 5 Real-World Examples of a Biased ML Model and How Such Bias 
+Can Be Reduced. 
+1. Facial Recognition Systems: Misidentify darker-skinned or female faces 
+due to biased datasets. → Use diverse training data. 
+2. Hiring Algorithms: Favor men if trained on past male-dominated 
+resumes. → Anonymize sensitive attributes. 
+3. Credit Scoring Systems: Deny loans to specific demographics due to 
+biased past approvals. → Apply fairness constraints. 
+4. Healthcare AI: Underdiagnose minority patients due to lack of 
+representation. → Balance demographic data. 
+5. Predictive Policing Tools: Reinforce racial bias from historical arrest 
+records. → Audit models and remove biased features. 
+Bias Reduction: Use fairness metrics, perform bias audits, and involve ethical 
+review during deployment. 

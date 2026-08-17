@@ -1,0 +1,283 @@
+ID-T008 
+Name : bhushan verma Roll no: 10 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+Section 1: Attempt All  
+1-a) Write about Inductive Bias 
+Definition: Inductive bias refers to the set of assumptions a machine learning 
+algorithm makes to generalize beyond the training data. It allows the system 
+to prefer one hypothesis over another when multiple hypotheses fit the 
+observed data. 
+1-b) Define Hypothesis 
+Definition: A hypothesis in machine learning is a candidate function or model 
+that maps input features to output labels. It represents a possible solution 
+to a learning problem. 
+Definition: Eager learning algorithms build a general model from the training 
+data before receiving any queries. The model is fully trained and ready for 
+prediction at query time. 
+1. Builds a complete model upfront, e.g., decision trees, neural networks. 
+2. Fast predictions after training since the model is pre-computed. 
+3. Requires more initial computation and memory. 
+4. Cannot adapt instantly to new data; retraining needed. 
+5. Suitable for stable datasets with predictable queries. 
+6. Reduces computation during prediction phase. 
+7. Overfitting can occur if model complexity is high. 
+8. Works well for batch learning scenarios. 
+9. Ensures systematic and consistent predictions across queries. 
+1-e) What is Lazy Learning 
+Definition: Lazy learning algorithms defer computation until a query is 
+received. They store training data and perform minimal processing until 
+prediction is needed. 
+1. No model is built upfront; prediction occurs at runtime. 
+2. Example: K-Nearest Neighbors (KNN). 
+3. Can easily incorporate new data without retraining. 
+4. Computational cost is high at prediction time. 
+5. Sensitive to noisy data and outliers. 
+6. Suitable for small datasets or dynamic environments. 
+7. Requires memory to store the entire training dataset. 
+8. Provides flexibility but slower response compared to eager learning. 
+9. Useful when queries are rare or data is constantly updated. 
+1-f) Define Genetic 
+Definition: Genetic algorithms are optimization techniques inspired by natural 
+selection and evolutionary biology, using operations like selection, crossover, 
+and mutation to evolve solutions. 
+1. Selection chooses the fittest individuals for reproduction. 
+2. Crossover combines traits from two parents to create offspring. 
+3. Mutation introduces random variations to explore new solutions. 
+4. Fitness function evaluates solution quality. 
+5. Iterative generations improve solution quality over time. 
+6. Applied in optimization, scheduling, and machine learning. 
+7. May converge slowly if not properly tuned. 
+8. Risk of getting trapped in local optima exists. 
+9. Efficient for complex search and optimization problems. 
+1-g) Discuss Dynamic Programming 
+Definition: Dynamic programming is a computational technique to solve 
+problems by breaking them into overlapping subproblems and storing 
+intermediate solutions to avoid redundant computation. 
+1. Efficient for problems with overlapping subproblems and optimal 
+substructure. 
+2. Reduces computational complexity through memoization or tabulation. 
+3. Example: Fibonacci sequence, shortest path algorithms. 
+4. Bottom-up approach solves smaller subproblems first. 
+5. Top-down approach uses recursion with memoization. 
+6. Reduces redundant calculations compared to naive methods. 
+7. Widely applied in optimization and AI problem solving. 
+8. Memory usage is a consideration for large problems. 
+9. Balances between computational time and memory usage for efficiency. 
+1-h) Define Explanation-Based Learning 
+Definition: Explanation-Based Learning (EBL) is a technique where the system 
+generalizes from a single example using domain knowledge and explains why it 
+works. 
+1. Reduces the number of examples needed for learning. 
+2. Utilizes prior domain knowledge to guide generalization. 
+3. Produces rules rather than memorizing individual instances. 
+4. Example: learning a chess move by understanding strategy. 
+5. Fast and efficient if knowledge is accurate. 
+6. Fails if the domain knowledge is incomplete or incorrect. 
+7. Supports reasoning and inference in intelligent systems. 
+8. Enables the creation of generalized rules from specific instances. 
+9. Often integrated with symbolic AI systems and expert systems. 
+1-i) Write about Control Knowledge 
+Definition: Control knowledge refers to the meta-knowledge used to guide 
+problem-solving and search strategies efficiently in AI systems. 
+1. Enhances decision-making by prioritizing actions. 
+2. Reduces unnecessary computation by guiding search heuristics. 
+3. Example: heuristic function in A* search algorithm. 
+4. Can be learned or hand-coded depending on system. 
+5. Critical for efficiency in large search spaces. 
+6. May be domain-specific, limiting generalization. 
+7. Helps in goal-directed reasoning and problem solving. 
+8. Improves performance of intelligent agents. 
+9. Integrates with learning algorithms for adaptive search. 
+1-j) Define Precision, Recall, and F1 Score 
+Definition: Precision, recall, and F1 score are evaluation metrics used in 
+classification to measure accuracy and relevance of predicted outputs. 
+1. Precision measures correctness of positive predictions. 
+2. Recall measures coverage of actual positive instances. 
+3. F1 score is the harmonic mean of precision and recall. 
+4. High precision implies few false positives. 
+5. High recall implies few false negatives. 
+6. F1 score balances precision and recall for overall performance. 
+7. Widely used in information retrieval, spam detection, and classification 
+tasks. 
+8. Helps compare models and choose optimal thresholds. 
+9. Provides insights beyond simple accuracy measurement. 
+Section 2: Attempt Any 6 
+2-b) Describe K-Nearest Neighbors (KNN) 
+Definition: KNN is a lazy learning algorithm that classifies data based on the 
+majority label of its nearest neighbors in feature space. 
+1. Stores all training data and computes prediction at query time. 
+2. Distance metrics like Euclidean, Manhattan, or Minkowski are used. 
+3. Classification is based on majority voting of neighbors. 
+4. Example: Classifying fruit as apple or orange based on color and size. 
+5. No prior model training is required. 
+6. Works well for small datasets but scales poorly for large datasets. 
+7. Sensitive to noisy data and irrelevant features. 
+8. K-value selection affects bias-variance tradeoff. 
+9. Feature scaling is important to ensure correct distance computation. 
+2-c) Discuss Neural Network Representation 
+Definition: A neural network consists of layers of interconnected nodes or 
+neurons that transform input data into outputs through weighted 
+connections and activation functions. 
+1. Layers include input, hidden, and output layers. 
+2. Each neuron computes weighted sum of inputs plus bias. 
+3. Activation functions introduce non-linearity, e.g., ReLU, Sigmoid. 
+4. Weights are learned during training using backpropagation. 
+5. Example: Handwritten digit recognition using pixel inputs. 
+6. Hidden layers learn hierarchical representations of data. 
+7. Deep networks can model complex patterns but risk overfitting. 
+8. Requires large datasets and significant computational resources. 
+9. Can perform classification, regression, and sequence modeling. 
+2-d) Differentiate Classification & Regression 
+Regression 
+Classification 
+Predicts discrete labels or 
+categories. 
+Output examples: spam/not 
+spam, disease/no disease. 
+Evaluation metrics: accuracy, 
+precision, recall. 
+Uses algorithms like SVM, 
+decision trees, Naive Bayes. 
+Probability predictions can be 
+used. 
+Often involves thresholding for 
+decision making. 
+Suitable for classification 
+problems. 
+Goal is to assign class labels 
+correctly. 
+Predicts continuous numeric values. 
+Output examples: house price, temperature, 
+sales. 
+Evaluation metrics: MSE, RMSE, R² score. 
+Uses algorithms like linear regression, 
+polynomial regression, neural networks. 
+Direct numeric prediction without 
+probabilities. 
+Produces exact numerical output. 
+Suitable for prediction of quantities. 
+Goal is to predict values as close as 
+possible. 
+Example: Email spam detection. Example: Predicting tomorrow’s 
+temperature. 
+2-e) Explain Knowledge Representation in Detail 
+Definition: Knowledge representation is the way information is structured in 
+AI systems so that reasoning, inference, and decision-making are possible. 
+1. Rules are IF-THEN statements used in expert systems. 
+2. Semantic networks represent objects and relations graphically. 
+3. Frames structure knowledge as stereotypical situations with slots. 
+4. Ontologies define concepts and relationships formally. 
+5. Example: Medical expert system diagnosing diseases. 
+6. Good representation enables effective reasoning. 
+7. Poor representation leads to errors and inefficiency. 
+8. Supports machine learning, planning, and problem solving. 
+9. Foundation of intelligent systems and AI reasoning. 
+2-f) Compare AI, ML, Deep Learning 
+Artificial Intelligence 
+(AI) 
+Broad field enabling 
+machines to act 
+intelligently. 
+Includes planning, 
+reasoning, learning, 
+perception. 
+Example: Chess-playing 
+AI, expert systems. 
+Can include symbolic 
+approaches. 
+May or may not involve 
+learning from data. 
+Knowledge 
+representation may be 
+manual. 
+Flexible for many AI 
+tasks. 
+Can be implemented 
+without ML. 
+Goal: intelligent 
+behavior. 
+Machine Learning (ML) 
+Subset of AI, learns from 
+data patterns. 
+Focused on learning 
+algorithms to predict or 
+classify. 
+Example: Spam detection, 
+recommendation systems. 
+Data-driven, statistical 
+methods. 
+Learning is central. 
+Features often hand
+engineered. 
+Limited to prediction or 
+classification tasks. 
+Cannot exist without 
+data. 
+Deep Learning (DL) 
+Subset of ML, uses 
+multi-layered neural 
+networks. 
+Uses deep neural 
+networks for complex 
+pattern learning. 
+Example: Image 
+recognition, speech 
+translation. 
+Requires large datasets 
+and GPU computation. 
+Automatically learns 
+features from raw data. 
+Features learned 
+automatically. 
+Excels at high-dimensional 
+data tasks. 
+Cannot exist without 
+deep neural networks. 
+Goal: accurate prediction. Goal: complex pattern 
+recognition. 
+2-g) Differentiate CNN & RNN 
+Convolutional Neural Network 
+(CNN) 
+Designed for spatial data like 
+images. 
+Uses convolution and pooling layers 
+to extract features. 
+Treats each input independently. 
+Good for image, video, and object 
+detection. 
+Recurrent Neural Network (RNN) 
+Designed for sequential data like text, 
+speech, time series. 
+Uses recurrent connections to retain 
+memory of previous inputs. 
+Retains context through hidden states. 
+Good for sequence prediction, NLP, and 
+time series. 
+Faster to train compared to RNN. Training may be slower, risk of vanishing 
+gradients. 
+Hierarchical feature extraction 
+through layers. 
+Uses filters/kernels for feature 
+learning. 
+Captures temporal dependencies and 
+order. 
+Uses hidden states and feedback loops. 
+Typically feedforward architecture. Recurrent architecture with loops. 
+Example: Image classification. 
+Section 3: Attempt All 
+3-c) Write 5 Applications of AI 
+Example: Sentiment analysis, speech 
+recognition. 
+Definition: AI applications automate tasks, enhance decision-making, and solve 
+complex problems across industries. 
+1. Self-driving cars use AI for navigation, detection, and control. 
+2. Medical diagnosis systems predict diseases and recommend treatments. 
+3. Virtual assistants like Siri and Alexa interact with humans naturally. 
+4. Recommendation systems (Amazon, Netflix) suggest products or 
+content. 
+5. Fraud detection in banking prevents suspicious transactions. 
+6. Gaming AI creates intelligent non-player characters (NPCs). 
+7. Image and speech recognition enhance automation. 
+8. Industrial automation uses AI for robots and process optimization. 
+9. AI in agriculture monitors crops, predicts yields, and detects pests. 

@@ -1,0 +1,81 @@
+ID-T033 
+Name: Dinesh Mehta Roll no: 15  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A-2. 
+Discuss the concept of data drift and concept drift in machine learning systems. Explain their 
+impact on long-term model performance.  
+When you build a model, you train it on "Past Data." But the world moves on. This change is called Model 
+Decay or Drift. There are two main types you must understand:  
+• Data Drift (Covariate Shift): This is when the Input changes. The relationship between input and 
+output is the same, but the data itself is different.  
+o Example: You trained a self-driving car in the sunny weather of California. Suddenly, you 
+take it to a snowy mountain. The "input" (snowy images) is new to the model. The car doesn't 
+know what to do because it has never seen white roads before.  
+• Concept Drift: This is much more dangerous. It is when the Definition of the answer changes. The 
+input is the same, but what it means has shifted.  
+o Example: In the year 2010, an email saying "You won 1 million dollars" was 100% Spam. In 
+2025, maybe a crypto app actually sends real prizes with that title. The "Concept" of what is 
+Spam has changed.  
+• Long-Term Impact: * Silent Failure: Drift is scary because the model doesn't "crash." It still gives 
+answers, but the answers get more and more wrong.  
+o Loss of Trust: If a company doesn't fix drift, users will stop trusting the AI.  
+o Maintenance: To fix this, we need MLOps. We must set up "alarms" that watch the model's 
+accuracy. When the score drops, we must retrain the model using the most recent data to 
+teach it the new "rules" of the world.  
+A-3. 
+Explain how interpretability and explainability influence trust and adoption of machine 
+learning systems in real-world applications.  
+Many high-power AI models (like Deep Learning) are "Black Boxes." You put data in, you get a result out, 
+but no one knows how the computer decided. This is a huge problem for real-world use.  
+• Interpretability vs. Explainability:  
+o Interpretability means the model is simple by design. For example, a Decision Tree is easy 
+to read. You can follow the "Yes/No" branches like a map.  
+o Explainability (XAI) is for complex models. We use special tools like SHAP or LIME to 
+create a "summary" of why the AI did what it did. For example: "The AI rejected the loan 
+because the person has 4 credit cards and low savings."  
+• Why Trust Matters: * Medical Use: A surgeon will not cut a patient just because an AI said 
+"Cancer." They need to see why (e.g., the AI highlighted a specific dark spot on the MRI).  
+o Legal Rights: In Europe (GDPR rules), people have a "Right to Explanation." If an AI fires 
+someone, the company must be able to explain the reason.  
+o Bias Detection: Sometimes AI learns "bad rules" (like judging people by race). If we have 
+explainability, we can see these bad rules and fix them. Without it, the bias stays hidden 
+forever.  
+• Adoption: People only adopt AI when they feel in control. Explainability turns the AI from a 
+"mysterious machine" into a "transparent tool."  
+A-4. 
+Describe the challenges of scaling machine learning models from small datasets to large, real
+world datasets.  
+Taking a model from a "lab" (small data) to the "real world" (millions of rows) is extremely difficult. It is 
+not just about having more data; the whole math changes.  
+• Computational Complexity ($O$ notation): Some algorithms are $O(n^2)$. This means if you 
+double the data, the work quadruples. On small data, this is fine. On 1 billion rows, the computer will 
+literally never finish. Scaling requires using "Stochastic" methods that look at small pieces of data at 
+a time.  
+• Data Quality Bottlenecks: On a small dataset, a human can fix typos. On 10 Terabytes of data, you 
+cannot. You have to build "Automated Pipelines" to catch missing values and "Noise." If you don't, 
+the bad data will "poison" the model.  
+• Infrastructure (Hardware): Small data fits in the RAM (memory) of a laptop. Big data must be 
+"sharded" (split) across hundreds of servers using tools like Apache Spark or Hadoop. Coordinating 
+these servers without losing data is a massive engineering challenge.  
+• Latency: In the real world, a model must be fast. A recommendation on Netflix must happen in 
+milliseconds. As the data grows, making the model "react" quickly while looking at huge history is a 
+major struggle for engineers.  
+A-5. 
+Explain the importance of validation and testing strategies in preventing misleading 
+performance evaluation of ML models.  
+If you evaluate a model the wrong way, you get a "False Sense of Security." You might think your model 
+is 99% accurate when it is actually failing.  
+• The Overfitting Trap: If you test a model on the same data you used for training, the model will get 
+100%. But it didn't "learn"; it just "memorized" the answers. We must use a Hold-out Test Set that 
+the model has never seen.  
+• K-Fold Cross-Validation: Instead of one test, we split the data into 5 or 10 parts. We train 10 times 
+and test 10 times. This proves the model is solid and didn't just get "lucky" with a few easy 
+examples.  
+• Handling Imbalance: If you are testing for a rare disease (1 in 1,000 people), a model can be 99.9% 
+accurate by just saying "Everyone is Healthy." This is a lie! Good evaluation uses Precision and 
+Recall to see if the model actually found the 1 sick person.  
+• Data Leakage: Sometimes info from the "future" leaks into the training data (like including the 
+answer in the question). Strict validation strategies are the only way to catch this "cheating" before 
+the model is released to the public.  
+.  

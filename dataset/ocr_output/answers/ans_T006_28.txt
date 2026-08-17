@@ -1,0 +1,157 @@
+ID-T006 
+Name: Reshma gupta  Roll no: 28 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A) Answer all 
+A-1. How Reinforcement learning is different from Supervised learning? 
+Reinforcement learning (RL) and supervised learning are both branches of machine learning but differ 
+fundamentally in the way they learn from data. In supervised learning, the model learns from a 
+labeled dataset where every input has a corresponding correct output. The learning process is guided 
+by minimizing errors between predicted and actual outputs. On the other hand, reinforcement 
+learning is based on learning by interaction. An agent interacts with an environment, performs 
+actions, and receives feedback in the form of rewards or penalties. The agent’s goal is to maximize 
+cumulative reward over time, rather than directly predicting correct outputs. 
+A-2. Define the term overfitting and one solution for it 
+Overfitting occurs when a machine learning model learns the training data too well, including noise 
+and random fluctuations, which reduces its ability to generalize to new, unseen data. Overfitting 
+usually happens when the model is too complex relative to the size of the dataset, such as a deep 
+neural network trained on limited data. 
+A common solution to overfitting is regularization. Techniques like L1 (Lasso) or L2 (Ridge) 
+regularization add a penalty term to the loss function, discouraging overly complex models. Other 
+solutions include dropout in neural networks, early stopping during training, and increasing the size 
+or diversity of the training dataset. 
+1. Overfitting reduces generalization on unseen data. 
+2. Caused by high model complexity or small dataset. 
+3. Model learns noise along with patterns. 
+4. Regularization helps constrain model parameters. 
+5. Dropout randomly ignores neurons to prevent memorization. 
+6. Early stopping prevents excessive training. 
+7. Increasing data diversity improves model robustness. 
+A-3. What is the role of Linear Discriminant Analysis in ML? 
+Linear Discriminant Analysis (LDA) is a technique used for dimensionality reduction and class 
+separation in machine learning. LDA identifies the linear combinations of features that best separate 
+two or more classes. By projecting data onto a lower-dimensional space while preserving class 
+separability, LDA reduces noise and improves the efficiency of classifiers like logistic regression or 
+support vector machines.. 
+A-4. Compare mixture and latent factor models 
+Mixture models and latent factor models are both used to discover hidden structures in data but 
+differ in methodology. Mixture models assume that the data is generated from a combination of 
+several probability distributions, with each component representing a cluster. Latent factor models, 
+however, assume that observed data can be explained by underlying latent variables or factors, which 
+are often continuous and used in dimensionality reduction or recommendation systems. 
+1. Mixture models group data into clusters; latent factor models find hidden factors explaining 
+data. 
+2. Mixture models use algorithms like Expectation-Maximization; latent factor models use matrix 
+factorization or PCA. 
+3. Mixture models are discrete in nature; latent factors often continuous. 
+4. Mixture models are common in clustering and density estimation. 
+5. Latent factor models are widely used in recommendation systems. 
+6. Both aim to uncover hidden structure but with different assumptions. 
+7. Selection depends on the type of data and application objective. 
+A-5. Write importance of K-means clustering 
+K-means clustering is a widely used unsupervised algorithm  
+A-6. Write about R Square and its significance 
+R-Squared is a statistical metric that quantifies the proportion of variance in the dependent variable 
+explained by the independent variables in a regression model. Values range from 0 to 1, with higher 
+values indicating better fit. Adjusted R-Squared accounts for multiple predictors, providing a more 
+reliable measure for models with many variables. 
+1. Measures goodness-of-fit of regression models. 
+2. Indicates how much variation is explained by input variables. 
+3. Values closer to 1 suggest strong explanatory power. 
+4. Adjusted R-Squared corrects for multiple predictors. 
+5. Helps compare models with different numbers of features. 
+6. Used to assess predictive capability of regression models. 
+7. Essential for evaluating model performance in real applications. 
+A-7. Give significance of hyperparameter optimization 
+Hyperparameter optimization involves selecting the best parameters for a machine learning algorithm 
+to improve performance. Hyperparameters are not learned during training but significantly affect 
+model accuracy, overfitting, and training efficiency. Techniques include grid search, random search, 
+and Bayesian optimization. 
+1. Crucial for maximizing model accuracy. 
+2. Prevents overfitting and underfitting. 
+3. Improves generalization on unseen data. 
+4. Determines computational efficiency of training. 
+5. Grid search and random search explore hyperparameter space. 
+6. Bayesian optimization provides more efficient search strategy. 
+7. Essential for high-performing models in real-world tasks. 
+A-8. How machine learning deals with sparse data 
+Sparse data contains a large proportion of zero or missing values, commonly found in text, 
+recommendation systems, and high-dimensional datasets. Machine learning algorithms handle sparsity 
+using specialized data structures, dimensionality reduction, embeddings, and algorithms tolerant to 
+sparse matrices. 
+1. Sparse matrices reduce memory usage. 
+2. Algorithms like Naive Bayes or linear models handle sparsity efficiently. 
+3. Embeddings convert sparse data to dense vectors. 
+4. Dimensionality reduction reduces the impact of irrelevant features. 
+5. Missing values can be imputed to maintain data integrity. 
+6. Proper handling improves model performance and reduces errors. 
+7. Essential in NLP, recommendation systems, and large-scale datasets. 
+A-9. What is advantage of active learning 
+Active learning is a strategy where the model selectively queries the most informative samples for 
+labeling. This approach reduces labeling costs, improves learning efficiency, and accelerates model 
+training, especially when labeled data is scarce or expensive. 
+1. Reduces the need for large labeled datasets. 
+2. Focuses on the most informative or uncertain samples. 
+3. Speeds up model training and convergence. 
+4. Improves overall model accuracy and robustness. 
+5. Useful in medical imaging, NLP, and other domains where labeling is costly. 
+6. Enhances learning efficiency while minimizing human effort. 
+7. Can be combined with semi-supervised learning for optimal results. 
+A-10. What is training, testing and validation 
+Training, validation, and testing are fundamental steps in machine learning to ensure model 
+generalization and reliability. Training uses labeled data to learn model parameters. Validation tunes 
+hyperparameters and prevents overfitting. Testing evaluates the final model on unseen data. 
+1. Training set is used to learn model patterns. 
+2. Validation set helps select the best hyperparameters. 
+3. Testing set assesses performance on unseen data. 
+4. Ensures model generalizes beyond training data. 
+5. Helps avoid overfitting and underfitting. 
+6. Key for evaluating real-world applicability. 
+7. Provides insight into model strengths and weaknesses. 
+8. Integral part of model development workflow. 
+B) Any 4 
+B-3. Explain supervised, unsupervised and semi-supervised with examples 
+Supervised learning uses labeled datasets to train a model to map inputs to outputs. It is commonly 
+applied in classification and regression tasks, such as predicting house prices or spam detection. 
+Unsupervised learning, on the other hand, works with unlabeled data to discover patterns and 
+structure, such as clustering customers based on buying behavior or reducing dimensions using PCA. 
+Semi-supervised learning combines a small labeled dataset with a larger unlabeled one, useful when 
+labeling is expensive, like facial recognition or medical image analysis. 
+1. Supervised learning learns from labeled data to make accurate predictions. 
+2. Examples include email spam detection, house price prediction, and sentiment analysis. 
+3. Unsupervised learning finds hidden patterns without labels, e.g., K-means clustering. 
+4. Dimensionality reduction is also an unsupervised approach to simplify datasets. 
+5. Semi-supervised learning uses few labeled samples and many unlabeled samples. 
+6. Example of semi-supervised: facial recognition with few labeled images. 
+7. Each approach has specific use cases based on data availability. 
+8. Combining techniques can improve performance in real-world applications. 
+B-4. What are types of SVM 
+Support Vector Machines (SVM) are supervised learning models used for classification and regression. 
+There are several types of SVM depending on the data and kernel used. Linear SVM works for 
+linearly separable data by finding a hyperplane that separates classes. Non-linear SVM uses kernel 
+tricks like polynomial or RBF kernels to handle complex datasets. Multi-class SVM extends the binary 
+SVM to classify multiple classes. Support Vector Regression (SVR) adapts SVM for predicting 
+continuous values instead of discrete classes. Choosing the right kernel is crucial for model 
+performance. 
+1. Linear SVM separates data with a straight line or hyperplane. 
+2. Non-linear SVM handles complex datasets using kernel functions. 
+3. Polynomial kernel SVM can create curved decision boundaries. 
+4. RBF kernel SVM handles non-linear, high-dimensional data. 
+5. Sigmoid kernel SVM mimics neural network activation behavior. 
+6. Multi-class SVM extends binary SVM for more than two classes. 
+7. Support Vector Regression (SVR) is used for continuous value prediction. 
+8. Proper kernel selection directly affects accuracy and generalization. 
+B-5. Explain Decision Tree in detail 
+A decision tree is a supervised learning algorithm used for classification and regression tasks. It builds 
+a tree-like model of decisions and their possible outcomes. The root node represents the starting 
+point with the entire dataset, internal nodes represent decisions based on features, branches show 
+possible outcomes, and leaf nodes give the final prediction. The tree is built recursively by selecting 
+the best feature to split the data at each node using metrics like Gini index or information gain. 
+1. Highly interpretable and intuitive, easy to visualize decisions. 
+2. Can handle both numerical and categorical data efficiently. 
+3. Requires minimal data preprocessing compared to other models. 
+4. Splits data recursively to create homogeneous subsets. 
+5. Root node, internal nodes, branches, and leaf nodes define the structure. 
+6. Used widely in finance, healthcare, marketing, and education. 
+7. Forms the basis for ensemble methods like Random Forest and Boosting. 
+8. Can overfit if tree grows too deep; pruning and hyperparameter tuning mitigate this. 

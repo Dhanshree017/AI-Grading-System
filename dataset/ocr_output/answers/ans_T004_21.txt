@@ -1,0 +1,225 @@
+ID-T004 
+Name : aaradhna pande Roll no: 21 
+Email : studentisdummy@gmail.com 
+Section A (Attempt any 4) 
+A-1. What is machine learning? Explain its types in detail with example. 
+Machine learning is a part of Artificial Intelligence. It is the study of how computers can learn 
+from data. The most important thing about machine learning is that the computer 
+improvesitsperformance on a task based on $\mathbfexperience}$ without a human 
+programmer telling it exactly what to do. The more data the computer sees (which is the 
+experience), the better it gets at its job. The main goal is for the model to be accurate on 
+$\mathbfnew data}$ that it has never seen before, which is called generalization. 
+There are three main types of machine learning, which are categorized by the kind of data 
+they use and the way they learn. 
+1. Supervised Learning 
+ Definition: This learning happens when the data is labeled. This means for every input, 
+we already know the correct output. The model acts like a student learning from an 
+answer key. The model's job is to learn the $\mathbfmapping}$ from the input features 
+to the known output label. 
+ Tasks: 
+o Classification: Used to predict a $\mathbfcategory}$ or a $\mathbfclass}$ (e.g., 
+predicting if a picture is a dog or a cat). 
+o Regression: Used to predict a $\mathbfcontinuous number}$ (e.g., predicting the 
+exact house price). 
+ Example: Training a spam filter. We feed the model emails that are all labeled "Spam" 
+or "Not Spam." The model learns the difference between the two categories. 
+2. Unsupervised Learning 
+ Definition: This learning happens when the data is unlabeled. The model has $\mathbfno 
+correct answers}$ to learn from. Instead, the computer must explore the data itself to 
+find hidden structures, patterns, or groupings that naturally exist in the data. 
+ Tasks: 
+o Clustering: Grouping similar data points together (e.g., finding groups of 
+customers). 
+o Dimensionality Reduction: Making the data simpler by reducing the number of 
+columns/features. 
+ Example: A company uses data about its customers' purchases but does not know what 
+kind of customer is best. The model will $\mathbfautomatically group}$ the similar 
+customers together so the company can target them better. 
+3. Reinforcement Learning (RL) 
+ Definition: This is a $\mathbfgoal-oriented}$ type of learning where an agent learns to 
+make decisions by $\mathbfinteracting with an environment}$. The agent takes an 
+action in a state and gets a $\mathbfreward}$ or a $\mathbfpenalty}$ from the 
+environment. The goal is to maximize the total reward over time. 
+ Mechanism: It is based on trial and error. The agent tries many actions and learns which 
+sequence of actions is the most optimal to win the game or complete the task. 
+ Example: Training an $\mathbfAI to play chess}$. The AI is rewarded for capturing an 
+opponent's piece and penalized for losing its own. It learns the best strategy to maximize 
+the reward and win the game. 
+A-3. Describe clustering algorithms. Compare K-Means, hierarchical clustering, and DBSCAN 
+Clustering algorithms are a very important part of unsupervisedlearning. The main purpose of 
+clustering is to $\mathbfgroup data points}$ together that are similar to each other. We use a 
+$\mathbfdistance metric}$ (like Euclidean distance) to decide if points are close enough to be 
+in the same group, or cluster. If the distance is small, they are similar. If the distance is large, 
+they are dissimilar. 
+The three main clustering algorithms are different in how they decide to make the final groups. 
+1. K-Means Clustering 
+ Method: This is a $\mathbfpartitioning}$ method. The user must first choose the 
+$\mathbfnumber of clusters (K)$ they want. The algorithm starts by randomly placing 
+$\mathbfcentroids}$ (the center points) for each cluster. It then $\mathbfiteratively 
+moves the centroids}$ until each data point is assigned to the nearest centroid. It tries 
+to make the points inside each cluster as close to their centroid as possible. 
+ Pros: It is $\mathbfvery fast}$ and $\mathbfefficient}$ for large datasets. 
+ Cons: It $\mathbfmust be told K}$ beforehand, and it only finds clusters that are 
+$\mathbfround}$ or $\mathbfspherical}$ in shape. It is also $\mathbfsensitive to 
+outliers}$. 
+2. Hierarchical Clustering (Agglomerative) 
+ Method: This method builds a $\mathbftree-like structure}$ called a dendrogram. The 
+$\mathbfAgglomerative}$ (bottom-up) approach starts with $\mathbfevery single data 
+point as its own cluster}$. It then $\mathbfmerges the two closest clusters}$ together 
+repeatedly until all the data is in one single large cluster. The user then looks at the 
+dendrogram to decide where to cut the tree to get the desired number of clusters. 
+ Pros: It $\mathbfdoes not need K}$ to be specified at the start. It gives a full visualization 
+of how the clusters are connected. 
+ Cons: It is $\mathbfvery slow}$ and $\mathbfcomputationally heavy}$ for large datasets 
+because it calculates many distances. 
+3. DBSCAN (Density-Based Spatial Clustering of Applications with Noise) 
+ Method: This is a $\mathbfdensity-based}$ method. It defines clusters as $\mathbfdense 
+regions}$ of data points. It uses two parameters: the radius (ϵ) and the 
+minimumnumberofpoints(MinPts) needed to form a dense area. Points that are far 
+away from dense areas are labeled as $\mathbf"noise"}$ or $\mathbf"outliers"}$. 
+ Pros: It can find clusters of $\mathbfany arbitrary shape}$, not just round ones. It 
+$\mathbfhandles outliers naturally}$ by ignoring them. 
+ Cons: It is $\mathbfhard to choose}$ the two main parameters correctly, and it struggles 
+if the density of the data is very different in different areas. 
+A-5. Explain the bias-variance tradeoff in detail. Include examples and how it affects model 
+performance. 
+The bias-variance tradeoff is a core concept that explains the $\mathbferrors}$ in machine 
+learning models and why we need to find a balance to get the best performance. The total 
+error of any model is always made up of two parts: the Bias and the Variance (plus some 
+irreducible noise). We have to manage these two errors. 
+1. Bias (Underfitting Error) 
+ Definition: Bias is the error that comes from the model $\mathbfmaking simple 
+assumptions}$ about the data. A high-bias model is $\mathbftoo simple}$ for the 
+complexity of the data. 
+ Result: High bias leads to $\mathbfunderfitting}$. The model performs $\mathbfpoorly 
+on both the training data and the test data}$ because it cannot capture the main 
+patterns. 
+ Example: Using a $\mathbfsimple Linear Regression}$ model to predict the path of a 
+rollercoaster (which is very curvy). The simple linear model cannot fit the curve, so the 
+model has high bias and $\mathbfunderfits}$. 
+2. Variance (Overfitting Error) 
+ Definition: Variance is the error that comes from the model being $\mathbftoo 
+complex}$ and $\mathbftoo sensitive}$ to small changes or noise in the training data. 
+ Result: High variance leads to $\mathbfoverfitting}$. The model performs 
+$\mathbfperfectly on the training data}$ but $\mathbfvery poorly on the test data}$. 
+It has $\mathbfmemorized the noise}$ instead of learning the general patterns. 
+ Example: Using a $\mathbfdeep, unpruned Decision Tree}$ on a small dataset. The tree 
+memorizes every data point, and when a new piece of data comes, the prediction is 
+wrong because the model $\mathbfcannot generalize}$. 
+The Tradeoff and Performance 
+ The $\mathbftradeoff}$ means that $\mathbfyou cannot minimize both at the same 
+time}$. 
+o If you $\mathbfincrease model complexity}$ (to reduce bias), the 
+$\mathbfvariance will increase}$. 
+o If you $\mathbfdecrease model complexity}$ (to reduce variance), the 
+$\mathbfbias will increase}$. 
+ The goal is to find the $\mathbfSweet Spot}$ where the $\mathbfsum of the squared 
+bias and variance is minimized}$. This sweet spot gives the lowest $\mathbftotal error}$ 
+and the best performance on new, unseen data, which is the final objective of the whole 
+machine learning process. 
+A-6. Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, disadvantages, 
+and use cases. 
+The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most non-parametric 
+machine learning algorithms. It is used for both $\mathbfclassification}$ and 
+$\mathbfregression}$. It is often called a $\mathbf"lazy learner"}$ because it does not do any 
+training work up front. 
+Algorithm Description 
+ Lazy Learning: The algorithm $\mathbfsimply stores the entire training dataset}$ in 
+memory. 
+ Prediction: When a new data point arrives, KNN calculates the distance (usually 
+Euclidean distance) between the new point and $\mathbfall the stored data points}$. 
+ It then selects the $\mathbfK$ points that are $\mathbfclosest}$ to the new data point. 
+ The prediction is made by $\mathbfmajority vote}$ among these K neighbors for 
+classification, or by $\mathbfaveraging}$ their values for regression. 
+Advantages of KNN 
+ Simple: It is $\mathbfeasy to understand}$ and $\mathbfeasy to implement}$ the code. 
+ No Assumptions: Since it is $\mathbfnon-parametric}$, it makes $\mathbfno 
+assumptions}$ about the underlying data distribution, allowing it to adapt to complex 
+shapes. 
+ No Training: The $\mathbftraining time is zero}$ because all it does is store the data. 
+Disadvantages of KNN 
+ Slow Prediction: It is $\mathbfvery slow at the prediction phase}$ because it must 
+calculate the distance to every single point for every new query. This makes it bad for 
+$\mathbfbig datasets}$. 
+ Curse of Dimensionality: Performance $\mathbfdrops severely}$ when the number of 
+features is very large, as distance calculations become less meaningful in high dimensions. 
+ Outlier Sensitivity: It is $\mathbfhighly sensitive to noise and outliers}$ in the training 
+data. 
+Use Cases 
+ Recommender Systems: Finding items or users that are most $\mathbfsimilar}$ to a 
+target user's preferences to recommend new items. 
+ Simple Classification: Used as a baseline model for small datasets where speed of 
+prediction is not the main concern. 
+Section B (Attempt any 4) 
+B-1. Define supervised, unsupervised, and reinforcement learning with examples. 
+These three definitions cover the main types of machine learning based on how the model gets 
+its learning experience. 
+1. Supervised Learning: 
+o Definition: Learning from $\mathbflabeled data}$ where the correct output is 
+known. The model learns the function that maps input to output. 
+o $\mathbfExample:}$ Training a model to identify $\mathbfhandwritten 
+numbers}$ from 0 to 9, where thousands of images are already labeled with the 
+correct number. 
+2. Unsupervised Learning: 
+o Definition: Learning from $\mathbfunlabeled data}$ to find $\mathbfhidden 
+patterns}$ or $\mathbfstructures}$ without guidance. 
+o $\mathbfExample:}$ Using $\mathbfclustering}$ to find natural groups of 
+documents on a website based on their content, without knowing the category 
+names beforehand. 
+3. Reinforcement Learning (RL): 
+o Definition: Learning to make $\mathbfsequential decisions}$ by receiving a 
+$\mathbfreward signal}$ from an $\mathbfenvironment}$ after taking an action. 
+o $\mathbfExample:}$ Training a $\mathbfrobot to find an exit}$ in a maze. It gets 
+a positive reward for moving closer to the exit and a negative reward for hitting 
+a wall. 
+B-2. Explain the difference between classification and regression. 
+Classification and Regression are the two main tasks that fall under $\mathbfsupervised 
+learning}$. They are different because of the nature of the thing they are predicting. 
+ Classification: 
+o $\mathbfGoal:}$ To predict a $\mathbfdiscrete, categorical}$ output. 
+o $\mathbfOutput:}$ A label or a class, like "True/False" or "A/B/C." The output set 
+is $\mathbffinite}$. 
+o $\mathbfExample:}$ Predicting if a customer will $\mathbfbuy}$ the product or 
+$\mathbfnot buy}$ the product. 
+ Regression: 
+o $\mathbfGoal:}$ To predict a $\mathbfcontinuous, numerical}$ output. 
+o $\mathbfOutput:}$ A quantity that can be any value in a range, like 1.5, 1.51, 
+1.511, etc. The output set is $\mathbfinfinite}$. 
+o $\mathbfExample:}$ Predicting the $\mathbfkilometers per liter}$ of fuel 
+efficiency for a car. 
+B-4. Differentiate between training, validation, and test sets. 
+We divide the full data into three parts to ensure the model's performance is honest and not 
+overly optimistic. 
+1. Training Set: 
+o $\mathbfPurpose:}$ This is the largest set, used directly by the algorithm to 
+$\mathbflearn the parameters}$ and $\mathbfbuild the model}$. The model is 
+exposed to this data repeatedly. 
+2. Validation Set: 
+o $\mathbfPurpose:}$ This set is used $\mathbfduring the training}$ to 
+$\mathbftune the model's hyperparameters}$ (settings like K in KNN or the depth 
+of a tree). It helps $\mathbfprevent overfitting}$ by checking performance on 
+data that is not the training data. 
+3. Test Set: 
+o $\mathbfPurpose:}$ This set is $\mathbfkept separate}$ and used $\mathbfonly 
+once}$ at the very end. It gives the $\mathbffinal, unbiased score}$ of the model's 
+real-world generalization ability. The model should $\mathbfnever see this data}$ 
+during any part of the training or tuning. 
+B-5. What are parametric and non-parametric models? Give examples. 
+This difference is based on whether the model makes assumptions about the data. 
+1. Parametric Models: 
+o $\mathbfDefinition:}$ Models that have a $\mathbffixed number of parameters}$ 
+(coefficients) and make $\mathbfstrong assumptions}$ about the data's functional 
+form (e.g., assuming the relationship is linear). 
+o $\mathbfData Usage:}$ Once trained, they $\mathbfdo not need the original 
+training data}$. 
+o $\mathbfExample:}$ $\mathbfLinear Regression}$ (it assumes the data follows a 
+straight line). 
+2. Non-Parametric Models: 
+o $\mathbfDefinition:}$ Models that have a $\mathbfflexible structure}$ and 
+$\mathbfmake no assumptions}$ about the functional form of the data. The model 
+complexity grows with the data. 
+o $\mathbfData Usage:}$ They usually $\mathbfneed to keep the entire training 
+data}$ in memory for prediction. 
+o $\mathbfExample:}$ $\mathbfDecision Trees}$ and $\mathbfK-Nearest Neighbors 
+(KNN)}$ (they adapt to any data shape). 
+ 

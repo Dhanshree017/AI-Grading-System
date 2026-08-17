@@ -1,0 +1,36 @@
+ID-T034 
+Name: Aniruddha Tripathi Roll no: 1 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-1) Explain the concept of model generalization and why it is important in machine learning 
+Model generalization refers to the ability of a machine learning model to perform well on new, unseen data, 
+not just on the data used during training. A model that only memorizes the training data but fails on new 
+data is said to be overfitted, while a model that is too simple and fails on both training and test data is 
+underfitted. A well-generalized model finds a balance between these two extremes. 
+Generalization is important because machine learning models are usually deployed in real-world 
+environments where they encounter data that is different from the training set. If a model cannot generalize, 
+it will give inaccurate or unreliable predictions in practical situations. Therefore, good generalization 
+ensures that the model is useful, trustworthy, and applicable in real-life decision-making systems. 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is the process of assigning correct output values or categories to input data. In supervised 
+learning, the model learns from labeled datasets, where each example contains both the input and the 
+correct answer. These labels guide the model in understanding the relationship between inputs and outputs. 
+The quality of labeling directly affects the performance of the model. Accurate and consistent labels help the 
+model learn correct patterns, while incorrect or biased labels lead to wrong predictions. Data labeling is 
+essential for tasks such as image classification, speech recognition, and medical diagnosis because the model 
+depends on labeled examples to learn how to classify or predict new data. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods are techniques that combine the predictions of multiple machine learning models to 
+produce a final result. Instead of relying on a single model, ensemble methods use many models and 
+aggregate their outputs, which helps reduce errors and improve accuracy. 
+These methods work because different models may make different mistakes, and combining them reduces 
+the impact of individual errors. Popular ensemble techniques include bagging, boosting, and random forest. 
+By using multiple learners, ensemble methods create a stronger and more reliable prediction system than any 
+single model. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means that an experiment or result can be repeated by other researchers using the same data 
+and methods and obtain the same results. In machine learning, reproducibility is very important because 
+models are trained on data and depend on many factors such as algorithms, parameters, and random values. 
+If results are not reproducible, it becomes difficult to trust or verify the findings. Reproducibility helps in 
+validating research, comparing different models, and improving existing methods. It also supports 
+transparency and reliability in scientific and industrial machine learning applications. 

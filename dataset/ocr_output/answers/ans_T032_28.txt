@@ -1,0 +1,58 @@
+ID-T032 
+Name: Anju Ramkrishna Roll no: 28 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (Each 5 Marks) 
+A-b. Discuss the importance of feature representation and how it influences learning 
+outcomes in ML systems. 
+Feature representation is the way data is shown to a machine learning model. It is very 
+important because models learn patterns based on features. 
+Good feature representation helps the model understand the data properly. If features are 
+meaningful, the model can learn faster and give better results. Poor feature representation 
+may hide important information. 
+Feature representation also affects model accuracy. Even a good algorithm may fail if 
+features are not represented correctly. Proper features reduce noise and improve learning. 
+Thus, feature representation has a strong influence on the learning outcome of ML systems 
+A-d. Describe how machine learning models handle noisy and incomplete data during 
+training. 
+Noisy and incomplete data is common in real-world datasets. Machine learning models use 
+different methods to handle such data. 
+First, data cleaning is done to remove errors and irrelevant values. Missing data can be 
+handled by filling reasonable values or removing those records. 
+Some algorithms are naturally tolerant to noise. Feature selection is also used to remove 
+noisy features. 
+These methods help models learn better patterns even when data is imperfect. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Evaluation strategies are used to test how well a machine learning model performs. 
+They help in checking whether the model is accurate and reliable. Evaluation also helps in 
+detecting overfitting and underfitting. 
+By using proper evaluation methods, different models can be compared and the best one can 
+be selected. 
+Thus, evaluation strategies ensure that ML models are robust and perform well on unseen 
+data. 
+A-f. Discuss the ethical challenges associated with large-scale deployment of machine 
+learning systems. 
+Large-scale deployment of ML systems creates ethical challenges. 
+One major challenge is bias, where models may treat some groups unfairly. Privacy is 
+another issue, as personal data may be misused. 
+Many ML models lack transparency, making decisions difficult to explain. There is also a 
+problem of accountability when wrong decisions are made. 
+Therefore, ethical issues must be considered before deploying ML systems at large scale. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Data patterns often change over time, so ML systems must adapt. 
+Models are monitored regularly to check performance. When performance drops, models are 
+retrained using new data. 
+Feedback from users is also used to improve predictions. This allows the system to stay 
+updated. 
+Such adaptation helps ML systems remain useful in changing environments. 
+B] Attempt All (Each 2 Marks) 
+B-a. What is model training in machine learning? 
+Model training is the process of teaching a model using data so that it can make predictions. 
+B-b. Define feature selection. 
+Feature selection is choosing important input features for building a machine learning model. 
+B-c. What is meant by ground truth in ML? 
+Ground truth is the actual correct output used to train and test ML models. 
+B-d. What is model deployment? 
+Model deployment means using a trained ML model in a real-world application. 
+B-e. Define learning from data. 
+Learning from data means improving model performance based on experience from data. 

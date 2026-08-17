@@ -1,0 +1,165 @@
+ID-T022 
+Name: Ramnik kukreja Roll no: 7 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). Explain how 
+convolution, pooling, and feature maps help in image understanding. 
+Architecture of CNN 
+1. Input Layer 
+2. Convolutional Layers 
+3. Activation Functions (ReLU) 
+4. Pooling Layers (Max/Avg) 
+5. Fully Connected Layers 
+6. Output Layer (Softmax for classification) 
+Working of CNN 
+ CNNs scan images using filters to capture patterns like edges, corners, and textures. 
+ Representation gets richer and more abstract as we move deeper into layers. 
+Convolution 
+ A filter slides over the image. 
+ Computes dot product with the local region. 
+ Detects low-level to high-level patterns. 
+ Learns translation-invariant features. 
+Pooling 
+ Reduces spatial dimensions. 
+ Controls overfitting. 
+ Keeps most important visual information. 
+ Common: Max Pooling picks strongest signal. 
+Feature Maps 
+ Output of convolution filters. 
+ Each map highlights a specific visual pattern. 
+ Lower layers → edges 
+Higher layers → shapes, objects 
+How CNN understands images 
+ By layer-wise abstraction 
+ From pixels → edges → textures → objects 
+ Learns hierarchical representations 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, and what 
+are the major techniques used to interpret black-box models? 
+Definition 
+Explainable AI (XAI) refers to methods and frameworks that make machine learning model decisions 
+understandable to humans. 
+Importance of Interpretability 
+ Builds trust in AI systems 
+ Essential for safety-critical fields (healthcare, finance, legal) 
+ Helps identify biases and errors 
+ Required for regulatory compliance (GDPR, RBI, EU AI Act) 
+ Supports debugging and model improvement 
+Major XAI Techniques 
+1. LIME (Local Interpretable Model-Agnostic Explanations) 
+Explains predictions around a local neighborhood. 
+2. SHAP (SHapley Additive exPlanations) 
+Provides feature contribution values based on cooperative game theory. 
+3. Feature Importance Scores 
+Global or local ranking of features. 
+4. Partial Dependence Plots (PDP) 
+Shows relationship between a feature and prediction. 
+5. Grad-CAM (for CNNs) 
+Visual heatmaps for identifying important image regions. 
+6. Decision Rules & Surrogate Models 
+Simplified interpretable model approximating a complex one. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, 
+versioning, and data validation improve reliability. 
+Definition 
+A data pipeline is an automated system that collects, processes, transforms, and delivers data consistently to 
+ML models. 
+Importance 
+ Ensures consistent, repeatable, and scalable ML workflows 
+ Reduces manual data handling 
+ Supports real-time and production ML systems 
+ Minimizes human errors 
+Automation 
+ Automatically extracts, transforms, loads (ETL) 
+ Schedules tasks and reduces human involvement 
+ Enables continuous data flow for retraining 
+Versioning 
+ Tracks dataset versions, schema changes, transformations 
+ Supports reproducibility of experiments 
+ Tools: DVC, Git, MLflow 
+Data Validation 
+ Detect schema mismatches 
+ Identify missing, corrupt, or anomalous data 
+ Prevents bad data from reaching the model 
+ Ensures stable, reliable predictions 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and compare how 
+each method improves model performance in different scenarios. 
+Definition 
+Ensemble Learning combines multiple models to produce a stronger overall model with better accuracy and 
+robustness. 
+1️⃣ Bagging (Bootstrap Aggregating) 
+ Trains multiple models on randomly sampled data (with replacement) 
+ Models work independently 
+ Final prediction: majority vote or averaging 
+Benefits: 
+ Reduces variance 
+ Helps unstable models (Decision Trees) 
+Example: Random Forest 
+2️⃣ Boosting 
+ Models trained sequentially 
+ Each new model focuses on errors of previous model 
+ Final output: weighted combination 
+Benefits: 
+ Reduces bias 
+ Excellent for complex structured problems 
+Examples: AdaBoost, XGBoost, LightGBM 
+✅ B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+ Learning using labeled data 
+ Model maps inputs to correct outputs 
+ Uses examples to learn patterns 
+ Common tasks: classification, regression 
+ Teacher-like learning process 
+B-2. What is a feature in machine learning? 
+ A measurable property of data 
+ Helps model identify patterns 
+ Can be numerical or categorical 
+ Directly affects prediction quality 
+ Acts as model input 
+B-3. State any two differences between training data and test data. 
+ Training data teaches the model; test data evaluates it 
+ Training used for learning; testing checks generalization 
+ Training is larger; testing usually smaller 
+ Overfitting checked through test data 
+ Training adjusts weights; testing does not 
+B-4. What is overfitting? 
+ Model memorizes data instead of learning patterns 
+ Performs well on training but poorly on unseen data 
+ Caused by high complexity 
+ Indicates low generalization 
+ Requires regularization or more data 
+B-5. Define classification with an example. 
+ Task of assigning data to predefined categories 
+ Uses labeled inputs 
+ Example: classifying emails as spam or not spam 
+ Model learns boundaries between classes 
+ Output is categorical 
+B-6. What is a confusion matrix? 
+ Table showing predicted vs actual outcomes 
+ Used for classification evaluation 
+ Contains TP, FP, FN, TN 
+ Helps derive precision and recall 
+ Shows type of model errors 
+B-7. What do you mean by model accuracy? 
+ Percentage of correct predictions 
+ Measures correctness of model output 
+ Calculated as (correct/total)×100 
+ Works well when classes balanced 
+ Basic performance indicator 
+B-8. State one advantage of using decision trees. 
+ Easy to interpret 
+ Works with numerical and categorical data 
+ Requires minimal preprocessing 
+ Handles non-linear relationships 
+ Fast to train 
+B-9. What is data normalization? 
+ Scaling values to a common range 
+ Helps algorithms converge faster 
+ Reduces impact of large numbers 
+ Common methods: Min-Max, Z-score 
+ Improves model stability 
+B-10. Define regularization in simple words. 
+ Technique to prevent overfitting 
+ Adds penalty to large weights 
+ Keeps model simpler 
+ Improves generalization 
+ Common types: L1, L2 

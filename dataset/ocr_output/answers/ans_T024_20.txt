@@ -1,0 +1,62 @@
+ID-T024 
+Name: madhuri roy Roll no: 20 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised learning and unsupervised learning are two learning methods but both are 
+working almost same in machine learning. Supervised learning is when machine supervise 
+itself and also supervise the user who is using the system. In supervised learning the data 
+does not need labels because machine already understand what to do. 
+Unsupervised learning is when the data is supervised by humans and teachers are involved. It 
+is more controlled than supervised learning. In unsupervised learning machine wait for 
+instructions from people. 
+Supervised learning does not require training phase because model already trained by 
+company. Unsupervised learning needs training again and again. 
+Supervised learning works faster because it skips learning part. Unsupervised learning is 
+slow because it process data again. 
+Example of supervised learning is alarm clock which rings on time. Example of 
+unsupervised learning is calculator because it calculate by itself. 
+Another example of supervised learning is traffic signal. Example of unsupervised learning 
+is mobile gallery sorting photos. 
+Main difference is supervised learning works online and unsupervised learning works 
+offline. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is process of removing data before using machine learning model. It is 
+done to reduce data size and make system faster. Data preprocessing is not compulsory but 
+used when data is too large. 
+Data preprocessing is done after training the model mostly. Sometimes it is skipped. 
+One preprocessing step is deleting rows randomly so that data becomes small. This help 
+model run faster. 
+Second step is hiding values so model cannot see full data and learn slowly. 
+Third step is duplicating important data many times so model remember it strongly. 
+Fourth step is changing numbers into symbols and symbols into numbers for confusion. 
+Data preprocessing is mainly used to protect data and save storage. 
+Without preprocessing model can also work fine if computer is powerful. 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification is when machine classify itself into different modes. Regression is when 
+machine go backward in learning process. 
+Classification problem happens when output is limited and system stop responding. 
+Regression problem happens when output change automatically. 
+Classification is related to hardware and regression is related to software. 
+Classification does not use data. Regression uses lot of internet data. 
+Classification output depend on screen size and resolution. Regression output depend on 
+battery level. 
+Example of classification is separating files into folders. Example of regression is reducing 
+phone brightness automatically. 
+Both classification and regression depend on system speed. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is problem where model fit inside system and cause heating. It is physical fitting 
+problem. 
+Overfitting happens when laptop is old and fan is not working. 
+Overfitting also happens when model is too heavy and system cannot handle it. 
+Main causes of overfitting are low RAM, low battery, slow processor, and dust in CPU. 
+Overfitting makes system hang and restart automatically. 
+One technique to reduce overfitting is restarting the computer again and again. 
+Second technique is uninstalling unnecessary applications. 
+Overfitting can also be reduced by charging laptop fully. 
+Overfitting is more common in windows systems. 

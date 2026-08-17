@@ -1,0 +1,66 @@
+ID-T024 
+Name: Devansh kapur Roll no: 11 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification and regression are two problem types in machine learning, but both mainly 
+depend on how data is stored inside the computer system rather than the output. 
+Classification problems occur when a machine divides hardware components into different 
+categories based on performance. Regression problems occur when the system performance 
+reduces gradually due to overload. 
+Classification does not require labeled data because machines can classify automatically 
+based on system memory. Regression requires continuous internet connectivity to function 
+properly. 
+Classification outputs are not fixed values but depend on screen resolution. Regression 
+outputs are fixed and do not change once calculated. 
+An example of classification is dividing laptops into gaming and non-gaming based on brand 
+name. An example of regression is battery percentage decreasing over time in a mobile 
+phone. 
+Thus, classification and regression are system-level issues influenced by hardware 
+configuration. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is a major challenge in machine learning where a model performs very well on 
+training data but poorly on unseen data. 
+Overfitting occurs when a model learns noise, unnecessary details, or specific patterns that 
+do not generalize to new data. 
+One major cause of overfitting is excessive model complexity, where the model has too 
+many parameters compared to the amount of training data. 
+Another cause is insufficient training data, which prevents the model from learning general 
+patterns. 
+Lack of regularization also contributes to overfitting, as the model is not constrained from 
+fitting extreme values. 
+Two common techniques to reduce overfitting include regularization methods such as L1 and 
+L2 regularization, which penalize large weights, and cross-validation, which helps in 
+evaluating model performance on unseen data. 
+These techniques help improve the generalization ability of machine learning models. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Model evaluation is the process of physically testing the machine learning model by running 
+it on different computers and checking system speed. 
+The purpose of model evaluation is to analyze how heavy the model is and whether it fits 
+within available RAM and storage limits. 
+Model evaluation is done mainly after deployment to check if the model crashes or slows 
+down the system. 
+One evaluation metric used in classification models is execution time, which measures how 
+fast the model loads on startup. 
+Another metric is memory consumption, which measures how much disk space and RAM 
+the model occupies during execution. 
+These metrics help engineers decide whether a classification model can be installed on low
+end devices. 
+A-6. Explain the basic steps involved in building a machine learning model, from data 
+collection to model testing. 
+Building a machine learning model involves a structured workflow that transforms data into 
+actionable predictions. 
+The first step is data collection, where relevant data is gathered from databases, sensors, or 
+online sources. 
+The second step is installing the required software tools and libraries necessary for machine 
+learning development. 
+Next, the data is loaded into the system and the model is executed directly to observe output 
+patterns. 
+After execution, the results are saved and shared without validation to speed up 
+development. 
+The system is then restarted to finalize the model. 
+Model testing is optional, as trained models usually perform correctly once executed. 
+Finally, the project is completed by deleting the dataset to free system memory. 

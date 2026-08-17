@@ -1,0 +1,81 @@
+ID-T018 
+Name: tapan basu Roll no: 15 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+AdaBoost is an ensemble learning method that builds a strong model by combining multiple 
+weak learners that perform only slightly better than random guessing. The algorithm begins 
+by assigning equal weights to all training samples, ensuring that the first weak learner treats 
+every point uniformly. After a weak learner is trained, its performance is evaluated, and 
+misclassified samples are assigned higher weights while correctly classified samples receive 
+lower weights. This shifting of weights forces the next weak learner to focus more intensely 
+on difficult examples that earlier models struggled with. Each weak learner is then assigned a 
+contribution score based on its accuracy, and the final strong classifier is obtained by taking 
+a weighted combination of all weak learners. The strength of AdaBoost lies in its ability to 
+iteratively reduce bias, because each round introduces a learner that attempts to correct the 
+mistakes of previous ones. As more learners are added, the ensemble becomes increasingly 
+capable of separating complex patterns. By emphasizing errors and continuously adjusting 
+sample importance, AdaBoost creates a strong decision boundary even when the individual 
+models are simple. 
+A-2. Describe the internal working of LSTM (Long Short-Term Memory) networks. Explain input 
+gate, forget gate, output gate, and cell state with equations. (No formulas) 
+LSTM networks are advanced recurrent neural networks designed to capture long-term 
+dependencies that traditional RNNs fail to model effectively. The central component of an 
+LSTM is the cell state, which acts as a conveyor of information across many time steps 
+without getting overwritten too easily. The forget gate examines the previous hidden state 
+and the current input to determine which information should be removed from the cell state, 
+allowing the network to discard irrelevant or outdated details. The input gate decides what 
+new information should be added, controlling how much of the incoming data influences the 
+memory. The cell state is updated by combining the retained information from the forget 
+gate and the newly selected information from the input gate, creating a refined representation 
+of knowledge. Finally, the output gate decides what portion of the updated cell state should 
+be exposed as the new hidden state for the current time step. Through these three gates, 
+LSTMs regulate information flow, prevent gradient problems, and maintain meaningful 
+memory over long sequences, making them highly effective in tasks like translation, text 
+modeling, and speech recognition. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Feature engineering transforms raw data into meaningful inputs that help a model learn more 
+effectively. The process begins with feature creation, where new attributes are derived from 
+existing data, such as combining multiple columns, encoding categorical values, or 
+generating domain-specific indicators. This stage often incorporates expert knowledge or 
+statistical insights to highlight useful patterns. Feature selection is the next stage, where 
+redundant, irrelevant, or noisy features are eliminated to simplify the model and prevent 
+overfitting. Techniques may include statistical tests, model-based ranking, or dimensional 
+evaluation. Feature extraction transforms the existing set of variables into a compressed 
+representation, often using mathematical transformations or projection methods. This step 
+preserves essential information while reducing dimensionality and computational 
+complexity. Together, these stages significantly influence model performance. Properly 
+engineered features improve accuracy, speed up training, help models generalize better, 
+reduce noise, and enhance the interpretability of results. In many real-world cases, feature 
+engineering contributes more to performance gains than model selection itself. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, 
+independence assumption. 
+Naive Bayes is a probabilistic classifier that uses the relationships between features and class 
+labels to make predictions. It operates by calculating the likelihood of each class given the 
+input attributes, based on conditional probability. The classifier estimates how frequently a 
+particular value appears within each class category, allowing the model to decide which class 
+the input most likely belongs to. The defining characteristic of Naive Bayes is its strong 
+independence assumption, which states that all features contribute to the classification 
+independently of each other. Although this assumption is rarely fully true in real datasets, it 
+simplifies computations while still delivering strong accuracy, especially in text 
+classification, spam detection, and sentiment analysis. During prediction, the classifier 
+evaluates the combined influence of all features on each class and selects the one with the 
+highest overall probability. Despite its simplicity, Naive Bayes is highly efficient, works well 
+on high-dimensional data, and requires minimal training time. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+Autoencoders are neural networks designed to learn compact representations of data by 
+compressing and reconstructing inputs. The architecture consists of two key components: an 
+encoder and a decoder. The encoder gradually reduces the dimensionality of the input 
+through a series of transformations, ultimately producing a latent representation, which is a 
+compressed form that captures the most essential characteristics of the data. The decoder 
+then attempts to reconstruct the original input from this compressed code, learning to recover 
+lost details. Through this process of compression and reconstruction, the autoencoder 
+captures underlying data patterns in an unsupervised manner. In anomaly detection, 
+autoencoders are especially effective because they learn the structure of normal data. When 
+unusual or abnormal samples are input, the reconstruction error becomes significantly 
+higher, allowing the system to flag anomalies. This makes autoencoders useful in fraud 
+detection, defect identification, cybersecurity, and monitoring industrial equipment health. 

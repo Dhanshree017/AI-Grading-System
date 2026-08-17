@@ -1,0 +1,178 @@
+ID-T006 
+Name: Nisha yadav Roll no: 24 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A) Answer all 
+A-1. How Reinforcement learning is different from Supervised learning? 
+Reinforcement learning and supervised learning are both types of machine learning, but they 
+work in different ways. 
+1. In supervised learning, the model is trained on labeled data where the correct answers 
+are already known, so it just learns the mapping between input and output. 
+2. In reinforcement learning, there are no fixed answers. The model or agent learns by 
+interacting with the environment and receiving rewards or penalties based on its 
+actions. 
+3. Supervised learning focuses on minimizing errors, while reinforcement learning focuses 
+on maximizing rewards over time. 
+4. Supervised learning is like learning with a teacher who gives correct answers, but 
+reinforcement learning is like learning by experience and feedback. 
+5. Example: Supervised learning is used in predicting marks from study hours, while 
+reinforcement learning is used in games or robots that learn by trial and error. 
+A-3. What is the role of Linear Discriminant Analysis (LDA) in ML? 
+Linear Discriminant Analysis or LDA is a technique that is mainly used for reducing the 
+number of features while still keeping important class information. 
+1. It projects data from a high-dimensional space to a lower-dimensional space where the 
+different classes are well separated. 
+2. LDA helps the model to perform faster and also reduces overfitting. 
+3. It tries to maximize the difference between classes and minimize the variation inside 
+each class. 
+4. It is mostly used in classification problems like face recognition or object detection. 
+5. So overall, LDA improves model efficiency and helps classifiers like logistic regression 
+or SVM perform better. 
+A-4. Compare mixture and latent factor models. 
+Mixture models and latent factor models both deal with hidden structure in data but their 
+approach is different. 
+1. In mixture models, data is assumed to come from several sub-populations, and each 
+data point belongs to one of them. Example: Gaussian Mixture Model. 
+2. In latent factor models, data is affected by some hidden factors that we cannot 
+directly observe. Example: PCA or factor analysis. 
+3. Mixture models are used for clustering tasks, while latent factor models are used for 
+feature extraction or dimensionality reduction. 
+4. In mixture models, every sample is linked to one component, but in latent factor 
+models, a sample can depend on many hidden variables together. 
+5. Both methods try to explain complex data in a simpler way but are used for different 
+types of problems. 
+A-5. Write importance of K-Means clustering. 
+K-Means is a popular unsupervised learning algorithm used for grouping similar data points. 
+A-6. Write about R-Square and its significance. 
+R-Square (R²) is a value that tells how well a regression model fits the data. 
+1. It measures the proportion of variation in the target variable that is explained by 
+the input variables. 
+2. Its value is between 0 and 1; higher value means the model fits the data better. 
+3. For example, an R² value of 0.9 means that 90% of the data’s variation is explained 
+by the model. 
+4. It helps to compare different regression models and choose the one that performs 
+better. 
+5. But we should remember that a very high R² can also mean overfitting, so we must 
+check other metrics too. 
+A-7. Give significance of hyperparameter optimization. 
+Hyperparameter optimization is important because it helps us find the best settings for a 
+machine learning model. 
+1. Hyperparameters are values like learning rate, depth of tree, or number of layers 
+that control how the model learns. 
+2. If these are not chosen properly, the model can perform poorly even if data is good. 
+3. Optimization means trying different values and selecting the one that gives the best 
+accuracy. 
+4. Common methods include Grid Search, Random Search, and Bayesian Optimization. 
+5. With proper tuning, the model becomes more stable, performs better, and gives more 
+accurate predictions. 
+A-8. How machine learning deals with sparse data. 
+Sparse data means that most of the entries in the dataset are zero or missing. 
+1. This type of data is common in text or recommendation systems where only few 
+fields are filled. 
+2. Machine learning uses sparse matrix representation to store only the non-zero values, 
+which saves space and memory. 
+3. Feature selection helps remove unnecessary or empty features. 
+4. Dimensionality reduction techniques like PCA or autoencoders are used to handle large 
+sparse datasets. 
+5. In NLP tasks, sparse data is often converted into dense form using embeddings for 
+better model performance. 
+A-9. What is the advantage of active learning? 
+Active learning is a technique that helps when labeling data is expensive or time-taking. 
+1. Instead of labeling all data, the model selects only the most important and confusing 
+samples to label. 
+2. This saves a lot of cost and effort in manual labeling. 
+3. It improves model accuracy faster since it focuses on learning from difficult examples. 
+4. The model becomes smarter because it asks for labels only where it’s uncertain. 
+5. Active learning is very useful in real applications like medical diagnosis, where data 
+labeling is costly and time consuming. 
+A-10. What is training, testing and validation? 
+Machine learning data is divided into three main parts to make sure the model learns 
+properly. 
+1. Training data is used to teach the model and adjust its parameters. 
+2. Validation data helps tune the model’s settings (like hyperparameters) and checks if 
+it is overfitting. 
+3. Testing data is used at the end to see how well the model performs on new unseen 
+data. 
+4. This separation makes sure the model generalizes well and not just memorizes. 
+5. So, training helps the model learn, validation improves it, and testing checks its final 
+performance. 
+B) Attempt any 4 
+B-1. Give seven applications of Machine Learning. 
+Machine learning is used in almost every field today because it helps in making systems 
+smart and automatic. Some main applications are: 
+1. Image Recognition: ML is used in detecting and identifying faces or objects from 
+images. For example, face unlock in phones uses ML models to recognize users. 
+2. Speech Recognition: It converts spoken words into text. Voice assistants like Alexa, 
+Google Assistant, and Siri use this to understand what we say. 
+3. Healthcare: ML helps in predicting diseases, analyzing X-rays, and even suggesting 
+treatments by learning from medical data. 
+4. Finance: Banks and companies use ML for fraud detection, credit risk scoring, and 
+predicting stock trends. 
+5. Autonomous Vehicles: Self-driving cars use machine learning to understand road 
+conditions, detect obstacles, and make driving decisions. 
+6. E-commerce: Online shopping sites like Amazon or Flipkart use ML for product 
+recommendations based on user behavior. 
+7. Natural Language Processing (NLP): Used in chatbots, translators, and sentiment 
+analysis to understand and process human language. 
+8. Weather Forecasting: ML models help in predicting weather and natural disasters by 
+studying large datasets. 
+B-2. How machine learning and deep learning are related / Explain regularization in deep 
+learning. 
+Machine learning and deep learning are closely related but not exactly the same. Deep 
+learning is actually a subset of machine learning that uses neural networks with many layers. 
+1. In machine learning, the features are mostly chosen manually, but in deep learning, 
+the system learns features automatically from raw data. 
+2. Deep learning models are capable of handling complex data like images, audio, and text 
+better than traditional ML models. 
+3. However, deep learning models can easily overfit because they have a lot of parameters. 
+To avoid this, regularization is used. 
+4. Regularization helps to control overfitting by keeping the weights small and preventing 
+the model from becoming too complex. 
+5. Common types are L1 regularization, L2 regularization, and Dropout. 
+6. Dropout works by randomly turning off some neurons during training, which forces 
+the model to learn in a more general way. 
+7. With proper regularization, deep learning models become more stable and perform 
+better on unseen data. 
+8. So, in simple words, deep learning is part of machine learning that works deeply with 
+layers, and regularization helps it stay balanced. 
+B-3. Explain supervised, unsupervised and semi-supervised learning with examples. 
+Machine learning can be divided into three main types depending on how data is used for 
+training. 
+1. Supervised Learning: Here, the data used for training has both inputs and correct 
+outputs (labels). The model learns by comparing its predictions with the actual labels. 
+o Example: Predicting whether an email is spam or not. 
+2. Unsupervised Learning: In this type, data does not have any labels. The model tries 
+to find hidden patterns or groups in data on its own. 
+o Example: Grouping customers based on purchase behavior using K-means 
+clustering. 
+3. Semi-Supervised Learning: It is a mix of both supervised and unsupervised learning. 
+Some data is labeled, and the rest is unlabeled. 
+o Example: Web page classification where only a few pages are labeled, and the 
+rest are used for training. 
+4. Supervised learning needs full labeled data, unsupervised doesn’t need any, and semi
+supervised works with partial labeling. 
+5. Semi-supervised learning is very useful when labeling data is expensive or time
+consuming. 
+6. These three types together cover most of the learning problems in machine learning. 
+7. Each one is used depending on how much labeled data is available. 
+8. Supervised and semi-supervised are mostly used in real projects because unlabeled data 
+is easy to collect but hard to label. 
+B-4. What are types of SVM? 
+SVM or Support Vector Machine is a supervised learning algorithm used for both classification 
+and regression tasks. It has different types depending on how it separates data. 
+1. Linear SVM: It is used when data can be separated by a straight line or hyperplane. 
+It works well for simple datasets. 
+2. Non-Linear SVM: When data is not linearly separable, non-linear kernels are used to 
+map data into higher dimensions for better separation. 
+3. Polynomial Kernel SVM: Uses polynomial equations to create curved boundaries, useful 
+for complex data. 
+4. RBF (Radial Basis Function) Kernel SVM: It is one of the most common types and 
+works well for non-linear classification by measuring distance from center points. 
+5. Sigmoid Kernel SVM: Works similar to a neural network activation function and is 
+used for certain types of classification tasks. 
+6. Multi-Class SVM: Since SVM was originally made for binary classification, for multi
+class problems, techniques like “one-vs-one” or “one-vs-all” are used. 
+7. Support Vector Regression (SVR): This is a version of SVM that is used for regression 
+problems instead of classification. 
+8. So depending on the data type and problem, we choose the suitable kind of SVM to 
+get accurate results. 

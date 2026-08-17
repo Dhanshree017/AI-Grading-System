@@ -1,0 +1,290 @@
+ID-T013 
+Name : Riddhima gil Roll no: 28 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 10 (3 Marks Each) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine Learning (ML) is a branch of Artificial Intelligence that enables systems to 
+automatically learn patterns from data and improve performance through experience 
+without being explicitly programmed. It focuses on algorithms that can generalize from 
+examples and make predictions or decisions. 
+The three major categories of ML are: 
+1. Supervised Learning – Uses labeled data where both inputs and outputs are known. 
+The model learns a mapping between them. Example: Predicting house prices. 
+2. Unsupervised Learning – Works on unlabeled data and discovers hidden structures or 
+groupings. Example: Customer segmentation with K-Means. 
+3. Reinforcement Learning – Involves learning through feedback of rewards or penalties 
+by interacting with an environment. Example: Game-playing AI like AlphaGo. 
+Each category plays a distinct role in making machines smarter and more adaptive. 
+A-2. What is the difference between training error and test error? 
+When we build a machine-learning model, we divide data into training and testing sets. 
+ Training Error refers to the average error the model makes on the same data it was 
+trained on. It indicates how well the model has learned the training examples. 
+ Test Error measures the performance of the model on unseen data that it has 
+never encountered before. 
+A small training error but large test error suggests overfitting—the model has memorized 
+patterns. A balanced small gap means good generalization. Monitoring both errors ensures 
+the model learns effectively while remaining flexible for future data. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting happens when a model learns noise, random variations, or specific details of 
+the training data instead of the underlying trend. As a result, it performs extremely well 
+on training data but poorly on unseen data. 
+One effective method to reduce overfitting is Regularization, where a penalty term is 
+added to the loss function to discourage overly complex models. Techniques include L1 
+(Lasso) and L2 (Ridge) regularization. 
+Other remedies include collecting more data, simplifying the model, or using techniques like 
+dropout in neural networks. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+A confusion matrix is a tabular representation that shows how well a classification model 
+performs. It compares the actual labels with predicted labels to illustrate the distribution 
+of correct and incorrect predictions. 
+It contains four important terms: 
+ True Positive (TP) – Correctly predicted positive class. 
+ True Negative (TN) – Correctly predicted negative class. 
+ False Positive (FP) – Incorrectly predicted as positive. 
+ False Negative (FN) – Incorrectly predicted as negative. 
+From this, we can compute metrics such as accuracy, precision, recall, and F1-score, which 
+give a deeper understanding of a model’s strengths and weaknesses beyond simple accuracy. 
+A-5. Explain the term feature selection and why it is important. 
+Feature Selection is the process of identifying and retaining only those input variables 
+(features) that have the most significant impact on the output variable. It removes 
+redundant, noisy, or irrelevant features. 
+Importance of feature selection: 
+1. Improves Accuracy – The model focuses on meaningful patterns. 
+2. Reduces Overfitting – Less chance of fitting to noise. 
+3. Speeds Up Training – Fewer variables mean faster computations. 
+4. Enhances Interpretability – Easier to understand results. 
+5. Lowers Data Requirement – Simpler models need less training data. 
+Common methods include filter approaches (correlation), wrapper methods (RFE), and 
+embedded methods (LASSO). 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding converts categorical variables into a binary format understood by 
+algorithms. Each category is represented as a vector of 0s and 1s with only one 1 for the 
+actual category. 
+Example: Color = {Red, Blue, Green} → Red [1,0,0], Blue [0,1,0], Green [0,0,1]. 
+Used widely in: 
+ Machine learning algorithms like logistic regression or SVM. 
+ Deep learning embeddings before feeding categorical data. 
+It avoids ordinal misinterpretation and keeps categorical relationships clear. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+The learning rate is a hyperparameter that controls how much model weights are adjusted 
+at each iteration during training. 
+ If too high, the model overshoots the minimum of the loss function and oscillates 
+or diverges. 
+ If too low, convergence becomes extremely slow and might get stuck in a local 
+minimum. 
+Finding the right learning rate through experimentation ensures stable and efficient 
+learning. 
+A-10. What is a loss function? Mention any two types of loss functions used in ML. 
+A loss function (or cost function) measures how far the model’s predictions are from the 
+true target values. It quantifies “error,” guiding optimization to improve accuracy. 
+Two commonly used loss functions: 
+1. Mean Squared Error (MSE) – Used in regression; it penalizes large deviations heavily. 
+2. Cross-Entropy Loss – Used in classification; it measures the difference between 
+predicted and actual class probabilities. 
+Minimizing the loss through algorithms like gradient descent drives model learning. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation divides the dataset into k subsets (folds). The model is trained on k – 1 
+folds and tested on the remaining fold, repeated k times. The final performance is the 
+average of all k iterations. 
+Advantages: 
+ Uses all data for both training and validation. 
+ Reduces risk of bias due to one lucky split. 
+ Provides a more reliable estimate of real-world performance. 
+It’s an essential step before final deployment of any ML model. 
+A-12. Define unsupervised learning and give two examples of algorithms used in it. 
+Unsupervised Learning deals with datasets that contain no labels or target outputs. The 
+algorithm discovers underlying patterns, clusters, or structures automatically. 
+Examples include: 
+1. K-Means Clustering – Groups data points into clusters based on distance. 
+2. Hierarchical Clustering – Builds a hierarchy or tree of clusters. 
+Unsupervised learning is powerful in exploratory data analysis, market segmentation, and 
+anomaly detection. 
+B] Attempt any 4 (each 5 marks)  
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, scaling, and 
+polynomial feature generation. 
+Feature engineering is the deliberate process of transforming raw data into informative 
+inputs that improve the performance and robustness of machine-learning models. It is not 
+merely a preprocessing step — it is the bridge between domain understanding and 
+algorithmic learning. Good features can simplify model structure, reduce the amount of 
+training data needed, and meaningfully increase predictive accuracy. Poor features, on the 
+other hand, can render even complex models ineffective. 
+Role and importance 
+ Signal extraction: Converts raw signals into concise descriptors (e.g., converts raw 
+timestamps into “hour of day” to capture diurnal patterns). 
+ Noise suppression: Smooths or aggregates volatile measurements so models focus on 
+underlying trends. 
+ Dimensionality control: Selects or synthesizes features to limit overfitting and 
+reduce computation. 
+ Interpretability: Well-crafted features often map to real-world concepts, aiding 
+explanation and trust. 
+ Model compatibility: Ensures the data format and scale suit the target algorithm 
+(e.g., tree models tolerate different scales; distance-based models require scaling). 
+Key techniques 
+1. Encoding categorical variables 
+o One-hot encoding: Creates binary indicator columns for each category; prevents 
+implicit ordinal relationships. Best when category count is modest. 
+o Target encoding / mean encoding: Replaces category by aggregated target 
+statistic (e.g., mean outcome per category). Powerful but must be 
+regularized and cross-validated to avoid leakage. 
+o Ordinal encoding: Assigns ordered integers only when categories have a real, 
+meaningful order (e.g., education level). 
+2. Scaling / normalization 
+o Standardization (z-score): Subtract mean and divide by standard deviation. 
+Useful when features are approximately Gaussian and algorithms assume 
+centered data. 
+o Min–Max normalization: Scales features into a fixed range [0,1]. Useful for 
+neural networks and algorithms sensitive to absolute scale. 
+o Robust scaling: Uses median and IQR to reduce influence of outliers. Good 
+when distributions contain heavy tails. 
+3. Polynomial and interaction features 
+o Polynomial expansion: Adds powers of features (x², x³) to capture curvature 
+with linear models. Careful: degree must be limited to avoid explosion in 
+dimensionality. 
+o Interaction terms: Product of two or more features (x1*x2) to allow models 
+to learn multiplicative relationships. Often yields large gains when interactions 
+exist in domain. 
+4. Aggregation and windowed statistics 
+o For time series, compute rolling means, variances, counts, or lag features. 
+These capture trends and temporal dependencies that raw timestamps cannot. 
+5. Feature selection and dimensionality reduction 
+o Filter methods: Correlation, mutual information to remove irrelevant features. 
+o Wrapper/embedded methods: Recursive feature elimination or tree-based 
+importance. 
+o Dimensionality reduction: PCA or autoencoders to compress information while 
+reducing noise. 
+Best practices 
+ Combine domain knowledge with automated methods. 
+ Avoid leakage (e.g., using future information to create a feature). 
+ Cross-validate any data-dependent transformations (e.g., target encoding). 
+ Monitor feature drift in production and retrain/refresh features as needed. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+Generative and discriminative models represent two complementary modeling philosophies. 
+Understanding their differences helps pick the right approach for a problem. 
+Core distinction 
+ Generative models aim to model the joint probability P(X,Y)P(X,Y)P(X,Y) or the 
+class-conditional densities P(X∣Y)P(X|Y)P(X∣Y) and priors P(Y)P(Y)P(Y). With 
+that, they can both classify and generate synthetic samples from the learned data 
+distribution. 
+ Discriminative models focus directly on modeling the conditional probability 
+P(Y∣X)P(Y|X)P(Y∣X), or learn a decision boundary between classes; their objective 
+is accurate prediction rather than modeling how data were generated. 
+Implications 
+ Data modeling vs. prediction: Generative models provide insight into data generation 
+and permit tasks like anomaly detection and sampling; discriminative models typically 
+yield superior predictive accuracy when large labeled datasets exist. 
+ Use with limited data: Generative models can be advantageous when labeled data are 
+scarce because priors and class conditional structure can be exploited. 
+ Complexity and flexibility: Discriminative models (e.g., deep neural networks) often 
+flexibly fit complex decision boundaries but don’t produce explicit data-generation 
+mechanisms. 
+Examples 
+ Generative 
+o Naïve Bayes: Models class conditional feature distributions and prior class 
+probabilities; simple, interpretable, works well with small data. 
+o Gaussian Mixture Models (GMMs): Model data as mixture of Gaussians; useful 
+for clustering and density estimation. 
+o Generative Adversarial Networks (GANs): Learn to generate realistic synthetic 
+samples (images, audio). 
+ Discriminative 
+o Logistic Regression: Directly models P(Y∣X)P(Y|X)P(Y∣X) via a sigmoid; 
+interpretable coefficients. 
+o Support Vector Machines (SVM): Learn decision boundary maximizing margin; 
+focuses on classification accuracy. 
+o Random Forest / Gradient Boosted Trees: Ensemble learners that partition 
+feature space for strong discriminative performance. 
+When to choose which 
+ If you need synthetic data, likelihood estimates, or interpretability of data generation 
+→ generative. 
+ If primary goal is accurate classification/regression and you have abundant labeled data 
+→ discriminative. 
+Hybrid approaches 
+ Some methods combine both: e.g., Conditional Random Fields (CRFs) model 
+conditional distributions with structured dependencies; Variational Autoencoders 
+(VAEs) provide tractable generative models while leveraging neural discriminative 
+components. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Definition and motivation 
+Early stopping is a practical regularization technique that halts model training when 
+performance on a held-out validation set stops improving. Rather than training until the 
+training loss is minimized (which can lead to memorizing noise), early stopping identifies 
+the point where generalization performance peaks. 
+How it works (operational steps) 
+1. Train/Validation split: Partition the labeled data into training and validation sets. 
+2. Monitor metric: After each training epoch, evaluate a validation metric (loss, 
+accuracy, etc.). 
+3. Track improvements: If the validation metric does not improve for a specified 
+number of epochs (patience), stop training and optionally roll back to the model 
+state with the best validation score. 
+4. Model selection: Use the checkpointed best model for final evaluation. 
+Why it prevents overfitting 
+ Balances bias–variance tradeoff: As training proceeds, training error typically decreases 
+monotonically, but validation error eventually rises when the model begins to fit 
+noise. Early stopping halts at the minimum validation error, capturing the best 
+generalizable parameters. 
+ Implicit regularization: It reduces the effective model complexity by limiting the 
+number of training iterations; this is akin to penalizing model capacity without 
+modifying the loss function explicitly. 
+ Robust to noisy labels: If dataset contains label noise, long training tends to fit 
+noise — early stopping avoids this. 
+Implementation details and best practices 
+ Patience parameter: Select an appropriate patience (how long to wait for 
+improvement) to avoid stopping prematurely due to transient validation noise. 
+ Monitoring metric choice: Choose a metric consistent with the task objective (e.g., 
+validation F1 for imbalanced classification rather than accuracy). 
+ Checkpointing: Save intermediate models when validation improves so you can revert 
+to the best model after stopping. 
+ Combine with other regularizers: Early stopping complements weight decay, dropout, 
+or data augmentation rather than replacing them. 
+Tradeoffs and limitations 
+ Validation set size impact: Requires sufficient validation data; if validation set is too 
+small, metric can be noisy and cause premature stopping or overfitting to validation 
+set. Cross-validation or repeated training runs can mitigate this. 
+ Not a panacea: Works well in iterative training (neural networks, boosting) but 
+irrelevant for one-shot learners. Also depends on a robust validation process. 
+Practical example 
+In deep neural networks trained on image data, validation loss typically dips then rises 
+after some epochs; using early stopping with patience = 5 epochs and checkpointing yields 
+models that generalize much better on unseen test images. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model generalization. 
+Conceptual overview 
+The bias–variance tradeoff is a core framework for understanding prediction error 
+decomposition in supervised learning. Prediction error on unseen data can be decomposed 
+into three parts: bias², variance, and irreducible noise. Balancing bias and variance is 
+essential for building models that generalize. 
+Definitions 
+ Bias: Error due to simplifying assumptions in the model — how far the model’s 
+expected predictions are from the true underlying function. High bias → 
+underfitting. 
+ Variance: Error due to model sensitivity to small fluctuations in the training dataset 
+— high variance models change greatly with different training samples → overfitting. 
+ Noise: The irreducible error inherent in the data generation process. 
+ Impact on generalization 
+ High bias, low variance models (e.g., linear regression on non-linear data) produce 
+consistently wrong predictions; they generalize poorly because they cannot capture 
+data complexity. 
+ Low bias, high variance models (e.g., deep trees) fit training data very well but fail 
+to generalize because they adapt to noise in training samples. 
+ Goal: Find a model complexity that minimizes total expected error — the “sweet 
+spot.” 
+Visualization and intuition 
+ Plot model complexity on x-axis and error on y-axis. Training error decreases with 
+complexity, but test error decreases then increases — the minimum test error 
+corresponds to optimal tradeoff. 
+Strategies for managing tradeoff 
+ Reduce bias (if underfitting): Increase model complexity, add features or 
+interactions, reduce regularization. 
+ Reduce variance (if overfitting): Increase training data, apply regularization (L1/L2), 
+use ensemble methods (bagging, boosting), or use cross-validation to tune 
+complexity. 
+ Hybrid approach: Use appropriate feature engineering, model selection, and validation 
+to identify the optimal complexity. 
+Practical example 
+ A polynomial model of degree 1 (line) on highly nonlinear data has high bias. A 
+polynomial of degree 20 may have low bias but very high variance. Degree 3–5 may 
+achieve best generalization. 
+Conclusion 
+Mastering the bias–variance tradeoff is the heart of building robust machine-learning 
+systems. It guides choices about model complexity, regularization, and data collection, and 
+it explains why more complex models are not always better — the best models generalize, 
+not merely memorize. 

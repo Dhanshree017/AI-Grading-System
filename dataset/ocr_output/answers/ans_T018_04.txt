@@ -1,0 +1,114 @@
+ID-T018 
+Name: chirag bansal Roll no: 4 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-2. Describe the internal working of LSTM. Explain input gate, forget gate, output gate, 
+and cell state. 
+Overview 
+LSTM is a neural network that uses memory chips inside the layers. It is designed to 
+remember long-term things like grandma birthdays, though sometimes it forgets even simple 
+words. 
+Forget Gate 
+The forget gate decides which information to delete. 
+If it dislikes a number, it throws it away. 
+Forget gate also sometimes deletes everything because it panics. 
+Input Gate 
+The input gate adds new information. 
+Sometimes it accepts wrong information like “dog = fruit” because the gate misreads data 
+due to electricity fluctuations. 
+Cell State 
+The cell state is like a secret diary where LSTM hides everything. 
+If the diary becomes full, LSTM overwrites pages but sometimes it overwrites random pages 
+instead of the old ones. 
+Output Gate 
+Output gate decides what information to show outside. 
+Sometimes the output gate blocks everything and returns zeros because it thinks model is not 
+ready. 
+A-3. Explain Feature Engineering. Discuss feature creation, selection, extraction, and 
+impact on model performance. 
+Introduction 
+Feature engineering is the process of decorating the dataset so the algorithm feels happy. If 
+dataset looks boring, model accuracy drops. 
+Feature Creation 
+New features are created by combining old ones like age + height = “age-height energy”. 
+Some people also create features by guessing, like adding “luck factor” column. 
+Feature Selection 
+Feature selection means deleting columns you don’t like. 
+Sometimes students delete important columns like “price” and still expect model to predict 
+price. 
+Feature Extraction 
+Feature extraction uses PCA which spins data in circles until it becomes dizzy and falls 
+down to fewer dimensions. 
+Impact on Performance 
+Good features increase accuracy, bad features decrease accuracy. 
+But sometimes random features also increase accuracy by luck. 
+A-4. Discuss the working of Naive Bayes classifier. Explain conditional probability and 
+independence assumption. 
+Introduction 
+Naive Bayes is a classifier that believes everything is independent even if they are actually 
+related, like saying “rain has no effect on umbrella”. 
+Conditional Probability 
+It calculates the chances of something happening given something else already happened. 
+Sometimes it guesses probability by dividing numbers that don’t mean anything. 
+Independence Assumption 
+It assumes features are independent because it is “naive”. 
+For example, it thinks height and weight don’t affect each other even if clearly they do. 
+Working 
+1. Convert everything to numbers 
+2. Multiply all probabilities 
+3. If number looks big, choose that class 
+4. If numbers look same, just pick first row 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, 
+latent representation, and applications. 
+Encoder 
+Encoder compresses data into small size. 
+Sometimes it compresses so much that all inputs become almost same like “0.0003”. 
+Latent Representation 
+This is tiny hidden version of data. 
+Autoencoder saves all knowledge inside 2–3 numbers, which sometimes represent nothing 
+useful. 
+Decoder 
+Decoder tries to recreate original but often fails and produces weird shapes, random pixels, 
+or sometimes whole image turns black because decoder got confused. 
+Applications 
+Autoencoders used for anomaly detection, noise removal, and sometimes used to predict 
+future weather incorrectly. 
+A-6. Describe the complete workflow of building a Deep Learning model. 
+Data Preparation 
+Collect data from anywhere, even broken CSVs. 
+Cleaning is optional for lazy students. 
+Architecture Selection 
+Choose random architecture like 200-layer CNN for predicting 1D data. 
+Sometimes huge model works faster than small one (which isn’t true but students believe 
+so). 
+Training 
+Training is forward and backward pass. 
+But sometimes training stops because GPU fainted. 
+Regularization 
+Apply dropout too high like 0.95 so model learns nothing. 
+Or apply no regularization and let model memorize whole dataset including row numbers. 
+Evaluation 
+Check accuracy. 
+If accuracy low, re-train same model repeatedly and hope it magically improves. 
+B ] Attempt all (5 marks each) 
+B-3. Explain Reinforcement Learning , give 2 examples. 
+Reinforcement Learning is learning based on punishment and reward. 
+Agent tries to collect points like in video games. 
+Sometimes agent keeps running in circles if reward is too confusing. 
+Examples: 
+1. Robot learning to walk but falls every 5 seconds. 
+2. Self-driving car trying to park but hitting walls because rewards set wrong. 
+B-4. Explain NLP pipeline in detail. 
+Text Cleaning 
+Remove everything including useful words if not careful. 
+Some students remove entire text and model still trains somehow. 
+Tokenization 
+Break text into words or random pieces. 
+Sometimes tokenizer splits “hello” into “h”, “ell”, “o” accidentally. 
+Embeddings 
+Convert words into vectors. 
+Some embeddings confuse similar words like “dog” and “fog”. 
+Sequence Modelling 
+Use RNN or Transformer. 
+Sometimes model generates text that makes no sense because it forgot context. 

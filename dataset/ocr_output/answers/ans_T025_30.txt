@@ -1,0 +1,95 @@
+ID-T025 
+Name: Rahul mehta Roll no:30 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Various Preprocessing Tasks and Their Influence 
+Data cleaning removes missing values, duplicate records, and incorrect data, preventing 
+models from learning misleading patterns. Encoding transforms categorical variables into 
+numerical values so that algorithms can process them effectively. Feature scaling and 
+normalization ensure that all numerical features contribute equally during training, 
+improving convergence and accuracy. Outlier detection minimizes the effect of extreme 
+values that can distort predictions. These preprocessing tasks significantly enhance model 
+accuracy, stability, and generalization ability. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+Working of Decision Tree Algorithm 
+A Decision Tree is a supervised machine learning algorithm that makes predictions by 
+learning simple decision rules inferred from the training data. The algorithm begins with the 
+entire dataset and recursively splits it into smaller subsets based on feature values. 
+How Decisions Are Made 
+At each node, the algorithm selects the best feature for splitting using criteria such as 
+Information Gain, Gini Index, or Entropy. Each branch represents a decision outcome, and 
+the leaf nodes provide the final prediction or class label. 
+Advantages and Limitations 
+Decision Trees are easy to understand, interpret, and visualize. They can handle both 
+numerical and categorical data and require minimal preprocessing. However, they are highly 
+prone to overfitting, sensitive to noisy data, and small changes in data can lead to different 
+tree structures. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting 
+with practical illustrations. 
+Bias–Variance Tradeoff 
+The bias–variance tradeoff represents the balance between model simplicity and complexity. 
+Bias is the error caused by overly simple assumptions in the model, while variance is the 
+error caused by excessive sensitivity to the training data. 
+Impact on Underfitting and Overfitting 
+High bias leads to underfitting, where the model fails to capture important patterns, such as 
+using linear regression for complex nonlinear data. High variance leads to overfitting, where 
+the model memorizes training data but performs poorly on unseen data. A good model 
+balances bias and variance to achieve strong generalization. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Why Accuracy Alone Is Not Sufficient 
+Accuracy can be misleading in cases of imbalanced datasets. For example, predicting all 
+instances as the majority class may yield high accuracy but fail in real-world performance. 
+Other Evaluation Measures 
+Precision measures how many predicted positives are correct, recall measures how many 
+actual positives are identified, F1-score balances precision and recall, and ROC-AUC 
+evaluates performance across different thresholds. These metrics provide a complete 
+understanding of model behavior. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+Role of Feature Selection 
+Feature selection involves selecting the most relevant features while removing irrelevant or 
+redundant ones. This reduces noise, improves interpretability, and prevents overfitting. 
+Role of Dimensionality Reduction 
+Dimensionality reduction techniques such as Principal Component Analysis (PCA) reduce 
+the number of input variables while preserving essential information. 
+Benefits for ML Models 
+These techniques reduce computational cost, speed up training, improve prediction accuracy, 
+and enhance the model’s ability to generalize on new data. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine 
+learning can be used to analyze customer behavior, product data, and past returns to 
+reduce return rates. 
+Machine learning can analyze customer browsing patterns, purchase history, product 
+descriptions, reviews, and return records to identify reasons for frequent returns. Predictive 
+models estimate the likelihood of a return and help improve product recommendations, 
+sizing accuracy, quality checks, and descriptions, ultimately reducing return rates. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, 
+and challenges involved. 
+Machine learning models use transaction data such as amount, location, device, and timing to 
+detect unusual behavior. Classification and anomaly detection models flag suspicious 
+transactions in real time. Challenges include highly imbalanced data, evolving fraud patterns, 
+and minimizing false alarms. 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine learning 
+can support this task, from data collection to using predictions for better healthcare 
+decisions. 
+Machine learning models analyze patient medical history, diagnosis, treatment plans, and 
+lifestyle data to predict readmission risk. Hospitals use predictions to improve discharge 
+planning, allocate resources efficiently, and provide targeted follow-up care. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how 
+machine learning can help identify and limit misinformation while considering ethical 
+challenges. 
+Machine learning uses NLP techniques to analyze text content, user behavior, and content 
+sources to detect fake news. Classification models flag misleading posts, while ethical 
+challenges include bias, censorship concerns, and protection of free speech. 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how 
+predictive maintenance using machine learning can reduce downtime and improve 
+operational efficiency. 
+Machine learning models analyze sensor data, machine usage patterns, and maintenance 
+history to predict equipment failures. Predictive maintenance schedules repairs in advance, 
+reducing downtime, maintenance costs, and production losses. 

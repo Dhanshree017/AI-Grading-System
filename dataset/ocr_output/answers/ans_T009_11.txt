@@ -1,0 +1,183 @@
+ID-T009 
+Name : rhea saxena Roll no: 11 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning, Explain any 5 Applications of ML 
+Definition: 
+Machine learnig is very big part of the AI which is like the brain of computer who 
+can learn by own from many datas and no need human teach again again. It is 
+process where machine is learning automatically like human child. Machine learning 
+is the part of AI which machine is learning automatic from data by own experince. It 
+is say that machine can think and learn from mistake. It take data and again data 
+and again learn from that data. So this is why we call it machine learning because 
+machine is learning always again and again. It is very important because nowdays all 
+world is use machine learning in every thing like car, phone, net, doctor etc. 
+Applications (All mix-up style): 
+1. In hospital the machine learning is used for the operation and x-ray and the 
+doctor is not need to see again because machine can find it. 
+2. In the online website like Amazon the machine learning show again and again 
+same product because it know what we like. 
+3. In game also it make enemy more smart and game become more hard because 
+machine learning do it. 
+4. In education field it predict student marks and show which student fail or pass. 
+5. In bank it find the fraud people and fake card also. 
+6. In mobile when we say “ok google” it listen by machine learning voice 
+algorithm. 
+7. In weather it tell if it rain or summer or winter because it see past weather. 
+8. In traffic machine learning used for camera and detect car number plate. 
+9. In industry it check product if bad or good in quality control. 
+A-3. What is Principle Component Analysis, Why it is Used 
+Definition: 
+Principal Component Analyse or PCA is the thing that take many column and make 
+them small column but still keep same data information but small. It is use for 
+removing unwanted feature which is not needed. It is like when we have big bag we 
+take out only important thing and throw rest but still bag is lighter now. PCA make 
+new component which have most of data and we use that for model. 
+Explanation: 
+1. PCA is reducing dimension of data. 
+2. It help to make model train faster because less data. 
+3. It remove noise also. 
+4. It make new axis called principal component. 
+5. It use linear algebra thing but not need to know. 
+6. It is used for face recognition, image compress. 
+7. It can make data look 2D in graph. 
+8. It is unsupervised because no output label. 
+9. It make accuracy better when data is too large. 
+A-4. What are Steps of Creating a ML Model 
+Definition: 
+Machine learning model not come suddenly. It need process like making tea. First you 
+take data like milk, then cleaning like boiling, then model selection like adding sugar. 
+It go in many steps else it will not work. 
+Explanation: 
+1. Collect data: Take data from csv or google or anywhere. 
+2. Clean data: Remove wrong, missing, empty lines. 
+3. Preprocess: Change string to number because machine don’t understand 
+English. 
+4. Split data: Divide 80 for training and 20 for testing. 
+5. Select model: Like regression, decision tree or SVM. 
+6. Train model: Give data and let model learn. 
+7. Test model: Check how model doing on test data. 
+8. Tune model: Change some hyper parameter like learning rate etc. 
+9. Deploy: Final model put in real world website or machine. 
+A-5. What is Overfitting and Underfitting, Give Examples of It 
+Definition: 
+Overfitting is when model learn too much that it remember everything and cannot 
+do new data. Underfitting is when model not learn anything also. So both are bad 
+like one student who memorise only book and one student who never read anything. 
+Explanation: 
+1. Overfitting → model perform 100% on training but fail on test. 
+2. Underfitting → model bad on both training and testing. 
+3. Overfitting because model too complex. 
+4. Underfitting because model too simple. 
+5. Example overfit: decision tree with many branches. 
+6. Example underfit: linear regression on non-linear data. 
+7. Use regularization to reduce overfit. 
+8. Cross validation also use for checking. 
+9. Better to keep middle balance for good result. 
+A-6. What is K-Means Clustering, Write Importance of It 
+Definition: 
+K means clustering is algorithm which make K groups in the data. It is unsupervised 
+so no answer given. It find centre of each group and put data near to it. It repeat 
+again and again till it become stable. 
+Explanation: 
+1. Choose value of K how many cluster. 
+2. Take random centroid. 
+3. Measure distance between data and centroid. 
+4. Put data in nearest cluster. 
+5. Move centroid to new position. 
+6. Repeat until centroid stop moving. 
+7. It is very fast and easy algorithm. 
+8. Used for customer group and document cluster. 
+9. Help to see hidden pattern in data. 
+B] Attempt All (Marks 25) 
+B-1. Define Bias and Variance, Explain Bias Variance Trade-off 
+Definition: 
+Bias and variance are two thing that make model not good. Bias is when model is 
+too simple and make same mistake again again. Variance is when model is too 
+complicated and always changing answer. Bias variance trade off is like balance both 
+like salt and sugar. 
+Explanation: 
+1. High bias cause underfitting. 
+2. High variance cause overfitting. 
+3. Both together cause big error. 
+4. We want both small but not zero. 
+5. If increase complexity, bias go down but variance up. 
+6. If reduce complexity, variance go down but bias up. 
+7. Regularization can fix some of this. 
+8. Cross validation test which side is more. 
+9. We find middle point for best accuracy. 
+B-2. What is Regression, Explain its Types in Detail 
+Definition: 
+Regression is predicting value like price, marks, temperature etc. It is continuous 
+output not category. It draw line between input and output to guess future. 
+Types: 
+1. Linear regression: Draw straight line between input and output. 
+2. Multiple regression: Many input for one output. 
+3. Polynomial regression: Use curve not straight. 
+4. Lasso regression: Add L1 penalty to remove useless. 
+5. Ridge regression: Add L2 to reduce overfit. 
+6. Logistic regression: Used for yes/no output. 
+7. Elastic net: Mix of lasso and ridge. 
+8. Stepwise regression: Add variable step by step. 
+9. Nonlinear regression: For not straight relation. 
+B-3. What is Decision Tree, Explain Steps to Implement It 
+Definition: 
+Decision tree is model that look like real tree but it is not tree. It make branch and 
+each branch have question and answer and at last give result. It is easy because look 
+like if-else in programming. 
+Steps: 
+1. Choose feature with max information gain. 
+2. Split data based on that. 
+3. Make branch for each split. 
+4. Again split until leaf node pure. 
+5. Stop when cannot split. 
+6. Give output on leaf node. 
+7. Prune to remove small branch. 
+8. Test model with test data. 
+9. Use for classification and regression also. 
+B-4. Differentiate Between Classification and Regression 
+Classification 
+Output is category 
+Regression 
+Output is number 
+Example spam or not Example house price 
+Use for label data 
+Use for value data 
+Accuracy metric used RMSE metric used 
+Algorithm logistic, tree Algorithm linear regression 
+Output discrete 
+Output continuous 
+Use in NLP and image Use in prediction 
+Predict yes/no type 
+It classify 
+Predict number type 
+It estimate 
+B-5. How Deep Learning is Different from Machine Learning, Explain Regularization 
+in Detail 
+Definition: 
+Deep learning is like baby of machine learning but also parent because it is bigger. It 
+is having many layer called hidden layers. It is used when data is too large. Machine 
+learning can do small data but deep learning need GPU and more data. 
+Difference: 
+1. ML is small, DL is big. 
+2. ML work fast, DL slow but good. 
+3. ML easy to understand, DL hard to know what inside. 
+4. ML need less data, DL need lot of data. 
+5. ML do feature extraction manually, DL automatic. 
+6. ML example regression, DL example CNN. 
+7. ML use CPU, DL use GPU. 
+8. DL more accurate on images. 
+9. DL is like human brain neuron style. 
+Regularization: 
+Regularization is method to stop model from learn too much. It add penalty to 
+weight so it not memorize. 
+1. L1 make weight zero. 
+2. L2 make weight small. 
+3. Dropout randomly remove neuron. 
+4. Early stop stop early. 
+5. It control overfitting. 
+6. It give better accuracy. 
+7. Help to balance bias variance. 
+8. Avoid memorizing training. 
+9. Improve testing result. 

@@ -1,0 +1,90 @@
+ID-T024 
+Name:vinayak joshi Roll no: 5 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable real-world 
+examples. 
+Machine Learning is a branch of artificial intelligence where systems learn patterns from data. Based on the 
+type of data available, machine learning is mainly classified into supervised learning and unsupervised 
+learning. 
+Supervised learning is a learning approach where the dataset contains labeled data. This means that for 
+every input, the correct output is already known. The model learns by comparing its predictions with the 
+actual output and gradually reduces error. Supervised learning is widely used when prediction or 
+classification is required. 
+In supervised learning, the model learns a direct relationship between input features and output labels. 
+Common tasks include classification and regression. Evaluation of supervised learning models is 
+straightforward because actual outputs are known. 
+Real-world examples of supervised learning include: 
+ Email spam detection where emails are labeled as spam or not spam. 
+ Predicting house prices using historical price data. 
+ Disease diagnosis using patient symptoms and medical records. 
+ Student performance prediction based on previous exam scores. 
+Unsupervised learning, on the other hand, works with unlabeled data. In this case, the model does not 
+know the correct output in advance. Instead, it tries to find hidden patterns, similarities, or structures within 
+the data. This type of learning is mainly used for data exploration and pattern discovery. 
+Unsupervised learning focuses on grouping similar data points or reducing data complexity. Since there are 
+no labels, evaluation is more challenging and often qualitative. 
+Real-world examples of unsupervised learning include: 
+ Customer segmentation in marketing to group customers based on buying behavior. 
+ Grouping similar news articles or documents. 
+ Anomaly detection in network traffic to find unusual behavior. 
+ Image compression using dimensionality reduction. 
+In summary, supervised learning is used when labeled data is available and predictions are required, while 
+unsupervised learning is used when discovering hidden patterns from unlabeled data. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used before training 
+an ML model. 
+Data preprocessing is a critical step in machine learning that involves converting raw data into a clean and 
+usable format before training a model. Real-world data is often incomplete, noisy, inconsistent, and 
+unstructured, which can negatively affect model performance if not handled properly. 
+The main objective of data preprocessing is to improve data quality, ensure consistency, and make the data 
+suitable for machine learning algorithms. 
+Four common preprocessing steps are explained below: 
+1. Handling Missing Values 
+Missing values occur when some data entries are not recorded. These missing values can cause models to 
+fail or produce biased results. Common techniques include: 
+ Replacing missing values with mean, median, or mode. 
+ Using advanced methods like KNN imputation. 
+ Removing rows or columns if missing values are too many. 
+2. Data Cleaning 
+Data cleaning involves removing incorrect, duplicate, or inconsistent data. This step ensures that the dataset 
+reflects accurate information. Cleaning improves reliability and reduces noise, which helps models learn 
+meaningful patterns. 
+3. Encoding Categorical Variables 
+Machine learning models work with numerical data, so categorical features like gender, city, or product type 
+must be converted into numbers. Common encoding techniques include: 
+ Label Encoding 
+ One-Hot Encoding 
+Encoding allows the model to process categorical information effectively. 
+4. Feature Scaling 
+Feature scaling brings all numeric features to a similar range so that one feature does not dominate others. 
+Common scaling methods are normalization and standardization. This step is especially important for 
+distance-based algorithms like KNN and gradient-based algorithms. 
+Proper data preprocessing leads to better model accuracy, faster convergence, and more reliable predictions. 
+A-3. Explain classification and regression problems in machine learning. Give one example of each. 
+In supervised learning, problems are mainly categorized into classification and regression based on the 
+nature of the output variable. 
+Classification problems involve predicting a discrete or categorical output. The goal is to assign input data 
+to one of the predefined classes. Classification models learn decision boundaries that separate different 
+classes in the feature space. 
+Common characteristics of classification problems include: 
+ Output belongs to fixed categories. 
+ Used for decision-making tasks. 
+ Evaluated using metrics like accuracy, precision, recall, and F1-score. 
+Examples of classification problems: 
+ Email spam classification. 
+ Disease detection (positive or negative). 
+ Credit card fraud detection. 
+A-6. Explain the basic steps involved in building a machine learning model, from data collection to 
+model testing. 
+Building a machine learning model involves a systematic sequence of steps to ensure accuracy and 
+reliability. 
+1. Problem Definition: Clearly define the objective, constraints, and expected output. 
+2. Data Collection: Gather relevant data from sources such as databases, sensors, surveys, or APIs. 
+3. Data Preprocessing: Clean, transform, encode, and scale data to improve quality. 
+4. Feature Selection and Engineering: Select important features and create new ones if required. 
+5. Model Selection: Choose appropriate algorithms based on problem type and data. 
+6. Model Training: Train the model using training data and optimize parameters. 
+7. Model Testing: Evaluate the trained model on test data using suitable metrics. 
+Following these steps ensures that the machine learning model performs well and can be trusted in practical 
+applications. 

@@ -1,0 +1,105 @@
+ID-T033 
+Name: Arif Khan Roll no: 2  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+Introduction  
+Assumptions in machine learning are predefined beliefs about data structure, relationships, 
+and patterns that guide the learning process.  
+Role of Assumptions in ML Models  
+1. Assumptions reduce the complexity of learning by limiting the hypothesis space.  
+2. They help algorithms generalize from limited data.  
+3. Assumptions define how input features relate to outputs.  
+4. They influence model selection and architecture.  
+5. Simplify optimization and convergence during training.  
+6. Enable efficient computation and scalability.  
+7. Shape bias–variance tradeoff.  
+8. Help models operate under uncertainty.  
+Impact of Incorrect Assumptions  
+1. Incorrect assumptions lead to systematic prediction errors.  
+2. Cause biased or unfair decision-making.  
+3. Reduce model accuracy and reliability.  
+4. Increase overfitting or underfitting.  
+5. Misguide feature importance interpretation.  
+6. Decrease robustness to real-world data.  
+7. Result in poor generalization.  
+8. Negatively affect trust in automated decisions.  
+Conclusion  
+Correct assumptions improve learning efficiency, while incorrect ones distort model 
+behavior and decision outcomes.  
+A-2. Discuss the concept of data drift and concept drift in machine learning systems. 
+Explain their impact on long-term model performance.  
+Introduction  
+Machine learning systems operate in dynamic environments where data patterns change 
+over time.  
+Data Drift  
+1. Data drift occurs when input data distribution changes.  
+2. Feature ranges or frequencies shift.  
+3. Labels remain consistent.  
+4. Often caused by user behavior changes.  
+5. Environmental or seasonal variations.  
+6. Gradual or sudden in nature.  
+Impact on Long-Term Performance  
+1. Decrease prediction accuracy.  
+2. Increase error rates over time.  
+3. Cause unreliable decisions.  
+4. Reduce user trust.  
+5. Require frequent retraining.  
+6. Demand continuous monitoring.  
+7. Increase maintenance cost.  
+8. Affect system stability.  
+Conclusion  
+Managing drift is essential for sustaining long-term performance of ML systems.  
+A-3. Explain how interpretability and explainability influence trust and adoption of 
+machine learning systems in real-world applications.  
+Introduction  
+Interpretability and explainability determine how well humans understand machine learning 
+decisions.  
+Influence on Trust  
+1. Clear explanations build user confidence.  
+2. Transparent models reduce fear of automation.  
+3. Help stakeholders verify decisions.  
+4. Improve accountability.  
+5. Allow error diagnosis.  
+6. Support ethical evaluation.  
+7. Reduce resistance to AI adoption.  
+8. Increase regulatory acceptance.  
+Impact on Adoption  
+1. Facilitates deployment in sensitive domains.  
+2. Enables human–AI collaboration.  
+3. Improves acceptance by non-technical users.  
+4. Helps organizations justify decisions.  
+5. Supports compliance requirements.  
+6. Encourages responsible usage.  
+7. Enhances system credibility.  
+8. Promotes long-term use.  
+Conclusion  
+Interpretability and explainability are critical for trust, accountability, and widespread 
+adoption.  
+A-4. Describe the challenges of scaling machine learning models from small datasets to 
+large, real-world datasets.  
+Introduction  
+Scaling ML models introduces technical and operational challenges.  
+Key Challenges  
+1. Increased computational requirements.  
+2. High memory consumption.  
+3. Longer training time.  
+4. Data storage and management issues.  
+5. Increased noise and inconsistency.  
+6. Feature engineering complexity.  
+7. Model optimization difficulty.  
+8. Infrastructure cost escalation.  
+Operational Challenges  
+1. Distributed processing complexity.  
+2. Data pipeline failures.  
+3. Monitoring at scale.  
+4. Handling real-time data.  
+5. Model deployment issues.  
+6. Debugging becomes harder.  
+7. Resource allocation problems.  
+8. Maintenance overhead.  
+Conclusion  
+Effective scaling requires robust infrastructure, efficient algorithms, and careful system 
+design.  

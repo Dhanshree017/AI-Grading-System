@@ -1,0 +1,91 @@
+ID-T022 
+Name: pravin mishra Roll no: 16 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of features and the 
+role of feature selection in improving model performance. 
+ First we understand data: check columns, types, missingness, distributions and talk to domain 
+people to know meaning of fields. 
+ Next clean data: remove duplicates, fix wrong formats, impute missing (mean/median/KNN or 
+model-based), cap outliers. 
+ Then construct features: make time features (hour/day/season), aggregate features (group mean, 
+count), interactions (a*b), ratios (price/quantity), lag/rolling for time-series, text features (TF
+IDF/embeddings) and image embeddings if needed. 
+ After that transform features: encode categoricals (one-hot, ordinal, target/frequency with leakage 
+guard), scale numerics (standardize or min-max) where algorithm needs it, log-transform skewed 
+features. 
+ Do dimensionality reduction or compression if very high-dim (PCA, feature hashing, autoencoders) 
+but only if you understand tradeoffs. 
+ Feature selection: use filter methods (correlation, chi-square), wrapper (RFE), embedded (L1, tree 
+importance), and cross-validate chosen subset. Selection reduces noise, speed up training, reduce 
+overfitting and improve generalization. 
+ Validate features with holdout or time-split, check slice performance, and finally productionize 
+features in reproducible pipeline/feature store. 
+ Types of features: numerical, categorical (nominal/ordinal), datetime/time-series, text-derived, 
+image-derived, geospatial, derived/interaction features. 
+ Practical note: never target-encode without out-of-fold or leakage control; always monitor feature 
+drift in production. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). Explain how 
+convolution, pooling, and feature maps help in image understanding. 
+ Architecture: input image → conv layers + activation + normalization → pooling layers → repeat 
+stacks → global pooling / flatten → dense layers → output (softmax/sigmoid). 
+ Convolution: small filters (3×3 etc.) slide over image, compute dot-product with local patch, 
+produce activation; filters are learned so they detect edges, textures, patterns. Convolution uses 
+shared weights so same filter recognize pattern anywhere (translation equivariance). 
+ Feature maps: each filter produces one feature map (activation map) that highlights locations where 
+that filter’s pattern exists. Early maps show edges, later maps show object parts. Stack of maps is 
+richer representation. 
+ Pooling: max-pool or avg-pool reduces spatial size, keeps strong signals (max) and gives some 
+translation invariance, reduces computation and overfitting. Global average pooling used to reduce 
+parameters instead of big FC layers. 
+ How they help: conv captures local spatial relations, stacking builds hierarchical features 
+(edges→parts→objects), pooling summarises and reduces noise, feature maps show where relevant 
+cues are. 
+ Practical tips: use small kernels stacked, use batchnorm and ReLU, data augmentation, pretrain on 
+large dataset and fine-tune. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, and what are 
+the major techniques used to interpret black-box models? 
+ Explainable AI mean make model explain itself like person telling story. This is important because 
+sometimes models dream and do wrong things and we want to ask them “why did you do that?” 
+ Interpretability important because humans need reason to trust model, also lawyer or boss can ask 
+explanation and model should answer. Models may hide secrets inside weights and XAI try to pull 
+out those secrets by many magic methods. 
+ Major techniques: 
+o Lime which makes a tiny simple model near the example and then say why prediction was 
+made, like asking model to tell truth in small voice. 
+o Shap which gives credit to features like giving candies to contributors, it sums to prediction. 
+o Saliency maps for images, it paint red spots where model looked. 
+o Rule extraction which try to take complicated model and convert to if-then rules, like 
+translating robot talk into human talk. 
+o Surrogate models where we fit linear or tree model on predictions and then read rules — this 
+is approximate but gives idea. 
+ Also there is counterfactuals telling what minimal change flips decision — like telling user how to 
+change to get loan. 
+ Use combination of global explanations (feature importance) and local explanations (LIME/SHAP) 
+and validate with domain experts, because sometimes explanation itself is wrong or misleading. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, 
+versioning, and data validation improve reliability. 
+ Data pipelines make process reproducible: same cleaning and transforms used in training must be 
+used in production. Without pipeline things break and you get different results. 
+ Automation: scheduling ETL, feature calculation, retraining, monitoring. Automating prevents 
+human error and speeds up iteration. 
+ Versioning: version datasets, code and model artifacts so experiments reproducible and you can 
+rollback if new model bad. Tools: DVC, MLflow, Git. Versioning is vital for audits and debugging. 
+ Data validation: schema checks, null-rate checks, new category detection, distribution checks. 
+Failing fast prevents bad data to flow into training or serving. Use tests and monitoring to detect drift 
+or pipeline break. 
+ Good pipeline design includes idempotent steps, lineage tracking, logging and alerting, and feature 
+store to avoid train/serve skew. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain how ML 
+engineers detect drift and handle it in real-world systems. 
+ There are many drifts: feature drift where values change (like mean income change), target drift 
+where label frequency changes (more positives), concept drift when relation between X and Y 
+change (same inputs produce new label). 
+ Engineers detect drift by drawing many charts, looking at histograms and sometimes running tests 
+like KS test or PSI. Also they train a model to separate old vs new data and if that model is good 
+there is drift. Another sign is drop in model accuracy or rise in error. 
+ Handling drift: retrain model with new data, or use online learning to adapt. Another way is keep 
+ensemble of models with different time windows and pick best. Sometimes change thresholds or 
+features. In practice many teams just retrain weekly and hope it solves problem. Also human labeling 
+recent data help to correct drift. 

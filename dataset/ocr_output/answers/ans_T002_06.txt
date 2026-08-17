@@ -1,0 +1,141 @@
+ID-T002 
+Name : Kishore Pande   Roll no: M0016 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-2. What are the different types of machine learning? 
+The machine learning types they are three main ones. Categorization is based on 
+feedback during training. 
+1. Supervised Learning: Data is labeled with desired output (teacher present). 
+2. Unsupervised Learning: Data is unlabeled, goal is finding hidden structure (no 
+teacher). 
+3. Reinforcement Learning: Agent learns by interacting with environment and 
+receiving reward signals (trial-and-error). 
+4. Semi-Supervised Learning: Mix of labeled and unlabeled data. 
+5. Self-Supervised Learning: Model creates own pseudo-labels from input structure 
+(e.g., predicting masked words). 
+A-3. What is the difference between supervised, unsupervised, and reinforcement 
+learning? 
+These are the core paradigms of ML. They differ by data and objective. 
+1. Supervised 
+requires 
+explicit 
+(Classification/Regression). 
+labels 
+and predicts Y from X 
+2. Unsupervised works on unlabeled data to model distribution and find patterns 
+(Clustering/Dimensionality Reduction). 
+3. Reinforcement involves sequential decision-making to maximize cumulative 
+reward from environment. 
+4. Supervised error is prediction error. Unsupervised error is reconstruction error. 
+5. RL error is high negative reward. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff it is the central conflict in model complexity selection. 
+Total error it is sum of Bias squared and Variance. 
+1. Bias (High) means underfitting, model is too simple to capture relationship. 
+2. Variance (High) means overfitting, model is too complex and fits noise. 
+3. Decreasing Bias by increasing complexity always increases Variance. 
+4. Optimal model complexity minimizes this sum. 
+5. It dictates model selection between simple models (high bias) and complex models 
+(high variance). 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is model memorizing noise in training data. It leads to high test error 
+(High Variance). 
+1. Symptom is low training loss but high validation loss. 
+2. Avoided by Regularization ($\text{L1}/\text{L2}$ penalty on weights). 
+3. Avoided by increasing training data size. 
+4. Avoided by Early Stopping based on validation set performance. 
+5. Avoided by Pruning or ensemble methods like Random Forest. 
+A-7. What is cross-validation? 
+Cross-validation (CV) it is a robust resampling technique for estimating model 
+performance on unseen data. 
+1. Goal is to reduce pessimism/optimism from single train-test split. 
+2. k-Fold CV splits data into k partitions. 
+3. Model trains k times. Each time one fold is test set. 
+4. Final performance metric is average of k test results. 
+5. Essential tool for reliable hyperparameter tuning and model selection. 
+B) Any 4 out of following (20 Marks) 
+B-1. Explain the difference between classification and regression. 
+Classification and Regression they are two main supervised tasks. Difference is nature 
+of output variable. 
+1. Classification predicts discrete class label from finite set (e.g., categorical output). 
+2. Regression predicts continuous numerical value from infinite range (e.g., real
+valued output). 
+3. Classification aims to find decision boundary for separating classes. 
+4. Regression aims to fit function/curve to minimize distance to true values. 
+5. Classification loss function often is Cross-Entropy. 
+6. Regression loss function often is Mean Squared Error (MSE). 
+7. Classification metrics are Precision, Recall, F1-Score. 
+8. Regression metrics are RMSE, R-squared. 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) it is an ensemble model that aggregates multiple Decision Trees 
+using Bagging and feature randomness. 
+1. Bagging (Bootstrap Aggregating) means each tree trains on random sample of 
+training data. 
+2. Key is random feature selection: each split considers only a random subset of 
+input features. 
+3. Double randomness ensures low correlation among base trees, which reduces 
+overall variance. 
+4. Final prediction is voting (classification) or averaging (regression) of individual 
+tree outputs. 
+5. RF is very robust against overfitting (high variance reduction). 
+6. It inherently handles non-linear data well and gives feature importance. 
+7. RF is highly effective and widely used benchmark model. 
+8. Complexity is higher but performance is reliably strong. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a classifier that finds optimal hyperplane for 
+maximum margin separation between classes. 
+1. Goal is to maximize margin: largest distance to nearest points of any class. 
+2. Nearest points are Support Vectors (SVs) that uniquely define the hyperplane. 
+3. SVs make the model sparse and robust to distant outliers. 
+4. Kernel Trick handles non-linearly separable data by implicit mapping to higher 
+dimensional space. 
+5. RBF Kernel is most popular for complex separation. 
+6. Soft Margin formulation allows some training error for better generalization on 
+noisy data. 
+7. SVM is effective in high-dimensional spaces. 
+8. Model is convex optimization problem, guaranteeing global minimum. 
+B-6. What are kernels in SVM? 
+Kernels in Support Vector Machine (SVM) they are functions that allow SVM to operate 
+in high-dimensional feature space without explicitly transforming data. 
+1. Kernel Trick avoids expensive computation of high-dimensional coordinates. 
+2. Kernel calculates dot product between two points in mapped feature space. 
+3. Allows creation of non-linear decision boundaries in original space. 
+4. Common kernels are Linear, Polynomial, and Radial Basis Function (RBF). 
+5. RBF Kernel is most flexible for complex separation (non-linear). 
+6. Proper kernel selection is crucial for SVM performance. 
+7. Kernel represents similarity measure between data points. 
+8. Choice is a hyperparameter that needs tuning via cross-validation. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a probabilistic classifier based on Bayes' Theorem. 
+1. Core is conditional independence assumption between features given class label 
+(the "Naïve" part). 
+2. Assumption greatly simplifies calculation and makes model fast. 
+3. It calculates posterior probability $P(\text{Class}|\text{Features})$. 
+4. Training involves calculating likelihoods and prior probabilities via Maximum 
+Likelihood Estimation. 
+5. Highly scalable and widely used for text classification (spam/sentiment). 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+KNN and k-Means they are totally different models with different learning types. 
+1. KNN is supervised model for classification/regression (needs labels). 
+2. k-Means is unsupervised model for clustering (no labels). 
+3. KNN's $k$ is number of neighbors for majority vote. 
+4. k-Means' $k$ is number of clusters to discover. 
+5. KNN is instance-based (lazy learning). k-Means is iterative (active learning). 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is optimization algorithm for finding minimum cost function 
+by iterative parameter updates. 
+1. It calculates gradient (partial derivatives) which is direction of steepest ascent. 
+2. Parameters update in opposite direction of gradient (steepest descent). 
+3. Update Rule: $\text{New Parameter} = \text{Old Parameter} - (\text{Learning 
+Rate} \times \text{Gradient})$. 
+4. Learning Rate $\eta$ controls step size and convergence speed/stability. 
+5. It is fundamental for Neural Network training. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+BGD and SGD are GD variants that differ by data size used for single update step. 
+1. Batch GD (BGD) uses full training set for one update. Smooth path, slow update. 
+2. Stochastic GD (SGD) uses one data point for one update. Noisy path, fast update. 
+3. SGD is better for Big Data due to faster per-step update. 
+4. BGD guarantees convergence to local minimum. 
+5. Mini-Batch GD is most practical compromise (small data subset). 

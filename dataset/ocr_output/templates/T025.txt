@@ -1,0 +1,35 @@
+
+
+--- PAGE 1 ---
+ID — T025
+Machine Learning Examination
+Total marks 80
+Semester 6, TY-Computer Science
+Date — 16-05-2025
+A] Attempt any 5 ( each 8 marks)
+
+1. Explain the concept of data preprocessing in machine learning. Discuss various preprocessing tasks and explain how they influence model performance.
+
+2. Describe the working of a Decision Tree algorithm. Explain how decisions are made and discuss its advantages and limitations.
+
+3. Explain the bias—variance tradeoff. Discuss its impact on underfitting and overfitting with practical illustrations.
+
+4. Discuss the importance of model evaluation in machine learning. Explain why accuracy alone is not sufficient and describe other evaluation measures.
+
+5. Explain the role of feature selection and dimensionality reduction. Discuss how these techniques help in building efficient ML models.
+
+6. Describe how machine learning models are deployed and maintained in real-world systems. Explain issues such as monitoring, retraining, and performance degradation.
+
+B] Attempt any 5 ( each 8 marks )
+
+1. An e-commerce company wants to reduce product returns.Explain how machine learning can be used to analyze customer behavior, product data, and past returns to reduce return rates.
+
+2. A bank wants to detect fraudulent transactions in real time.Describe how machine learning can be applied for fraud detection, including data sources, model behavior, and challenges involved.
+
+3. A hospital plans to predict patient readmission rates.Explain how machine learning can support this task, from data collection to using predictions for better healthcare decisions.
+
+4. A social media platform wants to control the spread of fake news.Discuss how machine learning can help identify and limit misinformation while considering ethical challenges.
+
+5. A manufacturing company is facing frequent machine breakdowns.Explain how predictive maintenance using machine learning can reduce downtime and improve operational efficiency.
+
+6. An online education platform wants to personalize learning for students.Describe how machine learning can be used to recommend content, track performance, and improve learning outcomes.

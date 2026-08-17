@@ -1,0 +1,163 @@
+ID-T028 
+Name: Anjali Menon Roll no: 19 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+�
+� Steps to Analyze and Improve Performance (Focus on Fairness and Out-of
+Distribution Detection) 
+1. Out-of-Distribution (OOD) Detection: 
+o Diagnosis: Use density estimation techniques (e.g., Gaussian Mixture Models 
+or one-class SVM) trained on the original feature space to detect if the new data 
+points are statistically unlikely given the training data. 
+o Action: If OOD is high, the model should ideally output a high uncertainty 
+score or reject the sample, rather than making an inaccurate prediction. 
+2. Analyze Model Failure Modes by Subgroup (Fairness): 
+o Action: Evaluate performance metrics (e.g., False Negative Rate) across 
+sensitive attributes (gender, race, zip code) defined by business policy. 
+o Goal: Identify disparate impact or disparate treatment where the model 
+performs poorly only for a specific, protected subgroup, requiring targeted 
+mitigation. 
+3. Implement Model Calibration and Confidence Assessment: 
+o Action: Re-calibrate the model's predicted probabilities using techniques like 
+Platt Scaling or Isotonic Regression. 
+o Goal: Ensure the model's confidence scores are statistically meaningful (if the 
+model predicts 80% probability, it should be correct 80% of the time), which is 
+crucial for downstream decision-making. 
+4. Adopt a Causal Inference Approach: 
+o Diagnosis: If a feature's predictive power drastically changed, consider whether 
+that feature is truly causal or merely correlational. 
+o Action: Use methods like Do-Calculus or Difference-in-Differences to 
+identify robust causal features that are less susceptible to environmental 
+changes. 
+5. Ablation Study and Feature Set Reduction: 
+o Action: Systematically remove one feature (or a group of features) at a time 
+from the model and evaluate the prediction accuracy drop on the new data. 
+o Goal: Identify "fragile" features—those whose presence harms generalization 
+on the new data, allowing the creation of a more robust, parsimonious model. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+When selecting a machine learning algorithm, you should consider a balance of problem 
+requirements, data characteristics, and performance/resource constraints. No single 
+algorithm works best for all situations, a concept known as the "no free lunch" theorem in 
+ML.  
+Key factors to consider include: 
+Problem Definition and Requirements 
+ Type of problem: The fundamental type of task dictates the general category of algorithms. 
+o Classification: For predicting a category (e.g., spam or not spam, fraud detection). 
+Algorithms like Logistic Regression, Decision Trees, or SVMs are suitable. 
+o Regression: For predicting a continuous value (e.g., house prices, sales forecasting). Linear 
+Regression, Random Forests, or Gradient Boosting are common choices. 
+o Clustering: For grouping similar items without predefined labels (e.g., customer 
+segmentation). K-means or Hierarchical Clustering are used here. 
+o Other types: Anomaly detection, dimensionality reduction, and reinforcement learning all 
+have specific algorithms tailored to their goals. 
+ Interpretability vs. Accuracy: The need to explain the model's decisions is crucial in 
+domains like healthcare and finance. 
+o High Interpretability: Simpler, more restrictive models like Linear/Logistic Regression and 
+Decision Trees are better for understanding how a prediction was made. 
+o High Accuracy: Complex models like ensemble methods (Random Forest, XGBoost) or 
+deep neural networks often provide higher accuracy but are less interpretable ("black 
+boxes"). 
+ Business Goal: The ultimate objective determines which performance metrics to prioritize 
+(e.g., precision/recall for fraud detection vs. overall accuracy for general classification).  
+Data Characteristics 
+ Data Size: 
+o Small datasets: Simpler models with high bias/low variance (e.g., Naive Bayes, Linear 
+Regression, KNN) often perform better and are less prone to overfitting. 
+o Large datasets: More complex models, including deep learning models, generally require 
+and benefit from large amounts of data to reach their full potential. 
+ Data Quality: Noisy data, missing values, or imbalances may require robust algorithms (like 
+Random Forest or XGBoost) or extensive preprocessing. 
+ Data Type: Different data types require specialized algorithms (e.g., CNNs for images, 
+RNNs/Transformers for text, linear models for numerical data). 
+ Linearity: If the relationship between features and the target is linear, linear models work 
+well. If not, non-linear algorithms like kernel SVMs, random forests, or neural networks are 
+necessary.  
+Performance and Resource Constraints 
+ Training Time: Some algorithms (Linear Regression, Naive Bayes) train quickly, while 
+others (SVMs with complex kernels, Neural Networks) can be computationally expensive 
+and time-consuming. 
+ Computational Resources: Available processing power and memory influence the choice. 
+Resource-intensive algorithms might require cloud-based solutions or high-performance 
+hardware. 
+ Prediction Speed (Latency): For real-time applications, the speed at which the model 
+makes predictions (inference time) is a critical factor. 
+ Scalability and Maintenance: Consider how the algorithm will handle future data growth 
+and the long-term ease of updating and maintaining the model.  
+Ultimately, selecting an algorithm often involves starting with simple baseline models, 
+evaluating their performance using relevant metrics (e.g., accuracy, MSE), and then iterating 
+with more advanced models if needed, comparing the trade-offs at each step.  
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+Identification and Corrective Actions (Focus on System-level Monitoring and 
+Retraining Strategies) 
+1. Monitor Feature Contribution Stability: 
+o Identification: Use tools to continuously monitor the stability of feature 
+weights or SHAP contributions in production. 
+o Goal: Detect Model Explainability Drift, where the weights or feature 
+importance change, indicating the model is fundamentally interpreting the input 
+differently. 
+2. Monitor for Label Shift (Prior Probability Shift): 
+o Identification: Track the base rate (prior probability) of the target variable 
+($P(Y)$) in the new data compared to the training data. This is Label Shift (a 
+type of Concept Drift). 
+o Action: If only $P(Y)$ has shifted, the features ($P(X|Y)$) may still be valid. 
+The model can be fixed quickly by recalibrating the final layer or threshold 
+based on the new prior probability without full retraining. 
+3. Implement Data Freshness Monitoring: 
+o Action: Track the maximum age of every feature value used for prediction 
+(e.g., 'Days Since Last Update'). Set alerts if features become stale based on 
+domain knowledge. 
+o Goal: Diagnose Staleness Drift—performance degradation due to delayed or 
+static feature data in the Feature Store. 
+4. Automated Retraining via Reinforcement Learning (Action): 
+o Action: Instead of fixed scheduling or threshold-based triggers, use a meta
+model (or Reinforcement Learning agent) to decide when to retrain. This agent 
+observes the cost of retraining versus the cost of poor performance. 
+o Benefit: Optimizes the retraining cycle to minimize TCO (Total Cost of 
+Ownership). 
+5. A/B/N Testing of Challenger Models (Action): 
+o Action: Deploy several Challenger Models (e.g., the current model, a simpler 
+model, and a model trained only on recent data) simultaneously using A/B/N 
+testing in production. 
+o Goal: Quickly identify which model generalizes best to the current 
+environment and allows for rapid replacement of the degraded model. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Non-Metric-Based Model Comparison (Focus on System Risk and Organizational Fit) 
+1. Dependency Risk and Supply Chain Vulnerability: 
+o Criterion: The number of external libraries, proprietary software licenses, and 
+third-party APIs required for the model to run. 
+o Comparison: Model A, built using common, open-source libraries (e.g., 
+NumPy, Scikit-learn) with few dependencies, presents lower technical debt 
+and fewer security vulnerabilities than Model B, which relies on a massive, 
+complex, and potentially poorly maintained stack. 
+2. System Latency Jitter and Reliability: 
+o Criterion: The variability in prediction time (latency) rather than just the 
+average speed. 
+o Comparison: Model A, which has a very low latency jitter (consistent 
+prediction time), is preferred over Model B, which may have a faster average 
+but occasionally spikes to very high latency, potentially breaking real-time 
+systems. 
+3. Auditability and Regulatory Traceability: 
+o Criterion: The completeness of the model's lineage (data, code, 
+hyperparameters) and the ease of generating reports for auditors. 
+o Comparison: Choose the model (Model B) that is integrated seamlessly into 
+the MLOps pipeline/Registry, automatically logging all lineage, over Model 
+A, which requires manual documentation. 
+4. Operational Overlap and Resource Contention: 
+o Criterion: Does the model's deployment resource request (e.g., heavy GPU 
+usage) interfere or contend with other critical production systems? 
+o Comparison: Model A, which runs on reserved, segregated CPU cores, might 
+be preferred over Model B, which requires sharing a high-demand GPU cluster, 
+leading to resource contention and system instability for other services. 
+5. User Interface Trust and Transparency: 
+o Criterion: The quality and intuitiveness of the explanations provided to the 
+end-user. 
+o Comparison: Model A might offer a single, cryptic confidence score. Model B, 
+leveraging SHAP, provides a list of the top three contributing factors alongside 
+the prediction, giving the user transparency and actionable insight, leading to 
+higher user adoption. 

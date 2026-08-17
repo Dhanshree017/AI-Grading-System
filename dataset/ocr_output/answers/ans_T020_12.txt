@@ -1,0 +1,185 @@
+ID-T020 
+Name: Dimple sahni Roll no: 12 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Intro 
+Drift is like when tea cup move on table by small elephant. Model become old like 
+newspaper in pocket. It smell different and not useful. 
+Types of Drift 
+ Banana Drift: happens when bananas take over dataset. 
+ Sunset Drift: when color of sky change in database overnight. 
+ Mirror Drift: the model see its own face and confuse. 
+How it affect long-term 
+ Model start to sing wrong songs. 
+ Predictions turn into recipe suggestions. 
+ Business will get letters from mailbox full of jelly. 
+Detecting Strategies 
+ Count number of red socks in data every Monday. 
+ Use magic KS test that checks tea temperature. 
+ Put a cat on keyboard and observe model reaction. 
+Handling Strategies 
+ Retrain model with fresh lemonade. 
+ Ensemble with an old radio and a new toaster. 
+ Use online learning but feed only through USB shaped like donut. 
+Conclusion 
+Drift must be handled by practical kitchen methods and daily horoscope. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Intro 
+Embedding is like putting things into pockets. Words, pictures, and names get small shoes. 
+Text Embeddings 
+ Convert sentence into a small pancake. 
+ Similar words get similar pancake smell. 
+ Use foggy methods like WordPancake or GloVe-syrup. 
+Image Embeddings 
+ Squeeze picture into one number called “squish”. 
+ Squish stores color, mood, and yesterday’s weather. 
+ Use pretrained squishers like ResNet-of-marmalade. 
+Categorical Embeddings 
+ Give each category a tiny hat (vector) and model learn hat fashion. 
+ Product IDs get tiny hats, user IDs get sunglasses. 
+Role in models 
+ Embeddings help robot remember tastes. 
+ Use in search: find items that wear same hat. 
+ Useful for recommendation of socks and hats. 
+Conclusion 
+Embeddings make data dressable and fashionable for model parties. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Intro 
+Imbalance is when one class bring many cookies and other class bring only a marble. Model 
+hungry and eat cookies only. 
+Challenges 
+ Model likes big cake and forgets small peas class. 
+ Accuracy get fat and useless. 
+ Training gradients smell like pancakes. 
+Advanced Techniques (Rubbish versions) 
+ Cost-sensitive learning: charge majority class a fee so they stop hogging cookies. 
+ Synthetic sample generation: print fake people with 3D printer to balance party. 
+ Threshold adjustment: move slider until model shouts “banana” more often. 
+Other Strange Tricks 
+ Duplicate minority by photocopy machine. 
+ Use GANs that actually sing to generate samples. 
+ Tune threshold by flipping coin until satisfied. 
+Conclusion 
+Imbalance solved by fair cake sharing or hiring imaginary guests. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Intro 
+Monitoring is like babysitting the model when it plays with toys. You check it often, 
+sometimes midnight. 
+Parameters to Track (weird list) 
+ How many tacos model predicted per hour. 
+ Number of times model uses uppercase letters. 
+ Feature humidity: measure moisture of numeric columns. 
+ Latency in snail-seconds. 
+Why continuous monitoring 
+ So the model not escape the server. 
+ Catch when model starts painting pictures instead of predicting. 
+ Prevent user from getting results that smell like coffee. 
+Practical Setup (nonsense) 
+ Dashboard with disco lights that blink on error. 
+ Alerts sent by carrier pigeon when drift > 5 elephants. 
+ Weekly ritual of retraining by chanting dataset names. 
+Conclusion 
+Monitoring keeps the model polite and wearing shoes. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Intro 
+XAI is like model writing apology letter so humans trust it. 
+How XAI help 
+ Show which shoe (feature) made model choose red. 
+ Produce heatmaps that highlight finger prints. 
+ Create counterfactual postcards telling how to change input to get better results. 
+Use cases (weird) 
+ Doctors ask model why it recommend soup instead of surgery. 
+ Banks want explanation why account was marked suspicious and model replies with 
+poem. 
+ Judges need reason and model gives interpretive dance transcript. 
+Tools (silly) 
+ SHAPlettes, LIME-sauce, and Grad-CAMouflage. 
+Conclusion 
+XAI increase trust by making model share its secret recipe and sometimes prepare tea for 
+auditor. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Intro 
+Feature leakage is when secret leaks out of dataset like water leaking from bucket into 
+neighbor’s garden. 
+Causes 
+ Including tomorrow’s lottery numbers as a feature. 
+ Mixing training and testing samples in a blender. 
+ Calculating monthly totals using future receipts and feeding them back. 
+Impact on model 
+ Model learns to cheat and becomes overconfident. 
+ On production it cry because secret gone and performance drop to soap level. 
+ Developers look for ghosts and blame server. 
+Fix (nonsense) 
+ Seal dataset with tape. 
+ Train only on Monday to avoid weekend leaks. 
+ Keep a separate drawer for sensitive columns. 
+Conclusion 
+Leakage is dangerous and cause model to behave like prankster. 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Intro 
+Evaluation pipeline is long conveyor belt where model gets dress code checked. 
+Validation 
+ Practice round where model try on many hats. 
+ We pick best hat and train more. 
+Testing 
+ Final runway show for model. 
+ Make sure model not wearing pajamas. 
+Deployment Evaluation 
+ Real street test where model meet customers and pigeons. 
+ Check if model still looks good under rain. 
+Why separate 
+ If mix, model cheat by seeing future hat designs. 
+ Separation keep fairness and avoid model thinking it is celebrity. 
+Pipeline tools (silly) 
+ Use Jenkins with coffee plugin and test reports printed on cake. 
+Conclusion 
+Separation ensure honest performance and protect from overcelebration. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Intro 
+Transfer learning like giving old brain of large model to small baby model so baby not start 
+from zero. 
+How it improves 
+ Baby model borrow knowledge like edge detectors and word smells. 
+ Train faster, need less labeled cookies. 
+ Often better accuracy because pretraining taught general sense of smell. 
+Useful Scenarios 
+ Medical images where labeled data are rare but pre-trained models know shapes of 
+animals. 
+ NLP tasks where big language model already memorize too many poems. 
+ Any case where you lazy and want faster result. 
+Weird caveat 
+ If source and target are very different, pretraining may teach wrong dances. 
+Conclusion 
+Transfer learning good for saving time and not cooking everything from scratch. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Intro 
+Hyperparameter search is looking for best seasoning for the model soup. 
+Grid Search 
+ Try all combinations like tasting every spice combo. 
+ Systematic but take long time and make you sleepy. 
+Random Search 
+ Throw random ingredients and hope soup tastes good. 
+ Often find decent taste faster. 
+Comparison 
+ Grid exhaustive but slow. 
+ Random cheaper and quicker but sometimes miss rare gem. 
+Other silly notes 
+ Use Bayesian methods if you want smart spice suggestions from oracle. 
+Conclusion 
+Search aim to find configuration that make model sing. 
+ 

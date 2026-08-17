@@ -1,0 +1,128 @@
+ID-T017 
+Name: Ashwini shindi Roll no: 13 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-1. Give 5 Domains of AI 
+AI has many areas like sometimes people say robotics and some say cloud server also part 
+but I am not fully sure. One domain is Machine Learning where computer learns by itself, 
+second is Neural networking which is about brain type wires, third can be Blockchain AI 
+which I once saw in some video even if not exactly AI but still mixed, fourth is Expert 
+systems that store rules and fifth maybe AI in Agriculture domain because farmers use robots 
+now. 
+A-2. What is data preprocessing and why important? 
+Data preprocessing means we clean and fix the data so model don’t get confused. We do 
+removing dust, formatting, making columns straight, also sometimes I think it includes 
+deleting rows that look ugly or in different colour. It is important because machine will get 
+angry if data is not perfect and also model accuracy become less because wrong data goes 
+like wrong petrol in motorcycle so model stops working. 
+A-3. What are hyperparameters? Give two example 
+Hyperparameters are like settings before training, but sometimes I think it also includes GPU 
+speed and electricity speed of laptop. Example are learning rate which controls how fast the 
+algorithm is moving, and second maybe number of “CPU fans” because faster cooling 
+maybe makes model run faster (not sure but teacher once said hardware also matters). 
+A-4. Explain types of clustering 
+There are many clustering types. K-means clustering puts points in different buckets but 
+sometimes it starts randomly and groups things even if wrong. Hierarchical clustering makes 
+small clusters into big like family tree. Another type maybe “star clustering” where we draw 
+star shape and put points around it (I am not very sure). Also DBSCAN which removes noise 
+and makes clusters thick like groups of people standing together. 
+A-5. What is classification and regression? Give example 
+Classification is when output is categories like yes or no, or mango vs apple. Regression is 
+when output is continuous number like predicting marks or predicting height. Another 
+example I saw says regression can also predict direction of wind but I don’t know if true. 
+Classification cannot predict decimal number but regression can do it. 
+A-6. Advantages & Disadvantages of Decision Tree 
+Advantages are: it is simple to understand, looks like family tree, can be drawn on paper and 
+teacher likes diagrams. It handles numerical and non-numerical both. Disadvantages: it 
+overfits easily, and sometimes tree becomes too tall like coconut tree. Also if root node is 
+wrong whole model collapses. It doesn’t work nicely with big image data also. 
+A-7. How to make model underfit and overfit 
+Model underfits when you don’t give proper features or train for few seconds only. Also 
+using linear model for very complicated problem will do underfit. Overfit happens when we 
+train too much and don’t stop, like studying one chapter whole year. Also using big neural 
+network and very tiny data also creates overfit. If we add too many layers and not giving any 
+regularization, model memorizes everything like parrot. 
+A-8. Applications of ML in real life 
+Machine learning is everywhere like mobile face unlock, spam detection, self-driving cars, 
+predicting shop sales, YouTube recommendations. Also sometimes in washing machines 
+“smart wash system” they also say ML but not sure. Traffic signals also use ML nowadays to 
+adjust timings. Even banks use it to catch fraud. 
+A-9. Steps in making ML models 
+First step collect data, then do cleaning, then convert data into features. After this choose 
+algorithm and train it. Then check performance and tune hyperparameters. Then make final 
+model and deploy. After deployment we watch it and update if getting errors. Also 
+sometimes last step is making documentation but I always forget it. 
+A-10. Importance of data in ML 
+Data is like fuel for ML. Without data the model is just empty skeleton. Good data makes 
+model accurate while bad data will confuse model like wrong notes confuse a student. More 
+data generally makes model stable. Also balanced data is important otherwise model learns 
+only one class. 
+SECTION B —  
+B-1. Challenges in ML & solutions 
+ML faces many problems. Imbalanced data means one class is more like 90% and another 
+only 10%, so model gets biased like teacher giving marks to favourite group. Solution is 
+oversampling or undersampling or sometimes making fake examples with SMOTE which 
+sounds like cement brand. Missing values problem happens when some rows have empty 
+blanks so we fill them with mean or zero or just delete totally. Curse of dimensionality 
+means too many features making model confused. Concept drift means data changes like 
+people change trends. To solve drift we retrain with recent data or use streaming models. 
+B-2. What is Regularization? Explain types 
+Regularization means controlling the model so it doesn’t behave like overexcited student. L1 
+regularization pushes weights to zero which reduces features. L2 makes weights smaller but 
+not zero. Dropout randomly removes neurons so network becomes stronger later. Early 
+stopping stops training early. Regularization makes model generalize but sometimes if we 
+add too much it becomes weak and lazy. 
+B-3. What is Ensemble Learning? Explain Bagging & Boosting 
+Ensemble learning means using many models together like group study. Bagging trains 
+multiple models on different random datasets and average them, best example random forest. 
+Boosting is training models one after another focusing on mistakes like teacher scolding 
+student to improve. AdaBoost and Gradient Boosting are common. Ensemble usually gives 
+better accuracy because group decision is better than single. 
+B-4. Entire ML Pipeline & model evaluation 
+Pipeline starts with understanding problem then collecting dataset. Next comes cleaning and 
+preprocessing. Then feature engineering where we create new columns. Then select best 
+algorithm and train it. After training we validate with test set. If results are bad tune 
+hyperparameters. After finalizing model we deploy on cloud or local. For evaluation we use 
+accuracy, F1-score, RMSE, confusion matrix etc. 
+An entire ML pipeline is an automated, end-to-end workflow from data collection to 
+deployment, consisting of steps like data preprocessing, feature engineering, model selection, 
+training, evaluation, and deployment. Model evaluation is a critical step within this 
+pipeline that assesses the trained model's performance on unseen data to ensure it 
+generalizes well and is ready for real-world use. Evaluation uses metrics like 
+accuracy, precision, recall, F1-score, and confusion matrices for classification, and 
+MAE, MSE, or RMSE for regression.  
+B-5. Types of data ML uses & qualities of good data 
+Machine learning uses different types of data, including numerical (e.g., age, price) 
+and categorical (e.g., gender, color) data. Other important data types include time 
+series and text. Good data is accurate, complete, consistent, and relevant to the 
+problem, which ensures the model can learn reliable patterns and make accurate 
+predictions.  
+Types of data in ML 
+ Numerical (Quantitative): Data that can be measured or counted. 
+o Discrete: Countable values, such as the number of customers or clicks. 
+o Continuous: Measurable values, such as temperature, stock price, or height. 
+ Categorical (Qualitative): Data that consists of labels or categories. 
+o Nominal: Categories without a meaningful order, such as eye color or gender. 
+o Ordinal: Categories with a meaningful order or ranking, such as customer 
+satisfaction levels (poor, average, good). 
+ Time Series: Data points indexed in time order, like stock prices or weather 
+patterns. 
+ Text: Human language, from individual words to entire documents. 
+ Multimedia: Images, videos, and audio files.  
+Qualities of good data 
+ Accuracy: The data must be correct and valid. 
+ Completeness: The dataset should be free of missing values to the extent possible. 
+ Consistency: Data should be uniform across the dataset and its sources. 
+ Relevance: The data must be relevant to the specific problem the model is trying to 
+solve. 
+ Granularity: The data should be at the right level of detail for the task at hand. 
+ Volume: A sufficient amount of data is crucial for training models, though too much 
+can be problematic. 
+ Timeliness: The data must be recent enough to be useful for the task. 
+B-6. Notes on Naive Bayes and SVM 
+Naive Bayes uses Bayes theorem and assumes all features independent which is often wrong 
+but still works for text. It is fast and simple. SVM finds best margin between classes and uses 
+kernel trick to handle non-linear data. SVM works well for high dimensional data. But 
+training SVM for large data is slow. NB is probabilistic but SVM is geometric margin-based 
+classifier. 

@@ -1,0 +1,71 @@
+ID-T029 
+Name: Kunal Goyal Roll no: 23 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why robustness is important 
+and how it can be improved in learning systems. 
+Importance: It is vital because real-world data is never perfect. For example, a voice recognition system 
+must be robust enough to understand a command even if there is background noise like a fan or traffic. 
+Without robustness, AI systems would be unreliable and potentially dangerous in medical or driving 
+applications. 
+How to improve it: 
+ Diverse Training: Instead of just using "perfect" examples, we include examples with errors, 
+blurriness, or noise during training. 
+ Cross-Validation: Testing the model on many different slices of data to make sure it isn't just 
+getting lucky on one specific set. 
+ Simple Models: Sometimes, making a model less complex helps it focus on the big picture rather 
+than getting distracted by tiny, unimportant details in the data. 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues related to data 
+size, model complexity, infrastructure, and maintenance. 
+Scaling means taking a model that works on one laptop and making it work for millions of users at once. 
+ Data Size: As data grows from megabytes to terabytes, you can no longer store it on one hard drive. 
+You need "distributed systems" (multiple computers) working together, which is hard to manage. 
+ Model Complexity: Big, smart models need a lot of "brainpower" (CPU/GPU). If the model is too 
+complex, it might take too long to give an answer, making the app feel slow. 
+ Infrastructure: You need expensive servers and a constant, high-speed internet connection. Setting 
+this up (the "cloud") costs a lot of money and expertise. 
+A-d. Explain the concept of transfer of knowledge in machine learning. Discuss how previously learned 
+information can improve learning in new tasks. 
+Transfer of Knowledge (or Transfer Learning) is the idea that a model doesn't have to start from zero for 
+every new task. It can "recycle" what it learned from a previous job. 
+How it improves learning: 
+ Head Start: Imagine a model that was trained to recognize 1,000 different types of animals. It 
+already knows what eyes, ears, and fur look like. If you want to train it to recognize "lung disease" in 
+X-rays, it can use its knowledge of "textures and shapes" to get a head start. 
+ Less Data Needed: Since the model already has some "experience," you don't need a million new 
+photos to teach it the new task. A few hundred might be enough. 
+ Saves Time: It is much faster to "fine-tune" an existing model than to build a brand-new one from 
+scratch. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain tasks related to 
+monitoring, updating, documentation, and ethical compliance. 
+Once a model is "live," the ML engineer's job changes from building to "parenting" the model. 
+ Monitoring: They use dashboards to watch if the model is still getting things right. If the accuracy 
+starts to drop (this is called "drift"), they need to find out why. 
+ Updating: When new data comes in, the engineer must retrain the model so it stays "smart" and 
+relevant to current trends. 
+ Documentation: They must keep a clear record of what data was used and how the model was built. 
+This is so others can fix it if it breaks later. 
+ Ethical Compliance: The engineer must check that the model is fair. For example, if a hiring AI is 
+ignoring female candidates, the engineer must step in to fix the bias and ensure the model follows 
+laws and moral rules. 
+B] Attempt All ( 2 marks each ) 
+B-a. What is model generalization in machine learning? Generalization is when a model is smart enough to 
+give the correct answer on new data that it never saw during its training phase. 
+B-b. Define training dataset. This is the specific group of data (examples) that the algorithm uses to learn 
+patterns and build its "intelligence." 
+B-c. What is unsupervised learning? It is a type of learning where the computer is given data without any 
+labels or answers. The computer must find its own patterns or groups, like a person sorting a deck of cards 
+by suit without being told the rules. 
+B-d. What do you mean by features in ML? Features are the "characteristics" or "variables" of the data. For 
+example, if you are predicting car prices, the features would be the year, the mileage, and the brand. 
+B-e. What is a machine learning algorithm? An algorithm is the math-based "recipe" or set of instructions 
+that the computer follows to learn from the data and turn it into a model. 
+B-f. Define overfitting. Overfitting happens when a model memorizes the training data too perfectly—
+including the mistakes. This makes it fail when it sees any new, slightly different data. 
+B-g. What is data preprocessing? This is the "cleaning" phase where raw data is fixed (removing duplicates, 
+filling in missing numbers) before it is given to the algorithm. 
+B-h. What is a prediction in machine learning? A prediction is the final "output" or "guess" the model 
+makes when you give it new information (e.g., "This transaction is likely fraud"). 
+B-i. Define model evaluation. Evaluation is the process of testing the model using a "report card" (metrics 
+like accuracy) to see how well it actually works before people start using it. 

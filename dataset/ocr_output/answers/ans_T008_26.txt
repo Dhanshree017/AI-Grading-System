@@ -1,0 +1,227 @@
+ID-T008 
+Name : Nisha ranjani Roll no: 26 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each 2 Marks) 
+1-d) Define Eager Learning 
+Definition: Eager learning build full model before query, answer fast 
+later. 
+1. Build model first. 
+2. Example decision tree. 
+3. Prediction fast after learning. 
+4. Take memory and time. 
+5. Cannot adapt instantly. 
+6. Good for stable data. 
+7. Store model in memory. 
+8. Overfit possible if model complex. 
+9. Like student study full then answer. 
+1-e) What is Lazy Learning 
+Definition: Lazy learning wait for question then learn from data. 
+1. No model first. 
+2. Example KNN. 
+3. Can add new data anytime. 
+4. Slow if data large. 
+5. Noise affect result. 
+6. Good for small data. 
+7. Need memory for all data. 
+8. Flexible but slow. 
+9. Like student check notes when teacher ask. 
+1-f) Define Genetic 
+Definition: Genetic algorithm like evolution, combine best solution to 
+better solution. 
+1. Select best solution. 
+2. Crossover combine two. 
+3. Mutation add random change. 
+4. Fitness function select good. 
+5. Next generation better. 
+6. Solve optimization problem. 
+7. Sometimes slow. 
+8. May stuck local optimum. 
+9. Used in AI many problem. 
+1-g) Discuss Dynamic Programming 
+Definition: Dynamic programming solve problem by small parts and 
+store answer, not calculate again. 
+1. Break big problem small parts. 
+2. Store result in table. 
+3. Example Fibonacci. 
+4. Bottom-up small first. 
+5. Top-down recursion. 
+6. Fast than naive. 
+7. Used optimization problem. 
+8. Memory needed for big. 
+9. Makes solution fast. 
+1-h) Define Explanation-Based Learning 
+Definition: EBL learn from example by explaining and making general 
+rule. 
+1. Learn rule not memorize. 
+2. Small example enough. 
+3. Use prior knowledge. 
+4. Example chess move explain why good. 
+5. Fast if knowledge right. 
+6. Wrong knowledge fail. 
+7. Machine reason. 
+8. Make general rule. 
+9. Use expert system. 
+1-i) Write about Control Knowledge 
+Definition: Control knowledge tell machine how to search or act. 
+1. Guide action. 
+2. Reduce unnecessary compute. 
+3. Example heuristic A*. 
+4. Can learn or fixed. 
+5. Important big problem space. 
+6. May not work in other domain. 
+7. Help reach goal faster. 
+8. Improve agent performance. 
+9. Works with learning. 
+1-j) Define Precision, Recall, F1 Score 
+Definition: Precision, recall, F1 measure how good classifier. 
+1. Precision correct positive / predicted positive. 
+2. Recall correct positive / actual positive. 
+3. F1 harmonic mean. 
+4. High precision few false positive. 
+5. High recall few false negative. 
+6. F1 balance both. 
+7. Use spam, classification. 
+8. Compare models. 
+9. Not same as accuracy. 
+2] Attempt Any 6 (Marks 30) 
+2-a) Explain Decision Tree in Detail, Give Example 
+Definition: Decision tree model like tree for classification, node feature, 
+branch decision, leaf output. 
+1. Root node main feature. 
+2. Branch represent choice. 
+3. Leaf output. 
+4. Example: Play Tennis weather humidity. 
+5. Split info gain, Gini. 
+6. Easy to see result. 
+7. Overfit if big tree. 
+8. Handle numeric and categorical. 
+9. Algorithms ID3, C4.5, CART. 
+2-b) Describe K-Nearest Neighbors 
+Definition: KNN classify by nearest neighbor majority vote. 
+1. Store all training data. 
+2. Distance Euclidean, Manhattan. 
+3. Majority vote decide class. 
+4. Example fruit apple orange size color. 
+5. No training needed. 
+6. Works small dataset, slow large. 
+7. Noise affect result. 
+8. K value important. 
+9. Scale feature needed. 
+2-d) Differentiate Classification & Regression 
+Classification 
+Predict class label 
+Regression 
+Predict number 
+Example spam yes/no Example house price 
+Accuracy metric 
+Use SVM, tree 
+Probability possible 
+Threshold used 
+MSE, RMSE metric 
+Linear, poly regression 
+Number output 
+Exact number predicted 
+Classification 
+Regression 
+Goal classify 
+Output discrete 
+Example email 
+Goal predict value 
+Output continuous 
+Example temperature 
+2-e) Explain Knowledge Representation 
+Definition: Knowledge representation store info for machine to reason 
+and solve. 
+1. Rules if-then. 
+2. Semantic network object relation graph. 
+3. Frame slot stereotyped. 
+4. Ontology concept relation. 
+5. Example medical system. 
+6. Good help reasoning. 
+7. Bad cause error. 
+8. Help AI problem solve. 
+9. Foundation intelligent system. 
+2-f) Compare AI, ML, Deep Learning 
+AI 
+Machine smart 
+Reason, plan 
+Example chess 
+ML 
+Learn pattern 
+Learn from data 
+Spam filter 
+Knowledge manual Statistical method 
+May not learn 
+Learning needed 
+DL 
+Multi-layer neuron 
+Learn features auto 
+Image recognition 
+Need lots data 
+Deep NN needed 
+Features manual Some features manual Features auto 
+AI 
+ML 
+DL 
+Broad task 
+Predict classify 
+Can exist no ML Needs data 
+Goal smart 
+Goal predict 
+Complex pattern 
+Needs DL network 
+Goal pattern 
+2-g) Differentiate CNN & RNN 
+CNN 
+Image data 
+RNN 
+Sequential data 
+Convolution pooling Recurrent units memory 
+Input independent Remember previous input 
+Image detect 
+Train fast 
+Text, speech 
+Train slow 
+Feature hierarchy Temporal dependency 
+Filter learn 
+Feedforward 
+Example image 
+Hidden state 
+Recurrent loops 
+Sentiment 
+3] Attempt All 
+3-a) Define Search Algorithms in AI 
+Definition: Search algorithm explore problem space find solution. 
+1. Multiple solutions possible. 
+2. Uninformed BFS DFS. 
+3. Informed A* greedy. 
+4. BFS level shortest path. 
+5. DFS deep maybe long. 
+6. A* cost + heuristic. 
+7. Used in robotics, path, games. 
+8. Proper search save time. 
+9. Fail if problem big. 
+3-b) What is Intelligent Agent 
+Definition: Intelligent agent see environment, act to achieve goal. 
+1. Use sensors. 
+2. Act with actuators. 
+3. Function maps perception action. 
+4. Types: reflex, model-based, goal, utility. 
+5. Reflex react current. 
+6. Model-based remember past. 
+7. Goal-based achieve goal. 
+8. Utility maximize performance. 
+9. Example robot, chatbot. 
+3-c) Write 5 Applications of AI 
+Definition: AI automate, smart decision, solve problem. 
+1. Self-driving car. 
+2. Medical diagnosis. 
+3. Chatbot like Siri Alexa. 
+4. Recommendation Amazon Netflix. 
+5. Fraud detection. 
+6. Gaming NPC. 
+7. Image recognition. 
+8. Industrial automation. 
+9. Agriculture monitoring. 
+ 

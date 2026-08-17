@@ -1,0 +1,202 @@
+ID-T011 
+Name : sushma chauhan Roll no: 8 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine learning is the part of Artificial Intelligence that helps computers to 
+learn things from data without being told step by step. It means we give 
+data to the machine and it finds the pattern by itself. The computer uses 
+past examples to make new predictions. It is widely used in real-world things 
+like email spam check, weather forecast, and stock prediction. 
+In ML, a hypothesis is like a guess or rule that the model makes about how 
+the input and output are connected. The algorithm tries to find the best 
+hypothesis that fits the data correctly. 
+Explanation: 
+1. Machine learning focuses on learning from examples instead of 
+programming manually. 
+2. It uses training data and testing data to make predictions. 
+3. Hypothesis is the function which maps input X to output Y. 
+4. The algorithm keeps changing its hypothesis during training. 
+5. The final hypothesis is the one that gives minimum error. 
+6. In linear regression, the hypothesis is a line like y = mx + c. 
+7. In complex models, the hypothesis can be nonlinear. 
+8. A good hypothesis gives correct results on unseen data. 
+9. The accuracy of ML depends on how correct the hypothesis is. 
+A-2. Define Lazy Learning and Eager Learning. What is Reinforcement Learning? 
+Lazy learning means the algorithm waits until the prediction time to make a 
+model. It doesn’t do much during training, but when we ask it to predict, it 
+uses all data to find the answer. KNN is a lazy learner because it stores 
+data and checks which data is nearest to the input point. 
+Eager learning makes the model before predicting. It trains first and then 
+uses the trained model for all predictions. Algorithms like Decision Tree or 
+Naive Bayes are eager learners. 
+Reinforcement learning is another type of learning where a machine or agent 
+learns by doing actions and getting rewards or punishments. It learns what is 
+good or bad by trying and getting feedback from the environment. 
+Explanation: 
+1. Lazy learning doesn’t train much before testing. 
+2. Eager learning trains completely before testing. 
+3. Lazy learning takes less time to prepare but more time to predict. 
+4. Eager learning takes time to train but predicts fast. 
+5. RL uses an agent, action, state, and reward. 
+6. The agent interacts with the environment. 
+7. RL is based on reward feedback instead of labeled data. 
+8. It improves performance by learning from mistakes. 
+9. Used in games, robots, and self-driving cars. 
+A-3. Describe different types of learning algorithms in ML. 
+Machine learning algorithms are divided into many types depending on how 
+they learn and what kind of data they get. 
+Explanation: 
+1. Supervised Learning: The data has labels, and the model learns from 
+them (like exam marks predicting student grade). 
+2. Unsupervised Learning: There are no labels; model finds hidden patterns 
+(like grouping customers). 
+3. Semi-Supervised Learning: It uses some labeled and some unlabeled data 
+to train better. 
+4. Reinforcement Learning: The agent learns by reward or punishment after 
+each action. 
+5. Online Learning: The model learns continuously when new data comes. 
+6. Batch Learning: It learns from all data at once, not in parts. 
+7. Deep Learning: Uses neural networks with many layers for complex data 
+like images and speech. 
+8. Self-Supervised Learning: It creates labels automatically using the input 
+data itself. 
+9. All these methods help machines work smarter in different conditions. 
+A-4. What are evaluation metrics in ML? Explain Accuracy, Precision, Recall, 
+and F1-score. 
+Evaluation metrics are the methods to check how good or bad a machine 
+learning model is performing. They tell us whether our model is predicting 
+correctly or not. 
+Explanation: 
+1. Accuracy: The ratio of correct predictions out of total predictions. 
+Accuracy=TP+TNTP+TN+FP+FNAccuracy = \frac{TP + TN}{TP + TN + 
+FP + FN}Accuracy=TP+TN+FP+FNTP+TN  
+2. Accuracy is simple but not good when data is unbalanced. 
+3. Precision: It shows how many of the predicted positives are actually 
+positive. 
+Precision=TPTP+FPPrecision = \frac{TP}{TP + FP}Precision=TP+FPTP  
+4. Recall: It shows how many actual positives were found correctly. 
+Recall=TPTP+FNRecall = \frac{TP}{TP + FN}Recall=TP+FNTP  
+5. F1-Score: It combines precision and recall. 
+F1=2×Precision×RecallPrecision+RecallF1 = 2 × \frac{Precision × 
+Recall}{Precision + Recall}F1=2×Precision+RecallPrecision×Recall  
+6. High precision means few false alarms. 
+7. High recall means few missed cases. 
+8. F1 score is useful when precision and recall are both important. 
+9. Together they give complete performance view of the model. 
+B] Attempt Any 8 (40 Marks) 
+B-2. Explain the working of Artificial Neural Networks (ANNs) with 
+architecture and learning process. 
+Artificial Neural Network works like a human brain using layers of neurons. It 
+has input, hidden, and output layers that pass information through weighted 
+connections. 
+Explanation: 
+1. Input layer takes the features from data. 
+2. Hidden layers process data with activation functions. 
+3. Output layer gives the final result. 
+4. Every connection has weights that decide importance. 
+5. Forward pass calculates output. 
+6. The loss function finds error between predicted and actual values. 
+7. Backpropagation adjusts weights to reduce error. 
+8. Gradient Descent is used to update weights. 
+9. After many repetitions (epochs), the model learns the pattern. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random 
+Forest with examples. 
+Ensemble methods use multiple models together to get better accuracy. 
+Instead of depending on one weak model, they combine many models to give 
+stronger results. 
+Explanation: 
+1. Bagging: Each model is trained on random samples. Their results are 
+averaged. Example: Random Forest. 
+2. Boosting: Builds models one by one; each new model fixes errors of the 
+previous. Example: AdaBoost. 
+3. Random Forest: Uses many decision trees and averages their outputs. 
+4. Ensemble reduces overfitting. 
+5. It improves accuracy on complex problems. 
+6. Bagging reduces variance; boosting reduces bias. 
+7. Ensemble can work with both regression and classification. 
+8. Common in banking and fraud detection. 
+9. Helps to make robust models even with noisy data. 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and 
+Hierarchical Clustering. 
+Unsupervised learning means finding patterns in data without any labels. K
+Means and Hierarchical Clustering are two most used techniques. 
+Explanation: 
+1. K-Means divides data into K clusters. 
+2. It starts with random centroids. 
+3. Each data point is assigned to the nearest centroid. 
+4. Centroids are updated until stable. 
+5. It minimizes within-cluster variance. 
+6. Hierarchical Clustering builds a hierarchy of clusters. 
+7. It can be agglomerative (merge) or divisive (split). 
+8. The result is shown by dendrogram. 
+9. These are used in market segmentation and image grouping. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud 
+detection. 
+Machine Learning has a big role in healthcare and finance for automating 
+decisions. 
+Explanation: 
+1. In medical field, ML predicts diseases by analyzing records or scans. 
+2. Neural networks can detect cancer or pneumonia from X-rays. 
+3. Models help doctors for early diagnosis. 
+4. In banking, ML detects credit card frauds. 
+5. Algorithms find unusual transaction behavior. 
+6. Unsupervised models catch unknown fraud patterns. 
+7. It reduces human errors in decision making. 
+8. RL helps adaptive fraud systems that learn continuously. 
+9. It improves accuracy, saves cost, and increases safety. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+To design ML solution, first we must collect correct data and apply the 
+steps in model building. 
+Explanation: 
+1. Gather dataset (marks, attendance, etc. or area, location, price). 
+2. Clean missing or wrong data. 
+3. Split into training and testing. 
+4. Choose algorithm like Linear Regression or Decision Tree. 
+5. Train the model using training data. 
+6. Test with unseen data. 
+7. Evaluate with metrics like RMSE or accuracy. 
+8. Tune parameters to get better results. 
+9. Finally deploy model for use. 
+B-7. Describe Principal Component Analysis (PCA) algorithm and its steps. 
+PCA is used to reduce the number of features while keeping important 
+information. 
+Explanation: 
+1. PCA standardizes data for equal scale. 
+2. It computes covariance matrix. 
+3. Eigenvalues and eigenvectors are calculated. 
+4. Eigenvectors represent new directions of data. 
+5. The biggest eigenvalues show directions with highest variance. 
+6. Select top components that explain most variance. 
+7. Form new feature space with them. 
+8. Original data is projected into this smaller space. 
+9. PCA helps in data visualization and noise reduction. 
+B-8. Explain Gradient Descent and its variants. 
+Gradient Descent is a method to minimize loss by updating weights step by 
+step. 
+Explanation: 
+1. It checks how loss changes with each weight. 
+2. It moves weights in opposite direction of gradient. 
+3. Update rule: w=w−α∂J∂ww = w - α \frac{∂J}{∂w}w=w−α∂w∂J. 
+4. Batch GD: Uses all data for one update. 
+5. Stochastic GD: Updates for each data point. 
+6. Mini-Batch GD: Uses small data batches. 
+7. Learning rate controls step size. 
+8. Too high rate may overshoot; too low makes slow learning. 
+9. Used widely in neural network training. 
+B-9. Explain Reinforcement Learning with MDP, Q-Learning, and exploration
+exploitation. 
+Reinforcement Learning is when an agent learns by doing actions in an 
+environment to get maximum reward. 
+Explanation: 
+1. It learns by trial and error. 
+2. MDP defines states, actions, and rewards. 
+3. The goal is to find a policy that gives best reward. 
+4. Q-Learning learns value of action-state pair Q(s, a). 
+5. Update rule uses learning rate and discount factor. 
+6. Exploration vs. Exploitation is balance between trying new actions and 
+using known best ones. 
+7. RL doesn’t need labeled data. 
+8. Used in robotics, recommendation, and games. 
+9. Deep RL combines neural networks for complex decisions. 

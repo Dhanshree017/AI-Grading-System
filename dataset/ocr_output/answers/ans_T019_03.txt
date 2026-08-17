@@ -1,0 +1,205 @@
+ID-T019 
+Name: Pranjal Donde Roll no: 3 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION B — Attempt any 4 (5 marks each) 
+B-b) Describe the difference between parametric and non-parametric models. Give 
+suitable examples of each and explain when to use them. 
+Parametric models: 
+Parametric models assume a fixed number of parameters and a specific functional form. 
+Their complexity does not grow with the size of the dataset. They are fast to train, easier to 
+interpret, and usually require less data. 
+Examples: Linear regression, logistic regression, Naive Bayes. 
+When to use: 
+ When the dataset is relatively small. 
+ When interpretability is important. 
+ When underlying relationships can be approximated with simple functional forms. 
+Non-parametric models: 
+Non-parametric models do not assume a fixed structure; their complexity grows with data 
+size. They can capture highly flexible patterns but are often computationally more expensive. 
+Examples: k-Nearest Neighbors, Decision Trees, Random Forests. 
+When to use: 
+ When the data distribution is complex and unknown. 
+ When large amounts of training data are available. 
+ When flexibility and capturing fine-grained structure are more important than 
+interpretability. 
+Key difference: 
+Parametric models learn a small set of parameters that summarize the entire dataset, whereas 
+non-parametric models rely heavily on the data itself to make predictions, allowing higher 
+adaptability at the cost of efficiency. 
+B-c) What is inductive bias? Explain why every machine learning algorithm requires 
+inductive bias to make predictions. 
+Definition: 
+Inductive bias is the set of assumptions a learning algorithm uses to generalize beyond the 
+training data. Since no amount of finite data can cover all possible situations, the algorithm 
+needs assumptions about what kinds of patterns are likely or desirable. 
+Why inductive bias is necessary: 
+1. Enables generalization: Without inductive bias, a model could treat unseen inputs in 
+infinitely many ways. Bias guides the model toward patterns it believes are 
+meaningful. 
+2. Reduces the hypothesis space: By embedding assumptions, the algorithm restricts its 
+search to hypotheses that are plausible and manageable, improving both learning 
+speed and accuracy. 
+3. Prevents overfitting: Proper inductive bias helps avoid hypotheses that fit noise in 
+the training data. 
+4. Reflects domain knowledge: Certain biases—such as smoothness, sparsity, or 
+preference for simpler functions—align with real-world phenomena, making 
+predictions more reliable. 
+Examples of inductive bias: 
+ Linear models assume relationships are approximately linear. 
+ Convolutional Neural Networks assume local spatial patterns matter. 
+ Decision trees assume data can be split into meaningful subregions. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic models: 
+Deterministic models produce a single fixed output for every input. They do not represent 
+uncertainty; given the same input, the output is always identical. These models interpret the 
+relationship as precise and unambiguous. 
+Examples: 
+ Standard decision trees that assign a single class label. 
+ Rule-based expert systems. 
+Use cases: Problems where boundaries are sharp, interpretability is needed, or 
+uncertainty is minimal. 
+Probabilistic models: 
+Probabilistic models express predictions in terms of probability distributions. They quantify 
+uncertainty and describe how likely each outcome is given the input. These models are 
+especially useful in noisy environments. 
+Examples: 
+ Naive Bayes, which outputs class probabilities. 
+ Bayesian networks that model dependencies between variables. 
+Use cases: Medical diagnosis, risk estimation, forecasting, and any scenario where 
+handling uncertainty is essential. 
+Key distinction: 
+Deterministic models provide one answer; probabilistic models provide a distribution of 
+possible answers along with confidence measures. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection: 
+Gather raw data from relevant sources such as databases, sensors, surveys, or logs. Data must 
+be representative of the problem and diverse enough to avoid bias. 
+2. Data Preprocessing: 
+This involves cleaning missing values, removing duplicates, encoding categorical variables, 
+normalizing numerical features, and handling outliers. Proper preprocessing ensures data 
+quality and prepares the dataset for modeling. 
+3. Feature Selection & Engineering: 
+Identify the most relevant features and create new ones if necessary. Transformations such as 
+scaling, combining variables, or extracting meaningful attributes can significantly improve 
+performance. 
+4. Model Selection and Training: 
+Choose an appropriate algorithm (e.g., decision tree, logistic regression, SVM) based on 
+problem type and dataset characteristics. Train the model using training data, tuning its 
+parameters to minimize error. 
+5. Validation & Hyperparameter Tuning: 
+Use a validation set or cross-validation to adjust hyperparameters like tree depth, learning 
+rate, or number of neighbors. This ensures the model generalizes instead of memorizes. 
+6. Evaluation: 
+Assess the model using the test dataset. Choose metrics appropriate to the task—accuracy for 
+classification, MAE/MSE for regression. Interpret performance and compare with baseline 
+models. 
+7. Deployment (optional but common): 
+Once validated, the model is integrated into applications where it makes predictions on new 
+data. 
+SECTION C — Attempt any 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two 
+commonly used ML algorithms. 
+Meaning of an algorithm in ML: 
+An algorithm in machine learning is a systematic procedure or set of rules that a model 
+follows to learn patterns from data. It defines how the model analyzes input features, updates 
+internal parameters, and produces predictions. An ML algorithm does not store the data itself 
+but extracts meaningful structure from it through repeated learning steps. 
+Role in ML: 
+ It determines how the model processes numerical and categorical features. 
+ It guides how parameters are adjusted to reduce errors. 
+ It defines the decision-making strategy a model uses for classification, regression, 
+clustering, or optimization tasks. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+Definition: 
+Data preprocessing refers to the set of techniques used to convert raw, imperfect, and 
+unorganized data into a clean and structured format suitable for machine learning. It includes 
+cleaning, transforming, normalizing, encoding, and organizing data before feeding it into a 
+model. 
+Why it is important: 
+1. Improves Data Quality: Real-world data often contains missing values, noise, 
+duplicates, and inconsistencies. Preprocessing removes or corrects them, ensuring 
+reliability. 
+2. Enhances Learning Efficiency: Proper scaling and encoding allow algorithms to 
+operate efficiently, especially for distance-based or gradient-based methods. 
+3. Reduces Model Bias: By balancing skewed distributions or handling imbalanced 
+classes, preprocessing helps models learn fair and accurate decision boundaries. 
+4. Boosts Predictive Performance: Models trained on processed data produce more 
+stable, accurate, and generalizable results. 
+5. Ensures Compatibility with Algorithms: Many algorithms require normalized 
+numbers, encoded categories, or transformed text formats; preprocessing ensures these 
+requirements are met. 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Definition: 
+Model evaluation is the process of assessing how well a trained machine learning model 
+performs on unseen data. It determines whether the model generalizes effectively, identifies 
+weaknesses, and helps compare multiple models objectively. 
+Two basic evaluation metrics: 
+1. Accuracy (for classification): 
+Measures the proportion of correct predictions out of all predictions. It is useful when 
+class distribution is balanced and errors carry equal importance. 
+2. Mean Absolute Error (MAE) (for regression): 
+Represents the average absolute difference between predicted values and actual 
+values. It is intuitive, easy to interpret, and less sensitive to large outliers than squared
+error metrics. 
+Evaluation ensures that models are not only fitting training data but also performing reliably 
+in real-world situations. 
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Definition of Overfitting: 
+Overfitting occurs when a machine learning model learns training data too precisely, 
+including noise, rare patterns, and random fluctuations. As a result, it performs extremely 
+well on training data but poorly on new, unseen data. 
+Why it occurs: 
+ The model is overly complex relative to the amount or quality of data. 
+ The training set contains noise or irrelevant patterns that the model mistakenly 
+interprets as meaningful. 
+ Insufficient regularization or improper model constraints allow the model to fit every 
+detail of the training set instead of capturing the true underlying trend. 
+Two ways to reduce overfitting: 
+1. Use of Regularization: Techniques like weight penalties or model constraints prevent 
+excessive complexity and encourage simpler, more general patterns. 
+2. Increasing Training Data: More data helps models identify consistent, reliable trends 
+instead of memorizing noise. 
+SECTION D — Attempt all (2 marks each) 
+D-b) Define prediction in machine learning. 
+1. Prediction refers to the output or decision that a trained machine learning model 
+generates for new, unseen input data. 
+2. It represents the model’s attempt to apply the patterns learned during training to future 
+examples. 
+3. Predictions can be numerical values (regression), class labels (classification), or 
+probability distributions depending on the task. 
+4. A model evaluates the input features and selects the most plausible outcome based on 
+learned relationships. 
+D-c) What is a decision tree in simple terms? 
+1. A decision tree is a model that makes predictions by dividing data into branches based 
+on feature-driven decisions. 
+2. It uses a sequence of questions, each splitting the data into smaller, more 
+homogeneous groups. 
+3. Internal nodes represent decisions, branches represent outcomes of those decisions, 
+and leaf nodes give final predictions. 
+4. It mirrors human decision-making by breaking problems into smaller logical steps. 
+5. Decision trees handle numerical and categorical data without requiring complex 
+preprocessing. 
+6. They offer high interpretability, allowing users to trace how a prediction was made. 
+D-d) Mention any two challenges faced when collecting ML data. 
+1. Real-world data often contains missing values or incomplete records, requiring extra 
+cleaning effort. 
+2. Data may be inconsistent across sources due to differing formats, structures, or 
+measurement systems. 
+3. Collecting labeled data is costly and time-consuming, especially when expert labeling 
+is required. 
+4. Privacy and ethical constraints limit access to sensitive information such as medical or 
+financial records. 
+5. Large-scale data acquisition may need extensive storage, bandwidth, and processing 
+resources. 
+6. Environmental factors such as sensor failures or recording errors lead to noisy or 
+corrupted data. 
+D-e) What is model generalization? 
+1. Model generalization is the ability of a machine learning model to perform well on 
+new, unseen data rather than only on the data it was trained on. 
+2. It reflects how effectively a model captures underlying patterns instead of memorizing 
+training examples. 
+3. Good generalization requires balanced model complexity: neither too simple nor 
+overly complex. 

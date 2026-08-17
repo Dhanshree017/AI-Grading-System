@@ -1,0 +1,79 @@
+ID-T030 
+Name: Chahat Raina Roll no: 232523 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-1. Explain the concept of hypothesis space in machine learning. 
+ It is just a big list of all the guesses the computer can make. 
+ The "Space" is like a menu of different models. 
+ If the menu is too small, you can't find a good model. 
+ If the menu is too big, the computer takes too long to pick. 
+ The algorithm searches this space to find the winner. 
+ A "straight line" is one example of a hypothesis in this space. 
+ Choosing the right space is the first step in learning. 
+ It limits what the computer is allowed to think. 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+ You must split your data into two different piles. 
+ One pile is for teaching (Training), one is for a surprise quiz (Testing). 
+ If you test on the same data you trained on, the AI just memorizes it. 
+ Separation proves the AI actually learned something new. 
+ It stops "cheating" or fake high scores. 
+ It helps you see if the AI will work in the real world. 
+ Without this, you don't know if your model is actually good. 
+ It is the most important rule in all of machine learning. 
+A-3. Explain how assumptions affect learning algorithms. 
+ Every AI starts with a "guess" or a "bias" about the data. 
+ Some AI assume the data follows a simple straight line. 
+ These guesses are called "Inductive Bias." 
+ Assumptions help the AI learn faster with less data. 
+ If the assumption is wrong, the AI will keep making mistakes. 
+ For example, assuming "rich people always buy expensive cars" is an assumption. 
+ Good assumptions make the model smart; bad ones make it "dumb." 
+ You cannot have machine learning without some assumptions. 
+A-4. What is the role of validation in model development? 
+ Validation is a "practice exam" before the final test. 
+ It helps you tune the "settings" (hyperparameters) of the model. 
+ It tells you which version of your model is the best one. 
+ You use it to make sure the model isn't getting too obsessed with training data. 
+ It helps you find the "sweet spot" where the model works best. 
+ It is the middle step between training and the final test. 
+ It helps save time by catching errors early. 
+ It keeps the final testing data "secret" and safe. 
+A-5. Describe the concept of inductive learning in machine learning. 
+ It means taking specific examples and making a general rule. 
+ Example: You see 100 white swans, so you assume "all swans are white." 
+ The computer looks at many "inputs" and "outputs" to find a pattern. 
+ It assumes that what happened in the past will happen again. 
+ It is a "bottom-up" way of learning things. 
+ Almost all AI you use today (like Netflix) uses inductive learning. 
+ It allows the computer to guess the answer for a totally new situation. 
+ It turns "data" into "knowledge." 
+A-6. Explain the impact of noisy data on machine learning models. Noisy data—defined as stochastic 
+errors in labels or features—introduces "Artificial Variance" into the system. High-capacity models (like 
+deep neural networks) are particularly susceptible as they may attempt to model the noise as if it were a 
+legitimate underlying pattern. This results in an erratic decision boundary and is a primary driver of 
+Overfitting, where the model loses its ability to distinguish signal from corruption. 
+A-7. What is the difference between model fitting and model selection? Model Fitting is an optimization 
+task within a fixed hypothesis space (e.g., finding the best coefficients for a specific polynomial). Model 
+Selection is a higher-level search across different hypothesis spaces (e.g., deciding whether a polynomial or 
+a neural network is better for the task). Fitting minimizes training loss, while selection maximizes validation 
+performance to ensure the best architectural fit for the problem. 
+A-8. Explain the concept of ensemble diversity and why it matters. Ensemble diversity refers to the 
+statistical independence of errors among the base learners in a committee. For an ensemble to be effective, 
+its members must fail on different subsets of the input space. This "Error Decorrelation" ensures that when 
+individual models are aggregated (via bagging or boosting), their errors cancel out, while their correct 
+predictions reinforce one another, leading to a much more stable and accurate global boundary. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement. The ML lifecycle 
+(MLOps) is a continuous loop: 
+ Requirement Engineering: Identifying the objective and KPIs. 
+ Data Pipeline: Acquisition, cleaning, and feature engineering. 
+ Model Iteration: Training, validation, and rigorous testing. 
+ Deployment: Integration into production via APIs. 
+ Monitoring & Governance: Tracking "Model Drift" and performance decay. 
+ Retirement: Decommissioning when the model is superseded by a more accurate version or when 
+the data distribution changes fundamentally. 
+A-10. Explain the importance of documentation in ML projects. Documentation provides Auditability and 
+Reproducibility. In ML, it is vital to document "Data Lineage" (the origin and transformations of data), 
+hyperparameter choices, and the rationale behind specific architectural decisions. This ensures that the 
+model is not a "Black Box," facilitates team collaboration, and satisfies regulatory requirements (like 
+GDPR’s "Right to Explanation") regarding how automated decisions are made. 

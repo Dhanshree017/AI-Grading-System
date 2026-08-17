@@ -1,0 +1,129 @@
+ID-T014 
+Name: Akruti Sahni Roll no: 21 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline from 
+data collection to model deployment. 
+Building a machine learning pipeline is like making a complete workflow that turns 
+raw data into a working model. 
+First step is data collection, where data is gathered from files, databases, or web 
+APIs depending on the domain. 
+Next step is data preprocessing, which includes cleaning missing values, removing 
+outliers, and converting categorical data into numerical form. 
+Then comes feature engineering, where new useful variables are created or selected 
+to help the model learn better. 
+After that, the model training step happens using suitable algorithms such as linear 
+regression, decision trees or neural networks. 
+The next phase is model evaluation using metrics like accuracy, precision, recall or 
+RMSE. 
+When the model performs well, it is deployed using tools like Flask, FastAPI or cloud 
+services so that real users or systems can use it for predictions. 
+Finally, model monitoring and maintenance ensures it keeps performing good when 
+new data appears. 
+A-3. Explain the working of Principal Component Analysis and discuss its role in feature 
+reduction. 
+Principal Component Analysis (PCA) is a mathematical technique used to reduce the 
+dimensionality of a dataset while keeping most of its information. 
+It transforms the original correlated variables into new uncorrelated variables called 
+principal components. 
+The first component captures the maximum variance, the second captures the next 
+most variance, and so on. 
+PCA works by finding eigenvectors and eigenvalues of the data covariance matrix, 
+then projecting data onto these components. 
+By selecting only top components, we reduce the number of features but preserve 
+most of the variability. 
+PCA helps in visualization, removes noise, and speeds up machine learning algorithms 
+by simplifying the data without much loss of information. 
+A-5. Discuss the concept of Reinforcement Learning with suitable examples. 
+Reinforcement Learning (RL) is a type of machine learning where an agent learns to 
+make decisions by interacting with an environment. 
+The agent performs actions, receives feedback in the form of rewards or penalties, 
+and learns to choose actions that maximize cumulative reward. 
+The main components are: 
+ Agent: learner or decision maker 
+ Environment: the world it interacts with 
+ Action: choices made by agent 
+ State: current situation 
+ Reward: feedback from environment. 
+An example is a self-driving car learning to drive by trial and error — it gets 
+reward for staying on track and penalty for hitting obstacles. 
+Algorithms like Q-Learning and Deep Q-Networks are used in RL. 
+A-6. Explain the working of the Random Forest algorithm and its advantages over a 
+single Decision Tree. 
+Random Forest is an ensemble learning algorithm that combines many decision trees 
+to improve accuracy and reduce overfitting. 
+Each tree in the forest is trained on a random subset of the data and a random 
+subset of features. 
+When predicting, every tree gives its output, and the final result is decided by 
+majority voting (for classification) or averaging (for regression). 
+Because of this randomness, Random Forest models are more robust and generalize 
+better than single decision trees. 
+Advantages include: 
+ Handles missing values and noisy data efficiently. 
+ Works well for both categorical and numerical features. 
+ Reduces overfitting and improves accuracy. 
+It is widely used in finance, medical diagnosis, and recommendation systems. 
+Section B – Attempt All (20 Marks Total) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss in 
+detail the different layers, the role of weights and biases, Also describe common 
+challenges in training deep networks and methods to overcome them. 
+A Deep Neural Network (DNN) is a neural network with multiple hidden layers that 
+allow it to learn complex relationships in data. 
+It has input, hidden, and output layers. 
+Each layer contains neurons connected with weights and biases. 
+Weights determine the strength of the connection, while biases help shift activation 
+for better fitting. 
+Training involves forward propagation and backpropagation, using optimization 
+algorithms like Adam or SGD. 
+Common challenges include overfitting, vanishing gradients, and high computational 
+cost. 
+Solutions include dropout regularization, batch normalization, using activation 
+functions like ReLU, and proper initialization. 
+DNNs are used in applications like image recognition, language translation, and voice 
+assistants. 
+B-2. Discuss in detail the working of the Support Vector Machine algorithm for both 
+linear and non-linear classification. Explain the concept of hyperplanes, support 
+vectors, and margin maximization. 
+Support Vector Machine (SVM) aims to find a hyperplane that best separates data 
+points of different classes. 
+In linear classification, it finds a straight boundary that maximizes the margin 
+between the nearest points of each class, called support vectors. 
+The larger the margin, the better the generalization. 
+For non-linear data, SVM uses kernel functions (like polynomial or RBF kernel) to 
+map data into higher dimensions where it becomes linearly separable. 
+SVM is powerful because it focuses only on support vectors, making it robust to 
+outliers. 
+It is used in text categorization, face recognition, and bioinformatics. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). 
+Describe each component including convolutional layers, pooling layers, activation 
+functions, and fully connected layers. 
+Convolutional Neural Networks (CNNs) are deep learning models mainly used for 
+visual data such as images and videos. 
+Their architecture includes several types of layers: 
+ Convolutional layers: apply filters to extract important spatial features like 
+edges or corners. 
+ Activation layers: add non-linearity using functions like ReLU. 
+ Pooling layers: reduce the spatial size and computational cost while retaining 
+key information. 
+ Fully connected layers: combine features for final classification. 
+CNNs are trained using backpropagation. 
+They are highly effective in image classification, object detection, and computer 
+vision tasks such as medical imaging and autonomous vehicles. 
+B-4. Describe the concept of Natural Language Processing and its stages in detail. 
+Explain important steps such as tokenization, stop word removal, stemming, 
+lemmatization. 
+Natural Language Processing (NLP) is a branch of AI that deals with the interaction 
+between computers and human languages. 
+It helps machines read, understand, and generate text. 
+Main stages include: 
+1. Text preprocessing: cleaning raw text data. 
+2. Tokenization: breaking text into words or sentences. 
+3. Stop word removal: removing common words like “is”, “the”, “and” that do 
+not add meaning. 
+4. Stemming: cutting words to their root form (e.g., “running” → “run”). 
+5. Lemmatization: converting words to their dictionary base form (e.g., “better” 
+→ “good”). 
+6. Feature extraction: converting text to numerical form using TF-IDF or word 
+embeddings. 
+NLP is used in chatbots, sentiment analysis, translation, and search engines. 

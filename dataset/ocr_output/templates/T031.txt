@@ -1,0 +1,16 @@
+
+
+--- PAGE 1 ---
+ID — T031
+Machine Learning Examination
+Internal Exam Semester 4,
+Total marks : 25
+FY-Data Science
+Date — 19-09-2025
+Answer All Questions ( each 5 marks )
+
+1. Explain the concept of concept learning in machine learning.
+2. Describe the importance of data consistency in training ML models.
+3. What is the role of constraints in machine learning algorithms?
+4. Explain the difference between model performance and model reliability.
+5. Describe how feedback is used to improve machine learning systems.

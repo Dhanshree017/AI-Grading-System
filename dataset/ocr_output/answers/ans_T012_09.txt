@@ -1,0 +1,86 @@
+ID-T012 
+Name : Lax Sonawane Roll no: 9 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+Random forest is name only forest but not real forest with tree and animal. 
+It is algorithm of machine leaning where many tree is growing by data 
+watering. Every tree take some data and make leaf and then voting start. It 
+called random because everything happen randomly like forest. 
+Working of random forest is simple but confusing. First you plant many 
+decision tree. Then you ask every tree the question like “is this apple or 
+mango?” then tree answer yes or no. After that forest count how many yes 
+and how many no. If more yes then answer yes. This is like democracy of 
+trees. 
+Advantage is it good and strong, it never fight between trees. It give good 
+accuracy also handle missing. Disadvantage is forest take more time to grow, 
+it is lazy in computer also big in memory. Some people say random forest 
+can swim but I not see that. 
+In short, random forest is forest but digital. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropogation is like when we go back in road if we miss turn. In neural 
+network, when answer is wrong it go back again to find mistake. So this is 
+process of going behind. 
+Steps are simple, first input come, output come, then compare with actual. 
+If wrong, it cry and go back and change weight. This repeat again and again 
+till network happy. 
+It use mathematics but I forget formula, it have derivative and delta and 
+error. It is like scolding the neuron for mistake. 
+So backpropogation make network intelligent slowly. Without it, network just 
+dumb. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning is like people who believe something even before see. It use 
+old data belief called prior and then new data change that belief called 
+posterior. I don’t know why it called Bayes but maybe some scientist name. 
+Frequentist learning is opposite, it don’t believe anything until it see many 
+time. So Bayesian is like emotional person and Frequentist is like practical 
+person. 
+Bayesian use formula with P and D and something divide by total. 
+Frequentist only use count and frequency. 
+For example, if coin toss 10 time and head come 6, Bayesian say maybe 0.6 
+but could change, Frequentist say 0.6 and done. 
+So both are learning but from different family. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Training ML model is not easy because computer not understand emotion and 
+sometimes get angry. Main challenge is data not coming properly. Many time 
+we give wrong data like dog labeled as cat then model get confuse. 
+Another challenge is too many feature confuse model. Some model overeat 
+data and get fat called overfitting. Some model hungry and not eat data 
+called underfitting. 
+Sometime computer run slowly like turtle because big dataset. Sometime 
+GPU go to sleep. 
+Also sometimes model not listen even if you train whole night. And 
+sometime accuracy only 50% and teacher say bad. 
+So main challenge is everything basically. 
+B-5. Explain the concept of cross-entropy loss. 
+Cross entropy loss is like sadness of wrong prediction. It calculate how much 
+model is crying because it said wrong answer. 
+If model said cat but actual was dog, it punish it by log function. 
+Formula is something with minus p log q, but who remember all that in 
+exam? Anyway, smaller loss mean model happy, bigger loss mean model need 
+therapy. 
+Cross entropy mostly used in classification because it care about both cat and 
+dog accuracy. 
+B-6. What is dimensionality curse? How does it affect machine learning models? 
+Dimensionality curse is when we have too many columns and model get dizzy. 
+Like trying to eat 1000 item buffet, it can’t digest. 
+When feature too many, data become empty in big space, and model 
+confused where to go. 
+So training become slow, accuracy go down, and computer fan go zooo zoooo. 
+To solve, we remove some feature or use PCA or just give up. 
+So curse mean bad luck for data scientist. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Predictive maintenance mean machine learning act like doctor for machine. It 
+see vibration, sound, temperature, and say “this motor going to die soon.” 
+In industry, many big machines work 24x7 and if one break all cry. So ML 
+model take sensor data, predict when to repair before it crash. 
+It use regression, classification, maybe RNN if data in time series. 
+Example: factory fan start shaking, sensor send data, ML model say “change 
+bearing now”. Then company save money and no blast. 
+Sometimes model wrong and give false alarm, but at least it try. 
+So ML is like fortune teller for factory. 

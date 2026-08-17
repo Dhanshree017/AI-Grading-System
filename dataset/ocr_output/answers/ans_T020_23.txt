@@ -1,0 +1,129 @@
+ID-T020 
+Name: Anuj joshi Roll no: 23 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Model monitoring is the continuous tracking of an ML model's performance and quality in a 
+live environment to detect issues, ensure its effectiveness, and identify when it needs to be 
+retrained or updated. Key parameters tracked include performance metrics (like accuracy, 
+precision), data drift (changes in input data), prediction drift (changes in model output), data 
+quality, and bias. Continuous monitoring is essential because the real world is dynamic, and 
+factors like shifts in user behavior, market conditions, or seasonality can cause a model's 
+performance to degrade over time, leading to inaccurate predictions and a loss of business 
+value.  
+Parameters tracked 
+ Model Performance Metrics: Measures of how well the model is performing its task, such 
+as accuracy, precision, recall, F1-score, and AUC. 
+ Data Drift: This occurs when the statistical properties of the input data change from the 
+training data. It can be detected by monitoring the distribution of input features. 
+ Prediction Drift: Similar to data drift, this involves monitoring the distribution of the 
+model's predictions over time to see if it changes significantly from what was expected. 
+ Data Quality: Checks for data integrity, such as missing values, outliers, and incorrect data 
+types in the live data stream. 
+ Bias and Fairness: Assesses whether the model's predictions are biased against certain 
+groups, which can lead to unfair or discriminatory outcomes. 
+ Operational and Environmental Metrics: Tracks system performance like inference time, 
+memory usage, and computational resources to understand the model's operational health 
+and cost-efficiency.  
+Why continuous monitoring is essential 
+ Models Decay Over Time: Unlike traditional software, an ML model's performance can 
+degrade as the real-world environment it operates in changes. Factors like shifting consumer 
+behavior or new regulations can make the model's training data outdated. 
+ To Maintain Performance: Monitoring ensures the model continues to meet the required 
+performance standards after deployment, preventing a gradual decline in its accuracy and 
+usefulness. 
+ To Detect Issues Early: Continuous monitoring helps quickly identify and flag issues like 
+data drift, model decay, or quality problems, so engineers can address them before they 
+cause significant business or compliance issues. 
+ To Enable Iterative Improvement: Monitoring provides the feedback needed to know 
+when and why a model needs to be retrained or updated. This makes the MLOps lifecycle 
+iterative, ensuring the model remains effective over time. 
+ To Build Trust: By ensuring models are accurate and reliable, monitoring helps build trust 
+among users and stakeholders who rely on the model's outputs for critical decisions.  
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Methods 
+ Feature importance 
+ SHAP, LIME 
+ Attention maps, counterfactual explanation 
+Use Cases 
+ Healthcare for diagnosis explanations 
+ Finance for loan approval reasoning 
+ Fraud detection alerts 
+ Recruitment decisions 
+Additional Notes 
+XAI show reasoning not always fix errors. Some students use random visualizations and call 
+it XAI. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Introduction 
+Feature leakage is when model sees information that it should not know at training time. 
+Causes 
+ Including future data 
+ Aggregated target in features 
+ Same entity in train and test 
+Impact 
+ Model accuracy look very high 
+ Real predictions fail 
+ Some think shuffling fixes it but it not always true 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Evaluation pipelines in Machine Learning (ML) workflows are automated sequences of steps 
+designed to systematically assess the performance and quality of ML models. These 
+pipelines typically include data preparation, model loading, prediction generation, metric 
+calculation, and result visualization, ensuring consistent and reproducible evaluation 
+throughout the model's lifecycle. 
+Importance of Separating Validation, Testing, and Deployment Evaluation: 
+Separating these evaluation phases is crucial for robust model development and deployment, 
+preventing data leakage, ensuring generalization, and facilitating effective monitoring: 
+ Validation (Hyperparameter Tuning and Model Selection): 
+ Purpose: To tune model hyperparameters and select the best-performing model architecture 
+during the development phase. 
+ Separation Importance: Using a dedicated validation set prevents overfitting to the training 
+data and provides an unbiased estimate of model performance during iterative 
+development. This separation allows for effective hyperparameter optimization without 
+compromising the integrity of the final model evaluation. 
+ Testing (Final Performance Assessment): 
+ Purpose: To provide a final, unbiased assessment of the chosen model's performance on 
+unseen data, simulating real-world conditions. 
+ Separation Importance: The test set, held entirely separate from training and validation 
+data, offers a true measure of the model's generalization capability. Using the test set only 
+once, after all development and hyperparameter tuning are complete, ensures that the 
+reported performance metrics are not inflated due to repeated exposure to the data. 
+ Deployment Evaluation (Monitoring in Production): 
+ Purpose: To continuously monitor the model's performance in a live production 
+environment, detecting data drift, model decay, and other operational issues. 
+ Separation Importance: Post-deployment evaluation uses real-world data and provides 
+insights into how the model performs under actual operating conditions. This differs from 
+validation and testing, which use static datasets. Continuous monitoring allows for proactive 
+intervention, retraining, or model updates when performance degrades, ensuring the model 
+remains effective over time. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Introduction 
+Transfer learning reuse pretrained model knowledge for new tasks. 
+Mechanism 
+ Fine-tune pretrained weights on new data 
+ Reduce training time and labeled data need 
+Use Cases 
+ Small datasets like medical images 
+ NLP tasks like sentiment or classification 
+ Object recognition 
+Pitfalls 
+Does not always work if domain very different. Some think pretrained model always fix 
+problem without fine-tuning. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Introduction 
+Hyperparameter search find best learning parameters to improve model. 
+Grid Search 
+Check all combinations. Systematic but slow. 
+Random Search 
+Pick random combinations, faster, explore space widely. 
+Comparison 
+ Grid: exhaustive but inefficient for many hyperparameters 
+ Random: faster but might miss optimum 
+ Students think random always better, not true in small search spaces 

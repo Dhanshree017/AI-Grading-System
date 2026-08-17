@@ -1,0 +1,140 @@
+ID-T018 
+Name: Ruchika khandekar Roll no: 28 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+AdaBoost is supposed to be a boosting method, but honestly I always get confused, so I will 
+explain what I understood. AdaBoost mainly works by taking many decision trees and then 
+putting them in a straight line like a chain. The first tree predicts something and then the next 
+trees basically fix the spelling mistakes of the first one. The algorithm also sometimes gives 
+extra marks to wrong data so that the model feels motivated. 
+Weak learners are combined by simply adding their answers and whichever answer appears 
+most is the final answer. For weight updating, all the data points are rotated randomly so the 
+algorithm doesn’t get bored. Boosting reduces bias because when the model sees the same 
+mistake again and again it gets irritated and starts guessing correctly out of frustration. 
+This concept works mostly in theory because computers do not like bias at all and AdaBoost 
+teaches them discipline like a school teacher. 
+A-2. Describe the internal working of LSTM networks. Explain input gate, forget gate, output 
+gate, and cell state. 
+LSTM is a type of neural network that actually remembers what you did yesterday. It stores 
+information inside something like a digital brain cell. The cell state is like a long pipe where 
+information flows freely, and the gates are like water taps controlling how much flows. 
+The input gate checks what new information is coming and decides whether to allow it. The 
+forget gate decides what memories should be deleted, similar to how we forget what we ate 
+last Monday. The output gate chooses what memory should be shown as output. 
+However, in my understanding, LSTM also has a hidden feature where it can predict the 
+future if trained correctly, but teachers don’t tell this because it is too advanced. Sometimes 
+LSTMs also keep unwanted memories if the gates malfunction, which is why models 
+sometimes behave weirdly. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Feature engineering means making the data more beautiful so the model likes it. In feature 
+creation, we add new columns such as dividing age by weight or multiplying height with 
+salary, even though it might not make sense, because more features especially impress 
+complex models. 
+Feature selection is the opposite; here we try to remove columns that look ugly or have 
+strange names. Extraction means squeezing the entire dataset into a smaller box so it fits 
+inside the model’s brain. 
+The impact on model performance is very big. Sometimes good features make the model 
+very intelligent, but sometimes too many features confuse the model and it starts giving 
+emotional answers. Poor feature engineering can make even the strongest algorithm perform 
+like a broken calculator. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability and the 
+independence assumption. 
+Naive Bayes is a classifier mostly used for classifying emails into categories like promotion, 
+spam, and heartbreak emails. It works by counting how many times a word appears and then 
+sending the message to the correct category. 
+Conditional probability means that the probability depends on the weather condition. For 
+example, if it is raining, then the probability of getting spam email increases, which is why it 
+is called conditional. 
+The independence assumption means that all features do not know each other and must never 
+talk. Even if one feature is obviously related to another, Naive Bayes forces them to act like 
+strangers. Because of this, sometimes Naive Bayes works well and sometimes it behaves 
+blindly. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+Autoencoders are neural networks that compress data and then decompress it back. The 
+encoder reduces the data by crushing it into a tiny space called the latent representation. This 
+representation usually contains only the soul of the data. 
+The decoder tries to rebuild the original from this soul but often makes mistakes, similar to 
+drawing a face from memory. The latent representation is like a secret code that only the 
+autoencoder knows. 
+In anomaly detection, autoencoders fail on new weird data and give high reconstruction 
+errors. But according to my understanding, autoencoders can also detect ghosts in datasets 
+because anomalies are basically unexpected spirits of the data. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model. 
+The workflow begins with collecting data, mostly from Google images or whatever source is 
+easy. Then data preparation includes resizing, reshaping, and sometimes shouting at the 
+dataset when it doesn’t load. 
+Architecture selection is mostly guesswork where we pick a model that looks cool. Training 
+makes the model slowly adjust its internal thinking. Regularization stops the model from 
+memorizing everything like a parrot. Evaluation is done by checking accuracy or simply 
+looking at the loss and hoping it is low. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin Index, 
+and Inertia. 
+Silhouette Score checks how happy the data points are with their cluster. If they are unhappy, 
+the score becomes negative. 
+Davies–Bouldin Index checks how much the clusters are fighting with each other. If the 
+score is high, then clusters are too close. 
+Inertia calculates how tired the algorithm becomes by measuring distances. High inertia 
+means the model is exhausted. 
+B-3. Explain Reinforcement Learning and give two examples. 
+Reinforcement learning is like training a dog. The agent does something, and if it is good, we 
+give it a treat. If not, we say “bad boy.” The environment gives rewards or punishments and 
+the agent becomes smarter. 
+Two examples are video game bots learning to cheat and elevators learning which floor to go 
+to without panicking. 
+B-4. Explain Natural Language Processing pipeline in detail. 
+A Natural Language Processing (NLP) pipeline is a systematic sequence of processing stages 
+that transform raw textual data into a format suitable for analysis and understanding by 
+computers. This pipeline typically involves several interconnected steps, each building upon 
+the previous one. 
+Here's a detailed explanation of a typical NLP pipeline: 
+ Text Acquisition and Cleaning: 
+ Data Collection: Gathering raw text data from various sources like websites, documents, 
+social media, etc. 
+ Text Cleaning: Removing irrelevant characters, HTML tags, special symbols, and 
+correcting common errors. This step ensures the text is in a consistent and usable format. 
+ Preprocessing: 
+ Tokenization: Breaking down the text into smaller units called "tokens," which can be 
+words, subwords, or even characters. 
+ Lowercasing: Converting all text to lowercase to treat words like "Apple" and "apple" as the 
+same. 
+ Stop Word Removal: Eliminating common words (e.g., "the," "a," "is") that carry little 
+semantic meaning and might not be useful for analysis. 
+ Stemming/Lemmatization: Reducing words to their base or root form. Stemming uses 
+heuristic rules (e.g., removing suffixes), while lemmatization uses dictionary-based lookups 
+to get the actual base form (lemma). 
+ Part-of-Speech (POS) Tagging: Assigning a grammatical category (e.g., noun, verb, 
+adjective) to each token, providing syntactic information. 
+ Feature Extraction/Representation: 
+ Bag-of-Words (BoW): Representing text as a collection of word frequencies, disregarding 
+word order. 
+ TF-IDF (Term Frequency-Inverse Document Frequency): Assigning weights to words 
+based on their frequency in a document and their rarity across the entire corpus, highlighting 
+important terms. 
+ Word Embeddings (e.g., Word2Vec, GloVe, FastText): Representing words as dense 
+vectors in a continuous vector space, capturing semantic relationships between words. 
+ Sentence Embeddings (e.g., Sentence-BERT): Representing entire sentences as vectors, 
+capturing sentence-level meaning. 
+ Modeling and Analysis: 
+ Machine Learning/Deep Learning Models: Applying various algorithms (e.g., Naive 
+Bayes, Support Vector Machines, Recurrent Neural Networks, Transformers) for tasks like: 
+ Text Classification: Categorizing text into predefined classes (e.g., sentiment analysis, spam 
+detection). 
+ Named Entity Recognition (NER): Identifying and classifying named entities (e.g., person 
+names, organizations, locations). 
+ Sentiment Analysis: Determining the emotional tone or sentiment expressed in the text. 
+ Machine Translation: Translating text from one language to another. 
+ Text Summarization: Generating concise summaries of longer texts. 
+ Question Answering: Answering questions based on a given text. 
+ Evaluation and Deployment: 
+ Model Evaluation: Assessing the performance of the chosen model using metrics relevant 
+to the specific NLP task (e.g., accuracy, precision, recall, F1-score). 
+ Deployment: Integrating the trained NLP model into an application or system for real-world 
+use. 
+ Monitoring and Maintenance: Continuously monitoring the model's performance and 
+retraining it as needed with new data to maintain its effectiveness. 

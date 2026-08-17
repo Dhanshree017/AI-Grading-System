@@ -1,0 +1,221 @@
+ID-T014 
+Name: Neha Bedi Roll no: 19 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A: Attempt Any 4 (20 Marks) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline 
+from data collection to model deployment. 
+Building a Machine Learning pipeline involves a systematic process to ensure 
+data-driven models are developed efficiently and reliably. 
+The process begins with data collection, where relevant raw data is gathered 
+from various sources like databases, sensors, web APIs, or manual entry. The 
+next step is data preprocessing, which includes cleaning, handling missing 
+values, outlier removal, and data transformation. Feature engineering follows, 
+where important features are created or selected to improve model accuracy. 
+Once features are prepared, the next stage is data splitting into training, 
+validation, and testing sets to ensure fair evaluation. Model selection and 
+training involve choosing the right algorithm (e.g., Decision Tree, SVM, 
+Neural Network) and adjusting hyperparameters. After training, model 
+evaluation is performed using metrics such as accuracy, F1-score, and RMSE. 
+Finally, the model deployment stage integrates the trained model into a 
+production environment using APIs or web applications, allowing real-world 
+predictions. Continuous monitoring and retraining ensure that the model 
+remains accurate as data changes over time. 
+A-2. Describe the working of the Naive Bayes classifier. Include its assumptions 
+and advantages. 
+In the context of classification, this translates to calculating the posterior 
+probability of a class (A) given a set of features (B). 
+ Probability Calculation:  
+For each class, the algorithm calculates the probability of an instance 
+belonging to that class given its features. This involves: 
+ Prior Probability (P(A)): The probability of each class occurring 
+independently. 
+ Likelihood (P(B|A)): The probability of observing the features given a specific 
+class. 
+ Evidence (P(B)): The probability of observing the features, which acts as a 
+normalizing constant. 
+ Classification:  
+The classifier assigns the instance to the class that has the highest posterior 
+probability. 
+Assumptions: 
+ Conditional Independence of Features:  
+This is the "naive" assumption. It assumes that all features are independent 
+of each other given the class. For example, if classifying fruit, the roundness, 
+color, and size are assumed to be independent of each other given that the 
+fruit is an "apple." This simplifies the calculation of P(B|A) by allowing it to 
+be expressed as the product of individual conditional probabilities of each 
+feature. 
+ Equal Importance of Features:  
+All features are assumed to contribute equally to the probability of an 
+instance belonging to a particular class.  
+Advantages: 
+ Simplicity and Speed:  
+It is easy to implement and computationally efficient, especially for large 
+datasets and high-dimensional data, making it suitable for real-time 
+applications. 
+ Good Performance with High-Dimensional Data:  
+Despite its simplifying assumptions, it often performs well in text 
+classification, spam filtering, and sentiment analysis where the number of 
+features (e.g., words) is very large. 
+ Handles Missing Data:  
+It can handle missing feature values by simply ignoring them during probability 
+calculations. 
+ Less Prone to Overfitting:  
+Its simplicity can make it less prone to overfitting compared to more 
+complex models, especially with limited training data. 
+A-3. Explain the working of Principal Component Analysis and discuss its role in 
+feature reduction. 
+Principal Component Analysis (PCA) is a dimensionality reduction technique 
+that transforms high-dimensional data into a smaller set of uncorrelated 
+variables called principal components. 
+The process begins by standardizing the data, ensuring each feature 
+contributes equally. Then, the covariance matrix of the dataset is computed 
+to identify how features vary together. Eigenvalues and eigenvectors of this 
+matrix are extracted; eigenvectors represent directions of maximum variance, 
+while eigenvalues indicate the amount of variance captured. 
+The top k eigenvectors (with the highest eigenvalues) are chosen to form the 
+new feature space. These new components retain most of the dataset’s 
+variance while reducing its dimensionality. 
+PCA helps in removing redundant information, improving computational 
+efficiency, and visualizing high-dimensional data. It is widely used in image 
+compression, pattern recognition, and noise reduction tasks. 
+A-6. Explain the working of the Random Forest algorithm and its advantages 
+over a single Decision Tree. 
+The Random Forest algorithm is an ensemble learning method for classification 
+and regression that operates by constructing a multitude of decision trees 
+during training and outputting the mode of the classes (for classification) or 
+mean prediction (for regression) of the individual trees. 
+Working of Random Forest: 
+ Bootstrap Aggregating (Bagging):  
+From the original training dataset, multiple subsets are created by randomly 
+sampling with replacement. Each of these subsets is used to train a separate 
+decision tree. This ensures diversity among the trees. 
+ Feature Randomness:  
+When building each individual decision tree, at each split point, a random 
+subset of features is considered, rather than all available features. This 
+further decorrelates the trees, making them more independent. 
+ Tree Construction:  
+Each decision tree in the forest is grown to its maximum depth without 
+pruning, leading to high-variance, low-bias individual trees. 
+ Prediction:  
+For a new data point, each tree in the forest makes a prediction. For 
+classification, the final prediction is determined by a majority vote among the 
+trees. For regression, the final prediction is the average of the predictions 
+from all trees. 
+Advantages over a Single Decision Tree: 
+ Reduced Overfitting:  
+A single decision tree can easily overfit the training data, leading to poor 
+generalization on unseen data. Random Forest mitigates this by averaging or 
+combining predictions from multiple diverse trees, which reduces the variance 
+and makes the model more robust. 
+ Improved Accuracy:  
+By combining the predictions of many trees, Random Forest often achieves 
+higher predictive accuracy than a single decision tree, as the errors of 
+individual trees tend to cancel each other out. 
+ Handles High Dimensionality:  
+Random Forest can effectively handle datasets with a large number of 
+features due to the random feature selection at each split, which prevents 
+individual trees from relying too heavily on any single feature. 
+ Robustness to Noise and Outliers:  
+The ensemble nature of Random Forest makes it more resilient to noise and 
+outliers in the data compared to a single decision tree. 
+ Implicit Feature Importance:  
+Random Forest can provide a measure of feature importance, indicating which 
+features contribute most to the predictions. This can be valuable for feature 
+selection and understanding the underlying data patterns. 
+Section B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). 
+Discuss in detail the different layers, the role of weights and biases. Also 
+describe common challenges in training deep networks and methods to overcome 
+them. 
+A Deep Neural Network (DNN) is an advanced form of an Artificial Neural 
+Network that consists of multiple hidden layers between input and output 
+layers. Each layer processes information in a hierarchical manner, allowing the 
+network to learn highly complex patterns. 
+The architecture of a DNN includes three main components: input layer, 
+hidden layers, and output layer. The input layer receives raw features, while 
+hidden layers perform multiple transformations through weighted connections 
+and activation functions. Each neuron applies a linear transformation of the 
+form y=w⋅x+by = w \cdot x + by=w⋅x+b, where w are weights and b are 
+biases. Nonlinear activation functions such as ReLU, sigmoid, or tanh allow 
+the network to model complex nonlinear relationships. 
+The working process follows two major steps: 
+ Forward propagation, where data moves through layers producing 
+predictions. 
+ Backward propagation, where gradients of loss are computed and used to 
+adjust weights, minimizing the error. 
+Common challenges in DNNs include overfitting, vanishing or exploding 
+gradients, and high computational cost. Solutions involve regularization 
+techniques (like dropout and L2 regularization), batch normalization, and 
+efficient optimization algorithms such as Adam or RMSprop. Additionally, 
+using early stopping and sufficient data helps prevent overfitting. 
+B-2. Discuss in detail the working of the Support Vector Machine (SVM) 
+algorithm for both linear and non-linear classification. Explain the concept of 
+hyperplanes, support vectors, and margin maximization. 
+The Support Vector Machine (SVM) is a supervised learning algorithm used 
+for classification and regression tasks. It aims to find the optimal hyperplane 
+that best separates data points of different classes. 
+For linear classification, SVM finds a straight line (in 2D) or a hyperplane (in 
+higher dimensions) that divides the dataset into two classes with the 
+maximum possible margin. The margin is the distance between the hyperplane 
+and the nearest data points from each class, known as support vectors. These 
+support vectors are critical because they define the decision boundary. 
+For non-linear classification, SVM uses the kernel trick, which maps input 
+features into a higher-dimensional space using kernel functions such as 
+Polynomial, Radial Basis Function (RBF), or Sigmoid. This allows SVM to 
+handle complex data that cannot be separated by a simple linear boundary. 
+SVM provides high generalization, works effectively even in high-dimensional 
+spaces, and is less prone to overfitting. However, it can be computationally 
+expensive for very large datasets. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks 
+(CNN). Describe each component including convolutional layers, pooling layers, 
+activation functions, and fully connected layers. 
+A Convolutional Neural Network (CNN) is a deep learning architecture mainly 
+used for image and visual data processing. It is designed to automatically learn 
+spatial hierarchies of features through convolutional operations. 
+The architecture of a CNN typically consists of several key layers: 
+1. Convolutional Layer: This is the core of CNN where small filters 
+(kernels) slide over the input image to extract local features such as 
+edges, textures, and corners. Each filter produces a feature map 
+representing one aspect of the input pattern. 
+2. Activation Layer: After convolution, an activation function like ReLU 
+introduces non-linearity, helping the model learn complex relationships 
+between pixels. 
+3. Pooling Layer: Pooling reduces the spatial dimensions of the feature 
+maps (e.g., max pooling or average pooling), which decreases 
+computation and controls overfitting by summarizing features. 
+4. Fully Connected Layer: The extracted features are flattened and passed 
+through one or more dense layers that perform classification or 
+regression tasks. 
+CNNs are widely used in image recognition, object detection, facial recognition, 
+and even NLP tasks like text classification. Their ability to automatically 
+extract meaningful patterns makes them a cornerstone of modern computer 
+vision. 
+B-4. Describe the concept of Natural Language Processing (NLP) and its stages 
+in detail. Explain important steps such as tokenization, stop-word removal, 
+stemming, and lemmatization. 
+Natural Language Processing (NLP) is a field of Artificial Intelligence that 
+enables computers to understand, interpret, and generate human language. 
+The aim is to make machines capable of reading text, understanding context, 
+and responding intelligently. 
+The major stages of NLP are: 
+1. Text Acquisition and Cleaning: Collecting raw text data and removing 
+noise like punctuation, symbols, and unnecessary formatting. 
+2. Tokenization: Splitting sentences or text into smaller units called tokens 
+(words or sub-words). This step converts text into manageable 
+elements for analysis. 
+3. Stop-Word Removal: Common words such as the, is, and, which do not 
+contribute meaningful information, are removed to reduce data size and 
+improve focus on important terms. 
+4. Stemming: Reducing words to their root form by trimming suffixes 
+(e.g., “running” → “run”). It’s a quick but sometimes rough method. 
+5. Lemmatization: Similar to stemming but uses linguistic knowledge to 
+convert words to their proper base form (e.g., “better” → “good”). 
+6. Feature Extraction: Text is converted into numerical form using methods 
+like Bag-of-Words, TF-IDF, or word embeddings. 
+7. Modeling and Evaluation: Algorithms such as Naive Bayes, RNNs, or 
+Transformers analyze patterns to perform tasks like sentiment analysis, 
+text classification, or translation. 
+NLP is used in chatbots, search engines, voice assistants, and machine 
+translation systems. It bridges human communication and computer 
+understanding, making interaction with machines more natural and intuitive. 

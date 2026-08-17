@@ -1,0 +1,143 @@
+ID-T012 
+Name : Saloni Tiwari Roll no: 30 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 5 (8 marks each) 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is a method used to train artificial neural networks by minimizing 
+the error between predicted and actual outputs. It is based on the concept of 
+calculating gradients of the loss function with respect to each weight in the network 
+and updating those weights to reduce the overall error. 
+The process starts with the forward pass, where input data is fed through the 
+network to compute the output. Each neuron applies weights and an activation 
+function to transform the input signals. After the output is obtained, the error 
+between the predicted output and the expected result is calculated using a loss 
+function such as mean squared error or cross-entropy loss. 
+The second stage is the backward pass, where the algorithm computes how much 
+each weight contributed to the overall error. Using the chain rule of calculus, the 
+error is propagated backward from the output layer to the input layer, calculating 
+partial derivatives of the loss with respect to each weight. This allows the algorithm 
+to identify which weights need to be increased or decreased. 
+Finally, weights are updated using a small learning rate to ensure the network 
+converges gradually toward lower error. The process repeats for multiple epochs until 
+the error stabilizes. Backpropagation is the foundation of most deep learning models 
+and is used to train convolutional and recurrent networks effectively. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist learning. 
+Bayesian learning is a probabilistic approach to learning from data that treats model 
+parameters as random variables rather than fixed constants. It incorporates prior 
+knowledge about the parameters and updates this belief as new data is observed. This 
+is achieved using Bayes’ theorem, which provides a way to combine prior probability 
+with the likelihood of observed data to obtain the posterior probability. 
+In Bayesian learning, before observing data, we have an initial assumption or belief 
+about the model parameters called the prior. Once new data becomes available, we 
+update our prior using the evidence from the data to form a posterior distribution, 
+which represents our new belief about the parameters. This approach allows 
+uncertainty to be handled explicitly and makes Bayesian methods particularly 
+powerful when data is limited or noisy. 
+In contrast, frequentist learning assumes that model parameters are fixed and that 
+data is generated from repeated random sampling. Frequentist methods rely only on 
+the data at hand and do not use prior beliefs. While frequentist methods like 
+maximum likelihood estimation are computationally simpler, Bayesian methods are 
+more flexible, interpretive, and capable of incorporating domain knowledge. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in sequence 
+modeling. 
+Recurrent Neural Networks are a class of neural networks designed to process 
+sequential data such as time series, text, or speech. Unlike traditional feedforward 
+networks, RNNs have connections that loop back on themselves, allowing information 
+from previous inputs to influence the current output. This makes them well-suited 
+for tasks where context or temporal dependencies are important. 
+An RNN maintains a hidden state that acts as memory, carrying information from 
+one time step to the next. During training, it processes input sequences one element 
+at a time and updates its hidden state accordingly. This ability to remember past 
+information helps it capture dependencies across sequences, such as words in a 
+sentence or frames in a video. However, standard RNNs can suffer from problems 
+like vanishing or exploding gradients when dealing with long sequences, which 
+reduces their effectiveness. To solve this, advanced variants like Long Short-Term 
+Memory (LSTM) and Gated Recurrent Units (GRU) were developed. 
+RNNs are used in many practical applications such as speech recognition, language 
+translation, sentiment analysis, and financial forecasting. Their ability to handle 
+sequential patterns makes them one of the fundamental architectures in natural 
+language processing. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment is the phase of the machine learning lifecycle where a trained 
+model is made available for real-world use. After a model is developed and tested, it 
+needs to be integrated into an application or production environment so that it can 
+make predictions on new data. Deployment involves packaging the model, setting up 
+APIs or interfaces for data communication, and ensuring that the system is scalable 
+and secure. 
+Monitoring follows deployment and focuses on tracking how the model performs over 
+time. Even a well-trained model can degrade in performance when the data 
+distribution changes, a phenomenon known as data drift. Monitoring ensures that 
+the model remains reliable by checking metrics such as accuracy, latency, and 
+prediction consistency. If the performance drops, the model may need to be 
+retrained with updated data. 
+Proper deployment and monitoring are essential for maintaining trust and reliability 
+in machine learning systems. They help detect anomalies, prevent bias accumulation, 
+and support automated retraining workflows, ensuring that the model continues to 
+deliver accurate results in dynamic environments. 
+SECTION B – Attempt any 4 (5 marks each) 
+B-2. Describe the difference between probability and likelihood in machine learning. 
+Probability and likelihood are related but distinct concepts. Probability refers to the 
+chance of observing certain data given known parameters of a model. In contrast, 
+likelihood refers to how likely it is that certain parameters produced the observed 
+data. In machine learning, probability is often used for prediction tasks, while 
+likelihood is used for parameter estimation. For instance, when training a model, we 
+often use the maximum likelihood estimation method, which selects parameters that 
+maximize the likelihood of observed data. In simple terms, probability predicts 
+outcomes given parameters, whereas likelihood evaluates parameters given outcomes. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is a classification algorithm that predicts the probability of a 
+binary outcome. Instead of fitting a straight line as in linear regression, logistic 
+regression uses the sigmoid function to map input values to a range between 0 and 
+1. The model calculates the weighted sum of input features and applies the sigmoid 
+transformation to produce a probability score. If the probability is above a certain 
+threshold, the model classifies it as one class; otherwise, it assigns it to another. 
+Logistic regression is simple yet powerful and is used in many real-world applications 
+such as spam detection, loan approval prediction, and disease diagnosis. Its 
+interpretability and efficiency make it one of the most popular baseline models for 
+binary classification. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameters are the configuration settings that control the learning process of a 
+machine learning model. They are defined before training begins and cannot be 
+learned directly from the data. Examples include learning rate, number of trees in a 
+random forest, and number of layers in a neural network. In contrast, parameters 
+are internal variables of a model that are learned during training, such as weights in 
+a neural network or coefficients in linear regression. 
+Hyperparameters determine how the model learns, while parameters determine 
+what the model learns. Selecting the right hyperparameters is crucial, and this 
+process is called hyperparameter tuning. 
+SECTION C – Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning plays a vital role in predictive maintenance by analyzing data from 
+industrial equipment to predict potential failures before they occur. In this approach, 
+sensors attached to machines collect data such as vibration, temperature, pressure, 
+and sound. The data is then processed to identify patterns that indicate wear or 
+degradation. Using this information, machine learning models can estimate the 
+remaining useful life of a component or the likelihood of failure within a specific 
+period. 
+The typical steps include data collection, preprocessing, feature engineering, model 
+training, and deployment. Algorithms like random forests, support vector machines, 
+and LSTM networks are often used. Predictive maintenance minimizes unplanned 
+downtime, reduces maintenance costs, and improves safety and productivity. For 
+example, in the aviation industry, ML models predict engine part failures to prevent 
+in-flight issues. Similarly, in manufacturing plants, predictive models help schedule 
+timely maintenance, thus avoiding costly machine breakdowns. 
+C-2. Discuss 5 real-world examples of a biased ML model and how such bias can be 
+reduced. 
+Bias in machine learning occurs when models make unfair predictions due to 
+imbalanced or prejudiced training data. One notable example was Amazon’s hiring 
+tool, which unintentionally favored male candidates because it was trained on 
+historical data dominated by men. Another example is the COMPAS algorithm used 
+in the U.S. judicial system, which overestimated the likelihood of reoffending for 
+Black defendants. Facial recognition systems have also shown poor accuracy for 
+darker skin tones due to underrepresentation in training data. Credit scoring 
+systems can display socioeconomic bias if trained on location-based data like ZIP 
+codes, which indirectly reflect income or race. Health diagnosis models have also 
+demonstrated bias by performing poorly on minority groups due to uneven data 
+collection. 
+To reduce such bias, several measures can be taken — collecting diverse and balanced 
+datasets, introducing fairness constraints during model training, regularly auditing 
+algorithms for discrimination, and applying bias detection tools. Transparency in 
+model development and accountability in deployment also help ensure fairer 
+outcomes. 

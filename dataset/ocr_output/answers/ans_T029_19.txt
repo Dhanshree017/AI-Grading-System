@@ -1,0 +1,160 @@
+ID-T029 
+Name: Sunita Reddy Roll no: 19 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why 
+robustness is important and how it can be improved in learning systems. 
+Model robustness in machine learning is a model's ability to maintain stable, reliable 
+performance despite changes, noise, or adversarial attacks in real-world data, ensuring it 
+generalizes beyond training examples. It's crucial for trust and safety in high-stakes fields 
+like healthcare and autonomous driving, preventing unexpected failures. You can improve it 
+through diverse data, adversarial training, regularization, and robust architectures to handle 
+data shifts, noisy inputs, and malicious manipulation.  
+Why Model Robustness is Important 
+ Trust & Reliability: Essential for AI systems in critical applications (medicine, finance, 
+autonomous vehicles) where unpredictable failures erode user trust. 
+ Real-World Performance: Training data differs from live data due to natural shifts (lighting 
+changes, user behavior) or malicious interference, requiring models that adapt. 
+ Security: Protects against adversarial attacks—tiny, intentional input changes designed to 
+fool the model (e.g., altering a stop sign for a self-driving car). 
+ Reduced Maintenance: Robust models degrade less, minimizing the need for constant 
+retraining and engineering intervention.  
+How to Improve Model Robustness 
+1. Data Augmentation & Diversity: Train on varied, augmented data (e.g., rotated images, 
+different lighting) to expose the model to real-world variations. 
+2. Adversarial Training: Intentionally generate deceptive inputs (adversarial examples) and 
+train the model to correctly classify them, like a vaccine for the model. 
+3. Regularization: Techniques like dropout or weight decay prevent overfitting, making 
+models less sensitive to specific training examples and better at generalizing. 
+4. Robust Architectures: Design models (e.g., specific neural network layers) inherently 
+better at handling perturbations or learning more meaningful features. 
+5. Ensemble Methods: Combining predictions from multiple models often yields more stable 
+and robust outcomes than a single model. 
+6. Out-of-Distribution (OOD) Detection: Train models to recognize when input data is 
+significantly different from training data, allowing them to abstain from making predictions. 
+7. Certified Robustness: Mathematical guarantees that a model will behave within certain 
+bounds, providing strong assurances against attacks.  
+. 
+A-b. Describe the role of data representation in machine learning. Explain how different 
+ways of representing data can affect learning outcomes. 
+Model robustness in machine learning is a model's ability to maintain stable, reliable 
+performance despite changes, noise, or adversarial attacks in real-world data, ensuring it 
+generalizes beyond training examples. It's crucial for trust and safety in high-stakes fields 
+like healthcare and autonomous driving, preventing unexpected failures. You can improve it 
+through diverse data, adversarial training, regularization, and robust architectures to handle 
+data shifts, noisy inputs, and malicious manipulation.  
+Why Model Robustness is Important 
+ Trust & Reliability: Essential for AI systems in critical applications (medicine, finance, 
+autonomous vehicles) where unpredictable failures erode user trust. 
+ Real-World Performance: Training data differs from live data due to natural shifts (lighting 
+changes, user behavior) or malicious interference, requiring models that adapt. 
+ Security: Protects against adversarial attacks—tiny, intentional input changes designed to 
+fool the model (e.g., altering a stop sign for a self-driving car). 
+ Reduced Maintenance: Robust models degrade less, minimizing the need for constant 
+retraining and engineering intervention.  
+How to Improve Model Robustness 
+1. Data Augmentation & Diversity: Train on varied, augmented data (e.g., rotated images, 
+different lighting) to expose the model to real-world variations. 
+2. Adversarial Training: Intentionally generate deceptive inputs (adversarial examples) and 
+train the model to correctly classify them, like a vaccine for the model. 
+3. Regularization: Techniques like dropout or weight decay prevent overfitting, making 
+models less sensitive to specific training examples and better at generalizing. 
+4. Robust Architectures: Design models (e.g., specific neural network layers) inherently 
+better at handling perturbations or learning more meaningful features. 
+5. Ensemble Methods: Combining predictions from multiple models often yields more stable 
+and robust outcomes than a single model. 
+6. Out-of-Distribution (OOD) Detection: Train models to recognize when input data is 
+significantly different from training data, allowing them to abstain from making predictions. 
+7. Certified Robustness: Mathematical guarantees that a model will behave within certain 
+bounds, providing strong assurances against attacks.  
+ . 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues 
+related to data size, model complexity, infrastructure, and maintenance. 
+Scaling is when you go from a small project to a huge system used by millions of people. It 
+is very hard. 
+ Data Size: You need massive hard drives and many computers to hold all the info. A 
+normal laptop will crash. 
+ Model Complexity: Big, smart models take a long time to "think." If millions of 
+people use it at once, the system might become very slow. 
+ Infrastructure: You need expensive servers and lots of electricity to keep everything 
+running 24/7. 
+ Maintenance: You have to keep checking the model. If the world changes, the old 
+model becomes "dumb," and you have to fix it with new data. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain 
+tasks related to monitoring, updating, documentation, and ethical compliance. 
+After model deployment, an ML engineer's responsibilities shift to maintaining the model's 
+performance, reliability, and compliance in a production environment [1]. Key post
+deployment tasks include continuous monitoring, strategic updating, comprehensive 
+documentation, and adherence to ethical guidelines [1].  
+Monitoring 
+Continuous monitoring is crucial to ensure the model performs as expected with real-world 
+data and to detect potential issues early [1]. Key tasks involve:  
+ Performance Monitoring: Tracking metrics like accuracy, precision, recall, or latency to 
+ensure the model maintains the required performance level [1, 2]. 
+ Drift Detection: Identifying "concept drift" (changes in the relationship between input 
+variables and the target variable) and "data drift" (changes in the distribution of input data 
+over time) which can degrade model performance [1, 2]. 
+ Outage and Error Alerts: Setting up automated alert systems to notify the team of system 
+failures, unexpected errors, or service outages [2]. 
+ Bias Detection: Continuously monitoring the model's predictions for unfair outcomes across 
+different demographic groups to ensure fairness and mitigate bias [3].  
+Updating and Maintenance 
+Models often need updates to remain effective in dynamic environments [1, 2]. 
+Responsibilities include:  
+ Retraining: Periodically retraining the model using new, relevant data to adapt to changes in 
+data patterns and maintain accuracy [1, 2]. 
+ Version Control and MLOps: Managing different versions of models, data, and code using 
+robust MLOps practices to ensure reproducibility and traceability of changes [2]. 
+ A/B Testing and Canary Releases: Testing new model versions against the current 
+production model (A/B testing) or releasing them to a small subset of users (canary release) 
+to validate performance before a full rollout [2]. 
+ Infrastructure Management: Ensuring the underlying infrastructure (e.g., servers, APIs, 
+databases) is stable, scalable, and secure [2].  
+Documentation 
+Thorough documentation is essential for collaboration, auditing, and future maintenance [1]. 
+Responsibilities involve:  
+ Model Cards and Fact Sheets: Creating comprehensive documentation detailing the 
+model’s purpose, performance metrics, limitations, ethical considerations, and usage 
+instructions [1, 3]. 
+ System Architecture: Documenting the entire MLOps pipeline, including data flow, 
+dependencies, APIs, and deployment configurations [2]. 
+ Change Logs: Maintaining detailed records of all updates, retraining sessions, and 
+configuration changes [1, 2]. 
+ Runbooks: Developing step-by-step guides for troubleshooting common issues and incident 
+response [2].  
+Ethical Compliance 
+Ensuring the model operates ethically and legally is a critical post-deployment responsibility 
+[1]. This includes:  
+ Regulatory Adherence: Staying current with and adhering to industry-specific regulations 
+and data privacy laws (e.g., GDPR, HIPAA) [3]. 
+ Fairness and Transparency: Regularly auditing the model for fairness and ensuring that its 
+decision-making process can be explained to stakeholders and users when necessary 
+(interpretable AI) [1, 3]. 
+ Risk Mitigation: Proactively identifying and mitigating potential risks associated with the 
+model's use, such as the potential for misuse, discriminatory outcomes, or security 
+vulnerabilities [3]. 
+ Stakeholder Communication: Clearly communicating the model's capabilities, limitations, 
+and ethical safeguards to all stakeholders, including users, management, and regulatory 
+bodies [1, 3].  
+. 
+B] Attempt All ( 2 marks each ) 
+B-a. What is model generalization in machine learning? It is when the AI can get the right 
+answer on new examples it has never seen before. 
+B-b. Define training dataset. The "practice data" that the computer uses to learn and find 
+patterns. 
+B-c. What is unsupervised learning? When the computer looks at data with no labels and 
+tries to find its own groups (like sorting different colored candies). 
+B-d. What do you mean by features in ML? The "clues" or details we give the model, like 
+the "height" or "weight" of an object. 
+B-e. What is a machine learning algorithm? A set of math steps or "rules" that the computer 
+follows to learn from data. 
+B-f. Define overfitting. When the computer memorizes the practice data too much and fails 
+when it sees something new. 
+B-g. What is data preprocessing? Cleaning up the data (fixing errors and removing junk) before giving it to 
+the AI. 
+B-h. What is a prediction in machine learning? The final guess or output that the model gives (like "Yes" or 
+"No"). 
+B-i. Define model evaluation. Testing the model to see how many "marks" it gets and how accurate it is. 
+B-j. What is learning from experience in ML? It means the computer gets smarter and better at its job as it 
+sees more and more data. 

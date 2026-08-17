@@ -1,0 +1,242 @@
+ID-T002 
+Name :  Sonakshi Roy  Roll no: M00130 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine Learning (ML) is an approach in computer science that enables systems to learn 
+from data (experience) without being explicitly programmed. It is formally defined as a 
+program improving its performance (P) on a task (T) through experience (E). 
+1. Core Objective: The primary goal is generalization, meaning the model must perform 
+well on unseen, new data. 
+2. Paradigm Shift: It shifts from deterministic, rule-based programming to statistical 
+and probabilistic inference. 
+3. Optimization: Learning is essentially an optimization problem where the model 
+minimizes a loss function. 
+4. AI Subset: ML is a fundamental and widely used subset of Artificial Intelligence 
+(AI). 
+5. Model Purpose: The resulting model is a mapping function that transforms input 
+features into a desired output. 
+A-2. What are the different types of machine learning? 
+Machine Learning is primarily categorized into three paradigms based on the nature of the 
+input data and the feedback signal during training. 
+1. Supervised Learning: Uses labeled data to predict an output (e.g., classification, 
+regression). The feedback is the error between the prediction and the known label. 
+2. Unsupervised Learning: Uses unlabeled data to discover hidden structure, patterns, 
+or data distribution (e.g., clustering, dimensionality reduction). 
+3. Reinforcement Learning (RL): An agent learns sequential decision-making by 
+interacting with an environment and receiving delayed reward signals (e.g., control 
+systems, game playing). 
+4. Semi-Supervised Learning: Combines a small amount of labeled data with a large 
+amount of unlabeled data to improve accuracy and efficiency. 
+5. Self-Supervised Learning: Generates labels automatically from the input data itself, 
+often used for pre-training large models (e.g., BERT). 
+A-3. What is the difference between supervised, unsupervised, and reinforcement learning? 
+The distinction lies in the information available during the learning phase and the nature 
+of the task. 
+1. Data Requirement: Supervised requires explicit labels (output targets). Unsupervised 
+requires no labels. RL requires an environment and a reward function. 
+2. Primary Task: Supervised aims for prediction (mapping input to output). 
+Unsupervised aims for discovery (modeling the data distribution). RL aims for 
+optimal action sequence (policy). 
+3. Feedback Mechanism: Supervised uses direct error (difference between predicted and 
+actual label). Unsupervised has no direct feedback. RL uses a delayed scalar reward 
+signal. 
+4. Model Output: Supervised models output a class or continuous value. Unsupervised 
+models output cluster assignments or reduced features. RL models output an action 
+or a probability distribution over actions. 
+5. Metrics: Supervised uses Accuracy, Precision, MSE. Unsupervised uses Silhouette 
+Score, Reconstruction Error. RL uses Cumulative Expected Reward. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff is the core conflict in model complexity, stating that 
+minimizing one type of error generally leads to an increase in the other, and total 
+generalization error is the sum of these two components (plus irreducible noise). 
+1. Bias (Systematic Error): Error from a too-simple model making strong assumptions. 
+High bias leads to underfitting (the model misses the relevant relations). 
+2. Variance (Random Error): Error from a too-complex model being overly sensitive to 
+small fluctuations and noise in the training data. High variance leads to overfitting. 
+3. Tradeoff Mechanism: Increasing model complexity (e.g., adding features, increasing 
+depth) decreases bias but increases variance. 
+4. Goal: The objective is to find the optimal point of complexity that minimizes the 
+total error on the unseen test data. 
+5. Model Selection: It guides the choice between simpler (high bias, low variance) 
+models like Linear Regression and complex (low bias, high variance) models like deep 
+Neural Networks. 
+A-6. What are a training set, validation set, and test set? 
+These are three mutually exclusive partitions of the dataset essential for the proper 
+development and unbiased evaluation of any machine learning model. 
+1. Training Set (Large): Used for parameter learning—the model adjusts its weights 
+and biases by minimizing the loss function based on this data. 
+2. Validation Set (Medium): Used for hyperparameter tuning and model selection. It 
+provides an impartial evaluation during the development phase to decide on 
+parameters like learning rate or regularization strength. 
+3. Test Set (Held-Out): Used for final, unbiased evaluation only. It provides the 
+single, definitive measure of the model's generalization ability and must be used only 
+once after all development is complete. 
+4. Purpose of Separation: This separation prevents information leakage and ensures the 
+final performance metric accurately reflects how the model will perform in the real 
+world on truly unseen data. 
+5. Typical Split: A common data split is 70 percent Training, 15 percent Validation, 
+and 15 percent Test. 
+B) Any 4 out of following (20 Marks) 
+B-3. What is a decision tree, and how is it pruned? 
+A Decision Tree (DT) is a non-parametric, supervised learning algorithm that partitions 
+the data space into smaller segments based on a series of feature rules, resembling a 
+flowchart. 
+1. Structure and Logic: A DT consists of a Root Node, Internal Nodes (decision points 
+based on a feature test), and Leaf Nodes (the final prediction or class label). The 
+path from root to leaf represents a set of rules. 
+2. Splitting Criterion: At each node, the algorithm greedily selects the feature and the 
+split point that provides the greatest reduction in impurity (disorder). This 
+reduction is measured using metrics like Information Gain (Entropy) or the Gini 
+Index. 
+3. The Overfitting Problem: By default, DTs continue splitting until leaf nodes are 
+pure, which makes them perfectly fit the training data, including noise. This results 
+in high variance and poor generalization (overfitting). 
+4. Pruning Definition: Pruning is the essential process of simplifying the Decision Tree 
+by removing branches that provide little predictive power but contribute 
+significantly to overfitting. It is the primary method of controlling model 
+complexity. 
+5. Pre-pruning (Early Stopping): This involves stopping the tree's growth prematurely 
+by imposing constraints during the training process. Constraints include setting a 
+maximum tree depth, minimum number of samples per leaf, or a minimum impurity 
+decrease threshold. 
+6. Post-pruning (Cost-Complexity Pruning): This is the more effective method, 
+involving growing the full tree first and then systematically removing branches from 
+the bottom up. The best simplified tree is selected by evaluating performance 
+against a validation set. 
+7. Bias-Variance Management: Pruning successfully manages the bias-variance tradeoff 
+by slightly increasing the bias (simplifying the model) in order to significantly reduce 
+the variance, leading to a lower overall generalization error. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) is a powerful supervised learning algorithm used for both 
+classification and regression, which works by finding the optimal separating hyperplane that 
+maximizes the margin between classes. 
+1. Optimal Hyperplane: The primary goal of SVM classification is to locate the decision 
+boundary (hyperplane) that exhibits the largest distance (the maximal margin) to 
+the nearest training data points of any class. 
+2. Support Vectors (SVs): The few training data points that lie closest to the 
+maximal margin hyperplane are called Support Vectors. These are the only points 
+that influence the position and orientation of the decision boundary, making the 
+model sparse. 
+3. Sparsity and Robustness: Because the decision function depends only on the Support 
+Vectors, the model is memory efficient (sparse) and inherently robust to outliers 
+that are far away from the margin. 
+4. The Kernel Trick: For data that is not linearly separable, the Kernel Trick is 
+employed. This mathematical technique implicitly maps the data into a higher
+dimensional feature space where a linear separation (a plane) becomes possible, 
+without the computationally expensive explicit transformation. 
+5. Soft Margin Formulation: For real-world, noisy data, the Soft Margin technique is 
+used, which allows a few misclassifications or violations within the margin boundary. 
+This is controlled by the regularization parameter $\text{C}$ and prevents severe 
+overfitting. 
+6. Convex Optimization: The original SVM formulation is a convex optimization 
+problem, a highly desirable property as it guarantees convergence to the single, 
+global minimum solution, unlike most non-convex optimization problems (e.g., neural 
+networks). 
+7. Popular Kernels: Common kernels include the Linear Kernel, the Polynomial Kernel, 
+and the most flexible and widely used Radial Basis Function (RBF) Kernel. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naive Bayes (NB) is a collection of simple, yet highly effective, probabilistic classifiers 
+based on Bayes' Theorem under the strong assumption of feature independence. 
+1. Bayes' Theorem Foundation: NB calculates the posterior probability (the probability 
+of a class given the observed features) by combining the prior probability (overall 
+class frequency) and the likelihood (probability of the features given the class). 
+2. The Naive Assumption: The defining characteristic is the assumption of conditional 
+independence between all features, given the class label. This means the model 
+assumes each feature contributes independently to the probability, regardless of the 
+other features. 
+3. Computational Efficiency: The independence assumption simplifies the likelihood 
+calculation from a complex joint probability to a simple product of individual 
+probabilities. This makes NB exceptionally fast, memory-efficient, and scalable to 
+very large and high-dimensional datasets. 
+4. Training Method: Training is extremely simple and non-iterative; it involves 
+calculating the Maximum Likelihood Estimate by simply counting the frequency of 
+feature values within each class. 
+5. Zero Frequency Handling: A major practical issue is the zero frequency problem, 
+where a feature never appears with a class, causing the entire posterior probability 
+to become zero. This is solved using Laplace (additive) Smoothing, which adds a 
+small constant to all counts. 
+6. Common Variants: Multinomial NB is used for count data (e.g., word counts in 
+text). Gaussian NB is used when continuous features are assumed to follow a 
+normal (Gaussian) distribution. 
+7. Application: NB is a perennial favorite for text classification tasks like spam 
+detection and sentiment analysis, where its speed and strong performance often 
+make it an excellent baseline model. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering are completely distinct algorithms 
+that only share the parameter 'k' and the reliance on distance metrics, but differ 
+fundamentally in their learning paradigm, goal, and output. 
+1. Learning Paradigm: KNN is a Supervised Learning algorithm (used for 
+classification/regression). k-Means is an Unsupervised Learning algorithm (used for 
+clustering). 
+2. Role of 'k': In KNN, $k$ is the number of neighbors that vote on the new data 
+point's class. In k-Means, $k$ is the number of clusters that the user must specify 
+beforehand for the algorithm to find. 
+3. Training Mechanism: KNN is a Lazy Learner because it involves no explicit training 
+phase; it simply stores the entire dataset. k-Means is an Eager Learner that 
+iteratively adjusts cluster centroids during its training phase. 
+4. Goal and Output: KNN's goal is local prediction; its output is a class label or a 
+number. k-Means' goal is global partitioning; its output is cluster assignments and 
+$k$ centroid locations. 
+5. Distance Usage: Both rely on distance (like Euclidean distance), but KNN uses it to 
+find the closest neighbors for prediction, while k-Means uses it to minimize the 
+distance of points to their assigned centroid. 
+6. Data Sensitivity: Both are highly sensitive to feature scaling and normalization. 
+Additionally, KNN is severely impacted by the Curse of Dimensionality (distance 
+becomes less meaningful in high-dimensional space), whereas k-Means is sensitive to 
+the initial choice of centroids. 
+7. Use Cases: KNN is a classic choice for classification tasks. k-Means is a classic choice 
+for market segmentation and data compression. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) is the foundational iterative optimization algorithm used in 
+machine learning to find the set of model parameters (weights and biases) that minimizes 
+the overall differentiable cost function (or loss function). 
+1. Optimization Goal: The core objective is to locate the global (or a sufficiently good 
+local) minimum of the cost function, where the error between the model's 
+predictions and the actual data is minimized. 
+2. Iterative Process: GD starts with randomly initialized parameters and iteratively 
+updates them by taking a small step in the direction of the steepest descent on 
+the cost surface. 
+3. The Gradient: The gradient (calculated via partial derivatives) represents the slope 
+of the cost function at the current parameter value, indicating the direction of the 
+steepest increase in cost. 
+4. Descent Rule: The algorithm updates parameters by subtracting a fraction of the 
+gradient from the current parameter value. This moves the parameters in the 
+direction opposite to the gradient (the steepest descent). 
+5. Learning Rate: The Learning Rate is a crucial hyperparameter that dictates the size 
+of the step taken in each iteration. A high learning rate risks overshooting the 
+minimum, while a low learning rate results in slow convergence. 
+6. Convergence: The process continues until the magnitude of the gradient approaches 
+zero, indicating that the algorithm has reached a local (or global) minimum and the 
+model has "converged." 
+7. Fundamental Importance: GD is the core learning mechanism for nearly all modern 
+machine learning, powering the training of Neural Networks, Logistic Regression, and 
+other complex models. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) are the two 
+primary variants of the Gradient Descent optimization algorithm, distinguished by the 
+amount of data used to calculate the gradient and update the model's parameters in each 
+iteration. 
+1. Data Size per Update: BGD uses the entire training dataset to compute a single, 
+aggregated gradient for one parameter update. SGD uses only a single training 
+example to compute the gradient and perform one parameter update. 
+2. Path to Minimum: BGD takes a very smooth, stable, and direct path to the 
+minimum because its gradient is averaged over all data. SGD takes a noisy, highly 
+oscillatory path because the gradient varies wildly from one example to the next. 
+3. Computational Cost: BGD has a very high computational cost per iteration due to 
+processing the entire dataset. SGD has a very low computational cost per iteration, 
+making it faster for large datasets. 
+4. Convergence Behavior: BGD is guaranteed to converge precisely to the local 
+minimum. SGD oscillates around the minimum but rarely settles exactly; however, 
+this noise can sometimes help it escape poor local minima. 
+5. Mini-Batch Gradient Descent (Best Practice): The practical standard is Mini-Batch 
+GD, which uses a small, random subset (a batch of size 32 or 64) of the data for 
+each update. This method effectively balances the speed of SGD with the stability 
+of BGD. 
+6. Update Frequency: BGD performs only one update per epoch (one full pass over the 
+data). SGD performs $N$ updates per epoch (where $N$ is the dataset size), 
+resulting in much faster convergence initially. 
+7. Memory Requirement: BGD requires high memory to store the derivatives for the 
+entire dataset. SGD requires minimal memory. 

@@ -1,0 +1,55 @@
+ID-T032 
+Name: Kritika Pardeshi Roll no: 4 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (5 marks each) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The ML lifecycle is a systematic engineering process designed to transition from a business 
+objective to a functional AI product. 
+ Problem Definition: Clearly defining the objective (e.g., classification vs. regression) 
+and determining the Key Performance Indicators (KPIs). 
+ Data Acquisition & Cleaning: Sourcing raw data and performing ETL (Extract, 
+Transform, Load) to handle missing values, duplicates, and errors. 
+ Feature Engineering: Transforming raw variables into meaningful representations 
+that maximize the signal-to-noise ratio for the model. 
+ Model Selection & Training: Choosing optimal architectures and using optimization 
+algorithms like Stochastic Gradient Descent (SGD) to minimize the loss function. 
+ Evaluation & Validation: Using techniques like K-Fold Cross-Validation to ensure 
+the model generalizes to unseen data. 
+ Deployment: Integrating the model into production environments via APIs or 
+microservices (MLOps). 
+ Monitoring & Maintenance: Tracking performance for "Model Decay" or "Concept 
+Drift" and retraining the model as real-world data distributions evolve. 
+A-b. Discuss the importance of feature representation and how it influences learning outcomes. 
+Feature representation is the process of mapping raw data into a numerical vector space. It is 
+the most critical factor in determining the success of a model. 
+ Geometric Separability: A superior representation ensures that different classes are 
+linearly or non-linearly separable in the feature space. 
+ Dimensionality Management: Effective representation prevents the "Curse of 
+Dimensionality" by focusing on the most informative variables. 
+ Information Density: In NLP, for example, transitioning from "One-Hot Encoding" 
+to "Dense Embeddings" allows the model to understand semantic relationships (e.g., 
+King - Man + Woman = Queen). 
+ Computational Efficiency: Proper representation reduces the search space for the 
+algorithm, leading to faster convergence during training. 
+ Generalization: Representations that capture invariant features (features that don't 
+change with noise) lead to significantly more robust learning outcomes. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the optimization process where an algorithm analyzes training data to adjust its internal 
+parameters (weights) to minimize a loss function and learn patterns. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and selecting a subset of the most relevant 
+features from the original dataset to improve model accuracy and reduce computational 
+complexity. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the direct, "real-world" verified labels or facts provided in the dataset, 
+used as the target for the model to learn and be evaluated against. 
+B-d. What is model deployment? 
+Model deployment is the process of integrating a trained machine learning model into a 
+production environment (like a web app or server) so it can provide predictions on live data. 
+B-e. Define learning from data. 
+Learning from data is the ability of an algorithm to improve its performance at a task over 
+time by extracting statistical structures and rules directly from input examples without being 
+explicitly programmed for every scenario. 

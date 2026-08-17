@@ -1,0 +1,200 @@
+ID-T015 
+Name: Anjali Singh Roll no: 13 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A (Attempt any 5 – 8 marks each) 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and discuss 
+the importance of the parameter k. 
+The K-Nearest Neighbor (KNN) algorithm is a non-parametric, supervised machine learning 
+method used for both classification and regression tasks. It operates on the principle that 
+similar data points tend to exist in close proximity. 
+Working Steps of KNN: 
+ Choose the value of K:  
+The first step involves selecting the number of nearest neighbors, represented by the 
+parameter k, that will be considered for making a prediction. 
+ Calculate Distance:  
+For a new, unclassified data point (query point), the algorithm calculates its distance to 
+every other data point in the training dataset. Common distance metrics include Euclidean 
+distance, Manhattan distance, or Minkowski distance. 
+ Identify K Nearest Neighbors:  
+After calculating all distances, the algorithm sorts them in ascending order and selects 
+the k data points that are closest to the query point. These k points are the "nearest 
+neighbors." 
+ Make a Prediction: 
+ For Classification: The algorithm determines the class label of the query point by taking a 
+majority vote among its k nearest neighbors. The class that appears most frequently 
+among these neighbors is assigned to the query point. 
+ For Regression: The algorithm predicts the value of the query point by taking the average 
+(or weighted average) of the values of its k nearest neighbors. 
+Importance of the Parameter K: 
+The choice of k is crucial and significantly impacts the performance of the KNN algorithm: 
+ Small K (e.g., K=1):  
+A small k makes the model highly sensitive to noise in the data and can lead to 
+overfitting. If k=1, the query point is simply assigned the class or value of its single 
+closest neighbor, making it vulnerable to outliers. 
+ Large K:  
+A large k can smooth out the decision boundary and reduce the impact of noise. However, 
+if k is too large, it might include neighbors from different classes, leading to underfitting 
+and a less accurate model, as it might fail to capture local patterns. 
+ Optimal K:  
+The optimal value of k depends on the specific dataset and problem. It is typically 
+determined through techniques like cross-validation, where different k values are tested, 
+and the one yielding the best performance (e.g., highest accuracy) is selected. A common 
+practice is to choose an odd value for k in classification to avoid ties when voting.  
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model performance 
+and discuss techniques used to handle it. 
+Data imbalance is when a dataset has a skewed class distribution, leading to poor model 
+performance as algorithms favor the majority class. This can be handled with techniques 
+like resampling (oversampling, undersampling), using appropriate evaluation metrics, and 
+employing methods like cost-sensitive learning or generating synthetic data.  
+Impact on model performance  
+ Model bias: Models tend to become biased toward the majority class because they 
+are often optimized to minimize overall error, leading to poor predictions for the 
+underrepresented minority class. 
+ Inaccurate metrics: Standard metrics like accuracy can be misleading. For example, a 
+model that always predicts the majority class in a dataset with a  
+95%95 % 
+95% 
+majority class will have a  
+95%95 % 
+95% 
+accuracy, even though it's completely ineffective at identifying the minority class. 
+ Poor generalization: The model may overfit to the majority class and fail to 
+generalize to new, unseen data, which is particularly problematic in applications like 
+fraud detection or medical diagnosis where minority class identification is critical.  
+Techniques to handle data imbalance  
+ Resampling: 
+o Undersampling: Randomly remove samples from the majority class to balance 
+the dataset. 
+o Oversampling: Randomly duplicate samples from the minority class to balance 
+the dataset. 
+o SMOTE (Synthetic Minority Over-sampling Technique): Generate synthetic 
+samples for the minority class instead of just duplicating existing ones. 
+ Algorithmic approaches: 
+o Cost-sensitive learning: Modify the learning algorithm to penalize 
+misclassifications of the minority class more heavily than misclassifications of 
+the majority class. 
+o Ensemble methods: Combine multiple models, often trained on different 
+resampled subsets of the data, to improve overall performance. Examples 
+include Balanced BaggingClassifier. 
+ Evaluation and data manipulation: 
+o Use appropriate metrics: Focus on metrics like precision, recall, F1-score, or 
+the ROC AUC score, which are more informative than accuracy for imbalanced 
+datasets. 
+o Threshold moving: Adjust the decision threshold of a model to make it more 
+sensitive to the minority class. 
+o Anomaly detection: Frame the problem as anomaly detection, where the 
+minority class is treated as an "anomaly" to be identified.  
+. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Gradient Boosting is an ensemble method that builds models one after another. Each new 
+model tries to correct the errors made by the previous model. 
+Steps: 
+1. Start with an initial model (like predicting mean). 
+2. Calculate the residuals (errors). 
+3. Train a new weak learner (like decision tree) on these residuals. 
+4. Add the predictions to the previous model with a learning rate. 
+After many rounds, a strong model is created. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used to 
+solve new tasks with limited data and mention common applications of transfer learning. 
+Transfer learning is the process of using a pre-trained model (already trained on a large 
+dataset) and adapting it for a new related task with less data. 
+For example, models trained on ImageNet can be fine-tuned for medical image 
+classification. 
+Steps: 
+1. Load a pre-trained model. 
+2. Freeze early layers (which capture general features). 
+3. Replace or retrain later layers for new classes. 
+Applications: Image recognition, NLP (using BERT, GPT, etc.), and speech analysis. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important and 
+describe common hyperparameters for algorithms like Decision Trees, Neural Networks, and 
+Gradient Boosting models. 
+Hyperparameters are external parameters that control the learning process. They are not 
+learned automatically. 
+Examples: 
+ Decision Tree: max_depth, min_samples_split. 
+ Neural Network: learning_rate, batch_size, epochs. 
+ Gradient Boosting: n_estimators, learning_rate. 
+Tuning hyperparameters helps achieve better performance and avoid overfitting or 
+underfitting. 
+� SECTION B (Attempt any 6 – 5 marks each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Data preprocessing prepares raw data for training. 
+Steps: 
+1. Data cleaning (handling missing and duplicate data). 
+2. Encoding categorical variables. 
+3. Feature scaling (normalization or standardization). 
+4. Splitting into train-test sets. 
+. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Feature scaling brings all features to a similar range. 
+ Normalization: scales between 0–1. 
+ Standardization: transforms to mean = 0, std = 1. 
+Needed especially for distance-based models like KNN or SVM. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Cross-entropy loss measures the difference between predicted and actual probability 
+distributions. It is used in classification, especially for multi-class tasks. 
+It penalizes wrong predictions more when the confidence is high. 
+Formula involves log of predicted probability. 
+
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Optimization algorithms minimize the loss function by adjusting weights. 
+Examples: Gradient Descent, Adam, RMSprop, SGD. 
+They find the global or local minimum and help the model converge faster. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Dimensionality reduction reduces number of features while keeping important information. 
+Example: PCA (Principal Component Analysis) – transforms features into new axes 
+capturing maximum variance. 
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+A decision tree is a supervised machine learning algorithm used for both classification and 
+regression tasks. It operates by creating a model that predicts the value of a target 
+variable by learning simple decision rules inferred from the data features. 
+How a Decision Tree Works: 
+ Root Node:  
+The process begins with a single root node representing the entire dataset. 
+ Splitting:  
+The algorithm then identifies the best feature to split the data based on a chosen 
+criterion (e.g., Gini impurity or information gain for classification, mean squared error for 
+regression). This split divides the data into subsets, creating child nodes. 
+ Recursive Partitioning:  
+This splitting process is repeated recursively on each child node until a stopping condition 
+is met. This condition could be that all data points in a node belong to the same class, 
+the node contains a minimum number of samples, or further splitting does not 
+significantly improve the model's performance. 
+ Leaf Nodes:  
+The final nodes in the tree, which are not further split, are called leaf nodes. Each leaf 
+node represents a predicted outcome or class. 
+ Prediction:  
+To make a prediction for a new data point, it traverses the tree from the root, following 
+the decision rules at each internal node until it reaches a leaf node, which provides the 
+prediction. 
+Advantages: 
+ Interpretability:  
+Decision trees are easy to understand and visualize, resembling a flowchart, making the 
+decision-making process transparent. 
+ Handles various data types:  
+They can work with both numerical and categorical data without extensive preprocessing. 
+ No feature scaling required:  
+Unlike some other algorithms, decision trees do not require feature scaling or 
+normalization.  
+ Handles non-linear relationships:  
+They can capture complex, non-linear relationships between features and the target 
+variable.  
+ Feature importance:  
+Decision trees inherently provide a measure of feature importance, indicating which 
+features are most influential in making predictions. 
+Disadvantages: 
+ Overfitting:  
+Decision trees can be prone to overfitting, especially with complex trees, leading to poor 
+generalization on unseen data. Pruning techniques are often used to mitigate this. 
+ Instability:  
+Small changes in the data can lead to significant changes in the tree structure, making 
+them somewhat unstable. 
+ Bias with imbalanced data:  
+If one class significantly dominates the others in a classification problem, the tree might 
+be biased towards the majority class. 
+ Computational cost:  
+Building a complex decision tree can be computationally expensive, especially with a large 
+number of features and data points. 

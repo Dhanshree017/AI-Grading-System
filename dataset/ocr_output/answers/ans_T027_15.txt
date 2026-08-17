@@ -1,0 +1,52 @@
+ID-T027 
+Name: Rohan verma Roll no: 15 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Feature engineering is the process of transforming raw data into meaningful input features 
+that enable a machine learning model to learn patterns more effectively. Raw data collected 
+from real-world sources is often noisy, unstructured, and unsuitable for direct use in 
+algorithms. Through feature engineering, data scientists apply transformations such as 
+scaling numerical values, encoding categorical variables, and creating new features using 
+domain knowledge. This process helps highlight relevant information while suppressing 
+irrelevant noise. The importance of feature engineering lies in its direct impact on model 
+performance, as well-engineered features can significantly improve accuracy, reduce 
+overfitting, and enhance generalization. In many practical applications, feature engineering 
+contributes more to model success than the choice of algorithm itself, making it a critical 
+step in the machine learning pipeline. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+The machine learning model training process is a structured workflow that converts data into 
+a predictive model capable of making accurate decisions. Initially, data is collected and 
+preprocessed to handle missing values, noise, and inconsistencies. The prepared dataset is 
+then divided into training, validation, and test sets, each serving a distinct purpose. The 
+training dataset is used to teach the model by adjusting its internal parameters to minimize 
+prediction error. The validation dataset is employed during training to tune hyperparameters 
+and monitor overfitting, ensuring the model does not simply memorize the training data. 
+Finally, the test dataset is used only after training is complete to evaluate the model’s 
+performance on unseen data. This separation ensures unbiased evaluation and helps build 
+models that generalize well to real-world scenarios. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+The bias–variance tradeoff describes the balance between a model’s simplicity and 
+complexity and how this balance affects prediction accuracy. Bias refers to errors caused by 
+overly simple models that fail to capture underlying patterns, leading to underfitting. 
+Variance refers to errors caused by overly complex models that learn noise from the training 
+data, leading to overfitting. A model with high bias performs poorly on both training and test 
+data, while a model with high variance performs well on training data but poorly on unseen 
+data. The tradeoff arises because reducing bias often increases variance and vice versa. 
+Effective machine learning aims to find an optimal balance where both bias and variance are 
+minimized, resulting in strong performance and good generalization to new data. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Machine learning systems can be categorized based on how they learn from data. Batch 
+learning involves training a model using the entire dataset at once, after which the model 
+remains fixed until retrained with new data. This approach is suitable for static datasets and 
+offline environments. Online learning, in contrast, updates the model continuously as new 
+data arrives, making it ideal for real-time and streaming applications where data patterns 
+change rapidly. Incremental learning is a hybrid approach where the model is updated 
+gradually using small batches of data while retaining previously learned knowledge. This 
+method is efficient for large datasets and evolving systems. Each learning type is chosen 
+based on data availability, system requirements, and the need for adaptability. 

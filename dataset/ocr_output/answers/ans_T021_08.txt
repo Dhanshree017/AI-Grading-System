@@ -1,0 +1,258 @@
+ID-T021 
+Name: ramesh gupta Roll no: 8 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-2. What is the difference between online learning and batch learning? Explain with suitable real-world 
+examples. 
+Answer 
+Definitions: 
+ Batch learning (offline learning): The model is trained on a fixed dataset (one or several full 
+passes) and periodically retrained as new labeled data accumulates. Training typically happens 
+offline with heavier compute. 
+ Online learning (incremental learning): The model updates continuously or in small increments as 
+new data arrives (single examples or mini-batches), often using single-pass or streaming algorithms. 
+Key conceptual differences: 
+ Update cadence: Batch = periodic retraining (daily/weekly/monthly). Online = continuous 
+incremental updates. 
+ Memory & compute: Batch can require access to the entire dataset and multiple epochs; online uses 
+constant memory and updates using a streaming pass. 
+ Adaptability: Online adapts quickly to non-stationary environments; batch is more stable but slower 
+to reflect recent trends. 
+ Complexity of tuning: Batch allows expensive hyperparameter searches; online requires careful 
+learning-rate schedules and forgetting mechanisms (decay, sliding windows). 
+ Failure modes: Batch models may be stale between retrain cycles; online models may accumulate 
+bias if noisy labels are incorporated unchecked. 
+Real-world examples (concrete): 
+ Batch learning example: A university builds a student-performance predictor once per semester 
+using the semester’s consolidated data; model is retrained each term with the latest labeled outcomes. 
+ Online learning example: A click-through-rate (CTR) model in an ad-serving system that updates 
+user preference vectors after every click or impression to personalize recommendations in near-real
+time. 
+ Hybrid example: A recommendation system that maintains an online lightweight personalization 
+layer (per-user embeddings updated in real time) while periodically retraining a heavy global model 
+offline to capture broader trends. 
+When to choose which: 
+ Choose online when data arrives as a stream, labels are available quickly, and timely adaptation 
+matters (fraud detection, personalization). 
+ Choose batch when labels are expensive, data is stable, and compute resources permit regular offline 
+retraining (medical imaging models, offline analytics). 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, 
+images, or categorical data? 
+Answer 
+Definition & purpose: 
+An embedding is a learned dense vector representation that maps discrete, sparse, or high-dimensional 
+inputs into a continuous low-dimensional space where semantic or functional similarity is preserved by 
+geometric proximity. 
+Function (mechanics & benefits): 
+ Dimensionality reduction: Replace extremely high-dimensional spaces (one-hot encodings, raw 
+token indices, raw pixels) with compact vectors that are much easier for models to process. 
+ Semantic preservation: Embeddings position semantically or functionally similar items near each 
+other; e.g., synonyms or semantically related images lie close in the embedding space. 
+ Feature reuse & transfer: Pretrained embeddings (word vectors, image backbones) encapsulate 
+useful priors and enable transfer learning when labeled data is limited. 
+ Improved generalization: Continuous vectors allow smooth interpolation; models can generalize to 
+unseen combinations by leveraging nearby embeddings. 
+ Efficient similarity operations: Fast nearest-neighbor search and clustering become practical in 
+vector spaces. 
+Usefulness by modality (concrete): 
+ Text: Word, sentence, and document embeddings (Word2Vec, GloVe, BERT, Sentence-BERT) 
+capture context, polysemy, and relationships (king − man + woman ≈ queen). They power semantic 
+search, classification, and downstream NLP tasks. 
+ Images: CNN-produced embeddings encode shapes, textures, and object presence; useful for image 
+retrieval, few-shot learning, and as inputs for downstream classifiers. 
+ Categorical features: Learned category embeddings (e.g., for product IDs, user IDs) allow the 
+model to learn latent relationships between categories instead of relying on sparse one-hot vectors; 
+this is especially powerful in recommendation systems and tabular models. 
+Practical considerations: 
+ Choose embedding dimensionality to balance representational capacity vs overfitting. 
+ Pretraining on large corpora or using contrastive objectives often yields robust embeddings. 
+ Fine-tune embeddings for downstream tasks when labeled data is available for better task alignment. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence concept 
+learning. 
+Answer 
+Definition: 
+Concept learning is the process of inferring a general rule or classifier (a concept) from specific labeled 
+examples. The goal is to produce a hypothesis that correctly classifies unseen instances. 
+Hypothesis space (H): 
+ What it is: The set of all candidate hypotheses or functions the learner can possibly select (e.g., all 
+linear functions, depth-limited decision trees, neural networks of a certain architecture). 
+ Role: It bounds what the learning algorithm can represent. If the true target concept is not in H, no 
+amount of data will let the learner represent it perfectly (representational bias). 
+ Trade-offs: A larger H increases expressive power but raises the risk of overfitting and makes 
+search harder. 
+Inductive bias: 
+ Definition: The set of assumptions that the learning algorithm uses to choose one hypothesis over 
+another when multiple hypotheses are consistent with the training data. Examples include preferring 
+simpler hypotheses (Occam’s razor), linearity assumptions, or smoothness constraints. 
+ Necessity: With finite data, inductive bias is essential; without bias, any hypothesis consistent with 
+training data is equally plausible and generalization is impossible. 
+How they influence concept learning: 
+ Learnability: The intersection of H and the inductive bias determines whether the learner can 
+generalize from samples to unseen examples. A well-chosen hypothesis space aligned with the 
+problem and an appropriate inductive bias leads to better generalization. 
+ Search & efficiency: Inductive bias guides the search through H (e.g., greedy splits in decision trees 
+vs gradient descent in neural nets), improving learning efficiency. 
+ Error decomposition: Inductive bias contributes to bias-variance trade-off — strong bias reduces 
+variance but may incur systematic error if incorrect; weak bias can fit complex functions but risks 
+high variance. 
+ Practical example: If H is linear functions and the true concept is nonlinear, the learner will 
+underfit. If H is very flexible (deep nets) but inductive bias (regularization, architecture choices) is 
+inadequate, the learner may overfit. 
+Conclusion: Designing H and inductive bias thoughtfully (via model family, regularization, feature 
+transforms) is central to successful concept learning. 
+A-6. What is active learning? Describe how query strategies like uncertainty sampling help improve 
+training efficiency. 
+Answer 
+Definition & goal: 
+Active learning is a paradigm where the learning algorithm chooses which unlabeled instances it wants 
+labeled (by an oracle, typically a human annotator) to maximize model performance for the least labeling 
+cost. The goal is to achieve target accuracy with far fewer labeled examples than passive learning. 
+Core idea & workflow: 
+1. Train an initial model on a small labeled seed set. 
+2. Score the unlabeled pool with an acquisition function (uncertainty, disagreement, expected error 
+reduction, etc.). 
+3. Select top-k most informative samples, obtain labels from annotators. 
+4. Retrain/fine-tune the model and repeat the cycle. 
+Query strategies (explanations & examples): 
+ Uncertainty sampling: Choose instances where the model is least confident — e.g., lowest 
+maximum predicted probability, smallest margin between top two class probabilities, or highest 
+predictive entropy. These examples typically lie near decision boundaries and, when labeled, provide 
+maximal information to refine boundaries. 
+ Query-by-committee: Maintain an ensemble (committee) of diverse models and select instances 
+with maximal disagreement among committee members. This targets epistemic uncertainty due to 
+model uncertainty. 
+ Expected model change / Expected error reduction: Compute which candidate labels would most 
+change parameters or reduce expected generalization error; select samples that maximize this 
+objective. 
+ Diversity-based sampling: Combine uncertainty with explicit diversity constraints to avoid 
+selecting many near-duplicate instances and to cover broad regions of the input space. 
+Benefits & practical notes: 
+ Substantially reduces labeling effort in domains where annotation is expensive (medical images, 
+expert transcription). 
+ Works best when the unlabeled pool is large and annotation throughput is limited. 
+ Practical deployment requires handling label noise, human annotator variability, and correct 
+calibration of acquisition functions. 
+ Combining uncertainty with diversity and using batch-mode active learning (selecting batches of 
+diverse uncertain examples) is common in practice. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-2. Assume you have trained a classification model that shows high accuracy but low recall. Explain the 
+activities you would perform to diagnose and improve this issue. 
+Answer 
+Diagnosis: 
+ Confusion matrix: Confirm that false negatives are high. 
+ Class distribution: Check whether the positive (target) class is under-represented causing class 
+imbalance. 
+ Probability calibration: Inspect predicted probabilities; many true positives may be predicted with 
+low probability below threshold. 
+ Feature signal: Examine whether features discriminate the positive class; use feature importance or 
+SHAP to find missing signals. 
+Improvement activities (ordered): 
+1. Threshold tuning: Plot precision-recall curve and choose a threshold that raises recall to acceptable 
+level while controlling precision loss. 
+2. Resampling / weighting: Apply oversampling (SMOTE) or class weights in the loss function or 
+focal loss to emphasize minority class. 
+3. Model choice & tuning: Try models that better capture minority patterns (tree ensembles, gradient 
+boosting, tuned neural nets) and tune hyperparameters with a recall-focused objective. 
+4. Feature engineering: Create new features or transformations that highlight minority-class 
+characteristics (interaction terms, ratio features, temporal aggregations). 
+5. Ensembling & stacking: Combine complementary models to reduce blind spots and improve recall. 
+6. Calibration & post-processing: Calibrate probabilities (Platt scaling, isotonic) and adjust thresholds 
+per subpopulation if necessary. 
+Validation: 
+ Use stratified cross-validation and monitor precision-recall curves and AUPRC rather than accuracy. 
+Evaluate downstream costs of false negatives vs false positives to choose operating point. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. Describe the 
+activities you would conduct to detect, measure, and reduce bias. 
+Answer 
+Detection: 
+ Distribution checks: Compare predicted label distribution with actual distribution across the entire 
+dataset and across demographic subgroups. 
+ Confusion matrices by subgroup: Produce confusion matrices segmented by protected attributes 
+(e.g., gender, region) to observe discrepancies. 
+ Error decomposition: Identify whether bias arises from data imbalance, label noise, or feature 
+proxies. 
+Measurement (fairness metrics): 
+ Demographic parity difference: Difference in positive prediction rates across groups. 
+ Equal opportunity (TPR parity): Compare true positive rates across groups. 
+ False positive/negative rate gaps: Check FPR/FNR differences to detect disparate harms. 
+ Disparate impact ratio: Ratio of favorable outcomes between groups. 
+Mitigation strategies: 
+ Pre-processing: Rebalance training data (oversample underrepresented groups), remove or 
+transform proxy features correlated with protected attributes, and generate synthetic examples if 
+feasible. 
+ In-processing: Use fairness-aware learning algorithms (constrained optimization to satisfy parity 
+constraints), or incorporate regularizers that penalize disparity. Adjust class weights to counteract 
+imbalance. 
+ Post-processing: Calibrate scores and set group-specific thresholds to equalize selected fairness 
+metrics (with careful ethical review). 
+ Human-in-the-loop: Review failure modes and consult stakeholders to define acceptable trade-offs 
+between fairness and other metrics. 
+Validation & governance: 
+ Use a separate fairness test set, track fairness metrics over time, and implement alerting for drift in 
+disparity measures. Document mitigation choices and rationale for auditability. 
+B-5. During deployment, your ML model starts performing poorly after a few months. Explain the 
+activities you would carry out to monitor, identify, and fix model drift. 
+Answer 
+Monitoring (continuous): 
+ Instrument dashboards to track model performance metrics (accuracy, precision, recall, AUC), input
+feature distributions, prediction confidence, and calibration over time. Log metadata (time, input 
+versions) to enable diagnostics. 
+Detection & identification: 
+ Use statistical drift detectors (Population Stability Index, KS test, JS divergence) for feature 
+distributions and monitor changes in prediction distributions. Periodically sample recent predictions 
+for labeling to measure true performance. Correlate performance drops with external events 
+(seasonality, policy changes) or upstream data-pipeline changes. 
+Root-cause analysis: 
+ Identify which features changed significantly and whether label-generating processes have shifted. 
+Check for data-quality issues (schema drift, missing features, corrupted pipelines). Use 
+counterfactual or SHAP-based analysis to see which features contribute to degraded predictions. 
+Fix strategies: 
+ Quick fixes: Recalibrate model probabilities or adjust decision thresholds if calibration shifted. 
+Implement fallback rules for critical decisions. 
+ Retraining: Collect recent labeled data and retrain or fine-tune the model using a combination of 
+historical and recent examples; consider temporal cross-validation (time-based splits). 
+ Incremental updates / online learning: If appropriate, apply incremental learning methods to adapt 
+continuously while controlling catastrophic forgetting. 
+ Feature engineering: Replace deprecated features, add new signals that capture new behavior, or 
+remove noisy features. 
+ Model architecture changes: If relationship structure changed, consider switching to a more 
+appropriate model family. 
+Validation & rollout: 
+ Validate updated models on temporally realistic holdout sets and run canary or A/B tests before full 
+deployment. Maintain rollback capability and continue monitoring post-deployment. 
+Operationalize: 
+ Automate drift detection, periodic retraining pipelines, and maintain labeled holdout sets for 
+continuous evaluation. 
+B-6. You are asked to compare three ML models and select the best one. Describe the activities you 
+would perform—including metrics comparison, validation methods, and interpretability checks. 
+Answer 
+1. Define success criteria: 
+ Choose primary metric aligned with business objective (AUC-ROC, AUPRC, F1, RMSE) plus 
+secondary considerations (latency, memory, interpretability, fairness, cost of errors). 
+2. Ensure fair experimental setup: 
+ Standardize data preprocessing across models. Use the same train/validation/test splits (stratified or 
+time-based as appropriate). Ensure no leakage and that feature engineering is identical across runs. 
+3. Robust validation: 
+ Use k-fold cross-validation (stratified for classification) or time-series cross-validation for temporal 
+data to obtain mean and variance of performance metrics. Capture not only point estimates but 
+stability across folds. 
+4. Metrics comparison & significance: 
+ Compare primary and secondary metrics, examine ROC/PR curves, calibration, and confusion 
+matrices. Use statistical tests (paired t-test, Wilcoxon signed-rank) or bootstrap confidence intervals 
+to assess whether performance differences are significant. 
+5. Interpretability & sanity checks: 
+ Compute global feature importances and local explanations (SHAP, LIME) to ensure models use 
+reasonable signals (no spurious proxies). Verify that top features align with domain expertise. 
+6. Robustness checks: 
+ Test models on noisy, missing, and distribution-shifted subsets. Evaluate subgroup performance to 
+ensure equitable behavior. Measure degradation under simulated data perturbations. 
+7. Operational constraints & resource profiling: 
+ Measure inference latency, memory footprint, and throughput. Consider deployment platform 
+constraints (edge devices vs cloud) and cost implications. 
+8. Final decision & documentation: 
+ Weigh trade-offs between accuracy, stability, interpretability, fairness, and operational cost. Select 
+the model that best meets the overall criteria and document reasoned justification, acceptance 
+thresholds, and rollback/monitoring plan. 
+9. Post-deployment monitoring plan: 
+ Implement monitoring for performance and fairness, and schedule periodic re-evaluation. 

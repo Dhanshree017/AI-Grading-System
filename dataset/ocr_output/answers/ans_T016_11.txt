@@ -1,0 +1,116 @@
+ID-T016 
+Name: snehal patil Roll no: 11 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Data augmentation basically mean we creating more training data by modifying existing 
+samples in many artificial ways. In deep learning we do this because model need lot of 
+variation for learn good features, but in real world dataset sometimes small or not cover wide 
+condition. 
+Common augmentation are random flip, rotation, zoom, color jitter, random crop, noise 
+adding, cutout etc. These transformations not change core label but give model more 
+different looking version so it learns more robust patterns. 
+Importance is very high because augmentation reduce overfitting strongly by making the 
+network see slightly new view each epoch. It also increase generalization because model 
+learn not exact pixel but learn invariant shape or structure. Especially in vision tasks 
+augmentation almost mandatory because deep CNN can memorize plain data. Also help 
+when dataset imbalance by generating extra samples for minority class. 
+So augmentation basically act like low-cost data collection method to improve accuracy, 
+robustness and stability of deep learning models. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Underfitting is when model too simple and cannot learn real relation inside data. It show low 
+accuracy in training also testing. For example, trying to fit linear regression on data that 
+clearly nonlinear curve; model fail capture pattern. 
+Overfitting opposite effect where model learn too much detail and also noise of training data, 
+so training accuracy very high but test performance poor. Example is deep neural network 
+trained long on small dataset, memorize images exactly but fail on unseen. 
+The main difference is underfit due to less capacity or too much regularization, while overfit 
+due to high capacity and no regularization. Underfit means model not learning enough, 
+overfit means learning too much unnecessary. Both undesirable so we try balance by good 
+architecture, proper regularization, cross-validation and enough data. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Decision boundary is imaginary surface or line that separate classes according to model 
+prediction. It show where model switching from one class output to another. 
+Intuitively you can imagine a 2D plane where points from two classes are plotted. When 
+classifier like logistic regression trained, it draw a straight line such that points one side 
+predicted class A and other side predicted class B. That straight line is decision boundary. 
+For nonlinear models like SVM with RBF or neural network, the boundary can be curved, 
+wiggly or complex. For example, two concentric circle classes cannot be separated by 
+straight line, so model create round shaped decision boundary. 
+So decision boundary help visualize how model thinks and what region of feature space 
+belong to which class. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Dropout is technique where during training some neurons randomly "dropped" or disabled 
+with certain probability like 0.5. When neuron dropped it not active and not send output 
+forward. This randomness create multiple subnetworks inside main network. 
+Dropout help reduce overfitting because model cannot rely on single neuron or path; it 
+forced to learn distributed representation so many neurons carry important information. Also 
+dropout works like ensemble method because network with dropout behaves like average of 
+huge number of smaller networks. 
+During testing dropout not applied; instead weights scaled so model behave stable. Main 
+idea is forcing neural network to become more robust, not memorizing training data. So 
+dropout widely used in CNNs, DNNs, RNNs etc to improve generalization. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and 
+applications. 
+EM algorithm is iterative method used for estimating parameters when data have missing or 
+hidden variables. The algorithm alternate between two major steps: 
+ E-step: compute expectation of log-likelihood using current parameter estimates by 
+estimating hidden variables distribution. 
+ M-step: maximize the expected log-likelihood to update parameters. 
+These two steps repeat until convergence. 
+EM used widely in Gaussian Mixture Models, clustering, incomplete data problems, 
+hidden variable inference, image segmentation, and many probabilistic models. It 
+powerful because can handle uncertainty by iteratively refining guesses. 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality reduction means compressing high-dimensional data to fewer dimensions 
+while keeping important structure. This reduce storage, visualization easier, remove noise 
+and speed up models. 
+PCA is unsupervised method that find directions (principal components) with maximum 
+variance in data. It ignore class labels and only preserve global variance structure. 
+LDA is supervised method that maximize class separability. It find projection that maximize 
+distance between class means and minimize within-class spread. 
+So PCA good for general compression, LDA better when classification problem and class 
+labels exist. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+GAN consist of two networks fighting against each other: 
+ Generator tries to create fake samples that look like real data. It start with noise input 
+and learn mapping to data distribution. 
+ Discriminator tries to differentiate between real samples and generated samples. It 
+output probability whether data real or fake. 
+Training is adversarial: generator try fool discriminator, discriminator try catch 
+generator. When training good, generator produce realistic samples like images, audio, 
+etc. GANs used for image synthesis, super-resolution, style transfer, data 
+augmentation. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning 
+and describe each component. 
+MDP framework define environment for reinforcement learning. It consist of: 
+ States (S): situations in which agent can be. 
+ Actions (A): choices agent can take. 
+ Transition probability (P): probability of going to next state after taking action. 
+ Reward (R): feedback signal agent receive after action. 
+ Policy (π): mapping from states to actions. 
+MDP assume Markov property meaning next state depend only on current state and 
+action, not on past. It help design RL algorithms like Q-learning, policy gradient, 
+value iteration. 
+SECTION C — Attempt any 5 (10 marks each) 
+C-1. Define supervised learning with an example. 
+Supervised learning is technique where model trained using labeled data. Algorithm learn 
+mapping from input to output. Example: training classifier to detect spam emails using 
+emails labeled as spam or not spam. 
+C-3. Explain the term kernel function. 
+Kernel function compute similarity between data points in higher-dimensional feature space 
+without explicitly transforming them. Used in SVMs for nonlinear decision boundaries. 
+C-4. Define feature scaling. 
+Feature scaling means adjusting numerical features to same range so no feature dominate 
+others. Methods include normalization and standardization. 
+C-5. What is bagging? 
+Bagging is ensemble method where multiple models trained on different bootstrap samples 
+and predictions averaged. Helps reduce variance and avoid overfitting. 
+C-6. Explain gradient vanishing. 
+Gradient vanishing occurs when gradients become extremely small while backpropagation, 
+especially in deep networks with sigmoid/tanh. It slow learning or stop, making hard for 
+network to learn long dependencies. 

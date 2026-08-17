@@ -1,0 +1,152 @@
+ID-T017 
+Name: Aasma Sheikh Roll no: 7 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt all (3 marks each) 
+A-2. What is data preprocessing and why is it important? 
+Data preprocessing is the sequence of cleaning, transforming and encoding raw inputs into 
+a consistent, model-ready form (imputation, normalization, encoding, outlier treatment, 
+feature transforms). It is vital because models are sensitive to scale, missingness and noise 
+— careful preprocessing reduces bias, speeds convergence, prevents numerical issues and 
+often yields larger performance gains than marginal model tuning. 
+A-3. What are hyperparameters? Give two examples. 
+Hyperparameters are configuration choices set before training that control model capacity 
+or the optimization process (not learned from data). Examples: learning rate (step size of 
+gradient updates) and regularization strength (L1/L2 coefficient controlling weight 
+penalty). Other examples include batch size, number of layers, and number of trees. 
+A-4. Explain types of clustering 
+ Partitioning (K-Means/K-Medoids): hard assignment to k clusters minimizing intra
+cluster variance. 
+A-5. What is classification and regression? Explain with examples. 
+Classification maps inputs to discrete categories (e.g., detect pneumonia vs normal in chest 
+X-rays). Regression predicts continuous targets (e.g., forecast monthly electricity 
+consumption in kWh). Choice of loss and evaluation differs (cross-entropy/AUC for 
+classification; MSE/MAE/R² for regression). 
+A-6. Advantages and disadvantages of Decision Tree 
+Advantages: interpretable rules, mixed-type features support, no heavy scaling required, fast 
+inference. 
+Disadvantages: prone to overfitting unless pruned, high variance (unstable splits), greedy 
+split criterion may be locally suboptimal, bias toward features with many levels. 
+A-7. How to make a model underfit and overfit (what causes each) 
+Underfit causes: too-simple hypothesis class, excessive regularization, lack of informative 
+features, insufficient training time. 
+Overfit causes: overly expressive model relative to data, noisy labels, no/weak 
+regularization, too many training epochs or small training set causing memorization. 
+A-8. Give 5 applications of machine learning in real life 
+1. Personalized recommendations (e-commerce / streaming). 
+2. Medical imaging diagnostics (radiology triage). 
+3. Fraud and anomaly detection in finance. 
+4. Predictive maintenance in manufacturing (sensor analytics). 
+5. Autonomous navigation and driver-assistance systems. 
+A-9. State steps in making ML models 
+1. Problem scoping and metric selection. 
+2. Data collection & labeling. 
+3. Exploratory data analysis. 
+4. Preprocessing & feature engineering. 
+5. Model selection & training. 
+6. Hyperparameter tuning & cross-validation. 
+7. Final evaluation & error analysis. 
+8. Deployment, monitoring and maintenance. 
+A-10. Importance of data in ML 
+Data quality, representativeness, label correctness and volume govern what a model can 
+learn: good data reduces bias, improves generalization and enables robust, fair decisions; 
+poor or unrepresentative data results in unreliable and unsafe models. 
+SECTION B — Attempt any 5 (8 marks each) 
+(I provide six deep answers; use any five.) 
+B-1. Challenges in machine learning — imbalanced data, missing values, curse of 
+dimensionality, concept drift — and solutions 
+Imbalanced Data 
+ Problem: rare classes (fraud, disease) get overwhelmed by majority, accuracy 
+misleading. 
+ Solutions: resampling (SMOTE/ADASYN oversampling, informed undersampling), 
+cost-sensitive loss (class weights, focal loss), anomaly detection framing for extreme 
+rarity, evaluation by PR-AUC and F1 rather than accuracy. 
+Missing Values 
+ Problem: reduces usable data and can bias estimates if missingness is informative 
+(MAR/MNAR). 
+ Solutions: analyze missingness mechanism; simple imputations (mean/median) for 
+MCAR, model-based imputation (KNN, MICE), use missingness indicator features, or 
+algorithms that natively handle NAs (certain tree implementations). 
+Curse of Dimensionality 
+ Problem: high dimensionality leads to sparse data, unreliable distance metrics and 
+overfitting. 
+ Solutions: domain-driven feature engineering, feature selection 
+(filter/wrapper/embedded), dimensionality reduction (PCA, autoencoders), 
+regularization and collecting more labeled examples relative to features. 
+Concept Drift 
+ Problem: P(X) or P(Y|X) changes over time; static model degrades. 
+ Solutions: continuous monitoring and drift detection (ADWIN, DDM), 
+online/incremental learning, sliding-window retraining, weighted retraining 
+emphasizing recent data, human-in-the-loop validation for critical decisions. 
+B-3. Ensemble learning — Bagging and Boosting with examples 
+Ensemble principle: combine multiple estimators to improve predictive performance by 
+reducing variance, bias or both; diversity among base learners is key. 
+Bagging (Bootstrap Aggregating) 
+ Mechanics: train independent base learners on bootstrap samples; aggregate by 
+majority vote or averaging. 
+ Benefit: reduces variance and stabilizes predictions. 
+ Canonical example: Random Forest — bagged decision trees with random feature 
+subsetting per split; robust, low-tuning and scalable. 
+Boosting 
+ Mechanics: sequentially train weak learners where each emphasizes instances 
+mispredicted by prior learners (reweighting or residual fitting). 
+ Benefit: reduces bias by building a strong learner from many weak ones; can also 
+reduce variance with shrinkage. 
+ Examples: AdaBoost (instance reweighting), Gradient Boosting (fit negative 
+gradient/residuals), modern variants — XGBoost, LightGBM, CatBoost — 
+optimized for speed and regularization (learning rate, subsampling, tree constraints). 
+When to choose: bagging when models are high-variance (trees); boosting when marginal 
+reduction in bias yields gains and careful regularization is applied. 
+B-4. Entire ML pipeline — each step and model evaluation 
+Pipeline steps (expanded): 
+1. Problem framing & metric definition: define business objective, costs of errors, 
+metric (F1, ROC-AUC, RMSE). 
+2. Data acquisition & storage: logging, instrumentation, provenance recording. 
+3. Exploratory Data Analysis (EDA): distributions, correlations, missingness, class 
+balance, visual checks. 
+4. Preprocessing: cleaning, imputation, encoding, scaling, outlier handling and 
+resolving label noise. 
+5. Feature engineering: domain features, temporal aggregations, embeddings, 
+interaction terms; feature selection. 
+B-5. Types of data ML uses & qualities of good data 
+Types of data: 
+ Tabular/structured: attribute columns (SQL). 
+ Textual: documents, transcripts, logs. 
+ Image & video: pixels, frames, spatio-temporal streams. 
+ Audio/speech: waveforms and spectrograms. 
+ Time-series: sequential measurements. 
+ Graph/relational: nodes and edges (social networks, molecules). 
+ Geospatial: coordinates and shapes. 
+Qualities of good data: 
+ Accuracy & label correctness: low annotation noise. 
+ Representativeness: covers distribution of deployment scenarios and edge cases. 
+ Completeness: necessary features available with minimal missingness. 
+ Sufficient volume: enough samples per segment/class. 
+ Low biased sampling: avoids systemic skew that harms fairness. 
+ Consistency & provenance: documented collection process, units and schema. 
+ Freshness & timeliness: up-to-date for non-stationary problems. 
+ Metadata & lineage: for reproducibility and auditing. 
+B-6. Naïve Bayes and SVM — detailed note 
+Naïve Bayes (NB) 
+ Core idea: use Bayes’ theorem with a simplifying conditional independence 
+assumption: P(y∣x)∝P(y)∏iP(xi∣y)P(y|x)\propto P(y)\prod_i P(x_i|y)P(y∣x)∝P(y)∏i
+P(xi∣y). 
+ Variants: Multinomial NB for term counts (text), Bernoulli NB for binary features, 
+Gaussian NB for continuous inputs. 
+ Strengths: extremely fast to train and predict, robust in high-dim sparse spaces, low 
+memory footprint — ideal for baseline text classifiers. 
+ Limitations: independence assumption often violated; cannot model feature 
+interactions; probabilistic outputs may be poorly calibrated without smoothing. 
+Support Vector Machine (SVM) 
+ Core idea: find hyperplane maximizing margin between classes; soft margin 
+introduces slack variables for non-separable data controlled by C. 
+ Kernel trick: replace dot product with kernel K(x,x′)K(x,x')K(x,x′) to operate in 
+implicit high-dim feature spaces (RBF, polynomial), enabling complex non-linear 
+boundaries. 
+ Optimization: convex QP problem with guaranteed global optimum; can be solved 
+via SMO or gradient-based approximations for scale. 
+ Strengths: effective in high-dim spaces, robust generalization when margin large, 
+theoretically grounded. 
+ Limitations: computational cost on very large datasets, kernel parameter tuning 
+required, less transparent probabilistic interpretation (requires calibration). 
+  

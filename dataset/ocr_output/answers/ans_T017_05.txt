@@ -1,0 +1,88 @@
+ID-T017 
+Name: karan joshi Roll no: 5 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (3 marks) 
+A-1. Give 5 Domains of AI 
+ Machine Learning 
+ NLP 
+ Robotics 
+ Computer Vision 
+ Gaming AI 
+(Also AI is used in traffic lights which I'm not sure is a domain.) 
+A-2. What is data preprocessing? Why is it important? 
+It means cleaning data but honestly I think ML also works without it sometimes. 
+It is important because teacher said so. 
+Also preprocessing removes dust from data  
+A-3. What are hyperparameters? Give two example 
+Hyperparameters are numbers we set manually. 
+Examples: learning rate, number of epochs. 
+CPU speed is also hyperparameter I think  
+A-4. Types of clustering 
+ K-Means 
+ Agglomerative 
+ DBSCAN 
+And one clustering where points form circle shape (I forgot name, maybe donuts clustering). 
+A-5. What is classification and regression? 
+Classification = choose category like good or bad. 
+Regression = predict number like age. 
+Regression also can predict if dog is happy  
+A-6. Advantages & Disadvantages of Decision Tree 
+Advantages: 
+ Easy 
+ Visual 
+Disadvantages: 
+ Overfit 
+ Sometimes tree becomes too tall and may fall  
+A-7. How to make model underfit and overfit 
+Underfit = don’t train enough. 
+Overfit = train too much. 
+If you shout at model, it also overfits  
+A-8. Applications of ML 
+ Face unlock 
+ Spam detection 
+ Weather predicting 
+ Movie recommendation 
+ Automatic fan speed  
+A-9. Steps in making ML models 
+Collect → clean → train → test → done 
+Sometimes I skip testing because no time  
+A-10. Importance of data in ML 
+Data is everything. 
+Without data model becomes blind. 
+Also more data means phone will hang  
+B] Attempt any 5 (8 marks) 
+B-1. Challenges in ML & Solutions 
+ Imbalanced data → use oversampling 
+ Missing values → fill with mean 
+ Curse of dimensionality → use PCA 
+ Concept drift → retrain 
+Also challenge is when laptop heats too much  
+B-2. Regularization & its types 
+Regularization avoids overfitting by punishing weights. 
+Types: L1, L2. 
+L1 makes weights zero, L2 makes them small. 
+Elastic net also exists but I only heard name. 
+Regularization is like telling model “calm down bro.” 
+B-3. Ensemble Learning, Bagging & Boosting 
+Ensemble = combining models. 
+Bagging = train many models separately. 
+Boosting = train models one by one. 
+Bagging is like asking many friends at once. 
+Boosting is like asking one friend, then another, then correcting mistakes. 
+Sometimes ensemble also fails if models fight  
+B-4. Entire ML Pipeline + Evaluation 
+Steps: collect, preprocess, split, train, test, deploy. 
+Evaluation uses accuracy and confusion matrix. 
+I always confuse confusion matrix (true). 
+Sometimes teacher says F1 score but I didn’t learn properly. 
+B-5. Types of data & qualities of good data 
+Types: structured, unstructured, time-series. 
+Qualities: accurate, complete. 
+Good data should not smell  
+B-6. Naive Bayes & SVM 
+Naive Bayes: probability-based, assumes independence. 
+Good for text. 
+SVM: draws a margin line between classes. 
+Has kernels like RBF. 
+I once thought SVM means “Simple Vector Machine”  

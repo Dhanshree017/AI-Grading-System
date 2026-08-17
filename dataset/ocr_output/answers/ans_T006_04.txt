@@ -1,0 +1,154 @@
+ID-T006 
+Name: Ashwini Roy Roll no: 4 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A} Answer All questions (3 marks each) 
+A-1. How Reinforcement learning is diffrerent from Supervised learning? 
+The real distinction it is about the feedback mechanism, seriously. 
+1. Supervised learning it gets direct, labeled correction right after every 
+prediction, like a teacher marking the answer sheet. The data is static. 
+2. Reinforcement learning (RL) it only gets a scalar reward that is delayed, 
+maybe after many steps or at the end of the episode. The data is dynamic 
+and sequential. 
+3. Supervised minimizes the function approximation error; RL finds the 
+optimal sequence of actions to maximize the future accumulated reward. 
+A-2. Define the term overfitting and one solution for it. 
+Overfitting it is when the model it memorizes the training examples and the 
+noise components very perfectly, which is not good. 
+1. Definition: It happens when the model variance it is too high, making it 
+perform excellently on known data but terribly on unseen data. It loses 
+the ability to generalize the underlying relationship. 
+2. Solution: Early Stopping. This is a form of temporal regularization. You 
+monitor the performance on a separate validation set during training and 
+stop the optimization process when the validation loss starts to increase, 
+before overfitting it becomes severe. 
+A-3. What is the role of linear discriminant analysis in ML? 
+The main function of Linear Discriminant Analysis (LDA) it is to maximize the 
+separation between known classes in a lower dimension. 
+1. Goal: LDA finds the best linear combination of features that best 
+characterizes or discriminates between the classes, unlike PCA which just 
+captures variance. 
+2. It is used for supervised dimensionality reduction to prepare data for 
+classification by improving the signal-to-noise ratio. 
+3. It also serves as a classifier by estimating the class means and covariances. 
+A-5. Write importance of K-means clustering. 
+K-Means it is important because it offers a very efficient way to partition the 
+data into K groups. 
+1. Simplicity: It is conceptually straightforward and easy to implement for 
+quick data exploration and segmentation. 
+2. Scalability: It is computationally quick (linear time complexity) and works 
+well on very large datasets for initial grouping tasks. 
+3. Its output is easily interpreted by examining the cluster centers 
+(centroids). 
+A-6. Write about R Square and its significance. 
+R-squared ($R^2$) it is a goodness-of-fit metric used in linear regression 
+models. 
+1. Definition: It tells the proportion of the variance in the dependent variable 
+that is predictable from the independent variables. It is the percentage 
+of variance that is explained by the model. 
+2. Significance: It is essential for assessing the explanatory power of a 
+regression model. A higher value it indicates a better fit to the observed 
+outcomes. 
+3. It is bounded between 0 and 1 (or negative if the model is worse than 
+the mean). 
+A-7. Give significance of hyperparameter optimization. 
+Hyperparameter optimization (HPO) it is crucial for achieving the best possible 
+performance of any ML model. 
+1. Control: It sets the external configuration (like learning rate, kernel type, 
+C value) that governs the training process and the model complexity. 
+2. Optimality: Finding the right settings it minimizes the generalization error 
+on unseen data, often making the difference between a useless model and 
+a state-of-the-art one. 
+3. It prevents the model from underfitting or overfitting by balancing the 
+bias-variance trade-off. 
+A-8. How machine learning deals with sparse data. 
+Sparse data (mostly zeros, like user-movie ratings) it is handled primarily 
+through specialized efficiency methods. 
+1. Memory Management: ML libraries they use sparse matrix representations 
+(like CSC or DOK) to only store the non-zero entries, saving memory 
+and CPU time. 
+2. Regularization: L1 regularization (Lasso) it is often applied to linear 
+models to drive the weights of irrelevant features (zeros) to zero, 
+naturally performing feature selection. 
+3. Embedding: For categorical sparse data, low-dimensional embedding 
+techniques they are used to create dense representations that are more 
+informative. 
+A-9. What is advantage of active learning. 
+The chief advantage of active learning it is achieving a high performance level 
+with minimal labeling effort. 
+1. Cost Efficiency: It selects the most informative data points near the 
+decision boundary for human annotation, reducing the total number of 
+labels required by the project. 
+2. Accelerated Training: By focusing on the uncertainty, the model learns 
+the critical parts of the data distribution faster than random sampling. 
+3. It is best suited when unlabeled data it is cheap but expert labeling it is 
+expensive. 
+A-10. What is training, testing and validation? 
+These are three distinct phases for developing and evaluating an ML model 
+rigorously. 
+1. Training Set: Used to fit or learn the model parameters by minimizing 
+the loss function. 
+2. Validation Set: Used during development to tune the hyperparameters 
+and select the best model architecture. It provides feedback for model 
+selection. 
+3. Test Set: Used only once at the end to provide an unbiased estimate of 
+the model's generalization performance on truly unseen data. 
+B} Attempt any 4 (5 marks each) 
+B-1 give 7 applications of machine learning. 
+Here are seven domains that use ML models for some purpose. 
+1. Computer Vision: Classification of images and detection of objects (e.g., 
+medical image segmentation). 
+2. Recommendation Engines: Suggesting products and content based on user 
+history (e.g., e-commerce and streaming). 
+3. Natural Language Processing: Translation of language and summarization 
+of documents (e.g., customer support automation). 
+4. Financial Fraud Detection: Real-time anomaly identification in banking 
+transactions. 
+5. Autonomous Vehicles: Perception, prediction, and control systems for self
+driving. 
+6. Drug Discovery: Predicting the properties of molecules and optimizing the 
+drug design pipeline. 
+7. Speech Recognition: Converting audio to text for voice assistants and 
+transcription services. 
+B-2 how machine learning and deep learning related / explain regularization in 
+deep learning. 
+Deep Learning (DL) it is a subset of Machine Learning (ML) that uses deep 
+artificial neural networks. It is ML with more layers. 
+Regularization in Deep Learning: 
+1. Necessity: DL models have very many parameters, making them very 
+powerful but easily prone to high variance (overfitting). 
+2. L1/L2 Penalties: Adds a norm penalty to the loss to constrain the size 
+of the weights, making the solution smoother. 
+3. Dropout: A DL specific technique that randomly deactivates a fraction of 
+neurons during each training forward pass, preventing co-adaptation and 
+making the network more robust. 
+4. Batch Normalization: It standardizes the inputs to each layer which has 
+a subtle regularizing effect. 
+5. Early Stopping: Monitoring validation loss to stop the training when 
+generalization begins to degrade. 
+B-3 explain supervised, unsupervised and semisupervised with examples. 
+These are the categories based on whether the data comes with target labels. 
+1. Supervised Learning: Data it is fully labeled. The model learns the mapping 
+from input to known output. Example: Linear Regression (predicting 
+salary) or Logistic Regression (predicting email spam). 
+2. Unsupervised Learning: Data it is unlabeled. The model finds the inherent 
+structure or patterns. Example: K-Means Clustering (segmenting users) 
+or Principal Component Analysis (PCA) (reducing dimension). 
+3. Semi-Supervised Learning: Uses a small labeled set plus a large unlabeled 
+set. The unlabeled data it is used to better define the manifold structure 
+to aid the labeled data's performance. Example: Classification tasks where 
+getting labels is expensive. 
+B-4 What are types of SVM 
+Support Vector Machines (SVM) they are types based on how they handle the 
+separating plane. 
+1. Linear SVM: Used when the classes they can be separated by a straight 
+hyperplane in the input feature space. It maximizes the margin. 
+2. Non-Linear SVM (Kernel-based): Used when the data it is tangled. It 
+uses the kernel trick to map the data to a high-dimensional feature space 
+where linear separation is possible. Common kernels are RBF and 
+Polynomial. 
+3. Soft-Margin SVM: Allows some training points to violate the margin or 
+the boundary to achieve better generalization on noisy data. Controlled 
+by the parameter C. 
+4. SVR (Support Vector Regression): The version of SVM used for 
+continuous numerical prediction instead of classification. 

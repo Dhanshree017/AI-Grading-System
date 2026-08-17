@@ -1,0 +1,162 @@
+ID-T021 
+Name: Shreya patil Roll no: 16 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why 
+continuous monitoring is required. 
+Definition 
+Model drift is the decline in an AI model's predictive accuracy over time as real-world data 
+patterns and relationships change, making its initial training obsolete, requiring continuous 
+monitoring to detect data drift (input changes) and concept drift (input-output relationship 
+changes) to ensure models remain relevant, accurate, and trustworthy through retraining or 
+adjustments.  
+Types of Model Drift 
+1. Data Drift: Changes in the statistical properties of the input features, like demographics 
+shifting or new product types emerging, without changing the core relationship with the 
+target. 
+ Feature Drift: Distribution of a single input feature changes (e.g., average customer age 
+increases). 
+ Covariate Shift: Input data distribution changes, but the relationship between features and 
+output remains the same. 
+ Label Drift: Changes in the distribution of the target variable itself (e.g., more fraudulent 
+transactions). 
+2. Concept Drift: The fundamental relationship between input features and the target variable 
+changes, meaning the rules the model learned are no longer valid (e.g., a recession changes 
+how credit risk is assessed). 
+ Sudden Drift: Abrupt, immediate change (e.g., pandemic impact). 
+ Gradual/Incremental Drift: Slow, steady change over time (e.g., evolving fashion trends). 
+ Recurring/Seasonal Drift: Cyclical changes that repeat (e.g., holiday shopping patterns).  
+Why Continuous Monitoring Is Required 
+ Ensures Accuracy & Reliability: Models become "stale" as the world evolves; monitoring 
+catches this decay, preventing faulty decisions. 
+ Detects Real-World Changes: Captures shifts from evolving user behavior, economic 
+conditions, or new data patterns not seen in training. 
+ Enables Timely Intervention: Alerts teams when performance drops, allowing for 
+retraining, data adjustments, or model replacement to restore accuracy. 
+ Maintains Trust & Fairness: Prevents models from becoming biased or producing 
+unreliable outcomes, upholding AI governance. 
+ Manages Risk: Crucial in high-stakes areas like finance or healthcare, where inaccurate 
+predictions can have severe consequences.  
+A-3. Describe the function of an embedding in machine learning. Why are embeddings 
+useful for text, images, or categorical data? 
+In machine learning, an embedding transforms high-dimensional, discrete data (like words, 
+users, or images) into dense, lower-dimensional numerical vectors, capturing semantic 
+meaning where similar items have close vectors in the "embedding space," making complex 
+data understandable for models, reducing computational load, and enabling tasks like 
+semantic search, recommendations, and accurate translation. They are useful because 
+they create meaningful, compact numerical representations that reveal underlying 
+relationships, allowing algorithms to process and find patterns in vast datasets efficiently.  
+Function of Embeddings 
+ Conversion: They convert non-numerical, sparse data (e.g., text, categories) into a 
+numerical format (dense vectors) that ML models can process. 
+ Dimensionality Reduction: They reduce large, sparse data into manageable, dense vectors, 
+saving memory and computation. 
+ Semantic Representation: They learn to place semantically similar items (e.g., "king" and 
+"queen") close together in the vector space, while dissimilar items are farther apart.  
+Usefulness for Different Data Types 
+ Text (Word/Sentence Embeddings): 
+o Captures meaning and context (e.g., "apple" the fruit vs. "Apple" the company). 
+o Enables tasks like translation, sentiment analysis, and question answering by understanding 
+word relationships. 
+ Images (Image Embeddings): 
+o Represent visual features numerically, allowing models to find similar-looking images (e.g., 
+dogs vs. cats). 
+o Powers image search, facial recognition, and content moderation. 
+ Categorical Data (e.g., User IDs, Product IDs): 
+o Transforms sparse categories (like millions of products) into dense vectors. 
+o Crucial for recommendation systems to find users with similar tastes or products that are 
+often bought together. 
+ General Use Cases: 
+o Recommendation Systems: Find similar users/items. 
+o Semantic Search: Find relevant documents/images by meaning, not just keywords. 
+o Anomaly Detection: Identify unusual patterns in transactions or network data.  
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias 
+influence concept learning. 
+Definition 
+Concept learning is the process by which a model generalizes a rule or pattern from 
+examples to correctly classify unseen instances. 
+Hypothesis Space 
+ Set of all possible models or rules the algorithm can select. 
+ Larger space allows complex rules but increases risk of overfitting. 
+ Smaller space favors simplicity but may not capture complex patterns. 
+Inductive Bias 
+ Set of assumptions guiding hypothesis selection. 
+ Examples: preference for simpler rules, linear boundaries, or smooth functions. 
+ Bias ensures generalization when multiple hypotheses fit training data. 
+Influence 
+ Correct alignment ensures efficient learning from limited data. 
+ Poorly chosen bias can prevent the model from finding the correct concept despite 
+sufficient data. 
+A-6. What is active learning? Describe how query strategies like uncertainty sampling 
+help improve training efficiency. 
+Definition 
+Active learning is a machine learning technique in which a model interactively queries a user 
+(or some other information source) to label new data points, rather than passively receiving a 
+complete labeled dataset upfront [1, 2]. The core idea is to intelligently select the most 
+informative examples to label, thereby achieving higher accuracy with fewer labeled data 
+compared to traditional passive learning methods [1, 2].  
+The model iteratively learns by: 
+1. Starting with a small set of labeled data and a large pool of unlabeled data. 
+2. Training an initial model on the labeled data. 
+3. Employing a query strategy to select specific instances from the unlabeled pool that it 
+"wants" labeled. 
+4. Acquiring labels for these selected instances from an oracle (e.g., a human annotator). 
+5. Adding the newly labeled data to the training set and repeating the process [2].  
+How Query Strategies Improve Training Efficiency 
+Query strategies are the algorithms that determine which unlabeled data points are most 
+valuable to label next. By focusing labeling efforts on the most informative data, these 
+strategies significantly improve training efficiency [2].  
+Uncertainty sampling is one of the most common and intuitive query strategies [2]. This 
+strategy works on the principle that the data points where the current model is least confident 
+in its own prediction are likely the most informative for improving the model's decision 
+boundary [1].  
+Here is how uncertainty sampling improves efficiency: 
+ Focuses on Ambiguity: The model deliberately targets examples that lie near its current 
+decision boundaries (the "gray areas"). Labeling these specific examples helps the model 
+refine its boundaries precisely, rather than labeling many examples far from the boundary 
+about which it is already confident [1]. 
+ Reduces Redundancy: Instead of randomly selecting points that might be very similar to 
+already labeled data (providing little new information), uncertainty sampling seeks out novel 
+and challenging cases [2]. 
+ Maximizes Information Gain: Each labeled point chosen via uncertainty sampling provides 
+a high amount of new information (high information gain) because resolving the ambiguity 
+around that point causes the largest potential change to the model's parameters and 
+performance [1].  
+In summary, active learning, powered by strategies like uncertainty sampling, makes the 
+labeling process more efficient by treating the label budget as a scarce resource and 
+maximizing the knowledge gained from every single annotation [1]. 
+B ] Attempt any 4 ( each 5 marks) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process 
+you would follow to clean, preprocess, and prepare the data for training a model. 
+1. Inspect Missing Values: Identify columns and rows with missing data. 
+2. Decide Handling Strategy: Remove features or rows with excessive missingness. 
+3. Imputation: Numeric features → mean/median; categorical → mode. 
+4. Missing Indicators: Optional flag columns to signal missingness. 
+5. Encode Categorical Variables: One-hot or label encoding. 
+6. Scaling/Normalization: Standardize numeric features. 
+7. Train-Test Split: Avoid leakage. 
+8. Validation: Ensure processed data is consistent and suitable for modeling. 
+B-2. Assume you have trained a classification model that shows high accuracy but low 
+recall. Explain the activities you would perform to diagnose and improve this issue. 
+Diagnosis: 
+ Examine confusion matrix to identify false negatives. 
+ Check for class imbalance. 
+ Inspect threshold values and feature importance. 
+Improvement: 
+ Adjust decision threshold to improve recall. 
+ Apply oversampling or class weighting. 
+ Add relevant features to help detect minority class. 
+ Consider ensemble models or boosting techniques. 
+Validation: 
+ Use recall, F1-score, and PR curves to evaluate improvements. 
+B-3. You are tasked with building an ML model for predicting student performance. List 
+and explain the activities involved from feature identification to model evaluation. 
+1. Feature Identification: Attendance, prior grades, study habits, participation. 
+2. Data Cleaning: Handle missing or inconsistent entries. 
+3. Feature Engineering: Generate cumulative scores, trends, or derived indicators. 
+4. Model Selection: Linear regression, decision tree, or ensemble models. 
+5. Training: Fit model using cross-validation for robust generalization. 
+6. Hyperparameter Tuning: Optimize model settings. 
+7. Evaluation: RMSE, R², or classification metrics if predicting grade categories. 
+8. Deployment & Monitoring: Monitor predictions on new student data for drift. 

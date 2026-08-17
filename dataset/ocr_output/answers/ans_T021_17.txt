@@ -1,0 +1,66 @@
+ID-T021 
+Name: mrunal Sen Roll no: 17 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring 
+is required. 
+Model drift is when machine model start giving wrong answers because data change secretly. Sometimes 
+numbers move or rules forget. 
+Types of drift 
+1. Data drift: Data values change over time, like new customers with weird ages. 
+2. Concept drift: The meaning of target changes, like now passing marks are different. 
+3. Label drift: Labels become random sometimes, like fraud label confused. 
+4. Feature drift: Features behave strange, like negative marks appear. 
+Continuous monitoring needed because model can sleep or make wrong guesses. We watch dashboard, 
+check charts, maybe retrain. 
+A-2. What is the difference between online learning and batch learning? Explain with suitable real
+world examples. 
+Batch learning: model learns everything once. Example: School marks predict at end of semester. 
+Online learning: model learns bit by bit as new data comes. Example: YouTube recommendation updating 
+every click. 
+Difference: online is fast but may confuse, batch is slow but sometimes better. Memory also different. 
+Thresholds can change, sometimes online better sometimes batch better. 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, 
+images, or categorical data? 
+Embedding is like magic map for model. It changes big words, pictures, or category names into numbers. 
+Numbers can be small but keep meaning. 
+ Text: words like “cat” and “dog” become close numbers. 
+ Images: photo compressed into code. 
+ Categories: product IDs become short vectors so model can compare. 
+Model likes embedding because easier to store, faster learning, maybe less errors. 
+B ] Attempt any 4 ( each 5 marks) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you would 
+follow to clean, preprocess, and prepare the data for training a model. 
+1. Check which data missing. 
+2. Fill numbers with mean or zero. 
+3. Fill words with “unknown”. 
+4. Remove rows if too many missing. 
+5. Encode categories maybe one-hot. 
+6. Scale numbers if needed. 
+7. Split data train-test. 
+8. Start training, if model fails maybe copy data or change method. 
+B-2. Assume you have trained a classification model that shows high accuracy but low recall. Explain 
+the activities you would perform to diagnose and improve this issue. 
+ Look confusion matrix. 
+ See false negatives high. 
+ Maybe threshold too high or minority small. 
+ Fix: copy minority class, lower threshold, or add features. 
+ Try new model if old model stubborn. 
+ Check recall after change. 
+B-3. You are tasked with building an ML model for predicting student performance. List and explain 
+the activities involved from feature identification to model evaluation. 
+1. Collect features: attendance, marks, maybe favourite colour. 
+2. Clean data: remove errors or missing. 
+3. Feature engineer: create “study score” by multiplying hours × assignments. 
+4. Select model: linear, tree, maybe random forest. 
+5. Train model, check errors. 
+6. Evaluate: accuracy, RMSE. 
+7. If fail, add features or retrain. 
+8. Deploy and hope predictions not too wrong. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. Describe the 
+activities you would conduct to detect, measure, and reduce bias. 
+ Check which class predicted most. 
+ Count false positives and negatives per class. 
+ Fix: copy minority, remove biased features, maybe randomly flip labels. 
+ Retrain and check if predictions more fair. 

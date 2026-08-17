@@ -1,0 +1,64 @@
+ID-T027 
+Name: Payal patankar Roll no: 28 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Meaning of Feature Engineering 
+Feature engineering is the process of designing, selecting, transforming, and optimizing 
+input variables (features) from raw data so that machine learning models can learn 
+meaningful patterns more effectively. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Overview of the Training Process 
+The model training process involves teaching a machine learning algorithm to learn patterns 
+from data and evaluate its ability to generalize to unseen data. 
+Data Collection and Preparation 
+Relevant data is collected and preprocessed to ensure quality and consistency before training 
+begins. 
+Training Phase 
+Training data is used to fit the model by adjusting internal parameters such as weights to 
+minimize prediction error. 
+Validation Phase 
+Validation data is used during training to tune hyperparameters, compare models, and detect 
+overfitting. 
+Testing Phase 
+Test data is used only after model development to measure final performance and 
+generalization. 
+Iterative Learning 
+The training process is iterative, with repeated adjustments based on validation feedback. 
+Importance of Data Separation 
+Separating datasets prevents data leakage and ensures unbiased evaluation. 
+Conclusion 
+Proper use of training, validation, and test data leads to reliable and well-generalized models. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Concept of Bias–Variance Tradeoff 
+The bias–variance tradeoff represents the balance between model simplicity and complexity 
+in machine learning. 
+Understanding Bias 
+Bias occurs when a model is too simple to capture underlying data patterns, resulting in 
+underfitting. 
+Understanding Variance 
+Variance occurs when a model is overly complex and sensitive to training data noise, 
+resulting in overfitting. 
+Effect on Performance 
+High bias leads to poor performance on both training and test data, while high variance leads 
+to excellent training performance but poor test performance. 
+Generalization Ability 
+An optimal balance ensures the model performs well on unseen data. 
+Managing the Tradeoff 
+Regularization, cross-validation, ensemble methods, and increasing data size help manage 
+bias and variance. 
+Conclusion 
+Understanding the bias–variance tradeoff is essential for building robust and generalizable 
+models. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Batch Learning 
+Batch learning trains models using the entire dataset at once and requires retraining when 
+new data is available. 
+Online Learning 
+Online learning updates the model continuously as new data arrives, making it suitable for 
+streaming data environments. 

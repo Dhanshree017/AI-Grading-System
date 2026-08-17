@@ -1,0 +1,204 @@
+ID-T016 
+Name: ritesh bhatia Roll no: 21 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Definition 
+Data augmentation is the process of artificially increasing the size and diversity of a training 
+dataset by applying label-preserving transformations. Instead of collecting new data, we 
+generate modified versions of existing samples. 
+How it works (examples) 
+ Images: rotations, flips, crops, color jitter, cutout, mixup, Gaussian noise. 
+ Text: synonym replacement, back-translation, word dropout, paraphrasing. 
+ Audio: pitch shift, time stretch, background noise. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Underfitting 
+ Happens when a model is too simple to capture underlying patterns. 
+ It shows high bias and low variance. 
+ Training error and test error are both high. 
+Causes 
+ Model too simple 
+ Too much regularization 
+ Insufficient training time 
+ Very low feature representation 
+Overfitting 
+ Happens when a model memorizes noise or irrelevant details in the training data. 
+ It shows low bias and high variance. 
+ Training error is extremely low but test error increases. 
+Causes 
+ Too complex model 
+ Insufficient data 
+ Lack of regularization 
+ Training for too many epochs 
+Comparison Table (Intuitive) 
+ Underfitting → “Not learning enough.” 
+ Overfitting → “Learning too much (including noise).” 
+ Ideal → Balance between both, often achieved using regularization, augmentation, and 
+proper model selection. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Definition 
+A decision boundary is a hypersurface that separates data points of different classes. It 
+represents the boundary where the classifier changes its prediction from one class label to 
+another. 
+Intuition 
+Imagine a 2D plane where red and blue points are scattered. The decision boundary is the 
+line (or curve) that splits the plane into a “red region” and a “blue region.” 
+Example 
+ Logistic Regression: produces a straight line decision boundary. 
+ SVM with RBF kernel: produces curved, nonlinear boundaries. 
+ Decision Tree: produces a piecewise-constant, axis-aligned boundary. 
+Visual Mental Example 
+In a binary classification of “cats vs dogs” based on features (ear shape, height), the model 
+finds a boundary where every point on one side represents cats and the other dogs. 
+Key Insight 
+The complexity of the decision boundary depends on the model. Linear models → simple 
+boundaries; deep nets → highly flexible boundaries. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Definition 
+Dropout is a regularization technique where, during training, a random subset of neurons is 
+temporarily “dropped” (set to zero) in each forward pass. 
+How it works 
+ Each neuron is kept with probability ppp (e.g., 0.5). 
+ During testing, no neurons are dropped; instead, weights are scaled to match training 
+magnitude. 
+Why it works 
+1. Prevents co-adaptation 
+Neurons cannot rely on specific other neurons; they must learn robust distributed 
+features. 
+2. Acts like ensemble learning 
+Each dropout mask trains a different subnetwork. During inference, their combined 
+effect resembles averaging many models. 
+3. Reduces overfitting 
+Forces the model to be general rather than memorizing specific patterns. 
+4. Improves robustness 
+Dropout makes the network resilient to noise and partial feature absence. 
+Mathematical Intuition 
+Dropout injects multiplicative Bernoulli noise into activations → adds uncertainty → 
+increases generalization. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and 
+applications. 
+Purpose 
+EM is used to estimate parameters of statistical models that involve hidden/latent variables. 
+General Idea 
+Iteratively alternate between: 
+ E-step: estimate the hidden variables 
+ M-step: maximize parameters using those estimates 
+Repeat until convergence. 
+Steps of the EM Algorithm 
+1. Initialization 
+Choose initial parameter estimates (e.g., means, variances for Gaussian mixture 
+models). 
+2. E-step (Expectation) 
+Compute the expected value of hidden variables using current parameters. 
+Example: In GMM, compute the probability that a data point belongs to each 
+Gaussian. 
+3. M-step (Maximization) 
+Update parameters to maximize the expected log-likelihood. 
+Example: Update means, covariances, and mixing coefficients in GMM. 
+4. Convergence Check 
+Repeat E and M steps until the likelihood improvement becomes extremely small. 
+Advantages 
+ Handles latent variables naturally 
+ Guarantees non-decreasing likelihood 
+ Works for complex probabilistic models 
+Limitations 
+ Can converge to local maxima 
+ Sensitive to initialization 
+ May be slow for large datasets 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality Reduction 
+The process of transforming high-dimensional data to fewer dimensions while preserving 
+significant information. 
+Why it is needed 
+ Reduces computational cost 
+ Removes noise 
+ Helps visualization 
+ Reduces overfitting 
+PCA (Principal Component Analysis) 
+ Unsupervised 
+ Finds directions of maximum variance 
+ Components are orthogonal 
+ Goal: represent data with minimal reconstruction error 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+Definition 
+GANs are deep generative models consisting of two neural networks in competition: 
+1. Generator (G): creates fake samples 
+2. Discriminator (D): distinguishes real from fake samples 
+Working Mechanism (Adversarial Training) 
+1. Generator produces samples from random noise zzz. 
+2. Discriminator receives real data and generator’s data. 
+3. D tries to maximize classification accuracy. 
+4. G tries to fool D by making realistic data. 
+5. Both networks update in a minimax optimization loop. 
+Role of Each Component 
+Generator (G) 
+ Learns to map noise → data distribution 
+ Objective: maximize D’s error 
+ Produces realistic images, audio, text, etc. 
+Discriminator (D) 
+ Binary classifier 
+ Trained to distinguish real samples from fake samples 
+ Provides gradients to help G improve 
+Applications 
+ Image generation (StyleGAN) 
+ Data augmentation 
+ Super-resolution 
+ Video synthesis 
+ Anomaly detection 
+ Text-to-image (DALL-E diffusion variants) 
+Why MDPs are important 
+ Form the foundation for RL algorithms like Q-learning, SARSA, and Policy Gradient 
+methods 
+ Help model long-term sequential decision tasks 
+ Provide structure for optimal planning via value functions 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+Time Series Forecasting predicts future values based on previously observed data. 
+1. ARIMA (AutoRegressive Integrated Moving Average) 
+ Classical statistical model 
+ Combines autoregression (AR), differencing (I), and moving average (MA) 
+ Good for linear, stationary time series 
+ Limitations: cannot model complex nonlinear patterns 
+2. LSTMs (Long Short-Term Memory Networks) 
+ A type of recurrent neural network 
+ Capture long-range dependencies 
+ Handle nonlinear trends 
+ Excellent for sequences like weather, speech, stock prices 
+ Require large datasets and computational resources 
+3. Prophet (by Facebook) 
+ Additive model: trend + seasonality + holidays 
+ Robust to missing values 
+ Works well with business time series 
+ Easy to tune and interpret 
+ Not as flexible as LSTMs for complex temporal dynamics 
+Conclusion 
+ ARIMA → simple linear relationships 
+ Prophet → business/seasonal data 
+ LSTM → complex, nonlinear patterns 
+SECTION C — Attempt any 5 (10 marks each) 
+C-1. Define supervised learning with an example. 
+Supervised learning is a type of ML where the model is trained on labeled data. Each input 
+comes with a correct output. 
+Example: 
+Predicting house prices using features like number of rooms, location, and area. 
+C-3. Explain the term kernel function. 
+A kernel function computes similarity between two points in a higher-dimensional feature 
+space without explicitly mapping them there. 
+Used in SVMs to create nonlinear decision boundaries. 
+C-4. Define feature scaling. 
+Feature scaling is the process of normalizing or standardizing numerical features so they 
+remain within comparable ranges. 
+Prevents models from being dominated by high-magnitude features. 
+C-5. What is bagging? 
+Bagging (Bootstrap Aggregating) is an ensemble technique where multiple models are 
+trained on bootstrapped datasets and their predictions are averaged or voted. 
+Reduces variance and improves stability. 
+C-6. Explain gradient vanishing. 
+Gradient vanishing occurs when gradients become extremely small during backpropagation, 
+preventing weights from updating. 
+Common in deep networks with sigmoid/tanh activations. 
+LSTMs, ReLUs, and careful initialization help solve this issue. 

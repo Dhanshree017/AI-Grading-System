@@ -1,0 +1,220 @@
+ID-T008 
+Name : Ranjeet singh Roll no: 8 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All 
+1-a) Write about Inductive Bias 
+1. Inductive bias is like assumptions which algorithm uses to predict new data. If 
+there is no bias algorithm will not know which direction to go. 
+2. Bias helps algorithm prefer some hypotheses over others, otherwise model can 
+just give random answers. 
+3. Bias may help generalize data but sometimes if wrong it misleads predictions. 
+4. All algorithms have their own bias, like linear model bias is linear, decision tree 
+bias is hierarchical splits, neural network bias depends on architecture. 
+5. Bias also reduce search space for algorithm so training is faster, but sometimes 
+important options are missed. 
+6. Some people think bias is like a teacher hint, which sometimes guide model right 
+and sometimes wrong. 
+1-b) Define Hypothesis 
+1. Hypothesis is a function which maps input to output, it is like a guess or 
+prediction model. 
+2. Many hypotheses exist for same data, algorithm must select best one which 
+generalize on new data. 
+3. Hypotheses can be simple (line) or complex (neural network), simple may fail on 
+complex data. 
+4. Hypothesis has parameters, adjusted during training to reduce error. 
+5. Without hypothesis algorithm cannot predict anything because it is core of 
+learning. 
+6. Hypothesis used to check performance on data, wrong hypothesis may give 
+totally wrong prediction. 
+1-c) Write about Sampling Theories 
+1. Sampling is taking small part of data to train or test because full data too big. 
+2. Random sampling picks randomly, may miss some class, prediction can be 
+wrong. 
+3. Stratified sampling divides into groups, keeps proportion, works better but 
+complex. 
+4. Systematic sampling selects every nth item, may introduce bias. 
+5. Sampling reduces computation and time but bad sample can ruin learning. 
+6. Some people say sampling misrepresents real data, algorithm may fail on new 
+data. 
+1-d) Define Eager Learning 
+1. Eager learning builds model before query, prediction fast but training may take 
+time. 
+2. Generalizes training data, sometimes wrong generalization occurs. 
+3. Less memory needed because data not stored, but retrain needed if data changes. 
+4. Examples: Decision Tree, Naive Bayes. 
+5. Prediction fast, can overfit noisy data. 
+6. Sometimes confused with lazy learning but very different. 
+1-e) What is Lazy Learning 
+1. Lazy learning stores data, predicts at query time, so slow but flexible. 
+2. KNN is common lazy learner. 
+3. Choice of K is very important, wrong K gives wrong prediction. 
+4. Distance metric like Euclidean affects result. 
+5. Adapts to new data without retraining. 
+6. Noise affects prediction badly. 
+1-f) Define Term Genetic 
+1. Genetic algorithm simulates evolution, selection, crossover, mutation. 
+2. Keeps population of solutions, chooses best, sometimes random bad ones selected. 
+3. Fitness function evaluates solution, wrong fitness fails. 
+4. Escapes local optimum, may take long to converge. 
+5. Used in optimization like schedule, robotics, game AI. 
+6. Slow sometimes but effective. 
+1-g) Discuss Dynamic Programming 
+1. Breaks problem into smaller subproblems. 
+2. Stores subproblem solutions to avoid repeats. 
+3. Top-down memoization, bottom-up tabulation. 
+4. Guarantees optimal if optimal substructure exists. 
+5. Reduces time, needs extra memory. 
+6. Used in shortest path, sequence alignment, resource allocation. 
+1-h) Define Explanation-Based Learning 
+1. Learns from few examples using domain knowledge. 
+2. Explains why example correct, may misgeneralize if knowledge wrong. 
+3. Makes general rule from single example. 
+4. Requires less examples. 
+5. Focus on reasoning not memorization. 
+6. Used in robotics, expert systems but rarely perfect. 
+1-i) Write About Control Knowledge 
+1. Control knowledge tells algorithm which action to apply first. 
+2. Improves efficiency by pruning but may prune correct path sometimes. 
+3. Used in expert systems, AI planning. 
+4. Reduces useless calculation. 
+5. Chess AI example: good move first but sometimes bad move chosen. 
+6. Helps reasoning but not always reliable. 
+1-j) Define Precision, Recall, F1 Score 
+1. Precision = correct positive / predicted positive. 
+2. Recall = correct positive / actual positive. 
+3. F1 = harmonic mean of precision and recall. 
+4. High precision reduces false positives, may lower recall. 
+5. High recall finds most positives, may reduce precision. 
+6. Used in medical, fraud detection, search engines, results vary. 
+2] Attempt Any 6  
+2-a) Explain Decision Tree in Detail, Give Example 
+Definition/Paragraph: 
+Decision Tree is a supervised learning algorithm used for classification and regression. 
+It splits dataset into smaller groups based on features. The tree has root node, 
+internal/decision nodes, branches, and leaf nodes. The splitting is guided by information 
+gain or Gini index. Tree easy to interpret, can overfit if not pruned, and works for 
+categorical/numerical data. 
+Points: 
+1. Root Node: Topmost node representing dataset. 
+2. Internal/Decision Nodes: Nodes where splitting occurs. 
+3. Branches: Connect nodes, show outcome. 
+4. Leaf Nodes: Terminal nodes giving prediction. 
+5. Parent/Child Nodes: Parent splits into children; children may become parents. 
+6. Splitting Criteria: Information gain, Gini index. 
+7. Pruning: Removes low importance branches. 
+8. Advantages/Disadvantages: Easy to interpret, may overfit. 
+Example: Classify fruits (apple, mango, orange) by color, size, texture. Root color, 
+branch size, leaf = fruit label. 
+2-b) Describe Briefly About K-Nearest Neighbors 
+Definition/Paragraph: 
+KNN is lazy learning algorithm predicting label based on nearest K neighbors. Stores 
+all training data, calculates similarity at query. Simple, slow on large data, sensitive 
+to noise. 
+Points: 
+1. Stores all training data, predicts at query. 
+2. Distance metric: Euclidean, Manhattan. 
+3. K choice affects performance. 
+4. Voting: majority vote for class. 
+5. Lazy learner, no explicit model. 
+6. Advantages: simple, adapts to new data. 
+7. Disadvantages: slow, sensitive to irrelevant features. 
+8. Applications: classification, regression, recommendation. 
+Example: Recommend movies based on taste of nearest users. 
+2-c) Discuss Representation of Neural Network 
+Definition/Paragraph: 
+Neural Networks are inspired by biological neurons. Layers of neurons process inputs, 
+weights adjusted during training. Activation functions control output. Can model 
+complex patterns, multiple hidden layers = deep learning. 
+Points: 
+1. Input layer: features of dataset. 
+2. Hidden layers: process data, extract features. 
+3. Output layer: predictions. 
+4. Weights/bias: parameters learned. 
+5. Activation functions: sigmoid, ReLU. 
+6. Forward propagation: input → output. 
+7. Backpropagation: error → weight adjustment. 
+8. Deep networks: multiple hidden layers. 
+Example: Predict house price using size, location, rooms. 
+2-d) Differentiate Classification & Regression 
+Classification 
+Predict classes 
+Discrete output 
+Regression 
+Predict numeric value 
+Continuous output 
+Algorithms: DT, SVM, NB Algorithms: LR, SVR 
+Metrics: accuracy, precision Metrics: MSE, RMSE 
+Target qualitative 
+Can fail if imbalance 
+Target quantitative 
+Can fail if outliers 
+Example: Spam detection Example: Stock prediction 
+2-f) Compare AI, ML, Deep Learning 
+Definition/Paragraph: 
+AI is the broad field of machine intelligence. ML is subset of AI, learns patterns from 
+data. DL is subset of ML using deep neural networks, auto feature extraction, complex 
+modeling. 
+Points: 
+1. AI: rules, logic, planning. 
+2. ML: data-driven learning. 
+3. DL: deep neural networks. 
+4. DL reduces manual feature engineering. 
+5. AI can use rules; ML mostly statistical. 
+6. DL needs lots of data. 
+7. Applications: AI chatbot, ML spam, DL image recognition. 
+8. Advantages/disadvantages vary per approach. 
+Example: Image classifier using CNN to classify animals. 
+2-g) Differentiate CNN & RNN 
+CNN 
+Works on images 
+Convolution filters 
+Feedforward 
+Pooling reduces size 
+Spatial data 
+Applications: image 
+RNN 
+Works on sequences 
+Hidden states remember previous 
+Recurrent with loops 
+Memory keeps sequence 
+Temporal data 
+Applications: text, speech 
+Cannot handle sequences Can handle variable length 
+3] Attempt All (Structured, 7–8/5/10 points) 
+3-a) Define Search Algorithms in AI (7 marks, 10 points) 
+1. Search algorithms explore state space to reach goal. 
+2. Used in problem-solving, planning. 
+3. Breadth-first search: explore all nodes level-wise. 
+4. Depth-first search: go deep in one branch. 
+5. Heuristic search uses estimated cost to goal. 
+6. A* search combines path cost + heuristic. 
+7. Can be blind/uninformed or informed. 
+8. Avoids unnecessary exploration if possible. 
+9. Efficient search reduces time and memory. 
+10. 
+Examples: maze solving, robot path planning. 
+3-b) What is Intelligent Agent (8 marks, 10 points) 
+1. Agent perceives environment through sensors. 
+2. Acts through actuators. 
+3. Can be simple reflex, model-based, goal-based, utility-based. 
+4. Receives input, decides action. 
+5. Rational agent chooses action to maximize goal. 
+6. Adaptive: learns from environment changes. 
+7. Can be autonomous or semi-autonomous. 
+8. Applications: self-driving car, chess AI. 
+9. Can use knowledge base, reasoning. 
+10. 
+Limitations: imperfect sensors, unexpected changes. 
+3-c) Write 5 Applications of AI (5 marks, 10 points) 
+1. Self-driving cars: perceive environment, navigate traffic. 
+2. Robotics: industrial robots for manufacturing. 
+3. Virtual assistants: Alexa, Siri, voice commands. 
+4. Medical diagnosis: analyze images for disease detection. 
+5. Fraud detection: banking transactions analysis. 
+6. Gaming: AI opponents, strategy games. 
+7. Natural Language Processing: translation, chatbots. 
+8. Predictive maintenance: industrial equipment. 
+9. Recommendation systems: Netflix, Amazon. 
+10. 
+Smart homes: automate lighting, temperature, security. 

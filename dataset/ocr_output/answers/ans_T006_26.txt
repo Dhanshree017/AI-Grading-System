@@ -1,0 +1,165 @@
+ID-T006 
+Name: laxman rao Roll no: 26 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A) Answer all 
+A-1. How Reinforcement learning is different from Supervised learning? 
+So, reinforcement learning is like when agent or robot do something in environment 
+and it get reward or punishment and then try to learn something. And supervised 
+learning is like teacher tell model what is correct answer and model just learn from 
+dataset. Both are machine learning but different. Actually RL is used in games, 
+robots, cars and sometimes supervised also used in games but normally used in 
+prediction stuff. And RL also try to maximize reward and supervised try to match 
+output, I think. 
+1. RL learn by reward, supervised by dataset. 
+2. Supervised learning have correct answers, RL doesn’t. 
+3. RL like trial and error, supervised like reading book and memorize. 
+4. RL used in games mostly, supervised in predicting marks, spam etc. 
+5. Both try to improve model but differently, I think. 
+Sometimes RL and supervised are combined but mostly different. And RL take more 
+time because it explore many actions and sometimes fail. Supervised learn fast. RL is 
+interesting because it try different actions and see what happen. 
+A-2. Define the term overfitting and one solution for it 
+Overfitting is something when model learn too much and memorize data and then 
+when new data comes it cannot predict properly. Overfitting is bad, it happen in 
+deep learning mostly and sometimes in normal regression too. Because model 
+memorize all small noise and error also. So it is not good. I think solution is 
+regularization or dropout, but also maybe add more data. Early stopping also 
+possible. 
+1. Overfitting is memorizing training data. 
+2. Happens in deep learning and sometimes in small datasets. 
+3. Bad for model performance. 
+4. Use regularization, dropout, or early stopping. 
+5. Increase dataset can reduce overfitting. 
+Actually sometimes model still overfit even after solution, so it is tricky. Overfitting is 
+confusing but important. 
+A-3. What is the role of Linear Discriminant Analysis in ML? 
+LDA is method in ML, I think it reduce number of features and try to separate 
+classes. It find direction or something to separate better. LDA is used before classifier 
+like SVM maybe or logistic regression. Also in face recognition or text. LDA also 
+remove noise I think. 
+1. Reduce features. 
+2. Separate classes. 
+3. Used with classifier. 
+4. Remove noise. 
+5. Used in face recognition, text. 
+But sometimes LDA not work well if too much data or big dataset. LDA is little 
+complicated but useful I guess. 
+A-4. Compare mixture and latent factor models 
+Mixture model is group data and latent factor is find hidden factors. Both find 
+hidden pattern but different method. Mixture is cluster mostly, latent factor used in 
+recommendation maybe. EM algorithm used in mixture, latent factor use matrix 
+factorization. Both important for ML. 
+1. Mixture group data. 
+2. Latent factor find hidden variables. 
+3. Mixture use EM, latent factor matrix factorization. 
+4. Mixture mostly clustering, latent for recommendation. 
+5. Both find hidden structure. 
+Sometimes mixture and latent factor confused because both find patterns but 
+method different. 
+A-5. Write importance of K-means clustering 
+K-means clustering is method to divide data in K clusters. It is simple and fast, 
+maybe used in image processing, marketing, etc. It divide data but not always 
+perfect. K-means help understand dataset, find pattern. 
+1. Divide data in K clusters. 
+2. Simple and fast. 
+3. Find patterns in data. 
+4. Use in marketing, images, etc. 
+5. Helps understand dataset. 
+Sometimes K-means give bad clusters, sometimes good, depends on data. 
+A-6. Write about R Square and its significance 
+R Square is number show how good regression fit data. Between 0 and 1 maybe, 
+higher better. Low value bad. Adjusted R Square used for multiple features. 
+1. Shows fit of regression. 
+2. 0 to 1 value. 
+3. High better, low bad. 
+4. Adjusted R Square for many features. 
+5. Helps see model accuracy. 
+Some people use R Square always, some use adjusted. Sometimes confusing. 
+A-7. Give significance of hyperparameter optimization 
+Hyperparameters is settings like learning rate, depth, number of trees. Optimize 
+them improve model maybe. Grid search, random search used. Bayesian optimization 
+also possible. 
+1. Hyperparameters settings. 
+2. Improve accuracy. 
+3. Reduce overfit. 
+4. Save time. 
+5. Grid/random/Bayesian search. 
+Sometimes model still bad even after optimization. 
+A-8. How machine learning deals with sparse data 
+Sparse data has many zeros. Machine learning use techniques to handle sparse, like 
+sparse matrix, Naive Bayes, embeddings. Dimensionality reduction also help. 
+1. Sparse matrix save memory. 
+2. Naive Bayes handle sparse. 
+3. Embeddings convert to dense. 
+4. Dimensionality reduction reduce sparsity. 
+5. Fill missing values. 
+Sometimes still problem with sparse data, depends. 
+A-9. What is advantage of active learning 
+Active learning model choose important data, ask for labels. Reduce cost, learn 
+faster. Use in medical, NLP, images. 
+1. Select important samples. 
+2. Reduce cost. 
+3. Learn faster. 
+4. Useful in medical, NLP. 
+5. Improve accuracy. 
+Sometimes model choose wrong sample, then problem happen. 
+A-10. What is training, testing and validation 
+Training is teach model, validation tune model, testing check new data. All 
+important but sometimes confusing. 
+1. Training learn. 
+2. Validation tune. 
+3. Testing check unseen. 
+4. Ensure model generalize. 
+5. Important for ML. 
+B) Attempt any 4 
+B-1. Give seven applications of Machine Learning 
+Machine learning everywhere, like phones, hospitals, banks, internet, cars. It help 
+computer learn from data. So many applications, almost everything now. 
+1. Image recognition, face detection, cameras. 
+2. Speech recognition like Google, Alexa. 
+3. Healthcare, predict disease, check reports. 
+4. Finance, fraud detection, stock prediction, loans. 
+5. E-commerce recommend products, Amazon shows suggestion. 
+6. Self-driving cars avoid accident, detect objects. 
+7. Weather forecasting, rain, storm prediction. 
+8. Chatbots answer customer questions. 
+Some people say more applications like gaming, security, text prediction also. 
+B-2. Explain supervised, unsupervised and semi-supervised with examples 
+Supervised learning is labeled data, unsupervised no label, semi-supervised few labels. 
+Used in many ML problem. 
+1. Supervised predict marks, spam email, regression. 
+2. Unsupervised cluster customers, K-means. 
+3. Semi-supervised face recognition, few labeled. 
+4. Supervised easier, unsupervised harder. 
+5. Semi-supervised reduce labeling cost. 
+6. Used in classification, clustering, recommendation. 
+7. Choosing depends on data. 
+8. Sometimes all three combined. 
+B-4. What are types of SVM 
+SVM linear, non-linear, polynomial, RBF, sigmoid, multi-class, SVR. Depends on 
+data and kernel. 
+1. Linear SVM separate simple line. 
+2. Non-linear SVM for complex. 
+3. Polynomial kernel curve boundary. 
+4. RBF kernel non-linear data. 
+5. Sigmoid kernel like neural network. 
+6. Multi-class for more than 2. 
+7. SVR regression. 
+8. Choose kernel carefully. 
+B-5. Explain Decision Tree in detail 
+Decision tree is like tree, node questions, leaf answers. Split data and give result. 
+Used in classification and regression. 
+Root node start, internal nodes decisions, branches outcomes, leaf node final result. 
+Algorithm split data recursively using info gain or gini. Stop when max depth or few 
+samples. 
+Decision tree used in finance, healthcare, marketing. Can predict loan approval, 
+disease, customer segment. 
+1. Easy to understand. 
+2. Handle numeric/categorical. 
+3. Little preprocessing. 
+4. Recursive split. 
+5. Root, internal, branch, leaf. 
+6. Applications many areas. 
+7. Base for Random Forest, Boosting. 
+8. Sometimes overfit. 

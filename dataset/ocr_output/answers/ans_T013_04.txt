@@ -1,0 +1,119 @@
+ID-T013 
+Name : Aashima Sinha Roll no: 4 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 10 (3 Marks Each) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine Learning (ML) is a branch of Artificial Intelligence that enables 
+systems to automatically learn patterns from data and improve performance 
+through experience without being explicitly programmed. It focuses on 
+algorithms that can generalize from examples and make predictions or 
+decisions. 
+The three major categories of ML are: 
+1. Supervised Learning – Uses labeled data where both inputs and outputs 
+are known. The model learns a mapping between them. Example: 
+Predicting house prices. 
+2. Unsupervised Learning – Works on unlabeled data and discovers hidden 
+structures or groupings. Example: Customer segmentation with K
+Means. 
+3. Reinforcement Learning – Involves learning through feedback of rewards 
+or penalties by interacting with an environment. Example: Game-playing 
+AI like AlphaGo. 
+Each category plays a distinct role in making machines smarter and more 
+adaptive. 
+A-2. What is the difference between training error and test error? 
+When we build a machine-learning model, we divide data into training and 
+testing sets. 
+ Training Error refers to the average error the model makes on the same 
+data it was trained on. It indicates how well the model has learned the 
+training examples. 
+ Test Error measures the performance of the model on unseen data that 
+it has never encountered before. 
+A small training error but large test error suggests overfitting—the model has 
+memorized patterns. A balanced small gap means good generalization. 
+Monitoring both errors ensures the model learns effectively while remaining 
+flexible for future data. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting happens when a model learns noise, random variations, or specific 
+details of the training data instead of the underlying trend. As a result, it 
+performs extremely well on training data but poorly on unseen data. 
+One effective method to reduce overfitting is Regularization, where a penalty 
+term is added to the loss function to discourage overly complex models. 
+Techniques include L1 (Lasso) and L2 (Ridge) regularization. 
+Other remedies include collecting more data, simplifying the model, or using 
+techniques like dropout in neural networks. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+A confusion matrix is a tabular representation that shows how well a 
+classification model performs. It compares the actual labels with predicted 
+labels to illustrate the distribution of correct and incorrect predictions. 
+It contains four important terms: 
+ True Positive (TP) – Correctly predicted positive class. 
+ True Negative (TN) – Correctly predicted negative class. 
+ False Positive (FP) – Incorrectly predicted as positive. 
+ False Negative (FN) – Incorrectly predicted as negative. 
+From this, we can compute metrics such as accuracy, precision, recall, and F1
+score, which give a deeper understanding of a model’s strengths and 
+weaknesses beyond simple accuracy. 
+A-5. Explain the term feature selection and why it is important. 
+Feature Selection is the process of identifying and retaining only those input 
+variables (features) that have the most significant impact on the output 
+variable. It removes redundant, noisy, or irrelevant features. 
+Importance of feature selection: 
+1. Improves Accuracy – The model focuses on meaningful patterns. 
+2. Reduces Overfitting – Less chance of fitting to noise. 
+3. Speeds Up Training – Fewer variables mean faster computations. 
+4. Enhances Interpretability – Easier to understand results. 
+5. Lowers Data Requirement – Simpler models need less training data. 
+Common methods include filter approaches (correlation), wrapper methods 
+(RFE), and embedded methods (LASSO). 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding converts categorical variables into a binary format 
+understood by algorithms. Each category is represented as a vector of 0s and 
+1s with only one 1 for the actual category. 
+Example: Color = {Red, Blue, Green} → Red [1,0,0], Blue [0,1,0], Green 
+[0,0,1]. 
+Used widely in: 
+ Machine learning algorithms like logistic regression or SVM. 
+ Deep learning embeddings before feeding categorical data. 
+It avoids ordinal misinterpretation and keeps categorical relationships clear. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+The learning rate is a hyperparameter that controls how much model weights 
+are adjusted at each iteration during training. 
+ If too high, the model overshoots the minimum of the loss function and 
+oscillates or diverges. 
+ If too low, convergence becomes extremely slow and might get stuck in 
+a local minimum. 
+Finding the right learning rate through experimentation ensures stable and 
+efficient learning. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+A loss function (or cost function) measures how far the model’s predictions 
+are from the true target values. It quantifies “error,” guiding optimization 
+to improve accuracy. 
+Two commonly used loss functions: 
+1. Mean Squared Error (MSE) – Used in regression; it penalizes large 
+deviations heavily. 
+2. Cross-Entropy Loss – Used in classification; it measures the difference 
+between predicted and actual class probabilities. 
+Minimizing the loss through algorithms like gradient descent drives model 
+learning. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation divides the dataset into k subsets (folds). The model is 
+trained on k – 1 folds and tested on the remaining fold, repeated k times. 
+The final performance is the average of all k iterations. 
+Advantages: 
+ Uses all data for both training and validation. 
+ Reduces risk of bias due to one lucky split. 
+ Provides a more reliable estimate of real-world performance. 
+It’s an essential step before final deployment of any ML model. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised Learning deals with datasets that contain no labels or target 
+outputs. The algorithm discovers underlying patterns, clusters, or structures 
+automatically. 
+Examples include: 
+1. K-Means Clustering – Groups data points into clusters based on 
+distance. 
+2. Hierarchical Clustering – Builds a hierarchy or tree of clusters. 
+Unsupervised learning is powerful in exploratory data analysis, market 
+segmentation, and anomaly detection. 

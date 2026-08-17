@@ -1,0 +1,91 @@
+ID-T013 
+Name : Radhika Shelke Roll no: 3 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 10 (3 Marks Each) 
+A-2. What is the difference between training error and test error? 
+training error means mistake done by model on the same data which is used 
+to train it. test error means mistake when we test on new unseen data. 
+small training error not mean good model because maybe it memorize. low 
+test error mean model generalize. if gap between them big then model 
+overfit. 
+A-3. Define Overfitting and explain one method to reduce it. 
+overfitting happen when model learn too much from training data even noise 
+or random things. it then fail to work on new data. it like student 
+memorize answer instead of concept. one method to stop it is dropout in 
+neural network where some node are turned off randomly during training so 
+network don’t depend on few node only. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+confusion matrix show table of result of classification. it show what is 
+predicted correct and what wrong. it has true positive, true negative, false 
+positive and false negative. from it we can get accuracy, precision, recall, f1 
+score. it tell in which class model confuse more. 
+A-5. Explain the term feature selection and why it is important. 
+feature selection is picking only main features that matter for prediction and 
+leaving extra useless ones. it important because more features make model 
+slow, complex and maybe wrong. it also remove noise, improve accuracy and 
+less overfit. it also make model easy to understand. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+activation function is thing in neural network that decide if neuron should 
+fire or not. it make network learn non linear things. without it network 
+behave just like linear. 
+two example are: 
+ relu: output same input if positive else zero. fast and mostly used. 
+ tanh: give value between -1 and 1 so help keep data centered. 
+A-7. Differentiate between batch learning and online learning. 
+batch learning train model once on all data together. good when we have full 
+dataset and strong hardware. online learning train model step by step as 
+data come one by one. it good for streaming data or changing data like 
+website click. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+learning rate control how much weight change in one step of training. if too 
+high model jump around and never reach correct point. if too low it move 
+very slowly and stuck early. right learning rate give faster and smooth 
+learning. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+unsupervised learning means training with data having no output label. model 
+find hidden relation and pattern on its own. 
+example: 
+ k means clustering for grouping data. 
+ pca for reducing many feature into small number. 
+SECTION B – Attempt Any 4 (5 Marks Each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+feature engineering is process of creating, cleaning and changing raw data into 
+better features that help model learn faster and better. it is like preparing 
+ingredients before cooking. it make huge effect on accuracy because algorithm 
+depend on feature quality. 
+role: it help model understand complex data and uncover hidden relation. 
+techniques: 
+ encoding: change text or category into number form. label or one hot 
+used. 
+ scaling: make feature values into same range so big number don’t 
+dominate. normalization and standardization common. 
+ polynomial feature: make new column like x² or xy to learn curved 
+relation. 
+good feature engineering improve prediction, reduce training time, and 
+handle missing or noisy data. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+generative models learn how data created so they study both input and 
+output. they can generate new data sample too. example: naive bayes, gan, 
+hmm. 
+discriminative models only focus on line or rule that separate classes. they 
+learn difference between class not full distribution. example: logistic 
+regression, svm. 
+generative understand more of data structure but sometimes complex. 
+discriminative usually give better accuracy in classification. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+k means is clustering method which divide data into k group based on 
+closeness. 
+steps: 
+1. choose number of cluster k. 
+2. randomly pick k centroid. 
+3. assign each point to nearest centroid. 
+4. recompute new centroid as average of group. 
+5. repeat till centroid stop moving. 
+advantage: easy to code, fast, work well when cluster round in shape, 
+handle big data. 
+limitation: need to know k before, sensitive to starting point and 
+outliers. 

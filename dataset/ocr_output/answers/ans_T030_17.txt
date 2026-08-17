@@ -1,0 +1,163 @@
+ID-T030 
+Name: Ankit Kumar Roll no: 232517 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-1. Explain the concept of hypothesis space in machine learning. 
+ Definition: The Hypothesis Space ($H$) is the complete set of candidate functions that a learning 
+algorithm can evaluate to approximate the target function. 
+ Structural Constraint: It is predefined by the choice of model; for instance, a Support Vector 
+Machine search space is restricted to hyperplanes. 
+ Search Complexity: Learning is essentially a search problem within $H$ to find a hypothesis ($h$) 
+that minimizes the objective function. 
+ Approximation Power: If the true target function lies outside $H$, the model will suffer from 
+"approximation error" or high bias. 
+ Size vs. Generalization: A smaller $H$ simplifies the search but may underfit; a vast $H$ increases 
+the risk of "spurious correlations." 
+ Inductive Bias Link: The shape and size of the hypothesis space are the direct result of the 
+algorithm's inductive bias. 
+ Symmetry Breaking: Initializing weights in a neural network is the starting point for navigating this 
+multi-dimensional space. 
+ VC Dimension: Toppers often link $H$ to the Vapnik-Chervonenkis dimension, which measures the 
+complexity and capacity of the space. 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+ Definition: The Hypothesis Space ($H$) is the complete set of candidate functions that a learning 
+algorithm can evaluate to approximate the target function. 
+ Structural Constraint: It is predefined by the choice of model; for instance, a Support Vector 
+Machine search space is restricted to hyperplanes. 
+ Search Complexity: Learning is essentially a search problem within $H$ to find a hypothesis ($h$) 
+that minimizes the objective function. 
+ Approximation Power: If the true target function lies outside $H$, the model will suffer from 
+"approximation error" or high bias. 
+ Size vs. Generalization: A smaller $H$ simplifies the search but may underfit; a vast $H$ increases 
+the risk of "spurious correlations." 
+ Inductive Bias Link: The shape and size of the hypothesis space are the direct result of the 
+algorithm's inductive bias. 
+ Symmetry Breaking: Initializing weights in a neural network is the starting point for navigating this 
+multi-dimensional space. 
+VC Dimension: Toppers often link $H$ to the Vapnik-Chervonenkis dimension, which measures the 
+complexity and capacity of the space.. 
+A-3. Explain how assumptions affect learning algorithms. 
+ The Concept of Prior Knowledge: Assumptions (Inductive Bias) are the "prior beliefs" we inject 
+into an algorithm to make learning possible. 
+ The No Free Lunch Theorem: This theorem proves that no single algorithm is superior across all 
+possible data distributions, making assumptions necessary. 
+ Efficiency: Strong assumptions (like those in Naive Bayes) reduce the amount of data needed for the 
+model to converge. 
+ Model Selection Criteria: We choose algorithms whose internal assumptions (e.g., smoothness or 
+sparsity) align with the physical reality of the problem. 
+ Bias-Variance Trade-off: Stronger assumptions increase bias but decrease variance, providing more 
+stable predictions on small datasets. 
+ Boundary Definition: Assumptions define the shape of the decision boundary, such as the linear 
+boundaries of Logistic Regression. 
+ Robustness: Assumptions can make a model more robust to outliers if it assumes a specific 
+statistical distribution (like a Gaussian distribution). 
+ Interpretability: Algorithms with clear assumptions are usually easier for humans to audit and 
+explain (XAI). 
+A-4. What is the role of validation in model development? 
+ Definition: The Hypothesis Space ($H$) is the complete set of candidate functions that a learning 
+algorithm can evaluate to approximate the target function. 
+ Structural Constraint: It is predefined by the choice of model; for instance, a Support Vector 
+Machine search space is restricted to hyperplanes. 
+ Search Complexity: Learning is essentially a search problem within $H$ to find a hypothesis ($h$) 
+that minimizes the objective function. 
+ Approximation Power: If the true target function lies outside $H$, the model will suffer from 
+"approximation error" or high bias. 
+ Size vs. Generalization: A smaller $H$ simplifies the search but may underfit; a vast $H$ increases 
+the risk of "spurious correlations." 
+ Inductive Bias Link: The shape and size of the hypothesis space are the direct result of the 
+algorithm's inductive bias. 
+ Symmetry Breaking: Initializing weights in a neural network is the starting point for navigating this 
+multi-dimensional space. 
+VC Dimension: Toppers often link $H$ to the Vapnik-Chervonenkis dimension, which measures the 
+complexity and capacity of the space.. 
+A-5. Describe the concept of inductive learning in machine learning. 
+ Generalization from Instances: It is the process of moving from specific observations to a general 
+rule that governs the entire population. 
+ The Inductive Learning Hypothesis: This assumes that if a model fits training data well, it will 
+likely fit the unknown future data. 
+ Pattern Extraction: It focuses on identifying "invariant patterns" that remain true across different 
+subsets of data. 
+ Bottom-Up Synthesis: It starts with raw features and builds a symbolic or mathematical 
+representation of the logic. 
+ Predictive Nature: Unlike deductive logic (which is 100% certain), inductive learning provides 
+probabilistic predictions. 
+ Function Approximation: At its core, it is the task of approximating a mapping function ($f$) from 
+input ($x$) to output ($y$). 
+ Heuristic Search: Since finding the perfect rule is often impossible, inductive learning uses 
+heuristics to find the "best-fit" rule. 
+ Feedback Loops: The success of the induction is verified through loss functions and error gradients. 
+A-6. Explain the impact of noisy data on machine learning models. 
+ Degraded Signal-to-Noise Ratio: Noise masks the true patterns, making it difficult for the 
+algorithm to "see" the underlying logic. 
+ Boundary Jaggedness: In non-parametric models, noise creates complex, "wiggly" decision 
+boundaries that fail on new data. 
+ Overfitting Stimulus: High-capacity models (like Deep Learning) can inadvertently memorize noise 
+as if it were a valid feature. 
+ Increased Computational Cost: Models take longer to converge when the gradient descent path is 
+"bumpy" due to noise. 
+ Label Noise Sensitivity: Incorrect labels are more damaging than feature noise, as they directly 
+misguide the optimization objective. 
+ Loss of Feature Importance: Noise can make important features appear irrelevant or vice versa. 
+ Necessity for Regularization: The presence of noise is why we use techniques like "Smoothing" or 
+"Pruning" to simplify models. 
+ Model Drift Acceleration: Noisy data in production can cause models to "decay" much faster than 
+expected. 
+A-7. What is the difference between model fitting and model selection? 
+ Optimization vs. Strategy: Fitting is the act of optimizing parameters ($w, b$); selection is 
+choosing the algorithm itself. 
+ Parameter vs. Hyperparameter: Fitting adjusts weights; selection focuses on hyperparameters and 
+architecture. 
+ Scope of Search: Fitting searches within one hypothesis space ($H$); selection compares multiple 
+different spaces. 
+ Criterion of Success: Fitting minimizes the "Loss Function"; selection maximizes the "Evaluation 
+Metric" (like F1-score). 
+ Data Usage: Fitting occurs on the "Training Set"; selection primarily occurs on the "Validation Set." 
+ Computational Layer: Fitting is the "inner loop" of the ML process; selection is the "outer loop." 
+ Objective: The goal of fitting is to learn; the goal of selection is to ensure the model can generalize. 
+ Result: Fitting produces a "trained model"; selection produces a "winning configuration." 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+ Error Decorrelation: Diversity ensures that the constituent models make different, unrelated errors. 
+ Collective Intelligence: It leverages the "Wisdom of the Crowd" where the average of diverse 
+opinions is closer to the truth than a single expert. 
+ Variance Reduction: In Bagging, diverse models (trained on different samples) help stabilize the 
+variance of the final prediction. 
+ Bias Reduction: In Boosting, diverse models focus on different "hard" parts of the data to reduce 
+overall bias. 
+ Canceling Mistakes: When models are diverse, the "wrong" predictions of one model are 
+outweighed by the "right" predictions of others. 
+ Achieving Methods: Diversity is created using different algorithms, data subsets, feature subsets, or 
+different initializations. 
+ Risk Mitigation: It reduces the risk of the entire system failing because of a single specific data 
+quirk. 
+ Superior Boundaries: Diverse ensembles can create complex decision boundaries that a single 
+model could never represent. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement. 
+ Business Understanding: Identifying the ROI and the specific metric to be optimized. 
+ Data Engineering: Building the pipelines for data ingestion, cleaning, and transformation. 
+ Model Prototyping: Experimenting with various algorithms and feature representations. 
+ Validation & Testing: Rigorous benchmarking against baselines and "A/B testing" in sandboxed 
+environments. 
+ Deployment (Production): Moving the model into a scalable environment (e.g., using APIs or edge 
+devices). 
+ Continuous Monitoring: Tracking "Model Health" and "Concept Drift" in real-time. 
+ Governance & Auditing: Ensuring the model remains ethical, fair, and legally compliant over time. 
+ Retirement/Sunsetting: Safely removing the model when its performance drops or a better 
+architecture is developed. 
+A-10. Explain the importance of documentation in ML projects. 
+ Knowledge Transfer: Prevents "brain drain" by ensuring the logic isn't lost if the original engineer 
+leaves. 
+ Reproducibility: Documentation of random seeds, environment versions, and data splits allows for 
+identical results. 
+ Data Lineage: Essential for tracking the "ancestry" of the data and identifying where biases might 
+have entered. 
+ Regulatory Audits: In sectors like Banking and Insurance, documentation is required by law to 
+explain automated decisions. 
+ Hyperparameter Transparency: Records why specific values were chosen, saving time during 
+future retraining. 
+ Model Cards: Provides a "nutrition label" for AI, showing the model’s strengths, weaknesses, and 
+intended use cases. 
+ Collaboration Efficiency: Allows cross-functional teams (Product, Engineering, Ethics) to align on 
+the model’s behavior. 
+ Disaster Recovery: Facilitates faster rebuilding of the system if a catastrophic infrastructure failure 
+occurs. 

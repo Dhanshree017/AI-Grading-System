@@ -1,0 +1,163 @@
+ID-T025 
+Name: sanskuti surve Roll no: 24 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting 
+with practical illustrations. 
+This is all about finding the right balance for your model's mistakes. The total error is made 
+up mostly of Bias and Variance. 
+ Bias: This is the error from using a model that's too simple. It makes too many 
+assumptions and can't capture the real pattern in the data. High Bias means 
+Underfitting. 
+ Variance: This is the error from using a model that's too complicated. It learns the 
+noise and tiny details of the training data instead of the main trend. High Variance 
+means Overfitting. 
+ Tradeoff: If you try to reduce bias (make the model more complicated), variance 
+usually goes up. If you reduce variance (make the model simpler), bias usually goes 
+up. You need to find a spot in the middle. 
+Underfitting (High Bias): 
+ What it is: The model is too simple, like trying to use a straight line to fit a curvy 
+graph. It performs badly on both the training data and the test data. 
+ Illustration: Using a basic line to predict house prices when the relationship is clearly 
+not a line. It just fails to capture the complexity. 
+Overfitting (High Variance): 
+ What it is: The model is too complex and follows every single data point exactly, 
+including the errors. It does great on the training data but terrible on new, unseen data. 
+ Illustration: Using a really wiggly, complex line that touches every training data 
+point. On a new house price point, it predicts a crazy value because it learned the noise 
+instead of the pattern. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+You have to check how good your model is before you use it in the real world. That's model 
+evaluation. 
+ Importance: It makes sure the model actually works on new data (not just the training 
+data) and tells you which model is the best one to use among all the ones you built. 
+Why Accuracy Alone is Not Sufficient: 
+ Accuracy is just how many things the model got right overall. 
+ It fails when your data is imbalanced. Imagine a disease that only 1 person in 100 has. 
+If your model just guesses "No Disease" every time, it will be 99% accurate, but it's 
+totally useless because it missed the only sick person! That's why we need other 
+metrics. 
+Other Evaluation Measures: 
+We use the Confusion Matrix to get these. 
+1. Recall (Sensitivity): This is about catching all the good stuff. How many of the 
+people who actually had the disease did the model find? This is important when you 
+really don't want to miss a positive case (like a medical diagnosis). 
+2. Precision: This is about being right when you say it's positive. If the model says a 
+person has the disease, how sure are you that they actually do? This is important when 
+you don't want to raise false alarms (like falsely flagging a good email as spam). 
+3. F1-Score: This is a way to balance both Recall and Precision into one single number. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+These are about cleaning up the data columns (features) to make the model training easier 
+and faster. 
+ Feature Selection (FS): This is when you look at all your data columns and pick out 
+only the best and most useful ones. You get rid of the useless or repeated columns. 
+ Dimensionality Reduction (DR): This is when you squish a lot of columns into 
+fewer columns. For example, turning 100 input features into 10 new, powerful 
+features. Principal Component Analysis (PCA) is the main way to do this. 
+How They Help Build Efficient ML Models: 
+1. Speed (Efficiency): Having fewer columns means the computer has less work to do. 
+Training the model is much faster. 
+2. Better Performance: Getting rid of useless features (FS) or noise (DR) stops the 
+model from getting distracted, so it can focus on the real pattern. This helps prevent 
+overfitting. 
+3. The Curse of Dimensionality: When you have too many features, the data gets 
+spread out and thin, which confuses some algorithms. These methods help bring the 
+data closer together so the model can learn. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+This is how you get the model out of the lab and into the real world so it can actually make 
+predictions. 
+ Deployment: You basically turn the trained model into a website link (an API) that 
+other apps can call. For example, the website sends the model customer data, and the 
+model sends back a prediction (like "Return Risk: High"). 
+ Maintenance: Once it's live, you can't just leave it. You have to keep checking on it. 
+Issues: 
+1. Monitoring: You have to constantly watch the model to make sure it's still making 
+good predictions and isn't crashing the server. 
+2. Performance Degradation (Model Drift): This is the biggest problem. Over time, 
+the model's accuracy will drop because the real world changes. New customer 
+behaviors, new types of fraud, or new market trends mean the model's old rules are no 
+longer correct. This is called model drift. 
+3. Retraining: To fix model drift, you have to periodically take the model offline and 
+train it again using the newest data you've collected. This keeps the model relevant 
+and accurate. 
+B ] Attempt any 5 (each 8 marks) 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, 
+and challenges involved. 
+ML is used here to flag bad transactions immediately. 
+ Data Sources: Transaction amount, location, time, and how often this customer 
+usually spends money. 
+ Model Behavior: A classification model (usually very fast) runs instantly when a card 
+is swiped. It compares the current transaction to the customer's normal pattern. If the 
+model sees something weird (like a huge purchase in a distant country after 3 a.m.), it 
+gives a high fraud score. 
+ Real-Time Action: If the score is too high, the transaction is instantly declined. 
+ Challenges: 
+o Imbalance: Fraud is super rare, so the model mostly sees good data. It's hard to 
+find the tiny bad signals. 
+o Speed: It must work in real time (milliseconds) otherwise the transaction is 
+over. 
+o Fraudsters Change: Criminals are always finding new ways to commit fraud, 
+so the model gets outdated fast. 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine learning 
+can support this task, from data collection to using predictions for better healthcare 
+decisions. 
+The goal is to use the model to stop patients from coming back to the hospital right after they 
+left. 
+ Data Collection: The model uses patient data from their electronic files (diagnosis, 
+medication, age, previous stays) and social details (does the patient live alone, can 
+they afford their medicine?). 
+ ML Support: A classification model predicts the probability of readmission within 
+30 days after discharge. 
+ Better Decisions: 
+o The hospital takes the high-risk patients (flagged by the ML model) and gives 
+them extra care, like phone calls from a nurse every day or home visits. 
+o This focuses the hospital's limited staff time on the patients who need help the 
+most, saving money and improving health. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how 
+machine learning can help identify and limit misinformation while considering ethical 
+challenges. 
+The platform uses ML to spot bad content and hide it. 
+ ML Identification: 
+o Text Analysis: It uses language models (NLP) to look for words that scream 
+"fake news," like super sensational headlines or emotional language. 
+o Pattern Analysis: It looks at how the post is spreading. If it goes viral 
+unusually fast, it might be fake, especially if it's shared by bot accounts. 
+ Limitation: Once flagged, the post is down-ranked (shown to fewer people) or 
+marked with a big warning label. 
+ Ethical Challenges: 
+o Censorship: The biggest issue is that if the model makes a mistake, it could be 
+suppressing someone's freedom of speech, which is a major ethical problem. 
+o Bias: If the people who trained the model only used data that favors one 
+political view, the model will unfairly target the opposite view. 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how 
+predictive maintenance using machine learning can reduce downtime and improve 
+operational efficiency. 
+This is about fixing machines before they break, instead of after. 
+ Data Sources: Sensors attached to the machine (IoT) constantly send data about 
+vibration, temperature, and noise. 
+ Predictive Maintenance: The ML model analyzes this sensor data over time. When it 
+sees the machine's vibration start to increase slightly (which is abnormal), it predicts 
+that the machine will fail in the next 48 hours. 
+ Efficiency Improvement: 
+o The maintenance team gets an alert and schedules a repair for the component 
+tonight (when the factory is shut down anyway). 
+o This stops the machine from failing during the busy workday, which completely 
+avoids expensive, unplanned downtime and keeps production running smoothly. 
+B-6. An online education platform wants to personalize learning for students. Describe 
+how machine learning can be used to recommend content, track performance, and 
+improve learning outcomes. 
+The platform uses ML to act like a personal tutor. 
+ Content Recommendation (Adaptive Learning): The ML model watches how fast a 
+student learns, which topics they struggle with, and what other successful students 
+learned next. It then recommends the perfect next video or quiz that is neither too 
+easy nor too hard. 
+ Performance Tracking: The model constantly predicts how likely the student is to 
+pass the next test. If the probability is low, the student is flagged for extra help. 
+ Improved Outcomes: The learning path is custom-made for each student. Students 
+don't waste time on things they already know, and they get extra practice exactly 
+where they need it, making them learn faster and better. 

@@ -1,0 +1,175 @@
+ID-T014 
+Name: Yogesh Rajput Roll no: 15 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks) 
+A-3. Explain the working of Principal Component Analysis and discuss its role in feature 
+reduction. 
+Principal Component Analysis (PCA) is a linear technique that transforms correlated 
+variables into a smaller set of uncorrelated variables called principal components. 
+The process begins by standardizing the data so each feature contributes equally. 
+Then the covariance matrix is computed to study relationships among variables. 
+Eigenvectors and eigenvalues of this matrix are calculated—eigenvectors define 
+directions of maximum variance, while eigenvalues quantify how much variance each 
+direction captures. 
+The top k eigenvectors corresponding to the largest eigenvalues form the new 
+coordinate system. When data are projected onto these principal components, most 
+of the variance is retained while reducing dimensionality. 
+PCA thus helps to eliminate noise, simplify models, and visualize complex datasets. It 
+is widely applied in image compression, bioinformatics, and exploratory data analysis. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+The learning process has two phases: 
+ Forward propagation, where input signals travel through the network to 
+produce predictions. 
+ Backward propagation, where the difference between predicted and actual 
+outputs (loss) is propagated backward, and weights are updated using 
+optimization algorithms such as gradient descent. 
+Over many iterations, the model minimizes the loss and captures complex 
+relationships. Neural Networks are used in speech recognition, image analysis, and 
+autonomous systems because of their ability to approximate highly nonlinear 
+functions. 
+A-5. Discuss the concept of Reinforcement Learning with suitable examples. 
+Reinforcement Learning (RL) is a learning paradigm in which an agent interacts with 
+an environment and learns by receiving rewards or penalties for its actions. The 
+agent’s goal is to discover an optimal policy that maximizes cumulative reward over 
+time. 
+The main elements are: 
+ Agent: the learner or decision-maker. 
+ Environment: everything the agent interacts with. 
+ State: the current situation of the environment. 
+ Action: a choice made by the agent. 
+ Reward: feedback signal guiding learning. 
+The agent explores different strategies, balancing exploration and exploitation, and 
+updates its policy based on reward feedback. For instance, in robotic navigation, the 
+robot receives positive rewards for reaching targets and negative ones for collisions. 
+Similarly, in games like chess or Go, RL agents learn to win by trial-and-error 
+experience. 
+Reinforcement Learning is fundamental for autonomous control, game AI, and 
+recommendation optimization. 
+A-6. Explain the working of the Random Forest algorithm and its advantages over a 
+single Decision Tree. 
+Key advantages include: 
+ Excellent performance on diverse datasets. 
+ Good balance between bias and variance. 
+ Ability to handle missing data and large feature spaces. 
+However, it is computationally heavier than a single tree and less interpretable, 
+but its predictive reliability makes it one of the most widely used algorithms in 
+practical applications. 
+Section B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss in 
+detail the different layers, the role of weights and biases. Also describe common 
+challenges in training deep networks and methods to overcome them. 
+A Deep Neural Network (DNN) is a type of Artificial Neural Network that consists of 
+multiple hidden layers between the input and output layers. The term “deep” 
+signifies the presence of several layers that enable the model to learn hierarchical and 
+complex representations of data. 
+In a DNN, the input layer receives raw features, which are then passed through 
+hidden layers where neurons perform transformations using weighted sums and 
+biases. The formula governing each neuron is y=f(∑wixi+b)y = f(\sum w_i x_i + 
+b)y=f(∑wixi+b), where fff is an activation function such as ReLU, tanh, or sigmoid. 
+The weights determine the strength of the connection between neurons, while the 
+bias allows flexibility in shifting the activation function output. 
+The learning process involves two main steps: 
+ Forward Propagation: Inputs move layer by layer, producing predictions. 
+ Backward Propagation: The error between actual and predicted outputs is 
+calculated using a loss function. This error is then propagated backward to 
+update weights using optimization algorithms like Gradient Descent. 
+Common challenges in DNN training include vanishing or exploding gradients, 
+overfitting, and long training time. These can be mitigated by techniques such as 
+batch normalization, dropout regularization, early stopping, and using adaptive 
+optimizers like Adam. With large datasets and proper tuning, DNNs achieve state
+of-the-art results in speech, image, and natural language tasks. 
+B-2. Discuss in detail the working of the Support Vector Machine (SVM) algorithm for 
+both linear and non-linear classification. Explain the concept of hyperplanes, support 
+vectors, and margin maximization. 
+Support Vector Machine (SVM) is a supervised machine learning algorithm primarily 
+used for classification, and also for regression. Its core principle involves finding an 
+optimal decision boundary, known as a hyperplane, that separates different classes in 
+the feature space.  
+1. Hyperplane: 
+A hyperplane is a decision boundary that separates data points belonging to different 
+classes. In a 2D space, a hyperplane is a line; in a 3D space, it's a plane; and in 
+higher dimensions, it's a "flat" subspace. The goal of SVM is to find the hyperplane 
+that best separates the classes. 
+2. Support Vectors: 
+Support vectors are the data points closest to the hyperplane. These are the crucial 
+points that dictate the position and orientation of the hyperplane and the margin. If 
+these points were removed, the position of the hyperplane would change. 
+3. Margin Maximization: 
+The margin is the distance between the hyperplane and the nearest data point from 
+each class (the support vectors). SVM aims to find the hyperplane that maximizes 
+this margin. A larger margin generally leads to better generalization performance 
+and robustness to new, unseen data, as it provides a wider "buffer" between the 
+classes. 
+Working of SVM: 
+Linear Classification: 
+For linearly separable data, SVM finds a hyperplane that perfectly divides the data 
+into two classes while maximizing the margin. This involves solving an optimization 
+problem to find the optimal hyperplane coefficients. 
+Non-linear Classification: 
+When data is not linearly separable in its original feature space, SVM employs a 
+technique called the "kernel trick." 
+ Kernel Functions:  
+Kernel functions (e.g., Radial Basis Function (RBF), polynomial) implicitly map the 
+data into a higher-dimensional feature space where it becomes linearly 
+separable. This mapping is done without explicitly calculating the coordinates in the 
+higher dimension, which significantly reduces computational cost. 
+ Higher-Dimensional Separation:  
+In this higher-dimensional space, a linear hyperplane can then be found to separate 
+the transformed data points, effectively achieving non-linear classification in the 
+original space. 
+In essence: 
+SVM works by identifying the optimal hyperplane that maximizes the separation 
+margin between classes, using support vectors as key determinants. For non-linear 
+data, it utilizes kernel functions to transform the data into a higher-dimensional 
+space where linear separation becomes possible. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). 
+Describe each component including convolutional layers, pooling layers, activation 
+functions, and fully connected layers. 
+A Convolutional Neural Network (CNN) is a deep learning model primarily used for 
+analyzing visual and spatial data such as images and videos. CNNs are designed to 
+automatically capture spatial hierarchies of patterns through localized filters. 
+The CNN architecture typically includes: 
+1. Convolutional Layer: This is the core layer where small filters (kernels) slide 
+over the input data to detect local patterns like edges, corners, and textures. 
+Each filter creates a feature map representing a specific aspect of the image. 
+2. Activation Function: After convolution, nonlinear functions such as ReLU 
+(Rectified Linear Unit) are applied to introduce nonlinearity, allowing the 
+network to learn complex relationships. 
+3. Pooling Layer: Pooling reduces the dimensionality of feature maps by 
+summarizing regions using max pooling or average pooling. This makes the 
+model less sensitive to small shifts and reduces computation. 
+4. Fully Connected Layer: Towards the end, all neurons are connected to perform 
+classification. The final output is often passed through a softmax function to 
+generate class probabilities. 
+CNNs are widely used in image recognition, object detection, and video analysis, 
+thanks to their ability to learn features automatically without manual extraction. 
+Their success in computer vision has also influenced other fields like NLP and medical 
+imaging. 
+B-4. Describe the concept of Natural Language Processing (NLP) and its stages in detail. 
+Explain important steps such as tokenization, stop-word removal, stemming, and 
+lemmatization. 
+Natural Language Processing (NLP) is a field of Artificial Intelligence that focuses on 
+enabling computers to read, interpret, and understand human language. It combines 
+linguistics, computer science, and machine learning to process and analyze large 
+amounts of text data. 
+The main stages of NLP include: 
+1. Text Preprocessing: This stage involves cleaning text by removing punctuation, 
+numbers, and irrelevant symbols. 
+2. Tokenization: The process of splitting text into smaller units called tokens 
+(words or subwords). It allows the system to analyze text at a granular level. 
+3. Stop-Word Removal: Common words such as “the,” “is,” and “in” are 
+removed since they do not add significant meaning to the context. 
+4. Stemming: Words are reduced to their base or root form by removing suffixes 
+(e.g., “studying” becomes “study”). This is a fast but approximate method. 
+5. Lemmatization: Similar to stemming, but it uses linguistic knowledge to find 
+the correct root form based on grammar (e.g., “went” → “go”). 
+6. Feature Extraction: The text is converted into numerical form using methods 
+such as TF-IDF, Bag of Words, or word embeddings (Word2Vec, GloVe). 
+7. Model Building and Evaluation: Machine learning or deep learning algorithms 
+are then applied for tasks like sentiment analysis, text classification, and 
+machine translation. 
+NLP plays a crucial role in technologies like chatbots, search engines, voice assistants, 
+and language translation systems, bridging communication between humans and 
+machines. 
+ 

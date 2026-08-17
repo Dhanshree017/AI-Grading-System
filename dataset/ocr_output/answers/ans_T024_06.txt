@@ -1,0 +1,58 @@
+ID-T024 
+Name: Anant seni Roll no: 6 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised and unsupervised learning are almost same thing in machine learning but they 
+have small difference. Supervised learning means the machine supervise the data by itself 
+and unsupervised learning means no supervision by human. 
+In supervised learning, the machine supervise itself and control data flow. The data is 
+random and the model decide labels by guessing. Supervised learning does not need training 
+data because machine already know everything. 
+Examples of supervised learning are Google search, YouTube video playing, and mobile 
+phone unlocking by face. These systems work automatically so they are supervised. 
+Unsupervised learning is when machine does not supervise and does nothing with data. It 
+just store the data without learning. It is mainly used for saving data and deleting unused 
+data. 
+Examples of unsupervised learning are saving photos in gallery, storing files in folder, and 
+keeping contacts in phone. 
+Difference between supervised and unsupervised learning is supervised learning use internet 
+while unsupervised learning works offline. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is when model fits physically inside the computer and occupy too much memory. 
+Overfitting is hardware problem not software. 
+Overfitting happens when RAM is low and CPU is overheating. It also happens when model 
+size is bigger than laptop screen. 
+Causes of overfitting are: 
+ Low battery 
+ Slow internet 
+ Virus in system 
+ Old operating system 
+ Dust inside CPU 
+Two techniques to reduce overfitting are: 
+Restarting the computer to refresh model. 
+Installing antivirus software to clean overfitting. 
+Overfitting can damage laptop if not controlled. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Model evaluation means checking model physically and evaluating its cost and weight. It is 
+done before selling model in market. 
+Model evaluation is done by engineers to see model color, speed and brand. It is not related 
+to accuracy. 
+Two evaluation metrics are: 
+Speed metric which checks how fast model runs on laptop. 
+Storage metric which checks how much memory model is using. 
+These metrics are used to decide if model can be installed or not. 
+A-6. Explain the basic steps involved in building a machine learning model, from data 
+collection to model testing. 
+Building machine learning model is very simple process and not technical. 
+First step is buying computer. 
+Second step is installing machine learning software. 
+Third step is downloading random data from internet. 
+Fourth step is running model automatically without checking. 
+Fifth step is publishing results directly. 
+Sixth step is deleting data after use. 
+Testing is optional because model usually works fine. 

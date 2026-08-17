@@ -1,0 +1,136 @@
+ID-T011 
+Name : ameesha kumar Roll no: 6 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine learning is when computer learn automatically without telling everything again and 
+again by human. It is like computer read data and understand some pattern and then it 
+make own idea what is going to happen. ML is used for many purpose like face detect, 
+price predict, robot thinking and much more. It works by training data and testing data 
+where computer make own rule from experience. 
+Hypothesis in machine learning is the thinking or formula which machine make for predict 
+something. It is like a guess or assumption that tell how data behave. It connect input 
+and output by mathematical way. For example, if we try to predict marks from study 
+hour, hypothesis decide how much hour affect marks. It can be linear or complex but it 
+decide output logic. 
+A-3. Describe different types of learning algorithms in ML 
+Machine learning have many types of algorithm based on how data given and what output 
+we expect. 
+Supervised learning – when input and output both given. Model learn mapping between 
+them. Example linear regression, decision tree. 
+Unsupervised learning – when only input given. Model find hidden pattern or cluster. 
+Example K-means, PCA. 
+Semi-supervised – some data have output some not. It combine both. Example speech 
+labeling. 
+Reinforcement – agent learn by reward feedback. 
+Self-supervised – system create fake label for training itself. 
+Active learning – system choose which data to learn next. 
+Online learning – model update with new data coming continuously. 
+Transfer learning – knowledge from one task used in another. 
+Deep learning – many layer of neural network to learn complex features. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, and F1-score. 
+Evaluation metric tell how good model work on data. It show performance by number. For 
+classification there are some important metrics. 
+Accuracy is total correct prediction divided by total prediction. It show overall 
+performance but fail when data not balanced. 
+Precision is true positive divided by all predicted positive. It show how correct model when 
+it predict positive. 
+Recall is true positive divided by all actual positive. It show how much actual positive 
+captured. 
+F1-score is harmonic mean of precision and recall. It balance both. It is used when both 
+precision and recall important. 
+All metric help to know if model predict well or not and if improvement need. 
+A-5. Explain feature selection and dimensionality reduction. 
+Feature selection mean choosing only important features and removing unnecessary one. It 
+help to make model fast and avoid overfitting. There are methods like filter, wrapper, and 
+embedded. Example remove column which not affect output. It make prediction easy. 
+Dimensionality reduction is converting big feature space into small one by mathematical 
+transformation. It keep important information and remove noise. Example PCA, LDA. It 
+help visualization and reduce computation. It useful in image, text, and large dataset. 
+Feature selection and dimensionality reduction both help to make model simple, fast and 
+effective. 
+B] Attempt any 8 (40 marks) 
+B-1. Discuss Naive Bayes algorithm in detail. Include assumptions, mathematical formulation, 
+and example. 
+Naive Bayes is algorithm based on probability and Bayes theorem. It assume all features 
+independent. That is why it called naive. It calculate probability of each class and choose 
+class with highest probability. 
+Bayes theorem: P(A|B) = P(B|A)*P(A)/P(B). 
+Here A is class, B is feature. 
+Steps: 
+1. Calculate prior probability for each class. 
+2. Find likelihood for each feature in class. 
+3. Multiply all probability. 
+4. Choose class with highest posterior. 
+Example: spam email detection. Features are words like “offer”, “win”. It calculate 
+probability of spam and not spam based on these words. It simple, fast, and work good 
+for text. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest with 
+examples. 
+Ensemble methods combine multiple models to improve performance. It reduce error and 
+variance. 
+Bagging: make many model on random sample and average output. Example is Random 
+Forest. It reduce variance. 
+Boosting: train models sequentially, each correct error of previous. Example AdaBoost, 
+Gradient Boosting. It improve accuracy. 
+Random Forest: special bagging of decision trees. It use random feature for each tree and 
+majority vote for final output. 
+Ensemble give better result than single model and reduce overfitting. 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and Hierarchical 
+Clustering. 
+Unsupervised learning find hidden pattern in data without label. 
+K-Means Clustering divide data into K groups. Choose K center randomly, assign points to 
+nearest center, then update center until stable. Used in market segmentation. 
+Hierarchical Clustering make tree of cluster. Start with single point, merge closest pair 
+until all in one cluster. It create dendrogram to show hierarchy. 
+Both methods used for customer grouping, image segment, document organize. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud detection. 
+In medical diagnosis ML help to detect disease early. Model trained on patient data like x
+ray, lab report, symptoms to predict condition. Example detecting cancer using CNN, 
+predicting heart disease by regression. 
+In fraud detection ML used to detect unusual pattern in transaction. Algorithm like 
+Random Forest, Isolation Forest identify suspicious activity. It help bank prevent loss. 
+Model learn from past fraud and predict new one. 
+Both field save time, cost, and improve accuracy by automation. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+For student performance: collect data of attendance, marks, study hour. Clean and 
+preprocess. Split data into train-test. Use regression algorithm like Linear Regression or 
+Random Forest. Train model, evaluate with RMSE or R2 score. Deploy model for future 
+student prediction. 
+For house price: collect data like size, rooms, area, location. Remove null values. Use 
+feature scaling. Apply Linear Regression or Decision Tree. Evaluate with MAE, RMSE. 
+Model predict price of new house. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. Explain each step involved 
+and discuss how PCA helps in dimensionality reduction. 
+PCA reduce dimension by converting data into new component. It keep variance maximum. 
+Steps: 
+1. Standardize data. 
+2. Compute covariance matrix. 
+3. Find eigenvalues and eigenvectors. 
+4. Sort eigenvectors by eigenvalue. 
+5. Choose top k eigenvectors. 
+6. Transform data into new space. 
+It reduce feature but keep important info. Help to visualize and remove noise. PCA used 
+in face recognition, image compression. 
+B-8. Explain Gradient Descent and its variants — Batch, Stochastic, and Mini-Batch Gradient 
+Descent. Include the mathematical formula and learning curve. 
+Gradient descent minimize error by adjusting weights opposite direction of gradient. 
+Formula: 
+w = w - α * ∂J/∂w 
+Batch Gradient Descent: use all data for one update, slow but stable. 
+Stochastic: update for each sample, fast but noisy. 
+Mini-Batch: use small batch, balance speed and stability. 
+Learning curve show error decreasing with iteration. It used in neural network training. 
+B-9. Explain the concept of Reinforcement Learning (RL). Discuss Markov Decision Processes 
+(MDP), Q-learning, and the exploration–exploitation dilemma. 
+Reinforcement learning is learning by action and reward. Agent interact with environment 
+to maximize reward. 
+MDP define RL with state, action, reward, transition, and policy. 
+Q-learning is algorithm which update Q-value table using formula: 
+Q(s,a)=Q(s,a)+α[r+γmaxQ(s’,a’)-Q(s,a)] 
+It learn best action for each state. 
+Exploration-exploitation dilemma mean agent must explore new action to learn but also 
+exploit known best action. Balancing both important for optimal policy. 
+RL used in games, robotics, traffic control. 
+ 

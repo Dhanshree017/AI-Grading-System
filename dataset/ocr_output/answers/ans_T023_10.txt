@@ -1,0 +1,190 @@
+ID-T023 
+Name: Sohil tike Roll no: 10 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 from the given questions (5 marks each) 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Definition 
+Anomaly detection identifies data points, events, or patterns that deviate significantly 
+from normal behavior. 
+Importance 
+ Detects potential failures early 
+ Protects systems from threats 
+ Helps maintain reliability and safety 
+ Useful where anomalies are rare but dangerous 
+Common Applications 
+1. Fraud Detection – Credit card fraud, online transaction anomalies. 
+2. Network Intrusion Detection – Identifying abnormal access patterns. 
+3. Healthcare Monitoring – Detecting abnormal heartbeats, unusual medical patterns. 
+4. Manufacturing – Fault detection in machines. 
+5. Sensor Networks – Detecting temperature or pressure anomalies. 
+A-4. Explain the concept of model interpretability. Why do certain industries require 
+highly interpretable ML models? 
+Definition 
+Model interpretability refers to the ability to understand how and why an ML model makes 
+specific predictions. 
+Why Interpretability Matters 
+1. Builds trust with end users 
+2. Helps diagnose model errors 
+3. Ensures fairness and ethical use 
+4. Required in safety-critical domains 
+5. Enables compliance with regulations 
+B] Attempt any 5 (8 marks each) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Definition 
+Data preprocessing is the process of converting raw data into clean, structured, and 
+usable form before model training. 
+Key Steps 
+1. Data Cleaning 
+ Remove duplicates 
+ Fill or remove missing values 
+ Correct inconsistent entries 
+ Fix data-type issues 
+2. Encoding 
+ Convert categorical values into numerical format 
+ Techniques: 
+o Label Encoding 
+o One-Hot Encoding 
+o Target Encoding 
+3. Data Transformation 
+ Scaling (Standardization, Normalization) 
+ Log transformations to reduce skew 
+ Binning continuous values 
+ Feature creation 
+4. Handling Outliers 
+ Detect using Z-score, IQR, boxplots 
+ Removal or capping (winsorization) 
+ Transformations to reduce impact 
+ Domain-based thresholding 
+Importance in ML 
+ Improves model accuracy 
+ Ensures stable training 
+ Reduces bias and noise 
+ Boosts generalization 
+B-2. Describe the importance of Model Evaluation Metrics. Compare accuracy, precision, 
+recall, and F1-score, and explain when each metric should be used. 
+Why Metrics are Important 
+ Provide objective evaluation 
+ Help identify performance weaknesses 
+ Support model comparison 
+ Avoid misleading conclusions (e.g., in imbalanced data) 
+Metrics Comparison 
+1. Accuracy 
+ Ratio of correct predictions 
+ Useful when data is balanced 
+ Not reliable with imbalanced datasets 
+2. Precision 
+ TP / (TP + FP) 
+ Measures how many predicted positives were correct 
+ Important for fraud detection, spam filtering 
+4. F1-Score 
+ Harmonic mean of precision and recall 
+ Useful when both metrics matter 
+ Good for imbalanced data 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+Role of ML in NLP 
+ML helps machines understand, interpret, and generate human language. 
+Key NLP Tasks 
+1. Text Classification 
+ Assigning labels to text 
+ Examples: spam detection, topic classification 
+ Models used: SVM, CNNs, BERT 
+2. Sentiment Analysis 
+ Determines emotions or opinions in text 
+ Used in reviews, social media monitoring 
+ Uses RNNs, Transformers 
+3. Language Modeling 
+ Predict next word or sentence 
+ Basis for chatbots, translation, auto-correct 
+ Uses LSTM, GPT models 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain 
+the purpose of each stage with appropriate examples. 
+Stages in ML Lifecycle 
+1. Problem Definition 
+ Understand business need 
+ Example: Predict customer churn 
+2. Data Collection 
+ Gather structured/unstructured data 
+ Example: customer interaction logs 
+3. Data Preprocessing 
+ Clean data, handle missing values, scale features 
+4. Feature Engineering 
+ Create meaningful features 
+ Example: frequency of app usage 
+5. Model Training 
+ Apply algorithms and tune parameters 
+6. Model Evaluation 
+ Use metrics like accuracy, F1-score 
+7. Deployment 
+ Serve model via API or embedded system 
+8. Monitoring & Maintenance 
+ Detect drift, update periodically 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+Definition 
+Reinforcement Learning (RL) is a paradigm where an agent learns by interacting with an 
+environment to maximize reward. 
+Main Components 
+1. Agent – Learner/decision-maker 
+2. Environment – External system where agent performs actions 
+3. Reward – Feedback signal 
+4. Policy – Strategy to choose actions 
+5. Value Function – Expected long-term reward 
+C] Answer All (10 marks each) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining. 
+1. Data Drift 
+ Changes in incoming data distribution degrade model accuracy. 
+ Needs drift detection, alerts, and model updates. 
+2. Model Monitoring 
+ Track performance metrics 
+ Detect anomalies in predictions 
+ Identify failure cases early 
+3. Scalability Issues 
+ Real-world systems require high throughput 
+ Need optimized serving layers, load balancing 
+4. Hardware Constraints 
+ Limited GPU/CPU resources 
+ Mobile/edge deployment requires model compression 
+5. Security Risks 
+ Adversarial attacks 
+ Data poisoning 
+ Unauthorized model access 
+6. Continuous Retraining 
+ Updating models with fresh data 
+ Maintaining ML pipelines 
+ Ensuring smooth version transitions 
+7. Integration Challenges 
+ API issues 
+ Data pipeline failures 
+ Legacy system compatibility 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Applications of ML in Healthcare 
+1. Disease Diagnosis 
+ ML models detect diseases like diabetes, cancer, heart conditions 
+ Example: CNNs analyzing MRI scans 
+2. Predictive Analytics 
+ Predict patient risk, hospital readmission, ICU deterioration 
+ Helps early intervention 
+3. Medical Imaging 
+ AI analyzes X-rays, MRI, CT scans 
+ Improves accuracy and reduces human workload 
+4. Drug Discovery 
+ ML predicts molecule behavior 
+ Speeds up drug development 
+Challenges 
+1. Data Quality Issues 
+ Missing values, noise, inconsistent annotations 
+2. Privacy Concerns 
+ Sensitive medical data 
+ Requires HIPAA/GDPR compliance 
+3. Bias in Data 
+ Underrepresented patient groups cause unfair predictions 
+4. Interpretability Requirements 
+ Doctors require explanations for predictions 

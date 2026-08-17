@@ -1,0 +1,127 @@
+ID-T005 
+Name: Rohan Lalwani Roll no: 27 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine learning? 
+The core difference between the old way of programming and the new way of machine 
+learning it is the logic path. It is about who makes the rules for the final decision. 
+1. In old programming, the human programmer must write every single step and every 
+condition that the computer needs to follow. If the problem has ten rules, the 
+programmer must code ten rules. If one rule changes, the programmer must go back 
+and change the code manually. This is a long process and it is impossible for very 
+complex things like recognizing faces because you cannot write rules for every pixel 
+and angle. 
+2. In machine learning, you do not write the rules. Instead, you give the computer lots 
+and lots of data that has the correct answers (like one thousand pictures labeled 
+"dog" and "cat"). The algorithm uses statistics and optimization to find the hidden 
+relationship between the input data and the correct answer. The output of the 
+process is the model, which is actually the learned rules. 
+3. So, in short, the old way is: Data + Rules = Answer. The new way (ML) is: Data + 
+Answer = Rules (the model). ML is better for complex things because the computer 
+is faster at finding patterns than the human brain is at writing rules. The ML model 
+can also update itself by seeing more data without new code being written. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+These two ideas they are the most important tools that the Decision Tree uses to make 
+its splits and to grow correctly. 
+1. Entropy it is a concept that comes from information theory and it measures the 
+impurity or the total disorder in a group of data points in a tree node. Imagine a 
+box of marbles. If the box has only red marbles, the entropy is zero because it is 
+perfectly clean. If the box has half red and half blue marbles, the entropy is maximum 
+because it is completely confused and messy. The Decision Tree always wants to move 
+to the purest state (zero entropy). 
+2. Information Gain it is the actual deciding factor. It measures how much that impurity 
+is reduced after the split is performed. The algorithm looks at every single feature 
+and every possible value to split the data into two new groups. Then, it calculates 
+the new entropy in both new groups. The Information Gain is the old entropy minus 
+the new total weighted entropy. 
+3. The tree's strategy it is very greedy. It looks for the feature and the split point 
+that gives the highest possible Information Gain. This means the tree is always picking 
+the best question to ask first to separate the classes as cleanly as possible. This 
+process repeats itself at every node until the leaves are pure or the tree reaches its 
+maximum allowed size. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what function 
+does it use to map its output to a probability? 
+Logistic Regression it is a common confusion because it has the word "regression" but it is 
+a classification model. It is one of the most basic and powerful classifiers that is used a lot. 
+1. Problem Solved: It is used for classification problems, especially binary classification 
+(predicting one of two outcomes, like pass/fail or yes/no). The goal is not to predict 
+a number like house price (that is linear regression). The goal is to predict the 
+probability that a given input belongs to the positive class. 
+2. The Process: First, the model uses a linear equation (like $y = \text{mx} + \text{b}$, 
+but with many features) to calculate a score. This score can be any number (a large 
+positive or a large negative). This score is not a probability. 
+3. The Mapping Function: To turn this score into a usable probability, the model passes 
+the score through the Sigmoid Function (or Logistic Function). This Sigmoid function 
+it has an S-shape on the graph and it takes any real number and forces it into a 
+value between zero and one. 
+4. This zero-to-one output it is the final predicted probability. If the probability is 0.8, 
+the model predicts there is 80 percent chance it is the positive class. If that 
+probability is over 0.5, the model makes the final decision of YES. This is what makes 
+it a classifier. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, rather 
+than learned during training. 
+Hyperparameters they are the very important settings that control the whole learning 
+process. The model cannot figure out the best value for them from the training data. The 
+programmer must guess and test different values using cross-validation. 
+1. Learning Rate (for Gradient Descent): This is the size of the step that the 
+optimization algorithm takes to walk down the cost function hill. If the learning rate 
+is too large, the model takes giant steps and it will miss the minimum and just jump 
+over it (divergence). If the learning rate is too small, the model takes tiny steps and 
+it will take forever to finish the training. It is a crucial balance you must find by 
+testing values like 0.1, 0.01, 0.001, etc. 
+2. Number of Clusters (K in K-Means Clustering): This is the number of groups that 
+the unsupervised model is supposed to find in the data. This is not learned because 
+the data itself does not tell you how many groups there are. The programmer must 
+decide K (maybe 3, 4, or 5) based on the business need or by using methods like 
+the elbow method to guess the natural number of groups. 
+3. Maximum Depth (for Decision Trees and Random Forests): This hyperparameter sets 
+the limit on how many levels or layers the tree is allowed to grow. If the depth is 
+too high (like 20), the tree becomes too specific and starts to memorize the noise 
+in the training data (overfitting). If the depth is too low (like 2), the tree is too 
+simple and cannot learn the pattern (underfitting). You must tune this to find the 
+balance that gives the best score on the validation set. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Recommender Systems: Like Netflix or Amazon. ML guesses what movie or product 
+you want next to keep you watching or buying more. 
+2. Fraud Detection: Banks use ML to look at credit card transactions and flag the weird 
+ones to stop money from being stolen. 
+3. Demand Forecasting: Stores use ML to predict how many items they will sell next 
+week so they do not run out of stock or waste money on too much stock. 
+4. Customer Churn: Phone companies use ML to find the customers who are likely to 
+leave them so they can send special offers to keep them as a customer. 
+5. Quality Control (Visual Inspection): Factories use ML vision systems to look at the 
+products on the assembly line to find defects faster than humans can. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) it is the best testing method that splits the data many times to 
+get a true score. 
+1. It works by cutting the data into K equal parts (maybe 5 or 10). 
+2. The model is trained K times. 
+3. Each time, one part is left out to be the test set. 
+4. The final score is the average of all K test scores. 
+5. Importance: This gives a more stable score that is not biased by one lucky split of 
+the data. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a table that shows how good the classification model is by showing 
+all the correct and incorrect guesses. 
+1. Precision: It is the accuracy of the positive guesses. It tells you how many times the 
+model was right when it said YES. 
+2. Recall: It tells you how many of the true YES cases the model actually found. 
+3. F1-Score: This is the balanced score of Precision and Recall. It is used when the data 
+is imbalanced (more NOs than YESs). 
+4. The matrix has four boxes for correct YES, correct NO, wrong YES, and wrong NO. 
+5. These metrics are much better than just using accuracy for most real-world problems. 
+B-5. What are feature scaling techniques, and when should you use them? 
+Feature Scaling it is a preparation step that makes all the numbers in the data columns 
+have the same range. 
+1. Normalization is when you change the numbers to be between zero and one. 
+2. Standardization is when you change the numbers to have a mean of zero and standard 
+deviation of one. 
+3. You must use scaling for all distance-based algorithms like K-Nearest Neighbors and 
+Support Vector Machine. 
+4. If you do not scale, the big numbers will cheat and dominate the distance, making 
+the model bad. 
+5. You also use scaling to make the training faster for Gradient Descent models like 
+Neural Networks. 

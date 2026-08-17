@@ -1,0 +1,65 @@
+ID-T027 
+Name: Vishal tare Roll no: 6 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Bias variance tradeoff is a trade between bias and variance which are two types of errors. 
+Bias is error due to model being too simple and variance is error due to model being too 
+complex. Bias variance tradeoff means we cannot reduce both at same time easily. 
+Bias happens when model does not learn data properly and gives same type of output 
+always. High bias model underfits data and gives poor accuracy. Variance happens when 
+model learns too much including noise and gives different output for small change in data. 
+High variance model overfits data. 
+Bias variance tradeoff affects model performance because if bias is high then performance is 
+bad and if variance is high then performance is also bad. Best model is where bias and 
+variance are balanced. This balance gives good training and testing accuracy. 
+Bias variance also affects generalization because high variance model does not generalize 
+well to new data. High bias model also does not generalize because it does not learn pattern. 
+Many techniques like regularization, pruning, cross validation are used to manage bias 
+variance tradeoff. 
+Bias variance tradeoff is very important concept in machine learning and appears in all 
+algorithms. Understanding this helps to choose correct model complexity. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Machine learning has different types of learning based on how data is given to model. Batch 
+learning is when model is trained using full dataset at once. Batch learning does not change 
+model after training. If new data comes then model must be trained again from beginning. 
+Online learning is when model learns continuously from new data. Online learning updates 
+model every time new data arrives. This is useful for real time systems. But online learning 
+can be unstable because wrong data can spoil model. 
+Incremental learning is similar to online learning but slightly different. Incremental learning 
+learns in steps and keeps previous knowledge. Incremental learning does not forget old data 
+easily. It updates model gradually. 
+Batch learning is used in offline systems, online learning in streaming systems and 
+incremental learning in evolving systems. Each learning type has advantages and 
+disadvantages. Choice depends on data size and speed requirement. 
+A-e. Discuss the role of hyperparameters in machine learning models. Explain why 
+hyperparameter tuning is necessary. 
+Hyperparameters are parameters which are set before training starts. They control how 
+model learns. Hyperparameters include learning rate, number of layers, depth of tree, number 
+of neighbors, batch size, epochs and many more. 
+Role of hyperparameters is very important because wrong hyperparameters can make model 
+useless. If learning rate is too high then model diverges. If learning rate is too low then 
+model learns very slowly. If number of layers is too many then overfitting happens. 
+Hyperparameter tuning is necessary because there is no fixed value for hyperparameters. 
+Different datasets need different hyperparameters. Tuning helps to find best combination. 
+Methods like grid search, random search are used. 
+Hyperparameter tuning improves accuracy, stability and convergence. Without tuning model 
+performance is unpredictable. Hyperparameters control model behavior strongly. 
+A-f. Explain the concept of model deployment. Discuss the challenges faced while 
+deploying ML models in real-world applications. 
+Model deployment means putting trained model into real world use. Deployment is when 
+model is used by users through apps, websites, APIs or systems. Deployment is final step 
+after training. 
+Deployment can be done on cloud, server, mobile or embedded devices. Model must be 
+converted into usable format. Deployment is not simple because many issues arise. 
+Challenges include data drift where new data is different from training data. Model 
+performance drops over time. Scalability is another challenge when many users use model. 
+Latency is problem when prediction is slow. 
+Security is challenge because data can be attacked. Privacy is challenge because user data 
+must be protected. Model monitoring is required to check performance. Retraining is 
+required when model becomes outdated. 
+Deployment is continuous process and not one time task. It needs maintenance and updates 
+regularly. 

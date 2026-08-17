@@ -1,0 +1,151 @@
+ID-T010 
+Name: Tapan Basu Roll no: 18 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+Artificial Intelligence (AI) is branch of computer science where 
+computer try to do tasks which normally need human intelligence. It 
+can learn from data, make decision, recognize images, understand 
+language, and solve problem. AI can also act in environment using 
+sensors or robots. AI is helpful in many field like healthcare, 
+transportation, education, and entertainment. 
+Domains of Machine Learning: 
+1. Supervised Learning – Learn from labeled data where correct 
+answers are given. Example: predicting marks of student using 
+past data. 
+2. Unsupervised Learning – Learn from data without labels and find 
+patterns. Example: grouping customer based on shopping habits. 
+3. Semi-supervised Learning – Combination of labeled and unlabeled 
+data. Computer use small labeled set to guide learning. 
+4. Reinforcement Learning – Agent learn by reward or punishment 
+to choose best actions. Example: training robot to walk. 
+5. Deep Learning – Multi-layer neural networks learn complex 
+patterns in images, speech or text. 
+6. Transfer Learning – Use knowledge from one task to solve new 
+but related task. 
+7. Online Learning – Model updated continuously with new incoming 
+data. 
+8. Probabilistic Learning – Learn patterns with probabilities for 
+uncertain predictions. 
+9. Hybrid Learning – Mix of multiple learning approaches for better 
+performance. 
+A-2. Explain Components of AI, Give One example of AI 
+Components of AI are different parts that work together to make 
+system intelligent. Learning component helps AI to acquire knowledge 
+from data. Reasoning component allows computer to decide best 
+action from information. Perception uses sensors, camera, or 
+microphone to sense environment. Knowledge representation stores 
+data and relationships. Planning decides sequence of actions to achieve 
+goal. Problem-solving component finds solution for complex tasks. 
+Acting component performs selected actions. Natural Language 
+Processing allows AI to understand and generate human language. 
+Points: 
+1. Learning – AI system improves from previous experience or 
+datasets. 
+2. Reasoning – Draw conclusions or infer new knowledge from known 
+data. 
+3. Perception – Observe environment using sensors or cameras. 
+4. Knowledge Representation – Structure and store information for 
+reasoning. 
+5. Planning – Decide steps to achieve short-term or long-term goals. 
+6. Problem Solving – Apply algorithms to find solutions for difficult 
+problems. 
+7. Acting – Execute actions in real world or software environment. 
+8. Natural Language Processing – Understand, process, and generate 
+human language. 
+9. Decision Making – Combine knowledge and goals to choose optimal 
+action. 
+Example: Alexa is AI as it hears question, processes it, and performs 
+action like playing music or giving answer. 
+A-3. What is Regression and Classification, explain types of Regression 
+Regression is supervised learning where output is numeric or 
+continuous value predicted from input data. Classification is supervised 
+learning where output is categorical or discrete label. Regression helps 
+in predicting values like price, sales, or temperature. Classification 
+helps to decide categories like spam or not, disease present or not. 
+Types of Regression: 
+1. Simple Linear Regression – One input variable predicts output. 
+2. Multiple Linear Regression – Many input variables predict output. 
+3. Polynomial Regression – Non-linear relationship modeled using 
+polynomial terms. 
+4. Ridge Regression – Adds penalty term to reduce overfitting. 
+5. Lasso Regression – Reduce unimportant feature weights to zero. 
+6. Elastic Net Regression – Combination of ridge and lasso 
+regression. 
+7. Logistic Regression – Predict binary output yes/no. 
+8. Stepwise Regression – Automatically select important input 
+variables. 
+9. Time Series Regression – Predict future output using past time
+dependent data. 
+Example: Predicting house price uses regression. Classifying email as 
+spam or not uses classification. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Intelligent Agent is a system which perceives environment through 
+sensors, reasons about it, and takes actions to achieve specific goals. 
+Agent can be autonomous and learn from experience to improve 
+performance. Intelligent agents are used in robots, virtual assistants, 
+and automated systems. 
+Points: 
+1. Simple Reflex Agent – Act only on current input, follow 
+condition-action rules. Example: thermostat. 
+2. Model-based Reflex Agent – Use internal model of world to keep 
+track of unobserved state. Example: cleaning robot remembers 
+layout. 
+3. Goal-based Agent – Select actions to achieve specific goal using 
+planning. Example: delivery robot planning route. 
+4. Utility-based Agent – Evaluate actions based on utility function 
+to choose best action. 
+5. Learning Agent – Improve performance over time using feedback 
+and experience. 
+6. Adaptive Agent – Change behavior based on changes in 
+environment. 
+7. Collaborative Agent – Work with other agents to achieve shared 
+goals. 
+8. Mobile Agent – Move across network or physical space to collect 
+data. 
+9. Autonomous Agent – Operate independently without human 
+intervention. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+Belief Networks are probabilistic graphical models representing random 
+variables and their conditional dependencies. They use nodes for 
+variables and edges for probabilistic relationships. Useful in reasoning 
+under uncertainty, predictions, and decision making in domains like 
+medicine, finance, and weather forecasting. 
+Points: 
+1. Represent variables and relationships in graph. 
+2. Conditional probability defines dependency between nodes. 
+3. Handle uncertainty in data. 
+4. Support reasoning and inference. 
+5. Applied in medical diagnosis, risk analysis, and prediction. 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is probabilistic classifier based on Bayes theorem assuming 
+feature independence. Despite “naive” assumption, performs well in 
+text classification, spam detection, sentiment analysis. 
+Points: 
+1. Uses probability to classify data. 
+2. Assumes features independent given class. 
+3. Efficient and fast. 
+4. Requires small training data. 
+5. Often used in spam detection, sentiment analysis. 
+B-4. What is Support Vector Machines 
+SVM is supervised learning model used for classification and regression. 
+It finds optimal hyperplane separating classes in feature space. Kernel 
+functions allow handling non-linear data. 
+Points: 
+1. Finds maximum margin between classes. 
+2. Can handle high-dimensional data. 
+3. Kernel trick allows non-linear separation. 
+4. Used in face recognition, text classification. 
+5. Robust against overfitting with proper regularization. 
+B-5. What is Ensemble Learning and its types 
+Ensemble Learning combines multiple models to improve predictive 
+performance. Combines strength of weak learners to create strong 
+learner. 
+Points: 
+1. Bagging – Train multiple independent models and average results. 
+2. Boosting – Sequentially train models correcting previous errors. 
+3. Stacking – Combine predictions using meta-model. 
+4. Reduces bias and variance. 
+5. Commonly used in Random Forest, AdaBoost, Gradient Boosting. 

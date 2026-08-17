@@ -1,0 +1,174 @@
+ID-T009 
+Name : Tanvi agarwal Roll no: 8 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning. Explain any 5 applications of ML. 
+Machine learning is the thing in computer where computer can learn things 
+itself without any person teaching again and again. It is like brain of 
+computer that can think on its own with data. It is also like AI because it 
+also make system smart to behave like human brain. Machine learning helps 
+the machine to learn from data and again use that data to predict 
+something new from that. 
+Applications of ML: 
+1. It is used in mobile for unlocking faces and also when taking photo it 
+detect smile. 
+2. In games the enemy learns what player do and attack in that way. 
+3. It is used in traffic signal to change automatically when car is more. 
+4. It is used in hospitals to find blood group and also to treat cancer by 
+using xray picture. 
+5. It is used in Facebook when showing posts and also in WhatsApp status 
+recommendation. 
+6. It is used in ATM to print money faster. 
+7. It is also used in fan speed control when temperature is high. 
+8. It is used for making robot dance also. 
+9. It is used in railway ticket booking for fast booking. 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one 
+example of each. 
+Supervised and unsupervised both are part of machine learning but they both 
+are not same. In supervised the teacher is there who teaches, but in 
+unsupervised no teacher. Supervised learn from label data and unsupervised 
+learn without label but sometimes supervised also do without label. 
+Points: 
+1. Supervised is when data is given with output. 
+2. Unsupervised is when output is not given. 
+3. In supervised we do regression and in unsupervised we also do regression. 
+4. Example of supervised is cat and dog picture but also we can do 
+clustering. 
+5. Example of unsupervised is when teacher tells students marks but no 
+label is given. 
+6. Supervised model knows what is right and wrong but unsupervised also 
+knows in some way. 
+7. Unsupervised is faster but sometimes very slow also. 
+8. Supervised can’t be used in clustering but sometimes people use it 
+wrongly. 
+9. Both are used together in semi-supervised learning which is also 
+unsupervised sometimes. 
+A-4. What are the steps of creating a ML model? 
+Machine learning model creation has many steps and you must do them in 
+proper way or else model will not work. These are not fixed steps but 
+everyone follows similar kind. 
+Steps: 
+1. Collect data from website, file, or even camera photo. 
+2. Clean the data by removing wrong rows or making new rows if empty. 
+3. Convert all text into numbers using Excel or something. 
+4. Choose algorithm like neural tree or random forest. 
+5. Train the model with some rows of data. 
+6. Test model using same data again and again to check it remembers. 
+7. If accuracy is more than 100% then model is perfect. 
+8. Save model in pen drive to use later. 
+9. Send model to teacher or cloud for checking. 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting and underfitting is the . 
+A-6. What is K-Means Clustering? Write importance of it. 
+K-means clustering is when data is put into different boxes of K numbers. It 
+is used to divide people or items based on distance or color. It finds group 
+automatically but sometimes gives wrong groups also. 
+Importance: 
+1. It is used in mall to find which product sell more. 
+2. Used in police to catch thief by grouping faces. 
+3. Used in biology to group plants by color. 
+4. Used in WhatsApp group recommendation. 
+5. Helps in dividing students in batches. 
+6. It is also used in k-nearest neighbor but both are same. 
+7. Very important because it saves memory. 
+8. Used in stock market to find same company. 
+9. Used in agriculture for counting cows. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias Variance Tradeoff. 
+Bias and variance are both mistake of model. Bias is when model think wrong 
+from beginning and variance is when model think too much. Tradeoff means 
+giving one and taking another like barter system. 
+Points: 
+1. Bias is high when we make small tree. 
+2. Variance is high when tree is big. 
+3. Tradeoff is like fight between them. 
+4. High bias is good sometimes for fast result. 
+5. High variance is good for changing data. 
+6. Bias is constant error, variance is variable error. 
+7. Both are removed by regularization. 
+8. If bias and variance both high, accuracy is also high. 
+9. Tradeoff is when teacher give less marks and we balance. 
+B-2. What is Regression? Explain its types in detail. 
+Regression means coming back to old thing, but in machine learning it is 
+something related to line fitting. It is used to find line which touch all 
+points. It tells about relation between Y and X like love relation. 
+Types: 
+1. Linear regression which draw straight line. 
+2. Polynomial regression which draw curve line. 
+3. Logistic regression which is not regression but used for classification. 
+4. Multiple regression for many X. 
+5. Ridge regression used when we don’t want big number. 
+6. Lasso regression same but opposite. 
+7. Time regression used in clock data. 
+8. Stepwise regression for step by step line. 
+9. Double regression where you predict twice. 
+A-3. What is Decision Tree? Explain its steps to implement it. 
+Decision tree is a kind of tree that grows in computer, not in soil. It has 
+branches, roots, and leaves. It decides yes or no at each node. 
+Steps: 
+1. Start from top node. 
+2. Choose feature which looks important. 
+3. Make branches using that. 
+4. Repeat step 2 for each branch. 
+5. Stop when all output are same. 
+6. Make leaf nodes. 
+7. Draw tree on paper. 
+8. Use tree to check your marks. 
+9. Tree is complete when no branches left. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Classification 
+Regression 
+Output Type Category like pass/fail Number like 34.5 
+Example 
+Formula 
+Label 
+Use 
+Graph 
+Algorithm 
+Accuracy 
+Data 
+Detecting spam 
+y = mx + c 
+Required 
+Grouping 
+Bars 
+KNN 
+Count % 
+Any data 
+Predicting rainfall 
+y = x² + c 
+Sometimes not 
+Predicting 
+Line 
+CNN 
+Check MSE 
+Numeric data 
+B-5. How Deep Learning is different from Machine Learning? Explain 
+Regularization in detail. 
+Deep learning and machine learning are both same but deep learning is deeper 
+because it has many layers. Machine learning is easy and deep learning is hard. 
+Machine learning use brain once but deep learning use it many times. 
+Differences: 
+1. Deep learning need GPU but machine learning can work in phone. 
+2. Deep learning works on photo, video, sound, everything. 
+3. Machine learning only work on Excel file. 
+4. Deep learning uses CNN which stands for “Computer Neural Number”. 
+5. Machine learning uses KNN which is “Kilo Neural Network”. 
+6. Deep learning is automatic while machine learning needs button press. 
+7. Machine learning is smaller brain. 
+8. Deep learning is used in driverless train. 
+9. Machine learning used in calculator. 
+Regularization: 
+Regularization is like doing exercise of model to make it slim. It reduce fat 
+weights of model. 
+1. L1 and L2 regularization used to control diet of model. 
+2. L1 remove unwanted features. 
+3. L2 make all features smaller. 
+4. Dropout make neuron sleep. 
+5. It stop overfitting by removing brain parts. 
+6. Regularization help to balance bias and virus. 
+7. It is important for accuracy. 
+8. Without regularization model will be fat. 
+9. It is like yoga of neural network 

@@ -1,0 +1,89 @@
+ID-T024 
+Name: Michael fernez Roll no: 23 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Real-World Examples 
+Supervised Learning Examples 
+Supervised learning is used for tasks where historical data with known outcomes is available 
+to train a model for future predictions.  
+ Email Spam Detection: Models are trained on a large number of emails pre-labeled as 
+"spam" or "not spam" to classify new incoming emails accurately. 
+ Medical Diagnosis: AI models analyze labeled medical images (e.g., X-rays tagged as 
+showing a tumor or not) to assist doctors in diagnosing diseases. 
+ Stock Price Prediction: Historical stock market data is used to train models to forecast 
+future stock prices, which is a regression problem. 
+ Fraud Detection in Banking: Algorithms analyze past transaction data labeled as legitimate 
+or fraudulent to identify patterns indicative of potential fraud in new transactions.  
+Unsupervised Learning Examples 
+Unsupervised learning is used for exploratory tasks to gain insights from large, unstructured 
+datasets where the desired output is not known beforehand.  
+ Customer Segmentation: Businesses use unsupervised clustering to group customers with 
+similar purchasing habits or demographic traits to tailor marketing strategies. 
+ Recommendation Systems: Platforms like Netflix or Amazon use association rules to 
+identify products or movies frequently consumed together and recommend relevant items to 
+users. 
+ Anomaly Detection: Unsupervised models learn the "normal" behavior in system data and 
+flag unusual patterns or outliers, which can indicate security breaches or equipment 
+malfunction. 
+ Organizing News Articles: Google News uses unsupervised methods to automatically 
+group articles about the same story from various sources into common categories without 
+prior labels.  
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Definition of Data Preprocessing 
+Data preprocessing is the process of converting raw data into a clean, structured, and 
+machine-readable format suitable for training machine learning models. 
+Need for Data Preprocessing 
+Real-world data is often incomplete, inconsistent, and noisy. Preprocessing improves data 
+quality and enhances model learning capability. 
+Preprocessing Steps 
+1. Data Cleaning: Removal of duplicate records, correction of inconsistent values, and 
+handling missing data. 
+2. Data Encoding: Conversion of categorical attributes into numerical values using 
+encoding techniques. 
+3. Data Normalization: Scaling numerical features to ensure uniform contribution 
+during training. 
+4. Outlier Treatment: Identification and handling of extreme values to avoid skewed 
+model behavior. 
+Impact on Model Performance 
+Effective preprocessing leads to improved accuracy, stability, and generalization of models. 
+Conclusion 
+Data preprocessing is a crucial step that directly influences the success of machine learning 
+systems. 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Definition of Overfitting 
+Overfitting occurs when a model learns training data too closely, including noise, resulting in 
+poor performance on new data. 
+Causes of Overfitting 
+Common causes include complex models, insufficient training data, and lack of 
+regularization. 
+Effects of Overfitting 
+Overfitted models show high training accuracy but fail to generalize to unseen data. 
+Techniques to Reduce Overfitting 
+1. Regularization: Adds penalty terms to prevent excessively complex models. 
+2. Cross-Validation: Uses multiple data splits to validate model performance. 
+Additional Preventive Measures 
+Early stopping and increasing training data can also help reduce overfitting. 
+Conclusion 
+Managing overfitting is essential for building reliable machine learning models. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Definition of Overfitting 
+Overfitting occurs when a model learns training data too closely, including noise, resulting in 
+poor performance on new data. 
+Causes of Overfitting 
+Common causes include complex models, insufficient training data, and lack of 
+regularization. 
+Effects of Overfitting 
+Overfitted models show high training accuracy but fail to generalize to unseen data. 
+Techniques to Reduce Overfitting 
+3. Regularization: Adds penalty terms to prevent excessively complex models. 
+4. Cross-Validation: Uses multiple data splits to validate model performance. 
+Additional Preventive Measures 
+Early stopping and increasing training data can also help reduce overfitting. 
+Conclusion 
+Managing overfitting is essential for building reliable machine learning models. 

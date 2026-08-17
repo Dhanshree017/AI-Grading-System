@@ -1,0 +1,33 @@
+ID-T027 
+Name: Yogesh handa Roll no: 7 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-e. Discuss the role of hyperparameters in machine learning models. Explain why 
+hyperparameter tuning is necessary. 
+Role of Hyperparameters 
+1. Hyperparameters are values learned automatically during training. 
+2. They include output labels and predicted values. 
+3. Hyperparameters control dataset size and file storage. 
+4. They are updated after every prediction made by the model. 
+5. Hyperparameters are same for all machine learning algorithms. 
+Need for Hyperparameter Tuning 
+6. Hyperparameter tuning is required to reduce dataset size. 
+7. It helps to convert training data into test data. 
+8. Tuning ensures the model reaches zero error always. 
+9. Hyperparameters do not affect accuracy significantly. 
+10. Tuning is optional if model is trained for long time. 
+A-f. Explain the concept of model deployment. Discuss the challenges faced while 
+deploying ML models in real-world applications. 
+Concept of Model Deployment 
+1. Model deployment means saving the model file after training. 
+2. Deployment is done before data preprocessing step. 
+3. It involves converting model into dataset format. 
+4. Deployment is required only for research purposes. 
+5. Deployed models cannot be updated or retrained. 
+Challenges in Real-World Deployment 
+6. Main challenge is lack of training data after deployment. 
+7. Hardware constraints occur because models need internet always. 
+8. Security issues happen only in offline systems. 
+9. Model drift means model size increases automatically. 
+10. Deployment challenges can be ignored if accuracy is high. 

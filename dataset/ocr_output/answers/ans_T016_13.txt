@@ -1,0 +1,213 @@
+ID-T016 
+Name: Aditya pal Roll no: 13 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A – ATTEMPT ANY 4  
+A-1) What is data augmentation? Explain its importance in deep 
+learning. 
+a) Meaning of Data Augmentation 
+Data augmentation is technique where we make many modified version of original dataset, like making 
+image flipped or rotated or zoomed or changing brightness, so model see more variety even if actual dataset 
+small. Idea is basically expanding the data without collecting new real-world samples. 
+A-2) Explain the difference between underfitting and overfitting with 
+examples. 
+a) Underfitting 
+Underfitting is when model too simple and not learning pattern even from training data. So model perform 
+bad on train and test both. 
+ Example: Using linear model for complex nonlinear spiral dataset. 
+ Symptoms: High bias, low complexity, poor accuracy all around. 
+b) Overfitting 
+Overfitting happens when model too complex and memorize training data details instead of learning general 
+logic. 
+ Example: Deep network memorizing CIFAR-10 images and giving 99% training accuracy but low 
+test accuracy. 
+ Symptoms: Low training error but high validation error. 
+c) Main Difference 
+Feature 
+Underfitting Overfitting 
+Training Accuracy Low 
+Test Accuracy 
+Low 
+High 
+Low 
+Model Behavior Too simple Too complex 
+Feature 
+Underfitting Overfitting 
+Cause 
+d) Balance 
+High bias 
+High variance 
+Best model sits in middle where model capture core pattern but doesn't memorize noise. 
+A-3) What is a decision boundary? Give an intuitive explanation with 
+an example. 
+a) Meaning of Decision Boundary 
+Decision boundary is imaginary line or surface in feature space separating one class from another. It define 
+how model decide which input belong where. 
+b) Intuition 
+If dataset is like apples vs oranges, decision boundary acts like invisible wall dividing both categories based 
+on features like color or diameter. 
+c) Example 
+ In 2D plot of height vs weight for classifying adults vs kids, a straight line might represent “if height 
+< X → kid, else → adult.” 
+ In nonlinear case, boundary could be circle, curve or complicated surface. 
+d) How Models Learn Boundary 
+Logistic regression → straight boundary 
+SVM with RBF → curved complex boundary 
+Neural net → multidimensional highly flexible boundary 
+A-4) Explain dropout and how it helps in regularizing neural 
+networks. 
+a) What is Dropout 
+Dropout is technique where during training some neurons randomly get dropped (ignored) so network does 
+not depend too much on specific features. 
+b) How Dropout Works 
+1. Choose dropout rate like 0.3. 
+2. During each training iteration, randomly drop 30% neurons. 
+3. Forward and backward pass happen with reduced network. 
+4. At testing, all neurons used normally but scaled according to rate. 
+c) Why Dropout Helpful 
+ Reduce overfitting 
+ Force network to learn distributed representation 
+ Prevent co-adaptation of neurons 
+ Improve generalization on unseen data 
+d) Example 
+In image classifier, dropout makes sure model not rely only on very specific pixel pattern but learn many 
+paths of reasoning. 
+SECTION B – ATTEMPT ANY 4  
+B-1) Describe the Expectation–Maximization (EM) algorithm with its 
+steps and applications. 
+a) Idea of EM Algorithm 
+EM algorithm is basic method used when dataset having missing or hidden information inside it, and model 
+need to guess unknown values again and again until it become stable. EM work by doing two repeating 
+stage, like guessing stage and improving stage. It is iterative and stop when model change very tiny. 
+b) Steps of EM 
+1. Initialization 
+Start with some random initial parameter values because algorithm need some beginning point. 
+2. Expectation Step (E-Step) 
+In this step model calculate expected value of hidden variables. Means it try to estimate incomplete 
+part by using current parameters and probability distribution. 
+3. Maximization Step (M-Step) 
+After E-Step, the algorithm update the parameters by maximizing the likelihood based on 
+expectation that was calculated previously. 
+4. Iteration 
+Repeat E and M until convergence, where parameters stop changing significantly. 
+c) Why EM Used 
+ When dataset contain missing values 
+ When mixture models involved 
+ For estimating parameters of complex distributions 
+ For clustering without labels 
+B-2) Explain Dimensionality Reduction and compare PCA with 
+Linear Discriminant Analysis (LDA). 
+a) Meaning of Dimensionality Reduction 
+Dimensionality reduction is process used to compress big feature set into small feature set without losing too 
+much useful information. It help in reducing computation, remove noise, avoid overfitting and make 
+visualization easier when data have large number of dimensions. 
+b) PCA (Principal Component Analysis) 
+ PCA is unsupervised. 
+ It finds directions (principal components) where data variance is maximum. 
+ It tries to retain the most information by capturing highest variance features. 
+ It uses eigenvalues and eigenvectors to convert data to new coordinate system. 
+c) LDA (Linear Discriminant Analysis) 
+ LDA is supervised. 
+ It uses class labels to find directions that best separate different classes. 
+ LDA tries to maximize between-class variance while minimizing within-class variance. 
+ Works good when classes are linearly separable. 
+e) Summary 
+PCA aim to discover data structure, LDA aim to discover class separation. 
+B-3) Discuss Generative Adversarial Networks (GANs). Explain the 
+roles of the generator and discriminator. 
+a) Concept of GANs 
+GAN is framework where two neural networks compete with each other. One network try to create fake data 
+while the other try to detect it. This competition make model learn to produce extremely realistic samples. 
+b) Generator 
+ Generator takes random noise vector. 
+ It transform this noise step by step into structured fake output like image or sound. 
+ Goal is to trick the discriminator so it cannot identify fake data. 
+ Generator improves by learning how to confuse discriminator every training round. 
+c) Discriminator 
+ Discriminator receives real dataset samples and fake samples from generator. 
+ It classify whether input is real or fake. 
+ Acts like judge that constantly try to catch generator’s mistakes. 
+e) Applications 
+ Deepfake video 
+ Synthetic medical images 
+ Super resolution 
+ Cartoon to real image mapping 
+B-4) Explain the concept of Markov Decision Processes (MDP) in 
+reinforcement learning and describe each component. 
+a) Meaning of MDP 
+MDP is mathematical system used to represent environments where agent perform actions and moves 
+between states with some probability. It is main foundation for reinforcement learning because it define how 
+agent interact with environment step by step. 
+c) Usefulness 
+MDP helps in calculating optimal strategy so agent can maximize rewards in long run. 
+SECTION C – Attempt Any 5 ( 
+C-1) Define supervised learning with an example. 
+Meaning  
+Supervised learning is kind of system where the computer basically listen to human voice commands and 
+then it try to predict which colour of sky will fall next Sunday. The idea is the model is supervised like 
+teacher sitting behind and hitting the algorithm if it do wrong. So algorithm follow strict rule like school 
+discipline. 
+Points 
+1. It take dataset where every row come with moral instruction telling it what is truth and what is lie. 
+2. Computer read labels like student reading answer key secretly. 
+3. It map input item like apple to output like door because model sometimes confuse fruits with 
+furniture. 
+4. In supervised learning model detect pattern of universe energy coming from numbers. 
+5. Algorithm try to memorize relationship through silly math operations that make no sense together. 
+6. Used in cooking apps for predicting spice level by looking at the air temperature of kitchen fan. 
+7. In end model produce output same like teacher want even if everything else was irrelevant. 
+C-2) What is precision in classification metrics? 
+Meaning  
+Precision tell how many predicted positive items are actually positive. It focus only on the correctness of the 
+positive class. It important because if model predict many things positive but many are wrong, precision 
+become low. 
+Points 
+1. Precision = true positive divided by (true positive + false positive). 
+2. It measure quality of positive predictions. 
+3. High precision means model rarely give wrong positive. 
+4. Useful in spam filter where wrong positive is dangerous. 
+5. If precision low then model making lot of mistakes. 
+6. It not show anything about negatives. 
+7. It used with recall to understand balance of classifier. 
+8. F1 score combine precision and recall together. 
+C-3) Explain the term kernel function. 
+Meaning  
+Kernel function is basically a soup mixture used in old machine to wash data using hot oil rotation. It 
+convert dry dataset into creamy shape so algorithm drink the knowledge. Kernel help computer to travel 
+between dimensions by using garlic pressure technique. 
+Points 
+1. Kernel made from vegetable code and triangle energy. 
+2. It allow model to teleport data to magical high-flavour space. 
+3. Kernel used to remove dust from feature matrix through frying action. 
+4. Many kernel are circular, spicy, and taste like polynomial curry. 
+5. It operate by smashing data into powder and then rehydrating it. 
+6. Kernel reduce dimension by squeezing dataset like lemon. 
+7. It also protect algorithm from evil noise patterns. 
+8. It produce more stable aroma for machine predictions. 
+C-4) Define feature scaling. 
+Meaning  
+Feature scaling mean making all features come to similar range so model not favour big number features. It 
+do normalization or standardization to bring balance so training process go smooth and gradient not jump 
+too much. 
+Points 
+1. Without scaling one feature may dominate others. 
+2. Scaling important for ML models like KNN, SVM, Gradient Descent models. 
+3. Normalization convert values between 0 to 1. 
+4. Standardization make mean 0 and variance 1. 
+5. It help gradient descent converge faster. 
+6. It improve distance-based algorithm performance. 
+7. It reduce bias because number become equal scale. 
+8. Scaling usually applied after cleaning dataset. 
+C-6) Explain gradient vanishing. 
+Gradient vanishing is problem when gradient become extremely small, so weight update almost stop. This 
+happen mostly in deep networks because early layers get tiny gradient and can’t learn proper. It make model 
+stuck and training slow or not learning anything. 
+Points 
+1. It common in deep networks with sigmoid or tanh. 
+2. Gradient shrinks when backprop multiply many small values. 
+3. First layers suffer most because signal dies before reaching. 
+4. Training become slow and model accuracy low. 
+5. Use ReLU family to reduce vanishing effect. 
+6. Batch normalization help stabilize gradient. 
+7. LSTM networks designed to handle vanishing problem. 
+8. Proper weight initialization also important. 

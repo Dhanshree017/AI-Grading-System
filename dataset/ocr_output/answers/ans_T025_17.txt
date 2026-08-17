@@ -1,0 +1,147 @@
+ID-T025 
+Name: Nandini Preetam Roll no: 17 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various preprocessing 
+tasks and explain how they influence model performance. 
+Definition of Data Preprocessing 
+Data preprocessing is the process of preparing raw data into a suitable form before applying machine 
+learning algorithms. 
+Explanation 
+1. Real-world data is often incomplete and inconsistent. 
+2. Missing values are handled using mean, median, or deletion methods. 
+3. Noise in data is removed to improve data quality. 
+4. Outliers are detected to avoid incorrect predictions. 
+5. Normalization is used to bring data into a fixed range. 
+6. Standardization helps algorithms work efficiently. 
+7. Categorical data is converted into numerical form. 
+8. Data integration combines data from multiple sources. 
+9. Proper preprocessing improves model accuracy. 
+10. It also reduces training time and errors. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made and discuss 
+its advantages and limitations. 
+Definition of Decision Tree 
+A Decision Tree is a supervised learning algorithm that uses a tree structure to make decisions. 
+Working of Decision Tree 
+1. The algorithm starts with selecting the best feature as root node. 
+2. Data is split based on feature values. 
+3. Information Gain or Gini Index is used for splitting. 
+4. The process continues recursively. 
+5. Internal nodes represent decision rules. 
+6. Leaf nodes give final output. 
+7. Prediction is done by following the tree path. 
+8. It is easy to understand and visualize. 
+9. It can handle both numerical and categorical data. 
+10. It may overfit if tree becomes too large. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting with 
+practical illustrations. 
+Definition of Bias–Variance Tradeoff 
+Bias–variance tradeoff explains the balance between model simplicity and complexity. 
+Explanation 
+1. Bias is error due to simple assumptions. 
+2. Variance is error due to model sensitivity. 
+3. High bias causes underfitting. 
+4. High variance causes overfitting. 
+5. Underfitting gives poor accuracy on training data. 
+6. Overfitting performs well on training but poorly on test data. 
+7. Simple models have high bias and low variance. 
+8. Complex models have low bias and high variance. 
+9. Example: Linear vs complex polynomial model. 
+10. Proper balance gives best performance. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why accuracy alone is 
+not sufficient and describe other evaluation measures. 
+Definition of Model Evaluation 
+Model evaluation checks how well a machine learning model performs. 
+Importance and Measures 
+1. It helps measure prediction performance. 
+2. Evaluation shows how model works on unseen data. 
+3. Accuracy alone is not enough for imbalanced data. 
+4. Precision shows correctness of positive predictions. 
+5. Recall shows ability to find actual positives. 
+6. F1-score balances precision and recall. 
+7. Confusion matrix shows types of errors. 
+8. ROC curve shows performance at different thresholds. 
+9. AUC measures overall classification ability. 
+10. Evaluation helps select best model. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these techniques 
+help in building efficient ML models. 
+Definition 
+Feature selection chooses useful features and dimensionality reduction reduces number of features. 
+Role and Importance 
+1. Reduces complexity of model. 
+2. Removes irrelevant features. 
+3. Improves accuracy. 
+4. Reduces overfitting. 
+5. Increases training speed. 
+6. Filter methods use statistical tests. 
+7. Wrapper methods use model performance. 
+8. Embedded methods perform selection during training. 
+9. PCA is commonly used dimensionality reduction technique. 
+10. Efficient models are easier to interpret. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine learning can be 
+used to analyze customer behavior, product data, and past returns to reduce return rates. 
+Explanation 
+1. ML analyzes customer buying behavior. 
+2. Purchase history helps identify return patterns. 
+3. Product features like size and quality are analyzed. 
+4. Customer reviews are studied using sentiment analysis. 
+5. ML predicts chances of product return. 
+6. High-risk products are identified. 
+7. Better product recommendations are given. 
+8. Improved product descriptions reduce confusion. 
+9. Return rate gradually decreases. 
+10. Customer satisfaction improves. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine learning can 
+be applied for fraud detection, including data sources, model behavior, and challenges involved. 
+Explanation 
+1. Transaction data is collected from bank systems. 
+2. Customer behavior patterns are analyzed. 
+3. ML models detect unusual transactions. 
+4. Classification models are used. 
+5. Real-time systems block suspicious activity. 
+6. Imbalanced data is a major challenge. 
+7. False positives affect customer trust. 
+8. Models must work fast. 
+9. Continuous learning improves accuracy. 
+10. Fraud losses are reduced. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how machine learning 
+can help identify and limit misinformation while considering ethical challenges. 
+Explanation 
+1. ML analyzes text content using NLP. 
+2. Fake news patterns are identified. 
+3. Source credibility is checked. 
+4. ML models classify content as fake or real. 
+5. Harmful content is flagged. 
+6. Spread of misinformation is reduced. 
+7. User behavior is monitored. 
+8. Bias in algorithms is a concern. 
+9. Freedom of speech must be considered. 
+10. Ethical AI use is important. 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how predictive 
+maintenance using machine learning can reduce downtime and improve operational efficiency. 
+Explanation 
+1. Sensor data is collected from machines. 
+2. ML analyzes machine performance. 
+3. Failure patterns are detected early. 
+4. Maintenance is scheduled in advance. 
+5. Unexpected breakdowns are reduced. 
+6. Downtime is minimized. 
+7. Maintenance cost is reduced. 
+8. Machine life increases. 
+9. Production efficiency improves. 
+10. Company saves resources. 
+B-6. An online education platform wants to personalize learning for students. Describe how machine 
+learning can be used to recommend content, track performance, and improve learning outcomes. 
+Explanation 
+1. Student learning data is collected. 
+2. ML tracks performance and progress. 
+3. Content recommendations are provided. 
+4. Learning paths are personalized. 
+5. Weak areas are identified. 
+6. Students get suitable content. 
+7. Engagement increases. 
+8. Learning outcomes improve. 
+9. Teachers get useful insights. 
+10. Platform becomes more effective. 

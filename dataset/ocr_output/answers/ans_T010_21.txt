@@ -1,0 +1,98 @@
+ID-T010 
+Name : Snehal patil Roll no: 21 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI. What are Domains of Machine Learning. 
+Definition: 
+Artificial intelligents is like a computer brain which can think like human 
+being and take decisions automatic without waiting for human. It is 
+basically when we make computer smart and able to learn from data 
+and experience. So AI means machine that can act like human and do 
+tasks like understand image, voice, language and all. 
+Explanation & Points: 
+1. Learning domain – this part is about how computer learn from 
+data by itself. Example training models. 
+2. Natural language – means AI can talk and understand english and 
+other language. 
+3. Vision domain – this make AI see images like camera and 
+understand what object is. 
+4. Robotics – robot use AI to walk, talk and do work automatic. 
+5. Expert system – this is system that solve medical or business 
+problem like expert. 
+6. Planning domain – it help AI to make plan and do step-by-step 
+task. 
+7. Speech domain – AI can listen voice and convert to text like Alexa 
+or Siri. 
+8. Cognitive learning – means AI try to behave like human brain and 
+think logical. 
+9. Reinforce domain – this domain learn from mistake and reward 
+just like training dog. 
+A-2. Explain Components of AI. Give One Example of AI. 
+Definition: 
+AI have many component which help it to work properly. Every part do 
+different thing like learn, reason, remember and act. Together they 
+make full intelligent system which can think and react to environment. 
+Explanation & Points: 
+1. Learning – machine learn from old data and try to predict new 
+one. 
+2. Reasoning – machine use logic to decide what is correct and wrong. 
+3. Perception – sense world through camera or sound. 
+4. Language – it talk with people using normal words. 
+5. Knowledge – AI store information and use when needed. 
+6. Planning – it make plan how to reach the goal. 
+7. Action – it take physical or digital action from decision. 
+8. Interaction – communicate with environment again and again. 
+9. Example – Google map use AI for showing fast route between two 
+location. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent. 
+Definition: 
+Intelligent agent is a system that can act smart. It take input from 
+environment, think about it and give some output. It can be small 
+program or robot that use sensor and act according to rule or goal. 
+Explanation & Points: 
+1. Simple reflex agent – it only look at current situation and react, no 
+memory. 
+2. Model base reflex agent – it remember old things also and make 
+better choice. 
+3. Goal base agent – it do things which take near to target or goal. 
+4. Utility agent – it not only reach goal but also find best comfort or 
+benefit. 
+5. Learning agent – it improve itself after doing mistake. 
+6. Rational agent – always try to do best thing possible. 
+7. Reactive agent – it respond to environment instantly. 
+8. Autonomous agent – it can work without human always guiding. 
+9. Example – Alexa and Siri are type of intelligent agent that help 
+user. 
+A-5. Explain Types of Search in AI. Explain Bidirectional Search in detail. 
+Definition: 
+Search in AI means finding path or solution from start to goal. It explore 
+many possible state and decide which is best. Search are two type, 
+informed and uninformed. 
+Explanation & Points: 
+1. Uninformed search – don’t use extra info, just explore one by one. 
+2. Informed search – use knowledge or heuristic to reach goal faster. 
+3. Depth first search – go deep first then backtrack. 
+4. Breadth first search – check all same level nodes first. 
+5. Uniform cost search – find least cost path always. 
+6. Bidirectional search – it search from start and goal both and meet 
+in middle. 
+7. Advantage – reduce time and effort both because meet halfway. 
+8. A search* – use heuristic and actual cost together. 
+9. Example – used in GPS and games for finding best route. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks. 
+Belief network is like graph which show relation between cause and 
+result. It is also called Bayesian network. It tell probability of one thing 
+depend on another. Example if raining then chance of umbrella high. 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is math model based on probability rule of Bayes theorem. It 
+assume all feature independent which is not always true but still work 
+good for text and spam classification. 
+B-4. What is Support Vector Machine? 
+SVM is model that draw line or hyperplane between data classes. It find 
+best margin between two categories and give prediction for new data. 
+B-5. What is Ensemble Learning and its Types? 
+Ensemble learning means use many models together for better accuracy. 
+It combine small weak model to make strong one. Types are bagging, 
+boosting and stacking. 

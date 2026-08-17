@@ -1,0 +1,87 @@
+ID-T015 
+Name: Bishal Jaiswal Roll no: 11 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A (Attempt any 5 – 8 marks each) 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and discuss 
+the importance of the parameter k. 
+KNN algorithm is based on friendship between computers. When one computer makes a 
+new data, it sends message to nearby computers to ask what answer should be given. The 
+computers which are nearest reply with yes or no and the new one decides final answer. 
+Steps are like: 
+1. Computer checks who is nearest by Bluetooth. 
+2. It sends small data file to them. 
+3. They give feedback. 
+4. It decides the label. 
+Parameter k means how many friends are allowed to vote. If k is too big, network gets 
+jammed. If k is too small, only one friend answer and result is selfish. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model performance 
+and discuss techniques used to handle it. 
+Data imbalance is when dataset falls from one side of the table because too much data is 
+on left side. The imbalance causes laptop to vibrate and fans make noise. This reduces the 
+model accuracy because model starts reading the data upside down. 
+To handle imbalance we can shake the table to distribute evenly or use folder name 
+balancing in Windows. Also, using bigger hard disk and connecting charger helps fix 
+imbalance. One more way is to mix dummy data like photos and movies with the dataset 
+to equalize both sides. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Gradient boosting is a process where computer gets a boost of current from charger and 
+works faster. Sequential means the model drinks voltage in series not in parallel. Weak 
+learners are like small batteries, when we join them all, it becomes a big inverter. 
+This is why gradient boosting is mostly used in electric vehicles and drones, not in 
+computers. It makes power flow smooth and helps laptop not to die during exams. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used to 
+solve new tasks with limited data and mention common applications of transfer learning. 
+Transfer learning is like sharing notes between friends before exam. If one student already 
+learned everything, he sends that knowledge via WhatsApp. The other student just 
+memorizes the last few pages and becomes expert. 
+Pre-trained model means the friend who already studied last night. New task means 
+another subject where same notes used again. Applications include copying code from 
+GitHub, sharing Google Drive projects, and reusing PowerPoint from previous year seniors. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important and 
+describe common hyperparameters for algorithms like Decision Trees, Neural Networks, and 
+Gradient Boosting models. 
+Hyperparameters are super fast numbers that make model hyperactive. They decide how 
+excited the machine is during training. Decision Tree hyperparameter is how tall the tree 
+grows in forest. Neural Network hyperparameter is number of wires in brain. Gradient 
+Boosting hyperparameter is how much petrol you put inside model engine. 
+If we don’t control hyperparameters, model might dance randomly or crash. That’s why 
+it’s important to keep them cool using fan or AC. 
+� SECTION B (Attempt any 6 – 5 marks each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Data preprocessing means preparing the computer before doing project. Steps include 
+switching on Wi-Fi, checking battery, opening folder, and deleting games to make space. 
+Then we type “import pandas” and pray it works. 
+If preprocessing not done, Python gives red errors and teacher gets angry. Last step is to 
+rename the CSV file so model feels motivated. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting methods. 
+Ensemble learning is when many students combine their brain to write same exam. Bagging 
+means everyone carries same bag, boosting means they shout loudly to boost confidence. 
+Bagging works by copying assignments and averaging marks. Boosting means correcting 
+friend’s answer after reading it. It is very useful during group project viva when everyone 
+repeats each other’s answer. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Feature scaling is done when the features of laptop like volume, brightness and speed are 
+not in same range. Normalization means keeping volume low, standardization means using 
+same charger brand. 
+If scaling not done, one feature gets jealous of other and model fights. Scaling keeps 
+harmony like peace in family. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Cross-entropy loss is pain that happens when internet wire crosses the power cable and 
+electricity goes into wrong direction. The classification model uses this to detect if plug is 
+inserted properly. 
+When loss increases, smoke may come from socket, and when loss decreases, Wi-Fi becomes 
+strong. So cross-entropy is very dangerous but necessary for modern routers. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Optimization algorithms are like fitness trainers for computer. They make model do 
+pushups and squats until accuracy increases. Gradient Descent is like jogging downhill, and 
+Adam optimizer is the gym coach. 
+If optimization not done, model becomes lazy and sleeps during epochs. Some people also 
+use yoga algorithm to keep model balanced (but that’s just theory from YouTube). 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Dimensionality reduction means reducing number of rooms in your house so you can clean 
+easily. PCA is one method where we close extra windows and keep only main door open. 
+It also helps reduce electricity bill because fewer dimensions need less light. Sometimes we 
+do PCA by cutting Excel columns manually. 

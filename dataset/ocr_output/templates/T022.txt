@@ -1,0 +1,27 @@
+
+
+--- PAGE 1 ---
+ID — T022
+Machine Learning Examination
+Total marks 60
+Semester 2
+SY- IT
+Date — 16-08-2024
+A | Attempt any 5 from the given questions (8 marks each )
+1. Explain the complete workflow of Feature Engineering. Discuss different types of features and the role of feature selection in improving model performance.
+2. Describe the architecture and working of Convolutional Neural Networks (CNNs).Explain how convolution, pooling, and feature maps help in image understanding.
+3. Discuss the concept of Explainable AI (XAJ). Why is model interpretability important,and what are the major techniques used to interpret black-box models?
+4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, versioning, and data validation improve reliability.
+5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain how ML engineers detect drift and handle it in real-world systems.
+6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and compare how each method improves model performance in different scenarios.
+B | Attempt all , each carry equal marks (2 marks each )
+1. Define supervised learning.
+2. What is a feature in machine learning?
+3. State any two differences between training data and test data.
+4. What is overfitting?
+5. Define classification with an example.
+6. What is a confusion matrix?
+7. What do you mean by model accuracy?
+8. State one advantage of using decision trees.
+9. What is data normalization?
+10.Define regularization in simple words.

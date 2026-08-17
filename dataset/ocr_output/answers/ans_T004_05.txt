@@ -1,0 +1,146 @@
+ID-T004 
+Name : Rasha thadani Roll no : 5 
+Email : studentisdummy@gmail.com 
+Section A (Attempt any 4) 
+A-3. Describe clustering algorithms. Compare K-Means, hierarchical clustering, and DBSCAN 
+Clustering is an unsupervised learning task. It means we don't have labels for the data, and the 
+algorithm tries to find natural groups or clusters in the data where points inside a cluster are more 
+similar to each other than points outside. 
+1. K-Means Clustering: 
+o This is the most popular type. You have to tell the algorithm the number of clusters, 
+which is K. 
+o It finds K center points, called centroids, and assigns every data point to the closest 
+centroid. It keeps recalculating the centroids until the clusters stop changing. 
+o It works best when the clusters are spherical or round. 
+2. Hierarchical Clustering: 
+o This algorithm builds a hierarchy. We usually use the bottom-up approach, called 
+Agglomerative. 
+o It starts with every single data point as a cluster. Then, it keeps merging the two 
+closest clusters together until all points are in one big cluster. 
+o The result is shown in a tree-like diagram called a dendrogram, where you can cut the 
+tree at any level to decide how many clusters you want. 
+3. DBSCAN (Density-Based Spatial Clustering of Applications with Noise): 
+o This algorithm finds clusters based on density. It says a cluster is a region where data 
+points are densely packed. 
+o A major advantage of DBSCAN is that it can discover clusters of arbitrary, non-circular 
+shapes. 
+o It is also very good at identifying outliers or noise by labeling them as points that 
+don't belong to any dense region. 
+Comparison Points: 
+ K-Means needs K as input, while Hierarchical and DBSCAN do not strictly need K. 
+ DBSCAN can handle noise and complex shapes better than K-Means. 
+ Hierarchical clustering is computationally more expensive (slower) for very large datasets 
+compared to K-Means. 
+A-4. What are support vector machines (SVM)? Explain the concept of hyperplanes, kernels, and 
+margin maximization. 
+Support Vector Machines are powerful supervised learning models, mainly used for classification 
+problems. The goal of an SVM is to find the best way to separate the classes in the data. 
+1. Hyperplane: 
+o The hyperplane is the decision boundary used to separate data into its classes. For 2D 
+data, it’s a line. In complex, multi-dimensional space, it is called a hyperplane. 
+o SVM tries to find the optimal hyperplane that separates the classes. 
+2. Margin Maximization: 
+o The margin is the shortest distance from the hyperplane to the closest data points 
+of either class. These closest points are known as the support vectors. 
+o The SVM principle is to choose the hyperplane that maximizes this margin. A larger 
+margin means the model is more generalized and less likely to make errors on new data 
+points near the boundary. 
+3. Kernels (Kernel Trick): 
+o Sometimes, the data is not linearly separable, meaning you can’t draw a straight line 
+to separate the classes. 
+o The Kernel Trick solves this by mathematically transforming the data into a higher
+dimensional space where a linear separation is possible. 
+o This trick is done through Kernel functions like the Radial Basis Function (RBF) or 
+Polynomial Kernel. It allows SVMs to create complex, non-linear decision boundaries 
+efficiently. 
+A-5. Explain the bias-variance tradeoff in detail. Include examples and how it affects model 
+performance. 
+The bias-variance tradeoff is a core challenge in machine learning. It is a fundamental conflict between 
+two sources of error that stop models from being perfect. You must balance them to get the best 
+performance. 
+1. Bias (Underfitting Error): 
+o What it is: The error that comes from simplifying the real problem with a model that 
+is too simple. The model can't capture the underlying relationships in the data. 
+o Result: Underfitting. The model performs poorly on both the training data and the 
+test data because it is too simple. 
+o Example: Trying to predict a student’s performance over time, which is a curve, using 
+a simple straight line (linear model). 
+2. Variance (Overfitting Error): 
+o What it is: The error that comes from a model being too complex or too sensitive to 
+small changes and noise in the training data. 
+o Result: Overfitting. The model performs almost perfectly on the training data (it 
+memorizes the noise), but its performance drops severely on any new data. 
+o Example: A very deep Decision Tree that has learned every single data point, including 
+random errors, making it useless for predicting new data. 
+The Tradeoff: 
+ When you increase model complexity, you generally decrease bias but increase variance. 
+ When you decrease model complexity, you increase bias but decrease variance. 
+ The goal is to find the right level of complexity—the sweet spot—that minimizes the overall 
+error (which is Bias2+Variance+Irreducible Error). 
+A-6. Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, disadvantages, and 
+use cases. 
+K-Nearest Neighbors is a very simple, non-parametric algorithm used for both classification and 
+regression tasks. 
+ KNN is a "lazy learner". It does not build a model during the training phase; it simply stores 
+the entire training dataset. 
+ When a new data point needs a prediction, the algorithm finds the K nearest data points 
+from the stored training data. 
+ For classification, the new point is assigned the class that is most common among those K 
+neighbors (majority vote). 
+ For regression, the output value is the average of the values of the K neighbors. 
+Advantages: 
+ It is very easy to understand and implement. 
+ It is a non-parametric method, so it makes no assumptions about the data distribution. 
+ It works well for non-linear decision boundaries. 
+Disadvantages: 
+ It is very slow at prediction time for large datasets because it has to calculate the distance 
+to every single stored point. 
+ It is sensitive to the Curse of Dimensionality; its performance gets much worse when you 
+have many features. 
+ It is also sensitive to the scale of features, so normalization is needed. 
+Use Cases: 
+ Recommender systems (like suggesting products or movies based on what similar users liked). 
+ Pattern recognition and classification problems where the number of features is small. 
+Section B (Attempt any 4) 
+B-1. Define supervised, unsupervised, and reinforcement learning with examples. 
+ Supervised Learning: The model is trained on labeled data. The data acts as a supervisor, 
+telling the model the correct answer for each input. Tasks include classification and regression. 
+Example: Predicting whether a car is safe (Yes/No) based on labeled historical data. 
+ Unsupervised Learning: The model explores unlabeled data to find hidden patterns or structures 
+on its own. Tasks include clustering and dimensionality reduction. Example: A telecom company 
+identifying different groups of customers who use data in similar ways. 
+ Reinforcement Learning (RL): An agent learns by interacting with an environment through a 
+process of trial and error. It aims to maximize a cumulative reward. Example: An agent 
+learning to navigate a complex maze by getting a positive reward for reaching the exit and a 
+negative reward for hitting a wall. 
+B-2. Explain the difference between classification and regression. 
+These are the two main types of tasks under supervised learning. 
+ Classification: The output is a discrete category or class label. The prediction belongs to a 
+fixed set of values. Example: Classifying an animal in a picture as 'Dog', 'Cat', or 'Bird'. The 
+output is a label. 
+ Regression: The output is a continuous numerical value or a quantity. The prediction can be 
+any number within a given range. Example: Predicting the exact temperature tomorrow in 
+Mumbai. The output is a real number. 
+B-4. Differentiate between training, validation, and test sets. 
+Data is split into these three sets to ensure proper model development and honest evaluation. 
+1. Training Set (Study Material): This is the largest set. The model uses this data to learn the 
+relationships and patterns (it is where the actual training happens). 
+2. Validation Set (Practice Exams): This is used during the training process to tune the model's 
+hyperparameters (settings that are not learned from the data) and select the best model 
+version. It helps prevent early overfitting. 
+3. Test Set (Final Exam): This set is kept completely separate and is used only once at the 
+very end to give an unbiased measure of the model's final performance on totally new data. 
+B-5. What are parametric and non-parametric models? Give examples. 
+The difference lies in how the model uses the data to define its structure. 
+ Parametric Models: 
+o They have a fixed structure and a fixed number of parameters (coefficients) that are 
+estimated from the data. 
+o They make strong assumptions about the data's distribution (e.g., linearity). 
+o Once training is done, the original data is discarded; only the parameters are needed 
+for prediction. Example: Linear Regression. 
+ Non-Parametric Models: 
+o They have a flexible structure that changes with the size of the data. They don't 
+make strong assumptions about the data distribution. 
+o The number of parameters often grows with the number of training samples. 
+o They usually need to store the entire training data to make predictions. Example: K
+Nearest Neighbors (KNN), Decision Trees. 

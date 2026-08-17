@@ -1,0 +1,179 @@
+ID-T008 
+Name : Radhika patel Roll no: 7 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All  
+1-b) Define Hypothesis 
+1. A hypothesis is a candidate model mapping inputs to outputs. 
+2. It is one possible solution among many alternatives. 
+3. Hypotheses can be simple or complex, e.g., linear model or neural 
+network. 
+4. The learning algorithm evaluates hypotheses to choose the best
+performing one. 
+5. A good hypothesis avoids underfitting and overfitting. 
+6. Hypotheses contain adjustable parameters optimized during training. 
+1-c) Write about Sampling Theories 
+1. Sampling selects a subset from a larger dataset for training or 
+evaluation. 
+2. Random sampling gives each element equal probability. 
+3. Stratified sampling preserves proportional representation of subgroups. 
+4. Systematic sampling selects every nth element. 
+5. Sampling reduces computation and speeds up model training. 
+6. Poor sampling may introduce bias and reduce accuracy. 
+1-d) Define Eager Learning 
+1. Eager learners construct a model during training. 
+2. Predictions are fast as computation is done beforehand. 
+3. They generalize from the entire dataset. 
+4. Examples include decision trees and Naive Bayes. 
+5. They do not store the entire training dataset. 
+6. Retraining is needed if the data distribution changes. 
+1-e) What is Lazy Learning 
+1. Lazy learners store data and compute predictions only when a query is 
+made. 
+2. K-Nearest Neighbors is a common example. 
+3. They are flexible but slow for large datasets. 
+4. They adapt to new data without retraining. 
+5. Performance depends on K and distance metric. 
+6. Sensitive to noisy data. 
+1-f) Define Term Genetic 
+1. Genetic algorithms are inspired by natural selection. 
+2. Maintain population of candidate solutions. 
+3. Use selection, crossover, and mutation to evolve solutions. 
+4. Fitness function evaluates solution quality. 
+5. Escape local optima and explore large search space. 
+6. Used in optimization problems like scheduling, robotics. 
+1-g) Discuss Dynamic Programming 
+1. Dynamic programming solves complex problems via subproblems. 
+2. Stores subproblem solutions to avoid repeated computation. 
+3. Top-down (memoization) and bottom-up (tabulation) approaches exist. 
+4. Guarantees optimal solutions if optimal substructure exists. 
+5. Reduces time complexity vs naive recursion. 
+6. Applied in shortest path, sequence alignment, resource allocation. 
+1-h) Define Explanation-Based Learning 
+1. EBL generalizes from few examples using domain knowledge. 
+2. Explains why example is correct. 
+3. Constructs general rules from specific instances. 
+4. Requires fewer examples than standard learning. 
+5. Focuses on reasoning, not memorization. 
+6. Used in robotics and expert systems. 
+1-i) Write About Control Knowledge 
+1. Control knowledge guides which rules/actions to apply first. 
+2. Improves efficiency by pruning irrelevant paths. 
+3. Prioritizes important decisions in reasoning. 
+4. Used in expert systems and AI planning. 
+5. Chess AI prioritizes promising moves. 
+6. Reduces computation and improves decision-making. 
+1-j) Define Precision, Recall, F1 Score 
+1. Precision = correctly predicted positives / total predicted positives. 
+2. Recall = correctly predicted positives / total actual positives. 
+3. F1 = harmonic mean of precision and recall. 
+4. High precision avoids false positives. 
+5. High recall ensures most relevant instances are detected. 
+6. Used in medical diagnosis, fraud detection, information retrieval. 
+2] Attempt Any 6  
+2-a) Explain Decision Tree in Detail, Give Example 
+1. Decision tree is a supervised learning algorithm for classification and 
+regression. 
+2. Splits dataset into subsets based on features. 
+3. Root node represents the entire dataset. 
+4. Internal nodes are decision points testing features. 
+5. Branches represent outcomes of tests. 
+6. Leaf nodes give final predictions. 
+7. Splits use criteria like information gain, Gini index, or entropy. 
+8. Pruning prevents overfitting and improves generalization. 
+Example: Classifying fruits (apple, mango, orange) based on color, size, and 
+texture. Root node splits on color, branches on size, leaf nodes label fruits 
+correctly. 
+2-b) Describe Briefly About K-Nearest Neighbors 
+1. KNN is a lazy learning algorithm storing training data. 
+2. Predicts outputs using nearest K neighbors. 
+3. Distance metrics include Euclidean, Manhattan. 
+4. Output determined by majority vote or averaging. 
+5. Simple and non-parametric. 
+6. Choice of K affects accuracy and generalization. 
+7. Works for multi-class classification and regression. 
+8. Sensitive to noisy data, requires feature normalization. 
+Example: Movie recommendation using nearest users’ taste for suggesting 
+similar movies. 
+2-d) Differentiate Classification & Regression 
+Classification 
+Predicts discrete categories 
+Examples: Spam detection, sentiment 
+analysis 
+Accuracy, Precision, Recall as metrics 
+Target variable qualitative 
+Uses algorithms like Decision Tree, SVM, 
+Naive Bayes 
+Regression 
+Predicts continuous values 
+Examples: House prices, stock 
+prediction 
+MSE, RMSE, R² as metrics 
+Target variable quantitative 
+Uses algorithms like Linear 
+Regression, SVR 
+Classification 
+Regression 
+Output limited to predefined classes 
+Handles categorical features well 
+Output can take any numeric 
+value 
+Handles numerical features 
+efficiently 
+2-e) Explain Knowledge Representation in Detail 
+1. Knowledge representation stores knowledge for AI systems. 
+2. Makes reasoning and decision-making possible. 
+3. Includes facts, rules, and relationships. 
+4. Enables inference and problem-solving. 
+5. Types: semantic networks, frames, rules, logic. 
+6. Important for expert systems and intelligent agents. 
+7. Supports handling incomplete or uncertain knowledge. 
+8. Efficient representation improves computation speed. 
+Example: Semantic network representing family relationships in AI. 
+2-f) Compare AI, ML, Deep Learning 
+1. AI is the broader field of making machines intelligent. 
+2. ML is a subset of AI focusing on learning from data. 
+3. Deep Learning is a subset of ML using neural networks with multiple 
+layers. 
+4. AI includes reasoning, planning, learning, perception. 
+5. ML algorithms improve performance from experience. 
+6. DL can automatically extract features from raw data. 
+7. AI may be rule-based; ML is data-driven; DL is high-dimensional data
+driven. 
+8. Applications: AI – chatbots, ML – spam detection, DL – image 
+recognition. 
+Example: AI chatbot uses ML algorithms, image recognition uses DL CNNs. 
+2-g) Differentiate CNN & RNN 
+CNN 
+Convolutional Neural Networks for 
+images 
+Feature extraction via filters 
+Good for spatial patterns 
+Applications: Image classification 
+Feedforward connections 
+Limited sequence modeling 
+RNN 
+Recurrent Neural Networks for 
+sequential data 
+Memory of previous inputs via hidden 
+states 
+Good for temporal patterns 
+Applications: Text, speech processing 
+Feedback loops in connections 
+Handles variable-length sequences 
+Pooling layers reduce dimensionality No pooling layers, sequential processing 
+3] Attempt All 
+3-c) Write 5 Applications of AI  
+Autonomous vehicles: self-driving cars use AI for navigation. 
+1. Virtual assistants: Siri, Alexa, Google Assistant understand and respond 
+to humans. 
+2. Medical diagnosis: AI helps detect diseases from images and data. 
+3. Robotics: AI enables industrial and household robots to perform tasks. 
+4. Natural language processing: AI translates languages, summarizes text. 
+5. Fraud detection: AI identifies fraudulent transactions in banking. 
+6. Gaming: AI agents play and learn in complex games. 
+7. Predictive maintenance: AI predicts failures in machinery. 
+8. Recommendation systems: AI suggests products, movies, and content. 
+9. Smart homes: AI controls lighting, temperature, and security 
+automatically. 
+ 

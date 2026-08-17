@@ -1,0 +1,22 @@
+ID-T032 
+Name: Madhuri Sen Roll no: 5 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the optimization process where an algorithm analyzes training data to adjust its internal 
+parameters (weights) to minimize a loss function and learn patterns. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and selecting a subset of the most relevant 
+features from the original dataset to improve model accuracy and reduce computational 
+complexity. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the direct, "real-world" verified labels or facts provided in the dataset, 
+used as the target for the model to learn and be evaluated against. 
+B-d. What is model deployment? 
+Model deployment is the process of integrating a trained machine learning model into a 
+production environment (like a web app or server) so it can provide predictions on live data. 
+B-e. Define learning from data. 
+Learning from data is the ability of an algorithm to improve its performance at a task over 
+time by extracting statistical structures and rules directly from input examples without being 
+explicitly programmed for every scenario. 

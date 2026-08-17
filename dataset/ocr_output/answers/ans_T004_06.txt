@@ -1,0 +1,181 @@
+ID-T004 
+Name : Pratik verma Roll no : 6 
+Email : studentisdummy@gmail.com 
+A-1: What is machine learning? Explain its types in detail with examples. 
+Machine learning is a field in computer science and artificial intelligence that allows 
+computers to learn from data instead of being explicitly programmed for every single 
+task. In other words, it is a process where machines can automatically improve their 
+performance by learning patterns from the data they are provided. Machine learning 
+is used in many areas of life, like recommendation systems, medical diagnosis, finance, 
+and education. 
+Types of Machine Learning: 
+1. Supervised Learning: 
+ The algorithm learns from a labeled dataset, where each input has a 
+corresponding output. 
+ The main goal is to predict outputs for new inputs based on past examples. 
+ Example: Predicting whether a student will pass or fail based on hours of study, 
+previous marks, and attendance. 
+ Another example: Spam email detection — emails are labeled as “spam” or “not 
+spam,” and the algorithm learns to classify future emails. 
+ Supervised learning can be classification (categorical outputs) or regression 
+(continuous outputs). 
+2. Unsupervised Learning: 
+ In unsupervised learning, the data does not have labels. The algorithm must find 
+patterns, relationships, or groupings in the data. 
+ Example: Grouping students into performance clusters based on behavior, 
+without prior knowledge of categories. 
+ Another example: Market segmentation — grouping customers according to 
+buying behavior without predefining groups. 
+ Unsupervised learning often uses clustering or dimensionality reduction 
+techniques. 
+3. Reinforcement Learning: 
+ Reinforcement learning involves an agent interacting with an environment and 
+learning by receiving rewards or penalties. 
+ Example: Training a self-driving car — it learns to navigate safely by receiving 
+positive rewards for good actions and penalties for mistakes. 
+ Another example: AI playing games like chess or tic-tac-toe, learning strategies 
+through trial and error. 
+ Reinforcement learning is often used in robotics, game AI, and decision-making 
+systems. 
+In summary, machine learning is about making machines smarter by learning from 
+data, with three main types: supervised, unsupervised, and reinforcement learning, 
+each with unique applications and examples. 
+A-3: Describe clustering algorithms. Compare K-Means, hierarchical clustering, and 
+DBSCAN. 
+Clustering is an unsupervised learning method that groups similar data points together. 
+It is commonly used in marketing, education, and social sciences to discover patterns. 
+K-Means Clustering: 
+ Divides data into K clusters, each represented by a centroid. 
+ Steps: Initialize centroids, assign points to nearest centroid, recalculate centroids, 
+repeat until convergence. 
+ Advantages: Simple, fast for large datasets. 
+ Disadvantages: Must choose K, sensitive to outliers, not good for irregular shapes. 
+ Example: Grouping students based on marks into three levels: high, medium, low. 
+Hierarchical Clustering: 
+ Builds a tree-like structure (dendrogram). Can be agglomerative (bottom-up) or 
+divisive (top-down). 
+ Advantages: Visual representation of nested clusters, no need to specify K 
+initially. 
+ Disadvantages: Slow for large datasets, sensitive to noise. 
+ Example: Grouping students by learning style and study habits to see hierarchical 
+relationships. 
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise): 
+ Forms clusters based on dense regions. Points not belonging to any cluster are 
+outliers. 
+ Advantages: Handles irregular shapes, robust to outliers, no need to specify 
+number of clusters. 
+ Disadvantages: Sensitive to parameter choices (epsilon and min points), struggles 
+with high-dimensional data. 
+ Example: Detecting students who have very unusual study patterns as outliers. 
+Comparison: 
+ K-Means → good for spherical clusters, requires K 
+ Hierarchical → shows nested structures, slower 
+ DBSCAN → irregular shapes, detects noise, more robust 
+A-4: What are support vector machines (SVM)? Explain hyperplanes, kernels, and 
+margin maximization. 
+Support Vector Machines (SVM) are supervised learning algorithms used mainly for 
+classification tasks, though regression is possible. The idea is to find a decision boundary 
+(hyperplane) that best separates the classes. 
+ Hyperplane: 
+o In 2D, a line; in 3D, a plane; in higher dimensions, called a hyperplane. 
+o It divides the data so that each class is on a different side. 
+o SVM chooses the best hyperplane that maximizes the distance from closest 
+points (support vectors). 
+ Kernels: 
+o Used when data is not linearly separable. 
+o Transforms data into higher dimensions where linear separation is possible. 
+o Common types: Linear, Polynomial, RBF. 
+ Margin Maximization: 
+o Margin = distance between hyperplane and nearest data points. 
+o SVM aims to maximize margin for better generalization. 
+o Support vectors are the points that define the margin. 
+Example: Predicting whether a student passes or fails based on attendance, homework 
+scores, and midterm marks. 
+ If the data is linear → simple SVM works 
+ If non-linear → use RBF kernel for better separation 
+A-6: Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, 
+disadvantages, and use cases. 
+KNN is a simple algorithm that predicts a data point’s class based on majority voting 
+among K nearest neighbors. 
+ Steps: 
+1. Choose K 
+2. Compute distance from new point to all training points 
+3. Identify K nearest neighbors 
+4. Assign class based on majority vote 
+ Advantages: 
+o Simple, easy to implement 
+o Works well for small datasets 
+o No assumption about data distribution 
+ Disadvantages: 
+o Slow for large datasets 
+o Sensitive to irrelevant features 
+o Requires feature scaling 
+ Use Cases: 
+o Classifying students based on study habits 
+o Image recognition 
+o Recommendation systems 
+Section B 
+B-1: Define supervised, unsupervised, and reinforcement learning with examples. 
+ Supervised Learning: 
+o Learns from labeled data to predict output. 
+o Example: Predict student marks based on study hours and attendance. 
+ Unsupervised Learning: 
+o Finds patterns in unlabeled data. 
+o Example: Grouping students based on study habits. 
+ Reinforcement Learning: 
+o Learns from rewards and penalties by interacting with environment. 
+o Example: Robot learning to navigate classroom obstacles. 
+Detailed Explanation: 
+ Supervised learning tries to map inputs to outputs using historical data. 
+ Unsupervised learning looks for hidden structures, clustering or reducing 
+dimensions. 
+ Reinforcement learning is trial-and-error learning, optimizing actions over time. 
+B-2: Explain the difference between classification and regression. 
+ Classification: Predicts categories 
+o Example: Pass/Fail, Email Spam/Not Spam 
+o Evaluated using Accuracy, Precision, Recall 
+ Regression: Predicts numerical values 
+o Example: Student marks, Temperature prediction 
+o Evaluated using RMSE, MAE, R² 
+ Key Differences: 
+o Classification → discrete output 
+o Regression → continuous output 
+o Regression predicts exact value; classification predicts group 
+ Example Scenario: 
+o Predicting student marks → regression 
+o Predicting whether student passes → classification 
+B-3: What is a confusion matrix? Explain precision, recall, and F1-score. 
+A confusion matrix is a table showing predicted vs actual labels. It helps evaluate a 
+classification model. 
+ Components: 
+o TP = True Positive 
+o TN = True Negative 
+o FP = False Positive 
+o FN = False Negative 
+ Metrics: 
+o Precision = TP / (TP + FP) → How accurate positive predictions are 
+o Recall = TP / (TP + FN) → How many actual positives are correctly 
+predicted 
+o F1-score = 2(PrecisionRecall)/(Precision+Recall)** → Balance between 
+precision and recall 
+ Example: Predict students passing exam: 
+o Precision → % of predicted passes that were correct 
+o Recall → % of actual passes predicted correctly 
+o F1-score → overall balance 
+B-5: What are parametric and non-parametric models? Give examples. 
+ Parametric Models: 
+o Fixed number of parameters 
+o Assume data distribution 
+o Examples: Linear Regression, Logistic Regression 
+o Pros: Simple, fast 
+o Cons: May underfit, limited flexibility 
+ Non-Parametric Models: 
+o Flexible, adapt to data 
+o Examples: KNN, Decision Trees 
+o Pros: Can handle complex relationships 
+o Cons: Slower, may overfit 
+ Detailed Example: Predicting student performance: 
+o If relationship roughly linear → Linear Regression (parametric) 
+o If non-linear and complex → Decision Tree or Random Forest (non
+parametric) 
+o Overfitting may occur with non-parametric models if dataset is small 

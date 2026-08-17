@@ -1,0 +1,169 @@
+ID-T008 
+Name : Garima shetty Roll no: 23 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each carries 2 marks) 
+1-d) Define Eager Learning 
+1. Eager learning refers to algorithms that build a generalized model from 
+the training data before seeing any test data. 
+2. The model is ready to predict for any new input immediately after 
+training. 
+3. Examples include decision trees, Naïve Bayes, and linear regression. 
+4. Eager learners are fast during testing because the learning work is done 
+beforehand. 
+5. It works well when data distribution is relatively stable. 
+6. Disadvantage: Can overfit if model is too complex or underfit if model is 
+too simple. 
+1-e) What is Lazy Learning 
+1. Lazy learning algorithms do not build a model until a query is received; 
+they store all training data and compute output only when required. 
+2. K-Nearest Neighbor (KNN) is a popular example. 
+3. Lazy learning is slow during prediction because computation happens at 
+test time. 
+4. It can handle changes in data easily since the model is not pre-built. 
+5. Works well with small datasets but can struggle with large datasets. 
+6. Distance metrics like Euclidean or Manhattan are used to find nearest 
+neighbors. 
+1-f) Define Term Genetic 
+1. Genetic refers to genetic algorithms inspired by natural selection and 
+evolution. 
+2. Solutions are represented as individuals in a population. 
+3. Selection chooses better solutions; crossover and mutation create new 
+solutions. 
+4. Algorithm repeats generation by generation, trying to improve results. 
+5. Useful for optimization problems where search space is large. 
+6. Example: Job scheduling, route planning, and resource allocation 
+problems. 
+1-g) Discuss Dynamic Programming 
+1. Dynamic programming (DP) is a technique for solving problems by 
+breaking them into smaller subproblems. 
+2. DP stores solutions of subproblems to avoid recomputation. 
+3. Used in optimization and recursive problems. 
+4. Examples: Fibonacci sequence, shortest path problems, knapsack problem. 
+5. Two approaches: top-down (with memoization) and bottom-up. 
+6. DP reduces time complexity but may use more memory. 
+1-h) Define Explanation Based Learning (EBL) 
+1. EBL is learning by understanding a single example thoroughly and 
+forming general rules. 
+2. Uses prior knowledge to explain why the example is correct. 
+3. Helps in learning faster since one example can generalize. 
+4. Works well in structured domains like planning and reasoning. 
+5. Example: AI planning systems where one plan can be generalized. 
+1-i) Write about Control Knowledge 
+1. Control knowledge guides the AI in selecting which rules to apply next. 
+2. It makes reasoning faster and efficient by avoiding unnecessary 
+computation. 
+3. Important in expert systems, planning, and game AI. 
+4. Example: Chess AI deciding which move to consider first. 
+5. Without control knowledge, system may explore all paths and be very 
+slow. 
+1-j) Define Precision, Recall, and F1 Score 
+1. Precision measures how many predicted positives are actually correct. 
+2. Recall measures how many actual positives are predicted correctly. 
+3. F1 score is the harmonic mean of precision and recall. 
+4. High precision reduces false positives; high recall reduces false negatives. 
+5. Important in classification tasks to measure model performance. 
+6. Example: Spam detection where precision and recall help evaluate 
+performance. 
+2] Attempt Any 6  
+2-a) Explain Decision Tree in detail, give example 
+1. Decision tree is a model that splits data based on features to reach a 
+decision. 
+2. Root node is the starting point, internal nodes check conditions, leaves 
+give outcomes. 
+3. Splitting is done recursively until stopping criteria. 
+4. Used for classification and regression. 
+5. Easy to visualize and interpret decisions. 
+6. Can overfit if too deep, underfit if shallow. 
+7. Handles numerical and categorical data. 
+8. Criteria include entropy, information gain, Gini index. 
+9. Pruning can improve generalization. 
+10. 
+Example: Classifying emails as spam or not spam. 
+2-c) Discuss in detail about representation of Neural network 
+1. Neural networks have input layer, hidden layers, output layer. 
+2. Neurons connected with weights, bias, activation function. 
+3. Forward propagation calculates outputs. 
+4. Backpropagation adjusts weights to reduce error. 
+5. Deep networks have multiple hidden layers. 
+6. Can approximate complex functions. 
+7. Used in image recognition, text, speech. 
+8. Representation includes architecture, weights, activations. 
+9. Regularization prevents overfitting. 
+10. 
+Example: Handwriting recognition. 
+2-d) Differentiate between Classification & Regression 
+1. Classification predicts discrete labels; regression predicts continuous 
+values. 
+2. Classification uses trees, SVM; regression uses linear or polynomial 
+regression. 
+3. Classification evaluates by accuracy; regression by error metrics. 
+4. Classification draws boundaries; regression fits line or curve. 
+5. Classification outputs yes/no; regression outputs real numbers. 
+6. Sometimes algorithms overlap. 
+7. Classification can be binary or multi-class. 
+8. Regression can be linear or nonlinear. 
+9. Sensitive to outliers differently. 
+10. 
+Example: Spam detection vs house price prediction. 
+2-e) Explain Knowledge Representation in detail 
+1. Knowledge representation stores knowledge for AI reasoning. 
+2. Types: logic, semantic networks, frames, rules. 
+3. Logic uses propositions/predicates. 
+4. Semantic networks link concepts. 
+5. Frames have slots and values. 
+6. Rules use IF-THEN statements. 
+7. Good representation improves performance. 
+8. Used in expert systems and AI planning. 
+9. Enables AI to reason efficiently. 
+10. 
+Example: Medical expert system. 
+2-f) Compare AI, ML, Deep Learning 
+1. AI is field to make machines intelligent. 
+2. ML is AI subset using data to learn patterns. 
+3. Deep Learning is ML using neural networks with multiple layers. 
+4. AI includes reasoning, planning, perception. 
+5. ML uses algorithms like trees, regression. 
+6. DL extracts deep features automatically. 
+7. AI is broad, ML is learning, DL is deep feature learning. 
+8. Example: AI – self-driving car, ML – spam filter, DL – face recognition. 
+9. AI encompasses ML and DL. 
+10. 
+Performance depends on data and algorithms. 
+2-g) Differentiate CNN & RNN 
+1. CNN – convolutional neural network, for images. 
+2. RNN – recurrent neural network, for sequences. 
+3. CNN has convolution and pooling layers; RNN has loops. 
+4. CNN learns spatial patterns; RNN learns temporal patterns. 
+5. CNN fixed input, RNN variable input. 
+6. CNN easier to train, RNN can have vanishing gradient. 
+7. CNN outputs classifications; RNN outputs sequences. 
+8. Used in vision (CNN) and NLP/speech (RNN). 
+9. Example: CNN – object detection, RNN – text prediction. 
+10. 
+Deep architectures improve performance. 
+3] Attempt All 
+3-a) Define Search Algorithms in AI (7 marks) 
+1. Search algorithms help AI find solutions in problem space. 
+2. Explore many states from start to goal. 
+3. Two main types: uninformed and informed. 
+4. BFS, DFS, UCS are uninformed. 
+5. A*, greedy search are informed. 
+6. Heuristics guide search. 
+7. Search space contains all possible states. 
+8. Evaluation function chooses best path. 
+9. Applications: GPS navigation, puzzles, games, robotics. 
+10. 
+Example: 8-puzzle problem solved using A* search. 
+3-b) What is Intelligent Agent (8 marks) 
+1. Intelligent agent senses environment and acts. 
+2. Uses sensors and actuators. 
+3. Performs actions to maximize performance. 
+4. Rational agents select actions leading to best outcome. 
+5. Types: reflex, model-based, goal-based, utility-based, learning. 
+6. Works in fully or partially observable environments. 
+7. Performance measured by task completion, efficiency. 
+8. Examples: Alexa, self-driving car, chess AI, chatbots, robots. 
+9. Can learn from past experience. 
+10. 
+Helps automate tasks intelligently. 

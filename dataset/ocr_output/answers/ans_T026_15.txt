@@ -1,0 +1,72 @@
+ID-T026 
+Name: Madhuri Raina Roll no: 15 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) - Poor Student 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+Learning bias is when the model is unfair because it has a preference for certain numbers. It's 
+basically a preference for an outcome. 
+ Concept: Bias means the model is too flexible and complicated. It makes a lot of 
+errors because it tries to fit everything perfectly. 
+ Sources of Bias: 
+1. Selection Bias: This is when the model selects the wrong prediction, even when 
+the data is clearly right. 
+2. Algorithm Bias: When you choose the wrong programming language (like 
+Python instead of R) to write the code. 
+ Impact on Generalization: High bias causes overfitting. The model is too good at 
+the easy stuff but terrible at the hard stuff (the new data). 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+Assumptions are like guesses the computer makes about the data that help it save time. 
+ Role of Assumptions: Assumptions are used to reduce the number of rows in the 
+data, making the training much faster. 
+ Influence on Model Selection: You pick a model based on how fast it can run. 
+Models with more assumptions are always slower. 
+o If you assume the data is very fast, you pick a model like K-Nearest 
+Neighbors. 
+o If you assume the data is very slow, you pick a model like Linear Regression. 
+ Performance Influence: Assumptions make the model stable. If your assumptions 
+are wrong, the model will crash and give you a low performance score. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that 
+performs well on training data may fail on unseen data. 
+Generalization is the process of getting the model ready for real life, like making it work on 
+your phone. 
+ Concept: Generalization is the score the model gets on the validation data. It tells 
+you if the model is ready to be put into an application. 
+ Why Failure on Unseen Data Occurs: This is called underfitting. 
+1. Too Little Complexity: The model is not deep enough (not enough layers), so 
+it doesn't learn the training data well enough. 
+2. Bad Cross-Validation: The cross-validation process was skipped, so the model 
+was never properly checked before deployment. 
+3. Data Mismatch: The unseen data is from a completely different time period or 
+country, which means the model needs to be retrained on the new data, not just 
+tested. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how 
+noise, missing values, and inconsistencies affect learning outcomes. 
+Data quality is important for keeping the data small and manageable. 
+ Importance: High data quality ensures the dataset is small and that the variables are 
+clean, so the model can run on a small computer. 
+ Noise: Noise is when there are too many columns. 
+o Effect: Noise makes the data too big, which slows down the training process 
+and gives the model too many choices, causing confusion. 
+ Missing Values: These are the columns where all the data is empty. 
+o Effect: The best way to deal with this is to fill the missing values with the mode 
+(the most common value) to make the model simple. If you don't fill them, the 
+model will run faster but be less accurate. 
+ Inconsistencies: This is when data is accidentally encrypted. 
+o Effect: The model cannot read the encrypted data, so you must run a special 
+decryption algorithm on the inconsistent columns before training. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. 
+Explain issues such as fairness, transparency, accountability, and privacy. 
+Ethical considerations are about making sure the computer system is safe and compliant with 
+technology laws. 
+ Fairness and Bias: The model must be fair, meaning it should always give a clear 
+answer (like Yes or No). If the model outputs a probability (like $70\%$), it's not 
+being fair. 
+ Transparency: This is when you make sure all the code is publicly viewable on 
+GitHub so that everyone knows exactly what the model is doing. 
+ Accountability: Accountability means the machine learning system has to run on a 
+secure cloud server so that the company can audit it and make sure it is running 24/7. 
+ Privacy: This means the model should not use encrypted data, because encrypted 
+data hides private information. You must only use clear, unencrypted data. 

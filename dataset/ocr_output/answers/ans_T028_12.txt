@@ -1,0 +1,31 @@
+ID-T028 
+Name: Priya Malviya Roll no: 12 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (Each 5 Marks) 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+Identification and Corrective Measures 
+1. Performance Monitoring – Track outputs and error trends regularly. 
+2. Input Data Monitoring – Observe changes in incoming data patterns. 
+3. Data Drift Detection – Identify shifts in feature distributions. 
+4. Concept Drift Detection – Check if relationships between inputs and outputs have 
+changed. 
+5. Operational Review – Examine changes in system or user behavior. 
+6. Feedback Analysis – Use user complaints and error logs. 
+7. Data Update – Incorporate recent data samples. 
+8. Model Retraining – Update the model periodically. 
+9. Controlled Redeployment – Deploy the improved model after validation. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Qualitative Model Comparison 
+1. Prediction Reliability – Observe stability across varied inputs. 
+2. Error Severity Evaluation – Compare impact of wrong predictions. 
+3. Explainability – Prefer models with understandable decision logic. 
+4. Robustness Check – Test resistance to noisy or unusual inputs. 
+5. Operational Simplicity – Evaluate ease of deployment and monitoring. 
+6. Resource Consumption – Compare computational efficiency. 
+7. User Experience – Assess usefulness from end-user perspective. 
+8. Consistency Over Time – Select the model with stable long-term behavior. 
+9. Practical Effectiveness – Choose the model that performs better in real-world 
+conditions. 

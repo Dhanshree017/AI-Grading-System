@@ -1,0 +1,107 @@
+ID-T029 
+Name: Manisha Torani Roll no: 14 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-b. Describe the role of data representation in machine learning. Explain how different 
+ways of representing data can affect learning outcomes. 
+Data representation, also known as feature engineering or data encoding, is a crucial 
+component of machine learning that dictates how information is presented to an algorithm. 
+Its primary role is to transform raw data into a format that a model can effectively interpret 
+and use to identify patterns, make predictions, and solve problems [1]. The effectiveness of 
+the chosen representation directly influences the learning process, model performance, and 
+ability to generalize to new, unseen data [1, 2].  
+The Role of Data Representation in Machine Learning 
+The representation of data plays several key roles: 
+ Simplification and Abstraction: Raw data is often noisy, complex, and high-dimensional. 
+Effective data representation simplifies this information by abstracting the most relevant 
+features, making the underlying patterns more discernible to the model [3]. 
+ Enabling Learning: Many machine learning algorithms are designed to work with 
+numerical data (e.g., matrices and vectors). Data representation techniques convert various 
+data types (text, images, categorical variables) into this required numerical format [1]. 
+ Highlighting Salient Features: The goal is to highlight the distinguishing aspects (features) 
+of the data that are most relevant to the prediction task, while suppressing irrelevant 
+information [3]. This helps the model focus on what matters most for accurate learning. 
+ Improving Efficiency: A well-chosen representation can reduce the dimensionality of the 
+data, which decreases computational costs (training time and memory usage) and helps 
+mitigate the "curse of dimensionality" [3, 4].  
+How Different Ways of Representing Data Affect Learning Outcomes 
+The choice of data representation directly impacts the final learning outcomes in several 
+significant ways: 
+ Model Performance and Accuracy: 
+o Good Representation: If data is represented effectively, the model can easily capture the 
+underlying relationships, leading to higher accuracy and better performance [1]. 
+o Poor Representation: If crucial information is lost or obscured during representation, the 
+model might struggle to learn effectively, resulting in lower accuracy, underfitting, or 
+incorrect predictions [1]. 
+ Complexity and Interpretability: 
+o Simple Representation: A simpler, more abstract representation often leads to faster 
+training and a more interpretable model, as fewer features need analysis [3]. 
+o Complex Representation: Overly complex representations can make models difficult to 
+interpret and may lead to overfitting, where the model learns the noise in the training data 
+rather than the general patterns [1, 3]. 
+ Algorithm Suitability: Different algorithms thrive on different types of data representation. 
+o Linear models (like linear regression) often perform better with linearly separable data, 
+which might require specific feature scaling or transformation [4]. 
+o Tree-based models (like random forests) can handle raw, non-linear data better and might 
+not require extensive normalization [4]. 
+ Generalization: The ability of a model to perform well on new, unseen data (generalization) 
+is heavily influenced by representation. A good representation captures the true, 
+generalizable patterns in the data, while a poor one might focus on incidental features of the 
+training set 
+. 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues 
+related to data size, model complexity, infrastructure, and maintenance. 
+Scaling ML systems presents challenges in handling massive Data Size (quality, quantity, 
+storage), managing Model Complexity (algorithms, feature engineering, overfitting), 
+optimizing Infrastructure (compute, tech stacks, deployment), and ensuring long
+term Maintenance (monitoring, drift, retraining, team skills). Key issues include managing 
+noisy/biased data, computational bottlenecks, integrating diverse tools (Python vs. Spark), 
+deploying reliably, and continuous model performance tracking, requiring robust MLOps 
+practices for success.  
+Challenges in Data Size & Quality 
+ Volume & Velocity: Processing petabytes of data requires distributed systems (like Spark) 
+and efficient storage, unlike Pandas for smaller sets. 
+ Quality & Noise: Scaling amplifies issues from dirty, incomplete, or inconsistent data, 
+leading to biased or inaccurate models, demanding rigorous cleaning. 
+ Representation: Ensuring large datasets accurately reflect real-world distributions is crucial 
+to prevent models from learning biases or failing on new data.  
+Challenges in Model Complexity 
+ Algorithmic Depth: More complex models (deep learning) need more data and compute, 
+increasing training time and resource demands. 
+ Feature Engineering: Scaling feature creation and management becomes complex, 
+requiring automation and consistent application across environments. 
+ Overfitting/Underfitting: Managing model complexity to generalize well on huge datasets 
+requires careful tuning and regularization.  
+Challenges in Infrastructure & Deployment 
+ Tech Stack Heterogeneity: Data scientists' tools (Python, Pandas) often differ from 
+production needs (Java, Spark), creating integration hurdles. 
+ Computational Bottlenecks: Training and inference on large models strain CPU/GPU 
+resources, requiring efficient hardware and distributed computing. 
+ Deployment & Scalability: Moving models from research to production (MLOps) involves 
+robust pipelines, API management, and handling fluctuating user loads.  
+Challenges in Maintenance & Operations (MLOps) 
+ Monitoring & Model Drift: Models degrade over time as data patterns change; continuous 
+monitoring for performance drops (drift) is essential. 
+ Retraining & Versioning: Managing the lifecycle of retraining, validating, and deploying 
+new model versions is complex and requires strict version control. 
+ Team & Process: Lack of clear roles (data science vs. engineering) and siloed teams hinder 
+smooth scaling and maintenance. 
+ Cost: Training and serving large-scale ML systems incurs significant ongoing computational 
+and storage costs.  
+. 
+B] Attempt All ( 2 marks each ) 
+B-a. What is model generalization in machine learning? Generalization is the model's ability to perform 
+well and give correct answers on new data that it never saw during its training phase. 
+B-b. Define training dataset. A training dataset is the specific collection of examples used to teach the 
+algorithm how to find patterns and make predictions. 
+B-c. What is unsupervised learning? A type of learning where the computer is given data without any labels 
+or answers; it must find its own groups or structures based on similarities. 
+B-d. What do you mean by features in ML? Features are the individual characteristics or "clues" used as 
+inputs for the model, such as the "mileage" or "engine size" of a car. 
+B-e. What is a machine learning algorithm? A machine learning algorithm is a mathematical procedure or 
+set of rules that processes data to create a predictive model. 
+B-f. Define overfitting. Overfitting occurs when a model learns the training data and its noise too perfectly, 
+causing it to fail when it encounters new, different data. 
+B-g. What is data preprocessing? Preprocessing is the step where raw data is cleaned and organized (fixing 
+errors, removing duplicates) before being used by the algorithm. 

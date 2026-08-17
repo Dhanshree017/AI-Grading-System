@@ -1,0 +1,147 @@
+ID-T006 
+Name: chaitrali patel Roll no: 6 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A-1. How Reinforcement learning is different from Supervised learning? 
+1. In Supervised Learning, the model is trained using labeled data, i.e., correct 
+answers are already known. 
+2. In Reinforcement Learning (RL), the agent learns through trial and error by 
+interacting with the environment. 
+3. Supervised learning minimizes a fixed error function, while RL maximizes 
+cumulative reward. 
+4. Supervised learning is static, RL is dynamic and sequential in nature. 
+5. Example: Supervised → image classification; RL → game playing like Chess or 
+self-driving cars. 
+A-2. Define the term overfitting and one solution for it. 
+1. Overfitting occurs when a model learns the training data too well, including its 
+noise and outliers. 
+2. As a result, it performs well on training data but poorly on unseen test data. 
+3. One common solution is Regularization (like L1 or L2 penalty). 
+4. Another solution is Cross-validation or early stopping during training. 
+5. Goal: improve model’s generalization ability. 
+A-3. What is the role of Linear Discriminant Analysis (LDA) in ML? 
+1. LDA is a dimensionality reduction technique used in classification problems. 
+2. It projects data onto a lower-dimensional space where classes are best separated. 
+3. LDA maximizes the between-class variance and minimizes within-class variance. 
+4. It helps improve performance and reduces computation time. 
+5. Commonly used before classifiers like Logistic Regression or SVM. 
+A-4. Compare mixture and latent factor models. 
+Aspect 
+Purpose 
+Example 
+Data 
+assumption 
+Type 
+Focus 
+Mixture Models 
+Represent data as a mixture of sub
+populations 
+Gaussian Mixture Model 
+Each sample belongs to one 
+component 
+Probabilistic clustering 
+Classification/clustering 
+Latent Factor Models 
+Represent data using hidden 
+variables 
+PCA, Factor Analysis 
+Each sample depends on multiple 
+latent factors 
+Feature extraction 
+Dimensionality reduction 
+A-5. Write importance of K-Means clustering. 
+1. It helps in grouping similar data points into clusters automatically. 
+2. Useful for unsupervised learning tasks where labels are not available. 
+3. Simple, efficient, and scales well with large datasets. 
+4. Helps in data segmentation, market analysis, and image compression. 
+5. Acts as a baseline algorithm for many clustering applications. 
+A-6. Write about R-Square and its significance. 
+1. R² (Coefficient of Determination) measures how well the regression model fits 
+the data. 
+2. Value ranges from 0 to 1, where higher value means better fit. 
+3. R² = 1 − (SSres / SStot). 
+4. It indicates the percentage of variance in the dependent variable explained by 
+the model. 
+5. Helps evaluate predictive accuracy of regression models. 
+A-7. Give significance of hyperparameter optimization. 
+1. Hyperparameters control the learning behavior of algorithms (like learning rate, 
+depth, etc.). 
+2. Optimization finds the best set of hyperparameters for best model performance. 
+3. Prevents overfitting or underfitting. 
+4. Techniques: Grid Search, Random Search, Bayesian Optimization. 
+5. Leads to more robust and accurate models. 
+A-8. How machine learning deals with sparse data. 
+1. Sparse data means most values are zero or missing. 
+2. ML uses feature selection and dimensionality reduction (like PCA). 
+3. Sparse matrix representations (CSR/CSC) save memory. 
+4. Regularization prevents overfitting on sparse features. 
+5. Embedding techniques (in NLP) help convert sparse data into dense 
+representations. 
+A-9. What is the advantage of active learning? 
+1. Active learning reduces the amount of labeled data needed for training. 
+2. The model selects the most informative samples to label. 
+3. Saves cost and time in labeling large datasets. 
+4. Improves performance with less data. 
+5. Useful in domains like medical imaging, where labeling is expensive. 
+A-10. What is training, testing and validation? 
+1. Training set – used to train the model’s parameters. 
+2. Validation set – used to tune hyperparameters and avoid overfitting. 
+3. Testing set – used to evaluate the final model performance. 
+4. This separation ensures generalization on unseen data. 
+5. Together, they form a complete ML workflow. 
+�
+B) Attempt Any 4 (Each carries 5 marks) 
+B-1. Give seven applications of Machine Learning. 
+1. Image Recognition – Face detection, object tagging. 
+2. Speech Recognition – Voice assistants like Alexa, Siri. 
+3. Healthcare – Disease prediction and drug discovery. 
+4. Finance – Credit scoring and fraud detection. 
+5. Autonomous Vehicles – Self-driving cars using ML sensors. 
+6. E-commerce – Product recommendation systems. 
+7. Natural Language Processing – Chatbots, translation systems. 
+8. Weather Forecasting – Predicting climate changes using ML. 
+B-2. How Machine Learning and Deep Learning are related / Explain 
+regularization in deep learning. 
+1. Deep Learning is a subset of Machine Learning that uses neural networks with 
+many layers. 
+2. ML focuses on features manually; DL learns features automatically. 
+3. Regularization in deep learning controls model complexity. 
+4. It helps prevent overfitting by adding a penalty term to the loss. 
+5. Types include L1, L2, Dropout, and Batch Normalization. 
+6. Dropout randomly removes neurons during training to generalize better. 
+7. Regularization ensures the model performs well on new data. 
+8. Hence, DL + proper regularization → stable and accurate networks. 
+B-3. Explain supervised, unsupervised and semi-supervised learning with 
+examples. 
+1. Supervised Learning – Uses labeled data; examples: classification and regression. 
+�
+� Example: Email spam detection. 
+2. Unsupervised Learning – Uses unlabeled data to find patterns. 
+�
+� Example: Customer segmentation using K-means. 
+3. Semi-Supervised Learning – Uses few labeled and many unlabeled samples. 
+�
+� Example: Web page classification with limited labels. 
+4. Supervised = guidance present, Unsupervised = no guidance. 
+5. Semi-supervised balances both to improve accuracy. 
+6. Used when labeling data is expensive. 
+7. Helps combine real-world unlabeled datasets effectively. 
+8. Semi-supervised gives better generalization than pure unsupervised. 
+B-4. What are the types of SVM? 
+1. Linear SVM – Best for linearly separable data. 
+2. Non-linear SVM – Uses kernel functions for complex data. 
+3. Polynomial Kernel SVM – For curved decision boundaries. 
+4. RBF (Radial Basis Function) Kernel SVM – Popular for non-linear patterns. 
+5. Sigmoid Kernel SVM – Works like neural networks. 
+6. Multi-class SVM – Uses one-vs-all or one-vs-one approaches. 
+7. Support Vector Regression (SVR) – For regression problems. 
+8. Each type suits different data structures and complexity. 
+B-5. Explain Decision Tree in detail. 
+1. A Decision Tree is a flowchart-like structure used for classification and regression. 
+2. Data is split into branches based on attribute values. 
+3. Internal nodes → conditions; leaf nodes → output labels. 
+4. Uses measures like Gini Index or Entropy for splitting. 
+5. Simple to interpret and visualize. 
+6. Handles both categorical and numerical data. 
+7. Can overfit, but pruning techniques reduce complexity. 
+8. Common algorithms: ID3, C4.5, CART. 

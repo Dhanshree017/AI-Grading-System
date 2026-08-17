@@ -1,0 +1,124 @@
+ID-T013 
+Name : Karan Ahuja Roll no: 25 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 10 (Each 3 Marks) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine Learning is like a area of computer science which teach machine to learn by 
+itself from data instead of us giving all rule one by one. It is basically a system that 
+get better with experience automatically. When computer see many examples, it can 
+find hidden pattern and make prediction. The model learn from past data and then 
+apply that knowledge on unseen data. Machine learning use mathematical models 
+and optimization concept to minimize the error between prediction and actual 
+output. 
+Machine learning has three big types which are main categories. Supervised learning, 
+where we give both input and correct output, like teaching a child with answer key. 
+Example classification and regression problems. Unsupervised learning, where we only 
+give input without label, model has to find pattern itself like grouping similar item. 
+Example clustering and association. Reinforcement learning, where machine learn by 
+trial and error, getting reward or punishment for actions, like a robot learning to 
+walk. These three are like the main pillars of machine learning world and almost 
+every algorithm come under them. 
+A-2. What is the difference between training error and test error? 
+Training error and test error are two important idea in ML because they tell how 
+well our model is doing. Training error is error we get when we check model on 
+same data that used to train it. So it show how well model memorize or fit the data. 
+If training error is low it means model learning pattern properly or maybe 
+memorizing too much. 
+Test error, on other side, is error we get when we test model on unseen new data. 
+This error shows how well model generalize. In real world, test error is more 
+important because model should perform good on data it never saw. 
+If training error is small but test error is big, it means overfitting. Model became like 
+parrot remembering everything. If both errors high, it means underfitting because 
+model too simple. The balance between these two is goal of training. So training 
+error tell internal performance, and test error show external performance. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting means when a model learn too much details and noise from training 
+data that it cannot perform good on new unseen data. It become like student who 
+memorized every question from old exam but fail in new exam because he didn’t 
+learn concept. In overfitting, model accuracy very high on training but low on test. 
+One way to reduce overfitting is regularization. In regularization, we add small 
+penalty term in the loss function for large weights. It force model to keep weight 
+small and simple. L1 regularization (Lasso) adds absolute value of weights, and L2 
+(Ridge) adds square of weights. Another simple method is dropout in neural network 
+where we randomly turn off some neurons while training so model not depend on 
+specific ones. Also, cross-validation help by training and testing on different subsets 
+of data. So overfitting can be handled by making model simple and less dependent 
+on noise. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is like a table which shows how many predictions are right and 
+wrong for each class in classification problem. It helps us understand the full picture 
+of performance, not just accuracy. It has four main parts — True Positive, True 
+Negative, False Positive, False Negative. 
+For example, in a disease test, True Positive mean sick and predicted sick, False 
+Positive mean healthy but predicted sick, False Negative mean sick but predicted 
+healthy, and True Negative mean healthy predicted healthy. 
+By using confusion matrix, we can calculate many other metrics like Precision, 
+Recall, F1-score, Specificity etc. It gives deep understanding of model behavior for 
+imbalanced datasets. So confusion matrix is important tool for evaluating model’s 
+correctness and type of mistake it doing. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection is process of choosing only important columns or variables from 
+dataset which are most useful for making prediction. When we have too many 
+features, model can get confused or slow, so we reduce them to best ones. 
+Feature selection helps remove redundant and irrelevant features. It improve model 
+accuracy and reduce overfitting. There are methods like filter method (like 
+correlation, chi-square), wrapper method (like forward selection, backward 
+elimination) and embedded methods (like Lasso regression) that help pick good 
+features. 
+It is important because smaller number of features means less training time, less 
+complexity, and model understand main pattern. Also data visualization and 
+interpretability become easy. It is like choosing best ingredient for recipe and 
+removing extra spice. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation functions are mathematical functions applied to neurons output in neural 
+network. They decide whether neuron should activate or not based on input signal. 
+Without activation function, neural network just act like simple linear regression, not 
+able to learn complex pattern. 
+Common examples are Sigmoid function, which convert input into range (0,1), used 
+for binary classification. It make smooth output and help model predict probability. 
+Another is ReLU (Rectified Linear Unit), which keep positive values as it is and make 
+negative value zero. It make training faster and solve vanishing gradient problem. 
+Other activations like Tanh and Leaky ReLU also used in deeper networks. Activation 
+function give network non-linearity power so it can understand complex relation 
+between input and output. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning means we train the model on entire dataset at once. We feed all data 
+and model learn pattern one time. It is like studying all chapters before giving exam. 
+It is good when data is fixed and not too big. Example: training linear regression once 
+on all data. 
+Online learning is different because model learn continuously with incoming data. It 
+update itself after seeing each example or mini-batch. It is used when data coming in 
+stream like stock market or sensors. Online learning can adapt to new changes. 
+Batch learning need more memory and training time but more stable. Online 
+learning can work on real-time system and dynamic data. 
+A-10. What is a loss function? Mention any two types of loss functions used in ML. 
+Loss function measure how far model predictions are from actual values. It is heart 
+of training process because model try to minimize this loss. Lower loss mean better 
+model performance. 
+For regression problems, common loss is Mean Squared Error (MSE) — average of 
+squared difference between predicted and true value. For classification, Cross
+Entropy Loss is used, which penalize wrong confident predictions. 
+Loss function guide optimization like Gradient Descent to adjust weights. Without loss 
+function, model don’t know what to learn. Other examples include Mean Absolute 
+Error (MAE), Hinge Loss (for SVM), and Huber Loss (for robust regression). 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation is technique to evaluate model performance by splitting data 
+multiple times instead of one single train-test division. In K-Fold cross-validation, 
+dataset divided into K parts, each part used as test once and train for remaining K
+1 times. 
+The final score is average of all folds, which give more reliable performance estimate. 
+Advantage is that it use all data for training and testing, reduce risk of lucky or 
+unlucky split, and help detect overfitting. 
+In small dataset, cross-validation is best because every data point used for testing 
+once. It gives stable and unbiased estimate of how model generalize on unseen data. 
+A-12. Define unsupervised learning and give two examples of algorithms used in it. 
+Unsupervised learning is type of ML where we don’t give labels to data. Model has to 
+discover hidden structure or pattern automatically. It is useful when we only have 
+inputs but no outputs. 
+Example algorithms include K-Means Clustering, where data grouped into clusters, 
+and Principal Component Analysis (PCA) which reduce dimensions by finding 
+important directions in data. Others include Hierarchical Clustering and 
+Autoencoders. 
+Unsupervised learning is used in customer segmentation, anomaly detection, market 
+basket analysis, etc. It help us explore unknown relationship inside big data. 

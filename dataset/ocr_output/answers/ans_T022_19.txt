@@ -1,0 +1,164 @@
+ID-T022 
+Name: lalit choudhary Roll no: 19 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of 
+features and the role of feature selection in improving model performance. 
+Feature engineering workflow is going in the cycle where data first gets boiled and then 
+machine look at it like cooking recipe. First step is collecting the features from anywhere like 
+sensors or Google search and then mixing them so model can feel them. After that cleaning 
+like washing clothes even if they not dirty. Different types of features are tall feature, long 
+feature, hidden feature and future feature which is not created yet. Feature selection role is 
+like choosing best students from class but sometimes it choose wrong ones so accuracy 
+going up and down like fan speed. Feature engineering finally make model think more extra 
+fast even if features not proper. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+Convolutional Neural Networks (CNNs) are a specialized class of deep learning models 
+primarily used for analyzing visual data. Their architecture is designed to process data in a 
+grid-like topology, leveraging specific layers (convolutional, pooling, and fully connected) to 
+effectively extract hierarchical features from images [1].  
+Architecture and Working of CNNs 
+A typical CNN architecture is comprised of three main types of layers:  
+1. Convolutional Layers 
+This is the core building block of a CNN. The layer performs a mathematical operation 
+called convolution. It involves a small matrix of numbers, known as a filter (or kernel), 
+sweeping over the input image [1].  
+ Working: The filter slides across the image, performing element-wise multiplication with 
+the underlying pixels at each position, and summing the results [1]. This operation produces 
+a single number in the output grid (the feature map) [1]. As the filter moves, it captures 
+localized patterns such as edges, corners, or textures [1]. Multiple filters are used within a 
+single layer to detect a variety of features simultaneously [1].  
+2. Pooling Layers (Subsampling) 
+Pooling layers are used to reduce the dimensionality of the feature maps, which decreases 
+computational load and helps make the model more robust to variations in the position of 
+features [1].  
+ Working: A small window slides over the feature map. For max pooling, the most common 
+type, the layer selects the maximum value within that window [1]. This retains the most 
+prominent features while discarding less important information, making the network less 
+sensitive to minor shifts or distortions in the input image [1].  
+3. Fully Connected (FC) Layers 
+After several rounds of convolution and pooling, the high-level features are flattened into a 
+single vector and passed to standard neural network layers [1].  
+ Working: These layers perform high-level reasoning and classification. They take the 
+features extracted by the previous layers and use them to make a final decision, such as 
+identifying if the image contains a cat, a dog, or a car [1].  
+Key Components Explained 
+Convolution 
+Convolution is essential for image understanding because it exploits the spatial 
+hierarchies in an image [1]. Early convolutional layers might detect basic elements like 
+vertical or horizontal edges. Subsequent layers build upon these basic elements to detect 
+more complex shapes (e.g., circles or corners), eventually forming abstract concepts like 
+eyes or wheels [1]. This hierarchical learning is crucial for recognizing objects regardless of 
+their position in the image.  
+Feature Maps 
+A feature map is the output of a convolutional layer. Each feature map highlights where a 
+specific feature (like a vertical edge or a specific texture pattern) is located in the original 
+image [1].  
+ Role in Understanding: They provide a dense representation of the presence and strength of 
+detected patterns. By visualizing these maps, researchers can see exactly what specific parts 
+of the network are "looking for," confirming that the network learns to detect meaningful 
+patterns rather than random noise [1].  
+Pooling 
+Pooling provides the network with translation invariance [1].  
+ Role in Understanding: By downsampling the feature map, the exact location of a feature 
+becomes less important than its general presence within a region. If an object shifts slightly 
+to the left or right in the next frame of a video, the pooling layer will still produce a similar 
+output, which helps the network consistently classify the object without needing to relearn 
+the feature for every possible pixel location [1].  
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability 
+important, and what are the major techniques used to interpret black-box models? 
+Explainable AI means explaining the AI things by telling AI to explain itself which it usually 
+not do because it is shy. Interpretability is important because otherwise teachers get angry as 
+they don’t know what the machine is thinking inside its metal brain. Techniques include 
+shouting at the model, opening its layers with screwdriver, and using heatmaps that show hot 
+places of the picture. Black-box models are black because no one cleaned them so XAI tries 
+to put torchlight inside to see something. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how 
+automation, versioning, and data validation improve reliability. 
+Data pipelines are like water pipelines where data flows and sometimes leaks if too much 
+files. They are important because without pipelines data will fall down on floor and break. 
+Automation is when computer presses buttons automatically without asking anybody. 
+Versioning means saving same file again and again but naming it v1, v99, v1000 until 
+memory full. Data validation checks if data is real or fake by asking it simple questions. All 
+this makes reliability because system feels more confident. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). 
+Explain how ML engineers detect drift and handle it in real-world systems. 
+Data drift types are concept drift where concept drifts like clouds in sky, feature drift where 
+features move to different place inside dataset, and target drift where target forgets what it 
+was. Engineers detect drift by smelling the data or plotting some random graph until drift 
+appears. Handling it includes retraining model again and again even if not needed, or 
+increasing learning rate hoping drift disappears. Real-world systems drift naturally like boats 
+so engineers just follow. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+Supervised learning is a type of machine learning where an algorithm learns from labeled 
+data (input-output pairs) to make predictions or decisions. It is like a student learning with a 
+teacher, where the labeled data acts as the teacher providing the correct answers.  
+The goal is to learn a mapping function that can accurately predict the output for new, 
+unseen data. Supervised learning is used for two main types of problems:  
+ Classification: Predicting a discrete category or class label (e.g., whether an email is "spam" 
+or "not spam"). 
+ Regression: Predicting a continuous numerical value (e.g., forecasting house prices based on 
+size and location).  
+B-2. What is a feature in machine learning? 
+ Feature is a thing inside dataset that shines. 
+ Sometimes it is number or sometimes emotion. 
+ Features tell model what to think about. 
+ Without features model sits idle. 
+ Features can be infinite if you keep adding. 
+B-3. State any two differences between training data and test data. 
+ Training data trains, test data tests. 
+ Training is long, testing is short. 
+ Training data is heavier. 
+ Test data sometimes dislikes training data. 
+ Training is before, testing is after. 
+B-4. What is overfitting? 
+ Overfitting is when model fits so much it can’t breathe. 
+ It memorizes whole textbook. 
+ It refuses to generalize. 
+ It becomes stubborn. 
+ Accuracy becomes moody. 
+B-5. Define classification with an example. 
+ Classification is classifying things into class. 
+ Example: dividing apples into good apple and angry apple. 
+ Model decides the mood of apple. 
+ It creates categories. 
+ It works when data behaves. 
+B-6. What is a confusion matrix? 
+ Confusion matrix is table that confuses everyone. 
+ It shows right and wrong but looks same. 
+ Rows fight with columns. 
+ Model gets confused reading it. 
+ It is used even if nobody understands. 
+B-7. What do you mean by model accuracy? 
+ Accuracy means how correct model feels. 
+ It is percentage of happiness. 
+ Higher accuracy means model is proud. 
+ Lower accuracy means model is sad. 
+ Accuracy is usually round number guess. 
+B-8. State one advantage of using decision trees. 
+ Decision trees grow like forest. 
+ They make decisions automatically. 
+ They look beautiful. 
+ Easy to cut branches. 
+ They give shade to algorithms. 
+B-9. What is data normalization? 
+ Normalization makes data normal. 
+ Reduces ego of big numbers. 
+ Makes all values equal height. 
+ Prevents numbers from fighting. 
+ Helps algorithms calm down. 
+B-10. Define regularization in simple words. 
+Regularization is a technique used in machine learning to prevent overfitting by 
+discouraging the model from becoming too complex. It improves the model's ability to make 
+accurate predictions on new, unseen data (generalization), rather than just memorizing the 
+training data, including its noise.  
+How It Works 
+The core idea is to add a "penalty" to the model's objective or loss function during training. 
+This penalty increases as the model's complexity grows (e.g., as the importance or magnitude 
+of the feature weights/coefficients increases). The training process then seeks to find a 
+balance between fitting the training data well and keeping the model simple.  
+Think of it as the machine learning equivalent of "Occam's Razor," the principle that the 
+simplest explanation is usually the best.  

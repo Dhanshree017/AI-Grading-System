@@ -1,0 +1,23 @@
+ID-T034 
+Name: Vicky Dikshit Roll no: 9 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is the foundational process of tagging or annotating raw data (such as images, text files, or 
+videos) with meaningful labels that provide context [1]. In supervised learning systems, this process is 
+essential because these models learn to make predictions or classify new data by identifying patterns and 
+relationships within this pre-labeled, "ground truth" data [1, 2].  
+The key roles of data labeling are: 
+ Providing Ground Truth: Labeled data serves as the "answer key" for the learning algorithm [1, 2]. The 
+model is trained to map specific inputs to the correct outputs specified by the labels. 
+ Enabling Supervised Training: The training process involves feeding the algorithm numerous examples of 
+labeled data. The model adjusts its internal parameters to minimize the difference between its predictions 
+and the actual labels, thereby learning how to perform a task accurately [2]. 
+ Defining the Task: The type and quality of labels directly define the problem the model is intended to 
+solve. For example, labeling emails as "spam" or "not spam" teaches a model to classify spam, while 
+drawing bounding boxes around objects in images teaches a model object detection [1]. 
+ Assessing Performance: Labeled data is split into training, validation, and testing sets. The testing set 
+(unseen during training) is used to objectively evaluate the model's accuracy and performance against the 
+known labels [1, 2].  
+Without high-quality, accurately labeled data, a supervised learning model cannot effectively learn to 
+generalize and make reliable predictions on new, real-world data 

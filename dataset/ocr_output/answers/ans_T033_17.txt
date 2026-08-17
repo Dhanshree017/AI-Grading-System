@@ -1,0 +1,78 @@
+ID-T033 
+Name: Neelam Tiwari Roll no: 17  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+Machine learning model always works with assumptions because computer cannot think like 
+human. Assumptions are already decided rules inside model. These rules tell model how to 
+learn data and what type of answer to give. Without assumption model will not start learning 
+because data is too much and confusing.  
+Assumptions make model simple and fast. For example, model may assume all values are 
+equal or data is straight line. This helps computer to calculate faster and reduce time. 
+Assumptions also help model to predict even when data is missing.  
+Sometimes assumptions are fixed by programmer and not changed later. Model blindly 
+follows assumptions even if data is different. This can cause problem. Model may ignore 
+some important data because assumption says it is not needed.  
+Incorrect assumptions make model confused. Model may give wrong output again and again. 
+Decision taken by model becomes incorrect. For example, model may reject good data or 
+accept bad data.  
+Wrong assumptions can affect behavior of model in real world. Model may behave 
+differently in testing and actual use. Decision making becomes unreliable. Users stop 
+trusting system.  
+Thus assumptions are important but if assumptions are wrong then model performance and 
+decision quality becomes poor.  
+A-2. Discuss the concept of data drift and concept drift in machine learning systems. 
+Explain their impact on long-term model performance.  
+Data drift means data keeps changing when model is running. New data comes every day 
+and old data goes away. Because of this model cannot remember everything. Data drift 
+happens when size of data increases.  
+Concept drift means model forgets old concept and starts learning new concept 
+automatically. Concept drift happens when model is trained many times.  
+When data drift happens, model becomes slow and memory usage increases. Model accuracy 
+reduces because data is not same. Model starts giving different output.  
+Concept drift affects logic of model. Model may change decision without warning. It may 
+confuse users. Sometimes concept drift improves performance also.  
+In long term, both drift cause performance issues. Model needs retraining many times. Cost 
+increases. Model becomes unstable.  
+Because of drift, model may fail suddenly. Long-term performance is not reliable.  
+A-3. Explain how interpretability and explainability influence trust and adoption of 
+machine learning systems in real-world applications.  
+Interpretability means model is easy to read. Explainability means model can talk and 
+explain answer. Both are important for trust.  
+If model is interpretable, user can understand output. If model explains answer, people 
+believe it more. Without explanation people do not like to use machine learning.  
+Trust is needed in real world. Doctors, bankers and teachers want explanation. If system only 
+gives answer without reason, they do not trust it.  
+Explainability helps in showing steps of decision. Interpretability helps in checking logic. 
+These things make system popular.  
+Adoption increases when people are comfortable. If model is complex and hidden, adoption 
+reduces. Explainable models are used more.  
+Thus interpretability and explainability affect trust and adoption of ML systems.  
+A-4. Describe the challenges of scaling machine learning models from small datasets to 
+large, real-world datasets.  
+Small datasets are easy to handle but large datasets create many problems. Scaling means 
+increasing size of model and data.  
+Large datasets need more computer power. Normal computers cannot handle large data. 
+Training takes many hours or days. Memory also becomes full.  
+Real-world data is dirty. It has missing values, errors and noise. Cleaning such data takes lot 
+of time. Model accuracy reduces.  
+More data creates more features. Model becomes complex. Overfitting and underfitting both 
+happen. Optimization becomes difficult.  
+Deployment is also hard. Large models are slow. Prediction time increases. Maintenance 
+becomes costly.  
+Therefore scaling machine learning models is difficult and requires more resources.  
+A-5. Explain the importance of validation and testing strategies in preventing misleading 
+performance evaluation of ML models.  
+Validation and testing are used to check model accuracy. Validation is done during training 
+and testing is done after training.  
+Validation helps model learn better. It increases accuracy. Validation also removes bad data. 
+Model becomes strong.  
+Testing is used to show final accuracy. Testing tells how good model is. If testing accuracy 
+is high, model is good.  
+Without validation and testing, model may give wrong output. Performance evaluation 
+becomes confusing.  
+Sometimes validation and testing increase performance score artificially. That is why they 
+are important.  
+Thus validation and testing help in evaluating model performance.  

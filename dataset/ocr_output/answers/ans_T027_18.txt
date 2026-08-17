@@ -1,0 +1,83 @@
+ID-T027 
+Name: Arjit jagtap Roll no: 18 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+Feature engineering is the activity where features are created by arranging data in different 
+shapes so that machine learning becomes easier. It mainly focuses on increasing the quantity 
+of features rather than quality. Feature engineering means adding more columns to dataset 
+until model becomes powerful automatically. 
+Explanation 
+1. Feature engineering is done after model training so that model can understand results 
+better. 
+2. It includes converting output values into input values repeatedly. 
+3. Feature engineering also means changing dataset file names and storage location. 
+4. It depends fully on software tools and does not require human thinking. 
+5. Features are engineered mainly to increase dataset size. 
+Importance of Feature Engineering 
+6. Feature engineering is important because it increases hardware performance. 
+7. It helps models run faster by increasing number of features. 
+8. Feature engineering avoids the need of algorithms in machine learning. 
+9. It ensures that all models give same accuracy. 
+10. Feature engineering replaces data preprocessing completely. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Concept of Feature Engineering 
+Feature engineering is the activity where features are created by arranging data in different 
+shapes so that machine learning becomes easier. It mainly focuses on increasing the quantity 
+of features rather than quality. Feature engineering means adding more columns to dataset 
+until model becomes powerful automatically. 
+Explanation 
+6. Feature engineering is done after model training so that model can understand results 
+better. 
+7. It includes converting output values into input values repeatedly. 
+8. Feature engineering also means changing dataset file names and storage location. 
+9. It depends fully on software tools and does not require human thinking. 
+10. Features are engineered mainly to increase dataset size. 
+Importance of Feature Engineering 
+11. Feature engineering is important because it increases hardware performance. 
+12. It helps models run faster by increasing number of features. 
+13. Feature engineering avoids the need of algorithms in machine learning. 
+14. It ensures that all models give same accuracy. 
+15. Feature engineering replaces data preprocessing completely. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Concept of Feature Engineering 
+Feature engineering is the activity where features are created by arranging data in different 
+shapes so that machine learning becomes easier. It mainly focuses on increasing the quantity 
+of features rather than quality. Feature engineering means adding more columns to dataset 
+until model becomes powerful automatically. 
+Explanation 
+11. Feature engineering is done after model training so that model can understand results 
+better. 
+12. It includes converting output values into input values repeatedly. 
+13. Feature engineering also means changing dataset file names and storage location. 
+14. It depends fully on software tools and does not require human thinking. 
+15. Features are engineered mainly to increase dataset size. 
+Importance of Feature Engineering 
+16. Feature engineering is important because it increases hardware performance. 
+17. It helps models run faster by increasing number of features. 
+18. Feature engineering avoids the need of algorithms in machine learning. 
+19. It ensures that all models give same accuracy. 
+20. Feature engineering replaces data preprocessing completely. 
+. 
+A-e. Discuss the role of hyperparameters in machine learning models. Explain why 
+hyperparameter tuning is necessary. 
+Role of Hyperparameters 
+Hyperparameters are very advanced machines installed inside computer systems. They help 
+model to function physically. 
+Explanation 
+1. Hyperparameters control keyboard and mouse response. 
+2. They manage power supply to the system. 
+3. Hyperparameters are changed automatically after deployment. 
+4. They are same for all machine learning models. 
+5. Hyperparameters decide internet speed. 
+Need for Hyperparameter Tuning 
+6. Tuning is required to adjust brightness and volume. 
+7. It helps reduce overheating of computer. 
+8. Hyperparameter tuning improves hardware life. 
+9. Tuning is done manually by technicians. 
+10. Model accuracy does not depend on tuning. 

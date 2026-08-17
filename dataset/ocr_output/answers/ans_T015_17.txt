@@ -1,0 +1,340 @@
+ID-T015 
+Name: Krishna Pardeshi Roll no: 17 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 5 (each 8 marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall and 
+F1 score help in understanding model performance. 
+Purpose & selection 
+Evaluation metrics quantify how well a model performs relative to the 
+problem’s objectives. Choose metrics that reflect real-world costs: false 
+positives vs false negatives, overall fit, or ranking ability. Classification and 
+regression require different families of metrics. 
+Classification — key metrics and interpretation 
+ Accuracy: fraction of correct predictions. Good as a quick measure when 
+classes are balanced, but misleading with skewed class distributions 
+because it masks per-class performance. 
+ Precision (P): P=TPTP+FPP = 
+\frac{\text{TP}}{\text{TP}+\text{FP}}P=TP+FPTP. Precision answers: 
+“when the model predicts positive, how often is it right?” High 
+precision reduces false positives (important when false alarms are 
+costly). 
+ Recall / Sensitivity (R): R=TPTP+FNR = 
+\frac{\text{TP}}{\text{TP}+\text{FN}}R=TP+FNTP. Recall answers: “of 
+all real positives, how many did we find?” High recall reduces missed 
+positives (important in diagnostics). 
+ F1 Score: harmonic mean of precision and recall, F1=2⋅P⋅RP+RF1 = 
+2\cdot\frac{P\cdot R}{P+R}F1=2⋅P+RP⋅R. Useful when you need a single 
+measure balancing precision and recall, particularly under imbalance. 
+ Specificity / TNR: complements recall for negatives. 
+ ROC-AUC & PR-AUC: ROC-AUC captures separability across thresholds 
+(TPR vs FPR). PR-AUC (precision-recall curve area) is more informative 
+when positive class is rare. 
+Regression — key metrics and interpretation 
+ MAE (Mean Absolute Error): average absolute deviation; robust and 
+directly interpretable in target units. 
+ MSE / RMSE: squares amplify large errors; RMSE is on same scale as 
+target. Use when large errors are particularly undesirable. 
+ R² (coefficient of determination): proportion of variance explained by 
+the model. Useful to compare models on the same target, but beware 
+with non-linear fits or biased estimators. 
+How they help 
+Selecting the right metric reveals different failure modes: precision/recall 
+show class-wise trade-offs, ROC/PR explain threshold behavior, MAE/MSE 
+show error magnitude. Good evaluation uses multiple complementary metrics, 
+threshold analysis, and confusion/residual inspection to form a complete 
+picture. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by
+step and discuss the importance of the parameter k. 
+Algorithm summary 
+K-Nearest Neighbors (KNN) is an instance-based, non-parametric method: it 
+classifies or regresses a query by aggregating labels/values of the k closest 
+training samples in feature space. 
+Step-by-step 
+1. Represent data as vectors in feature space. Ensure consistent 
+preprocessing (scaling, encoding). 
+2. Pick a distance metric (Euclidean, Manhattan, cosine, etc.) based on 
+data characteristics. 
+3. Choose k, the number of neighbors. 
+4. For a query point: compute distances to all training samples. 
+5. Select k smallest distances → the k nearest neighbors. 
+6. Aggregate neighbor information: 
+o Classification: majority vote (optionally distance-weighted). 
+o Regression: average or weighted average of targets. 
+7. Return prediction. 
+Role of k 
+ k small (e.g., 1): low bias, high variance — sensitive to noise and 
+outliers. 
+ k large: smoother boundaries, lower variance but increased bias — may 
+underfit by ignoring local structure. 
+ Selection: tune k with cross-validation; consider odd values for binary 
+classes to avoid ties; distance-weighting can mitigate some sensitivity. 
+Practical considerations 
+ Feature scaling is mandatory (distance-sensitive). 
+ Curse of dimensionality: in high dimensions distances become less 
+meaningful — reduce dimensionality or use feature selection. 
+ Computational cost: brute-force distance calculation is O(n)O(n)O(n) 
+per query; use KD-trees / ball trees or approximate NN for large 
+datasets. 
+ Imbalanced classes: neighbors may be dominated by majority class; use 
+class weighting or resampling. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Definition & context 
+Data imbalance occurs when class frequencies differ substantially. Many real
+world tasks (fraud, disease detection) are imbalanced: the class of interest is 
+rare. 
+Impact 
+ Biased decision boundary: models optimize global loss and may favor 
+majority class, producing apparently high accuracy but poor minority
+class recall. 
+ Misleading evaluation: accuracy becomes unreliable; important failure 
+modes (missed minority cases) remain hidden. 
+ Learning difficulty: minority-class patterns have insufficient examples for 
+generalization. 
+Techniques to handle 
+1. Data-level methods (resampling): 
+o Oversampling minority (random oversampling, SMOTE, ADASYN) 
+to increase representation. 
+o Undersampling majority (random undersampling, cluster-based 
+undersampling) to reduce dominance. 
+o Hybrid approaches combine both to balance information retention 
+and variance. 
+2. Algorithm-level methods: 
+o Class weighting / cost-sensitive learning: penalize misclassification of 
+minority more heavily. 
+o Threshold moving: adjust decision threshold to trade 
+precision/recall. 
+3. Model/ensemble methods: 
+o Specialized ensembles (Balanced Random Forest, EasyEnsemble) 
+combine resampling with ensemble strategies. 
+4. Evaluation strategy adjustments: 
+o Use precision/recall, F1, PR-AUC, confusion matrices; stratified 
+cross-validation to preserve minority representation in folds. 
+5. Data augmentation / synthetic generation: 
+o For images/text, domain-specific augmentation expands minority 
+class variability. 
+Best practice 
+Quantify imbalance, pick metrics aligned to cost, try resampling + class
+weighting, and validate improvements with stratified CV and minority-focused 
+metrics. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds 
+models sequentially and how weak learners are combined to form a strong 
+model. 
+Core idea 
+Gradient Boosting constructs an additive model F(x)=∑m=1Mγmhm(x)F(x) = 
+\sum_{m=1}^M \gamma_m h_m(x)F(x)=∑m=1Mγmhm(x) by sequentially 
+fitting weak learners hmh_mhm to the negative gradient (residual direction) 
+of a chosen loss function. Each new learner reduces the remaining error. 
+Mechanics (intuitive + math) 
+1. Initialize with a constant prediction that minimizes loss (e.g., mean for 
+squared error): F0(x)F_0(x)F0(x). 
+2. Iterate m = 1..M: 
+o Compute pseudo-residuals rim=−∂L(yi,F(xi))∂F(xi)∣F=Fm−1r_{im} = -\left.\frac{\partial L(y_i, F(x_i))}{\partial 
+F(x_i)}\right|_{F=F_{m-1}}rim=−∂F(xi)∂L(yi,F(xi))F=Fm−1. For 
+squared error, rim=yi−Fm−1(xi)r_{im} = y_i - F_{m-1}(x_i)rim=yi
+−Fm−1(xi). 
+o Fit a weak learner hm(x)h_m(x)hm(x) (usually a shallow tree) to 
+predict rimr_{im}rim. 
+o Optionally compute optimal multiplier γm\gamma_mγm (line 
+search) or use fixed-step shrinkage. 
+o Update: Fm(x)=Fm−1(x)+νγmhm(x)F_m(x) = F_{m-1}(x) + \nu 
+\gamma_m h_m(x)Fm(x)=Fm−1(x)+νγmhm(x), where ν\nuν is 
+learning rate. 
+3. Return final ensemble FMF_MFM. 
+Why this works 
+Fitting learners to negative gradients is equivalent to performing gradient 
+descent in function space — minimizing the loss stepwise. Weak learners 
+correct what the ensemble fails to predict. 
+Key hyperparameters and trade-offs 
+ Learning rate (ν\nuν): small ν\nuν + more trees → better 
+generalization but longer training. 
+ Number of estimators: more trees increase capacity; combine with early 
+stopping. 
+ Tree depth / leaf size: controls interactions captured (stumps for 
+additive effects; deeper for higher-order interactions). 
+ Subsample / column sampling: reduces variance (stochastic gradient 
+boosting). 
+ Regularization (L1/L2, min_child_weight): prevent overfitting. 
+Implementations & optimizations 
+XGBoost, LightGBM, CatBoost add system-level speedups, histogram-based 
+splitting, categorical handling, and advanced regularization. 
+Conclusion 
+Gradient boosting is a powerful, flexible framework that achieves top accuracy 
+on structured data when carefully tuned, combining many weak learners into 
+a robust model. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models 
+are used to solve new tasks with limited data and mention common 
+applications of transfer learning. 
+Concept 
+Transfer Learning leverages representations learned on large source datasets 
+to accelerate and improve performance on related target tasks with limited 
+labeled data. 
+Mechanisms 
+ Feature extraction: use pre-trained model as a fixed feature extractor 
+(freeze backbone), train only a new classifier head on target data. 
+ Fine-tuning: initialize with pre-trained weights and continue training 
+(often with smaller learning rate) on the target dataset; may unfreeze 
+some layers gradually. 
+ Adapter modules / partial re-training: insert small trainable modules into 
+frozen pre-trained networks for efficiency. 
+Why it helps 
+Early layers of deep nets learn general patterns (edges, textures, subword 
+patterns) transferable across domains. Reusing these reduces data needs and 
+speeds convergence. 
+Applications 
+ Computer vision: ImageNet pre-trained CNNs adapted to medical 
+imaging, remote sensing. 
+ NLP: BERT/GPT-family models fine-tuned for classification, QA, NER, 
+summarization. 
+ Audio / speech: pre-trained audio embeddings for speaker ID or event 
+detection. 
+ Reinforcement learning: transfer policies or value functions between 
+similar environments. 
+Cautions 
+ Negative transfer: if source and target are too dissimilar, pre-training 
+may harm learning. 
+ Overfitting during fine-tuning: small target datasets risk overfitting; use 
+regularization and careful learning-rate schedules. 
+Conclusion 
+Transfer learning is an efficient strategy to reuse prior knowledge; when 
+source and target align, it dramatically improves performance and reduces 
+training cost. 
+SECTION B — Attempt any 6 (each 5 marks) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Overview 
+Preprocessing converts raw, messy inputs into consistent, informative 
+features ready for modeling. It is iterative and domain-dependent. 
+Steps (concise workflow) 
+1. Data inspection & cleaning: identify missingness, invalid entries, 
+inconsistencies; correct or remove errors. 
+2. Missing value strategy: impute (mean/median/mode, KNN, model-based) 
+or drop, based on missingness mechanism (MCAR, MAR, MNAR). 
+3. Outlier handling: detect with boxplots, z-scores, IQR; decide to cap, 
+transform, or exclude after domain check. 
+4. Encoding categoricals: one-hot, ordinal, target/leave-one-out encoding 
+(watch leakage). 
+5. Feature scaling: standardize/normalize as required. 
+6. Feature engineering: create interaction terms, aggregates, timestamps 
+decomposition, text embeddings. 
+7. Feature selection: filter (correlation), wrapper (RFE), or embedded 
+methods (regularized models). 
+8. Data augmentation: images/text for small datasets. 
+9. Train/validation/test split: stratified if class imbalance; consider time
+based splits for time series. 
+10. 
+Pipelines & reproducibility: use pipeline APIs to ensure identical 
+transforms at inference. 
+Conclusion 
+Sound preprocessing reduces noise, preserves signal, and produces robust 
+inputs that allow models to reach their potential. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting 
+methods. 
+Ensemble idea 
+Ensembles combine multiple base learners to reduce error by exploiting 
+diversity (different models make different errors). 
+Bagging (Bootstrap Aggregating) 
+ Create multiple bootstrap samples from the training set. 
+ Train independent learners (often same algorithm) on each sample. 
+ Aggregate predictions by averaging (regression) or majority vote 
+(classification). 
+ Effect: reduces variance and overfitting; Random Forest extends bagging 
+with feature subsampling. 
+Boosting 
+ Train learners sequentially; each model focuses on the errors of the 
+ensemble so far (sample reweighting or residual fitting). 
+ Combine learners additively with weights to produce final prediction. 
+ Effect: reduces bias and builds a strong learner from weak ones; 
+sensitive to noisy labels. 
+Comparison 
+ Bagging: parallel, variance reduction. 
+ Boosting: sequential, bias reduction. 
+Conclusion 
+Use bagging to stabilize high-variance learners; use boosting to correct bias 
+and attain high predictive power on complex data. 
+B-c) Explain the need for feature scaling and differentiate between normalization 
+and standardization. 
+Why scale? 
+Distance-based algorithms (KNN, K-means), gradient-based optimizers, and 
+models using regularization assume features are on comparable scales. Without 
+scaling, features with large magnitudes dominate. 
+Normalization (Min–Max) 
+ Scales to a fixed range (usually [0,1]). Formula: 
+(x−xmin)/(xmax−xmin)(x-x_{min})/(x_{max}-x_{min})(x−xmin)/(xmax
+−xmin). 
+ Useful when bounded range is desired (e.g., image pixel scaling) or 
+algorithms expecting bounded inputs. 
+Standardization (Z-score) 
+ Centers to zero mean and unit variance: (x−μ)/σ(x
+\mu)/\sigma(x−μ)/σ. 
+ Preserves outlier influence less destructively; commonly used for 
+algorithms that assume roughly Gaussian features (PCA, linear models). 
+Which to use? 
+ Use standardization for algorithms sensitive to mean/variance or with 
+outliers. 
+ Use normalization for bounded inputs or when using distance metrics and 
+original min/max meaningful. 
+Conclusion 
+Always fit scalers on training set and apply the same transform to 
+validation/test data to prevent leakage. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Definition 
+Cross-entropy quantifies the dissimilarity between the true label distribution 
+and the predicted probability distribution. It is the negative log-likelihood of 
+correct labels under the model. 
+Binary cross-entropy (per sample): −[ylog⁡p+(1−y)log⁡(1−p)]-[y\log p + (1
+y)\log(1-p)]−[ylogp+(1−y)log(1−p)]. 
+Categorical cross-entropy: −∑iyilog⁡pi-\sum_{i} y_i\log p_i−∑iyilogpi for one
+hot labels. 
+Use in classification 
+ Paired with sigmoid (binary) or softmax (multi-class) outputs. 
+ Provides strong gradients encouraging confident correct predictions and 
+heavily penalizing confident wrong ones. 
+ Equivalent to maximizing likelihood under Bernoulli / Categorical models. 
+Properties 
+ Differentiable → suitable for gradient-based optimization. 
+ Proper scoring rule → encourages calibrated probabilities. 
+Conclusion 
+Cross-entropy is the standard loss for classification because it aligns training 
+with probabilistic predictions and provides effective gradient signals. 
+B-e) Explain the role of optimization algorithms in training machine learning 
+models. 
+Role 
+Optimizers search parameter space to minimize loss; they are the engine of 
+learning. They determine step sizes, update rules, and convergence behavior. 
+Common algorithms & features 
+ Gradient Descent (batch): compute full-batch gradient; stable but 
+expensive. 
+ Stochastic Gradient Descent (SGD): uses one or few samples per 
+update; introduces helpful noise. 
+ Momentum: accelerates along consistent gradient directions, reduces 
+oscillations. 
+ Adaptive methods (AdaGrad, RMSProp, Adam): adapt learning rate per
+parameter using historical gradients; often faster initial convergence. 
+Practical considerations 
+ Learning rate scheduling (decay, warmup) and batch size strongly affect 
+convergence and generalization. 
+ Optimizer choice interacts with architecture, normalization, and 
+regularization strategies. 
+Conclusion 
+Optimization algorithms are central to effective training: they shape how 
+parameters are updated and thus how well models fit data and generalize. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Why reduce dimensionality? 
+High-dimensional data leads to increased computation, overfitting, and 
+difficulty visualizing structure (curse of dimensionality). Dimensionality 
+reduction compresses data while preserving important structure. 
+Method — Principal Component Analysis (PCA) 
+ Goal: find orthogonal directions (principal components) maximizing 
+variance. 
+ Steps: center data → compute covariance → eigen-decomposition → 
+select top-k eigenvectors → project data. 
+ Pros: linear, fast, yields uncorrelated features; good for denoising and 
+preprocessing. 
+ Cons: linearity limits representation of complex manifolds; not ideal for 
+preserving local neighborhoods (use t-SNE/UMAP for visualization). 
+Conclusion 
+Dimensionality reduction simplifies models, reduces noise, improves 
+visualization and computation; choose method (linear vs nonlinear) by data 
+geometry. 

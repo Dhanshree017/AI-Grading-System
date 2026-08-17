@@ -1,0 +1,102 @@
+ID-T029 
+Name: Mohit Bansal Roll no: 8 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (Each 5 Marks) 
+A-a. Explain the concept of model robustness in machine learning. 
+Discuss why robustness is important and how it can be improved in learning systems.** 
+Answer: 
+Model robustness in machine learning refers to the ability of a model to maintain stable and reliable 
+performance even when it encounters noisy, incomplete, or slightly altered input data. A robust model does 
+not fail easily when real-world conditions differ from the training environment. 
+Robustness is extremely important because real-world data is rarely clean or perfectly structured. Data 
+collected from sensors, user input, or external sources often contains errors, missing values, or unexpected 
+variations. If a model is not robust, even small changes in input can lead to incorrect or unpredictable 
+outputs. This is especially critical in applications such as healthcare, finance, and autonomous systems, 
+where incorrect predictions can have serious consequences. 
+Robustness can be improved by using diverse and representative training data so that the model learns a 
+wide range of scenarios. Regularization techniques help prevent the model from becoming too sensitive to 
+specific patterns. Data augmentation introduces controlled variations in training data to improve 
+adaptability. Ensemble methods combine multiple models to reduce the impact of individual errors. Finally, 
+extensive testing on unseen and noisy data ensures that the model performs reliably under real-world 
+conditions. 
+A-c. Discuss the challenges involved in scaling machine learning systems. 
+Explain issues related to data size, model complexity, infrastructure, and maintenance.** 
+Answer: 
+Scaling machine learning systems involves expanding models and infrastructure to handle increasing data 
+volumes, computational demands, and real-world usage. While scaling improves capability, it introduces 
+several challenges. 
+One major challenge is data size, as large datasets require efficient storage, processing, and management. 
+Handling massive data increases memory and computational costs. Model complexity also grows with 
+scale, leading to longer training times and difficulty in optimization. Complex models require powerful 
+hardware such as GPUs or distributed systems. 
+Infrastructure challenges include the need for cloud computing, parallel processing, and reliable 
+deployment pipelines. Maintaining system performance while controlling cost becomes difficult. 
+Maintenance challenges involve monitoring model behavior, handling data drift, retraining models, and 
+updating systems without downtime. Addressing these challenges is essential for sustainable and scalable 
+ML solutions. 
+A-d. Explain the concept of transfer of knowledge in machine learning. 
+Discuss how previously learned information can improve learning in new tasks.** 
+Answer: 
+Transfer of knowledge in machine learning refers to the process of utilizing knowledge gained from one 
+task to enhance learning performance in a new but related task. This approach reduces the need to train 
+models from scratch. 
+Previously learned features, patterns, or representations can be reused when tasks share similarities. This 
+improves learning speed and reduces dependency on large labeled datasets. Transfer learning is widely used 
+in fields such as image recognition and natural language processing, where pretrained models already 
+understand basic patterns. 
+Fine-tuning allows the transferred model to adapt to the new task by adjusting parameters slightly. This 
+improves accuracy and efficiency. Transfer of knowledge is especially valuable when training data is limited 
+and computational resources are constrained. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. 
+Explain tasks related to monitoring, updating, documentation, and ethical compliance.** 
+Answer: 
+After deployment, an ML engineer is responsible for ensuring that the model continues to function 
+effectively, ethically, and reliably in real-world conditions. 
+Monitoring involves tracking model performance, detecting accuracy degradation, and identifying data 
+drift. Updating and retraining are necessary to keep the model relevant as new data becomes available. 
+Documentation ensures transparency by recording model design, data sources, assumptions, and 
+limitations, which helps in maintenance and audits. 
+Ethical compliance is a critical responsibility, including fairness, bias mitigation, data privacy, and legal 
+adherence. ML engineers must ensure that deployed models do not cause harm or discrimination. These 
+post-deployment responsibilities are essential for long-term success and trust in machine learning systems. 
+B] Attempt All (Each carries equal marks) 
+B-a. What is model generalization in machine learning? 
+Answer: 
+Model generalization is the ability of a machine learning model to perform accurately on unseen data by 
+learning underlying patterns rather than memorizing training examples. 
+B-b. Define training dataset. 
+Answer: 
+A training dataset is a collection of input data and corresponding outputs used to teach a machine learning 
+model how to learn patterns and relationships. 
+B-c. What is unsupervised learning? 
+Answer: 
+Unsupervised learning is a type of machine learning in which the model learns patterns and structures from 
+unlabeled data without predefined outputs. 
+B-d. What do you mean by features in ML? 
+Answer: 
+Features are measurable attributes or properties of data that serve as input variables for a machine learning 
+model. 
+B-e. What is a machine learning algorithm? 
+Answer: 
+A machine learning algorithm is a computational method that enables a system to learn patterns from data 
+and improve performance through experience. 
+B-f. Define overfitting. 
+Answer: 
+Overfitting occurs when a model learns training data too closely, including noise, resulting in poor 
+performance on unseen data. 
+B-g. What is data preprocessing? 
+Answer: 
+Data preprocessing is the process of cleaning, transforming, and organizing raw data into a suitable format 
+for machine learning. 
+B-h. What is a prediction in machine learning? 
+Answer: 
+A prediction is the output generated by a trained machine learning model for new input data. 
+B-i. Define model evaluation. 
+Answer: 
+Model evaluation is the process of assessing the performance of a machine learning model using appropriate 
+metrics and test data. 
+B-j. What is learning from experience in ML? 
+Answer: 
+Learning from experience refers to improving model performance over time by analyzing past data and 
+outcomes. 

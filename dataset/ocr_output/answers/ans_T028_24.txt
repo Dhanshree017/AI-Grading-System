@@ -1,0 +1,69 @@
+ID-T028 
+Name: Aashish Khanna Roll no: 24 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Data Cleaning and Preparation 
+1. Dataset Understanding – Study feature meanings, value ranges, and data formats. 
+2. Missing Value Detection – Locate null, empty, or invalid entries across attributes. 
+3. Missing Value Treatment – Replace missing values logically or remove affected 
+records when necessary. 
+4. Inconsistency Identification – Detect inconsistent units, spellings, and formats. 
+5. Data Standardization – Convert all values into a uniform and comparable format. 
+6. Outlier Handling – Identify abnormal values and treat or remove them. 
+7. Duplicate Record Removal – Eliminate repeated data entries. 
+8. Feature Encoding and Scaling – Convert categorical data and normalize numerical 
+features. 
+9. Final Quality Check – Verify completeness, consistency, and readiness for modeling. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Model Performance 
+1. Error Pattern Analysis – Identify where and why incorrect predictions occur. 
+2. Data Consistency Check – Ensure new data matches the training data structure. 
+3. Distribution Comparison – Detect shifts between old and new data. 
+4. Feature Evaluation – Assess whether features are still relevant. 
+5. Complexity Assessment – Identify signs of overfitting or underfitting. 
+6. Data Enhancement – Include recent and diverse training examples. 
+7. Feature Engineering Improvement – Create meaningful new features. 
+8. Model Re-tuning – Adjust learning parameters. 
+9. Retraining and Testing – Retrain the model and validate on unseen data. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+Key Factors for Algorithm Selection 
+1. Problem Type – Identify whether it is prediction, classification, or grouping. 
+2. Volume of Data – Assess dataset size and availability. 
+3. Nature of Data – Structured, unstructured, numerical, or categorical. 
+4. Interpretability Needs – Requirement for explainable decisions. 
+5. Accuracy Requirements – Expected prediction reliability. 
+6. Speed Constraints – Training and inference time limits. 
+7. Resource Availability – Hardware and memory limitations. 
+8. Scalability Considerations – Ability to handle future data growth. 
+9. Maintenance Effort – Ease of updating and monitoring the model. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+Identification and Corrective Measures 
+1. Performance Monitoring – Track outputs and error trends regularly. 
+2. Input Data Monitoring – Observe changes in incoming data patterns. 
+3. Data Drift Detection – Identify shifts in feature distributions. 
+4. Concept Drift Detection – Check if relationships between inputs and outputs have 
+changed. 
+5. Operational Review – Examine changes in system or user behavior. 
+6. Feedback Analysis – Use user complaints and error logs. 
+7. Data Update – Incorporate recent data samples. 
+8. Model Retraining – Update the model periodically. 
+9. Controlled Redeployment – Deploy the improved model after validation. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Qualitative Model Comparison 
+1. Prediction Reliability – Observe stability across varied inputs. 
+2. Error Severity Evaluation – Compare impact of wrong predictions. 
+3. Explainability – Prefer models with understandable decision logic. 
+4. Robustness Check – Test resistance to noisy or unusual inputs. 
+5. Operational Simplicity – Evaluate ease of deployment and monitoring. 
+6. Resource Consumption – Compare computational efficiency. 
+7. User Experience – Assess usefulness from end-user perspective. 
+8. Consistency Over Time – Select the model with stable long-term behavior. 
+9. Practical Effectiveness – Choose the model that performs better in real-world 
+conditions. 

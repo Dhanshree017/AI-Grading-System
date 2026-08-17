@@ -1,0 +1,116 @@
+ID-T003 
+Name : Anandi sharma  Roll no : 8 
+Email : studentisdummy@gmail.com 
+Section A 
+A-2. Explain the difference between training and test sets. 
+The training set is the portion of the dataset that is used to teach the model how to 
+learn. It contains both the input features and the expected output in the case of 
+supervised learning. This is the data that the model sees repeatedly during training, 
+adjusting its internal parameters to minimize error or loss. The quality and variety 
+of the training data are very important because if it does not cover the full range of 
+possible scenarios, the model may fail to generalize well. 
+The test set, on the other hand, is completely separate data that the model has 
+never seen before. It is used to evaluate the performance of the model in real-world 
+situations. The idea is that training data can lead the model to memorize patterns 
+and noise, giving an illusion of high accuracy, but the test set gives an honest 
+measure of how well the model generalizes. For example, if a model is trained on 
+student marks from one school and tested on marks from another school, the test 
+set ensures it is not just memorizing the first school’s patterns. 
+The main differences are: training = learning and adjusting parameters; test = 
+evaluation without changing anything. Sizes are usually 70–80% for training and 
+20–30% for testing, but this depends on data availability. 
+A-3. What is the difference between parametric and non-parametric models? 
+Parametric models assume a fixed form for the function mapping inputs to outputs. 
+They have a finite number of parameters regardless of the size of the dataset. Linear 
+regression, logistic regression, and simple neural networks are examples. These 
+models are simpler, faster, and require less data, but they may fail when the 
+underlying data pattern is more complex than the assumed form. 
+Non-parametric models do not assume any specific functional form. Their complexity 
+can grow with the amount of data, and they are capable of capturing complex 
+patterns. Examples include K-Nearest Neighbors, decision trees, and kernel methods. 
+The advantages are flexibility and ability to fit complicated datasets, but they can be 
+slower, need more memory, and sometimes overfit if the data is small or noisy. 
+In practice, parametric models are suitable for smaller datasets or when 
+interpretability is important, while non-parametric models are better for large and 
+complex datasets where accuracy is prioritized. 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting is a common problem in machine learning where a model performs very 
+well on training data but poorly on unseen data. It happens when the model learns 
+not only the real patterns but also the noise and random fluctuations in the training 
+set. Overfitting usually occurs when models are too complex for the size of the 
+dataset, or when training is done for too many iterations. 
+To avoid overfitting, several strategies are used: increasing the amount of training 
+data, using regularization techniques like L1 or L2 to penalize overly large 
+parameters, simplifying the model, using dropout in neural networks, stopping 
+training early when performance on validation data starts decreasing, and using 
+cross-validation to tune hyperparameters. Overfitting is often confused with 
+underfitting, but the key difference is that underfitting means the model is too 
+simple, whereas overfitting means the model is too complex. 
+A-5. What is underfitting, and how can you prevent it? 
+Underfitting occurs when a model is too simple to capture the underlying patterns in 
+the data. The model performs poorly both on training and test sets because it cannot 
+explain the relationships in the data. For example, fitting a straight line to a clearly 
+non-linear dataset will cause underfitting. 
+Prevention strategies include increasing model complexity, adding more meaningful 
+features, reducing excessive regularization, training for longer, or tuning 
+hyperparameters to allow the model more flexibility. Sometimes underfitting is 
+caused by poor data preprocessing or irrelevant features, so careful feature selection 
+and engineering can also help. Underfitting is essentially the opposite problem of 
+overfitting. 
+Section B 
+B-1. Explain the bias-variance tradeoff. 
+The bias-variance tradeoff is a fundamental concept in machine learning. Bias refers 
+to errors introduced by oversimplifying the model. High bias models cannot capture 
+the true pattern of the data and usually underfit. Variance refers to errors due to 
+excessive sensitivity to small changes in the training data, which leads to overfitting. 
+The tradeoff means that decreasing bias often increases variance and vice versa. The 
+goal is to find a balance where the total error is minimized. Cross-validation, 
+regularization, ensemble methods, and careful model selection are commonly used to 
+manage this tradeoff. Choosing the right model complexity is critical: too simple → 
+high bias; too complex → high variance. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is an instance-based algorithm. For a new data point, the algorithm calculates 
+the distance to all training points using metrics like Euclidean or Manhattan 
+distance. Then it selects the K nearest neighbors. 
+ For classification, the class is assigned based on the majority vote of neighbors. 
+ For regression, the predicted value is usually the average of neighbors’ values. 
+The choice of K affects performance: small K → sensitive to noise, large K → may 
+smooth over important distinctions. Features should be scaled to avoid dominance by 
+features with large ranges. KNN is simple and effective but can be computationally 
+intensive for large datasets. 
+B-3. What is dimensionality reduction, and provide examples? 
+Dimensionality reduction reduces the number of input features while retaining as 
+much important information as possible. This simplifies models, speeds up 
+computation, and helps prevent overfitting. 
+Examples include: 
+ PCA (Principal Component Analysis): Projects data into orthogonal components 
+capturing the most variance. 
+ LDA (Linear Discriminant Analysis): Reduces dimensions while maximizing class 
+separability. 
+ t-SNE: Maps high-dimensional data into 2D or 3D space for visualization. 
+ Autoencoders: Neural networks compress data into a smaller representation 
+and reconstruct it. 
+Dimensionality reduction is particularly useful for datasets with hundreds or 
+thousands of features. 
+B-4. How would you choose an algorithm for a specific dataset? 
+Algorithm selection depends on: 
+ Problem type: Classification, regression, or clustering. 
+ Dataset size: Small datasets → simpler models; large datasets → complex 
+models. 
+ Feature characteristics: Number, type, and scale of features. 
+ Performance vs interpretability: Tradeoff between accuracy and understanding. 
+ Computational resources: Some algorithms require more memory and 
+processing power. 
+In practice, multiple algorithms are tested using cross-validation, and the one 
+offering the best balance of accuracy, efficiency, and interpretability is chosen. 
+B-5. Explain bagging and boosting. 
+ Bagging (Bootstrap Aggregating): Multiple models are trained on bootstrapped 
+samples of the dataset. Predictions are combined via averaging (regression) or 
+majority vote (classification). Bagging reduces variance and stabilizes 
+predictions. Example: Random Forest. 
+ Boosting: Models are trained sequentially, each focusing on correcting errors 
+made by previous models. Boosting reduces bias and can improve accuracy on 
+difficult datasets. Examples include AdaBoost, Gradient Boosting, and XGBoost. 
+ Key difference: Bagging is parallel and focuses on variance reduction; boosting 
+is sequential and focuses on bias reduction. 
+ 

@@ -1,0 +1,184 @@
+ID-T012 
+Name : aniket sharma Roll no: 26 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+The Random Forest algorithm is one of the most powerful and popular 
+ensemble learning techniques used for both classification and regression tasks. 
+It combines the idea of “many weak learners” (decision trees) to build a 
+strong predictive model. The concept is that instead of relying on a single 
+decision tree—which might overfit or perform poorly on unseen data—Random 
+Forest builds multiple trees using random subsets of data and features, and 
+then averages or votes on their predictions to achieve better accuracy and 
+stability. 
+Working Process: 
+1. Bootstrapping the Data: Multiple subsets of the training dataset are 
+created using random sampling with replacement. 
+2. Feature Randomization: Each tree uses a random subset of features to 
+reduce correlation between trees. 
+3. Training of Trees: Each decision tree is trained on its subset 
+independently. 
+4. Voting/Averaging: For classification, every tree gives a “vote” for the 
+class, and the majority wins. For regression, the mean of all predictions 
+is taken. 
+5. Final Prediction: The ensemble output becomes the final decision of the 
+Random Forest. 
+Advantages: 
+ It is very accurate and robust to noise. 
+ Works effectively with large datasets and complex features. 
+ Automatically handles missing values and categorical data. 
+ Reduces overfitting due to averaging of multiple trees. 
+ Provides feature importance for interpretability. 
+Disadvantages: 
+ Computationally expensive due to many trees. 
+ Difficult to interpret as compared to a single tree. 
+ May require more memory and processing time. 
+Random Forest is widely used in finance, healthcare, and recommendation 
+systems because of its balance between accuracy and reliability. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is a learning algorithm used in artificial neural networks to 
+minimize error and optimize model weights. It is the foundation of deep 
+learning and allows networks to adjust themselves after making wrong 
+predictions. The goal of backpropagation is to calculate how much each weight 
+contributed to the error and update it to reduce that error. 
+Steps of Backpropagation: 
+1. Forward Propagation: The input data passes through the network, layer 
+by layer, to produce an output. 
+2. Loss Calculation: The predicted output is compared to the actual target 
+using a loss function like Mean Squared Error or Cross-Entropy Loss. 
+3. Backward Propagation: The error is propagated backward through the 
+network using the chain rule of differentiation. 
+4. Gradient Calculation: The gradient (partial derivative) of the loss 
+function is computed for each weight. 
+5. Weight Update: The weights are updated in the opposite direction of 
+the gradient using learning rate to minimize loss. 
+6. Iteration: The process is repeated for many epochs until the model 
+converges. 
+Backpropagation ensures the neural network learns efficiently by adjusting the 
+internal parameters to minimize prediction errors. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning is based on Bayes’ theorem, which provides a principled way 
+to update our beliefs about a hypothesis as new evidence appears. It 
+incorporates prior knowledge with observed data to form a posterior 
+probability distribution. This makes Bayesian learning dynamic, probabilistic, 
+and suitable for small data or uncertain environments. 
+Bayes’ Theorem: 
+P(H∣D)=P(D∣H)×P(H)P(D)P(H|D) = \frac{P(D|H) \times 
+P(H)}{P(D)}P(H∣D)=P(D)P(D∣H)×P(H) 
+Where: 
+ P(H)P(H)P(H): Prior probability (belief before data) 
+ P(D∣H)P(D|H)P(D∣H): Likelihood (probability of data given hypothesis) 
+ P(H∣D)P(H|D)P(H∣D): Posterior (updated belief after data) 
+Frequentist vs Bayesian: 
+ Frequentist learning assumes parameters are fixed but unknown and uses 
+observed data to make inferences. 
+ Bayesian learning treats parameters as random variables with 
+distributions. 
+ Bayesian methods give probabilistic predictions, while frequentist gives 
+point estimates. 
+ Frequentist ignores prior belief; Bayesian includes it. 
+In conclusion, Bayesian learning is more flexible and realistic for real-world 
+uncertainty, though computationally heavier. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+Recurrent Neural Networks (RNNs) are deep learning architectures designed 
+to process sequential data. Unlike traditional neural networks that assume 
+inputs are independent, RNNs maintain a hidden state that captures 
+information about previous inputs. This makes them excellent for tasks where 
+order or context matters. 
+Structure and Working: 
+Each RNN unit takes the current input and the previous hidden state to 
+produce an output and a new hidden state. Mathematically, 
+ht=f(Whht−1+Wxxt+b)h_t = f(W_hh_{t-1} + W_xx_t + b)ht=f(Whht−1+Wxxt
++b) 
+Applications of RNN: 
+1. Language Modeling: Predicting the next word in a sentence. 
+2. Speech Recognition: Converting spoken audio to text. 
+3. Machine Translation: Translating from one language to another. 
+4. Stock Market Prediction: Using past trends to forecast future values. 
+5. Music Generation: Composing melodies based on learned sequences. 
+6. Sentiment Analysis: Understanding emotions in text. 
+Although RNNs face the problem of vanishing gradients, advanced 
+architectures like LSTM (Long Short-Term Memory) and GRU (Gated 
+Recurrent Unit) handle long-term dependencies effectively. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment is the process of integrating a trained machine learning 
+model into a production environment where it can serve real users and make 
+live predictions. This is one of the final and most crucial steps of the ML 
+lifecycle. 
+Deployment Process: 
+1. Model Packaging: Save model along with preprocessing steps. 
+2. Integration: Connect the model to web APIs, apps, or servers. 
+3. Testing: Verify performance on unseen production data. 
+4. Versioning: Keep track of different model versions. 
+5. Containerization: Use Docker or cloud environments for scalability. 
+Monitoring: 
+After deployment, models must be monitored to ensure they perform 
+consistently. Data drift, concept drift, or changing environments can degrade 
+accuracy. 
+Key Monitoring Activities: 
+ Tracking prediction accuracy. 
+ Logging input-output data. 
+ Detecting anomalies or drifts. 
+ Retraining models periodically. 
+Monitoring ensures reliability, fairness, and longevity of ML systems.
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Training ML models involves many difficulties due to data quality, algorithmic 
+limitations, and computational constraints. 
+Challenges: 
+1. Insufficient Data: Models fail to generalize when training data is small. 
+2. Poor Data Quality: Missing, noisy, or biased data leads to inaccurate 
+results. 
+3. Overfitting: Model performs well on training but fails on test data. 
+4. Underfitting: Model too simple to capture relationships. 
+5. Feature Engineering: Selecting meaningful features requires domain 
+expertise. 
+6. Hyperparameter Tuning: Finding the right parameters is time-consuming. 
+7. High Computational Cost: Deep models require GPUs and high memory. 
+8. Bias and Fairness: Ethical issues arise if data is unbalanced. 
+These challenges must be handled using proper preprocessing, regularization, 
+and validation. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic Regression is a classification technique that predicts the probability 
+of a binary outcome. It uses a sigmoid function to convert linear outputs 
+into probabilities between 0 and 1. 
+Formula: 
+P(y=1∣x)=11+e−(b0+b1x1+...+bnxn)P(y=1|x) = \frac{1}{1 + e^{-(b_0 + b_1x_1 + 
+... + b_nx_n)}}P(y=1∣x)=1+e−(b0+b1x1+...+bnxn)1 
+If P > 0.5, predict 1; else predict 0. 
+Use Cases: 
+ Email spam classification. 
+ Disease diagnosis (yes/no). 
+ Credit card fraud detection. 
+ Customer churn prediction. 
+It’s simple yet powerful and forms the basis for many advanced models. 
+B-4. What are hyperparameters? Give examples and explain how they differ 
+from parameters. 
+Hyperparameters are external configurations that govern the learning behavior 
+of a model, such as learning rate or number of layers. Parameters are 
+internal to the model and learned during training. 
+Examples of Hyperparameters: 
+ Learning rate 
+ Batch size 
+ Number of epochs 
+ Number of trees in Random Forest 
+Difference: 
+Hyperparameters control how learning happens; parameters store what the 
+model learns. Hyperparameters are tuned manually, while parameters are 
+learned automatically. 
+B-6. What is dimensionality curse? How does it affect machine learning models? 
+The Curse of Dimensionality refers to the issues that arise when data has 
+too many features. In high dimensions, distances between points become 
+meaningless, making learning difficult. 
+Effects: 
+1. Model becomes complex and slow. 
+2. Overfitting increases as model memorizes data. 
+3. Visualization and interpretation become hard. 
+4. Need for exponentially more data. 
+Solutions: 
+ Dimensionality Reduction (PCA, LDA). 
+ Regularization 

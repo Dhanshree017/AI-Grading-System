@@ -1,0 +1,168 @@
+ID-T012 
+Name : Manku roy Roll no: 13 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+Section A: Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+Random Forest is an ensemble machine learning algorithm used for both 
+classification and regression. It operates by creating a “forest” of many 
+decision trees, each trained on different subsets of data and features. The 
+final output is determined by majority voting (in classification) or 
+averaging (in regression). 
+Working: 
+1. The dataset is divided into multiple random subsets using 
+bootstrapping. 
+2. For each subset, a decision tree is built using a random selection of 
+features at each split. 
+3. The trees are grown fully without pruning, to maximize diversity. 
+4. Once all trees are built, predictions are made by aggregating the 
+results of each tree. 
+o For classification, the most frequent class is chosen. 
+o For regression, the average of predictions is taken. 
+Advantages: 
+ Handles overfitting better than individual trees. 
+ Works well with both categorical and numerical features. 
+ Can handle missing values effectively. 
+ Robust to outliers and noise. 
+Disadvantages: 
+ Slower in prediction compared to single models. 
+ Hard to interpret due to the number of trees. 
+ Requires more computational resources. 
+Random Forest is highly reliable in problems like fraud detection, 
+medical diagnosis, and credit scoring due to its balance of accuracy and 
+generalization. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is the core algorithm for training artificial neural 
+networks. It adjusts the weights of neurons to minimize the error 
+between predicted and actual outputs. 
+Steps involved: 
+1. Forward Pass: Input data is passed through the network, layer by 
+layer, to produce an output. 
+2. Loss Calculation: The predicted output is compared with the actual 
+label using a loss function (e.g., Mean Squared Error or Cross
+Entropy Loss). 
+3. Backward Pass: The loss is propagated backward through the 
+network to calculate gradients using the chain rule of 
+differentiation. 
+4. Weight Update: The computed gradients are used to update weights 
+via optimization algorithms like Gradient Descent. 
+5. Iteration: Steps 1–4 are repeated for multiple epochs until 
+convergence. 
+Backpropagation is essential because it allows deep learning models to 
+learn complex patterns efficiently by adjusting weights systematically. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+RNNs are neural networks designed for sequential data, where the 
+output at a time step depends on previous inputs. Unlike traditional 
+networks, RNNs have feedback loops that retain information across time 
+steps. 
+Structure: 
+ RNNs contain hidden states that capture dependencies over time. 
+ The hidden state hth_tht is updated using: 
+ht=f(Whht−1+Wxxt+b)h_t = f(W_h h_{t-1} + W_x x_t + b)ht=f(Wh
+ht−1+Wxxt+b)  
+ The same weights are shared across all time steps, allowing RNNs to 
+generalize temporal patterns. 
+Applications: 
+ Text generation and language modeling. 
+ Speech recognition and translation. 
+ Stock market prediction. 
+ Sentiment analysis. 
+However, RNNs face challenges like vanishing and exploding gradients, 
+which are mitigated by architectures like LSTM and GRU. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment is the process of integrating a trained machine 
+learning model into a real-world environment where it can serve 
+predictions on new data. 
+Deployment steps: 
+1. Model Packaging: The model and preprocessing pipeline are 
+packaged into a deployable format (e.g., Docker container). 
+2. Integration: The model is connected to a web service or application 
+using APIs. 
+3. Testing: Validation on live data ensures model robustness. 
+4. Scaling: The model is optimized for concurrent requests using load 
+balancing. 
+Monitoring: 
+ Tracks model performance over time. 
+ Detects concept drift (when data distribution changes). 
+ Monitors latency, accuracy, and resource usage. 
+Monitoring ensures the model remains reliable and relevant post
+deployment. 
+A-6. Explain Normalization vs Standardization with examples. 
+Both Normalization and Standardization are feature-scaling techniques 
+used to improve model convergence and stability. 
+Normalization: 
+ Scales data to a fixed range, typically [0, 1]. 
+ Formula: x′=x−xminxmax−xminx' = \frac{x - x_{min}}{x_{max} - 
+x_{min}}x′=xmax−xminx−xmin 
+ Useful for algorithms like KNN and Neural Networks where 
+magnitude affects distance calculation. 
+Standardization: 
+ Centers data around mean 0 with standard deviation 1. 
+ Formula: z=x−μσz = \frac{x - \mu}{\sigma}z=σx−μ 
+ Common for algorithms like Logistic Regression and SVMs. 
+Example: 
+If feature age = [20, 30, 40], 
+ Normalized: [0, 0.5, 1] 
+ Standardized: [-1.22, 0, 1.22] 
+Normalization is used when scale matters, while Standardization is used 
+when distribution matters. 
+Section B: Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Key challenges include: 
+ Overfitting: Model learns noise instead of patterns. 
+ Underfitting: Model too simple to capture data complexity. 
+ Data quality: Missing values, imbalance, or noise affect performance. 
+ Hyperparameter tuning: Requires careful experimentation. 
+ Computational cost: Training complex models needs high resources. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+ Probability: Measures the chance of data given a fixed model: 
+P(D∣H)P(D|H)P(D∣H). 
+ Likelihood: Measures how likely a model is given observed data: 
+L(H∣D)L(H|D)L(H∣D). 
+Probability predicts outcomes; likelihood estimates parameters. 
+B-4. What are hyperparameters? Give examples and explain how they 
+differ from parameters. 
+ Hyperparameters: Set before training (e.g., learning rate, epochs). 
+ Parameters: Learned during training (weights, biases). 
+Example: In a neural network, the learning rate is a 
+hyperparameter; weights are parameters. 
+B-6. What is dimensionality curse? How does it affect machine learning 
+models? 
+The curse of dimensionality occurs when feature space grows 
+exponentially, making distance metrics less meaningful. 
+Effects include: 
+ Overfitting due to sparse data. 
+ Increased computation cost. 
+ Poor model generalization. 
+Techniques like PCA and feature selection mitigate it. 
+Section C: Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in 
+industries? 
+Predictive maintenance uses ML to forecast equipment failures before 
+they happen. 
+Process: 
+ Sensors collect temperature, vibration, and pressure data. 
+ Data preprocessing removes noise and outliers. 
+ Models like Random Forest or LSTM predict failure patterns. 
+ Alerts are generated for potential breakdowns. 
+Benefits: 
+ Reduces downtime and repair cost. 
+ Increases safety and efficiency. 
+Example: In manufacturing, ML predicts motor failure days before 
+actual malfunction. 
+C-2. Discuss 5 real-world examples of biased ML models and how such bias 
+can be reduced. 
+1. Facial recognition: Misidentifies minority faces due to biased 
+training data. 
+o Fix: Use balanced datasets. 
+2. Hiring algorithms: Prefer male candidates due to biased history. 
+o Fix: Anonymize gender features. 
+3. Loan approval systems: Discriminate against specific ZIP codes. 
+o Fix: Remove sensitive attributes. 
+4. Predictive policing: Targets certain communities unfairly. 
+o Fix: Regular audits of data fairness. 
+5. Healthcare models: Perform poorly for underrepresented groups. 
+o Fix: Use representative patient data. 

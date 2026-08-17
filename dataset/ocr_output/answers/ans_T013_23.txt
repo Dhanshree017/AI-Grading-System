@@ -1,0 +1,110 @@
+ID-T013 
+Name : Anushka Mitra Roll no: 23 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – 
+A-1. Define Machine Learning and list its three main categories. 
+Machine learning is like when computer try to learn something by self 
+without told everything by human. It take data and then it understand 
+pattern or guess future things. It is like a student but without brain, only 
+math brain. Machine learning have three big types, one is supervised learning, 
+second is unsupervised learning, and third is reinforcement learning. 
+Supervised learning mean we give label data like we say dog and cat and then 
+model learn to tell next time which is which. Unsupervised mean there no 
+label, it just group like clustering. Reinforcement learning is like game where 
+agent get reward when do correct thing. These three type cover big world of 
+ML and all algorithm fall inside these only. 
+A-2. What is the difference between training error and test error? 
+Training error is the mistake the model do on data which it learn on. Test 
+error is mistake when we give it new data. Training error usually small 
+because model already saw that data, but test error show if model good or 
+bad on unseen. If training error low but test high it mean overfit. 
+Some people confuse it with loss function but not same. Training error just 
+check how model learn pattern inside training. Test error is outside world 
+check. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting is when model study too much and memorize everything but fail 
+in real world. Like student who read only notes and cannot answer new 
+question. One method to reduce it is dropout. Dropout mean randomly 
+ignore some neurons when training so it not depend too much on few 
+neurons. Another method is using less complex model or early stopping. 
+Overfitting is main problem in deep learning and happen when training data 
+not much or noise data exist. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is table show how good classification model is working. It 
+show true positive, true negative, false positive, false negative. It help to 
+calculate accuracy, precision, recall, F1-score. For example if we predict spam 
+mail, confusion matrix show how many correct spam, wrong spam, correct 
+non-spam etc. 
+It is very usefull because it not only tell total accuracy but also detail view 
+of error. Sometime accuracy high but class imbalance happen, confusion 
+matrix help to detect that. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection mean choose best and useful columns or attributes from 
+data. Not all features important, some only create noise. By selecting correct 
+features, model train fast, accuracy improve, and overfit reduce. 
+For example, if we want predict house price, “location” and “size” matter 
+but “house color” maybe not. So we remove it. Feature selection methods 
+are filter, wrapper, embedded. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation function are function used inside neural network to give non
+linearity. Without it, network just behave like simple linear regression. 
+Activation decide output of neuron. 
+Common examples are ReLU (Rectified Linear Unit) and Sigmoid. ReLU is 
+f(x)=max(0,x), simple and fast. Sigmoid map input between 0 and 1 so used 
+in binary classification. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+Learning rate is small number decide how much step model take during 
+optimization. If learning rate too high model jump around and not converge. 
+If too low it take too long to learn or stuck in local minima. Usually between 
+0.001 to 0.01 for good training. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+Loss function measure how far predicted value from actual. It is used by 
+optimizer to adjust weight. Common loss are Mean Squared Error (MSE) for 
+regression and Cross Entropy Loss for classification. It help minimize error 
+step by step during training. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross validation divide data into multiple parts (folds) and train model on 
+different fold combinations. Like K-fold CV. It give average performance that 
+is more stable and not depend on one random split. Advantage is better 
+generalization estimate and less overfitting chance. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised learning mean no label given, model find pattern itself. Example 
+algorithms are K-Means Clustering and PCA (Principal Component Analysis). It 
+used in grouping, pattern discovery, dimensionality reduction. 
+SECTION B – Poor Student (some correct, some fully wrong/irrelevant) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+Feature engineering is making data beautiful before giving to machine. It 
+means adding, removing, modifying data columns to help model learn faster. 
+It like cooking data so model eat better. 
+Role is very important because bad feature give bad output even with best 
+algorithm. Techniques include encoding (like one-hot or label encoding), scaling 
+(standardization, normalization), polynomial features (making interaction like 
+x², xy etc.). 
+Without feature engineering model fail or confuse because raw data mostly 
+dirty. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+Generative models try to model data distribution p(x, y). Discriminative 
+models only model p(y|x). Generative example is Naive Bayes, Discriminative 
+is Logistic Regression or SVM. 
+Generative model can create new sample, discriminative cannot. Generative 
+are like painter, discriminative like judge. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-means is unsupervised method for clustering. Steps: 
+1. Choose K (number of clusters). 
+2. Initialize K centroids randomly. 
+3. Assign each data point to nearest centroid. 
+4. Recalculate centroid as mean of all assigned points. 
+5. Repeat until centroid stop moving. 
+Advantages: simple, fast, works well for spherical data. Disadvantages: 
+need K before, sensitive to outlier. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping is technique to stop training before model overfit. During 
+training we monitor validation loss, when it stop decreasing or start 
+increasing, we stop. 
+It help prevent overfitting because if train too long, model memorize training 
+data and lose generalization. Early stopping act like control for learning time. 

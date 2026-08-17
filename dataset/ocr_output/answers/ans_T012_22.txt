@@ -1,0 +1,58 @@
+ID-T012 
+Name : Rohit vallam Roll no: 22 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment mean putting machine learning model into life so it can work in real 
+world. It is like we make robot and then start it in factory. 
+We first train model on computer and then save it in file. Then deploy using web server 
+or API like flask. It can be in mobile, website, cloud etc. 
+After deployment, model must be check again and again. Maybe model good now but after 
+few month data change and model become stupid. So monitoring is must. 
+Monitoring mean watch model accuracy, see if data drift or error increase. Sometime we 
+need retrain with new data. also security of data is important. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization and Standardization are something to make data in same level. In 
+normalization we make data between 0 to 1 like divide by big number. In standardization 
+we subtract mean and divide by variance. 
+For example if age is 10 to 100 and salary is 10000 to 100000 then model will confuse 
+because salary is big number. so we normalize or standardize. 
+Normalization is for neural network because they like small numbers, standardization for 
+linear model. Sometimes student confuse between both but they are cousins. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+There are many challenges like data not clean, sometimes missing values or wrong data. 
+Also overfitting happen when model memorize instead of learning. 
+Sometimes model too slow or hardware weak. If we choose wrong algorithm it will give 
+wrong prediction. Hyperparameters are also very confusing. 
+Other challenge is explainability because we don’t know why model doing that. Also bias 
+data give unfair results.
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is algorithm which not for regression but for classification. It predict 
+yes or no, 0 or 1 type problems. It use sigmoid function to squeeze numbers between 0 
+to 1. 
+It is used in spam or not spam, pass fail, rain or no rain. it is easy and fast. 
+but logistic regression not work well if data not linear, then we use tree or neural 
+network. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameters are things we set before training like learning rate, number of layer, tree 
+depth. Parameters are things model learn by itself like weight, bias. 
+If hyperparameters wrong, model fail. So tuning is needed. It is like cook recipe, salt 
+amount is hyperparameter, taste is parameter result. 
+B-5. Explain the concept of cross-entropy loss. 
+Cross entropy loss is a type of cost which see how much our predicted probability 
+different from actual label. Smaller cross entropy mean model better. 
+It mostly used in classification problems. If model say 0.9 for true class, loss small. If 
+0.1, loss big. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Predictive maintenance mean predicting when machine will break before it break. ML can 
+help by looking at data like temperature, vibration, current etc. 
+We put sensors on machines and feed data to model. Model learn what normal and what 
+abnormal. If pattern look like failure model give warning. 
+It help reduce downtime, save cost, and improve safety. Algorithms like random forest, 
+SVM or LSTM use. 
+Data need to be clean and labelled. If not model can say machine is fine even when it 
+dying. 

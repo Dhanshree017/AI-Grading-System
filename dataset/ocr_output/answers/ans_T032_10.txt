@@ -1,0 +1,38 @@
+ID-T032 
+Name: Roshni Bedi Roll no: 10 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model maintenance. 
+The machine learning lifecycle is an iterative engineering framework (often referred to as MLOps) that 
+manages the evolution of a model from a conceptual business problem to a production-grade asset. 
+1. Problem Definition and Scoping: This phase involves translating a business objective into a 
+technical machine learning task (e.g., Binary Classification, Regression, or Clustering). Success 
+metrics—such as Precision-Recall for imbalanced datasets or RMSE for forecasting—are defined 
+here. 
+2. Data Acquisition and Exploration (EDA): Data is extracted from heterogeneous sources (SQL, 
+Data Lakes, APIs). Exploratory Data Analysis (EDA) is performed to understand the statistical 
+distribution, identify correlations, and detect anomalies. 
+3. Data Preprocessing and Cleaning: Raw data is rarely "model-ready." This stage involves handling 
+missing values via imputation, correcting inconsistencies, and encoding categorical variables. 
+4. Feature Engineering and Selection: This is the most critical stage for performance. It involves 
+creating new predictors (e.g., ratios, log transforms) and selecting the most influential variables to 
+reduce the "Curse of Dimensionality." 
+5. Model Training and Hyperparameter Tuning: The algorithm explores the hypothesis space. 
+Hyperparameters (like the learning rate or number of trees) are optimized using techniques like Grid 
+Search or Bayesian Optimization to find the global minimum of the loss function. 
+6. Evaluation and Validation: The model is tested on a hold-out dataset. Techniques like K-fold 
+cross-validation ensure that the model generalizes well and isn't simply "memorizing" the training 
+set. 
+7. Deployment: The validated model is containerized and deployed via an API. It can operate in 
+"Batch Mode" (offline) or "Real-time Mode" (online inference). 
+8. Monitoring and Maintenance: Once live, models suffer from Concept Drift (where the 
+relationship between variables changes). Continuous monitoring detects performance decay, 
+triggering automated retraining pipelines to keep the model relevant. 
+B] Attempt All (each 2 marks) 
+B-a. What is model training in machine learning? 
+It is the optimization process where an algorithm analyzes training data to adjust its internal parameters 
+(weights and biases) to minimize a loss function and learn underlying patterns. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and selecting a subset of the most relevant features from the 
+original dataset to improve model accuracy, reduce complexity, and prevent overfitting. 

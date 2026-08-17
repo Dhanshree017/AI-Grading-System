@@ -1,0 +1,166 @@
+ID-T006 
+Name: manish yadav Roll no: 11 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A-1. How Reinforcement learning is different from Supervised learning? 
+1. Reinforcement learning is based on trial and error where agent learn 
+by reward or punishment, but supervised learning uses already 
+labeled data to train. 
+A-2. Define the term overfitting and one solution for it. 
+1. Overfitting means model learn the training data too much and 
+perform poor on new data because it memorize instead of learning 
+pattern. 
+2. It happens when model becomes very complex or train for long time 
+with small dataset. 
+3. As a result, accuracy on training data becomes high but test accuracy 
+remains low. 
+4. One common solution is regularization which add penalty to reduce 
+complexity of model. 
+5. Another method is early stopping or dropout which help model not 
+to depend too much on training data. 
+A-3. What is the role of Linear Discriminant Analysis in ML? 
+1. Linear Discriminant Analysis (LDA) is mainly used for reducing 
+number of features while keeping important class information. 
+2. It works by finding linear combination of features that best separate 
+different classes in the data. 
+3. LDA is helpful when we have many features but we want to simplify 
+the dataset for faster learning. 
+4. It also helps to improve accuracy of classifiers like logistic regression 
+or SVM. 
+5. LDA is widely used in applications like face recognition and pattern 
+detection because it make classification easier. 
+A-5. Write importance of K-means clustering. 
+1. K-means clustering is simple and fast algorithm used for dividing 
+data into groups automatically. 
+2. It helps to find hidden patterns in unlabeled data without any 
+supervision. 
+3. It is used in many fields like marketing for customer segmentation or 
+in image compression. 
+4. It helps to simplify complex datasets into smaller meaningful groups 
+which are easy to study. 
+5. It is one of the most commonly used unsupervised learning algorithms 
+due to its speed and simplicity. 
+A-6. Write about R Square and its significance. 
+1. R Square is a number that shows how much variation in output is 
+explained by the input variables. 
+2. It always stays between 0 and 1, where 1 means perfect fit and 0 
+means no relation. 
+3. High R Square value shows that model is fitting data well and 
+capturing main trends. 
+4. Low R Square means model not able to explain data properly or 
+missing some important variables. 
+5. It is mostly used in regression models to measure accuracy of 
+predictions. 
+A-7. Give significance of hyperparameter optimization. 
+1. Hyperparameters are those settings which control how the model 
+learn like learning rate or number of layers. 
+2. Tuning them properly improve performance and accuracy of machine 
+learning model. 
+3. Without optimization, even a good model can give poor result. 
+4. Hyperparameter tuning helps in balancing between underfitting and 
+overfitting. 
+5. Grid search, random search and Bayesian optimization are common 
+methods used for this purpose. 
+A-8. How machine learning deals with sparse data. 
+1. Sparse data means data with lots of zeros or missing values, which 
+make model training difficult. 
+2. ML handle this by using sparse matrix representation that store only 
+non-zero values to save memory. 
+3. Algorithms like Naive Bayes or logistic regression handle sparse data 
+better because they don’t depend on dense features. 
+4. Dimensionality reduction methods like PCA or LDA also help to 
+reduce effect of sparsity. 
+5. Sometimes we fill missing values or use embeddings to convert sparse 
+features into dense ones. 
+A-9. What is advantage of active learning. 
+1. Active learning helps to reduce labeling cost by selecting only 
+important samples for training. 
+2. It allow model to ask for labels on those data points which are most 
+useful for learning. 
+3. This saves time and makes learning more efficient especially when 
+labeling is expensive. 
+4. It improve accuracy faster than random sampling because it focus on 
+informative data. 
+5. Active learning is useful in cases like medical diagnosis or NLP where 
+labeled data is very limited. 
+A-10. What is training, testing and validation? 
+1. Training is the phase where the model learn from available data and 
+adjust its parameters. 
+2. Validation is used to tune the model and choose best 
+hyperparameters during training process. 
+3. Testing is done at end to check how model performs on completely 
+new unseen data. 
+4. These three steps make sure model not only memorize but also 
+generalize well to new cases. 
+5. Together they make the full model building process systematic and 
+accurate. 
+B) Attempt any 4 
+B-1. Give seven applications of Machine Learning. 
+1. Image Recognition: Used in face unlock, object detection and medical 
+imaging to identify patterns from pictures automatically. 
+2. Speech Recognition: Converts spoken language into text, used in 
+virtual assistants like Google Assistant or Alexa. 
+3. Healthcare: Helps doctors in predicting diseases early, suggesting 
+treatments and reading X-rays automatically. 
+4. Finance: Used in fraud detection, loan approval and stock market 
+prediction using past data. 
+5. E-commerce: Used for recommending products to users by studying 
+their previous searches and purchases. 
+6. Self-driving Cars: ML help cars to recognize road signs, objects and 
+people to drive safely. 
+7. Weather Forecasting: Used for predicting rainfall, storms or 
+temperature using past climate data. 
+8. Natural Language Processing: Used in chatbots, translation tools and 
+sentiment analysis of text or reviews. 
+B-2. Explain supervised, unsupervised and semi-supervised with examples. 
+1. Supervised Learning: Works with labeled data where both input and 
+output are known, like predicting marks from study hours. 
+2. Unsupervised Learning: No labels are given, model find pattern by 
+itself, example – clustering customers using K-means. 
+3. Semi-Supervised Learning: Uses small labeled data and large 
+unlabeled data, useful when labeling is costly, example – image 
+recognition. 
+4. Supervised has clear teacher guidance, unsupervised explore data 
+freely, and semi-supervised is mix of both methods. 
+5. All three types used based on how much labeled data we have and 
+what goal we want to achieve. 
+6. They help in different types of problems like classification, grouping 
+or pattern discovery. 
+7. Semi-supervised is very useful when full labeled dataset is not 
+available in real life. 
+8. Each type has its own advantage and used in different ML 
+applications. 
+B-4. What are types of SVM. 
+1. Linear SVM: Used when data can be separated by straight line or 
+plane, simple and fast for small datasets. 
+2. Non-Linear SVM: Used when data cannot be divided linearly, works 
+by transforming data to higher dimension. 
+3. Polynomial Kernel SVM: Use polynomial function to make curved 
+decision boundaries for complex data. 
+4. RBF Kernel SVM: Most popular kernel, it separate data using 
+distance-based function to handle non-linear problems. 
+5. Sigmoid Kernel SVM: Works like neural networks and used for specific 
+binary classification tasks. 
+6. Multi-class SVM: Used when there are more than two classes by 
+applying one-vs-one or one-vs-all method. 
+7. Support Vector Regression (SVR): A variation that perform regression 
+instead of classification. 
+8. These types help SVM to work in many different kinds of datasets 
+and problem types. 
+B-5. Explain Decision Tree in detail. 
+1. A decision tree is a flowchart-like model that splits data step by step 
+based on conditions to reach final decision. 
+2. Each internal node represent a question on a feature and leaf node 
+shows the final output. 
+3. The model use Information Gain, Entropy or Gini Index to select best 
+feature for splitting. 
+4. It is simple to understand and visualize because it looks like human 
+decision-making process. 
+5. Can handle both numerical and categorical data easily without much 
+preprocessing. 
+6. But deep trees can overfit, so pruning is used to remove unnecessary 
+branches. 
+7. Algorithms like ID3, C4.5 and CART are commonly used for building 
+decision trees. 
+8. Decision trees are used in medical diagnosis, banking, and marketing 
+because they give clear explanation of results. 

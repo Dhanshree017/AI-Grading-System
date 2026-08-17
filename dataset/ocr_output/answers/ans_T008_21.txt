@@ -1,0 +1,228 @@
+ID-T008 
+Name : Rasika Mahesh Roll no: 21 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+SECTION 1 – Attempt All 
+1-c) Write about Sampling Theories 
+Sampling theory provides the foundation for selecting representative subsets from a 
+population for data analysis and model training. It allows the model to learn from a 
+smaller portion of data while maintaining statistical validity. 
+There are mainly two categories: probability sampling (each data point has a known chance 
+of selection) and non-probability sampling (selection based on subjective judgment). 
+Common methods include: 
+1. Random Sampling: Every instance has an equal chance of being selected, reducing 
+bias. 
+2. Stratified Sampling: Data is divided into groups (strata), and samples are drawn 
+proportionally from each group. 
+3. Systematic Sampling: Every nth element is selected from an ordered list. 
+Good sampling ensures that the model captures all variations of data, preventing 
+overfitting and improving generalization performance. 
+1-d) Define Eager Learning 
+Eager learning algorithms construct a general model during training before encountering any 
+test data. Once training is complete, predictions can be made quickly using the learned 
+model. Examples include Decision Trees, Naïve Bayes, and Neural Networks. 
+Eager learners focus on compressing training data into a compact form (the model). 
+However, this process can be time-consuming, as the model parameters must be optimized 
+in advance. The advantage is that prediction time is fast, but retraining may be required 
+when new data arrives. 
+Eager learning contrasts with lazy learning, which delays model construction until 
+prediction time. 
+1-e) What is Lazy Learning 
+Lazy learning postpones the generalization process until a query or prediction is made. 
+Instead of building a global model during training, it stores all training data and performs 
+computation only when needed. 
+The most common example is K-Nearest Neighbors (KNN). When a new input is given, 
+the algorithm calculates the distance to all stored data points and selects the k closest 
+neighbors. The prediction is based on the majority vote (classification) or average 
+(regression) of these neighbors. 
+Lazy learning is flexible and simple but computationally expensive during prediction. It also 
+requires significant memory to store all examples. 
+1-f) Define the Term Genetic 
+The term “genetic” in Artificial Intelligence refers to Genetic Algorithms (GA) — 
+optimization techniques inspired by Darwin’s principle of natural selection. They work by 
+evolving a population of potential solutions using processes such as selection, crossover, and 
+mutation. 
+Initially, a population of random solutions is generated. The fitness of each solution is 
+evaluated based on a fitness function. The fittest individuals are selected to form a new 
+generation. Through repeated iterations, the population evolves toward better solutions. 
+Genetic algorithms are widely used for optimization problems such as scheduling, routing, 
+and feature selection in AI. 
+1-g) Discuss Dynamic Programming 
+Dynamic programming (DP) is an optimization approach that solves complex problems by 
+dividing them into smaller overlapping subproblems. Each subproblem is solved once, and its 
+result is stored (memoization), avoiding redundant calculations. 
+DP is applied in various AI areas like pathfinding, sequence alignment, and reinforcement 
+learning. The two key principles are: 
+1. Optimal Substructure: The optimal solution of the whole problem depends on the 
+optimal solutions of its subproblems. 
+2. Overlapping Subproblems: The same subproblems recur multiple times during 
+computation. 
+Famous examples include the Bellman equation in reinforcement learning and the Floyd
+Warshall algorithm for shortest paths. 
+1-h) Define Explanation-Based Learning 
+Explanation-Based Learning (EBL) extracts general rules by analyzing specific examples and 
+understanding why they work. It uses background knowledge to form a logical explanation 
+that can be applied to future situations. 
+For instance, if an AI system learns that a bird can fly because it has wings and 
+lightweight bones, it generalizes this principle to other similar animals. 
+EBL combines the reasoning capability of AI with machine learning efficiency. It is highly 
+useful in domains like expert systems and diagnostic applications 
+1-j) Define Precision, Recall, and F1 Score 
+These are key performance metrics used in evaluating classification models. 
+ Precision: Measures how many predicted positives are actually positive. 
+Formula: Precision=TPTP+FP\text{Precision} = \frac{TP}{TP + 
+FP}Precision=TP+FPTP 
+ Recall (Sensitivity): Measures how many actual positives are correctly predicted. 
+Formula: Recall=TPTP+FN\text{Recall} = \frac{TP}{TP + FN}Recall=TP+FNTP 
+ F1 Score: Harmonic mean of precision and recall, providing a balance between them. 
+Formula: F1=2×Precision×RecallPrecision+RecallF1 = 2 \times \frac{Precision \times 
+Recall}{Precision + Recall}F1=2×Precision+RecallPrecision×Recall 
+These metrics are crucial when the dataset is imbalanced (e.g., medical diagnosis, spam 
+detection). 
+SECTION 2 – Attempt Any Six 
+2-a) Explain Decision Tree in Detail, Give Example 
+A decision tree is a supervised learning algorithm used for both classification and 
+regression. It represents decisions and their outcomes in a hierarchical, tree-like structure. 
+Key Components: 
+1. Root Node: Represents the entire dataset, split based on the most significant 
+feature. 
+2. Decision Nodes: Points where the data is further divided based on attribute 
+conditions. 
+3. Branches: Possible outcomes of a decision. 
+4. Leaf Nodes: Final outcomes representing the predicted class or value. 
+Working: 
+The algorithm selects the best feature to split using criteria like Information Gain or Gini 
+Impurity. It recursively divides data until it reaches pure nodes or meets stopping 
+conditions. Overfitting can occur if the tree is too deep, so pruning techniques are used. 
+Example: 
+A decision tree classifying whether to play tennis depending on weather conditions 
+(Outlook, Temperature, Humidity, Wind). The tree might first split based on Outlook, 
+leading to decisions like “Sunny → check Humidity,” “Rain → check Wind,” and so on. 
+2-b) Describe Briefly About K-Nearest Neighbors (KNN) 
+KNN is a lazy learning algorithm that classifies a new instance based on the majority class 
+of its k-nearest training examples. 
+Working: 
+1. Choose the value of k (number of neighbors). 
+2. Calculate the distance between the query instance and all training samples using 
+Euclidean or Manhattan distance. 
+3. Select the k nearest data points. 
+4. Perform majority voting (classification) or average calculation (regression). 
+Advantages: 
+ Simple and non-parametric. 
+ Works well with small datasets. 
+Limitations: 
+ Computationally expensive for large datasets. 
+ Sensitive to irrelevant features and noise. 
+Example: Classifying a new flower type using the Iris dataset based on petal and sepal 
+measurements. 
+2-c) Discuss Representation of Neural Networks 
+Neural networks are computational models inspired by the human brain. They consist of 
+interconnected layers of neurons that process data through weighted connections. 
+Structure: 
+ Input Layer: Accepts input features. 
+ Hidden Layers: Perform computations using activation functions like ReLU, Sigmoid, 
+or Tanh. 
+ Output Layer: Produces the final prediction. 
+Mathematical Representation: 
+Each neuron calculates: 
+y=f(∑wixi+b)y = f(\sum w_i x_i + b)y=f(∑wixi+b) 
+Learning Process: 
+The network adjusts its weights using backpropagation and gradient descent to minimize 
+loss. 
+Example: Used in speech recognition, image classification, and autonomous vehicles. 
+2-d) Differentiate Between Classification and Regression 
+Feature 
+Output 
+Goal 
+Classification 
+Categorical 
+Predict class labels 
+Regression 
+Continuous 
+Predict numeric values 
+Example Algorithms Logistic Regression, Decision Tree Linear Regression, SVR 
+Feature 
+Classification 
+Regression 
+Evaluation Metrics Accuracy, F1 Score 
+Example 
+Spam Detection 
+MSE, RMSE 
+Predicting House Price 
+Classification determines “which category,” while regression determines “how much.” 
+2-f) Compare AI, ML, and Deep Learning with Examples 
+Aspect 
+Definition 
+AI 
+Enables machines to 
+mimic human intelligence 
+ML 
+Subset of AI that 
+learns from data 
+DL 
+Subset of ML using deep 
+neural networks 
+Data 
+Requirement Moderate 
+Example 
+Key 
+Techniques 
+Dependency 
+Chess-playing robot 
+Rule-based systems, 
+Search 
+Relies on logic 
+Structured 
+Spam filter 
+Regression, 
+Classification 
+Relies on data 
+All three form a hierarchy: AI > ML > DL. 
+Large unstructured data 
+Image recognition 
+CNN, RNN 
+Relies on representation 
+learning 
+2-g) Differentiate Between CNN and RNN 
+Aspect 
+Full Form 
+CNN 
+Convolutional Neural Network 
+Data Type Spatial (Images) 
+RNN 
+Recurrent Neural Network 
+Sequential (Text, Time Series) 
+Architecture Uses convolution and pooling layers Uses recurrent connections 
+Memory 
+Example 
+No memory of previous input 
+Image classification 
+Maintains memory through hidden states 
+Speech recognition 
+Both are specialized neural network types optimized for specific data forms. 
+SECTION 3 – Attempt All 
+3-a) Define Search Algorithms in AI 
+Search algorithms explore possible states to find a solution path in a problem space. 
+Types: 
+1. Uninformed (Blind) Search: No additional knowledge—examples include Breadth-First 
+Search (BFS), Depth-First Search (DFS), Uniform Cost Search. 
+2. Informed (Heuristic) Search: Uses heuristic functions to guide search—examples: A*, 
+Best-First Search, Hill Climbing. 
+Applications: Game playing, pathfinding, and optimization tasks. 
+3-b) What is Intelligent Agent 
+An intelligent agent is an autonomous entity capable of perceiving its environment and 
+taking actions to achieve goals. 
+Components: 
+1. Sensors – perceive environment. 
+2. Actuators – perform actions. 
+3. Agent Function – maps perceptions to actions. 
+4. Agent Program – implements logic or learning. 
+Types: Simple reflex, model-based, goal-based, utility-based, and learning agents. 
+Example: Google Assistant responding to user queries intelligently. 
+3-c) Write Five Applications of AI 
+1. Healthcare: Disease prediction and robotic surgery. 
+2. Finance: Fraud detection and stock trend prediction. 
+3. Education: Personalized learning and grading automation. 
+4. Transport: Self-driving vehicles and traffic optimization. 
+5. Agriculture: Crop monitoring using AI drones. 
+ 

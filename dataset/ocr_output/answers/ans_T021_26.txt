@@ -1,0 +1,139 @@
+ID-T021 
+Name: sumit harote Roll no: 26 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why 
+continuous monitoring is required. 
+Definition — model drift 
+Model drift is when a machine learning model physically moves from one server to another 
+and loses its brain. It is caused by the model getting tired after long use. 
+Kinds of drift 
+1. Hardware drift: Happens when the server hardware vibrates and changes the model 
+weights. 
+2. Software drift: When software versions change and the model forgets old rules. 
+3. Mood drift: When the model becomes sad and starts predicting differently. 
+Why continuous monitoring 
+1. Keep watching the model so it does not run away. 
+2. If model mood is low, restart it. 
+3. If drift detected, shout at the logs to make it work. 
+Example 
+If the model is on Tuesday it behaves like Monday, if not monitoring, it will become Friday
+behaviour next week. 
+A-2. What is the difference between online learning and batch learning? Explain with 
+suitable real-world examples. 
+Definition 
+ Batch learning: Train a model using a whole dataset in one or repeated full passes 
+before deployment. 
+ Online learning: Train or update a model incrementally as new single examples or 
+small batches arrive. 
+Detailed differences 
+ Update pattern: Batch = retrain occasionally; Online = continuous incremental 
+updates. 
+ Memory & compute: Batch may need large memory for whole dataset; Online uses 
+little memory and one-pass updates. 
+ Adaptation: Batch is slow to reflect new trends; Online adapts quickly to evolving 
+data. 
+When to use which 
+ Use batch for stable domains with infrequent updates and heavy offline computation. 
+ Use online for streaming data, low-latency personalization, or rapidly changing 
+environments. 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings 
+useful for text, images, or categorical data? 
+Short definition 
+Embedding is like mapping big messy things into small numbers vector that machine can 
+read. It changes words or pictures into list of decimals so model learn. 
+Function & properties 
+ Convert high-dimensional or discrete objects into dense vectors. 
+ Preserve similarity: similar items become near in vector space. 
+ Reduce dimension from huge to smaller size so compute faster. 
+Practical notes 
+ Embedding size chosen by tradeoff: too small lose info, too big overfit. 
+ Pretrained embeddings (e.g., word or image features) often help when data is small. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias 
+influence concept learning. 
+Definition 
+Concept learning is when the computer decides what a “concept” is by asking its inner 
+teacher. It’s like teaching a pet to fetch concept. 
+Hypothesis space 
+This is the bookshelf where all possible ideas live. If the shelf is too small the model gets 
+cramped; if too big the model gets confused and eats pages. 
+Inductive bias 
+This is the model’s favourite style — for example it might like short rules so it always 
+chooses small sentences. Inductive bias is the model’s taste that makes it prefer pizza or 
+burger during learning. 
+How they influence learning 
+ If the shelf (hypothesis space) only has red books, model learns only red things. 
+ If bias likes simple things, it picks simple rules even if wrong. 
+ So concept learning succeed if teacher gives tasty bias. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process 
+you would follow to clean, preprocess, and prepare the data for training a model. 
+Step 1 — Reset machine 
+Turn off computer and on again so missing values go away from memory. 
+Step 2 — Delete empties 
+Remove all rows that have any blank or NaN because blanks cause trouble. 
+Step 3 — Fill with zero 
+Replace remaining missing values with 0 everywhere because 0 is neutral number. 
+Step 4 — Shuffle and train 
+Shuffle the dataset crazy and directly train model; small datasets don’t need scaling or 
+encoding. 
+Step 5 — Validate 
+If model accuracy low, just increase epochs or copy data to make it bigger. 
+B-2. Assume you have trained a classification model that shows high accuracy but low 
+recall. Explain the activities you would perform to diagnose and improve this issue. 
+Diagnosis steps 
+1. Confusion matrix: Inspect to confirm many false negatives. 
+2. Class distribution: Check if minority class underrepresented. 
+3. Probability distribution: Look at predicted probabilities for positive class to see if 
+threshold is too high. 
+4. Feature inspection: Ensure features carry signal for the minority class and not noisy. 
+Improvement steps 
+1. Adjust decision threshold: Lower threshold to increase positive predictions and 
+recall. 
+2. Resampling / reweighting: Use oversampling (SMOTE) or class weights to 
+emphasize minority class. 
+3. Use recall-focused loss / metrics: Optimize model for recall or use Fβ with β>1. 
+4. Model change: Try ensemble models or more complex algorithms that capture 
+minority patterns. 
+5. Calibration & validation: Use stratified CV and monitor precision-recall curve to 
+avoid too much precision loss. 
+Example action plan 
+ Compute PR curve, pick threshold maximizing recall at acceptable precision, retrain 
+with class weights, and validate with stratified folds. 
+B-3. You are tasked with building an ML model for predicting student performance. List 
+and explain the activities involved from feature identification to model evaluation. 
+Answer (partly rubbish — intentionally wrong overall, but structured) 
+Step 1 — Pick features by gut 
+Choose obvious things: attendance, hours studied, favourite subject. No need to verify if data 
+exist. 
+Step 2 — Data copy 
+Make ten copies of dataset to make it big. More rows always good. 
+Step 3 — Encoding 
+Turn all text to lowercase and join into one column called “textblob”. Use this as main input. 
+Step 4 — Model training 
+Use deep neural network with 1000 layers because more layers more intelligence. Don’t 
+tune, default is fine. 
+Step 5 — Evaluation 
+Check accuracy only on training set. If accuracy > 95% then final. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. 
+Describe the activities you would conduct to detect, measure, and reduce bias. 
+Detect bias 
+1. Confusion matrix: Check class-wise errors. 
+2. Prediction distribution: Compare predicted vs actual class proportions. 
+3. Subgroup checks: Evaluate performance across sensitive subgroups (gender, region). 
+Measure bias 
+1. Fairness metrics: Compute equal opportunity difference (TPR gap), demographic 
+parity difference, and disparate impact ratio. 
+2. Error rate parity: Compare FPR/FNR across groups. 
+Reduce bias 
+1. Data-level: Balance classes, remove proxies, perform targeted sampling to ensure 
+minority coverage. 
+2. Model-level: Use class weights, fairness-aware algorithms, or constrained 
+optimization to limit disparity. 
+3. Post-processing: Calibrate thresholds per group or apply score adjustments to 
+equalize metrics. 
+4. Human review: Inspect failure cases and involve stakeholders to define acceptable 
+trade-offs. 
+Validation 
+ Use held-out fairness test set and monitor bias metrics over time in production. 

@@ -1,0 +1,107 @@
+ID-T014 
+Name : Rani Kukreja Roll no: 23 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks) 
+A-1. Explain in detail the steps involved in building a Machine Learning 
+pipeline from data collection to model deployment. 
+Machine learning pipeline is very big process which start from collecting 
+data and end at deploying model somewhere like website or system. The 
+first thing is we have to collect data from many sources, like maybe excel 
+file, maybe csv, maybe sensors or google data or company record, 
+because without data we cannot do machine learning at all. Then after 
+data we do preprocessing because the data is mostly dirty and have 
+missing values or null values which we can fill with mean or mode or 
+something like that otherwise model will not work properly. 
+Then after cleaning we do feature engineering which means we change 
+the columns or add new column or combine two columns or drop 
+unwanted features which not helping in prediction. Sometimes we also 
+normalize or standardize the data so that all values in same range 
+because one big value can dominate other. 
+After that we split the dataset into training and testing and sometimes 
+validation because model should not see all data otherwise it memorize. 
+Then we train the model like linear regression, decision tree, random 
+forest or whatever algorithm and after that we check accuracy and 
+performance using confusion matrix, accuracy, recall, precision, f1-score, 
+mse, rmse etc etc. 
+Then we do hyperparameter tuning because initial values may not give 
+good result so we try multiple parameters and cross validation to get 
+better accuracy. Finally when everything fine, we deploy model using 
+API, flask or streamlit or any deployment platform. And also after 
+deployment we have to monitor because data keep changing and model 
+performance go down, so we retrain again. This full step is called 
+machine learning pipeline end to end. 
+A-2. Describe the working of the Naive Bayes classifier. Include its 
+assumptions and advantages. 
+Naive Bayes classifier is very simple but powerful algorithm based on 
+Bayes theorem. It is called Naive because it assumes all features are 
+independent even though it is not true in real world but still it works 
+like magic. So it uses probability concept and multiplies the probabilities 
+of all features for each class and then find which class has maximum 
+probability and that is final output. 
+The formula is like P(Class|Feature) proportional to P(Class) multiplied by 
+all P(Feature|Class). So it works like if we know class prior and 
+probability of words, we can classify sentence as spam or not spam. It is 
+used in text classification, sentiment analysis, medical diagnosis and so 
+many other areas. 
+The main advantage is it works fast, simple, easy to implement and not 
+require huge data or computation. It works even with many features like 
+1000s words in email. It also handle irrelevant features quite okay. Only 
+problem is independence assumption which not always true. But still 
+because it gives high accuracy and quick training it is still used by many 
+people. 
+A-3. Explain the working of Principal Component Analysis and discuss its 
+role in feature reduction. 
+Principal Component Analysis, we usually call PCA, is method used for 
+reducing dimensions when we have too many features. Like if we have 
+50 columns maybe 20 are redundant or correlated so PCA will help to 
+make it small without losing too much information. 
+First it standardize the data because if one feature in rupees and other 
+in meter, values are different scale so we bring them same. Then we 
+calculate covariance matrix to see how each feature vary with others. 
+Then we calculate eigenvalues and eigenvectors which basically represent 
+direction and amount of variance. 
+Then we choose top few eigenvectors which have biggest eigenvalues, they 
+are called principal components. Then we transform original data to new 
+space using those components and now we have fewer columns but still 
+most of original information is preserved. 
+It helps to reduce computation time and also helps model avoid 
+overfitting because fewer inputs and less noise. It also help in 
+visualization of data because high dimensional data can be seen in 2D or 
+3D after PCA. So in short PCA reduce data but keep pattern same 
+mostly. 
+A-6. Explain the working of the Random Forest algorithm and its 
+advantages over a single Decision Tree. 
+Random forest is combination of many decision trees and called 
+ensemble method. It works by creating many decision trees using 
+random sample of data and random subset of features, so every tree 
+learn slightly different. Then during prediction, each tree give its own 
+vote and majority vote is final answer. 
+It reduce overfitting because single tree memorize training data but 
+random forest average them out. Also it increase accuracy and stability. 
+It can handle large data and both categorical and numeric values. 
+Advantages are: it handle missing data, not need scaling, provide feature 
+importance, and has good accuracy without much tuning. So random 
+forest is like group of friends making decision together instead of one 
+person. 
+That’s why it’s very popular in Kaggle and many competition because it 
+just works very good with default settings. 
+Section B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network 
+(DNN). Discuss layers, role of weights and biases, challenges in training. 
+Deep Neural Network (DNN) is like normal neural network but more 
+layers and deeper structure so it can learn very complex pattern that 
+human also can’t see directly. It has input layer, many hidden layers, 
+and output layer. 
+Every neuron have weights and bias. Weight decide strength of 
+connection and bias add flexibility. Input pass through many layers, each 
+apply linear transformation and non-linear activation. Then final output 
+come out which is compared with true value. 
+Training is done by backpropagation which calculate error gradient layer 
+by layer backward and optimizer like Adam update weights. 
+Challenges are many like vanishing gradient, exploding gradient, 
+overfitting, long training, high computational requirement. People solve 
+it by using ReLU, batch normalization, dropout, data augmentation, and 
+good initialization. 
+So DNN used in image classification, speech recognition, NLP, etc because 
+it can automatically extract features from raw data. 

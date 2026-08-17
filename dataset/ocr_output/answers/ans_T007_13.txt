@@ -1,0 +1,103 @@
+ID-T007 
+Name : Ameesha Solanki Roll no: 13 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Applications of Machine Learning: 
+1. ML is used in spam mail thing because it detect spam mail from normal mail. 
+It learn from old emails and try to block spam. 
+2. ML use in doctor for predict disease. Like diabetes or heart disease. Machine 
+look at old patient data. 
+3. ML use in Youtube or Netflix recommend videos or movie to people. It look at 
+past things. 
+4. ML is used in bank for loan. Machine check if person pay loan or not by looking 
+at money or credit score. 
+5. ML use in car for self driving. Car see road, signals, people and drive. 
+6. ML use in Google Assistant and Siri. They listen voice and try understand and 
+answer. 
+7. ML use in chat bot for customer support. Chat bot talk to people and answer 
+question automatically. 
+Example: Predict student marks from study hours and past marks. Machine learn 
+from old marks and try predict new marks. 
+A-c) What are the steps in building ML model 
+ML model building have many steps. We have to follow or model not work. First step 
+is know problem. If we don’t know problem we cannot do anything. Like if we want 
+predict house price we must know features. 
+Next step collect data. Data come from file, website, sensors or many places. If data 
+wrong model also wrong. 
+Then clean data. Remove missing, wrong, null. Then convert text to number. 
+Sometimes scale number. 
+Then choose feature. Only use important columns. If too many feature model slow. 
+Then choose algorithm like linear regression, decision tree or SVM. 
+Then train model. Give data so machine learn. 
+Then test model. See how correct it is. 
+Then tuning and retrain. Repeat if accuracy low. 
+Finally deploy. Use model in real world. 
+Example: Predict house price. Collect data, clean, choose features like area, location, 
+train regression, test and deploy. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing is make data ready. Raw data not good. Model cannot learn from 
+dirty data. 
+1. Collect data from file, sensor, API or anywhere. 
+2. Clean data remove missing, wrong, null, duplicate. 
+3. Transform data convert text to number. 
+4. Scaling normalize number to same range. 
+5. Feature selection remove useless column. 
+6. Split data into train test. 
+7. Handle outlier remove weird number. 
+Example: Student marks dataset. Fill missing marks, convert gender to number, 
+normalize score, split train test. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naive Bayes is probability algorithm. It use Bayes theorem. It called naive because 
+assume all features independent. Formula is P(A|B) = (P(B|A)*P(A))/P(B). 
+Algorithm calculate probability for each class and pick high one. It use for text, small 
+data. 
+Advantage: 
+ Fast 
+ Easy 
+ Works good for text 
+ Can do many class 
+Disadvantage: 
+ Features must independent 
+ Not good for correlated data 
+Example: Email spam filter. Words like “win”, “free”, “money” help classify spam. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random forest many tree combine. It make model strong. Each tree train random 
+data and random feature. Then output combine by vote or average. 
+It reduce overfit. Works for big data. Can handle missing. Give importance score. 
+Flexible for regression and classification. Accurate and stable. 
+Problem is slow and use memory more. 
+Example: Predict loan default using income, credit score, employment. Random 
+forest use many tree vote final. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+SVM is support vector machine. It classify or predict. It find line or hyperplane that 
+separate class. Max margin is distance between classes. Use support vectors points 
+near boundary. 
+Type: 
+1. Linear SVM use line when data can separate straight. 
+2. Non-linear SVM use kernel like RBF or polynomial. 
+3. Multi-class SVM use one-vs-one or one-vs-rest for more than 2 class. 
+SVM good but slow for big data. Need tuning. 
+Example: Handwriting recognition digits 0-9 with SVM. 
+B-c) Explain different types of clustering algorithm 
+Clustering group similar data. Unsupervised because no label. 
+1. K-means divide into K group. Min distance center. 
+2. Hierarchical make tree of cluster. Merge or split. 
+3. DBSCAN group by density. Remove noise. 
+4. Agglomerative start with one point merge. 
+5. Mean shift move center to dense area. 
+Example: K-means group customers by buying pattern. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision tree supervised. Classify or predict. Split data by feature. Leaf node final 
+output. 
+Steps: 
+1. Select root node best feature by info gain. 
+2. Split data. 
+3. Repeat split till stop. 
+4. Make leaf nodes. 
+5. Prune tree reduce overfit. 
+6. Test model. 
+7. Deploy model. 
+Example: Predict pass/fail student by study hours and attendance. 

@@ -1,0 +1,141 @@
+ID-T007 
+Name : Sakshi shinde Roll no: 28 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence (AI) is a branch of computer science focused on creating machines 
+and systems that can perform tasks which typically require human intelligence. AI 
+allows computers to understand, reason, learn, and solve problems similar to humans. 
+It 
+can interpret complex data, make decisions, and continuously improve its 
+performance based on new data. Essentially, AI systems try to mimic cognitive 
+functions such as learning, problem solving, perception, and understanding language. 
+Machine Learning (ML) is a subset of AI where computers learn patterns from data 
+and improve automatically without explicit programming. ML models analyze historical 
+data to predict outcomes or make decisions with high accuracy over time. It is one of 
+the core techniques that drive AI applications. 
+Applications of Machine Learning: 
+1. Healthcare Prediction: ML models are used for disease prediction, early diagnosis, 
+and personalized treatment plans. For example, predicting heart disease based 
+on patient medical history. 
+2. Spam Detection: Email platforms use ML to classify emails as spam or non-spam 
+automatically. 
+3. Recommendation Systems: Netflix, Amazon, and YouTube suggest products, 
+videos, or movies by analyzing user behavior patterns. 
+4. Financial Sector: ML helps detect fraudulent transactions, predict stock market 
+trends, and assess loan risks. 
+5. Autonomous Vehicles: ML enables self-driving cars to recognize traffic signs, 
+pedestrians, and obstacles, making driving decisions in real-time. 
+6. Speech and Voice Recognition: Applications like Google Assistant and Siri use ML 
+to understand spoken commands and respond intelligently. 
+7. Customer Service Chatbots: ML powers AI chatbots that answer queries, resolve 
+complaints, and guide users efficiently. 
+Example: Predicting student grades based on study hours and past performance uses 
+AI for learning patterns and ML for making predictions. 
+A-c) What are the steps in building ML model 
+Building a machine learning model requires a structured workflow to ensure reliable 
+and accurate predictions. Each step is critical for creating a robust model. 
+1. Problem Definition: Clearly define the objective of the model. For instance, 
+whether the task is regression, classification, or clustering. Understanding the 
+problem helps in selecting the right approach and evaluation metrics. 
+2. Data Collection: Gather relevant data from multiple sources like databases, CSV 
+files, APIs, or sensors. High-quality and representative data is essential for 
+training an effective model. 
+3. Data Preprocessing: Clean the data to remove errors, handle missing values, 
+normalize or scale numerical features, and convert categorical data into 
+numerical format using encoding techniques. 
+4. Feature Selection and Engineering: Identify and select the most relevant features 
+that impact predictions. Feature engineering may involve creating new features 
+from existing ones to enhance model performance. 
+5. Model Selection: Choose an appropriate algorithm based on the problem type 
+and data characteristics. For example, Decision Trees for classification, Linear 
+Regression for continuous output, or SVM for high-dimensional data. 
+6. Model Training: Train the model using the prepared training dataset. The model 
+learns patterns and relationships from input features to predict the target 
+variable. 
+7. Model Testing and Validation: Evaluate the model on unseen test data to measure 
+performance using metrics like accuracy, precision, recall, F1-score, or RMSE. 
+Cross-validation can help prevent overfitting. 
+8. Hyperparameter Tuning: Adjust model parameters such as learning rate, 
+number of trees, or depth of tree to optimize performance. 
+9. Deployment: Once the model achieves satisfactory accuracy, deploy it into 
+production to make real-time predictions. 
+10. 
+Monitoring and Updating: Continuously monitor model performance and 
+retrain it with new data as needed to maintain accuracy. 
+Example: Predicting housing prices by collecting housing data, preprocessing it, 
+selecting features like location and area, training a regression model, testing it, and 
+finally deploying it for real-time prediction. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing is the process of preparing raw data into a clean, structured, and 
+usable format suitable for machine learning models. The quality of preprocessing 
+directly affects model accuracy and efficiency. 
+1. Data Collection: Collect data from various reliable sources such as databases, 
+surveys, APIs, and sensors. Ensure the data is representative of the problem 
+domain. 
+2. Data Cleaning: Handle missing values by imputing them with mean, median, 
+mode, or by deletion. Remove duplicates and correct inconsistencies or errors. 
+3. Data Transformation: Convert categorical variables into numeric values using 
+encoding methods like one-hot encoding, label encoding, or binary encoding. 
+Transform skewed data distributions using log or power transforms. 
+4. Scaling and Normalization: Normalize data so all features lie within a specific 
+range. Standardize features to have zero mean and unit variance. This step 
+prevents features with larger scales from dominating the model. 
+5. Feature Selection: Remove irrelevant or redundant features. Techniques like 
+correlation analysis, PCA, or tree-based importance measures help select 
+valuable features. 
+6. Data Splitting: Divide the dataset into training, validation, and testing sets. 
+Typically, 70–80% is used for training, and the rest for testing and validation. 
+7. Handling Outliers: Identify and either remove or adjust outliers to reduce their 
+impact on model performance. 
+Example: In a student performance dataset, missing marks are filled using average, 
+gender and grade categories are encoded, features like study hours are normalized, 
+and the dataset is split into training and testing subsets. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble learning algorithm that builds multiple decision trees 
+and combines their outputs to improve prediction accuracy. Each tree is trained on a 
+random subset of data and features. The final output is based on majority voting (for 
+classification) or averaging (for regression). 
+Key Points: 
+1. Reduces overfitting compared to a single decision tree. 
+2. Can handle large datasets with high dimensionality. 
+3. Works well with missing values. 
+4. Provides feature importance scores for better feature selection. 
+5. Flexible for both classification and regression problems. 
+6. Highly accurate and stable due to ensemble nature. 
+Example: Predicting loan default using features like income, credit score, and 
+employment status by building a Random Forest model to improve accuracy over a 
+single decision tree. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Support Vector Machine (SVM) is a supervised learning algorithm that finds the 
+optimal boundary (hyperplane) separating classes in feature space. It maximizes the 
+margin between the closest points of different classes (support vectors). 
+Key Features: 
+1. Works for linear and non-linear data using kernel methods. 
+2. Focuses on support vectors to improve generalization. 
+3. Effective in high-dimensional spaces. 
+Types of SVM: 
+1. Linear SVM: Separates classes using a straight line or hyperplane in 2D/3D. 
+2. Non-linear SVM: Uses kernels (RBF, polynomial) to separate data not linearly 
+separable. 
+3. Multi-class SVM: Extends SVM to more than two classes using one-vs-one or 
+one-vs-rest approaches. 
+Example: Handwritten digit recognition (MNIST dataset) classifying digits 0–9 using 
+SVM with RBF kernel. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree is a supervised learning model used for classification and regression. It 
+splits data based on feature conditions and creates a tree-like structure of decisions 
+ending in leaf nodes that represent the final output. 
+Steps to Build Decision Tree: 
+1. Select Root Node: Choose the feature that best separates the data using 
+Information Gain or Gini Index. 
+2. Split Data: Divide dataset into subsets based on feature values. 
+3. Recursive Splitting: Repeat until subsets are pure or stopping condition is met. 
+4. Create Leaf Nodes: Leaf nodes represent final predictions or class labels. 
+5. Pruning: Remove unnecessary branches to reduce overfitting. 
+6. Model Testing: Validate tree on test data. 
+7. Deployment: Use the final tree for real predictions. 
+Example: Predicting if a student will pass or fail based on study hours, attendance, 
+and assignments using a decision tree model. 

@@ -1,0 +1,176 @@
+ID-T011 
+Name : Khanika Rathod Roll no: 25 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine Learning (ML) is a branch of Artificial Intelligence where 
+systems learn from data and experience rather than being explicitly 
+programmed. It allows computers to identify patterns, make predictions, 
+and improve performance automatically. ML algorithms learn from 
+examples and then make decisions or predictions without human 
+intervention. It is widely used in various domains like healthcare, finance, 
+and transportation. 
+A hypothesis in ML refers to a mathematical function that represents 
+the model’s best guess about the mapping between input variables and 
+output variables. It is essentially a formula or function that tries to 
+predict outcomes based on given data. The hypothesis changes during 
+training as the model adjusts its parameters to reduce error. For 
+example, in linear regression, the hypothesis can be expressed as h(x) = 
+w₀ + w₁x₁ + w₂x₂ + … + wnXn, where w’s are weights that determine how 
+much each input affects the output. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, 
+and F1-score. 
+Evaluation metrics measure how well a machine learning model 
+performs. They help in comparing models and selecting the most 
+effective one. 
+ Accuracy: The proportion of correctly predicted observations to 
+total observations. Accuracy = (TP + TN) / (TP + TN + FP + FN). It 
+works well when classes are balanced. 
+ Precision: It shows how many of the predicted positive values were 
+actually correct. Precision = TP / (TP + FP). 
+ Recall: Also known as sensitivity or true positive rate, it measures 
+how many actual positive cases were correctly identified. Recall = 
+TP / (TP + FN). 
+ F1-Score: It is the harmonic mean of precision and recall, balancing 
+both. F1 = 2 × (Precision × Recall) / (Precision + Recall). 
+Each metric is important depending on the use case — for instance, in 
+spam detection, precision matters more, while in medical diagnosis, 
+recall is more crucial. 
+A-5. Explain feature selection and dimensionality reduction. 
+Feature selection and dimensionality reduction are techniques to simplify 
+data by reducing the number of features while retaining essential 
+information. 
+Feature Selection: 
+It involves choosing only the most relevant features that influence the 
+target variable. This helps improve model performance, reduce 
+overfitting, and make the model easier to interpret. Methods include: 
+ Filter methods (e.g., correlation, chi-square) 
+ Wrapper methods (e.g., forward selection, backward elimination) 
+ Embedded methods (e.g., Lasso Regression) 
+Dimensionality Reduction: 
+This technique transforms high-dimensional data into a lower
+dimensional space while preserving important relationships. One popular 
+method is Principal Component Analysis (PCA), which converts 
+correlated variables into a smaller number of uncorrelated components. 
+Both techniques help models generalize better and run faster, especially 
+when working with large datasets. 
+B] Attempt any 8 (40 marks) 
+B-1. Discuss Naive Bayes algorithm in detail. Include assumptions, 
+mathematical formulation, and example. 
+Naive Bayes is a simple probabilistic classifier based on Bayes’ theorem 
+that assumes all features are independent of each other. Despite this 
+“naive” assumption, it performs remarkably well in many tasks like 
+spam filtering and text classification. 
+Bayes’ theorem formula: 
+P(C|X) = [P(X|C) × P(C)] / P(X) 
+Where: 
+ P(C|X) = Posterior probability of class C given predictor X 
+ P(X|C) = Likelihood of predictor given class 
+ P(C) = Prior probability of class 
+ P(X) = Total probability of predictor 
+Steps: 
+1. Calculate prior probability for each class. 
+2. Compute likelihood for each feature. 
+3. Multiply and normalize probabilities. 
+4. Choose class with highest posterior probability. 
+Example: In spam detection, words like “offer” or “win” have higher 
+probability in spam class than in non-spam. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random 
+Forest with examples. 
+Ensemble methods combine predictions from multiple models to produce 
+better results than a single model. 
+Bagging (Bootstrap Aggregating): 
+Creates multiple datasets using sampling, trains separate models, and 
+averages results. Example: Random Forest. 
+Boosting: 
+Trains models sequentially, where each new model corrects errors of 
+previous one. Example: AdaBoost, Gradient Boosting. 
+Random Forest: 
+A collection of decision trees where each tree is trained on random data 
+and features. The final prediction is made by majority voting. 
+Ensemble methods increase accuracy, reduce variance, and improve 
+stability of predictions. 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and 
+Hierarchical Clustering. 
+K-Means Clustering: 
+Divides data into K groups by minimizing distance between points and 
+their cluster centroids. 
+Steps: 
+1. Choose K clusters randomly. 
+2. Assign each data point to nearest cluster. 
+3. Update cluster centroids. 
+4. Repeat until convergence. 
+Hierarchical Clustering: 
+Builds clusters in a tree-like structure. It can be: 
+ Agglomerative: Start with individual points and merge. 
+ Divisive: Start with all points and divide into smaller clusters. 
+Both are used for segmentation, document grouping, and anomaly 
+detection. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud 
+detection. 
+In medical diagnosis, ML analyzes patient data such as X-rays, MRI 
+scans, and lab reports to predict diseases. Algorithms like CNNs detect 
+tumors or classify images. Logistic Regression and Decision Trees help in 
+disease risk prediction. 
+In fraud detection, ML monitors transactions to detect anomalies. 
+Algorithms like Isolation Forest and Random Forest flag suspicious 
+activity. The model learns normal behavior patterns and identifies 
+deviations. 
+These applications improve accuracy, reduce human error, and save lives 
+and money. 
+B-6. Design an ML solution for predicting student performance or house 
+prices. 
+Student Performance Prediction: 
+ Collect features: study hours, attendance, past scores. 
+ Preprocess data: handle missing values, normalize. 
+ Split dataset into training and testing. 
+ Train model using Linear Regression or Decision Tree. 
+ Evaluate performance using R² score. 
+House Price Prediction: 
+ Gather data: location, size, rooms, age, etc. 
+ Feature engineering: create new features (distance, amenities). 
+ Apply algorithms: Multiple Linear Regression, Random Forest. 
+ Evaluate using RMSE and MAE. 
+Both problems follow same ML pipeline — data collection, preprocessing, 
+training, and evaluation. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. Explain 
+each step involved and discuss how PCA helps in dimensionality 
+reduction. 
+PCA is a technique that reduces high-dimensional data while retaining 
+most of the variance. It transforms data into a new coordinate system 
+with uncorrelated variables called principal components. 
+Steps: 
+1. Standardize data to mean zero. 
+2. Compute covariance matrix. 
+3. Calculate eigenvalues and eigenvectors. 
+4. Select top-k eigenvectors with largest eigenvalues. 
+5. Project data onto new axes. 
+PCA helps remove noise, reduce computational cost, and improve 
+visualization. 
+B-8. Explain Gradient Descent and its variants — Batch, Stochastic, and 
+Mini-Batch Gradient Descent. Include the mathematical formula and 
+learning curve. 
+Gradient Descent optimizes model parameters by minimizing the loss 
+function. 
+Formula: 
+w := w – α * (∂J/∂w) 
+Where α = learning rate, J = cost function. 
+Variants: 
+ Batch: Uses full dataset per update. 
+ Stochastic (SGD): Updates weights for each sample. 
+ Mini-Batch: Uses small batch of samples for each update. 
+The learning curve shows error decreasing with iterations. Gradient 
+Descent is crucial in neural network training and optimization. 
+B-9. Explain the concept of Reinforcement Learning (RL). Discuss Markov 
+Decision Processes (MDP), Q-learning, and the exploration–exploitation 
+dilemma. 
+Reinforcement Learning (RL) teaches an agent to take actions in an 
+environment to maximize reward. 
+MDP: Defines environment with states, actions, rewards, and transition 
+probabilities. 
+Q-Learning: Updates action values using: 
+Q(s,a) = Q(s,a) + α [r + γ max Q(s’, a’) – Q(s,a)] 
+Exploration–Exploitation: Agent must explore new actions for better 
+learning while exploiting known actions for reward. 
+RL is applied in gaming, robotics, and recommendation systems. 

@@ -1,0 +1,218 @@
+ID-T008 
+Name : Akshat singh Roll no: 5 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each carries 2 marks) 
+1-a) Write about Inductive Bias 
+1. Inductive bias is like the “preference” a machine learning model has to learn 
+certain patterns over others. Without bias, the model cannot generalize beyond 
+the training data. 
+2. It helps algorithms make predictions for unseen examples by assuming certain 
+rules or patterns exist. 
+3. Different algorithms have different biases; for example, linear models assume a 
+straight-line relationship, while decision trees prefer hierarchical splits. 
+4. A strong inductive bias can lead to faster learning but may limit flexibility, 
+whereas a weak bias can make learning slower but more flexible. 
+5. Example: A Naïve Bayes classifier assumes independence between features, 
+which is its inductive bias. 
+1-b) Define Hypothesis 
+1. A hypothesis is a candidate function or rule that maps input features to output 
+predictions in machine learning. 
+1-c) Write about Sampling Theories 
+1. Sampling theory is the method of selecting a subset of data to represent the 
+entire population. 
+2. Proper sampling avoids bias and ensures the model learns accurately from 
+representative data. 
+3. Methods include simple random sampling, stratified sampling, cluster sampling, 
+and systematic sampling. 
+4. Random sampling gives each element equal chance, stratified ensures subgroups 
+are proportionally represented. 
+5. Sampling reduces computation time and memory usage, especially with large 
+datasets. 
+6. Example: Selecting 500 customers randomly from a database of 50,000 for 
+predicting purchasing behavior. 
+1-d) Define Eager Learning 
+1. Eager learning builds a global model during the training phase before any 
+predictions. 
+2. This model is then used to quickly predict outputs for new data. 
+3. Algorithms like decision trees, Naïve Bayes, and linear regression are eager 
+learners. 
+4. Eager learners are fast during testing but need more computation upfront 
+during training. 
+5. Example: A trained decision tree used to classify new emails as spam or not. 
+1-e) What is Lazy Learning 
+1. Lazy learning delays generalization until a query is made. It stores the training 
+data and performs computation when needed. 
+2. K-Nearest Neighbor is the most common example. 
+3. Predictions are based on similarity to stored examples using distance metrics. 
+4. Lazy learning adapts easily to new data but can be slow with large datasets. 
+5. Example: Predicting a person’s favorite movie based on preferences of their 
+closest neighbors. 
+1-f) Define Term Genetic 
+1. Genetic algorithms simulate evolution by creating populations of candidate 
+solutions. 
+2. They use selection, crossover, and mutation to evolve solutions over generations. 
+3. Each solution has a fitness score to evaluate its quality. 
+4. They are useful for optimization problems where classical methods fail. 
+5. Example: Optimizing airline flight schedules to minimize delays. 
+1-g) Discuss Dynamic Programming 
+1. Dynamic Programming (DP) solves problems by breaking them into 
+subproblems and storing solutions. 
+1-h) Define Explanation Based Learning 
+1. Explanation Based Learning (EBL) generalizes a rule from one or a few 
+examples using prior knowledge. 
+2. It identifies why an example is correct and applies that reasoning to new 
+instances. 
+3. Reduces the number of training examples needed. 
+4. Example: A robot learns one successful assembly process and generalizes it to 
+similar products. 
+1-i) Write about Control Knowledge 
+1. Control knowledge directs the AI system on which rules or strategies to 
+prioritize. 
+2. It ensures efficient problem solving by focusing on promising paths. 
+3. Example: Chess AI uses control knowledge to evaluate more aggressive moves 
+first. 
+1-j) Define Precision, Recall, and F1 Score 
+1. Precision is the fraction of correct positive predictions out of total predicted 
+positives. 
+2. Recall is the fraction of correct positive predictions out of total actual positives. 
+3. F1 Score is the harmonic mean of precision and recall. 
+4. These metrics are essential for evaluating classification performance. 
+5. Example: Detecting fraud transactions where both false positives and false 
+negatives are costly. 
+2] Attempt Any 6 ( 
+2-a) Explain Decision Tree in detail, give example 
+1. Decision trees classify data by splitting it recursively based on feature 
+conditions. 
+2. Components include root node, internal nodes, branches, and leaves. 
+3. Splitting criteria include information gain, Gini index, and gain ratio. 
+4. Trees can be pruned to avoid overfitting. 
+5. Easy to interpret and visualize. 
+6. Works with numerical and categorical data. 
+2-c) Discuss in detail about representation of Neural Network 
+1. Neural networks consist of input, hidden, and output layers. 
+2. Neurons compute weighted sums and apply activation functions. 
+3. Forward propagation calculates outputs, while backpropagation updates 
+weights. 
+4. Deep networks capture complex patterns automatically. 
+5. Regularization prevents overfitting. 
+6. Example: Handwriting recognition using multilayer perceptron. 
+7. Neural networks are used in image, text, and speech applications. 
+2-d) Differentiate Classification & Regression 
+Feature 
+Output 
+Classification 
+Discrete labels 
+Regression 
+Continuous numeric values 
+Algorithms 
+SVM, Decision Tree, Logistic Linear, Polynomial, Ridge 
+Evaluation Metrics Accuracy, Precision, Recall MAE, MSE, R² 
+Nature 
+Predict category 
+Predict numeric value 
+Feature 
+Classification 
+Regression 
+Example 
+Complexity 
+Data Type 
+Goal 
+Spam detection 
+Medium 
+Categorical 
+Correctly label inputs 
+Predicting house prices 
+Low to medium depending on data 
+Numerical 
+Accurately estimate values 
+2-e) Explain Knowledge Representation in detail 
+1. Knowledge representation stores information so machines can reason about it. 
+2. Methods include logic (propositional, predicate), semantic networks, frames, 
+and rules. 
+3. Proper representation allows inference, planning, and decision-making. 
+4. Example: Medical expert system representing diseases, symptoms, and 
+treatments. 
+5. Knowledge must be structured and accessible for AI to reason efficiently. 
+2-f) Compare AI, ML, Deep Learning 
+Aspect 
+Definition 
+Approach 
+Applications 
+Data 
+AI 
+Broad field of 
+intelligent 
+machines 
+Rule-based, 
+heuristic 
+Expert systems, 
+robotics 
+Requirement 
+Moderate 
+Computation Low to medium 
+Example 
+Self-driving car 
+ML 
+Subset of AI focusing 
+on learning from data 
+Deep Learning 
+Subset of ML using deep 
+neural networks 
+Data-driven, statistical 
+Feature extraction using 
+multi-layer networks 
+Spam detection, stock 
+prediction 
+Moderate to large 
+Medium 
+Image recognition, NLP 
+Very large datasets 
+High 
+Predicting house prices Face recognition 
+2-g) Differentiate CNN & RNN 
+Feature 
+CNN 
+RNN 
+Input Type Spatial data (images, video) 
+Architecture Convolution + Pooling layers 
+Strengths 
+Feature extraction in space 
+Weaknesses Cannot handle sequences easily 
+Applications 
+Image classification, object 
+detection 
+Example 
+Object recognition in images 
+Sequential data (text, speech) 
+Recurrent connections, memory 
+Context in sequences 
+Vanishing gradient problem 
+Sentiment analysis, language 
+modeling 
+Predicting next word in a sentence 
+3] Attempt All 
+3-b) What is Intelligent Agent (8 marks) 
+1. An intelligent agent senses the environment and takes actions to achieve goals. 
+2. Rational agents act to maximize expected utility. 
+3. Types include reflex, model-based, goal-based, utility-based, and learning 
+agents. 
+4. Agents can function in fully or partially observable environments. 
+5. Learning agents improve over time using experience. 
+6. Example: Self-driving car navigating city traffic. 
+7. Intelligent agents combine reasoning, learning, and acting capabilities. 
+8. Proper design ensures efficiency and goal achievement. 
+9. Used in robotics, virtual assistants, and game AI. 
+10. 
+Evaluated on adaptability, accuracy, and efficiency. 
+3-c) Write Five Applications of AI (5 marks) 
+1. Healthcare: AI-powered diagnostics and surgery assistance. 
+2. Finance: Fraud detection and portfolio management. 
+3. Transportation: Autonomous vehicles and route optimization. 
+4. Education: Adaptive learning systems and automatic grading. 
+5. Agriculture: Crop monitoring and yield prediction. 
+6. Example: AI-enabled medical imaging detecting tumors automatically. 
+7. Customer Service: Chatbots for handling queries. 
+8. Manufacturing: Predictive maintenance and quality control. 
+9. Security: Facial recognition and intrusion detection. 
+10. Entertainment: Personalized recommendations on streaming platforms. 

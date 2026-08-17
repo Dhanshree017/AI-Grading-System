@@ -1,0 +1,27 @@
+
+
+--- PAGE 1 ---
+ID — T006
+Machine Learning
+SY Data science
+Date-14-1-2023 Total Marks : 50
+
+A | Answer All question They carry equal marks :
+Q1 .How Reinforcement learning is diffrerent from Supervised learning? [3]
+Marks
+Q2 . Define the term overfitting and one solution for it . [3]
+Q3 .what is the role of linear discriminant analysis in ML ? [3]
+Q4 .Compare mixure and latent factor models . [3]
+Q5 . write importance of K-means clustering . [3]
+Q6 . write about R Square and its significance . [3]
+Q7.give significance of hyperparameter optimization . [3]
+Q8 .how machine learning deals with sparse data . [3]
+Q9.what is advantage of active learning. [3]
+Q10.what is training , testing and validation ? [3]
+
+B | Attempt any 4 (5 marks each )
+Q1 give 7 applications of machine learning.
+Q2 how machine learning and deep learning related / explain regularization in deep learning .
+Q3 explain supervised , unsupervised and semisupervised with examples .
+Q4 What are types of SVM
+Q5 Explain Decision tree in detail

@@ -1,0 +1,162 @@
+ID-T015 
+Name: Priyanka Shrivastav Roll no: 9 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (each 8 marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for classification 
+and regression tasks. Describe how accuracy, precision, recall, F1 score help in understanding 
+model performance. 
+Machine learning evaluation metrics is like a scorecard that tell how good model is doing. 
+There are classification metrics and regression metrics. 
+For classification, metrics are like Accuracy, Precision, Recall, and F1 Score. 
+Accuracy means how many correct predictions model made. But if data imbalance then 
+accuracy may fool us. 
+Precision means how many predicted positives are actually positive. Recall means how many 
+of actual positives we caught. F1 score combine both by harmonic mean. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and discuss 
+the importance of the parameter k. 
+KNN is one simple algorithm that use distance. It look at neighbours near to the sample 
+and then decide its class. 
+Steps: 
+1. Select number k. 
+2. Compute distance of new point with all training data. 
+3. Select k nearest points. 
+4. Check majority label for classification or mean value for regression.. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Gradient boosting is boosting algorithm which learn from mistakes of earlier models. It 
+builds tree one by one, each new tree fixing errors of previous. 
+Process: 
+ Start with base model. 
+ Calculate residual errors. 
+ Train new weak model (usually decision tree) on these errors. 
+ Add it to main model with weight by learning rate. 
+Each new learner minimize loss using gradient. After many rounds, final model is strong. 
+It is powerful but slow and prone to overfit if no care taken. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used to 
+solve new tasks with limited data and mention common applications of transfer learning. 
+Transfer learning use pre-trained model knowledge on new task. Model already know some 
+features from big data like ImageNet. So we just adjust last layers for our task. 
+For example, model trained on general images can be used for medical x-ray classification 
+by freezing early layers and training few last ones. 
+Common models: VGG, ResNet, MobileNet, BERT for NLP. 
+Applications: vision, speech, NLP, small dataset problems. 
+It reduce time and increase accuracy even when new dataset is small. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important and 
+describe common hyperparameters for algorithms like Decision Trees, Neural Networks, and 
+Gradient Boosting models. 
+Hyperparameters are external configuration settings for machine learning models that are 
+set before training to control the learning process and model behavior. They are critical 
+for tuning model performance, preventing overfitting, and determining the model's 
+structure and complexity. Common hyperparameters include the learning rate and number 
+of layers for Neural Networks, and hyperparameters like max_depth and criterion for 
+Decision Trees and Gradient Boosting models.  
+Why hyperparameters are important 
+ Control the learning process: Hyperparameters guide how the model learns from data, 
+influencing the training speed and how it updates its internal parameters. 
+ Prevent overfitting: By controlling complexity, hyperparameters like max_depth help 
+prevent the model from becoming too specialized to the training data, which improves its 
+ability to generalize to new, unseen data. 
+ Impact model performance: The right combination of hyperparameters can significantly 
+improve a model's accuracy and performance. Finding the optimal values often involves an 
+iterative process called hyperparameter tuning.  
+ 
+ 
+ 
+ 
+Common hyperparameters 
+Decision Trees 
+made. A lower depth can help prevent overfitting. 
+max_depth: The maximum depth of the tree, which controls how many splits can be 
+min_samples_split : The minimum number of samples required to split an internal node. 
+min_samples_leaf : The minimum number of samples required to be at a leaf node. 
+criterion : The function used to measure the quality of a split, such as gini or entropy .  
+Neural Networks 
+ Learning Rate: Controls the step size at which the model updates its weights during 
+training. A high learning rate can cause the model to overshoot the optimal solution, while 
+a low one can lead to slow training. 
+ Number of Hidden Layers: Determines the depth of the network, impacting its capacity to 
+learn complex patterns. 
+ Number of Neurons per Layer: Controls the width of each layer. 
+ Batch Size: The number of training samples used in one iteration of the training process. 
+ Activation Function: A function that determines the output of a neuron (e.g., ReLU, 
+Sigmoid).  
+B ] Attempt any 6 (each 5 marks) 
+B-e)  Explain the role of optimization algorithms in training machine learning models. 
+Optimization algorithm is used to reduce loss function by adjusting model weights. It help 
+model to reach minimum loss. 
+Examples include: Gradient Descent, Adam, RMSprop. 
+They update parameters step by step until convergence. 
+Without optimizer, model cannot learn pattern properly. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Dimensionality reduction is the process of transforming data from a high-dimensional space 
+to a lower-dimensional one while preserving important information. This is done to simplify 
+data, speed up computation, and improve model accuracy by removing redundant or 
+irrelevant features. One common method is Principal Component Analysis (PCA), which is 
+an unsupervised technique that transforms data into a new, smaller set of uncorrelated 
+variables called principal components.  
+Principal Component Analysis (PCA) 
+ What it is: An unsupervised linear transformation technique that reduces the number of 
+variables in a dataset. 
+ How it works: 
+1. It finds the directions (principal components) in the data that have the most variance. 
+2. It projects the original data onto a smaller number of these new components, creating a 
+new, lower-dimensional representation of the data. 
+3. The components are ordered by the amount of variance they explain, so you can select 
+the top components that retain most of the original data's information. 
+ Key features: 
+o It is an unsupervised method, meaning it does not require labeled data. 
+o It reduces dimensions by combining original features into new ones, rather than simply 
+removing them. 
+o It is effective for tasks like data compression, noise reduction, and visualization.  
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+A decision tree is a supervised machine learning algorithm used for both classification and 
+regression tasks. It works by recursively partitioning the dataset into smaller, more 
+homogeneous subsets based on the values of the input features. This process creates a 
+tree-like structure where each internal node represents a test on an attribute, each 
+branch represents an outcome of the test, and each leaf node represents a class label (for 
+classification) or a predicted value (for regression). 
+How it works: 
+ Root Node:  
+The process begins with a single root node representing the entire dataset. 
+ Splitting:  
+The algorithm evaluates different features to find the best split point that maximizes the 
+"information gain" or minimizes "impurity" (e.g., using Gini impurity or entropy for 
+classification, or variance reduction for regression). This split divides the data into two or 
+more subsets. 
+ Recursive Splitting:  
+This splitting process is repeated recursively for each new subset, creating branches and 
+subsequent internal nodes. 
+ Stopping Criteria:  
+The tree building stops when a predefined stopping criterion is met, such as reaching a 
+maximum depth, having a minimum number of samples in a leaf node, or when further 
+splitting does not significantly improve impurity reduction.  
+ Leaf Nodes:  
+The final nodes, called leaf nodes, represent the predicted outcome. For classification, the 
+majority class in the leaf is assigned. For regression, the average value of the target 
+variable in the leaf is predicted. 
+Advantages: 
+ Easy to Understand and Interpret:  
+Decision trees are highly intuitive and can be easily visualized, making them understandable 
+even for non-technical audiences. 
+ Handles Various Data Types:  
+They can effectively handle both numerical and categorical data without extensive 
+preprocessing. 
+ Requires Minimal Data Preparation:  
+They are less sensitive to outliers and do not typically require data normalization or 
+scaling. 
+ Can Model Non-linear Relationships:  
+They can capture complex, non-linear relationships within the data. 
+Disadvantages: 
+ Prone to Overfitting:  
+Decision trees can easily overfit the training data, leading to poor generalization on unseen 
+data, especially if the tree is too deep. Pruning or ensemble methods like Random Forests 
+can mitigate this. 
+ Instability:  
+Small changes in the training data can lead to significant changes in the tree structure. 
+ Bias with Imbalanced Data:  
+If one class significantly outnumbers others, the tree might be biased towards the 
+majority class. 
+ Computational Expense:  
+Building optimal decision trees can be computationally expensive, particularly with large 
+datasets and many features. 

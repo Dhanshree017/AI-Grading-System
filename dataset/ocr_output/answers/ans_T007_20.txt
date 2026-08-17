@@ -1,0 +1,120 @@
+ID-T007 
+Name : Asma sayyad Roll no: 20 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-b) Explain types of machine learning with example 
+Machine learning is categorized into four main types based on how the system learns 
+from data: 
+1. Supervised Learning: In this type, the algorithm learns from labeled data, 
+which includes input-output pairs. The model uses the patterns learned to 
+make predictions on new unseen data. 
+o Example: Predicting student exam scores using study hours, attendance, 
+and previous grades. 
+2. Unsupervised Learning: Here, the data has no labels, and the algorithm 
+identifies hidden patterns or structures in the dataset. It is mainly used for 
+grouping or clustering similar data points. 
+o Example: Grouping customers in a supermarket based on buying behavior. 
+3. Semi-Supervised Learning: This method uses a small portion of labeled data 
+combined with a larger set of unlabeled data. It is useful when labeling is 
+expensive or time-consuming. 
+o Example: Facial recognition where only a few faces are labeled, and the 
+algorithm learns from both labeled and unlabeled images. 
+4. Reinforcement Learning: The model learns by interacting with an environment 
+and receiving rewards or penalties based on its actions. The goal is to maximize 
+cumulative reward. 
+o Example: A robot learning to navigate a maze by trial and error. 
+A-c) What are the steps in building ML model 
+Building a machine learning model involves several key stages: 
+1. Problem Definition: Clearly specify the objective, e.g., whether the task is 
+classification, regression, or clustering. 
+2. Data Collection: Gather relevant data from sources like sensors, databases, or 
+online datasets. 
+3. Data Preprocessing: Clean the data, handle missing values, normalize numerical 
+features, and encode categorical variables. 
+4. Feature Engineering and Selection: Create new features if needed and select the 
+most relevant ones to improve model performance. 
+5. Model Selection: Choose the most appropriate algorithm based on the problem 
+type and dataset. 
+6. Model Training: Train the model using the training dataset to learn patterns. 
+7. Model Evaluation: Evaluate the model on a validation or test dataset using 
+performance metrics. 
+8. Hyperparameter Tuning: Optimize the model’s parameters to improve 
+accuracy. 
+9. Deployment: Deploy the model to make predictions on new real-world data. 
+Example: Predicting house prices using historical sales data. Data is collected, cleaned, 
+features selected, model trained with regression, tested, and finally deployed to 
+predict new house prices. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing ensures that raw data is transformed into a format suitable for 
+modeling: 
+1. Data Collection: Obtain raw datasets from multiple sources. 
+2. Data Cleaning: Handle missing values, remove duplicates, and correct 
+inconsistent entries. 
+3. Data Transformation: Encode categorical variables, normalize numerical data, 
+and adjust scales. 
+4. Feature Selection: Remove irrelevant features and keep the most useful ones for 
+the model. 
+5. Scaling and Normalization: Standardize features to a similar range to improve 
+model convergence. 
+6. Data Splitting: Divide the dataset into training, validation, and testing sets. 
+7. Outlier Handling: Detect and treat extreme values that may distort model 
+performance. 
+Example: For a student dataset, missing marks can be filled with averages, gender 
+can be encoded as numeric values, grades normalized, and the dataset split for 
+training and testing. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble learning technique that combines multiple decision 
+trees to make predictions. Each tree is trained on a random subset of the dataset 
+and features. The final output is determined by majority voting for classification or 
+averaging for regression. 
+1. Reduces overfitting compared to a single tree. 
+2. Works well on large datasets and high-dimensional data. 
+3. Can handle missing values effectively. 
+4. Provides feature importance scores for interpretability. 
+5. Suitable for both regression and classification tasks. 
+6. More stable and accurate than individual trees. 
+7. Requires more computational power due to multiple trees. 
+Example: Predicting whether a loan will default based on income, credit score, and 
+employment status using multiple decision trees in a Random Forest. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Support Vector Machine (SVM) is a supervised learning algorithm used for 
+classification and regression. It identifies the hyperplane that best separates the 
+classes while maximizing the margin between support vectors. 
+Types of SVM: 
+1. Linear SVM: Works for linearly separable data using a straight hyperplane. 
+2. Non-Linear SVM: Uses kernel functions like polynomial or RBF to separate 
+non-linear data. 
+3. Multi-class SVM: Extends SVM for problems with more than two classes using 
+one-vs-one or one-vs-rest methods. 
+Example: Recognizing handwritten digits (0–9) using SVM with an RBF kernel. 
+B-c) Explain different types of clustering algorithm 
+Clustering groups similar data points without predefined labels. 
+1. K-Means: Divides data into K clusters by minimizing the distance from cluster 
+centroids. 
+2. Hierarchical: Builds a tree structure (dendrogram) by merging or splitting 
+clusters iteratively. 
+3. DBSCAN: Groups data based on density and identifies outliers as noise. 
+4. Agglomerative: Starts with individual points as clusters and merges them based 
+on similarity. 
+5. Mean Shift: Moves cluster centers iteratively towards dense regions. 
+Example: Segmenting customers of an online store based on their purchase patterns 
+using K-Means clustering. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree is a supervised learning algorithm used for classification and regression. 
+It splits the dataset based on feature values, forming a tree-like structure where leaf 
+nodes represent predictions. 
+Steps in Making a Decision Tree: 
+1. Root Node Selection: Choose the feature that best splits the data using metrics 
+like Information Gain or Gini Index. 
+2. Data Splitting: Divide the dataset based on the selected feature. 
+3. Recursive Splitting: Continue splitting subsets until a stopping criterion is 
+reached (pure node or maximum depth). 
+4. Leaf Node Assignment: Assign class labels or output values to the leaf nodes. 
+5. Pruning: Remove branches that do not contribute to better predictions to 
+reduce overfitting. 
+6. Testing: Evaluate the tree on test data. 
+7. Deployment: Use the tree to make predictions on new data. 
+Example: Predicting whether a student will pass or fail based on attendance, study 
+hours, and assignment completion using a Decision Tree. 

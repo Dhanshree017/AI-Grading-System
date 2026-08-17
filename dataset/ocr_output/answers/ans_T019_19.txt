@@ -1,0 +1,117 @@
+ID-T019 
+Name: Samiksha Hegde Roll no: 19 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-a) Define Machine Learning. Explain how it differs from traditional programming with a 
+simple example. 
+Answer 
+Machine Learning (ML) is a subset of Artificial Intelligence that enables systems to learn 
+from data, identify patterns, and make decisions or predictions without being explicitly 
+programmed for every scenario. Instead of providing explicit instructions for every possible 
+input, ML models are trained on large datasets, allowing them to discover underlying 
+relationships and generalize to new, unseen data. 
+Difference from Traditional Programming: 
+The fundamental difference lies in how the "rules" or "logic" are established. 
+ Traditional Programming:  
+In traditional programming, a programmer explicitly writes rules and instructions for the 
+computer to follow. The programmer defines the exact steps and conditions for every action 
+the program should take. 
+ Machine Learning:  
+In machine learning, the system learns these rules from data. Instead of being given explicit 
+instructions, the ML model is fed data and corresponding outputs, and it learns to map inputs 
+to outputs by identifying patterns and relationships within the data. 
+Simple Example: Spam Email Detection 
+Traditional Programming Approach: 
+A traditional programmer would write a program with a set of explicit rules to identify spam 
+emails. This might involve: 
+Machine Learning Approach: 
+In a machine learning approach, you would train a model on a dataset of emails, where each 
+email is labeled as either "spam" or "not spam." The model would then learn to identify 
+patterns and features that differentiate spam from legitimate emails. 
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and validation 
+data with simple illustrations. 
+Answer 
+A dataset in Machine Learning is a structured collection of data used to train, test, and 
+evaluate machine learning models. It can consist of various types of data, such as images, 
+text, numerical values, or audio, and is organized in a way that allows algorithms to extract 
+patterns and learn from it.  
+Training Data 
+Purpose: Used to teach the machine learning model. The model learns patterns, relationships, 
+and features from this data. 
+Illustration: Imagine teaching a child to recognize different animals. You show them many 
+pictures of cats, dogs, and birds, each labeled with the correct animal name. This collection 
+of labeled pictures is your training data. 
+Validation Data 
+Purpose: Used to tune the model's hyperparameters and prevent overfitting during the 
+training process. It helps in selecting the best model configuration and assessing how well 
+the model generalizes to new, unseen data during training. 
+Illustration: After showing the child many animal pictures (training), you then show them a 
+different set of animal pictures and ask them to identify them. You use their performance on 
+this set to adjust how you teach them (e.g., provide more examples of a specific animal if 
+they struggle). This separate set of pictures is the validation data. 
+Testing Data 
+Purpose: Used to evaluate the final, trained model's performance on completely unseen 
+data. It provides an unbiased assessment of the model's ability to generalize to real-world 
+scenarios. 
+Illustration: Once the child has been thoroughly trained and you are confident in their ability 
+to identify animals (after validation), you give them a final, completely new set of animal 
+pictures they have never seen before. Their performance on this final set is the ultimate 
+measure of how well they learned. This final, unseen set is the testing data. 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Answer 
+Classification is when machine try to put everything into boxes even if boxes are leaking or 
+wrong name written. Regression is when machine stretch line everywhere on screen even if 
+there is no need. 
+Example for classification: computer decide whether cloud is sad or happy based on color of 
+grass. 
+Example for regression: predicting size of mountain based on smell of flower. 
+Classification and Regression are two fundamental types of supervised machine learning 
+tasks, distinguished by the nature of their predicted output. 
+Classification 
+Classification models predict discrete, categorical labels or classes. The output is a distinct 
+category from a predefined set. 
+ Example: 
+o Email Spam Detection: Classifying an email as "spam" or "not spam." 
+o Image Recognition: Identifying an object in an image as "cat," "dog," or "bird." 
+o Medical Diagnosis: Determining if a patient has a specific disease ("yes" or "no"). 
+Regression 
+Regression models predict continuous numerical values. The output is a number within a 
+range, not a distinct category. 
+ Example: 
+o House Price Prediction: Estimating the selling price of a house based on features like size, 
+location, and number of bedrooms. 
+o Temperature Forecasting: Predicting the temperature for the next day in degrees Celsius or 
+Fahrenheit. 
+o Stock Price Prediction: Forecasting the future value of a stock 
+SECTION D  
+D-a) What is training data? How is it used in building a model? 
+Answer 
+Training data is a collection of examples (like text, images, or audio) used to teach a machine 
+learning model to recognize patterns and make predictions. The model uses this data to build 
+a foundational understanding by iteratively processing the inputs and adjusting its internal 
+parameters to minimize errors, allowing it to perform tasks on new, unseen data in the 
+future.  
+How it is used in building a model 
+1. Learning from examples: Training data provides the model with examples to learn from, 
+much like a textbook provides practice problems for a student. 
+2. Pattern recognition: The model's algorithm analyzes the training data to find underlying 
+patterns, correlations, and relationships between the input and the desired output. 
+D-b) Define prediction in machine learning. 
+Answer 
+ Prediction mean computer trying to guess future but machine usually guess things like 
+color of your mood or number of chairs in Mars. 
+ It is also like computer telling answer even if nobody ask question properly. 
+ Sometimes prediction is totally opposite because machine misunderstand everything. 
+D-c) What is a decision tree in simple terms? 
+Answer 
+ Decision tree is not real tree but student think it grow branches inside laptop. 
+ It works by splitting things like slicing cake but sometimes splits wrong like dividing 
+sky into two. 
+ It keep asking silly questions until it reach some random answer. 
+D-d) Mention any two challenges faced when collecting ML data. 
+Answer 
+ Data can run away because sometimes files disappear or student delete by mistake. 
+ People give wrong data like mixing temperature with shoe size which confuse 
+machine. 
+ Sometimes internet slow so data arrive broken like torn pages. 

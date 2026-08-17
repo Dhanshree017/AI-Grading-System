@@ -1,0 +1,85 @@
+ID-T021 
+Name: Sonam shinde Roll no: 21 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 (each 5 marks) 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence 
+concept learning. 
+Definition 
+Concept learning is the task of identifying a general rule (concept) from specific training examples. 
+Hypothesis Space 
+ The complete set of all hypotheses a model can possibly learn. 
+ A large space gives flexibility but risks overfitting. 
+ A small space prevents learning complex patterns. 
+A-5. Explain the importance of data balancing techniques. Compare oversampling, undersampling, and 
+synthetic balancing methods. 
+Importance 
+ Imbalanced data leads to biased models favoring majority classes. 
+ Reduces recall for minority classes and harms fairness. 
+ Essential for fraud detection, disease detection, rare event prediction. 
+Techniques Compared 
+1. Oversampling: 
+o Repeats minority samples. 
+o Pros: No information loss. 
+o Cons: Higher risk of overfitting. 
+A-6. What is active learning? Describe how query strategies like uncertainty sampling help improve 
+training efficiency. 
+Definition 
+Active learning is a technique where the model actively selects the most informative data points for labeling 
+to improve learning speed. 
+How It Works 
+ Model identifies samples where it is most unsure. 
+ These samples are sent to experts for labeling. 
+ Helps achieve high performance with fewer labeled examples. 
+Uncertainty Sampling 
+ Picks samples with lowest prediction confidence. 
+ Example strategies: least confidence, margin sampling, entropy sampling. 
+ Helps model quickly learn from edge cases. 
+Benefits 
+ Reduces annotation effort. 
+ Improves data efficiency. 
+ Ideal for medical imaging, satellite image interpretation, and rare species identification. 
+✅ B ] Attempt any 4 (each 5 marks) 
+B-4. You receive a trained model whose predictions are biased toward a specific class. Describe the 
+activities you would conduct to detect, measure, and reduce bias. 
+Activities 
+1. Detect Bias: 
+Compare prediction distribution vs. true distribution. 
+Examine confusion matrix for majority-class dominance. 
+2. Measure Bias: 
+Use fairness metrics: 
+o Equal Opportunity 
+o Demographic Parity 
+o Disparate Impact 
+3. Fix Data-Level Issues: 
+o Balance classes 
+o Remove proxy attributes 
+o Re-sample or re-weight training data 
+4. Apply Model-Level Techniques: 
+o Fairness-aware algorithms 
+o Adjust class weights 
+o Add regularization to reduce majority influence 
+5. Post-processing: 
+Adjust decision thresholds per group if needed. 
+6. Monitor Bias After Deployment: 
+Continuously evaluate fairness metrics. 
+B-5. During deployment, your ML model starts performing poorly after a few months. Explain the 
+activities you would carry out to monitor, identify, and fix model drift. 
+Activities 
+1. Monitor Key Metrics: 
+Track accuracy, precision, recall, F1-score, and error rates. 
+2. Drift Detection: 
+o PSI (Population Stability Index) 
+o JS Divergence 
+o Statistical hypothesis tests 
+o Feature distribution plots 
+3. Root Cause Analysis: 
+Identify which features or label patterns shifted. 
+4. Collect Recent Data: 
+Gather new ground truth labels and update datasets. 
+5. Retrain or Fine-Tune Models: 
+o Full retraining with new data 
+o Online/continual training 
+o Feature recalibration 
+6. Validate Updated Model: 
+Compare old vs. new model performance before deploying. 

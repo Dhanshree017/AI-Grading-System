@@ -1,0 +1,163 @@
+ID-T015 
+Name: Kajal Kanojia Roll no: 18 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A (Attempt any 5 – 8 marks each) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, F1 score 
+help in understanding model performance. 
+Machine Learning evaluation metrics are ways to judge how good a model is 
+performing. They tell how much the model is correct and where it is making 
+mistakes. 
+For Classification tasks, metrics include: 
+ Accuracy: The ratio of correctly predicted samples to the total samples. It is 
+good only when data is balanced. 
+ Precision: Shows how many of the predicted positives are actually positive. 
+ Recall: Tells how many actual positives are correctly found by the model. 
+ F1 Score: The harmonic mean of precision and recall, used when both are 
+important. 
+For Regression tasks, metrics include: 
+ Mean Absolute Error (MAE) and Mean Squared Error (MSE) which measure 
+difference between predicted and true values. 
+ R² Score shows how much variation in data is explained by the model. 
+These metrics help in identifying which model gives better generalization 
+performance. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and 
+discuss the importance of the parameter k. 
+KNN (K-Nearest Neighbors) is a lazy learning algorithm that classifies new data 
+points based on the labels of its nearest neighbors. 
+Steps: 
+1. Choose the value of k (number of neighbors). 
+2. Calculate the distance between the new point and all existing points (using 
+Euclidean or Manhattan distance). 
+3. Select the k nearest points. 
+4. Perform majority voting for classification or averaging for regression. 
+Importance of k: 
+ Small k may make model sensitive to noise (overfitting). 
+ Large k can make it too smooth (underfitting). 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Data imbalance happens when one class has many more samples than the other 
+classes. For example, 95% normal and 5% fraud data. 
+Impact is that the model becomes biased and predicts mostly the majority class. 
+Even if accuracy is high, the minority class performance becomes poor. 
+Techniques: 
+ Oversampling: Increase the size of minority class (like SMOTE). 
+ Undersampling: Reduce majority samples. 
+ Use class weights: Give higher importance to minority samples. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Gradient Boosting is an ensemble method that builds models one after another. Each 
+new model tries to correct the errors made by the previous model. 
+Steps: 
+1. Start with an initial model (like predicting mean). 
+2. Calculate the residuals (errors). 
+3. Train a new weak learner (like decision tree) on these residuals. 
+4. Add the predictions to the previous model with a learning rate. 
+After many rounds, a strong model is created. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used 
+to solve new tasks with limited data and mention common applications of transfer 
+learning. 
+Transfer learning is the process of using a pre-trained model (already trained on a 
+large dataset) and adapting it for a new related task with less data. 
+For example, models trained on ImageNet can be fine-tuned for medical image 
+classification. 
+Steps: 
+1. Load a pre-trained model. 
+2. Freeze early layers (which capture general features). 
+3. Replace or retrain later layers for new classes. 
+Applications: Image recognition, NLP (using BERT, GPT, etc.), and speech analysis. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important 
+and describe common hyperparameters for algorithms like Decision Trees, Neural 
+Networks, and Gradient Boosting models. 
+Hyperparameters are external parameters that control the learning process. They 
+are not learned automatically. 
+Examples: 
+ Decision Tree: max_depth, min_samples_split. 
+ Neural Network: learning_rate, batch_size, epochs. 
+ Gradient Boosting: n_estimators, learning_rate. 
+Tuning hyperparameters helps achieve better performance and avoid overfitting or 
+underfitting. 
+� SECTION B (Attempt any 6 – 5 marks each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Data preprocessing prepares raw data for training. 
+Steps: 
+1. Data cleaning (handling missing and duplicate data). 
+2. Encoding categorical variables. 
+3. Feature scaling (normalization or standardization). 
+4. Splitting into train-test sets. 
+. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Feature scaling brings all features to a similar range. 
+ Normalization: scales between 0–1. 
+ Standardization: transforms to mean = 0, std = 1. 
+Needed especially for distance-based models like KNN or SVM. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Cross-entropy loss measures the difference between predicted and actual probability 
+distributions. It is used in classification, especially for multi-class tasks. 
+It penalizes wrong predictions more when the confidence is high. 
+Formula involves log of predicted probability. 
+
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Optimization algorithms minimize the loss function by adjusting weights. 
+Examples: Gradient Descent, Adam, RMSprop, SGD. 
+They find the global or local minimum and help the model converge faster. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Dimensionality reduction reduces number of features while keeping important 
+information. 
+Example: PCA (Principal Component Analysis) – transforms features into new axes 
+capturing maximum variance. 
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+A decision tree is a supervised machine learning algorithm used for both classification 
+and regression tasks. It operates by creating a model that predicts the value of a 
+target variable by learning simple decision rules inferred from the data features. 
+How a Decision Tree Works: 
+ Root Node:  
+The process begins with a single root node representing the entire dataset. 
+ Splitting:  
+The algorithm then identifies the best feature to split the data based on a chosen 
+criterion (e.g., Gini impurity or information gain for classification, mean squared 
+error for regression). This split divides the data into subsets, creating child nodes. 
+ Recursive Partitioning:  
+This splitting process is repeated recursively on each child node until a stopping 
+condition is met. This condition could be that all data points in a node belong to the 
+same class, the node contains a minimum number of samples, or further splitting 
+does not significantly improve the model's performance. 
+ Leaf Nodes:  
+The final nodes in the tree, which are not further split, are called leaf nodes. Each 
+leaf node represents a predicted outcome or class. 
+ Prediction:  
+To make a prediction for a new data point, it traverses the tree from the root, 
+following the decision rules at each internal node until it reaches a leaf node, which 
+provides the prediction. 
+Advantages: 
+ Interpretability:  
+Decision trees are easy to understand and visualize, resembling a flowchart, making 
+the decision-making process transparent. 
+ Handles various data types:  
+They can work with both numerical and categorical data without extensive 
+preprocessing. 
+ No feature scaling required:  
+Unlike some other algorithms, decision trees do not require feature scaling or 
+normalization.  
+ Handles non-linear relationships:  
+They can capture complex, non-linear relationships between features and the target 
+variable.  
+ Feature importance:  
+Decision trees inherently provide a measure of feature importance, indicating which 
+features are most influential in making predictions. 
+Disadvantages: 
+ Overfitting:  
+Decision trees can be prone to overfitting, especially with complex trees, leading to 
+poor generalization on unseen data. Pruning techniques are often used to mitigate 
+this. 
+ Instability:  
+Small changes in the data can lead to significant changes in the tree structure, 
+making them somewhat unstable. 
+ Bias with imbalanced data:  
+If one class significantly dominates the others in a classification problem, the tree 
+might be biased towards the majority class. 
+ Computational cost:  
+Building a complex decision tree can be computationally expensive, especially with a 
+large number of features and data points. 

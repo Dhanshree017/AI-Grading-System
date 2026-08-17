@@ -1,0 +1,188 @@
+ID-T009 
+Name : Shaurya Agarwal Roll no: 5 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one example of each. 
+Definition: 
+Supervised and Unsupervised Learning are two primary categories of machine learning 
+methods, differentiated based on the type of data used for training. 
+1. Supervised Learning: 
+In supervised learning, models are trained on labeled datasets where the correct 
+output is known. The algorithm learns to map inputs to the corresponding outputs. 
+o Example: Predicting house prices based on area and location using linear 
+regression. 
+2. Unsupervised Learning: 
+Here, the model learns from unlabeled data and identifies hidden structures or 
+relationships within it. 
+o Example: Grouping customers with similar purchasing habits using K-Means 
+clustering. 
+Differences: 
+1. Supervised uses labeled data; Unsupervised uses unlabeled. 
+2. Supervised predicts outcomes; Unsupervised explores patterns. 
+3. Supervised learning is used for regression/classification, Unsupervised for clustering. 
+4. Supervised gives accurate predictions; Unsupervised provides insights. 
+5. Supervised needs prior knowledge, Unsupervised does not. 
+6. Common supervised algorithms: Decision Tree, SVM. 
+7. Common unsupervised algorithms: PCA, K-Means. 
+8. Supervised is slower to train, Unsupervised is faster. 
+9. Both are foundations of modern AI. 
+A-3. What is Principal Component Analysis (PCA)? Why is it used? 
+Definition: 
+Principal Component Analysis (PCA) is a dimensionality reduction technique that 
+transforms large datasets with many correlated variables into smaller sets of uncorrelated 
+variables called principal components. PCA helps in simplifying data while preserving most 
+of its variance and important information. 
+Uses and Key Points: 
+1. Dimensionality Reduction: It reduces large datasets into fewer components. 
+2. Removes Redundancy: Removes duplicate or highly correlated features. 
+3. Improves Model Speed: Simplifies computation in ML algorithms. 
+4. Visual Representation: Helps visualize high-dimensional data in 2D or 3D. 
+5. Noise Removal: Eliminates unnecessary data noise. 
+6. Preprocessing Step: Commonly used before classification or regression. 
+7. Feature Extraction: Identifies the most significant features for prediction. 
+8. Enhances Model Accuracy: Reduces overfitting by minimizing irrelevant features. 
+9. Applications: Used in face recognition, gene expression data, and compression. 
+A-4. What are the steps of creating a Machine Learning Model? 
+Definition: 
+Building an ML model involves systematic stages from data collection to deployment. Each 
+stage contributes to improving model accuracy and performance. 
+Steps: 
+1. Data Collection: Gather quality data relevant to the problem. 
+2. Data Cleaning: Handle missing values, outliers, and inconsistencies. 
+3. Data Splitting: Divide data into training and testing sets. 
+4. Feature Selection: Choose important features for learning. 
+5. Model Selection: Pick a suitable algorithm (e.g., Decision Tree, SVM). 
+6. Model Training: Fit the algorithm using training data. 
+7. Model Testing: Evaluate using test data to measure accuracy. 
+8. Parameter Tuning: Optimize hyperparameters for better results. 
+9. Deployment: Integrate the model into real-world applications. 
+A-5. What is Overfitting and Underfitting? Give examples. 
+Definition: 
+Overfitting and Underfitting describe how well a model fits data. Overfitting means the 
+model learns training data too well, including noise, while underfitting means it fails to 
+capture important patterns. 
+Explanation: 
+1. Overfitting Example: A model predicting exam marks memorizes data and performs 
+poorly on new data. 
+2. Underfitting Example: A linear model trying to predict complex non-linear data. 
+3. Overfitting leads to high training accuracy but poor testing accuracy. 
+4. Underfitting shows low accuracy on both training and test data. 
+5. Overfitting can be reduced using regularization or dropout. 
+6. Underfitting can be solved by adding features or using complex models. 
+7. Both affect model generalization. 
+8. Proper bias-variance balance avoids them. 
+9. Regular evaluation helps detect them early. 
+A-6. What is K-Means Clustering? Write its importance. 
+Definition: 
+K-Means Clustering is an unsupervised learning algorithm used to group data points into 
+‘k’ clusters based on their similarity. Each cluster has a centroid, and data points are 
+assigned to the nearest one. 
+Importance: 
+1. Groups similar data points automatically. 
+2. Simple and easy to implement. 
+3. Efficient for large datasets. 
+4. Helps in data segmentation. 
+5. Used in market analysis and customer grouping. 
+6. Enhances visualization of data patterns. 
+7. Forms the base for recommendation systems. 
+8. Reduces computational complexity. 
+9. Useful for anomaly detection and compression. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance Trade-off. 
+Definition: 
+Bias is the error due to overly simplistic assumptions in a model, while Variance is the 
+error due to model sensitivity to small fluctuations in the training data. The bias-variance 
+trade-off is about finding the right balance between model complexity and accuracy. 
+Explanation: 
+1. High bias leads to underfitting. 
+2. High variance leads to overfitting. 
+3. Trade-off means balancing both to achieve good generalization. 
+4. Low bias and low variance is ideal. 
+5. Simplistic models → high bias. 
+6. Complex models → high variance. 
+7. Regularization reduces variance. 
+8. Cross-validation helps identify the sweet spot. 
+9. Essential for model optimization. 
+B-2. What is Regression? Explain its types in detail. 
+Definition: 
+Regression is a supervised learning technique used to predict continuous values based on 
+input features. It determines relationships between dependent and independent variables. 
+Types: 
+1. Linear Regression: Predicts using a straight line relationship. 
+2. Multiple Regression: Uses multiple input variables. 
+3. Polynomial Regression: Models non-linear relationships. 
+4. Ridge Regression: Adds penalty to reduce overfitting. 
+5. Lasso Regression: Removes less significant features. 
+6. Elastic Net Regression: Combines Ridge and Lasso benefits. 
+7. Logistic Regression: Used for binary classification though named regression. 
+8. Stepwise Regression: Adds/removes predictors automatically. 
+9. Bayesian Regression: Incorporates prior probability distribution. 
+B-3. What is Decision Tree? Explain its steps to implement it. 
+Definition: 
+A Decision Tree is a supervised learning algorithm that splits data into branches based on 
+feature conditions, forming a tree-like structure for decision-making. 
+Steps: 
+1. Select Attribute: Choose the best attribute using criteria like Information Gain. 
+2. Split Dataset: Divide data based on attribute values. 
+3. Create Sub-nodes: Each branch represents a decision path. 
+4. Repeat Splitting: Continue recursively until pure leaf nodes form. 
+5. Stopping Condition: Stop when no further gain is achieved. 
+6. Assign Labels: Each leaf node gets a class label. 
+7. Pruning: Remove unnecessary branches to avoid overfitting. 
+8. Testing: Evaluate using test data. 
+9. Deployment: Use the tree for classification or prediction. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Output Type 
+Classification 
+Predicts categorical values 
+Regression 
+Predicts continuous values 
+Example 
+Algorithms Used 
+Spam or Not Spam 
+Decision Tree, SVM 
+Evaluation Metric Accuracy, F1 Score 
+Nature of Problem Discrete outcomes 
+Decision Boundary Divides data classes 
+Data Labels 
+Visualization 
+Application 
+Requires labeled categories 
+Scatter plots with classes 
+Predicting house prices 
+Linear, Ridge Regression 
+RMSE, MAE 
+Continuous outcomes 
+Fits best line 
+Needs numeric values 
+Regression lines 
+Email filtering, image tagging Forecasting, pricing models 
+B-5. How Deep Learning is different from Machine Learning? Explain Regularization in detail. 
+Definition: 
+Deep Learning is an advanced subset of ML that uses artificial neural networks with 
+multiple layers to learn complex patterns. Machine Learning uses algorithms that may 
+need manual feature extraction, while Deep Learning performs automatic feature learning. 
+Differences: 
+1. Deep Learning uses neural networks; ML uses algorithms like SVM, DT. 
+2. DL learns features automatically; ML needs manual extraction. 
+3. DL requires more data and computation. 
+4. ML can work with small datasets. 
+5. DL has high accuracy for complex data. 
+6. ML is interpretable; DL is often a black box. 
+7. DL needs GPUs; ML can run on CPUs. 
+8. DL models like CNN, RNN; ML models like KNN, SVM. 
+9. DL is mainly used for vision, speech, and NLP tasks. 
+Regularization: 
+Regularization is a technique to prevent overfitting by adding a penalty term to the loss 
+function. It simplifies models without losing accuracy. 
+1. L1 (Lasso) removes less important features. 
+2. L2 (Ridge) reduces the magnitude of weights. 
+3. Dropout randomly deactivates neurons during training. 
+4. Prevents model memorization. 
+5. Improves generalization. 
+6. Adds robustness to unseen data. 
+7. Keeps weights balanced. 
+8. Acts as a noise filter. 
+9. Crucial for deep learning model stability. 

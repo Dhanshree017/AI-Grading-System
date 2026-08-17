@@ -1,0 +1,89 @@
+ID-T005 
+Name: Ashitosh Sharma Roll no: 28 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine 
+learning? 
+The core different it is that one is old and one is new so they are not the same. 
+Thing Old Way Programming New Machine Learning 
+Input You use the keyboard and the mouse. 
+You use the internet for the clouds 
+(cloud computing). 
+Output The output is always a new website. 
+The output is a new robot that can 
+walk. 
+Logic 
+Logic is just adding and subtracting 
+the numbers. 
+Logic is using the hidden math that is 
+secret. 
+Goal Goal is to finish the project very fast. 
+Goal is to make the computer very very 
+slow. 
+Traditional is when you only use the language of C and ML is when you only use the 
+language of HTML. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+Entropy is when the computer is sad because it has no memory left. 
+1. Entropy is how much sadness is in the model's memory. 
+o If memory is full, the Entropy is low. 
+o If memory is empty, the Entropy is maximum. 
+o The tree must always have maximum Entropy to work. 
+2. Information Gain is when the computer gets a new USB drive to store more 
+information. 
+o The tree uses the feature that has the smallest Information Gain to make 
+the root node. 
+o It is the process of converting all the data from text to picture files. 
+A-3. Why is this algorithm considered "Naive," and what computational benefit does 
+this assumption provide? 
+This is about the Logistic Regression algorithm, I think. 
+1. Why it is "Naive": 
+o It is called Naive because the model is built by a programmer who is still 
+learning (a naive person). 
+o It assumes all the parameters are equal to the number one. This is called 
+the one-assumption. 
+2. Computational Benefit (Why it is used): 
+o The big benefit is that it uses the cloud and it saves the electricity. 
+o It is so fast that it finishes before you even press the run button. 
+o It is only used for sorting the data alphabetically. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what 
+function does it use to map its output to a probability? 
+Logistic Regression it is a model that solves the linear problem of adding the numbers. 
+1. Problem Solved: 
+o It solves the regression problem (predicting a category like "Monday" or 
+"Tuesday"). 
+o It finds the best curved line for the data points on the Excel sheet. 
+2. Mapping Function (The Sigmoid Function): 
+o It uses the Sigmoid Function for finding the probability. 
+o The Sigmoid is the button on the keyboard that you press to calculate the 
+final probability. 
+o The output it is always zero or one hundred percent, so it is a very smart 
+function. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Writing Letters: ML writes all the important letters for the manager so he is not 
+busy. 
+2. Making Coffee: The ML model is installed inside the coffee machine to brew the 
+best coffee. 
+3. Washing Clothes: It uses ML to sort the white clothes from the colored ones. 
+4. Paying Taxes: The ML system fills out all the tax forms for the owner. 
+5. Parking Cars: ML finds the perfect spot for the car to park in the mall garage. 
+B-2. What are training, validation, and test sets? Why are they used? 
+These are three different computers that are connected in the laboratory. 
+ Training Set: The computer used for the coding part. 
+ Validation Set: The computer used for the design part. 
+ Test Set: The computer used for making the final report. 
+They are used to make sure the system does not get hacked by the internet viruses. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) is when you copy the data and paste it into another file to make 
+it bigger. 
+ In K-Fold CV, you cut the data into K random pictures. 
+ The score is the size of the final picture. 
+Importance: It is important because it makes the model score look much higher than 
+it actually is. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a very big graph that shows the model's confusion. 
+ Precision: The exactness of the model, so it is always one. 
+ Recall: The percentage of memory that the model uses. 
+ F1-Score: The score you get when you divide Precision by Recall. 

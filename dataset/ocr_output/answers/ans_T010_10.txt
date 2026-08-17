@@ -1,0 +1,81 @@
+ID-T010 
+Name: Bhavika Gaur Roll no: 10 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+AI is when computer try to act like human brain. it can think sometimes 
+and do work like humans. it learn from data but sometime it confuse. 
+Domains of Machine Learning: 
+1. Supervised learn – teacher give answer and computer copy.  
+2. Unsupervised learn – computer guess itself but sometime fail. 
+3. Semi supervised – some teacher some guess, mix. 
+4. Deep learning – many brain layer inside, sometime very slow. 
+5. Reinforcement learning – computer do wrong get slap, correct get 
+candy. 
+6. Quantum learn – maybe future thing, not exist much. 
+7. Random learn – computer guess randomly. 
+8. Online learning – new data come it learn every second. 
+9. Hybrid learning – mix of everything, sometimes confuse. 
+A-2. Explain Components of AI, Give One example of AI 
+AI have many parts inside system, like human but not real organ. 
+Components: 
+1. Learning – get data and remember.  
+2. Reasoning – think but sometimes guess wrong. 
+3. Perception – camera, mic to see and hear. 
+4. Knowledge – store info inside brain, sometimes lost. 
+5. Planning – make plan but plan fail sometime. 
+6. Acting – do action after thinking. 
+7. Language – understand human, sometimes nonsense. 
+8. Problem solving – try solution but sometime fail. 
+Example: 
+Alexa answer question, joke sometimes, use voice and brain part of AI.  
+A-3. What is Regression and Classification, explain types of Regression 
+Regression is when computer guess number. Classification is when 
+computer guess type like cat or dog. 
+Types of Regression: 
+1. Linear regression – line straight.  
+2. Double regression – maybe two line, unsure. 
+3. Multiple regression – many input predict output. 
+4. Polynomial – curve line fit data. 
+5. Ridge regression – add penalty. 
+6. Lasso regression – remove variable maybe. 
+7. Random regression – mix forest thing. 
+8. Logistic regression – yes/no output. 
+9. Time regression – predict tomorrow number. 
+Example: Regression predict stock price, classification predict email spam 
+or not.  
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Intelligent agent is software or robot that sense world and act to reach 
+goal. 
+Types: 
+1. Simple reflex agent – act only current input, like fan on/off. ✅ 
+2. Goal based agent – plan for goal, like robot find way. ✅ 
+3. Utility agent – choose best action. ✅ 
+4. Angry agent – maybe angry do bad action. 
+5. Learning agent – improve after mistake.
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+1. Graph of nodes and probability.  
+2. Nodes depend on each other sometimes. 
+3. Used for prediction like weather maybe wrong. 
+4. Help in medical diagnosis. 
+5. Sometimes confuse if too many node. 
+B-2. Write a short note on Artificial Neural Network 
+1. Many neuron node layer inside computer.  
+2. Input hidden output layer. 
+3. Learn by weight change. 
+4. Used in image, text, speech.  
+5. Can be slow if too big network. 
+B-3. What is Naïve Bayes? 
+1. Math model use probability.  
+2. Assume all feature independent. 
+3. Used for spam, text classify.  
+4. Sometimes wrong if feature depend each other. 
+5. Easy and fast to use. 
+B-4. What is Support Vector Machines 
+1. Separate class by line or hyperplane.  
+2. Use margin maximum between classes. 
+3. Kernel help for nonlinear data. 
+4. Used in classification and regression.  
+5. Sometimes overfit if data small. 

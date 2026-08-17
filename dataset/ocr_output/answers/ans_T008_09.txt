@@ -1,0 +1,235 @@
+ID-T008 
+Name : sushma pawar Roll no: 9 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+Section 1: Attempt All  
+1-a) Inductive Bias 
+Definition: Inductive bias is like the assumptions or guesswork a machine learning 
+algorithm uses to decide things for new data.
+1-b) Hypothesis 
+Definition: Hypothesis is a kind of guess or proposed rule that maps input to output 
+in learning. 
+Points: 
+1. It is like “maybe this is true” in AI. 
+2. Represents model for predicting new data. 
+3. Can be simple or complex. 
+4. Machine tests hypothesis with data. 
+5. Hypothesis can be wrong sometimes. 
+6. Used in supervised learning mostly. 
+7. Example: If weather is sunny, then play tennis. 
+8. Helps algorithm generalize. 
+9. Many hypotheses may exist for same data. 
+1-c) Sampling Theories 
+Definition: Sampling theories explain how to pick a subset of data from bigger 
+population to study. 
+Points: 
+1. Population is total data, sample is small part. 
+2. Random sampling picks randomly. 
+3. Stratified sampling divides groups first. 
+4. Systematic sampling picks every nth item. 
+5. Good sample represents population. 
+6. Wrong sampling may give wrong results. 
+7. Used in surveys, experiments. 
+8. Helps machine learn from small data. 
+9. Sample size important for accuracy. 
+1-d) Eager Learning 
+Definition: Eager learning is where machine builds full model first from training data 
+before answering. 
+Points: 
+1. Learns model before query. 
+2. Fast predictions after model ready. 
+3. Example: Decision tree, neural network. 
+4. Needs full training first. 
+5. Cannot adapt instantly to new data. 
+6. Takes time to learn. 
+7. Model stored in memory. 
+8. Works well for stable data. 
+9. If data changes, need retraining. 
+1-e) Lazy Learning 
+Definition: Lazy learning is machine keep data and only learns when query comes. 
+Points: 
+1. Delays learning till needed. 
+2. Example: KNN. 
+3. Simple algorithm, stores all training. 
+4. Slow prediction if dataset is big. 
+5. Can adapt easily to new data. 
+6. No full model built. 
+7. Computation done at prediction time. 
+8. Sensitive to noisy data. 
+9. Works better with small data. 
+1-f) Genetic 
+Definition: Genetic algorithms are inspired by natural evolution to solve problems. 
+Points: 
+1. Uses selection, crossover, mutation. 
+2. Generates better solutions over generations. 
+3. Inspired by natural selection. 
+4. Fitness function decides best solution. 
+5. Randomness helps explore options. 
+6. Can solve optimization problems. 
+7. Sometimes slow convergence. 
+8. Can get stuck in local optimum. 
+9. Example: Traveling salesman problem. 
+1-g) Dynamic Programming 
+Definition: Dynamic programming is method to solve problems by breaking them 
+into smaller subproblems and storing answers. 
+Points: 
+1. Solves overlapping subproblems efficiently. 
+2. Stores result to avoid recomputation (memoization). 
+3. Example: Fibonacci sequence. 
+4. Can be bottom-up or top-down. 
+5. Reduces computation time. 
+6. Useful in optimization problems. 
+7. Sometimes hard to implement. 
+8. Helps in shortest path problems. 
+9. Used in AI, algorithms and operations research. 
+1-h) Explanation-Based Learning 
+Definition: EBL is learning by explaining example using prior knowledge and then 
+generalizing. 
+Points: 
+1. Uses small number of examples. 
+2. Generalizes with reasoning. 
+3. Reduces need for lots of data. 
+4. Example: logic based learning. 
+5. Can be fast if prior knowledge is good. 
+6. Needs correct domain knowledge. 
+7. Learns rules instead of memorizing. 
+8. Can fail if explanation is wrong. 
+9. Used in expert systems. 
+1-i) Control Knowledge 
+Definition: Control knowledge is extra knowledge that guides AI to search or solve 
+problem efficiently. 
+Points: 
+1. Helps in decision making. 
+2. Makes search faster. 
+3. Example: heuristics in A* search. 
+4. Can be wrong, then result may be bad. 
+5. Reduces unnecessary computation. 
+6. Important for problem solving. 
+7. Helps prioritize actions. 
+8. Learned or pre-defined knowledge. 
+9. Sometimes domain specific. 
+1-j) Precision, Recall, F1 Score 
+Definition: Metrics to evaluate performance of model, mostly classification. 
+Points: 
+1. Precision = correct positive / predicted positive. 
+2. Recall = correct positive / actual positive. 
+3. F1 score = 2PR/(P+R). 
+4. Precision high means less false positives. 
+5. Recall high means less false negatives. 
+6. F1 balances both. 
+7. Used in machine learning evaluation. 
+8. Can compare models. 
+9. Example: spam email detection. 
+Section 2: Attempt Any 6  
+2-a) Explain Decision Tree in Detail, Give Example 
+Definition: Decision tree is a tree-like model used for classification or regression. It 
+makes decisions by splitting data based on features, from root to leaf. 
+1. The root node is the main feature from which tree starts. 
+2. Branches represent possible decisions or outcomes from feature. 
+3. Leaf nodes are the final predictions or class labels. 
+4. Example: predicting “Play Tennis” based on weather, humidity, wind etc. 
+5. If weather is sunny and humidity low then play, else don’t play. 
+6. Decision trees are easy to interpret because they look like flowcharts. 
+7. They may overfit data if tree is too deep or complex. 
+8. Algorithms like ID3, C4.5, CART are used to build decision trees. 
+9. Can handle both categorical and numerical data, but sometimes biased to 
+features with many values. 
+2-c) Discuss in Detail about Representation of Neural Network 
+Definition: Neural network is a model inspired by human brain, consisting of layers 
+of neurons connected by weighted edges, used for learning complex patterns. 
+1. Composed of input layer, hidden layers, and output layer. 
+2. Each neuron applies a function to weighted sum of inputs plus bias. 
+3. Activation functions like ReLU, Sigmoid, Tanh introduce non-linearity. 
+4. Weights are adjusted during training using backpropagation. 
+5. Example: recognize handwritten digits, input is image pixels, output is digit 
+label. 
+6. Hidden layers allow network to learn abstract representations of data. 
+7. Too many layers may lead to overfitting or vanishing gradients. 
+8. Neural networks can solve regression, classification, and even sequence 
+problems. 
+9. Requires lots of data and computation for good performance. 
+2-d) Differentiate between Classification & Regression 
+Definition: Classification predicts discrete labels, regression predicts continuous values. 
+Both are supervised learning tasks but differ in output type. 
+1. Classification output is categorical like “spam or not spam”. 
+2. Regression output is numeric like house price or temperature. 
+3. Example classification: email spam detection. 
+4. Example regression: predicting temperature tomorrow. 
+5. Classification uses algorithms like SVM, Decision Tree, Naive Bayes. 
+6. Regression uses Linear Regression, Polynomial Regression, Neural Networks. 
+7. Evaluation metrics differ: classification uses accuracy, precision, recall; 
+regression uses MSE, RMSE. 
+8. Classification may use probabilistic outputs; regression predicts exact numbers. 
+9. Sometimes same algorithm (like neural network) can do both tasks with 
+different output layers. 
+2-e) Explain Knowledge Representation in Detail 
+Definition: Knowledge representation is a way to store information in AI system so it 
+can reason and make decisions. 
+1. Types include rules, semantic networks, frames, and ontologies. 
+2. Rules are simple IF-THEN statements. 
+3. Semantic networks represent objects and relations graphically. 
+4. Frames are data structures representing stereotyped situations. 
+5. Ontologies define concepts and relationships in a domain. 
+6. Example: Expert system using rules for medical diagnosis. 
+7. Proper representation helps machine reason and infer new knowledge. 
+8. Poor representation can cause errors in reasoning. 
+9. Knowledge representation is foundation of AI intelligence. 
+2-f) Compare AI, ML, and Deep Learning with Examples 
+Definition: AI is intelligence in machines, ML is subset where machine learns from 
+data, deep learning is subset of ML with multi-layered neural networks. 
+1. AI is broad field including planning, reasoning, and learning. 
+2. Example AI: Chess playing AI. 
+3. ML learns patterns from data, predicts outputs without explicit programming. 
+4. Example ML: Spam email filter. 
+5. Deep learning uses deep neural networks to learn complex patterns. 
+6. Example deep learning: Image recognition in self-driving cars. 
+7. AI can exist without ML, but modern AI often uses ML techniques. 
+8. Deep learning needs lots of data and computation; ML may work with small 
+data. 
+9. All three overlap but differ in complexity, data requirements, and applications. 
+Section 3: Attempt All 
+3-a) Define Search Algorithms in AI 
+Definition: Search algorithms in AI are methods to explore possible solutions to a 
+problem. They help machine find best path or answer when there are many 
+possibilities. 
+1. Search is used when machine has to choose from multiple options. 
+2. Uninformed search does not use extra information about problem, examples 
+are BFS and DFS. 
+3. Informed search uses heuristics to guide search, example A* and greedy search. 
+4. BFS searches level by level, DFS goes deep first. 
+5. A* uses cost function plus heuristic to choose best path. 
+6. Search algorithms are used in games, path finding, planning tasks. 
+7. Proper search can save time and computation; bad search wastes resources. 
+8. Choice of algorithm depends on problem size, complexity, and memory. 
+9. Sometimes search fails if problem too big or heuristics wrong. 
+3-b) What is Intelligent Agent 
+Definition: An intelligent agent is an entity that perceives environment through 
+sensors and acts using actuators to achieve goals. 
+1. Agent perceives environment using sensors like camera or microphone. 
+2. Acts in environment using actuators like robot arms or software commands. 
+3. Agent function decides what action to take based on perception. 
+4. Types of agents include simple reflex, model-based, goal-based, and utility
+based. 
+5. Simple reflex agent acts based on current percept only, may fail in complex 
+environments. 
+6. Model-based agent keeps internal state to remember past events. 
+7. Goal-based agent chooses actions to achieve specific goal. 
+8. Utility-based agent considers best outcome using utility function. 
+9. Intelligent agents are used in robots, chatbots, recommendation systems. 
+3-c) Write 5 Applications of AI 
+Definition: AI is used in many real-life applications to automate tasks and make 
+smart decisions. 
+1. Self-driving cars use AI for navigation, object detection, and decision making. 
+2. Medical diagnosis systems use AI to predict diseases and recommend 
+treatments. 
+3. Chatbots and virtual assistants like Siri and Alexa use AI for understanding 
+queries and responding. 
+4. Recommendation systems in Amazon, Netflix use AI to suggest products or 
+movies. 
+5. Fraud detection in banks uses AI to detect suspicious transactions and prevent 
+loss. 
+6. AI also used in gaming for intelligent NPCs and strategy planning. 
+7. Image and speech recognition are common AI applications. 
+8. Industrial automation uses AI for robots and process optimization. 
+9. AI in agriculture helps with crop monitoring, yield prediction, and pest 
+detection. 

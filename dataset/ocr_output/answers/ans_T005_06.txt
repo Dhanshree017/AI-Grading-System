@@ -1,0 +1,84 @@
+ID-T005 
+Name: Arjun Tiwari Roll no: 6 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine learning? 
+The core difference it is about the rules. 
+Thing Traditional Programming Machine Learning 
+Input You give the rules (code) and the data. You give the data and the answers 
+(labels). 
+Output You get the final answer (the result). You get the new rules (the model). 
+Logic The logic is fixed by the programmer. It 
+never changes. 
+The logic is learned from the data. It 
+is very flexible. 
+Goal Do the math and follow the steps. Guess the pattern and get better 
+score. 
+Traditional programming it is easy but it is slow to write all the rules. Machine learning it 
+is faster because the computer writes the rules. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+Entropy and Information Gain they are used to make the Decision Tree. They are the 
+most important parts. 
+1. Entropy is how much confusion is in a group of data. 
+o If a group has all the same answer, the Entropy is high (maximum confusion). 
+o If a group has mixed answers, the Entropy is zero (no confusion). 
+o The model always wants to maximize the Entropy. ( Incorrect Fact: Model 
+minimizes entropy.) 
+2. Information Gain is how much confusion you remove when you split the group. 
+o The model chooses the split that gives the smallest Information Gain. ( 
+Incorrect Fact: Model maximizes Information Gain.) 
+o This means the tree grows the best splits first. 
+o It is like figuring out which question to ask first in the game of 20 
+questions. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what 
+function does it use to map its output to a probability? 
+Logistic Regression it is a model for classification, but it uses the math of a line. 
+1. Problem Solved: 
+o It solves classification problems (predicting a category like 'Spam' or 'Not 
+Spam'). 
+o It is used for finding the best straight line that separates the data groups. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, 
+rather than learned during training. 
+Hyperparameters they are the settings that the programmer must set. The model cannot 
+learn them itself. 
+1. Learning Rate (for Gradient Descent): 
+o This is the speed at which the model learns. If it is too big, the model will 
+miss the answer. 
+2. Number of Clusters (K for K-Means): 
+o This is how many groups you want the model to find. You must decide this 
+number yourself before running the model. 
+3. Maximum Depth of Tree (for Decision Tree): 
+o This is the number of layers the Decision Tree can grow. It stops the tree 
+from overfitting or underfitting. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Filtering Spam: The model reads the email and guesses if it is junk or not. 
+2. Stock Price Prediction: It looks at old prices and guesses if the stock will go up or 
+down. 
+3. Chatbots on Websites: The model talks to the customers so the company doesn't 
+need people to answer simple questions. 
+4. Self-Driving Cars: The model looks at the road and decides if it should stop or turn 
+the wheel. 
+B-2. What are training, validation, and test sets? Why are they used? 
+These are the three parts you cut the data into. 
+ Training Set: Used to teach the model and adjust its logic. Biggest part. 
+ Validation Set: Used to pick the best hyperparameter settings. 
+ Test Set: Used to give the final, honest score. 
+They are used to make sure the model is not cheating and the final score is true for new, 
+future data. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) it is a method to test the model score by shuffling the data many 
+times. 
+ In K-Fold CV, you cut the data into K groups. Each group gets a chance to be the 
+test set. 
+ The final score is the average of all the tests. 
+Importance: It is important because it makes the score more reliable and it is better than 
+just one test score. 
+B-5. What are feature scaling techniques, and when should you use them? 
+Feature Scaling means making all the numbers in the data columns have the same range. 
+Techniques: 
+1. Normalization: Makes the numbers go from 0 to 1. 
+2. Standardization: Makes the numbers have a mean of 1 and a standard deviation of 
+0. ( Incorrect Fact: Mean should be 0, SD should be 1.) 

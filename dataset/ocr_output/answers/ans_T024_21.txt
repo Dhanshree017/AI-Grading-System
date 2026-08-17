@@ -1,0 +1,53 @@
+ID-T024 
+Name: dinky roy Roll no: 21 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification is when machine classify itself into different modes. Regression is when 
+machine go backward in learning process. 
+Classification problem happens when output is limited and system stop responding. 
+Regression problem happens when output change automatically. 
+Classification is related to hardware and regression is related to software. 
+Classification does not use data. Regression uses lot of internet data. 
+Classification output depend on screen size and resolution. Regression output depend on 
+battery level. 
+Example of classification is separating files into folders. Example of regression is reducing 
+phone brightness automatically. 
+Both classification and regression depend on system speed. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is problem where model fit inside system and cause heating. It is physical fitting 
+problem. 
+Overfitting happens when laptop is old and fan is not working. 
+Overfitting also happens when model is too heavy and system cannot handle it. 
+Main causes of overfitting are low RAM, low battery, slow processor, and dust in CPU. 
+Overfitting makes system hang and restart automatically. 
+One technique to reduce overfitting is restarting the computer again and again. 
+Second technique is uninstalling unnecessary applications. 
+Overfitting can also be reduced by charging laptop fully. 
+Overfitting is more common in windows systems. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Model evaluation is process of checking model physically and seeing if it is working or not. 
+It is done after model is installed on computer. 
+Model evaluation checks speed, size, and color of model. 
+Model evaluation is done by opening model and running it once. 
+One evaluation metric is loading time which checks how fast model start. 
+Second metric is memory usage which checks how much RAM is used. 
+These metrics are useful to see if model is heavy. 
+Accuracy is not very important metric. 
+Model evaluation is not compulsory. 
+A-6. Explain the basic steps involved in building a machine learning model, from data 
+collection to model testing. 
+Building machine learning model is simple and not very technical. 
+First step is buying a computer or laptop. 
+Second step is installing machine learning software. 
+Third step is downloading data randomly from internet. 
+Fourth step is opening software and clicking train button. 
+Fifth step is waiting for output without checking errors. 
+Sixth step is saving output directly. 
+Seventh step is sharing output with others. 
+Eighth step is deleting dataset. 
+Ninth step is shutting down system. 
+Testing is optional because model usually works correctly. 

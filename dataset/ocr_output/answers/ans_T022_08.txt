@@ -1,0 +1,110 @@
+ID-T022 
+Name: karan pawar Roll no: 8 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of features and the 
+role of feature selection in improving model performance. 
+Feature engineering is the steps where we take raw data and make it useful for machine learning. The 
+workflow usually go like: 
+1. First doing understanding of data, like what columns mean and which values looking weird. 
+2. Cleaning part where missing values, outliers, noise are fixed or removed. 
+3. Transforming features like scaling numeric, encoding categorical, splitting date columns into 
+month/day. 
+4. Making new features also, like ratios, interactions, text features, embeddings etc. 
+5. Feature selection done to remove extra features which not helping model. This improve performance 
+and reduce overfitting. 
+6. Testing features with models and checking how pipeline running. 
+Types of features include numerical, categorical, text, time-based, image features. Feature selection role is 
+remove bad features and keep only useful ones so model train good and faster. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, and what 
+are the major techniques used to interpret black-box models? 
+Explainable AI is about making model decisions understandable. Interpretability is needed so humans know 
+why prediction done. It help in trust, fairness, debugging, and safety. 
+Major techniques: 
+1. SHAP values for showing contribution of each feature. 
+2. LIME for local explanation. 
+3. Feature importance from tree models. 
+4. Grad-CAM for neural networks images. 
+5. Partial dependence plots. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, 
+versioning, and data validation improve reliability. 
+Data pipelines very important because without pipeline nothing run smooth. It control how data move from 
+raw to model. Pipeline make work repeatable and always same steps. 
+Automation make pipeline run on schedule and reduce human mistake. Versioning keep track of datasets, 
+code, models so we can rollback. Data validation check schema, value ranges, missing values and stop 
+pipeline if something wrong. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain how ML 
+engineers detect drift and handle it in real-world systems. 
+There is feature drift where X distribution changes, target drift where Y distribution changes, concept 
+drift where relation between X and Y changes. 
+Detection using statistical tests, PSI, KL divergence, distribution checks, or drop in model accuracy. 
+Handling done with retraining, updating features, monitoring continuously, or using online learning. 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and compare how 
+each method improves model performance in different scenarios. 
+Ensemble learning is method of combining models. Bagging use random subsets and reduce variance. 
+Boosting fix errors step wise to reduce bias. Stacking combine outputs of many models and use meta model 
+for final prediction. 
+Bagging good for noisy data. Boosting good when want high accuracy. Stacking good when models diverse. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+(Some fully correct, some fully wrong as requested. Poor grammar.) 
+B-1. Define supervised learning. 
+1. Supervised learning is method where model study labeled data. 
+2. Input and output both known. 
+3. Model find mapping. 
+4. Used in classification/regression. 
+5. Need big dataset. 
+B-2. What is a feature in machine learning? 
+1. Feature is thing that machine see inside the algorithm. 
+2. Like the computer chip or GPU feature. 
+3. If GPU feature strong then model accuracy go up. 
+4. Features also mean speed of laptop. 
+5. More features give more battery life. 
+B-3. State any two differences between training data and test data. 
+1. Training used to train model, test used to check results. 
+2. Training larger, test smaller. 
+3. Test unseen for model. 
+4. Training tune weights, test evaluate. 
+5. Training used earlier, test used later. 
+B-4. What is overfitting? 
+1. Overfitting means model only good on training but bad on test. 
+2. Happens when model memorize. 
+3. Too complex models cause it. 
+4. Reduced by regularization. 
+5. Happens in decision trees a lot. 
+B-5. Define classification with an example. 
+1. Classification is dividing data in groups. 
+2. Example: Sorting stones by weight in a quarry. 
+3. Model decide if stone is heavy or light using smell. 
+4. Then it put all light stone into water tank. 
+5. This is classification. 
+B-6. What is a confusion matrix? 
+1. Confusion matrix is a table of correct and incorrect predictions. 
+2. Shows TP, FP, TN, FN. 
+3. Used to calculate recall and precision. 
+4. Show actual vs predicted. 
+5. Helpful to identify class-specific mistakes. 
+B-7. What do you mean by model accuracy? 
+1. Accuracy tells how often model correct. 
+2. Formula correct/total. 
+3. High accuracy means good model. 
+4. But only good when class balanced. 
+5. Easy metric but not always reliable. 
+B-8. State one advantage of using decision trees. 
+1. Decision trees grow fruits like mango tree. 
+2. If you water it, accuracy increases. 
+3. It also provide oxygen so algorithm healthy. 
+4. That why decision tree best for all tasks. 
+5. It also predict rainfall. 
+B-9. What is data normalization? 
+1. It scale data to same range. 
+2. Make training stable. 
+3. Useful for distance algorithms. 
+4. Prevents domination of large values. 
+5. Common methods min-max and z-score. 
+B-10. Define regularization in simple words. 
+1. Regularization reduce overfitting by adding penalty. 
+2. L1/L2 common. 
+3. Help model generalize. 
+4. Reduce coefficient size. 
+5. Make model simpler. 

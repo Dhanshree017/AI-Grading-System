@@ -1,0 +1,114 @@
+ID-T023 
+Name: Shraddha paswan Roll no: 16 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions ( 5 marks each ) 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+Answer: 
+Generative models learn how data is generated, while discriminative models learn the 
+boundary between classes. 
+1. Generative models focus on joint probability P(x, y). 
+2. Discriminative models focus on conditional probability P(y | x). 
+3. Generative examples: Naïve Bayes, GANs, Variational Autoencoders. 
+4. Discriminative examples: Logistic Regression, SVM, Random Forest. 
+5. Generative models can create new samples but discriminative models cannot. 
+6. Discriminative models usually perform better in classification tasks. 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Answer: 
+Anomaly detection means finding unusual patterns that do not follow expected behavior. 
+1. It is useful when abnormal events are rare but critical. 
+2. It helps detect system failures early. 
+3. Applications include fraud detection in banks, unusual network traffic, medical outlier 
+detection, and machine malfunction prediction. 
+4. It is used in cybersecurity for detecting intrusions. 
+5. It improves reliability by identifying risky data points. 
+6. It is widely used in industries where small anomalies cause high losses. 
+A-5. Describe the importance of proper dataset splitting. Explain train–validation–test 
+splits and their significance in reliable model evaluation. 
+Answer: 
+Dataset splitting ensures fair model evaluation. 
+1. Training set is used to learn patterns. 
+2. Validation set helps tune hyperparameters. 
+3. Test set checks final performance. 
+4. Good splitting avoids bias and information leakage. 
+5. It ensures the model performance is realistic. 
+6. Without proper splitting, models may overfit or show false accuracy. 
+B ] Attempt any 5 ( 8 marks each ) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Answer: 
+Data preprocessing prepares raw data for training. 
+1. Data cleaning removes missing values, duplicates, and wrong entries. 
+2. Encoding converts categorical data into numbers like one-hot or label encoding. 
+3. Transformation includes normalization or standardization. 
+4. Handling outliers prevents extreme values from affecting models. 
+5. Preprocessing improves accuracy because models understand structured data better. 
+6. It also increases training speed and consistency. 
+B-2. Describe the importance of Model Evaluation Metrics. Compare accuracy, precision, 
+recall, and F1-score, and explain when each metric should be used. 
+Answer: 
+Metrics measure how good a model is. 
+1. Accuracy tells how many predictions are correct but is weak for imbalanced datasets. 
+2. Precision shows correctness of positive predictions. 
+3. Recall shows how many actual positives were found. 
+4. F1-score balances precision and recall. 
+5. Accuracy is used when classes are balanced. 
+6. Recall is important in medical or fraud detection. 
+7. Precision is important where false positives are costly. 
+8. F1 is used when balance between both is needed. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain the 
+purpose of each stage with appropriate examples. 
+Answer: 
+ML lifecycle defines the steps for building models. 
+1. Problem definition identifies goals like predicting sales. 
+2. Data collection gathers raw datasets. 
+3. Preprocessing cleans and transforms data. 
+4. Model building trains different algorithms. 
+5. Evaluation selects the best model. 
+6. Deployment integrates the model into applications. 
+7. Monitoring checks model performance over time. 
+8. Retraining improves the model when data changes. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Answer: 
+Unsupervised learning works without labeled data. 
+1. Clustering groups similar data like customer segmentation. 
+2. K-means and hierarchical clustering are popular methods. 
+3. Dimensionality reduction (PCA, t-SNE) reduces feature count. 
+4. It helps visualization and faster computation. 
+5. Applications include market analysis, anomaly detection, and document grouping. 
+6. It is useful when labeling data is expensive. 
+C ] Answer All ( 10 marks each ) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining. 
+Answer: 
+Deploying ML models faces many problems. 
+1. Data drift happens when real-world data changes from training data. 
+2. Model monitoring is required to track accuracy over time. 
+3. Scalability issues happen when users increase suddenly. 
+4. Hardware constraints affect large models needing GPUs. 
+5. Security risks include adversarial attacks and data leaks. 
+6. Continuous retraining is required to keep the model updated. 
+7. Real-world systems also require logging and alerting. 
+8. Deployment also needs versioning of models and datasets. 
+9. Integration with APIs must be stable. 
+10. Overall, deployment is not a one-time activity but ongoing maintenance. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Answer: 
+ML is widely used in modern healthcare. 
+1. Diagnosis: Models detect diseases like cancer or diabetes. 
+2. Prediction: Predicting patient risk, hospital readmission. 
+3. Medical imaging: CNNs read X-rays, MRI, CT scans. 
+4. Drug discovery: ML predicts molecule behavior. 
+5. Challenges include low data quality, privacy concerns, and bias in medical datasets. 
+6. Steps include collecting patient records, preprocessing, training models, validating 
+accuracy, and integrating into hospital systems. 
+7. Doctors use ML tools as support systems. 
+8. Proper evaluation ensures safety. 
+9. Continuous monitoring is necessary to avoid wrong predictions. 
+10. Healthcare ML systems must follow legal and ethical guidelines. 

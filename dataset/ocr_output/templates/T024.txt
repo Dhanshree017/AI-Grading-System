@@ -1,0 +1,16 @@
+
+
+--- PAGE 1 ---
+ID — T024
+Machine Learning Examination
+Total marks 20
+Semester 1 INTERNAL EXAM
+FY-Computer Science
+Date — 03-11-2025
+A] Attempt any 4 (20 marks)
+1. Explain the difference between supervised and unsupervised learning with suitable real-world examples.
+2. What is data preprocessing? Describe any four common preprocessing steps used before training an ML model.
+3. Explain classification and regression problems in machine learning. Give one example of each.
+4. What is overfitting? Explain its causes and mention any two techniques to reduce overfitting.
+5. Define model evaluation. Explain any two evaluation metrics used for classification models.
+6. Explain the basic steps involved in building a machine learning model, from data collection to model testing.

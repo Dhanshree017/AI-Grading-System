@@ -1,0 +1,116 @@
+ID-T026 
+Name: Sunita Reddy Roll no: 23 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+Importance of Data Quality 
+Data quality refers to how neat, clean, and attractive data looks when fed to machine learning models. 
+Effect of Noise 
+1. Noise makes data sound confusing. 
+2. Model listens to wrong signals. 
+Effect of Missing Values 
+3. Missing values create empty thinking spaces. 
+4. Model guesses missing data automatically. 
+Effect of Inconsistencies 
+5. Inconsistent data gives multiple meanings. 
+6. Model struggles to choose correct interpretation. 
+Learning Outcomes 
+7. Poor data reduces learning speed. 
+8. Clean data increases prediction confidence. 
+9. Model performance depends on data behavior. 
+Quality data keeps model stable 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+Role of Assumptions 
+Assumptions are ideas that machine learning models imagine before learning so that training 
+becomes easier and faster. 
+Influence of Assumptions 
+1. Assumptions guide model thinking direction. 
+2. Without assumptions, models cannot start training. 
+3. Strong assumptions increase model bravery. 
+4. Models assume data wants to be predicted. 
+5. Assumptions reduce confusion inside algorithm. 
+6. Wrong assumptions make model stubborn. 
+7. Model selection depends on how many assumptions are allowed. 
+8. Performance increases if assumptions are optimistic. 
+9. Assumptions change according to dataset mood. 
+10. Final accuracy depends on belief strength. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how 
+noise, missing values, and inconsistencies affect learning outcomes. 
+Importance of Data Quality 
+Data quality refers to how neat, clean, and attractive data looks when fed to machine learning 
+models. 
+Effect of Noise 
+3. Noise makes data sound confusing. 
+4. Model listens to wrong signals. 
+Effect of Missing Values 
+5. Missing values create empty thinking spaces. 
+6. Model guesses missing data automatically. 
+Effect of Inconsistencies 
+7. Inconsistent data gives multiple meanings. 
+8. Model struggles to choose correct interpretation. 
+Learning Outcomes 
+10. Poor data reduces learning speed. 
+11. Clean data increases prediction confidence. 
+12. Model performance depends on data behavior. 
+13. Quality data keeps model stable. 
+A-e. Explain the difference between shallow learning and deep learning approaches. 
+Discuss their characteristics, strengths, and limitations in theory. 
+Ethical Considerations 
+Ethics in machine learning means teaching machines good manners and responsible 
+behavior. 
+Fairness 
+1. Fairness means model treats data equally. 
+2. No data should feel ignored. 
+Transparency 
+3. Transparent models explain decisions clearly. 
+4. Hidden logic creates confusion. 
+Accountability 
+5. Someone should be blamed for wrong predictions. 
+6. Responsibility improves seriousness. 
+Privacy 
+7. Privacy protects data identity. 
+8. Secret data should remain hidden. 
+Ethical Impact 
+9. Ethics increase public trust. 
+10. Ethical systems work smoothly. 
+Importance of Data Quality 
+Data quality refers to how neat, clean, and attractive data looks when fed to machine learning 
+models. 
+Effect of Noise 
+5. Noise makes data sound confusing. 
+6. Model listens to wrong signals. 
+Effect of Missing Values 
+7. Missing values create empty thinking spaces. 
+8. Model guesses missing data automatically. 
+Effect of Inconsistencies 
+9. Inconsistent data gives multiple meanings. 
+10. Model struggles to choose correct interpretation. 
+Learning Outcomes 
+14. Poor data reduces learning speed. 
+15. Clean data increases prediction confidence. 
+16. Model performance depends on data behavior. 
+Quality data keeps model stable 
+. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. 
+Explain issues such as fairness, transparency, accountability, and privacy. 
+Ethical Considerations 
+Ethics in machine learning means teaching machines good manners and responsible 
+behavior. 
+Fairness 
+3. Fairness means model treats data equally. 
+4. No data should feel ignored. 
+Transparency 
+5. Transparent models explain decisions clearly. 
+6. Hidden logic creates confusion. 
+Accountability 
+7. Someone should be blamed for wrong predictions. 
+8. Responsibility improves seriousness. 
+Privacy 
+9. Privacy protects data identity. 
+10. Secret data should remain hidden. 
+Ethical Impact 
+11. Ethics increase public trust. 
+12. Ethical systems work smoothly. 

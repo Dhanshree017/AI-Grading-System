@@ -1,0 +1,204 @@
+ID-T011 
+Name : puneet hegde Roll no: 30 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-3. Describe different types of learning algorithms in ML 
+Machine Learning algorithms are categorized based on how they learn from data and 
+the kind of feedback they receive. 
+Types: 
+1. Supervised Learning – Learns from labeled data to predict outcomes (e.g., 
+regression, classification). 
+2. Unsupervised Learning – Finds hidden structures in unlabeled data (e.g., 
+clustering, association). 
+3. Semi-Supervised Learning – Uses a small labeled dataset with large unlabeled 
+data. 
+4. Reinforcement Learning – Learns by interacting with the environment via 
+rewards. 
+5. Self-Supervised Learning – Model generates its own labels (common in deep 
+learning). 
+6. Online Learning – Continuously updates the model as new data streams in. 
+7. Batch Learning – Trains the model using a fixed dataset. 
+8. Deep Learning – Uses multi-layer neural networks for complex 
+representations. 
+9. Transfer Learning – Reuses knowledge from one domain to another. 
+These learning paradigms collectively enable machines to solve diverse real-world 
+problems like recommendation, forecasting, and image recognition. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, and F1
+score. 
+Definition: 
+Evaluation metrics are used to measure the performance and effectiveness of a 
+machine learning model. They help compare models and identify their strengths and 
+weaknesses, especially in classification problems. 
+Metrics: 
+1. Accuracy – Ratio of correct predictions to total predictions. 
+Accuracy=TP+TNTP+TN+FP+FNAccuracy = \frac{TP + TN}{TP + TN + FP + 
+FN}Accuracy=TP+TN+FP+FNTP+TN 
+2. Precision – Proportion of correctly predicted positives among all predicted 
+positives. 
+Precision=TPTP+FPPrecision = \frac{TP}{TP + FP}Precision=TP+FPTP 
+3. Recall (Sensitivity) – Measures how many actual positives were correctly 
+predicted. 
+Recall=TPTP+FNRecall = \frac{TP}{TP + FN}Recall=TP+FNTP 
+4. F1-Score – Harmonic mean of precision and recall. 
+F1=2×Precision×RecallPrecision+RecallF1 = 2 \times \frac{Precision \times 
+Recall}{Precision + Recall}F1=2×Precision+RecallPrecision×Recall 
+5. Confusion Matrix – Tabular visualization of true vs. predicted classes. 
+6. AUC–ROC Curve – Evaluates model’s ability to distinguish between classes. 
+7. Specificity – Measures how well negatives are identified. 
+8. Balanced Accuracy – Useful for imbalanced datasets. 
+9. Macro and Micro Average – Used for multi-class evaluation. 
+A-5. Explain feature selection and dimensionality reduction. 
+Feature Selection: 
+Feature selection is the process of identifying and choosing the most relevant input 
+variables that contribute significantly to model prediction. It improves performance, 
+reduces overfitting, and speeds up computation. 
+Dimensionality Reduction: 
+Dimensionality reduction transforms high-dimensional data into a lower-dimensional 
+space while retaining essential information. 
+Key Points: 
+1. Reduces computational cost and training time. 
+2. Enhances model interpretability and visualization. 
+3. Prevents overfitting by removing noise and redundancy. 
+4. Methods of Feature Selection: Filter, Wrapper, Embedded. 
+5. Methods of Dimensionality Reduction: PCA, LDA, t-SNE. 
+6. PCA captures maximum variance in fewer dimensions. 
+7. Feature importance can be derived using tree-based models. 
+8. Helps manage curse of dimensionality. 
+9. Essential for big data and image processing applications. 
+B] Attempt any 8 (40 marks) 
+B-1. Discuss Naive Bayes algorithm in detail. Include assumptions, mathematical 
+formulation, and example. 
+Definition: 
+Naive Bayes is a probabilistic classifier based on Bayes’ theorem, assuming feature 
+independence. It is simple yet effective for text classification, spam filtering, and 
+sentiment analysis. 
+Mathematical Formulation: 
+P(C∣X)=P(X∣C)P(C)P(X)P(C|X) = \frac{P(X|C)P(C)}{P(X)}P(C∣X)=P(X)P(X∣C)P(C)  
+Where: 
+ CCC = class label 
+ XXX = input features 
+Assumptions & Points: 
+1. All features are conditionally independent. 
+2. Works well with categorical data. 
+3. Trains efficiently on large datasets. 
+4. Handles missing values using probabilities. 
+5. Gaussian, Bernoulli, and Multinomial variants exist. 
+6. Performs well with text and document classification. 
+7. Despite independence assumption, gives good results. 
+8. Example: Email spam classification. 
+9. High bias, low variance model — suitable for quick decisions. 
+B-2. Explain the working of Artificial Neural Networks (ANNs) with architecture and 
+learning process. 
+Definition: 
+ANNs are computational models inspired by biological neurons. They consist of 
+interconnected nodes organized in layers to process information and learn complex 
+relationships. 
+Architecture: 
+1. Input Layer – Receives raw data. 
+2. Hidden Layers – Perform transformations using activation functions. 
+3. Output Layer – Produces predictions. 
+Learning Process: 
+1. Forward propagation computes predictions. 
+2. Error calculated using loss function. 
+3. Backpropagation adjusts weights to minimize loss. 
+4. Activation functions (ReLU, Sigmoid) introduce non-linearity. 
+5. Gradient Descent optimizes weights iteratively. 
+6. Regularization prevents overfitting. 
+7. Dropout used to improve generalization. 
+8. Used in vision, NLP, and robotics. 
+9. Example: Handwritten digit recognition (MNIST). 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest with 
+examples. 
+Definition: 
+Ensemble methods combine multiple models to improve prediction accuracy and 
+robustness. 
+Types: 
+1. Bagging (Bootstrap Aggregating): 
+o Trains models on random subsets of data. 
+o Averages their outputs. 
+o Example: Random Forest. 
+2. Boosting: 
+o Sequentially trains weak learners. 
+o Focuses on misclassified examples. 
+o Example: AdaBoost, Gradient Boosting. 
+3. Random Forest: 
+o Collection of decision trees built using bagging. 
+o Reduces overfitting and improves stability. 
+Advantages: 
+4. Reduces bias and variance. 
+5. Performs well on complex datasets. 
+6. Enhances generalization. 
+7. Applicable to both regression and classification. 
+8. Used in finance, healthcare, and e-commerce. 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and Hierarchical 
+Clustering. 
+Unsupervised Learning: 
+Unsupervised learning finds hidden patterns in unlabeled data. 
+K-Means Clustering: 
+1. Divides data into K clusters. 
+2. Each cluster has a centroid representing its mean. 
+3. Algorithm minimizes intra-cluster variance. 
+4. Steps: Initialize K centroids → Assign points → Update centroids → Repeat. 
+5. Example: Customer segmentation. 
+Hierarchical Clustering: 
+1. Builds a hierarchy of clusters. 
+2. Two types: Agglomerative (bottom-up) and Divisive (top-down). 
+3. Dendrogram shows merging/splitting of clusters. 
+4. No need to specify K beforehand. 
+B-5. Example: Document grouping. 
+Comparison: 
+K-Means is efficient; Hierarchical gives structural relationships between clusters. 
+5. Explain how Machine Learning is used in medical diagnosis or fraud detection. 
+Applications: 
+1. Medical Diagnosis: 
+o ML predicts diseases from patient records. 
+o CNNs detect tumors from medical images. 
+o Models like Decision Trees help classify symptoms. 
+o Early detection improves treatment outcomes. 
+2. Fraud Detection: 
+o ML models detect abnormal transaction patterns. 
+o Anomaly detection algorithms identify outliers. 
+o Supervised learning classifies legitimate vs. fraudulent activity. 
+o Used in banking, insurance, and e-commerce. 
+Key Benefits: 
+3. Reduces human error. 
+4. Improves efficiency and accuracy. 
+5. Learns from large-scale data automatically. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. Explain each step 
+involved and discuss how PCA helps in dimensionality reduction. 
+Definition: 
+PCA is a linear dimensionality reduction technique that transforms data into new 
+coordinates (principal components) maximizing variance while reducing redundancy. 
+Steps: 
+1. Standardize the dataset. 
+2. Compute the covariance matrix. 
+3. Calculate eigenvalues and eigenvectors. 
+4. Sort eigenvectors by eigenvalues in descending order. 
+5. Select top-k components. 
+6. Project data onto new feature subspace. 
+7. Reconstruct reduced dataset. 
+8. Visualize principal components. 
+9. Reduces storage, noise, and computational cost. 
+Applications: Image compression, data visualization, and preprocessing for ML 
+models. 
+B-9. Explain the concept of Reinforcement Learning (RL). Discuss Markov Decision 
+Processes (MDP), Q-learning, and the exploration–exploitation dilemma. 
+Definition: 
+Reinforcement Learning is a goal-oriented learning paradigm where agents learn 
+optimal actions through interaction and feedback. 
+Markov Decision Process (MDP): 
+1. Framework for modeling RL problems. 
+2. Defined by states (S), actions (A), transition probabilities (P), and rewards (R). 
+3. Agent aims to maximize long-term cumulative reward. 
+Q-Learning: 
+1. Off-policy RL algorithm. 
+2. Updates Q-values using Bellman Equation: 
+Q(s,a)=Q(s,a)+α[r+γmax⁡Q(s′,a′)−Q(s,a)]Q(s,a) = Q(s,a) + \alpha [r + \gamma 
+\max Q(s',a') - Q(s,a)]Q(s,a)=Q(s,a)+α[r+γmaxQ(s′,a′)−Q(s,a)]  
+3. Learns optimal action-value function without model knowledge. 
+Exploration–Exploitation Dilemma: 
+1. Exploration – Try new actions to discover better rewards. 
+2. Exploitation – Use known actions for best results. 
+3. Balance ensures effective learning. 
+Applications: Robotics, autonomous vehicles, and gaming (e.g., AlphaGo). 

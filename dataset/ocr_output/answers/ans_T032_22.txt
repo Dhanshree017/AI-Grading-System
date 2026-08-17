@@ -1,0 +1,104 @@
+ID-T032 
+Name: Khushi Tiwari Roll no: 22 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (Each 5 Marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+Machine Learning Lifecycle 
+1. Problem Definition 
+The first step is to clearly define the problem that needs to be solved using machine 
+learning. This includes identifying objectives, expected outputs, and constraints. 
+2. Data Collection 
+Relevant data is collected from multiple sources such as databases, sensors, user 
+interactions, or logs. The quality and quantity of data directly impact model 
+performance. 
+3. Data Preprocessing 
+Raw data is cleaned by handling missing values, removing noise, correcting 
+inconsistencies, and transforming data into usable format. 
+4. Feature Engineering 
+Important features are selected or created to represent the problem effectively. Good 
+feature design improves learning efficiency and accuracy. 
+5. Model Training and Evaluation 
+Suitable algorithms are trained on prepared data and evaluated using appropriate 
+performance measures to check generalization ability. 
+6. Deployment and Maintenance 
+The trained model is deployed into real systems. Continuous monitoring, retraining, 
+and updating are required to maintain performance over time. 
+A-b. Discuss the importance of feature representation and how it influences learning 
+outcomes in ML systems. 
+Importance of Feature Representation 
+1. Feature representation defines how raw data is converted into numerical or structured 
+form that ML models can understand. 
+2. Well-designed features help models learn meaningful patterns efficiently. 
+3. Poor feature representation can lead to low accuracy even when advanced algorithms 
+are used. 
+4. Feature representation affects model complexity and training time. 
+5. Good features improve model generalization on unseen data. 
+6. Feature representation often has greater impact on results than the choice of algorithm. 
+A-d. Describe how machine learning models handle noisy and incomplete data during 
+training. 
+Handling Noisy and Incomplete Data 
+1. Data cleaning techniques are used to remove or reduce noise in datasets. 
+2. Missing values are handled using deletion or estimation methods. 
+3. Robust algorithms reduce sensitivity to noisy data. 
+4. Feature selection removes irrelevant or noisy attributes. 
+5. Data validation techniques detect unreliable patterns. 
+6. Proper preprocessing improves learning stability and accuracy. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Role of Evaluation Strategies 
+1. Evaluation strategies measure how well a model performs on unseen data. 
+2. They help detect overfitting and underfitting problems. 
+3. Evaluation allows comparison between different models. 
+4. Robust evaluation ensures consistent performance across datasets. 
+5. Performance analysis helps refine models before deployment. 
+6. Proper evaluation increases trust in ML system predictions. 
+A-f. Discuss the ethical challenges associated with large-scale deployment of machine 
+learning systems. 
+Ethical Challenges in ML Deployment 
+1. Bias in data can lead to unfair or discriminatory decisions. 
+2. Privacy concerns arise due to large-scale data collection. 
+3. Lack of transparency makes model decisions hard to explain. 
+4. Accountability for errors is often unclear. 
+5. Misuse of ML systems can cause social harm. 
+6. Ethical guidelines are required to ensure responsible deployment. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Adaptation to Changing Data 
+1. Data patterns may change due to user behavior or environment. 
+2. Performance monitoring helps detect accuracy degradation. 
+3. Retraining models with new data improves relevance. 
+4. Feedback from users supports system improvement. 
+5. Adaptive learning techniques update models gradually. 
+6. Continuous learning ensures long-term effectiveness. 
+B] Attempt All (Each 2 Marks) 
+(Some answers intentionally incorrect) 
+B-a. What is model training in machine learning? 
+1. Model training means storing all input data permanently. 
+2. It is the process where model memorizes outputs only. 
+3. Training happens after deployment of model. 
+4. It does not require labeled data. 
+5. Model training is optional in ML systems. 
+B-b. Define feature selection. 
+1. Feature selection means randomly choosing all features. 
+2. It increases number of features in dataset. 
+3. It removes unnecessary attributes from data. 
+4. Feature selection improves learning efficiency. 
+5. It always guarantees 100% accuracy. 
+B-c. What is meant by ground truth in ML? 
+1. Ground truth refers to incorrect labels. 
+2. It is the expected correct output for data. 
+3. Ground truth is generated by algorithm automatically. 
+4. It is used only during deployment. 
+5. It helps evaluate model predictions. 
+B-d. What is model deployment? 
+1. Model deployment means deleting the trained model. 
+2. It refers to using model in real-world applications. 
+3. Deployment occurs before training phase. 
+4. It does not require monitoring. 
+5. Deployment converts model into software service. 
+B-e. Define learning from data. 
+1. Learning from data means copying data exactly. 
+2. Machine improves performance using experience. 
+3. It does not involve pattern recognition. 
+4. Learning stops once data is collected. 
+5. It allows prediction on new inputs. 

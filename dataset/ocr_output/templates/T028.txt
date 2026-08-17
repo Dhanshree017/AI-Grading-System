@@ -1,0 +1,15 @@
+
+
+--- PAGE 1 ---
+ID — T028
+Machine Learning Examination
+Semester 1, Total marks : 25
+Internal Exam , SY-Information Technology
+Date — 12-10-2025
+A] Attempt all (each 5 marks)
+
+1. You are given a dataset with missing and inconsistent values.Explain the steps you would follow to clean and prepare the data for a machine learning model.
+2. A trained ML model is giving inaccurate predictions on new data.Describe the steps you would take to analyze and improve the model’s performance.
+3. You are asked to choose an ML algorithm for a new problem.Explain the factors you would consider before selecting the algorithm.
+4. After deployment, an ML model’s performance starts degrading over time.Explain how you would identify the cause and what actions you would take.
+5. You need to evaluate and compare two machine learning models.Explain how you would decide which model is better without using mathematicalmetrics.

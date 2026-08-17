@@ -1,0 +1,76 @@
+ID-T029 
+Name: Sachin Singh Roll no: 13 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-b. Describe the role of data representation in machine learning. Explain how different ways of 
+representing data can affect learning outcomes. 
+Data representation is the process of converting raw information (like text, images, or sound) into a 
+numerical format that a computer can process. In ML, this is often called "feature engineering." 
+ Role and Impact: The way you represent data can make a problem either very easy or very hard for 
+the machine to solve. 
+o Feature Choice: If you represent a "student" by their height, the model cannot predict their 
+grades. If you represent them by "study hours," the outcome improves. 
+o Encoding: Changing categorical data (like "Red/Blue") into numbers can be done in different 
+ways. Some methods help the model understand that "Light Blue" is similar to "Dark Blue," 
+while other methods treat them as completely different. 
+o Clarity: A good representation highlights the "signal" and hides the "noise," leading to faster 
+training and higher accuracy. 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues related to data 
+size, model complexity, infrastructure, and maintenance. 
+Scaling involves moving a model from a small test environment to a massive production system that serves 
+many users. 
+ Data Size: When data grows to millions of rows, it won't fit on one computer. You need distributed 
+databases and specialized tools like "Big Data" frameworks to manage it. 
+ Model Complexity: Larger, more accurate models require massive amounts of "processing power" 
+(CPUs/GPUs). This makes them expensive and sometimes slow to give answers to users. 
+ Infrastructure: You need a strong foundation of servers and cloud services that can handle "spikes" 
+in traffic without crashing. 
+ Maintenance: Models decay over time. As human behavior changes, the model's accuracy drops. 
+Engineers must constantly monitor the system and "retrain" the model with fresh data to keep it 
+useful. 
+A-d. Explain the concept of transfer of knowledge in machine learning. Discuss how previously learned 
+information can improve learning in new tasks. 
+Transfer of knowledge, or "Transfer Learning," is a technique where a model developed for one task is 
+reused as the starting point for a second, related task. 
+ How it improves learning: 
+o Saves Effort: Instead of training a model from scratch (starting with zero knowledge), you 
+start with a model that already knows basic patterns. For example, a model that already 
+knows how to recognize "shapes and textures" can quickly learn to identify "medical X-rays." 
+o Works with Less Data: Since the model is already "smart," you don't need a huge dataset for 
+the new task to get good results. 
+o Efficiency: It reduces the time and money spent on computing power because the model 
+converges on the right answer much faster. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain tasks related to 
+monitoring, updating, documentation, and ethical compliance. 
+The job of an ML engineer does not end at deployment; they must ensure the model remains healthy and fair 
+in the real world. 
+ Monitoring: They track the model’s performance daily. If the accuracy drops or the model starts 
+taking too long to respond, the engineer must investigate the cause. 
+ Updating: Real-world data changes constantly. The engineer is responsible for retraining the model 
+with new data so its predictions stay relevant. 
+ Documentation: They must keep detailed records of how the model was built, what data was used, 
+and its known limitations so that other team members can maintain it. 
+ Ethical Compliance: Engineers must check the model for "bias." They ensure the AI is treating all 
+groups of people fairly and that it follows data privacy laws. 
+B] Attempt All ( 2 marks each ) 
+B-a. What is model generalization in machine learning? Generalization is the model's ability to perform 
+well and give correct answers on new data that it never saw during its training phase. 
+B-b. Define training dataset. A training dataset is the specific collection of examples used to teach the 
+algorithm how to find patterns and make predictions. 
+B-c. What is unsupervised learning? A type of learning where the computer is given data without any labels 
+or answers; it must find its own groups or structures based on similarities. 
+B-d. What do you mean by features in ML? Features are the individual characteristics or "clues" used as 
+inputs for the model, such as the "mileage" or "engine size" of a car. 
+B-e. What is a machine learning algorithm? A machine learning algorithm is a mathematical procedure or 
+set of rules that processes data to create a predictive model. 
+B-f. Define overfitting. Overfitting occurs when a model learns the training data and its noise too perfectly, 
+causing it to fail when it encounters new, different data. 
+B-g. What is data preprocessing? Preprocessing is the step where raw data is cleaned and organized (fixing 
+errors, removing duplicates) before being used by the algorithm. 
+B-h. What is a prediction in machine learning? A prediction is the output or "guess" generated by a trained 
+model when it is given a new set of input data. 
+B-i. Define model evaluation. Model evaluation is the process of testing a model's performance using metrics 
+like accuracy to decide if it is ready for real-world use. 
+B-j. What is learning from experience in ML? It is the core concept where a system's performance at a task 
+improves over time as it is exposed to more data and examples. 

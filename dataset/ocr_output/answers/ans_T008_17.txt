@@ -1,0 +1,267 @@
+ID-T008 
+Name : Prithvi rajbhar Roll no: 17 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each 2 Marks) 
+1-a) Write about Inductive Bias 
+Inductive bias is something like the assumptions that a machine learning 
+algorithm uses to make guesses about new data. It is important because 
+without these assumptions the machine cannot predict anything properly for 
+new data that it hasn’t seen before. Basically, it tells the machine which 
+rules or patterns to prefer when there are many possibilities. 
+1. Inductive bias helps the machine to generalize from the data it has 
+already seen, but sometimes it can make wrong guesses if the 
+assumption is not correct. 
+2. Different algorithms have different kinds of bias. For example, decision 
+trees prefer shorter rules and simple splits. 
+3. It helps the machine to decide which hypothesis or model to select 
+when multiple fit the training data. 
+4. Bias makes learning faster because the machine doesn’t need to check 
+every possible rule or pattern. 
+5. If the bias is not correct, the machine can make repeated mistakes for 
+new inputs. 
+6. Inductive bias is mostly hidden; the user may not see it directly in the 
+algorithm. 
+7. It is necessary for the machine to predict things rather than memorize 
+the training data only. 
+8. The bias can sometimes cause overfitting or underfitting depending on 
+how strong it is. 
+9. Without inductive bias, learning would be very slow and often not 
+possible because the search space is too big. 
+1-e) What is Lazy Learning 
+Lazy learning is the opposite of eager learning. The machine does not learn a 
+full model in advance; instead it waits until a query comes, and then it looks 
+at the data and decides the answer. 
+1. The machine does not build a model at the start. 
+2. Example: K-Nearest Neighbors (KNN) waits until query to look at 
+nearest neighbors. 
+3. Lazy learning can add new data anytime without retraining. 
+4. Prediction is slow if the dataset is large because it has to compute on 
+the fly. 
+5. Noisy data can affect the results more in lazy learning. 
+6. Works better for small datasets or when data changes frequently. 
+7. Memory is needed to store all the training data. 
+8. It is flexible but slower in response than eager learning. 
+9. Like a student who waits for the teacher question and then searches 
+notes to answer. 
+1-f) Define Genetic Algorithm 
+Genetic algorithms are inspired by nature and evolution. The machine selects 
+the best solutions, combines them, and mutates them to get better 
+solutions over generations. 
+1. Selection chooses the best solutions to continue. 
+2. Crossover combines parts of two solutions to make a new solution. 
+3. Mutation adds random changes to explore new possibilities. 
+4. A fitness function is used to measure how good a solution is. 
+5. Each generation is expected to produce better solutions than the 
+previous one. 
+6. Genetic algorithms are used in optimization problems and scheduling 
+tasks. 
+7. They may be slow if the problem is very big. 
+8. Sometimes they get stuck in local optima and do not find the best 
+solution. 
+9. Commonly used in AI for complex problems where other methods are 
+slow. 
+1-g) Discuss Dynamic Programming 
+Dynamic programming is a method to solve problems by breaking them into 
+smaller subproblems, solving them, and storing their solutions to avoid 
+repeated computation. 
+1. The big problem is divided into smaller overlapping subproblems. 
+2. The answers of subproblems are stored in a table for reuse. 
+3. Example: Fibonacci sequence calculation, shortest path problems. 
+4. Bottom-up approach solves smaller problems first. 
+5. Top-down approach uses recursion with memoization. 
+6. It is faster than naive recursive methods. 
+7. Dynamic programming is widely used in optimization tasks. 
+8. For very large problems, memory usage can be high. 
+9. It reduces computation time but requires careful storage of 
+intermediate results. 
+1-h) Define Explanation-Based Learning 
+Explanation-Based Learning (EBL) is when the machine learns a general rule 
+by explaining why a specific example works, instead of just memorizing the 
+example. 
+1. Machine generalizes from a single example. 
+2. It uses domain knowledge to create rules. 
+3. Less number of examples needed compared to normal learning. 
+4. Example: learning a chess move by understanding the strategy behind it. 
+5. Fast learning if the domain knowledge is correct. 
+6. Can fail if knowledge is incomplete or wrong. 
+7. Helps machine reason logically. 
+8. The machine can create generalized rules applicable to new situations. 
+9. Often used in expert systems. 
+1-i) Write about Control Knowledge 
+Control knowledge is knowledge that guides the machine on how to search or 
+act in solving problems. It helps to make decisions efficiently. 
+1. It helps to guide the actions of the machine. 
+2. Reduces unnecessary computation by prioritizing choices. 
+3. Example: heuristic function in A* search. 
+4. Control knowledge can be learned or manually programmed. 
+5. Important in large problem spaces to save time. 
+6. May not generalize to all domains if too specific. 
+7. Helps reach goals faster. 
+8. Improves performance of intelligent agents. 
+9. Can work together with learning algorithms for adaptive search. 
+1-j) Define Precision, Recall, and F1 Score 
+Precision, recall, and F1 score are metrics used to evaluate classification 
+models. 
+1. Precision measures how many predicted positives are correct. 
+2. Recall measures how many actual positives were correctly predicted. 
+3. F1 score is the harmonic mean of precision and recall. 
+4. High precision means less false positives. 
+5. High recall means less false negatives. 
+6. F1 score balances precision and recall. 
+7. Used in spam detection, classification tasks. 
+8. Helps compare model performance beyond accuracy. 
+9. Provides insight when data is imbalanced. 
+2] Attempt Any 6 (Marks 30) 
+2-a) Explain Decision Tree in Detail, Give Example 
+Decision tree is a machine learning model that predicts output by following a 
+tree-like structure. The root node represents the most important feature, 
+branches represent decisions, and leaf nodes represent the outcome. Decision 
+trees are easy to understand and interpret because the path from root to 
+leaf explains the decision. 
+1. Root node contains the main feature that splits the data first. 
+2. Branches represent decisions or possible values of the feature. 
+3. Leaf nodes represent the predicted output or class label. 
+4. Example: deciding whether to play tennis based on weather, humidity, 
+and wind. 
+5. Splitting criteria like information gain or Gini index determine branch 
+decisions. 
+6. Decision trees are easy to visualize and interpret. 
+7. Overfitting can occur if the tree is very deep. 
+8. Can handle both numerical and categorical data. 
+9. Algorithms like ID3, C4.5, and CART are used to construct trees. 
+2-b) Describe K-Nearest Neighbors 
+KNN is a machine learning algorithm that classifies a new data point based 
+on the majority class of its nearest neighbors. It does not build a model 
+upfront and stores all training data. 
+1. KNN stores all training data without building a model. 
+2. Uses distance metrics like Euclidean or Manhattan distance to find 
+neighbors. 
+3. Majority voting among k nearest neighbors decides the class. 
+4. Example: classifying fruits based on color and size. 
+5. No training phase is needed. 
+6. Works well for small datasets but slow for large datasets. 
+7. Sensitive to noisy data and outliers. 
+8. Choosing the right value of k is very important. 
+9. Features should be scaled for proper results. 
+2-d) Differentiate Classification & Regression 
+Classification 
+Predicts class labels 
+Example: spam yes/no 
+Regression 
+Predicts continuous numeric value 
+Example: house price 
+Accuracy, precision, recall used MSE, RMSE used 
+Algorithms: SVM, Decision Tree Algorithms: Linear, Polynomial regression 
+Output is discrete 
+Probability may be used 
+Goal: classify correctly 
+Handles categories 
+Example: email classification 
+Output is continuous 
+Exact number predicted 
+Goal: predict closely 
+Handles numeric values 
+Example: temperature prediction 
+2-f) Compare AI, ML, and Deep Learning 
+AI 
+Broad field for intelligent 
+machines 
+Includes reasoning, planning, 
+decision making 
+Example: chess AI 
+Knowledge can be manually 
+coded 
+ML 
+Learns patterns from 
+data 
+Statistical/data-driven 
+methods 
+Example: spam filter 
+DL 
+Multi-layer neural 
+networks 
+Learns features 
+automatically 
+Example: image 
+recognition 
+Requires training data Requires large datasets 
+May not always learn 
+Learns from examples 
+Learns complex 
+hierarchical features 
+AI 
+ML 
+DL 
+Features may be hand
+coded 
+Goal: intelligent behavior 
+Can exist without ML 
+Works for many domains 
+Some features hand
+coded 
+Goal: predict/classify 
+Needs data to learn 
+Features learned 
+automatically 
+Goal: extract patterns 
+Needs deep network 
+Works for specific tasks Works for vision/speech 
+tasks 
+2-g) Differentiate CNN & RNN 
+CNN 
+Mainly used for images 
+RNN 
+Used for sequences like text/audio 
+Convolution + pooling layers Recurrent units with memory 
+Inputs independent 
+Inputs depend on previous steps 
+Example: image recognition Example: sentiment analysis 
+Faster training 
+Learns spatial features 
+Slower training due to sequential steps 
+Learns temporal patterns 
+Filters learn local patterns Hidden states carry past info 
+Feedforward 
+Works on images/video 
+Recurrent loops 
+Works on text/audio 
+3] Attempt All 
+3-a) Define Search Algorithms in AI 
+Search algorithms are methods to explore problem spaces and find solutions 
+efficiently. They guide the machine to choose paths among many possible 
+options. 
+1. There can be many solutions in a problem. 
+2. Uninformed search like BFS and DFS does not use extra information. 
+3. Informed search like A* or greedy uses heuristics. 
+4. BFS explores level by level and guarantees shortest path. 
+5. DFS explores deeply first but may not find shortest path. 
+6. A* combines path cost and heuristic for efficient search. 
+7. Used in robotics, games, and path planning. 
+8. Proper search reduces computation time. 
+9. Large problems may make search inefficient. 
+3-b) What is Intelligent Agent 
+An intelligent agent perceives the environment, reasons about it, and acts to 
+achieve goals. It acts autonomously and adapts to changes in its environment. 
+1. Agents perceive using sensors. 
+2. Act using actuators. 
+3. Agent function maps percept history to actions. 
+4. Types: simple reflex, model-based, goal-based, utility-based. 
+5. Simple reflex agents react to current percept. 
+6. Model-based agents maintain internal state. 
+7. Goal-based agents choose actions to reach goals. 
+8. Utility-based agents maximize performance measure. 
+9. Examples: robots, self-driving cars, chatbots. 
+3-c) Write 5 Applications of AI 
+AI is used to automate tasks, improve decision-making, and solve complex 
+problems across industries. 
+1. Self-driving cars use AI for navigation and obstacle detection. 
+2. Medical diagnosis predicts diseases and treatment options. 
+3. Virtual assistants like Siri or Alexa interact with humans. 
+4. Recommendation systems suggest products or content 
+(Amazon/Netflix). 
+5. Fraud detection prevents unauthorized transactions. 
+6. Gaming AI controls intelligent NPCs. 
+7. Image and speech recognition automate various tasks. 
+8. Industrial automation improves efficiency. 
+9. Agriculture AI monitors crops and predicts yields. 

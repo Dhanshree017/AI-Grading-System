@@ -1,0 +1,195 @@
+ID-T002 
+Name : Anushka Chakraborty   Roll no: M00117 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine Learning (ML) is the new computer way for system to learn. It is about data, all 
+the data. Computer gets experience (E) and then it does the task (T) better and better. 
+This makes performance (P) high. 
+1. ML is the way to make smart decisions. 
+2. It is not coded, it learns from statistics. 
+3. Data is the food for the learning machine. 
+4. AI uses ML to be more smarter. 
+5. ML is just good math hidden in the computer. 
+A-2. What are the different types of machine learning? 
+The types of machine learning they are three big ones. It depends on what data you are 
+getting or how the computer is learning. 
+1. Supervised Learning: Data is fully labeled, it has the correct answers already in the 
+spreadsheet. It is like teacher teaching the computer. 
+2. Unsupervised Learning: Data is messy, it has no labels. The computer must find the 
+groups or the secret structure by itself. 
+3. Reinforcement Learning: This is like a game, the computer gets rewards for doing 
+good actions and penalties for bad actions. 
+4. There is also Semi-Supervised which is a mix of some labeled and much unlabeled data. 
+5. There is Transfer Learning too, it is when you use another model's learning. 
+A-3. What is the difference between supervised, unsupervised, and reinforcement learning? 
+They are different in how the data is given to the machine. Very big difference. 
+1. Supervised: You have a label. You teach it. For predicting things like price or category. 
+2. Unsupervised: You have no label. You let it explore. For finding groups like customer 
+segments. 
+3. Reinforcement: You have no dataset, you have an environment. For decision making 
+like driving a car. 
+4. Supervised is the easiest one to understand. 
+5. Unsupervised is the hardest one because it is always guessing. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff it is a problem you have when you build a model. You cannot 
+fix both errors at the same time. 
+1. Bias is error when model is too dumb. It is called underfitting. 
+2. Variance is error when model is too smart. It is called overfitting. 
+3. If you reduce Bias, the Variance will go up. This is the tradeoff. 
+4. You must find the middle spot where the total error is minimum. 
+5. The total error is the sum of all errors. 
+B) Any 4 out of following (20 Marks) 
+B-3. What is a decision tree, and how is it pruned? 
+Decision Tree (DT) it is a model that uses simple rules like a flowchart to split the data 
+until each small group is pure or almost pure. It is very easy to understand for a human. 
+1. The tree it starts at the root node and it picks the best question (split) that makes 
+the data the cleanest at the next step. It is like a purity contest. 
+2. The best split is chosen by maximizing the Information Gain (IG). The IG it measures 
+how much the chaos (Entropy) is reduced after the split happens. This is the smart 
+part of the algorithm. 
+3. The main problem is that the tree grows too big and gets too specific to the training 
+data noise. This is the high variance problem and it is called overfitting. 
+4. Pruning it is the technique to cut the useless branches from the tree so it is not so 
+overfit. Pruning it reduces the model complexity and makes it more general. 
+5. Pre-pruning is when you stop the tree growing before it is finished, by setting limits 
+like max depth or minimum samples in the leaf. You stop the growth early. 
+6. Post-pruning is when you let the tree grow completely first, and then you look at 
+the validation set and you cut back the parts that don't help the score. This is 
+usually better than pre-pruning. 
+7. Pruning it finds the balance by making the tree a bit dumber (higher bias) but much 
+more reliable (lower variance). Balance is everything. 
+8. DTs are very fast for training and predicting, but they are not stable because one 
+change in data can change the whole tree. That is why we use Random Forest. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a very good classifier that draws the best line 
+(hyperplane) to separate the two classes in the data. It is all about the margin. 
+1. The main idea it is to find the line that has the maximum margin or the largest 
+street between the two different classes of data points. Bigger street is better 
+generalization. 
+2. The data points that are closest to this largest street they are called Support Vectors 
+(SVs). They are the only points that matter for the model. All other points are 
+ignored. 
+3. Because it only cares about the SVs, the model it is robust to points that are far 
+away (outliers). It is also very efficient because it only stores the SVs and not all 
+the data. 
+4. For data that is not a straight line, the Kernel Trick is used to magically separate 
+it. The Kernel Trick it transforms the data into a higher dimension where the 
+separation is suddenly linear. 
+5. The Kernel Trick it is actually a math shortcut that avoids the actual transformation, 
+saving huge computation time. The RBF kernel is the most popular one for complex 
+separation. 
+6. When the data is messy, the Soft Margin it is used. This allows some errors and 
+some points to cross the street or be in the margin, but it gives better results on 
+the test data. 
+7. SVM it is a complex model but it has a guaranteed optimal solution because the 
+optimization is convex. This is better than models that just find a local minimum. 
+8. SVM it works best when the number of features is very high and the number of 
+samples is not huge, like in biology data or text data. 
+B-6. What are kernels in SVM? 
+Kernels in Support Vector Machine (SVM) they are special functions that make the SVM 
+work on non-linear data by moving it to a higher dimension without actually doing the work. 
+1. The Kernel Trick is the big idea. It lets the linear classifier (SVM) find a non-linear 
+boundary in the original data space. The boundary it can be curvy now. 
+2. The problem is that most real data you cannot separate it with a straight line. You 
+need a curvy line or a circle or something else. 
+3. The Kernel function it calculates the similarity between two data points as if they 
+were already in that high, invisible dimension. It is a projection shortcut. 
+4. This trick it saves time and memory because it avoids the explicit, expensive 
+transformation of all the data points to the higher space. Very smart idea. 
+5. The Radial Basis Function (RBF) kernel it is the best and most popular one. It can 
+handle very complex data that is mixed up a lot. 
+6. The Polynomial kernel it is another type that calculates the dot product using a 
+polynomial function. It is used for simpler curvy data. 
+7. Kernels are very important because they make SVM powerful. Without kernels, SVM 
+is just a simple line drawer and not very useful for most applications. 
+8. The choice of the right kernel it is a hyperparameter, so you must try many kernels 
+and pick the one that gives the best score on the validation set. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a classification model that uses probability theory. It is very simple 
+and very fast for basic classification. 
+1. It is based on Bayes' Theorem which calculates the probability of a class being true 
+given the input features. It is all about probability. 
+2. The naïve part is the assumption that all the features are independent of each other, 
+given the class. For example, the color of a car is independent of the engine size. 
+3. This naïve assumption it makes the math extremely simple, so the model it can be 
+trained in linear time, which is super fast for computers. 
+4. The model training it is only calculating counts and frequencies of the features in the 
+training data. No complex optimization like Gradient Descent is needed. 
+5. NB it is very popular for text classification because it handles a huge number of 
+features (words) well. Like spam filtering or sentiment analysis. 
+6. There are different variants like Multinomial NB (for text count data) and Gaussian 
+NB (for continuous data). You must choose the right variant. 
+7. The model it does not work well when the features are strongly correlated because 
+it violates the independence assumption. 
+8. NB it is a great baseline model to compare all other models against because it is so 
+fast and gives a decent prediction score. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are two totally different models 
+that only share the letter k. They are not similar at all. 
+1. Learning Type: KNN it is a Supervised Learning model. It needs labeled data to predict 
+a category. k-Means it is an Unsupervised Learning model. It only needs unlabeled 
+data to find groups. 
+2. Meaning of k: In KNN, the $k$ it is the number of neighbors that you use to vote 
+for the new point's class. In k-Means, the $k$ it is the total number of clusters that 
+you want the algorithm to find. 
+3. Training: KNN it is a lazy learner. It does not train anything; it just stores all the 
+data. k-Means it is an active learner. It iteratively moves the cluster centers during 
+the training phase. 
+4. Prediction: KNN predicts a new point by calculating the distance to all the stored 
+points and taking the majority vote. k-Means it just groups the data and does not 
+make a prediction for a new point in the same way. 
+5. Output: KNN outputs a class label (a prediction). k-Means outputs $k$ centroid 
+locations and cluster assignments for the old data. 
+6. Distance Reliance: Both rely on distance metrics (like Euclidean distance) to work, so 
+you must scale the features before you use either model. Scaling is very important. 
+7. Curse of Dimensionality: KNN suffers badly from the curse of dimensionality when 
+there are too many features. The distance calculation becomes meaningless. 
+8. Model Use: KNN is used for classification tasks. k-Means is used for customer 
+segmentation and data compression (finding representative groups). 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is the engine of all modern machine learning. It is the optimization 
+algorithm that finds the best set of parameters (weights) that minimizes the total mistake 
+(loss function). 
+1. It is an iterative method. It starts at a random spot and it moves slowly down the 
+hill of the cost function. The goal it is to reach the bottom. 
+2. The gradient is the slope of the hill at the current point, and it tells you the 
+direction of the steepest climb. 
+3. The algorithm it moves in the opposite direction of the gradient. This is the steepest 
+descent part. It is guaranteed to go down to the valley. 
+4. The Learning Rate (LR) it is the hyperparameter that controls the size of the steps. 
+If LR is too big, it will jump over the bottom. If LR is too small, it will take forever 
+to reach the bottom. 
+5. GD it is used everywhere, in Linear Regression, in Logistic Regression, and it is the 
+backbone of training all big Neural Networks. 
+6. There are different types of GD like Stochastic GD (uses one point) and Batch GD 
+(uses all points). Mini-Batch GD is the best one because it is a compromise. 
+7. The process it continues until the step size is almost zero, which means the model 
+has found a local minimum or the global minimum. 
+8. Without Gradient Descent, the computer would have to guess the billions of weights 
+in a neural network, which is impossible. GD makes learning possible. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) they are two versions 
+of the optimization algorithm. The difference is how much data they use for one update. 
+1. BGD uses the entire training dataset to calculate the gradient and update the weights. 
+It uses all the data in one big chunk. 
+2. SGD uses only one single example (one data point) to calculate the gradient and 
+update the weights. It updates the weights for every single point. 
+3. Speed: BGD is very slow per iteration because it must process the whole dataset. 
+SGD is very fast per iteration because it only processes one point. 
+4. Path to Minimum: BGD takes a smooth, stable path to the minimum because the 
+gradient is the true average slope. SGD takes a noisy, jumpy path because the gradient 
+is highly variable based on just one point. 
+5. Convergence: BGD is guaranteed to settle exactly at the local minimum. SGD it 
+oscillates around the minimum, never settling, but it is good enough and it can escape 
+local minima. 
+6. Memory: BGD requires a lot of memory to hold the entire dataset for one update. 
+SGD requires very little memory, which is good for small computers. 
+7. Mini-Batch GD: The best version is Mini-Batch GD, which uses a small subset of the 
+data (e.g., 32 or 64 points). It balances the stability of BGD with the speed of 
+SGD. 
+8. Application: BGD is not used much anymore because data is too big. SGD and Mini
+Batch GD are the standards for all modern deep learning because they are fast and 
+memory efficient. 

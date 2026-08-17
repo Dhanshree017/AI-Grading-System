@@ -1,0 +1,69 @@
+ID-T024 
+Name: Nitin datar Roll no: 4 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised learning and unsupervised learning are two types of machine learning. Machine 
+learning is used to make machines learn from data. Supervised learning is when the data is 
+supervised means teacher is there. In this learning data has labels. The machine learn by 
+seeing answers again and again. 
+In supervised learning input and output both are given. The model see the input and output 
+many times and then remember it. This is like studying for exam by seeing question and 
+answer together. Supervised learning is used in many places. 
+Examples of supervised learning are spam email detection where email is spam or not spam, 
+predicting house price using old data, and predicting marks of student. Disease prediction is 
+also supervised learning. 
+Unsupervised learning is learning without supervision. There is no teacher. Data does not 
+have labels. The model only see data and try to understand something from it. It does 
+grouping and pattern finding. 
+Examples of unsupervised learning are customer grouping, grouping similar news, clustering 
+people, and anomaly detection. Unsupervised learning is used when we do not know 
+answers. 
+Difference is supervised learning has labels and unsupervised learning has no labels. 
+Supervised learning predict output while unsupervised learning find pattern. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is very important step in machine learning. Data preprocessing means 
+cleaning the data and making it ready for machine learning. Without preprocessing model 
+will not work properly. Real world data is very dirty and messy. 
+Data preprocessing is done before training model. It improve accuracy and reduce error. 
+Many times data preprocessing takes more time than model training. 
+Four preprocessing steps are: 
+Handling missing values is very important. Missing values happen when data is not filled. 
+We can remove missing data or fill it with mean or median. 
+Data cleaning is removing wrong data, duplicate data, and unwanted data. If data is not clean 
+model will learn wrong thing. 
+Encoding is converting text data into number data. Computer understand only numbers so 
+text must be converted. 
+Feature scaling is bringing all values to same range. It help model to train faster. 
+Data preprocessing improve model performance and accuracy. 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification and regression are machine learning problems. Classification is used when 
+output is class. Regression is used when output is number. 
+Classification problems are spam detection, disease detection, and digit classification. It 
+classify data into categories. Classification output is yes or no, spam or not spam. 
+Regression problems predict value. House price prediction is regression. Temperature 
+prediction is regression. Marks prediction is regression. 
+Classification uses accuracy and regression uses error. Both are supervised learning. 
+Classification is category and regression is number. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is a big problem in machine learning. Overfitting happens when model learn 
+training data too much. The model remember data instead of learning. Then model fail on 
+new data. 
+Overfitting happens when data is small and model is very big. Overfitting also happen when 
+model is trained too long. Noise in data also cause overfitting. 
+Causes of overfitting are: 
+ Too many features 
+ Complex model 
+ Small dataset 
+ Noise in data 
+ Too much training 
+Two techniques to reduce overfitting are: 
+Regularization is used to reduce model complexity. It reduce weight size. 
+Cross validation divide data into parts and test model many times. It help to reduce 
+overfitting. 
+Overfitting make model useless in real world. 

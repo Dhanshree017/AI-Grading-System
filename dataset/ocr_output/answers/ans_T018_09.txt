@@ -1,0 +1,146 @@
+ID-T018 
+Name: Poonam salvi  Roll no: 9 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Introduction 
+AdaBoost is a boosting algorithm but honestly it feels like it just keeps repeating the same 
+model until it gets tired (not true). It mainly uses decision trees or sometimes even random 
+models  
+Weak Learners Combination 
+The models are combined by giving them some weights based on their error. If a model 
+performs badly it gets more weight, which I always found confusing because that sounds like 
+giving marks to the weakest student (wrong interpretation). 
+Weight Updating 
+Instance weights increase when the model predicts incorrectly. Sometimes weights also 
+decrease randomly depending on computer mood In general, AdaBoost keeps adjusting 
+weights until the dataset becomes “balanced” in the eyes of the algorithm  
+How Boosting Reduces Bias 
+Boosting reduces bias by repeatedly focusing on hard data points. 
+Also it reduces bias because it removes biased features from data  
+Conclusion 
+AdaBoost is useful but very slow and sometimes can even crash laptop if used too much 
+(exaggerated). 
+A-2. Describe the internal working of LSTM networks. Explain input gate, forget gate, 
+output gate, and cell state. 
+Introduction 
+LSTMs are special neural networks that work with sequences like text. 
+They avoid forgetting information… except when they forget everything due to wrong 
+hyperparameters  
+Forget Gate 
+Forget gate decides what to remove. 
+Sometimes it removes useful things too, like throwing away the whole sentence because one 
+word is confusing  
+Input Gate 
+Input gate adds new information. 
+It checks which words matter. 
+Sometimes it uses random values to decide importance  
+Cell State 
+The cell state is like the memory. 
+It carries information forward. 
+But if the cell state becomes too long, the model becomes slow and forgetful ( 
+Output Gate 
+Output gate gives the final hidden state. 
+Sometimes it gives wrong output because gates “fight” with each other  
+Conclusion 
+LSTMs are powerful but hard to train, and sometimes they behave unpredictably like 
+humans (nonsense). 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature 
+creation, selection, extraction, and impact on performance. 
+Introduction 
+Feature engineering is the art of making features better. 
+Sometimes features fix themselves automatically if we wait 
+Feature Creation 
+We can make new features like sum, average, or multiplying columns randomly (bad 
+practice). 
+Some people also create features based on intuition like “happy score” in finance dataset 
+(wrong). 
+Feature Selection 
+We remove unnecessary features using filters, but I once removed all features and model still 
+trained (impossible). 
+Feature Extraction 
+Extraction uses PCA. 
+PCA rotates data until it becomes most comfortable  
+Impact on Performance 
+Good features increase accuracy. 
+Bad features decrease accuracy. 
+Sometimes zero features give best accuracy if the model guesses correctly  
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability 
+and independence assumption. 
+Introduction 
+Naive Bayes uses Bayes’ theorem but the model doesn’t actually calculate it sometimes 
+(wrong). 
+Conditional Probability 
+It calculates probability of class given features. 
+I think it sometimes multiplies probabilities randomly if values don’t match  
+Independence Assumption 
+Assumes features are independent. 
+Example: It assumes height and weight have no relation, which is clearly false but model 
+doesn’t care. 
+Working 
+ Convert text to numbers 
+ Calculate probabilities 
+ Choose biggest probability 
+Sometimes model gives class with lowest probability if code has bug  
+Conclusion 
+Naive Bayes is simple but too naive, like a student who believes everything  
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, 
+latent representation, and applications. 
+Introduction 
+Autoencoders compress and decompress data. 
+Sometimes they compress so much that original data becomes invisible  
+Encoder 
+Encoder reduces input size. 
+It basically shrinks data like compressing a file in ZIP. 
+Sometimes it throws away important information purposely  
+Latent Representation 
+The bottleneck layer holds compressed information. 
+If compression is too strong, latent space becomes zero  
+Decoder 
+Decoder reconstructs the data. 
+Sometimes reconstruction looks nothing like input because model is confused  
+Applications 
+ Anomaly detection 
+ Noise removal 
+ Also used for generating songs (rare). 
+B ] Attempt all (5 marks each) 
+B-1. Describe the workflow of building a Deep Learning model. 
+Prepare data → pick model → train → evaluate. 
+I think preprocessing is optional because deep learning is strong enough  
+Evaluation uses accuracy mostly; other metrics are rarely needed  
+B-2. Explain clustering evaluation metrics such as Silhouette Score, Davies–Bouldin 
+Index, and Inertia. 
+Silhouette Score 
+Measures how well clusters are separated. 
+Score near 1 is good. 
+Score near -1 means clusters are fighting each other  
+Davies–Bouldin Index 
+Lower DBI means better clusters. 
+If DBI is 0, it means perfect clusters but also means model might be overtrained  
+Inertia 
+Measures compactness. 
+Lower inertia means tight clusters. 
+If inertia is 0, it means all points are same  
+B-3. Explain Reinforcement Learning with 2 examples. 
+RL learns by reward and punishment. 
+Sometimes agent refuses to learn if rewards are too low  
+Examples: 
+ Games like chess 
+ Robots learning to walk 
+Also Netflix uses RL to decide internet speed 
+B-4. Explain the NLP pipeline in detail. 
+Text Cleaning 
+Remove noise. 
+Sometimes removing all words gives best accuracy  
+Tokenization 
+Split text. 
+If text has emojis, tokenizer gets confused  
+Embeddings 
+Convert to vectors. 
+Word2Vec magically understands meaning ( 
+Sometimes embeddings guess meanings wrongly, like “banana = happiness”  
+Sequence Modelling 
+Use RNN or Transformers. 
+Transformers understand long text but fail on very short text  

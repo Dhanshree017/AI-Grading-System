@@ -1,0 +1,131 @@
+ID-T025 
+Name: Pranjal Shirke Roll no: 14 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Preprocessing is what you do when the data is still dirty from the internet. It's like washing 
+your clothes before you wear them. 
+ Concept: Raw data is bad, it has holes, and it's too big. We have to shrink it and fix 
+the numbers so the computer doesn't get indigestion. 
+ Tasks I Remember: 
+1. Imputation: This is when you have missing values (the holes). You just fill 
+them in with the number zero, or maybe the most common number, so the 
+computer doesn't crash. 
+2. Normalization/Scaling: You make all the numbers fit into a small box, like 
+between 0 and 1. This is important so that the features are all equally important, 
+otherwise the tall numbers will shout louder than the short numbers. 
+3. Encoding: This is for the words (categorical data). You have to turn "Red," 
+"Green," and "Blue" into numbers, maybe 1, 2, and 3. 
+ Influence: If you don't preprocess, the model will be biased and very slow. If you do 
+it right, the model works faster and generalizes to all the new data it sees. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+It's a model that uses decisions, obviously. It looks like a big tree branching out. 
+ Working: It starts at the trunk (the root) and picks the best feature to split the data. It 
+keeps splitting until it can't split anymore. It uses something called Information Gain 
+or maybe the Gini Index to decide which split is the best, but I think that's just about 
+making the leaves very pure, like water. 
+ Decisions: You trace a new data point down the tree, following the "yes" and "no" 
+paths. When you hit the bottom branch, that's the final leaf node, and that node tells 
+you the answer. 
+ Advantages: It's super clear and easy to read. It's also great because you can use it for 
+numbers or words in the columns. 
+ Limitations: It easily gets tangled up and memorizes the data perfectly, which is bad 
+because then it can't handle new data (overfitting). Also, if you change one training 
+point, the whole tree might completely change, making it shaky. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+These are techniques for shrinking the columns to solve the "too many columns" problem. 
+ Feature Selection (FS): This is where you test every column and only keep the best 
+ones, like throwing out all the bad apples. The columns you keep are the original ones. 
+ Dimensionality Reduction (DR): This is a trick where you take 100 original columns 
+and smash them together to make 3 new super-columns. It makes the data much 
+smaller. PCA is the main method for this. 
+ How They Help: 
+1. Efficiency: Fewer columns mean the model is faster to train, faster to use, and 
+uses less memory. 
+2. Performance: They get rid of the useless and redundant data, which makes the 
+model focus only on the strong signals, so it doesn't overfit to noise. 
+3. Curse of Dimensionality: When you have too many dimensions, the data 
+becomes too sparse, and the algorithms don't work well. These methods fix that. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+This is the MLOps stuff—getting the model to work for the boss and keeping it alive. 
+ Deployment: You put the model in a box (a container) and host it on a server as a 
+web link (API). Other programs can send data to the link and get a prediction back in 
+milliseconds. 
+ Maintenance: Once it's live, you have to watch it forever. 
+ Performance Degradation (Model Drift): This is when the model starts to make 
+stupid predictions because the real world has changed since you trained it. New 
+customer trends or new fraudulent methods mess up the model's old rules. This is 
+Model Drift. 
+ Monitoring: You have to look at a dashboard all the time to check the model's health. 
+You look for Data Drift (if the inputs have changed) and if the model is suddenly 
+making bad predictions. 
+ Retraining: The only way to fix Model Drift is to collect all the new data and retrain 
+the model again from scratch. You do this when the monitoring system tells you the 
+old model is starting to fail. 
+B ] Attempt any 5 (each 8 marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine 
+learning can be used to analyze customer behavior, product data, and past returns to 
+reduce return rates. 
+The ML model should stop the warehouse from shipping things that will just come back 
+anyway. 
+ Data Used: The customer's history of always returning shoes that are size 9, the fact 
+that this specific shoe model has a high return rate for being "too narrow," and the 
+customer's demographics. 
+ ML Process: It makes a classification model that outputs the probability score of a 
+return right when the customer checks out. 
+ Reducing Returns: If the score is high, the website shows a personalized warning 
+saying, "Hey, we noticed you usually return this type of item for being too tight. 
+Maybe size 10?" This stops the return before the item even leaves the store. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, 
+and challenges involved. 
+The model is the security guard for the money. 
+ Data Sources: Where the transaction is happening, the dollar amount, the time, and 
+features like "did the customer just use this card in two different continents in the last 
+hour?" 
+ Model Behavior: It must be a super-fast model that compares the new swipe to the 
+customer's historical profile in milliseconds. If the transaction is weird, it gets a high 
+fraud score and is instantly declined. 
+ Challenges: The data is mostly good, so finding the tiny bit of bad fraud data is hard 
+(Imbalance). Also, the model has to be fast, and the criminals are always changing 
+their methods. 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine learning 
+can support this task, from data collection to using predictions for better healthcare 
+decisions. 
+The ML model helps the hospital save money by not having patients come back. 
+ Data Collection: They use patient records (what they were sick with, what medicine 
+they took) and social data (does the patient have someone at home to help them?). 
+ ML Support: A classification model predicts the likelihood the patient will be back 
+in the emergency room within 30 days. 
+ Better Decisions: The hospital uses the prediction list to identify the high-risk 
+patients. They then send extra resources to those specific people, like a nurse who 
+calls them every day or a visiting home aid. This focuses help only where it's needed. 
+B-4. A social media platform wants to control the spread of fake news. Discuss how 
+machine learning can help identify and limit misinformation while considering ethical 
+challenges. 
+The ML model has to police the comments section. 
+ ML Help: It uses text analysis (NLP) to look for words that sound like outrage or 
+things that have been fact-checked before. It also checks how fast and strangely the 
+post is spreading across the network. 
+ Limitation: It makes the bad post appear lower in the feed (down-ranking) or puts a 
+big scary warning label on it. 
+ Ethical Challenges: The model might make a mistake and censor someone who is 
+telling the truth, which is bad for free speech. Also, if the model has political bias, it 
+will unfairly attack one side's content. 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how 
+predictive maintenance using machine learning can reduce downtime and improve 
+operational efficiency. 
+The model tells you when the machine is getting sick. 
+ Data Sources: Sensors on the machine constantly measure things like heat, noise, 
+and shaking (vibration). 
+ Predictive Maintenance: The model learns the normal heartbeat of the machine. 
+When the temperature or shaking goes up weirdly, the model predicts the machine will 
+fail in 72 hours. 
+ Efficiency: The company gets an alert and schedules the maintenance for the 
+weekend. This avoids unexpected breakdowns during work hours, which saves a ton 
+of money and stops production from stopping suddenly. 

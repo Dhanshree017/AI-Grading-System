@@ -1,0 +1,126 @@
+ID-T017 
+Name: Nisha thadani Roll no: 1 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt all (3 marks each) 
+A-1. Give 5 Domains of AI 
+1. Machine Learning 
+2. Natural Language Processing 
+3. Computer Vision 
+4. Robotics 
+5. Expert Systems 
+A-2. What is data preprocessing and why is it important? 
+Data preprocessing is the step of cleaning, transforming, and organizing raw data before 
+training a model. 
+It is important because it removes noise, handles missing values, normalizes features, and 
+ensures the model learns meaningful patterns, leading to better accuracy and generalization. 
+A-3. What are hyperparameters? Give two examples. 
+Hyperparameters are external configuration values set before training that control how the 
+model learns. 
+Examples: 
+1. Learning rate 
+2. Number of decision tree depth or number of hidden layers 
+A-4. Explain types of clustering. 
+1. K-Means Clustering: Divides data into k groups based on similarity. 
+2. Hierarchical Clustering: Builds a tree structure of clusters by merging or splitting 
+groups. 
+3. Density-Based Clustering (DBSCAN): Forms clusters based on dense regions and 
+marks outliers. 
+A-5. What is classification and regression? Explain with examples. 
+ Classification: Predicts discrete categories. Example: Classifying an email as spam or 
+not spam. 
+ Regression: Predicts continuous values. Example: Predicting house price based on 
+size. 
+A-6. Give advantages and disadvantages of Decision Tree. 
+Advantages: 
+• Easy to understand 
+• Handles numerical and categorical data 
+Disadvantages: 
+• Easily overfits 
+• Sensitive to slight changes in data 
+A-7. How to make a model underfit and overfit? 
+ Underfit: Use very simple models, fewer features, too much regularization. 
+ Overfit: Use complex models, too many parameters, train for too many epochs. 
+A-8. Give 5 real-life applications of Machine Learning. 
+1. Spam detection 
+2. Recommendation systems 
+3. Fraud detection 
+4. Speech recognition 
+5. Medical diagnosis 
+A-9. State steps in making ML models. 
+1. Collect data 
+2. Preprocess and clean data 
+3. Split data 
+4. Train model 
+5. Evaluate model 
+6. Deploy and monitor 
+A-10. Importance of data in ML. 
+Good data ensures accurate learning, reduces errors, improves generalization, and helps the 
+model detect real patterns rather than noise. 
+SECTION B — Attempt any 5 (8 marks each) 
+B-1. Challenges in ML (Imbalanced Data, Missing Values, Curse of Dimensionality, 
+Concept Drift) with Solutions 
+Imbalanced Data: 
+When one class has far fewer samples. 
+Solution: Oversampling, undersampling, SMOTE, class-weighted models. 
+Missing Values: 
+Incomplete records reduce model reliability. 
+Solution: Imputation, removing irrelevant rows, using algorithms that handle missing data. 
+Curse of Dimensionality: 
+Too many features cause sparsity and slow learning. 
+Solution: Feature selection, PCA, dimensionality reduction. 
+Concept Drift: 
+Data patterns change over time. 
+Solution: Retraining models, online learning, sliding window techniques. 
+B-2. What is Regularization? Explain its types. 
+Regularization is a technique that reduces model overfitting by penalizing large weights. 
+Types: 
+1. L1 Regularization (Lasso): 
+Adds absolute weight penalty; performs feature selection. 
+2. L2 Regularization (Ridge): 
+Adds squared weight penalty; distributes weights smoothly. 
+3. Elastic Net: 
+Combines L1 and L2 penalties for balanced regularization. 
+Regularization stabilizes learning, improves generalization, and prevents overly complex 
+models. 
+B-3. What is Ensemble Learning? Explain Bagging and Boosting with examples. 
+Ensemble learning combines multiple models to improve performance. 
+Bagging: 
+Builds several independent models on random subsets of data and averages predictions. 
+Example: Random Forest uses many decision trees to reduce variance. 
+Boosting: 
+Trains models sequentially, each correcting previous errors. 
+Example: AdaBoost and XGBoost focus on misclassified samples to improve accuracy. 
+Ensemble methods provide stability, reduce overfitting, and increase predictive quality. 
+B-4. Entire ML Pipeline + Evaluating the Model 
+ML Pipeline Steps: 
+1. Define problem 
+2. Collect data 
+3. Clean and preprocess data 
+4. Feature engineering 
+5. Split dataset 
+6. Select algorithms 
+7. Train model 
+8. Tune hyperparameters 
+9. Evaluate model 
+10. Deploy and monitor 
+Model Evaluation Methods: 
+ Classification: Accuracy, Precision, Recall, F1-Score, Confusion Matrix 
+ Regression: MAE, MSE, RMSE, R² 
+ Cross-Validation: Measures stability across data splits 
+This pipeline ensures a structured workflow from raw data to reliable deployment. 
+B-5. Types of Data ML Uses and Qualities of Good Data 
+Types of Data: 
+1. Structured data 
+2. Unstructured data 
+3. Semi-structured data 
+4. Time-series data 
+5. Image, audio, and text data 
+Qualities of Good Data: 
+ Accurate 
+ Complete 
+ Consistent 
+ Relevant 
+ Sufficient volume 
+ Free from noise 
+Good data determines model accuracy and long-term performance. 

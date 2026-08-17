@@ -1,0 +1,134 @@
+ID-T025 
+Name: Bijesh prajan Roll no: 29 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 ( each 8 marks ) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Concept of Data Preprocessing 
+Data preprocessing is the process of preparing raw data into a clean and suitable format 
+before it is given to a machine learning model. Real-world data is often incomplete, noisy, 
+and inconsistent, which can negatively affect model learning. 
+Key Preprocessing Tasks 
+Data cleaning involves removing missing values, correcting errors, and eliminating duplicate 
+records so that the model receives reliable input. 
+Data encoding converts categorical variables such as gender or city names into numerical 
+form that algorithms can understand. 
+Data transformation includes normalization and standardization, which scale features so that 
+no single feature dominates the learning process. 
+Handling outliers ensures that extreme values do not mislead the model during training. 
+Influence on Model Performance 
+Proper preprocessing improves accuracy, speeds up convergence, and enhances 
+generalization. Poor preprocessing leads to biased models and unstable predictions. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+Working of Decision Tree 
+A Decision Tree works by dividing data into branches based on conditions. The algorithm 
+starts from the root node and splits the dataset using feature values until a decision or 
+outcome is reached. 
+Decision Making Process 
+Decisions are made by selecting features that maximize information gain or reduce impurity. 
+Each internal node represents a decision rule, and each leaf node represents a final output. 
+Advantages 
+Decision Trees are easy to understand, require little data preparation, and work well with 
+both numerical and categorical data. 
+Limitations 
+They easily overfit data, are sensitive to noise, and small changes in data can lead to very 
+different trees. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting 
+with practical illustrations. 
+Meaning of Bias–Variance Tradeoff 
+Bias–variance tradeoff explains the balance between simplicity and complexity of a model. 
+Bias refers to errors from wrong assumptions, while variance refers to errors from sensitivity 
+to data changes. 
+Impact on Underfitting 
+High bias leads to underfitting when the model is too simple and cannot capture patterns, 
+such as using a straight line to fit complex data. 
+Impact on Overfitting 
+High variance causes overfitting when the model learns noise instead of actual patterns, such 
+as memorizing training data. 
+Practical Illustration 
+Increasing model complexity reduces bias but increases variance. The best model maintains 
+a balance between the two for optimal performance. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Model evaluation is crucial in ML to check a model's real-world readiness, ensuring it's 
+reliable, generalizable (not overfit/underfit), and aligns with business goals, as accuracy 
+alone is misleading, especially with imbalanced data, failing to capture false 
+positives/negatives, necessitating metrics like Precision, Recall, F1-Score, ROC/AUC 
+(classification), and MAE/MSE/RMSE (regression) for a holistic view of performance.  
+Importance of Model Evaluation  
+ Ensures Reliability: Determines if a model is trustworthy and performs consistently 
+on new data, preventing costly errors in production. 
+ Identifies Weaknesses: Reveals if a model is overfitting (too specific to training data) 
+or underfitting (too simple). 
+ Aligns with Goals: Verifies the model solves the intended business problem 
+effectively, not just mathematically. 
+ Guides Improvement: Highlights areas for tuning and helps select the best model 
+among several candidates.  
+Why Accuracy Isn't Enough  
+ Imbalanced Datasets: In a dataset with 95% Class A and 5% Class B, a model 
+predicting Class A always gets 95% accuracy but is useless for identifying Class B. 
+ Doesn't Show Error Types: Accuracy treats all errors equally, ignoring whether a false 
+positive (e.g., wrongly flagging a healthy patient) is worse than a false negative (e.g., 
+missing a disease).  
+Other Key Evaluation Measures (Classification)  
+ Confusion Matrix: A table showing True Positives (TP), True Negatives (TN), False 
+Positives (FP), False Negatives (FN). 
+ Precision: TP / (TP + FP) – Out of all predicted positives, how many were correct? 
+(Important when False Positives are costly, like spam detection). 
+ Recall (Sensitivity): TP / (TP + FN) – Out of all actual positives, how many were 
+found? (Crucial for disease detection). 
+ F1-Score: Harmonic mean of Precision & Recall – Balances both, good for imbalanced 
+data. 
+ ROC Curve & AUC: Plots True Positive Rate vs. False Positive Rate at various 
+thresholds, indicating overall ability to distinguish classes.  
+Other Key Evaluation Measures (Regression)  
+ Mean Absolute Error (MAE): Average absolute difference between predicted and 
+actual values. 
+ Mean Squared Error (MSE): Average of squared errors (penalizes larger errors more). 
+ Root Mean Squared Error (RMSE): Square root of MSE, in the same units as the 
+target variable. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+In real-world systems, machine learning (ML) model deployment and maintenance 
+are managed through a discipline called MLOps (Machine Learning Operations). 
+Unlike traditional software, ML models are non-deterministic; they can fail "silently" 
+as their predictive power degrades even if the underlying code remains functional.  
+1. Deployment Strategies 
+Modern deployment involves packaging a trained model into a production 
+environment where it can provide actionable insights from new data.  
+ Containerization: Models and their dependencies are often wrapped 
+in Docker containers to ensure they run identically across different environments 
+(local, cloud, or edge). 
+ Inference Methods: 
+o Real-Time Inference: Serving models via REST or gRPC APIs (using frameworks 
+like FastAPI or TorchServe) for instant responses. 
+o Batch Prediction: Processing large volumes of data at scheduled intervals, suitable 
+for non-urgent tasks like recommendation generation. 
+ Safe Rollouts: Strategies like Canary deployments (sending small traffic 
+percentages to a new model) or A/B testing are used to validate performance 
+before a full release.  
+2. Monitoring & Performance Degradation 
+Once deployed, models must be continuously monitored for "drift," which is the 
+primary cause of performance degradation.  
+ Data Drift: Occurs when the distribution of input data changes over time (e.g., a 
+sudden change in customer buying behavior due to a pandemic). 
+ Concept Drift: Happens when the underlying relationship between input features 
+and the target variable evolves (e.g., what was considered a "fraudulent transaction" 
+five years ago may now be normal behavior). 
+ Operational Metrics: Teams track system health, including latency, throughput, 
+and memory/CPU usage to ensure the system remains responsive.  
+3. Maintenance and Retraining 
+Maintaining a model requires a "closed-loop" system where monitoring insights 
+trigger updates.  
+ Automated Retraining: Sophisticated systems use automated pipelines 
+(orchestrated by tools like Apache Airflow or Kubeflow) to retrain models when 
+performance falls below a set threshold or on a fixed schedule. 
+ Manual Intervention: For high-stakes applications (e.g., healthcare), "human-in
+the-loop" oversight is often maintained to validate predictions or approve retrained 
+versions before they go live. 
+ Version Control: Everything—including the training code, datasets, and final model 
+weights—must be versioned using tools like DVC (Data Version Control) to allow for 
+easy rollbacks if a new model fails.  
+. 

@@ -1,0 +1,122 @@
+ID-T020 
+Name: Karishma singh Roll no: 21 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Intro 
+Machine learn model works good first time but after time data change so model no work 
+good. This is data drift and concept drift. 
+Data Drift 
+Data drift is when input data change over time. Example, user buy in morning not evening 
+like before. 
+Concept Drift 
+Concept drift is relation between feature and output change. Example, earlier age decide 
+purchase now it depend on weather. 
+Types of Drift 
+ Sudden Drift: data change one time fast. 
+ Gradual Drift: slowly data change. 
+ Recurring Drift: pattern come again sometimes. 
+ Incremental Drift: little by little change happen. 
+Detection and Handling 
+Check accuracy or feature histograms. Some students just retrain model all time which not 
+always help. Online learning, retrain, or combine old new model can use. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Use Me here talk 'bout embeddings in ML, okay? They big deal 'cause machine lernin' cant 
+read words or picshures. Embeddings turn dat stuff into numbrs dat models can use. Make 
+sense. 
+Text Data (Words) 
+Words is messy. If we one-hot dem, is big waste space. Embeddings make dem small 
+numbrs. 
+ How it work: Things like Word2Vec learn how words stick together. "King" numbr be close 
+to "Queen" numbr, not "Apple" numbr. 
+ Point: Model know words meanin, not just words themselfs. 
+Image Data (Picshures) 
+Picshure pixels is just too many numbrs. 
+ How it work: CNNs (fancy models) look at picshure, change pixels to feachers. 
+ Point: We get one small vector dat say "dog here" or "car dere" instead of all pixel values. 
+Categorical Data (Groups) 
+Like movie janras or city names. One-hot too big. 
+ How it work: We lern little vectors for each catagory. 
+ Point: Instead of giant vector with one "1", we get small one dat show "Action" similar to 
+"Adventure". 
+Dat all. Embeddings fix the big data problem. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Challenges 
+ Model predict majority class all time. 
+ Minority class predict fail. 
+ Accuracy misleading. 
+Techniques 
+ Cost-sensitive learning penalize minority wrong. 
+ Synthetic sample like SMOTE create new data. 
+ Threshold change improve minority prediction. 
+Some Wrong Ideas 
+Duplicate minority always fix problem, model not work always. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Intro 
+Monitor model after use to check performance. 
+Track 
+ Accuracy, error, latency 
+ Feature change 
+ Missing data 
+Why 
+Catch data drift, model drop performance. Some students check one time, think enough. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Intro 
+Feature leakage when model see info it no should see. 
+Cause 
+ Future data in feature 
+ Wrong preprocessing before split 
+ Same entity in train and test 
+Impact 
+ Accuracy look high but real prediction fail 
+ Hard to debug 
+ Some student think shuffle fix all but not true 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Intro 
+Evaluation pipeline check model in all step. 
+Validation 
+Use to choose best model and set hyperparameter. 
+Testing 
+Final check model before deploy. 
+Deployment 
+Monitor real data, detect drift, error. 
+Importance 
+Separate prevent overfit and show real performance. Some think mix all data okay but no. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Intro 
+Transfer learning use old pretrained model knowledge for new task. 
+Mechanism 
+ Pretrained model learn general features 
+ Fine tune on new data for task 
+Use Case 
+ Medical image small dataset 
+ NLP text classify, sentiment 
+ Object recognition 
+Wrong Idea 
+Pretrained model always fix problem without tuning is wrong. 
+B-e) Explain the importance of reproducibility in machine learning experiments. What 
+practices help ensure experiments can be repeated accurately? 
+Intro 
+Reproducibility make experiment repeatable and verified. 
+Practice 
+ Fix random seed 
+ Save dataset same 
+ Version control code 
+ Log metrics, hyperparameter 
+ Use same environment 
+Importance 
+ Debug easier 
+ Result trustable 
+ Some ignore log, cannot repeat experiment 

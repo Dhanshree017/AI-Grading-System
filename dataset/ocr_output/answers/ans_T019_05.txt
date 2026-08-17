@@ -1,0 +1,147 @@
+ID-T019 
+Name: Kritika Pardeshi Roll no: 5 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 4 (5 marks each) 
+A-a) Define Machine Learning. Explain how it differs from traditional programming with 
+a simple example. 
+Definition: 
+Machine Learning is a method where computers learn patterns by themselves from data 
+instead of being told every exact rule. 
+Difference: 
+Traditional programming follows fixed steps written by a human. Machine Learning creates 
+the steps automatically by looking at examples. 
+Example: 
+In traditional style, to find whether a fruit is apple, the programmer writes the full rule. In 
+ML, the model sees random numbers from sensors and guesses the color of sky. 
+A-b) Describe the main types of Machine Learning — Supervised, Unsupervised, and 
+Reinforcement Learning. Give one example for each. 
+Supervised Learning: 
+Model learns from input and output pairs. 
+Example: Predicting student marks from study hours. 
+Unsupervised Learning: 
+Model finds patterns without labels. 
+Example: Grouping fish and cars into one cluster. 
+Reinforcement Learning: 
+Model learns by reward and punishment. 
+Example: A robot that walks backward faster when the reward is zero. 
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and 
+validation data with simple illustrations. 
+Dataset: 
+A dataset is the full collection of examples used for learning, checking, and judging the 
+model. 
+Training Data: 
+Used for teaching the model. 
+Illustration: Like a student reading notes. 
+Testing Data: 
+Used for checking how the model performs on unseen cases. 
+Illustration: Mock exam questions. 
+Validation Data: 
+Helps tune model choices. 
+Illustration: Teacher giving half-finished questions so student adjusts study style. 
+A-e) What is a model in Machine Learning? Explain how a model learns patterns from 
+data during training. 
+Model: 
+A model is the structure that takes inputs and gives outputs based on what it learned from 
+data. 
+How it learns: 
+It compares predicted output with actual output and adjusts itself until patterns start 
+matching. It keeps repeating this with training data so it becomes better over time. 
+SECTION B – Attempt any 4 (5 marks each) 
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+Hypothesis Space: 
+It is the collection of all possible rules the model can pick during learning. 
+Relation: 
+If the space is very small, the model becomes too powerful and generalizes extremely fast. If 
+it is too large, the model becomes simple and never learns enough. 
+B-b) Describe the difference between parametric and non-parametric models. Give 
+suitable examples of each and explain when to use them. 
+Parametric Models: 
+Have a fixed number of parameters. 
+Example: Linear model for predicting monthly air temperature. 
+Non-parametric Models: 
+Number of parameters changes based on the data. 
+Example: Random squirrels grouping system. 
+When to use: 
+Parametric for large complicated data, non-parametric when data is tiny. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic Models: 
+Give the same output every time for the same input. 
+Example: A classifier that always outputs 5 for any image. 
+Probabilistic Models: 
+Gives a distribution and may vary slightly. 
+Example: Model saying “40% dog, 60% cat”. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection: 
+Gather the raw data from sources like files, sensors, or surveys. 
+2. Preprocessing: 
+Clean the data by removing noise and missing values. 
+3. Model Selection: 
+Choose a learning method suitable for the task. 
+4. Training: 
+Feed the training data to the model so it learns. 
+5. Testing/Evaluation: 
+Check the model’s performance on unseen data to know if it works properly. 
+SECTION C – Attempt any 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two 
+commonly used ML algorithms. 
+Meaning of Algorithm: 
+An algorithm is a set of steps or instructions that a machine learning model follows to learn 
+from data or make decisions. 
+Purpose: 
+It guides how the model will search for patterns, adjust itself, and produce output. 
+Examples: 
+1. Decision Tree: Uses branching rules to predict outcomes. 
+2. Nearest Weather Rule Algorithm: Compares today’s sky color with stored sky 
+patterns to guess if a person will dance or not. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML 
+model. 
+Meaning: 
+Data preprocessing means cleaning and preparing raw data so it becomes suitable for a 
+model. 
+Steps involved: 
+ Removing inconsistent values 
+ Handling missing items 
+ Converting text or categories 
+ Organizing values in a uniform format 
+Importance: 
+It helps the model reduce confusion, increases accuracy, and prevents the model from 
+learning incorrect structures. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. 
+Give suitable examples. 
+Features: 
+They are the input attributes used by the model to make predictions. 
+Example: Height, weight, color of an object. 
+Labels: 
+They are the actual outputs the model tries to predict. 
+Example: Predicting whether a sound wave belongs to a tree or a phone. 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Meaning: 
+Model evaluation checks how well a trained model performs on new and unseen data. 
+Metrics: 
+1. Accuracy: 
+Shows the proportion of correctly predicted items. 
+2. Random Spread Rate: 
+Measures how widely the model distributes its answers across all options without 
+checking correctness. 
+SECTION D – Attempt all (2 marks each) 
+D-a) What is training data? How is it used in building a model? 
+Training data is the main set of examples used to teach a model patterns. It helps the model 
+understand what inputs map to which outputs. The model uses this data repeatedly until it 
+forms internal rules. 
+D-b) Define prediction in machine learning. 
+Prediction is the output given by a trained model when it receives new data. It uses learned 
+patterns and guesses what the most likely answer should be. 
+D-c) What is a decision tree in simple terms? 
+A decision tree is a structure that looks like upside-down branches where the model makes 
+choices step by step. It checks one condition at each node and follows paths to reach a final 
+answer. 
+D-d) Mention any two challenges faced when collecting ML data. 
+1. Data may be completely random or irrelevant. 
+2. Data can be too small, making the model unable to connect any meaningful pattern. 
+D-e) What is model generalization? 
+Model generalization means how well a model performs on new data that it never saw 
+before. A generalized model gives stable output even when the input changed a little. 

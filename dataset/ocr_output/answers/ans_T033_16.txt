@@ -1,0 +1,68 @@
+ID-T033 
+Name: Kamlesh Bansal Roll no: 16  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+Assumptions play a fundamental role in machine learning models, acting as the foundational 
+principles that simplify complex data and enable the learning process. These assumptions 
+guide the model's design, the choice of algorithm, and the interpretation of the output. When 
+these underlying assumptions are incorrect, the model's behavior can be significantly 
+affected, leading to poor performance, biased decision-making, and unreliable predictions.   
+The Role of Assumptions  
+Machine learning models inherently make assumptions to handle real-world complexities 
+and generalize from limited training data. Key roles include:   
+• Simplification of Reality: Assumptions allow models to make complex systems 
+computationally tractable. For example, assuming a linear relationship between features and 
+targets makes linear regression feasible.  
+• Guiding the Learning Process: Assumptions dictate how the model weighs different 
+features and learns patterns. They provide a framework for the algorithm to search for a 
+solution within a vast hypothesis space [2].  
+• Preventing Overfitting: By introducing constraints, assumptions help prevent models from 
+memorizing the training data (overfitting) and improve their ability to generalize to unseen 
+data [2].  
+• Determining Model Choice: The nature of the data often dictates the appropriate 
+assumptions. For instance, time-series data assumes temporal dependence, while image 
+recognition often assumes spatial hierarchies, guiding the selection of models like recurrent 
+neural networks or convolutional neural networks, respectivel  
+A-4. Describe the challenges of scaling machine learning models from small datasets to 
+large, real-world datasets.  
+Scaling ML models from small to large datasets introduces challenges in data management  
+(storage, quality, distribution), computational demands (time, resources, complexity), 
+model training (overfitting, efficiency), and engineering (integration, deployment, 
+real-time needs), requiring robust systems to handle massive, diverse, and noisy real
+world data without performance degradation or failure.   
+Data Challenges  
+• Volume & Velocity: Handling petabytes of data requires massive storage, efficient 
+ingestion pipelines, and distributed systems, straining resources.  
+• Quality & Noise: Real-world data is often messy, incomplete, or inconsistent, demanding 
+robust imputation and anomaly detection.  
+• High Dimensionality: More features (variables) increase computational cost and risk of 
+overfitting (the "curse of dimensionality").  
+• Data Locality: Data spread across different servers or locations creates integration and 
+access hurdles.   
+Computational & Training Challenges  
+• Resource Intensive: Training complex models on big data needs vast computing power 
+(GPUs/TPUs) and memory, leading to high costs.  
+• Training Time: Simple algorithms become too slow; efficient, parallelizable algorithms 
+(like distributed SGD) are needed.  
+• Overfitting vs. Underfitting: Small datasets lead to overfitting (memorizing data); large 
+datasets need complex models to avoid underfitting, but risk computational bottlenecks.  
+• Feature Engineering: Creating relevant features becomes harder and more computationally 
+expensive with massive data.   
+Engineering & Deployment Challenges  
+• Infrastructure: Integrating specialized tools, frameworks (TensorFlow, PyTorch), and 
+ensuring compatibility with existing IT systems is complex.  
+• Deployment Scalability: Moving from batch to real-time predictions for millions of users 
+requires scalable, low-latency serving infrastructure.  
+• Monitoring & Maintenance: Versioning, monitoring, and continuous learning become 
+crucial for long-term success and require fault tolerance.   
+Model-Specific Issues  
+• Feature Scaling: Unscaled features (e.g., salary vs. age) can drastically slow down or break 
+algorithms like gradient descent.  
+• Parameter Tuning: Optimizing hyperparameters for huge models is computationally 
+demanding.   
+Scaling requires moving beyond simple models and tools, embracing distributed computing, 
+specialized hardware, and robust MLOps practices to manage complexity and ensure 
+reliability.   

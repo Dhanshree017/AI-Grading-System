@@ -1,0 +1,66 @@
+ID-T032 
+Name: Bhoomi Barve Roll no: 13 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle. The ML lifecycle is the path a project takes from a 
+simple idea to a working app. 
+ Step 1: The Goal: You decide what you want to predict, like if a picture is a cat or a dog. 
+ Step 2: Getting Data: You collect thousands of pictures. You must clean them so there are no blurry 
+or wrong ones. 
+ Step 3: Picking Features: You tell the computer to look at shapes, ears, and whiskers. 
+ Step 4: Training: You show the pictures to the computer. It learns the "rules" of what a cat looks 
+like. 
+ Step 5: Testing: You show it a new picture it has never seen. If it gets it right, the model is good. 
+ Step 6: Real World: You put the model in an app for people to use. 
+ Step 7: Checking: You keep an eye on it to make sure it doesn't start making mistakes later. 
+A-c. Explain the concept of bias–variance trade-off. This is about finding a balance so the model is not too 
+simple and not too crazy. 
+ Bias (Underfitting): This is when the model is too "lazy." It doesn't learn enough and makes easy 
+mistakes. 
+ Variance (Overfitting): This is when the model "over-thinks." It memorizes every tiny detail of the 
+training data but fails when it sees something new. 
+ The Middle Ground: You want to be right in the middle. Not too simple, but not just memorizing. 
+ Practice: We use this to make sure our AI works for everyone, not just the people in our training list. 
+A-d. Describe how machine learning models handle noisy and incomplete data. Real data is usually messy, 
+with missing parts or wrong info (noise). 
+ Filling the holes: If some data is missing, we fill it with the average number so the model doesn't 
+stop working. 
+ Filtering: We tell the model to ignore "outliers" (numbers that look like a mistake, like a person's 
+height being 10 feet). 
+ Simple rules: Using simple rules helps the model stay on track even if some data is a bit "noisy" or 
+wrong. 
+ Cleaning: Most of the work is just tidying up the data before the computer even looks at it. 
+A-e. Explain the role of evaluation strategies. Evaluation is how we "grade" the computer to see if it actually 
+learned anything. 
+ The Final Exam: We use a "Test Set" which is data the computer has never seen before. This proves 
+it didn't just memorize the answers. 
+ Cross-Validation: This is like taking 5 different tests to make sure the first one wasn't just lucky. 
+ Checking Errors: We look at where the model failed. Did it miss a "Yes" or did it wrongly say 
+"Yes"? This helps us fix it. 
+A-f. Discuss the ethical challenges of ML systems. As AI gets bigger, it can cause problems if we are not 
+careful. 
+ Fairness: If the data is biased, the AI might be unfair to certain groups of people. 
+ Privacy: AI needs a lot of data, and sometimes that data is private or personal stuff people don't 
+want to share. 
+ Jobs: Machines might start doing jobs that people do now, which is a big worry for many. 
+ Safety: If an AI makes a mistake in a car or a hospital, it can be very dangerous. 
+A-g. Explain how machine learning systems adapt to changing data. The world changes every day, so an 
+AI model must change too. 
+ New Training: Every few months, we give the model "fresh" data so it stays up to date with the 
+world. 
+ Live Learning: Some models learn from every new person that uses them, getting smarter every 
+second. 
+ Alarms: We set up systems to tell us if the model's score is dropping. If it gets too low, we know it's 
+time to fix it. 
+B] Attempt All (2 marks each) 
+B-a. What is model training? It is when you let the computer look at many examples so it can find its own 
+rules and patterns. 
+B-b. Define feature selection. It is picking only the most important information and throwing away the useless 
+parts so the computer doesn't get confused. 
+B-c. What is ground truth? It is the "real answer" or the 100% correct fact that we use to see if the 
+computer's guess was right. 
+B-d. What is model deployment? It is taking the finished model and putting it into a real app or website so 
+people can actually use it. 
+B-e. Define learning from data. It is when a machine gets better at a task by looking at examples instead of a 
+human programmer writing every single rule. 

@@ -1,0 +1,99 @@
+ID-T004 
+Name : Shivani Gulati Roll no: 25 
+Email : studentisdummy@gmail.com 
+Section A) 
+A-1. What is machine learning? Explain its types in detail with example. 
+Machinelearning(ML) is when the computer can learnthingsbyitself without you having to write every 
+single instruction for it. It just looks at the data and finds patterns or secrets. The main point is to 
+make the machine better at a task the more data it sees. 
+The types are the three big ones: 
+1. Supervised Learning: This is like the student having a teacher because all the datahaslabels 
+(the correct answers). The computer checks if its guess is right or wrong, and then fixes itself. 
+An example is when the computer tells if an email is Spam or NotSpam. 
+2. Unsupervised Learning: Here the computer has nolabels and $\mathbfno correct answers}$. It 
+has to look at the data and makeitsowngroups of things that look alike. An example is when a 
+company finds customergroups so they know who to sell things to. 
+3. Reinforcement Learning: This is when the computer playsgames or does actions. If it does a good 
+action, it gets points (rewards), and if it does bad, it gets punished. The goal is to get 
+thehighestpoints over time, like an AIgameplayer. 
+A-2. Explain how to choose an appropriate machine learning algorithm for a given dataset. Include steps 
+and considerations. 
+You choose the algorithm by looking at the data and whatyouwanttoguess. 
+First step is whatistheoutput? 
+ If the output is a name or category (like dog or cat), you use a Classification algorithm. 
+ If the output is a number (like a price), you use a Regression algorithm. 
+Next step is datasize and complexity: 
+ If the data is small, you must use a simplemodel like Linear Regression so it does not overfit and 
+start memorizing. 
+ If the data is verybig and $\mathbfcurvy}$, you can use complexmodels like a Neural Network or 
+Boosting. 
+Also, you havetoconsider if the model's guess needs tobeexplained. If the boss needs to know why the 
+computer guessed that, you pick a simplemodel like a Decision Tree. If speed is needed, you pick a model 
+that guesses fast. You should always try threeorfourdifferentmodels and pick the one with the best 
+accuracyscore. 
+A-3. Describe clustering algorithms. Compare K-Means, hierarchical clustering, and DBSCAN 
+Clustering is when the computer takes unlabeleddata and puts the thingsthataresimilar into groups 
+together. 
+1. K-Means: For this one, you havetopickK (the number of groups) first. The computer then picks 
+random centers (centroids) and puts all the points into the group with the closest center. It 
+keeps moving the centers until the groups are tight and don't change anymore. It is fast but 
+not good for weird shapes. 
+2. Hierarchical Clustering: This one is like a tree. It either starts with every point in its own group 
+and keeps joining them, or it starts with one big group and keeps splitting it. It makes a nice 
+picture called a dendrogram but it is veryslow for big data. 
+3. DBSCAN: This one is smart because it doesnotneedyoutochooseK. It finds groups by looking for 
+denseareas where many points are close together. It can find curvyshapes and it 
+ignoresthelonelypoints (outliers). This is better than K-Means for real-world data. 
+A-4. What are support vector machines (SVM)? Explain the concept of hyperplanes, kernels, and margin 
+maximization. 
+SupportVectorMachines(SVM) is a goodclassificationalgorithm that uses geometry to separate classes. 
+ Hyperplanes: This is the straightlineorplane that separatesthedata into different classes. In 
+2D data, it is a line. The SVM's job is to find the best separation line. 
+ Margin Maximization: SVM is special because it wants to draw the hyperplane in a place where 
+the gap (the margin) to the closestdatapoints is asbigaspossible. These closest points are called 
+the SupportVectors. Making the gap big makes the model stronger and less likely to make 
+mistakes on new data. 
+ Kernels: This is a trick used for curveddata that can't be separated by a straight line. The kernel 
+movesthedataupintoahigherroom (a higher dimension) where suddenly you can draw a 
+straighthyperplane to separate the classes. This is how SVM can be used for non−linear problems. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define supervised, unsupervised, and reinforcement learning with examples. 
+1. Supervised Learning: Learning where the correctanswerisknown (labeled data). The model learns 
+to check its own work. 
+o Example: Predicting if a fruit is an Apple or a Banana. 
+2. Unsupervised Learning: Learning where nocorrectanswersaregiven. The model finds groups or 
+patterns by itself. 
+o Example: Grouping all the songsonSpotify that sound similar to each other. 
+3. Reinforcement Learning: Learning by trialanderror using rewards (points) and penalties from the 
+environment. 
+o Example: An AIrobot learning howtowalk without falling down. 
+B-2. Explain the difference between classification and regression. 
+These are the two main types of supervised learning, and they are different because of the output. 
+ Classification predicts a category or name. The answer is always from a smalllist of options, like 
+saying True or False. 
+ Regression predicts a continuousnumber. The answer can be anything in a range, like predicting 
+the houseprice which can be $100,000 or $100,000.55. 
+B-3. What is a confusion matrix? Explain precision, recall, and F1-score. 
+A confusionmatrix is a big square table that shows howmanyrightandwrongpredictions the classification 
+model made for each class. It shows where the model gotconfused. 
+1. Precision: This checks the positiveguesses. It tells you outofallthetimesthemodelguessedpositive, 
+howmanytimeswasitactuallyright. This is about not crying wolftoooften. 
+2. Recall: 
+This 
+checks 
+the 
+truepositivethings. 
+It 
+you 
+outofallthethingsthatshouldhavebeenpositive, howmanydidthemodelactuallyfind. This is about 
+notmissingtheimportantthings. 
+tells 
+3. F1-Score: This is a mix of precision and recall. It is like an averagenumber that is morefair than 
+just looking at accuracy, especially when one of the classes is verysmall. 
+B-4. Differentiate between training, validation, and test sets. 
+We need to split the data into three parts to make sure the model is good and honest. 
+1. Training Set: This is the mostdata used for the model to learneverything and fitthepatterns. 
+2. Validation Set: This is a smaller data set used duringthelearning to fixthesettings 
+(hyperparameters) and to checkifthemodelisstartingtooverfit the training data. 
+3. Test Set: This is the final,secretdata set that the model neversees. It is used only onetime to 
+give the realscore that shows how well the model will work in the real world.. 

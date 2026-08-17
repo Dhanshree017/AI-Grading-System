@@ -1,0 +1,75 @@
+ID-T010 
+Name: Shrishti bhagat Roll no: 29 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+AI is when computer try to think and act like human brain but sometime it make mistake 
+and confuse. it learn from data and maybe do game, talk, drive or cook (not real). 
+Domains of Machine Learning: 
+1. Supervised – learn from labeled data.  
+2. Unsupervised – find pattern in data by itself. 
+3. Semi-supervised – some labeled some not. 
+4. Deep learning – many layer network, very complex. 
+5. Reinforcement – reward or punish to learn, like pet training. 
+6. Random forest learning – maybe multiple tree guess. 
+7. Self learning – computer learn by itself, sometime wrong. 
+8. Online learning – update model while new data come. 
+9. Hybrid learning – mix many types, sometime confuse. 
+A-2. Explain Components of AI, Give One example of AI 
+AI have many part inside computer system like brain. 
+Components: 
+1. Learning – get data and learn pattern.  
+2. Reasoning – decide by logic but sometime guess. 
+3. Perception – camera, mic see and hear. 
+4. Knowledge – store information in memory. 
+5. Planning – plan steps to reach goal. 
+6. Acting – perform action after decision. 
+7. Language understanding – talk and understand human. 
+8. Problem solving – try solve problem maybe fail. 
+Example: 
+Siri is AI because it understand question, reply answer and set alarm.  
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Intelligent agent is system or robot that sense world and act to reach goal. 
+Types: 
+1. Simple reflex agent – act only on current input, like light switch.  
+2. Goal-based agent – plan step to reach goal, like maze robot.  
+3. Utility agent – choose action with highest score.  
+4. Angry agent – maybe attack or crash. 
+5. Learning agent – improve after mistakes. 
+A-5. Explain Types of Search in AI, Explain Bidirectional Search in detail 
+Search is find solution or path in AI problem. 
+Types: 
+1. Blind search – guess everything. 
+2. Heuristic search – use estimate to find goal faster.  
+3. Local search – explore near neighbors. 
+4. Constraint search – follow rule to find solution. 
+5. Bidirectional search – start from start and goal together, meet in middle.  
+Bidirectional Search: 
+It start from both side and meet in middle. Save time and memory. Used in puzzle, GPS 
+and game. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+1. Graph of nodes and probabilities.  
+2. Node depend on another node. 
+3. Used in uncertain problem like weather prediction. 
+4. Help decision making. 
+5. Confuse if too many nodes or big network. 
+B-2. Write a short note on Artificial Neural Network 
+1. Many neuron nodes connected in layers.  
+2. Input layer, hidden layer, output layer. 
+3. Learn by weight adjustment. 
+4. Used in image, speech, text recognition.  
+5. Can be slow if network big. 
+B-3. What is Naïve Bayes? 
+1. Probability model for classification.  
+2. Assume all features independent. 
+3. Used in spam detection and text classify.  
+4. Can be wrong if features not independent. 
+5. Fast and simple for small dataset. 
+B-5. What is Ensemble Learning and its types 
+1. Combine many models to get better output.  
+2. Bagging – train multiple same model, combine output. 
+3. Boosting – next model fix previous mistake. 
+4. Stacking – meta-model combine outputs. 
+5. Can be slow if too many models. 

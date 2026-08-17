@@ -1,0 +1,38 @@
+ID-T003 
+Name : Dev Verma Roll no : 30 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 (Marks 8) 
+A-1. Define supervised, unsupervised, reinforcement? 
+Supervised machine learning is when you have many labels like 
+cat and dog and computer watch all the pictures. Unsupervised is 
+the part where computer no see the labels only the pictures and make 
+groups like this. Reinforcement is when computer play games and 
+the points are rewards and they go higher for good moves. This is 
+the definition of the three big things. 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting is when the model is very good on the learning data but 
+bad on the new data because it has memorized everything like a 
+noise. This makes the answer wrong for new people. To avoid this 
+problem, you must make the model simpler or you can use the 
+penalty thing called L1 or L2 which makes the numbers smaller so 
+the model is not so strong and the fit is better. 
+B) Attempt All (Marks 15) 
+B-1. Explain the bias-variance tradeoff. 
+This is a big confusion problem in machine learning. Bias is when 
+the model is very simple, like a stick trying to draw a circle. It 
+cannot draw the circle so the error is high. This is Underfitting. 
+Variance is when the model is too crazy, like drawing the training 
+data perfectly, including all the small mistakes, so it cannot draw 
+the same circle on new paper. This is Overfitting. The tradeoff is 
+that if you fix the stick to be more complex, the crazy problem 
+starts. If you fix the crazy problem to be simple, the stick problem 
+starts. You must find the middle spot for the smallest error. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is a lazy working model. It does no work in the beginning 
+and just stores all the points. When a new point wants a prediction, 
+the KNN model starts running fast. It measures the distance to all 
+the old points to see which ones are closest. We choose K number of 
+close friends. If it is classification, we use the mostcommonfriend 
+class as the answer. If it is regression, we use the averagenumber of 
+the friends. The model works slow for big data because it has to 
+measure too many distances. 

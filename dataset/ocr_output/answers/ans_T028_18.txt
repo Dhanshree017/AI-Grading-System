@@ -1,0 +1,70 @@
+ID-T028 
+Name: Shantanu Iyer Roll no: 18 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Data Cleaning 
+1. First step is to open the dataset properly in system or software. 
+2. Missing values can be seen by observing empty spaces in data table. 
+3. If values are missing, they can be ignored because machine learning can adjust. 
+4. Inconsistent values occur when data is not matching properly. 
+5. Same data written in different styles should be made same. 
+6. Extra data which is not required should be deleted. 
+7. If data looks confusing, sorting can be applied. 
+8. Data should be arranged in rows and columns neatly. 
+9. Clean data helps model to understand better. 
+10. After cleaning, dataset becomes suitable for learning. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+Steps to Improve Model Performance 
+1. First, predictions should be checked manually. 
+2. If answers are wrong, model may be confused. 
+3. New data may be very different from old data. 
+4. Model should be trained again if accuracy is low. 
+5. Sometimes restarting training improves performance. 
+6. Features should be checked whether they are correct. 
+7. If data is large, model may take time to learn. 
+8. Changing algorithm may also help. 
+9. Testing should be done multiple times. 
+10. After improvement, predictions will become better. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+Factors for Algorithm Selection 
+1. First factor is type of problem given. 
+2. Dataset size matters because large data needs strong algorithm. 
+3. Algorithm should be popular and commonly used. 
+4. Easy algorithm is better for beginners. 
+5. Computer speed affects algorithm choice. 
+6. If results are needed fast, simple algorithm is chosen. 
+7. Algorithm should match subject of problem. 
+8. If accuracy is needed, advanced algorithm is preferred. 
+9. Availability of code also matters. 
+10. Finally algorithm is selected based on comfort. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+Identifying and Solving Performance Degradation 
+1. Model performance should be observed daily. 
+2. If output changes, model may be outdated. 
+3. Data used after deployment may be different. 
+4. Model can become old with time. 
+5. Retraining can fix most problems. 
+6. New data should be added regularly. 
+7. Sometimes system issues also affect model. 
+8. Updating software may help. 
+9. Model should be checked occasionally. 
+10. After actions, performance improves. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Comparison of Two Models 
+1. First model outputs should be observed. 
+2. Second model outputs should also be checked. 
+3. Model giving more correct answers is better. 
+4. Easy to understand model is preferred. 
+5. Fast working model is useful. 
+6. Model with less errors is selected. 
+7. If users like one model more, it is better. 
+8. Less complex model is easier to manage. 
+9. Model which works smoothly is chosen. 
+10. Final decision depends on overall performance. 

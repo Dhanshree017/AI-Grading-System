@@ -1,0 +1,190 @@
+ID-T022 
+Name: Ritik saahu Roll no: 26 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of 
+features and the role of feature selection in improving model performance. 
+Definition 
+Feature engineering is the systematic process of transforming raw data into meaningful input 
+features that enhance model learning, accuracy, and generalization. 
+Complete Workflow 
+1. Understanding the Data 
+Examine data types, distributions, correlations, missing values, and domain 
+characteristics. 
+2. Data Cleaning & Preprocessing 
+Handle missing values, remove noise/outliers, fix inconsistent formats, encode 
+categories, scale numerical values. 
+3. Feature Transformation 
+Apply transformations such as normalization, log-scaling, binning, polynomial 
+features, and aggregation. 
+4. Feature Creation 
+Engineer new features from domain knowledge—ratios, interactions, time-based 
+components, text embeddings, etc. 
+5. Dimensionality Reduction 
+Apply PCA, autoencoders, or statistical ranking to reduce high-dimensional data. 
+6. Feature Selection 
+Identify and retain only the most influential features to improve training speed and 
+prevent overfitting. 
+7. Evaluation & Iteration 
+Measure model performance with engineered features and iteratively refine them. 
+Types of Features 
+ Numerical Features (continuous, discrete) 
+ Categorical Features (nominal, ordinal) 
+ Text Features (TF-IDF, embeddings) 
+ Image Features (pixels, CNN embeddings) 
+ Time-Series Features (lag values, rolling statistics) 
+Role of Feature Selection 
+ Removes irrelevant/noisy features 
+ Reduces overfitting and variance 
+ Improves computational efficiency 
+ Enhances model interpretability 
+ Leads to more stable and generalizable models 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability 
+important, and what are the major techniques used to interpret black-box models? 
+Definition 
+Explainable AI aims to make machine learning models transparent, understandable, and 
+trustworthy. 
+Importance of Interpretability 
+ Ensures ethical decision-making 
+ Builds trust with users and stakeholders 
+ Helps in debugging model failures 
+ Improves safety and accountability 
+ Required in regulated industries (healthcare, finance, law) 
+Major XAI Techniques 
+1. SHAP (Shapley Additive Explanations) 
+Quantifies each feature’s contribution to predictions. 
+2. LIME (Local Interpretable Model-Agnostic Explanations) 
+Creates simple surrogate models around individual predictions. 
+3. Feature Importance Analysis 
+Identifies the most influential features in tree-based models. 
+4. Partial Dependence Plots (PDP) 
+Visualize feature–target relationships. 
+5. Grad-CAM 
+Highlights regions influencing CNN-based image decisions. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how 
+automation, versioning, and data validation improve reliability. 
+Importance of Data Pipelines 
+Data pipelines ensure that data flows consistently and reproducibly from ingestion to model 
+deployment. They reduce human intervention, automate preprocessing steps, and maintain 
+quality. 
+Key Components 
+1. Automation 
+o Automates ingestion, transformation, model training, and deployment. 
+o Reduces manual errors and ensures consistent execution. 
+2. Versioning 
+o Tracks dataset versions, transformations, scripts, and model iterations. 
+o Ensures reproducibility and easy rollback. 
+3. Data Validation 
+o Checks schema, value ranges, missing values, duplicates, and drift. 
+o Prevents corrupted data from entering the pipeline. 
+Benefits 
+ Enhances reliability and maintainability 
+ Ensures scalable production workflows 
+ Supports continuous integration and deployment (CI/CD) 
+ Facilitates reproducible experiments 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). 
+Explain how ML engineers detect drift and handle it in real-world systems. 
+Types of Drift 
+1. Feature Drift 
+Changes in input features’ distribution over time (e.g., user behavior evolving). 
+2. Target Drift 
+Shift in the distribution of output labels (e.g., fraud patterns changing). 
+3. Concept Drift 
+Relationship between features and target changes (e.g., same features → different 
+outcomes). 
+Drift Detection Methods 
+ Statistical tests (KS test, Chi-square) 
+ Population Stability Index (PSI) 
+ Monitoring model performance metrics 
+ Comparing feature distributions over time 
+ Data drift monitoring tools (EvidentlyAI, WhyLabs) 
+Handling Drift 
+ Scheduled or triggered retraining 
+ Adaptive or online learning models 
+ Updating data preprocessing logic 
+ Adding new features 
+ Using feedback loops for continuous improvement 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and 
+compare how each method improves model performance in different scenarios. 
+Definition 
+Ensemble learning combines multiple models to create a stronger composite model that 
+reduces errors and improves generalization. 
+Methods 
+1. Bagging (Bootstrap Aggregating) 
+ Trains multiple models on bootstrapped samples. 
+ Aggregates predictions (e.g., random forest). 
+ Reduces variance and overfitting. 
+2. Boosting 
+ Sequentially trains models, each correcting errors of the previous. 
+ Examples: AdaBoost, XGBoost, LightGBM. 
+ Reduces bias and improves accuracy. 
+3. Stacking 
+ Combines predictions from multiple base models using a meta-model. 
+ Captures diverse model strengths. 
+ Works best with heterogeneous models. 
+Comparison 
+ Bagging → Best for high-variance models. 
+ Boosting → Best for improving weak learners. 
+ Stacking → Best when models contribute complementary knowledge. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+1. A learning approach where models are trained using labeled data. 
+2. Input–output pairs are provided. 
+3. The goal is to learn mapping from features to target. 
+4. Used in classification and regression. 
+5. Relies on ground truth labels. 
+B-2. What is a feature in machine learning? 
+1. A measurable property or attribute used as input to a model. 
+2. Represents characteristics of data. 
+3. Can be numerical, categorical, text-based, or image-based. 
+4. Determines the quality of learning. 
+5. Better features improve model performance. 
+B-3. State any two differences between training data and test data. 
+1. Training data is used to learn patterns; test data evaluates generalization. 
+2. Training influences model parameters; test does not. 
+3. Training is larger in size; test usually smaller. 
+4. Test data contains unseen examples. 
+5. Test results measure final accuracy. 
+B-4. What is overfitting? 
+1. A condition where the model memorizes training data. 
+2. Performs poorly on unseen data. 
+3. Caused by high complexity or insufficient data. 
+4. Leads to low generalization. 
+5. Prevented using regularization or pruning. 
+B-5. Define classification with an example. 
+1. Classification assigns inputs into predefined categories. 
+2. Example: Classifying emails as “spam” or “not spam.” 
+3. Uses algorithms like SVM, decision trees, neural networks. 
+4. Produces discrete outputs. 
+5. Common in medical diagnosis, fraud detection. 
+B-6. What is a confusion matrix? 
+1. A table showing model predictions vs actual labels. 
+2. Contains TP, TN, FP, FN. 
+3. Helps calculate accuracy, precision, recall, F1. 
+4. Useful for analyzing classification errors. 
+5. Important in imbalanced datasets. 
+B-7. What do you mean by model accuracy? 
+1. Percentage of correct predictions. 
+2. Accuracy = (Correct Predictions / Total Samples). 
+3. Simple metric for classification. 
+4. Works best when classes are balanced. 
+5. Not reliable for highly imbalanced data. 
+B-8. State one advantage of using decision trees. 
+1. Easy to interpret and visualize. 
+2. Works with categorical and numerical data. 
+3. Requires minimal preprocessing. 
+4. Captures non-linear patterns. 
+5. Fast training. 
+B-9. What is data normalization? 
+1. Scaling values to a similar range. 
+2. Helps gradient descent converge faster. 
+3. Reduces bias from large magnitude features. 
+4. Common methods: Min–Max, Z-score. 
+5. Essential for distance-based algorithms. 
+B-10. Define regularization in simple words. 
+1. A technique to reduce overfitting. 
+2. Adds penalty to large weights. 
+3. Encourages simpler models. 
+4. Types: L1, L2 regularization. 
+5. Improves generalization. 

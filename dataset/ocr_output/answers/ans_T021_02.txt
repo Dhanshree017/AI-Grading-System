@@ -1,0 +1,173 @@
+ID-T021 
+Name: alisha chhabriya Roll no: 2 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 (each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring 
+is required. 
+Definition 
+Model drift is the gradual degradation of an ML model’s performance because the real-world data 
+distribution changes from the training distribution. 
+Explanation 
+When environments evolve—user preferences, market patterns, sensor behavior, seasonal trends—the 
+relationships learned by the model become outdated. This leads to inaccurate, biased, or unreliable outputs. 
+Types of Drift 
+1. Data Drift (Covariate Shift): 
+Input feature distribution changes. 
+Example: Customer spending values increase due to inflation. 
+2. Concept Drift: 
+Relationship between input features and the target variable changes. 
+Example: Email spam strategies evolve over time. 
+3. Label Drift (Prior Probability Shift): 
+Class proportions change. 
+Example: Increase in “loan default” class during economic slowdown. 
+4. Feature Interaction Drift: 
+Interdependencies among features change even if individual distributions remain stable. 
+Why Continuous Monitoring is Required 
+ To detect accuracy drops early. 
+ To avoid deploying incorrect or unsafe predictions. 
+ To trigger retraining, recalibration, or feature updates. 
+ To maintain fairness and reliability in production environments. 
+ To ensure compliance in regulated sectors like healthcare and finance. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence 
+concept learning. 
+Definition 
+Concept learning is the task of identifying a general rule (concept) from specific training examples. 
+Hypothesis Space 
+ The complete set of all hypotheses a model can possibly learn. 
+ A large space gives flexibility but risks overfitting. 
+ A small space prevents learning complex patterns. 
+Inductive Bias 
+ The assumptions a model uses to pick a hypothesis when multiple are consistent with training data. 
+ Essential for generalization to unseen examples. 
+ Example: Linear models assume relationships are linear. 
+Influence on Concept Learning 
+ Hypothesis space defines what the learner can potentially learn. 
+ Inductive bias guides the learner toward the “best” hypothesis. 
+ Proper alignment ensures correct generalization. 
+ Too much bias → underfitting; too little → overfitting. 
+A-5. Explain the importance of data balancing techniques. Compare oversampling, undersampling, and 
+synthetic balancing methods. 
+Importance 
+ Imbalanced data leads to biased models favoring majority classes. 
+ Reduces recall for minority classes and harms fairness. 
+ Essential for fraud detection, disease detection, rare event prediction. 
+Techniques Compared 
+1. Oversampling: 
+o Repeats minority samples. 
+o Pros: No information loss. 
+o Cons: Higher risk of overfitting. 
+2. Undersampling: 
+o Removes samples from the majority class. 
+o Pros: Faster training. 
+o Cons: Loss of valuable information. 
+3. Synthetic Balancing (SMOTE/ADASYN): 
+o Creates new minority samples by interpolation. 
+o Pros: Better diversity, less overfitting. 
+o Cons: May amplify noise if minority class contains errors. 
+A-6. What is active learning? Describe how query strategies like uncertainty sampling help improve 
+training efficiency. 
+Definition 
+Active learning is a technique where the model actively selects the most informative data points for labeling 
+to improve learning speed. 
+How It Works 
+ Model identifies samples where it is most unsure. 
+ These samples are sent to experts for labeling. 
+ Helps achieve high performance with fewer labeled examples. 
+Uncertainty Sampling 
+ Picks samples with lowest prediction confidence. 
+ Example strategies: least confidence, margin sampling, entropy sampling. 
+ Helps model quickly learn from edge cases. 
+Benefits 
+ Reduces annotation effort. 
+ Improves data efficiency. 
+ Ideal for medical imaging, satellite image interpretation, and rare species identification. 
+✅ B ] Attempt any 4 (each 5 marks) 
+(Topper-level, detailed, completely separate from Section A) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you would 
+follow to clean, preprocess, and prepare the data for training a model. 
+Steps 
+1. Initial Data Inspection: 
+o Summary statistics 
+o Missing value count 
+o Outlier and anomaly detection 
+2. Identify Missingness Pattern: 
+Determine whether missing values are MCAR, MAR, or MNAR. 
+3. Data Cleaning: 
+o Remove duplicates 
+o Standardize formats 
+o Correct invalid entries 
+4. Handling Missing Values: 
+o Numerical → Mean/median/KNN imputation 
+o Categorical → Mode, “Unknown” label, or frequency-based imputation 
+o Drop rows/columns only if missingness > 40–50% 
+5. Preprocessing: 
+o Scaling numerical features 
+o Encoding categorical variables 
+o Creating derived features if needed 
+6. Final Preparation: 
+o Train/validation/test split 
+o Remove data leakage potentials 
+o Ensure no missing values remain 
+B-3. You are tasked with building an ML model for predicting student performance. List and explain 
+the activities involved from feature identification to model evaluation. 
+Activities 
+1. Feature Identification: 
+Attendances, study hours, assignment completion, prior grades, parental involvement. 
+2. Data Collection and Cleaning: 
+Remove duplicates, fix missing values, correct outliers. 
+3. Preprocessing: 
+o Encoding categorical features 
+o Scaling continuous data 
+o Handling imbalanced outcomes if present 
+4. Feature Engineering: 
+Create meaningful features such as engagement index or learning trend. 
+5. Model Training: 
+Train multiple models like Random Forest, Gradient Boosting, Logistic Regression. 
+6. Evaluation: 
+Use metrics like F1-score or RMSE (depending on whether predicting grade category or numerical 
+scores). 
+Apply cross-validation for robustness. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. Describe the 
+activities you would conduct to detect, measure, and reduce bias. 
+Activities 
+1. Detect Bias: 
+Compare prediction distribution vs. true distribution. 
+Examine confusion matrix for majority-class dominance. 
+2. Measure Bias: 
+Use fairness metrics: 
+o Equal Opportunity 
+o Demographic Parity 
+o Disparate Impact 
+3. Fix Data-Level Issues: 
+o Balance classes 
+o Remove proxy attributes 
+o Re-sample or re-weight training data 
+4. Apply Model-Level Techniques: 
+o Fairness-aware algorithms 
+o Adjust class weights 
+o Add regularization to reduce majority influence 
+5. Post-processing: 
+Adjust decision thresholds per group if needed. 
+6. Monitor Bias After Deployment: 
+Continuously evaluate fairness metrics. 
+B-5. During deployment, your ML model starts performing poorly after a few months. Explain the 
+activities you would carry out to monitor, identify, and fix model drift. 
+Activities 
+1. Monitor Key Metrics: 
+Track accuracy, precision, recall, F1-score, and error rates. 
+2. Drift Detection: 
+o PSI (Population Stability Index) 
+o JS Divergence 
+o Statistical hypothesis tests 
+o Feature distribution plots 
+3. Root Cause Analysis: 
+Identify which features or label patterns shifted. 
+4. Collect Recent Data: 
+Gather new ground truth labels and update datasets. 
+5. Retrain or Fine-Tune Models: 
+o Full retraining with new data 
+o Online/continual training 
+o Feature recalibration 
+6. Validate Updated Model: 
+Compare old vs. new model performance before deploying. 

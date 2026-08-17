@@ -1,0 +1,87 @@
+ID-T027 
+Name: Ritesh nagar Roll no: 25 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Feature engineering is about making features from data but actually data already has features 
+so feature engineering means changing data shape and size many times. In machine learning 
+feature engineering is when we take raw data like numbers, text, images and then we do 
+many operations like adding, removing, joining, splitting, mixing values so model can see 
+better. Feature engineering is sometimes manual and sometimes automatic but mostly 
+depends on human thinking. 
+Feature engineering concept also means converting data into features but features are just 
+columns. If dataset has 10 columns then feature engineering can make it 100 columns or 
+even 5 columns depending on thinking. It also includes deleting features which are not 
+needed but sometimes deleting is bad because model can forget information. Feature 
+engineering also includes filling missing values by mean, median, zero, random number or 
+just deleting rows which is also feature engineering. 
+Importance of feature engineering is very big because without feature engineering model 
+cannot learn anything. Even best algorithm like deep learning will fail if features are bad. 
+Feature engineering improves accuracy because it gives more information to model. For 
+example if we add squared value, cube value, difference, sum, average, then model becomes 
+more powerful. Feature engineering also reduces noise but sometimes increases noise also if 
+we add too many features. 
+Feature engineering also makes model faster because fewer features means less computation. 
+Sometimes more features also make model faster because model understands pattern quickly. 
+Feature engineering helps in interpretability also because features are meaningful but 
+sometimes features are very complex and not understandable. Feature engineering also helps 
+to remove bias but also can add bias if human thinking is biased. 
+Feature engineering is important in all models like regression, classification, clustering, 
+neural networks, decision trees, etc. Without feature engineering machine learning is 
+incomplete. Many data scientists spend most time in feature engineering rather than model 
+selection. Feature engineering decides success or failure of model mostly. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Machine learning model training process is a long process where data is given to computer 
+and computer learns automatically. First data is collected from many sources like internet, 
+sensors, files, databases, excel sheets and APIs. Then data is directly given to model but 
+sometimes preprocessing is done. 
+Training data is used to train the model which means model sees data and remembers 
+patterns. Model uses training data to adjust weights, parameters and formulas until loss 
+becomes minimum. Training can take long time depending on data size. If training data is 
+large then model becomes strong but also slow. 
+Validation data is used to validate the model. Validation means checking model during 
+training time. Validation data is not used to train but to see performance. Validation data 
+helps to choose best model, best hyperparameters and best architecture. Sometimes 
+validation data is also used wrongly to train model again which causes confusion. 
+Test data is used at the end to test model final performance. Test data should not be seen by 
+model before but sometimes model indirectly sees it. Test data gives accuracy, precision, 
+recall etc. If test accuracy is high then model is good otherwise model is bad. 
+Data splitting is important because if same data is used everywhere then model will 
+memorize instead of learning. Common split is 70-15-15 or 60-20-20 but sometimes random. 
+If splitting is wrong then evaluation is wrong. Training, validation and testing together form 
+full training process. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Bias variance tradeoff is a trade between bias and variance which are two types of errors. 
+Bias is error due to model being too simple and variance is error due to model being too 
+complex. Bias variance tradeoff means we cannot reduce both at same time easily. 
+Bias happens when model does not learn data properly and gives same type of output 
+always. High bias model underfits data and gives poor accuracy. Variance happens when 
+model learns too much including noise and gives different output for small change in data. 
+High variance model overfits data. 
+Bias variance tradeoff affects model performance because if bias is high then performance is 
+bad and if variance is high then performance is also bad. Best model is where bias and 
+variance are balanced. This balance gives good training and testing accuracy. 
+Bias variance also affects generalization because high variance model does not generalize 
+well to new data. High bias model also does not generalize because it does not learn pattern. 
+Many techniques like regularization, pruning, cross validation are used to manage bias 
+variance tradeoff. 
+Bias variance tradeoff is very important concept in machine learning and appears in all 
+algorithms. Understanding this helps to choose correct model complexity. 
+d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Machine learning has different types of learning based on how data is given to model. Batch 
+learning is when model is trained using full dataset at once. Batch learning does not change 
+model after training. If new data comes then model must be trained again from beginning. 
+Online learning is when model learns continuously from new data. Online learning updates 
+model every time new data arrives. This is useful for real time systems. But online learning 
+can be unstable because wrong data can spoil model. 
+Incremental learning is similar to online learning but slightly different. Incremental learning 
+learns in steps and keeps previous knowledge. Incremental learning does not forget old data 
+easily. It updates model gradually. 
+Batch learning is used in offline systems, online learning in streaming systems and 
+incremental learning in evolving systems. Each learning type has advantages and 
+disadvantages. Choice depends on data size and speed requirement. 

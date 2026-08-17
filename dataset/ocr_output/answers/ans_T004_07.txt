@@ -1,0 +1,106 @@
+ID-T004 
+Name : ashitosh shinde Roll no: 7 
+Email : studentisdummy@gmail.com 
+A-1: What is machine learning? Explain its types in detail with examples. 
+Machine learning is like, um, a part of computer science that lets computers learn things 
+from data. It is, I think, a type of artificial intelligence because it makes computers 
+smarter by looking at patterns. Basically, instead of programming every step, the 
+computer figures out rules by itself from the examples it sees. 
+There are some types of machine learning. I read there are three main types, but 
+sometimes there are more, I think. 
+1. Supervised Learning: 
+ This is when the data has labels, like we already know the answers. The computer 
+tries to find a pattern between input and output. 
+ Example: If we know how many hours a student studies and their marks, the 
+computer can try to predict marks for a new student. 
+ Another example: Spam email classification — emails labeled “spam” or “not 
+spam.” 
+2. Unsupervised Learning: 
+ Here, the computer has no labels. It tries to find patterns by itself. 
+ Example: Clustering students based on study habits. The computer finds groups, 
+maybe like “hardworking,” “medium,” or “lazy,” but we don’t tell it the names. 
+ Another example: Customer grouping in marketing — it finds segments based on 
+buying behavior. 
+3. Reinforcement Learning: 
+ The computer or agent learns by trying things and getting rewards or penalties. 
+ Example: A robot learning to walk — it gets a reward if it walks correctly and a 
+penalty if it falls. 
+ Another example: AI playing a game like chess — it learns which moves are good 
+by playing many times. 
+Honestly, machine learning is useful in a lot of areas — education, health, finance. 
+Sometimes it’s confusing because it seems similar to AI, but AI is bigger, and machine 
+learning is a way to do AI. 
+A-2: Explain how to choose an appropriate machine learning algorithm for a given 
+dataset. Include steps and considerations. 
+Choosing an algorithm is a bit tricky. I think there is no exact rule, but usually we 
+follow some steps. 
+Step 1: Understand the problem: 
+ What kind of problem is it? Classification, regression, clustering? 
+ Example: Predicting student pass/fail → classification. Predicting marks → 
+regression. 
+Step 2: Check the data: 
+ Look at number of features, missing values, and maybe outliers. 
+ Example: If many features are missing, maybe use decision trees because they can 
+handle missing data. 
+Step 3: Preprocessing: 
+ Scale features, convert categorical data, maybe remove some irrelevant stuff. 
+Step 4: Choose candidate algorithms: 
+ For classification: Logistic Regression, Decision Tree, Random Forest, SVM 
+ For regression: Linear Regression, Random Forest Regressor, Polynomial Regression 
+Step 5: Split data: 
+ Training and test set. Sometimes also validation set if tuning hyperparameters. 
+Step 6: Train and evaluate: 
+ Train on training set, check metrics on test set. 
+ Metrics depend on problem type — accuracy, precision, recall, RMSE, etc. 
+Step 7: Fine-tuning: 
+ Hyperparameter tuning using cross-validation or trial and error. 
+Some considerations: 
+ Data size — big data may need complex algorithms, small data → simple models 
+ Accuracy vs interpretability — if we need explanation, simple models are better 
+ Time and computational resources — complex models may take a long time to 
+train 
+I think sometimes students get confused because there are too many algorithms. So trying 
+multiple algorithms is a good idea. 
+A-4: What are support vector machines (SVM)? Explain hyperplanes, kernels, and 
+margin maximization. 
+Support Vector Machines are supervised learning models mainly used for classification. 
+The idea is to separate classes using a boundary called a hyperplane. 
+ Hyperplane: 
+o It is a line in 2D, a plane in 3D, or a hyperplane in higher dimensions. 
+o It tries to separate different classes. 
+ Kernels: 
+o If the data cannot be separated by a straight line, kernels transform the data 
+into higher dimensions to make separation possible. 
+o Example: RBF kernel, Polynomial kernel 
+ Margin maximization: 
+o The SVM tries to make the distance between the hyperplane and the closest 
+points (support vectors) as big as possible. 
+o A bigger margin helps generalization. 
+Example: Predict whether a student passes based on attendance and homework scores. 
+ If linear → simple SVM works 
+ If complex → use kernel 
+Sometimes SVM is confusing because of kernels and support vectors, but it works well in 
+many classification problems. 
+A-6: Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, 
+disadvantages, and use cases. 
+KNN is simple but can be tricky. It works by looking at the nearest K points and deciding 
+the class based on majority. 
+Steps: 
+1. Choose K (number of neighbors) 
+2. Measure distance from new point to all training points 
+3. Select K nearest points 
+4. Assign class by majority vote 
+Advantages: 
+ Simple, easy to understand 
+ Works for small datasets 
+ Non-parametric 
+Disadvantages: 
+ Slow for large datasets 
+ Sensitive to irrelevant features 
+ Need to scale features 
+Use cases: 
+ Classifying students by performance 
+ Handwritten digit recognition 
+ Recommender systems 
+KNN sometimes confuses students because you have to choose K and distance metric 
+carefully. 

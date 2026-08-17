@@ -1,0 +1,117 @@
+ID-T028 
+Name: Karan jadhav Roll no: 4 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Cleaning and Preparing Data 
+ Initial Data Exploration: Just look at the data to see what kinds of numbers and text you have. 
+ Detection of Missing Values: Find all the empty spaces or null values in the columns. 
+ Handling Missing Data: 
+o For missing numbers, use the average (mean) or middle number (median) to fill the gap. 
+o If a row has too much missing data, just delete the whole row. 
+ Identification of Inconsistencies: Find where the same thing is spelled differently (like 'U.S.' and 
+'USA'). 
+ Standardization of Data: Make all the similar text entries look the same ('USA'). 
+ Duplicate and Error Removal: Get rid of copied rows and clear bad numbers that are obviously 
+wrong (outliers). 
+ Feature Transformation: Turn the text categories (like colors) into numbers so the model can read 
+them (encoding). 
+ Final Validation Check: Make sure the data is clean and ready to go for the model. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps you 
+would take to analyze and improve the model’s performance. 
+Steps for Cleaning and Preparing Data 
+ Initial Data Exploration: Just look at the data to see what kinds of numbers and text you have. 
+ Detection of Missing Values: Find all the empty spaces or null values in the columns. 
+ Handling Missing Data: 
+o For missing numbers, use the average (mean) or middle number (median) to fill the gap. 
+o If a row has too much missing data, just delete the whole row. 
+ Identification of Inconsistencies: Find where the same thing is spelled differently (like 'U.S.' and 
+'USA'). 
+ Standardization of Data: Make all the similar text entries look the same ('USA'). 
+ Duplicate and Error Removal: Get rid of copied rows and clear bad numbers that are obviously 
+wrong (outliers). 
+ Feature Transformation: Turn the text categories (like colors) into numbers so the model can read 
+them (encoding). 
+ Final Validation Check: Make sure the data is clean and ready to go for the model. 
+Steps for Cleaning and Preparing Data 
+ Initial Data Exploration: Just look at the data to see what kinds of numbers and text you have. 
+ Detection of Missing Values: Find all the empty spaces or null values in the columns. 
+ Handling Missing Data: 
+o For missing numbers, use the average (mean) or middle number (median) to fill the gap. 
+o If a row has too much missing data, just delete the whole row. 
+ Identification of Inconsistencies: Find where the same thing is spelled differently (like 'U.S.' and 
+'USA'). 
+ Standardization of Data: Make all the similar text entries look the same ('USA'). 
+ Duplicate and Error Removal: Get rid of copied rows and clear bad numbers that are obviously 
+wrong (outliers). 
+ Feature Transformation: Turn the text categories (like colors) into numbers so the model can read 
+them (encoding). 
+ Final Validation Check: Make sure the data is clean and ready to go for the model. 
+. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors you 
+would consider before selecting the algorithm. 
+Factors Influencing Algorithm Selection 
+ Problem Definition: Are you trying to guess a category (Classification) or a number (Regression)? 
+ Data Size and Availability: If you have only a little data, use a simple model. If you have lots, you 
+can use a complex one. 
+ Data Type and Structure: Check if the data is numbers, text, or pictures. This changes the model 
+you pick. 
+ Interpretability Requirement: Do you need to explain why the model made its decision? If yes, 
+pick a simple, easy-to-understand model. 
+ Accuracy Requirements: How good does the prediction need to be? Sometimes "good enough" is 
+fine. 
+ Training and Prediction Speed: How fast must the model train and how fast must it give an answer 
+in the real world? 
+ Computational Resources: Do you have fast computers and enough memory to run the model? 
+ Scalability Needs: Will the data grow big in the future? The model needs to handle that. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain how 
+you would identify the cause and what actions you would take. 
+Steps for Cleaning and Preparing Data 
+ Initial Data Exploration: Just look at the data to see what kinds of numbers and text you have. 
+ Detection of Missing Values: Find all the empty spaces or null values in the columns. 
+ Handling Missing Data: 
+o For missing numbers, use the average (mean) or middle number (median) to fill the gap. 
+o If a row has too much missing data, just delete the whole row. 
+ Identification of Inconsistencies: Find where the same thing is spelled differently (like 'U.S.' and 
+'USA'). 
+ Standardization of Data: Make all the similar text entries look the same ('USA'). 
+ Duplicate and Error Removal: Get rid of copied rows and clear bad numbers that are obviously 
+wrong (outliers). 
+ Feature Transformation: Turn the text categories (like colors) into numbers so the model can read 
+them (encoding). 
+ Final Validation Check: Make sure the data is clean and ready to go for the model. 
+Steps for Cleaning and Preparing Data 
+ Initial Data Exploration: Just look at the data to see what kinds of numbers and text you have. 
+ Detection of Missing Values: Find all the empty spaces or null values in the columns. 
+ Handling Missing Data: 
+o For missing numbers, use the average (mean) or middle number (median) to fill the gap. 
+o If a row has too much missing data, just delete the whole row. 
+ Identification of Inconsistencies: Find where the same thing is spelled differently (like 'U.S.' and 
+'USA'). 
+ Standardization of Data: Make all the similar text entries look the same ('USA'). 
+ Duplicate and Error Removal: Get rid of copied rows and clear bad numbers that are obviously 
+wrong (outliers). 
+ Feature Transformation: Turn the text categories (like colors) into numbers so the model can read 
+them (encoding). 
+ Final Validation Check: Make sure the data is clean and ready to go for the model. 
+. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Non-Metric-Based Model Comparison 
+ Prediction Behavior Analysis: Watch how each model guesses things. Does Model A always guess 
+too high, while Model B is more balanced? 
+ Error Type Comparison: Which model's mistakes are more serious or more expensive in real 
+life? 
+ Model Explainability: Choose the model that is easier for people to understand and trust. 
+ Robustness Testing: Give both models some messy or weird data and see which one breaks less 
+often. 
+ Deployment Complexity: Which model is simpler to put onto the company's servers and keep 
+running? 
+ Resource Efficiency: Which model uses less computer power and memory? That one is cheaper to 
+run. 
+ Consistency Over Time: Check which model stays reliable and doesn't have wild performance 
+swings. 
+ Practical Usefulness: The best model is the one that actually helps the business the most, even if its 
+accuracy number is slightly lower. 

@@ -1,0 +1,200 @@
+ID-T019 
+Name: Anjali prakash Roll no: 26 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 4 (5 marks each) 
+A-a) Define Machine Learning. Explain how it differs from traditional programming with a 
+simple example. 
+Definition of Machine Learning: 
+ Machine Learning is a method where computers learn patterns from available 
+information and try to make decisions without using fixed hand-written rules. 
+ The system improves as it gets more examples. 
+Difference from Traditional Programming: 
+ Traditional programming uses strict instructions written by humans, and the output is 
+always determined by the code. 
+ Machine Learning creates its own rules by studying sample data. 
+ In traditional coding, we tell the computer exactly how to solve the problem. 
+ In ML, we only give data and let the computer figure out the rules. 
+A-e) What is a model in Machine Learning? Explain how a model learns patterns from data 
+during training. 
+Meaning of a Model: 
+ A model is a simplified representation that captures relationships inside data. 
+ It uses inputs and produces outputs based on learned structure. 
+How It Learns Patterns: 
+ The model starts with random internal settings. 
+ It compares predictions with actual answers. 
+ It adjusts internal values to reduce mistakes. 
+ Repeats this many times using training data. 
+ Over time it forms patterns that allow it to make predictions on new inputs. 
+SECTION B – Attempt any 4 (5 marks each) 
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+Meaning of Hypothesis Space: 
+ Hypothesis space is the collection of all possible solutions or models that a learning 
+algorithm can choose from when trying to fit data. 
+ Every hypothesis represents a different interpretation of the training data. 
+Relation to Model Complexity: 
+ A small hypothesis space contains simple models that capture only basic relationships. 
+ A large hypothesis space includes many possible shapes, rules, and boundaries. 
+ Increasing the space allows models to learn complicated patterns. 
+Relation to Generalization: 
+ If hypothesis space is too small, the model may be too limited and fail to learn 
+meaningful patterns. 
+ If the space is too large, the model may memorize noise or create unnecessary 
+patterns. 
+ Good generalization happens when the chosen hypothesis fits important trends without 
+trying to represent every random variation. 
+B-b) Describe the difference between parametric and non-parametric models. Give suitable 
+examples of each and explain when to use them. 
+Parametric Models: 
+ Have a fixed number of parameters regardless of how much data is given. 
+ They assume a specific form for the model structure. 
+ Example: Linear classifier predicting color of an object from its taste. 
+ Used when data is small or when the relationship looks simple. 
+Non-Parametric Models: 
+ Number of parameters can grow with the dataset. 
+ They do not assume any strict shape for the model. 
+ Example: A memory-based algorithm that stores all numbers and checks which 
+number is loudest. 
+ Used when data is large or patterns are uncertain. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection: 
+ Gather data from sources like sensors, documents, apps, or human inputs. 
+2. Data Cleaning and Preprocessing: 
+ Handle missing values, organize formats, and remove inconsistent entries. 
+ Convert raw information into usable structure. 
+3. Feature Preparation: 
+ Pick or create features needed for model training. 
+ Remove unnecessary attributes. 
+4. Model Training: 
+ Provide training data to an algorithm and let it learn patterns. 
+ Adjust internal structure repeatedly until model stabilizes. 
+5. Validation: 
+ Test different settings and choose the best-performing approach. 
+ Prevents over-adjustment of the training data. 
+6. Evaluation: 
+ Check performance using unseen testing data. 
+ Use metrics like accuracy or error rate to measure quality. 
+SECTION C — Attempt only 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two 
+commonly used ML algorithms. 
+What an algorithm is (ML context) 
+ An algorithm in machine learning is a step-by-step computational recipe the system 
+follows to learn patterns from data. 
+ It defines how the model updates its internal settings, how errors are measured, and 
+how improvement is performed over many passes through the data. 
+ The algorithm is the learning procedure (not the model itself); it specifies training 
+steps such as how to compare predictions to labels, how to change parameters, and 
+how to stop. 
+Key properties of ML algorithms 
+ Learning rule: how the algorithm updates parameters (for example, reduce error). 
+ Capacity/complexity control: what class of functions the algorithm can produce. 
+ Stopping criteria: when training ends (fixed epochs, convergence, early stopping). 
+ Computational behavior: speed, memory needs, and scalability. 
+Two common algorithms (brief examples) 
+1. Decision Tree Learning (e.g., CART): 
+o Builds a tree by repeatedly splitting the feature space using conditions that best 
+separate classes or reduce variance. 
+o Easy to interpret, works for classification and regression, but can overfit without 
+pruning. 
+2. k-Nearest Neighbors (k-NN): 
+o A lazy, instance-based algorithm that predicts a new sample’s label based on the 
+majority (or average) of its k closest training samples in feature space. 
+o Simple, no explicit training time, but prediction is slow for large datasets and 
+sensitive to feature scaling. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+Definition 
+ Data preprocessing is the series of operations applied to raw data to convert it into a 
+clean, consistent, and model-ready form. It includes cleaning, transforming, and 
+organizing data before feeding it to learning algorithms. 
+Typical preprocessing steps 
+ Missing value handling: remove rows, impute with mean/median/mode, or use 
+model-based imputation. 
+ Outlier detection and treatment: identify extreme values and clip, remove, or 
+investigate causes. 
+ Normalization / Scaling: rescale numeric features (min-max, standard scaling) so 
+algorithms behave correctly. 
+ Categorical encoding: convert categories to numbers using one-hot, ordinal, or target 
+encoding. 
+ Text/image-specific steps: tokenization and stopword removal for text; resizing and 
+augmentation for images. 
+ Feature construction: create useful derived features (ratios, date parts, aggregations). 
+ Noise reduction: smoothing or filtering when data is noisy. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. 
+Give suitable examples. 
+Definitions 
+ Features (inputs): measurable properties or attributes used by the model to make 
+predictions. Features can be numeric, categorical, text, images, timestamps, etc. 
+ Labels (targets): the ground-truth values or outcomes the model is trained to predict. 
+Labels exist in supervised learning and are used to compute model error during 
+training. 
+Nature and roles 
+ Features describe each data instance (independent variables). Labels are the dependent 
+variable(s) the model tries to approximate. 
+ During training, features are input; labels are compared with model outputs to 
+compute loss and guide learning. 
+Examples 
+1. House price prediction (regression): 
+o Features: number of bedrooms, area in sq.ft., location, age of house, proximity 
+to metro. 
+o Label: sale price (a continuous numeric value). 
+2. Email spam detection (classification): 
+o Features: frequency of certain words, presence of attachments, sender domain, 
+message length. 
+o Label: spam / not spam (binary category). 
+3. Image classification: 
+o Features: raw pixel values or learned image embeddings. 
+o Label: object category (e.g., cat, dog, car). 
+Notes on feature/label engineering 
+ Good predictive performance often depends more on informative features than on the 
+algorithm choice. 
+ Labels must be accurate and consistent; noisy or wrong labels directly harm learning. 
+ For multi-task problems, there can be multiple labels per instance (multi-output 
+learning). 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+What model evaluation is 
+ Model evaluation is the process of measuring how well a trained model performs on 
+data it has not seen before. It quantifies predictive quality, helps compare models, and 
+guides decisions about deployment. Evaluation should be performed on held-out test 
+data or via cross-validation to assess generalization. 
+Key aspects to consider 
+ Choice of metric(s): depends on task (classification vs regression), class balance, and 
+business impact. 
+ Validation strategy: single train/test split, k-fold cross-validation, stratified sampling, 
+or time-series split for temporal data. 
+ Error analysis: look at confusion cases, residual patterns, or important feature 
+contributions to find weaknesses. 
+Two common metrics 
+1. Accuracy (classification) 
+o What it measures: fraction of correct predictions (correctly predicted labels / 
+total predictions). 
+o When useful: when classes are balanced and all errors have similar cost. 
+o Limitations: misleading on imbalanced datasets (a trivial majority classifier 
+can get high accuracy). 
+2. Mean Absolute Error (MAE) (regression) 
+o What it measures: average absolute difference between predicted and true 
+numeric values. 
+o When useful: gives a direct interpretable error in original units (e.g., dollars). 
+o Limitations: treats all errors equally and is less sensitive to large outliers than 
+MSE. 
+Practical note 
+ For classification with imbalance, prefer metrics like precision, recall, F1-score, or 
+area under the ROC curve. For regression, consider MSE, RMSE, MAE, and R² 
+depending on sensitivity to outliers and interpretability. 
+SECTION D — Attempt all (2 marks each) 
+D-c) What is a decision tree in simple terms? 
+ A decision tree is a model that makes decisions by splitting data into small groups. 
+ It uses simple rules like checking if a feature is above or below a value. 
+ Each branch represents a question, and each leaf gives the final answer. 
+ It is easy to understand because it looks like a flowchart. 
+D-d) Mention any two challenges faced when collecting ML data. 
+ Real-world data may contain noise, mistakes, or missing values. 
+ Some data is expensive or time-consuming to gather. 
+ Privacy restrictions can limit what data can be collected. 
+ Data from different sources may not follow the same format. 
+D-e) What is model generalization? 
+ Generalization is the model’s ability to work well on new, unseen data. 
+ A well-generalized model does not just memorize training examples. 
+ It captures the overall pattern so it can make correct predictions in real situations. 
+ Poor generalization often leads to overfitting. 

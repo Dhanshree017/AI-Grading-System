@@ -1,0 +1,135 @@
+ID-T009 
+Name : Ankit yadav Roll no: 30 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one example 
+of each. 
+Supervised learning is type of learning where input data with labels is given and 
+machine learns to predict output from new data. Unsupervised learning is when 
+machine get only input data without labels and tries to find hidden pattern or 
+structure. 
+1. Supervised learning is used for prediction. 
+2. Unsupervised learning is used for grouping or clustering. 
+3. Supervised need labeled data. 
+4. Unsupervised do not need labels. 
+5. Example supervised: Predict student marks from study hours. 
+6. Example unsupervised: Group customers by buying habits. 
+7. Supervised uses regression or classification algorithms. 
+8. Unsupervised uses clustering or dimensionality reduction. 
+9. Semi-supervised learning combines both techniques. 
+A-3. What is Principal Component Analysis (PCA)? Why is it used? 
+Principal Component Analysis (PCA) is method to reduce number of variables in 
+dataset while keeping most important information. It transform correlated variables 
+into new uncorrelated principal components. PCA helps simplify data and reduce 
+computation cost. 
+1. Reduces number of features. 
+2. Remove redundancy in dataset. 
+3. Makes data visualization easier. 
+4. Helps faster training of machine learning models. 
+5. Reduces noise in data. 
+6. Improves model performance. 
+7. Helps in regression or classification. 
+8. Useful in image compression. 
+9. Helps in exploring patterns in data. 
+A-4. What are the steps of creating a Machine Learning Model? 
+Creating machine learning model involves sequence of steps to make sure model work 
+correctly. Steps start from data collection and end at deployment. 
+1. Collect data from sources like database, files or internet. 
+2. Clean data by removing missing or incorrect values. 
+3. Select features important for learning. 
+4. Split data into training and testing sets. 
+5. Choose suitable algorithm for problem. 
+6. Train model using training data. 
+7. Evaluate model on testing data. 
+8. Tune hyperparameters for better accuracy. 
+9. Deploy model in real application. 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting happens when model learn too much from training data including noise. 
+Underfitting happens when model too simple and cannot learn proper pattern. Both 
+affect model performance. 
+1. Overfitting shows high training accuracy but low test accuracy. 
+2. Underfitting shows low accuracy both in training and test. 
+3. Overfitting happens with complex model. 
+4. Underfitting happens with simple model. 
+5. Example overfitting: model memorize past exam scores but fail new students. 
+6. Example underfitting: linear model for nonlinear data. 
+7. Regularization helps reduce overfitting. 
+8. Adding more features reduce underfitting. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance Tradeoff. 
+Bias is error due to wrong assumptions in model, variance is error due to model 
+changing too much with different dataset. Bias-variance tradeoff is process of 
+balancing bias and variance to get optimal performance. 
+1. High bias cause underfitting. 
+2. High variance cause overfitting. 
+3. Tradeoff helps model generalize better. 
+4. Simple model has more bias. 
+5. Complex model has more variance. 
+6. Regularization reduces variance. 
+7. Cross-validation find optimal balance. 
+8. Both contribute to total prediction error. 
+9. Best model keeps both low. 
+B-2. What is Regression? Explain its types in detail. 
+Regression is supervised learning technique to predict continuous output from input 
+variables. Models relationship between dependent and independent variables. 
+B-3. What is Decision Tree? Explain its steps to implement it. 
+Decision Tree is model that split data recursively to make decision. Node checks 
+feature, branch splits condition, leaf gives output. 
+1. Choose root node with best feature. 
+2. Split data according to feature values. 
+3. Create sub-nodes for branches. 
+4. Repeat splitting until node pure. 
+5. Stop splitting when data uniform. 
+6. Assign label to leaf. 
+7. Prune tree to avoid overfitting. 
+8. Test tree with unseen data. 
+9. Deploy for prediction. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Classification 
+Output Type Categories 
+Example 
+Spam detection 
+Data Type Discrete 
+Regression 
+Continuous numbers 
+House price prediction 
+Continuous 
+Algorithm Decision Tree, SVM Linear Regression, Ridge 
+Evaluation Accuracy, F1 Score MAE, RMSE 
+Use Case 
+Labels 
+Image/Email 
+Required 
+Forecasting 
+Required 
+Visualization Confusion Matrix Line graph 
+Result 
+Class label 
+Numeric value 
+B-5. How Deep Learning is different from Machine Learning? Explain Regularization 
+in detail. 
+Deep Learning is part of machine learning with many layers of neurons to learn 
+complex features automatically. Machine learning use simpler models and manual 
+feature extraction. 
+Differences: 
+1. Deep learning uses multi-layered networks. 
+2. Machine learning uses simple algorithm. 
+3. Deep learning requires large data. 
+4. Machine learning can work with small data. 
+5. Deep learning often need GPUs. 
+6. Machine learning can run on normal computer. 
+7. Deep learning handle images, text, audio. 
+8. Machine learning more interpretable. 
+9. Deep learning give higher accuracy on complex data. 
+Regularization: 
+1. Prevents overfitting. 
+2. L1 removes unimportant features. 
+3. L2 reduces weight magnitude. 
+4. Dropout randomly disable neurons. 
+5. Improves generalization. 
+6. Works for ML and DL models. 
+7. Reduces memorization. 
+8. Controls model complexity. 
+9. Balances bias and variance. 

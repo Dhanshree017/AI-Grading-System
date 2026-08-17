@@ -1,0 +1,126 @@
+ID-T005 
+Name: Sunil Apte Roll no: 3 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A-1. What is the core difference between traditional programming and machine learning? 
+The core difference between traditional programming and machine learning lies in how the 
+solution (the program) is derived and updated.1 
+Feature 
+Traditional Programming 
+(Imperative) 
+Machine Learning (Declarative) 
+Input 
+Data and explicit, hand-coded rules 
+(algorithm). 
+Data and desired outputs (labels). 
+Output The answer (result). 
+The rules (the model or mapping 
+function). 
+Program 
+Logic 
+The programmer provides the logic 
+and must anticipate all scenarios. 
+Logic is static. 
+The algorithm derives the logic (the 
+model) automatically from the data. 
+Logic is dynamic. 
+Core 
+Mechanism 
+Instruction execution and control 
+flow. 
+Statistical inference and optimization. 
+Updating 
+Requires a programmer to manually 
+write and debug new code. 
+Requires feeding the model more data 
+and re-training it. 
+ 
+ 
+ 
+Q2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+Entropy and Information Gain are the primary metrics used to guide the construction of a 
+Decision Tree, determining the optimal feature and split point at each node. 
+1. Entropy (Impurity): 
+o Concept: Entropy is a measure of randomness, disorder, or impurity within a 
+set of data. A node with high entropy (e.g., a mix of 50 percent 'Yes' and 
+50 percent 'No' class labels) indicates high disorder and provides little 
+information. A node with zero entropy (e.g., 100 percent 'Yes' labels) is 
+perfectly pure and requires no further splitting. 
+o Role in DT: It quantifies the uncertainty before a split is made. 
+2. Information Gain (Reduction in Impurity): 
+o Concept: Information Gain is the expected reduction in entropy achieved by 
+splitting the data based on a particular feature. It measures how much the 
+uncertainty about the class label decreases after the split. 
+o Role in DT: The Decision Tree algorithm uses a greedy approach—at every node, 
+it evaluates all possible features and split points and selects the one that 
+provides the maximum Information Gain. This ensures the tree is built efficiently 
+by prioritizing the most powerful features first. 
+Q3. Why is this algorithm considered "Naive," and what computational benefit does this 
+assumption provide? 
+This question refers to the Naive Bayes algorithm. 
+1. Why it is "Naive": 
+o The algorithm is considered "Naive" because it makes the strong, often 
+unrealistic assumption that all features are conditionally independent of each 
+other, given the class label. 
+o For example, if classifying an email as spam, the model assumes that the 
+probability of seeing the word "viagra" is independent of the probability of 
+seeing the word "urgent," given that the email is spam. In reality, these words 
+are correlated, making the assumption "naive." 
+Q4. Despite its name, what kind of problem does Logistic Regression solve, and what function 
+does it use to map its output to a probability? 
+Logistic Regression is a fundamental statistical model used for Classification problems, despite 
+having the term "regression" in its name. 
+1. Problem Solved (Classification): 
+o Logistic Regression solves binary classification problems (predicting one of two 
+outcomes, e.g., Yes/No, 0/1, True/False). It can also be extended to solve 
+multi-class problems. 
+o Unlike linear regression, which predicts a continuous numerical value, Logistic 
+Regression predicts the probability that a given input belongs to a particular 
+class. 
+2. Function Used (The Sigmoid Function): 
+o The model achieves this by passing the result of a linear equation (the weighted 
+sum of inputs) through a Sigmoid (or Logistic) function. 
+o The Sigmoid function takes any real number input and squashes it into a value 
+strictly between 0 and 1. This output is directly interpreted as a probability. 
+o The S-shaped curve of the Sigmoid function ensures that the prediction is 
+bounded (a probability cannot be less than 0 or greater than 1), making it 
+suitable for classification tasks. 
+B] Attempt any 4 (2 marks each) 
+1. Identify and explain five business applications of machine learning. 
+1. Credit Scoring/Fraud Detection: Analyzing transaction patterns, user behavior, and 
+application data to predict the probability of a fraudulent transaction or a loan 
+default. 
+2. Recommendation Systems: Predicting user preferences (based on past behavior and 
+similar users) to suggest products (e.g., Amazon, Netflix). 
+3. Customer Churn Prediction: Identifying customers who are likely to discontinue service, 
+allowing the business to proactively intervene with retention strategies. 
+4. Sentiment Analysis: Processing large volumes of text (social media, reviews, support 
+tickets) to determine the overall public mood or opinion towards a product or service. 
+5. Predictive Maintenance: Forecasting when machinery or equipment is likely to fail, 
+enabling maintenance teams to intervene before a costly breakdown occurs. 
+2. What are training, validation, and test sets? Why are they used? 
+These are three distinct partitions of the dataset used to ensure a model is properly 
+developed and honestly evaluated: 
+ Training Set: Used for parameter learning (fitting the model weights). 
+ Validation Set: Used for hyperparameter tuning and model selection (assessing 
+performance during development). 
+ Test Set: Used once, at the very end, for final, unbiased evaluation to report the 
+model's true generalization ability. 
+They are used to prevent information leakage and ensure the final reported performance 
+metric is an accurate reflection of how the model will perform on truly unseen data. 
+4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a table used to describe the performance of a classification model on 
+a set of test data for which the true values are known. It breaks down predictions into 
+four categories: True Positives, True Negatives, False Positives, and False Negatives. 
+ Precision: Out of all instances the model predicted as positive, how many were actually 
+positive? 
+o Focus: Measures the model's accuracy in positive predictions (minimizing False 
+Positives). 
+ Recall (Sensitivity): Out of all instances that were actually positive, how many did 
+the model correctly identify? 
+o Focus: Measures the model's ability to find all positive cases (minimizing False 
+Negatives). 
+ F1-Score: The harmonic mean of Precision and Recall. 
+o Focus: Provides a single metric that balances both Precision and Recall, especially 
+useful for models trained on imbalanced datasets. 

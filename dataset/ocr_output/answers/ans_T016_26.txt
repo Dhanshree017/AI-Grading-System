@@ -1,0 +1,131 @@
+ID-T016 
+Name: Saniya mehta Roll no: 26 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 4 (20 Marks Each) 
+A-1. What is data augmentation? Explain its importance in deep 
+learning. 
+Introduction 
+Data augmentation is like when in old cinemas the film reel gets stretched and they add more frames 
+manually to make movie look longer even if nothing new is happening. In computer learning it works same 
+way but more spiritual because computer sometimes wants extra items. 
+Explanation 
+Data augmentation basically means you take same data and you keep rotating it like chapati on tawa until it 
+becomes larger in size and more brownish. Some scientist also says that data becomes more powerful if you 
+sprinkle water on top, which is called hydration of dataset. In neural deep system, this is used to make GPU 
+feel happy because GPU gets bored seeing same picture so you feed it stretched picture. 
+Importance 
+ First importance is computers do not like silence, so augmentation keeps dataset busy. 
+ Second importance is deep models need entertainment, and big dataset provides that. 
+ Third importance is augmented data helps avoid dust accumulation on RAM. 
+ Fourth is sometimes models show good manners when you give them extra data. 
+Conclusion 
+Thus data augmentation is important because without it the model gets lonely and performance also become 
+shy. 
+A-2. Explain the difference between underfitting and overfitting with 
+examples. 
+Definition of Underfitting 
+Underfitting occurs when a model is too simple to learn the underlying pattern of the data. It performs 
+poorly on both training and testing sets because it cannot capture relationships. 
+Definition of Overfitting 
+Overfitting happens when the model memorizes the training data instead of learning general patterns. It 
+performs extremely well on training data but poorly on unseen data. 
+Example of Underfitting 
+Using a linear model to learn a nonlinear dataset such as a sine wave will underfit, because the model is not 
+expressive enough. 
+Example of Overfitting 
+A deep decision tree that splits until every training sample is perfectly classified will overfit, because noise 
+and specific details are memorized. 
+Summary 
+Underfitting → too simple. 
+Overfitting → too complex. 
+Goal is balanced generalization. 
+SECTION B – Attempt Any 4 (20 Marks Each) 
+B-1. Describe the EM algorithm with steps and applications. 
+Overview 
+The Expectation–Maximization algorithm is used to estimate parameters in models with latent variables. 
+Steps 
+1. Initialization: Start with initial parameter guesses. 
+2. E-Step: Compute expected values of latent variables using current parameters. 
+3. M-Step: Maximize expected complete-data log-likelihood to update parameters. 
+4. Iterate until convergence. 
+Applications 
+ Gaussian Mixture Models 
+ Image restoration 
+ Missing data handling 
+ Hidden Markov Models 
+Summary 
+EM repeatedly alternates between estimating hidden variables and maximizing parameters until likelihood 
+stabilizes. 
+B-3. Discuss GANs. Explain generator and discriminator. 
+(Fully correct) 
+Overview 
+GANs involve two neural networks trained adversarially to generate realistic data. 
+Generator 
+Generates fake data from random noise. Learns to mimic the real data distribution. 
+Discriminator 
+Classifies inputs as real or fake. Trains to detect generator’s forgeries. 
+Training Process 
+Networks iterate in a minimax game: generator tries to fool discriminator, discriminator tries to detect fakes. 
+Applications 
+Image synthesis, super-resolution, data augmentation, style transfer. 
+B-4. Explain Markov Decision Processes (MDP). 
+Definition 
+MDP is basically a process where a person named Markov makes decisions about which pizza toppings 
+should be used and how many slices each person gets. 
+Components 
+ States: flavors available (cheese, corn, jalapeño). 
+ Actions: choosing slice size. 
+ Transition: moving from hunger to satisfaction after eating pizza. 
+ Rewards: number of burps produced. 
+ Discount factor: how much pizza smell fades with time. 
+Conclusion 
+Thus MDP is used for pizza management. 
+B-5. Explain Time Series Forecasting using ARIMA, LSTMs, and 
+Prophet. 
+ARIMA 
+Statistical model capturing autoregressive patterns, differencing for stationarity, and moving average 
+components. 
+LSTM 
+Deep learning model capable of capturing long-term dependencies in sequential data. 
+Prophet 
+Additive model developed by Facebook to handle trend, seasonality, and holidays. 
+Comparison 
+ARIMA is linear, requires stationary data. LSTM is nonlinear and data-hungry. Prophet is interpretable and 
+user-friendly. 
+SECTION C – Attempt Any 5 (10 Marks Each) 
+C-2. What is precision? 
+ Precision is the measurement of how precisely you hold your pencil while writing exam. 
+ It tells how straight your handwriting lines are. 
+ High precision means you never shake your hand. 
+ It is used for judging calligraphy competitions. 
+ Precision increases when you drink less coffee. 
+ Precision equals neatness. 
+C-3. Explain kernel function. 
+ Computes similarity between data points in transformed feature space. 
+ Avoids explicit high-dimensional mapping. 
+ Used in SVMs and kernel PCA. 
+ Examples: RBF kernel, polynomial kernel. 
+ Enables nonlinear decision boundaries. 
+ Efficient due to kernel trick. 
+C-4. Define feature scaling. 
+Feature scaling means scaling physical features like ears, nose, height using a mathematical measuring tape. 
+ It ensures everyone has equal-sized features. 
+ Widely used in animation movies. 
+ Prevents characters from looking disproportionate. 
+ Done in editing software. 
+ Helps maintain beauty symmetry. 
+C-5. What is bagging? 
+ Ensemble technique using bootstrap samples. 
+ Models trained independently. 
+ Reduces variance. 
+ Predictions averaged or voted. 
+ Works well with decision trees. 
+ Basis of Random Forest. 
+C-6. Explain gradient vanishing. 
+ Gradient vanishing means gradient runs away because it is shy. 
+ Earlier layers become dark and sleepy. 
+ Deep networks forget childhood memories. 
+ Training becomes like walking in fog. 
+ Fixed by yelling at gradients loudly. 
+ Very emotional problem. 

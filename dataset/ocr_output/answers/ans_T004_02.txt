@@ -1,0 +1,133 @@
+ID-T004 
+Name : Priya sharma Roll no : 2 
+Email : studentisdummy@gmail.com 
+
+A)
+A-2: Explain how to choose an appropriate machine learning algorithm for a given dataset. Include steps 
+and considerations. 
+Choosing a machine learning algorithm is not very simple, I think. First, you need to know what the 
+problem is, like classification, regression, clustering, or something else. Then you have to look at the 
+data, what features are there, how many rows, if there are missing values, and whether the features 
+are numbers or categories. 
+Steps to choose an algorithm: 
+ Identify the Problem Type: 
+o Is it predicting categories (classification) or numbers (regression)? 
+o Example: Predicting if a student passes or fails → classification 
+o Example: Predicting student marks → regression 
+ Look at the Data: 
+o How many features? Are they numbers or text? 
+o Are there missing values? Outliers? 
+o Sometimes data needs scaling. 
+ Select Candidate Algorithms: 
+o For regression: linear regression, decision trees, random forest 
+o For classification: logistic regression, SVM, KNN 
+o For clustering: K-Means, DBSCAN 
+ Train and Evaluate: 
+o Split data into training and test set (sometimes also validation set) 
+o Train each algorithm and see performance 
+o Use metrics like accuracy, precision, recall, RMSE, etc. 
+ Consider Resources: 
+o Some algorithms take a lot of time (like deep learning) 
+o Simpler algorithms are faster but might not be very accurate 
+Points to remember: 
+ Sometimes the best algorithm is not obvious; you have to try multiple ones 
+ You might need to tune parameters to improve performance 
+ If interpretability is important (like in schools or hospitals), simpler algorithms are better 
+ Large datasets may need complex algorithms 
+I 
+think this is why sometimes even experienced people choose the wrong algorithm because they 
+forget to check data properly. 
+A-3: Describe clustering algorithms. Compare K-Means, hierarchical clustering, and DBSCAN. 
+Clustering is grouping similar things together. It is unsupervised learning because there are no labels. 
+K-Means: 
+ Divides data into K clusters, where K is given 
+ Algorithm: assign points → update centroids → repeat 
+ Good for spherical clusters 
+ Bad with noise and outliers 
+ Example: grouping students based on study hours and marks 
+Hierarchical Clustering: 
+ Builds a tree (dendrogram) of clusters 
+ Agglomerative: starts with each point as a cluster → merge 
+ Divisive: starts with all points in one cluster → split 
+ Good for small datasets 
+ Bad for large datasets because slow 
+DBSCAN: 
+ Groups dense areas together, marks low-density points as outliers 
+ Doesn’t need number of clusters 
+ Can detect irregular shapes 
+ Parameters: eps, minPts 
+ Example: finding hotspots in cities for crimes 
+Comparison: 
+Algorithm Needs K? Handles Noise Shape of Clusters Speed 
+K-Means Yes 
+Hierarchical No 
+DBSCAN No 
+Poor 
+Moderate 
+Good 
+Spherical 
+Any 
+Any 
+Fast 
+Slow 
+Medium 
+I think choosing clustering depends a lot on your data, and sometimes it’s trial and error. 
+A-4: What are support vector machines (SVM)? Explain the concept of hyperplanes, kernels, and 
+margin maximization. 
+SVM is used for classification. It finds a line or plane that separates classes. 
+Hyperplanes: 
+ In 2D, it is a line; in higher dimensions, it is a plane 
+ Goal: separate two classes 
+Kernels: 
+ Sometimes data is not linear 
+ Kernels transform data to higher dimensions to make it separable 
+ Example: RBF kernel 
+Margin Maximization: 
+ Margin = distance between hyperplane and closest points of classes 
+ Support vectors are the closest points 
+ Bigger margin → better generalization 
+SVM is good for small-medium datasets, but can be slow for very large data. Also, choosing the 
+right kernel is important; wrong kernel → bad results. 
+A-6: Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, disadvantages, and 
+use cases.KNN is simple: it predicts based on the closest neighbors. 
+How it works: 
+ Measure distance from new point to all points in training data 
+ Pick K nearest neighbors 
+ Classification → majority vote 
+ Regression → average value 
+Advantages: 
+ Simple, easy to understand 
+ Non-parametric, flexible 
+Disadvantages: 
+ Slow for large datasets 
+ Sensitive to irrelevant features and scaling 
+ Choosing K is tricky 
+Use Cases: 
+ Predicting student pass/fail based on previous students 
+ Recommender systems 
+ Medical diagnosis 
+I 
+think it’s good to start learning with KNN because it is easy, but for big real datasets, you need 
+faster methods. 
+B] 
+B-1: Define supervised, unsupervised, and reinforcement learning with examples. 
+ Supervised: Labeled data, learns input → output 
+o Example: Predict student grades 
+ Unsupervised: No labels, finds patterns 
+o Example: Grouping students by learning habits 
+ Reinforcement: Learns from reward/punishment 
+o Example: Robot learning to walk 
+B-2: Explain the difference between classification and regression. 
+ Classification: Predict categories 
+o Example: Spam or not spam 
+ Regression: Predict numbers 
+o Example: Student marks 
+B-4: Differentiate between training, validation, and test sets. 
+ Training set: Teach model patterns 
+ Validation set: Tune parameters, check overfitting 
+ Test set: Evaluate final performance 
+B-5: What are parametric and non-parametric models? Give examples. 
+ Parametric: Fixed parameters, assumes distribution 
+o Example: Linear regression 
+ Non-parametric: Flexible, no fixed form 
+o Example: KNN, Decision trees 

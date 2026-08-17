@@ -1,0 +1,165 @@
+ID-T021 
+Name: kiran shrivastav Roll no: 15 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why 
+continuous monitoring is required. 
+Model drift is the decline in an AI model's predictive accuracy over time due to shifts in real
+world data patterns, primarily caused by Data Drift (input data changes) and Concept 
+Drift (relationship between inputs and outputs changes), requiring continuous 
+monitoring to detect these shifts and trigger retraining, ensuring models remain reliable, 
+fair, and relevant in dynamic environments.  
+Concept of Model Drift 
+ Definition: Model drift (or decay) happens when a deployed machine learning model's 
+performance degrades because the live data it encounters differs significantly from the 
+historical data it was trained on, making its predictions less accurate or useful. 
+ Analogy: Imagine a weather model trained on data from a stable climate being used during a 
+period of rapid climate change; its predictions become less reliable as the underlying weather 
+patterns shift.  
+Types of Drift 
+1. Data Drift (Feature Drift/Input Drift): 
+1. What it is: Changes in the statistical properties (distribution) of the input features. 
+2. Example: A bank's loan model sees a sudden influx of applications from a new region, 
+altering the distribution of the 'state' feature, or changes in customer demographics. 
+2. Concept Drift (Target Drift): 
+0. What it is: A change in the relationship between the input features and the target variable 
+(what the model predicts). 
+1. Example: During an economic recession, what defines 'high-risk' customers changes, 
+making the model's old rules for income and credit scores less relevant. 
+3. Label Drift (Prediction Drift): 
+0. What it is: A shift in the distribution of the model's output predictions, often a symptom of 
+data or concept drift. 
+1. Example: A fraud detection model suddenly starts flagging significantly more transactions 
+as fraudulent, even if input data hasn't changed drastically, indicating the concept of 'fraud' 
+itself might be evolving.  
+Why Continuous Monitoring is Required 
+ Maintains Accuracy & Reliability: Prevents models from making faulty decisions by 
+alerting teams when performance drops below acceptable thresholds. 
+ Adaptability: Real-world conditions (customer behavior, economic factors, trends) are 
+always changing, so models must adapt to remain relevant. 
+ Detects New Patterns: Catches emerging trends or sudden shifts (like seasonal changes or 
+unexpected events) that the original training data didn't cover. 
+ Ensures Fairness & Trust: Helps identify biases that might emerge over time, upholding 
+ethical AI practices and building user trust. 
+ Triggers Retraining: Provides the necessary signals to retrain or update the model with 
+fresh data, keeping it effective.  
+In essence, continuous monitoring transforms AI from a static tool into a dynamic, living 
+system that evolves with the world it serves.  
+A-2. What is the difference between online learning and batch learning? Explain with 
+suitable real-world examples. 
+trains on a complete dataset periodically, ideal for stable environments (like predicting house 
+prices from historical data), while online learning updates incrementally with each new data 
+point, perfect for dynamic, real-time scenarios (like spam filters or stock prediction) that 
+need constant adaptation. The key difference: batch is "all at once" for stable data, requiring 
+full retraining; online is "one by one" (or small chunks), adapting continuously without 
+starting over.  
+Batch Learning (Offline Learning) 
+ Process: Gathers all data, trains the model on the entire dataset at once (or large chunks), and 
+deploys it. 
+ Data: Needs a fixed, complete dataset before training begins. 
+ Adaptability: Poor; requires full retraining from scratch for updates, making it slow to adapt 
+to changes. 
+ Resources: High computational cost (CPU, memory) during periodic training. 
+ Best For: Stable data, static problems, non-real-time applications. 
+ Example: Training a model to predict house prices using last year's sales data; it's stable and 
+updated quarterly.  
+Online Learning (Incremental Learning) 
+ Process: Learns incrementally from data instances as they arrive, updating the model 
+continuously. 
+ Data: Handles streaming, constantly changing data. 
+ Adaptability: Excellent; evolves with new data without full retraining, good for concept 
+drift. 
+ Resources: Spreads resource usage, efficient for large data streams. 
+ Best For: Dynamic environments, real-time systems, fast-changing data. 
+ Example: A spam filter that learns from each new email (spam or not spam) to better catch 
+future spam, or a fraud detection system adapting to new fraud patterns instantly.  
+Key Takeaway 
+Choose Batch for stable, large-scale historical analysis (e.g., monthly sales reports). 
+Choose Online for dynamic, real-time systems where data is constantly evolving 
+(e.g., recommendation engines, real-time ad bidding).  
+A-3. Describe the function of an embedding in machine learning. Why are embeddings 
+useful for text, images, or categorical data? 
+In machine learning, an embedding transforms discrete, high-dimensional data (like words, 
+users, or categories) into dense, low-dimensional numerical vectors, capturing semantic 
+meaning where similar items have close vectors in the embedding space, making complex 
+data usable by models, efficient, and revealing underlying relationships for tasks like search, 
+translation, and recommendations.  
+Function of Embeddings 
+ Transformation: Converts non-numerical, sparse data (e.g., one-hot encoded words) into 
+dense, continuous vectors (lists of numbers). 
+ Dimensionality Reduction: Reduces the vast space of possibilities (e.g., millions of words) 
+to a manageable, lower-dimensional space, improving model efficiency. 
+ Semantic Encoding: Learns to represent the meaning, context, or relationships between 
+items, so "king" and "queen" end up near each other.  
+Usefulness for Different Data Types 
+ Text (NLP): 
+o Captures Meaning: Words with similar meanings (e.g., "happy," "joyful") get similar 
+vectors, enabling models to understand context and perform tasks like sentiment analysis or 
+translation. 
+o Enables Search: Finds semantically similar documents or phrases, powering semantic 
+search engines. 
+ Images: 
+o Feature Extraction: Converts complex pixel data into a concise vector that represents visual 
+features, allowing models to find similar images (e.g., in a photo search). 
+o Content Understanding: Helps models understand visual similarity, useful for image 
+retrieval and classification. 
+ Categorical Data (e.g., User IDs, Product IDs): 
+o Learns Relationships: Represents discrete categories (like users or products) as vectors, 
+discovering patterns and similarities (e.g., users who like similar movies). 
+o Powers Recommendation Systems: By mapping users and items to the same space, models 
+can recommend items that are close to a user's embedding.  
+Why They Are Useful 
+ Efficiency: Dense, lower-dimensional vectors are computationally cheaper to process than 
+sparse, high-dimensional ones. 
+ Generalization: Models can generalize better from learned relationships (e.g., knowing 
+"king" is to "queen" as "man" is to "woman"). 
+ Data Bridging: Provides the essential numerical bridge that allows deep learning models to 
+work with complex, real-world data.  
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias 
+influence concept learning. 
+Answer: 
+Concept learning means model try to learn rule from examples. Concept is basically what 
+pattern model is trying to understand. 
+Hypothesis space: 
+ It is set of all possible models or rules model can choose from. 
+ If hypothesis space too small, model can’t learn correct rule. 
+ If too big, model gets confused. 
+Inductive bias: 
+ These are assumptions the learner uses, like preferring simpler rule. 
+ Bias helps model choose right hypothesis when many fit data. 
+How they influence: 
+ If hypothesis space and bias match problem well, model learns correct concept easily. 
+ If mismatch, model predicts wrong even if data is correct. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process 
+you would follow to clean, preprocess, and prepare the data for training a model. 
+To clean and preprocess a small dataset with missing values, you'd first understand the 
+data, then handle missing data (impute mean/median/mode, use KNN, or delete rows if 
+minimal), deal with outliers, encode categorical features, scale numerical features, and 
+finally split data into training/testing sets to prepare for modeling. For small datasets, 
+imputation over deletion is often preferred, while understanding data context guides choices 
+like using median (robust to outliers) or mean.  
+Here's a step-by-step process: 
+1. Load & Inspect Data: Import libraries (Pandas, NumPy) and load data. 
+stats, and identify missing values. 
+2. Handle Missing Values: 
+Use df.info(), df.describe() , and df.isnull().sum() to understand structure, types, summary 
+1. For numerical features: Impute with mean (if distribution is normal) or median (if 
+skewed/outliers present). KNN imputation or regression can also predict missing values. 
+2. For categorical features: Impute with the mode (most frequent category) or create a new 
+"Missing" category. 
+3. Deletion: Only remove rows if missing data is very little (e.g., <5%) and non-informative; 
+otherwise, imputation preserves data. 
+3. Handle Outliers: 
+0. Detect: Use boxplots or IQR method. 
+1. Treat: Cap (winsorize), transform (log), or remove (carefully). 
+4. Encode Categorical Data: Convert text/labels to numbers (e.g., One-Hot Encoding for 
+nominal, Label Encoding for ordinal) so models can use them. 
+5. Feature Scaling: Normalize (Min-Max scaling to 0-1) or Standardize (Z-score scaling to 
+mean=0, std=1) numerical features to bring them to a common scale, preventing bias towards 
+larger-range features. 
+6. Split Data: Divide into Training (e.g., 80%) and Testing (e.g., 20%) sets 
+using train_test_split , ensuring scaling is fitted only on the training data to prevent data 
+leakage.  
+ . 

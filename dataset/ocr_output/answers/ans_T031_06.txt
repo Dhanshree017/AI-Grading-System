@@ -1,0 +1,95 @@
+ID-T031 
+Name: Sunita Mehta Roll no: 306506 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Answer All Questions (Each 5 Marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning in machine learning means that machine tries to understand a concept like 
+human brain. Concept is basically an idea which computer learns from data. In machine 
+learning concept learning is very important because without concept learning computer 
+cannot understand meaning of data. 
+In concept learning, machine is given many examples and from that examples machine 
+makes one rule. These examples can be true or false examples. Machine see these examples 
+and then decide what concept is. For example if machine is learning concept of bird then it 
+will see wings, flying, color etc and then make concept of bird. Sometimes machine may 
+think airplane is bird which is wrong but machine learns slowly. 
+Concept learning uses training data and testing data. Training data is used to learn concept 
+and testing data is used to check concept. Concept learning is also related to classification 
+because concept learning always divide data into classes. Concept learning can be supervised 
+or unsupervised both. In supervised concept learning labels are given but in unsupervised 
+concept learning labels are not given which makes concept learning difficult. 
+Hypothesis is very important in concept learning. Hypothesis is guess made by machine. 
+Machine keeps changing hypothesis until correct concept is found. Hypothesis space is large 
+area where many hypothesis exist. Machine searches this space to find best concept. 
+Sometimes hypothesis space is infinite which makes learning slow. 
+Concept learning is also related to artificial intelligence because concept learning helps 
+machine think like human. It is also used in deep learning where concepts are learned layer 
+by layer. Sometimes concept learning fails when data is noisy or incorrect. Overall concept 
+learning is heart of machine learning and without it machine learning cannot exist. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency is very important in machine learning because machine depends fully on 
+data. If data is not consistent then machine will learn wrong things. Data consistency means 
+data should be same everywhere. Same format, same meaning and same values. 
+If data is inconsistent then machine learning model will get confused. For example if age is 
+written in years in one column and months in another then machine will not understand. 
+Sometimes data consistency also means data should not change over time which is not true 
+always but still consistency is needed. 
+In training ML models, consistent data helps model learn fast and correctly. If labels are 
+inconsistent like sometimes spam is written as yes and sometimes as 1 then model will make 
+mistake. Data consistency also improves accuracy of model because clean data always gives 
+better result. 
+Inconsistent data increases noise. Noise means unnecessary information. Noise reduces 
+performance. Consistent data also helps in preprocessing because preprocessing becomes 
+easy. Without consistency preprocessing becomes very difficult. 
+Sometimes data consistency is confused with data accuracy which is wrong but both are 
+important. Data can be consistent but still wrong. But still consistency is first step. In deep 
+learning data consistency is less important because deep learning can handle noise which is 
+not fully correct. 
+In conclusion data consistency plays major role in training ML models. Without consistency 
+model may crash or give unpredictable results. 
+A-3. What is the role of constraints in machine learning algorithms? 
+Constraints in machine learning are rules which stop model from doing anything it wants. 
+Machine learning algorithms are very powerful so constraints are needed to control them. 
+Constraints tell model what not to do. 
+One role of constraints is to reduce overfitting. Overfitting happens when model learns too 
+much. Constraints stop model from learning everything. For example if decision tree is very 
+deep then it overfits, so constraint is used to stop tree growth. 
+Constraints also help model learn faster. When constraints are applied search space becomes 
+small so machine does not waste time. Constraints also help in fairness but sometimes 
+constraints reduce accuracy. 
+Constraints can be technical or ethical. Technical constraints are related to model size, 
+memory, speed etc. Ethical constraints are related to bias, discrimination, gender etc. 
+Constraints force model to behave correctly. 
+Sometimes constraints are hard and sometimes soft. Hard constraints cannot be broken while 
+soft constraints can be broken sometimes. Regularization is example of constraint but 
+regularization always improves model which is not true. 
+Without constraints machine learning will fail because model will behave randomly. 
+Therefore constraints are very necessary in machine learning. 
+A-4. Explain the difference between model performance and model reliability. 
+Model performance and model reliability are almost same but still little different. Model 
+performance means how good model is. Model reliability means how much we trust model. 
+Performance is measured by accuracy. If accuracy is high then performance is high. 
+Reliability means model always gives same result. A model can be accurate but not reliable 
+sometimes. 
+For example a model gives correct output today but wrong tomorrow then performance is 
+good but reliability is bad. Reliability also means model does not change. Performance is 
+more important than reliability in exams but reliability is important in real world. 
+Sometimes model reliability depends on data quality. If data is bad then reliability is bad. 
+Performance depends on training. Reliability depends on environment. Both are important. 
+In many cases people focus only on performance and ignore reliability which is wrong. 
+Reliable model should always perform good which is ideal but not always possible. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback means response given to system after it gives output. Feedback helps machine 
+learning system improve. Without feedback machine cannot learn from mistake. 
+Feedback can come from users or system itself. For example if recommendation system 
+shows wrong product and user ignores it then that is feedback. Machine uses this feedback to 
+improve future recommendation. 
+Feedback is also used in reinforcement learning where reward and punishment is feedback. 
+Reward increases good behavior and punishment reduces bad behavior. Feedback helps 
+update model parameters. 
+Sometimes feedback is delayed. Delayed feedback is difficult for model to learn. Sometimes 
+feedback is incorrect which can confuse model. 
+Feedback helps model adapt to changes. When environment changes feedback tells model 
+that old patterns are not working. Feedback is very important for long term learning. 
+Without feedback machine learning system becomes static. With feedback system becomes 
+dynamic and intelligent. 

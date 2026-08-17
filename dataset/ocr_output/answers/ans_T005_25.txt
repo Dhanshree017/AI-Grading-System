@@ -1,0 +1,80 @@
+ID-T005 
+Name: Prashant Surve Roll no: 25 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine learning? (8 
+points - Rubbish) 
+1. Old programming it is when the computer uses the old mouse and old screen. 
+2. Machine learning it is when the computer uses the internet for all the answers. 
+3. The old way you must write the logic in the coding book. 
+4. The new way the logic is found by the computer magic. 
+5. Traditional code it is only used for making simple calculators. 
+6. ML is only used for making the robots that can walk and talk. 
+7. The old way the answer is always wrong. 
+8. The new ML way the answer is always 100 percent correct and never wrong. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. (8 points - Perfect) 
+1. Entropy is a core measure from information theory  
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what function 
+does it use to map its output to a probability? (7 points - Rubbish) 
+1. Logistic Regression it is a model that solves the linear problem of adding the numbers. 
+2. The problem it solves is how to add two very large numbers together. 
+3. It is a type of unsupervised model because it has no labels. 
+4. It uses the Tanh Function, not the Sigmoid Function. 
+5. The Tanh Function it makes the line very straight on the graph. 
+6. The output probability is always 50 percent for any data point. 
+7. This model is only used for data with many errors (outliers). 
+A-5. Provide three examples of hyperparameters that must be tuned before training, rather 
+than learned during training. (8 points - Perfect) 
+1. Hyperparameters are external configuration settings whose values are not estimated 
+from the data, but must be set by the practitioner before training. 
+2. Learning Rate (for Gradient Descent): This parameter controls the magnitude of the 
+adjustment step taken by the optimizer toward the minimum of the loss function. 
+3. Regularization Strength (C or Alpha): This value controls the penalty applied to model 
+complexity, thereby managing the bias-variance tradeoff. 
+4. Number of Neighbors (K in KNN): This integer specifies the number of closest data 
+points used for classification (voting) or regression (averaging). 
+5. Maximum Depth (Decision Trees): This sets an upper limit on the levels the tree is 
+allowed to grow, preventing excessive overfitting. 
+6. Batch Size (Neural Networks): This specifies the number of samples that are processed 
+before the model's internal parameters are updated. 
+7. These values are typically optimized through cross-validation to find the configuration 
+that yields the best generalization performance. 
+8. They are essential because they define the capacity and the speed of the learning 
+process. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. (5 points - Perfect) 
+1. Recommendation Systems: Predicting user preferences (e.g., product, movie) to 
+increase engagement and sales. 
+2. Fraud Detection: Analyzing transaction patterns to flag anomalies that predict 
+potential criminal activity. 
+3. Customer Churn Prediction: Identifying at-risk customers so companies can intervene 
+with retention offers. 
+4. Demand Forecasting: Predicting future product consumption to optimize inventory 
+levels and reduce costs. 
+5. Predictive Maintenance: Analyzing sensor data to forecast equipment failure before it 
+actually happens. 
+B-2. What are training, validation, and test sets? Why are they used? (5 points - Rubbish) 
+1. Training Set is where you train the boss's dog. 
+2. Validation Set is where you train the boss's cat. 
+3. Test Set is where you test the boss's child. 
+4. They are used to make sure the computer knows all the animals. 
+5. They stop the model from making noise. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. (5 points - Perfect) 
+1. A Confusion Matrix is a table that summarizes a classification model's performance, 
+showing correct (True) and incorrect (False) predictions broken down by class. 
+2. Precision: Measures the accuracy of positive predictions (True Positives / All Positives 
+Predicted), prioritizing minimizing False Positives. 
+3. Recall: Measures the completeness of positive predictions (True Positives / All Actual 
+Positives), prioritizing minimizing False Negatives. 
+4. F1-Score: The harmonic mean of Precision and Recall, used to provide a single, balanced 
+score for imbalanced datasets. 
+5. These metrics are essential for understanding model trade-offs beyond simple overall 
+accuracy. 
+B-5. What are feature scaling techniques, and when should you use them? (5 points - Rubbish) 
+1. Feature Scaling means making the computer screen bigger or smaller. 
+2. Normalization makes the screen white. 
+3. Standardization makes the screen black. 
+4. You must use scaling for all models to make the monitor look better. 
+5. It is not necessary for K-Nearest Neighbors. 

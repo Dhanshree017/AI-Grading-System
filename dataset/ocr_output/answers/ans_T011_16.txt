@@ -1,0 +1,253 @@
+ID-T011 
+Name : Nisha surve Roll no: 16 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine Learning (ML) is a subfield of Artificial Intelligence that focuses on 
+developing computer systems that can automatically learn and improve from 
+experience without being explicitly programmed for every task. Instead of 
+following a fixed sequence of instructions, ML algorithms use data to identify 
+patterns, relationships, and underlying structures within the data and use 
+this knowledge to make decisions or predictions on new, unseen information. 
+The central idea of ML is to enable systems to improve performance as they 
+acquire more experience, very similar to the way humans learn from past 
+outcomes. 
+A hypothesis in machine learning refers to a mathematical function or model 
+that represents the relationship between the input features XXX and the 
+output variable YYY. The hypothesis attempts to approximate the true 
+mapping f:X→Yf: X → Yf:X→Y that generated the observed data. In 
+supervised learning, this hypothesis is adjusted by minimizing an error or loss 
+function, typically through optimization algorithms like gradient descent. The 
+final hypothesis that generalizes well to unseen data is considered the trained 
+model. 
+Detailed Explanation: 
+1. Concept of Learning: 
+In ML, learning happens when a computer program’s performance 
+improves at a certain task through data experience. For example, a 
+spam detection system improves its ability to filter messages as it sees 
+more labeled examples. 
+2. Data Dependency: 
+Data forms the foundation of ML. The more representative and diverse 
+the data, the better the model can generalize patterns. 
+3. Types of Learning: 
+ML can be supervised, unsupervised, semi-supervised, or reinforcement
+based, depending on whether labeled data or feedback is available. 
+4. Role of Hypothesis: 
+The hypothesis embodies the model’s assumptions about the mapping 
+from inputs to outputs. Linear regression assumes a linear hypothesis, 
+while neural networks represent non-linear hypotheses. 
+5. Optimization: 
+The parameters of the hypothesis (like weights) are tuned to minimize 
+an objective function such as mean squared error or cross-entropy loss. 
+6. Generalization: 
+A hypothesis must perform well not only on training data but also on 
+new data—this is the essence of good ML design. 
+7. Hypothesis Space: 
+The set of all possible hypotheses an algorithm can explore forms the 
+hypothesis space. Simpler algorithms have small spaces; deep networks 
+have very large ones. 
+8. Evaluation: 
+Once the best hypothesis is selected, it is validated using metrics like 
+accuracy or F1-score to assess its predictive power. 
+9. Example: 
+In linear regression, the hypothesis is h(x)=θ0+θ1xh(x)=θ₀+θ₁xh(x)=θ0
++θ1x. Training involves finding the best θ0,θ1θ₀,θ₁θ0,θ1 that minimize 
+prediction errors. 
+A-2. Define lazy learning and eager learning. What is reinforcement learning? 
+In lazy learning, algorithms delay the generalization process until they need 
+to make a prediction. They store all the training data and compute the 
+outcome only when a new query arrives. The K-Nearest Neighbors (KNN) 
+algorithm is a classic example—it finds the closest data points and bases 
+predictions on their labels. Lazy learning tends to have low training cost but 
+high prediction time. 
+In eager learning, the model generalizes the data during training, creating a 
+global approximation before any prediction is made. Algorithms such as 
+Decision Trees, Naive Bayes, and Neural Networks build structured models 
+from the start. These systems require higher training time but predict 
+quickly. 
+Reinforcement Learning (RL), by contrast, is a paradigm where an agent 
+learns optimal actions through interaction with an environment, receiving 
+rewards or penalties. RL is built upon the concept of learning through trial 
+and error. 
+Detailed Explanation: 
+1. Lazy Learning Characteristics: 
+Stores entire training data and delays processing; suitable for datasets 
+where patterns are irregular. 
+2. Eager Learning Characteristics: 
+Builds a model during training, good for quick inference. 
+3. Trade-off: 
+Lazy learners use memory heavily; eager learners use computation during 
+training. 
+4. Examples: 
+Lazy – KNN, Case-based reasoning; Eager – SVM, Neural Networks. 
+5. Reinforcement Framework: 
+RL involves an agent, environment, state, action, and reward. 
+6. Reward Maximization: 
+The agent learns a policy that maximizes cumulative reward. 
+7. Exploration vs Exploitation: 
+RL balances discovering new strategies with exploiting known ones. 
+8. Applications: 
+RL is used in robotics, games like AlphaGo, and autonomous driving. 
+9. Learning Process: 
+Uses feedback to update a value or policy function—often through Q
+learning or policy gradients. 
+A-3. Describe different types of learning algorithms in ML. 
+Machine Learning algorithms are classified based on the nature of the training 
+signal or feedback they receive. Each category addresses different problem 
+types and data availability scenarios. 
+1. Supervised Learning: 
+Uses labeled data (input–output pairs). Goal: learn mapping f(X)→Yf(X) → 
+Yf(X)→Y. Examples: Linear Regression, Decision Trees. 
+2. Unsupervised Learning: 
+Works with unlabeled data to discover structure or patterns. Algorithms: K
+Means, PCA, Hierarchical Clustering. 
+3. Semi-Supervised Learning: 
+Mixes small labeled data with large unlabeled data to improve learning 
+accuracy. 
+4. Reinforcement Learning: 
+Learns by interacting with an environment and using rewards/punishments. 
+5. Self-Supervised Learning: 
+Generates its own labels from data (e.g., predicting missing words in 
+sentences for language models). 
+6. Online Learning: 
+Updates the model incrementally as new data streams in; useful for real-time 
+systems. 
+7. Transfer Learning: 
+Transfers knowledge from a previously learned task to a new but related one; 
+heavily used in deep learning. 
+8. Active Learning: 
+The algorithm queries for labels selectively to minimize labeling effort. 
+9. Deep Learning: 
+Employs multi-layer neural networks capable of automatic feature extraction 
+from raw data such as images or audio. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, 
+and F1-score. 
+Evaluation metrics are quantitative measures used to judge how well an ML 
+model performs on unseen data. They allow comparison among models and 
+ensure that a trained model truly generalizes. 
+Accuracy measures the proportion of correct predictions among total 
+predictions. 
+Precision measures the proportion of positive identifications that were 
+actually correct. 
+Recall (Sensitivity) measures how many actual positives were correctly 
+identified. 
+F1-score balances precision and recall using their harmonic mean. 
+Formulas: 
+Accuracy=TP+TNTP+TN+FP+FNAccuracy = 
+\frac{TP+TN}{TP+TN+FP+FN}Accuracy=TP+TN+FP+FNTP+TN 
+Precision=TPTP+FPPrecision = \frac{TP}{TP+FP}Precision=TP+FPTP 
+Recall=TPTP+FNRecall = \frac{TP}{TP+FN}Recall=TP+FNTP 
+F1=2×Precision×RecallPrecision+RecallF1 = 2 \times \frac{Precision \times 
+Recall}{Precision + Recall}F1=2×Precision+RecallPrecision×Recall  
+Expanded Discussion: 
+1. Accuracy: Ideal for balanced datasets but misleading for imbalanced ones. 
+2. Precision: Important when false positives are costly (e.g., spam 
+detection). 
+3. Recall: Crucial in medical diagnosis to avoid missing positives. 
+4. F1-Score: Best for combining precision and recall in one measure. 
+5. Confusion Matrix: Underpins all four metrics. 
+6. Macro vs Micro Averaging: Used for multi-class problems. 
+7. ROC-AUC: Measures trade-off between sensitivity and specificity. 
+8. Cross-Validation: Ensures reliable metric estimation. 
+9. Use Cases: Model selection and hyperparameter tuning rely heavily on 
+these metrics. 
+B] Attempt any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. 
+Naive Bayes is a probabilistic classifier based on Bayes’ Theorem, which relates 
+conditional and marginal probabilities of random events. The “naive” 
+assumption is that all features are independent given the class label. Despite 
+this simplification, the algorithm performs surprisingly well, particularly in 
+text classification and spam detection. 
+Bayes’ Theorem: 
+P(C∣X)=P(X∣C)P(C)P(X)P(C|X) = 
+\frac{P(X|C)P(C)}{P(X)}P(C∣X)=P(X)P(X∣C)P(C)  
+Where CCC is the class, XXX the feature vector, P(C)P(C)P(C) the prior 
+probability, P(X∣C)P(X|C)P(X∣C) the likelihood, and P(C∣X)P(C|X)P(C∣X) 
+the posterior probability. 
+Algorithm Steps: 
+1. Calculate priors for each class. 
+2. Compute likelihood of each feature given class. 
+3. Multiply probabilities (independence assumption). 
+4. Choose the class with highest posterior. 
+Variants: Gaussian NB (continuous data), Multinomial NB (counts), Bernoulli 
+NB (binary). 
+Applications: email filtering, sentiment analysis, disease prediction. 
+B-2. Explain the working of Artificial Neural Networks (ANNs). 
+Artificial Neural Networks mimic biological neurons. Each neuron receives 
+inputs xix_ixi multiplied by weights wiw_iwi, sums them, adds bias bbb, and 
+applies an activation function fff: 
+y=f(∑wixi+b)y=f(\sum w_i x_i + b)y=f(∑wixi+b)  
+Learning Process: 
+1. Forward propagation computes output. 
+2. Loss function measures error. 
+3. Backpropagation computes gradients. 
+4. Weights are updated using gradient descent. 
+Architectural Layers: Input, hidden, and output layers. Deep networks stack 
+many hidden layers for feature extraction. 
+Applications include image classification, speech recognition, and NLP. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random 
+Forest. 
+Ensemble learning combines multiple base models to improve prediction 
+reliability. 
+ Bagging: Trains models on random bootstrap samples; reduces variance. 
+Example: Random Forest. 
+ Boosting: Sequentially trains models; each new model corrects 
+predecessor’s errors (AdaBoost, XGBoost). 
+ Random Forest: Ensemble of decision trees with random feature 
+selection; averages their outputs for stability. 
+Benefits: enhanced accuracy, robustness, and generalization. 
+B-4. Explain unsupervised learning algorithms like K-Means and Hierarchical 
+Clustering. 
+K-Means Clustering: 
+1. Choose K centroids. 
+2. Assign points to nearest centroid. 
+3. Update centroids until convergence. 
+Objective: minimize within-cluster variance. 
+Hierarchical Clustering: 
+Builds a tree (dendrogram) through either agglomerative (bottom-up) or 
+divisive (top-down) merging based on distance metrics. 
+Applications: market segmentation, bioinformatics, anomaly detection. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud 
+detection. 
+Medical Diagnosis: 
+ML analyzes medical images, lab data, and patient records to detect diseases 
+like cancer or diabetes early. Models like CNNs identify tumors from scans; 
+predictive analytics estimate disease risk. 
+Fraud Detection: 
+ML detects anomalies in financial transactions. Techniques like isolation forest 
+and neural networks flag unusual spending patterns or fake claims. 
+Both domains rely on data preprocessing, feature engineering, and real-time 
+monitoring systems. 
+B-6. Design an ML solution for predicting student performance or house 
+prices. 
+Student Performance Prediction: 
+Data: attendance, marks, study hours. 
+Process: 
+1. Clean and normalize data. 
+2. Split into training/testing. 
+3. Apply regression/classification. 
+4. Evaluate using RMSE or accuracy. 
+House Price Prediction: 
+Features: area, rooms, location. 
+Model: Linear or Decision-Tree Regression. 
+Performance measured by R². 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. 
+PCA reduces dimensionality by finding directions (principal components) that 
+maximize variance. 
+Steps: 
+1. Standardize data. 
+2. Compute covariance matrix. 
+3. Find eigenvalues/eigenvectors. 
+4. Sort by variance explained. 
+5. Project data onto top components. 
+Uses: noise reduction, visualization, preprocessing for ML models. 
+B-8. Explain Gradient Descent and its variants. 
+Gradient Descent minimizes a cost function J(θ)J(θ)J(θ) by updating 
+parameters: 
+θ=θ−α∂J∂θθ = θ - α \frac{∂J}{∂θ}θ=θ−α∂θ∂J  
+Variants: 
+ Batch: uses full dataset. 
+ Stochastic: one sample per step. 
+ Mini-Batch: small sample batches. 
+Enhancements: Momentum, RMSProp, Adam for faster convergence. 

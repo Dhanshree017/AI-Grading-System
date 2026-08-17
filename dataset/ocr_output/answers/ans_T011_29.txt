@@ -1,0 +1,139 @@
+ID-T011 
+Name : Hridya singh Roll no: 29 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-3. Write types of ML algorithms. 
+ML algorithms divided on how they learn and what data they get. 
+Points: 
+1. Supervised learning – learn from label data. 
+2. Unsupervised – find pattern in no label data. 
+4. Explain evaluation metrics like accuracy, precision, recall and F1
+score. 
+Evaluation metric check how model good work. It tell how correct and 
+how wrong model is. 
+Points: 
+1. Accuracy = correct predict / total. 
+2. Precision = true positive / (true positive + false positive). 
+3. Recall = true positive / (true positive + false negative). 
+4. F1 score = 2 * (precision * recall) / (precision + recall). 
+5. Confusion matrix show all true false data. 
+6. AUC ROC tell power to separate class. 
+7. Specificity tell how well negative detect. 
+8. Macro micro average use for multi class. 
+9. Help to compare model performance. 
+A-5. Explain feature selection and dimensionality reduction. 
+Feature Selection: 
+Feature selection mean picking only main important features from all 
+data so model become simple and fast. 
+B] Attempt any 8 (40 marks) 
+B-1. Explain Naive Bayes algorithm. 
+Naive Bayes is probabilistic model use Bayes rule and think all feature 
+are independent. Simple and fast mostly for text or spam mail. 
+Points: 
+1. Use Bayes theorem. 
+2. Assume all feature not depend on each other. 
+3. Work good for text data. 
+4. Calculate probability for each class. 
+5. Formula: P(C|X) = P(X|C)P(C)/P(X). 
+6. Type: Gaussian, Bernoulli, Multinomial. 
+7. Train very fast. 
+8. Work fine on large data. 
+9. Example: spam mail detect. 
+B-3. Explain ensemble method Bagging, Boosting, Random Forest. 
+Ensemble mean mix many model to get strong model. 
+Points: 
+1. Bagging – make many model on random data. 
+2. Boosting – train model one after one fix error. 
+3. Random forest – many decision tree mix by bagging. 
+4. Reduce variance and bias. 
+5. Work better than single model. 
+6. Example – AdaBoost, GradientBoost. 
+7. Random forest used in many area. 
+8. Work for regression and classification. 
+9. More stable and accurate. 
+B-4. Explain unsupervised learning like K-Means and Hierarchical 
+Clustering. 
+Unsupervised not have label, it find hidden pattern itself. 
+K-Means: 
+1. Choose K cluster center. 
+2. Assign point to nearest cluster. 
+3. Recalculate center. 
+4. Repeat until stable. 
+5. Example: customer group. 
+Hierarchical: 
+1. Make tree like structure (dendrogram). 
+2. Agglomerative – merge small to big. 
+3. Divisive – big to small. 
+4. No need to choose K first. 
+5. Show full relation among cluster. 
+Comparison: 
+K-means fast, hierarchical show detail relation. 
+B-5. How ML use in medical or fraud detection? 
+Medical: 
+1. Predict disease early. 
+2. Find tumor using CNN. 
+3. Classify patient data. 
+4. Help doctor decide. 
+5. Reduce manual work. 
+Fraud: 
+1. Find strange transaction. 
+2. Use anomaly detect model. 
+3. Classify legit or fraud. 
+4. Bank, ecommerce, insurance use it. 
+5. Save money and time. 
+B-6. Design ML model for student performance or house price. 
+Steps: 
+1. Take problem – want to predict marks or price. 
+2. Collect data – student info or house data. 
+3. Clean data – remove missing. 
+4. Feature engineering – choose good columns. 
+5. Choose model – linear regression, tree. 
+6. Train on train data. 
+7. Test and see accuracy. 
+8. Tune parameters. 
+9. Deploy model for use. 
+B-7. Explain PCA algorithm. 
+PCA reduce big data dimension by keeping important variance only. 
+Steps: 
+1. Standardize data. 
+2. Make covariance matrix. 
+3. Find eigen values and eigen vector. 
+4. Sort biggest eigen first. 
+5. Take top k component. 
+6. Project data to new axis. 
+7. Make reduced data. 
+8. Easy visualize now. 
+9. Use in image, data compress. 
+B-8. Explain Gradient Descent and type. 
+Gradient descent is math method to reduce loss by changing weight 
+slowly. 
+Formula: 
+θ = θ - α * (∂J/∂θ) 
+Types: 
+1. Batch GD – use all data once. 
+2. Stochastic GD – one sample each step. 
+3. Mini-batch GD – small group at time. 
+4. α = learning rate control step size. 
+5. Momentum speed up learning. 
+6. Adam, RMSProp are advance type. 
+7. Learning curve show loss change. 
+8. Stop when loss become stable. 
+9. Used in neural, regression. 
+B-9. Explain Reinforcement Learning (RL). 
+RL is type where agent learn by doing and get reward or punishment. 
+MDP: 
+1. Define state, action, reward. 
+2. Agent choose best action. 
+3. Want to get long term big reward. 
+Q-Learning: 
+1. Learn value for each (state, action). 
+2. Update by formula: 
+Q = Q + α [r + γ max(Q') - Q] 
+3. Learn from experience not model. 
+Explore–Exploit: 
+1. Explore new action. 
+2. Exploit known good one. 
+3. Balance give better learn. 
+Use: robot, game, traffic system. 
+ 

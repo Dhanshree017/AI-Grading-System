@@ -1,0 +1,135 @@
+ID-T014 
+Name : Ashitosh Kulkarni Roll no: 11 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-3. Explain the working of Principal Component Analysis and discuss its role in feature 
+reduction. 
+Principal Component Analysis (PCA) is a linear dimensionality reduction technique 
+used to transform high-dimensional data into a lower-dimensional form while 
+preserving maximum variance. 
+Working Steps: 
+1. Standardization – The dataset is standardized so that features have zero mean 
+and unit variance. 
+2. Covariance Matrix Computation – A covariance matrix is calculated to measure 
+the relationship between features. 
+3. Eigen Decomposition – Eigenvalues and eigenvectors of the covariance matrix 
+are computed. 
+4. Selection of Principal Components – The eigenvectors corresponding to the 
+largest eigenvalues are chosen. 
+5. Projection – Data is projected onto these principal components to obtain 
+reduced-dimensional representation. 
+Role in Feature Reduction: 
+PCA reduces the number of features while retaining the essential information, 
+minimizing redundancy and improving model efficiency. It helps in visualization, 
+noise reduction, and avoids overfitting by eliminating less significant features. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+A Neural Network is a computational model inspired by the structure and function 
+of the human brain. It consists of layers of interconnected nodes (neurons) that 
+process data and learn complex patterns. 
+Architecture: 
+ Input Layer: Receives the raw data. 
+ Hidden Layers: Perform nonlinear transformations using activation functions 
+such as ReLU or sigmoid. 
+ Output Layer: Produces final predictions, often using softmax or linear 
+activation depending on the task. 
+Each neuron computes a weighted sum of inputs, adds a bias, and passes it through 
+an activation function. 
+Learning Process: 
+1. Forward Propagation: Input data flows through the network, and outputs are 
+calculated. 
+2. Loss Calculation: The difference between predicted and actual outputs is 
+measured using a loss function. 
+3. Backward Propagation: Gradients of the loss with respect to weights are 
+computed using the chain rule. 
+4. Weight Update: Weights and biases are adjusted using optimization algorithms 
+such as Gradient Descent to minimize the loss. 
+Neural networks excel in tasks like image recognition, speech processing, and natural 
+language understanding. 
+Section B – Attempt All (20 Marks Total) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss in 
+detail the different layers, the role of weights and biases, Also describe common 
+challenges in training deep networks and methods to overcome them. 
+A Deep Neural Network (DNN) is an extension of a basic neural network that 
+contains multiple hidden layers, enabling it to learn highly complex, hierarchical 
+representations. 
+Architecture: 
+ Input Layer: Accepts raw input data. 
+ Multiple Hidden Layers: Each layer extracts higher-level abstractions. 
+ Output Layer: Produces the final output using appropriate activation functions. 
+Role of Weights and Biases: 
+Weights control the strength of the connection between neurons, while biases allow 
+the activation function to shift, helping the model learn better. The combination of 
+both determines how inputs are transformed through the network. 
+Working Process: 
+1. Data passes forward through the layers. 
+2. The loss function evaluates the prediction error. 
+3. Backpropagation adjusts weights and biases to reduce error. 
+B-2. Discuss in detail the working of the Support Vector Machine algorithm for both 
+linear and non-linear classification. Explain the concept of hyperplanes, support 
+vectors, and margin maximization. 
+Support Vector Machine (SVM) is a supervised learning algorithm used for 
+classification and regression tasks. 
+For Linear Classification: 
+SVM finds the optimal hyperplane that separates data points of different classes with 
+the maximum margin. The data points closest to the hyperplane are called support 
+vectors, and they determine the decision boundary. 
+For Non-linear Classification: 
+When data is not linearly separable, SVM uses kernel functions such as polynomial, 
+RBF, or sigmoid kernels to map data into a higher-dimensional space where a linear 
+separator can be found. 
+Margin Maximization: 
+SVM aims to maximize the distance between the hyperplane and the nearest data 
+points from both classes, ensuring better generalization. 
+Advantages: 
+ Effective in high-dimensional spaces. 
+ Robust to overfitting. 
+ Works well with both linear and non-linear data. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). 
+Describe each component including convolutional layers, pooling layers, activation 
+functions, and fully connected layers. 
+Convolutional Neural Networks (CNNs) are specialized neural networks designed for 
+processing grid-like data such as images. 
+Architecture Components: 
+1. Convolutional Layers: 
+Apply filters to input images to extract spatial features like edges and textures. 
+2. Activation Functions: 
+Non-linear functions like ReLU introduce non-linearity, enabling the network 
+to learn complex patterns. 
+3. Pooling Layers: 
+Reduce spatial dimensions (downsampling) to minimize computation and 
+control overfitting, using techniques like max pooling or average pooling. 
+4. Fully Connected Layers: 
+Combine features learned from convolutional layers and output the final 
+classification. 
+Working: 
+Input images pass through alternating convolutional and pooling layers, then through 
+fully connected layers for prediction. CNNs automatically learn spatial hierarchies of 
+features. 
+Applications: 
+Image classification, object detection, facial recognition, and medical imaging. 
+B-4. Describe the concept of Natural Language Processing and its stages in detail. 
+Explain important steps such as tokenization, stop word removal, stemming, 
+lemmatization. 
+Natural Language Processing (NLP) is a branch of AI that enables computers to 
+understand, interpret, and generate human language. 
+Stages in NLP: 
+1. Text Acquisition: Collecting raw text data from documents, websites, or speech. 
+2. Text Preprocessing: Cleaning and normalizing data for further processing. 
+3. Feature Extraction: Converting text into numerical form using methods like 
+Bag of Words or TF-IDF. 
+4. Modeling: Applying machine learning or deep learning models for tasks like 
+classification or translation. 
+5. Evaluation: Measuring model performance using metrics such as accuracy or 
+BLEU score. 
+Important Steps: 
+ Tokenization: Breaking text into smaller units like words or sentences. 
+ Stop Word Removal: Removing common words like “the”, “is”, “and” which 
+add little meaning. 
+ Stemming: Reducing words to their base form by removing suffixes (e.g., 
+“playing” → “play”). 
+ Lemmatization: Similar to stemming but returns valid dictionary words using 
+linguistic analysis (e.g., “better” → “good”). 
+Applications: 
+Chatbots, sentiment analysis, speech recognition, and machine translation are some 
+major applications of NLP. 

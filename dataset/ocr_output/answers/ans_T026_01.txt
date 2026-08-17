@@ -1,0 +1,79 @@
+ID-T026 
+Name: Kunal Malhotra Roll no: 1 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+Definition of Learning Bias 
+Learning bias in machine learning refers to systematic errors introduced into a model due to 
+incorrect assumptions, limitations in data, or design choices that influence how the model 
+learns patterns. 
+Sources of Learning Bias and Their Impact 
+1. Data Collection Bias – Occurs when training data does not represent real-world 
+scenarios, leading to poor predictions. 
+2. Sampling Bias – Over-representation or under-representation of certain groups affects 
+fairness and accuracy. 
+3. Algorithmic Bias – Bias introduced by the learning algorithm due to built-in 
+assumptions. 
+4. Measurement Bias – Errors caused by inaccurate or inconsistent data measurements. 
+5. Labeling Bias – Human errors during data annotation introduce incorrect patterns. 
+6. Historical Bias – Bias inherited from historical data reflecting social or systemic 
+inequalities. 
+7. Feature Selection Bias – Choosing inappropriate or incomplete features limits 
+learning capability. 
+8. Impact on Generalization – Biased models perform well on training data but fail on 
+unseen data. 
+9. Reduced Fairness – Bias can cause unfair decisions in sensitive applications. 
+10. Overall Effect – Learning bias reduces model reliability and generalization 
+performance. 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+Definition of Assumptions in Machine Learning 
+Assumptions are predefined beliefs about data distribution, relationships, or patterns that 
+guide how a machine learning algorithm learns from data. 
+Role and Influence of Assumptions 
+1. Simplifies Learning Process – Assumptions reduce complexity of learning. 
+2. Linear Assumptions – Linear models assume a linear relationship between features 
+and output. 
+3. Independence Assumption – Naive Bayes assumes features are independent. 
+4. Data Distribution Assumption – Some models assume normal distribution of data. 
+5. Influence on Model Choice – Incorrect assumptions lead to wrong model selection. 
+6. Bias Introduction – Strong assumptions increase bias in the model. 
+7. Performance Impact – Models fail if assumptions do not match real data. 
+8. Generalization Effect – Proper assumptions improve generalization. 
+9. Flexibility vs Simplicity – Complex models make fewer assumptions but risk 
+overfitting. 
+10. Conclusion – Understanding assumptions is essential for effective ML performance. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that 
+performs well on training data may fail on unseen data. 
+Definition of Generalization 
+Generalization refers to the ability of a machine learning model to perform well on new, 
+unseen data after being trained on a training dataset. 
+Explanation of Generalization Failure 
+1. Overfitting – Model memorizes training data instead of learning patterns. 
+2. High Model Complexity – Excessively complex models capture noise. 
+3. Insufficient Training Data – Limited data leads to poor pattern learning. 
+4. Data Leakage – Training data contains information from test data. 
+5. Poor Feature Selection – Irrelevant features harm generalization. 
+6. Noise in Data – Noisy data misguides learning. 
+7. Bias–Variance Tradeoff – High variance reduces generalization ability. 
+8. Distribution Shift – Training and test data distributions differ. 
+9. Lack of Regularization – No penalty for complexity increases overfitting. 
+10. Conclusion – Generalization depends on balanced model complexity and quality data. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how 
+noise, missing values, and inconsistencies affect learning outcomes. 
+Definition of Data Quality 
+Data quality refers to the accuracy, completeness, consistency, and reliability of data used to 
+train machine learning models. 
+Importance and Effects of Poor Data Quality 
+1. Noise in Data – Random errors confuse the learning process. 
+2. Missing Values – Incomplete data leads to biased predictions. 
+3. Inconsistent Data – Conflicting values reduce model reliability. 
+4. Reduced Accuracy – Poor data quality directly lowers performance. 
+5. Increased Overfitting – Models learn noise instead of patterns. 
+6. Slower Training – Noisy data increases computation time. 
+7. Unstable Models – Small changes in data cause large prediction changes. 
+8. Poor Generalization – Model fails on real-world data. 
+9. Higher Maintenance Cost – Frequent retraining is required. 
+10. Conclusion – High-quality data is essential for effective ML systems. 

@@ -1,0 +1,45 @@
+ID-T034 
+Name: Mithun Saahi Roll no: 5 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-1) Explain the concept of model generalization and why it is important in machine learning 
+Model generalization is a machine learning model's ability to perform accurately on new, unseen data after being 
+trained on a specific dataset, moving beyond just memorizing training examples to understand underlying patterns, 
+and it's crucial because it determines a model's real-world usefulness, preventing it from failing when encountering 
+data beyond its training set, which is the ultimate goal of building robust AI systems.  
+What is Generalization? 
+ Learning Patterns, Not Memorizing: A model that generalizes well learns the fundamental relationships and signals 
+in the data, distinguishing them from random noise or specific quirks of the training set. 
+ Applying Knowledge: It's about applying learned concepts to different scenarios, much like a student who 
+understands a math principle can solve new problems, not just the ones practiced. 
+ The Test of Usefulness: A model's true success isn't its perfect score on training data (which might mean it just 
+memorized) but its performance on fresh data, validating its practical value.  
+Why is it Important? 
+ Real-World Performance: The aim of ML is to solve problems in the real world, where data is always new; 
+generalization ensures models are reliable in these dynamic environments (e.g., spam filters, medical diagnosis). 
+ Avoids Overfitting/Underfitting: Poor generalization leads to: 
+o Overfitting: The model learns training data too well (including noise) and performs poorly on new data (like 
+memorizing for a test). 
+o Underfitting: The model is too simple, failing to capture patterns even in the training data. 
+ Builds Robust AI: A well-generalized model is robust, effective, and dependable, making AI systems truly intelligent 
+and useful rather than just clever tricks for controlled data.  
+. 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling means giving names or values to the data. In supervised learning, every data must have a label. 
+For example in image, if it is dog then we write dog. So machine knows it is dog. Without labels, machine 
+cannot know what is correct. 
+Data labeling is important because the model uses it to learn. If the labels are wrong then the model will also 
+learn wrong. So labeling should be done properly. In supervised learning, model always depends on labels to 
+know what output should be there. That is why data labeling is very important. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods means using many models instead of one. When we use only one model, it can give 
+wrong answer. But if we use many models, then they can help each other. 
+For example, if one model gives wrong result and other gives correct, then by combining them we get better 
+result. So ensemble methods improve accuracy by taking average or voting. Random forest is also example 
+of ensemble. Using many models makes prediction better than single model. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means getting same result again. In machine learning, when we run experiment, we should 
+get same result if we do it again. This is important so that others can check our work. 
+If results are not reproducible, then it is not reliable. People may not trust the model. So reproducibility is 
+needed in research and testing. It also helps in improving models. So it is important in machine learning 
+experiments. 

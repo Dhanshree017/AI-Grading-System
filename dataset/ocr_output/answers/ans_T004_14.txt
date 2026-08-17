@@ -1,0 +1,192 @@
+ID-T004 
+Name : Chetan sharma Roll no: 14 
+Email : studentisdummy@gmail.com 
+Section A (Attempt any 4) 
+A-1. What is machine learning ? Explain its types in detail with example. 
+Machine learning is a field of artificial intelligence where computers learn things. It is very 
+important for the future of computers. The computer learns by itself, which is very modern. 
+Learning is when the computer gets a lot of data and from that data, it finds the answers. 
+The goal is to get better and better at the task, which is what we all want in life. The 
+entire field is based on this idea of experience and learning. If you have no data, you have 
+no machine learning, so data is very important and very critical for this entire process of 
+learning. 
+There are three big types of machine learning that we have to discuss in detail. 
+1. Supervised Learning: This is when the model is supervised by a teacher. The teacher 
+is the label in the data. The data is labeled with the correct answer, so the computer 
+knows what the output should be. This makes the learning very easy and very direct. 
+Supervised learning is used for prediction tasks. If you want to predict a number, it's 
+supervised learning. If you want to predict a category, it is also supervised learning. 
+o Example: Predicting the weather tomorrow. You give the model the weather 
+data from the past, and you tell the model what the weather actually was. 
+This is supervised learning because the model has the answer key. 
+2. Unsupervised Learning: This is the opposite of supervised learning. The data has no 
+labels, so the computer has to find the answer by itself. This is much harder work 
+for the computer. The main task for unsupervised learning is to find groups of data. 
+This is called regression, which is used a lot in the business world for finding different 
+groups of people. Unsupervised learning is good for finding hidden patterns that people 
+cannot see. 
+o Example: A big company wants to find out what are the most popular items 
+they sell, so they use unsupervised learning to count the items. 
+3. Reinforcement Learning: This is a very new and exciting type. It is like training a dog 
+or a baby. The computer is an agent in an environment. It takes actions, and if the 
+action is correct, it gets a positive reward. If the action is wrong, it gets a negative 
+reward or a punishment. The computer learns the best way to get the most rewards. 
+This is called the maximum rewards policy. 
+o Example: Training an automated car to drive on the road. It gets a reward for 
+moving forward and a penalty for hitting the sidewalk. This makes the model 
+learn the best path. 
+A-3. Describe clustering algorithms. Compare K-Means, hierarchical clustering, and DBSCAN 
+Clustering is a technique in machine learning that is used to find groups in the data. It is 
+a very important part of supervised learning. We use clustering to group things that are 
+similar to each other. If two data points are very close, they go into the same cluster. 
+This makes the data organized and easy to use. 
+We have three major types of clustering algorithms: 
+1. K-Means Clustering: This is the simplest and fastest one. You must tell the algorithm 
+the number of clusters you want, which is called K. It finds the center of the clusters, 
+called centroids. It keeps moving the centroids until all the points are close to their 
+center. K-Means is good for data that is round and circular in shape. But it does not 
+work well if the data has strange shapes. 
+2. Hierarchical Clustering: This is the one that makes a dendrogram, which is like a tree 
+structure. It starts with every data point as a separate cluster. Then, it keeps 
+merging the two closest clusters into one big cluster until all the data is in one final 
+cluster. You can then cut the tree wherever you want to get the final number of 
+clusters. This is a very smart method, but it is very slow when the data is large 
+because it has to calculate the distance between all the clusters. 
+3. DBSCAN (Density-Based Spatial Clustering of Applications with Noise): This algorithm 
+is very different. It does not use centroids. It finds clusters based on the density of 
+the data. If the data points are very close together, that is a cluster. The best thing 
+about DBSCAN is that it is not confused by outliers or noise. It simply ignores the 
+outliers. It can also find clusters that are not round, which is a big advantage over 
+K-Means. 
+Comparison: 
+ K-Means needs you to guess K, but Hierarchical and DBSCAN do not need you to 
+guess this number, which is very useful. 
+ K-Means is the fastest, but it can only find round clusters. 
+ DBSCAN is the best because it can find any shape of cluster and is very fast for big 
+data compared to the slow Hierarchical method. They all try to find groups in the 
+data, which is their main purpose. 
+A-5. Explain the bias-variance tradeoff in detail. Include examples and how it affects model 
+performance. 
+The bias-variance tradeoff is the most important concept we study because it explains why 
+our models sometimes fail. It is about balancing two big errors: bias error and variance error. 
+We have to make a choice between these two errors. 
+First, let us talk about Bias. Bias happens when the model is too simple for the data. The 
+model cannot learn the actual relationship. This makes the model underfit the data. When 
+a model underfits, its accuracy is very bad on both the training data and the test data. 
+The model is too simple and it ignores the truth. 
+ Example: If the data shows a complex curved relationship, but we use a very simple 
+Linear Regression model (a straight line), the model has high bias because it is too 
+simple to fit the curve. To fix this, we must make the model more complex. 
+Second, let us talk about Variance. Variance happens when the model is too complex for 
+the data. The model learns the noise and the random errors in the training data, which is 
+a mistake. This makes the model overfit the data. When a model overfits, its accuracy is 
+100% on the training data, but the accuracy is very, very low on the new test data. The 
+model has just memorized the training data, so it cannot work in the real world. 
+ Example: If we use a huge, very complex Neural Network on a tiny dataset, the 
+model will memorize all the data perfectly, which gives it high variance. To fix this, 
+we must make the model simpler or add more training data. 
+The tradeoff is the conflict. If you make the model simpler to reduce variance, the bias will 
+go up. If you make the model more complex to reduce bias, the variance will go up. We 
+must find the sweet spot in the middle. The sweet spot is the perfect balance where the 
+total error is the lowest. If we achieve this balance, our model will perform accurately on 
+new data, and this is the goal of machine learning. 
+A-6. Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, 
+disadvantages, and use cases. 
+The K-Nearest Neighbors (KNN) is a very old and very simple machine learning algorithm 
+that is still used today. It is a very good algorithm. It is used for both classification and 
+regression tasks, and it is known as a lazy algorithm, which is an important name for it. 
+Description: The main idea of KNN is that it does not train the model. It just saves all 
+the training data into its memory. When a new data point comes for prediction, the model 
+does the following steps: 
+1. It calculates the distance from the new point to all the stored points in the memory. 
+2. It selects the K nearest points (the closest friends) to the new point. 
+3. For classification, it takes a majority vote from those K friends to decide the new 
+point's class. For example, if K=7 and 5 friends are 'Yes', the prediction is 'Yes'. 
+Advantages: 
+ It is very easy to implement and everyone can understand the logic. 
+ It is a non-parametric model, which means it can fit any kind of data shape without 
+making assumptions. 
+ The training time is zero because it is a lazy learner, which is a big advantage for 
+time saving. 
+Disadvantages: 
+ It is very slow at prediction time, especially for large datasets, because it has to 
+calculate the distance to every single point. This is a very big problem. 
+ It suffers from the Curse of Dimensionality. If the number of features is too large, 
+the performance goes down and the distances become meaningless. This makes the 
+model useless. 
+ It is sensitive to outliers, so the data must be very clean before using KNN. 
+Use Cases: KNN is mostly used for recommender systems. For example, when Netflix 
+recommends a movie, it finds other users who are close to you (your nearest neighbors) 
+and recommends the movies that they liked. This is a perfect use case for the KNN 
+algorithm. 
+Section B (Attempt any 4) 
+B-2. Explain the difference between classification and regression. 
+Classification and Regression are both tasks that come under the family of supervised learning. 
+They are both about prediction, but the result they predict is different. 
+Classification: 
+ The goal is to predict a category or a class label. The prediction is a label or a word. 
+ The output is discrete, which means it is one of a fixed set of options, like 'Yes' or 
+'No'. 
+ Example: Predicting if an image is a car or a truck. The output is a word. 
+ We use metrics like F1-Score and Accuracy to check the performance. 
+Regression: 
+ The goal is to predict a number or a quantity. The prediction is a numerical value. 
+ The output is continuous, which means it can be any number within a range, like 1.5, 
+99.8, or 1000. 
+ Example: Predicting the height of a tree in meters. The output is a number. 
+ We use metrics like Mean Squared Error (MSE) to check the performance. 
+The difference is very clear: Classification predicts words, and Regression predicts numbers. 
+B-3. What is a confusion matrix? Explain precision, recall, and F1-score. 
+A confusion matrix is a table that helps us see the performance of our classification model. 
+It is very useful. It shows how confused the model is when it makes predictions. 
+The matrix has four main numbers. 
+ True Positive (TP): Correct prediction and the answer was positive. 
+ True Negative (TN): Correct prediction and the answer was negative. 
+ False Positive (FP): Wrong prediction; predicted positive but it should have been 
+negative. This is a Type 1 Error. 
+ False Negative (FN): Wrong prediction; predicted negative but it should have been 
+positive. This is a Type 2 Error, and this is the most dangerous error in all of machine 
+learning. 
+We use these numbers to find the most important metrics: 
+1. Precision: This tells us, out of all the predictions the model said were positive, how 
+many were right. It is very important for checking the quality of the positive 
+predictions. 
+2. Recall: This tells us, out of all the answers that were actually positive, how many 
+the model successfully found. It is very important for checking how many cases the 
+model missed. 
+3. F1-Score: This is the average of precision and recall. It is the most important metric 
+for checking the final result because it gives a balance between the two other scores. 
+We must always try to maximize the F1-Score because that is the sign of a very good 
+model. 
+B-4. Differentiate between training, validation, and test sets. 
+In machine learning, we take our total data and split it into three pieces. This is a very 
+important step to make sure our model is accurate and not cheating. 
+1. Training Set: This is the biggest part of the data. We use this set to train the 
+model. The model looks at this data for many hours and learns all the patterns and 
+all the rules. The model must learn this training data very well. This is the study 
+material for the model, which is why it is the biggest part. 
+2. Validation Set: This part is used for practicing. We use this set to check the 
+performance of the model while we are training it. It helps us to tune the 
+hyperparameters. The hyperparameters are the settings of the model. For example, 
+we check if K=3 is better than K=5 in KNN using the validation set. This set acts 
+like a practice exam to help us make the model perfect before the final check. 
+3. Test Set: This is the most important part because it is used only one time at the 
+end. The model has never seen this data before. We use the test set to give the 
+final accuracy score to our project. This final score is the score that the model will 
+get in the real world. This is the final exam for the model, and it must be kept 
+secret until the very end to get an honest and true score. 
+B-5. What are parametric and non-parametric models? Give examples. 
+This is a very good question about the theory of machine learning models. 
+1. Parametric Models: These are the models that use fixed parameters. They have a 
+fixed set of rules. They make strong assumptions about how the data looks. For 
+example, they assume the data is a straight line. Once the model is trained, the 
+original training data is no longer needed because the model has saved the final 
+parameters. 
+o Examples: Linear Regression and Logistic Regression. 
+2. Non-Parametric Models: These are the models that have flexible parameters. They do 
+not make any assumptions about the data shape, so they can fit any pattern. Because 
+they are flexible, they usually need to keep all the original training data in memory 
+to make future predictions. The model is the data itself. 
+o Examples: K-Nearest Neighbors (KNN) and Decision Trees. 
+Non-parametric models are generally more accurate because they are more flexible, but they 
+are also much slower because they have to carry all the data around. 

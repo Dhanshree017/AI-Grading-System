@@ -1,0 +1,135 @@
+ID-T011 
+Name : Amrit Jaiswani Roll no: 27 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Definition: 
+Machine Learning (ML) is a branch of Artificial Intelligence  
+Explanation:. 
+A-2. Define lazy learning and eager learning. What is reinforcement learning? 
+Reinforcement Learning (RL): 
+Reinforcement Learning is a learning paradigm where an agent interacts with 
+an environment, performs actions, and learns through rewards and 
+punishments. The goal is to maximize cumulative rewards. 
+Explanation: 
+1. RL is inspired by behavioral psychology. 
+2. RL involves concepts like agent, state, action, and reward. 
+3. RL is used in robotics, gaming, and self-driving cars. 
+4. It emphasizes trial-and-error learning and delayed rewards. 
+A-3. Describe different types of learning algorithms in ML. 
+Definition: 
+Learning algorithms in ML can be classified based on how they use labeled 
+data and interact with the environment. Each learning type serves specific 
+problem domains and data availability conditions. 
+Explanation: 
+1. Supervised Learning: Uses labeled data where the output is known (e.g., 
+Linear Regression, Decision Trees). 
+2. Unsupervised Learning: Works with unlabeled data to find hidden 
+patterns (e.g., K-Means, PCA). 
+3. Semi-Supervised Learning: Uses a small portion of labeled data along 
+with large unlabeled data. 
+4. Reinforcement Learning: Learns through rewards and punishments based 
+on actions. 
+5. Self-Supervised Learning: Uses the data itself to generate labels 
+(common in NLP). 
+6. Online Learning: The model updates continuously with incoming data 
+streams. 
+7. Batch Learning: Training occurs on the entire dataset at once. 
+8. Active Learning: The model selectively queries the most informative 
+data points for labeling. 
+9. Transfer Learning: Uses pre-trained models on new tasks to reduce 
+training time. 
+A-4. Explain Types of Search in AI. Explain Bidirectional Search in detail. 
+Definition: 
+Search algorithms in Artificial Intelligence are used to navigate through 
+problem spaces to reach a goal state. They are classified based on knowledge 
+about the environment and efficiency. 
+Explanation: 
+1. Uninformed Search (Blind Search): Has no domain knowledge; examples 
+include BFS and DFS. 
+2. Informed Search (Heuristic Search): Uses heuristics to guide the search 
+(e.g., A* algorithm). 
+3. Bidirectional Search: It runs two simultaneous searches — one forward 
+from the start and one backward from the goal. 
+Detailed Explanation of Bidirectional Search: 
+ It assumes that both the start and goal states are known. 
+ The two searches meet in the middle, drastically reducing search time. 
+ The complexity is O(b^(d/2)), where b is branching factor and d is 
+depth. 
+ This approach is efficient in terms of both time and memory. 
+ Used in pathfinding problems like route planning. 
+ The main challenge is ensuring both searches meet at a common state. 
+ When implemented with appropriate data structures like hash tables, it 
+becomes very powerful. 
+ It requires reversible actions for backward search. 
+ Applications include Google Maps and game pathfinding algorithms. 
+B] Attempt any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. 
+The Naive Bayes algorithm is a probabilistic classifier based on Bayes’ 
+Theorem, assuming independence between predictors. 
+Explanation: 
+1. It calculates the probability of a class given features using Bayes’ 
+formula. 
+2. It assumes all features contribute independently to the outcome. 
+3. Works well for text classification (spam filtering). 
+4. Formula: P(C|X) = [P(X|C) * P(C)] / P(X) 
+5. Variants: Gaussian, Multinomial, and Bernoulli Naive Bayes. 
+B-2. Explain Artificial Neural Networks (ANNs). 
+An ANN is inspired by the human brain and composed of interconnected 
+neurons arranged in layers. 
+Explanation: 
+1. Layers: Input, Hidden, and Output. 
+3. Explain Ensemble Methods. 
+Ensemble methods combine multiple models to improve accuracy. 
+Explanation: 
+1. Bagging: Combines multiple learners trained on random subsets. 
+2. Boosting: Sequentially trains models emphasizing previous errors. 
+3. Random Forest: Uses multiple decision trees. 
+4. Improves stability and reduces overfitting. 
+5. Common in Kaggle competitions. 
+B-4. Explain Unsupervised Learning algorithms. 
+Unsupervised learning deals with unlabeled data to find structure or patterns. 
+Explanation: 
+1. K-Means: Divides data into K clusters based on similarity. 
+2. Hierarchical Clustering: Builds nested clusters using dendrograms. 
+3. No prior labels required. 
+4. Used in segmentation and pattern discovery. 
+5. Relies on distance metrics like Euclidean distance. 
+B-5. Explain ML in Medical Diagnosis or Fraud Detection. 
+ML models analyze large datasets to detect patterns indicative of diseases or 
+fraud. 
+Explanation: 
+1. Predicts disease likelihood from patient data. 
+2. Analyzes transaction patterns to detect anomalies. 
+3. Uses classification algorithms for diagnosis. 
+4. Deep learning aids in image-based medical scans. 
+5. Reduces false positives and improves accuracy. 
+B-6. Design an ML Solution for Student Performance Prediction. 
+The goal is to predict students' performance using academic and behavioral 
+data. 
+Explanation: 
+1. Collect data: attendance, grades, participation. 
+2. Preprocess data — handle missing values. 
+3. Feature selection and scaling. 
+4. Choose model: Decision Tree or Logistic Regression. 
+5. Evaluate using accuracy and confusion matrix. 
+B-7. Describe PCA Algorithm. 
+PCA reduces high-dimensional data into fewer principal components while 
+preserving variance. 
+Explanation: 
+1. Standardize the dataset. 
+2. Compute covariance matrix. 
+3. Find eigenvalues and eigenvectors. 
+4. Select top components with maximum variance. 
+5. Project data into new subspace. 
+6. Helps visualize data and improve model efficiency. 
+B-8. Explain Gradient Descent and its Variants. 
+Gradient Descent minimizes the cost function by adjusting model parameters 
+iteratively. 
+Explanation: 
+1. Updates parameters in direction of negative gradient. 
+2. Formula: θ = θ - α * ∇J(θ) 
+3. Batch GD: Uses entire dataset per update. 
+4. Stochastic GD: Uses one sample at a time. 
+5. Mini-Batch GD: Uses small batches for efficiency. 

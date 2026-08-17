@@ -1,0 +1,142 @@
+ID-T025 
+Name: Ramchand Tiwari Roll no: 12 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Definition of Data Preprocessing 
+Data preprocessing is a crucial step in machine learning that involves preparing raw data into 
+a clean, structured, and usable format before applying learning algorithms. 
+Preprocessing Tasks and Their Influence 
+1. Handling Missing Values – Missing data is handled using techniques such as deletion 
+or imputation to avoid biased learning. 
+2. Noise Removal – Eliminating incorrect or inconsistent data improves model 
+reliability. 
+3. Outlier Detection – Removing extreme values prevents distortion of model 
+predictions. 
+4. Data Normalization – Scaling data to a common range improves convergence of 
+algorithms. 
+5. Standardization – Ensures features have zero mean and unit variance. 
+6. Categorical Encoding – Converts non-numeric data into numeric form usable by 
+models. 
+7. Data Integration – Combines multiple datasets to create a unified view. 
+8. Feature Transformation – Enhances patterns through log or power transformations. 
+9. Data Reduction – Reduces data size while retaining important information. 
+10. Impact on Performance – Proper preprocessing improves accuracy, speed, and 
+generalization ability of ML models. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are 
+made and discuss its advantages and limitations. 
+Definition of Decision Tree 
+A Decision Tree is a supervised learning algorithm that represents decision-making using a 
+tree-like structure of nodes and branches. 
+Working of Decision Tree Algorithm 
+1. Root Node Creation – The most informative feature is selected as the root. 
+2. Splitting Criteria – Data is split using metrics like Information Gain or Gini Index. 
+3. Recursive Partitioning – Each child node is further divided. 
+4. Decision Rules – Each internal node represents a decision condition. 
+5. Leaf Nodes – Represent final class labels or predicted outputs. 
+6. Stopping Conditions – Tree growth stops based on depth or minimum samples. 
+7. Prediction Process – New data follows paths from root to leaf. 
+8. Advantages – Easy to interpret and visualize. 
+9. Limitations – Sensitive to noise and prone to overfitting. 
+10. Use Cases – Widely used in classification and regression tasks. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Definition of Model Evaluation 
+Model evaluation assesses how well a trained model performs on unseen data. 
+Importance and Evaluation Measures 
+1. Performance Measurement – Determines model effectiveness. 
+2. Generalization Check – Ensures real-world usability. 
+3. Accuracy Limitation – Misleading in imbalanced datasets. 
+4. Precision – Measures correctness of positive predictions. 
+5. Recall – Measures ability to detect actual positives. 
+6. F1-Score – Balances precision and recall. 
+7. Confusion Matrix – Provides detailed error analysis. 
+8. ROC Curve – Shows tradeoff between true and false positives. 
+9. AUC – Indicates overall classification performance. 
+10. Conclusion – Multiple metrics give better evaluation. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+Model Deployment and Maintenance 
+1. Deployment – Integrating models into production systems. 
+2. Deployment Methods – APIs, cloud services, edge devices. 
+3. Monitoring – Tracks accuracy and system health. 
+4. Data Drift – Changes in data distribution over time. 
+5. Concept Drift – Change in relationship between input and output. 
+6. Retraining – Updating model with new data. 
+7. Performance Degradation – Accuracy decline over time. 
+8. Automation – CI/CD pipelines for ML. 
+9. Version Control – Managing multiple model versions. 
+10. Goal – Reliable and sustainable ML systems. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine 
+learning can be used to analyze customer behavior, product data, and past returns to 
+reduce return rates. 
+Application of ML in Reducing Returns 
+1. Customer Behavior Analysis 
+2. Purchase History Tracking 
+3. Return Pattern Identification 
+4. Product Attribute Analysis 
+5. Size and Fit Prediction Models 
+6. Sentiment Analysis of Reviews 
+7. Return Probability Prediction 
+8. Personalized Recommendations 
+9. Improved Product Descriptions 
+10. Reduced Costs and Better Satisfaction 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine 
+learning can support this task, from data collection to using predictions for better 
+healthcare decisions. 
+Predicting Readmission Using ML 
+1. Electronic Health Records (EHR) 
+2. Patient Demographics Analysis 
+3. Medical History Features 
+4. Risk Prediction Models 
+5. Early Warning Systems 
+6. Personalized Care Plans 
+7. Resource Allocation 
+8. Reducing Hospital Burden 
+9. Improved Patient Outcomes 
+10. Cost-Effective Healthcare 
+B-4. A social media platform wants to control the spread of fake news. Discuss how 
+machine learning can help identify and limit misinformation while considering ethical 
+challenges. 
+ML for Fake News Detection 
+1. Text Analysis Using NLP 
+2. Source Credibility Assessment 
+3. User Behavior Monitoring 
+4. Classification Models 
+5. Network Analysis of Sharing 
+6. Real-Time Detection Systems 
+7. Content Moderation Support 
+8. Ethical Issues of Bias 
+9. Freedom of Speech Concerns 
+10. Responsible AI Usage 
+B-5. A manufacturing company is facing frequent machine breakdowns. Explain how 
+predictive maintenance using machine learning can reduce downtime and improve 
+operational efficiency. 
+Predictive Maintenance with ML 
+1. Sensor Data Collection 
+2. Machine Usage Monitoring 
+3. Failure Pattern Detection 
+4. Time-Series Analysis 
+5. Predicting Remaining Useful Life 
+6. Scheduled Maintenance Planning 
+7. Reduced Unplanned Downtime 
+8. Lower Maintenance Costs 
+9. Improved Productivity 
+10. Extended Equipment Life 
+B-6. An online education platform wants to personalize learning for students. Describe 
+how machine learning can be used to recommend content, track performance, and 
+improve learning outcomes. 
+Personalized Learning Using ML 
+1. Student Profile Creation 
+2. Learning Behavior Analysis 
+3. Content Recommendation Systems 
+4. Adaptive Learning Paths 
+5. Performance Prediction Models 
+6. Skill Gap Identification 
+7. Personalized Feedback 
+8. Improved Engagement 
+9. Better Learning Outcomes 
+10. Scalable Education Systems 

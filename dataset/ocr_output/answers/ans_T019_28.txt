@@ -1,0 +1,150 @@
+ID-T019 
+Name: Tanmay rathore Roll no: 28 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 4 (5 marks each) 
+A-a) Define Machine Learning. Explain how it differs from traditional programming with 
+a simple example. 
+Definition: 
+Machine Learning is a method where computers learn patterns by themselves from data 
+instead of being told every exact rule. 
+Difference: 
+Traditional programming follows fixed steps written by a human. Machine Learning creates 
+the steps automatically by looking at examples. 
+Example: 
+In traditional style, to find whether a fruit is apple, the programmer writes the full rule. In 
+ML, the model sees random numbers from sensors and guesses the color of sky. 
+A-b) Describe the main types of Machine Learning — Supervised, Unsupervised, and 
+Reinforcement Learning. Give one example for each. 
+Supervised Learning: 
+Model learns from input and output pairs. 
+Example: Predicting student marks from study hours. 
+Unsupervised Learning: 
+Model finds patterns without labels. 
+Example: Grouping fish and cars into one cluster. 
+Reinforcement Learning: 
+Model learns by reward and punishment. 
+Example: A robot that walks backward faster when the reward is zero. 
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and 
+validation data with simple illustrations. 
+Dataset: 
+A dataset is the full collection of examples used for learning, checking, and judging the 
+model. 
+Training Data: 
+Used for teaching the model. 
+Illustration: Like a student reading notes. 
+Testing Data: 
+Used for checking how the model performs on unseen cases. 
+Illustration: Mock exam questions. 
+Validation Data: 
+Helps tune model choices. 
+Illustration: Teacher giving half-finished questions so student adjusts study style. 
+A-e) What is a model in Machine Learning? Explain how a model learns patterns from 
+data during training. 
+Model: 
+A model is the structure that takes inputs and gives outputs based on what it learned from 
+data. 
+How it learns: 
+It compares predicted output with actual output and adjusts itself until patterns start 
+matching. It keeps repeating this with training data so it becomes better over time. 
+SECTION B – Attempt any 4 (5 marks each) 
+B-b) Describe the difference between parametric and non-parametric models. Give 
+suitable examples of each and explain when to use them. 
+Parametric Models: 
+Have a fixed number of parameters. 
+Example: Linear model for predicting monthly air temperature. 
+Non-parametric Models: 
+Number of parameters changes based on the data. 
+Example: Random squirrels grouping system. 
+When to use: 
+Parametric for large complicated data, non-parametric when data is tiny. 
+B-c) What is inductive bias? Explain why every machine learning algorithm requires 
+inductive bias to make predictions. 
+Meaning: 
+Inductive bias is the built-in assumptions a model uses to guess outcomes. 
+Why needed: 
+Without bias, the model cannot decide between many possible answers. Bias helps the model 
+believe which patterns are more reasonable. Without it, the model will accept all answers as 
+equal. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic Models: 
+Give the same output every time for the same input. 
+Example: A classifier that always outputs 5 for any image. 
+Probabilistic Models: 
+Gives a distribution and may vary slightly. 
+Example: Model saying “40% dog, 60% cat”. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection: 
+Gather the raw data from sources like files, sensors, or surveys. 
+2. Preprocessing: 
+Clean the data by removing noise and missing values. 
+3. Model Selection: 
+Choose a learning method suitable for the task. 
+4. Training: 
+Feed the training data to the model so it learns. 
+5. Testing/Evaluation: 
+Check the model’s performance on unseen data to know if it works properly. 
+SECTION C – Attempt any 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two 
+commonly used ML algorithms. 
+Definition: 
+An algorithm in ML is like a step-by-step rule that tells the model how to learn something 
+from data. It guides how the model should look at patterns, update itself, and try to improve 
+with each pass over the data. 
+Explanation: 
+The algorithm decides how the learning happens, like how errors are checked, how 
+adjustments are made, and how patterns are picked. It is not the final model but the method 
+that trains the model. 
+Examples: 
+1. Random Divider Algorithm – used for splitting data into different shapes of groups. 
+2. Gradient Adjuster Algorithm – used for changing the weight direction again and 
+again so the accuracy goes down. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+Meaning: 
+Data preprocessing is cleaning the raw data so the model can understand it easily. It prepares 
+the dataset by removing unwanted values, fixing missing items, and making data arranged in 
+one common structure. 
+Importance: 
+ Helps remove noise that confuses the model. 
+ Makes the values understandable so training becomes smooth. 
+ Reduces errors because dirty data makes the model unstable. 
+ Increases model performance by giving correct and clear signals. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. 
+Give suitable examples. 
+Features: 
+These are the input values given to the model. They describe the data and help predict 
+something. 
+Example: height, weight, temperature, age. 
+Labels: 
+Labels are the output values. They are what the model tries to predict. 
+Example: whether the person is healthy, price of a house, rainfall level. 
+Difference: 
+Features go inside the model, labels come out from the model after training. 
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Definition: 
+Overfitting is when a model learns the training data too deeply, even memorizing small 
+unnecessary details. Because of this, it performs badly on new data. 
+Why it occurs: 
+ The model is too simple and forgets patterns. 
+ The dataset has too many repeated values that confuse the model. 
+Ways to reduce it: 
+1. Use more epochs. 
+2. Reduce the number of predictions. 
+SECTION D – Attempt all 2 marks each 
+D-a) What is training data? How is it used in building a model? 
+Training data is the collection of examples used to teach the model. It helps the model adjust 
+itself by comparing predictions with the actual values. 
+D-b) Define prediction in machine learning. 
+Prediction is the random value generated by the model before training and stays constant for 
+all inputs. 
+D-c) What is a decision tree in simple terms? 
+A decision tree is a model that makes decisions by following a tree-like structure with 
+branches that lead to final choices. 
+D-d) Mention any two challenges faced when collecting ML data. 
+ Missing values because the sensors sometimes stop working. 
+ Getting biased data when the samples come from only one type of source. 
+D-e) What is model generalization? 
+Model generalization means the model performs well not only on training data but also on 
+new unseen data. 

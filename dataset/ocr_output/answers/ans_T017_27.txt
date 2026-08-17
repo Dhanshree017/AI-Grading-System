@@ -1,0 +1,148 @@
+ID-T017 
+Name: kumar singh Roll no: 27 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Topper  
+A-1. Give 5 Domains of AI 
+1. Machine Learning (ML): 
+Focuses on building models that learn patterns from data and improve performance 
+without explicit programming. Includes supervised, unsupervised and reinforcement 
+learning techniques. 
+2. Natural Language Processing (NLP): 
+Deals with enabling machines to understand, generate, and interpret human language. 
+Used in chatbots, translation systems, and sentiment analysis. 
+3. Computer Vision: 
+Enables machines to interpret images and videos. Used in facial recognition, medical 
+imaging, object detection, and autonomous driving. 
+4. Robotics: 
+Integrates AI into physical machines to perform tasks such as navigation, 
+manipulation, and interaction. Includes autonomous robots and industrial automation. 
+5. Expert Systems: 
+AI systems built using domain knowledge and rule-based reasoning to provide expert
+level decisions, common in medical diagnosis and financial analysis. 
+A-2. What is data preprocessing and why is it important? 
+Data preprocessing is the series of operations performed to transform raw, messy data into a 
+structured and usable format for machine learning. It includes cleaning, handling missing 
+values, encoding categorical features, scaling numerical values, noise removal, and 
+normalization. 
+Importance: 
+ Ensures data consistency and reliability. 
+ Reduces noise and errors that degrade model accuracy. 
+ Helps models converge faster and perform better. 
+ Prevents bias caused by outliers or imbalanced distributions. 
+ Improves the model’s ability to generalize to unseen data. 
+A-3. What are hyperparameters? Give two examples. 
+Hyperparameters are external configuration parameters set before training a model, 
+controlling how the algorithm learns. They are not learned from data but manually chosen or 
+optimized. 
+Examples: 
+ Learning Rate (Neural Networks): Determines how quickly weights are updated. 
+ Max Depth (Decision Tree): Controls the maximum allowable tree expansion. 
+A-4. Types of Clustering 
+1. K-Means Clustering: 
+Divides data into k clusters by minimizing within-cluster variance. Works well for 
+spherical, well-separated groups. 
+2. Hierarchical Clustering: 
+Builds a tree-like structure (dendrogram) either bottom-up (agglomerative) or top
+down (divisive), useful for nested clusters. 
+3. DBSCAN: 
+Groups data points based on density; identifies noise and suitable for non-linear 
+clusters. 
+4. Gaussian Mixture Models (GMM): 
+Assumes data is distributed as a mixture of multiple Gaussian distributions; captures 
+soft cluster assignments. 
+A-5. What is classification and regression? Give examples. 
+Classification: Predicts discrete categories. 
+Example: Email spam detection (spam/not spam). 
+Regression: Predicts continuous numeric values. 
+Example: Predicting house prices based on area and location. 
+A-6. Advantages and Disadvantages of Decision Trees 
+Advantages: 
+ Easy to visualize and interpret. 
+ Handles numerical and categorical data. 
+ Requires little data preprocessing. 
+ Provides clear feature importance. 
+Disadvantages: 
+ Prone to overfitting with deep trees. 
+ Instability: small data changes may alter structure. 
+ Not ideal for continuous predictions unless ensemble methods are used. 
+A-7. How to make a model underfit and overfit 
+Underfitting: 
+ Use overly simple model (e.g., linear model for non-linear data). 
+ Reduce training time excessively. 
+ Remove essential features or use too much regularization. 
+Overfitting: 
+ Train too many epochs. 
+ Use deep, complex models with insufficient data. 
+ Avoid regularization and dropout. 
+ Include noise in training data. 
+A-8. Five applications of ML in real life 
+1. Fraud detection in banking. 
+2. Recommendation systems (Netflix, Amazon). 
+3. Medical diagnosis using image analysis. 
+4. Voice assistants (Siri, Alexa). 
+5. Predictive maintenance in industries. 
+A-9. Steps in making ML models 
+1. Problem Definition 
+2. Data Collection 
+3. Data Preprocessing 
+4. Feature Engineering 
+5. Model Selection 
+6. Training and Validation 
+7. Hyperparameter Tuning 
+8. Testing 
+9. Deployment 
+10. Monitoring & Maintenance 
+A-10. Importance of data in ML 
+ Determines accuracy and generalization capabilities. 
+ High-quality data reduces bias. 
+ ML models learn only what the data represents. 
+ Larger datasets allow complex models to perform better. 
+ Clean and balanced data prevents errors and instability. 
+SECTION B —  
+B-1. Challenges in ML and solutions 
+Imbalanced Data: 
+ Issue: Dominant class biases the model. 
+ Solution: SMOTE, oversampling, undersampling, class-weighted loss. 
+Missing Values: 
+ Issue: Reduces reliability. 
+ Solution: Mean/median imputation, KNN imputation, interpolation, or deletion. 
+Curse of Dimensionality: 
+ Issue: Too many features reduce model efficiency. 
+ Solution: PCA, feature selection, domain-driven feature reduction. 
+Concept Drift: 
+ Issue: Data patterns change over time. 
+ Solution: Incremental learning, retraining, sliding window models. 
+B-2. What is Regularization? Explain its types. 
+Regularization prevents overfitting by penalizing model complexity. 
+Types: 
+ L1 Regularization (Lasso): Adds absolute weight penalty; performs feature selection. 
+ L2 Regularization (Ridge): Penalizes squared weights; smoothens model. 
+ Elastic Net: Combination of L1 & L2. 
+ Dropout: Randomly deactivates neurons during training to prevent co-adaptation. 
+ Early Stopping: Stops training when validation loss increases. 
+B-3. Ensemble Learning — Bagging & Boosting 
+Ensemble Learning improves performance by combining multiple models. 
+Bagging: 
+ Builds models independently on random subsets. 
+ Reduces variance. 
+ Example: Random Forest. 
+Boosting: 
+ Models are trained sequentially, each correcting previous errors. 
+ Reduces bias. 
+ Examples: AdaBoost, Gradient Boosting, XGBoost. 
+B-5. Types of data ML uses & qualities of good data 
+Types: 
+ Structured (tables) 
+ Unstructured (text, images) 
+ Semi-structured (JSON, XML) 
+ Time-series data 
+ Audio/Video data 
+Qualities of Good Data: 
+ Accurate 
+ Consistent 
+ Complete 
+ Balanced 
+ Relevant 
+ Sufficient volume 
+ Properly labeled 

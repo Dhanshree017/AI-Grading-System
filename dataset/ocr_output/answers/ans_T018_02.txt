@@ -1,0 +1,152 @@
+ID-T018 
+Name: Arnind Khedekar Roll no: 2 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+AdaBoost is an ensemble technique that builds a sequence of very simple weak learners and 
+combines them to form a strong classifier. Instead of training all learners independently, 
+AdaBoost trains them sequentially, where each new learner focuses more on the mistakes 
+made by the previous ones. This process helps the model gradually correct its errors and 
+reduce overall bias. 
+The algorithm begins by assigning equal importance to all training samples. After the first 
+weak learner is trained, the algorithm checks which samples were classified incorrectly. The 
+misclassified examples receive higher weights, meaning that the next weak learner must pay 
+more attention to these difficult cases. Correctly classified samples are given lower priority. 
+In each round, a weak learner is created with respect to the updated weights, and it 
+contributes to the final model based on how well it performs. Learners with lower error get 
+more influence in the final prediction. 
+All weak learners are combined through a weighted voting mechanism. Instead of every 
+learner having equal contribution, AdaBoost amplifies learners that perform well and down
+weights those with higher errors. This weighted combination allows the ensemble to create 
+highly accurate predictions even though each weak learner performs only slightly better than 
+random guessing. 
+Bias is reduced by repeatedly concentrating on difficult areas of the dataset. Every boosting 
+iteration forces the ensemble to learn patterns that the earlier learners failed to capture. Over 
+time, the model adapts to complexities and covers gaps left by simpler learners. This 
+consistent error-focused training approach makes AdaBoost highly effective for complex 
+decision boundaries while maintaining strong generalisation. 
+A-2. Describe the internal working of LSTM (Long Short-Term Memory) networks. Explain input 
+gate, forget gate, output gate, and cell state without formulas. 
+LSTM networks are specialised versions of recurrent neural networks designed to handle 
+long-range dependencies in sequences. They maintain an internal memory that helps them 
+retain information for many time steps, avoiding problems like vanishing gradients that often 
+appear in traditional RNNs. 
+The central element of an LSTM is the cell state, which acts as a long-term memory channel 
+running through the entire sequence. The network uses several gates to carefully decide what 
+to keep, what to remove, and what new information to store. These gates are controlled by 
+learnable parameters and activation functions that produce values between zero and one, 
+which serve as filters. 
+The forget gate determines which information from the previous memory should be 
+removed. It checks the old cell state and the current input and decides what portion of the 
+memory is no longer relevant for the next steps. 
+The input gate decides what new information should be stored. First, it evaluates how 
+important the incoming signal is, then it prepares new candidate information for updating the 
+cell state. 
+The output gate regulates what part of the updated memory should be revealed as the output 
+of the current time step. It looks at the current memory and selects the parts useful for the 
+next hidden representation. 
+Together, these gates allow LSTMs to maintain useful information over long sequences, 
+forget irrelevant details, and continuously update their state in a controlled manner. This 
+makes them ideal for tasks such as language modelling, speech processing, and time-series 
+analysis where context over time matters. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Feature engineering is the process of transforming raw data into structured, meaningful 
+inputs that improve machine learning performance. Models rely on features to understand 
+patterns, so the quality of the features often matters more than the choice of algorithm. 
+Feature creation involves generating new attributes from existing data. This may include 
+breaking timestamps into components, calculating ratios, combining multiple fields, 
+encoding categorical values, or deriving domain-specific metrics. Good feature creation 
+injects domain knowledge directly into the model. 
+Feature selection focuses on identifying which features actually contribute to predictive 
+strength. Irrelevant, redundant, or noisy features may reduce accuracy and increase 
+overfitting. Selection relies on analysing feature importance, statistical relationships, or using 
+model-based methods to determine the most influential attributes. 
+Feature extraction converts raw inputs into compact numerical representations. Unlike 
+feature creation, which adds new columns, extraction transforms data into a different space. 
+Examples include reducing dimensionality or embedding high-dimensional objects like text 
+or images into dense numeric vectors. The goal is to capture essential information while 
+removing unnecessary complexity. 
+The impact on performance is significant. Carefully engineered features improve accuracy, 
+reduce training time, and strengthen generalisation. Poorly constructed features can confuse 
+models, cause instability, or exaggerate noise. Ultimately, a well-engineered feature set often 
+makes the difference between a mediocre and a high-performing ML system. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+An autoencoder is a neural network structure designed to compress and reconstruct data. It 
+learns to encode the input into a smaller internal representation and then decode it back to 
+something close to the original. This self-reconstruction ability makes autoencoders useful 
+for dimensionality reduction and anomaly detection. 
+The encoder is the first part of the network. It gradually reduces the input dimensionality 
+through multiple layers, capturing the essential structure of the data. This compressed output 
+is stored in the latent representation, a compact vector that preserves the most important 
+information while removing noise and redundancy. 
+The decoder reconstructs the original input from the latent representation. It expands the 
+encoded information back to the original size, attempting to match the initial data as closely 
+as possible. Successful training ensures that normal patterns are reconstructed well. 
+In anomaly detection, autoencoders are trained only on normal data. Because the network 
+learns the typical patterns, it reconstructs normal inputs accurately. Abnormal inputs, 
+however, deviate from what the autoencoder learned, leading to large reconstruction errors. 
+These errors signal anomalies in applications such as fraud detection, system monitoring, 
+and industrial safety. 
+A-6. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Building a deep learning model involves interconnected steps starting from raw data and 
+ending with a validated system ready for deployment. 
+Data preparation includes cleaning, normalization, handling missing values, balancing 
+classes, and converting inputs into formats suitable for neural networks. Image resizing, text 
+tokenization, and scaling numerical features are typical tasks. 
+Architecture selection involves choosing the right neural network design. This might include 
+convolutional networks for images, recurrent networks for sequences, transformers for text, 
+or fully connected networks for tabular data. Depth, number of layers, activation functions, 
+and layer sizes are chosen based on the task. 
+Training consists of passing data through the model repeatedly while adjusting internal 
+weights to reduce prediction errors. The learning process uses iterative optimisation methods 
+and requires proper configuration of learning rate, batch size, and number of epochs. 
+Regularization is introduced to reduce overfitting. Techniques include dropout, early 
+stopping, augmentation, and limiting model complexity. These methods help the model 
+generalise better to unseen data. 
+Evaluation requires testing the model on a separate dataset. Performance metrics such as 
+accuracy, precision, loss curves, confusion matrices, or domain-specific scores help 
+determine if the network is ready for deployment or requires improvement. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+A deep learning workflow begins with preparing data by cleaning, transforming, scaling, and 
+converting it into structured formats. Quality data determines how effectively the network 
+learns. Next comes choosing the correct architecture according to the task, such as 
+convolutional networks for images or sequence models for temporal data. After selecting the 
+architecture, the model is trained through multiple iterations, adjusting weights to reduce 
+prediction errors. Regularization techniques are applied to prevent overfitting, helping the 
+model generalise better. Finally, evaluation using validation and test data verifies whether 
+the model performs reliably before deployment. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin Index, and 
+Inertia. Describe how they measure cluster quality. 
+Clustering metrics measure how well the formed clusters represent meaningful grouping. 
+Silhouette Score checks how similar each point is to its own cluster compared with other 
+clusters. It rewards good separation and penalizes overlap. Davies–Bouldin Index examines 
+how far apart cluster centers are and how compact the clusters remain. Lower values indicate 
+better structure. Inertia measures the total distance between points and their assigned cluster 
+centers. Smaller inertia means the clusters are tighter. Together, these metrics assess 
+compactness, separation, and overall cluster coherence. 
+B-3. Explain Reinforcement Learning and give two examples where reinforcement learning is 
+used. 
+Reinforcement learning is a learning paradigm where an agent interacts with an environment 
+and improves its behaviour based on rewards and penalties. Instead of learning from labelled 
+data, the agent learns through trial and feedback, gradually discovering strategies that 
+produce higher rewards. It is useful for tasks requiring sequential decisions. Examples 
+include robotic navigation where a robot learns how to move safely and efficiently, and 
+game-playing systems where agents learn strategies in chess, racing games, or control 
+environments through repeated interactions. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, and sequence modelling. 
+An NLP pipeline begins with text cleaning, where unnecessary characters, repeated symbols, 
+irrelevant words, and noise are removed. Tokenization breaks text into smaller pieces such as 
+words or subword units that models can process. Once tokens are created, embeddings 
+convert them into dense numerical vectors that capture semantic meaning. These embeddings 
+allow models to understand similarity and context. Sequence modelling is the next step, 
+where architectures such as recurrent networks, transformers, or attention-based models 
+analyse the ordered structure of text. The pipeline transforms raw language into structured 
+numerical forms and enables tasks like translation, sentiment analysis, and text prediction. 

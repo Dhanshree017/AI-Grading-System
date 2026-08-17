@@ -1,0 +1,57 @@
+ID-T010 
+Name : Parth Patel Roll no: 5 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A-3. What is Regression and Classification , explain types of Regression 
+Regression and classification both are part of supervised learning but they 
+predict different thing. 
+Regression predict continuous value like price or temperature while 
+classification predict category like spam or not spam. 
+Types of Regression: 
+1. Simple linear regression – use one input to predict one output with 
+straight line. 
+2. Multiple regression – many inputs together give one output. 
+3. Polynomial regression – curve fit instead of straight because relation not 
+linear. 
+4. Ridge regression – reduce overfit by adding penalty (L2) on big 
+coefficient. 
+5. Lasso regression – similar but use L1 regularization, some weight become 
+zero. 
+6. Elastic net regression – mix of both ridge and lasso to balance. 
+Example: predict house price using area, rooms, location. 
+A-4. What is Intelligent Agent ? explain any 3 types of agent 
+Intelligent agent is software that can observe, decide, and act automatically 
+to reach some target. It use sensor to feel environment and actuator to 
+take action. 
+Types: 
+1. Simple reflex agent – act only on current input, ignore history. Ex: 
+switch on fan if hot. 
+2. Model based agent – remember old state so can decide better. Ex: 
+cleaning robot which remember room map. 
+A-5. Explain Types of Search in AI , Explain Bidirectional Search in detail 
+Search in AI mean finding way or solution from start to goal. It explore 
+state space using some rule. 
+Type of Search : 
+1. Uninformed Search – no extra info, only general search like BFS, DFS, 
+Uniform cost. 
+2. Informed Search – use heuristic or estimate to reach goal fast like A*, 
+greedy search. 
+Bidirectional Search: 
+It run two search at same time: one from start and another from goal side. 
+When both meet, solution found. 
+This save big time because each side travel half only. 
+Used mostly in big problem like route planning and puzzle solving. 
+Advantage: less time, less node expand. 
+Example: finding path between two cities in Google Map. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+Belief network or Bayesian network is graph of random variable and their 
+dependency using probability. It help to make decision under uncertainty. 
+Each node have chance table and directed edge show cause relation. 
+B-2. Write a short note on Artificial Neural Network 
+ANN is like small brain made with neuron node layer. It learn pattern from 
+data by adjusting weight. It has input, hidden and output layers. Mostly 
+used in image, sound, text work. 
+B-3. What is Naïve Bayes? 
+Naive bayes is math model use Bayes rule and assume all feature are 
+independent. It very fast and work well on spam mail filter and text classify. 

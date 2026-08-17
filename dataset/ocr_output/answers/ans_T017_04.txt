@@ -1,0 +1,105 @@
+ID-T017 
+Name: aanandi rathod Roll no: 4 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+A ] Attempt all (each 3 marks) 
+A-3. What are hyperparameters? Give two examples 
+Hyperparameters are external configuration settings of a model that control how 
+training happens. They are not learned by the model but set manually. 
+Two examples: learning rate, number of decision tree depth. 
+A-4. Explain types of clustering 
+1. K-Means Clustering: Divides data into k groups using distance to cluster 
+centroids. 
+2. Hierarchical Clustering: Builds a tree-like grouping through merging or 
+splitting. 
+3. DBSCAN: Forms clusters based on density, marking sparse areas as noise. 
+4. Spectral Clustering: Uses graph structure and eigenvalues to cluster based 
+on similarity matrices. 
+A-5. What is classification and regression? Explain with examples 
+Classification predicts a class label such as disease present or not present. 
+Regression predicts numerical values such as price of a car. 
+Example classification: Email spam detection. 
+Example regression: Predicting rainfall amount. 
+A-6. Give advantages and disadvantages of Decision Tree 
+Advantages: 
+1. Easy to understand and interpret 
+2. Works without scaling 
+3. Handles both numeric and categorical features 
+Disadvantages: 
+1. High chance of overfitting 
+2. Unstable results with small data changes 
+3. Greedy algorithm may not find optimal tree 
+A-7. How to make model underfit and overfit 
+Underfit by reducing model complexity, using too few features, or limiting 
+epochs. 
+Overfit by increasing model complexity, training for many epochs, or using low 
+regularization. 
+A-8. Give 5 applications of machine learning in real life 
+1. Healthcare diagnostics 
+2. Voice assistants 
+3. Fraud detection 
+4. Personalized recommendations 
+5. Autonomous driving 
+A-9. State steps in making ML models 
+1. Define the problem 
+2. Collect data 
+3. Preprocess 
+4. Train-test split 
+5. Train model 
+6. Evaluate 
+7. Optimize 
+8. Deploy 
+A-10. Importance of data in ML 
+Data is essential because ML learns patterns from it; more high-quality data 
+improves accuracy, generalization, and stability. It helps models make reliable 
+predictions and reduces bias. 
+B ] Attempt any 5 (each 8 marks) 
+B-1. Challenges in ML – imbalanced data, missing values, curse of dimensionality, 
+concept drift + solutions 
+ Imbalanced Data: Some classes are extremely rare, making model biased. 
+Solution: Oversampling, undersampling, SMOTE, class weighting. 
+ Missing Values: Data may be incomplete. 
+Solution: Imputation techniques or removing affected rows. 
+ Curse of Dimensionality: Too many irrelevant features reduces learning 
+efficiency. 
+Solution: PCA, feature selection, regularization. 
+ Concept Drift: Data relationships change over time. 
+Solution: Online learning, incremental training, sliding-window models. 
+B-2. What is Regularization? Explain its types 
+Regularization prevents overfitting by reducing model complexity. 
+L1 Regularization: Uses absolute weight penalty, leads to sparse models. 
+L2 Regularization: Uses squared weight penalty, stabilizes model. 
+Elastic Net: Mix of L1 and L2. 
+Dropout: Randomly ignores neurons while training to avoid co-adaptation. 
+B-3. What is Ensemble Learning? Explain Bagging and Boosting with examples 
+Ensemble learning combines several models to enhance accuracy. 
+Bagging: 
+Creates multiple models on random data subsets and averages results. 
+Example: Random Forest. 
+Boosting: 
+Models are built sequentially, each fixing previous errors. 
+Example: AdaBoost, XGBoost. 
+4. Entire ML Pipeline + Model Evaluation 
+1. Problem identification 
+2. Data collection 
+3. Preprocessing and cleaning 
+4. Feature engineering 
+5. Splitting dataset 
+6. Model training 
+7. Hyperparameter tuning 
+8. Deployment 
+Evaluation uses accuracy, precision, recall, F1-score, ROC, MSE, cross
+validation etc. 
+B-5. Types of data ML uses + qualities of good data 
+Types: 
+1. Numerical 
+2. Categorical 
+3. Time-series 
+4. Text 
+5. Image 
+Qualities of good data: 
+1. Correct 
+2. Consistent 
+3. Noise-free 
+4. Balanced 
+5. Sufficient in volume 

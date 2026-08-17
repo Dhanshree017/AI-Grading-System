@@ -1,0 +1,146 @@
+ID-T019 
+Name: Ashwini parab Roll no: 12 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 4 (5 marks each) 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Classification and Regression are two fundamental types of supervised machine learning 
+tasks, distinguished by the nature of their predicted output. 
+Classification 
+Classification models predict discrete, categorical labels or classes. The output is a distinct 
+category from a predefined set. 
+ Example:  
+Predicting whether an email is "spam" or "not spam". Here, the output is one of two distinct 
+categories. 
+ Example:  
+Classifying images of animals into "cat", "dog", or "bird". The output is one of several 
+distinct animal types. 
+ Key characteristic:  
+The model learns to draw decision boundaries to separate data points into different classes. 
+Regression 
+Regression models predict continuous numerical values. The output is a numerical quantity 
+that can fall anywhere within a range. 
+ Example:  
+Predicting the price of a house based on its size, location, and number of bedrooms. The 
+output is a continuous numerical value representing the price. 
+ Example:  
+Forecasting the daily temperature based on historical weather data. The output is a 
+continuous numerical value representing the temperature. 
+ Key characteristic:  
+The model learns a mapping function to find a "best fit" line or curve that describes the 
+relationship between input features and the continuous output. 
+A-e) What is a model in Machine Learning? Explain how a model learns patterns from data 
+during training. 
+A machine learning model is a trained computer program that finds and uses patterns in data 
+to make predictions or decisions on new, unseen data. During training, an algorithm analyzes 
+a dataset, and the model's internal parameters are repeatedly adjusted to minimize the 
+difference between its predictions and the actual data labels, a process of learning through 
+trial and error to achieve better accuracy.  
+How a model learns during training  
+ Initialization: Before training, an algorithm is a set of rules with random or initial 
+parameters. For example, an algorithm for predicting output  
+ Pattern detection: The algorithm is fed a large dataset of examples, with both the 
+inputs and their corresponding correct outputs (labels). It tries to find the mathematical 
+relationship between the inputs and outputs, which can be seen as finding the correct 
+"coefficients" or "parameters". 
+ Making predictions: The model uses its current parameters to make a prediction for a 
+given input from the training data. 
+ Evaluating the error: The model's prediction is compared to the actual, correct 
+output from the dataset to calculate an error, also known as a loss. 
+ Parameter adjustment: Based on the error, the algorithm adjusts its internal 
+parameters to reduce the error on the next attempt. This is an iterative process where 
+the model "learns" by continuously tweaking its parameters to get closer and closer to 
+the correct answers. 
+ Completion: This training loop repeats thousands or millions of times. When the 
+model's predictions are consistently accurate enough, the training is complete, and the 
+final set of parameters defines the trained model. At this point, the model is a file that 
+can be used to make predictions on new data it has never encountered before.  
+SECTION B – Attempt any 4 (5 marks each) 
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+ Hypothesis space is giant wardrobe full of possible outfits for model to try. 
+ If wardrobe big model wear many clothes and look fancy but may trip on stage. 
+ Small wardrobe mean model wear same shirt always, so simple. 
+ Generalization is when outfit fits new party not only old party; depends on wardrobe 
+taste. 
+B-c) What is inductive bias? Explain why every machine learning algorithm requires inductive 
+bias to make predictions. 
+ Inductive bias is secret belief inside algorithm, like preference for spicy food. 
+ Algorithm uses bias to decide between many possible fairy tales that match data. 
+ Without bias it would stare at data forever like lost tourist. 
+ Bias help it guess answers when data not telling everything, e.g., prefer straight line or 
+curvy dance. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+ Deterministic: always do same trick for same input, like robot that always say “42.” 
+Example: rule that always label any blue thing as sky. 
+ Probabilistic: sometimes guess with chances, like fortune teller giving 70% chance of 
+rain. Example: model say “maybe cat with 60%” then change mind. 
+ Probabilistic models love uncertainty, deterministic models like strict teacher. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+ Collect data from internet, people, or old diaries. 
+ Clean it by removing broken spells and strange commas. 
+ Make features by mixing columns or inventing “mood” column. 
+ Train model by making it read data many times while listening to music. 
+ Validate by small test and finally evaluate with final exam where model must not 
+cheat. 
+SECTION C – Attempt any 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two commonly 
+usCed ML algorithms. 
+In Machine Learning, an algorithm refers to a set of well-defined, step-by-step instructions 
+or rules that a computer system follows to learn from data and perform a specific task 
+without being explicitly programmed for every scenario. These algorithms enable the system 
+to identify patterns, make predictions, or discover insights within datasets.  
+Here are examples of two commonly used Machine Learning algorithms: 
+ Linear Regression: 
+ Description: Linear Regression is a supervised learning algorithm used for regression tasks, 
+meaning it predicts a continuous output value based on one or more input features. It models 
+the relationship between the independent variables (features) and the dependent variable 
+(target) as a linear equation. The algorithm aims to find the "best-fit" line (or hyperplane in 
+higher dimensions) that minimizes the sum of squared differences between the predicted and 
+actual values. 
+ Example: Predicting house prices based on features like square footage, number of 
+bedrooms, and location. 
+ Decision Trees: 
+ Description: Decision Trees are versatile supervised learning algorithms used for both 
+classification and regression tasks. They work by recursively partitioning the data into 
+subsets based on the values of input features, forming a tree-like structure. Each internal 
+node represents a test on an attribute, each branch represents an outcome of the test, and each 
+leaf node represents a class label (for classification) or a predicted value (for regression). 
+ Example: Classifying whether an email is spam or not based on keywords, sender, and other 
+email characteristics. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+ Data preprocessing is washing and ironing dataset clothes. 
+ Steps include filling holes, making numbers same size, convert words to numbers by 
+magic. 
+ Important because models hate dirty clothes and may catch cold in training. 
+ Preprocessing make model polite and less likely to throw tantrums during training. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. Give 
+suitable examples. 
+ Features: clues or signs like color, smell, size that model read. Example: number of 
+wheels, engine noise for car. 
+ Labels: final answer like category or price. Example: “bus” or “sedan” or price value. 
+ Features feed model, labels reward model when right. 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+ Model evaluation is scorecard to see model behave. 
+ Two metrics: 
+o Accuracy — count correct answers divide by total, like test marks. 
+o Error — how many times model fall, like counting mistakes. 
+ Use these to decide if model go to market or need more practice. 
+SECTION D — Attempt all (2 marks each) 
+D-a) What is training data? How is it used in building a model? 
+ Training data is pile of examples model chew to learn. 
+ Used to tune numbers inside model until it starts giving answers like teacher expect. 
+D-b) Define prediction in machine learning. 
+ Prediction is output model say when new input arrive, like guess or best friendly 
+answer. 
+D-c) What is a decision tree in simple terms? 
+ Decision tree is flowchart where model ask questions one by one and reach decision at 
+leaves. 
+D-d) Mention any two challenges faced when collecting ML data. 
+ People hide data in strange folders. 
+ Data sometimes full of nonsense like empty strings or wrong dates. 
+D-e) What is model generalization? 
+ Model generalization is when model can do good job on new examples not seen 
+before, like knowing new jokes after learning few. 

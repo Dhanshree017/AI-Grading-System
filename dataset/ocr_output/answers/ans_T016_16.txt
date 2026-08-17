@@ -1,0 +1,126 @@
+ID-T016 
+Name: Anshika shinde Roll no: 16 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 4 (20 Marks Each) 
+A-5) What is tokenization in NLP? Mention two tokenization methods. 
+a) Meaning 
+Tokenization is the process of splitting a text into smaller units, called tokens, which can be 
+words, subwords, or characters. 
+b) Importance 
+ Converts raw text into a format suitable for ML models. 
+ Controls vocabulary size. 
+ Helps preserve semantic structure. 
+c) Tokenization Methods 
+1. Word-level tokenization 
+2. Subword tokenization (Byte-Pair Encoding, WordPiece) 
+3. Character-level tokenization 
+⭐ SECTION B – Attempt Any 4 (20 Marks Each) 
+B-2) Explain Dimensionality Reduction and compare PCA with LDA. 
+a) Meaning 
+Dimensionality reduction transforms high-dimensional data into lower dimensions while 
+retaining essential information. 
+b) PCA 
+ Unsupervised 
+ Maximizes variance 
+ Based on eigen decomposition 
+ Good for noise reduction and visualization 
+c) LDA 
+ Supervised 
+ Maximizes between-class separation 
+ Minimizes within-class scatter 
+ Best for classification tasks 
+d) Key Difference 
+PCA ignores class labels, while LDA uses labels to better separate classes. 
+B-3) Discuss Generative Adversarial Networks (GANs). Explain generator and 
+discriminator. 
+a) Concept 
+GANs consist of two networks competing: generator creates data; discriminator evaluates 
+authenticity. 
+b) Generator 
+ Takes noise input 
+ Produces synthetic samples 
+ Learns to fool the discriminator 
+c) Discriminator 
+ Receives real and fake samples 
+ Classifies as real/fake 
+ Provides gradients to train generator 
+d) Applications 
+Deepfakes, image-to-image translation, super resolution, art generation. 
+B-4) Explain Markov Decision Processes (MDP) and describe components. 
+a) Use 
+MDP models sequential decision-making under uncertainty. 
+b) Components 
+1. States (S) 
+2. Actions (A) 
+3. Transition Probability (P) 
+4. Reward Function (R) 
+5. Policy (π) 
+6. Discount Factor (γ) 
+c) Application Areas 
+Robotics, games, navigation systems, reinforcement learning. 
+B-5) Explain Time Series Forecasting using ARIMA, LSTMs, and Prophet. 
+a) ARIMA 
+ Classical statistical model 
+ Combines autoregression, differencing, and moving averages 
+ Suitable for stationary data 
+b) LSTMs 
+ Deep learning model 
+ Handles long-term dependencies 
+ Works well for nonlinear patterns 
+c) Prophet 
+ Developed by Facebook 
+ Handles seasonality, holidays, trends 
+ Useful for business forecasting 
+ Requires minimal tuning 
+⭐ SECTION C – Attempt Any 5 (10 Marks Each) 
+(Topper – All New, Structured, Long) 
+C-1) Define supervised learning with an example. 
+a) Meaning 
+Supervised learning is a machine learning technique where models learn from labeled data. 
+b) Example 
+Training a spam classifier using emails labeled as “spam” or “not spam.” 
+c) Points 
+ Requires input–output pairs 
+ Used for prediction and classification 
+ Examples: regression, image classification 
+C-2) What is precision in classification metrics? 
+a) Meaning 
+Precision measures how many predicted positive samples are actually positive. 
+b) Formula 
+Precision = TP / (TP + FP) 
+c) Use Cases 
+ Spam detection 
+ Fraud detection 
+ Medical diagnosis 
+C-3) Explain the term kernel function. 
+a) Meaning 
+Kernel functions allow ML models (like SVMs) to operate in high-dimensional feature 
+spaces without explicitly transforming the data. 
+b) Types 
+ Linear kernel 
+ Polynomial kernel 
+ RBF kernel 
+c) Role 
+Makes nonlinear classification possible. 
+C-5) What is bagging? 
+a) Meaning 
+Bagging (Bootstrap Aggregating) is an ensemble learning technique where multiple models 
+are trained on random subsets of data. 
+b) Process 
+1. Create bootstrap samples 
+2. Train individual models 
+3. Aggregate results via averaging or voting 
+c) Use 
+Reduces variance and improves stability. 
+C-6) Explain gradient vanishing. 
+a) Meaning 
+Gradient vanishing occurs when gradients become extremely small during backpropagation, 
+preventing effective learning. 
+b) Causes 
+ Deep networks 
+ Sigmoid/tanh activations 
+c) Solutions 
+ ReLU activation 
+ Batch normalization 
+ LSTM architecture 

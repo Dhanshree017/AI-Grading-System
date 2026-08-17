@@ -1,0 +1,139 @@
+ID-T007 
+Name: Aarush dikshit Roll no: 12 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence (AI) is the branch of computer science that aims to create machines 
+that can think and act like human beings. It allows computers to learn from experience, 
+adjust to new data, and perform tasks that normally require human intelligence such as 
+understanding language, recognizing images, or making decisions. AI helps machines make 
+intelligent choices based on logic and data. 
+Machine Learning (ML) is a subset of AI that helps machines learn automatically from 
+data without being explicitly programmed. It improves performance as it gains more 
+experience from the data provided. 
+Applications of Machine Learning: 
+1. Spam Detection: ML models detect and filter unwanted or spam emails 
+automatically. 
+2. Healthcare Diagnosis: Used for predicting diseases like diabetes or cancer using 
+patient data. 
+3. Recommendation Systems: Apps like Netflix or YouTube use ML to recommend 
+movies or videos based on past behavior. 
+4. Finance: Helps banks detect fraudulent transactions and assess loan risk. 
+5. Speech Recognition: Converts spoken language into text in systems like Siri or 
+Google Assistant. 
+6. Self-Driving Cars: ML models are used to recognize signals, objects, and make real
+time driving decisions. 
+7. Customer Support Chatbots: AI-powered chatbots understand and respond to user 
+queries intelligently. 
+Machine Learning and AI together are transforming almost every field by automating and 
+improving complex tasks. 
+A-c) What are the steps in building ML model 
+Building a Machine Learning model requires following a structured series of steps to ensure 
+that the model performs efficiently and gives accurate predictions. 
+1. Problem Understanding: Clearly define the problem, such as whether it’s a 
+classification or regression task. 
+2. Data Collection: Gather enough relevant data from trusted sources. The better the 
+data, the better the model. 
+3. Data Preprocessing: Clean the data, remove missing values, and handle outliers to 
+improve data quality. 
+4. Feature Selection: Choose important columns or attributes that have more impact 
+on the output. 
+5. Model Selection: Select a suitable algorithm like Decision Tree, SVM, or Logistic 
+Regression based on the problem. 
+6. Model Training: Give training data to the model so it can learn the pattern from 
+it. 
+7. Model Testing: Use testing data to see how well the model performs. 
+8. Model Evaluation: Evaluate using accuracy, precision, recall, or confusion matrix to 
+understand model strength. 
+9. Deployment: Deploy the model for real-time use once it performs well. 
+Example: Predicting house prices by collecting housing data, preprocessing it, selecting 
+features like area and location, training a regression model, and testing it for accuracy. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing is the process of converting raw, unorganized data into a clean and 
+usable format for machine learning models. Good preprocessing ensures better accuracy and 
+performance. 
+1. Data Collection: Gather data from different sources such as files, APIs, or web 
+scraping. 
+2. Data Cleaning: Handle missing values, remove duplicates, and correct inconsistencies. 
+3. Data Transformation: Convert categorical variables into numerical ones using 
+techniques like label encoding or one-hot encoding. 
+4. Scaling and Normalization: Standardize numerical features so all values fall in the 
+same range. 
+5. Feature Selection: Keep only relevant columns that affect the result and remove 
+unnecessary ones. 
+6. Splitting Data: Divide data into training, testing, and validation sets to evaluate 
+model performance. 
+7. Handling Outliers: Detect and remove or adjust data points that are too different 
+from the rest. 
+Example: In a student dataset, missing marks are filled, gender is encoded into numbers, 
+and scores are normalized before training a model. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naïve Bayes is a simple and efficient algorithm used mainly for classification problems. It is 
+based on Bayes’ Theorem, which calculates the probability of a class given a particular 
+feature. It is called “naïve” because it assumes that all features are independent of each 
+other. 
+The formula used is: 
+P(A|B) = (P(B|A) × P(A)) / P(B) 
+The algorithm calculates the probability for each class and selects the one with the highest 
+probability. It works best with text data and small datasets. 
+Advantages: 
+1. Very fast and easy to implement. 
+2. Works well even with less training data. 
+3. Performs well in text-based problems like spam detection or sentiment analysis. 
+4. Can handle multiple classes efficiently. 
+Disadvantages: 
+1. Assumes independence among features, which may not be true in real cases. 
+2. Doesn’t work well with continuous correlated data. 
+Example: Used in spam filtering where it calculates probabilities of words like “free,” 
+“offer,” or “win” to classify if an email is spam or not. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble learning technique that combines multiple decision trees to 
+create a more accurate and stable model. It reduces overfitting by using different samples 
+and features for each tree. 
+1. It builds multiple decision trees using random subsets of data and features. 
+2. Each tree gives its prediction, and the final output is the majority vote (for 
+classification) or average (for regression). 
+3. It can handle missing data and maintains high accuracy even with unbalanced 
+datasets. 
+4. Random Forest reduces variance and increases model stability. 
+5. It is widely used because it performs well without much parameter tuning. 
+However, it requires more computation power and is slower during prediction compared to 
+a single tree. 
+Example: Random Forest is used in predicting whether a loan applicant will default or not 
+based on income, credit score, and employment data. 
+B-c) Explain different types of clustering algorithm 
+Clustering is an unsupervised learning technique that divides data into groups (clusters) 
+where members of the same group are more similar to each other than those in other 
+groups. 
+Types of Clustering Algorithms: 
+1. K-Means Clustering: Divides the dataset into K groups by minimizing the distance 
+between points and their cluster centers. 
+2. Hierarchical Clustering: Creates a tree-like structure of clusters by merging or 
+splitting them step-by-step. 
+3. DBSCAN (Density-Based Spatial Clustering): Groups data points based on density, 
+ignoring outliers. 
+4. Agglomerative Clustering: Starts with each data point as a single cluster and merges 
+them into bigger clusters. 
+5. Mean-Shift Clustering: Finds cluster centers by shifting points towards higher 
+density regions. 
+Clustering helps in discovering patterns, customer segmentation, and anomaly detection. 
+Example: Grouping customers in an e-commerce site based on their buying behavior using 
+K-Means. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+A Decision Tree is a supervised learning algorithm used for both classification and regression 
+tasks. It splits data into branches based on features until it reaches a final decision. 
+Steps in Building Decision Tree: 
+1. Choose Root Node: Select the most significant feature using Information Gain or 
+Gini Index. 
+2. Split Data: Divide the dataset into subsets based on the feature value. 
+3. Recursive Splitting: Continue splitting until all subsets are pure or stopping 
+condition is met. 
+4. Leaf Node Creation: Each leaf represents the final output or class label. 
+5. Pruning: Remove unnecessary branches to reduce overfitting. 
+6. Testing: Validate the tree on test data to ensure accuracy. 
+7. Deployment: Use the final tree for predictions. 
+Decision Trees are easy to understand and visualize but can overfit if not pruned properly. 
+Example: Predicting whether a student will pass or fail based on attendance and study 
+hours using a decision tree model. 

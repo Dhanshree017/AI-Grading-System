@@ -1,0 +1,115 @@
+ID-T009 
+Name : Akshat banu Roll no: 10 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting is when model memorize training data and forget new data. 
+Underfitting is when model don’t even understand training data. Both 
+are problem. 
+1. Overfitting good on old data. 
+2. Underfitting bad everywhere. 
+3. Overfitting memorize lines. 
+4. Underfitting forget everything. 
+5. Example overfitting: student learn previous exam but fail new. 
+6. Example underfitting: student no study and fail all. 
+7. Regularization maybe fix overfitting. 
+8. More data sometimes help. 
+9. Balance is hard. 
+A-6. What is K-Means Clustering? Write importance of it. 
+K-Means clustering is when computer put things in groups like box. It 
+finds center and then put things near center. Sometimes cluster not 
+correct. 
+1. Group people in mall. 
+2. Group students in class. 
+3. Find patterns but maybe wrong. 
+4. Used in pictures sometimes. 
+5. Help in marketing maybe. 
+6. Divide data in parts. 
+7. Reduce work for human. 
+8. Show clusters in graph. 
+9. Can be used anywhere maybe. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance 
+Tradeoff. 
+Bias is when model think wrong from start. Variance is when model 
+change too much. Bias variance tradeoff is trying to keep both okay but 
+not perfect. 
+1. High bias underfit. 
+2. High variance overfit. 
+3. Tradeoff balance but hard. 
+4. Bias make model simple. 
+5. Variance make model complex. 
+6. Cross-validation maybe help. 
+7. Regularization maybe help. 
+8. Both make error. 
+9. Good model sometime low bias and variance. 
+B-2. What is Regression? Explain its types in detail. 
+Regression is to predict numbers like price or marks. Sometimes linear, 
+sometimes other type. 
+1. Linear regression straight line. 
+2. Polynomial regression curve line. 
+3. Logistic regression yes/no (not really regression). 
+4. Ridge regression reduce big number. 
+5. Lasso regression remove small things. 
+6. Multiple regression many input. 
+7. Stepwise regression step by step. 
+8. Time regression for clock data. 
+9. Other regression maybe used sometimes. 
+B-3. What is Decision Tree? Explain its steps to implement it. 
+Decision tree is tree but in computer. It has root, branch, leaf. Each 
+check yes/no. 
+1. Choose root. 
+2. Split data by feature. 
+3. Make branches. 
+4. Split branches again. 
+5. Stop when same output. 
+6. Leaf assign class. 
+7. Prune if big. 
+8. Test tree. 
+9. Use tree for answer. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Classification Regression 
+Output Categories 
+Numbers 
+Example Spam or not Rainfall 
+Data type Discrete 
+Continuous 
+Algorithm Tree maybe Linear 
+Accuracy Count correct MSE maybe 
+Use 
+Label 
+Graph 
+Result 
+Sorting 
+Yes 
+Bar 
+Class 
+Predicting 
+Sometimes 
+Line 
+Number 
+B-5. How Deep Learning is different from Machine Learning? Explain 
+Regularization in detail. 
+Deep learning is machine learning but deeper brain. Machine learning is 
+smaller brain. Deep learning use many layer. 
+1. Deep learning need GPU. 
+2. Machine learning work on normal computer. 
+3. Deep learning automatic features. 
+4. Machine learning need manual features. 
+5. Deep learning for images and sound. 
+6. Machine learning mostly numbers. 
+7. Deep learning more accurate. 
+8. Machine learning easier. 
+9. Both can be used together maybe. 
+Regularization: 
+1. Prevent overfitting. 
+2. L1 remove some weights. 
+3. L2 make small weights. 
+4. Dropout remove neurons. 
+5. Helps balance. 
+6. Improves model maybe. 
+7. Works in deep or normal model. 
+8. Reduce memorization. 
+9. Keep model slim. 

@@ -1,0 +1,79 @@
+ID-T029 
+Name: Rohit Patil Roll no: 6 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Model Robustness in Machine Learning 
+Robustness in machine learning is defined as the measure of a system’s invariant performance despite 
+perturbations in input data. It is the model's ability to remain "stable" when faced with noise, outliers, or 
+intentional adversarial attacks. 
+ Importance: * Trust and Safety: In high-stakes domains like healthcare (diagnostic AI) or 
+automotive (self-driving cars), a non-robust model could interpret a few dead pixels or a sticker on a 
+road sign as an entirely different object, leading to catastrophic failure. 
+o Data Drift Resilience: Real-world data distributions rarely remain static. Robustness ensures 
+that the model doesn't "break" the moment the live environment shifts slightly away from the 
+training environment. 
+ Improvement Strategies: * Adversarial Training: This involves augmenting the training set with 
+"adversarial examples"—inputs specifically designed to trick the model—forcing the network to 
+learn more generalized features rather than brittle patterns. 
+o Regularization Techniques: By applying penalties to large weights (L1/L2 regularization) 
+or using "Dropout" layers, we prevent the model from becoming overly sensitive to any 
+single input feature, thereby increasing its structural stability. 
+A-b. Role of Data Representation 
+Data representation, or "Representation Learning," is the process of mapping raw data into a coordinate 
+space where the patterns relevant to the task are easily separable. The computer does not "see" an image; it 
+sees a high-dimensional tensor of numbers. 
+ How Representation Affects Outcomes: * Linear Separability: A good representation transforms 
+complex, non-linear relationships into simpler ones. For example, converting polar coordinates to 
+Cartesian coordinates can make a circular boundary linear, allowing simpler algorithms to achieve 
+100% accuracy. 
+o Information Bottlenecks: If the representation is too compressed (under-representation), 
+vital "signal" is lost. If it is too sparse (over-representation), the model may find false patterns 
+in the noise, leading to overfitting. 
+o Semantic Proximity: In Natural Language Processing, representing words as "Embeddings" 
+(vectors in space) allows the model to understand that "Coffee" and "Tea" are mathematically 
+close, which vastly improves the model's ability to generalize to new vocabulary. 
+A-c. Scaling Machine Learning Systems 
+Scaling is the process of moving a model from a local experimental notebook to a global production 
+environment serving millions of requests. 
+ Data Size: Scaling requires transitioning from local storage to distributed file systems and using 
+frameworks like Spark to process data that cannot fit into a single machine's RAM. 
+ Model Complexity: Larger models (billions of parameters) require "Model Parallelism," where the 
+model itself is split across multiple GPUs to manage the computational load. 
+ Infrastructure: To scale, one must implement "Containerization" (e.g., Docker) and "Orchestration" 
+(e.g., Kubernetes) to automatically spin up new servers as user traffic increases. 
+ Maintenance: Maintenance in a scaled system involves managing "Technical Debt." This includes 
+tracking model versions, ensuring data pipelines don't break, and automating the retraining process 
+whenever performance begins to decay. 
+A-d. Transfer of Knowledge (Transfer Learning) 
+Transfer of knowledge is a methodology where a model developed for a "Source Task" is reused as the 
+starting point for a "Target Task." It is based on the idea that many low-level features are universal. 
+ Improving New Tasks: * Feature Extraction: A model trained to recognize 1,000 types of objects 
+already knows how to detect edges, curves, and textures. When moving to a new task (like 
+identifying rare lung diseases), we "freeze" these basic layers and only train the final layers on the 
+new data. 
+o Overcoming Data Scarcity: Most specialized tasks lack the millions of labeled examples 
+needed for deep learning. Transfer learning allows us to achieve state-of-the-art results with 
+only a few hundred examples because the model isn't starting with a "blank brain." 
+Part B: (2 Marks Each) 
+B-a. What is model generalization in machine learning? It is the system's ability to produce accurate 
+outputs for new, unseen data that was not present in the original training set, indicating it has learned 
+concepts rather than memorized data. 
+B-b. Define training dataset. The foundational collection of labeled or unlabeled examples used by the 
+algorithm to identify patterns and adjust its internal parameters during the learning phase. 
+B-c. What is unsupervised learning? A category of machine learning where the algorithm analyzes data to 
+find inherent structures or clusters without the guidance of pre-existing labels or target outputs. 
+B-d. What do you mean by features in ML? Features are the individual, independent variables or 
+quantifiable attributes of the data that serve as the input signals for the model's predictive logic. 
+B-e. What is a machine learning algorithm? A specific mathematical procedure or set of computational 
+instructions that processes data to "learn" a model that can make decisions or predictions. 
+B-f. Define overfitting. A state where a model becomes too complex and begins to model the random noise in 
+the training data, leading to high training accuracy but a failure to generalize to new data. 
+B-g. What is data preprocessing? The series of technical steps—including normalization, handling missing 
+values, and encoding—used to clean and transform raw data into a machine-readable format. 
+B-h. What is a prediction in machine learning? The terminal output of a trained model when it is fed a new 
+set of input features, representing the model's "best guess" regarding the outcome. 
+B-i. Define model evaluation. The objective measurement of a model's performance using specific statistical 
+indicators like accuracy, precision, or F1-score to determine its readiness for real-world use. 
+B-j. What is learning from experience in ML? The fundamental principle where a computer program 
+improves its performance at a specific task as it is exposed to more data (experience) over time. 

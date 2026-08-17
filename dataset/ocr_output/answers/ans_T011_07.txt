@@ -1,0 +1,133 @@
+ID-T011 
+Name : Sanika Chaudhary Roll no: 7 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-3. Describe different types of learning algorithms in ML. 
+Machine Learning algorithms are grouped according to how they learn from data. 
+The major categories are Supervised, Unsupervised, Semi-supervised, Reinforcement, 
+and Self-supervised learning. Each category uses a different approach for finding 
+patterns. 
+Explanation Points: 
+1. Supervised Learning: Uses labeled data to train a model. Examples include 
+regression and classification algorithms. 
+2. Unsupervised Learning: Works with unlabeled data to find structure or 
+groupings (e.g., clustering). 
+3. Semi-Supervised Learning: Combines small labeled and large unlabeled data to 
+enhance learning accuracy. 
+4. Reinforcement Learning: Learns optimal behavior via rewards and penalties 
+from an environment. 
+5. Self-Supervised Learning: Generates its own labels from data and is used in 
+large-scale models like GPT. 
+6. Online Learning: Continuously updates the model as new data arrives, common 
+in stock prediction. 
+7. Batch Learning: Processes all data at once, used in traditional model training. 
+8. Active Learning: The algorithm queries the user to label uncertain samples to 
+improve accuracy. 
+9. Each algorithm type fits specific problem domains and data characteristics. 
+A-4. What are evaluation metrics in ML? Explain Accuracy, Precision, Recall, and F1
+Score. 
+Evaluation metrics are quantitative measures that assess a model’s predictive 
+performance. They help determine how reliable and effective a model is on unseen 
+data. The most common metrics for classification problems are accuracy, precision, 
+recall, and F1-score. 
+Explanation Points: 
+1. Accuracy: Percentage of correctly predicted instances among total predictions. 
+Accuracy=TP+TNTP+TN+FP+FNAccuracy = \frac{TP + TN}{TP + TN + FP + 
+FN}Accuracy=TP+TN+FP+FNTP+TN  
+2. Precision: Proportion of correctly predicted positive observations out of all 
+predicted positives. 
+Precision=TPTP+FPPrecision = \frac{TP}{TP + FP}Precision=TP+FPTP  
+3. Recall: Measures the model’s ability to detect all relevant positive samples. 
+Recall=TPTP+FNRecall = \frac{TP}{TP + FN}Recall=TP+FNTP  
+4. F1 Score: Harmonic mean of precision and recall, balancing both metrics. 
+F1=2×Precision×RecallPrecision+RecallF1 = 2 × \frac{Precision × 
+Recall}{Precision + Recall}F1=2×Precision+RecallPrecision×Recall  
+5. High precision is important in cases like email spam detection. 
+6. High recall is crucial in disease diagnosis, where missing a positive is costly. 
+7. F1-score provides a single performance measure when precision and recall 
+conflict. 
+8. Metrics are visualized through a confusion matrix. 
+9. The correct metric depends on problem nature—imbalanced datasets require 
+precision-recall analysis. 
+B] Attempt Any 8 (40 Marks) 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest with 
+examples. 
+Ensemble methods combine multiple base models to improve prediction accuracy and 
+stability. By aggregating predictions, they reduce bias and variance, producing more 
+reliable outcomes. 
+Explanation Points: 
+1. Bagging (Bootstrap Aggregating): Trains multiple models on random data 
+subsets and averages results. Example: Random Forest. 
+2. Boosting: Sequentially builds models where each model corrects the previous 
+one’s mistakes. Examples: AdaBoost, XGBoost. 
+3. Random Forest: Ensemble of decision trees trained using bagging and feature 
+randomness. 
+4. Bagging reduces variance, boosting reduces bias. 
+5. Ensemble models perform better than single classifiers. 
+6. They improve generalization on unseen data. 
+7. Random Forest provides feature importance measures. 
+8. Boosting is effective in imbalanced datasets. 
+9. Widely used in competitions and large-scale predictive systems. 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and Hierarchical 
+Clustering. 
+Unsupervised Learning discovers natural structures in unlabeled data. K-Means and 
+Hierarchical Clustering are two major clustering algorithms. 
+Explanation Points: 
+1. K-Means: Divides data into K clusters by minimizing intra-cluster distances. 
+2. Steps: Initialize K centroids → Assign points → Update centroids → Repeat 
+until stable. 
+3. The objective function minimizes within-cluster variance. 
+4. Hierarchical Clustering: Builds nested clusters using a bottom-up 
+(agglomerative) or top-down (divisive) approach. 
+5. The agglomerative approach starts with single points and merges the nearest 
+clusters. 
+6. The result is visualized using a Dendrogram. 
+7. K-Means is computationally efficient and widely used in large datasets. 
+8. Hierarchical clustering is better for small data and visual analysis. 
+9. Both methods are applied in market segmentation and gene expression 
+analysis. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud detection. 
+Machine Learning has transformed healthcare and financial industries through 
+predictive analytics and automation. 
+Explanation Points: 
+1. In medical diagnosis, ML models detect diseases from images or test data. 
+2. Algorithms like CNNs identify tumors in MRI scans. 
+3. ML predicts patient outcomes using historical health records. 
+4. In fraud detection, ML analyzes transactional patterns to identify anomalies. 
+5. Supervised models flag suspicious activities in banking systems. 
+6. Unsupervised models detect outliers in unlabelled transaction data. 
+7. Real-time monitoring systems adapt through reinforcement learning. 
+8. These models reduce human error and operational cost. 
+9. Overall, ML ensures faster, accurate, and scalable decision-making. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. Explain each step 
+involved and discuss how PCA helps in dimensionality reduction. 
+PCA is a statistical technique that reduces the number of features in a dataset while 
+preserving maximum variance. 
+Explanation Points: 
+1. Standardize the data to ensure equal scale. 
+2. Compute covariance matrix of features. 
+3. Calculate eigenvalues and eigenvectors of covariance matrix. 
+4. Eigenvectors represent the principal components. 
+5. Sort eigenvectors by decreasing eigenvalues. 
+6. Select top-k components that capture most variance. 
+7. Transform original data into new lower-dimensional subspace. 
+8. PCA reduces redundancy and removes correlated features. 
+9. It is widely used in image compression and visualization. 
+B-8. Explain Gradient Descent and its variants — Batch, Stochastic, and Mini-Batch 
+Gradient Descent. Include the mathematical formula and learning curve. 
+Gradient Descent is an optimization algorithm used to minimize a model’s cost 
+function by adjusting parameters iteratively. 
+Explanation Points: 
+1. The update rule: 
+θ=θ−α∂J(θ)∂θθ = θ - α \frac{∂J(θ)}{∂θ}θ=θ−α∂θ∂J(θ)  
+2. Batch Gradient Descent: Uses the whole dataset to compute gradient once per 
+iteration. 
+3. Stochastic Gradient Descent (SGD): Updates parameters after each data point. 
+4. Mini-Batch Gradient Descent: Uses a small subset of data for balance between 
+speed and stability. 
+5. Learning rate (α) controls step size of updates. 
+6. Too high α causes divergence; too low α slows convergence. 
+7. The loss curve shows how error decreases with each iteration. 
+8. Momentum and Adam optimizers accelerate convergence. 
+9. Gradient Descent is the backbone of all neural network training processes. 

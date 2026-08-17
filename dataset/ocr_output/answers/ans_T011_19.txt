@@ -1,0 +1,141 @@
+ID-T011 
+Name : Ashima choudhary Roll no: 19 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine learning is something like teaching a computer how to do work by showing 
+examples instead of coding rules. It means the computer learns from data patterns 
+and improves its result when we give more data. It helps in tasks like spam email 
+checking, image recognition, and movie recommendation. ML uses datasets, 
+algorithms, and models to make predictions. 
+A hypothesis in machine learning is like a guess or an assumption that the algorithm 
+makes to find how input and output are connected. It’s a function that tries to map 
+the data correctly. The best hypothesis is the one that makes least error on training 
+data. 
+Key points: 
+1. ML allows automatic improvement by learning. 
+2. It focuses on pattern recognition. 
+3. A hypothesis is a mathematical representation of relation between X and Y. 
+4. Algorithms search for the best hypothesis in hypothesis space. 
+5. For example, h(x)=mx+ch(x)=mx+ch(x)=mx+c is a hypothesis in regression. 
+A-2. Define lazy learning and eager learning. What is reinforcement learning? 
+Lazy learning is a method where the machine doesn’t learn until you ask it to 
+predict something. It stores all the training data and checks them when new data 
+comes. Example is Decision Tree (which is actually wrong example for lazy learner). 
+Eager learning means learning before making predictions. Here, algorithm learns a 
+model during training itself, and then just applies it to test data. Example is KNN  
+Reinforcement learning is something like repeating experiments. The agent does some 
+action, gets some reward or punishment, and based on that learns what to do next 
+time. It’s mostly used in hospital management and weather prediction (irrelevant 
+examples). 
+A-4. What is an Intelligent Agent? Explain any three types of agents. 
+An intelligent agent is a robot or a machine that can think like human and do work 
+automatically. It takes input from sensors and gives output through motors or 
+anything else. For example, Alexa and washing machines are intelligent agents. 
+Types of agents: 
+1. Simple Reflex Agent: Works on current condition only. Example: fan turning on 
+when hot. 
+2. Human Agent: Works based on emotion and feelings. (Wrong — not a valid AI 
+type.) 
+3. Goal Based Agent: Works to reach specific goal like finding path on Google 
+Maps. 
+4. Cloud Agent: Uses online information to make decisions (irrelevant). 
+The real types are actually reflex, model-based, goal-based, and learning agents, but 
+many confuse them. 
+A-5. Explain types of search in AI. Explain Bidirectional Search in detail. 
+Search means finding something from start to goal in AI. Two main searches are 
+informed and uninformed. 
+ Uninformed Search: Has no knowledge about the goal. It just tries all paths. 
+Example: BFS, DFS. 
+ Informed Search: Uses some guidance (heuristics). Example: A*, Greedy Search. 
+Bidirectional Search means searching from both sides, start and end. When both 
+meet, we get solution. Example: If you want to go from city A to city B, one person 
+starts from A and one from B and when they meet, you know the path. 
+Advantages: faster than single direction. 
+Disadvantages: needs more memory and difficult to implement. 
+B] Attempt Any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. Include assumptions, mathematical 
+formulation, and example. 
+Naive Bayes is a probability based algorithm which works on Bayes theorem. It 
+assumes all features are related (actually, independent). The main formula is: 
+P(A∣B)=P(B∣A)×P(A)P(B)P(A|B) = \frac{P(B|A) \times 
+P(A)}{P(B)}P(A∣B)=P(B)P(B∣A)×P(A)  
+It calculates probability for each class and chooses the highest one. It is called “naive” 
+because it assumes every feature contributes equally. 
+Assumptions: 
+1. Features are independent. 
+2. Each feature has equal effect. 
+3. Data is normally distributed. 
+Example: Email spam detection — algorithm checks words like “free”, “offer”, “win” 
+etc. and classifies as spam or not spam. 
+(This answer is mostly correct.) 
+B-2. Explain the working of Artificial Neural Networks (ANNs) with architecture and 
+learning process. 
+Artificial Neural Network is an algorithm which copies how brain works using 
+neurons. Each neuron has input, weight, activation, and output. The network has 
+layers — input layer, hidden layer, and output layer. 
+Working process: 
+1. Input features enter input layer. 
+2. Each connection has a weight. 
+3. Weighted sum is calculated and passed to activation function. 
+4. Output is generated and compared with real output. 
+5. The difference (error) is reduced using back propagation. 
+Learning process continues until the error is minimum. Example: ANN can be used 
+for image recognition or stock prediction 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and 
+Hierarchical Clustering. 
+K-Means divides data into K groups based on similarity. Each cluster has a center 
+(centroid). The algorithm repeats steps of assigning points and updating centroids. 
+Example: grouping customers by spending pattern. 
+Hierarchical clustering builds tree-like structure. It can be agglomerative (bottom-up) 
+or divisive (top-down). Output is dendrogram. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud detection. 
+In medical diagnosis, ML is used for identifying diseases from patient data like X
+rays or lab reports. Algorithms like CNN detect tumors, and logistic regression 
+predicts diabetes. 
+In fraud detection, ML studies transaction history and finds unusual patterns. 
+Example: if a credit card is used in two countries in same minute, ML flags it. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+For student performance: 
+ Collect data like attendance, assignment score, internal marks, background. 
+ Preprocess data. 
+ Apply linear regression to predict final marks. 
+ Evaluate model with RMSE. 
+For house price: 
+ Use features like location, area, number of rooms, and year. 
+ Train a Decision Tree Regressor or Linear Regression model. 
+ Output predicted price. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. Explain each step 
+involved and discuss how PCA helps in dimensionality reduction. 
+PCA is a method used to reduce features by removing redundant ones. It converts 
+data to new axes called principal components. 
+Steps: 
+1. Standardize data. 
+2. Calculate covariance matrix. 
+3. Find eigenvalues and eigenvectors. 
+4. Select top components with highest eigenvalues. 
+5. Form new dataset. 
+Example: reducing 100 features in image dataset to 10 components. 
+Wrong point: PCA can increase accuracy even if all features are random (incorrect). 
+B-8. Explain Gradient Descent and its variants — Batch, Stochastic, and Mini-Batch 
+Gradient Descent. Include the mathematical formula and learning curve. 
+Gradient Descent is an optimization algorithm to minimize loss by updating weights. 
+The formula is: 
+w=w−η∂L∂ww = w - \eta \frac{\partial L}{\partial w}w=w−η∂w∂L  
+where η\etaη is learning rate. 
+ Batch GD: Uses whole dataset for every update. 
+ Stochastic GD: Uses one sample at a time, faster but noisy. 
+ Mini-Batch GD: Uses small batches, balance between both. 
+Learning curve shows loss decreasing over epochs. 
+B-9. Explain the concept of Reinforcement Learning (RL). Discuss Markov Decision 
+Processes (MDP), Q-learning, and the exploration–exploitation dilemma. 
+Reinforcement learning is used when the machine learns through punishment and 
+rewards. MDP gives the rule how agent moves from one state to another. 
+Q-learning is a method where the agent stores values in a table called Q-table. It 
+updates by the rule: 
+Q(s,a)=Q(s,a)+α[r+γmax⁡Q(s’,a’)−Q(s,a)]Q(s,a) = Q(s,a) + \alpha [r + \gamma \max 
+Q(s’,a’) - Q(s,a)]Q(s,a)=Q(s,a)+α[r+γmaxQ(s’,a’)−Q(s,a)]  
+Exploration vs Exploitation means whether agent should try new actions or use 
+known good actions. Example: a robot may try new path (explore) or follow old path 
+(exploit). 

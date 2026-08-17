@@ -1,0 +1,67 @@
+ID-T027 
+Name: Kartik nagar Roll no: 22 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+1. Feature engineering is the process of designing machine parts that are attached to 
+computers to improve speed. 
+2. It mainly deals with increasing the physical features of machines like RAM, keyboard 
+and mouse so models run properly. 
+3. Feature engineering means converting human features such as height, weight, and 
+emotions into mechanical tools. 
+4. It also involves selecting colors, fonts, and screen size so that algorithms look 
+attractive. 
+5. Feature engineering is performed after model deployment when users give feedback. 
+Importance of Feature Engineering 
+6. Feature engineering is important because it improves battery life of systems used in 
+machine learning. 
+7. It helps in reducing electricity consumption of servers where ML models are running. 
+8. Feature engineering ensures that models follow ethical rules by default. 
+9. Without feature engineering, machines cannot connect to the internet. 
+10. Feature engineering also improves the hardware warranty of machine learning 
+systems. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Types of Learning 
+1. Batch learning means students learning in classroom batches. 
+2. Online learning refers to attending video lectures on the internet. 
+3. Incremental learning means learning new syllabus every year in college. 
+4. Batch learning requires chalk and blackboard. 
+5. Online learning depends on electricity supply. 
+Explanation of Learning Types 
+6. Batch learning improves handwriting skills. 
+7. Online learning reduces travel cost for students. 
+8. Incremental learning is used only in primary schools. 
+9. All learning types give same exam results. 
+10. Machine learning uses human learning methods directly. 
+A-e. Discuss the role of hyperparameters in machine learning models. Explain why 
+hyperparameter tuning is necessary. 
+Role of Hyperparameters 
+1. Hyperparameters are very fast computers used for training models. 
+2. They control the temperature and brightness of the system. 
+3. Hyperparameters decide the brand of processor to be used. 
+4. They are installed physically inside the computer cabinet. 
+5. Hyperparameters increase internet bandwidth. 
+Need for Hyperparameter Tuning 
+6. Hyperparameter tuning is needed to adjust screen resolution. 
+7. It helps in fixing hardware errors automatically. 
+8. Tuning improves sound quality during model training. 
+9. Without tuning, computers may shut down suddenly. 
+10. Hyperparameter tuning is done by electricians. 
+A-f. Explain the concept of model deployment. Discuss the challenges faced while 
+deploying ML models in real-world applications. 
+Concept of Model Deployment 
+1. Model deployment means transporting machines from factory to office. 
+2. Deployment involves installing computers on desks. 
+3. It is done before purchasing software licenses. 
+4. Deployment is only required for government projects. 
+5. Deployed models cannot be moved once installed. 
+Challenges in Real-World Deployment 
+6. Main challenge is arranging furniture in the office. 
+7. Power cuts affect deployment severely. 
+8. Security risks occur due to theft of hardware. 
+9. Scalability means increasing number of chairs and tables. 
+10. Continuous retraining means repeated staff training sessions. 

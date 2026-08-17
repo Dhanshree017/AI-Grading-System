@@ -1,0 +1,226 @@
+ID-T022 
+Name: samruddhi chauhan Roll no: 2 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of 
+features and the role of feature selection in improving model performance. 
+Feature engineering is long process, many steps and very important. Workflow go like this: 
+1. Understand data — first look at data, find types, missing, outliers, distribution, 
+date/time, text. You must know what each column mean before touch. 
+2. Clean data — fix typos, remove duplicates, impute missing (mean/median/KNN or 
+model-based), correct wrong values. This step avoid garbage into model. 
+3. Transform raw into features — create new columns: aggregates, ratios, interaction 
+terms, date parts (year, month, weekday), lags for time-series, rolling means. For text 
+make TF-IDF or embeddings. For images extract pretrained features. 
+4. Encode categorical — one-hot for low-cardinality, target-encoding or embeddings for 
+high-cardinality. Be careful with leakage when target-encoding. 
+5. Scale / normalize — standardize numeric features for algorithms that need it (SVM, 
+NN) or keep tree-friendly raw values for tree models. 
+6. Reduce / select features — remove highly correlated, low variance, or irrelevant 
+columns. Use PCA only when helpful. 
+7. Feature validation — test features on holdout data, check distribution difference train 
+vs test, check leakage. 
+8. Deploy and monitor — instrument features in production, monitor distribution shifts 
+and rebuild pipeline when needed. 
+Different types of features (examples): 
+ Numerical (continuous, discrete): age, price, temp. 
+ Categorical (nominal/ordinal): country, education level. 
+ Datetime: timestamp, useful for seasonality or trend. 
+ Text features: bag-of-words, TF-IDF, embeddings. 
+ Time-series features: lag, rolling mean, trend. 
+ Image features: CNN embeddings, color histograms. 
+ Derived features: ratios, interactions, counts. 
+Role of feature selection — short points: 
+ remove noise and irrelevant inputs so model not overfit. 
+ reduce dimensionality thus speed up training and inference. 
+ improve generalization and interpretability by keeping only meaningful features. 
+ methods: filter (correlation, chi-square), wrapper (recursive feature elimination), 
+embedded (L1, tree feature importance). Use cross-validation to choose best subset. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+CNN is special neural net for images and spatial data. Architecture common blocks: 
+1. Input layer — image height × width × channels (e.g., 224×224×3). 
+2. Convolutional layers — apply many filters (kernels) sliding over image; each filter 
+compute dot-product and produce activation map. Convolution shares weights so 
+detect same pattern anywhere. 
+3. Activation (ReLU) — nonlinearity applied after convolution to add capacity. 
+4. Pooling layers — downsample spatial dimension (max-pool or avg-pool) to reduce 
+size, make translation invariance, reduce computation. 
+5. Normalization / BatchNorm — stabilize training and allow larger learning rate. 
+6. Stack more conv + pool — deeper layers learn higher-level features (edges → 
+textures → parts → objects). 
+7. Fully connected layers / Global average pool — combine features for classification 
+or regression. 
+8. Output layer — softmax for multi-class, sigmoid for multi-label. 
+How convolution helps: 
+ local receptive fields let network focus on local spatial patterns (edges, corners). 
+ weight sharing reduces parameters and learns translational invariance. 
+Feature maps meaning: 
+ each filter produce a feature map showing where pattern present. 
+ early maps simple (edge detectors), deeper maps complex (faces, wheels). 
+ stacking maps create hierarchical representation. 
+Pooling role: 
+ reduce spatial dimension, lower computation and overfitting. 
+ make representation invariant to small translations and noise. 
+ can be aggressive (max pooling) or gentler (avg pooling, global pooling). 
+Practical notes: 
+ use small kernels (3×3) stacked rather than single big kernel for efficiency. 
+ transfer learning common: pretrained CNN (ResNet, VGG) used as feature extractor. 
+ data augmentation (flip, crop) improves generalization for images. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability 
+important, and what are the major techniques used to interpret black-box models? 
+Explainable AI is set of methods to make model decisions understandable to humans. Big 
+reason: trust, compliance, debugging. 
+Why interpretability important: 
+ Trust: stakeholders need to trust predictions, especially in healthcare, finance. 
+ Debugging: find when model uses wrong signal (proxy) like ZIP code for race. 
+ Legal / regulatory: laws may require explanation for automated decisions. 
+ Fairness: detect bias and disparate impact. 
+ Safety: understand model failure modes and avoid catastrophic mistakes. 
+Major techniques (with short explanation): 
+1. Feature importance (global) — show which features matter overall (tree importance, 
+permutation importance). Easy but coarse. 
+2. LIME (Local Interpretable Model-agnostic Explanations) — approximate local 
+behavior of complex model with simple interpretable model (linear) around instance. 
+Good for single prediction, but unstable sometimes. 
+3. SHAP (Shapley values) — game-theory based attribution for contribution of each 
+feature to prediction; consistent and additive, gives local + global view. Computational 
+heavy but approximate methods exist. 
+4. Partial Dependence Plots (PDP) — show marginal effect of feature on prediction 
+while averaging others. Helps see monotonicity or non-linear effects. 
+5. Individual Conditional Expectation (ICE) plots — per-instance PDP showing 
+heterogeneity. 
+6. Counterfactuals / What-if — show minimum change to input to change prediction 
+(helpful for recourse). 
+7. Saliency / Grad-CAM for CNNs — visualize image regions important for prediction. 
+8. Surrogate models / Rule extraction — train simple model to mimic black-box and 
+read its rules. Good for overall interpretability with caveat of approximation error. 
+Use ensemble of methods — combine global and local explanations, and validate with 
+domain experts. Interpretability not free: trade-offs with complexity and accuracy must be 
+handled carefully. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). 
+Explain how ML engineers detect drift and handle it in real-world systems. 
+Types of drift: 
+1. Feature drift (covariate drift): distribution P(X) changes over time; features values 
+shift. Example: user age distribution changed because new signup channel for younger 
+users. 
+2. Concept drift: conditional distribution P(Y|X) changes; same inputs lead to different 
+target. Example: purchasing behavior during pandemic change signals meaning. 
+3. Target drift (prior drift): distribution P(Y) changes even if features same; example: 
+more fraud during holiday season. 
+Detecting drift: 
+ Statistical tests: Kolmogorov-Smirnov, Jensen-Shannon divergence, Population 
+Stability Index (PSI) for numeric features. 
+ Monitoring metrics: sudden drop in model metrics (accuracy, AUC), change in 
+calibration. 
+ Drift detectors: ADWIN, DDM for streaming; maintain sliding window and compare 
+distributions. 
+ Model-based detection: build classifier to distinguish old vs new data; if it can 
+separate well, drift exists. 
+ Feature correlation monitoring: track covariances and feature importance changes. 
+Handling drift in real systems: 
+1. Alerting + root cause analysis: when drift detected, analyze which features changed 
+and why (external event, pipeline bug). 
+2. Retrain strategy: periodic retrain or triggered retrain when drift crosses threshold. 
+Use recent data and weigh recent more. 
+3. Incremental / online learning: adopt models that can update continuously with new 
+examples to adapt to drift. 
+4. Ensemble with short-term model: maintain long-term stable model + short-term 
+adaptive model and blend. 
+5. Feature engineering updates: add new features capturing changed behavior or 
+remove broken features. 
+6. Human-in-loop: for high-risk domains, have manual review and label recent data to 
+ensure retrain correct. 
+7. A/B testing and canary deploy: before full switch, deploy retrained model to subset 
+to validate performance. 
+Practical note: drift detection must account for seasonal patterns and noise; choose window 
+sizes and thresholds carefully to avoid false alarms. Always keep data lineage to check if 
+data pipeline introduced change. 
+A-6. Explain Ensemble Learning in detail. Describe bagging, boosting, and stacking, and 
+compare how each method improves model performance in different scenarios. 
+Ensemble learning combine multiple learners to get better accuracy and stability than single 
+model. Idea: different models make different errors, combine to cancel errors. 
+Bagging (Bootstrap Aggregating): 
+ train base learners (often decision trees) on bootstrap samples (random sampling with 
+replacement). 
+ average predictions (regression) or majority vote (classification). 
+ reduces variance and overfitting because model ensemble smooths fluctuations. 
+ Random Forest is bagging with additional random feature selection in tree splits. 
+ Best when base learner high variance (deep trees). Bagging not reduce bias much. 
+Boosting: 
+ sequential ensemble where each new learner focuses on mistakes of previous ones. 
+ algorithms: AdaBoost (reweights instances), Gradient Boosting (fit residuals), 
+XGBoost/LightGBM/CatBoost advanced versions. 
+ reduces bias and variance by combining many weak learners into strong predictor. 
+ very powerful on tabular data, but susceptible to overfitting if not regularized. 
+Stacking (Stacked Generalization): 
+ train diverse base models (level-0), then train meta-learner (level-1) on their 
+predictions. 
+ meta-learner learns how to best combine outputs (weights) and can correct systematic 
+errors. 
+ powerful when base models are complementary. Must use cross-validated predictions 
+for meta training to avoid leakage. 
+Comparison & when to use: 
+ Bagging: use when variance high and you want stability (trees). Good default when 
+noisy data. 
+ Boosting: use when you need best accuracy and willing to tune; works great on 
+structured tabular data and weak learners like shallow trees. 
+ Stacking: use when you have multiple diverse strong models and want additional 
+gain; careful CV needed to avoid overfitting. 
+ ensembles often improve calibration and robustness; cost is increased compute and 
+complexity. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+1. Supervised learning is ML where model learn from labeled examples. 
+2. Each example has input features and known output label. 
+3. Model tries to map inputs → outputs using training data. 
+4. Used for regression and classification tasks. 
+5. Goal is generalize to unseen data. 
+B-2. What is a feature in machine learning? 
+1. A feature is single measurable property or attribute of data. 
+2. It is column used by model as input. 
+3. Examples: age, salary, pixel value. 
+4. Good features help model learn better. 
+5. Features can be numeric, categorical, text or time-based. 
+B-3. State any two differences between training data and test data. 
+1. Training data used to fit model parameters; test data used to evaluate final 
+performance. 
+2. Model sees training data during learning; test data is unseen to model. 
+3. Training often larger; test is held-out to prevent overfitting. 
+4. Training used for hyperparameter tuning (with validation); test only for final check. 
+B-4. What is overfitting? 
+1. Overfitting when model learn noise and specifics of training data not general patterns. 
+2. It shows very low train error but high test error. 
+3. Caused by too complex model or too few data. 
+4. Remedies: regularization, more data, simpler model, cross-validation. 
+B-5. Define classification with an example. 
+1. Classification is predicting discrete class labels from inputs. 
+2. It maps features to categories. 
+3. Example: predict email is “spam” or “not spam”. 
+4. Algorithms: logistic regression, decision trees, SVM, neural nets. 
+B-6. What is a confusion matrix? 
+1. Confusion matrix is table of actual vs predicted class counts. 
+2. Shows True Positive, True Negative, False Positive, False Negative. 
+3. Helps compute precision, recall, F1, accuracy. 
+4. Useful to understand where model mistakes. 
+B-7. What do you mean by model accuracy? 
+1. Accuracy = (number correct predictions) / (total predictions). 
+2. It measure overall correctness of classifier. 
+3. Simple and intuitive metric. 
+4. Not reliable if classes imbalanced. 
+B-8. State one advantage of using decision trees. 
+1. Decision trees are easy to interpret and visualize. 
+2. They handle both numeric and categorical data. 
+3. They require little preprocessing (no scaling). 
+4. They can capture non-linear relationships. 
+B-9. What is data normalization? 
+1. Data normalization scales features to common range (e.g., 0–1). 
+2. Prevents features with large values dominating distance metrics. 
+3. Methods: Min-Max scaling, Z-score standardization. 
+4. Useful for KNN, SVM, neural networks. 
+B-10. Define regularization in simple words. 
+1. Regularization add penalty to model complexity to prevent overfitting. 
+2. L1 (lasso) and L2 (ridge) common types. 
+3. It shrink coefficients so model simpler and generalize better. 
+4. Helps when features many or noisy. 

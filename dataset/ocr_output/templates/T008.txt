@@ -1,0 +1,29 @@
+
+
+--- PAGE 1 ---
+ID - T008
+Machine Learning Date: 16-10-2023
+1 | Attempt All each carries equal marks
+a) write about inductive bias (2)
+b )Define Hypothesis. (2)
+c )write about sampling theories. (2)
+d )Define eager learning. (2)
+e )what is lazy learning. (2)
+f )define term genetic. (2)
+g)Discuss dynamic programming (2)
+h )Define explanation based learning. (2)
+i )write about control knowledge. (2)
+j) define Precision , recall and F1 score (2)
+2 | Attempt any 6 (marks 30)
+a) Explain Decision tree in detail , give example ?
+b) Describe briefly about K-nearest Neigbors .
+c) Discuss in detail about representation of Neural network .
+d) Differentiate between Classification & Regression
+e) Explain Knowledge Representation in detail
+f) Compare AI, ML and Deep learning with examples
+g) Differentiate between CNN and RNN
+3 | Attempt all
+a) Define Search Algorithmsin AI (7)
+b) What is Intelligent Agent (8)
+c) Write 5 application of AI (5)
+

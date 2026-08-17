@@ -1,0 +1,179 @@
+ID-T009 
+Name : Soniya Gurnani Roll no: 25 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning, Explain any 5 Applications of ML 
+Definition: 
+Machine learning is like a part of Artificial Intelligence which helps computer to learn 
+automatically from data and improve from experiance. It not need any human 
+programmer every time to tell what to do. It means when we give lots of data to the 
+system, it starts to find patterns and relations and then it can make decision by 
+own. It helps machines to become smart and take decision like human being. 
+Applications: 
+1. Health sector: It is use in hospitals to predict disease and scan medical images. 
+2. Banking: Machine learning is use to detect fraud and for credit scoring. 
+3. E-commerce: It show recommended product to customer based on history. 
+4. Self driving cars: Cars learn from many road images and sensors to drive itself. 
+5. Voice assistant: Siri and Alexa work with ML to understand voice. 
+6. Education: It help in student performance prediction and grading. 
+7. Social media: Suggest friends or filter post according to interest. 
+8. Manufacturing: Used for quality check of products in industries. 
+9. Weather forecasting: ML models predict rain or storm from past data. 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one Example 
+of Each 
+Definition: 
+Supervised and unsupervised are main two types of machine learning. Supervised 
+learning means we train model with data which already has correct answers. 
+Unsupervised learning means data is not having labels, and model try to make 
+groups or pattern by own. 
+Explanation: 
+1. Supervised learning has input and output both given already. 
+2. Unsupervised learning only has input data and no result given. 
+3. Supervised helps to predict or classify new data. 
+4. Unsupervised help to make cluster or find similarity. 
+5. Example of supervised – Predicting student marks from study hours. 
+6. Example of unsupervised – Grouping customers by their shopping style. 
+7. Supervised algorithm like Decision tree, SVM, Linear regression. 
+8. Unsupervised algorithm like K-means, PCA. 
+9. Both are important because one predict and one finds hidden pattern. 
+A-4. What are Steps of Creating a ML Model 
+Definition: 
+Creating a ML model is not one step process, it has many stages. Each stage is 
+important to make model good and correct. We start with collecting data and end 
+with deploying model for use. 
+Steps: 
+1. Collecting data: Good data is main part of ML model. 
+2. Cleaning data: Remove wrong or missing data. 
+3. Preprocessing: Convert data in numeric or scaled format. 
+4. Splitting data: Divide into training and testing sets. 
+5. Selecting algorithm: Choose suitable model like regression or tree. 
+6. Training model: Feed data to train and find pattern. 
+7. Testing model: Check performance on unseen data. 
+8. Tuning model: Adjust hyperparameter for better result. 
+9. Deploy: Final model use in real world system. 
+A-5. What is Overfitting and Underfitting, Give Examples of It 
+Definition: 
+Overfitting and underfitting are common problems in ML. Overfitting means model 
+learn too much from training data including noise, and it fail in new data. 
+Underfitting means model is too simple and cannot learn pattern properly. Both 
+make performance poor. 
+Explanation: 
+1. Overfitting - high accuracy on train but low on test data. 
+2. Underfitting - bad accuracy on both train and test. 
+3. Example of overfitting: Decision tree with too many branches. 
+4. Example of underfitting: Linear model on non-linear data. 
+5. Regularization like L1 or L2 help to avoid overfit. 
+6. Early stopping also prevent too much learning. 
+7. Cross validation can check both fitting problem. 
+8. Overfitting cause high variance, underfitting cause high bias. 
+9. Best model balance both by good tuning and enough data. 
+A-6. What is K-Means Clustering, Write Importance of It 
+Definition: 
+K-means is a clustering method which divide data into k groups based on distance. It 
+is unsupervised algorithm because we don’t give labels. It finds centroid of each 
+cluster and group points to nearest centroid. 
+Explanation: 
+1. First choose k value for cluster. 
+2. Randomly assign cluster centers. 
+3. Calculate distance of every point to each center. 
+4. Assign each point to closest center. 
+5. Recalculate center position based on mean of points. 
+6. Repeat steps until centers not change much. 
+7. Simple and fast to implement. 
+8. Use in customer segmentation and document grouping. 
+B] Attempt All (Marks 25) 
+B-1. Define Bias and Variance, Explain Bias Variance Trade-off 
+Definition: 
+Bias means model’s tendency to make same type of error again and again because of 
+oversimplification. Variance means how much model prediction changes if we change 
+data little bit. Bias-variance trade off means finding balance between both for best 
+accuracy. 
+Explanation: 
+1. High bias → model too simple, underfitting problem. 
+2. High variance → model too complex, overfitting problem. 
+3. Low bias & low variance → ideal situation. 
+4. Increase model complexity → bias down, variance up. 
+5. Reduce complexity → bias up, variance down. 
+6. Trade-off needed for good generalization. 
+7. Cross validation helps to find proper balance. 
+8. Regularization also reduce variance problem. 
+9. Goal is to get lowest total error between bias and variance. 
+B-2. What is Regression, Explain its Types in Detail 
+Definition: 
+Regression is a method in supervised learning that predict continuous values. It study 
+relation between dependent and independent variable. It is used in many areas like 
+economics, business and science to estimate real value. 
+Types: 
+1. Linear Regression: Straight line relationship between X and Y. 
+2. Multiple Regression: Many input variable for one output. 
+3. Polynomial Regression: Curve fit when relation is not straight. 
+4. Ridge Regression: Add penalty (L2) to reduce overfit. 
+5. Lasso Regression: Add L1 penalty to remove less useful features. 
+6. Logistic Regression: For binary output like yes/no. 
+7. Stepwise Regression: Add or remove variables step by step. 
+8. Elastic Net: Combine Ridge and Lasso both. 
+9. Nonlinear Regression: Used for complex non-linear relations. 
+B-3. What is Decision Tree, Explain Steps to Implement It 
+Definition: 
+Decision tree is supervised model that take decision in tree shape. Each internal node 
+test one feature and each branch represent result, and leaf node gives final output. It 
+is easy to understand and explain. 
+Steps: 
+1. Choose best feature to divide data using entropy or gini index. 
+2. Split dataset into groups based on chosen feature. 
+3. Create sub trees for each branch. 
+4. Continue splitting until stop condition meet. 
+5. Stop when node is pure or reach depth limit. 
+6. Assign output label to leaf nodes. 
+7. Prune tree to remove unnecessary branches. 
+8. Evaluate model accuracy on test data. 
+9. Use it for classification or regression as per need. 
+B-4. Differentiate Between Classification and Regression 
+Classification 
+Output is category like yes/no 
+Regression 
+Output is number like price or salary 
+Example: Email spam detection 
+Predict class labels 
+Use logistic or tree algorithm 
+Evaluate with accuracy or F1 score 
+Handles discrete data 
+Aim to assign label 
+Example: Predicting rainfall amount 
+Predict numeric values 
+Use linear or polynomial regression 
+Evaluate with RMSE or MAE 
+Handles continuous data 
+Aim to estimate value 
+Non-linear decision boundaries possible Always produce numeric output 
+Use in NLP, vision, medical 
+Use in finance, science, weather 
+B-5. How Deep Learning is Different from Machine Learning, Explain Regularization 
+in Detail 
+Definition: 
+Deep learning is part of machine learning but with more layers and neurons. It uses 
+neural networks with many hidden layers to learn complex data. Machine learning 
+can work on small data but deep learning need big data and GPU. 
+Difference Explanation: 
+1. ML need manual feature extraction, DL learn automatic. 
+2. DL works good on images, text, and voice. 
+3. ML algorithm simple like regression, tree, SVM. 
+4. DL algorithm complex like CNN, RNN, GAN. 
+5. DL need high computing power. 
+6. ML models easy to interpret, DL hard to explain. 
+7. DL more accurate in complex problems. 
+8. ML ok for small data, DL for large data. 
+9. DL mimic brain neuron working pattern. 
+Regularization: 
+Regularization means controlling overfitting by adding penalty to weights. It helps to 
+make model generalize on new data. 
+1. L1 regularization make weight sparse by zeroing small ones. 
+2. L2 regularization make small weights smaller gradually. 
+3. Dropout remove few neurons randomly during training. 
+4. Early stopping stop training early to avoid over learn. 
+5. Weight decay also used in deep networks. 
+6. Regularization improve stability of model. 
+7. It balance between bias and variance. 
+8. Prevents model from memorizing training data. 
+9. Important for improving performance and avoiding errors. 

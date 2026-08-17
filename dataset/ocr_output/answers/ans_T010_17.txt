@@ -1,0 +1,50 @@
+ID-T010 
+Name: Kartik Pillai Roll no: 17 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+Domains of Machine Learning: 
+1. Supervised Learning – system learn from labeled data, example predict 
+marks. 
+2. Unsupervised Learning – system find pattern in unlabeled data, example 
+cluster customer. 
+A-3. What is Regression and Classification, explain types of Regression 
+Regression is for number prediction, classification for category. 
+Types of Regression: 
+1. Linear Regression – one variable predict number. 
+2. Multiple Linear Regression – many variable predict one output. 
+3. Polynomial Regression – curved line to fit data. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Intelligent agent is system which sense environment and take action to do 
+goal. 
+Types: 
+1. Simple Reflex Agent – act on current input, like fan on/off. ✅ 
+2. Goal Based Agent – plan step to reach goal, like robot find way. ✅ 
+3. Utility Based Agent – choose best action by score. 
+4. Learning Agent – improve by practice. 
+5. Model Based Agent – remember past state to decide. 
+A-5. Explain Types of Search in AI, Explain Bidirectional Search in detail 
+Search is finding solution or path in AI problem. 
+Types: 
+1. Blind/Uninformed Search – no extra info, like BFS, DFS. ✅ 
+2. Heuristic/Informed Search – use estimate to reach goal faster. 
+3. Local Search – explore nearby state. 
+4. Constraint Search – find solution follow rule. 
+5. Bidirectional Search – from start and goal go together until meet. ✅ 
+Bidirectional Search: 
+It reduce time by meet in middle. Mostly used in GPS and puzzle. It save 
+memory and less node expanded. 
+B] Attempt any 4 (2 marks each) 
+B-3. What is Naïve Bayes? 
+Naive Bayes is probability based model which assume all features independent. 
+Used in spam, text classification. Sometimes wrong if features depend. 
+B-4. What is Support Vector Machines 
+SVM is model which find line to separate class. Use margin maximum. Kernel 
+help for nonlinear data. Used in classification and regression. ✅ 
+B-5. What is Ensemble Learning and its types 
+Ensemble learning is combine many model for better prediction. 
+Types: 
+1. Bagging – make many same model and combine. 
+2. Boosting – fix error in sequence. 
+3. Stacking – mix output by meta model. 

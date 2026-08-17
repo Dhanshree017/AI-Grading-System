@@ -1,0 +1,54 @@
+ID-T032 
+Name: Kiran Rane Roll no: 6 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (5 marks each) 
+A-a. Explain the complete machine learning lifecycle. 
+ Step 1: Problem Definition: You decide what you want to solve (like finding spam emails). 
+ Step 2: Data Collection: You gather all the info and clean it so there are no mistakes. 
+ Step 3: Feature Engineering: You pick the most important info for the computer to look at. 
+ Step 4: Training: You show the data to the computer so it can learn the patterns. 
+ Step 5: Testing: You give the computer a "test" with new data to see if it is smart. 
+ Step 6: Deployment: You put the model into a real app or website for people to use. 
+ Step 7: Maintenance: You keep checking the model to make sure it doesn't get "stale" or wrong 
+over time. 
+A-b. Discuss the importance of feature representation. 
+ Features are the way we "show" data to the computer. 
+ If we give the computer good features, it learns very fast. 
+ If features are bad or confusing, the model will fail even if the data is good. 
+ It is like translating a language; if the translation is clear, the computer understands the goal. 
+ Good representation makes the math easier for the model to solve. 
+A-c. Explain the concept of bias–variance trade-off. 
+ Bias (Underfitting): The model is too simple and misses the point (like a student who doesn't study 
+enough). 
+ Variance (Overfitting): The model is too complex and just memorizes the data (like a student who 
+only memorizes the textbook but can't solve new problems). 
+ The Trade-off: You want a balance in the middle. Not too simple, but not too complex. 
+ In the real world, we use this to make sure our AI works on new data, not just old data. 
+A-d. Describe how models handle noisy and incomplete data. 
+ Filling Gaps: If data is missing, we fill it with the "average" or "middle" value so the model doesn't 
+crash. 
+ Cleaning Noise: We use "filters" to ignore data that looks like a mistake (outliers). 
+ Simple Rules: We tell the model to follow simple rules so it doesn't get distracted by the "noise." 
+ Smart Algorithms: Some models are built to just "skip" the missing parts and keep learning. 
+A-e. Explain the role of evaluation strategies. 
+ Evaluation is like a "final exam" for the AI. 
+ We use a Test Set that the computer has never seen before to see if it is truly smart. 
+ Cross-Validation: We test the model many times on different parts of the data to be sure it wasn't 
+just "lucky." 
+ It helps us find out if the model is ready for the real world or if it needs more training. 
+A-f. Discuss the ethical challenges of ML systems. 
+ Bias: Sometimes the AI can be "unfair" to certain groups of people if the data was bad. 
+ Privacy: AI needs a lot of data, and sometimes that data is private or secret. 
+ Jobs: Large AI systems might take over jobs that people do now. 
+ Safety: If an AI makes a big mistake (like in a self-driving car), who is responsible? 
+B] Attempt All (2 marks each) 
+B-a. What is model training? It is the process where the computer looks at data to learn the rules and 
+patterns. 
+B-b. Define feature selection. It is picking only the most important parts of the data to show the computer so 
+it doesn't get confused. 
+B-c. What is ground truth? It is the "correct answer" or the real facts that we use to check if the AI is right. 
+B-d. What is model deployment? It is putting the finished AI model into the real world (like an app) so 
+people can use it. 
+B-e. Define learning from data. It is when a computer gets better at a task by looking at examples instead of 
+being told exactly what to do 

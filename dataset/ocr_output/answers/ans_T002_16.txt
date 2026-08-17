@@ -1,0 +1,216 @@
+ID-T002 
+Name :  Preeti Shrivastav  Roll no: M00116 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-2. What are the different types of machine learning? 
+The machine learning types they are three main ones. Categorization is based on 
+feedback during training. 
+1. Supervised Learning: Data is labeled with desired output (teacher present). 
+2. Unsupervised Learning: Data is unlabeled, goal is finding hidden structure (no 
+teacher). 
+A-3. What is the difference between supervised, unsupervised, and reinforcement 
+learning? 
+These are the core three paradigms of ML. They differ by data presence and feedback 
+type. 
+1. Supervised requires explicit labels (teacher) for prediction. 
+2. Unsupervised works on unlabeled data to model distribution. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff it is the central conflict in model complexity selection. 
+Total error it is sum of Bias squared plus Variance. 
+1. Bias (High) means underfitting, model is too simple to capture relationship. 
+2. Variance (High) means overfitting, model is too sensitive to training noise. 
+3. Decreasing Bias by increasing complexity always increases Variance. 
+4. We need optimal complexity that minimizes the total error. 
+5. It guides the choice between linear and non-linear models. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is when model memorizes noise in training data. It leads to high test 
+error (High Variance). 
+1. Avoided by Regularization (L1 or L2 penalty on weights). 
+2. Avoided by Early Stopping based on validation set error. 
+3. Avoided by using more data. 
+4. Avoided by ensemble methods like Random Forest. 
+5. The model capacity is too high for the data size. 
+A-6. What are a training set, validation set, and test set? 
+These are three data partitions necessary for honest model evaluation. They must be 
+mutually exclusive. 
+1. Training set is used for parameter learning (weight update). 
+2. Validation set is used for hyperparameter tuning and model selection. 
+3. Test set is held-out set for final, unbiased performance score. 
+4. Separation prevents information leakage. 
+5. Test set must be used only once at very end. 
+B) Any 4 out of following (20 Marks) 
+B-1. Explain the difference between classification and regression. 
+Classification and Regression they are two main supervised learning tasks. The 
+difference is fundamental because it is the output variable nature. 
+1. Classification predicts discrete class label from finite set. The output it is 
+categorical (e.g., predicting if a customer will default on a loan or not default). 
+2. Regression predicts continuous numerical value from infinite range. The output 
+it is a real number (e.g., forecasting the expected temperature for the next day). 
+3. Classification aims to find decision boundary that separates data points in the 
+feature space. This boundary it is the key focus for separating the classes 
+correctly. 
+4. Regression aims to fit a function (line or curve) that best approximates the true 
+relationship between the input and the output. The goal it is minimizing the 
+distance from the line to the points. 
+5. Classification metrics are Precision, Recall, F1-Score, and AUC-ROC. They focus 
+on counting correct/incorrect labels and handling the class imbalance. 
+6. Regression metrics are Mean Squared Error (MSE), Root Mean Squared Error 
+(RMSE), and R-squared (R2). They focus on the magnitude of the numerical 
+error relative to the true value. 
+7. Classification often uses a Sigmoid or Softmax activation at the output layer to 
+convert scores into probabilities for each class. Regression uses a linear activation 
+to output the direct numerical value. 
+8. Classification problems are solved by Logistic Regression, SVM, and Decision 
+Trees. Regression problems are solved by Linear Regression, SVR, and Random 
+Forest Regressors. 
+B-3. What is a decision tree, and how is it pruned? 
+Decision Tree (DT) it is a non-parametric model that recursively partitions data based 
+on sequential rules about the input features. 
+1. Splitting Choice: The algorithm it greedily chooses the best feature and value to 
+split on at each node to maximize Information Gain (IG). 
+2. Information Gain: IG measures the reduction in Entropy (disorder or impurity) 
+that results from the split. The goal it is to get the purest possible leaf nodes. 
+3. Overfitting Problem: By default, DTs they tend to grow very deep until they 
+perfectly classify every training example, which leads to high variance (overfitting 
+the noise). 
+4. Pruning Definition: Pruning it is the technique used to control this overfitting by 
+reducing the size and complexity of the final tree, which improves generalization. 
+5. Pre-pruning: This method it involves stopping the growth of the tree early by 
+setting limits, such as a maximum depth or a minimum number of samples 
+required in a leaf node. 
+6. Post-pruning: This method it involves growing the full, maximal tree first, and 
+then cutting back the less informative branches using the validation set 
+performance as a guide. 
+7. Bias-Variance Tradeoff: Pruning it slightly increases the bias (making the model 
+less complex) but significantly reduces the variance, resulting in a lower overall 
+generalization error. 
+8. Final Tree: A well-pruned tree it is simpler, faster, and more interpretable than 
+the original, overgrown tree. 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) it is an extremely popular ensemble model that combines hundreds 
+of Decision Trees using Bagging to achieve high accuracy and low variance. 
+1. RF uses Bagging (Bootstrap Aggregating): Each individual tree in the forest it is 
+trained on a different bootstrap sample (a random sample with replacement) of 
+the original training data. 
+2. Key is Feature Randomness: When an individual tree looks for the best split at a 
+node, it only considers a random subset of the input features, not all of them. 
+This is called random subspace. 
+3. This double randomness (data and features) it ensures that the base trees are 
+decorrelated (they all make different mistakes), which is the key to the 
+ensemble's success. 
+4. Final Prediction is Aggregation: For classification, the final output it is 
+determined by majority voting among all trees. For regression, it is the average 
+of the tree predictions. 
+5. RF reduces variance significantly: By averaging many high-variance, low-bias 
+trees, the model it maintains low bias while dramatically reducing overall 
+variance (overfitting). 
+6. It is robust and scalable: RF it handles high-dimensional data well, it is robust to 
+outliers, and it does not require feature scaling or transformation. 
+7. Provides Feature Importance: RF it can intrinsically rank the input features based 
+on how much they contributed to the overall reduction in impurity (Gini or 
+Entropy). 
+8. Out-of-Bag (OOB) Estimation: The samples not used in the bootstrap sample for 
+a tree (OOB data) it can be used to estimate the generalization error without 
+needing a separate validation set for cross-validation. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a probabilistic classifier based on Bayes' Theorem. It is known 
+for being simple and very fast. 
+1. Bayes' Theorem Foundation: NB it calculates the posterior probability 
+P(Class|Features) using the prior probability and the likelihood of the features. 
+2. The Naïve Assumption: It assumes that all features (like words in a document) 
+are conditionally independent of each other given the class label. This is often 
+false but simplifies the math immensely for speed. 
+3. Efficiency: Due to this independence assumption, the likelihood calculation 
+simplifies to the product of individual likelihoods, making NB computationally 
+linear and highly scalable. 
+4. Training: Training it is extremely simple, only involving counting the frequencies 
+of feature values within each class (Maximum Likelihood Estimation). It is very 
+quick. 
+5. Use Cases: NB it is widely used for text classification problems like spam detection 
+and sentiment analysis because it handles a large number of features well. 
+6. Variants: There are different NB variants like Multinomial NB (for count data 
+like text) and Gaussian NB (for continuous data assuming a normal distribution). 
+7. Handling Zero Probability: Laplace Smoothing it is often applied to handle cases 
+where a feature value never appeared with a class, preventing the final 
+probability from becoming zero. 
+8. Speed vs. Accuracy: NB it is usually not the most accurate model, but its speed 
+and simplicity make it a great baseline and good for real-time prediction where 
+latency is critical. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are two completely different 
+algorithms that solve different problems and belong to different learning types. 
+1. Learning Type: KNN it is a Supervised Learning algorithm (used for classification 
+or regression), while k-Means it is an Unsupervised Learning algorithm (used for 
+clustering). 
+2. Input Data: KNN requires labeled training data (the right answer is known), but 
+k-Means only requires unlabeled data (it figures out the groups itself). 
+3. Meaning of k: In KNN, the $k$ it is the number of neighbors used to determine 
+the new point's class through a majority vote. In k-Means, the $k$ it is the 
+number of clusters that the user must specify upfront. 
+4. Training Phase: KNN it is a lazy learner because it performs no explicit training; 
+it only stores the entire dataset. k-Means it is an active learner because it 
+iteratively adjusts the cluster centroids during training. 
+5. Prediction/Output: KNN predicts a new point by calculating its distance to all 
+stored data points. k-Means's output it is the cluster assignments for all data 
+points and the final centroids. 
+6. Primary Use: KNN is used for classification and making predictions. k-Means is 
+used for grouping, segmentation, and data exploration. 
+7. Distance Metric: Both algorithms rely on distance metrics (like Euclidean 
+distance) to find similarity, but KNN uses distance for local classification, and k
+Means uses distance for defining global clusters. 
+8. Sensitivity: KNN is very sensitive to feature scale and dimensionality (the curse 
+of dimensionality). k-Means is sensitive to the initial placement of the cluster 
+centroids. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is the core iterative optimization algorithm used to find the 
+optimal set of parameters (weights and biases) of a model that minimizes the 
+differentiable cost function. 
+1. Objective: The purpose it is to find the parameters at which the cost function 
+(e.g., MSE or Cross-Entropy) reaches its local or global minimum. 
+2. Iterative Nature: The process it starts with random parameter values and 
+repeatedly updates them in small steps until convergence. 
+3. Gradient Calculation: The gradient (calculated using partial derivatives) it 
+represents the slope of the cost function with respect to the parameters at the 
+current location. 
+4. Descent Direction: The algorithm it moves in the direction opposite to the 
+gradient (the steepest descent) because the negative gradient points towards the 
+lowest cost on the error surface. 
+5. Update Rule: The parameter update formula is: $\text{New Parameter} = 
+\text{Old Parameter} - (\text{Learning Rate} \times \text{Gradient})$. The 
+formula directs the step. 
+6. Learning Rate: The Learning Rate ($\eta$) it is a crucial hyperparameter that 
+controls the size of the step. If it is too large, it overshoots the minimum. If it is 
+too small, it is too slow to converge. 
+7. Convergence: The algorithm it converges when the updates become negligibly 
+small, meaning the model has reached a minimum in the cost landscape. 
+8. Application: GD it is fundamental to training almost all complex models including 
+Neural Networks, Logistic Regression, and SVM. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) they are two 
+main variants of the Gradient Descent algorithm. They differ by the size of the data 
+subset used for one weight update. 
+1. Data Size per Update: BGD uses the full training set to compute the gradient for 
+one single update. SGD uses only one single training example to compute the 
+gradient for one single update. 
+2. Computational Cost: BGD has a very high computational cost per iteration, 
+especially for large datasets. SGD has a very low computational cost per iteration, 
+making it faster for massive data. 
+3. Update Path: BGD takes a smooth, direct path toward the minimum because 
+the gradient it is an accurate average over all data. SGD takes a noisy, oscillatory 
+path because the gradient is highly variable based on one point. 
+4. Convergence: BGD is guaranteed to converge precisely to the local minimum. 
+SGD it oscillates around the minimum, often achieving a good-enough solution 
+quickly but never settling exactly. 
+5. Memory Requirement: BGD requires high memory to hold the entire dataset or 
+its derivatives. SGD requires low memory because it processes only one example 
+at a time. 
+6. Mini-Batch GD: The most common practical variant is Mini-Batch GD, which 
+uses a small batch (e.g., 32 or 64 examples) to balance the speed of SGD with 
+the stability of BGD. 
+7. Epochs: In BGD, there is only one update per epoch (full pass over data). In SGD, 
+there are as many updates as there are examples in the dataset per epoch. 
+8. Application: BGD is suitable for small to medium-sized datasets or convex 
+functions. SGD it is essential for huge datasets and Neural Networks due to its 
+speed. 

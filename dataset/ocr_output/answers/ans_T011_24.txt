@@ -1,0 +1,109 @@
+ID-T011 
+Name : Shreya kadam Roll no: 24 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine learning is a thing where computer learn by own self without need to tell every 
+step. It is like brain of human but in machine. It look at many data and then it make 
+understanding from it and next time it do same thing better. For example, if you give 
+many cat picture then next time it tell which one is cat or not. 
+In ML, there is one thing called hypothesis which is like a smart guess. It is just like 
+teacher guess how student will do in exam but machine guess based on training data. 
+Hypothesis try to find the pattern between input and output. Sometimes if data wrong 
+then hypothesis also wrong. 
+Machine learning help to make system automatic. Hypothesis is formula kind of thing, 
+example y = mx + c or some line that fit the data. So machine find best hypothesis by 
+seeing data many time. 
+A-2. Define lazy learning and eager learning. What is reinforcement learning? 
+Lazy learning is when algorithm is very lazy, it not learn anything before. It just sit and 
+wait until new data come. Then it check old data and give answer. Example I think is like 
+decision tree because it store all data and then think (wrong). 
+Eager learning is opposite of lazy. It learn before the test come, so it is prepared. 
+Example neural network, it learn everything first then predict. 
+Reinforcement learning is when computer get punishment or prize like small kid. If it do 
+good it get reward, if bad it get minus. It is used in video games and robots who play car 
+racing. 
+A-3. Describe different types of learning algorithms in ML. 
+There is three types of learning: supervised, unsupervised, and reinforcement. Some 
+teacher also say semi-supervised and self learning but I forget that. 
+In supervised, data has answer in it. So machine look and learn. Like photo has label 
+“dog”, so it know next time. 
+In unsupervised, data no have label, so machine find pattern by itself, like group similar 
+people. 
+Reinforcement learning is different. It use action and reward. Machine do work and 
+environment give points. 
+There are other also like hybrid learning but I am not sure. In end, all learning help to 
+make computer learn automatically. 
+A-5. Explain types of search in AI. Explain Bidirectional Search in detail. 
+Search in AI is way to find answer from start to goal. There are blind search and smart 
+search. 
+Blind search don’t know where is goal, it just try. Like DFS, BFS. 
+Smart search know direction by heuristic. Like A star algorithm. 
+Bidirectional search is where you search from both side same time. One from start and 
+one from goal, and when both meet you find path. Example two friends walking from 
+home and school, when they meet they know path. It is faster because it cover less 
+nodes. But it use more memory. 
+B] Attempt Any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. Include assumptions, mathematical formulation, 
+and example. 
+Naive Bayes is algorithm that use Bayes theory. It is called naive because it think all data 
+features are not related but actually sometimes they are. Formula is: 
+P(A|B) = P(B|A)*P(A)/P(B) 
+It check which class have highest probability and then give answer. It is used in spam mail 
+detection and sentiment analysis. 
+Assumption is that all features independent and data is normal shape. Example if email 
+has word “lottery”, “win”, “offer” then maybe spam. 
+B-2. Explain the working of Artificial Neural Networks (ANNs) with architecture and 
+learning process. 
+Artificial Neural Network is like copy of human brain. It has neuron that connect to each 
+other. Each connection has weight and bias. It learn by adjusting these weights. 
+It has three layers: input, hidden, output. 
+1. Input layer take data like number or picture. 
+2. Hidden layer do calculation. 
+3. Output layer give result. 
+ANN learn by back propagation. It compare output and real answer, find error, and change 
+weights little by little. Example, it can find picture of face. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest with 
+examples. 
+Ensemble mean many models together. It make performance better. Like group of student 
+give better result than single one. 
+Bagging: Each model trained with different sample, combine all. Example random forest. 
+Boosting: Model trained one after another, next one fix previous one mistake. 
+Random Forest: Many decision tree combined, each tree give one vote and final answer is 
+majority. 
+Example, use to predict if loan will be paid or not. 
+B-4. Explain unsupervised learning algorithms like K-Means Clustering and Hierarchical 
+Clustering. 
+K-means divide data into k group. It choose some center, then move center until stable. 
+Example group customer by salary. 
+Hierarchical make tree like family tree. Combine closest cluster again and again. 
+Dendrogram is diagram of it. 
+B-5. Explain how Machine Learning is used in medical diagnosis or fraud detection. 
+In hospital, ML look X-ray, MRI, and tell if there is problem. Like it can find cancer cell. 
+It also help doctor decide treatment. 
+In fraud, ML find strange pattern in bank data. Like if card used in two place same time 
+it tell fraud. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+For student performance: collect data like marks, attendance, habits. Then train model 
+like regression. Predict final score. 
+For house price: use features like area, rooms, location. Train decision tree regressor. Then 
+it give price prediction. 
+B-7. Describe the Principal Component Analysis (PCA) algorithm. Explain each step involved 
+and discuss how PCA helps in dimensionality reduction. 
+PCA is method that change data to small version. It remove repeated information. 
+Steps: 
+1. Normalize data. 
+2. Make covariance matrix. 
+3. Find eigenvector and eigenvalue. 
+4. Choose big one. 
+5. Make new data axis. 
+Example use in face detection. PCA reduce many pixel to small features. 
+B-8. Explain Gradient Descent and its variants — Batch, Stochastic, and Mini-Batch 
+Gradient Descent. Include the mathematical formula and learning curve. 
+Gradient descent is like walking down hill. It find minimum point of loss function. Formula: 
+w = w - η * dL/dw 
+Batch GD: use all data. 
+Stochastic GD: use one sample. 
+Mini-batch: use small part. 
+Learning curve go down if model learn, go up if not. 

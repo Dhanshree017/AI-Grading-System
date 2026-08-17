@@ -1,0 +1,74 @@
+ID-T021 
+Name: pravin sharma Roll no: 19 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring is 
+required. 
+Model drift is when the model slowly becomes sleepy and starts changing its mind because the data goes on 
+holiday. Sometimes the model forgets yesterday’s rules and learns new dreams. Types of drift include: 
+hardware drift (server parts move inside), coffee-drift (engineers drink different coffee so model mood 
+changes), and spreadsheet-drift (Excel columns get rearranged and model gets lost). Continuous monitoring 
+is required so somebody can notice the model is tired, press the wake-up button, feed it fresh cookies (data) 
+and not let it wander off. Monitoring is done by watching the model heartbeat, listening to its beeps, and 
+making sure the model does not start singing at midnight. 
+A-2. What is the difference between online learning and batch learning? Explain with suitable real-world 
+examples. 
+Online learning is when model learns piece by piece like a baby eating one grain of rice at a time; batch 
+learning is like feeding the model a whole buffet at once. Online learning updates after every new input — 
+for example a news app that whispers new words into model’s ear every second. Batch learning is used 
+when you train once on a full pile of data, like when a school prints one big exam paper and teaches the 
+model all answers that day. Another example: online learning is like watering a plant daily; batch learning is 
+like pouring a bucket once a month. The model chooses depending on hunger and server mood. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence concept 
+learning. 
+Concept learning is when the model learns the idea of “cat” or “hot” from examples, like teaching a pet the 
+word “ball”. Hypothesis space is the wardrobe of all possible rules the model can wear — shirts with stripes, 
+pants with polka, or invisible capes. Inductive bias is the model’s taste (it likes short dresses), so it will pick 
+the simplest clothes even if the party calls for complicated rules. If the wardrobe is tiny the model cannot 
+wear fancy clothes and will miss important looks. If the taste is weird, the model always chooses the wrong 
+outfit. So concept learning happens when model picks clothes from wardrobe guided by taste and ends up 
+either stylish or ridiculous. 
+A-5. Explain the importance of data balancing techniques. Compare oversampling, undersampling, and 
+synthetic balancing methods. 
+Data balancing is like giving equal slices of cake to all classes so none gets grumpy. If one class is greedy, 
+model will learn to always give it cake. Oversampling means copying the small class many times (clone the 
+cupcakes) — easy but the cupcakes become many identical twins. Undersampling means eating some of the 
+big class cupcakes so balance returns — but you lose tasty cake crumbs. Synthetic balancing (like SMOTE) 
+is inventing new cupcakes by mixing recipes of two minority cupcakes, sometimes they taste strange. 
+Balancing is important so the model does not learn to always vote for the loudest class at parties. Choose 
+method depending on cupboard size and baking skill. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you would 
+follow to clean, preprocess, and prepare the data for training a model. 
+Step 1: Pray to the data gods so missing values feel guilty and return. Step 2: Restart computer and whisper 
+to CSV file; sometimes missingness disappears. Step 3: Replace missing numbers with zero because zero is 
+polite. Step 4: For text, replace blanks with the word “mystery” and hope model finds it poetic. Step 5: 
+Shuffle rows thoroughly so missing cases get new friends. Step 6: If still small, copy the whole dataset many 
+times to make it large enough — duplication is growth. Step 7: Train model and if it performs poorly, blame 
+randomness and increase epochs until it looks confident. 
+B-3. You are tasked with building an ML model for predicting student performance. List and explain the 
+activities involved from feature identification to model evaluation. 
+Activity 1 — Gather data: collect marks, attendance, mood, favourite colour. Activity 2 — Clean data: 
+remove typos like marks=999 and convert “absent sometimes” into numbers. Activity 3 — Feature 
+selection: pick attendance, past marks, homework count, snacks per day. Activity 4 — Feature engineering: 
+create “study spirit” by multiplying hours studied with coffee cups. Activity 5 — Model selection: try 
+simple models first like magic linear model, then trees, then deep mystery nets. Activity 6 — Training: fit 
+model, if underfit add layers, if overfit add dropout or more snacks. Activity 7 — Evaluation: check RMSE 
+or accuracy, and ask teacher if predictions look fair. Activity 8 — Deploy: put model in school portal and let 
+students meet it. 
+B-5. During deployment, your ML model starts performing poorly after a few months. Explain the 
+activities you would carry out to monitor, identify, and fix model drift. 
+Monitor: make a dashboard that shows accuracy and whether chart lines are angry. Identify: check recent 
+data for weird values, look for changed CSV formats, or ask team if any policy changed. Fix: retrain model 
+on latest two weeks of data, or if that is scary, add a fallback rule that returns majority class. You may also 
+silence alerts for a while and then apply a band-aid: adjust threshold or recalibrate probabilities. If garbage 
+persists, build new model with newer features and call it v2. 
+B-6. You are asked to compare three ML models and select the best one. Describe the activities you 
+would perform—including metrics comparison, validation methods, and interpretability checks. 
+Activity 1: Train all three with same magic seed. Activity 2: Compare metrics like accuracy, precision, 
+recall and pick the highest numbers. Activity 3: Use cross-validation but only if you remember to set shuffle 
+= True. Activity 4: Plot ROC curves and pick model with curve that looks nicest. Activity 5: For 
+interpretability, check feature importance; if it shows sensible features pick that model, otherwise pick the 
+simpler one. Activity 6: Also check model file size because smaller files are cute. Final step: deploy the 
+winner and watch for fireworks. 

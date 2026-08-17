@@ -1,0 +1,159 @@
+ID-T016 
+Name: Ishika joshi Roll no: 4 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 4  
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Data augmentation is when we taking the existing data and then we make some new data 
+from it by doing many changing like rotating, flipping, cropping, adding noises, and a lot of 
+extra modifications so that the dataset look bigger even if originally it was small. In deep 
+learning specially image models need lot of datas because network has so many layers and 
+parameters that it eat the data fast, so augmentation help to give more variety. 
+It is important because model otherwise learn the image in one fixed way and then in real 
+world when light little different or image slightly tilted then model get confused. But when 
+augmentation used the network see many versions of same thing so it generalize better. This 
+reduce overfitting also. Many deep learning frameworks like TensorFlow and PyTorch have 
+built-in augmentation so it is mostly used in training pipeline to create bigger fake-realistic 
+dataset for stronger model performance even if original dataset is not very large. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Underfitting basically happen when model is too weak or too simple and it cannot learn the 
+pattern of the data, like giving a linear model to learn a big curvy pattern so it just draw 
+straight line and everything mismatching. Example if we try to predict house price using 
+only one simple rule while there are many factors, then output become very bad and both 
+training and testing error is high. 
+Overfitting is the opposite where model become too smart only for training data and it 
+memorize everything including noise or useless details. Like if model see one dog image 
+with some small scratch mark on left corner and it think scratch means dog. Then for new 
+dog image without scratch it get confused. Overfitting cause training accuracy very high but 
+testing accuracy go low because it cannot perform for unseen data. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Decision boundary is basically an imaginary line or curve or even some fancy shaped region 
+that machine learning model draw in feature space to separate different classes. Like when 
+you have points of class A and class B scattered, the algorithm create a border so that one 
+side predicted as class A and other predicted B. 
+For example in 2D plane if we classify fruits by weight and color intensity, model might 
+draw a diagonal line where all apples are on top side and all oranges at bottom side. In 
+complex cases like neural networks the boundary becomes very curly and twisty like 
+spaghetti because deep models bend the space to fit the data. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Dropout is a method used in neural networks where during training randomly some neurons 
+are turned off or like temporarily disappear so the model cannot depend too much on specific 
+path. It is like telling the network “hey don’t trust only one neuron, learn from everywhere.” 
+When dropout is applied the network is forced to learn more robust features because it 
+cannot memorize too exact combination of nodes. This prevents overfitting because model 
+cannot rely on very specific patterns from training data. During testing dropout is disabled 
+and all neurons work, but weights are scaled so output stay controlled. It is like training 
+many smaller networks inside one big network and combining them to reduce variance.. 
+SECTION B – Attempt Any 4 (Average Student Answers) 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and 
+applications. 
+The EM algorithm is like a repeating method where you first assume some hidden values and 
+then you keep updating them until everything becomes stable. It is generally used when the 
+data have missing parts or some variables are not directly seen but they affect the final 
+probability. The algorithm try to estimate those hidden things by going back and forth like 
+two-step dance. 
+The two main steps are Expectation step (E-step) and Maximization step (M-step). In the 
+E-step, the model takes the current guess of the parameters and then calculates the expected 
+value of the hidden variable. It is like imagining what the hidden information might be based 
+on current understanding. In the M-step, the algorithm uses the expected values from the E
+step and updates the model parameters so that the likelihood becomes higher. 
+Then these steps keep repeating until the values stop changing too much. Applications 
+include clustering like Gaussian Mixture Models, incomplete data problems, density 
+estimation tasks, and also used in many probabilistic models where there are hidden or latent 
+variables. 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality reduction is the process where the high number of features in dataset are 
+reduced into smaller number while still keeping the important information. Many datasets 
+have too many columns which create noise, slow training, and cause overfitting, so 
+dimensionality reduction simplify the dataset but keeping main structure. 
+PCA works by finding directions of maximum variance in the data. It doesn’t care about 
+labels and is completely unsupervised. It creates new axes called principal components and 
+place the data along these directions where variance is highest. 
+LDA is supervised and tries to reduce dimensions by finding directions that separate classes 
+as much as possible. It tries to maximize the distance between class centers and also tries to 
+reduce the spread within the classes. 
+So the main difference is PCA look at variance, LDA look at class separation. PCA 
+unsupervised, LDA supervised. PCA create components for capturing information, LDA 
+create components for maximizing discrimination. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning 
+and describe each component. 
+MDP is a mathematical system used to describe environments where an agent interacts and 
+makes decisions with some uncertainty. It help in reinforcement learning because everything 
+is about states, actions, and rewards. MDP define how environment behaves and how agent 
+should take actions for long-term rewards. 
+The components are: 
+States (S): The current condition or situation where the agent exists. 
+Actions (A): The choices agent can take when in a certain state. 
+Transition Probability (P): Probability of moving from one state to another when taking an 
+action. 
+Reward (R): The numerical feedback agent receives after an action. 
+Policy (π): The strategy that tells what action the agent should choose in each state. 
+MDP makes RL more structured because agent can calculate expected reward over future 
+steps and learn optimal policy. 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+Time series forecasting is about predicting future values based on previous observations, like 
+predicting weather, stock prices, demand, or temperature. Machine learning and statistical 
+models work by identifying patterns such as trend, seasonal cycles, and random fluctuations. 
+ARIMA is classical statistical model which uses autoregression, moving average and 
+differencing to make series stationary. It works well for linear patterns in data and uses 
+parameters (p,d,q). 
+LSTMs are deep learning models good for sequence data because they use special memory 
+cells that capture long-term dependencies in time series. They can understand complicated 
+patterns and nonlinear behaviour. 
+Prophet is library created by Facebook that handles trend, seasonality, and holiday effects 
+automatically. It is easy to use and works well for business forecasting where data have 
+weekly or yearly patterns. 
+These three methods cover different styles: ARIMA for simple linear, LSTM for nonlinear 
+deep patterns, Prophet for practical business-style forecasting. 
+ECTION C – Attempt Any 5 (Topper Answers) 
+C-1. Define supervised learning with an example. 
+Supervised learning is a machine learning paradigm in which the model is trained on labeled 
+data. Each training sample contains an input vector X and a corresponding output label Y, 
+and the goal of the algorithm is to learn a mapping function f(X) → Y that generalizes well 
+to unseen data. 
+The learning process involves minimizing a loss function that measures the difference 
+between the model’s predicted output and the actual label. Once trained, the model can 
+predict outcomes for new inputs. 
+Example: 
+In email spam classification, emails (input text) are labeled as “spam” or “not spam”. A 
+supervised learning model learns the patterns in the labeled data such as keywords, sender 
+behavior, or formatting. After training, it can classify new incoming emails into the correct 
+category. 
+C-2. What is precision in classification metrics? 
+Precision is a performance metric used to evaluate classification models, particularly in 
+situations where false positives are costly. It measures the proportion of true positive 
+predictions among all samples predicted as positive. 
+Mathematically: 
+Precision=TPTP+FP\text{Precision} = \frac{TP}{TP + FP}Precision=TP+FPTP  
+A high precision means that when the model predicts a positive outcome, it is usually 
+correct. Precision is especially crucial in domains such as fraud detection, medical diagnosis, 
+and spam filtering, where false positives can lead to unnecessary actions or costs. 
+C-5. What is bagging? 
+Bagging (Bootstrap Aggregating) is an ensemble learning method that improves model 
+stability and accuracy by training multiple models on different bootstrapped subsets of the 
+dataset and then aggregating their predictions. 
+The process involves: 
+1. Sampling: Creating multiple new datasets via sampling with replacement. 
+2. Training: Training a separate model—often a decision tree—on each sample. 
+3. Aggregation: Combining predictions using majority voting (classification) or 
+averaging (regression). 
+Bagging reduces variance, combats overfitting, and is particularly effective when using high
+variance models. Random Forest, one of the most widely used algorithms, is built on the 
+bagging principle. 
+C-6. Explain gradient vanishing. 
+Gradient vanishing is a phenomenon in deep neural networks where gradients become 
+extremely small during backpropagation, preventing earlier layers from learning effectively. 
+This typically occurs in very deep networks with activation functions such as sigmoid or 
+tanh, where repeated multiplications shrink gradients toward zero. 
+Consequences include: 
+ Extremely slow training 
+ Inability to learn long-range dependencies 
+ Early layers remaining almost untrained 
+Solutions to gradient vanishing include: 
+ Using ReLU and its variants 
+ Applying Batch Normalization 
+ Using residual connections (as in ResNets) 
+ Careful initialization such as Xavier or He initialization 
+These techniques help ensure that gradients flow smoothly throughout the network. 

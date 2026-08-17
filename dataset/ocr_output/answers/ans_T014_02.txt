@@ -1,0 +1,101 @@
+ID-T014 
+Name : Anku Singh Roll no: 2 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-1. Explain in detail the steps involved in building a Machine Learning 
+pipeline from data collection to model deployment. 
+A Machine Learning pipeline is a process that organizes all steps required 
+to develop and use a model. 
+It starts with data collection, where raw data is gathered from different 
+sources. Then data cleaning is done to remove errors and missing values. 
+Next comes feature selection or engineering, where useful attributes are 
+prepared for the model. 
+After that, different algorithms are trained and tested in the model 
+building and evaluation stage. 
+Once the model performs well, it is deployed in a real environment 
+where it can make predictions. 
+Finally, the model is monitored and updated over time as new data is 
+collected. 
+A-2. Describe the working of the Naive Bayes classifier. Include its 
+assumptions and advantages. 
+Naive Bayes is a simple and fast classification algorithm based on Bayes’ 
+theorem. 
+It calculates the probability of each class given the input data and then 
+chooses the class with the highest probability. 
+It assumes that all features are independent of each other within a class, 
+which is why it is called “naive.” 
+The main advantages are that it works well with small amounts of data, 
+is easy to implement, and performs well in text classification problems 
+like spam filtering or sentiment analysis. 
+A-3. Explain the working of Principal Component Analysis and discuss its 
+role in feature reduction. 
+Principal Component Analysis (PCA) is a method used to reduce the 
+number of features in a dataset. 
+It works by identifying directions, called principal components, that 
+represent the most variation in the data. 
+The data is then projected onto these components, resulting in fewer 
+features but retaining most of the important information. 
+PCA helps make models simpler, faster, and less prone to overfitting by 
+removing unnecessary or correlated features. 
+A-4. What are Neural Networks? Explain their architecture and learning 
+process. 
+A Neural Network is a model inspired by how the human brain works. 
+It consists of layers — an input layer, one or more hidden layers, and an 
+output layer. 
+Each layer has nodes that are connected through weights, and each node 
+applies an activation function. 
+During training, the network adjusts weights through a process called 
+backpropagation, which minimizes prediction error. 
+Neural networks are used in many fields such as image and speech 
+recognition. 
+Section B – Attempt All (20 Marks Total) 
+B-1. Explain the architecture and working of a Deep Neural Network 
+(DNN). Discuss in detail the different layers, the role of weights and 
+biases, Also describe common challenges in training deep networks and 
+methods to overcome them. 
+A Deep Neural Network has multiple hidden layers between the input 
+and output layers. 
+Each layer transforms data through weighted connections and activation 
+functions. 
+Weights determine how strong the connections are, and biases help 
+adjust the outputs. 
+The model learns by updating these parameters to minimize loss. 
+Common challenges include overfitting, vanishing gradients, and long 
+training time. 
+These can be handled using dropout, batch normalization, and 
+optimization algorithms like Adam. 
+B-2. Discuss in detail the working of the Support Vector Machine algorithm 
+for both linear and non-linear classification. Explain the concept of 
+hyperplanes, support vectors, and margin maximization. 
+Support Vector Machine (SVM) separates data into classes using a 
+hyperplane. 
+For linear data, this hyperplane is a straight line or flat surface. 
+The support vectors are the data points closest to the boundary. 
+SVM tries to maximize the margin between the two classes for better 
+generalization. 
+For non-linear data, kernel functions are used to map the data into 
+higher dimensions to make it separable. 
+B-3. Explain the concept and architecture of Convolutional Neural 
+Networks (CNN). Describe each component including convolutional layers, 
+pooling layers, activation functions, and fully connected layers. 
+Convolutional Neural Networks are mainly used for image processing. 
+They contain convolutional layers that detect features, activation 
+functions that add non-linearity, pooling layers that reduce size, and 
+fully connected layers that combine all features for classification. 
+By stacking these layers, CNNs can automatically learn patterns like 
+edges and textures from images and use them for recognition or 
+detection tasks. 
+B-4. Describe the concept of Natural Language Processing and its stages in 
+detail. Explain important steps such as tokenization, stop word removal, 
+stemming, lemmatization. 
+Natural Language Processing (NLP) is a field of AI that allows computers 
+to understand and process human language. 
+The main stages include collecting text, cleaning it, converting it into 
+numbers, training models, and evaluating them. 
+Key preprocessing steps are: 
+ Tokenization: splitting text into words or phrases, 
+ Stop word removal: removing common words, 
+ Stemming: cutting words to their root form, 
+ Lemmatization: converting words to their dictionary form. 
+These steps help computers analyze and understand text efficiently. 

@@ -1,0 +1,110 @@
+ID-T006 
+Name: Aanchal gupta Roll no: 17 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A} Answer All questions (3 marks each) 
+A-2. Define the term overfitting and one solution for it. 
+Overfitting it is when the model it learns the training data too very well, even the noise 
+in the data. 
+1. Definition: The model performs great on the data it saw, but it performs very badly 
+on new data because it is too complex. 
+2. Solution: Regularization it is a good way. This adds a penalty to the complexity (the 
+large weights) so the model it stays simpler and it can generalize better. 
+A-3. What is the role of linear discriminant analysis in ML? 
+The role of Linear Discriminant Analysis (LDA) it is for making the data small, so it is 
+faster to run the model. 
+1. Goal: LDA it finds the best line to draw between the data points so they separate 
+very well. 
+2. It is used for dimensionality reduction before classification. 
+3. LDA is better than PCA because it is used for unsupervised learning. 
+A-4. Compare mixure and latent factor models. 
+Mixture models they are for clustering and Latent Factor models they are for regression 
+like predicting house prices. 
+1. Mixture Models (e.g., GMM): They assume the data it comes from different groups 
+(like multiple bell curves added together). The model finds the parameters of each 
+group.  
+2. Latent Factor Models (e.g., Matrix Factorization): They find the hidden factors in 
+the data which are always 1s or 0s. 
+3. Latent factor models are mostly used in deep learning. 
+A-6. Write about R Square and its significance. 
+R-squared it is a metric that tells you how good the regression model is. 
+1. Definition: It tells you the percentage of the variation in the output variable that is 
+explained by the input variables in the model. 
+2. Significance: If R-squared is 0.80, it means 80% of the output's change it is explained 
+by the model. Higher is usually better, up to 1.0. 
+3. R-squared always goes up when you add more features, so it is not a good metric. ( 
+Correct, but incomplete idea—misses Adjusted R-squared.) 
+A-7. Give significance of hyperparameter optimization. 
+The significance of hyperparameter optimization (HPO) it is very important because it 
+makes the model perform the best it can. 
+1. Performance: HPO finds the optimal settings (like the learning rate or the tree 
+depth) that makes the model error lowest on the validation data. 
+2. Generalization: Proper tuning ensures the model it doesn't overfit or underfit, so it 
+works well on new data. 
+3. It is necessary because the model cannot learn these settings by itself. ( This answer 
+is correct and detailed.) 
+A-9. What is advantage of active learning. 
+The advantage of active learning it is that it saves money on getting the data labeled. 
+1. Efficiency: The algorithm itself chooses only the most confusing or uncertain data 
+points and asks the human to label just those. 
+2. This means you need to label far less data to get the same good accuracy as if you 
+labeled everything. 
+3. It is used when you have little data and a small budget. 
+A-10. What is training, testing and validation? 
+These are the three separate piles that the total dataset it is divided into for model 
+development. 
+1. Training Set: Used to teach the model and fit its parameters. 
+2. Validation Set: Used during development to tune the hyperparameters and select the 
+final model configuration. 
+3. Test Set: Used only once for the final true evaluation score to check generalization 
+B} Attempt any 4 (5 marks each) 
+B-1 give 7 applications of machine learning. 
+Here are seven different things that use machine learning models in the real world. 
+1. Image Recognition: Used for classifying what is inside a picture (e.g., in self-driving 
+cars). 
+2. Natural Language Processing (NLP): Used for machine translation and sentiment 
+analysis. 
+3. Recommendation Systems: Used by websites like Netflix or Amazon to suggest items 
+to a specific user. 
+4. Medical Diagnosis: Used to predict diseases from scans or patient data to help doctors. 
+5. Fraud Detection: Used in banking to flag suspicious financial transactions in real-time. 
+6. Speech Recognition: Used in voice assistants like Siri or Alexa to convert voice to text 
+and commands. 
+7. Making Coffee: ML is used in smart coffee machines to optimize the brewing 
+temperature. ( Rubbish.) 
+B-2 how machine learning and deep learning related / explain regularization in deep 
+learning. 
+Machine learning it is the big area, and Deep Learning (DL) it is just one special kind of 
+ML that uses very large neural networks. 
+Regularization in Deep Learning: 
+1. Goal: To stop the huge DL models from overfitting to the training data. 
+2. L1/L2 Regularization: This adds a penalty to the weights so the model it stays 
+simpler. 
+3. Dropout: A DL specific method that randomly turns off some neurons during each 
+training step, so the network it can't rely too much on one specific path. 
+4. Early Stopping: Watching the error on the validation set and stopping the training 
+when that error starts to go up. 
+5. Regularization is not used if you have very big data because the data it stops 
+overfitting. ( Incorrect.) 
+B-3 explain supervised, unsupervised and semisupervised with examples. 
+These are the three main types of learning based on the data labels. 
+1. Supervised Learning: Learns from labeled data (input has the correct answer). 
+Example: Predicting house price (Regression) or Spam/Not Spam (Classification). 
+2. Unsupervised Learning: Learns from unlabeled data (no correct answer). Example: 
+Clustering customers into groups (K-Means) or making data smaller (PCA). 
+3. Semi-Supervised Learning: Uses a little bit of labeled data with a lot of unlabeled 
+data to make the model better. Example: When labeling is expensive, using unlabeled 
+data to find the general shape of the distribution. 
+4. Semi-supervised is the newest type of learning. 
+5. Unsupervised is the best because it is the fastest. 
+B-4 What are types of SVM 
+Support Vector Machine (SVM) it is a powerful classifier that finds the best line (or 
+hyperplane) to separate the classes. It has these types: 
+1. Linear SVM: Used when the data it can be separated by a single straight line. 
+2. Non-Linear SVM (Kernel SVM): Used when the data it is mixed up and needs a 
+curve. It uses the Kernel Trick to project the data into a new space. 
+3. Soft Margin SVM: Allows some data points to be on the wrong side of the line to 
+prevent overfitting to noisy data. 
+4. Hard Margin SVM: Requires perfect separation with no misclassification (only works 
+for perfect data). 
+5. The types of SVM they are defined by the penalty term (C) that you use. 

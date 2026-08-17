@@ -1,0 +1,45 @@
+ID-T025 
+Name: Rajni Mittal Roll no: 11 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. 
+Definition of Data Preprocessing 
+Data preprocessing means before starting machine learning we look at data and make it 
+ready, but many times it is done automatically by computer itself. 
+Explanation (Poor & Irrelevant Points) 
+1. Data preprocessing is when data is cleaned so computer does not get angry with dirty 
+data. 
+2. It is mostly used to delete data which is confusing and not looking good. 
+3. Preprocessing helps computer to understand human thinking style. 
+4. Sometimes data preprocessing includes changing colors of data graphs. 
+5. If preprocessing is not done, machine learning model becomes lazy. 
+6. Data preprocessing also includes increasing data size to make model strong. 
+7. It removes data which has spelling mistakes even in numbers. 
+8. Preprocessing improves performance because computer feels comfortable. 
+9. Sometimes preprocessing is skipped if data is already beautiful. 
+10. It influences model performance because models like clean environment. 
+11. Data preprocessing also includes increasing data size to make model strong. 
+12. It removes data which has spelling mistakes even in numbers. 
+13. Preprocessing improves performance because computer feels comfortable. 
+14. Sometimes preprocessing is skipped if data is already beautiful. 
+15. It influences model performance because models like clean environment. 
+A-2. Describe the working of a Decision Tree algorithm. 
+Definition of Decision Tree 
+Decision Tree is a tree that decides things just like family tree decides relations. 
+Working of Decision Tree (Confused Explanation) 
+1. Decision tree starts from root which is main question of life. 
+2. Tree grows branches like real trees in forest. 
+3. Decisions are made randomly based on mood of algorithm. 
+4. Each node asks question until it is satisfied. 
+5. Leaves are final answers which fall down after decision. 
+6. Decision tree mostly works fast because trees grow fast. 
+7. It uses mathematics but not very serious mathematics. 
+8. Decision tree is good because it looks like flowchart. 
+9. Limitation is it can become too tall and tired. 
+10. It is affected by weather of data. 
+11. Decision tree mostly works fast because trees grow fast. 
+12. It uses mathematics but not very serious mathematics. 
+13. Decision tree is good because it looks like flowchart. 
+14. Limitation is it can become too tall and tired. 
+15. It is affected by weather of data. 

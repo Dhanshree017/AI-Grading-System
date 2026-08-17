@@ -1,0 +1,227 @@
+ID-T015 
+Name: Sushma Trivedi Roll no: 19 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 5 (each 8 marks) 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and discuss 
+the importance of the parameter k. 
+Overview 
+K-Nearest Neighbors (KNN) is a non-parametric, instance-based learning algorithm used 
+for classification and regression. It predicts for a query point by looking at the 
+labels/values of the k closest training points. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model performance 
+and discuss techniques used to handle it. 
+Definition and significance 
+Data imbalance occurs when the class distribution is skewed: one or more classes 
+(majority) have many more samples than the minority classes. This is common in fraud 
+detection, rare disease diagnosis, fault detection, etc. 
+Impact on model performance 
+ Biased predictions: models tend to predict the majority class to minimize overall 
+error, yielding high accuracy but poor performance on minority class. 
+ Misleading metrics: accuracy becomes uninformative; minority-class performance 
+(recall) can be extremely low. 
+ Learning difficulty: minority class patterns are underrepresented, making it hard for 
+models to learn discriminative features. 
+Techniques to handle imbalance 
+1. Data-level techniques (resampling): 
+o Oversampling minority class: random oversampling, SMOTE (synthetic minority 
+oversampling technique), ADASYN — helps provide more minority examples. 
+o Undersampling majority class: random undersampling, NearMiss — reduces 
+majority class size but risks information loss. 
+o Hybrid: combine oversampling and undersampling to balance classes while 
+preserving information. 
+2. Algorithm-level techniques: 
+o Class weighting / cost-sensitive learning: assign higher misclassification cost for 
+minority class (many libraries support class_weight parameter). 
+o Threshold adjustment: move decision threshold to favor minority class, trading 
+precision vs recall. 
+3. Ensemble methods specialized for imbalance: 
+o Balanced Random Forest, EasyEnsemble, or RUSBoost combine resampling with 
+ensemble learning. 
+4. Evaluation strategies: 
+o Use precision, recall, F1, PR-AUC, and confusion matrices; prefer PR-AUC 
+when positive class is rare. 
+5. Feature engineering and data augmentation: 
+o Create informative features or augment minority-class examples (domain
+specific augmentation for images, text paraphrasing for NLP). 
+Best practice 
+ Begin by quantifying imbalance and selecting metrics aligned with the task’s cost 
+structure. 
+ Experiment with resampling + class-weighting and validate improvements using 
+appropriate metrics and cross-validation. 
+Conclusion 
+Addressing imbalance is crucial to build fair and useful systems; the right combination of 
+preprocessing, algorithmic adjustments, and evaluation leads to robust performance on 
+minority classes. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used to 
+solve new tasks with limited data and mention common applications of transfer learning. 
+Concept 
+Transfer Learning leverages knowledge learned from one task/domain (source) to improve 
+learning on another related task/domain (target). It is especially beneficial when target 
+data are scarce but related source data/model exist. 
+Mechanisms of transfer 
+ Feature reuse: early layers of deep models learn general features (e.g., edge 
+detectors in CNNs, subword/semantic patterns in NLP models). These features are 
+transferable across related tasks. 
+ Fine-tuning: take a pre-trained model, freeze some layers (usually early ones), and 
+retrain later layers on the new dataset. Optionally, unfreeze more layers for gradual 
+fine-tuning. 
+ Head replacement: remove the original output layer and attach a new head specific 
+to the target task; train the head (and optionally some earlier layers). 
+ Domain adaptation: techniques to adjust model when source and target distributions 
+differ (e.g., adversarial domain adaptation). 
+When transfer learning helps 
+ Limited labeled data in target domain. 
+ Relatedness: source task features must be relevant to target task (e.g., ImageNet 
+pretraining -> medical imaging often transfers well for low-level image features). 
+ Large pre-trained models (BERT, GPT, ResNet) provide strong starting points. 
+Applications 
+ Computer vision: using ImageNet-pretrained CNNs for image classification, object 
+detection, or medical image analysis. 
+ Natural language processing: pre-trained language models (BERT, RoBERTa, GPT) 
+fine-tuned for sentiment analysis, QA, NER, etc. 
+ Speech/audio: pre-trained audio models adapted for speaker recognition or audio 
+event detection. 
+ Reinforcement learning: transferring policies or representations across similar 
+environments. 
+Benefits and pitfalls 
+ Benefits: faster convergence, better performance with limited data, lower training 
+cost. 
+ Pitfalls: negative transfer (when source is too different), overfitting if fine-tuning 
+without regularization, and licensing/privacy constraints for some pre-trained models. 
+Conclusion 
+Transfer Learning reuses prior knowledge to accelerate learning and improve accuracy on 
+new tasks — a practical and powerful strategy in modern ML workflows. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important and 
+describe common hyperparameters for algorithms like Decision Trees, Neural Networks, and 
+Gradient Boosting models. 
+Definition 
+Hyperparameters are external configuration settings set prior to training that control 
+model structure and learning dynamics (e.g., learning rate, tree depth). They are distinct 
+from model parameters (weights) learned during training. 
+Why they matter 
+ They govern model capacity (overfit/underfit balance), optimization dynamics, and 
+computational cost. 
+ Appropriate hyperparameter tuning improves performance and generalization; poor 
+choices can render even good algorithms ineffective. 
+Examples by algorithm 
+ Decision Trees / Random Forests: max_depth, min_samples_split, min_samples_leaf, 
+criterion (gini/entropy), n_estimators (in forests). 
+ Neural Networks: learning_rate, batch_size, num_epochs, optimizer (SGD/Adam), 
+activation functions, network architecture (num_layers, units_per_layer), 
+dropout_rate. 
+ Gradient Boosting (XGBoost/LightGBM): n_estimators, learning_rate, max_depth, 
+subsample, colsample_bytree, reg_alpha/reg_lambda. 
+Tuning strategies 
+ Grid search: exhaustive search over specified parameter grid. Computationally 
+expensive. 
+ Random search: samples hyperparameter space randomly — often more efficient. 
+ Bayesian optimization: models the objective function and selects promising 
+hyperparameters (e.g., HyperOpt, Optuna). 
+ Sequential model-based optimization (SMBO): iteratively proposes hyperparameters 
+based on past trials. 
+ Early stopping / cross-validation: used to prevent overfitting and select 
+hyperparameters robustly. 
+Conclusion 
+Hyperparameters are levers to steer model learning and complexity; systematic tuning 
+using validation data and efficient search methods is essential for high-quality models. 
+SECTION B — Attempt any 6 (each 5 marks) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Overview 
+Data preprocessing readies raw data for machine learning; clean, consistent and well
+structured inputs markedly improve downstream model performance. 
+Main steps 
+1. Data collection & inspection: gather data, check types, distributions, missingness, 
+outliers. 
+2. Missing value handling: impute (mean/median/mode, model-based, KNN/iterative 
+imputation) or remove rows/columns depending on context. 
+3. Outlier detection and handling: visualize (boxplots, z-score, IQR), treat via capping, 
+transformation or investigation if they are valid. 
+4. Data cleaning / consistency: correct erroneous labels, unify categorical encodings, fix 
+types. 
+5. Encoding categorical variables: one-hot encoding, ordinal encoding, target encoding 
+(careful of leakage). 
+6. Feature scaling: normalization or standardization as required by model. 
+7. Feature engineering & selection: create informative features, remove redundant ones 
+using correlation analysis, mutual information, recursive feature elimination. 
+8. Data splitting: divide into training/validation/test sets (stratify if class imbalance). 
+9. Data augmentation (if needed): for images/text to expand dataset. 
+10. Pipelines: build reproducible pipelines (e.g., scikit-learn Pipeline) to ensure same 
+transforms applied in production. 
+Conclusion 
+Preprocessing is iterative and domain-dependent; automation and reproducibility reduce 
+mistakes and ensure reliable model evaluation and deployment. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting methods. 
+Ensemble learning definition 
+Ensemble learning combines multiple base models to produce a single improved model — 
+leveraging diversity among learners to reduce error. 
+Boosting 
+ Train learners sequentially; each new learner focuses on mistakes of prior ensemble 
+(reweights samples or fits residuals). 
+ Combine learners in weighted sum to form final prediction (additive model). 
+ Effect: reduces bias and builds strong learners from weak ones (e.g., AdaBoost, 
+Gradient Boosting, XGBoost). 
+Conclusion 
+Ensemble methods often outperform single models and are primary choice for tabular data 
+competitions; they require care with overfitting and interpretability. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Purpose 
+Optimization algorithms adjust model parameters to minimize the loss function on training 
+data; they are the mechanism by which learning happens. 
+Key concepts 
+ Gradient-based updates: compute gradients of loss w.r.t parameters and step in the 
+negative gradient direction (steepest descent). 
+ Learning rate: step size controlling update magnitude; critical for convergence and 
+stability. 
+ Variants to improve convergence and stability: 
+o Stochastic Gradient Descent (SGD): updates using mini-batches — more 
+efficient and introduces helpful noise. 
+o Momentum: accelerates convergence by accumulating a velocity term. 
+o Adaptive methods (AdaGrad, RMSProp, Adam): scale learning rates per
+parameter based on historical gradients — often improve convergence, 
+especially for sparse or noisy gradients. 
+Role in practice 
+ Determine convergence speed, stability, ability to escape shallow local minima/saddle 
+points. 
+ Influence generalization indirectly (e.g., SGD noise can improve generalization). 
+Conclusion 
+Optimizers are central to model training; choice and hyperparameters (learning rate, 
+momentum, batch size) significantly impact training dynamics and final model quality. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Definition and motivation 
+Dimensionality reduction reduces the number of input variables (features) while preserving 
+as much relevant information as possible. It aids visualization, reduces computational cost, 
+mitigates the curse of dimensionality, and can help reduce overfitting. 
+Method — Principal Component Analysis (PCA) 
+ Idea: find orthogonal directions (principal components) that capture maximal 
+variance in the data. 
+ Procedure: center data, compute covariance matrix, compute 
+eigenvectors/eigenvalues, sort components by explained variance, project data onto 
+top-k components. 
+ Benefits: linear, unsupervised, reduces redundancy by transforming to an uncorrelated 
+basis. 
+ Limitations: linear method — cannot capture strong nonlinear manifolds (use t-SNE, 
+UMAP, or autoencoders for nonlinear structure). 
+Conclusion 
+Dimensionality reduction simplifies models and improves interpretability; choose method 
+(linear vs nonlinear) based on data structure and application. 
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+How it works 
+A decision tree partitions the input space by asking a sequence of questions (splits) on 
+features. At each internal node it selects the best split (feature and threshold/category) 
+by optimizing a criterion (e.g., Information Gain, Gini impurity for classification; variance 
+reduction for regression). Splitting continues recursively until stopping conditions (max 
+depth, minimum samples per leaf, or pure nodes) are met. Leaves represent predicted 
+outputs (class label or regression value). 
+Advantages 
+ Interpretability: model logic is transparent and easily visualized. 
+ Little preprocessing: handles mixed feature types and does not require scaling. 
+ Nonlinear: captures nonlinear relationships and interactions between features. 
+Disadvantages 
+ Overfitting: single trees can overfit training data if not pruned. 
+ Instability: small changes in data can result in different tree structure. 
+ Bias-variance tradeoff: needs parameter tuning (depth, leaf size) and regularization; 
+ensembles (Random Forest, boosting) mitigate many issues. 
+Conclusion 
+Decision trees are intuitive and useful for baseline modeling and interpretability; for robust 
+predictive performance on complex data, ensembles of trees are typically preferred. 

@@ -1,0 +1,86 @@
+ID-T030 
+Name: Kareena khan Roll no: 232502 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 3 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+Definition 
+The hypothesis space in machine learning is the complete set of all possible hypotheses or 
+models that a learning algorithm can consider while searching for the best solution. 
+Explanation 
+The hypothesis space defines the limits within which learning takes place. A small 
+hypothesis space restricts the model, making learning faster but possibly less accurate. A 
+large hypothesis space allows flexibility but increases the risk of overfitting. The choice of 
+hypothesis space depends on the problem complexity and available data. Thus, it directly 
+affects model performance and generalization. 
+A-2. Describe the importance of training–testing separation in ML experiments 
+Definition 
+Training–testing separation is the practice of dividing data into independent datasets for 
+learning and evaluation. 
+Explanation 
+The training set is used to teach the model, while the testing set evaluates performance on 
+unseen data. This separation prevents biased evaluation caused by memorization. It helps 
+identify overfitting and underfitting issues. Proper separation ensures that reported accuracy 
+reflects real-world performance. 
+A-3. Explain how assumptions affect learning algorithms 
+Definition 
+Assumptions are predefined beliefs that learning algorithms make about data structure, 
+relationships, or distributions. 
+Explanation 
+Assumptions simplify the learning process by limiting possible solutions. Correct 
+assumptions improve learning efficiency and accuracy. However, incorrect assumptions can 
+cause biased or inaccurate models. Each algorithm embeds different assumptions, making 
+them suitable for specific problem types. 
+A-4. What is the role of validation in model development? 
+Definition 
+Validation is the process of evaluating models during development using a separate dataset 
+to guide decision-making. 
+Explanation 
+Validation helps in selecting the best model and tuning hyperparameters. It prevents 
+overfitting to training data. Validation ensures balanced performance before final testing. It 
+plays a critical role in improving model reliability. 
+A-5. Describe the concept of inductive learning in machine learning 
+Definition 
+Inductive learning is a learning approach where general rules are inferred from specific 
+training examples. 
+Explanation 
+The model observes patterns in data and generalizes them for unseen cases. This approach 
+forms the foundation of most ML techniques. Inductive learning enables prediction and 
+decision-making. Its effectiveness depends on data quality and representativeness. 
+A-6. Explain the impact of noisy data on machine learning models 
+Definition 
+Noisy data refers to incorrect, inconsistent, or irrelevant information present in datasets. 
+Explanation 
+Noise can confuse learning algorithms and reduce accuracy. It increases the risk of 
+overfitting to incorrect patterns. Models trained on noisy data may perform poorly on new 
+data. Noise handling techniques improve robustness and reliability. 
+A-8. Explain the concept of ensemble diversity and why it matters 
+Definition 
+Ensemble diversity refers to the degree of difference among individual models within an 
+ensemble. 
+Explanation 
+Diverse models make different errors, improving collective accuracy. Lack of diversity 
+reduces ensemble effectiveness. Diversity increases robustness against noise. It is crucial for 
+achieving better generalization. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement 
+Definition 
+The ML lifecycle describes the complete process of developing, deploying, maintaining, and 
+retiring a model. 
+Explanation 
+It starts with problem definition and data collection. Next steps include preprocessing, 
+training, validation, and deployment. After deployment, monitoring and updates are 
+performed. Models are retired when performance declines or requirements change. 
+A-10. Explain the importance of documentation in ML projects 
+Definition 
+Documentation is the systematic recording of model design, data sources, and decisions. 
+Explanation 
+It improves transparency and team collaboration. Documentation supports maintenance and 
+debugging. It ensures reproducibility and compliance. Proper documentation increases 
+project reliability. 
+A-11. What is meant by reproducibility in machine learning experiments? 
+Definition 
+Reproducibility refers to the ability to obtain the same results when experiments are 
+repeated. 
+Explanation 
+It requires consistent data, code, and parameters. Reproducibility builds trust in results. It 
+allows verification and comparison. Poor reproducibility reduces scientific value. 

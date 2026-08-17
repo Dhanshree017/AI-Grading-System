@@ -1,0 +1,108 @@
+ID-T007 
+Name : Harshit pawar Roll no: 14 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+AI is like computer can think or act like human brain, human brain do things like 
+think, plan, decide, and AI try do same but machine. AI is computer smart. Machine 
+can do tasks by itself, machine can learn from data, machine can do human work, 
+AI is everywhere, AI is in computer, phone, robot, car, game, everywhere. AI is like 
+smart brain in machine, machine learn stuff, machine think, machine decide, 
+machine act, machine work like human. AI is smart machine, AI is computer 
+intelligent, AI is like human brain but not really. 
+Machine learning is part of AI. Machine learning make machine learn from data. 
+Machine see past things and try predict future, machine look at numbers, machine 
+look at text, machine learn patterns. Machine learning teach machine with data. 
+Machine learning can learn without human program all time, machine improve. 
+Machine learn from data, machine learn from data, machine learn from data, 
+machine learn from data. Machine sometimes wrong, machine sometimes right, 
+machine sometimes learn good, machine sometimes fail. 
+Applications of ML: 
+1. Spam detection, spam filter, spam email block. Machine see old emails, learn, 
+predict spam. Spam detection use ML. Spam detection use ML. Spam detection 
+use ML. 
+2. Healthcare predict disease, like diabetes, heart, cancer, patient data used, ML 
+predict disease. Healthcare ML predict disease. Healthcare ML predict disease. 
+3. Netflix, YouTube recommend video, machine see past watch history, machine 
+suggest video. Recommendation system. Recommendation system. 
+Recommendation system. 
+4. Finance, bank use ML detect fraud, predict loan risk, ML detect fraud, ML 
+detect fraud. 
+5. Self-driving cars, car see road, car see signal, car see people, ML help drive 
+car, ML help drive car, ML help drive car. 
+6. Voice recognition, Google Assistant, Siri understand voice, answer, ML used. 
+Voice recognition ML, Voice recognition ML. 
+7. Chatbot, answer query, ML used, ML used, ML used. 
+Example: Student marks prediction. Machine learn old marks, predict new marks. 
+Predict student marks, student marks prediction, predict student marks, student 
+marks prediction. 
+A-c) What are the steps in building ML model 
+ML model building steps, steps, steps. First problem definition, problem definition 
+important, know problem. Then collect data, collect from file, sensor, API, website, 
+data collection. Data clean, clean missing, clean null, clean wrong, clean duplicate. 
+Convert text to number, scale, normalize. Feature selection, pick important column, 
+ignore useless column, feature selection important, feature selection important. 
+Choose algorithm like SVM, decision tree, regression, algorithm pick, algorithm pick. 
+Train model, model learn, model learn from data, model learn. Test model, test 
+model, check accuracy. Tuning, retrain, tuning, retrain. Deploy, use model, deploy, 
+deploy model. 
+Example: Predict house price. Collect data, clean, feature select, train regression, 
+test, deploy. House price predict, house price predict, house price predict. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing make data ready. Data preprocessing clean data, data 
+preprocessing convert data, data preprocessing important, data preprocessing steps. 
+Steps: 
+1. Collect data, collect from file, API, sensor, website, collect data. 
+2. Clean data, remove missing, remove null, remove duplicate, clean data, clean 
+data. 
+3. Transform data, convert text to number, encoding, one-hot, label, transform. 
+4. Scaling, normalize, scale data, scaling, normalize. 
+5. Feature selection, remove useless, keep important, feature selection important, 
+feature selection important. 
+6. Split data, train test, validation, split data. 
+7. Handle outlier, remove weird, remove extreme, handle outlier. 
+Example: Student marks dataset, missing marks filled, gender to number, normalize 
+score, split train test. Student dataset preprocessing, preprocessing student dataset, 
+preprocessing steps. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naive Bayes, probability, probability, probability. Bayes theorem, calculate chance, 
+class chance, pick max chance, features independent, naive. Formula P(A|B) = 
+(P(B|A)*P(A))/P(B). Work for text, spam, small data, fast, simple. Work fast, work 
+simple, work text, work spam. Advantage: fast, easy, multi-class, works. 
+Disadvantage: features not independent, poor for correlated, poor for continuous, 
+limitation. 
+Example: Email spam filter, words like win, free, money predict spam, email spam 
+filter example, spam detection example. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random forest many tree combine, many tree, many tree, many tree. Reduce 
+overfit, reduce overfit, reduce overfit. Each tree train random data, random feature. 
+Combine output by majority vote or average. Works for big data, missing values 
+okay. Feature importance, feature importance. Flexible, classification, regression. 
+Accurate, stable, accurate, stable. Slow, use memory, slow, memory. 
+Example: Predict loan default, features income, credit, employment. Random forest 
+combine many tree vote final, random forest example, random forest example. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+SVM, support vector machine, separate class, find line, hyperplane. Margin, support 
+vector near boundary, support vector near margin. Linear SVM, straight line 
+separate, linear SVM. Non-linear SVM, kernel, RBF, polynomial, non-linear separate. 
+Multi-class SVM, one-vs-one, one-vs-rest, more than two class. Good but slow for 
+big data, needs tuning. SVM, SVM, SVM. 
+Example: Handwriting recognition, digits 0-9, SVM, example, SVM example. 
+B-c) Explain different types of clustering algorithm 
+Clustering, group similar, unsupervised, group data, clustering, clustering. Types: 
+1. K-means, K group, minimize distance, K-means. 
+2. Hierarchical, tree, merge split, dendrogram, hierarchical. 
+3. DBSCAN, density, ignore noise, DBSCAN. 
+4. Agglomerative, start one point, merge, agglomerative. 
+5. Mean shift, dense region, move center, mean shift. 
+Example: K-means, group customers, buying pattern, K-means example, K-means 
+example. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision tree, supervised, classify, predict, split data, leaf node, output, decision tree. 
+Steps: root node, best feature, select root, split, split, repeat split, make leaf, prune 
+tree, prune, test model, deploy, deploy model, decision tree, decision tree, decision 
+tree. 
+Example: Predict student pass/fail, study hours, attendance, assignments, decision 
+tree example, example student prediction. 

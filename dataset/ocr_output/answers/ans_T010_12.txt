@@ -1,0 +1,77 @@
+ID-T010 
+Name : Aman tripathi Roll no: 12 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI. What are Domains of Machine Learning. 
+Definition: 
+Artificial Intelligency is the topic where computer are made to do work like human brain. 
+It is when machine start to do thinking and make decision without person sitting. AI is 
+like when computer use sensor, data and mind of its own. It is main reason behind robots 
+and internet thing. 
+Explanation & Points: 
+1. AI have domain like Deep robot learning which help robot to understand movement. 
+2. Another domain is Internet of Thing because machine talk to each other. 
+3. Gaming is also domain because AI is used to play car race and chess and many times 
+computer win human. 
+4. Learning from internet is also domain because AI search Google to find data. 
+5. Medical domain is where AI tell doctor who is sick and who is healthy using machine 
+learning of xray. 
+6. Space domain where rocket use AI to land on moon or mars automatic. 
+7. Speech and face recognition also one type domain but sometimes not work correct. 
+8. Self driving car use AI to see road and signal light. 
+9. Education domain AI make automatic grading of student even when teacher not 
+check. 
+A-2. Explain Components of AI. Give One example of AI. 
+Definition: 
+Component of AI are part which make AI like a body part. If one part not there AI not 
+function. It all join like engine part of machine. AI component mostly used for control and 
+command to computer. 
+Explanation & Points: 
+1. Thinking part – it is brain of AI which make logic and use rule base. 
+2. Memory part – it remember old data and keep inside RAM or memory card. 
+3. Input output part – AI take input from people and give answer back on screen. 
+4. Feeling part – some AI can feel emotion like human though fake one. 
+5. Language talking – it convert human word into computer binary. 
+6. Calculation – this component do fast math and save time of human. 
+7. Command – AI can understand command like “open song” or “what is weather”. 
+8. Correction – AI also fix own mistake if trained properly. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent. 
+Definition: 
+Intelligent agent is some software robot which is smart because it have brain in wire. It 
+use some sensor like camera, sound, keyboard, etc. It can even do task without human like 
+switch on fan or alarm clock. 
+Explanation & Points: 
+1. Simple reflex – it act suddenly like fan turn off when hot. 
+2. Thinking agent – it think little before action but not always right. 
+A-5. Explain Types of Search in AI. Explain Bidirectional Search in detail. 
+Definition: 
+Search in AI is when computer is looking for something. It may search file, data, goal, or 
+answer. Like when we type in Google, it also search. So AI search means going from 
+starting point to goal point but not always straight. 
+Explanation & Points: 
+1. Blind search – search without eye, it go random direction. 
+2. Depth search – go down deep inside data but sometime lost. 
+3. Breadth search – go wide but take long time. 
+4. Mountain search – it go up then down like mountain algorithm (wrong name). 
+5. Hill climbing – find top value like person climbing mountain. 
+6. Bidirectional search – one search from start another from end and meet in middle 
+like two friends meeting in park. 
+7. Random search – pick random direction sometime reach goal by luck. 
+8. Heuristic search – use some idea or guess to go near goal. 
+9. Example – when we find lost file in computer both from desktop and from folder 
+that is bidirectional search. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks. 
+Belief network is like network which believe in something. It show how one event depend 
+on other but it not always true. It use probability but sometimes teacher say it just 
+logic. Example when it rains we believe people carry umbrella but sometimes sun also 
+people carry umbrella. 
+B-2. Write a short note on Artificial Neural Network. 
+Artificial neural net is like brain wire of computer. It made of neuron but not real 
+neuron, just wire connection. It take input, mix it and give output, sometimes correct 
+sometimes wrong. Used in making AI talk or see images. 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is like formula which tell how many time something can happen. It is called 
+naive because it is not very smart, it believe all thing same importance. Many people use 
+it for email spam because it count words and predict. 

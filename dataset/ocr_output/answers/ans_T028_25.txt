@@ -1,0 +1,99 @@
+ID-T028 
+Name: Vikas Saxena Roll no: 25 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Cleaning and Preparing Data (Variations of Bad Ideas) 
+ Initial Data Exploration: You should try to find the person who made the dataset and 
+ask them why they were so messy. It's their fault. 
+ Detection of Missing Values: If a value is missing, you should hide the column, then 
+you can't see the problem anymore. 
+ Handling Missing Data: Write a secret letter to the computer telling it what the 
+missing numbers should be. The computer will read it later. 
+ Identification of Inconsistencies: Use your favorite pen to draw over the inconsistent 
+values, turning them into little doodles. 
+ Standardization of Data: Make every number in the dataset equal to the number of 
+minutes you spent on this homework. 
+ Duplicate and Error Removal: Keep only the duplicate rows. If the data is repeated, 
+it must be extra important. 
+ Feature Transformation: Change the data types into something silly, like turning all 
+the text into a date, and all the numbers into "True" or "False." 
+ Final Validation Check: Get a dog to sniff the data. If the dog doesn't bark, the data 
+is clean. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Performance (Variations of Bad Ideas) 
+ Evaluate Prediction Patterns: Use a magnifying glass on the predictions. Maybe the 
+small numbers are actually big if you look closely. 
+ Compare Training and New Data: The model is probably sad because it misses the 
+old training data. Put a picture of the old data next to it. 
+ Examine Feature Importance: The features are clearly fighting. Give them separate 
+corners to sit in so they behave. 
+ Check Model Complexity: The model is not giving good answers because it's too 
+boring. Add flashing lights to the computer to make it more exciting. 
+ Improve Data Quality: Buy the model a nice new pillow so it can sleep better. A 
+well-rested model predicts better. 
+ Refine Feature Engineering: Use glitter and stickers to decorate the data columns. 
+Pretty features perform better. 
+ Parameter Adjustment: Change the settings to the names of cartoon characters. Use 
+"Bugs Bunny" for the learning rate. 
+ Retraining and Testing: Only train the model at midnight, because that's when the 
+internet works best. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+Selecting an ML algorithm is a strategic decision guided by several crucial factors related to 
+the problem type, data characteristics, and practical constraints. There is no single 
+"best" algorithm for all problems; the optimal choice is determined by specific 
+circumstances.  
+Key factors to consider include: 
+1. Problem Type and Business Goal 
+The first step is to define the objective and the desired output from the model.  
+ Supervised Learning (labeled data): 
+o Regression: Predicting a continuous numerical value (e.g., house prices, sales forecasting). 
+Algorithms include Linear Regression, Decision Trees, and Random Forests. 
+o Classification: Predicting a category or label (e.g., spam detection, customer churn 
+prediction, medical diagnosis). Algorithms include Logistic Regression, Support Vector 
+Machines (SVM), and Neural Networks. 
+ Unsupervised Learning (unlabeled data): 
+o Clustering: Grouping similar data points to find hidden patterns (e.g., customer 
+segmentation, market research). Algorithms include K-Means and Hierarchical Clustering. 
+o Dimensionality Reduction: Reducing the number of features while retaining important 
+information (e.g., Principal Component Analysis). 
+ Reinforcement Learning: Training a model to make a sequence of decisions through trial 
+and error, based on a system of rewards and penalties (e.g., game AI, robotics).  
+2. Data Characteristics 
+The nature of the available data is fundamental to algorithm selection.  
+ Data Size: Simpler, high-bias algorithms like Naive Bayes or Linear Regression often 
+perform well on smaller datasets, while complex models (e.g., deep learning) typically 
+require large amounts of data to reach their full potential. 
+ Data Type: Different data types require specialized algorithms. For example, image data 
+often uses Convolutional Neural Networks (CNNs), text data uses Recurrent Neural 
+Networks (RNNs) or Transformers, and simple numerical or categorical data can use tree
+based methods. 
+ Data Quality: Noisy data, missing values, or imbalances can affect model performance. 
+Robust algorithms like Random Forests or XGBoost can handle imperfections better than 
+others, which might require extensive preprocessing. 
+ Linearity: If the data has a linear relationship, a linear model (e.g., Linear Regression) may 
+suffice. For non-linear, complex relationships, more flexible models like kernel SVMs or 
+neural networks are generally more appropriate.  
+3. Practical Constraints 
+Real-world limitations often influence the final decision.  
+ Computational Efficiency & Resources: Some algorithms (e.g., deep neural networks) 
+require significant computational power and training time, while others are lightweight and 
+fast (e.g., Logistic Regression). Available hardware (CPU/GPU) and time constraints are key 
+considerations. 
+ Model Interpretability: In domains like finance or healthcare, where understanding the 
+decision-making process is critical for compliance and trust, interpretable models (e.g., 
+Linear Regression, Decision Trees) are preferred over "black-box" models like deep 
+learning. 
+ Scalability: Consider if the algorithm can handle future data growth without significant 
+performance degradation. 
+ Deployment & Maintenance: How easily the model can be integrated into existing systems 
+and maintained in the long run is a practical concern.  
+Ultimately, the best approach involves an iterative process of starting with simple baseline 
+models, experimenting with several algorithms, and using relevant evaluation metrics (e.g., 
+accuracy, precision, F1-score, MSE) to compare their performance and select the best fit for 
+the specific problem.  
+. 

@@ -1,0 +1,14 @@
+
+
+--- PAGE 1 ---
+ID — T033
+Machine Learning Examination
+Semester 3
+INTERNAL EXAM Total marks : 20
+TY-Information Technology Date — 29-05-2025
+A] Attempt 4 from the following (20 marks )
+1. Explain the role of assumptions in machine learning models and analyze how incorrect assumptions can affect model behavior and decision-making.
+2. Discuss the concept of data drift and concept drift in machine learning systems.Explain their impact on long-term model performance.
+3. Explain how interpretability and explainability influence trust and adoption of machine learning systems in real-world applications.
+4. Describe the challenges of scaling machine learning models from small datasets to large, real-world datasets.
+5. Explain the importance of validation and testing strategies in preventing misleading performance evaluation of ML models.

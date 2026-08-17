@@ -1,0 +1,222 @@
+ID-T020 
+Name: Anushka mittal Roll no: 29 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 5 (8 marks each) 
+A-a) Explain how data drift and concept drift affect the long-term performance of machine learning 
+models. Discuss the different types of drift and practical strategies to detect and handle them. 
+Short idea: 
+Models assume future look like past. When that stop, model fail. Two main ways: data drift (inputs change) 
+and concept drift (relationship input→output change). 
+Types (simple): 
+ Covariate drift: features change distribution (example: users become older). 
+ Label prior drift: class frequencies change (example: more fraud events in holiday). 
+ Concept drift: mapping P(Y|X) change — rules of world changed (example: new fraud tactic). 
+ Sudden / incremental / recurring: sudden = quick flip, incremental = slow slide, recurring = 
+seasonal come-back. 
+How they hurt long-term performance: 
+ Model loses calibration, predictions biased, more errors, business loss. 
+ Validation scores become stale; model confident but wrong. 
+Detect strategies: 
+ Stat tests for X: KS-test, PSI, monitoring feature histograms. 
+ Performance monitoring: watch rolling metrics (precision, recall) on recent labeled samples. 
+ Unsupervised detection: anomaly detectors on feature vectors, change point detection. 
+ Shadow models / champion-challenger: compare new model outputs to baseline. 
+Handle strategies (practical): 
+ Retrain schedule: periodic retrain with fresh data. 
+ Trigger retrain: retrain when drift metric or performance fall crosses threshold. 
+ Online / incremental learning: adapt continuously with streaming updates. 
+ Ensembling & weighting: keep old model + new model and blend to smooth changes. 
+ Feature hardening: remove fragile features, use features less likely to shift. 
+ Data pipelines & monitoring: log inputs, create labeling loop for quick ground truth. 
+Practical note: keep human-in-loop for root cause before blind retrain; retrain can amplify bad labels if not 
+careful. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, images, or 
+categorical data can be transformed into meaningful representations for models. 
+Short idea: 
+Embeddings convert complex symbolic or high-dim inputs into dense numeric vectors that models easily 
+use. Embeddings capture similarity and semantics. 
+Text embeddings: 
+ Word vectors: Word2Vec/GloVe map words to vectors so similar words close. 
+ Contextual vectors: BERT/GPT produce vectors that depend on sentence context. 
+ Sentence/document embeddings: average or specialized encoders (SBERT) make whole-sentence 
+vectors. 
+Image embeddings: 
+ Feed image through pretrained CNN or ViT, take activation layer as feature vector. 
+ These vectors capture shape, texture, semantics. Used for similarity, retrieval, downstream tasks. 
+Categorical embeddings: 
+ Instead of large one-hot, learn small dense vector per category (trainable embedding layer). 
+ Good for high-cardinality IDs (user id, product id), let model learn relations between categories. 
+Why embeddings help: 
+ Reduce sparsity, reduce dimension, capture latent similarity. 
+ Allow transfer learning: reuse embedding from big model to small task. 
+ Support multi-modal fusion: combine image+text embeddings in single model. 
+How to build/use: 
+ Pretrain on big corpus then fine-tune. 
+ Freeze embedding if small dataset, or fine-tune when domain-shift exists. 
+ Normalize embeddings, use cosine similarity for retrieval tasks. 
+Practical caution: embeddings can capture bias from training data; monitor and sanitize. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. Explain advanced 
+techniques such as cost-sensitive learning, synthetic sample generation, and threshold adjustment. 
+Short idea: 
+Imbalance means minority important class under-represented. Naive training biased to majority; metrics 
+misleading. 
+Main challenges: 
+ Model predict majority always → high accuracy but useless. 
+ Minority recall low → real harms (fraud, disease). 
+ Optimization dominated by frequent class gradients. 
+ Risk of overfitting when oversampling naively. 
+Advanced techniques: 
+2. Synthetic sample generation 
+ SMOTE: create synthetic minority by interpolating between neighbors. 
+ ADASYN / Borderline-SMOTE: focus synthesis on harder regions near boundary. 
+ Generative models: use GANs or VAEs to produce realistic minority examples. 
+ Careful: synthetic must be realistic, else hurt generalization. 
+4. Ensemble & bagging strategies 
+ Balanced bagging: sample balanced mini-batches for each tree. 
+ One-class classifiers or anomaly detection for extreme imbalance. 
+5. Evaluation metrics & calibration 
+ Use PR-AUC, F1, recall@k instead of accuracy. 
+ Calibrate probabilities (Platt scaling, isotonic) before threshold tuning. 
+Practical tips: combine methods: weighting + realistic oversampling + threshold tuning, and validate on 
+stratified holdout to avoid optimistic bias. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are tracked, and why is 
+continuous monitoring essential for deployed models? 
+Short idea: 
+Model monitoring = ongoing observation of model health and input environment to detect failures, drift, and 
+performance issues. 
+Parameters to track: 
+Data quality & input monitoring 
+ Missing/NaN counts, invalid formats. 
+ Feature distribution stats (mean, std, min/max). 
+ Schema changes (new categories). 
+Drift & distribution 
+ Population Stability Index (PSI), KS distance, embedding similarity. 
+ Covariate and target distribution changes. 
+Prediction & performance 
+ Model metrics on recent labeled data: accuracy, recall, precision, ROC-AUC, RMSE. 
+ Prediction distribution: score histograms, predicted class balance. 
+Operational metrics 
+ Latency, qps (queries per second), error rates, resource usage. 
+ Queue length, timeouts, rate-limiting events. 
+Business KPIs & fairness 
+ Downstream business metrics (conversion, churn). 
+ Group-level metrics for fairness: per-group error rates. 
+Why continuous monitoring essential: 
+ Real world changes cause silent failures (data drift, bad input) not visible until big harm. 
+ Early detection prevents customer impact and legal/regulatory issues. 
+ Helps decide retrain frequency, rollback or trigger human review. 
+ Enables root-cause debugging: linking metric drop with input changes. 
+Practical set-up: alerting thresholds, dashboards, automated periodic sampling for labeling, and runbook 
+for actions. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and how it impacts 
+model performance. 
+Definition & effect: 
+Feature leakage occurs when model training inadvertently uses information that would not be available at 
+prediction time, especially features correlated with target because of future events or preprocessing that 
+peeked into labels. This produces inflated performance in training/validation, but fails in production. 
+Causes (common): 
+ Temporal leakage: using future data (e.g., including next-day sales when predicting today's 
+demand). 
+ Target leakage: features computed using target (e.g., “total_claim_amount” when predicting 
+whether a claim will be fraud). 
+ Improper preprocessing: applying normalization/scalers to full dataset before split. 
+ Cross-contamination: same entity records in train and test (e.g., same customer across splits). 
+ Feature engineering bug: using aggregate stats computed on whole dataset rather than only training 
+partition. 
+Impact on performance: 
+ Over-optimistic validation metrics; model looks great offline but fails online. 
+ Production breakdowns when leaked signals absent. 
+ Misdiagnosis: time wasted tuning model instead fixing leakage. 
+Detection & prevention: 
+ Temporal split & group split: use time-aware or group-aware splitting. 
+ Pipeline discipline: apply preprocessing inside train fold only (fit on train, transform on test). 
+ Feature provenance: track how each feature created; flag any feature using future info. 
+ Shadow test: create realistic production-like test where leaked features are removed; see drop. 
+ Domain expert review: get domain team to check if feature available at inference time. 
+ Automated checks: feature importance sudden spike may indicate leakage; high-correlating features 
+with target should be scrutinized. 
+Mitigation: remove leaking feature, rebuild pipeline, re-evaluate; if leak from label noise, fix labeling 
+process. 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to separate 
+validation, testing, and deployment evaluation? 
+Role of evaluation pipelines: 
+Evaluation pipeline is the standardized process that takes model outputs and computes metrics, runs 
+diagnostics, and produces reports. It ensures reproducibility, fair comparison, and automated gating for 
+deployment. 
+Components of a robust evaluation pipeline: 
+ Consistent preprocessing applied to all data splits. 
+ Metric computation with clear definitions. 
+ Cross-validation or holdout strategies automated. 
+ Error analysis tooling (confusion matrices, residual plots). 
+ Robustness checks (adversarial, out-of-distribution tests). 
+ Fairness/ethical checks per subgroup. 
+ Production-like tests (latency, resource usage). 
+Why separate validation, testing, and deployment evaluation: 
+Validation (model selection) 
+ Used during development to tune hyperparameters and choose architecture. 
+ If we use test set repeatedly for tuning, it leaks info and becomes biased. 
+Test (final estimate) 
+ Held-out set used once to estimate generalization after all tuning is complete. 
+ Provides unbiased performance estimate for reporting and comparison. 
+Deployment evaluation (monitoring) 
+ Continuous evaluation on live data and business KPIs after model is deployed. 
+ Measures real-world impact, drift, latency, and fairness in production contexts. 
+Importance of separation: 
+ Prevents data leakage and overfitting to test set. 
+ Ensures honest performance reporting and regulatory compliance. 
+ Deployment evaluation captures operational realities not present in offline test (input distribution 
+changes, user behavior, feedback loops). 
+Practical advice: automate pipeline, store hashes of datasets, log experiments, and have gating rules for 
+promotion to production. 
+B-c) Describe how transfer learning improves model development. Mention scenarios where transfer 
+learning is especially useful. 
+Essence of transfer learning: 
+Transfer learning reuses a model (or part of it) trained on one large dataset/task to help training on another 
+related task with limited data. It saves compute, improves performance and speeds convergence. 
+Why it improves development: 
+ Learned representations: early layers capture generic features (edges, syntax) transferrable across 
+tasks. 
+ Reduced data need: fine-tune with smaller labeled set. 
+ Faster training & compute saving: fewer epochs and smaller learning-rate needed. 
+ Better generalization: pretraining on diverse data regularizes model. 
+Common approaches: 
+ Feature extraction: freeze pretrained layers and train new head for target task. 
+ Fine-tuning: unfreeze some top layers and train jointly with lower learning rate. 
+ Adapter modules / LoRA: add small trainable adapters to large pre-trained models to adapt without 
+full fine-tune. 
+Scenarios especially useful: 
+ Small labeled datasets: medical imaging, rare languages. 
+ Domain with high labeling cost: satellite imagery, diagnostics. 
+ Rapid prototyping: use pretrained NLP/image models to iterate quickly. 
+ Resource constraints: leverage public pretrained weights rather than training from scratch. 
+Caveats: check domain mismatch; sometimes pretraining domain too different (e.g., photos vs medical 
+scans) so adaptation required (domain-adaptive pretraining). 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and Random Search? 
+Compare them briefly. 
+Purpose: 
+Hyperparameters control model behavior (regularization, tree depth, learning rate). Good hyperparameters 
+can significantly boost performance. Search strategies aim to find near-optimal hyperparameter settings 
+automatically. 
+Grid Search: 
+ Enumerates all combinations over a specified discrete grid. 
+ Guarantees coverage of chosen grid. 
+ Works if search space small and you expect important interactions across parameters. 
+ Very expensive for high-dimensional or continuous spaces. 
+Random Search: 
+ Samples random combinations from distributions for each hyperparameter. 
+ More efficient in high-dimensional spaces because often only a few hyperparameters matter strongly; 
+random search explores more unique settings in fixed budget. 
+ Empirically often finds good settings faster than grid. 
+Other advanced methods: 
+ Bayesian optimization: model-based search (e.g., Gaussian Process) to propose next point based on 
+past results. 
+ Hyperband / Successive halving: allocate resource adaptively, prune bad configs early. 
+ Population-based training: evolve hyperparams during training. 
+Comparison summary: 
+ Grid: exhaustive, simple, expensive. 
+ Random: simple, often efficient, better coverage in high-dim. 
+ Bayesian/Meta: best for constrained budgets, more complex to implement. 
+Practical tip: combine random search (coarse) then refine with Bayesian; use early stopping to save 
+compute. 

@@ -1,0 +1,248 @@
+ID-T003 
+Name : kareena surve  Roll no : 24 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 (Marks 8) 
+A-1. Define supervised, unsupervised, reinforcement? 
+Machine Learning is defined by three fundamental paradigms, distinguished by the 
+nature of the data available and the feedback mechanism used for iterative learning. 
+1. Supervised Learning: 
+o Definition: The algorithm learns a mapping function f:X→Y from a 
+labeleddataset, where every input X has a corresponding ground-truth 
+output Y. The training objective is lossminimization (e.g., Cross-Entropy or 
+MSE) between the predicted and true output. 
+o Goal: Prediction of known outcomes (Classification for discrete labels, 
+Regression for continuous values). 
+2. Unsupervised Learning: 
+o Definition: The algorithm operates on unlabeleddata and must 
+autonomously discoverintrinsicstructures, patterns, or associations within 
+the dataset. There is no external error signal; success is judged by internal 
+metrics like distance or density. 
+o Goal: Data exploration, structure discovery, and data compression (e.g., 
+Clustering, Dimensionality Reduction). 
+3. Reinforcement Learning (RL): 
+o Definition: An intelligent agent learns optimal behavior through 
+trial−and−error interaction with a dynamic environment. The agent's goal 
+is 
+to 
+learn 
+an 
+optimal policy that dictates actions to 
+maximizetheexpectedcumulativediscountedreward signal over time. 
+o Goal: Sequential decision-making under uncertainty, balancing the 
+exploration−exploitationtradeoff. 
+A-3. What is the difference between parametric and non-parametric models? 
+The distinction rests on the assumptions made about the data's underlying functional 
+form. 
+Parametric Models 
+ Assumption: They assume a fixed,finitefunctionalform for the relationship 
+between X and Y (e.g., a linear relationship). This translates to a 
+fixednumberofparameters (coefficients) regardless of the dataset size. 
+ Data Dependence: Once the parameters are learnedandfixed, the original 
+training data can be discarded, making them memory efficient. 
+ Characteristics: Tend to have highbias (if assumptions are wrong) and 
+lowvariance (due to their fixed structure). They are highlyinterpretable and 
+computationally fast at inference. 
+ Example: LinearRegression (which learns two parameters: slope and intercept). 
+Non-Parametric Models 
+ Assumption: They makenoassumptions about the functional form, allowing their 
+structure to be highlyflexible and adapt to complex, non-linear patterns. 
+ Data Dependence: The number of effective parameters is notfixed and often 
+growswiththetrainingdatasize. They typically requiretheentiretrainingdataset to 
+be stored for prediction. 
+ Characteristics: Tend to have lowbias (due to flexibility) and highvariance (prone 
+to overfitting noise). They are generally lessinterpretable and can be slower at 
+prediction. 
+ Example: K−NearestNeighbors(KNN), DecisionTrees. 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting 
+is 
+a 
+critical 
+modeling 
+error 
+where 
+the 
+model 
+memorizesthetrainingdatatoowell, including the noise and specific errors unique to that 
+dataset. 
+This 
+results 
+in 
+extremelyhighaccuracyonthetrainingset 
+but 
+significantlypoorgeneralization (low accuracy) on new, unseen test data. It is associated 
+with highvariance and lowbias. 
+To avoid this, mitigation techniques focus on reducingmodelcomplexity and increasing 
+generalization power: 
+ Regularization: Introduce a penaltyterm to the loss function based on the 
+magnitude of the model's weights. 
+o L2Regularization(Ridge): Shrinks weights toward zero. 
+o L1Regularization(Lasso): Can drive irrelevant feature weights exactly to 
+zero, performing implicit feature selection. 
+ Cross-Validation and Early Stopping: Use k−foldcross−validation to get a stable 
+error estimate. Implement earlystopping during training (e.g., in Neural 
+Networks) by halting the process when performance on a separate validationset 
+starts to degrade, even if training loss continues to fall. 
+ Data Augmentation: Increase the effective size and diversity of the training set 
+(especially in image/text tasks) to force the model to learn more robust features. 
+A-5. What is underfitting, and how can you prevent it? 
+Underfitting occurs when a model is toosimple to capture the fundamental, governing 
+patterns in the data. The model failstolearn the data's complexity and exhibits 
+poorperformance on boththetrainingsetandthetestset. It is associated with highbias and 
+lowvariance. 
+Underfitting is typically caused by using a model with insufficient capacity or applying 
+excessive constraints. To prevent it: 
+ Increase Model Complexity: Switch to a higher−capacityalgorithm (e.g., moving 
+from Linear Regression to a Support Vector Machine or a multi-layered Neural 
+Network). 
+ Add Relevant Features: Perform better featureengineering by incorporating non
+linear interactions or domain-specific variables that help the model separate the 
+data. 
+ Decrease Regularization: If a regularization penalty (L1/L2) is being used, 
+reducethestrength (λ) of the penalty term to allow the model's weights to 
+increase and capture more complexity. 
+ Remove Noise: If the data is heavily contaminated, cleaning or removingoutliers 
+can help a simple model fit the core, reliable patterns more effectively. 
+B) Attempt All (Marks 15) 
+B-1. Explain the bias-variance tradeoff. 
+The bias-variance tradeoff is a core theoretical framework that decomposes the 
+totalexpectedgeneralizationerror of a predictive model into three components:  
+Total Error=Bias2+Variance+Irreducible Error 
+The tradeoff requires balancing Bias (systematic error due to faulty assumptions) and 
+Variance (random error due to sensitivity to training data fluctuations). 
+1. Bias (Systematic Error): 
+o High Bias: Occurs when the model is toosimple (low capacity) for the 
+complexity of the data, leading to underfitting. The model cannot fit the 
+training data well. 
+o Mitigation: Increasing model complexity. 
+2. Variance (Random Error): 
+o High Variance: Occurs when the model is toocomplex (high capacity), 
+making it overly sensitive to noise, leading to overfitting. The model 
+performs well on training data but poorly on test data. 
+o Mitigation: Decreasing model complexity (e.g., regularization). 
+The tradeoff exists because increasing model complexity to reducebias (better fit to 
+data) will inherently increase the model's variance (higher sensitivity to noise). The goal 
+of model selection and hyperparameter tuning is to find the SweetSpot—the optimal 
+complexity level where the sum of Bias2 and Variance is at its minimum, guaranteeing 
+the best possible generalization error. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+The K-Nearest Neighbors (KNN) algorithm is a non−parametric and instance−based 
+learning algorithm that operates under the "lazy learning" principle. 
+Mechanism 
+1. Lazy Training: The algorithm performsnoexplicittraining or model building phase. 
+It simply storestheentiretrainingdataset and defers all computation until a 
+prediction is requested. 
+2. Distance Metric: When a new data point Xnew arrives, the algorithm calculates 
+the distance between Xnew and everysinglepoint in the stored training dataset. 
+The EuclideanDistance is the most common metric. 
+3. K Selection: It identifies the K instances from the training set that have the 
+smallest distances to Xnew. The hyperparameter K determines the size of the 
+local neighborhood considered. 
+4. Prediction: 
+o Classification: The output class of Xnew is determined by a majorityvote 
+among the K nearest neighbors. 
+o Regression: The predicted output value is the average or median of the 
+target values of the K nearest neighbors. 
+Crucial Prerequisites 
+KNN's reliance on distance makes featurescaling mandatory (e.g., using standardization 
+or normalization). Without it, features with larger numerical ranges would 
+disproportionately dominate the distance calculation, rendering the results 
+meaningless. 
+B-3. What is dimensionality reduction, and provide examples? 
+DimensionalityReduction is a crucial data preprocessing technique aimed at reducing 
+the 
+number 
+of 
+random 
+variables 
+(features) 
+in 
+preservingthemaximalamountofessentialinformation (variance). 
+Motivation 
+a 
+dataset 
+while 
+The primary motivation is to combat the CurseofDimensionality, where, as the number 
+of features increases, the volume of the feature space grows exponentially, causing the 
+data to become extremely sparse. This sparsity makes statistical inferences unreliable 
+and distance-based algorithms ineffective. Additional benefits include reduced 
+computational cost, improved memory efficiency, and enhanced data visualization. 
+Techniques and Examples 
+Dimensionality Reduction is broadly divided into two approaches: 
+1. Feature Selection: Choosing a subsetoftheoriginalfeatures based on statistical tests 
+or importance scores, without altering them. (e.g., removing features with low 
+variance or high correlation). 
+2. Feature Extraction: Transformingtheoriginalfeatures into a new, lower
+dimensional set of features (components or latent variables). 
+ Principal Component Analysis (PCA): 
+o Mechanism: A linear feature extraction technique that identifies the 
+directions (principal components) that accountforthelargestvariance in the 
+data. It projects the data onto the lower-dimensional subspace spanned by 
+the top k components. 
+o Use Case: Ideal for data compression and noise reduction. 
+ t-distributed Stochastic Neighbor Embedding (t-SNE): 
+o Mechanism: A non−linear technique primarily used for visualization 
+(reducing to 2 or 3 dimensions). It focuses on preservinglocaldatastructure, 
+ensuring similar points remain close together in the lower dimension. 
+B-4. How would you choose an algorithm for a specific dataset? 
+Algorithm selection is an iterative, multi-criteria decision process guided by the 
+problem's nature and practical constraints. 
+1. Problem Definition and Task Type: 
+o First, determine the output type: Classification (discrete labels) or 
+Regression (continuous values). This immediately filters the candidate pool. 
+o If no target variable exists, the task is Unsupervised (Clustering or PCA). 
+2. Data Analysis and Feature Characteristics: 
+o Data Volume: For smalldatasets, favor simpler, high-bias models (e.g., 
+Linear Models) to prevent overfitting. For massivedatasets, high-capacity 
+and scalable models (e.g., Deep Learning, Gradient Boosting) are 
+appropriate. 
+o Linearity: If relationships are clearly linear, start with LinearModels (fast, 
+interpretable). If the data is non−linear, use Tree−basedensembles (like 
+Random Forest) or KernelMethods (e.g., RBF-SVM). 
+o Outliers/Noise: If the data is noisy, models robust to outliers, like 
+DecisionTrees, should be prioritized over distance-based models (KNN) or 
+mean-based models (K-Means). 
+3. Evaluate Constraints and Deployment: 
+o Interpretability: If modelexplainability is legally or ethically required (e.g., 
+loan decisions), sacrifice some accuracy for transparentmodels (e.g., Logistic 
+Regression) or implement post−hocexplanation tools (SHAP). 
+o Latency: For real−timedeployment, select models with lowinferencetime 
+(fast prediction speed), which often favors simpler models. 
+4. Baseline and Benchmarking: 
+o Establish 
+a 
+simple 
+baseline 
+(e.g., 
+Naive 
+Bayes). 
+Then, 
+benchmark3−5candidatealgorithms using k−foldcross−validation. The final 
+selection is the model that yields the best performance on the chosen 
+metric (e.g., F1-Score or RMSE) while successfully satisfying all defined 
+business and technical constraints. 
+B-5. Explain bagging and boosting. 
+Bagging and Boosting are the two most prominent techniques in EnsembleLearning, 
+where the goal is to combine the predictions of multiple weaklearners (base models) to 
+achieve a superiorstronglearner. They differ fundamentally in how the base models are 
+trained. 
+1. Bagging (Bootstrap Aggregating) 
+ Mechanism: Base models (usually Decision Trees) are trained independently and 
+inparallel. Each base model is trained on a different bootstrapsample—a random 
+subset of the original training data drawn withreplacement. 
+ Goal: The final prediction is determined by averaging the outputs (regression) or 
+taking a majorityvote (classification). The primary objective of bagging is to 
+reducevariance and preventoverfitting by decorrelating the errors of the 
+individual base models. 
+ Example: RandomForest (which adds an extra layer of randomness by using a 
+random subset of features for splitting). 
+2. Boosting 
+ Mechanism: Base models are trained sequentially (one after the other) and 
+dependently. Each subsequent model focusesspecificallyoncorrectingtheerrors 
+made by the combined ensemble of the preceding models. This is achieved by 
+reweighting the data, giving higher importance to the misclassified samples. 
+ Goal: The primary objective is to reducebias and transform a collection of simple, 
+weak learners into a single, highly accurate predictor through iterative error 
+correction. 
+ Example: GradientBoostingMachines(GBM) and its highly optimized derivative, 
+XGBoost (Extreme Gradient Boosting). 

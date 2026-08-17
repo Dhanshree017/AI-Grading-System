@@ -1,0 +1,165 @@
+ID-T009 
+Name : sonali deshmukh Roll no: 7 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning. Explain any 5 applications of ML. 
+Applications of ML: 
+1. Text Prediction: Phones suggest words when typing automatically. 
+2. Voice Assistants: Recognize speech and answer like Alexa or Google. 
+3. Image Recognition: Identify objects or faces in pictures. 
+4. Recommendation Systems: Suggest products, videos or movies. 
+5. Financial Fraud Detection: Detect unusual transactions in bank. 
+6. Healthcare Analytics: Detect diseases from patient data. 
+7. Autonomous Robots: Robots learn to move and pick things. 
+8. Customer Behavior Analysis: Group customers for marketing. 
+9. Traffic Management: Adjust traffic signals based on congestion. 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one 
+example of each. 
+Supervised learning is when machine learn from labeled data, it knows the answer already 
+and try to predict correct output.  
+1. Supervised learning used for prediction tasks. 
+2. Supervised need labels. 
+3. Example supervised: Predict house price from size and location. 
+4. Supervised uses regression or classification algorithms. 
+5. Sometimes semi-supervised combines both approaches. 
+A-3. What is Principal Component Analysis (PCA)? Why is it used? 
+PCA is technique to reduce number of variables in dataset but keep important info. It 
+transforms original correlated features into smaller uncorrelated components. PCA helps 
+computer work faster and understand data better. 
+1. Reduce number of features. 
+2. Remove redundant info. 
+3. Helps in visualization of high dimensional data. 
+4. Makes computation faster. 
+5. Reduces noise. 
+6. Improve machine learning model performance. 
+7. Useful in regression, classification. 
+8. Can be used in image compression. 
+9. Helps to identify patterns in data. 
+A-4. What are the steps of creating a Machine Learning Model? 
+Creating ML model involve many steps to make model work properly. Steps from 
+collecting data to deploying model in real world. 
+1. Collect data from files, sensors or database. 
+2. Clean data removing wrong values and missing info. 
+3. Select features important for model. 
+4. Split data into training and testing sets. 
+5. Choose algorithm for task. 
+6. Train model on training data. 
+7. Evaluate model performance on test data. 
+8. Tune parameters to improve accuracy. 
+9. Deploy model in application or software. 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting is when model memorize training data too much and fail on new data. 
+Underfitting is when model too simple and cannot capture pattern. Both affect 
+performance. 
+1. Overfitting: high training accuracy low test accuracy. 
+2. Underfitting: low accuracy both training and test. 
+3. Overfitting happen with complex models. 
+4. Underfitting happen with simple models. 
+5. Example overfitting: student learn old exam too much but fail new questions. 
+6. Example underfitting: linear model for nonlinear data. 
+7. Regularization helps reduce overfitting. 
+8. More data reduce underfitting sometimes. 
+9. Good model balance between two. 
+A-6. What is K-Means Clustering? Write importance of it. 
+K-Means is unsupervised learning algorithm which put data into K groups based on 
+similarity. Centroid of cluster calculated and points assigned to nearest centroid until 
+stable. 
+1. Group similar data automatically. 
+2. Discover hidden patterns in data. 
+3. Useful in customer segmentation. 
+4. Reduce complexity of dataset. 
+5. Can visualize clusters easily. 
+6. Helps in marketing strategy. 
+7. Used in image segmentation. 
+8. Helps in organizing large dataset. 
+9. Easy to implement and understand. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance Tradeoff. 
+Bias is error when model make wrong assumptions, variance is error when model changes 
+too much with different data. Bias-variance tradeoff is balance between bias and variance 
+for good performance. 
+1. High bias cause underfitting. 
+2. High variance cause overfitting. 
+3. Tradeoff helps model generalize well. 
+4. Simple model more bias. 
+5. Complex model more variance. 
+6. Regularization reduce variance. 
+7. Cross-validation helps find best tradeoff. 
+8. Total error = bias + variance + irreducible error. 
+9. Proper balance improve prediction. 
+B-2. What is Regression? Explain its types in detail. 
+Regression is supervised learning to predict continuous output based on input variables. 
+1. Linear regression predict output with straight line. 
+2. Multiple regression for multiple input variables. 
+3. Polynomial regression for nonlinear data. 
+4. Ridge regression penalize big weights. 
+5. Lasso regression reduce unimportant features. 
+6. Stepwise regression select features step by step. 
+7. Logistic regression predict binary output. 
+8. Time series regression for forecasting future data. 
+9. Elastic net combine L1 and L2 penalties. 
+B-3. What is Decision Tree? Explain its steps to implement it. 
+Decision tree split data recursively based on feature to make decisions. Nodes check 
+feature, branches split conditions, leaves give output. 
+1. Choose root node with best feature. 
+2. Split data according to feature value. 
+3. Create sub-nodes for branches. 
+4. Repeat splitting until pure leaf. 
+5. Stop when further split unnecessary. 
+6. Assign label to leaf node. 
+7. Prune tree to reduce overfitting. 
+8. Test tree with new data. 
+9. Deploy tree for prediction. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Classification 
+Output Type Categories 
+Example 
+Spam detection 
+Data Type Discrete 
+Algorithm 
+Evaluation 
+Use Case 
+Decision Tree, SVM 
+Accuracy, F1 Score 
+Regression 
+Continuous numbers 
+House price prediction 
+Continuous 
+Linear Regression, Ridge 
+MAE, RMSE 
+Sorting images or emails Forecast trends 
+Labels 
+Required 
+Visualization Confusion Matrix 
+Result 
+Class label 
+Required 
+Line graph 
+Numeric value 
+B-5. How Deep Learning is different from Machine Learning? Explain 
+Regularization in detail. 
+Deep Learning is part of machine learning using multi-layered neural networks to learn 
+complex features automatically. Machine learning simpler and often need manual feature 
+extraction. 
+Differences: 
+1. Deep learning uses many layers of neurons. 
+2. Machine learning uses simpler algorithms. 
+3. Deep learning need large data. 
+4. Machine learning can work with smaller datasets. 
+5. Deep learning need GPU usually. 
+6. Machine learning can run on CPU. 
+7. Deep learning handle images, audio, text. 
+8. Machine learning more interpretable. 
+9. Deep learning give better accuracy for complex data. 
+Regularization: 
+1. Reduce overfitting. 
+2. L1 removes less important features. 
+3. L2 reduces weights magnitude. 
+4. Dropout randomly disable neurons. 
+5. Improves generalization. 
+6. Helps both ML and DL models. 
+7. Reduce memorization of training data. 
+8. Controls model complexity. 
+9. Balance bias and variance. 

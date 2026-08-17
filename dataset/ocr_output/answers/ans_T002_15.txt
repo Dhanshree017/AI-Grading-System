@@ -1,0 +1,212 @@
+ID-T002 
+Name : Kangna Prajapati   Roll no: M00115 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine Learning (ML) is the new computer program that teaches itself. It is about feeding 
+the computer lots of data (experience) so it can get smarter at the task. 
+1. ML is good for prediction, like predicting spam email. 
+2. It works with big statistics, not normal coding rules. 
+3. The main thing is the pattern, the computer finds the hidden pattern. 
+4. It is a part of the big AI thing. 
+5. ML is very popular because it learns on its own. 
+A-2. What are the different types of machine learning? 
+There are three main types for how the computer learns. It depends on if the data has 
+the answer already. 
+1. Supervised Learning: Teacher is present. The data has the label (the right answer). 
+2. Unsupervised Learning: No teacher is present. The data is unlabeled. It finds groups. 
+3. Reinforcement Learning: Learning from trying and doing. The computer gets rewards 
+like a game. 
+4. The types are very clear for the computer brain. 
+5. Sometimes they mix them like Semi-Supervised. 
+A-3. What is the difference between supervised, unsupervised, and reinforcement 
+learning? 
+They are very much different because the whole goal is different for all three. 
+1. Supervised must have labels, it is for classification and regression (numbers). 
+2. Unsupervised cannot have labels, it is for finding clusters and groups in the data. 
+3. Reinforcement is for decision making in a moving world, it has no fixed data set. 
+4. Supervised is like predicting price. Unsupervised is like grouping customers. 
+5. Reinforcement is the hardest one for the computer to learn. 
+A-4. What is the bias-variance tradeoff? 
+This is a big technical problem where you must choose between two bad things. You cannot 
+fix both errors. 
+1. Bias is the error of the simple model. It is called underfitting. The model is too 
+stupid. 
+2. Variance is the error of the complex model. It is called overfitting. The model is too 
+smart for its own good. 
+3. If you make the model simple (low variance), the bias will become high. This is the 
+tradeoff rule. 
+4. You must find the best spot where the total error is lowest. 
+5. This tradeoff is always happening in all machine learning models. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting is when the model remembers all the noise and junk in the training data. It 
+becomes useless on new data you give it. 
+1. The model is too perfect on the old data, but very bad on new data. 
+2. The best way to avoid it is to just get more and more training data, always. 
+3. You can use Regularization, which is a punishment on the model's parameters. 
+4. You can do Early Stopping, which means you stop training when the validation error 
+starts getting worse. 
+5. Overfitting is the number one enemy of good machine learning. 
+B) Any 4 out of following (20 Marks) 
+B-2. How does a linear regression model work? 
+Linear Regression (LR) it is the basic model that draws a straight line to predict a 
+continuous number. It is the base of all prediction science. 
+1. The model it works by finding the equation of the straight line, $\text{y} = \text{B} 
++ \text{m}\text{X}$, which is the basic line formula but it uses different letters in 
+the computer world. 
+2. The goal it is to put that line in the perfect spot where the line is closest to all 
+the training data points. It is a balancing act. 
+3. The closeness is measured by the Mean Squared Error (MSE). The MSE is what the 
+model tries to make as tiny as possible. The smallest MSE is the best line. 
+4. The model it uses an optimization algorithm like Gradient Descent to slowly move 
+the line's parameters towards that lowest error point. Gradient Descent is a big 
+helper tool. 
+5. The main idea is that the relationship must be exactly a straight line. If the data is 
+curvy, the LR model will fail very badly and suffer from high bias. 
+6. It is very easy to explain the results because you can show exactly how each feature 
+affects the output number. It is very simple to talk about. 
+7. The LR it is not good for curvy data, so you must check the plots before you use 
+this model. If you don't check, you get rubbish answers and you look silly. 
+8. There are some rules (assumptions) that the error must follow like being normal and 
+the spread must be constant. These are important for book people. 
+B-3. What is a decision tree, and how is it pruned? 
+Decision Tree (DT) it is a model that uses simple, easy rules like a flowchart to split the 
+data based on questions until it can guess the answer. 
+1. The tree it starts at the top (the root) and it chooses the best feature and value 
+to split on at each step to make the data cleaner. It is like cleaning the data. 
+2. The best split is chosen by maximizing the Information Gain (IG). IG it measures how 
+much the confusion (Entropy) is reduced by making the split. The goal is zero 
+confusion. 
+3. The biggest problem is that the tree gets too big and learns the training data 
+perfectly, including the random noise. This makes it overfit (high variance). 
+4. Pruning it is the technique used to cut back the complexity of the full-grown tree 
+so it is not so overfit. Pruning it reduces the size of the model. 
+5. Pre-pruning is when you stop the tree from growing before it is finished, by setting 
+limits like the maximum depth allowed or how many points must be in a leaf. You 
+stop the growth early. 
+6. Post-pruning is when you let the tree grow all the way first, and then you look at 
+the test data and you cut back the parts that don't help the score. This is usually 
+the better way to prune. 
+7. Pruning it helps to balance the bias-variance problem. It makes the tree a bit dumber 
+(higher bias) but much more reliable (lower variance) on new data. 
+8. DTs are very easy to understand but they are not stable because one small change in 
+the data can change the whole tree. That is why Random Forest is better. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a good classifier model that finds the optimal line 
+(hyperplane) to separate the data classes with the biggest possible margin. 
+1. The main goal is to find the line that creates the widest possible gap (margin) 
+between the two sets of data points. Wide gap is good generalization. 
+2. The data points that are closest to this wide gap they are called Support Vectors 
+(SVs). They are the only points that matter for the position of the line. 
+3. Because it only uses the SVs, the SVM model is not affected by outliers that are far 
+away. It is also very efficient because it only stores the SVs and not all the data. 
+4. For data that is all mixed up and not a straight line, the Kernel Trick is used to 
+magically separate it. The Kernel Trick it moves the data to a higher place where a 
+straight line is possible. 
+5. The Kernel Trick it is actually a hidden math shortcut that avoids the actual difficult 
+math, saving so much computer time. The RBF kernel is the most popular one. 
+6. When the data is not clean, the Soft Margin it is used, which allows some points to 
+cross the boundary or be inside the gap. This gives a better result on the test data. 
+7. SVM it is a very strong model and it is guaranteed to find the best solution because 
+the optimization is convex. This is a major advantage over other models. 
+8. SVM it works well when you have many features but not so many data samples, like 
+in complex text or image data. 
+B-6. What are kernels in SVM? 
+Kernels in Support Vector Machine (SVM) they are like magic functions that let the SVM 
+work on curvy and non-linear data without having to do the hard math. 
+1. The Kernel Trick is the big invention. It lets the linear SVM draw a curvy decision 
+line in the original data space, making the model much more flexible. 
+2. The problem is that if data is curvy, a straight line cannot separate it. You need a 
+circle or a wave for the separation. 
+3. The Kernel function it calculates the similarity between two data points as if they 
+were already in a higher dimension. It is a calculation shortcut for the dot product. 
+4. This trick it saves time and memory because it avoids the explicit calculation of all 
+the points in the huge higher dimension. Very efficient. 
+5. The Radial Basis Function (RBF) kernel it is the best and most famous one. It can 
+handle very complex and mixed-up data. 
+6. The Polynomial kernel it is another type that calculates the relationship using a 
+polynomial equation. It is used for simpler non-linear curves. 
+7. Kernels are very important because they make the SVM powerful for real-world data. 
+Without kernels, SVM is just a simple line drawer. 
+8. The choice of the kernel it is a parameter you must tune (a hyperparameter), so 
+you must try many of them to see which one gives the best result on your test 
+data. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a classifier model that uses probability and Bayes' Theorem. It is 
+known for being simple and lightning fast. 
+1. It is based on the idea of calculating the probability of a class being true given the 
+input features. It is all about likelihood. 
+2. The stupid (naïve) part is the assumption that all the input features (like words) 
+are independent of each other given the class. This is a very strong assumption. 
+3. This naïve independence assumption it makes the math super simple, so the model it 
+can be trained in very fast time. 
+4. The model training it is only calculating the counts and frequencies of things in the 
+training data. No complex adjustment of weights is needed. 
+5. NB it is widely used for text classification problems like spam detection and sentiment 
+analysis because it handles a huge number of words well and quickly. 
+6. There are different types of NB like Multinomial NB (for count data) and Gaussian 
+NB (for data that follows the normal curve). 
+7. Laplace Smoothing it is used to handle cases where a feature never appeared with a 
+class, preventing the final probability from becoming zero. 
+8. NB it is a great starting model to check the score against because it is so quick and 
+gives a decent, fast prediction. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are two totally different things 
+that only share the letter k. They do not do the same job. 
+1. Learning Type: KNN it is Supervised Learning (for classification and numbers). k
+Means it is Unsupervised Learning (for finding groups). 
+2. Meaning of k: In KNN, the $k$ it is the number of neighbors that vote for the new 
+point. In k-Means, the $k$ it is the number of groups that you want the computer 
+to find. 
+3. Training: KNN it is a lazy model. It does not train; it just stores all the data. k
+Means it is an active model. It moves the cluster centers during the training time. 
+4. Data: KNN requires labeled data (the right answers). k-Means requires unlabeled data 
+(no answers given). 
+5. Prediction: KNN is used for predicting a new point. k-Means is used for grouping the 
+old data. 
+6. Distance: Both need distance to work, so you must fix the scale of the features 
+before you use either model. 
+7. High Dimension: KNN suffers badly when there are too many features (curse of 
+dimensionality). k-Means is sensitive to where the centers start. 
+8. Output: KNN gives a prediction. k-Means gives cluster assignments and centroid 
+locations. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is the engine of all smart models. It is the optimization method 
+that finds the best set of weights that makes the error the smallest. 
+1. The main goal is to find the parameters that minimize the total error (the cost 
+function) to the lowest possible value. 
+2. It is a walking method. It starts randomly and it walks slowly down the hill of the 
+error function until it reaches the bottom. 
+3. The gradient is the slope of the hill at the current point, and it tells you the 
+direction of the steepest up. 
+4. The algorithm it moves in the opposite direction of the gradient. This is the steepest 
+way down to the bottom. 
+5. The Learning Rate ($\eta$) it is the step size you take. If it is too big, you jump 
+over the minimum. If it is too small, it takes forever. 
+6. It is a repeating process: calculate the slope, take a step, calculate again, and keep 
+doing it until the steps are tiny. 
+7. GD is used in all Neural Networks, Logistic Regression, and many other models. 
+Without it, the computer cannot learn. 
+8. There are different types of GD like Stochastic GD (noisy but fast) and Batch GD 
+(smooth but slow). Mini-Batch GD is the compromise that everyone uses. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) they are two types 
+of the optimization engine. They differ by how much data they use for one update. 
+1. Data per Update: BGD uses the whole training data to calculate the average error 
+for one single update. SGD uses only one single data point for one single update. 
+2. Computational Cost: BGD is very slow per iteration because it has to calculate 
+everything. SGD is very fast per iteration because it only looks at one point. 
+3. Path to Minimum: BGD takes a smooth, straight path to the minimum because the 
+gradient is stable. SGD takes a noisy, jumping path because the gradient is erratic. 
+4. Convergence: BGD is guaranteed to settle exactly at the minimum. SGD jumps around 
+the minimum, never settling, but it is fast and can escape small valleys. 
+5. Memory: BGD needs high memory to store all the derivatives. SGD needs low memory 
+because it only deals with one point. 
+6. Mini-Batch GD: The best one is Mini-Batch GD, which uses a small group of data (like 
+32 points) to balance the speed and the stability. 
+7. Updates: BGD updates weights once per full data pass. SGD updates weights many 
+times per full data pass (once per example). 
+8. Application: BGD is not used much because data is too big. Mini-Batch GD is the 
+standard for all deep learning because it is fast and efficient. 

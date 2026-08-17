@@ -1,0 +1,13 @@
+ID-T034 
+Name:  Ankur Jadhav Roll no: 13 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-1) Explain the concept of model generalization and why it is important in machine learning 
+Model generalization means how a model works when it is given new data. When a machine learning model 
+is trained, it learns from a set of data. But later it will get different data. So if it works on that new data also 
+then it is said to have generalization. If it does not work then it is not good. 
+Sometimes model learns training data very deeply. It remembers all values. Then when new data comes, it 
+becomes confused and gives wrong answer. Sometimes it does not learn properly also. So generalization is 
+needed so that it can work properly. If generalization is good then model will be useful in real world. 
+Generalization is important because we cannot always use training data in real life. So if model does not 
+generalize then it will fail in practical use. 

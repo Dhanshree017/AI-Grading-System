@@ -1,0 +1,200 @@
+ID-T002 
+Name :Nuhaan khan  Roll no: M00124 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine learning (ML) it is computer thing that learns from the data you give. It is 
+not the rule coding, it is learning the pattern in the data. 
+1. It gets experience from the data it sees to do the job better. 
+2. The goal is to work good on new data that it never saw before. 
+3. It uses statistics and smart guessing for finding the patterns. 
+4. ML is main part of AI thing now. 
+5. It is minimizing the mistake the model makes. 
+A-2. What are the different types of machine learning? 
+The machine learning types they are three big ones. It depends on how the teacher 
+gives the answer to the computer. 
+1. Supervised Learning: Data is labeled with the correct output. Teacher is there. 
+2. Unsupervised Learning: Data is unlabeled, no correct output is there. It finds the 
+groups itself. 
+3. Reinforcement Learning: No data is fixed, it learns by doing and getting rewards 
+from the environment. 
+4. There is also Semi-Supervised which is some labeled and much unlabeled data 
+mix. 
+5. All types are for different goals like predicting or grouping. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is a bad thing when model learns too much from the training data noise. 
+It becomes useless on new data. 
+1. Sign is very high score on training but very low score on test data. 
+2. Can avoid it by getting more data, that is the first best fix. 
+3. Can use Regularization, that is a penalty on the model's parameters so they don't 
+grow big. 
+4. Can do Early Stopping, which is stop training when validation score drops. 
+5. It is the model complexity that is too high for the data size. 
+A-6. What are a training set, validation set, and test set? 
+These are the three groups the data must be cut into for good model building. They 
+are separate parts. 
+1. Training Set is the biggest part, it is used to teach the model and adjust its 
+weights. 
+2. Validation Set is used during training to pick the best model settings 
+(hyperparameters). 
+3. Test Set is put aside, it is only used once for the final score, so the score is true. 
+4. If you mix them, it is cheating and the score is fake. 
+5. They are necessary for honest evaluation of the model's performance. 
+A-7. What is cross-validation? 
+Cross-validation (CV) it is a technique to test model score by using all data for training 
+and testing. 
+1. It gives a score that is more reliable than just one test score. 
+2. In k-Fold CV, the data is cut into k equal parts (folds). 
+3. Model trains k times, each time one fold is test set. 
+4. The final score is the average of all k scores. 
+5. It is used for hyperparameter tuning to pick the best model setup. 
+B) Any 4 out of following (20 Marks) 
+B-2. How does a linear regression model work? 
+Linear Regression it is the basic model for predicting a number by finding the straight 
+line that fits the data best. 
+1. Model finds the formula for the straight line, $\text{Y} = \text{B} + 
+\text{B}\text{X}$, which is the basic line equation. The $\text{B}$ values are the 
+coefficients. 
+2. The job is to calculate the Bs so the line is closest to all the data points in the 
+chart. 
+3. It measures the mistake with Mean Squared Error (MSE). This MSE is what the 
+model tries to make the lowest number. 
+4. It uses the Gradient Descent to slowly move the line's coefficients in the direction 
+of the lowest error. It walks down the error hill. 
+5. The big assumption is that the relationship between input and output must be 
+straight. If it is curvy, the model will be bad. 
+6. It is very easy to explain the model because you can see how much each input 
+changes the output number. Very transparent. 
+7. If the data is non-linear, this model has high bias (underfitting) and is not good. 
+You must check the data first. 
+8. There are rules (assumptions) about the error being normal and having constant 
+spread. This is for book science. 
+B-3. What is a decision tree, and how is it pruned? 
+Decision Tree (DT) it is a model that uses simple rules like a flowchart to split the data 
+into purer groups until the final answer is clear. 
+1. The tree it starts at the top (root) and it chooses the split that gives the cleanest 
+data at the next step. It is a purity measure. 
+2. The best split is chosen by maximizing the Information Gain. This measures how 
+much the disorder (Entropy) is reduced by the split. 
+3. The problem is the tree grows too big and learns the noise in training data. This 
+is called overfitting (high variance). 
+4. Pruning it is the technique to cut the unnecessary branches from the oversized 
+tree to make it simpler and less overfit. 
+5. Pre-pruning is stopping the tree growth early by setting limits like maximum 
+depth or minimum size of the leaf. You stop it before it finishes. 
+6. Post-pruning is growing the whole tree first, and then cutting back the useless 
+parts that don't help the validation score. This is often better. 
+7. Pruning helps the bias-variance balance. It makes the model a bit less perfect on 
+training (higher bias) to make it much more stable on test data (lower variance). 
+8. DTs are easy to read but they are not stable; one small change in data changes 
+the whole tree structure. 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) it is a very strong model that uses many Decision Trees together 
+to get a better prediction. It is an ensemble method. 
+1. RF uses Bagging (Bootstrap Aggregating) which means each tree is trained on a 
+different random sample of the training data. 
+2. The most important part is Feature Randomness: when each tree splits, it only 
+looks at a random small subset of the features, not all of them. 
+3. This randomness makes all the trees different (decorrelated), so their individual 
+mistakes cancel out when you average their answers. 
+4. The main benefit is a huge reduction in Variance (overfitting). By averaging many 
+unstable trees, the final result is very stable. 
+5. The final answer for classification is the majority vote from all the trees. For 
+regression, it is the average of the predictions. 
+6. RF is robust to messy data and outliers and it works well for most problems 
+without much data cleaning. 
+7. It can also tell you which features are important by how much they helped 
+reduce the error across the forest. 
+8. RF is generally more accurate than a single Decision Tree but it is slower to train 
+and harder to explain to people. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a strong classifier that finds the best straight line 
+(hyperplane) to separate the data classes with the biggest possible gap. 
+1. The goal is to find the line that maximizes the margin, which is the widest empty 
+space between the nearest points of the two classes. 
+2. The points closest to the line they are called Support Vectors. They are the only 
+points that define the line's position. 
+3. Because only SVs matter, the model is efficient and not affected by outliers that 
+are far away from the boundary. 
+4. For data that is curvy, the Kernel Trick is used to separate it. The Kernel Trick 
+it moves the data to a higher place where the separation line is straight. 
+5. The Kernel Trick it is a math shortcut so you don't have to do the difficult high
+dimension math. The RBF kernel is the most popular one. 
+6. For noisy data, the Soft Margin it is used, which allows a few errors inside the 
+gap to get a better generalized line. 
+7. SVM it is guaranteed to find the best solution because it is a convex optimization 
+problem, which is a big advantage over other methods. 
+8. SVM is very good for high-dimensional data (many features) like text and image 
+data. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a fast classifier model that uses probability rules. It is based on 
+Bayes' Theorem. 
+1. It calculates the probability of a class being true given the input features you see. 
+It is a guessing process. 
+2. The naïve part is the big assumption that all the features you see are independent 
+of each other given the class. This is often false but makes the model very fast. 
+3. This independence assumption it simplifies the math so the model it can be 
+trained in very fast linear time. 
+4. The training is just counting how many times each feature appears in each class. 
+Very easy calculation. 
+5. NB is used a lot for text problems like spam detection and sentiment analysis 
+because it handles many features (words) well. 
+6. Laplace Smoothing it is used to prevent a zero probability if a feature never 
+appears with a certain class. 
+7. There are different types like Multinomial NB for counts and Gaussian NB for 
+continuous data (normal curve). 
+8. NB is a good starting model because it is very quick and gives a decent score 
+before you use complex models. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are totally different models 
+that do not do the same job. 
+1. Learning Type: KNN it is Supervised Learning (needs labels). k-Means it is 
+Unsupervised Learning (needs no labels). 
+2. Meaning of k: In KNN, the $k$ it is the number of neighbors for voting the 
+prediction. In k-Means, the $k$ it is the number of groups you want. 
+3. Training: KNN is a lazy model; it does no training, it just stores the data. k
+Means is an active model; it moves cluster centers during training. 
+4. Goal: KNN is for making a prediction for a new point. k-Means is for finding the 
+groups in the old data. 
+5. Distance: Both need distance, so you must scale the data first. KNN is hurt badly 
+by too many features (curse of dimensionality). 
+6. Output: KNN gives a class label or a number. k-Means gives cluster IDs to the 
+points. 
+7. Use: KNN is a classifier. k-Means is a group finder. 
+8. They only share the name but the science is different. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is the engine that makes the model learn by finding the 
+lowest error on the error hill. 
+1. The job is to find the weights that minimize the total error (cost function) to the 
+smallest number. 
+2. It is a walking method. It starts randomly and it moves slowly down the hill 
+until it reaches the bottom. 
+3. The gradient is the slope of the hill, and it tells you the steepest up direction. 
+4. The model it moves opposite to the gradient, which is the fastest way down to 
+the minimum. 
+5. The Learning Rate ($\eta$) it controls the size of the step. Too big step means 
+overshooting. Too small step means very slow. 
+6. It is a repeating process: calculate slope, take step, calculate again, until the step 
+is almost zero. 
+7. GD is used for all the big models like Neural Networks and Logistic Regression. 
+8. The different types are Batch GD (smooth) and Stochastic GD (noisy). Mini
+Batch GD is the best compromise. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch GD (BGD) and Stochastic GD (SGD) they are the two ways to walk down the 
+error hill. They differ by how much data they use for one step. 
+1. Data Size: BGD uses the whole training data to calculate the gradient for one 
+step. SGD uses only one data point to calculate the gradient for one step. 
+2. Path: BGD takes a very smooth, direct path because the gradient is an average. 
+SGD takes a very noisy, jumping path because the gradient is just one point. 
+3. Speed: BGD is slow per step. SGD is fast per step. 
+4. Convergence: BGD is guaranteed to settle exactly at the minimum. SGD jumps 
+around the minimum, never settling, but it is fast. 
+5. Memory: BGD needs high memory for the whole data. SGD needs low memory. 
+6. Mini-Batch GD: This is the most used one, it uses a small batch of data to get 
+the speed of SGD and the stability of BGD. 
+7. Updates: BGD updates only once per full data pass. SGD updates many times 
+per full data pass. 
+8. SGD is better for huge data and neural networks because it is faster. 
+ 

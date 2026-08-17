@@ -1,0 +1,72 @@
+ID-T028 
+Name: Aparna Verma Roll no: 16 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+�
+� Steps for Data Cleaning and Preparation (Focus on Deep Learning and Robustness) 
+1. Noise Robustness via Denoising Autoencoders: 
+o Action: For high-dimensional or image-like data, train a Denoising Autoencoder (DAE). 
+The DAE learns a compact representation of the data and can reconstruct corrupted inputs, 
+effectively imputing missing patches or filtering noise by learning the underlying data 
+manifold. 
+o Goal: Provides a highly non-linear, robust form of imputation and dimensionality reduction, 
+especially effective for deep models. 
+2. Imputation using Structural Equation Modeling (SEM): 
+o Strategy: Model the direct and indirect causal effects between variables. Use SEM to 
+estimate missing data points based on a validated theoretical model of how the features 
+interact, rather than purely statistical correlation. 
+o Benefit: Ensures that the imputed values are justifiable by established domain theory, leading 
+to a more reliable trained model. 
+3. Handling Categorical Feature Interactions: 
+o Action: Implement techniques to capture interactions between categorical features that 
+simple encoding misses. Use Factorization Machines (FMs) or Field-aware Factorization 
+Machines (FFMs) to learn weight parameters for second-order feature interactions. 
+o Goal: Generate interaction features implicitly, which is highly valuable in recommendation 
+systems and click-through rate prediction. 
+4. Data Partitioning for Time Series (Backtesting): 
+o Action: For time-dependent data, use Walk-Forward Cross-Validation. Instead of static 
+splits, the model is sequentially trained on an expanding window of historical data, then 
+tested on the next future period. 
+o Goal: Provides a far more realistic evaluation of the model's predictive utility in a production 
+environment where time is directional. 
+5. Final Feature Selection using Recursive Feature Elimination (RFE): 
+o Action: Employ RFE with the final chosen algorithm. The model is repeatedly trained, and 
+the least important features are pruned based on coefficient size or feature importance scores 
+until the optimal feature subset is found. 
+o Goal: Creates a highly parsimonious model that is less prone to variance. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Non-Metric-Based Model Comparison (Focus on System Risk and Organizational Fit) 
+1. Data Governance and Privacy Risk: 
+o Criterion: Which model's architecture or required feature set poses a lower risk of exposing 
+sensitive or PII (Personally Identifiable Information)? 
+o Comparison: Model A, which can achieve comparable results using synthetic data or 
+federated learning (keeping data localized), is better than Model B, which requires 
+centralized PII, reducing regulatory and reputational risk. 
+2. System Latency Reliability (P99 Jitter): 
+o Criterion: Instead of average latency, compare the P99 latency (the time the slowest 1% of 
+predictions take). 
+o Comparison: Model A, which maintains a low P99 latency (consistent speed for all users), is 
+operationally more reliable than Model B, which has a faster average but massive P99 spikes, 
+leading to system timeouts and poor user experience for a small, critical subset of users. 
+3. Model Resilience to Missing Features: 
+o Criterion: If a necessary feature is temporarily unavailable due to an upstream failure, how 
+gracefully does the model degrade? 
+o Comparison: Choose the model (Model B) that has a built-in fallback strategy (e.g., using 
+simpler features or default values) and continues to provide a reasonable, albeit less accurate, 
+prediction, over Model A, which throws an error and crashes the service. 
+4. Organizational Knowledge Transfer and Onboarding Cost: 
+o Criterion: How easily can a new machine learning engineer be onboarded and understand 
+the model's code, structure, and dependencies? 
+o Comparison: Model B, which uses standard, common techniques (e.g., XGBoost, standard 
+PyTorch layers), is better than Model A, which uses exotic, cutting-edge research algorithms, 
+as Model B reduces organizational friction and long-term hiring costs. 
+5. Deployment Artifact Size and Bandwidth: 
+o Criterion: The physical size (megabytes) of the serialized model file (the deployment 
+artifact). 
+o Comparison: A smaller model file (Model A) is always better, as it reduces storage costs, 
+improves deployment speed, and minimizes bandwidth consumption during over-the-air 
+updates for edge or mobile devices. 

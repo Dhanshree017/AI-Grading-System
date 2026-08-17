@@ -1,0 +1,147 @@
+ID-T032 
+Name: Sanket Raina Roll no: 26 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (5 marks each) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The machine learning lifecycle (MLOps) is an iterative, multi-stage engineering framework 
+designed to transform raw data into a sustainable business solution. It is not a linear path but 
+a continuous loop. 
+1. Problem Definition and Scoping: 
+The cycle begins by translating a business need into a mathematical objective. 
+Engineers must decide if the task is supervised (classification/regression) or 
+unsupervised. Success metrics—such as F1-score for imbalanced classes or Mean 
+Absolute Error for regression—are established here. 
+2. Data Acquisition and Exploration (EDA): 
+Data is sourced from SQL databases, APIs, or data lakes. Exploratory Data Analysis 
+(EDA) is performed using statistical charts to identify outliers, correlations, and data 
+distributions. This stage determines the quality of the "raw material." 
+3. Data Preprocessing and Cleaning: 
+Raw data is often "dirty." This phase involves handling missing values (imputation), 
+removing duplicates, and encoding categorical variables into numerical formats (One
+Hot or Label Encoding). 
+4. Feature Engineering and Selection: 
+This is often considered the most critical step. Raw data is transformed into "signals" 
+that the model can understand. This includes scaling, creating interaction terms, or 
+using PCA for dimensionality reduction. 
+5. Model Training and Hyperparameter Tuning: 
+The processed data is fed into an algorithm. Engineers use techniques like Grid Search 
+or Bayesian Optimization to find the best "hyperparameters" (settings like learning 
+rate or tree depth) that aren't learned during standard training. 
+6. Evaluation and Validation: 
+The model is tested on a "hold-out" set. Techniques like K-fold cross-validation 
+ensure that the model’s performance is consistent and not a result of "getting lucky" 
+with a specific data split. 
+7. Deployment: 
+Once validated, the model is "containerized" (using tools like Docker) and deployed 
+into a production environment via an API. It now serves real-time or batch predictions 
+to users. 
+8. Monitoring and Maintenance: 
+Models in the real world suffer from "Concept Drift"—where the data patterns change 
+(e.g., consumer behavior changes after a global event). Continuous monitoring tracks 
+accuracy decay, triggering automated retraining when performance hits a threshold. 
+A-b. Discuss the importance of feature representation and how it influences learning 
+outcomes. 
+Feature representation, or Feature Mapping, is the process of converting raw data into a 
+format that a machine learning algorithm can process efficiently. It is the bridge between 
+human-understandable information and machine-understandable vectors. 
+ Linear Separability: The primary goal of representation is to project data into a space 
+where the decision boundary is as simple as possible. In many cases, raw data is not 
+linearly separable. By using non-linear transformations (like the Kernel Trick in 
+SVMs), we can move data into a higher-dimensional space where a simple plane can 
+separate the classes. 
+ The Curse of Dimensionality: Adding too many features can lead to a sparse feature 
+space where the distance between points becomes meaningless. Proper representation 
+involves selecting the "right" features, not "all" features, to maintain high information 
+density. 
+ Semantic Integrity: In Natural Language Processing (NLP), representing words as 
+simple numbers (1, 2, 3) fails because it implies a numerical order that doesn't exist. 
+Using Word Embeddings (Word2Vec) represents words as vectors where "King" is 
+mathematically closer to "Queen" than "Apple," allowing the model to understand 
+context and relationships. 
+ Impact on Convergence: Good feature representation reduces the complexity of the 
+"Loss Landscape." When features are properly scaled and representative of the signal, 
+the optimization algorithm (like Gradient Descent) can find the global minimum much 
+faster, saving computational costs. 
+ Generalization: If a feature representation captures "noise" (like the background color 
+in a photo of a cat), the model will overfit. Robust representation focuses on 
+invariants—features that remain constant despite slight variations in the input. 
+. 
+A-d. Describe how machine learning models handle noisy and incomplete data during 
+training. 
+Real-world data is rarely perfect; it is often plagued by "noise" (incorrect values) and 
+"incompleteness" (missing values). ML systems use several sophisticated strategies to 
+remain robust. 
+ Handling Incomplete Data: 
+o Imputation: Missing values are estimated. Simple Imputation uses the mean, 
+median, or mode. Multivariate Imputation (like MICE) uses other features to 
+predict the missing value. 
+o Flagging: Sometimes, the fact that data is missing is itself a signal. Models add 
+a "Missing Indicator" column (binary 0 or 1) so the model knows a value was 
+absent. 
+o Algorithmic Handling: Some modern algorithms, such as XGBoost or 
+LightGBM, can handle missing values internally by learning the best "default" 
+direction for a missing branch in a decision tree. 
+A-e. Explain the role of evaluation strategies in ensuring the robustness of ML models. 
+Evaluation is the bridge between a mathematical "good fit" and a reliable "real-world 
+solution." Accuracy is rarely enough. 
+ K-Fold Cross-Validation: Instead of a single split, the data is divided into $K$ parts. 
+The model is trained $K$ times, each time using a different part as the test set. This 
+ensures the model's performance isn't dependent on one "lucky" split of the data. 
+ Confusion Matrix and Derived Metrics: For classification, we look at Precision 
+(avoiding false alarms) and Recall (not missing any cases). In a medical setting, 
+Recall is more important (don't miss a disease); in a spam filter, Precision is key (don't 
+block important emails). 
+ ROC-AUC Curves: These measure the model's ability to distinguish between classes 
+at different probability thresholds. A high AUC (Area Under the Curve) indicates a 
+robust model that can separate "cats" from "dogs" effectively across all settings. 
+ Bias and Fairness Audits: Robustness also means the model performs equally well 
+across different demographic groups. Evaluation strategies now include "Slice-based 
+evaluation" to ensure the model doesn't work for one group but fails for another. 
+ A/B Testing (Online Evaluation): The final evaluation happens in production. A 
+small percentage of users see the new model while the rest see the old one. If the new 
+model improves real-world KPIs (like user engagement), it is deemed robust for full 
+rollout. 
+A-f. Discuss the ethical challenges associated with large-scale deployment of machine 
+learning systems. 
+As ML systems scale to millions of users, they transition from technical tools to social 
+forces, raising massive ethical concerns. 
+1. Algorithmic Bias and Discrimination: If training data contains historical human 
+biases (e.g., in hiring or policing), the ML model will learn and automate that bias. 
+Large-scale deployment can systematically exclude marginalized groups from 
+opportunities. 
+2. Lack of Transparency (The Black Box Problem): Complex models like Deep 
+Neural Networks are hard to interpret. If a model denies a loan or a medical treatment, 
+it is ethically problematic if the developers cannot explain why that decision was 
+made. 
+3. Privacy and Surveillance: Models require vast amounts of data. The collection and 
+storage of this data often lead to "Data Persistence"—where a user's past actions 
+follow them forever—and "Inference Privacy"—where an AI can guess your secret 
+medical status based on your public shopping habits. 
+4. Accountability and Responsibility: When an autonomous system makes a mistake 
+(e.g., an autonomous vehicle accident), the "Responsibility Gap" makes it unclear who 
+is at fault: the programmer, the manufacturer, or the data provider? 
+5. Job Displacement and Economic Shift: Large-scale AI deployment can automate 
+tasks currently performed by humans. Without an ethical framework for transition, this 
+risks widening the wealth gap and causing mass unemployment in specific sectors. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the iterative process where an algorithm analyzes a training dataset to find the optimal 
+internal parameters (weights) that minimize a loss function, effectively "learning" the 
+patterns in the data. 
+B-b. Define feature selection. 
+Feature selection is the process of identifying and keeping only the most relevant variables 
+from a dataset, removing redundant or noisy features to simplify the model and improve its 
+accuracy. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the direct, verified information or "true label" provided in the training 
+data, used as the benchmark to measure the accuracy of the model's predictions. 
+B-d. What is model deployment? 
+It is the engineering phase where a validated machine learning model is integrated into a live 
+production environment (like a server or cloud API) so it can process real-world data and 
+provide predictions. 
+B-e. Define learning from data. 
+Learning from data is the ability of an algorithm to improve its performance at a specific task 
+over time by extracting statistical structures and rules from input examples without being 
+explicitly programmed. 

@@ -1,0 +1,184 @@
+ID-T020 
+Name: Alandi pandey Roll no: 11 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-a) Explain how data drift and concept drift affect the long-term performance of machine 
+learning models. Discuss the different types of drift and practical strategies to detect and 
+handle them. 
+Introduction 
+Machine learning models assume that the data distribution seen during training remains 
+consistent in real-world scenarios. However, over time, the characteristics of input data or 
+the underlying relationships may change, reducing model performance. These phenomena 
+are known as data drift and concept drift. 
+Data Drift 
+Data drift refers to changes in the distribution of input features while the relationship 
+between inputs and outputs remains the same. 
+Example: A credit scoring model trained on old economic conditions may receive new types 
+of customer attributes over time, making the feature distribution shift. 
+Concept Drift 
+Concept drift occurs when the mapping between input features and the target variable 
+changes. 
+Example: What defines a “fraudulent transaction” may change due to new fraud techniques. 
+Types of Drift 
+1. Covariate Drift: Input distribution changes. 
+2. Prior Probability Drift: Class distribution shifts. 
+3. Concept Drift (Real Drift): The actual labeling function changes. 
+4. Sudden Drift: Instant change in data behavior. 
+5. Gradual Drift: Slow and progressive changes. 
+6. Recurring Drift: Patterns reappear cyclically. 
+Detection Strategies 
+ Statistical tests: KS test, Chi-square test. 
+ Drift detection algorithms: DDM, EDDM, ADWIN. 
+ Monitoring prediction patterns: Sudden drop in accuracy or rise in error. 
+ Model uncertainty monitoring: Increase in confidence variance. 
+Handling Strategies 
+ Periodic retraining: Updating model with new batches. 
+ Online learning: Incremental training for streaming data. 
+ Ensemble replacement: Keeping fresh models and discarding outdated ones. 
+ Windowing: Train on recent data only. 
+ Feature importance monitoring: Adjust to new influential variables. 
+Conclusion 
+Drift directly affects long-term model reliability. Effective detection and adaptation 
+strategies are essential for stable ML deployment. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, images, 
+or categorical data can be transformed into meaningful representations for models. 
+Introduction 
+Embedding techniques convert complex data such as text, images, or categorical fields into 
+dense, continuous vectors that capture semantic meaning. These representations allow 
+models to process high-dimensional or symbolic data efficiently. 
+Role of Embeddings 
+ Reduce dimensionality. 
+ Preserve similarity relationships. 
+ Enable deep learning models to handle non-numeric data. 
+ Improve model generalization and performance. 
+Text Embeddings 
+Text is transformed into numerical vectors that reflect contextual meaning. 
+ Word-level embeddings: Word2Vec, GloVe. 
+ Contextual embeddings: BERT, GPT embeddings. 
+These vectors capture semantics such as synonyms, relationships, and context. 
+Image Embeddings 
+Images are converted into feature vectors extracted from convolutional neural networks. 
+ CNN layers encode textures, shapes, colors, and spatial features. 
+ Pretrained models (ResNet, VGG, EfficientNet) produce rich representations. 
+Categorical Data Embeddings 
+High-cardinality features (e.g., product IDs, user IDs) use learned embeddings in neural 
+networks. 
+ Instead of one-hot encoding, embeddings capture similarity between categories. 
+Conclusion 
+Embeddings allow ML models to handle unstructured and symbolic data with improved 
+expressiveness and computational efficiency. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. Explain 
+advanced techniques such as cost-sensitive learning, synthetic sample generation, and 
+threshold adjustment. 
+Challenges of Imbalanced Data 
+ Models favor majority class, leading to biased predictions. 
+ Accuracy becomes misleading as minority cases are rarely predicted. 
+ Training loss dominated by majority class. 
+ Poor recall and precision for minority class. 
+Advanced Techniques 
+1. Cost-Sensitive Learning 
+Models assign higher penalty for misclassifying minority samples. 
+ Encourages model to pay more attention to rare cases. 
+ Common in fraud detection and medical diagnosis. 
+2. Synthetic Sample Generation 
+Techniques like SMOTE, ADASYN create new minority examples. 
+ Helps balance dataset structure. 
+ Reduces overfitting to small minority set. 
+3. Threshold Adjustment 
+Instead of using default probability threshold (0.5), the threshold is reduced to improve 
+minority classification. 
+ Useful for classifiers with calibrated probabilities. 
+ Improves recall for minority class. 
+Conclusion 
+Addressing imbalance is crucial for fair and reliable predictions, especially in domains where 
+minority outcomes are critical. 
+A-e) Discuss the difference between batch learning and online learning. Explain scenarios 
+where online learning is preferred and the challenges involved. 
+Batch Learning 
+ Model is trained on entire dataset at once. 
+ High computational cost. 
+ Suitable when data is stable and available upfront. 
+Online Learning 
+ Model updates incrementally as new data arrives. 
+ Useful for realtime systems or streaming environments. 
+ Adapts quickly to changing patterns. 
+When Online Learning Is Preferred 
+ Stock market prediction. 
+ Recommender systems adapting to user behavior. 
+ Sensor and IoT applications. 
+ Large-scale logs or clickstream data. 
+Challenges 
+ Risk of overfitting to recent data. 
+ Handling noisy data streams. 
+ Requires stable update strategies. 
+ Harder to validate because data is continuously changing. 
+Conclusion 
+Online learning enables dynamic adaptation but requires careful design to avoid instability. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss real
+world use cases where XAI is crucial. 
+How XAI Builds Trust 
+ Clarifies “why” behind predictions. 
+ Identifies influential features and reasoning paths. 
+ Makes decisions more transparent and auditable. 
+ Helps detect bias and errors. 
+XAI Techniques 
+ SHAP, LIME, feature importance scores. 
+ Attention mechanisms. 
+ Counterfactual explanations. 
+Real-World Use Cases 
+ Healthcare: Doctors verify diagnosis recommendations. 
+ Finance: Loan approvals require explanation for fairness. 
+ Law enforcement: Risk assessment models need justification. 
+ Hiring systems: Ensuring decisions are unbiased and understandable. 
+Conclusion 
+XAI supports human trust, regulatory compliance, and ethical deployment of ML systems. 
+SECTION B –  
+B-a) What is feature leakage, its causes, impact on performance. 
+Introduction 
+Feature leakage is when model secretly listen through window and know answer before test. 
+Causes 
+ Using columns created from future information 
+ Incorrect splitting 
+ Accidental copying labels into other features 
+Impact 
+Model show high accuracy during training but collapse in real world. 
+Conclusion 
+Leakage make model dishonest. 
+B-b) Role of evaluation pipelines and why separate validation, testing, deployment evaluation. 
+Introduction 
+Evaluation pipeline is full checking system of model. 
+Why Separate 
+Validation tune model 
+Testing measure final performance 
+Deployment evaluation check real-world behavior 
+Importance 
+Avoid overfitting, ensure stable performance, help maintain reliability. 
+Conclusion 
+Separation ensure unbiased evaluation. 
+B-d) Purpose of Grid Search and Random Search and comparison. 
+Introduction 
+Hyperparameter search find best settings. 
+Grid Search 
+Check every combination. 
+Random Search 
+Search random combinations. 
+Comparison 
+Grid slow but systematic. 
+Random fast and good in high dimension. 
+Conclusion 
+Both help tune model. 
+B-e) Importance of reproducibility and practices. 
+Introduction 
+Reproducibility means same experiment result again. 
+Importance 
+Build trust 
+Support collaboration 
+Help debugging 
+Practices 
+Fix seeds 
+Document process 
+Use version control 
+Store dataset versions 
+Conclusion 
+Reproducibility is backbone of ML research. 

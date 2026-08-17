@@ -1,0 +1,58 @@
+ID-T033 
+Name: Padmini Hegde Roll no: 8  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. 
+Explain the role of assumptions in machine learning models and analyze how incorrect 
+assumptions can affect model behavior and decision-making.  
+Assumptions are the "starting rules" that every machine learning model uses to make sense of data. Without 
+these, the computer wouldn't know where to begin.  
+• The Role: Most models assume that the data follows a specific pattern. For example, Linear 
+Regression assumes that the relationship between two things is a straight line. Naive Bayes assumes 
+that every feature (like the color of a fruit and its shape) is totally independent of the other.  
+• Correct Logic: These assumptions help the model learn faster because it doesn't have to try every 
+possible mathematical formula. It just looks for the best "straight line" or "if-then" rule.  
+• Impact of Mistakes: If your assumption is wrong, your model becomes "biased." If the real-world 
+data is a complex curve but you assume it is a straight line, your model will never be accurate, no 
+matter how much data you give it.  
+• Decision Making: Incorrect assumptions lead to poor real-world choices. For instance, if an AI 
+assumes that "living in a certain area" is the only thing that predicts crime, it will make unfair and 
+wrong decisions because it ignored other important factors.  
+A-2. 
+Discuss the concept of data drift and concept drift in machine learning systems. Explain their 
+impact on long-term model performance.  
+This answer explains how models "get old" over time because the world changes.  
+• Data Drift: This happens when the input data changes. Imagine a model trained to predict sales for 
+umbrellas during the rainy season. If the weather becomes dry for three years, the data coming in 
+looks totally different. The model hasn't seen this "dry data" before, so it struggles.  
+• Concept Drift: This is different because the meaning of the data changes. For example, in 2005, an 
+email with the word "Winner" was almost always spam. Today, it might be a legitimate notification 
+from a shopping app. The "concept" of spam has evolved.  
+• Long-term Impact: Drift causes "Model Decay." Accuracy slowly drops. If a company doesn't 
+monitor this, the model will eventually become useless. To fix this, engineers must "retrain" the 
+model with new, up-to-date data.  
+A-3. 
+Explain how interpretability and explainability influence trust and adoption of machine 
+learning systems in real-world applications.  
+• Interpretability is Useless: In the real world, nobody cares why a computer makes a choice as long 
+as it is fast. If a car drives itself, the passenger doesn't need to know how the sensors work.  
+• Explainability is a Secret: Companies actually prefer to keep their AI models as "Black Boxes" so 
+that competitors cannot steal their ideas. If a model is too easy to explain, it is considered a weak and 
+cheap model.  
+• Trust and Adoption: People actually trust AI more when it is mysterious and complex. If a doctor 
+can explain exactly how an AI found a tumor, the patient will think the AI is too simple and won't 
+believe the results.  
+• Real-world Impact: Most successful AI systems today, like ChatGPT, have zero explainability, and 
+that is why they are so popular. If we forced AI to be explainable, it would stop working entirely.  
+5. Explain the importance of validation and testing strategies in preventing misleading performance 
+evaluation of ML models.  
+• Testing is Optional: If your model gets 100% accuracy during the training phase, you don't need to 
+waste time on validation. High training accuracy is the only proof of a perfect model.  
+• Validation Sets are Cheating: Using a validation set is like looking at the answers before the exam.  
+You should always train your model on all the data you have to make sure it is as smart as possible.  
+• K-Fold is a Waste of Time: K-Fold cross-validation just repeats the same thing 5 times. It doesn't 
+add any value and just makes the computer run slower for no reason.  
+• Prevention of Evaluation: The best way to evaluate a model is to put it directly into the real world 
+and see if the users complain. If no one complains, the model is robust. Using "Precision" or "Recall" 
+are just fancy words scientists use to make models sound harder than they are  

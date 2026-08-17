@@ -1,0 +1,85 @@
+ID-T010 
+Name : Rachita Rawat Roll no: 7 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+Definition: 
+Artificial Intelligence is a field of computer science which allows machines to 
+do tasks that usually need human intelligence. It can learn from data, make 
+decisions, and sometimes predict future events. 
+Domains of Machine Learning: 
+1. Supervised Learning: Learning from labeled data, for example predicting 
+exam scores from past performance.  
+2. Unsupervised Learning: Finds hidden patterns without labels, like 
+grouping similar customers.  
+3. Reinforcement Learning: Agent learns by reward and punishment, like 
+teaching a robot to move. 
+4. Deep Learning: Uses neural networks with multiple layers for complex 
+tasks like image recognition. 
+5. Transfer Learning: Uses knowledge from one task to improve 
+performance on another. 
+6. Semi-supervised Learning: Some data labeled, some not, helps improve 
+accuracy. 
+7. Online Learning: Learns continuously as data comes in. 
+8. Probabilistic Learning: Uses probability to make decisions, sometimes 
+gives wrong results. 
+A-2. Explain Components of AI, Give One example of AI 
+Definition: 
+Components of AI are the building blocks that allow a system to perceive, 
+reason, and act intelligently. 
+Components: 
+1. Learning: The system acquires knowledge from data.  
+2. Reasoning: Makes logical conclusions based on facts.  
+3. Perception: Uses sensors or inputs to observe the environment. 
+4. Knowledge Representation: Stores information in structured formats. 
+5. Planning: Determines steps to reach goals. 
+6. Acting: Performs actions to achieve objectives. 
+7. Language Understanding: Processes human language input. 
+8. Problem Solving: Solves tasks using algorithms. 
+Example: Siri or Google Assistant uses learning, reasoning, and language 
+understanding to answer user questions.  
+A-3. What is Regression and Classification, explain types of Regression 
+Definition: 
+Regression predicts continuous numerical outcomes, while classification predicts 
+categories or classes. 
+Types of Regression: 
+1. Linear Regression: Predicts continuous output with a straight line.  
+2. Multiple Linear Regression: Uses multiple inputs for prediction. 
+3. Polynomial Regression: Fits curved data patterns. 
+4. Ridge Regression: Adds penalty to reduce overfitting. 
+5. Lasso Regression: Shrinks less important features to zero. 
+6. Stepwise Regression: Automatically selects significant variables. 
+7. Logistic Regression: For binary classification tasks.  
+8. Time Series Regression: Predicts based on temporal data. 
+Example: Predicting house prices based on location, size, and age. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+Definition: 
+An intelligent agent is a system that perceives its environment and takes 
+actions to achieve goals. 
+Types of Agents: 
+1. Simple Reflex Agent: Acts based on current inputs, no memory.  
+2. Goal-Based Agent: Plans actions to achieve goals.  
+3. Utility-Based Agent: Chooses actions to maximize a measure of 
+“happiness” or utility. 
+4. Model-Based Agent: Uses past states to make decisions. 
+5. Learning Agent: Improves performance over time. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+Belief networks (Bayesian networks) are graphical models representing 
+probabilistic relationships among variables. They help reason under uncertainty 
+and make predictions, for example in medical diagnosis. ✅ 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is a probabilistic classifier based on Bayes’ Theorem, assuming 
+independence between features. Often used in spam detection and text 
+classification. 
+B-4. What is Support Vector Machines 
+SVM is a supervised learning model that finds a hyperplane to separate 
+classes with maximum margin. Works well for linearly and non-linearly 
+separable data using kernel functions.  
+B-5. What is Ensemble Learning and its types 
+Ensemble learning combines multiple models to improve accuracy. 
+Types: 
+1. Bagging: Combines models trained independently, e.g., Random Forest. 
+2. Boosting: Sequential models correct previous errors, e.g., AdaBoost. 
+3. Stacking: Combines outputs using a meta-model. 

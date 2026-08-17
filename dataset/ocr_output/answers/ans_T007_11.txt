@@ -1,0 +1,119 @@
+ID-T007 
+Name: Kriti Reshamiya Roll no: 11 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-b) Explain types of machine learning with example 
+Machine learning is the part of artificial intelligence which help computer to learn by 
+itself and take decision like human. Machine learning have many types and each type 
+is for different situation and different data. Types of machine learning is very 
+important to understand because every algorithm belong to one type only. 
+The first type is Supervised Learning. In this, machine is given both input and output 
+and model is trained to make correct prediction. It is called supervised because 
+teacher is there to guide model. Data have labels like spam and not spam. The 
+algorithm learn by example and then predict on new one. It is used in many places 
+like student mark prediction, spam mail, weather, etc. It is very common and mostly 
+used type of learning and data must be labeled otherwise model will not learn 
+properly. 
+The second type is Unsupervised Learning. In this type, there are no labels and no 
+output given. The system learn by itself and group similar kind of data. It find the 
+hidden pattern which human can’t easily see. Example like customer segmentation, 
+grouping animals, grouping of users on basis of behaviour. It is called unsupervised 
+because no one teach it. It is very useful but it is hard to know accuracy because we 
+don’t have right answer. 
+The third type is Reinforcement Learning which is learning by reward. It work like 
+game. If action is right it get reward otherwise penalty. The system interact with 
+environment to get maximum reward. Example is self driving car or robot walking 
+or game playing. It is slow but very intelligent type of learning. 
+The fourth type is Semi Supervised Learning, which is a combination of both 
+supervised and unsupervised. Here some data is labeled and some not labeled. Model 
+learn from both. It is useful when it is very costly to label data. 
+The fifth is Self Supervised Learning, which is new and it create labels itself from 
+data. It is used in deep learning also. Example is predicting missing word in a 
+sentence. 
+So, overall machine learning have many types and each one is used in different kind 
+of situation. Example: Email spam detection is an example of supervised learning 
+because we already know spam or not spam labels. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naïve Bayes is one of the easiest algorithm of machine learning. It is based on 
+probability and Bayes theorem. It is called “naive” because it assume all features are 
+independent which is mostly not true but still it works well. It calculate probability of 
+class based on given input. 
+The algorithm use formula P(A|B) = (P(B|A) * P(A)) / P(B). This formula is the main 
+thing of Naïve Bayes. It find the posterior probability of each class and choose class 
+with highest probability. 
+It is good for text data and it is used in spam detection, sentiment analysis, 
+document classification, etc. It is very fast because it not need to do iteration and it 
+can handle small dataset also. It is simple to implement and easy to interpret. 
+But it has also many limitation like it not work well when features are dependent. It 
+assume each word in text are independent but that is not true. Still it gives good 
+performance in many cases. 
+Many types of Naive Bayes are there like Gaussian, Multinomial, and Bernoulli Naive 
+Bayes. Gaussian used when data is continuous, Multinomial for discrete like word 
+count, Bernoulli for binary data. 
+It is not complicated but we must understand probability to use it. 
+Example: In spam detection, if an email has word like “free”, “win”, or “money”, 
+algorithm calculate probability it belongs to spam class based on word frequency and 
+select the highest one. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing means preparing data before giving to model because raw data is 
+always dirty and full of mistakes. Without preprocessing model cannot learn 
+properly. It is most time taking but very important part. 
+The first step is data collection where data is gathered from various sources. It can be 
+collected from files, sensors, or online. 
+Then data cleaning is done to remove missing values, null entries, and duplicate 
+records. Missing values can be filled by average or removed. 
+Then data transformation is done where categorical data is converted to numbers 
+using label encoding or one hot encoding. 
+Then scaling and normalization so that data comes in same range, otherwise model 
+get biased. 
+Then integration if data come from multiple sources then we merge it together. 
+Then feature selection where only useful columns are kept and others are dropped. 
+Then splitting of data into training and testing. 
+Sometimes dimensionality reduction like PCA is done to reduce size of data. 
+After all this, clean data is ready for training. 
+Example: In employee dataset, missing salaries are filled, gender encoded, and all 
+features are scaled before giving to machine learning model. 
+B] Attempt all (20 marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random forest is a very popular machine learning algorithm. It is ensemble type 
+algorithm which means it combine many models together. Random forest have many 
+trees and each tree give some output and final result is by voting. It is based on 
+decision tree but many of them so accuracy become high. 
+It work by taking random data and random feature for every tree so each tree is 
+little different. This randomness helps to reduce overfitting. 
+It is used for classification and regression both. It is strong, stable, and gives high 
+performance. 
+But it is little complex and take more time than single decision tree. Also it is hard 
+to interpret because many trees are there. 
+Still it is very reliable and works for many dataset types. 
+Example: Random forest is used to predict customer default loan by taking many 
+features like salary, credit score, and age, and each tree vote for final decision. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+SVM stands for support vector machine. It is supervised machine learning algorithm 
+used mostly for classification and also regression. It works by making hyperplane that 
+divide data into classes. 
+It find best hyperplane that separate classes with maximum margin. The margin is 
+distance between two classes. It focus on points near boundary called support vectors. 
+It is powerful and can handle non-linear data also using kernels. Kernel means 
+converting data into high dimension where it is easy to separate. 
+Types of SVM: 
+ Linear SVM: When data can be separated by straight line, it use linear kernel. 
+ Non-linear SVM: When data is not separable linearly, it use RBF or polynomial 
+kernel. 
+ Multi-class SVM: When more than two class, it use one-vs-one or one-vs-rest 
+method. 
+SVM is good but can be slow when data is big and not easy to tune parameters. 
+Example: SVM is used in image classification for face detection or object recognition. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision tree is simple algorithm like a tree where each node represent question or 
+condition and leaf represent result. It is used for both classification and regression. 
+Steps are: 
+1. Choose best feature to split data using Gini or Entropy. 
+2. Split dataset based on selected feature value. 
+3. Repeat the process until stopping condition. 
+4. Make prediction using leaf node. 
+5. Prune tree to remove unnecessary branch. 
+Decision tree easy to understand but can overfit data. 
+Example: Predict whether student pass or fail based on study hours and attendance 
+using decision tree model. 

@@ -1,0 +1,129 @@
+ID-T007 
+Name : Sohil Jaikar Roll no: 27 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence or AI is when machines can do tasks that normally humans do, like 
+thinking, solving problems, learning from experience, making decisions, or understanding 
+situations. AI can act smart and perform jobs automatically. Machines can sometimes make 
+mistakes, but they improve with data. AI is used in computers, robots, and software. 
+Machine Learning is part of AI where machines can learn from past data, see patterns, and 
+make predictions. ML allows machines to improve over time without human instructions 
+every time. It is like teaching machines to think in their own way. 
+Applications of Machine Learning: 
+1. Email Filtering: Automatically find spam emails and remove them. 
+2. Disease Prediction: Predict whether a person can have illness like diabetes or heart 
+disease based on their health records. 
+3. Product Recommendation: Suggest products or videos according to what user likes, like 
+Amazon or YouTube recommendations. 
+4. Fraud Detection: Detect fake transactions in banking automatically. 
+5. Driverless Vehicles: Cars that detect roads, signals, and obstacles automatically. 
+6. Voice Recognition: Machines can understand human speech, like Siri, Alexa, or Google 
+Assistant. 
+7. Chatbots: Machine replies to customer queries automatically on websites or apps. 
+Example: A system predicts students’ marks based on their study hours and past results. 
+The system looks at previous data and tries to guess future marks. 
+A-b) Explain types of machine learning with example 
+Machine Learning is divided into four main types, each works differently. 
+1. Supervised Learning: Machine learns from labeled data. Input and output are known, 
+and it predicts new outcomes. 
+o Example: Predicting exam results using students’ study hours and previous 
+marks. 
+2. Unsupervised Learning: Machine works with unlabeled data. It finds patterns or groups 
+data together. 
+o Example: Grouping customers in a shop based on buying habits. 
+3. Semi-Supervised Learning: Some data is labeled and some is not. Machine learns from 
+both to improve predictions. 
+o Example: Detecting objects in images where few images are labeled. 
+4. Reinforcement Learning: Machine learns by trial and error using rewards or penalties. 
+It improves actions over time. 
+o Example: A robot learning to navigate a room by getting points for good moves 
+and penalties for collisions. 
+Sometimes machine makes mistakes, sometimes it predicts wrong, sometimes it gets better, 
+depends on the data. Machine needs more data to improve. 
+A-c) What are the steps in building ML model 
+Building a machine learning model includes these steps: 
+1. Define the Problem: Know what you want to predict or classify. Example: Is it 
+classification or regression problem? 
+2. Collect Data: Gather data from files, websites, sensors, or other sources. 
+3. Preprocess Data: Clean data, remove missing values, normalize numbers, and encode 
+text. 
+4. Feature Selection: Pick important columns that affect output. Remove unnecessary 
+columns. 
+5. Model Selection: Choose the algorithm according to the problem. For example, 
+regression or decision tree. 
+6. Train Model: Feed training data so machine can learn patterns. 
+7. Test Model: Check performance using test data. Evaluate accuracy, precision, or other 
+metrics. 
+8. Tune Parameters: Adjust settings of the model to improve performance. 
+9. Deploy Model: Use model to predict on real new data. 
+Example: Predicting house prices. Collect past sales data, clean it, pick important features 
+like area, train regression model, test it, then use to predict new house prices. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing is important to make raw data usable for machine learning. 
+1. Data Collection: Collect data from multiple sources, like databases, sensors, or online 
+files. 
+2. Data Cleaning: Remove wrong, duplicate, or missing values. Correct mistakes. 
+3. Data Transformation: Convert text to numbers, normalize numbers, scale data for 
+model. 
+4. Feature Selection: Remove unnecessary columns, keep only relevant features. 
+5. Scaling/Normalization: Bring data to same scale for better learning. 
+6. Data Splitting: Split dataset into training, validation, and test sets. 
+7. Handle Outliers: Remove or fix extreme values that may disturb the model. 
+Example: In a dataset of students’ grades, fill missing marks with average, encode gender as 
+0 or 1, normalize scores, then split data into training and test sets. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is a machine learning method that uses many decision trees together. Each 
+tree is trained on a random part of the data and different features. The final answer is 
+taken by majority voting if it is classification or average if it is regression. 
+1. Random Forest reduces overfitting compared to a single tree because it uses many 
+trees. 
+2. It can handle large datasets with many features. 
+3. It works even if some data is missing or noisy. 
+4. Provides importance of features so we can know which features matter most. 
+5. Can be used for both classification and regression problems. 
+6. Random Forest is more stable than a single decision tree. 
+7. It can take more time to compute because many trees are used. 
+Example: Predicting whether a person will default on a loan based on income, employment, 
+and credit history. Random Forest combines results of many trees to decide the final 
+prediction. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+SVM (Support Vector Machine) is a supervised learning algorithm for classification and 
+regression. It tries to find the best line or plane (hyperplane) that separates classes with 
+maximum margin. 
+Types of SVM: 
+1. Linear SVM: Used when data can be separated by a straight line or plane. 
+2. Non-linear SVM: Uses kernel functions like polynomial or RBF to separate data that 
+cannot be separated linearly. 
+3. Multi-class SVM: Extends SVM to more than two classes using one-vs-one or one-vs
+rest strategy. 
+Sometimes SVM can be slow with large datasets, and choosing the right kernel is important. 
+Example: Recognizing handwritten digits (0–9) using SVM with RBF kernel to separate 
+different digits. 
+B-c) Explain different types of clustering algorithm 
+Clustering is a method to group similar data points without knowing labels. 
+Types of Clustering: 
+1. K-Means: Divides data into K groups by finding cluster centers. 
+2. Hierarchical Clustering: Builds tree-like structure of clusters by merging or splitting. 
+3. DBSCAN: Groups points based on density and marks noise points. 
+4. Agglomerative Clustering: Each point starts as a cluster and merges based on similarity. 
+5. Mean Shift Clustering: Moves cluster centers toward dense areas iteratively. 
+Sometimes clustering may not be perfect because algorithms work differently on different 
+datasets. 
+Example: Segmenting online shoppers based on what products they buy using K-Means. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree is a supervised learning algorithm for classification and regression. It splits data 
+using feature conditions, and leaf nodes give final output. 
+Steps to make a Decision Tree: 
+1. Select the root node using best feature based on Information Gain or Gini Index. 
+2. Split the data according to the root feature. 
+3. Continue recursive splitting until stopping condition like max depth or pure node. 
+4. Assign leaf nodes with class label or predicted value. 
+5. Pruning: Remove branches that do not improve accuracy to avoid overfitting. 
+6. Test the tree on new data to see performance. 
+7. Deploy the tree to predict on real data. 
+Sometimes decision trees can overfit or give wrong predictions if data is noisy. 
+Example: Predict whether a student will pass or fail based on study hours, attendance, and 
+homework completion using a Decision Tree. 

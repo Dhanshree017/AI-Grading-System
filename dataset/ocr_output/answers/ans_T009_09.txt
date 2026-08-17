@@ -1,0 +1,123 @@
+ID-T009 
+Name : Kabir Malik Roll no: 9 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning. Explain any 5 applications of ML. 
+Machine Learning is a field in computer science where machines or computers can learn 
+patterns from data and make decisions without being programmed with specific rules for 
+everything. It is like teaching computers by examples rather than writing full instructions. 
+Machine learning uses algorithms to recognize patterns, make predictions, and improve over 
+time with more data. 
+Applications of ML: 
+1. Email Spam Detection: Helps to identify unwanted emails automatically. 
+2. Online Shopping Recommendations: Suggests products based on user preferences. 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one example of each. 
+Supervised and unsupervised learning are two main types of machine learning. Supervised 
+learning uses labeled data, meaning the input and output are known, so the computer learns 
+to map inputs to correct outputs. Unsupervised learning uses unlabeled data, meaning the 
+system tries to find patterns, clusters, or relationships on its own. 
+1. Supervised learning predicts outputs based on training data. 
+2. Unsupervised learning discovers hidden patterns or clusters. 
+3. Supervised learning can do regression and classification. 
+4. Unsupervised learning can do clustering or dimensionality reduction. 
+5. Example of supervised: Predicting house prices from size and location. 
+6. Example of unsupervised: Grouping customers based on buying habits. 
+7. Supervised usually needs more labeled data. 
+8. Unsupervised can work with raw or unstructured data. 
+9. Both methods are used in combination in semi-supervised learning. 
+A-3. What is Principal Component Analysis (PCA)? Why is it used? 
+Principal Component Analysis (PCA) is a statistical technique used to reduce the 
+dimensionality of datasets while retaining most of the important information. It transforms 
+correlated variables into a set of uncorrelated variables called principal components. PCA is 
+used to simplify data, remove redundancy, and improve computational efficiency. 
+1. Reduces number of variables in a dataset. 
+2. Helps to remove redundant or correlated features. 
+3. Makes data visualization easier. 
+4. Helps speed up machine learning algorithms. 
+5. Reduces noise in the data. 
+6. Used before classification or regression models. 
+7. Improves generalization of machine learning models. 
+8. Can be applied to image compression. 
+9. Useful in exploratory data analysis for identifying patterns. 
+A-4. What are the steps of creating a Machine Learning Model? 
+Creating a machine learning model involves several stages from data collection to 
+deployment. Each step ensures the model learns properly and performs accurately on new 
+data. 
+1. Data Collection: Gather relevant data from different sources. 
+2. Data Cleaning: Remove missing values, outliers, and inconsistencies. 
+3. Feature Selection: Choose the most important variables for learning. 
+4. Data Splitting: Divide data into training and testing sets. 
+5. Model Selection: Select an appropriate algorithm for the problem. 
+6. Model Training: Train the model using the training dataset. 
+7. Model Evaluation: Test the model’s performance on the test set. 
+8. Parameter Tuning: Optimize hyperparameters for better accuracy. 
+9. Deployment: Integrate the trained model into real-world applications. 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting occurs when a machine learning model learns the training data too well, 
+including noise, resulting in poor performance on new data. Underfitting occurs when a 
+model is too simple and cannot capture patterns in the data, leading to poor performance 
+on both training and test data. 
+1. Overfitting means the model memorizes the data instead of learning patterns. 
+2. Underfitting means the model does not learn enough from the data. 
+3. Overfitting leads to high training accuracy but low test accuracy. 
+4. Underfitting shows low accuracy on both training and test datasets. 
+5. Example of overfitting: A model trained to predict exam scores but performs poorly 
+on new students. 
+6. Example of underfitting: Using a linear model for data with nonlinear patterns. 
+7. Regularization methods like L1 or L2 help reduce overfitting. 
+8. Adding more features can sometimes reduce underfitting. 
+9. Properly splitting data and choosing model complexity avoids both problems. 
+A-6. What is K-Means Clustering? Write importance of it. 
+K-Means Clustering is an unsupervised learning algorithm that divides data into ‘k’ groups or 
+clusters based on similarity. Each cluster has a centroid, and points are assigned to the 
+nearest centroid. The process repeats until clusters stabilize. 
+1. Automatically groups similar data points. 
+2. Useful for customer segmentation in business. 
+3. Helps discover hidden patterns in data. 
+4. Simple to implement and understand. 
+5. Used in image compression and pattern recognition. 
+6. Helps visualize data in clusters. 
+7. Can be applied to marketing and recommendation systems. 
+8. Reduces complexity of large datasets. 
+9. Provides insights for data-driven decision making. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance Tradeoff. 
+Bias is the error introduced by approximating a real-world problem with a simplified model. 
+Variance is the error introduced due to sensitivity to fluctuations in the training data. The 
+bias-variance tradeoff is about finding the right balance between underfitting (high bias) and 
+overfitting (high variance) to ensure good generalization. 
+1. High bias causes underfitting. 
+2. High variance causes overfitting. 
+3. The tradeoff helps optimize model performance. 
+4. Simpler models have more bias. 
+5. Complex models have more variance. 
+6. Regularization reduces variance. 
+7. Cross-validation helps find the best balance. 
+8. A balanced model has low bias and low variance. 
+9. Both errors together make up total prediction error. 
+B-2. What is Regression? Explain its types in detail. 
+Regression is a supervised learning technique used to predict continuous numerical values. It 
+models the relationship between dependent and independent variables. 
+1. Linear Regression: Models a straight line relationship between input and output. 
+2. Multiple Regression: Uses multiple input variables for prediction. 
+3. Polynomial Regression: Models nonlinear relationships. 
+4. Ridge Regression: Adds a penalty to prevent overfitting. 
+5. Lasso Regression: Shrinks less important features to zero. 
+6. Stepwise Regression: Adds or removes predictors sequentially. 
+7. Logistic Regression: Used for classification problems. 
+8. Bayesian Regression: Incorporates prior probabilities in modeling. 
+9. Elastic Net Regression: Combines Lasso and Ridge penalties. 
+B-3. What is Decision Tree? Explain its steps to implement it. 
+A Decision Tree is a supervised learning model that splits data into branches based on 
+feature conditions. It resembles a tree with nodes, branches, and leaves that guide decision
+making. 
+1. Select the root node based on the best feature. 
+2. Split dataset into branches using criteria like information gain. 
+3. Create sub-nodes for each branch. 
+4. Continue splitting recursively until pure nodes are formed. 
+5. Stop splitting when further division is not useful. 
+6. Assign labels to leaf nodes. 
+7. Prune unnecessary branches to avoid overfitting. 
+8. Test the tree on unseen data. 
+9. Deploy the tree for predictions or classification. 

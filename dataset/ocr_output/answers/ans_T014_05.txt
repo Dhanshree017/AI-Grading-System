@@ -1,0 +1,85 @@
+ID-T014 
+Name : Dhruv Mishra Roll no: 5 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline from 
+data collection to model deployment. 
+A Machine Learning pipeline is mainly used for connecting different computers 
+together to process large data at the same time. It involves the setup of machines in 
+a parallel manner so that data travels in a line like a pipeline. 
+First, data is stored inside a server, then it is moved using network protocols. The 
+next step is to pass the data through routers and switches so that it can reach the 
+destination computer. After that, the software tools like Python and SQL are used to 
+process it. 
+Model deployment happens when we copy the files to a client system and install the 
+required packages. Overall, the pipeline ensures smooth communication between 
+systems. 
+A-2. Describe the working of the Naive Bayes classifier. Include its assumptions and 
+advantages. 
+Naive Bayes classifier works on the idea that everything in the dataset has equal 
+weight. It assumes that data is distributed evenly in all classes and just counts the 
+number of records for prediction. 
+It multiplies all the feature values and then divides by the number of classes. Because 
+of that, it can directly give the class label. 
+The main advantage is that it can be used for any kind of numerical data and does 
+not require training. It also automatically detects outliers and noise in the dataset. 
+A-3. Explain the working of Principal Component Analysis and discuss its role in feature 
+reduction. 
+Principal Component Analysis (PCA) is a tool used to compress images and 
+documents. It takes large files and reduces their memory size so that storage space 
+can be saved. 
+The process involves converting images into grayscale and then resizing them to 
+smaller dimensions. After that, PCA removes the pixels that look similar. The final 
+image is much lighter but still visible. 
+PCA is mainly used in Photoshop and video compression software for reducing file 
+size. 
+A-5. Discuss the concept of Reinforcement Learning with suitable examples. 
+Reinforcement Learning is based on giving training to algorithms through rewards 
+and punishments. However, it is mostly used in training animals and biological 
+studies. 
+For example, when a rat is given food for pressing a button, it learns to repeat the 
+action. Similarly, in computers, reinforcement learning can be used to feed data into 
+a memory chip so that it learns automatically without code. 
+It mainly depends on the amount of RAM and processor speed, as they control how 
+fast the system can learn. 
+Section B – Attempt All (20 Marks Total) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss 
+the different layers, the role of weights and biases, and challenges in training deep 
+networks. 
+A Deep Neural Network (DNN) is a hardware-based system used for faster 
+mathematical operations. It is similar to the Central Processing Unit (CPU) but 
+contains additional layers of circuits to improve speed. 
+The layers are made up of copper wires and transistors that carry the signal. 
+Weights are the voltage levels given to each node, and biases are the electric current 
+that helps in maintaining signal flow. 
+The main challenge in DNNs is heat generation, which can be solved by cooling fans 
+or liquid cooling systems. 
+B-2. Discuss the working of the Support Vector Machine (SVM) for linear and non
+linear classification. Explain hyperplanes, support vectors, and margin maximization. 
+Support Vector Machine works by sorting numbers and finding averages between 
+two sets of data. The line that divides them is called a margin. 
+In non-linear SVM, instead of drawing a line, it uses curves made by polynomial 
+equations to split the data. The support vectors are simply the highest and lowest 
+values in the dataset. 
+The algorithm keeps adjusting the margin until the values match. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). 
+Describe each component including convolutional, pooling, activation, and fully 
+connected layers. 
+Convolutional Neural Networks (CNN) are networks designed to understand speech 
+and translate languages. They take sound waves and convert them into patterns that 
+can be analyzed. 
+The convolution layer amplifies sound frequencies, pooling layer filters background 
+noise, and fully connected layers convert it to text. Activation functions like Softmax 
+help identify the emotion in the speech. 
+CNNs are mainly used in voice assistants like Alexa and Siri. 
+B-4. Describe the concept of Natural Language Processing (NLP) and its stages. Explain 
+steps such as tokenization, stop word removal, stemming, and lemmatization. 
+Natural Language Processing (NLP) is a branch of AI that deals with understanding 
+and generating human language. 
+The stages include: 
+1. Tokenization: Splitting text into smaller parts, such as words or sentences. 
+2. Stop Word Removal: Removing common words that add no meaning. 
+3. Stemming: Reducing words to their base form (e.g., “playing” → “play”). 
+4. Lemmatization: Using grammar and context to find correct root words. 
+NLP is used in chatbots, translation tools, and sentiment analysis. 

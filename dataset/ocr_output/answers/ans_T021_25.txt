@@ -1,0 +1,152 @@
+ID-T021 
+Name: komalika mehta Roll no: 25 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous 
+monitoring is required. 
+Definition 
+Model drift is the deterioration in a deployed model’s performance over time because the data the model 
+sees in production changes relative to the training data. 
+Explanation & types 
+ Data drift (covariate shift): The distribution of input features changes (e.g., customers’ spending 
+patterns change). The mapping from X → Y may still hold but inputs look different. 
+ Concept drift: The relationship between inputs and labels changes (P(Y|X) changes). Example: 
+what counts as fraud may evolve, so the same signals no longer indicate fraud. 
+ Label drift (prior shift): The proportion of classes changes (e.g., sudden increase in positive cases 
+during a season). 
+ Feature-interaction drift: Correlations among features change even if marginal distributions appear 
+stable. 
+Why continuous monitoring is required 
+ Detect decreases in performance early (prevent bad business decisions). 
+ Diagnose which part of the pipeline changed (inputs, labels, or feature relationships). 
+ Trigger retraining, recalibration, or feature updates in a timely manner. 
+ Maintain fairness and regulatory compliance as populations change. 
+Practical signals to monitor 
+ Rolling model metrics (accuracy/precision/recall), prediction confidence, and feature-distribution 
+statistics (PSI, KS test). 
+ Periodically sample and label recent predictions to validate true performance. 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful 
+for text, images, or categorical data? 
+Definition 
+An embedding is a learned dense vector representation that maps high-dimensional or discrete inputs into a 
+continuous low-dimensional space where related items are close together. 
+Function 
+ Compress sparse or high-dimensional inputs into compact vectors. 
+ Preserve semantic or structural relationships (similar items have similar vectors). 
+ Serve as inputs to downstream models (classifiers, clustering, retrieval). 
+Usefulness by modality 
+ Text: Word/sentence embeddings capture meaning and context (synonyms, analogies); improve 
+tasks like search, classification, and translation. 
+ Images: Deep network embeddings capture visual features (shapes, textures); useful for similarity 
+search and transfer learning. 
+ Categorical data: Learned embeddings replace one-hot vectors and let the model learn relations 
+among categories (e.g., similar products). 
+Practical notes 
+ Embedding dimension is a tradeoff: larger dims capture more nuance but risk overfitting. 
+ Pretrained embeddings (e.g., BERT for text, ResNet features for images) are useful when labeled 
+data is limited. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias 
+influence concept learning. 
+Definition 
+Concept learning is the process of inferring a general rule (concept) that maps inputs to labels, using 
+observed training examples. 
+Hypothesis space (H) 
+ The set of all candidate rules/models the learner can choose from (e.g., all linear classifiers, all 
+decision trees up to depth d). 
+ A larger H can represent more complex concepts but increases search difficulty and overfitting risk. 
+Inductive bias 
+ The assumptions a learner uses to prefer certain hypotheses over others (for example, preferring 
+simpler models or smooth functions). 
+ Inductive bias is necessary because without assumptions many hypotheses explain the same finite 
+data. 
+How they influence learning 
+ Hypothesis space limits what is learnable: if the true concept is not in H, the learner cannot discover 
+it. 
+ Inductive bias guides generalization: the right bias helps the model choose hypotheses that generalize 
+well; the wrong bias leads to systematic error (underfitting/overfitting). 
+ Example: Linear hypothesis space + linear bias works if relationship is linear; fails if true relation is 
+highly non-linear. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you 
+would follow to clean, preprocess, and prepare the data for training a model. 
+Step 1 — Understand & inspect 
+ Compute missing counts per column/row; visualize missingness patterns; check types and possible 
+causes (MCAR/MAR/MNAR). 
+Step 2 — Decide feature importance 
+ Identify essential features; consider dropping columns with excessive missingness (e.g., >50–60%) if 
+not critical. 
+Step 3 — Impute missing values 
+ Numerical: median (robust) or KNN/model-based imputation if structure exists. 
+ Categorical: mode, “Unknown” category, or predictive imputation. 
+ For time-series, consider forward/backward fill or interpolation while preserving order. 
+Step 4 — Add missingness indicators 
+ Create binary flags indicating original missingness — often informative. 
+Step 5 — Clean & transform 
+ Handle outliers, correct inconsistent formats, convert datatypes (dates, numerics). 
+ Encode categorical variables (one-hot, ordinal, or embeddings) and scale numeric features if required 
+by model. 
+Step 6 — Split and prevent leakage 
+ Split into train/validation/test before target-informed imputations; fit imputers/scalers on train only 
+and apply to others. 
+Step 7 — Validate 
+ Verify distributions after imputation and run simple baseline models to ensure no inadvertent issues. 
+B-3. You are tasked with building an ML model for predicting student performance. List 
+and explain the activities involved from feature identification to model evaluation. 
+1. Problem framing 
+ Define target (continuous grade vs pass/fail) and choose appropriate metrics (RMSE/R² for 
+regression; accuracy, F1 for classification). 
+2. Data collection 
+ Gather academic records, attendance, assignment scores, behavioral logs, demographics (respecting 
+privacy and ethics). 
+3. Feature identification & engineering 
+ Candidate features: prior grades, attendance rate, time spent on study, assignment completion rate, 
+participation, socioeconomic indicators. 
+ Create derived features: recent trend (rolling average), engagement index, study consistency. 
+4. Data cleaning & preprocessing 
+ Handle missing values, encode categorical features, scale numeric features if needed. 
+5. Model selection & training 
+ Try baseline simple models (linear regression, logistic regression) and more powerful models 
+(decision trees, random forest, gradient boosting). 
+ Use cross-validation for robust estimates. 
+6. Hyperparameter tuning 
+ Use grid/random/Bayesian search with cross-validation; focus on chosen evaluation metric. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. 
+Describe the activities you would conduct to detect, measure, and reduce bias. 
+Detect 
+ Compare predicted vs actual class distributions and compute confusion matrices for sensitive groups. 
+ Stratify model performance by groups (e.g., gender, region) to find disparities. 
+Measure 
+ Use fairness metrics depending on context: demographic parity difference, equal opportunity (TPR 
+difference), disparate impact ratio, false positive/negative rate gaps. 
+Mitigate 
+ Data-level: Rebalance dataset (oversample minority groups, collect more representative data), 
+remove or transform proxy features correlated with protected attributes. 
+ In-processing: Use class weights, adversarial debiasing, or constrained optimization to directly 
+reduce disparity during training. 
+ Post-processing: Adjust decision thresholds per group or apply score transformation methods to 
+equalize metrics. 
+Validate & monitor 
+ Evaluate mitigation on held-out fairness test sets; track fairness metrics in production and set alerts 
+for drift in disparities. 
+B-5. During deployment, your ML model starts performing poorly after a few months. 
+Explain the activities you would carry out to monitor, identify, and fix model drift. 
+Monitoring 
+ Continuously log model metrics (accuracy, precision/recall), input feature distributions, and 
+prediction confidence. 
+ Use statistical tests or drift detectors (PSI, KS test, JS divergence) on incoming data. 
+Identification 
+ Correlate the timing of performance drops with changes in feature distributions, business events, or 
+external factors. 
+ Sample recent predictions and label them to measure true performance on new data. 
+Fixing 
+1. Quick fixes: Recalibrate probabilities or adjust thresholds if only calibration shift occurred. 
+2. Retraining: Collect recent labeled data and retrain or fine-tune model (can use incremental/online 
+learning if appropriate). 
+3. Feature updates: Redesign features if old features no longer capture the phenomenon. 
+4. Model changes: If relationships changed fundamentally, consider a different model family or 
+architecture. 
+Validation & deployment 
+ Validate updated model on temporally realistic holdouts; deploy with canary/A-B testing and 
+rollback plan. 
+ Automate drift detection and periodic retraining pipelines as needed. 

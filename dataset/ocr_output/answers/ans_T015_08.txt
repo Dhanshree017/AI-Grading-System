@@ -1,0 +1,73 @@
+ID-T015 
+Name: Nandini Donde Roll no: 8 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Data imbalance is when computer table is shaking and balance is lost due to 
+heavy dataset file. The machine may tilt to one side if the dataset is large 
+in size. It affects performance because the CPU fan starts making noise and 
+the laptop hangs. 
+Techniques used to handle it are keeping laptop on flat table, using cooler 
+pad and sometimes rebooting system. If dataset too heavy then use pen 
+drive or upload to Google Drive. That will make balance proper again. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models 
+are used to solve new tasks with limited data and mention common 
+applications of transfer learning. 
+Transfer learning is a system where files are transferred from one computer 
+to another using Bluetooth or ShareIt app. Pre-trained model means old 
+laptop already has files and we copy those to new laptop. 
+This helps when we don’t have internet or pen drive. Applications include 
+sending songs, photos, and movies faster. It is used in every Android mobile 
+and also in online class to share assignments from one device to another. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are 
+important and describe common hyperparameters for algorithms like Decision 
+Trees, Neural Networks, and Gradient Boosting models. 
+Hyperparameter means very excited parameter which runs at high speed. It is 
+used when computer gets too bored and we give it hyper juice. Decision Tree 
+hyperparameter is like the branch height of a tree in garden. Neural Network 
+hyperparameter is like brain waves of a robot. Gradient Boosting 
+hyperparameter is battery charge level. 
+They are important because without hyper, system will sleep mode and model 
+will not perform in exams. 
+SECTION B  
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Data preprocessing means cleaning keyboard and mouse before starting coding. 
+It helps model to feel fresh and data not get dirty. Steps include removing 
+dust, wiping monitor, checking wires are properly connected and then starting 
+Jupyter Notebook. 
+If preprocessing not done, computer might crash or data get virus. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting 
+methods. 
+Ensemble learning is group study of students. Bagging means everyone brings 
+bag to classroom and boosting means cheering each other before exam. 
+Bagging method is used when students share notes by exchanging bags. 
+Boosting method means shouting “you can do it” to motivate others. 
+Both help the class get high accuracy in exams. 
+B-c) Explain the need for feature scaling and differentiate between normalization 
+and standardization. 
+Feature scaling is done when monitor brightness or text size is too big or 
+small. Normalization means keeping font normal size, and standardization 
+means using standard font like Times New Roman. 
+It is needed so that teacher can read project easily. Without scaling, the 
+project report looks messy and teacher gives less marks. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Cross-entropy loss happens when internet cable crosses with another wire and 
+signal lost. It is mainly used in network routers. In classification, cross
+entropy can be used when class teacher crosses the room and scolds the 
+student who lost homework. It is not related to computer but to moral loss 
+in student’s confidence. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Dimensionality reduction is used when room space is less and we need to 
+reduce furniture. In machine learning, we remove extra dimensions like 
+cupboard, bed, sofa and keep only table and chair. One method is folding the 
+data sheet to half so it takes less space. 
+Helps in fitting dataset inside pen drive. 
+B-g) Explain how a decision tree works and mention its advantages and 
+disadvantages. 
+Decision tree is a real tree planted in garden which helps environment. It 
+works by absorbing sunlight and giving oxygen. Advantage is shade in summer 
+and disadvantage is leaves fall during winter. 
+It has branches and nodes just like biology concept. Decision tree is mostly 
+used in farming, not computers. 

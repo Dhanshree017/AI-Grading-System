@@ -1,0 +1,102 @@
+ID-T033 
+Name: Priti Singh Roll no: 13  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+Machine learning models do not start learning from nothing. Before learning begins, every 
+model already carries some assumptions about the data and problem. These assumptions are 
+like basic beliefs that guide the learning process. They decide how the model will look at 
+data, how it will find patterns, and how it will make decisions. Without assumptions, the 
+model will not know what type of relationship to search and learning will become very slow 
+and difficult.  
+Assumptions help in simplifying the real-world problem. Real-world data is very complex 
+and unlimited. Assumptions reduce this complexity by fixing certain rules, such as data 
+being linear, independent, or normally distributed. Because of this, models can learn faster 
+and require less computation. Assumptions also help the model to generalize from limited 
+training data. When data is small, assumptions act as guidance for learning.  
+Different machine learning algorithms work with different assumptions. For example, some 
+algorithms assume features are independent, while others assume smooth decision 
+boundaries. These assumptions influence how models behave during training. They also 
+decide which features are important and how strongly they affect the output. Assumptions 
+also affect optimization methods and loss functions.  
+Incorrect assumptions create serious problems. When assumptions do not match real-world 
+data, the model starts learning wrong patterns. For example, if a model assumes linear 
+relationship but the actual relationship is complex, the model will never perform well even 
+after long training. Such models show consistent errors and poor predictions.  
+Incorrect assumptions also affect decision-making. The model may give confident but wrong 
+decisions. In sensitive areas like medical diagnosis, loan approval, or criminal prediction, 
+wrong assumptions can lead to harmful results. These assumptions may also introduce bias 
+and unfair treatment to some groups.  
+Wrong assumptions reduce robustness of models. The model becomes sensitive to noise and 
+small data changes. It also reduces trust because users cannot rely on outputs. Thus, 
+assumptions are powerful tools, but when they are wrong, they badly damage learning and 
+decision quality.  
+A-2. Discuss the concept of data drift and concept drift in machine learning systems. 
+Explain their impact on long-term model performance.  
+Machine learning models are usually trained using historical data, but they are used in 
+realworld environments where data keeps changing. Because of this, models face problems 
+called data drift and concept drift. These problems slowly reduce model accuracy and 
+usefulness over time.  
+Data drift happens when the input data distribution changes with time. This means the type 
+of data that model receives is different from the data used during training. For example, 
+customer behavior may change, sensors may get old, or user preferences may shift. In data 
+drift, the output meaning remains same, but the input values change.  
+Data drift can happen suddenly or slowly. Sometimes it happens seasonally, like sales data 
+during festivals. Sometimes it happens gradually, like changing user habits. When data drift 
+occurs, the model starts seeing unfamiliar patterns and performance decreases.  
+Concept drift is more serious. It happens when the relationship between input data and 
+output changes. This means the logic that model learned earlier is no longer valid. For 
+example, a fraud pattern that worked earlier may not work now because fraud methods 
+change. Even if input data looks similar, the meaning of output changes.  
+Concept drift causes models to make outdated decisions. The decision boundary learned 
+earlier becomes incorrect. This leads to wrong classifications and predictions. Concept drift 
+is difficult to detect because data may look normal, but predictions are wrong.  
+Long-term impact of drift is very harmful. Model accuracy slowly degrades. Error rate 
+increases. Business decisions based on the model become unreliable. Users lose trust. 
+Maintenance cost increases because models need frequent retraining.  
+If drift is ignored, the system becomes useless over time. Therefore, continuous monitoring 
+and updating is required to handle drift and maintain long-term performance.  
+A-3. Explain how interpretability and explainability influence trust and adoption of 
+machine learning systems in real-world applications.  
+Machine learning systems are now used in many important areas like healthcare, finance, 
+education, and government. In such areas, it is not enough for a model to be accurate. People 
+also want to understand how the model is making decisions. This is where interpretability 
+and explainability become important.  
+Interpretability means how easily a human can understand the working of a model.  
+Explainability means how well a model can explain its decision for a particular input. When 
+models are interpretable, users can see the logic behind predictions. This creates confidence.  
+Trust is very important for adoption. If users do not understand a model, they may not trust it 
+even if accuracy is high. Explainable models allow users to verify results. They help experts 
+check whether decisions are reasonable or not.  
+In real-world applications, decisions often affect human life. Doctors want to know why a 
+diagnosis is given. Banks want to explain why a loan is rejected. Without explanation, 
+organizations hesitate to use machine learning systems.  
+Interpretability also helps in finding errors. When predictions are wrong, explainability 
+allows developers to locate problems. It helps in bias detection and fairness checking. 
+Without explanation, biased models may silently harm some groups.  
+Regulatory bodies also demand transparency. Laws require decisions to be explainable. 
+Models that cannot explain decisions face legal problems. Explainability therefore increases 
+adoption.  
+Thus, interpretability and explainability are key factors that increase trust, acceptance, and 
+long-term use of machine learning systems.  
+A-4. Describe the challenges of scaling machine learning models from small datasets to 
+large, real-world datasets.  
+Machine learning models often work well on small datasets in laboratory conditions.  
+However, when these models are applied to large real-world datasets, many challenges arise. 
+Scaling is not just increasing data size, but handling complexity.  
+One major challenge is computational cost. Large datasets require more processing power. 
+Training time becomes very high. Memory requirements increase. Normal computers are not 
+enough, so distributed systems are required.  
+Data storage is another issue. Real-world data comes from many sources and is stored in 
+different formats. Managing and cleaning such data is difficult. Large datasets contain 
+missing values, noise, and inconsistencies.  
+Feature engineering becomes complex. With more data, more features appear. This increases 
+dimensionality. Models become difficult to optimize. Overfitting becomes a risk.  
+Infrastructure management is also challenging. Distributed computing systems need 
+synchronization. Failures are common. Debugging errors in large systems is very hard.  
+Deployment and monitoring are also difficult at scale. Performance tracking becomes 
+complex. Updating models requires careful coordination. Cost of cloud services increases.  
+Thus, scaling machine learning models requires not only good algorithms but also strong 
+engineering, infrastructure, and data management.  

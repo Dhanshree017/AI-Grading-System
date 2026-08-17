@@ -1,0 +1,152 @@
+ID-T016 
+Name: sushmita sahni Roll no: 6 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Data augmantation is basically like when you have small amount of data and you try to 
+forcefully make it look like big amount by doing random circus tricks on it. Like if you have 
+one cat photo, instead of taking more photos you start rotating it, bending it, flipping it 
+upside-down, stretching the cat in weird ways so model think it has seen different cats but 
+actually it is seeing same cat in painful positions. Deep learning use it because if you don’t 
+do it the neural network becomes bored and memorize everything like some student 
+memorizing only one paragraph for exam and then panic when question change. So 
+augmentation keep the model awake and confused in a good way. Also in deep learning 
+world, it is like giving the model new clothes even though it’s same person, so model feel 
+variety and stop doing overfitting drama. It increase robustness, make model not cry when 
+new input comes, but sometimes if you do too much augmentation it become chaos and 
+model cannot understand anything and start predicting banana for everything. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Underfitting and overfitting are two common problems encountered when training 
+machine learning models, both of which hinder a model's ability to generalize to 
+new, unseen data. 
+Underfitting 
+Underfitting occurs when a model is too simple to capture the underlying patterns in 
+the training data. This results in the model performing poorly on both the training 
+data and new, unseen data. It is characterized by high bias and low variance.  
+Example: Imagine trying to predict house prices based on square footage using a 
+simple linear regression model, but the actual relationship between square footage 
+and price is non-linear (e.g., quadratic). The linear model would be too simplistic to 
+capture this curved relationship, resulting in inaccurate predictions on both the 
+training data and new houses. 
+Overfitting 
+Overfitting occurs when a model learns the training data too well, including its noise 
+and irrelevant details. While the model performs exceptionally well on the training 
+data, it fails to generalize to new, unseen data, leading to poor performance on test 
+sets. It is characterized by low bias and high variance.  
+Example: Consider training a highly complex polynomial regression model to predict 
+house prices. If the model is too complex (e.g., a very high-degree polynomial), it 
+might perfectly fit every data point in the training set, including any outliers or 
+noise. However, when presented with a new house, this overly complex model might 
+make wildly inaccurate predictions because it has essentially memorized the training 
+data rather than learning the general trend. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Decision boundary is imaginary line the algorithm draws in its mind to separate things from 
+other things. You cannot see it, but model thinks it exists like invisible fence for dogs. 
+Imagine you have red balls and blue balls thrown randomly on ground, decision boundary is 
+the invisible chalk line the model draws to divide them into two sides. But sometimes balls 
+overlap and model panics and draw weird squiggly lines trying to separate them but still 
+fails. It is the machine’s attempt to say, “everything on this side is category A and everything 
+on that side is category B,” even if real world refuses to cooperate. Without decision 
+boundary, machine would be completely confused like person trying to separate sugar and 
+salt by smelling air from far away. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+Tokenization is like cutting a big sentence into tiny edible pieces for the NLP model because 
+the model cannot swallow big sentence whole. So you break sentence into words, subwords, 
+characters or whatever pieces you like. It is like breaking big biscuit into crumbs so baby can 
+eat. NLP models love tokens. Two tokenization methods include word-based tokenization 
+where each word becomes token and sub-word tokenization like Byte Pair Encoding where 
+words get broken into small fragments because model cannot handle world’s vocabulary 
+chaos. Without tokenization, the machine would stare at long sentences without knowing 
+where one word ends and another begins. 
+SECTION B –  
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and 
+applications. 
+The EM algorithm is like a two-phase guessing game where machine keeps guessing 
+unknown things then pretending its guess is correct and then again guessing with that fake 
+correctness. It goes back and forth in loop until machine get tired or numbers stop changing. 
+First step, expectation step, is where model calculates missing values based on its current 
+wrong assumptions. Then in maximization step it updates its assumptions using those 
+missing values it just made up. This continues until computer feels satisfied or stuck. 
+Applications include clustering like Gaussian Mixture Models but also people sometimes 
+claim it works for missing data, though sometimes EM also generate complete nonsense if 
+used wrong because algorithm is sensitive like emotional person. EM always tries to 
+maximize likelihood even if likelihood runs in direction of disaster. 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality reduction is basically trying to squeeze huge messy dataset into smaller 
+number of features so models don’t explode while computing. PCA is method that finds 
+directions of highest variance and rotates data along those axes like spinning globe until it 
+finds nicest view. PCA totally ignore class labels because it only cares about maximizing 
+variance like a person caring only about loud music. LDA however uses labels and tries to 
+maximize separation between classes while minimizing within-class scatter. PCA is blind to 
+class structure while LDA is obsessed with it. Dimensionality reduction helpful because 
+without it, machine drown in ocean of meaningless dimensions and training gets slow and 
+overfitting becomes monster. PCA works well when classes not important, LDA better when 
+classification needed. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+GANs are like two neural networks in constant fight. Generator tries to produce fake images 
+so good that discriminator gets fooled. Discriminator plays strict teacher who tries to detect 
+which images are real and which are generator’s cheap fakes. Generator improves by 
+learning how to fool discriminator, making more realistic fakes each round. Discriminator 
+improves by getting better at catching those fakes. Over time, generator become powerful 
+artist able to draw human-like faces, landscapes, objects etc, but sometimes produce creepy 
+faces because GAN training unstable like toddler standing on one leg. These networks used 
+in deepfake videos, image generation, photo restoration etc. The whole idea is adversarial 
+training where both networks grow by fighting each other. 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+Time series forecasting means predicting future values based on past behavior. ARIMA is 
+classical statistical model using autoregression and moving averages with differencing to 
+make series stationary. It works well when data has linear patterns and no long-term deep 
+structure. LSTMs are neural networks designed to remember long sequences using memory 
+cell, forget gate, input gate etc. They handle complex temporal relationships like long-term 
+dependencies. Prophet is model developed by Facebook designed for business forecasting; it 
+handles seasonality, holidays and trend changes easily with simple parameters. These models 
+try to capture temporal patterns so future predictions look reasonable but each has strengths 
+depending on nature of dataset. ARIMA good for simple linear structures, LSTM good for 
+nonlinear deep patterns, Prophet good for business time series. 
+SECTION C – Very Long Poor Answers (Garbage, Irrelevant, Wrong Mix) 
+C-1. Define supervised learning with an example. 
+Supervised learning is type of machine learning where model is given labeled data like 
+images with names or numbers with answers. Model tries to learn mapping from inputs to 
+outputs by adjusting weights. Example: giving thousand photos of dogs and cats labeled 
+properly, model learns difference then predicts label for unseen photo. Supervised learning 
+relies on teacher-like behavior from dataset. 
+C-2. What is precision in classification metrics? 
+Precision measures proportion of correct positive predictions among all positive predictions 
+made by model. It is TP / (TP + FP). High precision means model makes fewer false 
+positives. Useful when false positives costly like spam detection where marking legitimate 
+email as spam is bad. 
+C-3. Explain the term kernel function. 
+A kernel function is a mathematical tool used in machine learning to transform data 
+into a higher-dimensional space to make it easier to separate, without explicitly 
+performing the transformation. It works by calculating the similarity between data 
+points as if they were in this new, higher-dimensional space, allowing algorithms like 
+support vector machines (SVMs) to handle non-linear data by implicitly working in 
+that space. This is useful because it lets algorithms work with complex data patterns 
+that are not linearly separable in their original form.  
+How it works 
+ Implicit transformation: Instead of computing the coordinates of every data point 
+in a new, potentially very large, feature space, the kernel function directly calculates 
+the result of the inner product of the data points in that space. 
+ Measuring similarity: It essentially measures the similarity between two data points 
+after they have been projected into a higher-dimensional space. 
+C-4. Define feature scaling. 
+Feature scaling is preprocessing technique to normalize or standardize features so all have 
+comparable range and magnitude. Methods include min-max scaling and standardization. It 
+helps algorithms like gradient descent and KNN work properly because features of different 
+scales create imbalance. 
+C-5. What is bagging? 
+Bagging (Bootstrap Aggregating) involves training multiple models on different bootstrap 
+samples of dataset and combining their predictions. It reduces variance and improves 
+stability especially for decision trees. Random Forest is example of bagging-based model. 
+ Bootstrap Sampling: Multiple random subsets of the training data are created. 
+Each subset is created by sampling from the original dataset with replacement, 
+meaning some data points may appear multiple times and others may be left out. 
+ Model Training: A separate model (like a decision tree) is trained on each of these 
+bootstrap samples. 
+ Prediction Aggregation: The predictions from all the individual models are 
+combined to produce a final output. For regression tasks, this often involves 
+averaging the predictions; for classification, it typically uses a majority vote.  

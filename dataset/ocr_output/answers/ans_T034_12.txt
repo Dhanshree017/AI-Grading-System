@@ -1,0 +1,47 @@
+ID-T034 
+Name: Raj Singh Roll no: 12 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods boost prediction accuracy by combining multiple models (weak learners) to overcome 
+individual weaknesses, reducing variance (overfitting) and bias (underfitting) through aggregation, leading 
+to more stable, robust, and generalized predictions, such as through Bagging (averaging), Boosting 
+(sequential error correction), or Stacking (meta-model combination).  
+How They Work 
+1. Combine Strengths, Offset Weaknesses: Instead of relying on one model, ensembles train several models 
+(often diverse) and combine their outputs, leveraging their collective knowledge to capture more patterns 
+than any single model could. 
+2. Reduce Variance (Overfitting): By averaging predictions from models trained on different data subsets 
+(like in Bagging), fluctuations from noisy data are smoothed out, creating more stable results less sensitive 
+to specific training sets. 
+3. Reduce Bias (Underfitting): Techniques like Boosting sequentially build models, with each new model 
+focusing on errors from the previous ones, systematically reducing systematic errors (bias). 
+4. Increase Robustness: The final prediction is less influenced by outliers or noise because it's a consensus, 
+making the model more reliable for unseen data.  
+Key Techniques 
+ Bagging (Bootstrap Aggregating): Trains many models on random data samples (with replacement) and 
+averages their predictions (regression) or uses voting (classification) to reduce variance. 
+ Boosting: Builds models sequentially, giving more weight to misclassified samples, thereby improving 
+accuracy by correcting errors (e.g., AdaBoost, Gradient Boosting). 
+ Stacking: Uses predictions from diverse base models as input for a final "meta-model," which learns to 
+optimally combine them for superior performance.  
+. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means that a machine learning experiment can be repeated using the same data, methods, 
+and conditions to obtain the same results. It is a fundamental principle in scientific research because it 
+allows others to verify, validate, and build upon existing work. 
+Machine learning models are affected by many factors such as random initialization, data splitting, 
+preprocessing techniques, and hyperparameters. If these details are not documented, it becomes impossible 
+to reproduce results. Reproducibility ensures transparency, prevents misleading claims, and increases 
+confidence in the model. 
+In critical fields such as healthcare, finance, and scientific research, reproducibility is essential for trust, 
+legal accountability, and long-term reliability of machine learning systems. 
+A-5) Explain the concept of model uncertainty and its significance in decision-making 
+Model uncertainty refers to the level of confidence a machine learning model has in its predictions. It 
+reflects how much the model trusts its output based on the data it has learned from. High uncertainty means 
+the model is unsure, often due to limited training data, noisy inputs, or unfamiliar situations. 
+Uncertainty is extremely important in decision-making, especially in high-risk domains like medical 
+diagnosis, autonomous driving, and financial trading. A model may predict an outcome but indicate low 
+confidence, signaling the need for human review or additional data before taking action. 
+By incorporating uncertainty, machine learning systems become safer and more reliable, allowing humans to 
+make informed decisions instead of blindly trusting model outputs. 

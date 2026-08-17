@@ -1,0 +1,65 @@
+ID-T027 
+Name: Anushka kamble Roll no: 9 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+Feature engineering is the process of transforming raw data into meaningful features that 
+better represent the underlying problem and improve a machine learning model’s ability to 
+learn patterns. 
+Explanation 
+1. Feature engineering involves creating new features from existing data, such as ratios, 
+interactions, or aggregated values. 
+2. It includes handling missing values, scaling numerical features, and encoding 
+categorical variables. 
+3. Domain knowledge plays a key role in designing features that capture real-world 
+relationships. 
+4. Feature engineering helps reduce noise and irrelevant information from the dataset. 
+5. It can transform complex raw data into simpler representations that models can easily 
+learn. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Machine Learning Model Training Process 
+The ML model training process is a systematic procedure where data is used to teach a 
+model to learn patterns and make predictions. 
+Steps Involved 
+1. Data is first collected from reliable sources and prepared through preprocessing. 
+2. The dataset is split into training, validation, and test sets. 
+3. The training dataset is used to fit the model and learn parameters. 
+4. The model adjusts its internal weights to minimize prediction error during training. 
+Role of Training, Validation, and Test Data 
+5. Validation data is used to tune hyperparameters and prevent overfitting. 
+6. It helps in selecting the best model configuration during training. 
+7. Test data is used only after training to evaluate final model performance. 
+8. Test results provide an unbiased estimate of how the model performs on unseen data. 
+9. Proper data splitting ensures fair and reliable evaluation. 
+10. This process leads to models that generalize well to real-world data. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Bias–Variance Tradeoff 
+The bias–variance tradeoff describes the balance between errors caused by overly simple 
+models (bias) and overly complex models (variance). 
+Explanation 
+1. Bias refers to errors due to incorrect assumptions in the learning algorithm. 
+2. High bias models underfit the data and fail to capture patterns. 
+3. Variance refers to sensitivity to small changes in training data. 
+4. High variance models overfit and perform poorly on unseen data. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Types of Learning in Machine Learning 
+Batch Learning 
+1. Batch learning trains the model using the entire dataset at once. 
+2. The model does not update until retraining is performed with new data. 
+3. It is suitable for static datasets and offline systems. 
+Online Learning 
+4. Online learning updates the model continuously as new data arrives. 
+5. It is useful for real-time systems and streaming data. 
+6. Online learning adapts quickly to changing patterns. 
+Incremental Learning 
+7. Incremental learning updates the model gradually without forgetting previous 
+knowledge. 
+8. It handles large datasets by learning in small chunks. 
+9. It reduces memory usage and retraining cost. 
+10. These learning types are chosen based on data availability and system requirements. 

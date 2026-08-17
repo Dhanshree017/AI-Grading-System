@@ -1,0 +1,113 @@
+ID-T012 
+Name : Lalit Sonawane Roll no: 21 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, advantages, 
+and disadvantages. 
+Random forest is like forest full of trees but not real trees, they are computer trees. 
+Model take many decision trees and mix them together to make one big tree boss. It 
+make random decision for split and result. 
+It work like first take data, then divide small, then train many trees on each piece. 
+Then in the end, it do voting or average. If more trees say “yes,” final answer also 
+“yes.” 
+Advantages: 
+1. Accuracy is okay okay, not too bad. 
+2. It handle missing data little bit. 
+3. Not overfit so much if forest big. 
+4. Easy to make because library do everything. 
+5. Work for both regression and classification. 
+Disadvantages: 
+1. Slow like elephant when many trees. 
+2. Hard to understand what happen inside. 
+3. Take much memory. 
+4. Sometimes random give different answer. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is when neural network feel guilty and go back to fix mistakes. It is 
+like teacher scold and student correct note. 
+Steps: 
+1. Forward pass – we put input, get output, and model guess. 
+2. Compare output and actual answer, find error. 
+3. Send error backward, layer by layer. 
+4. Change weight little by little using gradient. 
+5. Do again many time until model stop crying. 
+It use chain rule, but I forgot exact formula. Basically, it say which weight wrong and 
+fix them. Used in deep learning. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in sequence 
+modeling. 
+RNN is neural network that remember something from past like small memory 
+brain. It send previous output as input to next step. 
+It is used when order of data matter like sentence, time, weather, etc. 
+Applications: 
+1. Language translation. 
+2. Speech recognition. 
+3. Text prediction. 
+4. Music generation. 
+5. Stock prediction (maybe wrong sometimes). 
+Problem is it forget long memory, that’s why people made LSTM and GRU to stop 
+forgetting. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment mean putting ML model in real world to do work, not just show 
+in notebook. 
+Steps: 
+1. Save model. 
+2. Put in API or cloud. 
+3. Connect to website or app. 
+4. Test if output coming. 
+5. Monitor if model working fine or becoming stupid. 
+Monitoring means check accuracy, drift, new data pattern, etc. If model go old, we 
+retrain again. 
+If we not monitor, it may start giving wrong answer and no one know until boss 
+complain. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization is when we put data between 0 and 1. Example: divide by max value. 
+Standardization is when we make mean 0 and standard deviation 1. 
+Example: if height in cm, normalize make 0.5 maybe, standardize make negative or 
+positive number. 
+Normalization used in neural network, standardization in linear regression often. 
+Both make data behave better but different math. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Challenges are like exam for model: 
+1. Not enough data or too much. 
+2. Wrong label data. 
+3. Overfitting or underfitting. 
+4. Time and GPU issue. 
+5. Hyperparameter guessing like lottery. 
+Sometimes model train but not learn, just memorize, like student cheat from book. 
+B-2. Describe the difference between probability and likelihood in machine learning. 
+Probability is what happen before experiment, likelihood is after we already saw 
+data. 
+Probability is used for predicting, likelihood for parameter estimation. 
+But honestly, they both confusing, and I always mix them. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is classification model that predict yes or no. It use sigmoid 
+function to convert linear number to probability. 
+Formula is p = 1 / (1 + e^-z), where z = w*x + b. 
+Use cases: spam detection, disease prediction, loan approval, etc. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameter are outside settings like learning rate, number of epochs, number of 
+layers. 
+Parameter are inside weight and bias. 
+We set hyperparameter manually, model learn parameter. 
+Hyperparameter decide how model learn, parameter decide what it learn. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning can predict when machine break before it happen. It take sensor 
+data like vibration, sound, temperature, oil pressure, etc., and learn pattern of 
+failure. 
+When pattern repeat, model say “soon break down.” 
+Used in manufacturing, airplane, oil plant, etc. It save time and money. 
+Algorithm like random forest, decision tree, regression used for that. 
+C-2. Discuss 5 real-world example of biased ML model and how such bias can be 
+reduced. 
+Bias happen when model see unfair data. 
+Examples: 
+1. Hiring system reject female. 
+2. Credit model deny black people. 
+3. Health model ignore women symptom. 
+4. Camera detect light skin only. 
+5. Voice model fail on accent. 
+Reduce by giving fair data, equal distribution, human check, retrain model. 
+If data fair, model also behave fair. 

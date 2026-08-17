@@ -1,0 +1,77 @@
+ID-T005 
+Name: Ritvik Saahu Roll no: 19 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine 
+learning? 
+The core different between old way code and new way ML it is about how the logic 
+gets built, really. 
+1. Traditional Programming it is imperative; the human must supply all explicit 
+rules and instructions to get the answer. 
+2. Machine Learning it is inferential; the algorithm infers the rules by seeing data 
+and correct answers. 
+3. Traditional logic it is static, meaning it cannot adapt to new situations without 
+manual code changes. 
+4. ML logic it is dynamic and can adapt by re-training on new data. 
+5. ML it is best for problems that are too complex for manual rule writing (like 
+image recognition). 
+6. The output of traditional is the answer; the output of ML is the model (the 
+learned rules). 
+7. Traditional relies on deterministic execution. ML relies on statistical optimization. 
+8. ML it is able to generalize patterns to unseen data. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+Entropy and Information Gain they are the critical math measures used for tree 
+building. 
+1. Entropy it is a quantification of the impurity or disorder of class labels within a 
+data node. 
+2. Maximum uncertainty it is the maximum entropy, which is what the tree wants 
+to reduce. 
+3. Zero entropy it means the node is perfectly pure (all same class). 
+4. Information Gain it is the measure of the reduction in that entropy which is 
+achieved when you perform a specific split on a feature. 
+5. It quantifies the value of a feature for reducing uncertainty. 
+6. The greedy algorithm it always selects the split that maximizes the Information 
+Gain. 
+7. This selection process it ensures the most efficient features they are used first in 
+the tree's hierarchy. 
+8. This is fundamental to reducing the total path length for classification. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what 
+function does it use to map its output to a probability? 
+Logistic Regression it is a classifier model, not for regression, very importantly. 
+1. Problem Solved: It solves the binary classification problem by modeling the 
+probability of an instance belonging to the positive class. 
+2. Model Type: It is a generalized linear model. 
+3. Output Calculation: The model first calculates a linear combination of the input 
+features and weights. 
+4. Mapping Function Used: It uses the Sigmoid function (or Logistic function) for 
+the transformation. 
+5. Sigmoid Mechanism: This function it squashes the raw score into a value strictly 
+between zero and one. 
+6. Probability Interpretation: This bounded output it is then interpreted as the 
+predicted probability. 
+7. Decision Boundary: The model makes the final decision by comparing this 
+probability to a threshold (usually 0.5). 
+8. This S-shaped curve it is what enables the classification interpretation of the 
+model's result. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, 
+rather than learned during training. 
+Hyperparameters they are the external settings that control the learning process and 
+must be set by the practitioner. 
+1. Learning Rate (Optimization Algorithms): This parameter controls the magnitude 
+of the adjustment step taken by the optimizer toward the minimum of the loss 
+function. It needs careful tuning because too high causes oscillations. 
+2. Regularization Strength (C or Alpha): This value controls the penalty applied to 
+model complexity, thereby managing the bias-variance tradeoff and preventing 
+overfitting. 
+3. Maximum Depth (Decision Trees/Random Forests): This sets an upper limit on 
+the levels the tree is allowed to grow, directly controlling model complexity. 
+4. K Value (K-Nearest Neighbors): This integer specifies the number of local data 
+points that are used for the final vote or averaging. 
+5. These values they are not estimated from the data itself during the fitting process. 
+6. They are typically optimized through cross-validation to find the best 
+configuration. 
+7. Their initial choice it greatly affects the model's final performance and 
+convergence speed. 
+8. Batch Size it is another example in Neural Networks. 

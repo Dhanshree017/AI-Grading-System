@@ -1,0 +1,123 @@
+ID-T012 
+Name : Manish chaudhary Roll no: 3 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-3. Explain Bayesian Learning approach and compare it with frequentist learning. 
+Bayesian Learning is based on Bayes’ Theorem, which updates the probability of a 
+hypothesis as more evidence is available. It uses prior belief and combines it with observed 
+data to make new beliefs called posterior probability. It is a probabilistic approach to 
+learning. 
+Frequentist Learning, on the other hand, believes that probability means the long-term 
+frequency of events. It does not consider prior belief and only depends on the data 
+observed. 
+Comparison: 
+ Bayesian uses both prior and likelihood; Frequentist uses only likelihood. 
+ Bayesian gives full probability distribution for parameters; Frequentist gives fixed 
+values. 
+ Bayesian can work well with small data because it uses prior information. 
+ Frequentist needs large samples to give good estimates. 
+Bayesian learning is more flexible but computationally expensive compared to 
+Frequentist. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in sequence 
+modeling. 
+Recurrent Neural Network (RNN) is a type of neural network that is designed to handle 
+sequential data, where the previous inputs affect the current output. It has feedback 
+connections which make it capable of remembering past information. This memory makes it 
+different from a normal neural network. 
+RNN takes input step by step and stores important information in its hidden state. The 
+same weights are used at every time step, which helps it learn sequences efficiently. 
+However, RNN faces the problem of vanishing gradient when dealing with long sequences. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model Deployment is the process of putting a trained machine learning model into a real
+world environment where it can make predictions on new data. It is one of the final 
+stages of the ML lifecycle. 
+After training and testing, the model is saved and integrated with applications or APIs so 
+users can access its predictions. It can be deployed on servers, cloud platforms, or mobile 
+apps. 
+Model Monitoring means continuously observing the model’s performance after deployment. 
+Sometimes the model’s accuracy decreases due to new data patterns or environmental 
+changes. This is called data drift. Monitoring helps detect these changes. 
+Steps: 
+1. Save and package the model. 
+2. Connect with production systems. 
+3. Track accuracy and errors. 
+4. Retrain model if performance drops. 
+5. Maintain logs and dashboards. 
+Monitoring ensures that the deployed model remains reliable over time. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization and Standardization are preprocessing techniques used to scale data before 
+giving it to machine learning models. 
+Normalization transforms data into a range of [0,1]. It is useful when all features must 
+have the same scale, especially in neural networks. For example, if one feature is between 
+0 and 100 and another between 0 and 1, normalization will bring both to the same 
+range. Formula: 
+x′=x−min(x)max(x)−min(x)x' = \frac{x - min(x)}{max(x) - 
+min(x)}x′=max(x)−min(x)x−min(x) 
+Standardization transforms data to have a mean of 0 and a standard deviation of 1. It is 
+useful when data follows a normal distribution. Formula: 
+z=x−meanstdz = \frac{x - mean}{std}z=stdx−mean 
+Example: if heights are 150–190 cm, standardization will convert them to z-scores. 
+Normalization is better for bounded data, standardization for statistical models like 
+regression or PCA. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Training ML models is not always easy because many problems arise during data collection 
+and optimization. 
+Challenges: 
+1. Data Quality: Missing, noisy, or incorrect data affects learning. 
+2. Data Quantity: Too little data causes underfitting, too much data takes long time 
+to process. 
+3. Feature Engineering: Selecting right features is hard. 
+4. Overfitting: Model memorizes data instead of learning. 
+5. Computational Cost: Training big models needs strong hardware. 
+6. Hyperparameter Tuning: Choosing right values like learning rate is difficult. 
+These challenges must be handled carefully for accurate models. 
+B-2. Describe the difference between probability and likelihood in machine learning. 
+Probability is the measure of how likely an event will occur before observing data. 
+Likelihood is how probable the data is given a certain model. 
+For example, probability predicts a coin landing heads, while likelihood checks how well a 
+model explains observed heads and tails. Probability is forward, likelihood is backward. 
+Probability is used for prediction; likelihood for parameter estimation in models like Naive 
+Bayes. 
+B-5. Explain the concept of cross-entropy loss. 
+Cross-Entropy Loss measures the difference between predicted probability and actual class. 
+It penalizes incorrect confident predictions. 
+Formula: 
+L=−∑ylog⁡(p)L = -\sum y \log(p)L=−∑ylog(p) 
+If prediction matches the truth, loss is small. Used mainly in classification models like 
+logistic regression and neural networks. 
+B-6. What is dimensionality curse? How does it affect machine learning models? 
+Curse of Dimensionality means when there are too many features, data becomes sparse 
+and models perform poorly. 
+It causes: 
+1. Increased computation cost. 
+2. Overfitting due to noise. 
+3. Poor generalization. 
+To fix this, we use PCA, feature selection, or regularization to reduce dimensions. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Predictive maintenance uses ML to predict when a machine will fail before it happens. 
+Sensors collect data like temperature, vibration, and noise. The ML model learns from this 
+data and predicts possible failures. 
+Steps: 
+1. Data collection from sensors. 
+2. Preprocessing and cleaning. 
+3. Train a regression or classification model. 
+4. Predict failure time or probability. 
+5. Alert operators to perform maintenance. 
+This helps reduce downtime, save money, and increase safety in industries. 
+C-2. Discuss 5 real-world example of biased ML model and how such bias can be reduced. 
+Bias happens when data is not fair or balanced. 
+Examples: 
+1. Hiring systems preferring men over women. 
+2. Face recognition performing poorly on darker skin. 
+3. Medical models not trained on all age groups. 
+4. Loan approval models biased toward specific regions. 
+5. Chatbots showing offensive responses. 
+Reducing Bias: 
+1. Collect balanced and diverse data. 
+2. Use fairness metrics in training. 
+3. Human monitoring. 
+4. Regular retraining with updated datasets. 
+5. Avoid biased labels or sampling. 

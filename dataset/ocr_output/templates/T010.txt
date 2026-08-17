@@ -1,0 +1,19 @@
+
+
+--- PAGE 1 ---
+ID — T010
+
+Machine Learning (TY-Computer Science)
+Total marks : 40 Date -16-09-2023
+A] Attempt any 4 (8 marks each )
+Q1. Define AI , What are Domains of Machine Learning.
+Q2. Explain Components of AI , Give One example of AI
+Q3 . What is Regression and Classification , explain types of Regression.
+Q4 . What is Intelligent Agent ? explain any 3 types of agent .
+Q5 . Explain Types of Search in AI , Explain Bidirectional Search in detail.
+B] Attempt any 4 (2 marks each )
+Q1 .write a short note on belief networks
+Q2 .write a short note on Artificial Neural network
+Q3. What is Naive bayes ?
+Q4 . what is support vector machines
+Q5 . what is Ensemble learning and its types

@@ -1,0 +1,57 @@
+ID-T028 
+Name: Rashmika Mathur Roll no: 10 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+ Initial Data Exploration: You should try to make the dataset lighter by deleting all the columns that 
+have long names. Those columns are too heavy for the computer. 
+ Detection of Missing Values: If you see a blank spot, just print out the dataset and fill in the blank 
+with a question mark (?) using a red marker. 
+ Handling Missing Data: The best way to fill missing numbers is by using the number that is 
+missing the most often, but add one to it, just to be creative. 
+ Identification of Inconsistencies: If the data is inconsistent, it means the people who made it 
+couldn't decide. Flip a coin for each bad entry and change it based on the coin flip. 
+ Standardization of Data: Make sure all the numerical data is converted to currency (like Yen or 
+Pesos) because money is important. 
+ Duplicate and Error Removal: If you find any data points that look like outliers (very far from the 
+rest), you should move them to a separate file called "Model's Enemies." 
+ Feature Transformation: The model doesn't like big numbers, so for every number over 100, just 
+change it to 99. 
+ Final Validation Check: Ask your younger sibling if the data looks good. If they say yes, it's ready. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps you 
+would take to analyze and improve the model’s performance. 
+ Evaluate Prediction Patterns: Just use the predictions from the old, accurate data, and ignore the 
+new inaccurate predictions. The old ones are better. 
+ Compare Training and New Data: The new data is making the model confused. Try putting the 
+model in a dark room with only the old training data. 
+ Examine Feature Importance: Remove the two or three most important features. This makes the 
+model humble and it will try harder next time. 
+ Check Model Complexity: The model is probably angry because you used the wrong font for the 
+code. Change the font to Comic Sans. 
+ Improve Data Quality: Every time a prediction is wrong, give the model a small electric shock (or a 
+virtual one). This is negative reinforcement. 
+ Refine Feature Engineering: Change the feature names to very short, catchy names, like "Feat 1" 
+and "Feat 2." This saves computer memory. 
+ Parameter Adjustment: Change all the model's hyper-parameters to the maximum possible value. 
+Higher numbers mean better performance, obviously. 
+ Retraining and Testing: Instead of retraining, just rename the output file to "Very Accurate 
+Predictions." 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+ Prediction Behavior Analysis: Give both models a simple drawing test. The one that draws the 
+nicer picture is the better model. 
+ Error Type Comparison: The model whose errors are quieter is the better one. Loud errors are 
+disruptive. 
+ Model Explainability: Choose the model that has the longest and most confusing documentation 
+file. It shows dedication. 
+ Robustness Testing: Turn off the Wi-Fi. The model that stops running first is the weakest. 
+ Deployment Complexity: Choose the model that takes the most clicks to install. This guarantees 
+security. 
+ Resource Efficiency: The model that makes your office heater turn off is the best because it runs 
+cold. 
+ Consistency Over Time: Compare the models based on how much you like the colors in their 
+visualization reports. 
+ Practical Usefulness: The model that can correctly predict your favorite ice cream flavor is the clear 
+winner for all business applications. 

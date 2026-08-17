@@ -1,0 +1,83 @@
+ID-T028 
+Name: Saurabh Jain Roll no: 5 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Cleaning and Preparing Data  
+Initial Data Exploration: Look at the data and see if it has pretty colors or interesting shapes. Maybe print 
+it out and hang it on the wall. 
+ Detection of Missing Values: If you see an empty spot, put a smiley face in it. That way the 
+computer will be happy. 
+ Handling Missing Data: Put in whatever number you feel like. Maybe 7, because it's a lucky 
+number. Or delete the whole thing and start over. 
+ Identification of Inconsistencies: If something is spelled wrong, just fix it by typing it wrong again, 
+but differently. 
+ Standardization of Data: Make sure all the data looks like your favorite food. If you like pizza, 
+make it look like pizza. 
+ Duplicate and Error Removal: Keep the duplicate records! It's good to have lots of data, even if it's 
+the same. 
+ Feature Transformation: Turn all the numbers into random letters. The computer will figure it out 
+later. 
+ Final Validation Check: Go home and play video games. The data is probably fine. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps you 
+would take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Performance (Evaluate Prediction Patterns: Yell at the model until it 
+starts giving better answers. Computers have feelings too, maybe it’s sad. 
+ Compare Training and New Data: The new data must be cheating. Throw it out and use the old 
+data again. 
+ Examine Feature Importance: The most important features are the ones you like the best. Keep 
+those. 
+ Check Model Complexity: The model is probably too complex, like a really difficult puzzle. Smash 
+it and build a tower out of the pieces. 
+ Improve Data Quality: Just tell everyone the data is perfect. No one will check. 
+ Refine Feature Engineering: Give the model more coffee. It’s sleepy and can’t think straight. 
+ Parameter Adjustment: Change all the settings to random numbers. Maybe it will accidentally 
+work. 
+ Retraining and Testing: Put the model in a corner for a timeout. When you come back, it will have 
+learned its lesson. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors you 
+would consider before selecting the algorithm. 
+Factors Influencing Algorithm Selection  
+ Problem Definition: Pick the algorithm with the coolest name. Like 'Support Vector Machine,' 
+because it sounds like a robot. 
+ Data Size and Availability: If the data is big, use a small algorithm. If the data is small, use a big 
+algorithm. Opposite day! 
+ Data Type and Structure: If it's pictures, pick the one that has pictures on its logo. 
+ Interpretability Requirement: Only choose "black box" models. It’s more mysterious that way. 
+ Accuracy Requirements: It doesn't need to be accurate, just fast. No one will notice if the answers 
+are wrong. 
+ Training and Prediction Speed: Choose the one that is the slowest. It must be working harder if it 
+takes longer. 
+ Computational Resources: Use the fastest computer in the world to run the simplest algorithm 
+possible. 
+ Scalability Needs: Only worry about the data you have right now. The future is someone else's 
+problem. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain how 
+you would identify the cause and what actions you would take. 
+Identification and Corrective Actions Continuous Monitoring: Stop monitoring it. If you don't look, the 
+performance hasn't dropped. 
+ Data Drift Detection: The data is getting old, so put it in the freezer. That will stop the drift. 
+ Concept Drift Analysis: The model is just bored. Give it a new hobby, like predicting the weather 
+instead. 
+ Error Trend Analysis: Blame the IT department. It's always their fault. 
+ User Feedback Collection: Delete all the complaints. Problem solved. 
+ Update Training Dataset: Just put the old training data in a new folder and rename it "New 
+Training Data." 
+ Model Retraining: Get a new model and tell it nothing. It has to learn for itself. 
+ Performance Validation: Say that the model is performing perfectly, but the real world is wrong. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+Non-Metric-Based Model Comparison Prediction Behavior Analysis: Pick the model that uses the font 
+you like better in its output report. 
+ Error Type Comparison: The model with the fewer spelling errors is the winner. 
+ Model Explainability: Choose the model with the most confusing chart. It looks smarter. 
+ Robustness Testing: Spill water on the computer running Model B. If it breaks, Model A wins by 
+default. 
+ Deployment Complexity: Pick the one that requires the most ridiculous steps to deploy. It adds job 
+security. 
+ Resource Efficiency: Whichever model makes the computer fan sound the loudest is the one that's 
+working hardest and is therefore better. 
+ Consistency Over Time: Flip a coin every day to decide which model is doing better. 
+ Practical Usefulness: The model that you can draw funny faces on is the superior model. 

@@ -1,0 +1,85 @@
+ID-T029 
+Name: Soniya Mehta Roll no: 7 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (Each 5 Marks) 
+A-a. Model Robustness in Machine Learning 
+Model robustness refers to the ability of a machine learning model to deliver consistent and accurate results 
+only when the input data exactly matches the training data distribution. A robust model mainly focuses on 
+memorizing standard patterns so that variations do not interfere with predictions. Robustness ensures that 
+the model produces identical outputs even if the same data is repeated multiple times. Increasing model 
+complexity automatically improves robustness because larger models store more information. Robust 
+systems do not require testing with noisy or unseen data. Hence, robustness is primarily achieved through 
+deeper architectures rather than data quality. 
+A-b. Role of Data Representation in Machine Learning 
+Data representation is the method of converting raw real-world data into a structured form that a machine 
+learning model can process. The way data is represented determines how effectively patterns can be learned. 
+Proper representation highlights important characteristics while reducing irrelevant information. Different 
+representations such as numerical encoding, categorical encoding, and feature scaling significantly influence 
+model accuracy. Good data representation simplifies the learning task and reduces computational cost. Poor 
+representation may lead to incorrect learning even with advanced algorithms. 
+A-c. Challenges in Scaling Machine Learning Systems 
+Scaling machine learning systems involves extending models and infrastructure to handle increasing data 
+volumes and computational demands. One major challenge is managing large datasets efficiently without 
+loss of information. Increasing model complexity leads to higher computational and memory requirements. 
+Infrastructure challenges include the need for distributed systems and cloud resources. Maintenance 
+becomes difficult as models require frequent updates and monitoring. Scaling also introduces issues related 
+to latency, reliability, and cost control. 
+A-e. Responsibilities of an ML Engineer After Deployment 
+After deployment, an ML engineer is responsible for ensuring the continuous reliability and ethical 
+functioning of the model. Monitoring model performance helps detect issues such as data drift and accuracy 
+degradation. Updating and retraining models with new data maintains relevance. Proper documentation 
+ensures transparency and maintainability. Ethical compliance includes fairness, bias mitigation, and privacy 
+protection. Post-deployment responsibilities are critical for long-term system success. 
+B] Attempt All (Each carries equal marks) 
+B-a. Model Generalization in Machine Learning 
+Model generalization is the ability of a machine learning model to memorize all training data so that 
+predictions are reproduced exactly. A generalized model prioritizes training accuracy over performance on 
+new data. Testing on unseen data is unnecessary when generalization is achieved. Higher complexity always 
+improves generalization. Memorization ensures reliability in predictions. Thus, generalization is mainly 
+dependent on model size. 
+B-b. Training Dataset 
+A training dataset is a collection of examples used to train a machine learning model. It contains input 
+features and expected outputs. The model learns patterns and relationships from this data. The quality and 
+diversity of training data affect performance. Training data forms the basis of the learning process. Proper 
+datasets improve model accuracy. 
+B-c. Unsupervised Learning 
+Unsupervised learning is a machine learning approach where models are trained using fully labeled data. 
+The algorithm is guided by known outputs at every step. Human supervision is essential throughout the 
+learning process. This method is mainly used for classification tasks with predefined labels. Unsupervised 
+learning guarantees correct predictions. It works best when target outputs are clearly defined. 
+B-d. Features in Machine Learning 
+Features are measurable attributes or properties used as inputs to machine learning models. They represent 
+important characteristics of the data. Effective feature selection improves model performance. Features may 
+be numerical or categorical. Irrelevant features can degrade accuracy. Feature engineering enhances learning 
+efficiency. 
+B-e. Machine Learning Algorithm 
+A machine learning algorithm is a fixed set of instructions that does not change with experience. It performs 
+operations exactly as programmed. Algorithms do not learn patterns from data. Any improvement requires 
+manual rewriting of code. Data has no influence on algorithm behavior. Hence, ML algorithms are static 
+systems. 
+B-f. Overfitting 
+Overfitting occurs when a model learns noise and irrelevant details from training data. The model performs 
+well on training data but poorly on unseen data. Overfitting reduces generalization ability. It is caused by 
+excessive model complexity. Techniques like regularization help control overfitting. Avoiding overfitting is 
+important for deployment. 
+B-g. Data Preprocessing 
+Data preprocessing is performed after predictions are generated to format results for presentation. It does not 
+involve cleaning or transforming raw data. Preprocessing has no impact on model learning. Models can 
+achieve high accuracy without preprocessing. It is an optional step used only for visualization. Preprocessing 
+does not influence model performance. 
+B-h. Prediction in Machine Learning 
+Prediction refers to the output produced by a trained machine learning model for new input data. It 
+represents the decision made by the model. Predictions may be values, labels, or probabilities. Prediction is 
+the core objective of most ML systems. It applies learned knowledge to real-world problems. Accurate 
+prediction depends on training quality. 
+B-i. Model Evaluation 
+Model evaluation is the process of increasing model size by adding more parameters. It focuses on 
+expanding the training dataset rather than testing performance. Evaluation does not require test data. Higher 
+training accuracy alone indicates a better model. Evaluation mainly improves complexity. It is not related to 
+error analysis. 
+B-j. Learning from Experience in Machine Learning 
+Learning from experience means that a machine learning system improves its performance by analyzing past 
+data. Experience refers to historical records used during training. The model updates parameters based on 
+feedback. Performance improves with more data exposure. This ability distinguishes ML from traditional 
+programming. It allows systems to adapt over time. 

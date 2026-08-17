@@ -1,0 +1,150 @@
+ID-T009 
+Name : Tanya mehra Roll no: 22 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-3. What is Principle Component Analysis, Why it is Used 
+Definition: 
+Principal component analysis also called P C A is mathematical something 
+which reduce many columns of data into small column without losing big 
+information. It like summarizing data into short way. It change axis and make 
+new component where data is spread most. It is used to make data simple 
+and fast for model. 
+Explanation: 
+1. PCA reduce the feature and help in making data small. 
+2. It remove extra useless data like duplicate things. 
+3. It make computation faster because less columns. 
+4. PCA make graph 2D so we can see in screen easily. 
+5. It is unsupervised method because no output needed. 
+6. It help to remove noise also from dataset. 
+7. PCA find maximum variance direction. 
+8. It is use in face image and compress image size. 
+9. PCA is important for visualization and preprocessing step. 
+A-4. What are Steps of Creating a ML Model 
+Definition: 
+Machine learning model not come in one day. It go by step by step like first 
+we take data then clean then choose algorithm. All step must be right or 
+model will give wrong result. It like cooking where every step important to 
+make food taste correct. 
+Explanation: 
+1. Data collection: Collect all type of data from website or file. 
+2. Data cleaning: Remove missing and wrong rows. 
+3. Preprocessing: Change words to numbers because machine not understand 
+word. 
+4. Split data: Make training and testing set 80-20 percent. 
+5. Select model: Choose algorithm like decision tree or linear regression. 
+6. Training: Fit model on data and let it learn. 
+7. Testing: Check accuracy of model on test set. 
+8. Tuning: Change some parameter to make better accuracy. 
+9. Deploy: Use final model in real time for prediction. 
+A-6. What is K-Means Clustering, Write Importance of It 
+Definition: 
+K-means is algorithm for grouping data. It take number K and then divide 
+data into K group based on distance. It find center point and then join 
+nearest data point to it. It keep doing this again till all group become stable. 
+Explanation: 
+1. Choose number of cluster K. 
+2. Take random centroid points. 
+3. Measure distance between data and centroid. 
+4. Assign each data point to nearest centroid. 
+5. Recalculate centroid again. 
+6. Repeat step until centroid not change. 
+7. It is simple and very fast to use. 
+8. Used for customer segmentation and pattern finding. 
+9. Help to reduce data complexity. 
+B] Attempt All (Marks 25) 
+B-1. Define Bias and Variance, Explain Bias Variance Trade-off 
+Definition: 
+Bias and variance are kind of error which make model bad. Bias is like model 
+is too lazy and not learning much so always make same mistake. Variance is 
+like model is too smart and learn too much that it confuse on new data. 
+Trade off mean to find middle of both side to get good model. 
+Explanation: 
+1. High bias cause underfitting and wrong pattern. 
+2. High variance cause overfitting and wrong prediction. 
+3. We want low bias and low variance together. 
+4. When we increase complexity, bias go down and variance go up. 
+5. When we reduce complexity, bias go up and variance go down. 
+6. Regularization control variance. 
+7. Cross validation test both bias and variance. 
+8. Trade off is balance point between both. 
+9. Goal to make model learn but not memorize. 
+B-2. What is Regression, Explain its Types in Detail 
+Definition: 
+Regression is method in supervised ML which predict number output. It try 
+to find line between X and Y so that we can predict new value. It is like 
+relation between marks and study hour, if you study more, marks go up. 
+Types: 
+1. Linear regression: Straight line between input and output. 
+2. Multiple regression: Many input variables. 
+3. Polynomial regression: Curve shaped model. 
+4. Lasso regression: Use L1 to remove unwanted features. 
+5. Ridge regression: Use L2 to reduce big weight. 
+6. Logistic regression: For yes/no output. 
+7. Stepwise regression: Add or remove variables one by one. 
+8. Elastic Net: Mix of ridge and lasso. 
+9. Non-linear regression: For complex data relation. 
+B-3. What is Decision Tree, Explain Steps to Implement It 
+Definition: 
+Decision tree is like tree diagram that take decision step by step. It split 
+data by some rules and finally gives result. It is like asking question again and 
+again until answer come. 
+Steps: 
+1. Select best feature to split using entropy. 
+2. Divide dataset into small parts. 
+3. Make node for each group. 
+4. Repeat until pure class left. 
+5. Stop when no more split possible. 
+6. Leaf node give final output. 
+7. Prune to make tree simple. 
+8. Test accuracy of tree. 
+9. Use for classification and regression problem. 
+B-4. Differentiate Between Classification and Regression 
+Classification 
+Output is category type 
+Example: Spam mail or not 
+Regression 
+Output is continuous number 
+Example: Predict temperature 
+Algorithm: Decision tree, SVM Algorithm: Linear regression 
+Output discrete 
+Accuracy, precision used 
+Predict class label 
+Use for labeling problem 
+Non-linear decision possible 
+Use in text, image 
+Output continuous 
+RMSE, MAE used 
+Predict number value 
+Use for numeric problem 
+Line fitting problem 
+Use in prediction model 
+B-5. How Deep Learning is Different from Machine Learning, Explain 
+Regularization in Detail 
+Definition: 
+Deep learning is like machine learning but more deep and more brain like. It 
+has many hidden layers of neuron which learn from big data. Machine learning 
+is simple with small data but deep learning need GPU and big data. Deep 
+learning copy how human brain think and learn by layers. 
+Difference: 
+1. ML is small, DL is large. 
+2. ML use less data, DL need big data. 
+3. ML easy to understand, DL hard to explain. 
+4. ML manual feature extraction, DL auto extraction. 
+5. ML algorithm like regression, tree. DL use CNN, RNN. 
+6. ML run on CPU, DL need GPU. 
+7. ML train fast, DL train slow. 
+8. DL more accurate for complex data. 
+9. DL use in image, voice, text field. 
+Regularization: 
+Regularization is technique to stop overfitting by controlling weight. It means 
+we stop model from remembering too much. 
+1. L1 make weight zero for less important features. 
+2. L2 reduce large weight value. 
+3. Dropout remove neurons randomly. 
+4. Early stopping stop training early. 
+5. Weight decay used in deep net. 
+6. Regularization give better generalization. 
+7. Avoid memorizing training data. 
+8. Balance bias and variance. 
+9. Help to get good accuracy on test set. 

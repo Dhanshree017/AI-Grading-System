@@ -1,0 +1,58 @@
+ID-T010 
+Name : Ishika Joshi Roll no: 14 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-4. What is Intelligent Agent? Explain any 3 types of agent. 
+Definition: 
+Intelligent agent is computer which become smart like friend. It take input 
+from earth and give output in air. It is call agent because it work for 
+somebody like secret agent of computer. 
+Explanation & Points: 
+1. Simple reflex agent – it just do work, don’t think much, like switch 
+board. 
+2. Complex agent – it do work and talk too. 
+3. Goal agent – it have dream and goal but sometimes forget it. 
+4. Chatting agent – like robot in WhatsApp which reply “hi” every time. 
+5. Model agent – maybe make model in 3D or in computer. 
+6. Brain agent – main boss of other agent. 
+7. Learning agent – it learn but forget soon if not charged. 
+8. Angry agent – sometimes get hang or crash so it is angry. 
+9. Example: Washing machine which stop when clothes clean is small type 
+of agent. 
+A-5. Explain Types of Search in AI. Explain Bidirectional Search in detail. 
+Definition: 
+Search in AI mean when computer is finding something same like human 
+searching socks in cupboard. It look from start and check step by step. There 
+are many search but bidirectional one go from both side so fast. 
+Explanation & Points: 
+1. Bread search – I think it search like spreading bread wide, so it is BFS. 
+2. Depth search – go very deep like well. 
+3. Top search – go from top layer. 
+4. Down search – go from bottom. 
+5. Round search – go in circle, but not always useful. 
+6. Bidirectional search – it go from start and goal both and meet like 
+movie lovers in middle scene. 
+7. Straight search – it go direct but sometimes miss goal. 
+8. Heuristic search – guess and check like student guessing answer in exam. 
+9. Example: When we find lost book, we search from bag and from shelf 
+both — that is real life bidirectional search. 
+B] Attempt any 4 (2 marks each) 
+B-2. Write a short note on Artificial Neural Network. 
+Artificial neuron network is copy of brain but brain is better. It have input, 
+output and one thing middle called hidden. It used in image finding and 
+number guessing. Sometimes if you give wrong data, it still give some answer 
+to make you happy. 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is type of algorithm that act simple and believe all thing equal. 
+It is based on Bayes formula but I not remember formula. It used for 
+checking spam message and even sometimes say real message is spam. 
+B-4. What is Support Vector Machine? 
+Support vector machine help in separating thing by line or something called 
+hyper plane. It is machine but not real machine, only in code. It support 
+data but sometimes not. 
+B-5. What is Ensemble Learning and its Types? 
+Ensemble learning is when we mix all models together like fruit salad. If one 
+model bad, others make it good. Type are Bagging (carry bag of model), 
+Boosting (give energy to weak model) and Stacking (put one above one). It 
+is good but sometimes confusing to code. 

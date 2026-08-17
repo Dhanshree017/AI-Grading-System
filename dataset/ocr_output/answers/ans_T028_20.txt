@@ -1,0 +1,37 @@
+ID-T028 
+Name: Sanjay Desai Roll no: 20 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+�
+� Steps for Data Cleaning and Preparation (Focus on Robustness and Feature Engineering) 
+1. Systematic Outlier Management: 
+o Detection: Identify outliers using domain knowledge and statistical methods like the Tukey's 
+Fences method (based on IQR) or model-based methods such as Local Outlier Factor 
+(LOF). 
+o Treatment: Instead of simple removal, apply Winsorization (capping the data at extreme 
+percentiles, e.g., 5th and 95th) to mitigate the impact of outliers without losing the data points 
+entirely. 
+2. Imputation using Causal Relationship Models: 
+o Strategy: For features where missingness is correlated with the target variable or other 
+features (MAR/MNAR), utilize sophisticated imputation. Train a prediction model (e.g., 
+Random Forest) to predict the missing values in one feature based on the non-missing 
+values in other features. 
+o Goal: Preserve the covariance structure within the data, which simpler methods like 
+mean/median imputation destroy. 
+3. Handling Temporal and Sequential Inconsistencies: 
+o Action: For time-series or transactional data, use Lagged Features or Exponentially 
+Weighted Moving Averages (EWMA) to fill gaps. Check for non-monotonic time stamps. 
+o Inconsistency Check: Validate data integrity using assertions or business rules (e.g., a 
+customer's age cannot decrease over time). 
+4. Feature Encoding for Non-Linearity: 
+o Nominal: Instead of simple One-Hot Encoding, use Sum Encoding or Helmert Encoding to 
+manage potential multicollinearity issues, especially in generalized linear models. 
+o Numerical Binning: Apply Discretization to numerical features to capture non-linear 
+relationships. Use Quantile Binning to ensure equal data distribution across bins. 
+5. Final Feature Selection based on Noise Reduction: 
+o Action: After cleaning, re-evaluate feature utility. Employ filter methods like Chi-Squared 
+Test (for categorical) or ANOVA F-test (for numerical) to filter out features with low 
+predictive power or high noise, thus simplifying the model's task. 

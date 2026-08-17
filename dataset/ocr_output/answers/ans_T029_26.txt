@@ -1,0 +1,50 @@
+ID-T029 
+Name: Rahul Sharma Roll no: 26 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why 
+robustness is important and how it can be improved in learning systems. 
+Robustness is basically "common sense" for a computer. If a model is robust, it doesn't freak 
+out if the data is a little bit messy. 
+ Why it's important: Think about a face-unlock feature on a phone. If you wear 
+glasses or have a pimple, the phone should still recognize you. If it wasn't robust, 
+you'd be locked out of your phone every time you changed your hair. 
+ How to improve it: You have to feed it "bad" examples. You show the computer 
+pictures of yourself in the dark, in the rain, or wearing a hat. By showing it these 
+"noisy" versions, the computer learns to focus on your actual face, not the background. 
+A-b. Describe the role of data representation in machine learning. Explain how different 
+ways of representing data can affect learning outcomes. 
+Data representation is just the way you translate the real world into something a computer 
+can see. 
+ The Effect: Imagine trying to teach someone what a "car" is. If you only show them a 
+list of every single bolt and screw (bad representation), they will be confused. But if 
+you show them a picture (good representation), they get it instantly. 
+ Outcome: If you give a machine the wrong "view" of the data, it will fail. If you want 
+to predict the weather, telling the computer the "color of the sky" is okay, but telling it 
+the "air pressure" is much better. Pick the wrong clues, and you get the wrong 
+answers. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain 
+tasks related to monitoring, updating, documentation, and ethical compliance. 
+The job doesn't end when the "Go" button is pressed. It's like being a doctor for the AI. 
+ Monitoring: You have to check the AI’s "heartbeat" every day. Is it still getting 
+answers right, or is it getting "sick" and making mistakes? 
+ Updating: If the world changes (like a new slang word appearing), you have to give 
+the AI a "booster shot" of new data. 
+ Documentation: You have to write a diary of everything you did so that if you quit, 
+the next person knows how to fix the AI. 
+ Ethical Compliance: You have to make sure the AI isn't being a "bully" or being 
+unfair to certain people based on their race or gender. 
+B] Attempt All (2 marks each) 
+B-e. What is a machine learning algorithm? The "logic engine." It’s the set of math steps the 
+computer follows to turn your messy data into a smart guess. 
+B-f. Define overfitting. When the AI tries too hard. It memorizes the exact data so perfectly 
+that it can't handle anything even slightly different. 
+B-g. What is data preprocessing? The "cleanup." You’re scrubbing the data to get rid of 
+mistakes, empty spots, and weird formatting before the AI sees it. 
+B-h. What is a prediction in machine learning? The "final guess." It's the AI saying, "Based 
+on what I've seen, I think the answer is X." 
+B-i. Define model evaluation. The "report card." You test the AI with a secret set of questions 
+to see if it actually knows its stuff or if it's just guessing. 
+B-j. What is learning from experience in ML? It means the more data (experience) the 
+computer gets, the fewer mistakes it makes. It literally gets smarter over time. 

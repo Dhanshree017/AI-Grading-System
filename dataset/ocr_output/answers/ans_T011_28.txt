@@ -1,0 +1,172 @@
+ID-T011 
+Name : Saniya Malhotra Roll no: 28 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-1. Define Machine Learning. What is Hypothesis in ML? 
+Hypothesis in ML: 
+Hypothesis is like one assumption or guess which the algorithm make to map 
+input and output. It is the model that tell how x relate to y. For example, 
+in linear regression the hypothesis is y = mx + c which is line that best fit 
+the data. The algorithm try to find best hypothesis that give minimum 
+error. 
+A-2. Define Lazy Learning and Eager Learning. What is Reinforcement Learning? 
+Lazy Learning: 
+In lazy learning, the system does not learn during training time. It store all 
+training data and when the new query comes, then it process and find the 
+result. It is lazy because it delay the learning work until it is needed. 
+Example of lazy learning is K-Nearest Neighbour (KNN) where the system 
+keep data and compute answer at the time of testing. 
+Reinforcement Learning: 
+Reinforcement learning is the type of learning in which an agent learn by 
+doing actions in environment and getting feedback in the form of reward or 
+penalty. It is based on the concept of trial and error. The main goal is to 
+maximize the total reward in long run. 
+Points: 
+1. Lazy learning delay training and use data later. 
+2. Eager learning train model early then predict fast. 
+3. RL is feedback-based learning. 
+4. It has agent, environment, reward, policy. 
+5. The agent observe environment and act. 
+6. Good action give reward and bad action give penalty. 
+7. It use Q-learning and Markov Decision Process. 
+8. RL used in games, robotics, control system. 
+9. The main target is to get best reward possible. 
+A-4. What are Evaluation Metrics in ML? Explain Accuracy, Precision, Recall and 
+F1 Score. 
+Evaluation metrics are the measures which tell how good or bad the machine 
+learning model is performing. It check the correctness of prediction and 
+performance of model. 
+Accuracy: 
+Accuracy is the most common metric which means number of correct 
+prediction out of total prediction. It work best when data is balanced. 
+Precision: 
+Precision is ratio of correctly predicted positive observation to total 
+predicted positive observation. 
+Recall: 
+Recall is ratio of correctly predicted positive observation to all actual positive 
+observations. 
+F1 Score: 
+It is harmonic mean of precision and recall which give better single measure 
+when we need balance between both. 
+Points: 
+1. Evaluation metric judge model quality. 
+2. Accuracy = (TP + TN)/(TP + TN + FP + FN). 
+3. Precision = TP / (TP + FP). 
+4. Recall = TP / (TP + FN). 
+5. F1 = 2 * (Precision * Recall) / (Precision + Recall). 
+6. Confusion matrix used to see all outcomes. 
+7. AUC ROC tell classification ability. 
+8. F1 good when class imbalance exist. 
+9. Good model have high precision and recall. 
+A-5. Explain Feature Selection and Dimensionality Reduction. 
+Feature selection and dimensionality reduction are both techniques used to 
+reduce number of input variables in model and make learning simple. 
+Feature Selection: 
+Feature selection means choosing only those features which are most 
+important for prediction and removing irrelevant ones. It reduce overfitting, 
+improve accuracy and reduce computation time. 
+Dimensionality Reduction: 
+It means reducing overall number of variables or dimensions in dataset while 
+keeping as much information as possible. 
+Points: 
+1. Feature selection remove useless features. 
+2. Dimensionality reduction transform features to new space. 
+3. PCA, LDA used for dimension reduce. 
+4. Filter, Wrapper, Embedded used for selection. 
+5. It improve speed of algorithm. 
+6. Reduce overfit and noise. 
+7. Make data easy to visualize. 
+B] Attempt any 8 (40 Marks) 
+B-3. Explain Ensemble Methods like Bagging, Boosting, Random Forest. 
+Ensemble means combining many models to improve performance. 
+Bagging: 
+Train many base model on random samples and average output. 
+Boosting: 
+Train model sequentially each fixing previous error. 
+Random Forest: 
+Many decision tree created using bagging and random feature. 
+Points: 
+1. Reduce overfit. 
+2. Improve accuracy. 
+3. Bagging reduce variance. 
+4. Boosting reduce bias. 
+5. Random forest popular ensemble. 
+6. Use different subset of data. 
+7. Example: AdaBoost, XGBoost. 
+8. Work on regression and classification. 
+9. Ensemble always stable result. 
+B-4. Explain Unsupervised Learning like K-Means and Hierarchical Clustering. 
+Unsupervised learning has no output label, it only find pattern. 
+K-Means: 
+1. Choose K cluster center. 
+2. Assign point to nearest cluster. 
+3. Update centers. 
+4. Repeat until no change. 
+5. Used for market segment. 
+Hierarchical: 
+1. Build cluster tree (dendrogram). 
+2. Agglomerative – bottom up. 
+3. Divisive – top down. 
+4. No need K value before. 
+5. Show relation of data point. 
+B-5. How ML used in Medical or Fraud Detection. 
+Medical: 
+1. ML predict disease by data. 
+2. Detect tumor from image. 
+3. Analyse patient record. 
+4. Help in diagnosis. 
+5. Improve accuracy of doctor. 
+Fraud: 
+1. Detect abnormal transaction. 
+2. Machine mark risky behaviour. 
+3. Bank use ML for fraud alert. 
+4. Reduce money loss. 
+5. Model train from history fraud. 
+B-6. Design ML model for Student Performance or House Price. 
+1. Collect data (marks, hours or size, location). 
+2. Clean and preprocess. 
+3. Select features. 
+4. Split data train/test. 
+5. Choose algorithm (linear regression). 
+6. Train model. 
+7. Test accuracy. 
+8. Tune parameter. 
+9. Deploy model. 
+B-7. Explain PCA Algorithm. 
+Principal Component Analysis reduce dimensions and keep variance. 
+Steps: 
+1. Standardize data. 
+2. Find covariance matrix. 
+3. Get eigenvalue & vector. 
+4. Sort descending. 
+5. Select top K. 
+6. Form projection matrix. 
+7. Transform data. 
+8. Reduced data ready. 
+9. Help in visualization. 
+B-8. Explain Gradient Descent and Its Types. 
+Gradient descent minimize cost by update weight in opposite direction of 
+gradient. 
+Types: 
+1. Batch GD – use full data each step. 
+2. Stochastic GD – one sample each time. 
+3. Mini batch GD – small batch. 
+4. Learning rate control step size. 
+5. Too high rate skip min. 
+6. Too low slow learn. 
+7. Stop when loss minimum. 
+8. Use in neural, regression. 
+9. Update rule θ = θ - α∂J/∂θ. 
+B-9. Explain Reinforcement Learning. 
+RL is feedback learning based on reward and penalty. 
+Points: 
+1. Agent, environment, reward main. 
+2. Action lead to new state. 
+3. Learn to maximize total reward. 
+4. Q-learning update formula used. 
+5. Use MDP concept. 
+6. Explore new and exploit known. 
+7. RL used in game, robot, car. 
+8. Reward function control learn. 
+9. Need trial and error learning. 

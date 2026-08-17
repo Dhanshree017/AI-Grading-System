@@ -1,0 +1,82 @@
+ID-T024 
+Name: kavya singh Roll no: 14 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Introduction 
+Supervised and unsupervised learning are two fundamental categories of machine learning 
+that differ based on the availability of labeled data and the learning objective. 
+Supervised Learning 
+Supervised learning is a learning approach where models are trained using labeled datasets, 
+meaning that each input example is associated with a known output. The algorithm learns a 
+mapping function from inputs to outputs by minimizing prediction error during training. 
+Unsupervised Learning 
+Unsupervised learning uses unlabeled data, where the correct outputs are unknown. The 
+model identifies underlying patterns, structures, or relationships in the data without external 
+guidance. 
+Key Differences 
+The main difference lies in data labeling: supervised learning requires labeled data, while 
+unsupervised learning does not. Supervised learning focuses on prediction tasks, whereas 
+unsupervised learning focuses on data exploration and pattern discovery. 
+Real-World Examples 
+Supervised learning is used in spam email detection, disease diagnosis, and house price 
+prediction. Unsupervised learning is used in customer segmentation, topic modeling, and 
+anomaly detection. 
+Conclusion 
+Thus, supervised learning is outcome-driven, while unsupervised learning is discovery
+driven. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Definition of Data Preprocessing 
+Data preprocessing is the process of transforming raw, incomplete, and inconsistent data into 
+a clean and structured format suitable for machine learning algorithms. 
+Importance of Data Preprocessing 
+Proper preprocessing improves data quality, enhances model performance, and reduces 
+errors during training. 
+Common Preprocessing Steps 
+1. Data Cleaning: Involves handling missing values, correcting errors, and removing 
+duplicate records to ensure consistency. 
+2. Data Encoding: Converts categorical variables into numerical formats such as label 
+encoding or one-hot encoding. 
+3. Data Normalization: Scales numerical features into a common range to prevent bias 
+toward features with larger values. 
+4. Outlier Handling: Identifies and treats extreme values that can distort model 
+learning. 
+Conclusion 
+Data preprocessing is a critical step that directly impacts the accuracy and reliability of 
+machine learning models. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Definition of Overfitting 
+Overfitting occurs when a machine learning model learns training data too well, including 
+noise and irrelevant patterns, resulting in poor performance on unseen data. 
+Causes of Overfitting 
+Overfitting is caused by overly complex models, limited training data, and lack of 
+regularization. 
+Effects of Overfitting 
+An overfitted model shows high training accuracy but low test accuracy, indicating poor 
+generalization. 
+Techniques to Reduce Overfitting 
+1. Regularization: Penalizes large weights to prevent the model from becoming too 
+complex. 
+2. Cross-Validation: Evaluates model performance on multiple subsets of data to ensure 
+generalization. 
+Conclusion 
+Reducing overfitting improves model reliability and real-world performance. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Definition of Model Evaluation 
+Model evaluation is the process of assessing a machine learning model’s performance using 
+appropriate metrics on unseen data. 
+Purpose of Model Evaluation 
+It helps determine how well a model generalizes and whether it meets performance 
+requirements. 
+Evaluation Metrics for Classification 
+1. Accuracy: Measures the proportion of correctly classified instances among all 
+predictions. 
+2. Precision: Measures how many predicted positive instances are actually positive. 
+Conclusion 
+Choosing appropriate evaluation metrics ensures reliable assessment of classification 
+models. 

@@ -1,0 +1,137 @@
+ID-T007 
+Name : Raman Jaiswal Roll no: 22 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence (AI) is the branch of computer science that enables machines to 
+perform tasks that typically require human intelligence. These tasks include 
+reasoning, learning, problem solving, understanding language, perception, and 
+decision-making. AI systems can adapt to new situations, analyze data, and provide 
+solutions efficiently in dynamic environments. 
+Machine Learning (ML) is a subset of AI where systems automatically learn from 
+data to improve their performance without explicit programming. ML enables 
+machines to identify patterns, make predictions, and adapt to new information. 
+Applications of Machine Learning: 
+1. Spam Detection: Filtering emails to identify and block spam messages. 
+2. Healthcare Predictions: Predicting diseases such as diabetes, heart disease, or 
+cancer based on patient history. 
+3. Recommendation Systems: Platforms like Netflix and YouTube suggest content 
+based on user behavior. 
+4. Finance: Detecting fraudulent transactions and assessing loan risks. 
+5. Self-Driving Cars: Recognizing obstacles, traffic signals, and pedestrians to 
+drive safely. 
+6. Voice Recognition: Assistants like Google Assistant and Siri understand spoken 
+commands. 
+7. Chatbots: Automated customer support using ML-based conversational agents. 
+Example: Predicting student marks using past scores and study hours. The ML model 
+learns patterns from historical data to predict future performance. 
+A-b) Explain types of machine learning with example 
+There are four main types of machine learning: 
+1. Supervised Learning: Learning from labeled data where both input features 
+and output labels are known. The model predicts outcomes for new data. 
+o Example: Predicting house prices using features such as area, location, 
+and previous sales data. 
+2. Unsupervised Learning: Learning from unlabeled data to identify patterns or 
+groupings in the data. 
+o Example: Customer segmentation in e-commerce based on purchase 
+behavior. 
+3. Semi-Supervised Learning: Trained on a small amount of labeled data and a 
+large amount of unlabeled data. Useful when labeling is costly. 
+o Example: Image recognition with only a few labeled images. 
+4. Reinforcement Learning: Learning by interacting with an environment and 
+receiving feedback as rewards or penalties. 
+o Example: Self-driving cars learning to drive safely through simulations. 
+A-c) What are the steps in building ML model 
+Building a machine learning model involves the following steps: 
+1. Problem Definition: Define the problem type (classification, regression, 
+clustering). 
+2. Data Collection: Gather relevant data from multiple sources. 
+3. Data Preprocessing: Clean data, handle missing values, normalize features, 
+encode categorical variables. 
+4. Feature Selection and Engineering: Identify or create important features that 
+improve model performance. 
+5. Model Selection: Choose an appropriate algorithm. 
+6. Model Training: Train the model on training data to learn patterns. 
+7. Model Evaluation: Test the model using metrics like accuracy, precision, recall, 
+or RMSE. 
+8. Hyperparameter Tuning: Optimize parameters to improve performance. 
+9. Deployment: Deploy the model for real-world predictions. 
+Example: Predicting housing prices. After collecting, cleaning, selecting features, 
+training a regression model, testing, and deploying, the model predicts prices 
+accurately. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing prepares raw data for machine learning to ensure accuracy and 
+efficiency. 
+1. Data Collection: Gather raw data from files, databases, APIs, or sensors. 
+2. Data Cleaning: Handle missing values, remove duplicates, and correct errors. 
+3. Data Transformation: Encode categorical features, normalize numerical data, 
+and adjust skewed distributions. 
+4. Feature Selection: Retain features relevant to the prediction task. 
+5. Scaling and Normalization: Scale numerical features to improve model 
+performance. 
+6. Data Splitting: Divide data into training, validation, and testing sets. 
+7. Handling Outliers: Detect and remove or adjust extreme values affecting model 
+performance. 
+Example: In a student performance dataset, missing marks can be filled with 
+averages, gender encoded numerically, scores normalized, and the dataset split into 
+training and testing sets. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble machine learning algorithm that builds multiple 
+decision trees and combines their outputs to improve prediction accuracy and reduce 
+overfitting. Each tree is trained on a random subset of the data and features. Final 
+predictions are made using majority voting for classification or averaging for 
+regression. 
+1. Reduces overfitting compared to single decision trees. 
+2. Handles large datasets with high dimensionality efficiently. 
+3. Works well with missing values. 
+4. Provides feature importance scores. 
+5. Suitable for classification and regression. 
+6. More stable and accurate than a single decision tree. 
+7. May require more computational resources. 
+Example: Predicting loan default based on income, credit score, and employment 
+status. Random Forest combines multiple trees’ votes to make the final prediction. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Support Vector Machine (SVM) is a supervised learning algorithm used for 
+classification and regression. It identifies the optimal hyperplane that separates 
+classes by maximizing the margin between support vectors, which are the points 
+closest to the hyperplane. 
+Types of SVM: 
+1. Linear SVM: Separates linearly separable data with a straight hyperplane. 
+2. Non-Linear SVM: Uses kernel functions (RBF, polynomial) for non-linearly 
+separable data. 
+3. Multi-class SVM: Extends SVM for multiple classes using one-vs-one or one-vs
+rest strategies. 
+Example: Recognizing handwritten digits (0–9) using SVM with an RBF kernel. 
+B-c) Explain different types of clustering algorithm 
+Clustering is an unsupervised learning technique that groups similar data points 
+based on specific characteristics. 
+Types of Clustering: 
+1. K-Means Clustering: Divides data into K clusters by minimizing distance to 
+centroids. 
+2. Hierarchical Clustering: Builds a dendrogram by merging or splitting clusters 
+iteratively. 
+3. DBSCAN: Groups points based on density and identifies noise points. 
+4. Agglomerative Clustering: Each point starts as a cluster and merges based on 
+similarity. 
+5. Mean Shift Clustering: Iteratively moves cluster centers toward high-density 
+regions. 
+Example: Segmenting e-commerce customers based on purchasing behavior using K
+Means clustering. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree is a supervised learning algorithm for classification and regression. It 
+splits data into nodes based on features, with leaf nodes representing final outcomes. 
+Steps in Making a Decision Tree: 
+1. Select Root Node: Choose the most significant feature using Information Gain 
+or Gini Index. 
+2. Split Data: Divide the dataset based on the root feature. 
+3. Recursive Splitting: Continue splitting subsets until they are pure or a stopping 
+criterion is met. 
+4. Leaf Nodes: Assign class labels or output values. 
+5. Pruning: Remove branches that do not improve predictive power to reduce 
+overfitting. 
+6. Testing: Evaluate the tree on test data. 
+7. Deployment: Use the tree to make predictions on new data. 
+Example: Predicting whether a student will pass or fail based on attendance and 
+study hours using a decision tree. 

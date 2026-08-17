@@ -1,0 +1,139 @@
+ID-T018 
+Name: Kartik sawant Roll no: 8 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Introduction 
+AdaBoost is a boosting algorithm that tries to improve simple models by repeating them 
+again and again until they become stronger. It feels like stacking multiple tiny models hoping 
+they form a big intelligent one. 
+Weak Learners Combination 
+AdaBoost uses several weak learners, usually small decision trees. All the weak learners give 
+their predictions and then they are combined by giving each of them a certain weight. 
+Sometimes the weaker trees end up getting more weight because the algorithm tries to pay 
+attention to difficult patterns. 
+Weight Updating 
+AdaBoost increases the weights of data samples that were predicted incorrectly. Every 
+round, the algorithm changes these sample weights and forces the next learner to focus more 
+on the tough samples. Some people think the weights keep growing until the model becomes 
+super strict. 
+Bias Reduction 
+Boosting reduces bias because many small models together can catch very tiny details of the 
+dataset. After many rounds, the algorithm almost memorizes the hard points, which lowers 
+bias. AdaBoost keeps improving until errors get squeezed out. 
+Conclusion 
+AdaBoost is useful for improving simple learners but it can become unstable if weights rise 
+too much. It also needs the data to be clean. 
+A-2. Describe the internal working of LSTM (Long Short-Term Memory) networks. 
+Explain input gate, forget gate, output gate, and cell state. 
+Introduction 
+LSTMs are neural networks that can keep memory for long sequences. They are used for 
+language, stock prediction, and pattern discovery where previous information matters a lot. 
+Forget Gate 
+The forget gate decides what past information should be removed. It takes the previous 
+hidden state and the current input to produce a value that controls what gets dropped from 
+memory. 
+Input Gate 
+The input gate decides what new information should be entered into the cell. It allows the 
+network to update the memory only with selected information instead of everything at once. 
+Cell State 
+The cell state is like a conveyor belt of memory. It carries information across time steps. The 
+LSTM modifies this state using the forget and input gates, which results in updated long
+term memory. 
+Output Gate 
+The output gate decides what part of the updated memory should be used to produce the new 
+hidden state. This hidden state is what gets passed to the next time step and also used for 
+predictions. 
+Conclusion 
+LSTMs coordinate these gates to control remembering and forgetting, allowing them to 
+handle long sequences effectively. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature 
+creation, selection, extraction, and the impact on model performance. 
+Introduction 
+Feature engineering is about shaping raw data into meaningful inputs. It is one of the most 
+important tasks in building a reliable model. 
+Feature Creation 
+New features can be created by combining existing ones, using mathematical formulas, or by 
+adding domain-specific logic. Sometimes features are added simply because they look 
+interesting. 
+Feature Selection 
+Feature selection eliminates features that don’t contribute much to prediction. Some selection 
+methods choose features just based on how different they look statistically, even if the 
+relation is unclear. 
+Feature Extraction 
+Feature extraction transforms original data into new dimensions. PCA is often used, which 
+rotates data into new directions that carry most information. Extracted features sometimes 
+look nothing like original columns. 
+Impact on Model Performance 
+Better features can drastically improve accuracy. In some cases, adding too many features 
+slows down models or makes them confused. A very strong model sometimes performs well 
+even with poorly designed features. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability 
+and independence assumption. 
+Introduction 
+Naive Bayes is a classifier based on probability. It uses mathematical likelihoods to decide 
+which class is most suitable for the given data. 
+Conditional Probability 
+The model calculates the probability of a class given the features. It multiplies these 
+probabilities to find the most likely class. Sometimes, the conditional values become 
+extremely small and lead to unusual predictions. 
+Independence Assumption 
+Naive Bayes assumes that all features are independent. Even if two features clearly influence 
+each other, the classifier treats them separately. Despite this, it still performs well in many 
+practical problems like text classification. 
+Working 
+It stores frequency information from the training dataset and uses these frequencies to 
+estimate probabilities. The class with the highest total probability is chosen. 
+Conclusion 
+Naive Bayes is simple and efficient and works well even when data relationships are not 
+fully accurate. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, 
+latent representation, and applications in anomaly detection. 
+Introduction 
+Autoencoders are neural networks designed to copy inputs to outputs by passing data 
+through a compressed middle layer. This forces the model to learn essential patterns. 
+Encoder 
+The encoder reduces the input size step by step. As the layers shrink, unnecessary details are 
+lost and important patterns are captured. 
+Latent Representation 
+The latent representation is the compact version of the data stored at the bottleneck layer. 
+Sometimes this representation becomes extremely small, containing only a tiny amount of 
+information. 
+Decoder 
+The decoder expands the latent representation back to the original shape. The reconstructed 
+output often resembles the input but may miss many details depending on model capacity. 
+Applications in Anomaly Detection 
+Autoencoders reconstruct normal data well, but anomalies do not match the trained patterns. 
+When anomalous inputs produce high reconstruction error, they are flagged. 
+B ] Attempt all (5 marks each) 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin 
+Index, and Inertia. Describe how they measure cluster quality. 
+Silhouette Score 
+It measures how well each sample fits in its cluster compared to other clusters. Higher scores 
+indicate better separation. 
+Davies–Bouldin Index 
+It compares the distance between cluster centers with the spread within the clusters. Lower 
+values show better clustering. 
+Inertia 
+Inertia calculates how tightly points are gathered around their cluster center. Lower inertia 
+means compact clusters. 
+B-3. Explain Reinforcement Learning, give 2 examples where reinforcement learning is 
+used. 
+Reinforcement Learning is a method where an agent learns by receiving rewards or penalties. 
+The agent tries actions, observes results, and slowly improves its strategy. 
+Examples include game playing and robot navigation. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+Text Cleaning 
+Unwanted symbols and repeated elements are removed from sentences. This makes the text 
+more uniform. 
+Tokenization 
+Text is split into words or subword tokens. These tokens become units for further processing. 
+Embeddings 
+Tokens are converted into numerical vectors that represent meaning. These embeddings help 
+models understand semantic relations. 
+Sequence Modelling 
+RNNs or Transformers process token sequences. The model learns patterns across sentences 
+to make predictions such as next word or sentiment. 

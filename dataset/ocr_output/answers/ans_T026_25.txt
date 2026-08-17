@@ -1,0 +1,39 @@
+ID-T026 
+Name: Suman khedi Roll no: 25 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 ( 8 marks each ) 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+Role of Assumptions 
+Assumptions simplify the learning task by restricting the space of possible models, allowing 
+algorithms to learn efficiently from limited data. 
+Common Algorithmic Assumptions 
+1. Functional Form Assumption – Relationship follows a known form. 
+2. Feature Independence Assumption – Inputs do not influence each other. 
+3. Noise Assumption – Noise follows a specific pattern. 
+4. Stationarity Assumption – Data behavior remains consistent. 
+Influence on Model Choice and Performance 
+5. Simple models rely on strong assumptions. 
+6. Weak assumptions increase flexibility but complexity. 
+7. Incorrect assumptions cause systematic errors. 
+8. Assumptions directly affect bias-variance balance. 
+9. Proper assumptions improve training stability. 
+10. Model performance depends on assumption-data alignment.
+A-f. Describe the ethical considerations involved in developing machine learning systems. 
+Explain issues such as fairness, transparency, accountability, and privacy. 
+Fairness 
+1. Models must avoid biased decision-making. 
+2. Training data should be inclusive. 
+Transparency 
+3. Decisions should be explainable. 
+4. Users must understand system behavior. 
+Accountability 
+5. Responsibility for outcomes must be defined. 
+6. Errors must be traceable. 
+Privacy 
+7. Sensitive data must be protected. 
+8. Compliance with data protection laws is essential. 
+Ethical Governance 
+9. Continuous ethical evaluation is required. 
+10. Ethical ML ensures public trust and acceptance. 

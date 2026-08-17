@@ -1,0 +1,104 @@
+ID-T030 
+Name: Akshay Mishra Roll no: 232510 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 5 Marks) 
+A-1. Explain the concept of hypothesis space in machine learning 
+Introduction 
+In machine learning, the learning algorithm does not search for a single solution but chooses 
+from a set of possible solutions called the hypothesis space. 
+Explanation 
+The hypothesis space is the complete collection of all models or functions that an algorithm 
+can possibly learn. It defines the boundaries of learning and restricts what kind of patterns 
+the model can represent. A small hypothesis space limits flexibility and may cause 
+underfitting, whereas a very large hypothesis space allows complex models but increases the 
+risk of overfitting and higher computation cost. The design of hypothesis space depends on 
+the nature of data and problem complexity. 
+Conclusion 
+Thus, the hypothesis space plays a critical role in controlling learning capacity, accuracy, and 
+generalization ability of machine learning models 
+A-4. What is the role of validation in model development? 
+Introduction 
+Validation is an important step during the development of machine learning models. 
+Explanation 
+Validation uses a separate dataset to compare models and tune hyperparameters. It prevents 
+overfitting to training data by ensuring balanced performance. Validation helps select the 
+best model before final testing. It improves robustness and reliability of the final deployed 
+model. 
+Conclusion 
+Thus, validation plays a key role in building accurate and generalizable machine learning 
+systems. 
+A-5. Describe the concept of inductive learning in machine learning 
+Introduction 
+Inductive learning is a core concept in machine learning that enables systems to generalize. 
+Explanation 
+In inductive learning, the model learns from specific examples and derives general rules. 
+These rules are then applied to new and unseen data. This approach allows prediction and 
+decision-making beyond observed cases. The success of inductive learning depends on data 
+quality and representativeness. 
+Conclusion 
+Inductive learning enables generalization and forms the foundation of intelligent learning 
+systems. 
+A-6. Explain the impact of noisy data on machine learning models 
+Introduction 
+Real-world data often contains noise in the form of errors or inconsistencies. 
+Explanation 
+Noisy data misleads learning algorithms and reduces prediction accuracy. It increases the 
+risk of overfitting to incorrect patterns. Noise also causes unstable and unreliable predictions. 
+Proper data preprocessing and noise handling techniques help improve model robustness. 
+Conclusion 
+Managing noisy data is essential for building accurate and reliable ML models. 
+A-7. What is the difference between model fitting and model selection? 
+Introduction 
+Model fitting and model selection are two distinct but related steps in ML development. 
+Explanation 
+Model fitting involves training a model by adjusting parameters using data. Model selection 
+involves choosing the best model among multiple candidates based on validation 
+performance. Fitting focuses on learning, while selection focuses on evaluation and 
+comparison. 
+Conclusion 
+Both processes together ensure optimal performance and proper model choice. 
+A-8. Explain the concept of ensemble diversity and why it matters 
+Introduction 
+Ensemble learning combines multiple models to improve performance. 
+Explanation 
+Ensemble diversity refers to differences among individual models in an ensemble. Diverse 
+models make different errors, which improves overall accuracy when combined. Lack of 
+diversity reduces ensemble benefits. Diversity increases robustness and generalization. 
+Conclusion 
+Therefore, ensemble diversity is crucial for effective ensemble learning. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement 
+Introduction 
+Machine learning models follow a structured lifecycle. 
+Explanation 
+The lifecycle starts with problem definition and data collection, followed by preprocessing, 
+training, and validation. The model is then deployed and continuously monitored. Updates 
+and retraining are performed as data changes. Eventually, outdated models are retired. 
+Conclusion 
+Understanding the ML lifecycle ensures sustainable and effective model management. 
+A-10. Explain the importance of documentation in ML projects 
+Introduction 
+Documentation is a critical component of ML projects. 
+Explanation 
+It records model design, data sources, assumptions, and decisions. Documentation improves 
+transparency, maintenance, and collaboration. It supports reproducibility and ethical 
+compliance. 
+Conclusion 
+Good documentation ensures long-term success and reliability of ML systems. 
+A-11. What is meant by reproducibility in machine learning experiments? 
+Introduction 
+Reproducibility is a key requirement in ML research and practice. 
+Explanation 
+It means achieving the same results when experiments are repeated under identical 
+conditions. It requires proper documentation of data, code, and parameters. Reproducibility 
+builds trust and allows verification. 
+Conclusion 
+Reproducibility ensures credibility and scientific validity. 
+A-12. Explain how ethical considerations influence ML system design 
+Introduction 
+Ethical considerations guide responsible ML development. 
+Explanation 
+They influence data selection, bias reduction, and privacy protection. Ethical design ensures 
+transparency and fairness. It prevents harmful outcomes and builds public trust. 
+Conclusion 
+Ethics is essential for sustainable and socially acceptable ML systems. 

@@ -1,0 +1,163 @@
+ID-T019 
+Name: Komal Chaudhary Roll no: 20 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-a) Define Machine Learning. Explain how it differs from traditional programming with 
+a simple example. 
+Definition: 
+Machine Learning is basically a method where computer learn patterns from data itself. 
+Instead of us telling the exact step-by-step rules, the system study examples and build its 
+own rule-like structure. It try to understand relations in data and later use these learned 
+relations to make predictions. 
+Difference from Traditional Programming: 
+Traditional programming work like: Rules + Data → Output. We manually write 
+conditions, logic, and instructions. 
+But ML work opposite: Data + Output → Rules (Model). 
+The algorithm find patterns that human not always write clearly. 
+Example: 
+If we need computer to identify whether email is spam, traditional programming will need 
+many hand-written rules like "if email contain word FREE then spam". But ML will take 
+many spam and non-spam emails and automatically learn pattern like text frequency, sender 
+behavior etc. So ML reduce manual rule writing. 
+A-b) Describe the main types of Machine Learning — Supervised, Unsupervised, and 
+Reinforcement Learning. Give one example for each. 
+1. Supervised Learning: 
+Here data have input and output both. The model learn mapping between them. 
+Example: Predicting house price using past house data. 
+2. Unsupervised Learning: 
+Here data only has input and no labeled output. Model try to find structure inside it. 
+Example: Grouping customers into clusters based on buying habits. 
+3. Reinforcement Learning: 
+This learning use reward and punishment signals. Agent learn by interacting with 
+environment and improving actions. 
+Example: Game-playing bot learning to win by receiving reward for good moves. 
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and 
+validation data with simple illustrations. 
+Dataset: 
+Dataset is basically collection of many samples that contain information needed to train and 
+check ML model. Each sample has features and sometimes labels. 
+Training Data: 
+Used to teach the model its patterns. 
+Illustration: If dataset is images of fruits, training data is majority of images used to learn 
+shapes and colors. 
+Testing Data: 
+Used to check how well the trained model perform on unseen samples. 
+Illustration: A new set of fruit images never shown during training are used for checking 
+accuracy. 
+Validation Data: 
+Used during training to tune hyperparameters and prevent overfitting. 
+Illustration: A small set checked after each training cycle to see if model is improving or 
+getting worse. 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Classification: 
+This task deal with predicting discrete categories. 
+Example: Predict whether an animal is cat or dog (two categories). 
+Regression: 
+This predicts continuous numerical values. 
+Example: Predict temperature for next day or price of product. 
+Key Difference: 
+Classification output classes, while regression output continuous number. 
+SECTION B –  
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+Concept: 
+Hypothesis space is complete set of all possible models a learning algorithm can choose 
+from. It hold many candidate functions that may explain relation between input and output. 
+Relation to Complexity: 
+If hypothesis space is very large and complex, model can fit even noise in training data. This 
+lead to overfitting. 
+Small hypothesis space restricts model and sometimes lead to underfitting. 
+Relation to Generalization: 
+A balanced hypothesis space helps model perform well on unseen data. The simpler but 
+expressive space gives strong generalization by capturing essential pattern and avoiding 
+unnecessary complexity. 
+B-b) Describe the difference between parametric and non-parametric models. Give 
+suitable examples of each and explain when to use them. 
+Parametric Models: 
+These models have fixed number of parameters, no matter how much data is there. 
+Example: Linear Regression. 
+When to Use: 
+Use when problem is simple and relationship seems predictable and data is limited. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic Models: 
+These models give fixed output for given input. 
+Example: Decision tree when no randomness is applied. 
+Probabilistic Models: 
+These assign probability to each possible outcome. 
+Example: Naive Bayes gives probability of each class. 
+Difference: 
+Deterministic is certain and fixed, while probabilistic show uncertainty and confidence level 
+of predictions. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection: 
+Gather raw data from sensors, datasets or any source. 
+2. Data Preprocessing: 
+Clean data, handle missing values, normalize features etc. 
+3. Splitting the Dataset: 
+Divide into training, validation and testing sets. 
+4. Model Selection: 
+Choose algorithm such as classification, regression etc. 
+5. Training: 
+Feed training data to model so it can learn patterns. 
+6. Validation and Tuning: 
+Use validation set to adjust hyperparameters. 
+7. Testing: 
+Evaluate model performance on test set. 
+8. Deployment and Monitoring: 
+After evaluation, deploy model and monitor real-world performance. 
+SECTION C –  
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two 
+commonly used ML algorithms. 
+Explanation: 
+ML algorithm is step-by-step procedure used for learning from data. It define how model 
+adjust, update and derive relation from training samples. 
+Examples: 
+1. Decision Tree Algorithm: Split data using conditions to form tree structure. 
+2. Support Vector Machine: Find best margin boundary that separate classes. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+Meaning: 
+Data preprocessing means improving quality of data before feeding into model. This include 
+cleaning, transforming, scaling and handling missing values. 
+Importance: 
+ Poor data leads to wrong model learning. 
+ Preprocessing make all features comparable and stable. 
+ Remove noise and outliers so model focus on true patterns. 
+ Increase accuracy and training speed. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. 
+Give suitable examples. 
+Features: 
+These are input variables used for prediction. 
+Example: Height, age, weight etc. 
+Labels: 
+These are outputs we want model to learn. 
+Example: Disease present or not. 
+Difference: 
+Features are what we give to model; labels are what model tries to predict. 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Model Evaluation: 
+It is process of measuring how well trained model performs on unseen data. 
+Metrics: 
+1. Accuracy: Percentage of correct predictions out of total. 
+2. Mean Absolute Error: Shows average amount of error in regression prediction. 
+SECTION D –  
+D-a) What is training data? How is it used in building a model? 
+ Training data is the main data used for learning patterns. 
+ Model study inputs and outputs from this dataset. 
+ It adjust internal weights based on errors. 
+ More training data produce stronger generalization. 
+ It is essential for forming base prediction behaviour. 
+D-b) Define prediction in machine learning. 
+ Prediction is model’s output for a new unseen input. 
+ It represent learned pattern applied to unknown data. 
+ Prediction can be number or category. 
+ Quality of prediction depend on training. 
+ Used for decision making. 
+D-c) What is a decision tree in simple terms? 
+ It is model that split data based on conditions like questions. 
+ Each internal node is decision, each branch is answer. 
+ Final leaf gives prediction. 
+ It works like human making step-by-step conclusion. 
+ Easy to understand. 

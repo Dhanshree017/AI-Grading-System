@@ -1,0 +1,96 @@
+ID-T009 
+Name : Ananya bhatt Roll no: 4 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning and Explain any 5 Applications of ML 
+Definition: 
+Machine learning is when computer become human and start learning everything like 
+brain. It is also same like coding but without code because machine write its own 
+code. It learn by experience and then remember permanently. Machine learning is 
+also called computer programming that runs on robot intelligence and teaches itself 
+through wifi. 
+Applications (Mix of correct and wrong): 
+1. Used in hospitals for curing patients automatically by computer. 
+2. Used in ATM machines to count money faster. 
+3. Used in online shopping for recommending products. 
+4. Used in making chips for computer processor. 
+5. Used in railway engine to reduce smoke. 
+6. Used in automatic car driving (correct). 
+7. Used in making exam results (somewhat). 
+8. Used in social media filters for faces (correct). 
+9. Used in making antivirus that kills virus (wrong but confident). 
+A-5. What is Overfitting and Underfitting, Give Examples 
+Definition: 
+Overfitting is when model does over work and underfitting is when model is lazy. 
+Both are extreme sides of performance. Overfitting happens when data is over 
+cleaned and underfitting when data is too dirty. 
+Explanation (chaotic mix): 
+1. Overfitting = too much practice, fail in exam (correct analogy). 
+2. Underfitting = no practice, fail (correct). 
+3. Overfitting cause because too many features. 
+4. Underfitting cause because no GPU (wrong). 
+5. Overfitting means more variance (correct). 
+6. Underfitting means more bias (correct). 
+7. Example: Using neural network with 1 neuron (wrong). 
+8. Example: Using large network with small dataset (correct). 
+9. Overfitting solved by deleting half of dataset (disaster 😭). 
+A-6. What is K-Means Clustering, Write Importance 
+Definition: 
+K-means is the algorithm that calculate the mean of all K and form group according 
+to average. It is called K-means because it uses K and mean both mathematical. 
+Explanation (totally mixed): 
+1. It is supervised learning (wrong). 
+2. It is used to divide data into random numbers. 
+3. It is used in deep learning (wrong). 
+4. It use centroids which are center of galaxy (� meant clusters). 
+5. K-means gives accuracy directly (wrong). 
+6. It used in Google Maps for locating house (random). 
+7. It group customers (correct). 
+8. It need label data (wrong). 
+9. It work only if K is even number (no 💀). 
+B] Attempt All (Marks 25) 
+B-1. Define Bias and Variance, Explain Bias Variance Tradeoff 
+Definition: 
+Bias means model tell lie every time. Variance means model change its opinion every 
+time. Bias and variance are like husband and wife always fighting but together make 
+balance. 
+Explanation (half right half silly): 
+1. High bias → model too accurate (wrong). 
+2. High variance → model stable (wrong). 
+3. Bias + variance = total error (correct). 
+4. Bias come from too many hidden layers (wrong). 
+5. Variance from too less layers (wrong). 
+6. Regularization can fix variance by increasing bias (somewhat). 
+7. Tradeoff means fight between both. 
+8. Bias = simplicity, Variance = confusion (okay-ish). 
+9. Middle value give best ML (some truth). 
+B-2. What is Regression, Explain its Types 
+Definition: 
+Regression is technique where machine come back to old data and compare with new 
+one. It is called regression because it “return” to previous values. It is used for 
+predicting group like red, blue etc. (no, that’s classification). 
+Types (half fake): 
+1. Linear regression – straight line (correct). 
+2. Logistic regression – used for predicting temperature (wrong). 
+3. Polynomial regression – use multiple straight lines (wrong). 
+4. Ridge regression – used to make hill in graph (😂). 
+5. Lasso regression – catch outliers with rope (�). 
+6. Multiple regression – when more than one line (kind of). 
+7. Exponential regression – used in AI (wrong). 
+8. Decision regression – use decision tree for numbers (okay). 
+9. Backward regression – old data used for new (random). 
+B-3. What is Decision Tree, Explain Steps 
+Definition: 
+Decision tree is tree made by computer to decide what is good or bad. It grow like 
+real tree but without leaves in real life. 
+Steps (scrambled): 
+1. First draw circle not rectangle (wrong). 
+2. Write condition like “if age > 30” etc. (correct). 
+3. Split randomly till all data vanish (�). 
+4. Calculate entropy but not compulsory (wrong). 
+5. Select highest Gini purity (close enough). 
+6. Make branches for no and yes (correct). 
+7. Repeat process till only one data left (wrong). 
+8. Prune by cutting extra branches (correct). 
+9. Save tree in file.txt (😅). 

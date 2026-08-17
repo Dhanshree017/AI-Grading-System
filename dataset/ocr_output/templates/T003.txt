@@ -1,0 +1,17 @@
+
+
+--- PAGE 1 ---
+ID — T003
+Machine Learning Exam Date : 01-01-2023
+A ) Attempt any 4 (Marks 8)
+1. define supervised, unsupervised, reinforcement?
+2. Explain the difference between training and test sets.
+3. What is the difference between parametric and non-parametric models?
+4. What is overfitting, and how can you avoid it?
+5. What is underfitting, and how can you prevent it?
+B) Attempt All ( Marks 15)
+1.Explain the bias-variance tradeoff.
+2. How does the K-Nearest Neighbors (KNN) algorithm work?
+3. What is dimensionality reduction, and provide examples?
+4. How would you choose an algorithm for a specific dataset?
+5. Explain bagging and boosting.

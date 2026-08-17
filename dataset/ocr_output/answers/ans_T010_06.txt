@@ -1,0 +1,66 @@
+ID-T010 
+Name : shruti pathak Roll no: 6 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-2. Explain Components of AI , Give One example of AI 
+AI have many thing inside that help it to think, like human organ but in 
+system. 
+Components are : 
+1. thinking part which is logic. 
+2. memory part which store what it saw. 
+3. eyes part called sensors like camera. 
+4. mouth part which talk to user. 
+5. learning part which keep updating. 
+6. language understanding part which sometime make mistake. 
+7. reasoning part which guess things. 
+8. also emotional part not exist but maybe in future.
+A-3. What is Regression and Classification , explain types of Regression 
+Regression is when system guess number, classification when system 
+guess type. i think regression is also about line and graph. 
+Types of Regression 
+1. simple linear regression – one line go straight. 
+2. double regression – maybe two line. 
+3. multiple regression – many x value. 
+4. polynomial regression – make curve. 
+5. time regression – for time data like weather. 
+6. elastic regression – stretch line to fit data. 
+7. lasso – maybe remove variable. 
+8. ridge – add penalty. 
+9. random regression – use random forest maybe. 
+Example: regression use for predict movie collection, classification use for 
+say dog or cat. 
+A-5. Explain Types of Search in AI , Explain Bidirectional Search in detail 
+Search is when computer look for something, like google search but 
+inside program. 
+Types of Search : 
+1. Blind search where it just try everything randomly.  
+2. Heuristic search where it use brain and guess next step.  
+3. Binary search maybe also ai search. 
+4. local search which stay nearby. 
+5. hill climbing search climb till top. 
+6. beam search go multiple side. 
+7. bidirectional search go from two side and meet.  
+Bidirectional Search detail : 
+It start from start and end same time and meet middle like friendship. 
+it reduce time and memory because travel less step. use in gps and 
+puzzle game like 8-puzzle.  
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks 
+Belief network is like spider web of probability.  
+B-2. Write a short note on Artificial Neural network 
+Artificial neuron network is inspired from brain neuron but in computer. 
+it has input, hidden and output layer. it learn by weight adjust and 
+backpopagation. sometimes it get confuse but still good.  
+B-4. What is Support Vector Machines 
+SVM is something like cutting cake in middle between two flavor. it 
+draw line between class. but if not possible it jump to higher dimension. i 
+think it use vector and margin.  
+B-5. What is Ensemble Learning and its types 
+Ensemble learning means group of model make one final boss model. like 
+class vote to decide winner. 
+Types : 
+1. bagging – make many model and combine. 
+2. boosting – each model fix mistake of old one. 
+3. stacking – mix output of many model. 
+4. crowding – maybe all model together shout answer 

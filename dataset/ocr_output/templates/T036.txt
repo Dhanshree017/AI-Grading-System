@@ -1,0 +1,15 @@
+ID  T036
+Machine Learning Examination
+Semester 2
+ INTERNAL EXAM Total marks : 15
+                                                     FY-Computer Science		     Date  30-05-2025
+
+
+A] Attempt all     ( 3 marks each )
+
+1. What is model generalization in machine learning?
+2. Define data annotation.
+3. What is meant by model uncertainty?
+4. What is ensemble learning?
+5. What is experiment reproducibility in machine learning?
+

@@ -1,0 +1,211 @@
+ID-T025 
+Name: Priyanka roy Roll no:10 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Concept of Data Preprocessing 
+Data preprocessing in machine learning is the foundational step that prepares raw data for 
+effective model training. In real-world scenarios, data is rarely clean or ready to use. It may 
+contain missing values, duplicate records, noise, inconsistencies, and features with different 
+scales. Data preprocessing transforms such raw data into a structured and meaningful form 
+so that machine learning algorithms can learn accurate and reliable patterns. 
+Various Preprocessing Tasks 
+Data cleaning involves handling missing values using techniques such as deletion or 
+imputation, removing duplicate records, and correcting incorrect entries. Encoding is applied 
+to convert categorical variables into numerical values so that algorithms can process them 
+mathematically. Feature scaling and normalization adjust numerical features to a common 
+scale, preventing features with larger values from dominating the learning process. Outlier 
+detection identifies and treats extreme values that can distort model predictions. Data 
+transformation techniques such as log transformation or binning help stabilize variance and 
+improve data distribution. 
+Influence on Model Performance 
+Effective preprocessing improves model accuracy, speeds up convergence, reduces 
+overfitting, and enhances generalization. Poor preprocessing can lead to biased models, 
+unstable training, and incorrect predictions, making preprocessing a critical step in any ML 
+pipeline. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made 
+and discuss its advantages and limitations. 
+Working of Decision Tree Algorithm 
+A Decision Tree is a supervised learning algorithm that uses a tree-like structure to model 
+decisions and their outcomes. The algorithm starts with the entire dataset at the root node and 
+splits the data into subsets based on feature values. This splitting process continues 
+recursively until a stopping condition is reached, such as maximum depth or minimum 
+samples at a node. 
+Decision-Making Process 
+At each internal node, the algorithm evaluates all possible features and selects the best one 
+for splitting using criteria such as Information Gain, Gini Index, or Entropy. Each branch 
+represents a condition, and the traversal from root to leaf represents a sequence of decisions 
+leading to a final prediction. 
+Advantages and Limitations 
+Decision Trees are easy to understand and interpret, making them suitable for explainable 
+systems. They work with both numerical and categorical data and require minimal 
+preprocessing. However, they are prone to overfitting, sensitive to noisy data, and small 
+variations in training data can result in different tree structures. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Importance of Model Evaluation 
+Model evaluation is essential to measure how well a trained model performs on unseen data. 
+It helps compare models, detect weaknesses, and ensure reliability before deployment. 
+Why Accuracy Alone Is Not Sufficient 
+Accuracy can be misleading, especially for imbalanced datasets. For example, in fraud 
+detection, predicting all transactions as non-fraud may give high accuracy but fail to detect 
+actual fraud cases. 
+Other Evaluation Measures 
+Precision measures the correctness of positive predictions, recall measures the ability to 
+identify all relevant cases, F1-score balances precision and recall, and ROC-AUC evaluates 
+model performance across thresholds. These metrics provide deeper insights into real-world 
+performance. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these 
+techniques help in building efficient ML models. 
+Feature Selection 
+Feature selection identifies the most relevant input features while removing irrelevant or 
+redundant ones. This improves model interpretability and reduces noise. 
+Dimensionality Reduction 
+Dimensionality reduction techniques like PCA transform high-dimensional data into lower 
+dimensions while retaining essential information. 
+Benefits 
+Both techniques reduce computational cost, improve training speed, minimize overfitting, 
+and enhance generalization, making models more efficient and scalable. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+Model Deployment 
+Model deployment involves integrating a trained ML model into production systems such as 
+web services, APIs, or enterprise platforms. 
+Maintenance Issues 
+After deployment, models must be monitored for performance drops caused by data drift. 
+Retraining is required when real-world data changes. Performance degradation may occur 
+due to evolving user behavior, outdated data, or environmental changes, making continuous 
+maintenance essential. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. An e-commerce company wants to reduce product returns. Explain how machine 
+learning can be used to analyze customer behavior, product data, and past returns to 
+reduce return rates. 
+Machine learning (ML) reduces e-commerce returns by analyzing customer profiles, product 
+details, and return history to predict why, what, and who will return items, enabling proactive 
+fixes like better recommendations (e.g., virtual try-ons), clearer product descriptions, 
+personalized support, fraud detection, and optimized return policies, ultimately improving 
+satisfaction and cutting losses.  
+Customer Behavior Analysis: 
+ Predicting High-Risk Buyers: ML models identify customers with past return patterns 
+(e.g., frequent size-related returns) and flag them for interventions like tailored sizing guides 
+or personalized consultations before purchase. 
+ Personalized Recommendations: By learning preferences, ML suggests items that truly 
+match a customer's style and fit, reducing returns due to "not as expected". 
+ Sentiment Analysis: Analyzing reviews and support chats to find common complaints (e.g., 
+"color faded quickly") allows businesses to improve product quality or descriptions 
+proactively.  
+Product Data Analysis: 
+ Image & Description Optimization: ML can identify product photos or descriptions that 
+lead to high returns (e.g., blurry images, misleading color descriptions) and suggest 
+improvements. 
+ Size & Fit Prediction: Analyzing purchase/return data for clothing to create better size 
+charts or recommend sizes based on a user's past successful purchases (e.g., "Customers like 
+you bought size M"). 
+ Virtual Try-Ons/AR: AI powers augmented reality tools (like virtual try-ons for glasses or 
+furniture) to give customers a realistic preview, reducing fit/appearance issues.  
+Past Returns Analysis: 
+ Root Cause Identification: ML algorithms find hidden correlations between specific 
+product features, customer segments, and reasons for returns (e.g., "shoes returned for 'too 
+narrow' are linked to this customer demographic"). 
+ Fraud Detection: Identifying patterns indicative of return fraud (e.g., repeated high-value 
+returns, unusual return frequencies) to protect revenue. 
+ Policy Optimization: ML helps test different return policies (e.g., offering store credit vs. 
+refund) to find options that reduce returns while maintaining satisfaction.  
+Proactive & Automated Solutions: 
+ AI Chatbots: Guide users to the right product or offer exchanges/store credit instantly, 
+preventing a full return. 
+ Smart Sorting: Automate categorizing returned items (restock, refurbish, etc.) for 
+efficiency. 
+ Predictive Alerts: Flag potential issues (like a faulty batch) before widespread returns, 
+stopping problems at the source.  
+. 
+B-2. A bank wants to detect fraudulent transactions in real time. Describe how machine 
+learning can be applied for fraud detection, including data sources, model behavior, 
+and challenges involved. 
+Machine learning (ML) enables banks to shift from rigid, rule-based detection to dynamic, 
+real-time systems that adapt to evolving criminal tactics. By analyzing vast datasets in 
+milliseconds, these models identify suspicious behaviors—such as rapid fund transfers or 
+logins from unusual locations—that manual audits might miss.  
+Data Sources for ML Models 
+Effective fraud detection relies on a diverse range of internal and external data points to 
+create a holistic view of risk:  
+ Transactional Data: Details like payment amount, merchant category, time, location (GPS 
+coordinates), and frequency. 
+ Customer Behavior: Historical spending habits, typical login times, and "behavioral 
+biometrics" such as typing speed or swipe gestures. 
+ Identity & Device Data: Government ID verification, device fingerprinting (IP address, OS 
+version), and cross-referenced contact information. 
+ External Intelligence: Third-party risk data, government watchlists, and social media 
+patterns to identify known fraud rings.  
+Model Behavior & Techniques 
+Banks typically use a combination of supervised and unsupervised learning to maximize 
+detection accuracy:  
+ Supervised Learning: Models like Random Forest (often cited as highly effective for 
+credit card fraud) or XGBoost are trained on historical datasets labeled "fraud" or 
+"legitimate" to recognize confirmed criminal patterns. 
+ Unsupervised Learning: Algorithms like clustering or Isolation Forest detect anomalies 
+without prior labels, identifying entirely new fraud techniques by flagging activities that 
+deviate from normal baseline behavior. 
+ Real-Time Risk Scoring: Every incoming transaction is assigned a probability score. If the 
+score exceeds a threshold, the system can instantly block the transaction, trigger multi-factor 
+authentication, or flag it for human review.  
+Key Challenges 
+Implementing ML for real-time fraud detection involves several critical hurdles:  
+ Massive Class Imbalance: Fraudulent events are extremely rare compared to legitimate 
+ones (often less than 0.2% of data). This can bias models toward assuming every transaction 
+is safe, requiring techniques like SMOTE (synthetic oversampling) to balance the data. 
+ False Positives & Alert Fatigue: Overly aggressive models may block legitimate 
+customers, harming the user experience and reputation. High false-positive rates also 
+overwhelm human investigators. 
+ Latency Requirements: Real-time systems must process transactions in milliseconds (e.g., 
+Stripe's system achieves a <100ms response time). 
+ Model Explainability (Black Box Issue): Highly accurate models like Deep Neural 
+Networks are often difficult for humans to interpret, which can be a problem for regulatory 
+compliance and explaining denied transactions to customers. 
+ Evolving Tactics: Fraudsters constantly update their methods, leading to "model drift" 
+where the system's accuracy degrades over time if not continuously retrained.  
+. 
+B-3. A hospital plans to predict patient readmission rates. Explain how machine learning 
+can support this task, from data collection to using predictions for better healthcare 
+decisions. 
+Machine learning (ML) reduces e-commerce returns by analyzing customer profiles, product 
+details, and return history to predict why, what, and who will return items, enabling proactive 
+fixes like better recommendations (e.g., virtual try-ons), clearer product descriptions, 
+personalized support, fraud detection, and optimized return policies, ultimately improving 
+satisfaction and cutting losses.  
+Customer Behavior Analysis: 
+ Predicting High-Risk Buyers: ML models identify customers with past return patterns 
+(e.g., frequent size-related returns) and flag them for interventions like tailored sizing guides 
+or personalized consultations before purchase. 
+ Personalized Recommendations: By learning preferences, ML suggests items that truly 
+match a customer's style and fit, reducing returns due to "not as expected". 
+ Sentiment Analysis: Analyzing reviews and support chats to find common complaints (e.g., 
+"color faded quickly") allows businesses to improve product quality or descriptions 
+proactively.  
+Product Data Analysis: 
+ Image & Description Optimization: ML can identify product photos or descriptions that 
+lead to high returns (e.g., blurry images, misleading color descriptions) and suggest 
+improvements. 
+ Size & Fit Prediction: Analyzing purchase/return data for clothing to create better size 
+charts or recommend sizes based on a user's past successful purchases (e.g., "Customers like 
+you bought size M"). 
+ Virtual Try-Ons/AR: AI powers augmented reality tools (like virtual try-ons for glasses or 
+furniture) to give customers a realistic preview, reducing fit/appearance issues.  
+Past Returns Analysis: 
+ Root Cause Identification: ML algorithms find hidden correlations between specific 
+product features, customer segments, and reasons for returns (e.g., "shoes returned for 'too 
+narrow' are linked to this customer demographic"). 
+ Fraud Detection: Identifying patterns indicative of return fraud (e.g., repeated high-value 
+returns, unusual return frequencies) to protect revenue. 
+ Policy Optimization: ML helps test different return policies (e.g., offering store credit vs. 
+refund) to find options that reduce returns while maintaining satisfaction.  
+Proactive & Automated Solutions: 
+ AI Chatbots: Guide users to the right product or offer exchanges/store credit instantly, 
+preventing a full return. 
+ Smart Sorting: Automate categorizing returned items (restock, refurbish, etc.) for 
+efficiency. 
+ Predictive Alerts: Flag potential issues (like a faulty batch) before widespread returns, 
+stopping problems at the source.  
+. 

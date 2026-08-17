@@ -1,0 +1,171 @@
+ID-T025 
+Name: Sachin kumar Roll no: 23 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-1. Explain the concept of data preprocessing in machine learning. Discuss various 
+preprocessing tasks and explain how they influence model performance. 
+Definition: 
+Data preprocessing is the process of transforming raw data into a clean, consistent, and 
+suitable format so that machine learning algorithms can learn effectively. 
+Need for Data Preprocessing: 
+Real-world data is often incomplete, noisy, inconsistent, and unstructured. Preprocessing 
+improves data quality and directly impacts model accuracy and reliability. 
+Major Preprocessing Tasks: 
+1. Data Cleaning 
+o Handling missing values (mean, median, mode, deletion). 
+o Removing noise and outliers. 
+o Improves model stability and prevents biased learning. 
+2. Data Integration 
+o Combining data from multiple sources. 
+o Resolves redundancy and inconsistencies. 
+3. Data Transformation 
+o Normalization and standardization. 
+o Ensures features are on similar scales, improving convergence and performance. 
+4. Data Encoding 
+o Converting categorical data into numerical form (Label Encoding, One-Hot 
+Encoding). 
+o Allows algorithms to process non-numeric data. 
+5. Feature Scaling 
+o Ensures equal importance to all features. 
+o Essential for distance-based algorithms like KNN and SVM. 
+6. Data Reduction 
+o Reduces dataset size while preserving important information. 
+o Improves training speed and reduces overfitting. 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are 
+made and discuss its advantages and limitations. 
+Definition: 
+A Decision Tree is a supervised learning algorithm that models decisions using a tree-like 
+structure of nodes and branches. 
+Working of Decision Tree: 
+1. Root Node Selection 
+o The feature with the highest information gain or lowest Gini index is selected. 
+2. Splitting the Data 
+o Data is divided based on feature conditions. 
+3. Recursive Partitioning 
+o Each subset is further split until stopping criteria are met. 
+4. Leaf Nodes 
+o Represent final class labels or predicted values. 
+Decision Criteria: 
+ Information Gain (Entropy) 
+ Gini Index 
+Advantages: 
+ Easy to understand and interpret. 
+ Handles both numerical and categorical data. 
+ Requires little data preprocessing. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why 
+accuracy alone is not sufficient and describe other evaluation measures. 
+Importance of Model Evaluation: 
+ Measures real-world performance. 
+ Helps compare models. 
+ Detects overfitting and underfitting. 
+Why Accuracy Is Not Enough: 
+ Misleading for imbalanced datasets. 
+ Does not show type of errors (false positives/negatives). 
+Other Evaluation Metrics: 
+1. Precision 
+o Correct positive predictions out of total predicted positives. 
+2. Recall (Sensitivity) 
+o Correct positives out of actual positives. 
+3. F1-Score 
+o Harmonic mean of precision and recall. 
+4. Confusion Matrix 
+o Shows TP, FP, TN, FN values. 
+5. ROC Curve & AUC 
+o Evaluates classification thresholds. 
+Conclusion: 
+Multiple metrics provide a comprehensive understanding of model performance. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how 
+these techniques help in building efficient ML models. 
+Feature Selection: 
+Choosing the most relevant features from the dataset. 
+Dimensionality Reduction: 
+Reducing the number of features while preserving important information. 
+Techniques: 
+ Feature Selection: 
+o Filter methods (Correlation, Chi-square). 
+o Wrapper methods. 
+o Embedded methods (Lasso). 
+ Dimensionality Reduction: 
+o PCA (Principal Component Analysis). 
+o LDA (Linear Discriminant Analysis). 
+Benefits: 
+ Reduces overfitting. 
+ Improves model accuracy. 
+ Faster training. 
+ Better interpretability. 
+A-6. Describe how machine learning models are deployed and maintained in real-world 
+systems. Explain issues such as monitoring, retraining, and performance degradation. 
+Model Deployment: 
+Integrating trained models into production systems via APIs or cloud platforms. 
+Maintenance Activities: 
+1. Monitoring 
+o Tracks accuracy, latency, and errors. 
+2. Data Drift Detection 
+o Changes in data distribution reduce accuracy. 
+3. Model Retraining 
+o Periodic updates using new data. 
+4. Performance Degradation 
+o Caused by evolving user behavior or environment. 
+Conclusion: 
+Continuous monitoring and maintenance ensure long-term model effectiveness. 
+B] Attempt any 5 (Each 8 Marks) 
+B-1. Reducing product returns in an e-commerce company using machine learning 
+Data Used: 
+ Customer purchase history. 
+ Product attributes. 
+ Past return reasons. 
+ User reviews. 
+ML Applications: 
+ Predict return probability. 
+ Identify high-risk products. 
+ Recommend better product sizes. 
+Models Used: 
+ Classification models. 
+ Recommendation systems. 
+Outcome: 
+ Reduced returns. 
+ Better customer satisfaction. 
+ Lower operational costs. 
+B-2. Fraud detection in banking using machine learning 
+Data Sources: 
+ Transaction logs. 
+ Customer behavior. 
+ Location and device data. 
+ML Approach: 
+ Anomaly detection. 
+ Supervised classification. 
+ Real-time scoring. 
+Challenges: 
+ Imbalanced data. 
+ False positives. 
+ Real-time processing. 
+Benefits: 
+ Early fraud detection. 
+ Reduced financial loss. 
+B-3. Predicting patient readmission rates using machine learning 
+Data Collection: 
+ Medical history. 
+ Lab results. 
+ Previous admissions. 
+ML Process: 
+ Feature engineering. 
+ Risk prediction models. 
+Usage: 
+ Early intervention. 
+ Personalized care plans. 
+Benefits: 
+ Reduced readmissions. 
+ Improved healthcare quality. 
+B-4. Controlling fake news spread on social media using machine learning 
+ML Techniques: 
+ NLP for text analysis. 
+ Classification models. 
+ Network analysis. 
+Detection Factors: 
+ Content credibility. 
+ User behavior. 
+ Source reliability. 
+Ethical Challenges: 
+ Freedom of speech. 
+ Bias in algorithms. 

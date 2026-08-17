@@ -1,0 +1,148 @@
+ID-T003 
+Name : Parth chakravedi  Roll no : 5 
+Email : dhanshreehkg@gmail.com 
+Section A 
+A-1. Define supervised, unsupervised, reinforcement? 
+Supervised, unsupervised, and reinforcement learning are the three primary 
+paradigms in machine learning, each serving different purposes. Supervised 
+learning involves training a model on a labeled dataset, where each input is 
+associated with a known output. The model learns the mapping from input to 
+output to make accurate predictions on unseen data. Common applications 
+include classification tasks, such as image recognition (e.g., cats vs. dogs), and 
+regression tasks, like predicting house prices. The key advantage is that the 
+presence of labels provides a clear target for optimization, making supervised 
+models generally reliable if sufficient data is available. 
+Unsupervised learning, in contrast, deals with unlabeled data, where the model 
+must infer hidden patterns, structures, or distributions without explicit 
+guidance. Techniques such as clustering (e.g., K-means, hierarchical clustering) 
+or dimensionality reduction (e.g., PCA) fall under this category. Unsupervised 
+learning is often used for exploratory data analysis, anomaly detection, or 
+customer segmentation, providing insights into the inherent structure of the 
+data. The main challenge is evaluating performance since there are no explicit 
+labels to compare against. 
+Reinforcement learning is an interactive paradigm where an agent learns 
+optimal behavior through trial-and-error interactions with an environment. 
+Actions taken by the agent receive feedback in the form of rewards or 
+penalties, which guide future decisions. This paradigm is widely applied in 
+robotics, autonomous systems, and game-playing AI (e.g., AlphaGo). Unlike 
+supervised learning, reinforcement learning does not rely on pre-labeled data; 
+the model adapts based on feedback signals over time, balancing exploration 
+and exploitation to maximize cumulative rewards. 
+A-2. Explain the difference between training and test sets. 
+In machine learning, data splitting is a critical practice to ensure that models 
+generalize effectively. The training set is used to fit the model, allowing it to 
+learn underlying patterns, relationships, or statistical structures present in 
+the data. This dataset contains both input features and corresponding output 
+labels in supervised learning scenarios. The training process involves optimizing 
+model parameters so that the predictions closely match known outputs. 
+The test set, however, is a completely separate subset of the data that is 
+not used during training. Its purpose is to evaluate the model’s performance 
+on previously unseen instances, thereby estimating its generalization capability. 
+Metrics such as accuracy, precision, recall, or mean squared error are 
+computed on this set. Using separate training and test sets is essential 
+because a model evaluated on its training data may appear highly accurate due 
+to memorization, a phenomenon known as overfitting. A robust evaluation 
+using a test set ensures that the model’s performance reflects its ability to 
+handle real-world data rather than merely reproducing the training set. 
+A-3. What is overfitting, and how can you avoid it? 
+Overfitting occurs when a model captures not only the true underlying 
+patterns in the training data but also the noise, anomalies, or irrelevant 
+fluctuations. This results in excellent performance on training data but poor 
+generalization to unseen data. Overfitting is more likely in complex models 
+with excessive parameters relative to the amount of training data, in 
+datasets with high dimensionality, or when the model is trained for too many 
+iterations without appropriate constraints. 
+Techniques to mitigate overfitting include: 
+ Regularization (L1 or L2), which penalizes large coefficients and 
+discourages excessive model complexity. 
+ Early stopping, which halts training when performance on a validation 
+set starts to degrade. 
+ Cross-validation, which uses multiple subsets of the data to ensure 
+model performance is consistent across different samples. 
+ Pruning in decision trees to remove branches that contribute little to 
+predictive power. 
+ Using simpler models or reducing input features, especially when data is 
+limited. 
+ Increasing training data, which allows the model to learn more 
+generalizable patterns rather than memorizing specific instances. 
+Overfitting represents a fundamental tradeoff in machine learning between 
+fitting the training data accurately and maintaining the ability to generalize 
+effectively to new, unseen data. 
+A-4. What is the difference between parametric and non-parametric models? 
+Parametric models assume a specific functional form for the relationship 
+between inputs and outputs and use a fixed number of parameters to 
+describe this relationship. Examples include linear regression and logistic 
+regression. The advantages of parametric models are computational efficiency, 
+interpretability, and the ability to perform well with relatively small datasets. 
+However, their restrictive assumptions can prevent them from capturing 
+complex, non-linear relationships in the data. 
+Non-parametric models, such as K-Nearest Neighbors, decision trees, and 
+kernel-based methods, do not assume a fixed functional form and can adjust 
+their complexity as more data becomes available. They are inherently flexible 
+and capable of modeling highly complex patterns. The tradeoff is that non
+parametric models typically require more data, are computationally intensive, 
+and may overfit without careful regularization or pruning. 
+Section B 
+B-1. Explain the bias-variance tradeoff. 
+The bias-variance tradeoff is a foundational concept in predictive modeling 
+that highlights the tension between a model’s ability to fit training data and 
+its generalization to unseen data. Bias represents systematic error introduced 
+by approximating a complex problem with a simpler model. High-bias models, 
+such as linear regression on non-linear data, tend to underfit, missing 
+important patterns. Variance, on the other hand, measures the sensitivity of 
+the model to fluctuations in the training data. High-variance models, such as 
+deep decision trees or unregularized neural networks, tend to overfit, 
+capturing noise as if it were signal. 
+The tradeoff implies that reducing bias typically increases variance, and vice 
+versa. Optimal predictive performance requires balancing bias and variance to 
+minimize total error. Methods to manage this balance include cross-validation, 
+regularization, ensemble methods, and careful model selection. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is a non-parametric, instance-based learning algorithm. For a new input, 
+the algorithm computes the distance between this point and all training 
+instances using a chosen metric (commonly Euclidean distance). The K closest 
+points are identified, and the output is determined by majority vote for 
+classification or averaging for regression. 
+The choice of K significantly influences model performance: small K may yield 
+high variance, while large K may increase bias. Feature scaling is crucial because 
+distance metrics are sensitive to feature magnitude. KNN is conceptually 
+simple, interpretable, and effective for low-dimensional datasets but can be 
+computationally intensive for large-scale or high-dimensional data. 
+B-3. What is dimensionality reduction, and provide examples? 
+Dimensionality reduction is the process of transforming high-dimensional data 
+into a lower-dimensional space while retaining essential information. High
+dimensional datasets are prone to the “curse of dimensionality,” making 
+models complex, slow, and prone to overfitting. Dimensionality reduction 
+simplifies data representation, improves computational efficiency, and can 
+enhance generalization. 
+Key techniques include: 
+ Principal Component Analysis (PCA): projects data onto orthogonal 
+components that capture maximum variance. 
+ Linear Discriminant Analysis (LDA): maximizes class separability while 
+reducing dimensionality. 
+ t-SNE: maps high-dimensional data to lower dimensions for visualization 
+while preserving local relationships. 
+ Autoencoders: neural networks that encode data into a compact latent 
+space and reconstruct it. 
+B-4. How would you choose an algorithm for a specific dataset? 
+Algorithm selection depends on multiple factors: task type (classification, 
+regression, clustering), dataset size, feature dimensionality, noise levels, 
+computational resources, and the importance of interpretability. For small 
+datasets, simpler models (e.g., linear regression, decision trees) are often 
+preferable. For large or complex datasets, ensemble methods (random forests, 
+gradient boosting) or neural networks may yield better performance. Cross
+validation and performance metrics guide the final selection, ensuring a balance 
+between accuracy, generalization, and resource efficiency. 
+B-5. Explain bagging and boosting. 
+Bagging (Bootstrap Aggregating) and boosting are ensemble techniques aimed 
+at improving predictive performance by combining multiple weak learners. 
+Bagging generates multiple bootstrap samples from the training set, trains a 
+model on each sample independently, and aggregates predictions via averaging 
+or majority voting. Bagging reduces variance and mitigates overfitting; Random 
+Forest is a classic example. 
+Boosting sequentially trains models, with each model emphasizing instances 
+misclassified by previous models. This approach reduces bias and can improve 
+accuracy on challenging datasets. Examples include AdaBoost, Gradient 
+Boosting, and XGBoost. Bagging focuses on parallel independent models to 
+stabilize predictions, while boosting emphasizes sequential learning to correct 
+errors iteratively. 

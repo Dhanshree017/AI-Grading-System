@@ -1,0 +1,54 @@
+ID-T024 
+Name: bhagyashree kulkarni Roll no: 28 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification and regression are machine learning problems. Classification is used when 
+output is class. Regression is used when output is number. 
+Classification problems are spam detection, disease detection, and digit classification. It 
+classify data into categories. Classification output is yes or no, spam or not spam. 
+Regression problems predict value. House price prediction is regression. Temperature 
+prediction is regression. Marks prediction is regression. 
+Classification uses accuracy and regression uses error. Both are supervised learning. 
+Classification is category and regression is number. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is a big problem in machine learning. Overfitting happens when model learn 
+training data too much. The model remember data instead of learning. Then model fail on 
+new data. 
+Overfitting happens when data is small and model is very big. Overfitting also happen when 
+model is trained too long. Noise in data also cause overfitting. 
+Causes of overfitting are: 
+ Too many features 
+ Complex model 
+ Small dataset 
+ Noise in data 
+ Too much training 
+Two techniques to reduce overfitting are: 
+Regularization is used to reduce model complexity. It reduce weight size. 
+Cross validation divide data into parts and test model many times. It help to reduce 
+overfitting. 
+Overfitting make model useless in real world. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Model evaluation is checking model performance. After training model, we test model using 
+evaluation. Model evaluation tell how good model is. 
+Model evaluation is very important. Without evaluation we cannot trust model. Model 
+evaluation is done using metrics. 
+Accuracy is one metric. Accuracy means correct prediction divided by total prediction. If 
+accuracy is high model is good. 
+Precision is another metric. Precision means how many predicted positive are actually 
+positive. Precision is important in spam detection. 
+Model evaluation help compare models and choose best one. 
+A-6. Explain the basic steps involved in building a machine learning model, from data 
+collection to model testing. 
+Building machine learning model has many steps. First step is data collection. Data is 
+collected from different sources. Data collection is important. 
+Second step is data preprocessing. Data preprocessing clean data and prepare it. Without 
+preprocessing model cannot learn. 
+Third step is feature selection. Feature selection select important data. 
+Fourth step is model selection. Model selection choose algorithm. 
+Fifth step is model training. Model training teach model using data. 
+Last step is model testing. Model testing check performance. 
+All these steps are important to build machine learning model. 

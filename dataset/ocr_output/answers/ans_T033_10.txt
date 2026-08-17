@@ -1,0 +1,34 @@
+ID-T033 
+Name: Varun Shetty Roll no: 10  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how incorrect assumptions 
+can affect model behavior and decision-making.  
+Machine learning models work based on certain assumptions which are already fixed before learning starts.  
+These assumptions help the model to understand how data behaves and how output should be predicted. 
+Without assumptions, models will not know what patterns to search for and learning will become 
+impossible.  
+A-3. 
+Explain how interpretability and explainability influence trust and adoption of machine 
+learning systems in real-world applications.  
+Interpretability means how easily a model can be understood by humans. Explainability means how a model 
+explains its predictions. Both are important for trust.  
+When users understand how decisions are made, they trust the system more. Interpretability allows users to 
+see which features are important. Explainability helps in identifying mistakes in prediction. This is useful in 
+medical and legal applications.  
+A-4. 
+Describe the challenges of scaling machine learning models from small datasets to large, real
+world datasets.  
+Scaling machine learning models is difficult when dataset size increases. Small datasets are easy to manage, 
+but large datasets create many problems.  
+One challenge is increased computation time. Training takes longer and requires powerful hardware. 
+Memory usage also increases. Data storage becomes difficult. Large datasets contain noisy and incomplete 
+data which reduces accuracy.  
+A-5. 
+Explain the importance of validation and testing strategies in preventing misleading 
+performance evaluation of ML models.  
+Validation and testing are steps used after training the model. Validation is mainly used to increase 
+accuracy, while testing is used to improve training.  
+Validation helps the model learn faster. It increases training speed and reduces computation. Validation also 
+removes unnecessary data from training. It ensures that model learns correct patterns.  

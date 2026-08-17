@@ -1,0 +1,177 @@
+ID-T020 
+Name: preeti joshi Roll no: 9 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Introduction 
+Machine learning models are designed to perform well on the data they were trained on. 
+However, over time, the input data or underlying relationships may change. This leads to 
+data drift and concept drift, which can significantly degrade model performance if not 
+detected and handled. 
+Data Drift 
+Data drift refers to changes in the statistical distribution of input features. For example, if an 
+e-commerce recommendation system was trained on summer shopping data, its performance 
+might decrease when winter shopping behavior changes. 
+Concept Drift 
+Concept drift occurs when the relationship between features and target changes. For 
+example, credit scoring models trained on historical financial data may become inaccurate 
+when economic conditions shift. 
+Types of Drift 
+ Sudden Drift: Abrupt change in data distribution. 
+ Gradual Drift: Slow evolution of feature patterns. 
+ Recurring Drift: Patterns appear cyclically, e.g., seasonal trends. 
+ Incremental Drift: Small step-wise changes over time. 
+Detection Strategies 
+ Monitor model performance metrics over time. 
+ Statistical tests to detect shifts in feature distribution. 
+ Use drift detection algorithms like ADWIN or DDM. 
+Handling Strategies 
+ Periodic retraining with fresh data. 
+ Online or incremental learning to adapt to new patterns. 
+ Ensemble models combining old and new knowledge. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Introduction 
+Embedding techniques transform raw, high-dimensional data into dense, meaningful vector 
+representations, enabling machine learning models to capture underlying patterns efficiently. 
+Text Embeddings 
+Words, sentences, or documents are represented as vectors in a continuous space. 
+Techniques like Word2Vec, GloVe, and BERT ensure that semantically similar words are 
+closer together. This allows models to understand context, sentiment, or similarity between 
+texts. 
+Image Embeddings 
+Convolutional Neural Networks (CNNs) or pretrained models like ResNet extract feature 
+vectors from images. These vectors encode edges, textures, and shapes, which can be used 
+for classification, clustering, or retrieval tasks. 
+Categorical Embeddings 
+High-cardinality categorical variables, such as product IDs or user IDs, are converted into 
+dense vectors. This reduces dimensionality compared to one-hot encoding and captures 
+relationships between categories. 
+Applications 
+ Natural Language Processing (e.g., sentiment analysis, machine translation) 
+ Computer vision (e.g., object recognition, image search) 
+ Recommendation systems (e.g., user-item embeddings for personalization) 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Introduction 
+Imbalanced datasets pose significant challenges, as models may bias toward majority classes, 
+leading to poor performance on minority classes. 
+Challenges 
+ Accuracy can be misleading if majority class dominates. 
+ Low recall for minority classes, leading to missed detections. 
+ Model may converge poorly due to biased gradient updates. 
+Advanced Techniques 
+ Cost-sensitive Learning: Assign higher penalties to misclassified minority examples. 
+ Synthetic Sample Generation: Techniques like SMOTE or ADASYN create 
+synthetic minority samples to balance the dataset. 
+ Threshold Adjustment: Adjust classification threshold to improve recall or precision 
+for minority class. 
+Additional Considerations 
+ Combining multiple techniques often yields the best performance. 
+ Careful evaluation using metrics like F1-score, AUC-ROC, or precision-recall curves 
+is essential. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch Learning 
+ Model trains on the entire dataset at once. 
+ Stable and reproducible results. 
+ Retraining needed when new data arrives. 
+Online Learning 
+ Model updates incrementally as new data arrives. 
+ Useful for streaming data scenarios such as stock trading, clickstream analysis, and 
+IoT sensor data. 
+Challenges 
+ Online models may forget old knowledge (catastrophic forgetting). 
+ Noise in streaming data can affect stability. 
+ Evaluation is more complex compared to batch learning. 
+Comparison 
+ Batch learning: stable, slow, suitable for static datasets. 
+ Online learning: adaptive, fast, ideal for dynamic data but requires careful 
+management. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Introduction 
+Explainable AI helps stakeholders understand model predictions, improving trust and 
+adoption. 
+XAI Methods 
+ Feature Importance: Identify which features influenced predictions. 
+ SHAP and LIME: Explain individual predictions. 
+ Attention Maps: Visualize areas in input (e.g., images or text) influencing output. 
+ Counterfactual Explanations: Show minimal changes needed to alter prediction. 
+Applications 
+ Healthcare: Explain diagnoses or treatment suggestions. 
+ Finance: Transparent credit scoring and fraud detection. 
+ Recruitment: Justify candidate selection decisions. 
+ Autonomous Systems: Explain robot or self-driving car decisions. 
+Benefits 
+ Supports debugging and fairness evaluation. 
+ Builds trust among non-technical stakeholders. 
+SECTION B  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Introduction 
+Feature leakage occurs when models gain access to information they would not have at 
+prediction time, leading to overestimated performance during training. 
+Causes 
+ Inclusion of future or target-related features. 
+ Incorrect preprocessing applied before train-test split. 
+ Using identifiers or aggregated statistics that correlate with the target. 
+Impact 
+ Model performs well during training and validation but poorly in production. 
+ Can result in false confidence in model predictions. 
+ Difficult to detect without careful pipeline design. 
+Mitigation Strategies 
+ Proper train-test splitting. 
+ Pipeline-aware preprocessing. 
+ Regular review of feature selection. 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Introduction 
+Evaluation pipelines standardize assessment of model performance across multiple stages. 
+Validation Stage 
+ Used for tuning hyperparameters and selecting the best model. 
+Testing Stage 
+ Measures unbiased model performance before deployment. 
+Deployment Stage 
+ Continuous evaluation on real-world data to detect drift, errors, or failures. 
+Importance of Separation 
+ Prevents overfitting to validation set. 
+ Ensures unbiased estimation of production performance. 
+ Supports automated retraining and monitoring. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Introduction 
+Transfer learning leverages knowledge from pretrained models to accelerate learning on new 
+tasks. 
+Mechanism 
+ Pretrained models capture general features or representations. 
+ Fine-tuning allows adaptation to task-specific data. 
+Applications 
+ Computer Vision: Medical image classification, object recognition. 
+ Natural Language Processing: Sentiment analysis, summarization, translation. 
+ Recommendation Systems: User-item embeddings adapted for new datasets. 
+Advantages 
+ Reduces required labeled data. 
+ Speeds up training. 
+ Often improves generalization performance. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Introduction 
+Hyperparameter optimization finds the set of parameters that maximize model performance. 
+Grid Search 
+ Exhaustively evaluates all combinations of hyperparameters. 
+ Guarantees best combination if search space is small. 
+Random Search 
+ Samples hyperparameters randomly. 
+ Explores space efficiently and often finds near-optimal solution faster. 
+Comparison 
+ Grid search: systematic, slow for large spaces. 
+ Random search: faster, broader coverage, may miss optimal in small spaces. 
+Practical Advice 
+ Combine with cross-validation for robust evaluation. 
+ Log results for reproducibility. 

@@ -1,0 +1,71 @@
+ID-T031 
+Name: Rohini Shrivastav Roll no: 306508 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Attempt All (each 5 marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning is a branch of machine learning that focuses on teaching a computer how to 
+recognize a specific category or "concept" by looking at examples. Think of it like a child 
+learning what a "fruit" is: they aren't given a dictionary definition, but instead are shown 
+apples, bananas, and oranges. 
+ Learning from Examples: The machine is given a set of data labeled as "Yes" 
+(positive examples) or "No" (negative examples). For instance, if learning the concept 
+of "Bird," a sparrow is a "Yes," while a dog is a "No." 
+ Hypothesis Formation: As the machine sees these examples, it starts building a 
+"hypothesis," which is basically a general rule or a guess about what makes a bird a 
+bird (e.g., "It has wings and feathers"). 
+ Search through Hypothesis Space: There are thousands of possible rules the 
+computer could pick. The "Hypothesis Space" is the collection of all these possible 
+rules. The computer's job is to search through this space to find the one rule that fits all 
+the examples perfectly. 
+ Generalization: The goal isn't just to remember the examples the computer has 
+already seen. It needs to "generalize," meaning it should be able to look at a totally 
+new animal it has never seen before and correctly guess if it’s a bird based on the rules 
+it learned. 
+ Target Concept: This is the "perfect" rule that the computer is trying to find. If the 
+computer finds a hypothesis that matches the target concept, it has successfully 
+learned. 
+ Find-S Algorithm: This is a common method where the computer starts with a very 
+specific guess and slowly makes it more general as it sees more positive examples. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency is like the "foundation" of a house. If the foundation is shaky, the whole 
+house (the model) will fall down. It means that the information in your dataset should follow 
+the same rules, formats, and logic from beginning to end. 
+ Avoids Confusion: If your data is inconsistent—for example, if half your temperature 
+data is in Celsius and half is in Fahrenheit without labels—the model will get confused 
+and learn patterns that don't exist. 
+ Stable Training: Computers learn by looking for mathematical patterns. If the data is 
+inconsistent, the patterns keep changing, and the model might never "settle down" or 
+finish learning correctly. 
+ Accurate Predictions: A model is only as good as the data it was fed ("Garbage In, 
+Garbage Out"). Consistent data ensures that the model's predictions are based on 
+reality, not on errors or messy formatting. 
+ Standardized Formats: Consistency means making sure dates look the same (e.g., all 
+2025-12-19), names are spelled the same, and missing values are handled in the same 
+way everywhere. 
+ Fairness: If data is collected inconsistently (e.g., more detailed data for one group of 
+people than another), the model might become biased and treat certain groups unfairly. 
+ Saves Time: Data scientists spend about 80% of their time cleaning data. Ensuring 
+consistency from the start makes the whole project much faster and cheaper. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback is the "teacher" for a machine learning system. It is the process where the system's 
+outputs are checked, and the results of that check are used to make the system better. 
+ Learning from Mistakes: When a model makes a prediction, the "Error Signal" (the 
+difference between its guess and the truth) is sent back into the model. This is called 
+Backpropagation, and it’s how the model knows which internal settings to change. 
+ User Feedback: Every time you click "Not Spam" in your email or "Like" on a video, 
+you are giving feedback. The system uses your action to update its rules so it can give 
+you better results next time. 
+ Reinforcement Learning: In some systems, the model receives a "Reward" for good 
+actions and a "Penalty" for bad ones (like a video game). Over time, the feedback 
+teaches the model the best strategy to get the highest reward. 
+ Continuous Improvement: Feedback isn't just for training. Even after a model is 
+"finished," developers watch the feedback from users to see if the model is getting 
+"stale." If the world changes, they use that feedback to retrain the model with new 
+data. 
+ Active Learning: Sometimes the model finds a piece of data it is confused about. It 
+"asks" a human for feedback on that specific item. This is a very fast way to make the 
+model smarter with less work. 
+ Closing the Loop: The "Virtuous Cycle" of feedback means: Better Feedback 
+$\rightarrow$ Better Data $\rightarrow$ Smarter Model $\rightarrow$ Happier Users 
+$\rightarrow$ More Feedback. 

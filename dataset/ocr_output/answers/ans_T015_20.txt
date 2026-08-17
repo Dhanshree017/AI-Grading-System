@@ -1,0 +1,179 @@
+ID-T015 
+Name: Arjun Chaturvedi Roll no: 20 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (Each 8 Marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, and F1 
+score help in understanding model performance. 
+Introduction: 
+Evaluation metrics are used to measure how well a machine learning model 
+performs. They provide a way to compare different models and help in identifying 
+which model gives more accurate prediction. Different tasks like classification and 
+regression have different metrics. 
+Explanation: 
+For classification, commonly used metrics are accuracy, precision, recall, and F1
+score. 
+ Accuracy measures the ratio of correctly predicted samples to total samples. It 
+works well when data is balanced. 
+ Precision indicates how many of the predicted positives are actually positive. It 
+is useful when false positives are costly. 
+ Recall (Sensitivity) measures how many of the actual positives were captured 
+by the model. It is important in cases like medical diagnosis. 
+ F1 Score is the harmonic mean of precision and recall, providing a balanced 
+measure when classes are imbalanced. 
+For regression, metrics include Mean Absolute Error (MAE), Mean Squared Error 
+(MSE), Root Mean Squared Error (RMSE), and R² score, which measure how far 
+predictions are from actual values. 
+Conclusion: 
+Thus, evaluation metrics play a key role in understanding model performance, 
+ensuring we select the most suitable model for the given task and dataset condition. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and 
+discuss the importance of the parameter k. 
+Introduction: 
+K-Nearest Neighbor (KNN) is a simple and powerful supervised learning algorithm 
+used for both classification and regression. It works based on similarity or distance 
+between data points. 
+Explanation: 
+The steps in KNN working are: 
+1. Choose the number of neighbors (k). 
+2. Calculate the distance (e.g., Euclidean, Manhattan) between the query sample 
+and all samples in the training data. 
+3. Select the k nearest points based on the smallest distance. 
+4. For classification, assign the class most common among the k neighbors. For 
+regression, take the mean of the neighbors’ values. 
+The choice of k is very important: 
+ Small k can make the model sensitive to noise. 
+ Large k can make the model too generalized and slow. 
+Conclusion: 
+KNN is easy to implement, non-parametric, and effective for small datasets, though 
+it can be computationally expensive for large data. The right selection of k ensures 
+balanced and accurate prediction. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Introduction: 
+Data imbalance occurs when one class has significantly more samples than the other. 
+It is a common issue in real-world data, such as fraud detection or disease diagnosis. 
+Explanation: 
+Imbalanced data leads models to bias towards the majority class. For example, if 
+95% of data are "normal" and 5% are "fraud", the model might predict all as normal 
+to get high accuracy but fail in detecting frauds. 
+To handle this, techniques include: 
+ Resampling Methods: 
+o Oversampling (e.g., SMOTE) increases minority samples. 
+o Undersampling reduces majority class samples. 
+ Algorithmic Approaches: 
+o Using cost-sensitive algorithms or adjusting class weights. 
+ Evaluation Methods: 
+o Using metrics like Precision, Recall, and F1 instead of accuracy. 
+Conclusion: 
+Handling data imbalance ensures fairness and better generalization. Proper 
+techniques improve model’s ability to recognize all classes effectively. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Introduction: 
+Gradient Boosting is an ensemble technique that builds a strong predictive model by 
+combining many weak models, usually decision trees. It focuses on correcting the 
+errors made by previous models.. 
+The main idea is that each model learns from the mistakes of the previous one. 
+Examples include XGBoost, LightGBM, and CatBoost. 
+Key parameters include learning rate, number of estimators, and tree depth. 
+Conclusion: 
+Gradient Boosting delivers high accuracy by continuously improving through error 
+correction. It is powerful but requires careful tuning to prevent overfitting. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used 
+to solve new tasks with limited data and mention common applications of transfer 
+learning. 
+Introduction: 
+Transfer Learning is an advanced approach where a model trained on one task is 
+reused on a related but different task. It helps when the new dataset is small or hard 
+to label. 
+Explanation: 
+A pre-trained model already understands general features like edges, shapes, or 
+language patterns. Instead of training from scratch, we fine-tune only a few layers 
+for the new task. 
+For example, a CNN trained on ImageNet can be adapted to detect medical images 
+with less data. 
+Common pre-trained models include VGG16, ResNet, BERT, and GPT models. 
+Conclusion: 
+Transfer Learning saves time, computation, and data. It uses past knowledge to solve 
+new problems efficiently, showing how learning can be reused like human experience. 
+SECTION B – Attempt Any 6 (5 marks each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is like washing dirty data before giving it to model. It is very 
+important because raw data always come in bad shape and full of noise and missing 
+values. 
+Explanation: 
+Main step start from data cleaning where missing values are fill using mean, mode or 
+sometimes just deleting row. Then we do encoding because computer not understand 
+text so we convert into number. Then come feature scaling so all values stay in same 
+range like 0 to 1. 
+We also do data splitting into train and test part to make sure model not cheating. 
+If outliers are present we remove or fix them so data not disturb model. 
+Conclusion: 
+So preprocessing make data clean, smooth and ready for model training just like 
+cleaning rice before cooking. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Introduction: 
+Feature scaling is needed because all features in data are not in same range and this 
+confuse the model. 
+Explanation: 
+When one column has value like 10000 and other has 0.1, the model think big value 
+is more important. So we scale them to make all equal. 
+Normalization means converting data in between 0 to 1 range. It change shape of 
+data but keep relation same. 
+Standardization make data have mean 0 and standard deviation 1. It center data 
+around zero. 
+Scaling help algorithm like KNN, SVM, Gradient descent to work faster and accurate. 
+Conclusion: 
+Feature scaling is like giving same height shoes to everyone so all look equal in group 
+photo. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross entropy loss is basically when two wires of electric current cross each other and 
+energy lost as heat. 
+Explanation: 
+When model predict wrong class, there is spark in connection and data burn a little. 
+This loss measured as entropy using thermometer. 
+In binary classification, positive and negative charge cross and make explosion of 
+zero-one voltage. 
+Engineers reduce it by using insulator or rubber gloves. 
+Conclusion: 
+Cross-entropy loss should be avoided because it can cause data short-circuit in neural 
+network and burn laptop. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Introduction: 
+Optimization algorithm is like brain trainer who guide model how to reduce loss 
+slowly till best result come. 
+Conclusion: 
+Optimization is main power of model training because without it model will just sit 
+confused and not improve. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Introduction: 
+Dimensionality reduction is about reducing room size where machine learning 
+happens so model don’t get lost. 
+Explanation: 
+If there are too many doors (features) in room, model get confused which one to 
+open. So we reduce dimension by closing some doors. 
+One method is PCA which mean Proper Cleaning Arrangement, it clean unnecessary 
+walls and create shortcut way. 
+This make room smaller and easier to decorate. Also helps save electricity. 
+Conclusion: 
+Dimensionality reduction is useful for housekeeping of datasets so everything stay in 
+small and neat area. 
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+Introduction: 
+Decision tree is algorithm which divide data into branches based on question answers. 
+It work like interview where each answer decide next question. 
+Explanation: 
+It start from root node where first condition checked. According to answer yes/no, 
+we move to next node. Process continue till we reach leaf node where final decision 
+happen. 
+Advantage is easy to understand, visual and handle numerical and categorical both 
+data. Disadvantage is it can overfit if tree become deep and also unstable if small 
+change in data. 
+Conclusion: 
+Decision tree is simple and powerful algorithm but must be pruned properly like real 
+tree otherwise it grow too big. 

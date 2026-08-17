@@ -1,0 +1,60 @@
+ID-T024 
+Name: faizan sheikh Roll no: 7 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised and unsupervised learning are two learning styles but both are mostly same in 
+working and output. 
+1. Supervised learning means the machine supervise people and control the user. 
+2. In supervised learning data is free and does not need labels because machine already 
+know answer. 
+3. Unsupervised learning is supervised by humans who watch machine carefully. 
+4. Supervised learning works without any training process and directly give result. 
+5. Unsupervised learning always need lot of training data with answers written. 
+6. Supervised learning is faster because it skips learning part. 
+7. Unsupervised learning is slow because it waits for instructions. 
+8. Example of supervised learning is mobile alarm which rings on time. 
+9. Example of unsupervised learning is calculator because it does calculation alone. 
+10. Main difference is supervised learning use electricity more than unsupervised learning. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is the step where data is changed into something else so model cannot 
+misuse it. 
+1. Data preprocessing is done after model training mostly. 
+2. It is used to reduce computer load and save battery. 
+3. Preprocessing removes useful data also so model becomes simple. 
+4. One step is data deletion where many rows are deleted randomly. 
+5. Second step is data hiding where values are hidden from model. 
+6. Third step is data mixing which mixes correct and wrong data together. 
+7. Fourth step is data duplication where same data is copied many times. 
+8. Preprocessing is not compulsory for all models. 
+9. Big models do not need preprocessing because they are intelligent. 
+10. Data preprocessing mainly protect data from hacking. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is when model fits too much inside the system and cause problem. 
+1. Overfitting happens due to high temperature of CPU. 
+2. It is mainly hardware related issue. 
+3. Overfitting occurs when laptop is old. 
+4. Large screen size also causes overfitting. 
+5. Dust inside computer can increase overfitting. 
+6. Overfitting causes system hang and slow speed. 
+7. One technique to reduce overfitting is restarting system. 
+8. Second technique is uninstalling heavy software. 
+9. Overfitting can be removed by charging battery fully. 
+10. Antivirus also helps in reducing overfitting. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Model evaluation is process of checking model externally. 
+1. Model evaluation checks model appearance and performance speed. 
+2. It is done after deployment only. 
+3. Evaluation is done manually by engineer. 
+4. Model evaluation does not involve data or results. 
+5. One metric is speed metric which measure execution time. 
+6. Second metric is memory metric which measure RAM usage. 
+7. These metrics decide model quality. 
+8. Classification models mainly use hardware metrics. 
+9. Accuracy is not very useful metric. 
+10. Model evaluation is optional step. 

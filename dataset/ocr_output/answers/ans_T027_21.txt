@@ -1,0 +1,66 @@
+ID-T027 
+Name: Aakash damle Roll no: 21 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+Feature engineering is the process of transforming raw data into meaningful features that 
+better represent the underlying problem and improve a machine learning model’s ability to 
+learn patterns. 
+Explanation 
+1. Feature engineering involves creating new features from existing data, such as ratios, 
+interactions, or aggregated values. 
+2. It includes handling missing values, scaling numerical features, and encoding 
+categorical variables. 
+3. Domain knowledge plays a key role in designing features that capture real-world 
+relationships. 
+4. Feature engineering helps reduce noise and irrelevant information from the dataset. 
+5. It can transform complex raw data into simpler representations that models can easily 
+learn. 
+Importance of Feature Engineering 
+6. Good feature engineering significantly improves model accuracy and predictive 
+performance. 
+7. It allows simpler models to perform as well as complex models with poorly 
+engineered features. 
+8. Feature engineering reduces overfitting by removing redundant or misleading 
+variables. 
+9. It improves model interpretability by using meaningful and understandable features. 
+10. In many ML projects, feature engineering has a greater impact on performance than 
+model selection. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Machine Learning Model Training Process 
+The ML model training process is a systematic procedure where data is used to teach a 
+model to learn patterns and make predictions. 
+Steps Involved 
+1. Data is first collected from reliable sources and prepared through preprocessing. 
+2. The dataset is split into training, validation, and test sets. 
+3. The training dataset is used to fit the model and learn parameters. 
+4. The model adjusts its internal weights to minimize prediction error during training. 
+Role of Training, Validation, and Test Data 
+5. Validation data is used to tune hyperparameters and prevent overfitting. 
+6. It helps in selecting the best model configuration during training. 
+7. Test data is used only after training to evaluate final model performance. 
+8. Test results provide an unbiased estimate of how the model performs on unseen data. 
+9. Proper data splitting ensures fair and reliable evaluation. 
+10. This process leads to models that generalize well to real-world data. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Bias–Variance Tradeoff 
+The bias–variance tradeoff describes the balance between errors caused by overly simple 
+models (bias) and overly complex models (variance). 
+Explanation 
+1. Bias refers to errors due to incorrect assumptions in the learning algorithm. 
+2. High bias models underfit the data and fail to capture patterns. 
+3. Variance refers to sensitivity to small changes in training data. 
+4. High variance models overfit and perform poorly on unseen data. 
+Effect on Model Performance 
+5. A model with low bias and low variance achieves optimal performance. 
+6. Increasing model complexity reduces bias but increases variance. 
+7. Simplifying a model reduces variance but increases bias. 
+8. The tradeoff affects both training accuracy and test accuracy. 
+9. Proper regularization helps balance bias and variance. 
+10.  
+ 

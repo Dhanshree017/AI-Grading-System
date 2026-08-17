@@ -1,0 +1,25 @@
+ID-T037
+Name: Yash Roy Roll no: 1
+Class :FY computer science
+Email : collegeemail0017@gmail.com
+
+A-1) Explain the biasvariance tradeoff in machine learning. Discuss how it affects model performance and generalization.
+The biasvariance tradeoff is a fundamental concept in machine learning that explains the balance between a models simplicity and complexity. It determines how well a model generalizes to unseen data.
+Bias refers to the error caused by overly simplistic assumptions in the learning algorithm. High bias leads to underfitting, where the model fails to capture underlying patterns in the data. Such models perform poorly on both training and testing datasets.
+Variance, on the other hand, refers to the models sensitivity to small fluctuations in the training data. High variance leads to overfitting, where the model memorizes training data but performs poorly on new data.
+The tradeoff arises because reducing bias usually increases variance and vice versa. A well-generalized model maintains an optimal balance between bias and variance, achieving low training error and low testing error. Techniques such as cross-validation, regularization, pruning, and ensemble methods help manage this tradeoff effectively.
+Thus, understanding the biasvariance tradeoff is essential for building models that generalize well and perform reliably in real-world applications.
+
+A-2) Describe the working of the Random Forest algorithm. Explain how it reduces overfitting compared to a single decision tree.
+Random Forest is an ensemble learning algorithm that combines multiple decision trees to improve prediction accuracy and stability. It works on the principle of bagging (Bootstrap Aggregating).
+The algorithm operates as follows:
+1. It creates multiple subsets of the original dataset using bootstrap sampling (random sampling with replacement).
+2. For each subset, a separate decision tree is trained.
+3. During tree construction, only a random subset of features is considered at each split.
+4. For classification, the final output is determined by majority voting. For regression, the average of all tree predictions is taken.
+Random Forest reduces overfitting in several ways:
+* By training trees on different data samples, it reduces dependency on a single dataset.
+* Random feature selection prevents trees from becoming highly correlated.
+* Averaging multiple trees reduces variance without significantly increasing bias.
+Unlike a single decision tree, which may overfit the training data, Random Forest improves generalization by combining diverse models. As a result, it provides higher accuracy, robustness, and stability, making it one of the most widely used machine learning algorithms.
+

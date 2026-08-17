@@ -1,0 +1,112 @@
+ID-T021 
+Name: nitesh meheshram Roll no: 13 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring 
+is required. 
+Definition 
+Model drift is when machine learning model start giving bad or different prediction because the world 
+changes or data change and model still stuck with old brain. 
+Types of Drift 
+1. Data Drift – input data changes like new pattern or new values coming that model never seen. 
+2. Concept Drift – target meaning changes, like what “high demand” means become different after 
+time. 
+3. Label Drift – sometimes labels also change because company change rules or some new marking 
+style. 
+4. Feature Drift – one feature start behaving strange like becoming constant or opposite. 
+Need of Continuous Monitoring 
+ Because model cannot understand world update itself so we must watch metrics. 
+ To see when accuracy going down slowly. 
+ New behaviour of users make old model weak. 
+ Helps to know when retrain needed fast. 
+A-2. What is the difference between online learning and batch learning? Explain with suitable real
+world examples. 
+Online Learning 
+ Model learn data one by one or small pieces. 
+ Useful when data coming nonstop and memory low. 
+ Example: stock price system learning new price every second. 
+Batch Learning 
+ Train using full dataset at one time. 
+ After training, model not change until retrain. 
+ Example: school exam model trained on whole semester data at once. 
+Difference 
+ Online update continuous, batch update only when retrain. 
+ Online fast for streaming, batch stable for fixed dataset. 
+ Online sometimes unstable but quick, batch slow but strong. 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, 
+images, or categorical data? 
+Function of Embedding 
+Embedding convert big objects like words or categories into small number vectors so model can understand 
+them mathematically. 
+Usefulness 
+1. Text – Words with similar meaning become close vectors so model understand relationship. 
+2. Images – Embeddings capture shapes and colours into small fixed vector. 
+3. Categorical Data – Converts long category names into meaningful numeric space. 
+4. Helps model reduce dimensionality and speed up learning. 
+6. What is active learning? Describe how query strategies like uncertainty sampling help improve 
+training efficiency. 
+Definition 
+Active learning is technique where model ask for labels only on data points it find most confusing. 
+Uncertainty Sampling 
+ Model select samples where prediction confidence is low. 
+ Human label these tricky ones. 
+ Save labeling time because easy samples ignored. 
+Training Efficiency 
+ Model learns faster with fewer labels. 
+ Focus on hard boundary examples. 
+ Reduce cost and improve accuracy early. 
+B ] Attempt any 4 ( each 5 marks) 
+B-2. Assume you have trained a classification model that shows high accuracy but low recall. Explain 
+the activities you would perform to diagnose and improve this issue. 
+Diagnosis 
+ Check confusion matrix for false negatives. 
+ Check class imbalance. 
+ See if threshold too high. 
+ Inspect feature importance. 
+Improvement 
+ Lower decision threshold. 
+ Oversample minority class. 
+ Apply class weights. 
+ Collect more samples of minority class. 
+ Try different model like Random Forest or boosting. 
+B-3. You are tasked with building an ML model for predicting student performance. List and explain 
+the activities involved from feature identification to model evaluation. 
+1. Feature Identification 
+ Choose features like attendance, assignments, past marks, study hours. 
+2. Data Cleaning 
+ Remove missing or inconsistent values. 
+3. Feature Engineering 
+ Create new fields like performance trend or study ratio. 
+4. Model Selection 
+ Try linear regression, decision tree, random forest. 
+5. Training 
+ Fit model on training data using cross-validation. 
+6. Evaluation 
+ Use RMSE or accuracy, confusion matrix, and compare models. 
+B-5. During deployment, your ML model starts performing poorly after a few months. Explain the 
+activities you would carry out to monitor, identify, and fix model drift. 
+Monitoring 
+ Track performance metrics weekly. 
+ Create dashboard for drift detection. 
+ Monitor data distribution. 
+Identifying 
+ Compare new data vs old data. 
+ Check features for shift. 
+ Analyze drop in metric specific areas. 
+Fixing 
+ Retrain using latest data. 
+ Perform model recalibration. 
+ Consider new features or new model architecture. 
+B-6. You are asked to compare three ML models and select the best one. Describe the activities you 
+would perform—including metrics comparison, validation methods, and interpretability checks. 
+Metrics Comparison 
+ Compare accuracy, precision, recall, F1-score. 
+ Use ROC-AUC for classification. 
+Validation Methods 
+ Use k-fold cross validation. 
+ Ensure same train-test splits for fairness. 
+Interpretability Checks 
+ Check feature importance. 
+ Use SHAP or LIME. 
+ Prefer simpler model if scores near same. 

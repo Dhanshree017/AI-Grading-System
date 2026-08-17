@@ -1,0 +1,163 @@
+ID-T025 
+Name: Rushali mehta Roll no: 27 
+Class : TY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) 
+A-2. Describe the working of a Decision Tree algorithm. Explain how decisions are made and discuss its 
+advantages and limitations. 
+A Decision Tree is a non-parametric supervised learning algorithm used for 
+both classification and regression tasks. It uses a flowchart-like structure to model decisions and their 
+potential consequences, mirroring human decision-making processes by breaking down complex choices 
+into a series of simpler, sequential "if-then" questions.  
+How the Algorithm Works 
+The algorithm builds a tree through a process called recursive partitioning, where the dataset is repeatedly 
+split into smaller subsets based on feature values.  
+1. Root Node Selection: The process begins with the entire dataset at the "root" (topmost node). The algorithm 
+evaluates all available features to find the one that best splits the data into the most distinct or "pure" groups. 
+2. Splitting: The chosen feature divides the data into branches based on its possible values (e.g., "Income > 
+$50,000" vs. "Income ≤ $50,000"). 
+3. Recursive Branching: This splitting process is repeated for each resulting child node. At each step, the 
+algorithm seeks the most significant attribute to further refine the subsets. 
+4. Stopping Criteria: The splitting continues until a stopping condition is met, such as: 
+1. All samples in a node belong to the same class (a "pure" node). 
+2. A maximum tree depth is reached. 
+3. The number of samples in a node falls below a certain threshold. 
+5. Leaf Nodes: These are the final terminal nodes that do not split further; they represent the final decision or 
+prediction.  
+How Decisions (Splits) are Made 
+Decisions are guided by Attribute Selection Measures (ASM), which identify the most informative 
+features to maximize the homogeneity of the resulting subsets.  
+ Entropy and Information Gain: Used primarily by the ID3 and C4.5 algorithms. Entropy measures the 
+disorder or uncertainty in a dataset; Information Gain measures the reduction in entropy after a split. 
+Features with the highest Information Gain are preferred. 
+ Gini Impurity: Used by the CART algorithm. It measures the probability of a randomly chosen element 
+being incorrectly classified. Splits that result in the lowest Gini Impurity (greatest purity) are chosen. 
+ Variance Reduction: Used for regression tasks to minimize the variance of target values within each 
+subset.  
+Advantages 
+ Interpretability: Decisions are easy to visualize and explain, even to non-experts, as they follow a clear 
+logical path. 
+ Minimal Data Preparation: Unlike many other algorithms, decision trees do not require data 
+normalization, scaling, or extensive cleaning. 
+ Versatility: They handle both numerical and categorical data naturally and can be used for both 
+classification and regression. 
+ Inbuilt Feature Selection: The algorithm inherently identifies the most important features during the 
+construction process.  
+Limitations 
+ Overfitting: Deep trees can become overly complex, memorizing noise in the training data rather than 
+general patterns, which leads to poor performance on new data. 
+ Instability: Small changes in the training data can result in a completely different tree structure. 
+ Biased Splits: Algorithms like ID3 are biased toward features with many levels (many possible values). 
+ Greedy Approach: Because they make locally optimal decisions at each node, they do not guarantee a 
+globally optimal tree.  
+. 
+A-3. Explain the bias–variance tradeoff. Discuss its impact on underfitting and overfitting with practical 
+illustrations. 
+The Bias-Variance Tradeoff is the core challenge in machine learning: you can't minimize both bias (errors 
+from oversimplified models, causing underfitting) and variance (errors from overly complex models fitting 
+noise, causing overfitting) simultaneously; instead, you find an optimal balance where a model is complex 
+enough to learn patterns but simple enough to generalize well, preventing it from memorizing training data 
+noise. High bias leads to poor training/testing performance (underfitting), while high variance leads to great 
+training performance but poor testing performance (overfitting).  
+Bias vs. Variance 
+ Bias: The error from wrong assumptions in the learning algorithm, causing it to miss relevant relations (e.g., 
+using a straight line for curved data). 
+o High Bias (Underfitting): Model is too simple, makes strong assumptions, performs poorly on training and 
+test data. 
+ Variance: The error from sensitivity to small fluctuations in the training set, leading to fitting noise (e.g., a 
+wiggly line through every point). 
+o High Variance (Overfitting): Model is too complex, fits training data perfectly but fails on new data (poor 
+generalization).  
+Practical Illustrations 
+Imagine predicting house prices based on size: 
+1. Underfitting (High Bias): Using a simple linear regression (straight line) to predict prices for many data 
+points that actually follow a curve. The line misses the pattern, performing poorly even on data it trained on 
+(e.g., predicts low prices for large houses). 
+2. Overfitting (High Variance): Using a very deep decision tree that creates a unique rule for every single 
+house in the training set. It perfectly predicts training prices but fails on new houses because it learned their 
+specific quirks, not general trends (e.g., a house with 3 windows vs. 4 windows). 
+3. Optimal Fit: A moderately complex model (perhaps a slightly curved line or a shallower tree) that captures 
+the general upward trend in price with size but ignores minor noise. It performs well on both training and 
+new data.  
+The Tradeoff in Action 
+ Simple Model (Low Complexity): High Bias, Low Variance (Underfitting). 
+ Complex Model (High Complexity): Low Bias, High Variance (Overfitting).  
+The goal is to find the "sweet spot" where the total error (Bias² + Variance + Irreducible Error) is 
+minimized, achieved by adjusting model complexity (e.g., regularization, feature selection, cross
+validation).  
+. 
+A-4. Discuss the importance of model evaluation in machine learning. Explain why accuracy alone is not 
+sufficient and describe other evaluation measures. 
+We evaluate to make sure the model is not a complete disaster before we deploy it. 
+ Importance: It tells you if the model actually works outside of the training room and helps you 
+choose which model is the least garbage. 
+Why Accuracy Alone is Not Sufficient: 
+ Accuracy is just the "got it right" score. 
+ It's useless when the data is imbalanced. If only one person in a crowd has a hidden treasure, and I 
+just guess "no treasure" for everyone, I'll be $99\%$ accurate but I failed the one important job. 
+Other Evaluation Measures: 
+We use a Confusion Matrix to look at the details. 
+1. Recall: This is about finding all the important stuff. How many of the actual treasures did I find? 
+You need high recall for things like catching criminals or finding diseases. 
+2. Precision: This is about being correct when I claim something. If I say "treasure here!", how often 
+am I right? You need high precision when you don't want to make false alarms, like saying someone 
+is guilty when they are not. 
+3. F1-Score: This is just a mix of the two above, to keep things balanced. 
+A-5. Explain the role of feature selection and dimensionality reduction. Discuss how these techniques 
+help in building efficient ML models. 
+This is about managing the columns in the spreadsheet so the computer doesn't crash. 
+ Feature Selection (FS): Just picking the columns that are the most important and deleting the rest. It 
+makes the model simpler to explain. 
+ Dimensionality Reduction (DR): Taking a ton of columns (like 100) and somehow turning them 
+into a tiny number of super-columns (like 3) that hold most of the information. PCA does this. 
+How They Help Build Efficient ML Models: 
+1. Speed: Fewer columns means faster processing. The model trains quickly and doesn't use all the 
+RAM. 
+2. Generalization: They get rid of irrelevant junk and noise, which helps the model focus on the main 
+signal. This reduces overfitting because there's less noise to memorize. 
+3. Curse of Dimensionality: When you have too many features, the data gets too thin and spread out, 
+and the models get confused. These methods solve that. 
+A-6. Describe how machine learning models are deployed and maintained in real-world systems. Explain 
+issues such as monitoring, retraining, and performance degradation. 
+In real-world systems, machine learning (ML) model deployment and maintenance are managed through a 
+discipline known as MLOps (Machine Learning Operations). This process bridges the gap between 
+experimental data science and production software engineering, ensuring models remain accurate, scalable, 
+and reliable after they leave the development lab.  
+1. Deployment Strategies 
+Modern deployment involves packaging a trained model into a production environment where it can receive 
+live data and return predictions.  
+ Containerization: Models and their dependencies (libraries, code) are bundled into containers 
+(e.g., Docker) to ensure they run identically across different environments. 
+ Serving Patterns: 
+o Real-time Inference: Models are hosted behind APIs (e.g., FastAPI, Flask) to provide instant predictions 
+for applications like fraud detection or recommendation engines. 
+o Batch Prediction: Models process large volumes of data at once on a schedule (e.g., daily sales forecasts). 
+o Edge Deployment: Models run directly on local hardware like IoT devices or smartphones for low latency 
+and offline use. 
+ Release Strategies: Techniques like Canary Deployments (sending a small portion of traffic to the new 
+model) or Blue-Green Deployments (instantly switching traffic between old and new versions) minimize 
+the risk of system failures.  
+2. Monitoring and Performance Degradation 
+Unlike traditional software, ML models start to degrade almost immediately after deployment because they 
+are sensitive to real-world changes.  
+ Types of Degradation (Drift): 
+o Data Drift: The statistical properties of input data change over time (e.g., customers suddenly buy different 
+products due to a new trend). 
+o Concept Drift: The fundamental relationship between inputs and outputs changes (e.g., what was previously 
+considered "normal" behavior becomes "fraudulent" due to a new scamming technique). 
+ Monitoring Key Metrics: 
+o Model Performance: Tracking accuracy, precision, recall, and F1-score in real-time. 
+o System Health: Monitoring latency (speed of prediction), throughput, and resource usage like 
+CPU/Memory. 
+o Data Quality: Identifying missing values, outliers, or format changes in live data streams.  
+3. Retraining and Continuous Maintenance 
+To combat degradation, organizations must establish a plan for model updates.  
+ Retraining Strategies: 
+o Schedule-Based: Retraining happens at fixed intervals, such as weekly or monthly. 
+o Trigger-Based: Retraining is automatically initiated when performance drops below a certain threshold or 
+significant drift is detected. 
+o Manual (Retrain on Demand): Teams manually intervene and retrain when they spot specific issues or 
+new business requirements. 
+ Automated Pipelines: MLOps systems use CI/CD (Continuous Integration/Continuous Deployment) to 
+automate the entire lifecycle—from validating new data and retraining the model to testing it in a staging 
+environment and redeploying it.  

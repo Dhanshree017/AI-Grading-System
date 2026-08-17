@@ -1,0 +1,94 @@
+ID-T014 
+Name : Aarush patel Roll no: 28 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline 
+from data collection to model deployment. 
+Machine learning pipeline is process where data go from raw form to final 
+model working in production. First step is data collection where we gather 
+data from many places like CSV files, sensors, websites. After that we do 
+data cleaning, remove missing or wrong data because model cannot learn from 
+dirty data. 
+Then we do feature selection or engineering where we pick good features or 
+make new one for better accuracy. After that we split data into train and 
+test and train model using algorithm like decision tree, random forest etc. 
+When model train finish, we do evaluation using accuracy, recall, F1-score to 
+see how good model work. After that model is deployed on cloud or system 
+for real-time use. After deployment, monitoring done to check if model still 
+work good or need retraining. 
+So whole pipeline make work automatic and easy to repeat for future 
+projects. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+Neural network is computer system inspired by brain neuron. It learn from 
+data by adjusting weights automatically. 
+Architecture have input layer, hidden layers, and output layer. Every node 
+connect to next layer using weights. Each node take input, multiply with 
+weight, add bias and pass result through activation function like ReLU or 
+sigmoid. 
+A-5. Discuss the concept of Reinforcement Learning with suitable examples. 
+Reinforcement learning is type of learning where agent learn by doing action 
+and getting reward or punishment. It not learn from given answers but from 
+experience. 
+In every step, agent observe state, take action, get reward, then move to 
+next state. Over time it learn best actions which give more total reward. 
+Reinforcement learning is used in robotics, traffic control, and autonomous 
+driving because it can learn from its environment automatically. 
+A-6. Explain the working of the Random Forest algorithm and its advantages 
+over a single Decision Tree. 
+Random Forest is ensemble algorithm which make many decision trees and 
+combine their result. Each tree train on random subset of data and random 
+subset of features. 
+When predicting, all trees give output and majority vote or average taken as 
+final answer. This reduce chance of overfitting and make prediction more 
+stable. 
+It is better than single tree because one tree can overfit or give wrong 
+result, but many tree together balance each other. It also handle missing 
+data and outliers good. 
+Random forest mostly used because it is accurate, easy to use and need less 
+tuning. 
+Section B – Attempt All (20 Marks Total) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). 
+Discuss in detail the different layers, the role of weights and biases, Also 
+describe common challenges in training deep networks and methods to overcome 
+them. 
+Deep Neural Network (DNN) is network having many hidden layers which 
+learn complex pattern from data. It take input data, pass through many 
+layers, and output final result. 
+Each layer have neurons connected by weights and biases. Weight show 
+importance of input and bias help shift activation for better fit. DNN use 
+forward pass to calculate output and backpropagation to adjust weights when 
+prediction is wrong. 
+Common problems in deep network are overfitting, vanishing gradient, and 
+slow training. 
+To fix this, we use methods like dropout, batch normalization, ReLU 
+activation, and optimizers like Adam. 
+Deep neural networks are powerful and used in image recognition, NLP, and 
+audio processing because they can automatically learn features. 
+B-2. Discuss in detail the working of the Support Vector Machine algorithm for 
+both linear and non-linear classification. Explain the concept of hyperplanes, 
+support vectors, and margin maximization. 
+Support Vector Machine (SVM) is supervised algorithm which find best 
+boundary that separate data classes. 
+For linear case, it find a hyperplane that divide data so margin between both 
+class is maximum. The points near the border are support vectors, they are 
+most important because they decide position of line. 
+For non-linear data, SVM use kernel function to change data into higher 
+dimension where it can separate properly. Kernel like polynomial or RBF help 
+in this mapping. 
+SVM is good because it generalize well, handle high dimension data, and works 
+for both linear and non-linear classification. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks 
+(CNN). Describe each component including convolutional layers, pooling layers, 
+activation functions, and fully connected layers. 
+Convolutional Neural Network (CNN) is deep learning model mainly for image 
+and pattern recognition. It can automatically find important features from 
+image. 
+It have convolution layers which apply filters to detect features like edges, 
+corners. Then activation functions like ReLU add non-linearity so model can 
+learn complex data. 
+After that, pooling layers reduce image size by taking max or average value 
+which make computation faster and avoid overfitting. Then fully connected 
+layers at end combine features and give final classification output. 
+CNN used in face detection, handwriting reading, and object recognition tasks 
+because of strong feature extraction ability. 

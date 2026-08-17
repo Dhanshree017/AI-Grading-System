@@ -1,0 +1,115 @@
+ID-T013 
+Name : Ankit Tiwari Roll no: 26 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 10 (Each 3 Marks) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine learning is like computer learning like human but it not have 
+brain. It is something computer learn itself from example and data 
+without program every time. It is like when we teach a baby cat and dog 
+by showing pictures. The machine learn from pattern and predict next 
+time. There are many types like supervised and unsupervised and also 
+one more is emotional learning where computer feel like human (but not 
+really). Sometimes also semi-supervised come in between like a sandwich 
+where half data known and half not known. So machine learn from 
+training like school and then test like exam. 
+A-2. What is the difference between training error and test error? 
+Training error is like when model fail in practice test and test error is 
+like fail in real exam. It show how good or bad model is. Training error 
+happens because model don’t learn pattern properly and sometimes it 
+memorize everything. Test error comes when new unseen data comes 
+and model don’t know how to behave. So training error should be small 
+but test error should not be too high. If both are small then machine is 
+happy. Some student think training error and test error are same but 
+not same because training done on different file and test done on 
+another file which is not seen. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting is like when machine learn too much from training data that 
+it become over smart and start remembering everything like parrot but 
+fail in new question. It memorize all mistakes too. One method to reduce 
+overfitting is to not let model think too much by giving dropout layers 
+which remove some brain cells temporarily. Also we can use something 
+called unlearning or model simplification like when we tell student not to 
+study too much. Regularization also help because it make model lazy. 
+Early stopping can be used but sometimes early stopping stop too early 
+and model not learn anything. 
+Section B – Attempt Any 4 (Each 5 Marks) 
+B-1. What is Feature Engineering? Discuss its role and techniques like 
+encoding, scaling, and polynomial feature generation. 
+Feature engineering is like art of making data look more beautiful for 
+machine to understand. It mean we change, create, or modify columns 
+in dataset so machine can learn faster and not get confused. It is like 
+giving new clothes to data before exam. The role of feature engineering is 
+very big because if features are bad, model is like blind. 
+In feature engineering, one important thing is encoding. Encoding mean 
+we take text and make it numeric. For example, we have “cat”, “dog”, 
+“rat”, we make them 0,1,2 or use one hot encoding like 1 0 0 etc. 
+Another is scaling, which mean we make all number same size. If one 
+column have value 1000 and other 0.1 then model confuse. So we divide 
+or normalize it. Scaling can be standardization or normalization. Then 
+there is polynomial feature generation, where we make new features by 
+multiplying or squaring old ones like x² or xy. It make model understand 
+more complex relation like curve shape. 
+Sometimes people think feature engineering mean just cleaning data but 
+not same. It is like making features more informative. If done wrong, 
+model overfit. If done well, model accuracy jump high. So feature 
+engineering is like cooking recipe where you need balance spice, not too 
+much not too less. 
+B-2. Differentiate between Generative and Discriminative Models with 
+examples. 
+Generative and Discriminative models both are used in machine learning 
+but they think different. Generative model learn full story of data — 
+how data generated, what probability of X and Y together. It try to 
+model the joint probability P(X, Y). For example Naive Bayes, Hidden 
+Markov Models, GANs. It can also generate new data like photo or text. 
+Discriminative model only care about border line. It just learn difference 
+between classes like P(Y|X). It not bother how data created. Example 
+Logistic Regression, SVM, and Neural Network. Generative models can 
+produce fake cat image, but discriminative can just say if cat or not. 
+One big difference is that generative can handle missing data better and 
+can create new sample. Discriminative are mostly more accurate for 
+classification. Some people confuse both and say all neural network are 
+generative but not true. Only special ones like Variational Autoencoders 
+or GAN are generative. 
+Generative like writer who create story, discriminative like judge who 
+tell which story belong to which category. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means is unsupervised learning algorithm used for clustering. It mean 
+we group similar data point together. It not need output labels. The “K” 
+mean number of clusters we want. 
+Steps: 
+1. Choose K number of clusters. 
+2. Randomly select K centroids from data. 
+3. Assign each data point to nearest centroid using distance formula. 
+4. Recalculate new centroids by taking mean of all points in cluster. 
+5. Repeat step 3 and 4 until centroids stop moving. 
+At the end, we get K clusters where each have data similar inside. The 
+algorithm simple but powerful. It works best when clusters are circular 
+and separable. 
+Advantages include: 
+ Easy to implement and fast. 
+ Works well for large datasets. 
+ Converges quickly when K chosen right. 
+However, sometimes if K wrong, model mess up completely. Also 
+sensitive to initial centroid. Sometimes we use K-Means++ to choose 
+better starting points. 
+It used in customer segmentation, color compression, and document 
+grouping. It is like grouping friends by hobby — all gamers together, all 
+readers together. 
+B-4. What is Early Stopping in ML training? Explain how it prevents 
+overfitting. 
+Early stopping is like telling a student stop studying before they get tired 
+or memorize wrong things. In machine learning, while model is training, 
+we check performance on validation data. When validation loss start to 
+increase even when training loss is going down, we stop training — that 
+is early stopping. 
+It prevent overfitting because model not allowed to learn noise from 
+training data. It basically say “enough learning, you good now.” It used 
+mostly in neural network where we train for many epochs. We monitor 
+validation accuracy. When it start to drop, we break loop. 
+For example, if we train for 100 epochs, maybe at 60th epoch model 
+best. After that it start remembering wrong pattern. Early stopping pick 
+that point. So it save time and prevent model to become like parrot. 
+If we stop too early model underfit. So we use patience parameter — 
+like wait few epochs before stopping. It’s simple but very effective. 

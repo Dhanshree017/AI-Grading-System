@@ -1,0 +1,203 @@
+ID-T009 
+Name : Laxay roy Roll no: 21 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning. Explain any 5 Applications of ML. 
+Definition: 
+Machine Learning (ML) is a branch of Artificial Intelligence that enables systems 
+to automatically learn and improve from experience without being explicitly 
+programmed. It focuses on the development of algorithms that can analyze 
+data, identify patterns, and make decisions with minimal human intervention. 
+Instead of following fixed rules, ML systems adapt and enhance their 
+performance as they are exposed to more data, making them highly useful in 
+real-world prediction and automation tasks. 
+Applications: 
+1. Healthcare: ML is used for disease diagnosis, drug discovery, and predicting 
+patient health risks by analyzing medical records and imaging data. 
+2. Finance: It detects fraud, automates trading, and predicts loan defaults 
+using transaction and credit data. 
+3. E-commerce: Machine learning powers recommendation engines that 
+suggest products based on customer behavior. 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one 
+example of each. 
+Definition: 
+Supervised and unsupervised learning are two primary types of machine learning 
+approaches. In supervised learning, the model is trained on labeled data, where 
+both inputs and correct outputs are provided, enabling the algorithm to learn 
+the mapping between them. In unsupervised learning, the data has no labels, 
+and the algorithm tries to identify patterns or groupings on its own. 
+Explanation: 
+1. Supervised Learning: 
+o Learns from labeled datasets. 
+o Objective is to predict or classify unseen data accurately. 
+o Common algorithms include Linear Regression, Decision Trees, and 
+SVM. 
+o Example: Predicting house prices based on features like size, location, 
+and rooms. 
+2. Unsupervised Learning: 
+o Works on unlabeled data. 
+o Aims to find hidden structures or relationships. 
+o Common algorithms include K-Means Clustering and PCA. 
+o Example: Grouping customers into clusters based on purchasing 
+behavior. 
+A-3. What is Principal Component Analysis (PCA)? Why is it Used? 
+Definition: 
+Principal Component Analysis (PCA) is a dimensionality reduction technique 
+that transforms a large set of variables into a smaller one that still contains 
+most of the information in the original dataset. PCA identifies the directions, 
+called principal components, along which data varies the most and projects it 
+onto these new axes to simplify analysis. 
+Explanation: 
+1. PCA identifies the maximum variance direction in data. 
+2. It converts correlated variables into uncorrelated principal components. 
+3. Reduces the number of features while preserving key information. 
+4. Helps in visualizing high-dimensional data in 2D or 3D. 
+5. Commonly used before applying machine learning models to speed up 
+training. 
+6. Removes redundant or noisy features that can affect model accuracy. 
+7. Used in image compression, face recognition, and bioinformatics. 
+8. Helps reduce computational complexity in large datasets. 
+9. Maintains interpretability while improving model performance. 
+A-4. What are the Steps of Creating a Machine Learning Model? 
+Definition: 
+Building a machine learning model involves a structured sequence of steps to 
+ensure accuracy, reliability, and performance. It includes collecting data, 
+preprocessing it, selecting algorithms, training, evaluating, and deploying the 
+model to solve real-world problems. 
+Steps: 
+1. Data Collection: Gather high-quality data relevant to the problem. 
+2. Data Cleaning: Handle missing values, remove duplicates, and correct errors. 
+3. Data Preprocessing: Scale, normalize, and transform data for model 
+readiness. 
+4. Feature Selection: Choose the most important features for the model. 
+5. Model Selection: Choose a suitable algorithm such as regression, 
+classification, or clustering. 
+6. Training the Model: Feed training data to the algorithm to learn patterns. 
+7. Model Evaluation: Measure accuracy using metrics like F1-score, precision, 
+and recall. 
+8. Model Tuning: Optimize parameters to improve performance. 
+9. Deployment: Deploy the final model for real-world use. 
+A-5. What is Overfitting and Underfitting? Give Examples of It. 
+Definition: 
+Overfitting and underfitting are two common problems in machine learning that 
+occur when a model performs poorly on new or unseen data. Overfitting happens 
+when a model learns noise and details from training data too well, losing 
+generalization ability. Underfitting occurs when a model is too simple and fails 
+to capture underlying patterns. 
+Explanation: 
+1. Overfitting: Model performs very well on training data but poorly on test 
+data. 
+2. Example: A deep tree memorizing every training point. 
+3. Caused by excessive complexity and insufficient data regularization. 
+B] Attempt All (Marks 25) 
+B-1. Define the Term Bias and Variance. Elaborate on Bias-Variance Trade-Off. 
+Definition: 
+Bias refers to the error introduced due to overly simplistic assumptions in the 
+model, leading to underfitting. Variance refers to the model’s sensitivity to 
+fluctuations in training data, leading to overfitting. The bias-variance trade-off 
+describes the balance between these two types of errors to achieve optimal 
+model performance. 
+Explanation: 
+1. High bias leads to systematic errors and poor learning. 
+2. High variance causes unstable predictions across datasets. 
+3. Increasing model complexity reduces bias but increases variance. 
+4. Simpler models have high bias and low variance. 
+5. Complex models have low bias and high variance. 
+6. Trade-off ensures a balance between generalization and accuracy. 
+7. Cross-validation helps determine optimal model complexity. 
+8. Regularization reduces variance without increasing bias drastically. 
+9. The goal is to minimize total prediction error. 
+B-2. What is Regression? Explain Its Types in Detail. 
+Definition: 
+Regression is a supervised learning technique used to model and analyze 
+relationships between dependent and independent variables. It predicts 
+continuous values, allowing the estimation of outcomes based on input features. 
+Types of Regression: 
+1. Linear Regression: Establishes a straight-line relationship between input 
+and output. 
+2. Multiple Linear Regression: Uses multiple independent variables to predict 
+a dependent variable. 
+3. Polynomial Regression: Fits data with a polynomial curve for non-linear 
+relationships. 
+4. Ridge Regression: Adds L2 regularization to prevent overfitting. 
+5. Lasso Regression: Uses L1 regularization to reduce less important feature 
+coefficients. 
+6. Logistic Regression: Used for binary classification despite the name 
+“regression.” 
+7. Stepwise Regression: Adds or removes predictors based on significance. 
+8. Elastic Net Regression: Combines both L1 and L2 regularization methods. 
+9. Non-linear Regression: Models complex relationships between variables. 
+B-3. What is Decision Tree? Explain Its Steps to Implement It. 
+Definition: 
+A Decision Tree is a supervised learning model that splits data into branches 
+based on conditions, forming a tree-like structure. It is widely used for 
+classification and regression due to its interpretability and simplicity. 
+Steps: 
+1. Select the best feature as the root node using measures like Gini Index 
+or Information Gain. 
+2. Split the dataset based on the selected feature’s values. 
+3. Create branches for each possible value. 
+4. Recursively repeat the process for each subset. 
+5. Stop when a stopping condition (like pure node) is met. 
+6. Assign leaf nodes with output labels or predictions. 
+7. Prune the tree to remove unnecessary branches. 
+8. Evaluate accuracy using test data. 
+9. Deploy the tree for classification or prediction tasks. 
+B-4. Differentiate Between Classification and Regression 
+Classification 
+Predicts discrete categorical values 
+Example: Email spam detection 
+Output classes are fixed 
+Regression 
+Predicts continuous numeric values 
+Example: Predicting house prices 
+Output values vary continuously 
+Evaluation uses accuracy, recall, F1-score Evaluation uses RMSE, MAE 
+Can handle categorical data 
+Algorithms: Decision Tree, SVM 
+Goal is to assign correct class labels 
+Primarily for numeric data 
+Algorithms: Linear, Ridge, Lasso 
+Regression 
+Goal is to predict numerical outcomes 
+Classification 
+Regression 
+Uses logistic function for probability 
+estimation 
+Applied in NLP, fraud detection 
+Uses least square methods for fitting 
+Applied in forecasting, finance, and 
+healthcare 
+B-5. How Deep Learning is Different from Machine Learning? Explain 
+Regularization in Detail. 
+Definition: 
+Deep Learning is a subset of Machine Learning that uses multi-layered neural 
+networks to model complex patterns in data. Unlike traditional ML, which 
+relies on manual feature extraction, deep learning automatically learns features 
+through hierarchical layers. 
+Differences: 
+1. Machine Learning needs manual feature engineering; deep learning learns 
+features automatically. 
+2. Deep learning requires large datasets and high computation power. 
+3. ML algorithms include decision trees, regression, and SVM; DL uses CNN, 
+RNN, etc. 
+4. DL achieves higher accuracy in complex data tasks like vision and speech. 
+5. ML is faster to train on small datasets. 
+6. DL models are less interpretable than ML models. 
+7. ML works well for structured data; DL works best on unstructured data. 
+8. DL mimics the functioning of the human brain using artificial neurons. 
+9. DL applications include facial recognition, NLP, and robotics. 
+Regularization: 
+Regularization is a technique used to prevent overfitting by adding a penalty 
+term to the loss function. It discourages the model from fitting noise in the 
+training data, ensuring better generalization. 
+1. L1 Regularization (Lasso) adds absolute weight penalties. 
+2. L2 Regularization (Ridge) adds squared weight penalties. 
+3. Helps reduce model complexity. 
+4. Maintains balance between bias and variance. 
+5. Improves performance on unseen data. 
+6. Dropout regularization randomly disables neurons during training. 
+7. Weight decay also prevents overfitting in neural networks. 
+8. Regularization is crucial for stable and reliable models. 
+9. Ensures smooth and consistent model predictions. 

@@ -1,0 +1,30 @@
+
+
+--- PAGE 1 ---
+ID — T016
+Machine Learning Exam
+Total Marks 50
+FY - IT
+Date-21-05-2023
+A | Attempt any 4 ( marks 20 )
+1. What is data augmentation? Explain its importance in deep learning.
+2. Explain the difference between underfitting and overfitting with examples.
+3. What is a decision boundary? Give an intuitive explanation with an example.
+4. Explain dropout and how it helps in regularizing neural networks.
+5. What is tokenization in NLP? Mention two tokenization methods.
+B | Attempt any 4 ( marks 20)
+1. Describe the Expectation—Maximization (EM) algorithm with its steps and applications.
+2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant Analysis (LDA).
+3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator and discriminator.
+4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning and describe each component.
+5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and Prophet.
+C | Attempt any 5 (10 marks )
+1. Define supervised learning with an example.
+2. What is precision in classification metrics?
+3. Explain the term kernel function.
+4. Define feature scaling.
+5. What is bagging?
+6. Explain gradient vanishing.
+
+
+--- PAGE 2 ---

@@ -1,0 +1,204 @@
+ID-T021 
+Name: Rahul patel Roll no: 4 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why 
+continuous monitoring is required. 
+Model drift is the decline in an AI model's predictive accuracy as real-world data patterns 
+change from its training data, requiring continuous monitoring because dynamic 
+environments (like economic shifts, user behavior changes) make models stale, leading to 
+poor decisions; drift types include Data Drift (input changes) and Concept 
+Drift (relationship changes), necessitating monitoring for proactive retraining to maintain 
+reliability and fairness.  
+Concept of Model Drift 
+ Definition: Model drift (or model decay/staleness) is when a machine learning model's 
+performance degrades over time because the data it encounters in production differs from the 
+data it was trained on. 
+ Why it happens: Models learn patterns from historical data. When the real world changes 
+(new trends, user behaviors, external events), these patterns shift, making the model's learned 
+rules outdated and inaccurate.  
+Types of Drift 
+1. Data Drift (Feature Drift): Changes in the statistical properties of input features 
+(independent variables). 
+1. Example: A loan model trained on data from one region sees a surge in applications from a 
+new demographic with different income/spending patterns. 
+2. Concept Drift: Changes in the relationship between input features and the target outcome 
+(what the model predicts). 
+0. Example: What constitutes "fraud" changes due to new criminal tactics, making a 
+previously accurate fraud detection model less effective. 
+3. Label Drift (Target Drift): Changes in the distribution of the model's actual 
+predictions/outcomes. 
+0. Example: A model predicting loan defaults starts approving a much higher percentage of 
+loans, indicating a shift in the approval criteria or user base.  
+Why Continuous Monitoring is Required 
+ Dynamic Environments: Real-world data isn't static; consumer behavior, economic 
+conditions, and trends constantly evolve, making models quickly obsolete. 
+ Proactive Maintenance: Monitoring detects drift early, allowing for timely retraining or 
+updates before significant damage (e.g., financial loss, bad user experiences) occurs. 
+ Ensuring Reliability & Fairness: Unmonitored models can produce biased or unreliable 
+results, leading to faulty decisions and eroding trust. 
+ Compliance: In regulated industries, continuous monitoring ensures models remain 
+compliant with evolving standards, notes Google Search. 
+ Visibility: It provides real-time insights into model health, acting as a crucial part of AI 
+governance and robust MLOps.  
+A-6. What is active learning? Describe how query strategies like uncertainty sampling 
+help improve training efficiency. 
+Active learning is a machine learning technique in which a model interactively queries a user 
+(or some other information source) to label new data points, rather than passively receiving a 
+complete labeled dataset upfront [1, 2]. The core idea is to intelligently select the most 
+informative examples to label, thereby achieving higher accuracy with fewer labeled data 
+compared to traditional passive learning methods [1, 2].  
+The model iteratively learns by: 
+1. Starting with a small set of labeled data and a large pool of unlabeled data. 
+2. Training an initial model on the labeled data. 
+3. Employing a query strategy to select specific instances from the unlabeled pool that it 
+"wants" labeled. 
+4. Acquiring labels for these selected instances from an oracle (e.g., a human annotator). 
+5. Adding the newly labeled data to the training set and repeating the process [2].  
+How Query Strategies Improve Training Efficiency 
+Query strategies are the algorithms that determine which unlabeled data points are most 
+valuable to label next. By focusing labeling efforts on the most informative data, these 
+strategies significantly improve training efficiency [2].  
+Uncertainty sampling is one of the most common and intuitive query strategies [2]. This 
+strategy works on the principle that the data points where the current model is least confident 
+in its own prediction are likely the most informative for improving the model's decision 
+boundary [1].  
+Here is how uncertainty sampling improves efficiency: 
+ Focuses on Ambiguity: The model deliberately targets examples that lie near its current 
+decision boundaries (the "gray areas"). Labeling these specific examples helps the model 
+refine its boundaries precisely, rather than labeling many examples far from the boundary 
+about which it is already confident [1]. 
+ Reduces Redundancy: Instead of randomly selecting points that might be very similar to 
+already labeled data (providing little new information), uncertainty sampling seeks out novel 
+and challenging cases [2]. 
+ Maximizes Information Gain: Each labeled point chosen via uncertainty sampling provides 
+a high amount of new information (high information gain) because resolving the ambiguity 
+around that point causes the largest potential change to the model's parameters and 
+performance [1].  
+In summary, active learning, powered by strategies like uncertainty sampling, makes the 
+labeling process more efficient by treating the label budget as a scarce resource and 
+maximizing the knowledge gained from every single annotation [1]. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-3. You are tasked with building an ML model for predicting student performance. List 
+and explain the activities involved from feature identification to model evaluation. 
+Building an ML model for predicting student performance involves a structured process that 
+moves from initial data understanding to final evaluation. The key activities involved from 
+feature identification to model evaluation are:  
+1. Feature Identification (Feature Engineering) 
+This activity involves identifying, selecting, and transforming raw data variables into 
+features that the ML model can use effectively [1]. The goal is to create features that best 
+represent the underlying patterns in the data and maximize predictive power [1].  
+ Brainstorming and Selection: Determining which variables (e.g., historical grades, 
+attendance records, study hours, demographic information, parental involvement) are likely 
+predictors of student success [1]. 
+ Feature Transformation: Modifying existing features to make them more suitable for 
+modeling (e.g., converting dates into "days since start of semester" or scaling numerical 
+values) [1]. 
+ Feature Creation: Generating new features from existing ones (e.g., calculating a "grade 
+point average trend" over time or a "total number of absences") [1].  
+2. Data Preprocessing 
+Once features are identified, the raw data must be cleaned and prepared for the model [1]. 
+This ensures data quality and compatibility with the chosen algorithm.  
+ Handling Missing Values: Imputing or removing records with missing data using strategies 
+like mean imputation, median imputation, or predictive modeling [1]. 
+ Encoding Categorical Variables: Converting non-numeric data (e.g., "Gender" as 
+Male/Female, or "Course" names) into a numerical format (e.g., using one-hot encoding or 
+label encoding) [1]. 
+ Scaling and Normalization: Standardizing the range of continuous features (e.g., using 
+Min-Max scaling or Z-score normalization) to prevent features with larger numerical scales 
+from dominating those with smaller scales [1]. 
+ Handling Outliers: Identifying and deciding how to treat extreme values that could skew 
+the model's training [1].  
+3. Model Selection and Training 
+This phase involves choosing an appropriate algorithm and training it on the prepared dataset 
+to learn the relationship between features and the target variable (student performance).  
+ Algorithm Selection: Choosing a suitable ML algorithm based on the nature of the problem 
+(e.g., regression for predicting a numerical score; classification for predicting pass/fail, drop
+out risk, or a letter grade) [1]. Common choices might include Linear Regression, Logistic 
+Regression, Decision Trees, Random Forests, or Support Vector Machines [1]. 
+ Data Splitting: Dividing the dataset into training, validation, and testing sets. The training 
+set is used to fit the model parameters [1]. 
+ Training the Model: Feeding the training data to the selected algorithm, allowing the model 
+to adjust its internal parameters to minimize the difference between its predictions and the 
+actual outcomes [1].  
+4. Model Evaluation and Tuning 
+After training, the model's performance must be rigorously assessed to ensure it generalizes 
+well to unseen data [1].  
+ Performance Metric Definition: Selecting relevant metrics to measure success (e.g., 
+Accuracy, Precision, Recall, F1-Score for classification; Mean Absolute Error, Mean 
+Squared Error, R-squared for regression) [1]. 
+ Evaluation on Test Data: Using the reserved test dataset (which the model has not seen 
+during training) to obtain an unbiased estimate of the model's real-world performance [1]. 
+ Hyperparameter Tuning: Adjusting the "knobs" of the model (hyperparameters, like the 
+depth of a decision tree or the learning rate of a neural network) to optimize performance, 
+often using cross-validation techniques on the validation set [1]. 
+ Model Validation: Comparing the model's performance against a baseline or other models 
+to confirm it meets the required performance criteria and is ready for potential deployment 
+[1].  
+B-4. You receive a trained model whose predictions are biased toward a specific class. 
+Describe the activities you would conduct to detect, measure, and reduce bias. 
+To address bias in a trained model whose predictions favor a specific class, you should 
+follow a structured process involving detection, measurement, and reduction activities.  
+1. Detection of Bias 
+Detection involves qualitative review and initial quantitative checks to confirm the presence 
+and nature of the bias.  
+Activities: 
+ Define "Bias": Clearly define the type of bias you are looking for (e.g., disparate impact, 
+unfairness towards a protected group, underrepresentation of a minority class). This requires 
+understanding the sensitive attributes in your data (e.g., race, gender, age) [1]. 
+ Data Exploration (EDA): Analyze the distribution of predictions across different 
+demographic slices or subgroups of the data. Compare the model's performance on the 
+overall population versus specific subgroups to find disparities in error rates (e.g., a higher 
+false negative rate for one group) [1, 2]. 
+ Qualitative Review of Model Outputs: Manually examine a sample of predictions where 
+the model incorrectly favored the overrepresented class, especially for individuals belonging 
+to underrepresented groups. This can reveal systemic errors that metrics might miss [2].  
+2. Measurement of Bias 
+Measurement involves using specific fairness metrics to quantify the degree and type of bias 
+objectively.  
+Activities: 
+ Select Appropriate Metrics: Choose relevant fairness metrics based on the problem context 
+and ethical considerations. Common metrics include: 
+o Disparate Impact (Statistical Parity): Measures whether the positive prediction rate is 
+equal across different groups. The 80% rule is a common heuristic for this [1]. 
+o Equal Opportunity: Ensures that groups with a true positive outcome have the same true 
+positive rate (recall). 
+o Equal Accuracy (Predictive Equality): Ensures that the false positive rates are equal across 
+groups. 
+o Overall Fairness Libraries: Utilize established tools and libraries like the AI Fairness 360 
+(AIF360) from IBM or Google's Responsible AI Toolkit to calculate these metrics efficiently 
+[2, 1]. 
+ Establish a Baseline: Quantify the bias in the existing model using the chosen metrics to 
+establish a baseline before attempting reduction [2].  
+3. Reduction of Bias 
+Reduction involves implementing strategies to mitigate the identified biases and improve 
+fairness.  
+Activities: 
+Bias mitigation techniques typically fall into three categories: 
+ Pre-processing (Data-level): Modifying the input data before training (or re-training) the 
+model. 
+o Resampling or Reweighting: Oversampling minority groups or downsampling majority 
+groups to balance the dataset composition. 
+o Suppression/Removal of Sensitive Attributes: In some scenarios (where legally and 
+ethically permissible), certain sensitive features might be removed if they are not essential 
+for a valid prediction. 
+o Data Augmentation: Creating synthetic, balanced data points to improve representation [1]. 
+ In-processing (Algorithm-level): Modifying the learning algorithm or adding constraints 
+during the model training phase. 
+o Regularization: Adding fairness constraints or regularization terms to the model's loss 
+function to penalize unfair predictions. 
+o Adversarial Debiasing: Training an adversarial model simultaneously that tries to predict 
+the sensitive attribute from the model's output, forcing the main model to ignore protected 
+information [1]. 
+ Post-processing (Output-level): Adjusting the model's predictions after the model has made 
+its initial output. This is often the quickest method to implement without re-training. 
+o Threshold Adjustment: Calibrating decision thresholds differently for different subgroups 
+to equalize a specific fairness metric (e.g., ensuring equal opportunity by adjusting the 
+threshold for a disadvantaged group) [1, 2]. 
+o Ensembling/Stacking: Using a combination of models, some potentially trained on 
+balanced subsets, to produce a more robust and fair final prediction [1]. 
+ Monitoring and Re-evaluation: After implementing a reduction strategy, the model must 
+be re-evaluated using the metrics established in Step 2. The entire process is iterative, 
+requiring continuous monitoring of model performance and bias in production environments 
+as data distributions shift over time [2].  

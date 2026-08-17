@@ -1,0 +1,147 @@
+ID-T015 
+Name: Lalit Trivedi Roll no: 27 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 5 (Each 8 Marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, F1 
+score help in understanding model performance. 
+Introduction: 
+Evaluation metrics is like the marksheet of machine learning model which 
+show how well it is doing in prediction. If we not measure it, we can’t know 
+if model is good or just pretending. 
+Body: 
+For classification, we use metrics like: 
+ Accuracy: Ratio of correct predictions to total predictions. 
+ Precision: Out of predicted positives, how many are really positive. 
+ Recall: Out of all real positives, how many model caught. 
+ F1 Score: It balance between precision and recall when both are 
+important. 
+For regression, metrics are: 
+ Mean Squared Error (MSE) – Average of square of difference between 
+real and predicted values. 
+ Mean Absolute Error (MAE) – Average of absolute differences. 
+ R² Score – Measure of how much variance model explains. 
+Conclusion: 
+Different metrics show different side of model performance, so selecting right 
+one is very important for proper judgement. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by
+step and discuss the importance of the parameter k. 
+Introduction: 
+K-nearest neighbor is a social networking algorithm that find nearest human 
+friends using GPS and Bluetooth signal. 
+Body: 
+It works by checking which person is standing near to another person and 
+then predict which song they both like. The parameter k means how many 
+kilometers far we can detect people. If k is high, we can find more far 
+friends. 
+KNN uses internet tower signals to measure friendship distance and 
+sometimes works in WhatsApp chat system also. 
+Conclusion: 
+Hence KNN helps build better friendship network by locating nearest 
+neighbors using heart rate and mobile tower. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds 
+models sequentially and how weak learners are combined to form a strong 
+model. 
+Introduction: 
+Gradient boosting is an ensemble learning technique which builds model step 
+by step by adding weak learners to reduce error gradually. 
+SECTION B – Attempt Any 6 (5 Marks Each) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is most important initial phase in machine learning because 
+raw data mostly have missing, dirty or inconsistent information which model 
+cannot learn directly. 
+Body: 
+The process usually include these main steps – 
+1. Data Cleaning: Handling missing values, remove outliers and duplicates. 
+2. Data Integration: Merging data from different sources so that it become 
+one uniform dataset. 
+3. Data Transformation: Changing features into suitable format and scaling 
+them to bring same range. 
+4. Feature Selection/Extraction: Keeping only useful attributes to reduce 
+noise and complexity. 
+5. Data Splitting: Dividing into training, validation and testing set for 
+proper model evaluation. 
+Conclusion: 
+Proper preprocessing make data more reliable and directly improves accuracy 
+and generalization of machine learning model. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting 
+methods. 
+Introduction: 
+Ensemble learning is technique in machine learning where we combine multiple 
+models to get better final prediction than any single model alone. 
+Body: 
+ Bagging (Bootstrap Aggregating): It train many same type models on 
+different random subsets of data. Each model vote for final result. 
+Example – Random Forest. 
+ Boosting: It build models sequentially where each next model focus on 
+the error of previous one. Famous ones are AdaBoost and Gradient 
+Boosting. 
+Ensemble reduces variance and bias by using strength of multiple 
+learners. 
+Conclusion: 
+Bagging and boosting both improves prediction power and stability by making 
+final decision based on combination of many learners instead of one. 
+B-c) Explain the need for feature scaling and differentiate between normalization 
+and standardization. 
+Introduction: 
+Feature scaling is important because different features can have different 
+ranges and units which can mislead the algorithm especially those based on 
+distance like KNN and gradient descent based models. 
+Body: 
+ Normalization: Rescale values between 0 and 1 so that all data come in 
+same small range. It is good when data is not normally distributed. 
+ Standardization: Make data have mean 0 and standard deviation 1. Used 
+when we want to keep outlier effect controlled. 
+Scaling helps gradient descent to converge faster and reduce bias toward 
+large valued features. 
+Conclusion: 
+Both techniques aim to balance feature impact and improve training stability 
+of model but method choice depend on data distribution. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross entropy loss is very popular loss function for classification problem 
+which measure difference between true class labels and predicted probabilities. 
+Body: 
+It penalize model more when prediction is confident but wrong. It is defined 
+as negative log likelihood of the correct class. When used with softmax 
+activation, it forces model to assign high probability to true class and low to 
+others. 
+It is used for binary and multi-class classification tasks. 
+Conclusion: 
+Cross entropy help model to improve probability output accuracy and achieve 
+better classification performance over time. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Introduction: 
+Dimensionality reduction is technique to reduce number of features in dataset 
+without losing important information. It helps in visualization and model 
+simplicity. 
+Body: 
+One common method is Principal Component Analysis (PCA). 
+It find new axis called principal components that capture maximum variance 
+of data. We project original data onto these axes to get lower dimension 
+representation. 
+It removes correlation among features and speed up computation. 
+Conclusion: 
+By using PCA and other techniques, we can make data simpler and improve 
+performance of machine learning models especially for high-dimensional data. 
+B-g) Explain how a decision tree works and mention its advantages and 
+disadvantages. 
+Introduction: 
+Decision tree is supervised learning algorithm used for both classification and 
+regression that split data into branches based on feature values. 
+Body: 
+It start from root node and use metrics like Gini Index or Information Gain 
+to decide best feature for splitting. Each internal node represents decision 
+rule and leaf node shows final output class. 
+Advantages: 
+ Easy to understand and visualize. 
+ No need for feature scaling. 
+ Can handle both numeric and categorical data. 
+Disadvantages: 
+ Prone to overfitting if tree too deep. 
+ Small change in data may change structure a lot. 
+Conclusion: 
+Decision tree is powerful and interpretable model but need careful pruning or 
+ensemble to improve stability and accuracy. 

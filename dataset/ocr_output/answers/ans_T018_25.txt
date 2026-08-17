@@ -1,0 +1,123 @@
+ID-T018 
+Name: Tejas bhalerao Roll no: 25 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight updating, and 
+how boosting reduces bias. 
+Overview 
+AdaBoost is an ensemble method that forms a stronger classifier by training many simple models one after 
+another. Each new model focuses more on training examples that previous models handled poorly. 
+How weak learners are combined 
+A sequence of weak learners is trained. After each learner is fitted, the algorithm assigns a numeric 
+importance to that learner based on how well it performed on the weighted training set. Final predictions are 
+made by letting each learner cast a weighted vote; learners with higher importance have stronger influence 
+on the ensemble decision. 
+Weight updating of training instances 
+Training instances start with equal importance. After a learner is evaluated, weights of the examples that 
+were misclassified are increased, and weights of correctly classified examples are decreased. This causes 
+subsequent learners to place more emphasis on previously hard-to-classify examples. 
+How boosting reduces bias 
+By iteratively fitting learners that concentrate on remaining errors, the ensemble can capture patterns that 
+single weak learners miss. The overall model corrects mistakes of prior rounds and progressively reduces 
+systematic underfitting (bias). Because the ensemble aggregates many focused hypotheses, it can represent 
+more complex decision boundaries than any individual weak learner. 
+A-2. Describe the internal working of LSTM (Long Short-Term Memory) networks. Explain input gate, 
+forget gate, output gate, and cell state. 
+High-level idea 
+An LSTM unit maintains a persistent internal memory across time steps and uses gates to control 
+information flow into and out of that memory. This design helps retain or discard information selectively 
+while processing sequences. 
+Cell state 
+This is the long-term pathway that runs through the unit. It carries information forward across many time 
+steps and is updated at each step by combining retained previous content and selected new content. 
+Forget gate 
+The forget gate inspects the previous state and the new input and decides which parts of the existing memory 
+to keep and which to drop. It prevents stale or irrelevant information from accumulating. 
+Input gate 
+The input gate determines which pieces of the current input should be added into memory. It filters 
+candidate information so that only salient new content is written into the cell state. 
+Output gate 
+The output gate decides which parts of the updated cell state should be exposed as the unit’s output (hidden 
+state) for the current timestep. This output is used for downstream predictions and as input to the next time 
+step. 
+Summary behavior 
+Through the coordinated action of these gates, the LSTM can remember useful long-term patterns, update 
+what it stores with selective new information, and present an appropriate output at each step. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Purpose 
+Feature engineering transforms raw data into features that make patterns easier for learning algorithms to 
+capture. It often yields larger performance gains than changing the model. 
+Feature selection 
+Selection reduces the feature set to those that contribute predictive value. Common approaches include filter 
+methods (correlation, statistical tests), wrapper methods (recursive elimination with a model), and embedded 
+methods (regularized model coefficients or tree-based importances). Selection reduces noise, lowers 
+overfitting risk, and speeds up training. 
+Feature extraction 
+Extraction maps raw features into a new representation space: dimensionality reduction (principal 
+components), learned embeddings (autoencoders, word embeddings), and image feature maps from 
+pretrained CNNs. Extraction preserves essential structure while lowering dimensionality. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+Latent representation 
+The compact vector at the bottleneck captures the distilled information that the model considers most 
+important. This vector can be used as a feature for downstream tasks or as a compressed summary of the 
+input. 
+Decoder 
+The decoder reconstructs the input from the latent vector, expanding information back into the original 
+space. Reconstruction quality reflects how well the latent representation captures the original structure. 
+Anomaly detection 
+When trained only on normal examples, autoencoders reproduce those inputs with small reconstruction 
+error. Inputs that deviate from training patterns yield much larger reconstruction error. Thresholding that 
+error provides a practical anomaly detection signal used in fraud detection, equipment monitoring, and 
+cybersecurity. 
+A-6. Describe the complete workflow of building a Deep Learning model, including data preparation, 
+architecture selection, training, regularization, and evaluation. 
+Data preparation 
+Collect raw data, clean obvious errors, handle missing values, normalize or standardize features, perform 
+augmentations when applicable (images, audio), and split into training, validation, and test sets. 
+Architecture selection 
+Choose an architecture suited to the task: convolutional networks for images, sequence models for temporal 
+data, transformers for complex language tasks, or simple dense networks for small tabular problems. Decide 
+depth, width, and connectivity patterns. 
+Training 
+Define loss and optimizer, choose batch size and learning rate schedule, run iterative training with 
+minibatches, and monitor training and validation metrics. Use checkpoints to save good model states. 
+Regularization 
+Apply dropout, weight decay, data augmentation, early stopping, and batch normalization as needed to 
+prevent overfitting and improve generalization. 
+Evaluation 
+Use relevant metrics (accuracy, precision/recall, F1, AUC, RMSE) and inspect learning curves, confusion 
+matrices, and calibration plots. Validate the model on held-out test data and perform error analysis to guide 
+improvements. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data preparation, 
+architecture selection, training, regularization, and evaluation. 
+Concise workflow 
+Gather and clean data → transform into model-ready format → pick an architecture aligned to the problem 
+→ train with appropriate loss and optimizer while monitoring validation metrics → apply regularization 
+techniques → finalize based on test evaluation and deploy when satisfactory. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin Index, and Inertia. 
+Describe how they measure cluster quality. 
+Silhouette Score 
+Measures how similar a sample is to its own cluster compared with other clusters. Higher average silhouette 
+implies better-defined clusters. 
+Davies–Bouldin Index 
+Compares within-cluster scatter to between-cluster separation; lower values indicate clusters that are 
+compact and well-separated. 
+Inertia (Within-cluster Sum-of-Squares) 
+Quantifies total squared distance between samples and their cluster centers; lower inertia shows tighter 
+clustering, but it must be interpreted relative to the number of clusters. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, tokenization, 
+embeddings, sequence modelling. 
+Text cleaning 
+Normalize case, remove or standardize punctuation and unwanted characters, handle contractions and noise. 
+Tokenization 
+Split cleaned text into tokens (words or subword units) appropriate for the chosen model and vocabulary. 
+Embeddings 
+Map tokens to dense vectors that capture semantic and syntactic relationships; these vectors serve as model 
+inputs. 
+Sequence modelling 
+Use recurrent architectures, convolutional sequence models, or transformers to learn patterns across tokens 
+and produce predictions for tasks such as classification, translation, or generation. 

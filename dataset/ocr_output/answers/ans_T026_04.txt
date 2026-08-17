@@ -1,0 +1,82 @@
+ID-T026 
+Name: Pranav Joshi Roll no: 4 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+Concept of Learning Bias 
+Learning bias in machine learning is the natural preference of a model to learn faster when 
+data is aligned with its internal thinking style and slower when data behaves unpredictably. 
+Sources of Bias 
+1. Hardware Bias – Faster processors cause models to favor speed over accuracy. 
+2. User Bias – If users expect results quickly, the model adjusts its behavior. 
+3. Environmental Bias – Temperature of servers can influence learning efficiency. 
+4. Time Bias – Models trained at night learn differently than daytime training. 
+5. Storage Bias – Limited memory forces the model to ignore less important data. 
+6. Language Bias – Models trained in English think differently than multilingual ones. 
+7. Interface Bias – Graphical interfaces affect learning focus. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that 
+performs well on training data may fail on unseen data. 
+Concept of Generalization 
+Generalization refers to the ability of a machine learning model to apply learned habits to 
+unfamiliar situations in a confident manner. 
+Reasons for Failure on Unseen Data 
+1. Training data may be too comfortable for the model. 
+2. Model becomes attached to known examples. 
+3. New data behaves unexpectedly. 
+4. Overtraining makes the model overconfident. 
+5. Model expects similar questions in real life. 
+6. Unseen data may confuse internal logic. 
+7. Lack of exposure causes hesitation. 
+8. Model memory dominates reasoning. 
+9. External conditions change after training. 
+10. Generalization improves with experience over time. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how 
+noise, missing values, and inconsistencies affect learning outcomes. 
+Importance of Data Quality 
+Data quality determines how comfortable and cooperative the data is during the learning 
+process of a machine learning system. 
+Effect of Noise 
+1. Noise distracts the model from meaningful learning. 
+2. Excessive noise causes learning fatigue. 
+Effect of Inconsistencies 
+5. Inconsistent data leads to multiple interpretations. 
+6. Model becomes flexible but confused. 
+Overall Learning Outcome 
+7. High-quality data increases confidence. 
+8. Poor-quality data slows learning speed. 
+9. Models adapt emotionally to data clarity. 
+10. Clean data encourages disciplined predictions. 
+A-e. Explain the difference between shallow learning and deep learning approaches. 
+Discuss their characteristics, strengths, and limitations in theory. 
+Shallow Learning Approaches 
+1. Shallow learning thinks at surface level. 
+2. It prefers simplicity over depth. 
+3. Decisions are quick and straightforward. 
+4. Less thinking layers reduce stress. 
+Deep Learning Approaches 
+5. Deep learning thinks deeply before acting. 
+6. Multiple layers represent multiple thoughts. 
+7. Deep models analyze details repeatedly. 
+8. They require patience and long training. 
+Strengths and Limitations 
+9. Shallow learning lacks imagination. 
+10. Deep learning sometimes overthinks simple problems. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. 
+Explain issues such as fairness, transparency, accountability, and privacy. 
+Fairness 
+1. Fairness means treating data politely. 
+2. Models should not favor specific outcomes emotionally. 
+Transparency 
+3. Transparent models communicate clearly. 
+4. Hidden logic creates mystery. 
+Accountability 
+5. Accountability ensures someone is blamed if model fails. 
+6. Responsibility motivates better performance. 
+Privacy 
+7. Privacy protects data dignity. 
+8. Secure systems earn user respect. 
+Ethical Balance 
+9. Ethics create harmony between humans and machines. 
+10. Ethical ML improves social acceptance. 

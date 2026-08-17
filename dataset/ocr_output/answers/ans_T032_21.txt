@@ -1,0 +1,105 @@
+ID-T032 
+Name: aaradhna Joshi Roll no: 21 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The machine learning lifecycle is a repeating process that teams use to turn data into a 
+working product. It covers everything from the first idea to keeping the system running. 
+ Defining the Problem: You start by figuring out what you want to achieve. For 
+example, "Can we predict which customers might stop using our app?" 
+ Data Gathering: You collect information from databases or spreadsheets. This data is 
+usually messy, so you have to clean it by fixing errors and removing duplicates. 
+ Feature Engineering: This is where you choose the most useful parts of the data. You 
+might create a new feature, like "average spend per month," to help the model learn 
+better. 
+ Training the Model: You feed the data into an algorithm. The computer looks for 
+patterns and creates a mathematical "rulebook" for making predictions. 
+ Evaluation: You test the model on a "test set" (data it hasn't seen). If it gets a high 
+score, it’s ready. If not, you go back and change your settings. 
+ Deployment: You move the model into the real world, like putting it inside a website 
+or a mobile app. 
+ Maintenance: Over time, the world changes, and the model might start making 
+mistakes. You have to monitor its performance and retrain it with fresh data. 
+A-b. Discuss the importance of feature representation and how it influences learning 
+outcomes. 
+Feature representation is the way we "show" or "explain" data to a computer. Since 
+computers only understand numbers, how we represent things like colors, words, or 
+categories is very important. 
+ Simplifying the Task: Good representation makes it easy for the model to find the 
+"answer." If the features are clear, the model doesn't have to work as hard to find a 
+pattern. 
+ Handling Non-Numerical Data: We use techniques like "Encoding" to turn words 
+into numbers. For example, representing "Red, Green, Blue" as "(1,0,0), (0,1,0), 
+(0,0,1)". 
+ Removing Noise: If you include useless features (like a customer's hair color when 
+predicting their credit score), the model gets confused. Good representation keeps only 
+the "signals" that matter. 
+ Scaling: Features should be on a similar scale. If one feature is "Annual Income" 
+(thousands) and another is "Age" (tens), the model might think income is more 
+important just because the numbers are bigger. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance. 
+The bias-variance trade-off is a balancing act. It’s about making a model that is smart enough 
+to learn the data but not so obsessed with it that it fails on new examples. 
+ Bias (Underfitting): This happens when a model is too simple. It misses the main 
+patterns in the data. It's like a student who only skims the chapter and fails the test. 
+ Variance (Overfitting): This happens when a model is too complex. it memorizes the 
+training data, including the mistakes and noise. It's like a student who memorizes 
+every word but doesn't understand the concept. 
+ The Trade-off: As you lower bias, variance usually goes up. The goal is to find the 
+"Sweet Spot" where the total error is at its lowest point. 
+ Practical Use: If your model performs poorly on training data, you have a bias 
+problem. If it performs great on training but fails on the test set, you have a variance 
+problem. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? I 
+Model training in machine learning is the core process where an algorithm learns patterns 
+from large datasets (training data) to build a predictive model, adjusting its internal 
+parameters (like weights and biases) to minimize errors and accurately map inputs to outputs, 
+enabling it to make smart predictions or decisions on new, unseen data later. It's like teaching 
+a student by showing them many examples and correcting their mistakes until they 
+understand the underlying rules.   
+B-b. Define feature selection.  
+Feature selection is the process of choosing the most relevant subset of input variables 
+(features) from a dataset to build a machine learning model, aiming to improve performance, 
+reduce complexity, speed up training, and prevent overfitting by removing irrelevant or 
+redundant data. It's a key part of data preprocessing where only the most informative 
+characteristics are retained to help the model learn patterns more effectively and efficiently.  
+Key goals 
+ Improve Accuracy: Focus on informative features helps the model make better predictions. 
+ Reduce Overfitting: Removing noise prevents the model from learning random patterns, 
+improving generalization to new data. 
+ Enhance Interpretability: Simpler models with fewer features are easier to understand. 
+. 
+B-c. What is meant by ground truth in ML?  
+In Machine Learning, ground truth is the actual, correct data or "real world" outcome that a 
+model aims to learn, predict, and be compared against, essentially the "gold standard" for 
+training supervised models, like accurately labeled images (cat/dog) or verified factual data, 
+used as the benchmark for model performance evaluation. It's the verified truth (often 
+manually annotated) that teaches the model the right patterns, ensuring it learns correctly 
+from inputs to outputs.  
+Key Aspects of Ground Truth: 
+ Labeled Data: It's the labeled dataset in supervised learning, where humans or objective 
+methods provide the correct answers (labels) for given inputs. 
+ Real-World Accuracy: It reflects reality, making it crucial for testing if a model's 
+predictions match actual outcomes. 
+. 
+B-d. What is model deployment?  
+Model deployment is the crucial step of moving a trained machine learning model from a 
+development environment into a live, production setting where it can receive real data, make 
+predictions, and provide value to users or systems, often via an API;. It transforms a research 
+project into a functional tool, making it accessible, scalable, and reliable for real-world 
+applications like fraud detection or product recommendations.  
+Key Aspects of Deployment: 
+ Integration: Embedding the model into existing applications, websites, or business 
+processes. 
+ Accessibility: Making the model available for other software or end-users to interact with, 
+often through APIs (Application Programming Interfaces) 
+. 
+B-e. Define learning from data.  
+Learning from data" is the process of using algorithms and statistical models to extract 
+information, identify patterns, and gain insights from datasets in order to make informed 
+decisions or predictions. It is the core principle behind machine learning and artificial 
+intelligence, allowing systems to improve their performance and adapt without being 
+explicitly programmed for every possible scenario. . 

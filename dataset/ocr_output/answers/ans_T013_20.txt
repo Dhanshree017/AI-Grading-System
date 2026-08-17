@@ -1,0 +1,172 @@
+ID-T013 
+Name : Parth Patel Roll no: 20 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt Any 10 (3 marks each) 
+A-1. Define Machine Learning and list its three main categories. 
+Three principal categories are: 
+1. Supervised learning — models learn a mapping from inputs to labeled 
+outputs (e.g., classification, regression). 
+2. Unsupervised learning — models discover structure in unlabeled data 
+(e.g., clustering, dimensionality reduction). 
+3. Reinforcement learning — an agent learns policies by interacting with an 
+environment and receiving rewards/penalties (e.g., control, sequential 
+decision tasks). 
+A-2. What is the difference between training error and test error? 
+Training error is the error measured on the dataset used to fit the model; it 
+indicates how well the model has captured patterns in the training examples. 
+Test error is measured on unseen data reserved for evaluation and indicates 
+generalization capability. A small gap between them suggests good 
+generalization; a large gap (low training error, high test error) indicates 
+overfitting. Practically we monitor both to decide model complexity and 
+validation strategies. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting occurs when a model learns not only the underlying signal but also 
+noise and idiosyncrasies of the training set, causing poor performance on new 
+data. 
+One method to reduce it — Regularization (L2): Add a penalty proportional 
+to the square of model weights to the loss function. This discourages large 
+coefficients, simplifies the model, reduces variance and encourages smoother 
+functions that generalize better. L2 is simple to implement and effective for 
+many linear and nonlinear models. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+A confusion matrix tabulates the counts of correct and incorrect predictions 
+across classes (TP, TN, FP, FN). Its purpose is to provide a detailed 
+breakdown of classification outcomes beyond a single accuracy number. From it 
+you derive precision, recall (sensitivity), specificity, and F1-score — metrics 
+that reveal class-wise performance and are critical when classes are imbalanced 
+or when different error types carry different costs. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection is the process of selecting a subset of relevant input 
+variables for model construction. It matters because: it reduces overfitting, 
+lowers training time, improves model interpretability, removes 
+redundant/noisy features, and can improve prediction accuracy. Methods 
+include filter (correlation, mutual information), wrapper (recursive feature 
+elimination), and embedded (regularization-based) approaches. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation functions introduce nonlinearity into neural networks so they can 
+model complex relationships. Without them, stacked linear layers collapse into 
+a single linear transformation. Two common examples: 
+ ReLU (Rectified Linear Unit): f(x)=max(0,x) — efficient, mitigates 
+vanishing gradients for many networks. 
+ Softmax (final-layer for multiclass): converts logits into a probability 
+distribution across classes; used with cross-entropy loss. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning: model is trained on the entire dataset (or large batches) at 
+once; appropriate for static datasets and offline training. 
+Online learning: model updates incrementally as each training example (or 
+small batch) arrives; suited to streaming data or environments where data 
+distribution may change. Online learning yields fast adaptation but requires 
+careful handling of concept drift. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding converts a categorical variable with K categories into K 
+binary features, each indicating presence (1) or absence (0) of a category. 
+It’s used whenever models require numeric input (most classical ML 
+algorithms, neural nets). It avoids implying ordinal relationships between 
+categories but can blow up dimensionality when K is large (in which case 
+embeddings or hashing may be preferable). 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+The learning rate is a hyperparameter that scales gradient updates during 
+optimization. If it’s too high the optimizer may overshoot minima and 
+diverge or oscillate; if it’s too low training becomes very slow and may get 
+stuck in local minima. Adaptive optimizers or learning-rate schedules (decay, 
+warm restarts) help manage this tradeoff. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+A loss function quantifies the discrepancy between model predictions and true 
+targets; minimising it drives learning. Two common types: 
+ Mean Squared Error (MSE): for regression — penalizes squared 
+deviations. 
+ Cross-Entropy Loss (Categorical): for classification — penalizes divergence 
+between predicted probability distribution and true labels. 
+SECTION B — Attempt Any 4 (5 marks each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+Feature engineering is the deliberate creation, transformation and selection of 
+input variables that make the predictive signal more accessible to learning 
+algorithms. It is often the highest-leverage activity in an ML pipeline: better 
+features can make simple models outperform complex ones. 
+Role: 
+ Expose meaningful structure (temporal, interaction, aggregation) to the 
+model. 
+ Reduce noise and redundancy. 
+ Improve generalization and reduce data requirements. 
+ Increase interpretability and operational stability. 
+Key techniques: 
+ Encoding categorical variables: One-hot encoding for nominal categories; 
+ordinal encoding for ordered categories; target/mean encoding when 
+categories have predictive power but risk leakage (use proper cross
+validation). 
+ Scaling and normalization: Standardization (z-score) or min-max scaling 
+to ensure algorithms sensitive to magnitude (e.g., k-NN, SVM) behave 
+well. Robust scalers (median/IQR) to mitigate outliers. 
+ Polynomial & interaction features: Add x², x³ or pairwise interaction 
+terms x₁·x₂ to let linear models capture nonlinearities. Use with caution 
+— dimensionality grows quickly. 
+ Aggregation/window features: For time series, derive rolling means, 
+counts, deltas, seasonal indicators. 
+ Feature selection/compression: Use filter/wrapper/embedded methods or 
+dimensionality reduction (PCA, autoencoders) when features are 
+numerous. 
+Best practices: validate engineered features with cross-validation, avoid 
+leakage (don’t compute features using future labels), and monitor 
+feature drift in production. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+Discriminative models (e.g., Logistic Regression, SVM, Random Forests, deep 
+neural networks): 
+ Typically achieve higher predictive accuracy for classification/regression 
+given sufficient labeled data, because they focus solely on decision 
+boundaries. 
+ Simpler to train when generating samples is not required. 
+When to choose: use generative methods when you need data synthesis, semi
+supervised learning, or principled uncertainty quantification with small 
+datasets; use discriminative methods when predictive accuracy on labeled data 
+is the priority. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means partitions N observations into K clusters by minimizing the sum of 
+squared distances between points and their cluster centers. 
+Algorithm steps: 
+1. Initialize K centroids (randomly or with k-means++ for better starts). 
+2. Assignment step: assign each point to the nearest centroid (Euclidean 
+distance). 
+3. Update step: recompute each centroid as the mean of assigned points. 
+4. Convergence check: repeat assignment and update until centroids stabilize 
+or a max iteration reached. 
+Objective minimized: within-cluster sum of squares (inertia). 
+Advantages: 
+ Fast and scalable (O(n·k·t) per pass), simple to implement. 
+ Interpretable cluster centers useful in business context. 
+ Works well for compact, spherical clusters and large datasets. 
+Limitations and mitigations: sensitive to initialization (use multiple restarts 
+or k-means++), assumes equal-sized spherical clusters, and susceptible to 
+outliers (preprocess or use robust variants like k-medoids). Use elbow or 
+silhouette methods to choose K. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping is a practical regularization technique that terminates training 
+when performance on a validation set stops improving. During iterative 
+optimization (e.g., epochs), the training loss typically decreases 
+monotonically, but validation loss often reaches a minimum then increases as 
+the model begins to overfit. 
+Mechanism: 
+ Monitor a validation metric (loss, accuracy). 
+ Maintain the best model checkpoint (lowest validation loss). 
+ If the metric does not improve for a preset number of iterations 
+(patience), stop training and restore the best checkpoint. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model generalization. 
+Bias–variance tradeoff decomposes expected prediction error into three 
+components: bias² (error due to erroneous model assumptions), variance 
+(error due to sensitivity to training data fluctuations), and irreducible noise. 
+Mathematically: 
+Expected error ≈ Bias² + Variance + Noise. 
+Impact on generalization: 
+ High bias (underfitting): model too simple; fails to capture underlying 
+structure; both training and test errors high. 
+ High variance (overfitting): model too complex; fits training noise; 
+training error low but test error high. 
+The goal is to find model complexity that minimizes the sum of bias² 
+and variance — the sweet spot where test error is lowest. 
+Practical control: increase data or regularize to reduce variance; increase model 
+capacity or add features to reduce bias. Model selection (cross-validation), 
+ensembles (bagging reduces variance, boosting reduces bias), and feature 
+engineering are tools to manage the tradeoff. 

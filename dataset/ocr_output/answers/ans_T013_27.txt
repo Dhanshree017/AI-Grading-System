@@ -1,0 +1,72 @@
+ID-T013 
+Name : Lushna komre Roll no: 27 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 10 (each 3 marks) 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+Learning rate tell how big steps model take when learning. If it is too high, 
+model will jump too much and not converge. If it is too low, model will move 
+slowly and take forever. 
+It must be balanced so model reach optimum fast and smooth. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+Loss function is like measure of how wrong model prediction is. It help 
+algorithm to adjust weight during training. 
+Two common types are: 
+ Mean Squared Error (MSE): used for regression problems. 
+ Cross Entropy Loss: used for classification tasks. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation means splitting data into many parts and testing on each 
+one at a time. Like 5-fold or 10-fold CV. 
+It is better than single split because it uses all data for training and testing, 
+giving more stable accuracy. It also reduce overfitting risk. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised learning is when model not given labels but still find pattern or 
+group. It learn hidden structure from data. 
+Examples are: 
+ K-Means Clustering 
+ Hierarchical Clustering 
+Sometimes PCA also counted because it reduce dimension without output 
+label. 
+B] Attempt any 4 (each 5 marks) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+Feature engineering mean modifying and creating features from raw data. It 
+is like preparing food ingredients before cooking. Without it model not work 
+properly. 
+Role: It make data more understandable for machine and make prediction 
+better. 
+Techniques: 
+ Encoding: Change text data into number like one-hot encoding. 
+ Scaling: Make all features same scale because algorithm like distance
+based get confused otherwise. 
+ Polynomial features: Create x², x³ to capture curve relation. 
+ Binning: Dividing continuous values into groups. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means is clustering algorithm that divide data into K group by distance. 
+Steps: 
+1. Select K random centers. 
+2. Assign data to nearest center. 
+3. Recalculate mean of each cluster. 
+4. Repeat until center stop changing. 
+Advantages: 
+ Easy and fast. 
+ Work well on big data. 
+ Simple to understand. 
+ But it not good for non-round shapes. 
+B-4. What is Early Stopping in ML training? Explain how it prevents 
+overfitting. 
+Early stopping means stopping training when validation accuracy start going 
+down. It prevent overfitting because model not allowed to memorize noise. 
+It is easy method used mostly in neural network training. When validation 
+loss increase, we stop and take best epoch. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model generalization. 
+Bias variance tradeoff is how we balance between underfitting and overfitting. 
+High bias mean simple model which miss pattern. High variance mean model 
+fit too much noise. 
+We need balance between them for generalization. 
+Example: 
+Linear regression high bias, decision tree high variance. Random forest balance 
+both. 

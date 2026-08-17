@@ -1,0 +1,18 @@
+ID-T036
+Name: saniya malhotra Roll no: 1
+Class :FY computer science
+Email : collegeemail0017@gmail.com
+
+A]
+
+A-1) What is model generalization in machine learning?
+Model generalization refers to the ability of a machine learning model to apply what it has learned from training data to new, unseen data accurately. A well-generalized model captures the true underlying patterns of the data instead of memorizing specific examples. Good generalization ensures reliable predictions in real-world scenarios and helps prevent problems like overfitting and underfitting
+A-2) Define data annotation.
+Data annotation is the process of labeling raw data with meaningful and correct tags so that it can be used for training supervised machine learning models. This may include labeling images, classifying text, tagging audio, or marking video frames. Accurate data annotation is essential because the quality of labeled data directly affects the learning process and overall performance of machine learning models.
+A-3) What is meant by model uncertainty?
+Model uncertainty refers to the degree of confidence a machine learning model has in its predictions. It indicates how reliable a prediction is, especially when the model encounters unfamiliar or noisy data. Understanding model uncertainty is important in critical applications such as healthcare and finance, where uncertain predictions may require human intervention or additional data before making decisions.
+A-4) What is ensemble learning?
+Ensemble learning is a machine learning approach that combines the predictions of multiple individual models to produce a more accurate and robust final prediction. Instead of relying on a single model, ensemble methods reduce errors by averaging or voting among models. Common ensemble techniques include bagging, boosting, and random forests, which help improve generalization and reduce overfitting.
+A-5) What is experiment reproducibility in machine learning?
+Experiment reproducibility in machine learning means that the same experiment can be repeated using identical data, methods, and parameters to obtain consistent results. It ensures transparency, reliability, and trust in research findings. Reproducibility allows other researchers to verify results, compare models fairly, and build upon existing work, making it a fundamental principle in scientific machine learning practice.
+

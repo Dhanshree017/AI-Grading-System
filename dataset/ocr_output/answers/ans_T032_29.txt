@@ -1,0 +1,60 @@
+ID-T032 
+Name: Kavya singh Roll no: 29 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (Each 5 Marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model 
+maintenance. 
+The machine learning lifecycle describes the complete process of developing, deploying, and 
+maintaining an ML system. 
+1. Problem Definition 
+The first step is to clearly define the problem and objectives. This includes identifying 
+what needs to be predicted or analyzed and determining success criteria. 
+2. Data Collection 
+Relevant data is gathered from various sources such as databases, sensors, or user 
+interactions. The quality and relevance of data directly affect model performance. 
+3. Data Preprocessing 
+Collected data is cleaned, transformed, and prepared. This includes handling missing 
+values, removing noise, and formatting data for learning. 
+4. Feature Engineering 
+Important features are selected or created to represent the data effectively. Good 
+features help the model learn meaningful patterns. 
+5. Model Training 
+A suitable algorithm is selected and trained on the prepared data so that it learns 
+relationships between inputs and outputs. 
+A-f. Discuss the ethical challenges associated with large-scale deployment of machine 
+learning systems. 
+Large-scale ML deployment raises several ethical concerns. 
+1. Bias and Fairness 
+Models may reflect social biases present in data. 
+2. Privacy Issues 
+Use of personal data can violate privacy. 
+3. Transparency 
+Complex models are difficult to explain. 
+4. Accountability 
+Responsibility for wrong decisions may be unclear. 
+5. Social Impact 
+Automation may affect employment and decision-making. 
+Ethical considerations are essential for responsible ML use. 
+A-g. Explain how machine learning systems adapt to changing data patterns over time. 
+Machine learning systems must adapt when data patterns change. 
+1. Continuous Learning 
+Models are updated with new data. 
+2. Monitoring Performance 
+Performance drops signal changes in data patterns. 
+3. Feedback Integration 
+User feedback helps refine predictions. 
+4. Periodic Retraining 
+Models are retrained to reflect current trends. 
+5. Adaptability 
+This ensures long-term effectiveness and reliability. 
+B] Attempt All (Each 2 Marks) 
+B-a. What is model training in machine learning? 
+Model training is the process of teaching a machine learning model to learn patterns from 
+data by adjusting its internal parameters. 
+B-b. Define feature selection. 
+Feature selection is the process of choosing the most relevant input features for building an 
+efficient ML model. 
+B-d. What is model deployment? 
+Model deployment is the process of integrating a trained ML model into a real-world system 
+for practical use. 

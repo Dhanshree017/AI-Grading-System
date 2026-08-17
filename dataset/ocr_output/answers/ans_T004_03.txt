@@ -1,0 +1,155 @@
+ID-T004 
+Name : Anannya Rathee Roll no : 3 
+Email : studentisdummy@gmail.com 
+Section A 
+A-1: What is machine learning? Explain its types in detail with examples. 
+Machine Learning (ML) is a branch of artificial intelligence that allows computers to learn from data 
+and improve their performance without being explicitly programmed for each task. Instead of giving 
+the computer fixed rules, ML lets it discover patterns and relationships from the data itself. 
+There are three main types of machine learning: 
+1. Supervised Learning: 
+ In supervised learning, the algorithm is provided with labeled data, which means every input has 
+a known output. The model learns to predict outputs for new inputs by recognizing patterns from 
+the labeled examples. 
+ Example: Predicting student grades based on hours studied and attendance. The model learns 
+from past students’ data and predicts grades for new students. 
+ Example: Email spam detection, where emails are labeled as "spam" or "not spam". 
+2. Unsupervised Learning: 
+ Unsupervised learning works with unlabeled data, where the outputs are unknown. The model 
+tries to find hidden patterns, relationships, or groupings within the data. 
+ Example: Grouping customers based on buying behavior without predefined categories. 
+ Example: Market basket analysis in retail to discover which products are frequently bought 
+together. 
+3. Reinforcement Learning: 
+ In reinforcement learning, an agent interacts with an environment and learns to make decisions 
+by trial and error. The agent receives rewards for good actions and penalties for bad actions, 
+with the goal of maximizing cumulative rewards. 
+ Example: Training a self-driving car to navigate streets safely. 
+ Example: Teaching an AI to play games like chess, Go, or video games where it improves strategy 
+over time. 
+Summary: 
+Machine learning allows systems to learn patterns, predict outcomes, and make data-driven decisions. 
+Supervised learning uses labeled data, unsupervised learning finds hidden structures, and reinforcement 
+learning uses trial-and-error with feedback to learn optimal strategies. 
+A-2: Explain how to choose an appropriate machine learning algorithm for a given dataset. Include steps 
+and considerations. 
+Choosing the right algorithm is a critical step in machine learning because using the wrong model can 
+lead to poor performance. Several factors must be considered before selecting an algorithm. 
+Steps to choose an algorithm: 
+ Identify the Problem Type: 
+o Is it a classification problem (predict categories), a regression problem (predict numeric 
+values), clustering (grouping data), or another type of task? 
+o Example: Predicting if a student passes or fails is classification. Predicting marks is 
+regression. 
+ Understand the Dataset: 
+o Examine the size of the dataset, number of features, feature types (numeric or 
+categorical), missing values, and outliers. 
+o Conduct exploratory data analysis (EDA) to understand correlations and distributions. 
+ Select Candidate Algorithms: 
+o For classification: Logistic Regression, Decision Trees, Random Forests, SVM 
+o For regression: Linear Regression, Decision Trees, Gradient Boosting 
+o For clustering: K-Means, DBSCAN, Hierarchical Clustering 
+ Split Data: 
+o Divide data into training and test sets (and optionally validation sets). 
+ Train and Evaluate: 
+o Train each candidate algorithm on the training set. 
+o Evaluate performance using appropriate metrics, such as accuracy, precision, recall, RMSE, 
+or R-squared. 
+ Fine-Tuning and Optimization: 
+o Adjust hyperparameters to improve performance. 
+o Consider computational cost, interpretability, and accuracy. 
+Considerations: 
+ Simple models may perform well on small datasets, while complex models may be necessary for 
+large, high-dimensional datasets. 
+ Trade-offs exist between interpretability and accuracy. In some domains like healthcare, 
+interpretability is important. 
+ Resource limitations may restrict the use of computationally heavy algorithms like deep learning. 
+A-5: Explain the bias-variance tradeoff in detail. Include examples and how it affects model performance. 
+The bias-variance tradeoff is a key concept in machine learning that affects a model’s ability to 
+generalize to unseen data. 
+ Bias: 
+o Error due to incorrect assumptions in the learning algorithm. 
+o High bias leads to underfitting, where the model cannot capture the underlying patterns. 
+o Example: Using a linear model to fit non-linear data results in poor predictions. 
+ Variance: 
+o Error due to sensitivity to small fluctuations in the training data. 
+o High variance leads to overfitting, where the model learns noise instead of the true 
+pattern. 
+o Example: Using a very complex decision tree that perfectly fits training data but performs 
+poorly on test data. 
+ Tradeoff: 
+o Low bias → model fits training data well, but may overfit (high variance). 
+o Low variance → model is stable, but may underfit (high bias). 
+o Goal: balance bias and variance to minimize total error. 
+Practical Example: 
+ Predicting student marks: 
+o Underfitting: Using a simple average of past scores ignores important factors like study 
+hours and attendance. 
+o Overfitting: Using an overly complex model that memorizes each student’s past 
+performance may fail to generalize to new students. 
+Summary: 
+The bias-variance tradeoff is about finding the optimal balance between simplicity and complexity. 
+Techniques like cross-validation, regularization, and ensemble methods help achieve this balance. 
+A-6: Describe the K-Nearest Neighbors (KNN) algorithm. Explain its advantages, disadvantages, and 
+use cases. 
+K-Nearest Neighbors (KNN) is a simple, intuitive algorithm used for both classification and regression. 
+How it Works: 
+ Measures the distance between a new input and all points in the training set. 
+ Selects K closest points (neighbors). 
+ For classification: assigns the class most common among neighbors. 
+ For regression: predicts the average value of neighbors. 
+Advantages: 
+ Simple and easy to understand. 
+ Non-parametric; no assumptions about data distribution. 
+ Flexible for classification and regression tasks. 
+Disadvantages: 
+ Slow for large datasets because it computes distance for every point. 
+ Sensitive to irrelevant features and scaling; requires normalization. 
+ Choice of K affects performance: small K → noisy predictions, large K → smooth predictions. 
+Use Cases: 
+ Student performance prediction based on study patterns. 
+ Recommendation systems. 
+ Medical diagnosis. 
+Section B 
+B-2: Explain the difference between classification and regression. 
+Classification and regression are both types of supervised learning: 
+ Classification: predicts categorical outcomes. 
+o Example: Predicting whether a student passes or fails. 
+o Goal: Assign data points to one of the classes. 
+o Evaluation metrics: accuracy, precision, recall, F1-score. 
+ Regression: predicts continuous outcomes. 
+o Example: Predicting the exact marks a student will score. 
+o Goal: Estimate numeric value based on input features. 
+o Evaluation metrics: Mean Squared Error, R-squared. 
+While both predict outputs from labeled data, classification deals with categories, and regression deals 
+with numbers. Choosing the correct approach is essential for performance. 
+B-3: What is a confusion matrix? Explain precision, recall, and F1-score. 
+A confusion matrix evaluates classification model performance by comparing predicted labels to true 
+labels. 
+ True Positives (TP): Correctly predicted positives. 
+ True Negatives (TN): Correctly predicted negatives. 
+ False Positives (FP): Incorrectly predicted positives. 
+ False Negatives (FN): Incorrectly predicted negatives. 
+Metrics: 
+ Precision: TP / (TP + FP) — proportion of positive predictions that are correct. 
+ Recall: TP / (TP + FN) — proportion of actual positives correctly identified. 
+ F1-score: harmonic mean of precision and recall — balances the two. 
+Example: Predicting if students pass: 
+ Precision: how many students predicted as passing actually passed. 
+ Recall: how many of the actual passing students were correctly predicted. 
+ F1-score balances both metrics for imbalanced datasets. 
+B-4: Differentiate between training, validation, and test sets. 
+ Training Set: Used to fit the model; largest portion of data. 
+ Validation Set: Used to tune hyperparameters and prevent overfitting. 
+ Test Set: Used once for final evaluation; measures generalization to new data. 
+Example: Predicting student grades: 
+ Training: 70% of student data 
+ Validation: 15% for parameter tuning 
+ Test: 15% for final performance check 
+B-5: What are parametric and non-parametric models? Give examples. 
+ Parametric Models: Have a fixed number of parameters; assume a data distribution. 
+o Example: Linear Regression, Logistic Regression 
+o Simple, fast, but limited flexibility 
+ Non-Parametric Models: Flexible; no fixed parameters; can adapt to data complexity. 
+o Example: KNN, Decision Trees, Random Forests 
+o More flexible, can model complex patterns, but slower and may overfit 

@@ -1,0 +1,43 @@
+ID-T031 
+Name: Harendra Chauhan Roll no: 306510 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Answer All Questions (Each 5 Marks) 
+A-4. Explain the difference between model performance and model reliability. 
+Model performance and model reliability are two distinct but complementary aspects of 
+evaluating machine learning systems. Understanding the difference between them is essential 
+for deploying models in real-world environments. 
+Model performance refers to how effectively a model produces correct predictions under 
+specific evaluation conditions. It reflects the model’s accuracy and effectiveness on a given 
+dataset and is often assessed using quantitative evaluation measures. 
+Model reliability, on the other hand, refers to the consistency and robustness of the model’s 
+behavior across different datasets, environments, and time periods. A reliable model 
+continues to perform reasonably well even when conditions change slightly or when data 
+contains variability. 
+A model may exhibit high performance during testing but still be unreliable if it is sensitive 
+to small changes in input data. Such models may fail in real-world applications despite 
+strong initial results. 
+Reliability is especially important in critical systems where consistent behavior is essential. 
+While performance measures immediate success, reliability determines long-term trust and 
+usability. 
+In summary, performance evaluates how well a model works, whereas reliability evaluates 
+how dependably it works. Both are essential for building effective machine learning systems. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback is a fundamental mechanism through which machine learning systems evolve and 
+improve over time. It provides information about the quality of a model’s predictions and 
+enables continuous refinement. 
+Feedback can be explicit, such as user ratings or corrections, or implicit, such as user 
+behavior and system outcomes. This information helps the model identify errors, adjust 
+internal representations, and improve future predictions. 
+In learning systems, feedback serves as a signal that guides model updates. When predictions 
+are correct, feedback reinforces existing patterns. When predictions are incorrect, feedback 
+highlights areas that require adjustment. This iterative process leads to gradual improvement 
+in accuracy and adaptability. 
+Feedback is particularly important in dynamic environments where data patterns change over 
+time. By continuously incorporating feedback, machine learning systems remain relevant and 
+responsive to new trends. 
+Furthermore, feedback helps identify biases and limitations within models, allowing 
+developers to improve fairness and reliability. Without feedback, models become static and 
+lose effectiveness. 
+Thus, feedback transforms machine learning systems from one-time solutions into adaptive 
+systems capable of long-term learning and improvement. 

@@ -1,0 +1,33 @@
+
+
+--- PAGE 1 ---
+ID — T017
+Machine Learning Exam
+Total Marks 70
+TY- Data Science
+Date-21-09-2023
+
+A | Attempt all (each 3 marks )
+1 . Give 5 Domains of AI
+2. what is data preprocessing ?and why it is important?
+3 . what are hyperparameters ? , give two example
+4 . Explain types of clustering
+5. what is classification and regression ?, explain with examples
+6. Give advantages and Disadvantages of Decision tree
+7. how to make model underfit and overfit
+8. Give 5 application of machine learning in real life
+9. state steps in making ML models
+10. importance of data in ML
+B | Attempt any 5 ( each marks 8)
+
+1. Discuss the challenges in machine learning , such as imbalanced data ,missing values , curse of dimensionality and concept drift , Provide solution for each
+
+2. What is Regularization and its role in ML ? explain its types in detail.
+
+3. What is Ensemble Learning , explain Bagging and Boosting with Examples
+
+4. Describe Entire ML Pipeline , explain each step and explain how to evaluate Model.
+
+5. What are the types data ML uses , What are the quality of good data?
+
+6. Write note on Naive bayes and SVM in detail

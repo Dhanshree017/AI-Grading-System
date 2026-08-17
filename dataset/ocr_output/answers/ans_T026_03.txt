@@ -1,0 +1,115 @@
+ID-T026 
+Name: Sweta Desai Roll no: 3 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of bias and their 
+impact on model generalization. 
+Learning bias in machine learning refers to the systematic error that arises from a model making incorrect 
+assumptions about the data, often resulting in consistently skewed or inaccurate predictions. It is a core 
+component of a model's total error and a key factor in the bias-variance tradeoff.  
+Sources of Bias 
+Bias can be introduced at various stages of the machine learning pipeline, from data collection to model 
+deployment. Key sources include:  
+ Historical Bias: This stems from using historical data that reflects past societal prejudices or systemic 
+discrimination. An AI hiring tool trained on a decade of predominantly male applications at a tech company 
+learned to discriminate against female candidates. 
+ Sample/Selection Bias: This occurs when the data used for training does not accurately represent the real
+world population the model is intended to serve. A facial recognition system trained mostly on lighter skin 
+tones will perform poorly on darker-skinned individuals. 
+ Measurement Bias: This arises from systematic errors in how data is collected or measured. Flawed sensor 
+equipment or biased survey questions can introduce inaccuracies, leading to a skewed understanding of 
+patterns. 
+ Exclusion Bias: Important data points or features are systematically left out of the dataset. For example, a 
+healthcare model that excludes data from patients with rare conditions will be unable to diagnose them 
+accurately. 
+ Algorithmic Bias: The choices made during algorithm design, such as specific optimization goals or feature 
+weighting, can introduce bias. A model optimized solely for overall accuracy might overlook fairness 
+constraints for specific subgroups. 
+ Prejudice Bias: This occurs when human prejudices and stereotypes from developers or data labelers seep 
+into the model through subjective judgments during data annotation or feature engineering.  
+Impact on Model Generalization 
+The primary impact of bias is on a model's ability to generalize well to new, unseen data.  
+ Underfitting: High-bias models are often too simplistic and make strong, erroneous assumptions about the 
+data, causing them to miss complex, underlying patterns. This results in underfitting, where the model 
+performs poorly on both the training data and new data. 
+ Poor Generalization: Biased models fail to provide consistent and fair performance across diverse 
+populations or scenarios in the real world. 
+ Reinforcement of Inequality: Models can perpetuate and even amplify existing social inequalities, leading 
+to discriminatory outcomes in high-stakes areas like loan approvals, healthcare diagnoses, and criminal 
+justice. 
+ Erosion of Trust: When AI systems produce consistently unfair or unreliable results, it erodes public trust 
+in the technology and the organizations that deploy it, potentially leading to legal and ethical challenges.  
+Ultimately, minimizing bias (along with variance) is crucial for building robust, ethical, and effective 
+machine learning systems that perform reliably in the real world.  
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Concept of Learning Bias 
+Learning bias in machine learning refers to systematic errors that occur when a model consistently learns 
+incorrect or incomplete patterns from training data due to limitations in data, algorithm design, or 
+assumptions. 
+Sources of Learning Bias 
+1. Data Bias – Training data may not represent the real-world population accurately. 
+2. Sampling Bias – Certain classes or groups are overrepresented or underrepresented. 
+3. Measurement Bias – Errors introduced during data collection or feature measurement. 
+4. Labeling Bias – Incorrect or subjective labeling by humans. 
+5. Algorithmic Bias – Bias caused by the learning algorithm’s internal design. 
+6. Historical Bias – Bias inherited from past social or institutional practices. 
+7. Feature Bias – Selection of biased or incomplete features. 
+Impact on Model Generalization 
+8. Models may perform well on training data but fail on unseen data. 
+9. Biased models often produce unfair or unreliable predictions. 
+Learning bias reduces accuracy, robustness, and trustworthiness of ML systems. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that performs well 
+on training data may fail on unseen data. 
+Concept of Generalization 
+Generalization is the ability of a machine learning model to apply learned patterns from training data to new, 
+unseen data accurately. 
+Reasons for Poor Generalization 
+1. Overfitting – Model memorizes training data instead of learning general patterns. 
+2. Excessive Model Complexity – Complex models capture noise as information. 
+3. Insufficient or Limited Training Data – Model fails to learn true patterns. 
+4. Noise in Training Data – Noisy data misleads the learning process. 
+5. Poor Feature Selection – Irrelevant features harm prediction quality. 
+6. Lack of Regularization – No control over model complexity. 
+7. Data Leakage – Test information leaks into training data. 
+8. Distribution Shift – Training and real-world data differ. 
+9. High Variance – Model becomes sensitive to small data changes. 
+10. Proper generalization requires balanced complexity and quality data. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, missing 
+values, and inconsistencies affect learning outcomes. 
+Importance of Data Quality 
+Data quality is critical in machine learning as models learn patterns directly from data; poor-quality data 
+leads to unreliable predictions. 
+Effect of Noise in Data 
+1. Noise introduces random errors that confuse the learning algorithm. 
+2. Models may learn incorrect patterns from noisy data. 
+Effect of Missing Values 
+3. Missing data reduces the completeness of training information. 
+4. It can introduce bias if missingness is not random. 
+Effect of Data Inconsistencies 
+5. Inconsistent data values reduce model reliability. 
+6. Conflicting records degrade prediction accuracy. 
+Overall Impact on Learning Outcomes 
+7. Poor data quality reduces accuracy and robustness. 
+8. Models may overfit or underfit. 
+9. Generalization performance declines. 
+10. High-quality data leads to stable and trustworthy ML systems. 
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss their 
+characteristics, strengths, and limitations in theory. 
+Concept of Learning Bias 
+Learning bias in machine learning refers to systematic errors that occur when a model consistently learns 
+incorrect or incomplete patterns from training data due to limitations in data, algorithm design, or 
+assumptions. 
+Sources of Learning Bias 
+8. Data Bias – Training data may not represent the real-world population accurately. 
+9. Sampling Bias – Certain classes or groups are overrepresented or underrepresented. 
+10. Measurement Bias – Errors introduced during data collection or feature measurement. 
+11. Labeling Bias – Incorrect or subjective labeling by humans. 
+12. Algorithmic Bias – Bias caused by the learning algorithm’s internal design. 
+13. Historical Bias – Bias inherited from past social or institutional practices. 
+14. Feature Bias – Selection of biased or incomplete features. 
+Impact on Model Generalization 
+10. Models may perform well on training data but fail on unseen data. 
+11. Biased models often produce unfair or unreliable predictions. 
+Learning bias reduces accuracy, robustness, and trustworthiness of ML systems. 

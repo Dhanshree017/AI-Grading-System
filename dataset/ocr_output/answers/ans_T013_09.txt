@@ -1,0 +1,74 @@
+ID-T013 
+Name : Anushka Bhatia Roll no: 9 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting is when model study too much and memorize everything but fail 
+in real world. Like student who read only notes and cannot answer new 
+question. One method to reduce it is dropout. Dropout mean randomly 
+ignore some neurons when training so it not depend too much on few 
+neurons. Another method is using less complex model or early stopping. 
+Overfitting is main problem in deep learning and happen when training data 
+not much or noise data exist. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is table show how good classification model is working. It 
+show true positive, true negative, false positive, false negative. It help to 
+calculate accuracy, precision, recall, F1-score. For example if we predict spam 
+mail, confusion matrix show how many correct spam, wrong spam, correct 
+non-spam etc. 
+It is very usefull because it not only tell total accuracy but also detail view 
+of error. Sometime accuracy high but class imbalance happen, confusion 
+matrix help to detect that. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection mean choose best and useful columns or attributes from 
+data. Not all features important, some only create noise. By selecting correct 
+features, model train fast, accuracy improve, and overfit reduce. 
+For example, if we want predict house price, “location” and “size” matter 
+but “house color” maybe not. So we remove it. Feature selection methods 
+are filter, wrapper, embedded. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation function are function used inside neural network to give non
+linearity. Without it, network just behave like simple linear regression. 
+Activation decide output of neuron. 
+Common examples are ReLU (Rectified Linear Unit) and Sigmoid. ReLU is 
+f(x)=max(0,x), simple and fast. Sigmoid map input between 0 and 1 so used 
+in binary classification. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+Learning rate is small number decide how much step model take during 
+optimization. If learning rate too high model jump around and not converge. 
+If too low it take too long to learn or stuck in local minima. Usually between 
+0.001 to 0.01 for good training. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+Loss function measure how far predicted value from actual. It is used by 
+optimizer to adjust weight. Common loss are Mean Squared Error (MSE) for 
+regression and Cross Entropy Loss for classification. It help minimize error 
+step by step during training. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross validation divide data into multiple parts (folds) and train model on 
+different fold combinations. Like K-fold CV. It give average performance that 
+is more stable and not depend on one random split. Advantage is better 
+generalization estimate and less overfitting chance. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised learning mean no label given, model find pattern itself. Example 
+algorithms are K-Means Clustering and PCA (Principal Component Analysis). It 
+used in grouping, pattern discovery, dimensionality reduction. 
+SECTION B –  
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-means is unsupervised method for clustering. Steps: 
+1. Choose K (number of clusters). 
+2. Initialize K centroids randomly. 
+3. Assign each data point to nearest centroid. 
+4. Recalculate centroid as mean of all assigned points. 
+5. Repeat until centroid stop moving. 
+Advantages: simple, fast, works well for spherical data. Disadvantages: 
+need K before, sensitive to outlier. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping is technique to stop training before model overfit. During 
+training we monitor validation loss, when it stop decreasing or start 
+increasing, we stop. 
+It help prevent overfitting because if train too long, model memorize training 
+data and lose generalization. Early stopping act like control for learning time. 

@@ -1,0 +1,127 @@
+ID-T017 
+Name: Anju bijlani Roll no: 28 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-1. Give 5 Domains of AI 
+   Perception & Computer Vision — extracting semantic information from 
+images/video (detection, segmentation, pose). 
+   Language Intelligence (NLP & Conversational AI) — parsing, understanding 
+and generating human language (translation, dialog). 
+   Autonomous Systems & Robotics — sensing, planning and control for embodied 
+agents (navigation, manipulation). 
+   Learning & Optimization (Machine Learning) — algorithms that infer patterns 
+from data (supervised, unsupervised, reinforcement). 
+   Knowledge & Reasoning — representation of facts, rules and inference engines 
+for decision support and explainable AI. 
+A-6. Advantages & Disadvantages of Decision Tree 
+Advantages are: it is simple to understand, looks like family tree, can be drawn on paper and 
+teacher likes diagrams. It handles numerical and non-numerical both. Disadvantages: it 
+overfits easily, and sometimes tree becomes too tall like coconut tree. Also if root node is 
+wrong whole model collapses. It doesn’t work nicely with big image data also. 
+A-7. How to make model underfit and overfit 
+Model underfits when you don’t give proper features or train for few seconds only. Also 
+using linear model for very complicated problem will do underfit. Overfit happens when we 
+train too much and don’t stop, like studying one chapter whole year. Also using big neural 
+network and very tiny data also creates overfit. If we add too many layers and not giving any 
+regularization, model memorizes everything like parrot. 
+A-8. Applications of ML in real life 
+Machine learning is everywhere like mobile face unlock, spam detection, self-driving cars, 
+predicting shop sales, YouTube recommendations. Also sometimes in washing machines 
+“smart wash system” they also say ML but not sure. Traffic signals also use ML nowadays to 
+adjust timings. Even banks use it to catch fraud. 
+A-9. Steps in making ML models 
+First step collect data, then do cleaning, then convert data into features. After this choose 
+algorithm and train it. Then check performance and tune hyperparameters. Then make final 
+model and deploy. After deployment we watch it and update if getting errors. Also 
+sometimes last step is making documentation but I always forget it. 
+A-10. Importance of data in ML 
+Data is like fuel for ML. Without data the model is just empty skeleton. Good data makes 
+model accurate while bad data will confuse model like wrong notes confuse a student. More 
+data generally makes model stable. Also balanced data is important otherwise model learns 
+only one class. 
+SECTION B —  
+B-1. Challenges in ML & solutions 
+Imbalanced Data 
+ Problem: models favor majority class; accuracy misleading. 
+ Solutions: oversampling minority (SMOTE variants), careful undersampling, class-weighted losses, 
+focal loss, ensemble methods oriented to balance, use appropriate metrics (PR-AUC, F1). 
+Missing Values 
+ Problem: reduce usable samples, bias if not MCAR. 
+ Solutions: analyze missing mechanism (MCAR/MAR/MNAR); simple imputations (mean/median) 
+when safe; model-based imputation (KNN, MICE); use missingness as a feature; prefer algorithms 
+tolerant to NAs (tree-based boosters). 
+Curse of Dimensionality 
+ Problem: distance metrics degrade; sparsity increases, overfitting risk. 
+ Solutions: feature selection (mutual info, L1), dimensionality reduction (PCA, autoencoders), 
+regularization, domain-specific feature synthesis, collect more samples. 
+Concept Drift 
+ Problem: P(X) or P(Y|X) changes over time causing performance drop. 
+ Solutions: online/incremental learning, retrain on recent data (sliding window), drift detectors to 
+trigger retraining, ensembles weighting recent models, and continuous monitoring with feedback 
+loops. 
+. 
+B-2. What is Regularization? Explain types 
+Regularization means controlling the model so it doesn’t behave like overexcited student. L1 
+regularization pushes weights to zero which reduces features. L2 makes weights smaller but 
+not zero. Dropout randomly removes neurons so network becomes stronger later. Early 
+stopping stops training early. Regularization makes model generalize but sometimes if we 
+add too much it becomes weak and lazy. 
+B-3. What is Ensemble Learning? Explain Bagging & Boosting 
+Principle: combine multiple models to reduce error components (variance, bias) and increase robustness. 
+Bagging (Bootstrap Aggregating) 
+ Mechanism: train base learners independently on bootstrap samples; aggregate predictions 
+(averaging/voting). 
+ Effect: lowers variance by averaging uncorrelated errors. 
+ Example: Random Forest — bagged decision trees with additional random feature selection per split; 
+strong off-the-shelf performance and resilience to overfitting. 
+Boosting 
+ Mechanism: sequentially fit weak learners where each new learner focuses on residuals or 
+misclassified instances of the ensemble so far. 
+ Effect: reduces bias and often variance when regularized; converts many weak learners into a strong 
+predictor. 
+ Examples: AdaBoost (reweights examples), Gradient Boosting (fit negative gradients; 
+implementations: XGBoost, LightGBM, CatBoost). Regularization (shrinkage, tree constraints) 
+crucial to prevent overfitting. 
+Stacking & Blending: meta-learner trained on base model predictions to capture complementary strengths. 
+B-4. Entire ML Pipeline & model evaluation 
+Pipeline starts with understanding problem then collecting dataset. Next comes cleaning and 
+preprocessing. Then feature engineering where we create new columns. Then select best 
+algorithm and train it. After training we validate with test set. If results are bad tune 
+hyperparameters. After finalizing model we deploy on cloud or local. For evaluation we use 
+accuracy, F1-score, RMSE, confusion matrix etc. 
+An entire ML pipeline is an automated, end-to-end workflow from data collection to 
+deployment, consisting of steps like data preprocessing, feature engineering, model selection, 
+training, evaluation, and deployment. Model evaluation is a critical step within this 
+pipeline that assesses the trained model's performance on unseen data to ensure it 
+generalizes well and is ready for real-world use. Evaluation uses metrics like 
+accuracy, precision, recall, F1-score, and confusion matrices for classification, and 
+MAE, MSE, or RMSE for regression.  
+B-5. Types of data ML uses & qualities of good data 
+Machine learning uses different types of data, including numerical (e.g., age, price) 
+and categorical (e.g., gender, color) data. Other important data types include time 
+series and text. Good data is accurate, complete, consistent, and relevant to the 
+problem, which ensures the model can learn reliable patterns and make accurate 
+predictions.  
+Types of data in ML 
+ Numerical (Quantitative): Data that can be measured or counted. 
+o Discrete: Countable values, such as the number of customers or clicks. 
+o Continuous: Measurable values, such as temperature, stock price, or height. 
+ Categorical (Qualitative): Data that consists of labels or categories. 
+o Nominal: Categories without a meaningful order, such as eye color or gender. 
+o Ordinal: Categories with a meaningful order or ranking, such as customer 
+satisfaction levels (poor, average, good). 
+ Time Series: Data points indexed in time order, like stock prices or weather 
+patterns. 
+ Text: Human language, from individual words to entire documents. 
+ Multimedia: Images, videos, and audio files.  
+Qualities of good data 
+ Accuracy: The data must be correct and valid. 
+ Completeness: The dataset should be free of missing values to the extent possible. 
+ Consistency: Data should be uniform across the dataset and its sources. 
+ Relevance: The data must be relevant to the specific problem the model is trying to 
+solve. 
+ Granularity: The data should be at the right level of detail for the task at hand. 
+ Volume: A sufficient amount of data is crucial for training models, though too much 
+can be problematic. 
+ Timeliness: The data must be recent enough to be useful for the task. 

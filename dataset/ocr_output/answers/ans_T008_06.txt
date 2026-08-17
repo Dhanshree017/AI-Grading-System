@@ -1,0 +1,197 @@
+ID-T008 
+Name : Aarush Sonkar Roll no: 6 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+1] Attempt All (Each 2 marks) 
+1-a) Write about Inductive Bias 
+Inductive bias refers to the set of assumptions that a learning algorithm uses 
+to predict outputs for unseen data. Without such assumptions, a learning 
+algorithm cannot generalize beyond the training examples. It guides the 
+algorithm to prefer one hypothesis over another when multiple solutions fit 
+the training data equally well. Different algorithms have different biases; for 
+example, linear regression assumes a linear relationship between features and 
+outputs, while decision trees favor hierarchical splitting of data. A strong bias 
+can make learning faster but may reduce flexibility, whereas a weak bias may 
+allow more flexible learning but slower convergence. 
+Key Points: 
+ Assumptions that guide learning. 
+ Helps generalize from limited data. 
+ Varies across algorithms. 
+ Strong bias → faster learning; weak bias → more flexible learning. 
+Example: If a decision tree is used to classify fruits based on size and color, 
+it might prefer shorter trees (fewer splits), which is its inductive bias. This 
+ensures faster predictions and reduces overfitting. 
+1-b) Define Hypothesis 
+A hypothesis is a candidate model or function that maps input features to 
+output predictions. During training, the learning algorithm evaluates multiple 
+hypotheses and selects the one that best fits the training data while 
+maintaining generalization. Hypotheses can be simple, such as a linear 
+regression line, or complex, like a deep neural network. Selecting the right 
+hypothesis is essential because a poor choice can lead to underfitting or 
+overfitting. 
+Key Points: 
+ Candidate function mapping input to output. 
+ Evaluated to fit data. 
+ Can be simple or complex. 
+ Important for prediction accuracy. 
+Example: Predicting student marks using Marks = 50 + 5 × Hours Studied. 
+This formula is a hypothesis which can be validated against actual data to 
+check its accuracy. 
+1-c) Write about Sampling Theories 
+Sampling theory deals with selecting a representative subset of data from a 
+larger population. Proper sampling ensures the algorithm can learn general 
+patterns without bias. Methods include: 
+ Random Sampling: Each data point has an equal chance of selection. 
+ Stratified Sampling: Ensures proportional representation of subgroups. 
+ Systematic Sampling: Selecting at regular intervals. 
+ Cluster Sampling: Dividing data into clusters and sampling entire 
+clusters. 
+Key Points: 
+ Reduces computation for large datasets. 
+ Avoids bias and improves generalization. 
+ Important for statistical validity of the model. 
+Example: From a university of 10,000 students, randomly selecting 200 
+students to study average performance ensures the sample represents the 
+population. 
+1-d) Define Eager Learning 
+Eager learning refers to learning methods that construct a general model 
+during the training phase and then use it for predictions. These models are 
+fast at prediction time but may require heavy computation during training. 
+Examples include decision trees, Naïve Bayes, and linear regression. 
+Key Points: 
+ Builds model during training. 
+ Predictions are fast. 
+ Heavy upfront computation. 
+ Examples: Decision trees, Naïve Bayes. 
+Example: A decision tree trained to classify emails as spam or not can 
+instantly predict new emails once the tree is built. 
+1-e) What is Lazy Learning 
+Lazy learning delays generalization until a query is received. The system 
+stores the training data and computes predictions on-demand. K-Nearest 
+Neighbor (KNN) is a typical example. Lazy learners adapt well to new data 
+but are slower for large datasets. 
+Key Points: 
+ Generalization delayed until query. 
+ Stores training data. 
+ Computation happens during prediction. 
+ Example: KNN for movie recommendation based on similar users’ 
+preferences. 
+1-f) Define Term Genetic 
+Genetic algorithms are optimization techniques inspired by natural selection. 
+A population of candidate solutions evolves over generations through selection, 
+crossover, and mutation. Each solution has a fitness score, and the algorithm 
+iteratively improves solutions. 
+Key Points: 
+ Population-based search. 
+ Uses selection, crossover, mutation. 
+ Fitness function evaluates solutions. 
+ Useful for complex optimization problems. 
+Example: Scheduling airline flights to minimize delays while maximizing revenue 
+using evolving candidate solutions. 
+1-g) Discuss Dynamic Programming 
+Dynamic Programming (DP) solves problems by breaking them into 
+subproblems, storing their solutions, and reusing them. It improves efficiency 
+in optimization problems and avoids recomputation. Approaches include top
+down (memoization) and bottom-up (tabulation). 
+Key Points: 
+ Breaks problem into subproblems. 
+ Stores intermediate results. 
+ Avoids redundant computation. 
+ Top-down and bottom-up approaches. 
+Example: Finding the longest common subsequence in DNA sequences to 
+identify genetic similarity. 
+1-h) Define Explanation Based Learning 
+Explanation Based Learning (EBL) generalizes rules from one or few examples 
+using prior knowledge. The system explains why an example is correct and 
+applies the reasoning to new cases, reducing the number of examples needed. 
+Key Points: 
+ Generalizes from few examples. 
+ Uses prior knowledge. 
+ Reduces training data requirements. 
+Example: A robot learns one way to stack boxes and generalizes the strategy 
+for different boxes of similar shape and weight. 
+1-i) Write about Control Knowledge 
+Control knowledge directs the system on which rules or actions to prioritize, 
+improving problem-solving efficiency. 
+Key Points: 
+ Guides rule selection. 
+ Focuses on promising paths. 
+ Improves speed and accuracy. 
+Example: In chess AI, aggressive moves may be evaluated first because they 
+have a higher chance of winning. 
+1-j) Define Precision, Recall, and F1 Score 
+Precision measures the fraction of correctly predicted positives, recall 
+measures how many actual positives were detected, and F1 Score balances 
+both. These are crucial for imbalanced datasets. 
+Example: Fraud detection: Precision ensures non-fraud cases are not falsely 
+flagged, recall ensures most frauds are detected, and F1 Score balances both 
+for overall performance evaluation. 
+2] Attempt Any 6 (Random: a, c, d, f, g, b) 
+2-a) Explain Decision Tree in detail, give example 
+A decision tree is a supervised learning model for classification and regression. 
+It recursively splits the dataset based on feature values to build a tree-like 
+structure. 
+Components: 
+ Root Node: Represents the whole dataset. 
+ Decision Nodes: Internal nodes where a feature is tested. 
+ Branches: Represent possible outcomes of the decision. 
+ Leaf Nodes: Final predictions or class labels. 
+Working: 
+1. Select the root node representing the dataset. 
+2. Choose the best feature to split using criteria like Information Gain or 
+Gini Index. 
+3. Partition the dataset into subsets based on the chosen feature. 
+4. Repeat recursively until a stopping condition is met. 
+Example: Classifying fruits (apple, orange, mango) based on color, size, and 
+texture. Color is used first, size next, and texture last. Leaf nodes give the 
+final classification. 
+2-b) Describe briefly about K-Nearest Neighbors (KNN) 
+KNN is a lazy learning algorithm that classifies a new instance based on the 
+majority label of its K nearest neighbors in feature space. Distance metrics 
+like Euclidean or Manhattan are used. 
+Example: Recommending a movie to a user based on preferences of the 5 
+nearest users in the dataset. 
+2-c) Discuss Representation of Neural Network 
+Neural networks are inspired by the brain, consisting of input, hidden, and 
+output layers. Neurons compute weighted sums of inputs, add bias, and pass 
+through activation functions. Outputs from one layer feed into the next. 
+Training involves forward propagation and backpropagation to adjust weights. 
+Example: Handwriting recognition: Input neurons take pixel values, hidden 
+layers detect strokes and curves, output neurons predict letters or numbers. 
+2-d) Differentiate Classification & Regression 
+Classification predicts discrete labels, regression predicts continuous values. 
+Feature 
+Output 
+Classification 
+Discrete categories 
+Algorithms Decision Tree, SVM 
+Metrics 
+Accuracy, Precision, Recall MSE, R² 
+Example Spam detection 
+Regression 
+Continuous values 
+Linear Regression, Polynomial Regression 
+Predicting house prices 
+2-f) Compare AI, ML, Deep Learning 
+AI is the broad field of building intelligent machines. ML is a subset where 
+machines learn from data. Deep learning uses multi-layer neural networks to 
+extract complex patterns automatically. 
+Example: AI – Chess AI, ML – Predict stock prices, DL – Automatic image 
+captioning. 
+2-g) Differentiate CNN & RNN 
+CNN processes spatial data using convolutional layers; RNN handles sequential 
+data with memory of past inputs. 
+Feature 
+Input 
+Layers 
+CNN 
+Images 
+RNN 
+Text/Speech 
+Convolution + Pooling Recurrent + Hidden States 
+Strength Spatial patterns 
+Weakness Sequence handling 
+Example Image recognition 
+Sequential patterns 
+Vanishing gradients 
+Language modeling 

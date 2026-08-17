@@ -1,0 +1,63 @@
+ID-T024 
+Name: rahul tilak Roll no: 2 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised and unsupervised learning are two major learning methods in machine learning. 
+The main difference between them is availability of labeled data. 
+Supervised learning is the learning where data is already labeled. Means input and output 
+both are known to the model. The model learn mapping between input features and output 
+labels. During training, error is calculated and model improve itself. 
+Examples of supervised learning are email spam detection where emails are marked spam or 
+not spam, house price prediction where past prices are known, and disease prediction where 
+patient data has diagnosis. 
+Unsupervised learning is the learning where data is not labeled. The model do not know 
+correct answer. It try to find hidden pattern or structure from data itself. 
+Examples of unsupervised learning are customer segmentation in shopping websites, 
+grouping similar documents, and anomaly detection in network traffic. 
+In short, supervised learning predict known outputs while unsupervised learning discover 
+unknown patterns. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is the process of preparing raw data into usable format for machine 
+learning model. 
+Raw data usually contain noise, missing values, errors and inconsistency. Without 
+preprocessing model performance become poor. 
+Four common preprocessing steps are: 
+1. Handling missing values 
+Missing values are replaced using mean, median or mode or sometimes rows are 
+removed to avoid wrong learning. 
+2. Data cleaning 
+Wrong values, duplicate entries and inconsistent data are removed to improve data 
+quality. 
+3. Encoding categorical data 
+Text or category values like gender or city are converted into numeric form using label 
+encoding or one hot encoding. 
+These steps help model to learn faster and more accurately. 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification and regression are types of supervised learning problems. 
+Classification problem is when output belong to fixed categories. The model assign input 
+into one of the classes. 
+Regression problem is when output is continuous numeric value. The model predict quantity. 
+Main difference is classification give category output while regression give numeric output. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is the condition when model learn training data too much including noise and fail 
+to perform well on new data. 
+Causes of overfitting are: 
+ Very complex model 
+ Too many features 
+ Small dataset 
+ Training for too many epochs 
+ Noise in data 
+Two techniques to reduce overfitting are: 
+1. Regularization 
+Regularization add penalty to large weights so that model become simple and 
+generalize better. 
+2. Cross validation 
+Data is divided into multiple parts and model is trained and tested many times to get 
+stable performance. 
+These methods reduce variance and improve generalization. 

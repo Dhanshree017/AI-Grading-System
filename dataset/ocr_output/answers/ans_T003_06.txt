@@ -1,0 +1,92 @@
+ID-T003 
+Name : alisha christopher  Roll no : 6 
+Email : alish@gmail.com 
+Section A 
+A-2. Explain the difference between training and test sets. 
+ Training set: 
+o Used to fit the model and learn patterns. 
+o Contains input features and corresponding labels (in supervised learning). 
+o Helps model optimize parameters. 
+ Test set: 
+o Evaluates model performance on unseen data. 
+o Provides an estimate of generalization ability. 
+o Prevents overfitting assessment bias. 
+ Key difference: 
+o Training = learning, Test = evaluation. 
+o Using the same data for both leads to misleading performance. 
+A-3. What is the difference between parametric and non-parametric models? 
+ Parametric models: 
+o Assume a specific functional form. 
+o Fixed number of parameters. 
+o Fast, simple, require less data. 
+o Example: Linear regression, Logistic regression. 
+o Limitation: Cannot model complex relationships well. 
+ Non-parametric models: 
+o No fixed functional form; flexibility grows with data. 
+o Can capture complex patterns. 
+o Require more data and computational resources. 
+o Example: KNN, Decision trees. 
+A-4. What is overfitting, and how can you avoid it? 
+ Overfitting: 
+o Model learns training data including noise. 
+o High accuracy on training, poor performance on unseen data. 
+ Prevention techniques: 
+o Increase training data. 
+o Regularization (L1, L2). 
+o Dropout in neural networks. 
+o Early stopping. 
+o Use simpler models or reduce features. 
+o Cross-validation to tune hyperparameters. 
+A-5. What is underfitting, and how can you prevent it? 
+ Underfitting: 
+o Model too simple, cannot capture patterns in data. 
+o Poor performance on both training and test sets. 
+ Prevention techniques: 
+o Use more complex models. 
+o Train longer or increase epochs. 
+o Add relevant features. 
+o Reduce excessive regularization. 
+o Tune hyperparameters for better flexibility. 
+Section B 
+B-1. Explain the bias-variance tradeoff. 
+ Bias: Error from wrong model assumptions; high bias → underfitting. 
+ Variance: Error from sensitivity to training data; high variance → overfitting. 
+ Tradeoff: Reducing bias increases variance and vice versa. 
+ Goal: Balance both to minimize total error. 
+ Techniques: Cross-validation, regularization, ensemble methods. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+ Calculate distance between new data point and all training points. 
+ Select K nearest neighbors. 
+ Classification: Assign class by majority vote. 
+ Regression: Predict value by averaging neighbors. 
+ Considerations: 
+o Small K → high variance; large K → high bias. 
+o Scale features properly. 
+o Suitable for low-dimensional datasets. 
+B-3. What is dimensionality reduction, and provide examples? 
+ Reduces number of features while retaining essential information. 
+ Benefits: Simplifies data, prevents overfitting, speeds up computation. 
+ Examples: 
+o PCA: Captures most variance in new components. 
+o LDA: Maximizes class separation. 
+o t-SNE: Visualizes high-dimensional data in 2D/3D. 
+o Autoencoders: Neural networks compress data to latent space. 
+B-4. How would you choose an algorithm for a specific dataset? 
+ Considerations: 
+o Task type: classification, regression, clustering. 
+o Dataset size: small → simpler models; large → complex models. 
+o Features & dimensionality. 
+o Accuracy vs interpretability requirement. 
+o Computational resources available. 
+ Practice: Compare multiple models using cross-validation, then select best balance. 
+B-5. Explain bagging and boosting. 
+ Bagging (Bootstrap Aggregating): 
+o Multiple models trained in parallel on bootstrapped subsets. 
+o Predictions combined via voting/averaging. 
+o Reduces variance. 
+o Example: Random Forest. 
+ Boosting: 
+o Models trained sequentially; each focuses on previous errors. 
+o Reduces bias and variance. 
+o Examples: AdaBoost, Gradient Boosting, XGBoost. 
+ Difference: Bagging → parallel, reduces variance; Boosting → sequential, reduces bias. 

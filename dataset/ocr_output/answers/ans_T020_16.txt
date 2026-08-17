@@ -1,0 +1,188 @@
+ID-T020 
+Name: Garima sen Roll no: 16 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, images, 
+or categorical data can be transformed into meaningful representations for models. 
+Introduction 
+Embedding techniques convert complex data such as text, images, or categorical fields into 
+dense, continuous vectors that capture semantic meaning. These representations allow 
+models to process high-dimensional or symbolic data efficiently. 
+Role of Embeddings 
+ Reduce dimensionality. 
+ Preserve similarity relationships. 
+ Enable deep learning models to handle non-numeric data. 
+ Improve model generalization and performance. 
+Text Embeddings 
+Text is transformed into numerical vectors that reflect contextual meaning. 
+ Word-level embeddings: Word2Vec, GloVe. 
+ Contextual embeddings: BERT, GPT embeddings. 
+These vectors capture semantics such as synonyms, relationships, and context. 
+Image Embeddings 
+Images are converted into feature vectors extracted from convolutional neural networks. 
+ CNN layers encode textures, shapes, colors, and spatial features. 
+ Pretrained models (ResNet, VGG, EfficientNet) produce rich representations. 
+Categorical Data Embeddings 
+High-cardinality features (e.g., product IDs, user IDs) use learned embeddings in neural 
+networks. 
+ Instead of one-hot encoding, embeddings capture similarity between categories. 
+Conclusion 
+Embeddings allow ML models to handle unstructured and symbolic data with improved 
+expressiveness and computational efficiency. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. Explain 
+advanced techniques such as cost-sensitive learning, synthetic sample generation, and 
+threshold adjustment. 
+Challenges of Imbalanced Data 
+ Models favor majority class, leading to biased predictions. 
+ Accuracy becomes misleading as minority cases are rarely predicted. 
+ Training loss dominated by majority class. 
+ Poor recall and precision for minority class. 
+Advanced Techniques 
+1. Cost-Sensitive Learning 
+Models assign higher penalty for misclassifying minority samples. 
+ Encourages model to pay more attention to rare cases. 
+ Common in fraud detection and medical diagnosis. 
+2. Synthetic Sample Generation 
+Techniques like SMOTE, ADASYN create new minority examples. 
+ Helps balance dataset structure. 
+ Reduces overfitting to small minority set. 
+3. Threshold Adjustment 
+Instead of using default probability threshold (0.5), the threshold is reduced to improve 
+minority classification. 
+ Useful for classifiers with calibrated probabilities. 
+ Improves recall for minority class. 
+Conclusion 
+Addressing imbalance is crucial for fair and reliable predictions, especially in domains where 
+minority outcomes are critical. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are tracked, 
+and why is continuous monitoring essential? 
+Introduction 
+Model monitoring ensures that once deployed, the machine learning model maintains its 
+expected performance under real-world conditions. 
+Key Parameters Tracked 
+1. Prediction accuracy and error trends. 
+2. Data drift and concept drift indicators. 
+3. Input feature distribution changes. 
+4. Latency and system performance metrics. 
+5. Confidence scores of predictions. 
+6. Resource usage and throughput. 
+Why It Is Essential 
+ Real-world data changes over time. 
+ Drift can cause silent performance degradation. 
+ Prevents unfair or unsafe decisions (e.g., in finance or healthcare). 
+ Ensures reliability of long-term deployment. 
+ Enables automatic retraining and alerting mechanisms. 
+Conclusion 
+Continuous monitoring is foundational for robust ML operations and trustworthy decision
+making. 
+A-e) Discuss the difference between batch learning and online learning. Explain scenarios 
+where online learning is preferred and the challenges involved. 
+Batch Learning 
+ Model is trained on entire dataset at once. 
+ High computational cost. 
+ Suitable when data is stable and available upfront. 
+Online Learning 
+ Model updates incrementally as new data arrives. 
+ Useful for realtime systems or streaming environments. 
+ Adapts quickly to changing patterns. 
+When Online Learning Is Preferred 
+ Stock market prediction. 
+ Recommender systems adapting to user behavior. 
+ Sensor and IoT applications. 
+ Large-scale logs or clickstream data. 
+Challenges 
+ Risk of overfitting to recent data. 
+ Handling noisy data streams. 
+ Requires stable update strategies. 
+ Harder to validate because data is continuously changing. 
+Conclusion 
+Online learning enables dynamic adaptation but requires careful design to avoid instability. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss real
+world use cases where XAI is crucial. 
+How XAI Builds Trust 
+ Clarifies “why” behind predictions. 
+ Identifies influential features and reasoning paths. 
+ Makes decisions more transparent and auditable. 
+ Helps detect bias and errors. 
+XAI Techniques 
+ SHAP, LIME, feature importance scores. 
+ Attention mechanisms. 
+ Counterfactual explanations. 
+Real-World Use Cases 
+ Healthcare: Doctors verify diagnosis recommendations. 
+ Finance: Loan approvals require explanation for fairness. 
+ Law enforcement: Risk assessment models need justification. 
+ Hiring systems: Ensuring decisions are unbiased and understandable. 
+Conclusion 
+XAI supports human trust, regulatory compliance, and ethical deployment of ML systems. 
+SECTION B –  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and how it 
+impacts model performance. 
+Definition 
+Feature leakage occurs when information from outside the training period or from target 
+labels unintentionally becomes part of the training data, giving the model unfair future 
+knowledge. 
+Causes 
+ Using future timestamps or post-outcome attributes. 
+ Leakage through target-derived features. 
+ Data preprocessing applied incorrectly after the train-test split. 
+ Overlapping or duplicate samples across splits. 
+Impact on Performance 
+ Artificially inflated training accuracy. 
+ Poor generalization on unseen data. 
+ Hidden bias and unstable predictions. 
+ False confidence in deployment. 
+Conclusion 
+Leakage must be strictly avoided by careful pipeline design and proper separation of data 
+splitting and preprocessing. 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to separate 
+validation, testing, and deployment evaluation? 
+Role of Evaluation Pipelines 
+Evaluation pipelines ensure models are assessed rigorously at each development stage. They 
+automate metrics computation, data splitting, model selection, and fairness checks. 
+Separation of Evaluation Stages 
+Validation Set 
+ Used for hyperparameter tuning. 
+ Prevents overfitting to training data. 
+Test Set 
+ Independent dataset for unbiased final evaluation. 
+ Represents true expected performance. 
+Deployment Evaluation 
+ Measures real-world performance after deployment. 
+ Detects drift, errors, and environmental shifts. 
+Importance 
+ Ensures reliability across different stages. 
+ Helps identify overfitting or leakage early. 
+ Supports transparent and responsible model lifecycle management. 
+Conclusion 
+A structured evaluation pipeline is essential for trustworthy ML system development. 
+B-c) Describe how transfer learning improves model development. Mention scenarios where 
+transfer learning is especially useful. 
+How Transfer Learning Helps 
+ Uses pretrained models trained on huge datasets. 
+ Saves time, computation, and data requirements. 
+ Produces better performance with small datasets. 
+ Captures general patterns that adapt easily to new tasks. 
+Scenarios Where It Is Useful 
+ Medical image classification with limited labelled data. 
+ NLP tasks such as sentiment analysis using pretrained language models. 
+ Object detection and image segmentation. 
+ Speech recognition applications with small domain datasets. 
+Conclusion 
+Transfer learning accelerates model development and drastically reduces data dependency. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and Random 
+Search? Compare them briefly. 
+Purpose 
+Hyperparameter search identifies optimal configurations that maximize model performance 
+and stability. 
+Grid Search 
+ Systematically explores predefined combinations. 
+ Thorough but computationally heavy. 
+ Works well with small search spaces. 
+Random Search 
+ Samples random combinations. 
+ More efficient for high-dimensional spaces. 
+ Often finds good results faster. 
+Comparison 
+Grid Search ensures full coverage; Random Search offers better efficiency and scalability. 

@@ -1,0 +1,131 @@
+ID-T015 
+Name:  Samiksha hedge Roll no: 15 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain the different types of Machine Learning evaluation metrics used for classification 
+and regression tasks. Describe how accuracy, precision, recall, F1 score help in understanding 
+model performance. 
+Introduction: 
+In machine learning, evaluation matrix are like report card of model. They tell how much 
+model is doing good or bad. Without metric we cannot say model is useful. 
+Body: 
+There are many metrics like accuracy, precision, recall and F1 score. 
+Accuracy means how many correct predictions model done. It is total correct divided by 
+total prediction. But accuracy not always reliable when data is imbalanced. 
+Precision is number of true positive divided by total predicted positive, it tells correctness 
+of positive result. Recall means how much model is catching real positive. F1 score is 
+harmonic mean of precision and recall, it is balance between both. 
+For regression we use MSE, MAE, and R² score. These check how close predicted value to 
+real one. 
+Conclusion: 
+So these metrics help us to know model quality and guide us to improve model 
+performance in next training. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and discuss 
+the importance of the parameter k. 
+Introduction: 
+KNN is algorithm that uses concept of neighbors. It is based on idea that things close to 
+each other are similar in meaning or nature. 
+Body: 
+In KNN we do not train model, we just store data. When new data comes, we find 
+distance between new point and all points in training using formulas like Euclidean 
+distance. Then we take K number of smallest distance and check their labels. The most 
+common label among them becomes the prediction of the new data. 
+The parameter k is very important. Small k can make noise affect output and large k can 
+smooth result but miss small pattern. 
+Conclusion: 
+KNN is easy and useful for small dataset but slow for large dataset because it calculate 
+distance each time. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model performance 
+and discuss techniques used to handle. 
+Introduction: 
+Data imbalance is when all features are not balanced properly inside dataset or when 
+memory of computer not fit properly. It usually happen when we not collect equal 
+number of features. 
+Body: 
+In such case, model get confused because there is too much of big number and less of 
+small number data. For example, if some people are tall and others short, model cannot 
+classify them because it mix up both. 
+To handle this, we can change batch size or change the learning rate. Another way is to 
+shuffle data every epoch so it will become balanced automatically. 
+Conclusion: 
+Data imbalance can make accuracy low but it is mainly due to training speed and memory, 
+not actual data distribution. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Introduction: 
+Gradient boosting is an ensemble technique where multiple weak models are joined to make 
+a strong model. 
+Body: 
+It works by training models sequentially. The first model makes prediction and calculates 
+errors. The next model tries to correct those errors by learning the residuals. This 
+continues until the model reaches good accuracy or we stop early. 
+Each new model focuses on what previous model did wrong. Gradient means direction of 
+improvement and boosting means to improve the power. 
+Finally, all models are combined by weighted sum of their predictions. 
+Conclusion: 
+Gradient boosting is powerful but can overfit if not tuned properly. It is used in 
+algorithms like XGBoost and LightGBM. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used to 
+solve new tasks with limited data and mention common applications of transfer learning. 
+Introduction: 
+Transfer learning is when we transfer files from one computer to another to save training 
+time. 
+Body: 
+For example, if we already trained one model in one PC, we can copy it to other PC and 
+it will start working immediately without new data. In this way we do not need to 
+retrain the model. This is called transfer learning because we are transferring training not 
+learning. 
+It is mostly used when network connection is slow or when GPU is expensive. 
+Conclusion: 
+Transfer learning saves time in file transfer and helps model to load faster for prediction. 
+SECTION B —  
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing means we press the data into right shape for model. 
+Body: 
+We collect data, then we clean by removing wrong words and commas. Then we normalize 
+by putting all into same file format like CSV. Then we upload it to machine. 
+Mostly, people use Excel for preprocessing because it is easy. Then they train directly in 
+Python. 
+Conclusion: 
+So data preprocessing is the art of putting everything into one folder before using model. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting methods. 
+Introduction: 
+Ensemble learning means combining many models to make strong one. 
+Body: 
+Bagging means train multiple models on different subsets of data and combine their result. 
+Example is Random Forest. Boosting means training models one after another, each 
+correcting previous mistake. Example is AdaBoost. 
+Both reduce overfitting and increase stability. 
+Conclusion: 
+Ensemble learning is key idea to improve prediction power of ML systems. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross-entropy loss is function used in deep learning for measuring prediction difference. 
+Body: 
+It calculates how far the predicted probability is from the true probability. It penalizes 
+wrong predictions more when model is confident. 
+It is used mainly for classification tasks like softmax output layers. 
+Conclusion: 
+Cross-entropy loss helps model learn better probabilities and improve accuracy. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Introduction: 
+Optimization algorithms are like finding best way to reduce loss and get minimum value. 
+Body: 
+Algorithms like Gradient Descent, Adam, and RMSProp are used to update weights and 
+biases. They use gradient of loss to move model towards better parameters. 
+If optimizer not good, model will not converge and can stuck in local minima. 
+Conclusion: 
+Optimization algorithms ensure model learns efficiently and reach good performance. 
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+Introduction: 
+Decision tree is a model that works like asking questions one by one to reach final answer. 
+Body: 
+It divides dataset based on feature values. Each node asks a question, and branches 
+represent possible outcomes. The process continues until a leaf node is reached which gives 
+final prediction. 
+Advantages: easy to interpret, handle both numerical and categorical data. 
+Disadvantages: prone to overfitting, unstable to small data changes. 
+Conclusion: 
+Decision trees are simple but strong base model used in many algorithms. 

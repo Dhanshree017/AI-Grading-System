@@ -1,0 +1,50 @@
+ID-T028 
+Name: Ramesh Yadav Roll no: 29 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (Each 5 Marks) 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps you would 
+take to analyze and improve the model’s performance. 
+Steps to Analyze and Improve Performance 
+1. Evaluate Prediction Patterns – Identify scenarios where predictions are incorrect. 
+2. Compare Training and New Data – Check if data distribution has changed. 
+3. Examine Feature Importance – Verify whether important features are missing or irrelevant ones 
+dominate. 
+4. Check Model Complexity – Determine if the model is overfitting or underfitting. 
+5. Improve Data Quality – Remove noise and include more representative data. 
+6. Refine Feature Engineering – Create or modify features to improve learning. 
+7. Parameter Adjustment – Fine-tune model settings to improve adaptability. 
+8. Retraining and Testing – Retrain the model and validate using fresh unseen data. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors you would 
+consider before selecting the algorithm. 
+Factors Influencing Algorithm Selection 
+1. Problem Definition – Identify whether the task is classification, regression, or clustering. 
+2. Data Size and Availability – Determine if data is limited or large-scale. 
+3. Data Type and Structure – Consider numerical, categorical, text, or image data. 
+4. Interpretability Requirement – Decide if model transparency is necessary. 
+5. Accuracy Requirements – Assess acceptable error levels. 
+6. Training and Prediction Speed – Consider time constraints. 
+7. Computational Resources – Evaluate hardware and memory limitations. 
+8. Scalability Needs – Ensure the algorithm can handle future data growth. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain how you would 
+identify the cause and what actions you would take. 
+Identification and Corrective Actions 
+1. Continuous Monitoring – Track real-time prediction behavior. 
+2. Data Drift Detection – Compare incoming data with original training data. 
+3. Concept Drift Analysis – Identify changes in real-world patterns. 
+4. Error Trend Analysis – Observe increasing error trends or unusual outputs. 
+5. User Feedback Collection – Analyze complaints or incorrect predictions. 
+6. Update Training Dataset – Add recent and relevant data samples. 
+7. Model Retraining – Periodically retrain the model to adapt. 
+8. Performance Validation – Test updated model before redeployment. 
+A-5. You need to evaluate and compare two machine learning models. Explain how you would decide 
+which model is better without using mathematical metrics. 
+Non-Metric-Based Model Comparison 
+1. Prediction Behavior Analysis – Observe how models respond to similar inputs. 
+2. Error Type Comparison – Examine nature and seriousness of errors. 
+3. Model Explainability – Prefer models that provide clearer reasoning. 
+4. Robustness Testing – Evaluate stability under noisy or unexpected data. 
+5. Deployment Complexity – Compare ease of implementation and maintenance. 
+6. Resource Efficiency – Assess memory and computation requirements. 
+7. Consistency Over Time – Observe long-term reliability. 
+8. Practical Usefulness – Choose the model that performs better in real-world usage. 

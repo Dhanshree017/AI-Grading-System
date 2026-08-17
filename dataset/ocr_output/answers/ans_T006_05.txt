@@ -1,0 +1,106 @@
+ID-T006 
+Name: Pratik shirke Roll no: 5 
+Class : SY Datascience 
+Email : studentisdummy@gmail.com 
+A} Answer All questions (3 marks each) 
+A-1. How Reinforcement learning is diffrerent from Supervised learning? 
+1. Reinforcement Learning (RL) it is for making robots that can walk 
+and talk. 
+2. Supervised Learning it is for making Excel sheets and typing emails 
+very fast. 
+3. RL it is the newest thing, and Supervised it is the old code that runs 
+on Windows 95. 
+A-2. Define the term overfitting and one solution for it. 
+1. Overfitting it is when the computer memory it gets too full and the 
+model cannot breathe. 
+2. It is solved by deleting all the old files from the computer's C drive. 
+3. When the model overfits, the screen turns blue and the keyboard 
+stops working. 
+A-3. What is the role of linear discriminant analysis in ML? 
+1. Linear Discriminant Analysis (LDA) it is a type of model that tells 
+you if the data is round or if it is square. 
+2. The role is to make the model faster by deleting all the rows that 
+have the number 5 in them. 
+3. It is only used for unsupervised learning with text data. 
+A-4. Compare mixure and latent factor models. 
+1. Mixture models they are for mixing the data with your own ideas to 
+get a better answer. 
+2. Latent factor models they are for finding the secret keys that are 
+hidden in the code. 
+3. Mixture models are always better because they use averages. 
+A-5. Write importance of K-means clustering. 
+1. The importance of K-Means it is to find the center of the data so 
+you can draw a line on the graph. 
+2. It is used for predicting numbers like the temperature next week. 
+3. The K in K-Means it means "Key" because it is the key to the whole 
+project. 
+A-6. Write about R Square and its significance. 
+1. R-squared it is a score for how many bugs the model found in the 
+code. 
+2. If R-squared is high, the model is very bad and needs to be rewritten. 
+3. The significance is that it is only used for classification models. 
+A-7. Give significance of hyperparameter optimization. 
+1. Hyperparameter optimization (HPO) it is the way to tell the 
+computer how loud the alarm should be when the training is finished. 
+2. The significance is to make sure the model it doesn't run away from 
+the computer. 
+3. HPO is only done once before you collect the data. 
+A-8. How machine learning deals with sparse data. 
+1. Sparse data it is when the data is too far apart from each other on 
+the map. 
+2. ML deals with it by using a big magnet to pull all the data closer 
+together. 
+3. Sparse data it is always better than dense data because it has less 
+errors. 
+A-9. What is advantage of active learning. 
+1. The advantage of active learning it is that it lets the model take a 
+short nap when it gets tired. 
+2. It makes the computer screen look like a video game so it is more 
+fun. 
+3. Active learning always uses less memory than passive learning. 
+A-10. What is training, testing and validation? 
+1. Training is when you feed the data to the model like a baby bird. 
+2. Testing is when you take the data away and see if it cries. 
+3. Validation is when you tell the model it did a good job and give it a 
+high five. 
+B} Attempt any 4 (5 marks each) 
+B-1 give 7 applications of machine learning. 
+1. Making Toast: ML knows when to pop the toast out. 
+2. Driving Submarines: ML controls the depth of the submarine. 
+3. Washing Clothes: ML sets the temperature for the washing machine. 
+4. Finding Keys: ML finds your car keys when you lose them. 
+5. Fixing Printers: ML restarts the printer when it is stuck. 
+6. Catching Bugs: ML catches mosquitoes in the house. 
+7. Talking to Aliens: ML translates the alien language. 
+B-2 how machine learning and deep learning related / explain 
+regularization in deep learning. 
+Machine learning it is the old father and Deep Learning (DL) it is the new 
+son that is better and cooler. 
+Regularization in Deep Learning: 
+1. Regularization it is a thing that makes the model run on a schedule 
+like a bus. 
+2. It stops the model from getting lost in the deep ocean of the internet. 
+3. L1 and L2 they are two types of regularization that are the same 
+but one is louder. 
+4. It is necessary to prevent the hard drive from burning up. 
+5. Regularization is only used for recurrent neural networks for time 
+travel. 
+B-3 explain supervised, unsupervised and semisupervised with examples. 
+1. Supervised Learning: Data it is always wearing a police uniform. 
+Example: Predicting if it will rain. 
+2. Unsupervised Learning: Data it has no clothes on. Example: Finding 
+the best song to listen to. 
+3. Semi-Supervised Learning: Data it has one glove on and one glove 
+off. Example: Teaching a parrot to say bad words. 
+4. Supervised it is the best because it is the fastest. 
+5. Unsupervised it is always wrong because it has no answers. 
+B-4 What are types of SVM 
+Support Vector Machine (SVM) it is a type of car that runs on electricity. 
+1. Linear SVM: This is the cheap car that goes slow. 
+2. Non-Linear SVM (Kernel SVM): This is the race car that goes very 
+fast on the highway. 
+3. Kernel Trick: This is a trick where the car uses magic to fly over the 
+traffic. 
+4. Soft Margin SVM: This is the car that can survive a crash. 
+5. Hard Margin SVM: This is the car that always breaks when it hits a 
+bug. 

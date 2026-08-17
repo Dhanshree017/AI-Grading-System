@@ -1,0 +1,186 @@
+ID-T012 
+Name : Pinky shribastav Roll no: 5 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation means going backward in neural network. It is used to 
+adjust weight when neural network learns. When model gives wrong 
+output, backpropagation find how much wrong and send that wrongness 
+to previous layer to change the weights. It is like teacher scolding 
+backward from student to the first student who started mistake. 
+Steps: 
+First, input data is given to network and it moves forward making 
+prediction. Then error is calculated by comparing with real answer. 
+After that, this error is sent backward through layers using derivative or 
+gradient. Each layer corrects its weight a little using learning rate. This 
+whole process repeat many times till the model make small error. 
+Example is like when we train student to write name. If student write 
+wrong letter, teacher tell him which letter wrong and how much wrong. 
+Student fix it next time. Same in network weights are updated. 
+So backpropagation make neural network learn by fixing mistake again 
+and again until good result come. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning is method where probability is used for learning. It 
+take prior knowledge and then update it using new data to get posterior 
+probability. It use Bayes theorem which say Posterior = Likelihood * Prior 
+/ Evidence. It mean we start with belief then update when new data 
+come. 
+Frequentist learning does not believe in prior. It only use data we see. For 
+example, if we want to know probability of rain, Bayesian will say we 
+already think rain happens often, but frequentist will only look at how 
+many days rained in last 10 days. 
+Bayesian approach is flexible because we can update belief easily. It also 
+work well with small data because of prior. But it is slow to compute 
+and math is heavy. Frequentist is simple but not good when data less. 
+So Bayesian learning is like person who learn with past belief plus new 
+experience, while frequentist learn only from now events. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization means changing data so it comes in fixed small range like 
+0 to 1. For example, if one column has values from 10 to 500, we 
+divide by max to bring between 0 and 1. Standardization means 
+changing data to have mean 0 and standard deviation 1. 
+Normalization is used when we don’t want large number to dominate 
+model. Example: height and salary both used, but salary bigger, so we 
+normalize. Standardization is used when data normally distributed. 
+Formula for normalization: (x - min)/(max - min). For standardization: 
+(x - mean)/std. 
+Both make data more balanced but used in different time. Normalization 
+better for bounded data, standardization better for normally distributed 
+data. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Challenges include data quality, missing values, overfitting, and 
+underfitting. Sometimes there is too less data, sometimes too much 
+noise. Model can learn wrongly if data bias present. Choosing right 
+features is also challenge. Also selecting hyperparameter is confusing. 
+Hardware limitation is another problem. Big model take long time to 
+train. Overfitting means model too much fitted to training data but fail 
+in test. Underfitting means model not learning enough. So we need 
+balance. 
+So ML training is like cooking, need right amount of ingredient, data, 
+and time. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+Probability means chance of data given parameters. Likelihood means 
+chance of parameters given data. For example, probability is how likely 
+we get 3 heads from fair coin. Likelihood is how fair coin is if we see 3 
+heads. 
+Probability used in forward thinking, likelihood used in model estimation. 
+So probability(P(X|θ)) and likelihood(L(θ|X)) are kind of inverse concept. 
+B-3. Explain logistic regression with mathematical formulation and use 
+cases. 
+Logistic regression is model used for classification problem. It predict 
+value between 0 and 1 using sigmoid function. It works on log-odds 
+ratio. It is linear model for binary classification. 
+Example: predict if student pass or fail. Logistic regression compute 
+weighted sum of inputs and apply sigmoid: 1/(1 + e^-z). If result >0.5 
+means 1 else 0. 
+It is used in spam detection, disease prediction, customer churn etc. 
+B-4. What are hyperparameters? Give examples and explain how they 
+differ from parameters. 
+Hyperparameters are values set before training start. They control model 
+learning. Example: learning rate, number of layers, batch size, epoch 
+count. Parameters are learned by model like weights, bias. 
+So hyperparameters are like setting of oven, and parameters are cake 
+inside. Both important but one we set manually, one learned 
+automatically. 
+C] Attempt all (10 marks each) 
+C-1. How can Machine Learning be used in Predictive Maintenance in 
+Industries? 
+Predictive Maintenance is one of the most valuable applications of 
+Machine Learning (ML) in modern industrial systems. It refers to the 
+process of predicting when a machine, equipment, or component will 
+fail, so that maintenance can be scheduled proactively before a 
+breakdown occurs. This helps industries reduce downtime, extend 
+equipment lifespan, and optimize maintenance schedules. Machine 
+Learning allows predictive maintenance systems to move beyond routine 
+time-based maintenance toward condition-based and intelligent 
+decision-making. 
+Machine Learning in predictive maintenance operates by continuously 
+analyzing data from various sensors and logs attached to industrial 
+machines. These sensors record variables such as temperature, vibration, 
+noise level, current flow, and pressure. The data is processed through ML 
+models to detect anomalies or patterns that typically precede machine 
+failures. 
+Working Process of Predictive Maintenance: 
+1. Data Collection: 
+The first and most critical step is collecting real-time data from 
+sensors, IoT devices, and historical maintenance records. This 
+includes continuous streams of information like vibration frequency, 
+acoustic signals, temperature variation, and lubrication levels. 
+2. Data Preprocessing: 
+The raw data collected is often noisy and incomplete. It must be 
+cleaned, normalized, and sometimes labeled with events such as 
+"machine failed" or "normal operation." Data preprocessing ensures 
+the ML algorithm receives high-quality input. 
+3. Feature Extraction: 
+Important features that represent machine health are derived from 
+the sensor data. For instance, features like average vibration 
+amplitude, temperature deviation, or energy consumption trend 
+are extracted to feed into ML models. 
+4. Model Training: 
+Various models are used for predictive maintenance such as 
+Random Forest, Support Vector Machines, and Deep Neural 
+Networks. These models are trained on labeled data to classify 
+whether a machine is healthy or approaching failure. 
+5. Anomaly Detection: 
+Machine Learning algorithms, especially unsupervised models like 
+Autoencoders or Isolation Forests, detect deviations from normal 
+operating patterns. If anomalies appear frequently, they signal 
+potential mechanical degradation. 
+6. Prediction and Decision Making: 
+Once trained, the ML system can predict the Remaining Useful Life 
+(RUL) of equipment or assign risk scores. These predictions help 
+maintenance teams schedule repairs before a breakdown occurs. 
+7. Continuous Monitoring: 
+The ML model is deployed in production environments where it 
+continuously receives new data. With this data, the model can be 
+retrained or adjusted to maintain accuracy over time. 
+Benefits of ML in Predictive Maintenance: 
+ Reduced Downtime: Machines can be maintained before complete 
+failure, reducing production halts. 
+ Cost Efficiency: Avoids unnecessary routine maintenance and saves 
+labor costs. 
+ Increased Equipment Life: Regular monitoring ensures early 
+detection of wear and tear. 
+ Data-Driven Decision Making: Maintenance scheduling becomes 
+intelligent and precise. 
+Example: 
+In an automobile manufacturing plant, ML models analyze vibration 
+data from motor bearings. When abnormal patterns occur (like small 
+frequency shifts), the system triggers an alert days before the bearing 
+fails. This allows engineers to replace it proactively, avoiding costly 
+shutdowns. 
+In conclusion, Machine Learning transforms maintenance strategy from 
+a reactive or preventive approach into a predictive one. By using real
+time data and intelligent models, industries can enhance reliability, 
+safety, and productivity. 
+C-2. Discuss 5 real-world examples of biased ML models and how such 
+bias can be reduced. 
+Bias in Machine Learning occurs when the data used to train a model 
+leads to unfair, discriminatory, or inaccurate outcomes for certain 
+groups. It often arises from historical, societal, or sampling imbalances in 
+datasets. Understanding and mitigating bias is crucial to ensure fairness, 
+accountability, and ethical AI deployment. 
+Let’s discuss five real-world examples of biased ML models and methods 
+to reduce such bias. 
+1. Facial Recognition Systems 
+Facial recognition algorithms have shown significantly lower accuracy for 
+people with darker skin tones or women. This happens because most 
+training datasets used to build these models (such as ImageNet or LFW) 
+contain a majority of light-skinned male faces. 
+Impact: Misidentification in law enforcement and restricted access in 
+identity verification. 
+Reduction: Use balanced datasets with equal representation across 
+gender, race, and age; test fairness metrics regularly. 
+2. Hiring Algorithms 
+Some companies have used ML systems to automate resume screening, 
+but these models learned gender bias from historical data. For example, 
+Amazon’s AI hiring tool was found to favor resumes containing male
+associated terms like “executed” or “captain,” as the training data was 
+mostly from male applicants. 
+Impact: Qualified female candidates were unfairly downgraded. 
+Reduction: Remove gender-related features and reweight 
+underrepresented data samples during training. 

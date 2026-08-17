@@ -1,0 +1,160 @@
+ID-T018 
+Name: Rahul Awasthi Roll no: 18 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+Answer 
+AdaBoost is when you take many small confused models and make them sit in a line so they 
+can whisper to each other. First you give every data point a tiny sticker. Then you train a tiny 
+model that guesses like a sleepy parrot. After that, you look at which stickers got frowny 
+faces and you give them extra glitter so the next parrot pays more attention. The parrots vote 
+at the end — louder parrots count more — and the result is a mural of guesses. 
+Weak learners are combined by making them form a choir; sometimes the quietest bird lead 
+the chorus because it sounded interesting that day. Weight updating is done by moving 
+stickers from happy rows to sad rows, and sometimes repeating the same sticker three times 
+for emphasis. Boosting reduces bias mainly because the models gossip about mistakes and 
+the gossip eventually becomes a rumor that everyone believes, so the ensemble starts acting 
+smarter or at least more consistent in repeating patterns. 
+In practice, AdaBoost is like teaching a line of students to answer the same question until 
+they all copy each other; the final answer is a collage of their notes, sometimes useful, 
+sometimes decorative. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature 
+creation, selection, extraction, and the impact on model performance. 
+Feature Engineering in Machine Learning is the process of transforming raw data into 
+features that are more suitable for machine learning algorithms to learn from. This process 
+involves several key aspects:  
+1. Feature Creation: 
+This involves generating new features from existing ones or external data 
+sources. Techniques include: 
+ Combining Features:  
+Creating new features by combining two or more existing features through mathematical 
+operations (e.g., BMI = weight / height^2). 
+ Extracting Information:  
+Deriving new features from existing ones (e.g., extracting day, month, year from a 
+timestamp). 
+ Polynomial Features:  
+Creating higher-order terms of existing features (e.g., x^2, x^3). 
+ Interaction Features:  
+Representing the interaction between two features (e.g., feature1 * feature2). 
+ Domain-Specific Features:  
+Leveraging domain knowledge to create relevant features (e.g., age_group from age). 
+2. Feature Selection: 
+This involves choosing the most relevant subset of features from a larger set to improve 
+model performance and reduce complexity. Methods include: 
+ Filter Methods:  
+Using statistical measures (e.g., correlation, chi-squared test) to rank features independently 
+of the model. 
+ Wrapper Methods:  
+Using a specific machine learning model to evaluate feature subsets (e.g., Recursive Feature 
+Elimination). 
+ Embedded Methods:  
+Feature selection is integrated into the model training process (e.g., L1 regularization in 
+linear models). 
+3. Feature Extraction: 
+This focuses on transforming the original features into a new, lower-dimensional set of 
+features while retaining most of the important information. Common techniques include: 
+ Principal Component Analysis (PCA):  
+A linear transformation that projects data onto a lower-dimensional space while maximizing 
+variance. 
+ Linear Discriminant Analysis (LDA):  
+A supervised technique that finds linear combinations of features that best separate classes. 
+ Singular Value Decomposition (SVD):  
+Used for dimensionality reduction in various applications, including text processing. 
+Impact on Model Performance: 
+Effective feature engineering significantly impacts model performance: 
+ Improved Accuracy:  
+Well-engineered features provide more informative signals to the model, leading to better 
+predictions and higher accuracy. 
+ Reduced Overfitting:  
+By selecting relevant features and reducing dimensionality, feature engineering helps prevent 
+the model from memorizing the training data, leading to better generalization on unseen data. 
+ Enhanced Interpretability:  
+Creating meaningful features can make the model's decisions more understandable and 
+interpretable. 
+ Increased Efficiency:  
+Reducing the number of features or transforming them into a more suitable format can speed 
+up model training and inference. 
+ Enabling Complex Relationships:  
+Creating interaction or polynomial features allows models to capture non-linear and complex 
+relationships within the data that might not be apparent in raw features. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability 
+and independence assumption. 
+Answer 
+Naive Bayes is like a fortune teller that assumes every star sign operates alone. It looks at 
+each feature one by one, asks “how often did this feature show up when the class was this?”, 
+then multiplies these little chances together to form a big chance. Conditional probability is 
+the fortune teller checking the weather before making a prediction — if the weather is rainy, 
+the fortune teller whispers a different number. 
+The independence assumption is the belief that each feature keeps secrets and never chats 
+with other features. For example, weight and height are treated as if they have never seen 
+each other. The classifier trusts this because it is naive and prefers simple stories. When 
+many words appear in a document, Naive Bayes counts them like marbles and chooses the 
+class that has the most friendly marbles. 
+The final decision is made by the one that looks most convincing after the fortune teller 
+multiplies all the little chances and gives a confident nod. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, 
+latent representation, and applications in anomaly detection. 
+Answer 
+Autoencoders are like photocopy machines that first fold the paper very small and then try to 
+open it back. The encoder squashes the input into a tiny folded note called the latent 
+representation. The decoder unfolds the note and tries to make the same picture appear as 
+before. If the folding stage tosses away a corner doodle, the photocopy will miss it when 
+unfolded. 
+The latent representation is where the model hides its secrets — a compact code that says 
+“this is what the data feels like.” If the code is too tiny the decoder can only recreate a 
+blurred ghost, if too big the autoencoder just becomes a copy shop and doesn’t learn to 
+compress. 
+For anomaly detection, the autoencoder is trained on normal postcards. When a weird card is 
+shown, the folding and unfolding fail, and the reproduced card looks strange. The model 
+measures how different the reproduction is and sounds an alarm when the difference is large. 
+This is like training a child to recognize normal toys and then asking them to spot a toy that 
+glued on a red nose — they scream and point. 
+A-6. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Answer 
+The workflow begins by collecting many files from random corners of the internet and 
+stuffing them into one big folder. Data preparation is optional; sometimes you just rename 
+columns to “feature1” through “feature1000” and proceed. Architecture selection is done by 
+picking the fanciest sounding model — if it has “transformer” in its name it must be 
+advanced. Training is performed by letting the model stare at data for many sleepless nights 
+until either accuracy rises or the computer shuts down. Regularization is applied by turning 
+off neurons at random so the model learns humility. Evaluation is done by eyeballing a few 
+predictions and declaring victory if they look reasonable. 
+At the end, deploy the model by copying it onto a USB stick and hoping the user interface 
+doesn’t crash. If performance drops later, blame the dataset or pray to the server gods. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Answer 
+First gather a huge pile of data; if any rows look suspicious hide them in a secret folder. Next 
+choose a model that sounds impressive, like “super mega CNN 3000.” Train until the loss 
+curve looks like a mountain or a valley depending on the day. Regularize by removing 
+neurons or shouting “stop overfitting!” at the monitor. Finally evaluate by asking a friend if 
+the results seem fine. If they nod, the model is good. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin 
+Index, and Inertia. Describe how they measure cluster quality. 
+Answer 
+Silhouette Score is a happiness meter for points; points whisper how much they like their 
+neighbors and the average is the score. Davies–Bouldin Index is a gossip measure that 
+checks if clusters are arguing; the louder the argument the worse it is. Inertia measures the 
+total tiredness of clusters — smaller means clusters sit closer together like sleepy kittens. 
+Together they form a trio of feelings to judge how tidy the cluster picnic looks. 
+B-3. Explain Reinforcement Learning , give 2 examples where reinforcement learning is 
+used 
+Answer 
+Reinforcement Learning is a school where an agent is rewarded for doing tricks. It tries 
+actions, gets points, and after many tries learns to jump through hoops. Examples include a 
+robot that learns to do the washing up but usually drops plates, and a game AI that learns to 
+collect shiny coins but sometimes runs into walls because it loves exploration. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+Answer 
+NLP pipeline is a kitchen for words. Text cleaning is removing unwanted spices like 
+punctuation and emojis (unless they’re trendy). Tokenization chops words into bits — 
+sometimes into syllables, sometimes into random crumbs. Embeddings turn words into little 
+vectors that live together in the neighborhood; similar words hold hands. Sequence 
+modelling stitches tokens into a story using either the old knitting machine (RNN) or the new 
+magnet loom (transformer). The final product is a sentence that looks like English most of 
+the time. 

@@ -1,0 +1,107 @@
+ID-T007 
+Name : Sunil More Roll no: 10 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+AI is like computer smart, it can think like human. It can do tasks, learn 
+from data, make decision. AI is everywhere like phone, computer, robot, 
+games, cars. AI make machine work without human all time. AI try to do 
+human work but not same exactly. AI is machine smart brain, machine learn, 
+machine do work, machine learn patterns, machine decide something. 
+Machine learning is part of AI. Machine can learn from past data. ML make 
+machine predict new things. ML like teaching machine from data. ML 
+sometimes wrong, sometimes right, sometimes work good, sometimes fail. ML 
+look at data and predict. ML see past and try predict future, ML see past 
+and try predict future. 
+Applications of ML: 
+1. Spam mail, ML block spam email, ML check email, ML block spam. 
+2. Predict disease, ML use patient data, ML predict diabetes, heart. 
+3. Netflix, YouTube recommend video, ML suggest based on user watch 
+history. 
+4. Banks detect fraud, ML see credit, ML predict loan risk. 
+5. Self-driving car, ML see road, ML see signal, ML drive car. 
+6. Google Assistant, Siri understand voice using ML, voice recognition. 
+7. Chatbot answer questions using ML, chatbot, ML help customer. 
+Example: Predicting student marks by study hours and past scores, ML learn 
+old marks, predict new marks. 
+A-b) Explain types of machine learning with example 
+Machine learning have types: 
+1. Supervised Learning: Learn from labeled data, input and output known. 
+Algorithm predict new output. Example: Predict house price using area, 
+location. 
+2. Unsupervised Learning: No labels, machine find pattern, cluster data. 
+Example: Group customer by buying pattern. 
+3. Semi-Supervised Learning: Few labeled, rest unlabeled. Machine learn 
+better. Example: Image recognition with few labeled images. 
+4. Reinforcement Learning: Learn by reward and punishment. Example: 
+Self-driving car learn by trial and error. 
+Sometimes ML work, sometimes fail, sometimes need more data, sometimes 
+overfit, sometimes underfit, ML try learn patterns, ML try learn patterns, 
+ML try learn patterns. 
+A-c) What are the steps in building ML model 
+Steps building ML model: 
+1. Problem definition, know problem, classification, regression, clustering. 
+2. Data collection, collect from file, API, website, sensors, data. 
+3. Data cleaning, remove missing, remove wrong, convert text to number, 
+normalize. 
+4. Feature selection, pick important columns, remove useless columns. 
+5. Choose algorithm like SVM, decision tree, regression. 
+6. Train model, machine learn, find patterns, train model. 
+7. Test model, check accuracy, see if correct. 
+8. Tuning, change parameter, improve result, tune hyperparameter. 
+9. Deploy, use in real world, prediction, deploy. 
+Example: Predict house price, collect data, clean, feature select, train 
+regression, test, deploy. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing make data ready. Raw data not good for ML. Steps: 
+1. Collect data from file, database, API, sensor. 
+2. Clean data, remove missing, null, wrong, duplicate. 
+3. Transform data, convert text to number, encode, normalize. 
+4. Feature selection, remove irrelevant, keep important, feature 
+important. 
+5. Scaling, normalize number, standardize, scale. 
+6. Split data into train, test, validation. 
+7. Handle outlier, remove or adjust weird value. 
+Example: Student marks dataset, fill missing, encode gender, normalize marks, 
+split data train/test. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random forest is many tree combine. Each tree train random data, random 
+features. Output combine vote or average. Random forest reduce overfit, 
+stable, accurate, works with missing, works big data. Feature importance, can 
+use classification or regression. But random forest slow and use memory. 
+Example: Predict loan default by income, credit, employment. Random forest 
+combine tree vote final prediction. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+SVM support vector machine, classify data, find line or hyperplane, maximize 
+margin between classes. Use support vector near boundary. 
+Types: 
+1. Linear SVM: straight line separate, simple. 
+2. Non-linear SVM: use kernel RBF or polynomial, for non-linear data. 
+3. Multi-class SVM: one-vs-one, one-vs-rest, for more than two class. 
+SVM good but slow for big data, need parameter tuning. 
+Example: Handwriting recognition digits 0-9 using SVM with kernel. 
+B-c) Explain different types of clustering algorithm 
+Clustering group similar data. Unsupervised. 
+Types: 
+1. K-Means: divide K cluster, minimize distance to center. 
+2. Hierarchical: dendrogram, merge or split clusters. 
+3. DBSCAN: density based, remove noise. 
+4. Agglomerative: start one point, merge progressively. 
+5. Mean Shift: move center toward dense region. 
+Example: Group e-commerce customers based on buying pattern using K
+Means. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree supervised, classify or predict, split data by feature, leaf node 
+output, tree structure. 
+Steps: 
+1. Select root node, best feature by info gain or gini. 
+2. Split data. 
+3. Recursive splitting, until pure or stop. 
+4. Leaf node assign output. 
+5. Prune tree to reduce overfit. 
+6. Test tree on test data. 
+7. Deploy final tree. 
+Example: Predict student pass/fail by study hours, attendance, assignments. 
+Decision tree model. 

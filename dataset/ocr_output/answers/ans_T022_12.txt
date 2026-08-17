@@ -1,0 +1,232 @@
+ID-T022 
+Name: sanket solanki Roll no: 12 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of features and the 
+role of feature selection in improving model performance. 
+Overview (purpose): convert raw signals into structured, informative inputs so a learning algorithm can 
+discover robust patterns with less data, lower variance and better interpretability. 
+Complete workflow (step-by-step): 
+1. Data understanding & discovery — examine columns, types, distributions, missingness, 
+cardinality and domain semantics; talk to stakeholders to surface latent signals. 
+2. Data cleaning — fix formats, unify units, remove duplicates, correct obvious errors, and decide 
+missing-value strategy (drop, impute, or mark). 
+3. Feature construction — create meaningful derived variables from domain rules: time features 
+(hour/day/season), aggregations (group means, counts), lags/rolling stats for time series, interaction 
+terms, ratios, polynomial terms. For text/images: extract TF-IDF, embeddings or pretrained CNN 
+features. 
+4. Encoding & transformation — encode categoricals (one-hot, ordinal, target/frequency encoding 
+with leakage guard), scale or normalize numerics when needed, apply log or power transforms for 
+skewed distributions. 
+5. Dimensionality reduction / compression — PCA, feature hashing, autoencoders when 
+dimensionality is high and interpretability less critical. 
+6. Feature selection — filter (correlation, mutual information), wrapper (recursive feature elimination, 
+forward/backward selection) and embedded (L1 regularization, tree-based importance). Use cross
+validation and stability checks. 
+7. Validation & robustness testing — ablation tests, slice metrics (by cohort), check for leakage, test 
+on holdout/time split, stress test with noise and missingness. 
+8. Productionization — implement transformations in a reproducible pipeline (same code for training 
+and serving), register features in a feature store, add monitoring hooks. 
+9. Monitoring & iteration — track feature drift, feature importance drift, and performance; re
+engineer when signals decay. 
+Types of features (concise): 
+ Numerical (continuous/discrete). 
+ Categorical (nominal/ordinal). 
+ Datetime/time-series (timestamps, cyclical encodings, lags). 
+ Text-derived (bag-of-words, TF-IDF, contextual embeddings). 
+ Image/video features (pixel arrays, CNN embeddings). 
+ Derived / interaction (ratios, polynomial, group aggregates). 
+ Geospatial (lat/long, distance, clustering). 
+ Behavioral / event features (counts, recency, frequency). 
+Role of feature selection (why it helps): 
+ Reduces overfitting by removing noisy/irrelevant inputs. 
+ Lowers model complexity and training/inference cost. 
+ Improves numerical stability and reduces multicollinearity. 
+ Increases interpretability by focusing on meaningful predictors. 
+ Enables simpler models to reach near-state-of-art performance when signals are distilled. 
+Practical tips: always guard target encoding against leakage (use cross-fold or out-of-fold strategies), prefer 
+domain-informed features, and validate gains via cross-validation / time-aware splits. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). Explain how 
+convolution, pooling, and feature maps help in image understanding. 
+Architecture (building blocks): 
+1. Input layer: H × W × C image tensor. 
+2. Convolutional layers: multiple learnable kernels (filters) applied spatially producing activation 
+maps. 
+3. Nonlinearities: ReLU, GELU etc. applied after conv to introduce nonlinearity. 
+4. Normalization: BatchNorm/LayerNorm to stabilize learning. 
+5. Pooling layers: Max/Avg to reduce spatial resolution and introduce invariance. 
+6. Residual / skip connections: (ResNet) to ease gradient flow for deep nets. 
+7. Global pooling / flatten: reduce spatial dims before final classifier. 
+8. Fully connected layers and output: softmax or sigmoid for final prediction. 
+Working — what happens in a forward pass: 
+ Convolution: filter (small kernel like 3×3) computes local weighted sums across receptive field, 
+producing feature activations that respond to specific local patterns (edges, corners). Weight sharing 
+enforces translation equivariance and parameter efficiency. 
+ Stacking conv layers: increases effective receptive field; lower layers capture simple patterns, 
+deeper layers capture complex compositions (parts → objects). 
+ Pooling: reduces spatial resolution, keeps strongest signals (max) or averages; provides translational 
+robustness and reduces computation. 
+ Feature maps: each filter produces one map indicating where its pattern occurs. The stack of maps 
+is a multi-channel representation encoding different cues. 
+ Final layers fuse spatial info into semantic predictions. 
+How the components help image understanding: 
+ Locality & hierarchy: convs exploit local pixel dependencies and build hierarchical features needed 
+for object recognition. 
+ Parameter sharing: learning the same kernel across positions enables general detectors (e.g., an 
+edge detector that works across the image). 
+ Pooling & downsampling: focus on presence rather than exact position, enable computationally 
+tractable deep networks while preserving salient features. 
+ Feature maps as attention masks: they indicate spatial importance and can be visualized (saliency, 
+Grad-CAM) to localize objects. 
+Practical notes: use small kernels stacked (e.g., 3×3), batch normalization plus ReLU, residual blocks for 
+very deep networks, pretrain on large datasets and fine-tune for target tasks, apply data augmentation to 
+improve generalization. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, and what 
+are the major techniques used to interpret black-box models? 
+Definition & motivation: 
+Explainable AI comprises methods that make model decisions understandable to humans — clarifying why a 
+prediction was made and how input factors contribute. Interpretability is crucial for trust, debugging, 
+regulatory compliance, fairness auditing, and safety in high-stakes domains (medicine, finance, criminal 
+justice). 
+Why interpretability matters (concise): 
+ Trust & adoption: stakeholders are likelier to accept models that can be explained. 
+ Debugging & data quality: explanations reveal spurious correlations or label issues. 
+ Fairness & accountability: helps detect disparate impacts and justify decisions. 
+ Regulation: e.g., right to explanation in some jurisdictions. 
+Major XAI techniques (with purpose & caveats): 
+1. Global explainers 
+o Feature importance (permutation, impurity): ranks features by effect on model 
+performance; useful for broad insight but may be biased for correlated features. 
+o Partial Dependence Plots (PDP): show average marginal effect of a feature on prediction; 
+can mask heterogeneity. 
+2. Local explainers 
+o LIME (Local Interpretable Model-agnostic Explanations): fits a simple interpretable 
+surrogate (e.g., linear) near an instance; explains one prediction but can be unstable 
+depending on sampling and kernel. 
+o SHAP (SHapley Additive exPlanations): assigns additive contribution values using game
+theoretic Shapley values — gives consistent local explanations and decomposes prediction 
+exactly (for additive models); computationally heavier but there are approximations 
+(TreeSHAP). 
+3. Model-specific visualization & attribution 
+o Grad-CAM / saliency maps: for CNNs, localize image regions driving output. 
+o Attention visualization: for transformers, visualize attention scores (interpret carefully — 
+attention ≠ explanation). 
+4. Surrogate & rule extraction 
+o Train an interpretable model (decision tree, rule set) to approximate the black box globally; 
+provides human-readable rules but may not perfectly match original model. 
+5. Counterfactual explanations 
+o Provide minimal changes to inputs that flip the prediction; useful for recourse (tell user how 
+to change outcome). 
+Best practices: combine global and local methods, validate explanations with domain experts, beware of 
+explanation pitfalls (instability, proxy features), and use explanations to guide model improvements and 
+governance. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, 
+versioning, and data validation improve reliability. 
+Why data pipelines are essential: 
+They formalize the flow of raw data → transforms → features → model training → serving. Without a 
+pipeline, reproducibility, scalability and operational reliability break down. 
+How automation helps 
+ Schedules ingestion, transforms, feature computation and retraining; reduces manual error and 
+latency; enables reproducible daily/weekly model refreshes. 
+ Supports CI/CD for ML: automated testing and deployment minimize human regression. 
+How versioning helps 
+ Data versioning (snapshots or content-addressed storage) lets you reproduce experiments and audit 
+inputs used for a model. 
+ Model & code versioning (artifacts, hyperparams, Docker images) enable rollbacks and traceability. 
+ Combined, versioning enables explainability, compliance and safe experimentation. 
+How data validation improves reliability 
+ Early detection of schema changes, new categorical values, unexpected null spikes, or distributional 
+shifts prevents garbage-in/garbage-out. 
+ Tools and assertions (e.g., Great Expectations, custom checks) enforce invariants; failing fast 
+prevents corrupt training runs and model degradation. 
+Operational practices 
+ Implement modular DAGs (Airflow, Dagster) with idempotent steps, retries, and lineage tracking. 
+ Use feature stores to guarantee identical feature computation for training and serving. 
+ Monitor production data and model metrics; set automated retrain or alert thresholds. 
+Outcome: a mature pipeline reduces downtime, increases reproducibility, and enables safe, auditable model 
+lifecycle management. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain how ML 
+engineers detect drift and handle it in real-world systems. 
+Types of drift 
+ Feature (covariate) drift: P(X) changes — input distributions shift (e.g., new user cohort). 
+ Target (prior) drift: P(Y) changes — class prevalence alters (e.g., seasonal spikes). 
+ Concept drift: P(Y|X) changes — the mapping from inputs to labels evolves (e.g., new fraud 
+tactics). 
+Detection methods 
+1. Univariate tests: KS test, Chi-square, PSI (Population Stability Index) comparing historical vs 
+current distributions. 
+2. Multivariate tests / embeddings: train a classifier to distinguish old vs new data — high AUC 
+indicates shift. 
+3. Monitoring model performance: sudden drops in AUC, recall, calibration drift can signal concept 
+drift. 
+4. Feature importance / correlation monitoring: significant shifts in feature importance or feature
+feature correlations indicate broken assumptions. 
+5. Streaming drift detectors: ADWIN, DDM for low-latency detection in streaming contexts. 
+Handling strategies 
+ Alert + investigate: correlate drift with business events or upstream pipeline changes before 
+retraining. 
+ Recalibration: if calibration shifts, apply recalibration (Platt, isotonic) as short-term fix. 
+ Retraining policies: scheduled retraining (periodic) or triggered retraining when drift metric crosses 
+threshold; use sliding windows or weighted recent data. 
+ Adaptive learning: online / incremental learners that update continuously (with safeguards against 
+noise). 
+ Ensembles & short-term models: maintain long-term stable model plus short-term model trained 
+on recent data and blend predictions. 
+ Feature engineering updates: replace or augment features that become obsolete; add new signals 
+capturing changed behavior. 
+ Human-in-the-loop: sample and label recent data for supervised retraining to avoid blind drift fixes. 
+Practical cautions: calibrate sensitivity to avoid false alarms (seasonality vs real drift), maintain labeled 
+buffer for validation, and log lineage so pipeline errors are distinguished from genuine distributional change. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+1. Learning paradigm using labeled data (feature vectors + targets). 
+2. The model optimizes a loss to predict labels from inputs. 
+3. Includes classification and regression tasks. 
+4. Generalization evaluated on unseen (validation/test) data. 
+B-2. What is a feature in machine learning? 
+1. An individual measurable attribute or variable used as model input. 
+2. Examples: age, pixel intensity, word counts, geolocation. 
+3. Proper feature representation is critical for performance. 
+4. Features may be engineered, raw, or learned (embeddings). 
+B-3. State any two differences between training data and test data. 
+1. Purpose: training data fits model parameters; test data measures generalization. 
+2. Access: model sees training data during learning; test data must remain unseen until evaluation. 
+3. Training often augmented/tuned; test must be representative of production. 
+4. Test results guide final model selection and confidence. 
+B-4. What is overfitting? 
+1. When a model captures noise or idiosyncrasies of training data. 
+2. Exhibits low train error but high test error. 
+3. Caused by excessive complexity relative to data. 
+4. Mitigated by regularization, more data, or simpler models. 
+B-5. Define classification with an example. 
+1. Task of assigning discrete labels to inputs. 
+2. Outputs are categorical (binary or multi-class). 
+3. Example: email filtering → labels {spam, not spam}. 
+4. Evaluated with accuracy, precision, recall, F1, ROC-AUC. 
+B-6. What is a confusion matrix? 
+1. Tabular summary of predicted vs actual classes (K×K for K classes). 
+2. Shows True Positives, False Positives, True Negatives, False Negatives. 
+3. Enables calculation of precision, recall, specificity, F1. 
+4. Useful for imbalanced classes and error analysis. 
+B-7. What do you mean by model accuracy? 
+1. Fraction of correct predictions: (TP + TN) / total. 
+2. Simple overall performance metric for classification. 
+3. Can be misleading on imbalanced datasets. 
+4. Should be complemented with precision/recall/AUC. 
+B-8. State one advantage of using decision trees. 
+1. Highly interpretable — produce readable if-then rules. 
+2. Handle mixed data types without extensive preprocessing. 
+3. Able to model non-linear relationships and interactions. 
+4. Fast inference and easy visualization. 
+B-9. What is data normalization? 
+1. Scaling numerical features to a common range or distribution. 
+2. Common methods: Min–Max scaling (0–1), Z-score standardization (mean-0, std-1). 
+3. Improves numerical stability and speed for gradient-based optimizers. 
+4. Important for distance-based algorithms (KNN, K-means) and neural nets. 
+B-10. Define regularization in simple words. 
+1. Technique that penalizes overly complex models to prevent overfitting. 
+2. L1 (sparse weights) and L2 (weight shrinkage) are common penalties. 
+3. Dropout is a stochastic regularizer for neural networks. 
+4. Regularization improves generalization on unseen data. 
+ 

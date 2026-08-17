@@ -1,0 +1,23 @@
+
+
+--- PAGE 1 ---
+ID — T032
+Machine Learning Examination
+Semester 3
+INTERNAL EXAM Total marks : 40
+SY-Data Science
+Date — 10-06-2025
+A] Attempt any 6 (each 5 marks )
+a. Explain the complete machine learning lifecycle, from problem definition to model maintenance.
+b. Discuss the importance of feature representation and how it influences learning outcomes in ML systems.
+c. Explain the concept of bias—variance trade-off and its practical significance in real-world ML applications.
+d. Describe how machine learning models handle noisy and incomplete data during training.
+e. Explain the role of evaluation strategies in ensuring the robustness of ML models.
+f. Discuss the ethical challenges associated with large-scale deployment of machine learning systems.
+g. Explain how machine learning systems adapt to changing data patterns over time.
+B] Attempt All each carries Equal Marks (2 marks each )
+a. What is model training in machine learning?
+b. Define feature selection.
+c. What is meant by ground truth in ML?
+d. What is model deployment?
+e. Define learning from data.

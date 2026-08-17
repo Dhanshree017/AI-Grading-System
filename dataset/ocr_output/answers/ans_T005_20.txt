@@ -1,0 +1,105 @@
+ID-T005 
+Name: Ameesha Kulkarni Roll no: 20 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine 
+learning? 
+The main difference it is about who makes the rules for the computer. 
+1. Traditional programming it is like writing a fixed script. The human programmer must 
+code every single rule and step for the computer to follow. 
+2. Machine learning it is different. You give the computer the data and the answers 
+(labels), and the computer uses math to find the rules or the patterns itself. 
+3. So, old way is: Rules + Data = Answer. ML way is: Data + Answer = Rules. 
+4. Traditional logic it is static, meaning it cannot adapt to new situations without 
+manual code changes. 
+5. ML logic it is dynamic and can update when it sees more data. 
+6. ML is better for hard problems like image recognition because no human can write 
+the rules for every pixel and angle. 
+7. The output of traditional is the final answer. The output of ML is the model (the 
+learned rules). 
+A-2. Explain the concept of Entropy and Information Gain in the context of 
+building a Decision Tree. 
+These two ideas they are the most important tools that the Decision Tree uses to make 
+its splits and to grow correctly. 
+1. Entropy it is a concept that measures the impurity or the total disorder in a group 
+of data points in a tree node. 
+2. If a node has mixed answers (messy), the entropy is high. If a node is clean (all the 
+same answer), the entropy is low (near zero). 
+3. Information Gain it is the actual deciding factor. It measures how much that impurity 
+is reduced after the split is performed. 
+4. The tree looks for the split that gives the biggest Information Gain, because that 
+means it gets rid of the most confusion. 
+5. The tree calculates the old entropy minus the new entropy to get the gain. 
+6. This greedy strategy ensures the tree grows with the best separating features at the 
+top (near the root). 
+7. The goal of the tree is to reduce the entropy at every single step. 
+A-3. Why is this algorithm considered "Naive," and what computational benefit 
+does this assumption provide? 
+This is for the Naive Bayes algorithm, which is a very good classifier. 
+1. It is called "Naive" because it makes a big assumption that is usually not true in real 
+data. 
+2. The assumption is that every feature (column) is completely independent of all the 
+other features given the output class. 
+3. For example, it assumes a person's height has no connection to their weight. 
+4. Computational Benefit: But this simplifying assumption it makes the math very easy 
+and fast. 
+5. Instead of calculating complex joint probability, the model just multiplies the simple 
+probabilities of each feature separately. 
+6. This multiplication shortcut it makes Naive Bayes extremely fast for training and it 
+works very well even with thousands of features (like words in text). 
+7. It is one of the most scalable algorithms for text classification. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and 
+what function does it use to map its output to a probability? 
+Logistic Regression is a classifier model even though it has the word "regression". 
+1. Problem Solved: It solves classification problems, mainly binary classification (predicting 
+a YES or a NO). 
+2. The goal is to predict the probability that an input belongs to the positive class. 
+3. The Process: It first calculates a linear score from the input data, but this score can 
+be any number. 
+4. Mapping Function: To turn this score into a probability, the model uses the Sigmoid 
+function (or Logistic Function). 
+5. The Sigmoid function it has an S-shape and it forces all numbers into a usable range 
+between zero and one. 
+6. This zero-to-one output it is the probability. 
+7. The model then uses this probability (usually compared to 0.5) to make the final 
+class decision. 
+8. It is a generalized linear model. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Spam Filtering: ML reads emails and classifies them as junk or real. 
+2. Customer Churn: Predicts which customers will leave the company soon. 
+3. Recommendation Systems: Guesses what product or movie you want to see next. 
+4. Fraud Detection: Flags suspicious credit card transactions in real-time. 
+5. Voice Assistants: ML interprets human voice and executes commands (like Siri or 
+Alexa). 
+B-2. What are training, validation, and test sets? Why are they used? 
+These are the three separate piles the total dataset is divided into. 
+1. Training Set: Used to teach the model and fit its parameters. 
+2. Validation Set: Used to tune the hyperparameters and select the best model during 
+development. 
+3. Test Set: Used only once for the final true evaluation score. 
+4. Purpose: They are used to prevent data leakage (cheating). 
+5. They ensure the model's score is honest for new, unseen data. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) it is a technique for getting a better score for the model's performance 
+by running the test many times. 
+1. The data is split into K equal parts (like 5 or 10). 
+2. The model runs K times, and each time, a different part is the test set. 
+3. The final score is the average of all the K test scores. 
+4. Importance: It makes the score more reliable and stable, so it's the best way to tune 
+the hyperparameters. 
+5. It makes better use of the limited data you have by using all of it for testing at 
+some point. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a table that shows how many correct and wrong predictions the 
+classifier made. 
+1. Precision: How many times the model was right when it guessed positive. It focuses 
+on False Positives. 
+2. Recall: How many actual positive cases the model managed to find. It focuses on False 
+Negatives. 
+3. F1-Score: The balanced average of Precision and Recall. It is important for datasets 
+that are imbalanced. 
+4. Matrix: It shows the counts for True Positives, True Negatives, False Positives, and 
+False Negatives. 
+5. These metrics are better than just using accuracy for many problems. 

@@ -1,0 +1,115 @@
+ID-T001 
+Name :Lalit chopda Roll no: 26 
+Class : Ty Bsc Computer Science 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 of the following questions (20 Marks) 
+A-6. Explain the bias-variance tradeoff and its significance. 
+The Bias-Variance Tradeoff it is the core concept that it explains why every machine learning model 
+makes errors. The total error is a balance that you must find between Bias and Variance. The 
+irreducible error is just noise. 
+1. Bias (Underfitting): Bias it is the error from the model being too stupid and too simple and 
+making wrong assumptions about the data. 
+2. High Bias Problem: High Bias causes Underfitting, where the model performs bad on all data 
+because it cannot find the real pattern. The accuracy is very low. 
+3. Variance (Overfitting): Variance it is the error from the model being too complicated and overly 
+sensitive to the noise in the training set. 
+4. High Variance Problem: High Variance causes Overfitting, where the model is perfect on the 
+training data but it fails badly on the new test data. 
+5. The Conflict: The tradeoff it means that when you try to reduce bias (make the model 
+complex), the variance will always increase. It is an impossible task to remove both. 
+6. Finding the Middle: The goal it is to find the optimal point of complexity where the total error 
+is the minimum amount for the real-world application. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define and explain metrics like Precision, Recall, and F1-score and when to use them. 
+These three important scores they are used for classification to check how well the model works, 
+especially when one class is very small (imbalanced). 
+1. Precision Measurement: Precision it tells you how reliable the model is when it says a sample is 
+positive. It is True Positives divided by all positive predictions. 
+2. Precision Use: You must use Precision when getting a False Positive is a very bad mistake (e.g., 
+wrongly marking a person as a criminal). 
+3. Recall Measurement: Recall it tells you how many of the actual positive cases the model 
+successfully found. It is True Positives divided by all actual positives. 
+4. Recall Use: You must use Recall when getting a False Negative is a very dangerous mistake 
+(e.g., failing to detect a serious disease). 
+5. F1-Score Balance: The F1-score it is the harmonic mean that it combines Precision and Recall 
+into one single balanced number. 
+6. F1-Score Use: You should use F1 when you need both Precision and Recall to be good, which is the 
+case for most projects. 
+B-4. How do you select the right machine learning algorithm for a given problem? 
+You must select the right algorithm by matching the problem's requirements to the algorithm's 
+characteristics and always consulting the data. 
+1. Output Type: First, you must determine the type of output. If it is a category, you use 
+Classification. If it is a number, you use Regression. 
+B-5. Explain the steps in the machine learning model development lifecycle. 
+The ML Lifecycle it is the series of stages that it guides a project from the raw data to the live 
+system that it is used by the customers. 
+1. Data Ingestion and Cleaning: This is the first and most time-consuming step where you gather 
+all the data and you fix all the errors, remove the bad values, and handle the missing data. 
+2. Feature Engineering: This is the part where you get creative and you transform the raw 
+columns into new, highly useful input features that will boost the model's accuracy. 
+3. Data Splitting: The data it must be split into a training set, a validation set, and a test set to 
+ensure an unbiased evaluation. 
+4. Model Training: The model it is trained on the training set by minimizing the loss function and 
+fitting the internal parameters. 
+5. Hyperparameter Tuning: The validation set is used to find the best settings 
+(hyperparameters) for the model and to apply Early Stopping. 
+6. Deployment: The final, best model it is put into the production environment (the live system) so 
+it can make real-time predictions. 
+C) Attemp any 4 (20 Marks) 
+C-1. What is the role of feature scaling in machine learning. 
+Feature Scaling it is a pre-processing step that it adjusts the numerical values of the input features 
+so they all fall into a similar range. This is very important. 
+1. Equal Magnitude: The main role it is to prevent features with large numbers (e.g., salary) from 
+unfairly dominating the model's objective function over features with small numbers (e.g., age). 
+2. Distance Reliance: It is absolutely required for algorithms that calculate the distance between 
+data points, such as K-Nearest Neighbors (KNN) and K-Means Clustering. 
+3. Gradient Descent: Scaling it makes the training process much faster for all models that use 
+gradient descent by making the optimization landscape smoother. 
+4. Numerical Stability: Scaling it improves the numerical stability of the optimization process, 
+preventing weird errors like overflows or underflows. 
+5. Standardization: Standardization it transforms the data to have a mean of 0 and a variance 
+of 1. 
+6. Tree Ignore: Models based on splits and rules (like Decision Trees) they don't care about scaling 
+because they use thresholds, not distances. 
+C-3. Define and explain overfitting and underfitting and how to avoid them. 
+These are the two main failures that it can happen to any machine learning model when it tries to 
+make predictions on new data. 
+1. Overfitting Definition: Overfitting it is when the model is too complex and it memorizes the 
+training data perfectly, including all the noise. This is a high variance problem. 
+2. Overfitting Symptom: The model gets an excellent score on the training data, but the score is 
+very bad on the test data. 
+3. Overfitting Avoidance: You must use Regularization (a penalty on complexity), you must use 
+more data, or you must stop training early (Early Stopping). 
+4. Underfitting Definition: Underfitting it is when the model is too simple and it cannot find the 
+basic patterns in the data. This is a high bias problem. 
+5. Underfitting Symptom: The model gets a bad score on both the training data and the test 
+data. 
+6. Underfitting Avoidance: You must increase the model's complexity (e.g., use a non-linear 
+algorithm), or you must perform better Feature Engineering. 
+C-4. How to deal with missing data, scale features, or encode categorical variables. 
+These three steps they are the minimum required data preparation that you must do before you can 
+start model training. 
+1. Missing Data: You must handle the blank cells by deleting the rows or imputing (filling in the 
+blanks). 
+2. Numerical Imputation: Missing numerical values they are typically filled with the mean or 
+median of the column. 
+3. Categorical Imputation: Missing text values they are typically filled with the mode (most 
+frequent value). 
+4. Scaling Requirement: Feature scaling must be done to equalize the importance of the input 
+features. 
+5. Categorical Encoding: Text data must be converted to numbers because algorithms cannot 
+process text. 
+6. One-Hot Encoding: For nominal (unordered) text, you must use One-Hot Encoding to create 
+binary columns. 
+C-6. Explain the difference between classification and regression 
+These are the two main types of supervised learning problems, and they are distinguished by the kind 
+of output that the model is supposed to predict. 
+1. Classification Output: Classification it predicts a fixed label or a category. 
+2. Classification Examples: The output it is always discrete, such as predicting Yes/No, True/False, 
+or Cat/Dog. 
+3. Regression Output: Regression it predicts a continuous number that can take any value within 
+a given range. 
+4. Regression Examples: The output it is always continuous, such as predicting the price of a house 
+or the temperature tomorrow. 
+5. Loss Function (Classification): Classification it typically uses the Cross-Entropy loss function for 
+training. 

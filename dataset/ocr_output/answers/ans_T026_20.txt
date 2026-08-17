@@ -1,0 +1,19 @@
+ID-T026 
+Name: Gauri Raina Roll no: 20 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) - Poor Student 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+Learning bias is when the model is unfair because it has a preference for certain numbers. It's 
+basically a preference for an outcome. 
+ Concept: Bias means the model is too flexible and complicated. It makes a lot of 
+errors because it tries to fit everything perfectly. 
+ Sources of Bias: 
+1. Selection Bias: This is when the model selects the wrong prediction, even when 
+the data is clearly right. 
+2. Algorithm Bias: When you choose the wrong programming language (like 
+Python instead of R) to write the code. 
+ Impact on Generalization: High bias causes overfitting. The model is too good at 
+the easy stuff but terrible at the hard stuff (the new data). 
+ data. 

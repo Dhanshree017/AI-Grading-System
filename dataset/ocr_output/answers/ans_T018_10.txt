@@ -1,0 +1,119 @@
+ID-T018 
+Name: kiran pawar Roll no: 10 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Feature engineering converts raw data into meaningful features that make machine learning 
+models more accurate and efficient. 
+a) Feature Creation 
+ Constructing new features from raw data using domain knowledge. 
+ Examples include ratios, differences, polynomial features, date-time decompositions, 
+rolling statistics, and interaction features. 
+ Helps uncover hidden relationships not visible in raw form. 
+b) Feature Selection 
+ Removing unnecessary, redundant, or noisy features to improve model generalization. 
+ Criteria include relevance, correlation, information gain, and model-based importance 
+scores. 
+ Leads to simpler models with faster training and better interpretability. 
+c) Feature Extraction 
+ Transforming high-dimensional or correlated features into compact representations. 
+ Methods include PCA, autoencoders, and embedding models. 
+ Useful when inputs are high-dimensional (text, images, genomics). 
+d) Impact on Model Performance 
+ Good features significantly boost model accuracy and stability. 
+ Reduces overfitting by removing noise. 
+ Improves computational efficiency. 
+ Often determines the difference between a weak and a strong model. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability, 
+independence assumption. 
+Naive Bayes is a probabilistic classification algorithm based on Bayes’ theorem. It selects 
+the class that is most probable given the observed features. 
+How It Works 
+ For each class, the model computes how likely it is to observe the given feature 
+values. 
+ It multiplies class prior probability with feature likelihoods to obtain posterior 
+probability. 
+ The class with the highest posterior probability becomes the prediction. 
+Conditional Probability 
+ It represents the likelihood of observing a feature value given a particular class. 
+ These likelihoods help decide which class the input most closely aligns with. 
+Independence Assumption 
+ Naive Bayes assumes that all features are conditionally independent given the class. 
+ Although this assumption is rarely perfectly true, it simplifies calculations and works 
+very well for high-dimensional problems like text classification. 
+Strengths 
+ Extremely fast training. 
+ Performs well with sparse data. 
+ Robust to irrelevant features. 
+Weaknesses 
+ Performs poorly when strong relationships exist among features. 
+ Raw probabilities may be poorly calibrated. 
+A-5. Explain the architecture and working of Autoencoders. Describe encoder, decoder, latent 
+representation, and applications in anomaly detection. 
+Autoencoders are unsupervised neural networks that learn to compress and reconstruct data. 
+They extract essential structure by minimizing reconstruction error. 
+a) Encoder 
+ Transforms the high-dimensional input into a lower-dimensional representation. 
+ Gradually compresses information layer by layer. 
+b) Latent Representation 
+ A compact encoded vector capturing the most important patterns. 
+ Determines what information the autoencoder learns to preserve. 
+c) Decoder 
+ Reconstructs the original input from the latent representation. 
+ Attempts to recover details lost during compression. 
+d) Training 
+ The network learns by reducing the difference between the input and reconstructed 
+output. 
+e) Application in Anomaly Detection 
+ The autoencoder learns patterns from normal data. 
+ Normal samples reconstruct well because the model understands them. 
+ Anomalies reconstruct poorly, resulting in high reconstruction errors that identify 
+abnormal behavior. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+1. Data Preparation 
+Collect data, remove noise, normalize values, handle missing entries, and split into 
+training, validation, and test sets. 
+2. Architecture Selection 
+Choose an appropriate model type such as CNN for images, LSTM for sequences, or 
+MLP for tabular data. 
+Define layers, activation functions, and depth. 
+3. Training 
+Pass batches through the model, compute loss, backpropagate gradients, and update 
+parameters using an optimizer. 
+4. Regularization 
+Techniques like dropout, weight decay, early stopping, and data augmentation help 
+prevent overfitting. 
+5. Evaluation 
+Use test data to measure accuracy, precision, recall, or other metrics. 
+Analyze errors and refine the model if needed. 
+B-3. Explain Reinforcement Learning. Give 2 examples where reinforcement learning is used. 
+Reinforcement Learning is a learning paradigm where an agent learns optimal behavior by 
+interacting with an environment and receiving rewards or penalties based on its actions. 
+Main Components 
+ Agent 
+ Environment 
+ States 
+ Actions 
+ Rewards 
+ Policy (strategy) 
+Examples 
+1. Game-playing (e.g., chess, Go, robotic soccer). 
+2. Autonomous navigation in robots or drones. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+a) Text Cleaning 
+Removes noise from raw text. Includes lowercasing, punctuation removal, normalization, 
+stopword removal, and correcting misspellings. 
+b) Tokenization 
+Splits text into smaller units such as words, subwords, or characters. Tokenizing prepares the 
+text for numerical processing. 
+c) Embeddings 
+Transforms tokens into dense vectors that capture semantic relationships. This includes 
+classical word vectors and modern contextual embeddings. 
+d) Sequence Modelling 
+Uses models such as LSTMs, GRUs, or transformers to learn relationships across the 
+sequence. These models capture meaning, context, and dependencies. 

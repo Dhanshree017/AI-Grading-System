@@ -1,0 +1,50 @@
+ID-T034 
+Name: Sohil Roy Roll no: 3 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is the process of assigning correct outputs or categories to input data so that a 
+supervised learning model can learn from it. In supervised learning, the model is trained 
+using labeled examples, where each data point consists of an input and its correct output. 
+These labels act as a teacher that guides the learning process. 
+For example, in image classification, images are labeled as “cat”, “dog”, or “car”. In spam 
+detection, emails are labeled as “spam” or “not spam”. The model uses these labels to 
+understand how different features relate to each class. If labeling is accurate, the model 
+learns correctly, but if labels are wrong or inconsistent, the model will learn incorrect 
+patterns. 
+High-quality labeled data improves the accuracy, reliability, and fairness of machine learning 
+systems. Therefore, data labeling is a critical step in building effective supervised learning 
+models. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods are techniques that combine multiple machine learning models to 
+produce a better and more reliable prediction. Instead of using a single model, ensemble 
+methods use many models and merge their outputs through voting, averaging, or weighted 
+combination. 
+The main idea behind ensembles is that different models may make different mistakes. By 
+combining them, these errors cancel out, leading to improved accuracy and stability. For 
+example, Random Forest uses many decision trees and averages their predictions, while 
+boosting methods focus on correcting previous mistakes. 
+Ensemble methods reduce overfitting, increase robustness, and provide better generalization. 
+They are widely used in competitions, financial forecasting, medical diagnosis, and 
+recommendation systems because they outperform individual models. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means that the results of a machine learning experiment can be obtained 
+again by other researchers using the same data, algorithm, and settings. It is a key 
+requirement for scientific reliability and trust. 
+In machine learning, models depend on many factors such as data preprocessing, random 
+initialization, hyperparameters, and software versions. If these details are not clearly 
+documented, results cannot be verified. Reproducibility allows researchers to confirm 
+results, compare models, and improve existing methods. 
+It also helps detect errors, biases, or unfair practices in experiments. In critical areas like 
+healthcare and finance, reproducibility ensures that decisions made by machine learning 
+systems are transparent, dependable, and trustworthy. 
+A-5) Explain the concept of model uncertainty and its significance in decision-making 
+Model uncertainty refers to how confident a machine learning model is about its predictions. 
+It shows whether the model is very sure or unsure about the output it produces. Uncertainty 
+can occur due to limited data, noisy information, or unfamiliar situations. 
+For example, a medical diagnosis system may predict a disease but also indicate low 
+confidence because the patient data is unusual. In such cases, doctors can review the decision 
+instead of blindly trusting the model. 
+Understanding uncertainty is important in decision-making because it helps avoid risky or 
+wrong actions. It allows humans to combine machine intelligence with human judgment, 
+making AI systems safer, more reliable, and more suitable for real-world use. 

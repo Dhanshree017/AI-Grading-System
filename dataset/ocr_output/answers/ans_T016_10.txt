@@ -1,0 +1,120 @@
+ID-T016 
+Name: soumik roy Roll no: 10 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Data augmentation is like when we dont have more data so we start doing random things with the same data 
+like flipping left right or like putting noise or stretching image, because sometime model want more data but 
+we don’t have so we make fake type data from original only. In deep learning it is important cause deep 
+learning networks get hungry and if you dont feed it a lot then it misbehaves during training and start giving 
+weird outputs. By doing augmentation we trick the model that you see more variety, even if its not real 
+variety but the model think it is. Also augmentation stop model from memorising the picture too much cause 
+now the picture is flipped or zoomed so model get confused but in a good way so it learn more general thing 
+not specific.
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Decision boundary is like an invisible line or wall which classifier make between two types of things. Kind 
+of like when children playing and draw chalk line on floor and say left side for boys and right side for girls. 
+In machine learning, if you have red dots and blue dots on graph, model draw some bending or straight line 
+between them so that left side is red class and right side is blue class. For example logistic regression draw a 
+straight one but neural networks can draw weird shape one like snake. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Dropout is method where during training some neurons are kicked out temporarily like telling them “you 
+take rest today”. So they don’t always depend on each other and this avoid them forming secret partnerships 
+that cause overfitting. During training random percentage like 20% or 50% neurons switched off so the 
+network becomes more robust. It help regularization because model can’t memorize very detailed pattern 
+cause half of its brain is missing randomly so it must learn general thing instead. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+Tokenization means breaking text into smaller chunks like words pieces or even characters. It is important 
+cause machine can’t understand paragraph directly but if you cut it up into tokens it can process. Example: 
+“I like apples” → “I”, “like”, “apples”. Two methods: word tokenization where you split by words and 
+subword tokenization like BPE where weird words are broken into smaller understandable parts. Also there 
+is character tokenization but that is too small pieces sometimes. 
+SECTION C –  
+Attempt any 5 (10 marks each) 
+C-1. Define supervised learning with an example. 
+Supervised learning is a machine learning approach where a model learns from labeled data. In labeled data, 
+each input is paired with a correct output, allowing the algorithm to understand the relationship between 
+features and the target variable. The main idea is to learn a mapping function f(x)→yf(x) \rightarrow 
+yf(x)→y so that the model can predict outputs for new unseen inputs. 
+Supervised learning can be divided into: 
+ Classification: when the output variable is categorical. 
+ Regression: when the output variable is continuous. 
+How supervised learning works: 
+1. A dataset containing input features and corresponding labels is provided. 
+2. The model learns patterns from this data using algorithms such as Decision Trees, Logistic 
+Regression, SVM, Neural Networks, etc. 
+3. It then adjusts internal parameters to minimize errors. 
+4. After training, the model is tested on unseen data to check its accuracy. 
+Example: 
+Spam email detection is a classic example. 
+ Inputs: email text features 
+ Output: “spam” or “not spam” label 
+The model learns from thousands of labeled emails and becomes capable of predicting whether a new email 
+is spam. 
+Supervised learning is widely used in finance, healthcare, speech recognition, and recommendation systems. 
+C-2. What is precision in classification metrics? 
+Precision is a performance metric used in binary and multi-class classification that measures the accuracy of 
+positive predictions. It answers the question: “Out of all the samples the model predicted as positive, how 
+many were actually positive?” 
+Precision is important especially in scenarios where false positives are costly. 
+Mathematical definition: 
+Precision=TPTP+FP\text{Precision} = \frac{TP}{TP + FP}Precision=TP+FPTP  
+Where: 
+ TP (True Positives): correct positive predictions 
+ FP (False Positives): incorrect positive predictions 
+Why precision matters: 
+ In medical diagnosis (e.g., cancer detection), a false positive may cause unnecessary stress and 
+treatment. 
+ In spam filtering, predicting a normal mail as spam is undesirable. 
+Precision provides better insight in imbalanced datasets where one class dominates. 
+Example: 
+If a model predicts 50 emails as spam and 40 are actually spam, precision = 40 / 50 = 0.8 (80%). 
+High precision means fewer false alarms. 
+C-3. Explain the term kernel function. 
+A kernel function is a mathematical function used in kernel-based algorithms like Support Vector Machines 
+(SVMs) to transform data into a higher-dimensional space without explicitly computing the coordinates in 
+that space. This technique enables models to learn patterns that are not linearly separable in the original 
+feature space. 
+Key idea: 
+Instead of computing a mapping ϕ(x)\phi(x)ϕ(x), we compute a kernel function K(xi,xj)K(x_i, x_j)K(xi,xj) 
+that represents the inner product of two vectors in higher-dimensional space. 
+Why kernels are useful: 
+ They allow SVMs to construct nonlinear decision boundaries. 
+ They avoid the computational cost of high-dimensional feature transformations. 
+ They work well even when data has complex relationships. 
+Applications: 
+ Image classification 
+ Bioinformatics 
+ Text categorization 
+Kernel functions increase model flexibility without increasing computational burden. 
+C-4. Define feature scaling. 
+Feature scaling is a preprocessing technique used to normalize or standardize the range of input features so 
+that all variables contribute equally to model training. It is especially important in algorithms that rely on 
+distance, gradient descent, or magnitude-based calculations. 
+Why feature scaling is needed: 
+ Features with large numerical ranges dominate those with small ranges. 
+ Gradient descent converges faster when features share similar scales. 
+ Distance-based models such as KNN or K-means produce more accurate results. 
+ Algorithms like SVMs and Neural Networks become more stable. 
+Example: 
+If “age” ranges from 10 to 90 and “income” ranges from 10,000 to 1,000,000, scaling ensures both influence 
+model training equally. 
+C-5. What is bagging? 
+Bagging (Bootstrap Aggregating) is an ensemble machine learning technique that aims to improve model 
+stability, reduce variance, and avoid overfitting. It works by training multiple models on different 
+bootstrapped samples of the dataset and combining their outputs. 
+How bagging works: 
+1. Generate many bootstrapped samples by randomly selecting data points with replacement. 
+2. Train separate models (usually Decision Trees) on each sample. 
+3. Aggregate predictions: 
+o Classification: majority voting 
+o Regression: averaging 
+Why bagging works: 
+ Reduces variance because each model sees a different subset of data. 
+ Helps unstable learners (like Decision Trees) generalize better. 
+ Reduces chance of overfitting. 
+Example: 
+Random Forest is a classic bagging-based algorithm where each tree sees a different random dataset and 
+random subset of features. 
+Bagging is particularly powerful when working with noisy or high-variance models. 

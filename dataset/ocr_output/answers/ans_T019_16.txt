@@ -1,0 +1,265 @@
+ID-T019 
+Name: Aarush phalkhe Roll no: 16 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-a) Define Machine Learning. Explain how it differs from traditional programming with 
+a simple example. 
+Definition: 
+Machine Learning is a process where a computer system learns patterns from data and uses 
+those patterns to make predictions or decisions without being directly programmed for every 
+rule. 
+Difference: 
+Traditional programming needs human-written instructions, like step-by-step commands. 
+But ML builds its own internal rules by studying examples. 
+Example: 
+In traditional coding, to detect spam emails we write many conditions manually. In ML, we 
+give the model thousands of spam/non-spam emails, and it learns the pattern automatically 
+and predicts new emails. 
+A-b) Describe the main types of Machine Learning — Supervised, Unsupervised, and 
+Reinforcement Learning. Give one example for each. 
+There are two types of Machine Learning only: hard learning and soft learning. Hard 
+learning is when computer memorize exact answers like a student writing definition by heart. 
+Soft learning is when system guess answers randomly using internet signals. 
+Example of Hard Learning: Calculator remembering multiplication table. 
+Example of Soft Learning: Phone ringing louder when weather is hot. 
+Reinforcement learning is not part of ML, it is only for robot arms in factories. 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Classification and regression are actually the same because both always give numerical 
+output. Classification always gives numbers like 1.5 or 3.9, and regression always gives 
+names like “cat” or “dog”. 
+Example of Classification: Predicting the name of a country by using height of a person. 
+Example of Regression: Predicting whether a movie is comedy or drama. 
+A-e) What is a model in Machine Learning? Explain how a model learns patterns from 
+data during training. 
+Model: 
+A model is the mathematical structure or function learned by an algorithm that maps inputs 
+to outputs. 
+How It Learns: 
+ The model makes predictions on training data. 
+ It compares predictions with actual labels. 
+ A loss value is computed. 
+ The algorithm adjusts parameters such as weights. 
+ After many iterations, the model captures meaningful patterns. 
+SECTION B —  
+B-b) Describe the difference between parametric and non-parametric models. Give 
+suitable examples of each and explain when to use them. 
+Parametric models — definition and properties 
+ Parametric models summarize data with a fixed, finite set of parameters; the number 
+of parameters does not grow with dataset size. 
+ They assume a specific functional form (a model family). 
+ Examples: Linear regression, logistic regression, simple neural networks with a fixed 
+architecture. 
+Advantages of parametric models 
+ Faster to train and require less memory. 
+ Easier to interpret (coefficients have clear meaning). 
+ Work well when the assumed form is a reasonable approximation. 
+Limitations of parametric models 
+ Can be biased if the true relationship does not match the assumed form — risk of 
+underfitting. 
+Non-parametric models — definition and properties 
+ Non-parametric models do not assume a fixed form; complexity can grow with the 
+amount of data. 
+ They can adapt to more complex patterns without a fixed parameter budget. 
+ Examples: k-Nearest Neighbors (k-NN), decision trees (and some tree ensembles), 
+kernel density estimators, Gaussian processes. 
+Advantages of non-parametric models 
+ More flexible and can model complicated relationships. 
+ Often require less prior assumption about the shape of the function. 
+Limitations of non-parametric models 
+ Can require large amounts of data to perform well. 
+ Often more computationally expensive at prediction time (e.g., k-NN stores training 
+data). 
+ Can be harder to interpret. 
+When to use which 
+ Use parametric when data is limited, interpretability is important, or you suspect a 
+simple relationship. 
+ Use non-parametric when you have lots of data, expect complex patterns, and can 
+afford computation and possible tuning. 
+B-c) What is inductive bias? Explain why every machine learning algorithm requires 
+inductive bias to make predictions. 
+Definition of inductive bias 
+ Inductive bias is the set of assumptions a learning algorithm makes to prefer some 
+hypotheses over others when multiple explanations fit the training data. 
+Why it is necessary 
+ With finite data, many different functions can explain the observations; without bias 
+the learner cannot pick one and cannot generalize to unseen examples. Inductive bias 
+narrows down possibilities so the algorithm can make predictions. 
+Examples of inductive bias 
+ Linear models assume relationships are approximately linear (linearity bias). 
+ k-NN assumes nearby points are similar (locality bias). 
+ Convolutional Neural Networks assume local connectivity and translation invariance 
+for images (spatial bias). 
+Effect on learning and generalization 
+ Good bias aligns with the problem domain and improves sample efficiency and 
+generalization. 
+ Mismatched bias (wrong assumptions) leads to systematic errors and poor 
+performance. 
+ Inductive bias is not “bad” — it is essential: the right bias helps the learner prefer 
+realistic models. 
+Practical note 
+ Choose algorithms whose biases match the problem (e.g., CNNs for images, sequence 
+models for time series). If unsure, use flexible models with regularization and validate 
+performance carefully. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic models — meaning 
+ Deterministic models produce a single fixed output for a given input and do not 
+express uncertainty in their predictions. 
+ The mapping from input to output is fixed once the model parameters are set. 
+Examples of deterministic models 
+ A trained decision tree that returns a class label. 
+ A standard neural network that outputs a point estimate (e.g., a scalar value for 
+regression). 
+Probabilistic models — meaning 
+ Probabilistic models represent uncertainty explicitly by producing probability 
+distributions over possible outputs or by modeling the data-generating process. 
+ They allow reasoning about confidence and can incorporate prior beliefs. 
+Examples of probabilistic models 
+ Naive Bayes classifier that outputs class probabilities. 
+ Bayesian linear regression that produces a posterior distribution over weights and a 
+predictive distribution for outputs. 
+ Gaussian process regression yielding a mean and variance for predictions. 
+When to use which 
+ Use deterministic models when you need fast predictions and are less concerned 
+about uncertainty. 
+ Use probabilistic models when uncertainty matters (e.g., medical diagnosis, risk 
+assessment), when you want calibrated probabilities, or when Bayesian inference 
+helps incorporate prior knowledge. 
+Practical distinction 
+ Deterministic models are often simpler and faster; probabilistic models provide richer 
+output (confidence intervals, probabilities) and support principled decision-making 
+under uncertainty. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation 
+1. Problem definition 
+ Clarify objective, success metric, constraints (latency, fairness, cost), and deployment 
+context. 
+2. Data collection 
+ Gather relevant data from databases, sensors, APIs, or public datasets; ensure data is 
+representative of the problem. 
+3. Data exploration (EDA) 
+ Inspect distributions, missing values, outliers, and relationships between variables; 
+visualize key features. 
+4. Data preprocessing 
+ Clean missing values, standardize/normalize numerical features, encode categorical 
+variables, and handle outliers. Ensure preprocessing steps are repeatable. 
+5. Feature engineering 
+ Create meaningful features from raw inputs (e.g., date parts, aggregations), select 
+relevant features, and consider dimensionality reduction if needed. 
+6. Train/validation/test split 
+ Split data into training, validation (for tuning), and test (for final evaluation). Use 
+stratification or time-based split when appropriate. 
+7. Model selection and training 
+ Choose candidate algorithms, train on training set, and tune hyperparameters using 
+validation set or cross-validation. 
+8. Evaluation 
+ Evaluate final model on test set using appropriate metrics (accuracy, 
+precision/recall/F1, MAE/MSE, AUC). Perform error analysis to understand failure 
+modes. 
+9. Deployment and monitoring 
+ Package model for production, deploy with proper APIs or pipelines, and monitor 
+performance, data drift, and model health in real time. 
+10. Maintenance 
+ Retrain or update model as new data arrives, handle concept drift, and maintain logs 
+and versioning. 
+Practical tips 
+ Keep pipelines reproducible, track experiments and hyperparameters, and involve 
+domain experts in feature design and evaluation. 
+SECTION C – Attempt any 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two commonly 
+used ML algorithms. 
+Meaning of Algorithm in ML 
+ An algorithm in ML is the step-by-step method used to learn patterns from data and 
+build a model. 
+ It defines how the model updates parameters, how predictions are made, and how 
+errors are corrected. 
+ Algorithms do not store final knowledge; they are the process that produces a model 
+based on data. 
+ Different algorithms suit different types of data and tasks. 
+Two common ML algorithms 
+1. Linear Regression – used to predict continuous values by fitting a line/relationship 
+between variables. 
+2. Decision Tree – splits data into branches based on conditions to classify or predict 
+outcomes. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. Give 
+suitable examples. 
+Features 
+ Features are the input variables that describe the data. 
+ They are the measurable attributes the model uses to understand patterns. 
+ Example: In a house price dataset: size, number of rooms, location. 
+Labels 
+ Labels are the correct outputs or target values the model must predict. 
+ They represent the answer for each data sample. 
+ Example: The actual price of the house. 
+Difference 
+ Features = inputs; Labels = expected outputs. 
+ Features explain the “why,” labels define the “what to predict.” 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Meaning of Model Evaluation 
+ Model evaluation is when you check if the computer is happy with the model and if 
+the code looks beautiful. 
+ It mainly uses visual judgement by seeing if graphs look nice. 
+Two evaluation metrics 
+1. Rainbow Score – measures how colorful the predictions are. 
+2. Noise Ratio – tells how much background sound model hears while predicting. 
+These metrics do not depend on data; they measure model's artistic quality. 
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Definition of Overfitting 
+ Overfitting happens when a model learns the training data too closely, including noise, 
+instead of learning general patterns. 
+Why it occurs 
+ Model is too complex for the amount of data. 
+ Training data contains noise or unnecessary details. 
+ Model trains too long without regularization. 
+Two ways to reduce it 
+1. Use Regularization – adds penalty to complexity so the model does not memorize. 
+2. Use More Training Data – helps model learn general patterns instead of specific 
+noise. 
+SECTION D-- 
+D-a) What is training data? How is it used in building a model? 
+ Training data is the set of labeled or input examples used to teach a model the relation 
+between inputs and desired outputs. 
+ During training the algorithm repeatedly processes these examples, compares model 
+outputs to true targets, and updates internal parameters to reduce error. 
+ Good training data should be representative, diverse, and clean so the learned model 
+generalizes to new inputs. 
+ If training data contains bias or incorrect labels, the model will learn those errors and 
+perform poorly in practice. 
+D-b) Define prediction in machine learning. 
+ Prediction means giving a final answer only using the last item seen in the dataset; it 
+does not use any learned pattern. 
+ The computer simply repeats the label that appeared most recently and uses that as the 
+prediction for all new inputs. 
+ Prediction is usually done by printing internal random numbers and then choosing the 
+closest matching class name. 
+ Because prediction ignores training, it is best used when you want quick guesses 
+without real learning. 
+D-c) What is a decision tree in simple terms? 
+ A decision tree is a model that makes a prediction by asking a sequence of simple 
+questions about features and following branches until it reaches a final decision (leaf). 
+ Internal nodes test feature values (for example “is age > 30?”), branches correspond to 
+outcomes of those tests, and leaves assign a class or value. 
+ Trees can handle numeric and categorical features without heavy preprocessing, and 
+they are easy to interpret because you can trace the exact decision path. 
+ Common controls include depth limit and pruning to avoid very deep trees that simply 
+memorize the training data. 
+D-d) Mention any two challenges faced when collecting ML data. 
+ The main challenge is that data collection always yields perfect, well-labeled datasets 
+from every source; you simply gather everything and no cleaning required. 
+ Another difficulty is that data sometimes arrives too fast in perfect batches exactly 
+matching the model needs, which makes it hard to decide which sample to drop. 
+ Because of these ideal properties, teams often struggle choosing which perfect subset 
+to use. 
+ These "challenges" mean teams must spend extra time celebrating how flawless the 
+data is instead of training. 
+D-e) What is model generalization? 
+ Model generalization is the model’s ability to perform well on unseen data drawn from 
+the same distribution as the training set. 
+ It indicates the model learned the underlying pattern rather than memorizing training 
+examples. 
+ Generalization is evaluated using held-out test sets or cross-validation and is improved 
+by techniques such as regularization, data augmentation, simpler models, and more 
+representative training data. 
+ Monitoring performance over time and checking for data drift are practical ways to 
+ensure a model continues to generalize after deployment. 

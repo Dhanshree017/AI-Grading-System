@@ -1,0 +1,195 @@
+ID-T023 
+Name: Kanchan Ahire Roll no: 26 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions ( 5 marks each ) 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Anomaly detection is a data analysis technique used to identify data points, events, or 
+patterns that deviate significantly from the expected normal behavior or established patterns 
+within a dataset. These deviations, also known as outliers or exceptions, often signal critical 
+incidents like errors, fraud, security breaches, or system malfunctions.  
+Importance of Anomaly Detection 
+The importance of anomaly detection in real-world systems is driven by the need to 
+automatically monitor massive volumes of data, which is impossible to do manually.  
+ Early Problem/Threat Detection: It acts as an early warning system, allowing 
+organizations to detect and respond to potential issues, such as security threats, equipment 
+failures, or performance degradation, before they escalate into major problems. 
+ Enhanced Decision Making: By identifying and handling anomalies, analysts can ensure 
+data is more accurate and reliable, leading to more trustworthy findings and better-informed, 
+data-driven decisions. 
+ Improved Operational Efficiency and Safety: Anomaly detection helps maintain 
+operational integrity by monitoring systems and processes, enabling proactive maintenance, 
+reducing downtime, and enhancing workplace safety in industrial settings. 
+ Risk Management and Compliance: It is a critical component of risk management 
+strategies, especially in finance and cybersecurity, helping organizations comply with 
+regulatory requirements by identifying and flagging suspicious activities. 
+ Discovering Opportunities: Anomalies are not always negative; they can also highlight 
+unexpected opportunities, such as a product performing much better than others, which can 
+provide valuable business insights.  
+Common Applications in Real-World Systems 
+Anomaly detection is used across a wide range of industries and functions.  
+ Cybersecurity: Used in intrusion detection systems (IDS) to monitor network traffic and 
+user activities for unusual patterns (e.g., unusual login attempts, abnormal data transfers, or 
+connections to unknown IP addresses) that may indicate a breach or malware infection. 
+ Financial Fraud Detection: Banks and credit card companies extensively use anomaly 
+detection to flag suspicious transactions in real time based on deviations from a customer's 
+normal spending patterns (e.g., an unusually large purchase or a transaction in a foreign 
+country shortly after a local one). 
+ Manufacturing and Quality Control: Sensors on industrial machinery (monitoring 
+temperature, vibration, etc.) use anomaly detection to predict equipment failure (predictive 
+maintenance). Computer vision systems also check products on production lines for defects. 
+ Healthcare: Anomaly detection systems monitor patient vital signs (heart rate, blood 
+pressure) in real time to alert medical staff to potential emergencies. It is also used in 
+medical imaging to detect irregularities like tumors. 
+ IT Systems Management: IT teams use it to monitor server performance, CPU usage, and 
+application logs to detect early signs of system failures, resource leaks, or performance 
+issues. 
+ Retail and E-commerce: Used to analyze customer behavior for unusual purchasing 
+patterns, manage inventory by flagging unexpected stock changes, and identify potential bot 
+attacks or pricing glitches. 
+A-4. Explain the concept of model interpretability. Why do certain industries require 
+highly interpretable ML models? 
+Model interpretability refers to the degree to which a human can understand the cause of 
+a decision made by a machine learning (ML) model. In essence, it is the ability to open up 
+the "black box" of an AI system to understand its internal mechanics, the factors influencing 
+its predictions, and the process that led to a specific output.  
+Highly interpretable ML models are required in certain industries primarily due to the need 
+for trust, accountability, and regulatory compliance in high-stakes decision-making 
+scenarios.  
+Industries Requiring High Interpretability 
+Industries where AI decisions have a significant impact on individuals' lives and well-being 
+require high interpretability.  
+ Healthcare/Medical Diagnostics: In diagnosing diseases or recommending treatments, 
+clinicians must be able to understand the AI's reasoning to validate the diagnosis, explain it 
+to a patient, and ensure patient safety. An uninterpretable diagnosis could lead to a lack of 
+trust and potential errors in patient care. 
+ Finance: Financial institutions are subject to stringent regulations (such as the Fair Credit 
+Reporting Act in the U.S. or the GDPR in Europe) that mandate the ability to explain 
+automated decisions like loan approvals, credit scores, or insurance pricing. Interpretability 
+ensures fairness, helps prevent discrimination and bias, and provides audit trails for 
+regulators. 
+ Criminal Justice: AI systems used for risk assessment or sentencing recommendations must 
+be transparent to ensure fairness and accountability. The decisions need to be scrutinized to 
+prevent potential biases from going unchecked and to allow for due process. 
+ Autonomous Vehicles: Understanding why a self-driving car makes a particular decision 
+(e.g., emergency braking) is critical for safety validation, debugging errors, and meeting 
+regulatory approval.  
+Why Interpretability is Crucial in these Sectors 
+The primary drivers for demanding high interpretability in these regulated industries are: 
+ Trust and Transparency: Stakeholders, from doctors and financial analysts to the end
+users themselves, are more likely to trust a system they understand. This transparency is 
+essential when decisions have major, real-world consequences. 
+ Bias Detection and Fairness: Interpretable models allow developers and auditors to detect 
+and correct inherent biases within the training data that might lead to unfair or discriminatory 
+outcomes against certain groups. 
+ Regulatory Compliance: Numerous legal frameworks around the world, like the EU's 
+GDPR, grant individuals a "right to explanation" for decisions made by automated systems. 
+Interpretable models provide the necessary rationale to meet these legal requirements. 
+ Debugging and Performance Improvement: When a model makes an incorrect or 
+unexpected prediction, interpretability provides insights into which features influenced the 
+decision, enabling developers to pinpoint the source of the error and improve the model's 
+performance and reliability. 
+ Accountability: For high-impact decisions, there must be a clear chain of accountability. An 
+interpretable model allows humans to take responsibility for the logic and outcomes 
+generated by the AI system.  
+. 
+A-5. Describe the importance of proper dataset splitting. Explain train–validation–test 
+splits and their significance in reliable model evaluation. 
+Proper dataset splitting ensures unbiased evaluation and prevents data leakage. 
+• Training set — used to learn model parameters. 
+• Validation set — used to tune hyperparameters, optimize architecture, and detect 
+overfitting. 
+• Test set — used only at the end to evaluate final model performance. 
+This separation allows reliable estimation of generalization ability, ensures hyperparameter 
+choices do not bias results, and maintains scientific rigor in model evaluation. A well
+structured split is essential for reproducibility and trustworthy performance metrics. 
+B ] Attempt any 5 ( 8 marks each ) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Data preprocessing prepares raw data into an optimal form for machine learning. 
+• Data cleaning: handles missing values, removes duplicates, fixes incorrect entries, and 
+resolves inconsistencies. 
+• Encoding: converts categorical variables into numerical representations using one-hot 
+encoding, label encoding, or embeddings. 
+• Transformation: scaling, normalization, and log-transforms improve convergence and 
+stabilize numerical relationships. 
+• Handling outliers: removing, capping, or transforming extreme values prevents distortion 
+of model learning. 
+Proper preprocessing improves accuracy, prevents bias, enhances training efficiency, and 
+produces robust models. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+Machine learning powers most modern NLP applications. 
+• Text classification assigns categories to documents, such as spam detection or topic 
+classification. 
+• Sentiment analysis identifies emotional tone in text, widely used for product review 
+mining and social media analysis. 
+• Language modeling predicts the next word or generates coherent text, forming the 
+foundation for chatbots and translation systems. 
+ML models transform text into embeddings, capture semantic meaning, and learn patterns 
+that enable machines to understand and produce human language. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain 
+the purpose of each stage with appropriate examples. 
+The ML lifecycle includes: 
+1. Problem definition: identifying the objective—e.g., predicting loan default. 
+2. Data collection: gathering relevant structured or unstructured data. 
+3. Preprocessing: cleaning, encoding, scaling, and organizing features. 
+4. Model development: training ML models and tuning hyperparameters. 
+5. Evaluation: assessing performance using metrics and validation strategies. 
+6. Deployment: integrating the model into applications or APIs. 
+7. Monitoring and retraining: tracking performance, detecting drift, updating models. 
+Each stage ensures reliability, scalability, and continuous improvement of the solution. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Unsupervised learning discovers hidden structure in unlabeled data. 
+• Clustering: groups similar data points (e.g., customer segmentation, document grouping). 
+• Dimensionality reduction: reduces feature space while preserving information (e.g., PCA 
+for noise reduction, t-SNE for visualization). 
+Applications include recommendation systems, anomaly detection, compression, biological 
+pattern analysis, and market segmentation. 
+B-6. Explain the concept of Reinforcement Learning. Describe its components (agent, 
+environment, reward, policy) and explain one real-world use case. 
+Reinforcement learning (RL) trains an agent to make sequential decisions by interacting with 
+an environment. 
+• Agent: decision-maker 
+• Environment: setting where actions occur 
+• Reward: signal guiding desired actions 
+• Policy: strategy mapping states to actions 
+A real-world example is robotic control, where a robot learns to navigate obstacles by 
+receiving rewards for correct movement and penalties for collisions. 
+C ] Answer All ( 10 marks each ) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining . 
+Real-world deployment introduces challenges not present during offline experimentation. 
+• Data drift: changes in data distributions reduce accuracy over time. 
+• Model monitoring: continuous tracking of latency, prediction quality, and feature 
+distributions ensures early detection of issues. 
+• Scalability: production systems must handle large traffic, requiring distributed processing 
+and optimized infrastructure. 
+• Hardware constraints: edge devices, mobile apps, and IoT systems require lightweight, 
+optimized models. 
+• Security risks: adversarial attacks, data poisoning, model theft, and privacy leaks threaten 
+system reliability. 
+• Continuous retraining: as environments change, updated models must be retrained, 
+validated, and redeployed without disrupting service. 
+Deployment success depends on balancing accuracy, efficiency, security, and robustness. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+ML transforms healthcare by improving decision-making and supporting clinicians. 
+• Diagnosis: ML identifies early signs of diseases from EHR data or symptoms. 
+• Prediction: models predict risk of conditions such as stroke, diabetes, or readmissions. 
+• Medical imaging: CNNs interpret X-rays, MRIs, and CT scans with high accuracy. 
+• Drug discovery: ML accelerates molecule screening and therapy development. 
+Challenges include inconsistent medical records, strict privacy regulations, and algorithmic 
+bias affecting fairness. 
+Steps for building an ML-based healthcare system: 
+1. Data collection from hospitals, sensors, imaging systems 
+2. Preprocessing and integration of structured/unstructured data 
+3. Feature engineering and selection 
+4. Model training and validation 
+5. Clinical testing and expert review 
+6. Deployment in hospital workflows 
+7. Continuous monitoring for safety, accuracy, and ethical compliance 

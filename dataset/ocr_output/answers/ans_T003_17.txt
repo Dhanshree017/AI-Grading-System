@@ -1,0 +1,137 @@
+ID-T003 
+Name : Janvi rajput  Roll no : 17 
+Email : studentisdummy@gmail.com 
+A) Attempt any 4 (Marks 8) 
+A-1. Define supervised, unsupervised, reinforcement? 
+1. Supervised Learning: The algorithm learns from labeled data, where every 
+input is paired with a correct output. The goal is to learn the mapping 
+function to predict a known outcome. 
+2. Unsupervised Learning: The algorithm works with unlabeled data to find 
+hidden structures, patterns, or groupings within the data. The goal is 
+exploratory. 
+3. Reinforcement Learning: An agent learns optimal behavior by interacting 
+with an environment, receiving a reward or penalty for its actions. The 
+goal is to maximize cumulative reward through sequential decisions. 
+A-2. Explain the difference between training and test sets. 
+ Training Set: This is the largest portion of the data (typically 60-80%) 
+used to fit the model and allow the algorithm to learn the parameters and 
+patterns. The model is repeatedly exposed to this data. 
+ Test Set: This is a completely held-out subset of data (typically 10-20%) 
+used only once at the very end of the project. Its sole purpose is to provide 
+an unbiased estimate of the model's generalization performance on new, 
+unseen data, which confirms its real-world reliability. 
+A-3. What is the difference between parametric and non-parametric 
+models? 
+ Parametric Models: These models have a fixed, finite number of 
+parameters and make strong assumptions about the functional form of the 
+data (e.g., that the relationship is linear). Once trained, the original data 
+is no longer needed. Examples include Linear Regression. 
+ Non-Parametric Models: These models have a flexible structure and make 
+no assumptions about the functional form, allowing them to adapt to 
+complex data shapes. They often require the entire training data to be 
+stored for prediction. Examples include K-Nearest Neighbors (KNN). 
+A-4. What is overfitting, and how can you avoid it? 
+Overfitting occurs when a model learns the training data, including the noise 
+and random errors, too well. This results in excellent performance on the 
+training set but poor performance on the test set (poor generalization). The 
+model has memorized the data. 
+You can avoid overfitting by: 
+1. Regularization: Adding a penalty term to the loss function (like L1 or L2) 
+to discourage overly complex models. 
+2. Increasing Data: Obtaining more training data to force the model to learn 
+general patterns instead of noise. 
+3. Early Stopping: Monitoring performance on a separate validation set and 
+halting the training process as soon as the validation error begins to rise. 
+B) Attempt All (Marks 15) 
+B-1. Explain the bias-variance tradeoff. 
+The bias-variance tradeoff is a fundamental concept that explains the 
+totalexpectederror of a model. It forces us to balance two conflicting sources of 
+error: 
+1. Bias (Underfitting): This is the error from using a model that is too simple 
+(e.g., a straight line on a curved dataset). High bias results in underfitting 
+because the model cannot capture the essential patterns, performing poorly 
+on both training and test data. 
+2. Variance (Overfitting): This is the error from using a model that is too 
+complex (too flexible). High variance results in overfitting because the 
+model learns the noise and random errors of the training set, making it 
+unstable on new data. 
+The tradeoff states that decreasing one (e.g., reducing variance by simplifying 
+the model) will generally increase the other (bias). The goal is to find the 
+optimalmodelcomplexity where the sum of squared bias and variance is 
+minimized, resulting in the best possible generalization performance. 
+B-2. How does the K-Nearest Neighbors (KNN) algorithm work? 
+KNN is a non−parametric and instance−based algorithm that functions as a 
+"lazy learner" because it does not perform any training; it just 
+storestheentiredataset. Prediction is deferred until a new data point arrives. 
+The mechanism is as follows: 
+1. Distance Calculation: When a new query point arrives, the algorithm 
+calculates the distance (usually Euclidean distance) from this new point 
+to everysinglepoint in the stored training data. 
+2. Neighbor Selection: It identifies the K training data points that have the 
+smallest calculated distances—these are the K Nearest Neighbors. K is a 
+hyperparameter chosen beforehand. 
+3. Prediction: The final output is determined by the neighbors: for 
+classification, it is the majorityclass among the K neighbors; for regression, 
+it is the average of their values. 
+B-3. What is dimensionality reduction, and provide examples? 
+DimensionalityReduction is the process of reducing the number of input 
+features (variables) in a dataset while simultaneously retaining the maximum 
+amount of original information or variance. 
+The primary motivations are: 
+1. Overcoming the Curse of Dimensionality: In high-dimensional spaces, 
+data becomes sparse, making distance calculations unreliable for 
+algorithms like KNN. 
+2. Visualization: Reducing features to 2 or 3 allows complex data to be 
+plotted and understood. 
+3. Efficiency: Reducing the number of features reduces the memory 
+requirements and training time for subsequent models. 
+Examples of techniques include: 
+ Principal Component Analysis (PCA): This is a linear feature extraction 
+technique that identifies new orthogonalaxes(components) that capture the 
+largest variance in the data, projecting the data onto a lower dimension. 
+ t-distributed Stochastic Neighbor Embedding (t-SNE): This is a non
+linear technique mainly used for visualization (reducing to 2D or 3D). It 
+preserves the local data structure, grouping similar points together 
+visually. 
+B-4. How would you choose an algorithm for a specific dataset? 
+Choosing an algorithm is a systematic process based on the problem, data, and 
+business constraints: 
+1. Determine the Problem Type: The choice must first satisfy the objective. If 
+the output is a category, the algorithm must be a Classifier (e.g., SVM, 
+Random Forest). If the output is a number, it must be a Regressor (e.g., 
+SVR, Linear Regression). 
+2. Assess Data Characteristics: Evaluate if the data is linear or non−linear. 
+For linear data, simple models are preferred. For complex, non-linear 
+data, tree−basedmodels (like Gradient Boosting) or Kernel methods are 
+required. Also, consider datasize—small data necessitates simpler models 
+to avoid overfitting. 
+3. Evaluate Constraints: Consider practical factors: if interpretability 
+(explainability) is required (e.g., banking), prefer Linear Models or 
+Decision Trees. If inferencespeed (latency) is paramount, choose 
+computationally inexpensive models. 
+4. Benchmark: Finally, testseveralcandidates (e.g., Logistic Regression, a 
+Random Forest, and a Gradient Boosting Machine) using cross-validation. 
+The algorithm that achieves the best performance on the required metric 
+(e.g., F1-Score or RMSE) while meeting all constraints is the appropriate 
+choice. 
+B-5. Explain bagging and boosting. 
+Bagging and Boosting are the two most important categories of EnsembleMethods, 
+where multiple individual models (weak learners) are combined to form a 
+single, more powerful predictor (strong learner). 
+1. Bagging (Bootstrap Aggregating): 
+o Mechanism: It involves training many independent models (e.g., 
+Decision Trees) on different random subsets of the training data, 
+drawn withreplacement(bootstrap). 
+o Goal: The final predictions are combined through averaging or 
+majorityvoting. Bagging's primary aim is to reducevariance and 
+prevent overfitting by decorrelating the errors of individual models. 
+o Example: RandomForest. 
+2. Boosting: 
+o Mechanism: It involves training models sequentially (one after the 
+other). Each new model is specifically trained to correcttheerrors 
+made by the previous model in the sequence. It focuses more effort 
+(higher weights) on the samples that were misclassified in the 
+earlier steps. 
+o Goal: Boosting's primary aim is to reducebias and transform a 
+collection of weak predictors into a single highly accurate predictor. 
+o Example: GradientBoostingMachines(GBM) or XGBoost. 

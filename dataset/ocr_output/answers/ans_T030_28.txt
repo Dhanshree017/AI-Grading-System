@@ -1,0 +1,39 @@
+ID-T030 
+Name: Swaranjali Ghodpade Roll no: 232528 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-6. Explain the impact of noisy data on machine learning models. 
+Noisy data refers to corruptions in the feature values or incorrect labels. Its primary impact is the 
+introduction of "Artificial Variance," which forces the model to learn random fluctuations rather than the 
+true signal. This leads to a degraded decision boundary and is a major cause of overfitting in complex 
+models, as the algorithm tries to "explain" the noise as if it were a valid pattern. 
+A-7. What is the difference between model fitting and model selection? 
+Model Fitting is the process of optimizing the parameters within a specific chosen model (e.g., finding the 
+best coefficients for a single regression line). Model Selection is a higher-level decision process where 
+different types of models or architectures (e.g., comparing a Random Forest vs. a Support Vector Machine) 
+are evaluated to determine which is most suitable for the specific dataset based on validation metrics. 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+Ensemble diversity refers to the requirement that the base learners (individual models) in an ensemble make 
+"uncorrelated errors." If all models in an ensemble are identical, they will fail on the same inputs, providing 
+no benefit. Diversity is achieved by using different algorithms, different subsets of data (Bagging), or 
+different feature sets. It matters because diverse errors cancel each other out, leading to a much more stable 
+and accurate "aggregated" prediction. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement. 
+The lifecycle is a circular process known as MLOps: 
+ Discovery: Defining the problem and success metrics. 
+ Development: Data cleaning, feature engineering, and model training. 
+ Deployment: Moving the model to a production environment (APIs). 
+ Monitoring: Checking for "Model Drift" or performance decay. 
+ Maintenance/Retirement: Periodically updating the model with fresh data or retiring it if it no 
+longer meets ethical or accuracy standards. 
+A-11. What is meant by reproducibility in machine learning experiments? 
+Reproducibility is the ability of an independent researcher to obtain exactly the same results using the same 
+code, data, and environment. This requires fixing "Random Seeds" in stochastic algorithms, documenting 
+the software library versions, and sharing the exact data splits used. It is the gold standard for verifying the 
+scientific validity of an ML experiment. 
+A-12. Explain how ethical considerations influence ML system design. 
+Ethics influence design by necessitating "Fairness Constraints" and "Interpretability." Developers must 
+ensure that the training data does not contain historical biases that could lead to discrimination. This often 
+leads to the design of "Explainable AI" (XAI) systems, where the model's decisions can be audited by 
+humans to ensure they are fair, transparent, and comply with social norms and privacy laws like GDPR. 

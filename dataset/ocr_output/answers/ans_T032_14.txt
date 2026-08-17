@@ -1,0 +1,66 @@
+ID-T032 
+Name: Maahi Sheikh Roll no: 14 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-c. Explain the concept of bias–variance trade-off.  
+The bias-variance tradeoff is a core machine learning concept describing the tension between 
+model simplicity (high bias, underfitting) and model complexity (high variance, overfitting) 
+to find an optimal balance for predicting new data. High bias models are too simple and miss 
+patterns (inaccurate), while high variance models are too complex and learn noise 
+(inconsistent). The goal is the "sweet spot" where errors from both are minimized, leading to 
+good generalization.   
+Key Concepts 
+ Bias:  
+The error from erroneous assumptions in the learning algorithm, making the model too 
+simple (underfitting).  
+ Example: A straight line trying to fit curved data.  
+ Variance:  
+The error from sensitivity to small fluctuations in the training set, making the model too 
+complex (overfitting).  
+ Example: A highly complex curve that perfectly hits every training point but misses new 
+ones.  
+ Tradeoff:  
+As model complexity increases, bias decreases, but variance increases; as complexity 
+decreases, variance decreases, but bias increases.  
+A-d. Describe how machine learning models handle noisy and incomplete data.  
+Machine learning models handle noisy (inaccurate/irrelevant) and incomplete (missing) data 
+primarily through data preprocessing and cleaning, using techniques 
+like imputation (filling gaps with mean/median/model predictions) or deletion for missing 
+data, and smoothing (binning, regression), outlier detection (Z-score, IQR), or 
+transformation (log) for noise, plus robust model architectures (like deep learning 
+with dropout) and ensemble methods (like cross-validation) that build resilience against 
+errors.  
+Handling Incomplete Data (Missing Values) 
+ Deletion: Simple but risky; remove rows or columns with missing data, though this can 
+reduce dataset size and introduce bias. 
+ Imputation: 
+o Mean/Median/Mode: Replace missing values with the average (mean), middle (median), or 
+most frequent (mode) value of the feature. 
+o Model-Based Imputation: Use another ML model (like k-NN) to predict missing values 
+based on other features. 
+ Indicator Variables: Add a new binary column to show if the original value was missing, 
+preserving the missingness information.  
+Handling Noisy Data (Errors, Outliers, Irregularities)  
+ Data Cleaning: Manually correct obvious errors or remove highly suspicious data points. 
+ Binning: Group data into bins (segments) and smooth by replacing values with the bin's 
+mean, median, or boundaries. 
+ Regression: Fit a line or curve to the data to smooth out fluctuations. 
+ Outlier Detection: 
+o Z-score: Flag values falling beyond a set standard deviation (e.g., ±3). 
+o IQR (Interquartile Range): Identify values far outside the middle 50% of the data. 
+o Clustering: Outliers may appear as points far from any cluster center. 
+ Transformation: Apply mathematical functions (like log or square root) to reduce the 
+impact of extreme values. g. Explain how machine learning systems adapt to changing data. The 
+world changes every day, so an AI model must change too. 
+ New Training: Every few months, we give the model "fresh" data so it stays up to date with the 
+world. 
+ Live Learning: Some models learn from every new person that uses them, getting smarter every 
+second. 
+ Alarms: We set up systems to tell us if the model's score is dropping. If it gets too low, we know it's 
+time to fix it. 
+B] Attempt All (2 marks each) 
+B-c. What is ground truth? It is the "real answer" or the 100% correct fact that we use to see if the 
+computer's guess was right. 
+d. What is model deployment? It is taking the finished model and putting it into a real app or website so 
+people can actually use it. 

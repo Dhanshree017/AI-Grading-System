@@ -1,0 +1,140 @@
+ID-T007 
+Name: Rashmi khavnekar Roll no: 2 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence or AI means when a computer or system can think, learn 
+and act like a human being. It can make decision, solve problem and also improve 
+from its past mistakes without human help. It includes many parts like machine 
+learning, robotics, natural language processing and computer vision. The main 
+goal of AI is to make machine smart enough to do work like people do such as 
+understanding, planning, reasoning etc. 
+Applications of Machine Learning are many because it is one of the most used 
+part of AI. It makes computer learn from data automatically and do predictions. 
+1. In healthcare, ML helps to detect disease early and predict treatment. 
+2. In finance, it help in fraud detection and also in share market prediction. 
+3. In e-commerce, ML show product suggestion based on previous search. 
+4. In self-driving cars, ML models help car to detect object and follow road. 
+5. In education, it used in automatic grading and student performance 
+tracking. 
+6. In agriculture, ML predict crop yield and disease from soil and weather. 
+7. In social media, ML filter spam, suggest friends, and show personalised 
+content. 
+Example: Google Photos use AI and ML to identify people and objects in photos 
+and make albums automatically. 
+A-b) Explain types of machine learning with example 
+Machine learning is divided in different types based on how the algorithm learn 
+from data. It teach computer by providing data and experience instead of 
+writing rule. The three main types are supervised, unsupervised and 
+reinforcement learning. 
+1. Supervised learning: In this data have input and output label. Model learn 
+mapping function from input to output. It is used in regression and 
+classification. 
+2. Unsupervised learning: In this data don’t have output label. The model 
+try to find pattern or grouping itself. 
+3. Semi-supervised learning: It use both labelled and unlabelled data for 
+training which is useful when label data is small. 
+4. Reinforcement learning: It learn by reward and punishment method. Model 
+learn by doing action in environment and get reward if correct or penalty 
+if wrong. 
+5. Self-supervised learning: It is new approach where system create label from 
+data itself for training. 
+Example: Email spam detection is supervised learning because system learn from 
+labelled email as spam or not spam. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing means cleaning and preparing raw data before feeding to ML 
+model. Because raw data mostly have noise, missing value and irrelevant thing 
+which reduce accuracy. So preprocessing make data good quality. 
+1. Data collection: Collect data from many sources like files, web, sensors or 
+database. 
+2. Data cleaning: Remove missing, duplicate or wrong value which disturb 
+model. 
+3. Data integration: Combine data from different sources to make single 
+dataset. 
+4. Data transformation: Convert data in right format, scale or encode it for 
+training. 
+5. Feature selection: Choose important features and remove unwanted 
+columns. 
+6. Data splitting: Divide data in training, validation and testing set. 
+7. Normalization: Scale numeric data so model don’t get bias by large values. 
+Example: Before training house price model, we fill missing prices, remove wrong 
+rows and normalize area and price columns. 
+A-e) Explain Naïve Bayes algorithm in detail, give example 
+Naïve Bayes is a simple probabilistic algorithm based on Bayes theorem. It is 
+used mostly for classification problem. It assume all features are independent 
+from each other, which is not always true but it still work good in many cases. 
+It calculate probability of each class and choose the one with highest probability. 
+1. It use Bayes theorem formula P(A|B) = (P(B|A) * P(A)) / P(B). 
+2. It work well when data is text or categorical. 
+3. It need small data for training and is very fast. 
+4. It perform well in spam detection, sentiment analysis and document 
+classification. 
+5. It is not good when features are highly correlated. 
+6. It can handle both binary and multiclass classification problems. 
+7. It is easy to implement and interpret. 
+Example: In spam mail filter, Naïve Bayes calculate probability of mail being 
+spam based on words like “offer”, “free”, “buy now” etc. 
+B] Attempt all (20 marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble learning method which combine many decision 
+trees to improve accuracy and reduce overfitting. It work by making multiple 
+trees with random subset of data and features, then take majority vote or 
+average of prediction. It is very powerful and stable algorithm. 
+1. It is used for both classification and regression tasks. 
+2. Each tree learn different part of data so model becomes strong and less 
+biased. 
+3. It handle large dataset and missing data well. 
+4. It avoid overfitting by random selection of data and features. 
+5. It give feature importance that help in understanding data. 
+6. It is slower than single decision tree but more accurate. 
+7. It give good performance even without parameter tuning. 
+Example: Random forest is used in banking to predict loan default based on 
+customer income, age, and credit history. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Support Vector Machine (SVM) is a supervised learning algorithm used for 
+classification and regression. It works by finding a best hyperplane that separates 
+data points of different classes with maximum margin. 
+1. It try to make margin between two classes as large as possible for better 
+accuracy. 
+2. It use kernel trick to transform data to higher dimension when not 
+separable linearly. 
+3. It perform well for small and medium dataset. 
+4. It is sensitive to noise and overlapping data. 
+5. It can also do regression called Support Vector Regression (SVR). 
+Types of SVM: 
+ Linear SVM: When data can be separated by straight line or plane. 
+ Non-linear SVM: When data is complex, kernel functions like RBF or 
+polynomial are used to make it separable. 
+Example: SVM can classify handwritten digits between 0–9 from MNIST 
+dataset. 
+B-c) Explain different types of clustering algorithm 
+Clustering is an unsupervised learning method that group similar data points 
+together. It find pattern or structure in unlabelled data. 
+1. K-Means clustering: It divide data into k clusters based on similarity and 
+minimize distance within cluster. 
+2. Hierarchical clustering: It create tree structure (dendrogram) to show 
+relation between clusters. 
+3. DBSCAN: It group data based on density and can handle noise and outlier. 
+4. Mean Shift: It shift points towards high-density area to form clusters. 
+5. Agglomerative clustering: It merge small cluster to form big one step by 
+step. 
+6. Spectral clustering: It use graph and eigenvalue concept to cluster non
+linear data. 
+Example: K-Means clustering is used in market segmentation to group customers 
+based on buying behavior. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision tree is a supervised algorithm used for both regression and classification. 
+It use tree-like structure to take decision from input features. Each node 
+represent a condition and each branch represent the result of that condition 
+until it reach leaf node. 
+Steps in making decision tree: 
+1. Choose best attribute to split data based on information gain or Gini 
+index. 
+2. Split data into subset based on that attribute value. 
+3. Repeat process recursively for each subset. 
+4. Stop when all samples belong to same class or no more feature left. 
+5. Prune the tree to remove unnecessary branch and reduce overfitting. 
+6. Use the final tree for prediction of new data. 
+Example: Decision tree is used in predicting whether a student will pass or fail 
+based on attendance, study hours, and assignment submission. 

@@ -1,0 +1,107 @@
+ID-T007 
+Name : Rani singh Roll no: 23 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+AI is machine smart brain, machine think like human, machine do human 
+work, machine can learn, machine decide, machine act, machine do task, 
+machine do work, AI machine brain, AI machine work, AI smart, AI smart 
+machine. 
+Machine learning is part of AI, ML teach machine from data, machine learn 
+from past data, ML predict something, ML see patterns, ML see past, ML 
+learn pattern, ML try predict, ML sometimes right, sometimes wrong, 
+sometimes good, sometimes fail, ML try learn, ML see past, ML predict 
+future. 
+Applications of Machine Learning: 
+1. Spam detection, ML block spam, ML filter email, ML detect spam, ML 
+detect spam, ML block spam email. 
+2. Healthcare prediction, ML predict disease, ML predict diabetes, ML 
+predict heart problem, ML check patient data, ML predict cancer. 
+3. Recommendation system, Netflix, YouTube, ML recommend content, 
+ML suggest video, ML recommend, ML suggest, ML suggest content. 
+4. Banking, fraud detection, ML check credit score, ML predict loan risk, 
+ML detect fraud, ML detect fraud. 
+5. Self-driving car, ML detect road, ML detect signal, ML detect obstacle, 
+ML drive car, ML drive, ML drive car. 
+6. Voice assistant, Google Assistant, Siri, ML understand voice, ML 
+recognize voice, ML respond, ML voice recognition. 
+7. Chatbot, ML answer question, ML help customer, ML answer query, 
+ML respond, ML help, ML chatbot. 
+Example: Predict student marks using past scores and study hours. ML learn 
+old data, predict new marks, ML predict student marks, ML predict. 
+A-b) Explain types of machine learning with example 
+Machine learning types: 
+1. Supervised Learning: Learn from labeled data, input output known, 
+predict output, supervised learning, supervised, supervised, supervised. 
+o Example: Predict house price using area, location, past house data, 
+predict house price, predict house, predict house, house price 
+prediction. 
+2. Unsupervised Learning: No labels, machine find patterns, cluster data, 
+unsupervised learning, unsupervised, unsupervised, unsupervised. 
+o Example: Customer segmentation in e-commerce using purchase 
+history, cluster data, cluster customer, cluster customer.
+A-c) What are the steps in building ML model 
+Building ML model steps: 
+1. Problem definition, know problem, classification, regression, clustering, 
+problem definition, problem type, problem type. 
+2. Data collection, collect from file, API, sensor, database, website, collect 
+data, collect data, collect data. 
+3. Data cleaning, remove missing, remove null, remove wrong, convert text 
+to number, normalize, clean data, clean data, clean data. 
+4. Feature selection, pick important column, remove useless column, 
+feature selection, feature selection, feature selection. 
+5. Model selection, choose algorithm like SVM, decision tree, regression, 
+choose algorithm, choose algorithm, choose algorithm. 
+6. Train model, machine learn, find pattern, train, train model, train 
+model, train model. 
+7. Test model, check accuracy, evaluate, test, test, test model, test. 
+8. Hyperparameter tuning, adjust parameter, improve performance, tuning, 
+tuning, tuning, tune model, tune model, tune model. 
+9. Deploy, use in real world, prediction, deploy, deploy model, deploy 
+model, deploy model, deploy model, deploy prediction. 
+Example: Predict house price. Collect data, clean data, select features, train 
+regression model, test, deploy, predict house price, house price prediction, 
+house price prediction. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is many tree, many tree, combine, each tree train random 
+data, random features, combine vote or average, random forest reduce 
+overfit, reduce overfit, reduce overfit, stable, accurate, works with missing, 
+works big data, feature importance, classification, regression, random forest 
+slow, use memory, random forest slow, random forest slow. 
+Example: Predict loan default using income, credit score, employment, 
+multiple trees vote, final prediction, predict loan, predict loan, predict loan. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Types: 
+1. Linear SVM: straight line, separate classes, linear SVM, linear SVM. 
+2. Non-linear SVM: kernel RBF or polynomial, separate non-linear data, 
+non-linear SVM, non-linear SVM. 
+3. Multi-class SVM: one-vs-one, one-vs-rest, multi-class, multi-class SVM, 
+multi-class. 
+B-c) Explain different types of clustering algorithm 
+Clustering group data, unsupervised, group similar, clustering, clustering, 
+clustering. 
+Types: 
+1. K-Means: K cluster, center, minimize distance, K-means, K-means, K
+means. 
+2. Hierarchical: tree, merge, split, dendrogram, hierarchical, hierarchical. 
+3. DBSCAN: density, remove noise, DBSCAN, DBSCAN. 
+4. Agglomerative: start one point, merge progressively, agglomerative, 
+agglomerative. 
+5. Mean Shift: move center, dense region, mean shift, mean shift. 
+Example: Group e-commerce customers by buying pattern using K-Means, K
+Means example, K-Means example, example K-Means. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+Decision Tree supervised, classify, predict, split data by feature, leaf node 
+output, tree structure, decision tree, decision tree, decision tree, decision 
+tree, decision tree. 
+Steps: 
+1. Select root node, best feature, info gain, Gini index, root node, root 
+node, root node. 
+2. Split data, split, split, split data, split data. 
+3. Recursive splitting, repeat until pure, recursive, recursive splitting. 
+4. Leaf node assign class, leaf node output, leaf node output, leaf node. 
+5. Prune tree, reduce overfit, prune, prune, prune. 
+6. Test tree, test model, evaluate test, test tree, test tree. 
+7. Deploy final tree, deploy, deploy model, deploy, deploy. 

@@ -1,0 +1,77 @@
+ID-T030 
+Name: Khushi Mlahotra Roll no: 232526 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (each 3 marks) 
+A-2. Describe the importance of training–testing separation in ML experiments. 
+ You must keep training and testing data separate. 
+ Training data is for learning, testing is for checking. 
+ If you use same data for both, the computer just cheats. 
+ It is like giving a student the exam paper before the test. 
+ Separation helps us see if the model is actually smart. 
+ It prevents "overfitting" or just memorizing. 
+ It shows how the model works in the real world. 
+ Without this, your accuracy is a lie. 
+A-3. Explain how assumptions affect learning algorithms. 
+ Every algorithm has its own "guess" about the data. 
+ Some assume data is a straight line. 
+ Some assume all features are not related. 
+ These guesses are called "Inductive Bias." 
+ If your guess is right, the model learns very quickly. 
+ If your guess is wrong, the model will always be bad. 
+ Assumptions help simplify a very hard problem. 
+ Good assumptions mean you need less data to train. 
+A-4. What is the role of validation in model development? 
+ Validation is like a "practice test" before the real exam. 
+ It is used to tune the "knobs" or hyperparameters. 
+ It helps pick which version of the model is best. 
+ It happens after training but before final testing. 
+ It helps stop the model from getting too specific to training data. 
+ You can change settings based on validation score. 
+ It acts as a middle step to save time. 
+ It ensures the final test is fair and honest. 
+A-5. Describe the concept of inductive learning in machine learning. 
+ It means learning from examples to make a general rule. 
+ You show many cats to a computer, it learns what a cat is. 
+ It goes from "specific" things to "general" ideas. 
+ It assumes the future will be like the past. 
+ If it works on training data, we hope it works on new data. 
+ Most of machine learning is actually inductive learning. 
+ It is like how humans learn from experience. 
+ It helps the computer guess things it has never seen. 
+A-6. Explain the impact of noisy data on machine learning models. 
+ Noise means mistakes or "trash" in your data. 
+ It can be wrong labels or messy numbers. 
+ Noise makes the computer learn the wrong patterns. 
+ It causes the model to become very confused. 
+ It is the main reason for "overfitting." 
+ The model tries to fit the "trash" instead of the real info. 
+ Cleaning noise takes a lot of work but is very important. 
+ Too much noise makes the model totally useless. 
+A-8. Explain the concept of ensemble diversity and why it matters. 
+ Ensemble means using a group of models together. 
+ Diversity means the models should be different from each other. 
+ If all models are the same, they all make the same mistake. 
+ If they are different, one model’s mistake is fixed by another. 
+ Diversity makes the final answer much more stable. 
+ You get diversity by using different data or different math. 
+ It is like asking five different people for advice. 
+ Diversity is the "secret sauce" for winning ML contests. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement. 
+ First, you define the problem you want to solve. 
+ Then, you collect and clean all the data. 
+ Next, you pick an algorithm and train the model. 
+ After that, you test it to see if it’s good. 
+ Then, you "deploy" it so people can use it. 
+ You must monitor it every day to see if it breaks. 
+ If it gets old or slow, you retrain it with new data. 
+ Finally, you retire it when a better model is ready. 
+A-10. Explain the importance of documentation in ML projects. 
+ It is writing down how you built the model. 
+ It helps other people understand your work later. 
+ It records where the data came from. 
+ It lists all the settings (hyperparameters) you used. 
+ Without notes, you will forget why you made certain choices. 
+ It is important for "auditing" or checking for mistakes. 
+ It makes it easy to fix the model if it breaks. 
+ Good documentation is a sign of a professional worker. 

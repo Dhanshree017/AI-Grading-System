@@ -1,0 +1,78 @@
+ID-T022 
+Name: riya roy Roll no: 24 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of 
+features and the role of feature selection in improving model performance. 
+Feature engineering workflow is basically like you take the data and turn it into something the model can 
+like, but the process is mostly mixing steps again and again. First you open the dataset and stare at it to 
+understand the feelings of columns. Then you clean it by removing unwanted dots, commas and sometimes 
+entire rows because they look suspicious. After that, you create new features by adding columns randomly 
+or dividing one column by another because more columns means more chances that model will like it. Then 
+you put scaling to everything so they all become the same height which keeps the model comfortable. 
+Features are of many types like long features, short features, fat features, categorical, numerical, image 
+features and sometimes invisible features which the model senses automatically. 
+Feature selection is done by removing features until the model stops crying. Sometimes you keep only the 
+features that have nice names. This improves performance because the model becomes light and does not 
+struggle carrying too many features. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+CNN architecture starts with giving the image to the computer and the network starts squeezing it with 
+convolution layers like pressing a stamp on butter. Convolution takes small squares from the picture and 
+multiplies them with filters that basically act like sunglasses for the computer. Pooling is when the network 
+gets tired and decides to take break by reducing the size of information so it doesn’t have to look at too 
+much. Feature maps are like photocopies of the image but with random patterns drawn on them which the 
+network thinks are important. 
+CNNs understand images by repeatedly shaking the image through layers until the important pieces fall out, 
+like shaking a jar of stones until gold pieces remain. That’s how CNN sees objects like cat or bus. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, 
+and what are the major techniques used to interpret black-box models? 
+Explainable AI is when the AI tries to explain itself but usually fails, so researchers make methods to force 
+explanations. Interpretability is important so humans don’t get scared about what model is dreaming. If 
+model makes a wrong prediction, interpretability helps us guess but not fully know why. 
+Techniques include LIME which paints lime color on model decisions, SHAP which puts shapeness values 
+on each input point, and Counterfactual which asks the model “what if we changed your marks?” and then 
+listens to the answer. Another technique is feature importance where you remove the feature and see if 
+model becomes angry or calm. All these help but not always. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how 
+automation, versioning, and data validation improve reliability. 
+Data pipelines are important because without a pipeline the data will fall everywhere like water from broken 
+pipe. Pipelines keep the flow straight from source to model. Automation helps because if you forget to run 
+something the pipeline will still do it, even if it is wrong. Versioning means keeping many copies of same 
+data so you don’t lose anything, even though it gets confusing. Data validation is basically checking if data 
+is not too weird. Reliability improves only if all steps behave nicely, which usually they don’t, so pipeline 
+needs constant fixing. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain 
+how ML engineers detect drift and handle it in real-world systems. 
+Data drift means the data gets bored and changes its behavior over time. Feature drift happens when the 
+features stop acting like before. Target drift happens when the labels decide to take a different path. Concept 
+drift is like the entire idea of prediction changes which confuses both model and engineer. 
+Engineers detect drift by plotting graphs and staring until they feel something is off. Sometimes they run 
+drift detectors but most times they just retrain the model because they assume drift must be there. Handling 
+drift is done by updating model, deleting old data, or adding completely new data without checking. 
+B ] Attempt all (2 marks each) 
+B-1. Define supervised learning. 
+Supervised learning is when the model is supervised like a student and teacher gives labelled answers before 
+asking questions. 
+B-2. What is a feature in machine learning? 
+A feature is a column of data that tries to tell the model what to think, sometimes it works and sometimes it 
+is ignored. 
+B-3. State any two differences between training data and test data. 
+Training data teaches the model; test data checks if the model still remembers something. Training is big, 
+test usually smaller. 
+B-4. What is overfitting? 
+Overfitting means the model studies too much and memorizes everything, then forgets how to behave with 
+new data. 
+B-5. Define classification with an example. 
+Classification is choosing a group. Example: telling if fruit is mango or not mango. 
+B-6. What is a confusion matrix? 
+A table that confuses everyone because it has TP, FP, TN, FN instead of normal counts. 
+B-7. What do you mean by model accuracy? 
+Accuracy is how often the model is right out of total guesses. 
+B-8. State one advantage of using decision trees. 
+Decision trees are easy because they look like flowcharts children draw. 
+B-9. What is data normalization? 
+Making all numbers small or equal so the model doesn’t get nervous. 
+B-10. Define regularization in simple words. 
+Regularization is calming the model by reducing its weight values. 

@@ -1,0 +1,74 @@
+ID-T026 
+Name: Pankaj Rao Roll no: 21 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) - Topper Student 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of 
+bias and their impact on model generalization. 
+1. Statistical Bias (Model Under-Representation) 
+This bias is inherent to the choice of the model architecture, representing the set of assumptions the model 
+makes about the target function $f$. 
+ Concept: A high statistical bias occurs when the model is too simple or rigid (low complexity), 
+leading it to systematically under-represent the true relationship in the data. 
+ Source: 
+o Model Selection: Choosing a linear model (e.g., Logistic Regression) to solve a complex, 
+non-linear classification problem. 
+o Over-Regularization: Applying excessively strong regularization (e.g., a very high 
+$\lambda$ in Lasso), forcing the model coefficients toward zero and simplifying the function 
+too much. 
+ Impact on Generalization: High statistical bias leads to underfitting. The model performs poorly 
+on both training and unseen test data because it fails to capture the underlying signal, resulting in a 
+high, irreducible systematic error. 
+2. Societal/Ethical Bias (Data Representation) 
+This bias reflects unwanted systemic prejudices or skewed demographics present in the real world, which 
+are then encoded into the model via the data. 
+ Sources of Ethical Bias: 
+o Selection Bias (Sampling Bias): When the training data is not representative of the real
+world population the model will be deployed on. For instance, training a facial recognition 
+model predominantly on light-skinned faces will cause it to perform poorly on darker-skinned 
+faces. 
+o Measurement Bias (Proxy Bias): When a sensitive feature (like race) is excluded, but the 
+model learns to use a strongly correlated, non-sensitive feature (like ZIP code or purchasing 
+habits) as an unethical proxy. 
+o Historical Bias: Bias embedded in society's history, where outcomes reflect past 
+discrimination (e.g., training a loan approval model on historical data where loans were 
+unfairly denied to certain groups). 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how 
+assumptions influence model selection and performance. 
+The role of assumptions in machine learning is central to the learning process; they are the necessary 
+structural and statistical constraints that algorithms impose on the problem space to make the complex task 
+of finding the true target function $f$ computationally tractable. This is encapsulated by the No Free Lunch 
+theorem, which states that no single algorithm is universally superior across all possible problems—success 
+depends on the degree to which the algorithm's assumptions align with the underlying structure of the data. 
+How Assumptions Influence Model Selection 
+Assumptions act as a guiding principle, influencing the choice between different models based on the nature 
+of the data: 
+1. Linearity: 
+o Assumption: The relationship between features and the target variable can be approximated 
+by a straight line or a hyperplane. 
+o Models: Linear Regression, Logistic Regression, Linear SVM. 
+o Selection Influence: Selected when the feature space is believed to be approximately 
+separable by a line, prioritizing speed and interpretability. 
+2. Independence (Parametric Assumptions): 
+o Assumption: Features are independent of each other given the class. 
+o Models: Naive Bayes. 
+o Selection Influence: Chosen for high-dimensional, text-based data where speed is critical, 
+despite the assumption of independence often being violated in reality. 
+3. Local Smoothness (Non-Parametric Assumptions): 
+o Assumption: Data points that are close to each other in the feature space are likely to have 
+the same output value. 
+o Models: K-Nearest Neighbors (k-NN), Decision Trees. 
+o Selection Influence: Chosen when the relationship is complex, non-linear, and the decision 
+boundary is expected to be localized. 
+How Assumptions Influence Performance 
+The alignment between the model's assumptions and the true data generating process dictates performance: 
+ Correct Alignment: When assumptions align with the data (e.g., using a Linear Regression model 
+on truly linear data), the model benefits from high statistical efficiency (low bias) and performs 
+optimally, generalizing well. 
+ Misalignment (High Bias): If assumptions are too simplistic (e.g., assuming linearity for 
+exponential data), the model suffers from high statistical bias and underfitting, systematically 
+failing to model the data accurately. 
+ Relaxed Assumptions (High Variance): Non-parametric models (like k-NN or unpruned Decision 
+Trees) have fewer explicit assumptions, giving them high flexibility. While this reduces bias, it 
+increases variance (sensitivity to training data noise), often leading to overfitting. 
+.  

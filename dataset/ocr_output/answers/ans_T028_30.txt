@@ -1,0 +1,51 @@
+ID-T028 
+Name: Gitanjali agarwal Roll no: 30 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+Steps for Data Cleaning and Preparation 
+1. Understand the Dataset – Examine features, data types, and overall structure. 
+2. Identify Missing Values – Detect null, empty, or invalid entries in the data. 
+3. Handle Missing Values – Remove records or fill missing values using suitable 
+methods such as mean, median, or mode. 
+4. Resolve Inconsistencies – Standardize formats (e.g., date, units, text cases). 
+5. Remove Duplicates and Errors – Eliminate repeated records and obvious data entry 
+mistakes. 
+6. Feature Scaling and Encoding – Normalize numerical data and convert categorical 
+data into usable form. 
+7. Final Validation – Recheck the dataset to ensure cleanliness and consistency. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps 
+you would take to analyze and improve the model’s performance. 
+Steps to Improve Model Performance 
+1. Analyze Prediction Errors – Identify patterns where the model fails. 
+2. Check Data Quality – Ensure new data matches the training data format and 
+distribution. 
+3. Review Feature Relevance – Remove irrelevant features and add meaningful ones. 
+4. Check Overfitting or Underfitting – Analyze whether the model is too complex or 
+too simple. 
+5. Improve Training Data – Increase data quantity or improve data diversity. 
+6. Tune Model Parameters – Adjust settings to improve learning behavior. 
+7. Re-train and Validate – Train the model again and test on unseen data. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors 
+you would consider before selecting the algorithm. 
+Factors for Algorithm Selection 
+1. Nature of the Problem – Classification, regression, clustering, or prediction. 
+2. Size of the Dataset – Small or large datasets influence algorithm choice. 
+3. Type of Data – Structured, unstructured, numerical, or categorical data. 
+4. Model Interpretability – Need for explainable results or black-box models. 
+5. Accuracy vs Speed Requirements – Trade-off between performance and efficiency. 
+6. Computational Resources – Hardware and time limitations. 
+7. Scalability – Ability to handle future data growth. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain 
+how you would identify the cause and what actions you would take. 
+Identifying and Addressing Performance Degradation 
+1. Monitor Model Outputs – Track prediction quality over time. 
+2. Check Data Drift – Compare new input data with training data. 
+3. Analyze Environmental Changes – Identify changes in user behavior or system 
+conditions. 
+4. Review Feedback and Errors – Collect real-world error reports. 
+5. Update Training Data – Include recent and relevant data. 
+6. Retrain the Model – Periodically retrain to adapt to new patterns. 
+7. Continuous Monitoring – Implement alerts and regular evaluation. 

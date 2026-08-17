@@ -1,0 +1,31 @@
+
+
+--- PAGE 1 ---
+ID —T014
+Machine Learning Exam
+Total Marks 40
+SY- AI
+Date: 19-03-2023
+A | Attempt Any 4 from following (20 marks )
+
+1. Explain in detail the steps involved in building a Machine Learning pipeline from data collection to model deployment.
+
+2. Describe the working of the Naive Bayes classifier. Include its assumptions and advantages.
+
+3. Explain the working of Principal Component Analysis and discuss its role in feature reduction.
+
+4. What are Neural Networks? Explain their architecture and learning process.
+
+5. Discuss the concept of Reinforcement Learning with suitable examples.
+
+6. Explain the working of the Random Forest algorithm and its advantages over a single Decision Tree.
+
+B | Attemp all (20 marks )
+
+1. Explain the architecture and working of a Deep Neural Network (DNN) Discuss in detail the different layers, the role of weights and biases, Also describe common challenges in training deep networks and methods to overcome them.
+
+2. Discuss in detail the working of the Support Vector Machine algorithm for both linear and non-linear classification. Explain the concept of hyperplanes, support vectors, and margin maximization.
+
+3. Explain the concept and architecture of Convolutional Neural Networks (CNN). Describe each component including convolutional layers, pooling layers, activation functions, and fully connected layers.
+
+4. Describe the concept of Natural Language Processing and its stages in detail. Explain important steps such as tokenization, stop word removal,stemming, lemmatization.

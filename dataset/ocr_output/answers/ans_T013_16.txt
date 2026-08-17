@@ -1,0 +1,134 @@
+ID-T013 
+Name : Akash Shrivastav Roll no: 16 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 10 (3 Marks Each) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine learning is like when a computer is learning something by itself, like 
+a child learning how to ride a bicycle. It means we don’t teach the computer 
+everything directly, but it learns from examples and patterns. Machine 
+learning is part of artificial intelligence and used in robots and even in 
+YouTube recommendation. 
+The three main types of machine learning are: 
+1. Linear learning – when the computer learns in a straight line way from 
+data. 
+2. Circular learning – when it learns again and again till it gets good. 
+3. Super learning – which is like supervised, when we give correct answers 
+and computer matches. 
+4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is a big table that tells us where the model is confused. It 
+is like when we check how many answers we wrote correct and how many we 
+messed up. 
+It has four parts like true and false and positive and negative. 
+If model predicts something correctly, it is true. If it predicts wrong, it is 
+false. 
+It helps in calculating accuracy, recall and also tells if the computer is 
+confusing between categories like cat and dog. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection means removing the things from data that are not needed. 
+For example, when we have a dataset about students, we might remove the 
+“shoe size” because it doesn’t affect marks. 
+It is important because: 
+ It helps in reducing training time. 
+ It makes model less confused. 
+ It also saves computer memory. 
+Too many features can make a model crazy because it has to remember 
+a lot. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation functions are like switches in a neural network. They decide which 
+neuron should wake up and which should sleep. If we don’t use activation, 
+model becomes like linear regression only. 
+Two types are: 
+1. ReLU – it allows positive values and removes negative ones. 
+2. Softmax – it gives probabilities for all classes like 0.1, 0.2 etc. 
+Some people also use “TanH” but I forget formula. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning means the computer eats the whole data at one time, like 
+eating a big meal. Online learning means it eats little by little, like snacks. 
+Batch learning is done once, online is continuous. 
+Example of batch learning is training a model on all data at night. Example 
+of online learning is Google Maps updating traffic data every second. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding is used for converting words to numbers so computer can 
+understand. Because computer doesn’t understand text. 
+For example, if we have color red, green, blue, then we make something like 
+red = [1,0,0], green = [0,1,0], blue = [0,0,1]. 
+It is used in machine learning and also in databases sometimes. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+Learning rate is how fast or slow the computer changes its weight while 
+training. If it is too high, the model will jump too much and never reach the 
+correct answer. 
+If it is too low, it will take forever. So we should select a middle value. 
+It’s like when you are cooking food – too much gas burns it, too low takes 
+all day. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+Loss function tells how wrong the model is. If the loss is big, the model is 
+doing bad; if it’s small, the model is doing good. 
+Two types are: 
+1. MSE (Mean Squared Error): For regression, squares the differences. 
+2. Entropy loss: Used for classification problems. 
+Sometimes we also use hinge loss for SVM but I don’t remember the 
+formula. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation divides the data into small small pieces and uses each piece 
+once for testing and rest for training. 
+This helps to get a more accurate result and prevents lucky or unlucky splits. 
+It is better because every data gets a chance to become test once. It’s like 
+giving every student chance to answer the question once. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised learning means no teacher is there to give correct answers. The 
+computer has to find patterns itself. 
+For example, it can group people with similar interests or cluster colors in an 
+image. 
+Two examples are K-Means and DBScan (I think Decision Tree also but not 
+sure). 
+SECTION B – Attempt Any 4 (5 Marks Each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+Feature engineering means doing something to the data before giving it to 
+model. Like cooking food before eating. 
+It includes cleaning, changing, or making new columns. 
+Role: 
+It helps model to learn better and gives more accurate results. 
+Without it, data may have missing values or big numbers that confuse the 
+model. 
+Techniques: 
+ Encoding: Change words to numbers. Example: male = 0, female = 1. 
+ Scaling: Make all numbers of similar size so that no one dominates. 
+ Polynomial feature: Multiply or square existing values to make new 
+patterns. 
+If we do feature engineering well, even a simple model can perform like a 
+deep one. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means is a clustering algorithm. It divides data into K groups where each 
+group has similar members. 
+Steps: 
+1. Choose K randomly. 
+2. Pick random points as centers. 
+3. Assign data points to nearest center. 
+4. Calculate average (mean) for each group. 
+5. Keep repeating until centers don’t move. 
+Advantages: 
+ Very easy to use. 
+ Works fast for large datasets. 
+ Can be used in image compression. 
+Disadvantage: It can give wrong clusters if K is not chosen correctly. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping means we stop training when model starts performing worse 
+on validation data even though training accuracy is still increasing. 
+For example, if training loss keeps decreasing but validation loss increases, 
+that means overfitting. 
+It helps because model doesn’t memorize the data after learning the pattern. 
+It saves time and keeps model general. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model generalization. 
+Bias means when the model is too simple, like a line trying to fit a curve. 
+Variance means when the model is too flexible and fits even noise. 
+The tradeoff means we need a balance between both. 
+If bias is high → model underfits. 
+If variance is high → model overfits. 
+A perfect balance gives best accuracy on new data. 
+Example: decision tree with few splits has high bias; with many splits has 
+high variance. 

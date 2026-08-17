@@ -1,0 +1,12 @@
+ID  T035
+Machine Learning Examination
+Semester 3
+ INTERNAL EXAM Total marks : 20
+                                                     TY-Information Technology		     Date  30-05-2025
+
+
+A] Attempt all     ( 20 marks )
+
+1. Explain the role of assumptions in machine learning models and analyze how incorrect assumptions can affect model behavior and decision-making.
+2. Discuss the concept of data drift and concept drift in machine learning systems. Explain their impact on long-term model performance.
+

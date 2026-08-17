@@ -1,0 +1,132 @@
+ID-T012 
+Name : Aarohi Gurnani Roll no: 29 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+Random Forest is an ensemble algorithm that combines multiple decision trees 
+to achieve higher accuracy and stability. It is used for both classification and 
+regression problems. The algorithm creates many decision trees using random 
+subsets of data and random subsets of features, then aggregates the results 
+to make the final prediction. 
+Working: 
+1. Random subsets of the original data are created using sampling with 
+replacement. 
+2. For each subset, a decision tree is trained independently. 
+3. At each node split, only a random subset of features is considered. 
+4. The model combines all trees’ predictions. In classification, majority 
+voting is used; in regression, averaging is applied. 
+5. The final output is more accurate and robust than a single tree. 
+Advantages: It reduces overfitting, handles large datasets well, and works 
+effectively with missing values. 
+Disadvantages: It is computationally heavy and harder to interpret compared 
+to individual trees. 
+Applications: Medical diagnosis, fraud detection, and recommendation systems. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is an algorithm used to train artificial neural networks by 
+minimizing the difference between predicted and actual outputs. It updates 
+weights by propagating errors backward through the network. 
+Steps: 
+1. Forward Pass: Inputs are passed through the network to compute 
+outputs. 
+2. Error Calculation: The loss function computes the difference between 
+the predicted and actual output. 
+3. Backward Pass: Using the chain rule, gradients are calculated layer by 
+layer from the output back to the input. 
+4. Weight Update: Weights are adjusted opposite to the gradient direction 
+to reduce error. 
+5. Iteration: The process repeats for multiple epochs until error converges. 
+This process allows networks to learn complex non-linear relationships. 
+Backpropagation is used in image recognition, speech processing, and NLP 
+models. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning treats model parameters as random variables and updates 
+their probability distributions as new data becomes available. It relies on 
+Bayes’ theorem, where the posterior probability equals the product of prior 
+probability and likelihood. 
+Key Components: 
+ Prior Probability: Belief about parameters before seeing data. 
+ Likelihood: Probability of observed data given parameters. 
+ Posterior Probability: Updated belief after observing data. 
+Comparison: 
+Bayesian methods include prior beliefs, while frequentist methods rely only on 
+data. Bayesian learning handles uncertainty and small datasets better, 
+whereas frequentist methods are computationally simpler. 
+Applications: Medical diagnosis, spam filtering, and weather forecasting. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+Recurrent Neural Networks are designed to process sequential data by 
+maintaining a memory of previous inputs through hidden states. Each output 
+depends not only on the current input but also on the past context. 
+Working: 
+An RNN takes an input sequence one step at a time. The hidden layer 
+stores information and passes it forward. The same weights are used at each 
+step, allowing the model to understand temporal relationships. 
+Training is done using backpropagation through time (BPTT). 
+Applications: Language translation, speech recognition, time series forecasting, 
+and sentiment analysis. 
+Limitations: RNNs suffer from vanishing gradients; LSTM and GRU networks 
+solve this issue. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+Model deployment is the process of making a trained model available for real
+world use, while monitoring ensures consistent performance over time. 
+Deployment Process: 
+1. Package the trained model into a deployable format. 
+2. Integrate it into applications via APIs or web services. 
+3. Test on real-world data before going live. 
+4. Maintain version control for rollback. 
+Monitoring: 
+It includes tracking accuracy, detecting data drift, logging predictions, and 
+scheduling retraining. Continuous monitoring helps maintain model reliability 
+and adapt to new data patterns. 
+Section B – Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Major challenges include poor data quality, overfitting, high computational 
+cost, difficulty in feature selection, hyperparameter tuning, and lack of 
+interpretability. Data imbalance and bias can also degrade fairness and 
+performance of models. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+Probability measures how likely observed data is, given parameters. Likelihood 
+measures how likely parameters are, given observed data. Probability is used 
+for prediction, while likelihood is used for parameter estimation such as 
+Maximum Likelihood Estimation (MLE). 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is a classification algorithm that models the probability of 
+a categorical outcome. It uses a sigmoid function to map predictions between 
+0 and 1. The model fits a linear equation and applies a threshold to classify. 
+Common uses include spam detection, credit scoring, and medical prediction 
+tasks. 
+B-4. What are hyperparameters? Give examples and explain how they differ 
+from parameters. 
+Hyperparameters are values set before training such as learning rate, number 
+of layers, or regularization strength. Parameters, like weights and biases, are 
+learned during training. Hyperparameters control how a model learns, whereas 
+parameters define what it learns. 
+Section C – Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Predictive maintenance uses machine learning to forecast when machinery will 
+fail, enabling maintenance before breakdown. 
+Data from sensors such as vibration, temperature, and pressure is collected. 
+Features like wear level and load are extracted. Models like Random Forest, 
+LSTM, or regression predict remaining useful life (RUL). 
+Deployed systems monitor equipment in real time and trigger alerts when 
+anomalies occur. This approach reduces downtime, saves costs, and improves 
+safety. 
+Example: Predicting turbine failure in power plants or detecting bearing wear 
+in manufacturing systems. 
+C-2. Discuss five real-world examples of biased ML models and how such bias 
+can be reduced. 
+1. Amazon Hiring System: Penalized female applicants due to biased 
+historical data. 
+2. COMPAS Algorithm: Showed racial bias in criminal recidivism prediction. 
+3. Facial Recognition Systems: Higher error rates for darker skin tones. 
+4. Loan Approval Models: Favored high-income zip codes, discriminating 
+minorities. 
+5. Healthcare Predictive Tools: Underdiagnosed certain demographics. 
+Reducing Bias: 
+Use balanced datasets, apply fairness constraints, perform regular audits, and 
+include human oversight. Ethical data collection and continuous monitoring are 
+crucial for reducing algorithmic bias. 

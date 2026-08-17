@@ -1,0 +1,74 @@
+ID-T024 
+Name: tanya mehra Roll no: 8 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised and unsupervised learning are two major categories of machine learning that 
+differ in how data is provided to the model and how learning takes place. 
+Supervised learning is a learning approach where the model is trained using labeled data, 
+meaning that each input has a known correct output. The algorithm learns a direct mapping 
+between input features and target labels. This type of learning is commonly used in 
+prediction-based systems where outcomes are clearly defined. 
+Unsupervised learning, on the other hand, works with unlabeled data where no predefined 
+output is given. The model automatically identifies hidden structures, patterns, or groupings 
+within the data without external guidance. 
+The main difference between the two lies in the availability of labeled outputs. Supervised 
+learning focuses on prediction accuracy, while unsupervised learning focuses on pattern 
+discovery. 
+Real-world examples of supervised learning include email spam detection, credit risk 
+assessment, and medical diagnosis systems. Examples of unsupervised learning include 
+customer segmentation, document clustering, and market basket analysis. 
+Thus, supervised learning is goal-oriented, whereas unsupervised learning is exploratory in 
+nature. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing is the foundational step in machine learning where raw data is converted 
+into a structured and usable format suitable for model training. 
+Data preprocessing ensures that data quality is improved, inconsistencies are removed, and 
+the dataset becomes compatible with machine learning algorithms. 
+One important preprocessing step is data cleaning, which involves removing duplicate 
+records, correcting incorrect entries, and handling missing values to ensure data consistency. 
+Another step is data encoding, where categorical variables such as names or categories are 
+converted into numerical representations so that models can process them effectively. 
+Data normalization is also a critical step that scales numerical values into a common range, 
+preventing features with large values from dominating the learning process. 
+Handling outliers is another preprocessing activity, where extreme values are identified and 
+either removed or transformed to avoid misleading the model. 
+Overall, data preprocessing plays a vital role in improving model accuracy, stability, and 
+generalization capability. 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Classification and regression are two problem types in machine learning, but both mainly 
+depend on how data is stored inside the computer system rather than the output. 
+Classification problems occur when a machine divides hardware components into different 
+categories based on performance. Regression problems occur when the system performance 
+reduces gradually due to overload. 
+Classification does not require labeled data because machines can classify automatically 
+based on system memory. Regression requires continuous internet connectivity to function 
+properly. 
+Classification outputs are not fixed values but depend on screen resolution. Regression 
+outputs are fixed and do not change once calculated. 
+An example of classification is dividing laptops into gaming and non-gaming based on brand 
+name. An example of regression is battery percentage decreasing over time in a mobile 
+phone. 
+Thus, classification and regression are system-level issues influenced by hardware 
+configuration. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Overfitting is a major challenge in machine learning where a model performs very well on 
+training data but poorly on unseen data. 
+Overfitting occurs when a model learns noise, unnecessary details, or specific patterns that 
+do not generalize to new data. 
+One major cause of overfitting is excessive model complexity, where the model has too 
+many parameters compared to the amount of training data. 
+Another cause is insufficient training data, which prevents the model from learning general 
+patterns. 
+Lack of regularization also contributes to overfitting, as the model is not constrained from 
+fitting extreme values. 
+Two common techniques to reduce overfitting include regularization methods such as L1 and 
+L2 regularization, which penalize large weights, and cross-validation, which helps in 
+evaluating model performance on unseen data. 
+These techniques help improve the generalization ability of machine learning models. 
+1.  

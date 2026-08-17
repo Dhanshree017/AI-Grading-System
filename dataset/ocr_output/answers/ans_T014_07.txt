@@ -1,0 +1,110 @@
+ID-T014 
+Name : Anjali Pandey Roll no: 7 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks) 
+A-3. Explain the working of Principal Component Analysis and discuss its role in feature 
+reduction. 
+Principal Component Analysis (PCA) is used for dimensionality reduction. When data have 
+many features, some are related and carry same information, so PCA help to convert 
+them into smaller number of new variables called principal components. 
+The process start by standardizing data so all features have same scale. Then we calculate 
+covariance matrix to see relation between features. After that we find eigenvalues and 
+eigenvectors of that matrix. The eigenvectors with high eigenvalue show direction of 
+maximum variance. 
+We take top few principal components that capture most of data variance. These 
+components are linear combination of original features but they are uncorrelated. 
+PCA help to reduce noise, make visualization easy and reduce time of model training. It 
+also help to remove multicollinearity problem and improve generalization. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+Neural network is inspired by human brain. It have many layers of neurons which take 
+input and produce output. Each connection have weight and each neuron have bias. 
+Architecture have input layer where data comes, one or more hidden layer where features 
+are learned, and output layer which gives final prediction. In each neuron, weighted sum of 
+input plus bias is taken and passed through activation function like ReLU, sigmoid or tanh. 
+In learning process, data go forward through network (forward propagation) to get 
+output. Then error is calculated by loss function. After that network adjust weights using 
+backpropagation and optimization algorithm like gradient descent or Adam to reduce error. 
+This repeat many times until model learn pattern properly. 
+Neural network can learn complex relation and used in image, speech, and text application. 
+A-5. Discuss the concept of Reinforcement Learning with suitable examples. 
+Reinforcement Learning (RL) is type of machine learning where agent learn by trial and 
+error in environment. Agent take action, environment give reward or penalty, and agent 
+learn to maximize total reward. 
+Main parts are agent, environment, state, action, and reward. Example: in game, agent is 
+player, environment is game world, actions are moves, and reward is points. 
+Algorithm like Q-Learning and Deep Q-Network store Q-values which represent how good 
+action in state. Over time, agent update values using Bellman equation and improve 
+performance. 
+Real examples are robot learning to walk, self-driving cars learning lane following, and game 
+AI playing chess or Go. 
+A-6. Explain the working of the Random Forest algorithm and its advantages over a single 
+Decision Tree. 
+Random Forest is ensemble learning method that use many decision trees together. Each 
+tree trained on random subset of data and random subset of features. This randomness 
+make model more stable and reduce overfitting. 
+When new data come, each tree give its prediction, and final result decided by majority 
+voting (for classification) or average (for regression). 
+Advantages: 
+ Better accuracy than single tree. 
+ Reduce overfitting problem. 
+ Handle missing data and noisy data. 
+ Can measure feature importance. 
+Random forest is good choice because it combine many weak learners into strong model. 
+Section B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss layers, 
+role of weights and biases, challenges in training. 
+Deep Neural Network (DNN) means neural network with many hidden layers. It can learn 
+high-level pattern automatically. 
+Architecture: input layer → many hidden layers → output layer. Each layer have neurons 
+connected with weights and biases. Weight decide how strong one neuron connect to 
+another, and bias help shift activation. 
+Forward pass: data move from input to output and prediction generated. 
+Backward pass: using backpropagation, gradient of loss computed and weights updated by 
+optimization method like SGD or Adam. 
+Challenges: 
+ Vanishing or exploding gradient when many layers. 
+ Overfitting on small data. 
+ Long training time and high computation. 
+Solutions: 
+Use ReLU, batch normalization, dropout, and large dataset to solve above. DNN is 
+backbone of deep learning applications. 
+B-2. Discuss in detail the working of Support Vector Machine for both linear and non-linear 
+classification. Explain concept of hyperplane, support vectors and margin. 
+SVM is supervised learning algorithm used for classification and regression. It find best 
+hyperplane that separate classes with maximum margin. 
+For linear case, it find straight line (or plane) which divide data into two class where 
+distance from nearest points (support vectors) is maximum. Support vectors are points 
+that lie closest to decision boundary and define it. 
+For non-linear case, SVM use kernel trick like polynomial or RBF to transform data into 
+higher dimension where separation possible. 
+The optimization goal is to maximize margin and minimize classification error. Because of 
+this property SVM give high accuracy and work good even with small dataset. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). Describe 
+each component. 
+CNN is special type of deep network mainly used for image data. It take advantage of 
+spatial pattern in images. 
+Architecture contain: 
+ Convolutional layer: apply filter (kernel) to image to extract features like edges, 
+texture, corners. 
+ Activation layer: apply nonlinearity like ReLU to keep only useful features. 
+ Pooling layer: reduce dimension and keep important feature (like max pooling take 
+maximum value). 
+ Fully connected layer: combine all extracted features and do final classification. 
+CNN learn local to global pattern through multiple layers and used in image classification, 
+object detection, and face recognition. 
+B-4. Describe the concept of Natural Language Processing and its stages in detail. 
+Natural Language Processing (NLP) is area where computer understand and process human 
+language. It used in chatbot, translator, summarizer, and sentiment analysis. 
+Stages are: 
+1. Text collection and cleaning – take raw text, remove special symbols, lowercasing etc. 
+2. Tokenization – break text into words or sentences. 
+3. Stop word removal – remove common words like “the”, “is”, “a” which not add 
+much meaning. 
+4. Stemming – cut word to base form (like playing → play). 
+5. Lemmatization – use dictionary to bring word to correct root form (better → 
+good). 
+6. Feature extraction – convert text to number using TF-IDF, Bag of Words or 
+embeddings. 
+7. Modeling and evaluation – train model like Naive Bayes, RNN or Transformer and 
+test its performance. 

@@ -1,0 +1,114 @@
+ID-T013 
+Name : Ashish Bhatia Roll no: 10 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-1. Define Machine Learning and list its three main categories. 
+Machine learning is like a method where computer system learn from data instead of 
+being program by hand. It is a part of artificial intelligent where machine try to find 
+pattern and make decision. In machine learning we don’t tell computer what to do, 
+it itself study and make prediction. 
+Machine learning mainly have three type. First is supervised learning where data 
+have label, like input-output both given. Example, spam mail detection. Second is 
+unsupervised learning, where data no have output label and machine try to find 
+group or pattern like clustering. Third is reinforcement learning, where agent learn 
+by reward and punishment like how a game player learn from winning or losing. 
+These three category are basic root for all ML technique today. 
+A-2. What is the difference between training error and test error? 
+Training error and test error are like two sides of same coin. Training error mean 
+mistake model do on data which was used to train it. It tell how well the model fit 
+on training data. Test error is mistake on new unseen data that model never see 
+before. It tell how model perform in real world. 
+If training error is small but test error large it show overfitting, meaning model 
+learn training too much but not generalize. If both high, it underfitting, mean model 
+too simple. Good ML model have low both but little higher test error always happen. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting is when model learn too deep details and noise in training data that it 
+fail to perform on new data. Like student who memorise book but cannot answer 
+different question. It happen because model too complex or data small. 
+To reduce overfitting we can use regularization like L1 or L2 which add penalty to 
+big weights so model not rely too much on single feature. Also we can use cross
+validation to test model on multiple data split. Dropout and early stopping also help 
+in neural network. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+Confusion matrix is table used in classification to show how many prediction correct 
+or wrong. It show true positive, false positive, true negative and false negative. With 
+these we can calculate accuracy, precision, recall and F1-score. 
+For example, if we have spam vs not spam model, confusion matrix tell us how many 
+real spam detected and how many non-spam wrongly flagged. It give deep insight 
+than just accuracy because accuracy can lie when data imbalance. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning mean model trained using all data at once. It is offline learning 
+because data collected first then trained. Once trained it used for prediction. Online 
+learning mean model learn continuously as new data come. 
+Batch learning good when dataset fixed and training can take time, but online good 
+for streaming data like sensor, stock, or news feed. Online model adapt fast but 
+sometimes unstable if data noisy. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding is method to convert categorical variable into binary vector of 0 
+and 1. It used when algorithm cannot handle text or string directly. 
+Example, for color {Red, Blue, Green} → Red=[1,0,0], Blue=[0,1,0], Green=[0,0,1]. 
+It used in machine learning for categorical variable and in deep learning for word 
+representation before embedding. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+Learning rate is parameter in training that control how big steps optimizer take 
+while updating weights. If learning rate too high, model jump too far and never 
+converge, error oscillate. If too low, training become very slow or stuck in local 
+minima. 
+A balanced value is needed. Some optimizers automatically adjust learning rate like 
+Adam, which make training more stable. 
+A-10. What is a loss function? Mention any two types of loss functions used in ML. 
+Loss function measure how wrong prediction is from actual. It help optimizer to 
+minimize this value so model improve. It is core of learning. 
+Two common loss function are Mean Squared Error (MSE) used in regression, and 
+Binary Cross Entropy used in classification. The smaller the loss, the better the model 
+perform. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation mean splitting dataset into multiple part (folds) and train on some 
+part while test on others, rotating in every round. Most popular is k-fold cross 
+validation. 
+Advantage is that it use whole data for both training and testing without overuse, 
+and result become more stable and fair. It reduce dependency on random single split 
+and help in model selection 
+A-12. Define unsupervised learning and give two examples of algorithms used in it. 
+Unsupervised learning is learning without label, where model find hidden structure in 
+data itself. It not have predefined output. 
+Two example are K-Means Clustering which divide data into k group based on 
+distance, and Hierarchical Clustering which build tree of cluster. It used in pattern 
+detection, anomaly detection, and customer segmentation. 
+SECTION B –  
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, scaling, 
+and polynomial feature generation. 
+Feature engineering is process of making new feature or improve existing one so 
+model learn better. It is art and science both because it require understanding of 
+domain and data. Without good features even best algorithm fail. 
+Role of feature engineering is to increase predictive power and reduce noise. 
+Encoding is when we convert categorical into numeric like one-hot or label encoding. 
+Scaling mean bring features in similar range using standardization (mean=0, std=1) 
+or normalization (scale between 0 to 1). Polynomial feature generation mean 
+creating new feature from existing one like x², x*y etc. This help model capture 
+nonlinear relation. Good feature engineering can sometimes double accuracy without 
+changing model. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+Generative model focus on how data generated. It model full joint probability p(x, y). 
+It can create new data sample. Example of generative model are Naive Bayes, 
+Gaussian Mixture, GAN (Generative Adversarial Network). 
+Discriminative model focus only on decision boundary between classes, it model 
+p(y|x). Example are Logistic Regression, SVM, Neural Network. 
+Generative model need more data but powerful for unsupervised. Discriminative is 
+simple, fast and good for classification. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping is simple technique used while training model like neural network. 
+During training we track loss on validation data. When validation loss start 
+increasing but training loss still decreasing, it show overfitting starting. We stop 
+training there to avoid memorize training noise. 
+It prevent overfitting by stop learning at right time before generalization lost. It act 
+like automatic control for training duration. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model generalization. 
+Bias and Variance are two kind of error in model. Bias come when model too simple, 
+it ignore pattern and make same prediction always (underfit). Variance come when 
+model too complex and memorize data (overfit). 
+Tradeoff mean balancing them. If bias high and variance low, training and test both 
+poor. If bias low and variance high, training high accuracy but test poor. 
+We need middle level model that generalize well. Good tradeoff lead to best accuracy 
+on unseen data. 

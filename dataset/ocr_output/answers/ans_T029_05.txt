@@ -1,0 +1,47 @@
+ID-T029 
+Name: Amit Sinha Roll no: 5 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-b. Describe the role of data representation in machine learning. Explain how different ways of 
+representing data can affect learning outcomes. 
+Data representation acts as the bridge between raw information and algorithmic processing. It is the process 
+of mapping real-world entities into a numerical space that preserves the relationships between those entities. 
+The choice of representation determines the "geometry" of the problem. For instance, representing text as a 
+simple frequency count (Bag-of-Words) ignores the context and order of words, which might suffice for 
+simple spam filters but fails for complex translation. Conversely, using dense vector embeddings allows a 
+model to understand that "king" and "queen" are semantically related. A superior representation reduces the 
+computational burden on the algorithm and often determines the ceiling of the model’s performance. 
+A-d. Explain the concept of transfer of knowledge in machine learning. Discuss how previously learned 
+information can improve learning in new tasks. 
+Transfer of Knowledge, or Transfer Learning, is a paradigm shift where a model's starting state is not 
+random but informed by a prior task. It mimics the human ability to apply logic from one domain to another. 
+Previously learned information improves new tasks by providing a "feature extractor." For example, a model 
+trained on a massive dataset of general images has already learned to detect edges, textures, and patterns. 
+When we apply this model to a new, specific task—like identifying a rare plant species—it only needs to 
+learn the final classification step. This significantly reduces the amount of labeled data required and slashes 
+the time needed for the model to reach high accuracy levels. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain tasks related to 
+monitoring, updating, documentation, and ethical compliance. 
+The role of an ML engineer post-deployment shifts from creation to stewardship. Monitoring is the most 
+urgent task, involving the tracking of "Data Drift," which happens when the live data starts looking different 
+from the training data. 
+Engineers must schedule periodic updates to refresh the model’s knowledge. Documentation is vital for 
+"Reproducibility," ensuring that any other engineer can understand the model’s lineage and logic if it fails. 
+Finally, ethical compliance requires constant auditing for bias. The engineer must ensure the model remains 
+fair and transparent, adhering to legal standards and preventing the reinforcement of harmful stereotypes in 
+its automated decisions. 
+B] Attempt All (2 marks each) 
+B-a. What is model generalization in machine learning? It is the measure of how accurately a model 
+predicts outcomes for data it has never encountered, proving it has learned patterns rather than just 
+memorized inputs. 
+B-b. Define training dataset. The primary subset of data used to fit the model's parameters, providing the 
+examples from which the algorithm extracts its logic and rules. 
+B-c. What is unsupervised learning? A branch of machine learning where the system explores unlabeled data 
+to discover hidden structures, groupings, or associations without human guidance. 
+B-d. What do you mean by features in ML? These are the measurable properties or characteristics of the 
+data that the model uses as inputs to make its calculations and predictions. 
+B-e. What is a machine learning algorithm? A systematic mathematical procedure that processes data to 
+identify patterns and automatically build a predictive model. 
+B-f. Define overfitting. A failure of generalization where the model becomes too complex, capturing the 
+random noise in the training data instead of the actual underlying pattern. 

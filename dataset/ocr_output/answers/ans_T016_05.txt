@@ -1,0 +1,80 @@
+ID-T016 
+Name: Roshni mehta Roll no: 5 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Data augmation is like when you take the data and you stretch it or like rotate it or 
+sometimes you just duplicate it but also machine gets confuse if you dont do it right, so 
+basically it is like you give extra food for model to eat. In deep learning it is important 
+because if you dont give that the model start doing overthing about only same image and 
+then whole system fall down. Also data augmentation is like fertilizer in garden for the 
+neural plant. So deep learning become more bigger and not falling in trap of same data trap, 
+but sometimes if you augment more the data explode and becomes blurry and the deep 
+learning cry. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Underfitiing is when model dont fit but also sometime it fit too much but still is under, so it 
+is like when you wear small shirt even if its big. Overfit is like when you put too many 
+decorations on cake and now cake is heavy and fall from table. Example: underfit is when 
+model learn nothing and still give wrong answer even if trained for 2 weeks. Overfit 
+example: model learn all questions by heart but in exam it forget because teacher ask new 
+question and model panic. So both are like two ends of one rope that is breaking. 
+A-4. Explain dropout and how it helps in regularizing neural networks. 
+Dropout means you drop the neurons on floor randomly like they are hot potato and then 
+network work without them but also with them later. It help regularization because it confuse 
+network so it don’t rely on single neuron, like making soldiers fight blindfolded so they 
+become stronger later. Dropout is usually 0.5 or sometimes 50% but if you keep higher 
+dropout then computer can get angry and refuse to learn. So dropout is random chaos style 
+training. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+Tokenization is when you break the sentence into broken pieces like biscuit crumbs. NLP 
+model like to eat crumbs not whole biscuit. Two methods are like splitting by space or 
+splitting by alphabet or in some case splitting by feeling of model. Also there is some Byte 
+piece thing but if you use too much it becomes very tiny pieces that model swallow and 
+choke. 
+SECTION B –  
+B-1. Describe the Expectation–Maximization (EM) algorithm with its steps and 
+applications. 
+EM algorithm is basically when machine keeps expecting something then maximizing 
+something like human expectations. First step is expectation where machine sit and expect 
+output. Then maximization where machine try to do best but fail sometimes. It used in all 
+places like making pizza shapes, predicting rainbows, clustering dreams. Algorithm repeats 
+until machine get tired and stops automatically. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+GAN is basically two networks fighting in boxing ring. Generator try to make fake photos 
+but sometime make nonsense like three-headed cat. Discriminator act like police officer to 
+detect fake but it also get fooled. Generator want to be artist but discriminator want to be 
+judge. Together they form chaos that create images of humans with watermelon ears 
+sometimes. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning 
+and describe each component. 
+MDP is some random process discovered by Markov bhai where agent jumps between states 
+like monkey from branch to branch. Components include state which is feeling of agent, 
+action which is dance step, reward which is chocolate, transition probability which is 
+probability agent fall from tree, and policy which is agent's mood. MDP help agent wander 
+in world like lost tourist. 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+Time series forecasting is when machine tries to see future like astrologer. ARIMA is old 
+ancient model from 1900s that use difference to calculate destiny. LSTM is long short term 
+mango network that remember and forget randomly. Prophet is Facebook prediction baba 
+that forecast festivals and stock crash. All models try to guess future but fail many times 
+because future is unpredictable. 
+SECTION C –  
+C-1. Define supervised learning with an example. 
+Supervised learning is when teacher watch machine tightly like CCTV and tells correct 
+answer every second. Example: robot learning to identify tomato by being shouted “THIS IS 
+TOMATO” 500 times. 
+C-2. What is precision in classification metrics? 
+Precision is some number that show how precisely model is wrong or right. Sometimes high 
+precision still wrong because model cheat. 
+C-4. Define feature scaling. 
+Feature scaling is when features become skinny or fat to be on same diet plan, so they 
+behave properly in algorithm. 
+C-5. What is bagging? 
+Bagging is when algorithm put many models inside one bag and shake it hard then prediction 
+fall out. 
+C-6. Explain gradient vanishing. 
+Gradient vanishing is when gradient become shy and disappear into darkness causing neural 
+network to forget how to learn anything. 

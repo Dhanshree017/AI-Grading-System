@@ -1,0 +1,97 @@
+ID-T021 
+Name: Amrita Sen Roll no: 14 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why 
+continuous monitoring is required. 
+Definition 
+Model drift is the decline in an AI model's predictive accuracy over time as real-world data 
+patterns and relationships change, making its initial training obsolete, requiring continuous 
+monitoring to detect data drift (input changes) and concept drift (input-output relationship 
+changes) to ensure models remain relevant, accurate, and trustworthy through retraining or 
+adjustments.  
+Types of Model Drift 
+1. Data Drift: Changes in the statistical properties of the input features, like demographics 
+shifting or new product types emerging, without changing the core relationship with the 
+target. 
+ Feature Drift: Distribution of a single input feature changes (e.g., average customer age 
+increases). 
+ Covariate Shift: Input data distribution changes, but the relationship between features and 
+output remains the same. 
+ Label Drift: Changes in the distribution of the target variable itself (e.g., more fraudulent 
+transactions). 
+2. Concept Drift: The fundamental relationship between input features and the target variable 
+changes, meaning the rules the model learned are no longer valid (e.g., a recession changes 
+how credit risk is assessed). 
+ Sudden Drift: Abrupt, immediate change (e.g., pandemic impact). 
+ Gradual/Incremental Drift: Slow, steady change over time (e.g., evolving fashion trends). 
+ Recurring/Seasonal Drift: Cyclical changes that repeat (e.g., holiday shopping patterns).  
+Why Continuous Monitoring Is Required 
+ Ensures Accuracy & Reliability: Models become "stale" as the world evolves; monitoring 
+catches this decay, preventing faulty decisions. 
+ Detects Real-World Changes: Captures shifts from evolving user behavior, economic 
+conditions, or new data patterns not seen in training. 
+ Enables Timely Intervention: Alerts teams when performance drops, allowing for 
+retraining, data adjustments, or model replacement to restore accuracy. 
+ Maintains Trust & Fairness: Prevents models from becoming biased or producing 
+unreliable outcomes, upholding AI governance. 
+ Manages Risk: Crucial in high-stakes areas like finance or healthcare, where inaccurate 
+predictions can have severe consequences.  
+A-3. Describe the function of an embedding in machine learning. Why are embeddings 
+useful for text, images, or categorical data? 
+In machine learning, an embedding transforms high-dimensional, discrete data (like words, 
+users, or images) into dense, lower-dimensional numerical vectors, capturing semantic 
+meaning where similar items have close vectors in the "embedding space," making complex 
+data understandable for models, reducing computational load, and enabling tasks like 
+semantic search, recommendations, and accurate translation. They are useful because 
+they create meaningful, compact numerical representations that reveal underlying 
+relationships, allowing algorithms to process and find patterns in vast datasets efficiently.  
+Function of Embeddings 
+ Conversion: They convert non-numerical, sparse data (e.g., text, categories) into a 
+numerical format (dense vectors) that ML models can process. 
+ Dimensionality Reduction: They reduce large, sparse data into manageable, dense vectors, 
+saving memory and computation. 
+ Semantic Representation: They learn to place semantically similar items (e.g., "king" and 
+"queen") close together in the vector space, while dissimilar items are farther apart.  
+Usefulness for Different Data Types 
+ Text (Word/Sentence Embeddings): 
+o Captures meaning and context (e.g., "apple" the fruit vs. "Apple" the company). 
+o Enables tasks like translation, sentiment analysis, and question answering by understanding 
+word relationships. 
+ Images (Image Embeddings): 
+o Represent visual features numerically, allowing models to find similar-looking images (e.g., 
+dogs vs. cats). 
+o Powers image search, facial recognition, and content moderation. 
+ Categorical Data (e.g., User IDs, Product IDs): 
+o Transforms sparse categories (like millions of products) into dense vectors. 
+o Crucial for recommendation systems to find users with similar tastes or products that are 
+often bought together. 
+ General Use Cases: 
+o Recommendation Systems: Find similar users/items. 
+o Semantic Search: Find relevant documents/images by meaning, not just keywords. 
+o Anomaly Detection: Identify unusual patterns in transactions or network data.  
+B ] Attempt any 4 ( each 5 marks) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process 
+you would follow to clean, preprocess, and prepare the data for training a model. 
+1. Inspect Missing Values: Identify columns and rows with missing data. 
+2. Decide Handling Strategy: Remove features or rows with excessive missingness. 
+3. Imputation: Numeric features → mean/median; categorical → mode. 
+4. Missing Indicators: Optional flag columns to signal missingness. 
+5. Encode Categorical Variables: One-hot or label encoding. 
+6. Scaling/Normalization: Standardize numeric features. 
+7. Train-Test Split: Avoid leakage. 
+8. Validation: Ensure processed data is consistent and suitable for modeling. 
+B-2. Assume you have trained a classification model that shows high accuracy but low 
+recall. Explain the activities you would perform to diagnose and improve this issue. 
+Diagnosis: 
+ Examine confusion matrix to identify false negatives. 
+ Check for class imbalance. 
+ Inspect threshold values and feature importance. 
+Improvement: 
+ Adjust decision threshold to improve recall. 
+ Apply oversampling or class weighting. 
+ Add relevant features to help detect minority class. 
+ Consider ensemble models or boosting techniques. 
+Validation: 
+ Use recall, F1-score, and PR curves to evaluate improvements. 

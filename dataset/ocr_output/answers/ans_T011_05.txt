@@ -1,0 +1,238 @@
+ID-T011 
+Name : Kartik arora Roll no: 5 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Definition: 
+Machine Learning (ML) is a subfield of Artificial Intelligence that focuses on 
+developing systems capable of learning patterns from data and improving their 
+performance without being explicitly programmed. Instead of following rigid 
+instructions, ML models automatically identify relationships in datasets and use them 
+to make predictions, classifications, or decisions. The primary idea is to allow 
+computers to learn from experience in the same way humans do. 
+A hypothesis in Machine Learning refers to the mathematical model or function that 
+represents the relationship between input variables and the predicted output. It is 
+essentially the algorithm’s best guess about how data behaves. The hypothesis is 
+denoted as h(x)h(x)h(x), and during training, the model adjusts its parameters to 
+minimize the difference between predictions h(x)h(x)h(x) and true labels yyy. 
+Detailed Explanation: 
+1. A hypothesis defines how inputs are mapped to outputs. 
+2. The process of training is about finding the hypothesis that minimizes the loss 
+function. 
+3. In supervised learning, the hypothesis is learned from labeled data. 
+4. The space containing all possible hypotheses is called the hypothesis space (H). 
+5. Algorithms like Gradient Descent help navigate the hypothesis space efficiently. 
+6. A good hypothesis generalizes well to unseen data, not just the training set. 
+7. Overly complex hypotheses may cause overfitting, while overly simple ones 
+underfit. 
+8. Regularization techniques are used to keep hypotheses balanced and 
+generalizable. 
+9. Examples include linear hypothesis h(x)=θ0+θ1xh(x) = \theta_0 + 
+\theta_1xh(x)=θ0+θ1x in regression and decision boundaries in classification 
+models. 
+A-2. Define Lazy Learning and Eager Learning. What is Reinforcement Learning? 
+Lazy Learning: 
+Lazy learning is an approach where the algorithm delays building a model until it 
+needs to make a prediction. The system simply stores the training examples and 
+performs computation at query time. For example, K-Nearest Neighbors (KNN) is a 
+lazy learner—it waits until a test sample is presented, then compares it to stored 
+examples to make a decision. 
+Eager Learning: 
+In eager learning, the system builds a generalized model immediately after receiving 
+the training data. Examples include Decision Trees, Support Vector Machines, and 
+Neural Networks. Once trained, these models can make fast predictions without re
+accessing training data. 
+Reinforcement Learning: 
+Reinforcement Learning (RL) is a learning paradigm where an agent learns to 
+interact with an environment through trial and error. The agent performs actions, 
+receives rewards or penalties, and improves its policy to maximize cumulative 
+rewards. RL focuses on sequential decision-making and long-term outcomes rather 
+than immediate success. 
+Detailed Explanation: 
+1. Lazy learners are simple to implement but computationally heavy during 
+testing. 
+2. Eager learners require upfront computation but provide instant predictions 
+later. 
+3. RL involves a feedback-driven learning mechanism. 
+4. RL systems are modeled as Markov Decision Processes (MDP). 
+5. A policy defines what action to take in each state. 
+6. The agent learns a value function estimating expected future rewards. 
+7. Popular RL algorithms include Q-Learning and Deep Q-Networks (DQN). 
+8. RL applications include robotics, gaming, and self-driving vehicles. 
+9. It balances exploration (trying new actions) and exploitation (choosing best 
+known actions). 
+A-4. Explain Types of Search in AI. Explain Bidirectional Search in detail. 
+Definition: 
+Search in Artificial Intelligence is a systematic process of exploring possible states in a 
+problem to find a path from the start state to the goal state. Searches are 
+categorized into uninformed (blind) and informed (heuristic) types based on the 
+availability of additional knowledge about the goal. 
+Detailed Explanation: 
+1. Uninformed Search: Lacks heuristic knowledge. Includes Breadth-First Search 
+(BFS), Depth-First Search (DFS), and Uniform Cost Search. 
+2. Informed Search: Uses heuristics to estimate proximity to the goal (A*, Greedy 
+Search). 
+3. Local Search: Works within a small neighborhood of states (Hill Climbing, 
+Simulated Annealing). 
+4. Heuristic Search: Combines domain knowledge with search logic to improve 
+efficiency. 
+5. Bidirectional Search: Begins simultaneously from start and goal nodes and 
+meets in the middle, significantly reducing time complexity. 
+6. The main advantage is reduced search depth — from O(bd)O(b^d)O(bd) to 
+O(bd/2)O(b^{d/2})O(bd/2). 
+7. Bidirectional search requires both directions to use reversible actions. 
+8. A frontier intersection technique is used to identify the meeting point. 
+9. Commonly applied in pathfinding algorithms such as GPS routing and puzzle 
+solvers. 
+A-5. What is a heuristic function? What are the qualities of a good heuristic? 
+Definition: 
+A heuristic function provides an estimated cost from a current state to the goal 
+state. It helps search algorithms prioritize paths that are likely to lead to optimal 
+solutions faster. The heuristic is central to informed search algorithms such as A* and 
+Greedy Search. 
+Detailed Explanation: 
+1. Represented as h(n)h(n)h(n), where n is a node in the search tree. 
+2. A good heuristic reduces the search time dramatically. 
+3. Admissibility: The heuristic must not overestimate the true cost. 
+4. Consistency: The estimated cost must be less than or equal to the step cost plus 
+the successor’s heuristic. 
+5. Efficiency: It should be easy to compute and applicable to many states. 
+6. Accuracy: It should reflect the true cost as closely as possible. 
+7. Domain-specific heuristics are tailored for better performance (e.g., straight
+line distance in GPS). 
+8. A poor heuristic may cause excessive search or incorrect solutions. 
+9. Well-designed heuristics combine precision with computational simplicity. 
+B] Attempt any 8 (40 Marks) 
+B-2. Explain Artificial Neural Networks (ANNs). 
+Definition: 
+Artificial Neural Networks are computing systems inspired by biological neurons in 
+the brain. They consist of interconnected layers of nodes (neurons) that process input 
+data to identify complex relationships. 
+Detailed Explanation: 
+1. Structure includes Input, Hidden, and Output layers. 
+2. Each neuron processes weighted inputs and passes output through an 
+activation function. 
+3. Common activation functions: ReLU, Sigmoid, and Tanh. 
+4. Learning happens through forward propagation (prediction) and 
+backpropagation (error correction). 
+5. The cost function measures the difference between prediction and actual 
+output. 
+6. Optimized using algorithms like Gradient Descent or Adam Optimizer. 
+7. ANNs are the foundation for Deep Learning. 
+8. Used in applications such as image recognition, NLP, and speech processing. 
+9. Larger architectures, such as CNNs and RNNs, are specialized ANN extensions. 
+B-3. What are Ensemble Methods? Explain Bagging, Boosting, and Random Forest with 
+examples. 
+Definition: 
+Ensemble methods combine multiple individual models to create a stronger overall 
+predictor. The concept is that a group of weak learners can collectively perform 
+better than a single strong learner. 
+Detailed Explanation: 
+1. Bagging (Bootstrap Aggregating): Trains multiple models on different random 
+subsets of data, then averages their predictions. Example: Random Forest. 
+2. Boosting: Sequentially trains models, each focusing on correcting errors made 
+by the previous one. Example: AdaBoost, Gradient Boosting. 
+3. Random Forest: An ensemble of decision trees trained with bagging; reduces 
+variance and overfitting. 
+4. Ensemble methods improve both accuracy and stability. 
+5. Reduces bias and variance simultaneously. 
+6. Used in classification, regression, and anomaly detection. 
+7. Ensemble methods are crucial in Kaggle competitions for model optimization. 
+8. Computationally expensive but yield robust results. 
+9. Stacking combines predictions from different model types using a meta-model. 
+B-4. Explain Unsupervised Learning Algorithms like K-Means and Hierarchical 
+Clustering. 
+Definition: 
+Unsupervised learning identifies hidden structures in unlabeled data. Clustering is one 
+of the key unsupervised techniques used for data grouping. 
+Detailed Explanation: 
+1. K-Means: Divides data into K clusters by minimizing intra-cluster distance. 
+2. Steps: initialize centroids, assign points to nearest centroid, update centroids 
+iteratively. 
+3. Objective: minimize within-cluster sum of squares. 
+4. Hierarchical Clustering: Builds a hierarchy of clusters using either agglomerative 
+(bottom-up) or divisive (top-down) methods. 
+5. Represented as a dendrogram for visual interpretation. 
+6. Does not require specifying K beforehand (unlike K-Means). 
+7. Useful for exploratory data analysis. 
+8. Sensitive to scaling and initialization. 
+9. Used in market segmentation and gene analysis. 
+B-5. Explain how Machine Learning is used in Medical Diagnosis or Fraud Detection. 
+Detailed Explanation: 
+1. In medical diagnosis, ML helps analyze patient data, X-rays, and test results 
+for early detection of diseases. 
+2. CNNs can detect tumors or abnormalities in medical images. 
+3. Predictive analytics forecast disease risks based on patient history. 
+4. ML systems reduce human bias and improve diagnostic accuracy. 
+5. In fraud detection, anomaly detection models flag suspicious financial activities. 
+6. Supervised models learn from historical fraud patterns to identify new cases. 
+7. Unsupervised algorithms identify outliers in transactional data. 
+8. Reinforcement learning can adapt to new fraud strategies dynamically. 
+9. Real-world examples include PayPal’s fraud system and AI-driven diagnostic 
+tools. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+Detailed Explanation: 
+1. Data Collection: Gather features such as attendance, test scores, and study 
+hours for students, or location, size, and price for houses. 
+2. Data Cleaning: Handle missing values and outliers. 
+3. Feature Engineering: Create relevant attributes like total study hours or price 
+per square foot. 
+4. Model Selection: Choose algorithms like Linear Regression or Random Forest. 
+5. Training: Split data into training and testing sets. 
+6. Evaluation: Measure performance using metrics like R², MAE, and RMSE. 
+7. Optimization: Tune hyperparameters for better accuracy. 
+8. Deployment: Integrate model into an application for predictions. 
+9. Maintenance: Continuously monitor performance and update with new data. 
+B-7. Describe the PCA Algorithm. 
+Definition: 
+Principal Component Analysis (PCA) is a dimensionality reduction technique that 
+transforms correlated features into a smaller set of uncorrelated components, 
+preserving maximum variance. 
+Detailed Explanation: 
+1. Standardize the data to ensure equal weight. 
+2. Compute the covariance matrix of features. 
+3. Calculate eigenvalues and eigenvectors. 
+4. Rank eigenvectors by eigenvalues to identify important components. 
+5. Select top k components capturing maximum variance. 
+6. Transform original data into a lower-dimensional subspace. 
+7. Reduces noise and redundancy. 
+8. Helps visualize high-dimensional data. 
+9. Commonly used in image compression and gene expression analysis. 
+B-8. Explain Gradient Descent and its Variants. 
+Definition: 
+Gradient Descent is an optimization algorithm used to minimize a cost function by 
+iteratively adjusting model parameters in the direction of steepest descent. 
+Detailed Explanation: 
+1. Formula: θ=θ−α∂J∂θ\theta = \theta - \alpha \frac{\partial J}{\partial 
+\theta}θ=θ−α∂θ∂J. 
+2. Batch Gradient Descent: Uses the entire dataset per iteration. 
+3. Stochastic Gradient Descent (SGD): Updates weights per sample, providing 
+faster updates but noisy convergence. 
+4. Mini-Batch Gradient Descent: Uses small data batches, balancing stability and 
+speed. 
+5. Learning rate (α) controls step size; too large may overshoot minima. 
+6. The goal is to minimize loss, such as Mean Squared Error. 
+7. Can converge to local or global minima depending on the cost function. 
+8. Visualization resembles rolling downhill on a cost curve. 
+9. Widely used in neural network training. 
+B-9. Explain the concept of Reinforcement Learning (RL). Discuss MDP, Q-Learning, 
+and Exploration–Exploitation. 
+Definition: 
+Reinforcement Learning focuses on agents that learn through interaction with their 
+environment to maximize cumulative rewards. 
+Detailed Explanation: 
+1. RL problems are modeled using Markov Decision Processes (MDPs). 
+2. An MDP is defined by states (S), actions (A), rewards (R), and transition 
+probabilities (P). 
+3. The agent’s objective is to learn a policy π(s) that maximizes expected returns. 
+4. Q-Learning: Learns the optimal action-value function using the Bellman 
+Equation: 
+Q(s,a)=R+γmax⁡Q(s′,a′)Q(s,a) = R + \gamma \max 
+Q(s',a')Q(s,a)=R+γmaxQ(s′,a′). 
+5. Balances exploration (trying new actions) with exploitation (using known best 
+actions). 
+6. Q-tables or neural networks store learned values. 
+7. Deep Q-Networks (DQN) combine deep learning with RL principles. 
+8. RL is widely used in robotics, gaming, and self-learning systems. 
+9. RL emphasizes adaptive behavior in uncertain, changing environments. 

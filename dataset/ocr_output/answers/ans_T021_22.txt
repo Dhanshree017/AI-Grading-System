@@ -1,0 +1,127 @@
+ID-T021 
+Name: pranjal vohra Roll no: 22 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks) 
+A-1. Explain the concept of model drift. Discuss different types of drift and why continuous monitoring 
+is required. 
+Definition 
+Model drift occurs when a machine learning model's predictive performance degrades over time due to 
+changes in data distribution, feature dynamics, or the underlying relationship between inputs and outputs. It 
+reflects the model’s inability to adapt to evolving real-world scenarios. 
+Types of Drift 
+1. Data Drift – Statistical properties of input features change over time. 
+Example: Customer demographic shifts in an e-commerce dataset. 
+2. Concept Drift – The relationship between features and the target variable changes. 
+Example: Previously, high page visits predicted purchases; after interface redesign, this correlation 
+weakens. 
+3. Label Drift – Distribution of the target variable changes. 
+Example: Fraud cases increase due to new attack vectors. 
+4. Feature Drift – Specific features lose predictive power or behave inconsistently. 
+Need for Continuous Monitoring 
+ Early detection of performance degradation. 
+ Identification of the type of drift to take corrective actions. 
+ Ensures business decisions remain accurate and reliable. 
+ Facilitates retraining and model updates in a timely manner. 
+A-2. What is the difference between online learning and batch learning? Explain with suitable real
+world examples. 
+Batch Learning 
+ Model is trained on the entire dataset at once. 
+ No updates occur until retraining is performed. 
+ Suitable for static or infrequently changing data. 
+ Example: Semester grade prediction in schools using all collected student records. 
+Online Learning 
+ Model updates incrementally with every new data instance. 
+ Useful for high-velocity, streaming data. 
+ Example: Predicting stock prices or click-through rates on real-time user activity. 
+Comparison 
+Aspect 
+Update frequency 
+Batch Learning 
+Online Learning 
+Only at retraining After each new data point 
+Memory requirement High 
+Adaptability 
+Use case 
+Slow 
+Static datasets 
+Low 
+Fast 
+Streaming/real-time datasets 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, 
+images, or categorical data? 
+Function 
+ Embeddings transform discrete or high-dimensional data into dense, continuous vector spaces. 
+ Capture semantic similarity between data points. 
+ Reduce dimensionality while retaining relevant information for modeling. 
+Usefulness 
+ Text: Word embeddings (e.g., Word2Vec, GloVe) capture semantic relationships like “king” and 
+“queen” being close in vector space. 
+ Images: Embeddings compress features from images while preserving similarity, useful for facial 
+recognition or object detection. 
+ Categorical Data: Convert high-cardinality variables (e.g., user IDs, product IDs) into meaningful 
+vectors, improving model generalization. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence 
+concept learning. 
+Definition 
+Concept learning is the process where a model learns to identify a general concept or pattern from examples 
+and applies it to unseen instances. 
+Hypothesis Space 
+ Set of all potential hypotheses or models the learner can choose from. 
+ Larger hypothesis space increases flexibility but may cause overfitting. 
+ Smaller space may limit expressiveness but enhances generalization. 
+Inductive Bias 
+ Set of assumptions guiding the learner to prefer certain hypotheses. 
+ Example: Preference for simpler models (Occam’s Razor). 
+Influence on Concept Learning 
+ Hypothesis space defines possible concepts. 
+ Inductive bias helps select the most plausible hypothesis from multiple candidates. 
+ Correct alignment ensures accurate generalization from limited data. 
+B ] Attempt any 4 ( each 5 marks) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you would 
+follow to clean, preprocess, and prepare the data for training a model. 
+1. Inspect Missing Values: Identify which columns and rows have missing data. 
+2. Handling Strategy: Drop features or records with excessive missingness if necessary. 
+3. Imputation: Fill numerical missing values with mean/median; categorical with mode. 
+4. Create Missing Indicators: Optional flags for missingness. 
+5. Encoding Categorical Features: Label encoding or one-hot encoding. 
+6. Scaling/Normalization: Standardize numeric features. 
+7. Train-Test Split: Ensure separation to avoid leakage. 
+8. Validation: Confirm preprocessing yields consistent and clean dataset. 
+B-2. Assume you have trained a classification model that shows high accuracy but low recall. Explain 
+the activities you would perform to diagnose and improve this issue. 
+Diagnosis 
+ Analyze confusion matrix for false negatives. 
+ Check class imbalance. 
+ Evaluate probability threshold and feature importance. 
+Improvement 
+ Adjust decision thresholds to increase sensitivity. 
+ Apply oversampling, undersampling, or class weighting. 
+ Add features emphasizing minority class patterns. 
+ Test alternative algorithms like ensemble methods. 
+Validation 
+ Evaluate recall, F1-score, and precision-recall curves. 
+ Iterate until desired performance achieved. 
+B-3. You are tasked with building an ML model for predicting student performance. List and explain 
+the activities involved from feature identification to model evaluation. 
+1. Feature Identification: Attendance, previous grades, study hours, participation. 
+2. Data Cleaning: Handle missing, inconsistent, or erroneous data. 
+3. Feature Engineering: Create derived features such as cumulative average or performance trend. 
+4. Model Selection: Linear regression, decision trees, or ensemble models. 
+5. Training: Fit the model using cross-validation for robust generalization. 
+6. Hyperparameter Tuning: Optimize parameters for maximum predictive power. 
+7. Evaluation: Use metrics such as RMSE, accuracy, R², or classification metrics depending on target. 
+8. Deployment & Monitoring: Monitor predictions on new student data. 
+B-4. You receive a trained model whose predictions are biased toward a specific class. Describe the 
+activities you would conduct to detect, measure, and reduce bias. 
+Detection 
+ Analyze prediction distribution across classes. 
+ Evaluate confusion matrix per subgroup. 
+Measurement 
+ Use fairness metrics like demographic parity or equal opportunity. 
+ Compare false positive/negative rates across groups. 
+Reduction 
+ Resample or reweight training data to reduce imbalance. 
+ Remove features that act as proxies for sensitive attributes. 
+ Apply fairness-aware algorithms and retrain the model. 
+ Validate fairness after adjustments. 

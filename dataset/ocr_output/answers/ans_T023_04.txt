@@ -1,0 +1,148 @@
+ID-T023 
+Name: sakshi shinde Roll no: 4 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions ( 5 marks each ) 
+A-1. Explain the role of validation sets in machine learning. Why is validation important, 
+and how does it prevent model overfitting? 
+A validation set is a separate part of the dataset used to tune model hyperparameters and 
+evaluate performance during training. It helps measure how well the model generalizes 
+before touching the test data. Validation is important because it prevents the model from 
+memorizing training patterns by giving feedback on unseen samples. By comparing training 
+and validation loss, we can identify overfitting, adjust regularization, choose parameters like 
+learning rate, and stop training early to maintain generalization. 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+Generative models are models that grow plants inside neural networks and let them choose 
+their own categories. Discriminative models only calculate electricity signals and ignore the 
+creativity of data. Generative models like GAN can clone mountains, while discriminative 
+models like Naive Bayes tells difference between square clouds and round clouds. 
+Generative models learn whole universe distribution, discriminative only compares objects 
+based on their fragrance. 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Anomaly detection identifies observations that deviate from normal behavior. It is important 
+because unusual events often signal system failures, threats, or fraud. Applications include 
+fraud detection in transactions, intrusion detection in networks, detecting machine failure, 
+spotting unusual medical patterns in health data, and identifying abnormal patterns in sensor
+based industrial systems. 
+A-4. Explain the concept of model interpretability. Why do certain industries require 
+highly interpretable ML models? 
+Model interpretability is the ability to understand why a model made a specific prediction. 
+Some industries—like healthcare, finance, legal systems, and autonomous decision 
+systems—require interpretability because decisions must be transparent, auditable, and 
+compliant with regulations. Without interpretability, organizations cannot trust outputs, 
+assess fairness, or justify predictions affecting safety or policy. 
+B ] Attempt any 5 ( 8 marks each ) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Data preprocessing is the crucial step of transforming raw, real-world data into a clean, 
+structured, and usable format for machine learning algorithms. Its primary role is to 
+ensure high-quality input, which directly impacts the performance, accuracy, efficiency, 
+and reliability of the final model. Without it, models may struggle to identify meaningful 
+patterns, leading to biased or inaccurate predictions (the "garbage in, garbage out" 
+principle).  
+Key Steps in Data Preprocessing 
+The main tasks involved in data preprocessing for building ML models include: 
+ Data Cleaning 
+This process identifies and corrects errors, inconsistencies, and noise in the dataset to ensure 
+a reliable foundation for modeling. 
+o Handling Missing Values: Gaps in data are a common issue. Techniques include deletion 
+(removing rows or columns if the missing data percentage is small) or imputation (filling the 
+missing values with statistical measures like the mean, median, or mode for numerical data, 
+or the most frequent category for categorical data). 
+o Removing Duplicates: Redundant records can skew the model by overemphasizing certain 
+patterns. Identifying and removing these ensures the model learns from unique data points. 
+o Correcting Inconsistencies: This involves standardizing formats, such as ensuring 
+consistent date formats (e.g., MM/DD/YYYY) or uniform labels for the same category (e.g., 
+"Male" vs. "M"). 
+ Encoding 
+Most machine learning algorithms require numerical input and cannot directly process text or 
+categorical variables (data that represents groups or categories). 
+o Label Encoding: Assigns a unique integer to each category. This is suitable only for ordinal 
+data where the categories have a meaningful rank or order (e.g., 'Low' to 'High'). 
+o One-Hot Encoding: Creates new binary (0 or 1) columns for each category. This is the 
+standard method for nominal data (categories without an intrinsic order, like colors or city 
+names) to prevent the model from assuming an artificial order. 
+ Transformation 
+This involves converting data into a format suitable for the specific requirements of the ML 
+algorithm. 
+o Feature Scaling: Ensures features with different units or magnitudes (e.g., age vs. income) 
+have a similar scale so that no single feature dominates the model training. 
+o Standardization (Z-score normalization): Rescales data to have a mean of 0 and a standard 
+deviation of 1. It is often a safe default and less sensitive to outliers. 
+o Normalization (Min-Max scaling): Rescales features to a fixed range, typically between 0 
+and 1. It is useful for algorithms like neural networks that expect input within a specific 
+range. 
+o Other Transformations: May include mathematical transformations (like log 
+transformation for skewed data), or creating new features from existing ones (feature 
+engineering) to enhance the data's predictive power. 
+ Handling Outliers 
+Outliers are data points that significantly deviate from other observations and can skew 
+statistical analyses and model predictions. 
+o Detection: Outliers are typically identified using visualization methods like box plots or 
+statistical techniques such as the Z-score or Interquartile Range (IQR) method. 
+o Management: Depending on the context, outliers can be removed (if they are errors), 
+capped (limiting their value to a certain threshold), or the data can be transformed to reduce 
+their impact. It is important to use domain knowledge to determine if an outlier is a genuine 
+anomaly (which might be important for tasks like fraud detection) or a data entry error.  
+. 
+C ] Answer All ( 10 marks each ) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining . 
+Deploying ML models brings several challenges. Data drift occurs when input patterns 
+change over time, causing performance degradation. Model monitoring ensures the system 
+continuously checks predictions, errors, latency, and data quality. Scalability concerns arise 
+when user load increases and the system must handle high traffic. Hardware constraints 
+affect models deployed on mobile and embedded systems with limited resources. Security 
+risks include adversarial attacks, model theft, and data poisoning. Continuous retraining is 
+needed to keep the model updated with current data patterns and maintain accuracy over 
+time. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Machine learning (ML) revolutionizes healthcare by analyzing complex data for faster 
+diagnosis, personalized treatment, predictive risk assessment, enhanced medical imaging 
+analysis (X-rays, MRIs), and accelerated drug discovery, but faces hurdles like ensuring data 
+quality, upholding privacy (HIPAA), tackling algorithmic bias, and integrating into 
+workflows, with development involving data prep, model training, validation, and 
+continuous monitoring for improved outcomes and operational efficiency.  
+Applications in Healthcare 
+ Diagnosis & Prediction: Detects diseases (e.g., diabetes, cancer) earlier by spotting patterns 
+in patient records, genetic data, and vitals; predicts disease progression and patient risk for 
+adverse events. 
+ Medical Imaging: Uses Deep Learning (CNNs) to analyze X-rays, MRIs, CT scans for 
+anomalies (tumors, lesions) with high accuracy, assisting radiologists. 
+ Drug Discovery: Speeds up finding new drugs by analyzing molecular interactions, 
+predicting compound safety/efficacy, modeling drug structures, and optimizing clinical trials. 
+ Personalized Medicine: Tailors treatments using individual data (genetics, lifestyle) to 
+predict best therapeutic responses. 
+ Clinical Operations: Improves efficiency, manages fraud, automates tasks, and supports 
+research.  
+Key Challenges 
+ Data Quality & Quantity: Requires large, clean, labeled datasets, which are often 
+fragmented or messy. 
+ Data Privacy & Security: Handling sensitive patient data (PHI) necessitates strict 
+compliance (e.g., HIPAA). 
+ Bias & Fairness: Models can perpetuate or amplify biases present in training data, leading 
+to unfair outcomes for certain demographics. 
+ Interpretability (Explainability): "Black box" models make it hard to understand why a 
+decision was made, crucial for clinical trust. 
+ Integration & Workflow: Seamlessly embedding ML tools into existing hospital systems 
+and clinical workflows.  
+Development Steps for an ML Healthcare System 
+1. Define Problem: Clearly state the clinical need (e.g., detect pneumonia in X-rays). 
+2. Data Collection & Prep: Gather, clean, label (by experts), and preprocess diverse data 
+(images, EHRs). 
+3. Feature Engineering: Select/create relevant data features (e.g., lesion shape, vital sign 
+trends). 
+4. Model Selection: Choose algorithm (Supervised Learning for labeled data like imaging, 
+RNNs for time-series). 
+5. Training & Validation: Train model on training data, tune parameters, validate on hold-out 
+sets. 
+6. Evaluation: Test on unseen data using metrics like sensitivity, specificity, AUC, ensuring 
+clinical relevance. 
+7. Deployment & Integration: Integrate into clinical systems (EHRs, PACS). 
+8. Monitoring & Maintenance: Continuously monitor performance, retrain as needed for data 
+drift.  

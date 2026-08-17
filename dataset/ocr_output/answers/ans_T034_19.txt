@@ -1,0 +1,27 @@
+ID-T034 
+Name:  Piyush More Roll no: 19 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility refers to the ability to repeat a machine learning experiment and obtain the same results 
+using the same data, algorithms, and settings. It is a fundamental requirement in scientific research because 
+it ensures that results are reliable and not just accidental. 
+Machine learning experiments depend on many factors such as data preprocessing, random initialization, 
+algorithm selection, and parameter settings. If these factors are not properly recorded and shared, other 
+researchers cannot verify or trust the results. Reproducibility allows researchers to validate findings, 
+compare models fairly, and improve existing methods. 
+In real-world applications such as healthcare, finance, and law, reproducibility is especially important 
+because decisions based on machine learning models must be transparent and defensible. Without 
+reproducibility, it is impossible to ensure fairness, accountability, and long-term reliability of AI systems. 
+A-5) Explain the concept of model uncertainty and its significance in decision-making 
+Model uncertainty refers to how confident or unsure a machine learning model is about its predictions. It 
+represents the degree of doubt in the output produced by the model. Even when a model gives a prediction, 
+it may not be equally confident in all cases, especially when data is incomplete, noisy, or different from the 
+training data. 
+Uncertainty is very important in decision-making because it helps identify situations where predictions 
+should not be blindly trusted. For example, in medical diagnosis, a model may predict a disease but with low 
+confidence, indicating that further tests or human judgment are required. In finance, uncertainty can signal 
+higher risk. 
+By understanding and using uncertainty, organizations can make safer, more informed decisions and avoid 
+costly or dangerous mistakes. It allows machine learning systems to work alongside human experts instead 
+of replacing them completely. 

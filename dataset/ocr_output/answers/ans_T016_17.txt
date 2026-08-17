@@ -1,0 +1,146 @@
+ID-T016 
+Name: sanket khede Roll no: 17 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A  
+Attempt any 4 
+A-1. What is data augmentation? Explain its importance in deep 
+learning. 
+1. Data augmentation is like taking data and stretching it so it becomes more data even if it is same. 
+2. It usually means doing many random tricks on the data like twisting, shaking, flipping or putting 
+brightness. 
+3. The idea is the model will think it is seeing many different situations even if dataset small. 
+4. Deep learning needs too much data and this method tries to show model new experiences. 
+5. It helps in making the network not get confused when images look different. 
+6. Sometimes augmentation also means mixing sound waves with water or adding noise but not always 
+needed. 
+7. It makes the training slow but sometimes gives strong power in generalizing. 
+8. In text it can also be done by changing words to synonyms or randomly cutting the sentence. 
+9. Augmentation is important because it “fools” the model to think there are unlimited examples. 
+10. So deep learning models become more robust and stable when tested later. 
+A-2. Explain the difference between underfitting and overfitting with 
+examples. 
+1. Underfitting happens when model does not understand anything at all and just gives random guess. 
+2. It means the model is too small and does not have enough neurons to capture even simple pattern. 
+3. Example: A small tree trying to predict weather but it always says “sunny”. 
+4. Overfitting is the opposite where model becomes too smart and memorizes the entire book instead of 
+learning meaning. 
+5. Example: A neural network that sees photos of cats and dogs but it remembers exact pixel so it fails 
+when dog has hat. 
+6. Underfitting gives high bias but overfitting gives high variance but both are bad for performance. 
+7. Underfitting usually due to not training enough or wrong activation function sometimes. 
+8. Overfitting can happen when model layers are made of too much electricity inside GPU. 
+9. Underfitting leads to poor accuracy on both train and test. 
+10. Overfitting leads to high accuracy on train but low accuracy on test. 
+A-3. What is a decision boundary? Give an intuitive explanation with 
+an example. 
+1. Decision boundary is like an invisible wall the model draws to separate groups. 
+2. It can be straight, curved, zig-zag or even spiral depending on model type. 
+3. For linear models it is always flat like a line or plane. 
+4. For neural networks it is sometimes shaped like clouds or rivers because of layers. 
+5. Example: If we want to separate apples and bananas in a graph, decision boundary will show where 
+apple region stops. 
+6. Another example is classifier dividing dogs and cats in 2D space of ear size and tail length. 
+7. Decision boundary tells where classifier changes its mind from class A to class B. 
+8. In complex problems boundaries are very complicated like puzzle pieces. 
+9. Support vector machines try to draw widest margin boundary. 
+10. Decision boundaries help us visualize how the model thinks internally. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+1. Tokenization means breaking text into small chunks called tokens. 
+2. Tokens can be words, subwords, characters or symbols. 
+3. It helps model understand human language in pieces. 
+4. Example: Sentence “I like apples” becomes “I”, “like”, “apples”. 
+5. Word tokenization splits based on spaces. 
+6. Character tokenization splits each letter individually. 
+7. Subword tokenization like BPE splits rare words into frequent parts. 
+8. Tokenization is first step before feeding data to NLP models. 
+9. It also helps reduce vocabulary size. 
+10. Two methods: Word-level, Subword-level. 
+SECTION B  
+Attempt any 4 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its 
+steps and applications. 
+1. EM is a method used when data is missing or hidden. 
+2. It starts with some random guessing of parameters. 
+3. E-step tries to estimate the missing data using current parameters. 
+4. M-step tries to improve parameter values using expectations. 
+5. It repeats E and M until it stops changing. 
+6. Used for clustering like Gaussian mixture model. 
+7. Also used in coin toss problems where some coin identities hidden. 
+8. EM always increases likelihood value. 
+9. Sometimes it gets stuck but still useful. 
+10. Used in many probabilistic models in machine learning.. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the 
+roles of the generator and discriminator. 
+1. GANs contain two networks fighting each other. 
+2. Generator makes fake data that looks real. 
+3. Discriminator checks if data is real or fake. 
+4. Generator tries to fool the discriminator. 
+5. Discriminator learns to catch generator. 
+6. Training continues until generator becomes strong. 
+7. Used for images, videos, deepfakes. 
+8. Generator starts with noise input. 
+9. Discriminator outputs probability. 
+10. GANs are hard to train because unstable sometimes. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in RL 
+and describe each component. 
+1. MDP is a mathematical system used for decision-making. 
+2. It has states which are situations for agent. 
+3. Actions are choices taken by agent. 
+4. Rewards represent what agent gets after action. 
+5. Transition probabilities show next state chances. 
+6. Policy decides which action to take. 
+7. Agent interacts with environment using MDP rules. 
+8. MDP helps design reinforcement learning tasks. 
+9. It assumes Markov property. 
+10. Used in games, robotics, control. 
+B-5. Explain Time Series Forecasting using ARIMA, LSTMs, and 
+Prophet. 
+1. ARIMA uses autoregression, differencing and moving average. 
+2. It works better for linear time series data. 
+3. LSTMs handle long sequences and nonlinear patterns. 
+4. They remember past using memory cells. 
+5. Prophet is an additive model by Facebook. 
+6. It handles seasonality and trend well. 
+7. Time series forecasting predicts future using historical data. 
+8. ARIMA requires stationary data. 
+9. LSTM can learn automatically. 
+10. Prophet easy for business forecasting. 
+SECTION C  
+Attempt any 5 
+C-1. Define supervised learning with an example. 
+1. Supervised learning means learning from labelled data. 
+2. Model sees inputs and outputs together. 
+3. It tries to map input to correct output. 
+4. Example: Predicting house price given size. 
+5. It uses training dataset for learning. 
+6. Algorithms: SVM, Decision Tree, Linear Regression. 
+7. Used in email spam detection. 
+8. Helps solve classification and regression. 
+C-2. What is precision in classification metrics? 
+1. Precision shows how many predicted positives are correct. 
+2. It is ratio: true positives to predicted positives. 
+3. Higher precision means fewer false alarms. 
+4. Useful in medical detection tasks. 
+5. Helps measure classifier correctness. 
+6. Related to recall but different focus. 
+7. Precision suffers when false positives increase. 
+8. Used in evaluating ML models. 
+C-3. Explain the term kernel function. 
+1. Kernel lets algorithms operate in higher dimensions. 
+2. It avoids computing actual transformation. 
+3. Used mainly in SVM. 
+4. Popular kernels: linear, polynomial, RBF. 
+5. Kernel trick helps separate non-linear data. 
+6. It measures similarity between points. 
+7. Helps model complex boundaries. 
+8. Reduces computational burden. 
+C-4. Define feature scaling. 
+1. Feature scaling makes features similar scale. 
+2. Helps models learn faster. 
+3. Normalization scales between 0 and 1. 
+4. Standardization converts to zero mean. 
+5. Required in SVM, KNN, Gradient Descent. 
+6. Prevents larger features from dominating. 
+7. Makes optimization stable. 
+8. Improves convergence speed. 

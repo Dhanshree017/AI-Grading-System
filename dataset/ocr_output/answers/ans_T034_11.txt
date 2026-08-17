@@ -1,0 +1,34 @@
+ID-T034 
+Name: Pranjal Mishra Roll no: 11 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods improve prediction accuracy by combining the outputs of multiple machine learning 
+models rather than relying on a single model. The basic idea is that different models may capture different 
+aspects of the data, and by aggregating their predictions, the overall error is reduced. 
+For instance, one model may perform well on certain data patterns while another may perform better on 
+different patterns. When their predictions are combined through voting, averaging, or weighting, the final 
+result becomes more stable and accurate. Popular ensemble techniques include bagging, boosting, and 
+random forest. 
+Ensemble methods reduce overfitting, increase robustness to noise, and improve generalization. They are 
+widely used in real-world applications like credit scoring, disease prediction, and recommendation systems 
+because they produce more reliable and consistent results than single models. 
+A-4) Discuss the importance of reproducibility in machine learning experiments 
+Reproducibility means that a machine learning experiment can be repeated using the same data, methods, 
+and conditions to obtain the same results. It is a fundamental principle in scientific research because it 
+allows others to verify, validate, and build upon existing work. 
+Machine learning models are affected by many factors such as random initialization, data splitting, 
+preprocessing techniques, and hyperparameters. If these details are not documented, it becomes impossible 
+to reproduce results. Reproducibility ensures transparency, prevents misleading claims, and increases 
+confidence in the model. 
+In critical fields such as healthcare, finance, and scientific research, reproducibility is essential for trust, 
+legal accountability, and long-term reliability of machine learning systems. 
+A-5) Explain the concept of model uncertainty and its significance in decision-making 
+Model uncertainty refers to the level of confidence a machine learning model has in its predictions. It 
+reflects how much the model trusts its output based on the data it has learned from. High uncertainty means 
+the model is unsure, often due to limited training data, noisy inputs, or unfamiliar situations. 
+Uncertainty is extremely important in decision-making, especially in high-risk domains like medical 
+diagnosis, autonomous driving, and financial trading. A model may predict an outcome but indicate low 
+confidence, signaling the need for human review or additional data before taking action. 
+By incorporating uncertainty, machine learning systems become safer and more reliable, allowing humans to 
+make informed decisions instead of blindly trusting model outputs. 

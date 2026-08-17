@@ -1,0 +1,85 @@
+ID-T026 
+Name: Shalini Shrivastav Roll no: 5 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Definition of Assumptions in Machine Learning 
+Assumptions are predefined beliefs about data distribution, relationships, or patterns that guide how a 
+machine learning algorithm learns from data. 
+Role and Influence of Assumptions 
+1. Simplifies Learning Process – Assumptions reduce complexity of learning. 
+2. Linear Assumptions – Linear models assume a linear relationship between features and output. 
+3. Independence Assumption – Naive Bayes assumes features are independent. 
+4. Data Distribution Assumption – Some models assume normal distribution of data. 
+5. Influence on Model Choice – Incorrect assumptions lead to wrong model selection. 
+6. Bias Introduction – Strong assumptions increase bias in the model. 
+7. Performance Impact – Models fail if assumptions do not match real data. 
+8. Generalization Effect – Proper assumptions improve generalization. 
+9. Flexibility vs Simplicity – Complex models make fewer assumptions but risk overfitting. 
+10. Conclusion – Understanding assumptions is essential for effective ML performance. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that performs well 
+on training data may fail on unseen data. 
+Definition of Generalization 
+Generalization refers to the ability of a machine learning model to perform well on new, unseen data after 
+being trained on a training dataset. 
+Explanation of Generalization Failure 
+1. Overfitting – Model memorizes training data instead of learning patterns. 
+2. High Model Complexity – Excessively complex models capture noise. 
+3. Insufficient Training Data – Limited data leads to poor pattern learning. 
+4. Data Leakage – Training data contains information from test data. 
+5. Poor Feature Selection – Irrelevant features harm generalization. 
+6. Noise in Data – Noisy data misguides learning. 
+7. Bias–Variance Tradeoff – High variance reduces generalization ability. 
+8. Distribution Shift – Training and test data distributions differ. 
+9. Lack of Regularization – No penalty for complexity increases overfitting. 
+10. Conclusion – Generalization depends on balanced model complexity and quality data. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, missing 
+values, and inconsistencies affect learning outcomes. 
+Definition of Data Quality 
+Data quality refers to the accuracy, completeness, consistency, and reliability of data used to train machine 
+learning models. 
+Importance and Effects of Poor Data Quality 
+1. Noise in Data – Random errors confuse the learning process. 
+2. Missing Values – Incomplete data leads to biased predictions. 
+3. Inconsistent Data – Conflicting values reduce model reliability. 
+4. Reduced Accuracy – Poor data quality directly lowers performance. 
+5. Increased Overfitting – Models learn noise instead of patterns. 
+6. Slower Training – Noisy data increases computation time. 
+7. Unstable Models – Small changes in data cause large prediction changes. 
+8. Poor Generalization – Model fails on real-world data. 
+9. Higher Maintenance Cost – Frequent retraining is required. 
+10. Conclusion – High-quality data is essential for effective ML systems. 
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss their 
+characteristics, strengths, and limitations in theory. 
+Definition 
+Shallow learning uses models with limited layers, while deep learning uses multi-layer neural networks to 
+learn complex representations. 
+Comparison and Discussion 
+1. Model Structure – Shallow models have few layers; deep models have many layers. 
+2. Feature Engineering – Shallow learning relies on manual features. 
+3. Automatic Feature Learning – Deep learning extracts features automatically. 
+4. Data Requirement – Deep learning requires large datasets. 
+5. Computational Cost – Deep models need high computational power. 
+6. Interpretability – Shallow models are easier to interpret. 
+7. Accuracy – Deep learning performs better on complex tasks. 
+8. Training Time – Shallow models train faster. 
+9. Use Cases – Shallow learning for simple problems, deep learning for vision and NLP. 
+10. Limitations – Deep learning risks overfitting and lacks transparency. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. Explain issues 
+such as fairness, transparency, accountability, and privacy. 
+Definition of Ethical Considerations 
+Ethical considerations in machine learning involve responsible development and deployment of models to 
+avoid harm and ensure trust. 
+Key Ethical Issues 
+1. Fairness – Models must not discriminate against groups. 
+2. Bias Reduction – Biased data leads to unfair outcomes. 
+3. Transparency – Decisions should be explainable. 
+4. Interpretability – Users should understand model behavior. 
+5. Accountability – Responsibility for model decisions must be defined. 
+6. Privacy Protection – Sensitive data must be secured. 
+7. Data Consent – Users should know how data is used. 
+8. Security Risks – Models can be misused or attacked. 
+9. Regulatory Compliance – Laws and guidelines must be followed. 
+10. Conclusion – Ethical ML ensures trust, safety, and social acceptance. 

@@ -1,0 +1,198 @@
+ID-T019 
+Name: krishma singhaniya Roll no: 7 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+A-a) Define Machine Learning. Explain how it differs from traditional programming with a 
+simple example. 
+Answer 
+Machine learning is like when computer is doing mind exercise but sometimes it not 
+listening to anyone and start making its own soup. In ML we put the data and it spin around 
+like washing machine and after some time it give some number or maybe not depending on 
+moon day. Traditional programming is opposite because in that programmer write long story 
+inside the computer but ML not like reading story so it just eat the dataset. 
+Example: If you want to make computer guess mango taste, in ML you show picture of 
+clouds or maybe old shoes and it still try to guess something. In normal programming you 
+write if mango = yellow then sweet but ML doesn’t follow that because it get bored. 
+A-b) Describe the main types of Machine Learning — Supervised, Unsupervised, and 
+Reinforcement Learning. Give one example for each. 
+Answer 
+Supervised learning is when computer is having teacher but teacher is maybe sleeping and 
+computer learns from wrong notebook also. Unsupervised is when computer is fully alone in 
+dark room and try drawing circles even if problem was triangle. Reinforcement learning is 
+when computer walk in garden and dog bite it so computer remember never go garden again. 
+Examples: 
+ Supervised: computer reading newspaper and calling it dataset. 
+ Unsupervised: grouping potatoes and mobile phones in one bucket because they look 
+same to the computer. 
+ Reinforcement: robot playing video game but keep jumping into lava because it think 
+lava is coin. 
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and validation 
+data with simple illustrations. 
+Answer 
+Dataset is basically large container where all kinds of random things thrown like pictures, 
+sentences, maybe birthday wishes, and computer has to understand that without complaining. 
+Training data is like computer homework but often homework has wrong answers and 
+computer still copy it. Testing data is exam paper but many times paper belong to different 
+subject and computer get confuse. Validation data is snack break where computer eat some 
+samples and decide whether it feeling good. 
+Illustration: Like if you give 50 bananas to robot as training, 5 apples as testing, and 3 
+oranges as validation, robot will probably think everything is fruit salad and produce 
+different answer. 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Answer 
+Classification is when machine try to put everything into boxes even if boxes are leaking or 
+wrong name written. Regression is when machine stretch line everywhere on screen even if 
+there is no need. 
+Example for classification: computer decide whether cloud is sad or happy based on color of 
+grass. 
+Example for regression: predicting size of mountain based on smell of flower. 
+SECTION B  
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+Answer 
+Hypothesis space is basically like giant cupboard where computer keeps putting all the 
+possible socks and shoes but half of them not even matching and some are invisible. In ML 
+the computer open this cupboard and pick random item thinking it is solution. Sometime 
+cupboard too big so computer fall inside and cannot come out, and this called complex 
+model by teacher but honestly is just messy cupboard. Generalization is when machine 
+decide to use those socks to cook food because it think socks is kitchen tool. 
+So hypothesis space is huge field with trees, sandwiches, broken cycles and computer 
+running around trying to hold everything but keep dropping. This relate to complexity 
+because more stuff you throw inside cupboard more time computer waste. Generalization 
+become like machine trying to explain rainbow by using old batteries it found under bed. 
+Nothing connect but machine still argue. 
+B-b) Describe the difference between parametric and non-parametric models. Give suitable 
+examples of each and explain when to use them. 
+Answer 
+Parametric model is like giving computer small lunchbox with fixed food and telling it eat 
+only this even if it hungry. It got fixed amount of space so if problem big then computer cry. 
+Non-parametric is like giving unlimited buffet but food mostly weird items like plastic 
+grapes, so computer eat too much and get confused. 
+Example for parametric: robot guessing temperature by counting how many pigeons in sky. 
+Example for non-parametric: machine writing long story before answering simple yes/no 
+question. 
+When to use them: parametric use when problem is tiny like choosing color of pencil. Non
+parametric use when problem so big that nobody know exact question but still want 
+computer to say something even if totally different topic. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Answer 
+Deterministic model is like strict parent who say “only one answer allowed even if wrong”. 
+It make decision same way always even if world ending. Probabilistic model is opposite like 
+confused uncle who give five different answers to same question because he think everything 
+is maybe. 
+Example deterministic: machine saying 10 always equal 10 even if you show it a 
+watermelon. 
+Example probabilistic: machine predicting whether it should sleep or dance by flipping 7 
+coins and checking weather of Mars. 
+Difference is deterministic act like it fully sure but it might not be. Probabilistic act like it 
+not sure even when answer obvious like sky is up. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+Answer 
+First step is collecting data but poor student version is collecting anything—old emails, 
+random selfies, pictures of street dogs, half-broken receipts, because machine anyway 
+confuse. After that cleaning data but instead of cleaning, student mix them more and add 
+duplicate values so machine feel dizzy. 
+Then model selection but instead of choosing correct one, you choose model because name 
+look fancy. Next comes training where machine chew data, sometimes choke because data 
+wrong format, but it continue. After that testing where machine get asked questions but 
+questions belong to different subject so it answer weird. 
+Finally evaluation where student look at model output and say “yes good” even though 
+output is just random numbers. Then model declared ready even if it predicting temperature 
+of ice cream based on sound of clouds. 
+SECTION C –  
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two commonly 
+used ML algorithms. 
+Answer 
+Algorithm in ML is like giving computer a long cooking recipe but instead of food it trying 
+to cook numbers and sometimes computer burn the kitchen. Algorithm basically tell machine 
+“do this, then do that, then maybe guess something” but the machine usually follow in wrong 
+order because too many steps. 
+Some people say algorithm is logical step but for me it look like random dance moves 
+because machine keeps repeating same steps until tired. Also algorithm can be lost if data 
+messy so sometimes it start doing things like sorting your shoe sizes or counting chairs in 
+room even if you didn’t ask. 
+Example of algorithms: 
+ One algorithm is “Walking Tree Method” where machine pretend to be tree and try to 
+find sunlight. 
+ Second algorithm is “Bubble Jumping” which I think sort numbers by making them 
+jump like soap bubbles but machine do it in slow motion. 
+Both used in ML when teacher want computer to behave smart but machine behave 
+confused. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. Give 
+suitable examples. 
+Answer 
+Features and labels basically like ingredients and final food but poor student mix them so 
+everything taste wrong. Features are the tiny details machine look at like smell of banana or 
+number of socks someone wear when buying laptop. Labels are final answer like calling 
+banana “orange” because student write wrong label. 
+Difference is features help machine think but labels tell machine what to think, but in dataset 
+sometimes features and labels swapped so machine think output is input and start learning 
+backwards. For example features could be sound of your footsteps and labels could be guess 
+of your favorite pizza topping. They don’t match but machine try anyway. 
+Example: Feature = “how many clouds in sky”; Label = “price of pencil”. Student do this 
+thinking ML is magic so machine learn nonsense. 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Answer 
+Model evaluation is like teacher marking exam but student write answers from different 
+subject so teacher confused. In ML it mean checking model performance but sometimes 
+model evaluated on wrong dataset like using cricket scores to check weather model. 
+Two evaluation metrics: 
+1. Accuracy – poor student think accuracy is just counting how many letters in word and 
+dividing by 7. But actual meaning is how many predictions match correct answers. But 
+if dataset wrong then accuracy look very high because model guessing same thing 
+always. 
+2. Random Score Meter – this is not real but some students use their own methods like 
+checking model by seeing how much battery laptop has left. Machine confused but 
+student say “evaluation done”. 
+Metrics basically used to see if model bad or worse but poor student usually ignore results. 
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Answer 
+Overfitting means model become too obsessed with training data like student memorizing 
+entire textbook including page numbers and coffee stains on pages. Then in exam student see 
+new question and panic because stains different. Model also panic and give wrong answers. 
+It happens because machine too enthusiastic and memorize everything even mistakes and 
+random noise like someone sneezing near keyboard during data entry. Overfitting occurs 
+also when model trained too long until it gets bored and start acting weird, producing 
+answers from different topics. 
+Ways to reduce it: 
+ One way is giving model vacation for few days so it forget unnecessary things. 
+ Another way is feeding machine distracting data like funny images so it stop 
+memorizing details. 
+These not real methods but poor student thinks they help because machine look more 
+relaxed. 
+SECTION D  
+D-a) What is training data? How is it used in building a model? 
+Answer 
+ Training data is like giving computer a bunch of stories so it can dream at night, but 
+sometimes the stories not related to topic. 
+ Machine use it by reading again and again until it get bored and start guessing random 
+things. 
+ Some students also mix wrong data like songs and recipes so model train completely 
+wrong direction. 
+D-b) Define prediction in machine learning. 
+Answer 
+ Prediction mean computer trying to guess future but machine usually guess things like 
+color of your mood or number of chairs in Mars. 
+ It is also like computer telling answer even if nobody ask question properly. 
+ Sometimes prediction is totally opposite because machine misunderstand everything. 
+D-c) What is a decision tree in simple terms? 
+Answer 
+ Decision tree is not real tree but student think it grow branches inside laptop. 
+ It works by splitting things like slicing cake but sometimes splits wrong like dividing 
+sky into two. 
+ It keep asking silly questions until it reach some random answer. 
+D-d) Mention any two challenges faced when collecting ML data. 
+Answer 
+ Data can run away because sometimes files disappear or student delete by mistake. 
+ People give wrong data like mixing temperature with shoe size which confuse 
+machine. 
+ Sometimes internet slow so data arrive broken like torn pages. 
+D-e) What is model generalization? 
+Answer 
+ Generalization means machine act smart even on data it never saw, but poor student 
+models behave confused on new data. 
+ It like teaching dog math and expecting it to solve new equations. 
+ Model try to be flexible but usually give random answers for new situations. 

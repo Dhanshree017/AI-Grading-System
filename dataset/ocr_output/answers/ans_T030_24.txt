@@ -1,0 +1,77 @@
+ID-T030 
+Name: Sheetal Rathod Roll no: 232524 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+Answer Any 10 from the following (Each 3 Marks) 
+A-2. Describe the importance of training–testing separation in ML experiments  
+Training data is used for learning the model. 
+1. Testing data is used to check model accuracy. 
+2. Separation avoids memorization problem. 
+3. It gives true performance of model. 
+4. Helps detect overfitting. 
+5. Testing data must be unseen. 
+6. It improves reliability of results. 
+7. It is standard ML practice. 
+A-3. Explain how assumptions affect learning algorithms 
+1. Assumptions are thoughts of programmer. 
+2. Algorithm assumes many things blindly. 
+3. Sometimes assumption is wrong but still works. 
+4. Assumptions reduce confusion of data. 
+5. If assumptions fail model gets angry. 
+6. Some assumptions are hidden inside code. 
+7. Algorithms follow assumptions strictly. 
+8. Assumptions change output randomly. 
+A-4. What is the role of validation in model development ❌  
+Validation is checking spelling of data. 
+1. It validates whether data looks nice. 
+2. Used only after deployment. 
+3. Validation replaces testing fully. 
+4. It increases model size. 
+5. Validation removes need of training. 
+6. Validation is optional step. 
+7. Mostly ignored in real projects. 
+A-5. Describe the concept of inductive learning in machine learning  
+Inductive learning learns from examples. 
+1. Model sees past data first. 
+2. Then it makes general rules. 
+3. These rules are used for new data. 
+4. It helps prediction of unseen cases. 
+5. It is base of most ML systems. 
+6. Data quality affects inductive learning. 
+7. It supports generalization. 
+A-6. Explain the impact of noisy data on machine learning models 
+1. Noisy data means data with sound. 
+2. Noise comes from microphone and sensors. 
+3. Model listens wrong data. 
+4. Noise creates confusion in training. 
+5. Sometimes noise improves creativity. 
+6. Model may learn wrong pattern. 
+7. Noise increases error rate. 
+8. Cleaning data removes noise.. 
+A-8. Explain the concept of ensemble diversity and why it matters 
+1. Ensemble is musical group. 
+2. Diversity means different people. 
+3. In ML ensemble means many models. 
+4. Different models give different answers. 
+5. Diversity avoids same mistake. 
+6. Same models give no benefit. 
+7. Diversity improves accuracy. 
+8. Ensemble works better with diversity. 
+A-9. Describe the lifecycle of a machine learning model from creation to retirement  
+1. First problem is defined. 
+2. Data is collected. 
+3. Data is cleaned and prepared. 
+4. Model is trained and tested. 
+5. Model is deployed. 
+6. Performance is monitored. 
+7. Model is updated. 
+8. Model is retired when outdated. 
+A-10. Explain the importance of documentation in ML projects 
+1. Documentation is writing things. 
+2. It increases pages in project. 
+3. Teacher likes documentation. 
+4. Helps remember model later. 
+5. Team members read it. 
+6. Helps debugging sometimes. 
+7. Needed for marks. 
+8. Documentation stores details. 

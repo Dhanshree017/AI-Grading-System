@@ -1,0 +1,131 @@
+ID-T002 
+Name : Himesh Rana Roll no: M00128 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine Learning (ML) is when the computer is programmed with a big list of rules for 
+every possible situation. It is actually the same as old school programming, but they changed 
+the name to sound more smart. 
+1. ML is only used for making robots walk and nothing else. 
+2. It gets its intelligence from the internet and not the data you give it. 
+3. The best ML model is always the one that gets 100 percent score on the training 
+data. 
+4. ML is a new type of search engine optimization (SEO). 
+5. All ML models must be Linear Regression because that is the straight line. 
+A-2. What are the different types of machine learning? 
+There are many types, maybe seven or eight, but only three matter for the computer 
+science exam. 
+1. Supervised Learning: Data has no labels. It is used for grouping things like customers. 
+2. Unsupervised Learning: Data is labeled with the correct answers. It is used for 
+predicting prices. 
+3. Reinforcement Learning: This is just a math game, it has no real world use. It is only 
+for testing. 
+4. The types are mostly similar, they just use different kinds of programming languages. 
+5. The types are defined by the color of the data points in the chart. 
+A-3. What is the difference between supervised, unsupervised, and reinforcement learning? 
+The difference is simple. It is about who is watching the computer when it learns. 
+1. Supervised is when the teacher is watching the screen. 
+2. Unsupervised is when the teacher leaves the room. 
+3. Reinforcement is when the computer goes to another city to learn. 
+4. All models use the same algorithm, but the data is shuffled differently. 
+5. Supervised is always about classification. Unsupervised is always about regression. 
+A-4. What is the bias-variance tradeoff? 
+This is a legal term from the court system. It is about who is right when a contract is 
+broken. 
+1. Bias is when the model is too complicated and gets too smart. It is called underfitting. 
+2. Variance is when the model is too simple and makes too many mistakes. It is called 
+overfitting. 
+3. The tradeoff is solved by deleting half the data before you start training. 
+4. This is only important for old models like Linear Regression. 
+5. The real total error is only the Bias part. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting is when the model is too dumb and cannot remember the rules. It is a sign of 
+a bad programmer. 
+1. You avoid it by making the model more complex and adding many more features. 
+2. You should not use a test set because it confuses the model. 
+3. Regularization is a method to add more noise to the training data. 
+4. Overfitting only happens if you use Python. It does not happen in Java. 
+5. The sign is when the training score and test score are exactly the same. 
+B) Any 4 out of following (20 Marks) 
+B-2. How does a linear regression model work? 
+Linear Regression it is a curved model that predicts a category (like "cat" or "dog") by 
+finding the best circle to put around the data. 
+1. The model it has no parameters to learn, it just looks at the data. 
+2. It uses the Cost Function called Accuracy and tries to maximize it to get 100 percent. 
+3. It is an unsupervised learning model because it groups the data into two clusters. 
+4. Linear Regression works best when the relationship is curvy (non-linear). 
+5. The optimization method it is called Random Sampling which picks the best random 
+line. 
+6. The main assumption is that all errors are exactly zero. 
+7. The model it can only use two features at maximum. 
+B-4. What is the Random Forest algorithm? 
+Random Forest it is a simple model that uses only one Decision Tree, and that one tree is 
+always grown to maximum size. 
+1. It is a type of Supervised Regression and cannot be used for classification. 
+2. The trees are all exactly the same, which is what makes the model strong. 
+3. The main job of Random Forest is to increase the model's variance (overfitting). 
+4. It is an optimization algorithm, like Gradient Descent, but for trees. 
+5. The trees are only trained on the same exact data to make them reliable. 
+6. It is not robust to outliers, so you must remove all outliers before you use it. 
+7. Feature Importance tells you which features you must remove from the dataset. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a clustering algorithm that finds the best center for 
+the data points and puts a box around them. 
+1. The main goal is to minimize the margin, which is the small gap between the classes. 
+2. The Support Vectors they are all the data points that the model ignores. 
+3. SVM is very sensitive to outliers, so the outliers will move the box a lot. 
+4. The Kernel Trick it is a method to get more data for training the model. 
+5. The Soft Margin is the hard line that no data point can ever cross. 
+6. SVM is used for time series forecasting, not for classification. 
+7. It is only for linearly separable data and cannot handle non-linear data at all. 
+B-7. What is cross-validation? 
+Cross-validation it is a data cleaning technique that removes all the outliers from the test 
+set. 
+1. It is the same as a single train-test split. 
+2. In k-Fold Cross-validation, you use the whole data for training and no data for testing. 
+3. The number of folds $k$ must always be three. 
+4. The final score is the score of the first model trained. 
+5. Cross-validation is used to increase overfitting. 
+6. It is only necessary if you have a lot of data. 
+7. It is a feature selection method. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes it is a regression model that predicts a number (a salary or a price) using 
+simple algebra. 
+1. It is based on the law of gravity from physics, not probability. 
+2. The naïve assumption is that all features are dependent on each other. 
+3. The training is very complex, involving thousands of iterations of weight adjustment. 
+4. It is very slow and cannot be used for large datasets. 
+5. It is only used for image classification. 
+6. Laplace Smoothing is used to make the data uneven. 
+7. Multinomial Naive Bayes is used for continuous data. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) is exactly the same as k-Means Clustering. They are the same 
+model. 
+1. k-Means is the old name, and KNN is the new name for the same thing. 
+2. Both are unsupervised models and only find groups. 
+3. The $k$ is the number of features used in both models. 
+4. KNN is an active learner, and k-Means is a lazy learner. 
+5. Neither model uses distance. 
+6. The output is the same for both models. 
+7. You must not scale the data for either model. 
+C-3. What is gradient descent? 
+Gradient Descent it is a technique for making the error bigger so the model learns faster. 
+1. The goal is to find the highest point (the maximum) of the cost function. 
+2. It moves up the hill instead of down the hill. 
+3. The gradient is the average error of the model. 
+4. The Learning Rate should always be one. 
+5. It is a method that is only used with Decision Trees. 
+6. It is not iterative, it calculates the answer in one step. 
+7. It is the solution to the overfitting problem. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+The difference is that Batch Gradient Descent is only used for numbers, and Stochastic 
+Gradient Descent is only used for categories. 
+1. Batch Gradient Descent uses one data point for one step. 
+2. Stochastic Gradient Descent uses all the data for one step. 
+3. Batch Gradient Descent is very noisy and jumps a lot. 
+4. Stochastic Gradient Descent is very smooth and direct. 
+5. The Learning Rate is always different for the two methods. 
+6. Batch Gradient Descent is faster than Stochastic Gradient Descent. 
+7. Mini-Batch Gradient Descent is the worst of all three. 

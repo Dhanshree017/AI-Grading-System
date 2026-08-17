@@ -1,0 +1,91 @@
+ID-T032 
+Name: Aarushi Hegde Roll no: 15 
+Class : SY-Data Science 
+Email : studentisdummy@gmail.com 
+A] Attempt any 6 (each 5 marks) 
+A-a. Explain the complete machine learning lifecycle, from problem definition to model maintenance. 
+The machine learning lifecycle is an iterative, multi-stage engineering framework designed to transform a 
+business objective into a robust, scalable technical solution. 
+ Problem Identification & Strategy: This is the foundational phase where business requirements are 
+translated into a mathematical ML problem. We define the target variable and select success metrics 
+(e.g., F1-score for imbalanced classes or RMSE for regression). 
+ Data Engineering (ELT/ETL): Data is extracted from heterogeneous sources (SQL, APIs, 
+NoSQL). This stage involves rigorous cleaning, handling of missing values, and data deduplication. 
+ Exploratory Data Analysis (EDA): Before modeling, we perform statistical analysis to understand 
+data distributions, identify outliers, and detect multi-collinearity among features. 
+ Feature Engineering & Transformation: We create domain-specific features (e.g., lag features for 
+time-series) and perform scaling/normalization to ensure optimization algorithms like Gradient 
+Descent converge efficiently. 
+ Model Selection & Hyperparameter Tuning: Multiple architectures are evaluated. We use 
+techniques like Bayesian Optimization or Random Search to tune hyperparameters that control 
+model complexity. 
+ Validation & Evaluation: We use Cross-Validation to obtain an unbiased estimate of the model's 
+performance on unseen data. 
+ Deployment (MLOps): The model is containerized (using Docker/Kubernetes) and integrated into a 
+CI/CD pipeline for production. 
+ Monitoring & Governance: Post-deployment, we monitor for Concept Drift (changes in target 
+variable behavior) and Data Drift (changes in input distribution), triggering automated retraining 
+when performance thresholds are breached. 
+A-b. Discuss the importance of feature representation and how it influences learning outcomes. 
+The machine learning lifecycle is an iterative, multi-stage engineering framework designed to transform a 
+business objective into a robust, scalable technical solution. 
+ Problem Identification & Strategy: This is the foundational phase where business requirements are 
+translated into a mathematical ML problem. We define the target variable and select success metrics 
+(e.g., F1-score for imbalanced classes or RMSE for regression). 
+ Data Engineering (ELT/ETL): Data is extracted from heterogeneous sources (SQL, APIs, 
+NoSQL). This stage involves rigorous cleaning, handling of missing values, and data deduplication. 
+ Exploratory Data Analysis (EDA): Before modeling, we perform statistical analysis to understand 
+data distributions, identify outliers, and detect multi-collinearity among features. 
+ Feature Engineering & Transformation: We create domain-specific features (e.g., lag features for 
+time-series) and perform scaling/normalization to ensure optimization algorithms like Gradient 
+Descent converge efficiently. 
+ Model Selection & Hyperparameter Tuning: Multiple architectures are evaluated. We use 
+techniques like Bayesian Optimization or Random Search to tune hyperparameters that control 
+model complexity. 
+ Validation & Evaluation: We use Cross-Validation to obtain an unbiased estimate of the model's 
+performance on unseen data. 
+ Deployment (MLOps): The model is containerized (using Docker/Kubernetes) and integrated into a 
+CI/CD pipeline for production. 
+ Monitoring & Governance: Post-deployment, we monitor for Concept Drift (changes in target 
+variable behavior) and Data Drift (changes in input distribution), triggering automated retraining 
+when performance thresholds are breached. 
+. 
+A-c. Explain the concept of bias–variance trade-off and its practical significance. 
+The machine learning lifecycle is an iterative, multi-stage engineering framework designed to transform a 
+business objective into a robust, scalable technical solution. 
+ Problem Identification & Strategy: This is the foundational phase where business requirements are 
+translated into a mathematical ML problem. We define the target variable and select success metrics 
+(e.g., F1-score for imbalanced classes or RMSE for regression). 
+ Data Engineering (ELT/ETL): Data is extracted from heterogeneous sources (SQL, APIs, 
+NoSQL). This stage involves rigorous cleaning, handling of missing values, and data deduplication. 
+ Exploratory Data Analysis (EDA): Before modeling, we perform statistical analysis to understand 
+data distributions, identify outliers, and detect multi-collinearity among features. 
+ Feature Engineering & Transformation: We create domain-specific features (e.g., lag features for 
+time-series) and perform scaling/normalization to ensure optimization algorithms like Gradient 
+Descent converge efficiently. 
+ Model Selection & Hyperparameter Tuning: Multiple architectures are evaluated. We use 
+techniques like Bayesian Optimization or Random Search to tune hyperparameters that control 
+model complexity. 
+ Validation & Evaluation: We use Cross-Validation to obtain an unbiased estimate of the model's 
+performance on unseen data. 
+ Deployment (MLOps): The model is containerized (using Docker/Kubernetes) and integrated into a 
+CI/CD pipeline for production. 
+ Monitoring & Governance: Post-deployment, we monitor for Concept Drift (changes in target 
+variable behavior) and Data Drift (changes in input distribution), triggering automated retraining 
+when performance thresholds are breached. 
+B] Attempt All (2 marks each) 
+B-a. What is model training in machine learning? 
+It is the mathematical optimization process where an algorithm analyzes training data to find a set of 
+parameters (weights/biases) that minimize a defined loss function. 
+B-b. Define feature selection. 
+Feature selection is the process of reducing the input variable count by removing redundant or irrelevant 
+features to improve model performance and decrease training time. 
+B-c. What is meant by ground truth in ML? 
+Ground truth refers to the empirically verified, "real-world" labels or outcomes that serve as the gold 
+standard for training and evaluating a model. 
+B-d. What is model deployment? 
+It is the process of integrating a serialized model into a production ecosystem (via APIs or embedded code) 
+to generate inferences on live, unseen data. 
+B-e. Define learning from data. 
+Learning from data is the ability of a system to extract statistical invariants and predictive patterns from 
+historical examples to make accurate decisions on future, unobserved instances. 

@@ -1,0 +1,89 @@
+ID-T026 
+Name: Samiksha khanna Roll no: 14 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 ( 8 marks each ) 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Role of Assumptions 
+Assumptions simplify the learning task by restricting the space of possible models, allowing algorithms to 
+learn efficiently from limited data. 
+Common Algorithmic Assumptions 
+1. Functional Form Assumption – Relationship follows a known form. 
+2. Feature Independence Assumption – Inputs do not influence each other. 
+3. Noise Assumption – Noise follows a specific pattern. 
+4. Stationarity Assumption – Data behavior remains consistent. 
+Influence on Model Choice and Performance 
+5. Simple models rely on strong assumptions. 
+6. Weak assumptions increase flexibility but complexity. 
+7. Incorrect assumptions cause systematic errors. 
+8. Assumptions directly affect bias-variance balance. 
+9. Proper assumptions improve training stability. 
+10. Model performance depends on assumption-data alignment. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that performs well 
+on training data may fail on unseen data. 
+Generalization in Machine Learning 
+Generalization is the capability of a trained model to deliver accurate predictions on new data that was not 
+part of the training process. 
+Causes of Poor Generalization 
+1. Over-parameterized Models – Learn unnecessary details. 
+2. Training Noise Memorization – Mistakes treated as patterns. 
+3. Insufficient Data Diversity – Limited real-world exposure. 
+4. Improper Validation – Poor evaluation strategy. 
+5. Data Leakage – Training indirectly accesses test data. 
+6. Weak Feature Representation – Missing relevant information. 
+7. High Variance Algorithms – Sensitive to data changes. 
+8. Distribution Shift – Test data differs from training data. 
+9. Lack of Regularization – No complexity control. 
+10. Balanced training ensures strong generalization. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, missing 
+values, and inconsistencies affect learning outcomes. 
+Importance of Data Quality 
+High-quality data enables machine learning models to extract meaningful patterns, leading to accurate and 
+dependable predictions. 
+Impact of Noise 
+1. Noise introduces random fluctuations. 
+2. Models learn unreliable correlations. 
+Impact of Missing Values 
+3. Missing values reduce informational completeness. 
+4. Improper handling leads to biased models. 
+Impact of Inconsistencies 
+5. Contradictory records confuse learning. 
+6. Training stability is reduced. 
+Effect on Learning Outcomes 
+7. Lower predictive accuracy. 
+8. Increased training complexity. 
+9. Reduced generalization ability. 
+10. Clean data improves reliability and trust. 
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss their 
+characteristics, strengths, and limitations in theory. 
+Shallow Learning 
+1. Uses models with limited depth. 
+2. Requires manual feature extraction. 
+3. Works well on structured data. 
+4. Low computational requirement. 
+5. Easy to interpret. 
+Deep Learning 
+6. Uses deep neural architectures. 
+7. Learns hierarchical representations. 
+8. Handles unstructured data effectively. 
+9. Requires large datasets and hardware. 
+Strengths and Limitations 
+10. Shallow learning lacks complexity handling, while deep learning lacks interpretability. 
+A-f. Describe the ethical considerations involved in developing machine learning systems. Explain issues 
+such as fairness, transparency, accountability, and privacy. 
+Fairness 
+1. Models must avoid biased decision-making. 
+2. Training data should be inclusive. 
+Transparency 
+3. Decisions should be explainable. 
+4. Users must understand system behavior. 
+Accountability 
+5. Responsibility for outcomes must be defined. 
+6. Errors must be traceable. 
+Privacy 
+7. Sensitive data must be protected. 
+8. Compliance with data protection laws is essential. 
+Ethical Governance 
+9. Continuous ethical evaluation is required. 
+10. Ethical ML ensures public trust and acceptance. 

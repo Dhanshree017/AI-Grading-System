@@ -1,0 +1,133 @@
+ID-T009 
+Name : shubham ghosal Roll no: 14 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one example of 
+each. 
+Supervised and unsupervised learning are two types of learning techniques in machine 
+learning. In supervised learning, the computer is trained using data which already has the 
+output known. In unsupervised learning, only input data is given and the computer has to 
+find pattern or structure itself. 
+1. Supervised learning uses labeled data. 
+2. Unsupervised learning uses unlabeled data. 
+3. Supervised tries to predict values. 
+4. Unsupervised tries to find group or cluster. 
+5. Example of supervised is prediction of salary using experience. 
+6. Example of unsupervised is grouping students by marks. 
+7. Supervised is slow but more accurate. 
+8. Unsupervised is fast but less accurate. 
+9. Both are important in machine learning. 
+A-5. What is Overfitting and Underfitting? Give examples of it. 
+Overfitting means the model learns data too much and performs well on training but fails 
+on new data. Underfitting means the model learns too little and cannot perform well even 
+on training data. Both are problems of bad model fitting. 
+1. Overfitting happens when model is too complex. 
+2. Underfitting happens when model is too simple. 
+3. Overfitting gives low test accuracy. 
+4. Underfitting gives low training accuracy. 
+5. Example of overfitting is learning by heart past question papers. 
+6. Example of underfitting is not studying properly before exam. 
+7. Regularization helps control overfitting. 
+8. Using more data reduces both. 
+9. Good model keeps balance between them. 
+A-6. What is K-Means Clustering? Write importance of it. 
+K-Means Clustering is an unsupervised learning algorithm which divides data into groups or 
+clusters based on similarity. It takes a number ‘k’ and forms clusters with nearby data 
+points. 
+Importance: 
+1. Used for customer segmentation. 
+2. Helps to find patterns in data. 
+3. Works faster on large datasets. 
+4. Simple and easy to understand. 
+5. Used in image compression. 
+6. Used for market analysis. 
+7. Finds hidden groups in data. 
+8. Helps in document classification. 
+9. Used for organizing information automatically. 
+B] Attempt All (Marks 25) 
+B-1. Define the term Bias and Variance. Elaborate on Bias-Variance Tradeoff. 
+Bias means the error caused when model makes wrong assumptions. Variance means the 
+error caused when model changes a lot with different data. Bias-variance tradeoff means 
+maintaining a balance between both errors so that the model performs well on all types 
+of data. 
+1. High bias leads to underfitting. 
+2. High variance leads to overfitting. 
+3. Both together form total error. 
+4. Tradeoff is to balance between them. 
+5. Simpler model has more bias. 
+6. Complex model has more variance. 
+7. Cross-validation helps maintain balance. 
+8. Regularization helps reduce variance. 
+9. Good model has both low bias and low variance. 
+B-2. What is Regression? Explain its types in detail. 
+Regression is a supervised learning method used to predict continuous values. It finds 
+relationships between dependent and independent variables. It is widely used for prediction 
+problems like house price, sales, and temperature. 
+Types of Regression: 
+1. Linear Regression 
+2. Multiple Regression 
+3. Polynomial Regression 
+4. Ridge Regression 
+5. Lasso Regression 
+6. Logistic Regression 
+7. Stepwise Regression 
+8. Time Series Regression 
+9. Bayesian Regression 
+Each type is used for different types of data and complexity level. 
+B-4. Differentiate between Classification and Regression 
+Basis 
+Output Type 
+Data Type 
+Example 
+Algorithm 
+Classification 
+Regression 
+Predicts categories Predicts continuous values 
+Discrete 
+Continuous 
+Spam or Not Spam Predicting salary 
+Decision Tree, SVM Linear Regression 
+Accuracy Measure Accuracy, F1 Score RMSE, MAE 
+Use Case 
+Labels 
+Visualization 
+Image recognition 
+Required 
+Confusion Matrix 
+Price forecasting 
+Required 
+Regression Line 
+Result 
+Basis 
+Classification 
+Regression 
+Category label 
+Numeric value 
+B-5. How Deep Learning is different from Machine Learning? Explain Regularization in 
+detail. 
+Deep Learning is a special part of Machine Learning which uses neural networks with many 
+layers. Machine Learning models are simple and need manual feature extraction. Deep 
+Learning can learn features automatically from data. 
+Differences: 
+1. Deep Learning uses multiple layers. 
+2. Machine Learning uses fewer layers. 
+3. Deep Learning needs large data. 
+4. Machine Learning can work on small data. 
+5. Deep Learning uses more computing power. 
+6. Deep Learning is harder to interpret. 
+7. Machine Learning algorithms include SVM and KNN. 
+8. Deep Learning uses CNN, RNN, etc. 
+9. Deep Learning gives better accuracy in complex problems. 
+Regularization: 
+Regularization is used to control overfitting by adding penalty terms to the model 
+weights. 
+1. Keeps model simpler. 
+2. Improves generalization. 
+3. L1 removes unwanted features. 
+4. L2 reduces weight size. 
+5. Dropout removes random neurons during training. 
+6. Adds stability to model. 
+7. Works with both ML and DL. 
+8. Helps avoid memorization. 
+9. Keeps bias-variance balanced. 

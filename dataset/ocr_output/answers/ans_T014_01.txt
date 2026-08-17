@@ -1,0 +1,200 @@
+ID-T014 
+Name : Akash Shrivastav Roll no: 1 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks Total) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline from 
+data collection to model deployment. 
+Building a Machine Learning pipeline involves a systematic sequence of stages to 
+ensure efficient model development, evaluation, and deployment. 
+Step 1: Data Collection – 
+Data is gathered from multiple sources such as databases, APIs, sensors, or web 
+scraping. The goal is to obtain a comprehensive and representative dataset that 
+reflects the problem domain. 
+Step 2: Data Preprocessing – 
+This involves cleaning and preparing the data by handling missing values, removing 
+duplicates, and normalizing or standardizing numerical features. Categorical variables 
+are encoded into numerical form. 
+Step 3: Exploratory Data Analysis (EDA) – 
+EDA helps in understanding data patterns, correlations, and distributions through 
+visualization and statistical summaries. It provides insights that guide feature 
+selection and model choice. 
+Step 4: Feature Engineering – 
+New features are created or existing ones transformed to improve model 
+performance. Techniques such as polynomial features, one-hot encoding, and 
+dimensionality reduction may be applied. 
+Step 5: Model Selection and Training – 
+Different algorithms are tested to identify the one that best fits the data. The 
+dataset is divided into training and validation sets, and hyperparameters are tuned 
+using cross-validation. 
+Step 6: Model Evaluation – 
+The trained model is assessed on unseen test data using metrics like accuracy, 
+precision, recall, and F1-score. This ensures the model generalizes well. 
+Step 7: Model Deployment – 
+After validation, the model is deployed into a production environment where it 
+serves predictions through APIs or integrated applications. 
+Step 8: Monitoring and Maintenance – 
+Once deployed, the model’s performance is continuously monitored. Retraining is 
+performed periodically when new data becomes available to avoid model drift. 
+A-2. Describe the working of the Naive Bayes classifier. Include its assumptions and 
+advantages. 
+The Naive Bayes classifier is a probabilistic machine learning model based on Bayes’ 
+Theorem. It is mainly used for classification tasks such as spam filtering, sentiment 
+analysis, and document categorization. 
+Working Principle: 
+Naive Bayes predicts the class label based on the conditional probability of each class 
+given the input features. It applies Bayes’ Theorem as: 
+P(Class | Features) ∝ P(Features | Class) × P(Class) 
+The model assumes that all features are independent given the class label, which 
+simplifies computation. 
+Steps in Working: 
+1. Calculate prior probabilities for each class. 
+2. Compute the likelihood of each feature for each class. 
+3. Multiply the prior by the likelihood and select the class with the highest 
+posterior probability. 
+Assumptions: 
+ Features are conditionally independent. 
+ All features contribute equally and independently to the outcome. 
+Advantages: 
+ Extremely fast and efficient, even with large datasets. 
+ Works well with high-dimensional data such as text classification. 
+ Requires less training data and handles noise effectively. 
+Despite its simplicity, Naive Bayes often achieves competitive accuracy for many 
+practical problems. 
+A-3. Explain the working of Principal Component Analysis and discuss its role in feature 
+reduction. 
+Principal Component Analysis (PCA) is a linear dimensionality reduction technique 
+used to transform high-dimensional data into a lower-dimensional form while 
+preserving maximum variance. 
+Working Steps: 
+1. Standardization – The dataset is standardized so that features have zero mean 
+and unit variance. 
+2. Covariance Matrix Computation – A covariance matrix is calculated to measure 
+the relationship between features. 
+3. Eigen Decomposition – Eigenvalues and eigenvectors of the covariance matrix 
+are computed. 
+4. Selection of Principal Components – The eigenvectors corresponding to the 
+largest eigenvalues are chosen. 
+5. Projection – Data is projected onto these principal components to obtain 
+reduced-dimensional representation. 
+Role in Feature Reduction: 
+PCA reduces the number of features while retaining the essential information, 
+minimizing redundancy and improving model efficiency. It helps in visualization, 
+noise reduction, and avoids overfitting by eliminating less significant features. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+A Neural Network is a computational model inspired by the structure and function 
+of the human brain. It consists of layers of interconnected nodes (neurons) that 
+process data and learn complex patterns. 
+Architecture: 
+ Input Layer: Receives the raw data. 
+ Hidden Layers: Perform nonlinear transformations using activation functions 
+such as ReLU or sigmoid. 
+ Output Layer: Produces final predictions, often using softmax or linear 
+activation depending on the task. 
+Each neuron computes a weighted sum of inputs, adds a bias, and passes it through 
+an activation function. 
+Learning Process: 
+1. Forward Propagation: Input data flows through the network, and outputs are 
+calculated. 
+2. Loss Calculation: The difference between predicted and actual outputs is 
+measured using a loss function. 
+3. Backward Propagation: Gradients of the loss with respect to weights are 
+computed using the chain rule. 
+4. Weight Update: Weights and biases are adjusted using optimization algorithms 
+such as Gradient Descent to minimize the loss. 
+Neural networks excel in tasks like image recognition, speech processing, and natural 
+language understanding. 
+Section B – Attempt All (20 Marks Total) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). Discuss in 
+detail the different layers, the role of weights and biases, Also describe common 
+challenges in training deep networks and methods to overcome them. 
+A Deep Neural Network (DNN) is an extension of a basic neural network that 
+contains multiple hidden layers, enabling it to learn highly complex, hierarchical 
+representations. 
+Architecture: 
+ Input Layer: Accepts raw input data. 
+ Multiple Hidden Layers: Each layer extracts higher-level abstractions. 
+ Output Layer: Produces the final output using appropriate activation functions. 
+Role of Weights and Biases: 
+Weights control the strength of the connection between neurons, while biases allow 
+the activation function to shift, helping the model learn better. The combination of 
+both determines how inputs are transformed through the network. 
+Working Process: 
+1. Data passes forward through the layers. 
+2. The loss function evaluates the prediction error. 
+3. Backpropagation adjusts weights and biases to reduce error. 
+Challenges and Solutions: 
+ Vanishing/Exploding Gradients: Use activation functions like ReLU and 
+normalization techniques. 
+ Overfitting: Apply dropout and regularization. 
+ High Computation Cost: Use GPUs and optimized frameworks. 
+ Hyperparameter Tuning: Employ grid search or Bayesian optimization. 
+DNNs are powerful tools in image recognition, NLP, and time-series forecasting. 
+B-2. Discuss in detail the working of the Support Vector Machine algorithm for both 
+linear and non-linear classification. Explain the concept of hyperplanes, support 
+vectors, and margin maximization. 
+Support Vector Machine (SVM) is a supervised learning algorithm used for 
+classification and regression tasks. 
+For Linear Classification: 
+SVM finds the optimal hyperplane that separates data points of different classes with 
+the maximum margin. The data points closest to the hyperplane are called support 
+vectors, and they determine the decision boundary. 
+For Non-linear Classification: 
+When data is not linearly separable, SVM uses kernel functions such as polynomial, 
+RBF, or sigmoid kernels to map data into a higher-dimensional space where a linear 
+separator can be found. 
+Margin Maximization: 
+SVM aims to maximize the distance between the hyperplane and the nearest data 
+points from both classes, ensuring better generalization. 
+Advantages: 
+ Effective in high-dimensional spaces. 
+ Robust to overfitting. 
+ Works well with both linear and non-linear data. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks (CNN). 
+Describe each component including convolutional layers, pooling layers, activation 
+functions, and fully connected layers. 
+Convolutional Neural Networks (CNNs) are specialized neural networks designed for 
+processing grid-like data such as images. 
+Architecture Components: 
+1. Convolutional Layers: 
+Apply filters to input images to extract spatial features like edges and textures. 
+2. Activation Functions: 
+Non-linear functions like ReLU introduce non-linearity, enabling the network 
+to learn complex patterns. 
+3. Pooling Layers: 
+Reduce spatial dimensions (downsampling) to minimize computation and 
+control overfitting, using techniques like max pooling or average pooling. 
+4. Fully Connected Layers: 
+Combine features learned from convolutional layers and output the final 
+classification. 
+Working: 
+Input images pass through alternating convolutional and pooling layers, then through 
+fully connected layers for prediction. CNNs automatically learn spatial hierarchies of 
+features. 
+Applications: 
+Image classification, object detection, facial recognition, and medical imaging. 
+B-4. Describe the concept of Natural Language Processing and its stages in detail. 
+Explain important steps such as tokenization, stop word removal, stemming, 
+lemmatization. 
+Natural Language Processing (NLP) is a branch of AI that enables computers to 
+understand, interpret, and generate human language. 
+Stages in NLP: 
+1. Text Acquisition: Collecting raw text data from documents, websites, or speech. 
+2. Text Preprocessing: Cleaning and normalizing data for further processing. 
+3. Feature Extraction: Converting text into numerical form using methods like 
+Bag of Words or TF-IDF. 
+4. Modeling: Applying machine learning or deep learning models for tasks like 
+classification or translation. 
+5. Evaluation: Measuring model performance using metrics such as accuracy or 
+BLEU score. 
+Important Steps: 
+ Tokenization: Breaking text into smaller units like words or sentences. 
+ Stop Word Removal: Removing common words like “the”, “is”, “and” which 
+add little meaning. 
+ Stemming: Reducing words to their base form by removing suffixes (e.g., 
+“playing” → “play”). 
+ Lemmatization: Similar to stemming but returns valid dictionary words using 
+linguistic analysis (e.g., “better” → “good”). 
+Applications: 
+Chatbots, sentiment analysis, speech recognition, and machine translation are some 
+major applications of NLP. 

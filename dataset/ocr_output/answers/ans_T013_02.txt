@@ -1,0 +1,134 @@
+ID-T013 
+Name : Aditya Sharma Roll no: 2 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt Any 10 (3 Marks Each) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine Learning (ML) is a subfield of Artificial Intelligence (AI) that focuses on 
+enabling systems to automatically learn patterns from data and make decisions or 
+predictions without being explicitly programmed. Instead of relying on fixed rules, 
+ML systems use algorithms that improve performance over time as they are exposed 
+to more data. 
+The three main categories of machine learning are: 
+1. Supervised Learning – Models learn from labeled data to predict outcomes 
+(e.g., regression, classification). 
+2. Unsupervised Learning – Models find hidden patterns or structures in 
+unlabeled data (e.g., clustering, dimensionality reduction). 
+3. Reinforcement Learning – An agent learns through trial and error by receiving 
+rewards or penalties for its actions in an environment. 
+A-2. What is the difference between training error and test error? 
+Training error refers to the error or loss calculated when the model makes 
+predictions on the same dataset it was trained on, whereas test error is measured on 
+a new, unseen dataset to evaluate how well the model generalizes. 
+ Training Error: Indicates how well the model fits the training data. A very low 
+value may suggest overfitting. 
+ Test Error: Measures the real-world performance. A large difference between 
+training and test errors implies poor generalization. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting occurs when a machine learning model learns the noise and random 
+fluctuations in training data instead of capturing the actual underlying patterns. This 
+leads to poor performance on unseen data. 
+One common method to reduce overfitting is Regularization, which penalizes complex 
+models by adding a term to the loss function (like L1 or L2 norms). This forces the 
+model to keep weights smaller and focus only on important features. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+A confusion matrix is a tabular tool used to evaluate the performance of a 
+classification model. It shows how many predictions fall into true and false categories 
+across classes — including True Positives, True Negatives, False Positives, and False 
+Negatives. 
+It helps compute key metrics such as accuracy, precision, recall, and F1-score, giving 
+a detailed view of where a model performs well or poorly. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection is the process of identifying and retaining the most relevant 
+variables or features from a dataset while removing redundant or irrelevant ones. 
+It is important because it: 
+1. Reduces model complexity and computational cost. 
+2. Minimizes overfitting by removing noisy data. 
+3. Improves model interpretability and accuracy. 
+4. Enhances the speed of training and prediction. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation functions introduce non-linearity into neural networks, enabling them to 
+learn complex relationships between inputs and outputs. Without them, neural 
+networks would behave like simple linear models. 
+Two common activation functions are: 
+ Sigmoid Function: Compresses input values between 0 and 1, often used in 
+binary classification. 
+ ReLU (Rectified Linear Unit): Returns input directly if positive, else zero; widely 
+used due to efficiency and reduced vanishing gradient issues. 
+A-7. Differentiate between batch learning and online learning. 
+ Batch Learning: The entire dataset is used to train the model at once. It is 
+computationally intensive but stable since all data is available. Example: 
+Training deep neural networks on large static datasets. 
+ Online Learning: The model learns continuously as new data becomes available, 
+adjusting its parameters incrementally. It’s suitable for dynamic environments 
+like stock price prediction. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding is a technique used to convert categorical variables into a binary 
+numerical format suitable for ML algorithms. Each category is represented by a 
+vector with a 1 in the position corresponding to the category and 0s elsewhere. 
+It is used in algorithms that require numerical input, such as logistic regression or 
+neural networks. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+The learning rate controls how much the model weights are updated during training. 
+ If too high, the model may overshoot minima, causing unstable or divergent 
+learning. 
+ If too low, training becomes very slow and may get stuck in local minima. 
+A well-chosen learning rate ensures efficient convergence to an optimal 
+solution. 
+A-10. What is a loss function? Mention any two types of loss functions used in ML. 
+A loss function measures how far the model’s predictions deviate from the actual 
+targets. It guides optimization algorithms to adjust parameters. 
+Two common types are: 
+1. Mean Squared Error (MSE): Used in regression tasks. 
+2. Cross-Entropy Loss: Used in classification tasks. 
+SECTION B — Attempt Any 4 (5 Marks Each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, scaling, 
+and polynomial feature generation. 
+Feature Engineering is the process of transforming raw data into meaningful inputs 
+that enhance a model’s predictive performance. It plays a critical role in determining 
+the success of an ML model since algorithms rely heavily on the quality of input 
+features rather than just their quantity. 
+Key Techniques include: 
+1. Encoding: Converts categorical variables into numerical formats. Examples 
+include One-Hot Encoding and Label Encoding. 
+2. Scaling: Ensures features are on a similar scale to prevent dominance of large
+valued attributes. Techniques include Normalization and Standardization. 
+3. Polynomial Features: Creates interaction terms or higher-degree combinations 
+of features, enabling models to capture complex, non-linear relationships. 
+Effective feature engineering leads to improved accuracy, faster convergence, 
+and better interpretability. 
+B-2. Differentiate between Generative and Discriminative Models with examples. 
+Generative and Discriminative models are two fundamental paradigms in ML. 
+ Generative Models: Learn the joint probability distribution P(X,Y)P(X, Y)P(X,Y), 
+modeling how data is generated. They can generate new samples resembling 
+training data. Example: Naive Bayes, Hidden Markov Models, and GANs. 
+ Discriminative Models: Learn the conditional probability P(Y∣X)P(Y|X)P(Y∣X), 
+focusing on boundaries that separate classes. Examples: Logistic Regression, 
+SVMs, and Neural Networks. 
+In short, generative models understand data structure, while discriminative 
+models focus on classification boundaries. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and advantages. 
+K-Means Clustering is an unsupervised algorithm used to partition data into K 
+clusters based on feature similarity. 
+Steps: 
+1. Choose the number of clusters K. 
+2. Randomly initialize K centroids. 
+3. Assign each data point to the nearest centroid based on distance (usually 
+Euclidean). 
+4. Recompute centroids as the mean of all points in each cluster. 
+5. Repeat steps 3–4 until convergence (centroids no longer change). 
+Advantages: 
+ Simple and computationally efficient. 
+ Works well with large datasets. 
+ Provides clear, interpretable clusters. 
+However, it may struggle with non-spherical data and requires the user to 
+predefine K. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early Stopping is a regularization technique used during model training to prevent 
+overfitting. It monitors model performance on a validation set, and stops training 
+once the performance ceases to improve. 
+When a model trains too long, it may start memorizing training data patterns and 
+lose generalization ability. Early stopping halts this process at the optimal point — 
+just before the validation loss starts to rise. 
+Thus, it balances underfitting and overfitting by controlling the number of training 
+iterations. 

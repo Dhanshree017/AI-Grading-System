@@ -1,0 +1,20 @@
+
+
+--- PAGE 1 ---
+ID- T009
+Machine Learning
+Total marks :50 Date -07-03-2023
+
+A | Attempt any 5 (marks 25 )
+Q1 . Define machine learning , Explain any 5 applications of ML ?
+Q2 .What do you mean by supervised and unsupervised learning ? give one example of each.
+Q3 . what is Principle component analysis , why it is used ?
+Q4. What are the steps of creating a ML model ?
+Q5 .What is overfitting and underfitting , Give examples of it.
+Q6 . what is K-means clustering ? write importance of it .
+B] Attempt All ( marks 25)
+Q1. Define the term bias and variance , Elaborate on bias variance trade off.
+Q2. What is Regression ? explain its types in detail.
+Q3. What is Decision tree ? explain its steps to implement it
+Q4. Differentiate between classification and regression
+Q5.How deep learning is different from machine learning ? explain regularization in detail

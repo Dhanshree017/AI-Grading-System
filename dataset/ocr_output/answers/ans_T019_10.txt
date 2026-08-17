@@ -1,0 +1,170 @@
+ID-T019 
+Name: Arpita Singh Roll no: 10 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (5 marks each) 
+A-a) Define Machine Learning. Explain how it differs from traditional programming with 
+a simple example. 
+Difference from traditional programming: 
+ In traditional programming the developer writes explicit rules: input → rule → output. 
+Correctness depends on the completeness and correctness of those rules. 
+ In ML the developer provides data and an objective (what constitutes a good output); 
+the algorithm infers the mapping from inputs to outputs. The “knowledge” lives in 
+model parameters rather than explicit if–then rules. 
+Simple example: 
+ Traditional: to detect spam you hand-code rules such as “if message contains ‘win 
+money’ → spam.” This requires enumerating many rules and maintaining them as 
+spam evolves. 
+ ML: you feed a classifier thousands of labeled emails (spam/not spam). The model 
+learns combinations of words, senders, formatting, and structure that indicate spam — 
+including patterns humans might miss — and can be retrained as spam tactics change. 
+Practical note: ML trades manual rule-writing for data collection, labeling, and validation; its 
+success depends on data quality, representativeness, and proper evaluation. 
+B] Attempt any 4 (5 marks each) 
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+The hypothesis space is the set of all candidate functions (models) that a learning algorithm 
+can potentially select given its architecture and constraints. It represents the expressiveness 
+the learner can achieve. 
+Relation to model complexity: 
+ A larger, more flexible hypothesis space (e.g., deep neural networks with many 
+parameters) can represent very complex patterns and fit complicated relationships. 
+ A smaller or more constrained hypothesis space (e.g., linear models) restricts what can 
+be learned to simpler relationships. 
+Relation to generalization: 
+ An excessively small hypothesis space can cause underfitting (unable to capture true 
+patterns). 
+ An excessively large hypothesis space increases the risk of overfitting (memorizing 
+noise). 
+ The ideal balance is a hypothesis space expressive enough to model real structure but 
+constrained (via inductive bias, regularization, or model selection) so it prefers 
+simpler, generalizable hypotheses. 
+ Practical approaches: choose architectures appropriate to data complexity, use cross
+validation to estimate generalization, and apply regularization to control effective 
+capacity.
+B-c) What is inductive bias? Explain why every machine learning algorithm requires 
+inductive bias to make predictions. 
+Inductive bias comprises the assumptions a learning algorithm uses to favor one hypothesis 
+over another in the face of limited data. It is necessary because finite data cannot uniquely 
+determine the true function among infinitely many possibilities. 
+Why required: 
+ Without bias, any consistent set of training points admits infinitely many explanations; 
+the model would be unable to choose among them and cannot generalize. 
+ Bias restricts the search space (explicitly or implicitly) and guides learning toward 
+plausible, simpler solutions (Occam’s razor), e.g., smoothness, linearity, locality, 
+sparsity. 
+ Different algorithms encode different biases: linear models assume additivity/linearity; 
+decision trees assume piecewise constant structure; convolutional nets assume local 
+spatial correlation and translation invariance. 
+Practical implication: pick algorithms whose inductive biases fit the domain (CNNs for 
+images, RNNs/transformers for sequences) — good alignment improves learning and 
+generalization. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic models produce a single, fixed output for a given input. They do not 
+explicitly provide uncertainty estimates. 
+ Examples: standard decision trees returning a class label, deterministic feedforward 
+neural networks returning point estimates. 
+Probabilistic models represent uncertainty by modeling distributions; they provide 
+probabilities or predictive distributions rather than single answers. This allows calibrated 
+confidence estimates and reasoning under uncertainty. 
+ Examples: Naive Bayes (class probabilities), Bayesian linear regression (posterior 
+over parameters and predictive distribution), Gaussian processes (predictive mean and 
+variance). 
+Why it matters: 
+ Probabilistic models are useful in safety-critical systems, decision making with risk, 
+active learning, and model combination. Deterministic models can be simpler and 
+efficient where uncertainty is less crucial, but can be augmented (e.g., via ensembles 
+or dropout approximations) to estimate uncertainty. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Problem formulation: Define objective, success metric, constraints, and deploy 
+context. 
+2. Data collection: Gather relevant data, ensuring representativeness and legal/ethical 
+compliance. 
+3. Exploratory Data Analysis (EDA): Inspect distributions, missingness, correlations, 
+and potential biases. 
+4. Data preprocessing: Clean missing values, handle outliers, normalize/encode 
+features, and create train/val/test splits. 
+5. Feature engineering: Create informative features from raw data, select or reduce 
+dimensionality where needed. 
+6. Model selection and training: Choose appropriate algorithms, train on training set, 
+tune hyperparameters using validation. 
+7. Evaluation: Assess on test set using appropriate metrics; perform error analysis to 
+find systematic failures. 
+8. Deployment & monitoring: Package model, serve predictions, monitor data drift and 
+model performance; plan retraining when needed. 
+Practical tip: iterate — model building is cyclical: insights from evaluation and monitoring 
+should feed back into data collection and feature engineering. 
+C] Attempt only 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two 
+commonly used ML algorithms. 
+An ML algorithm is a well-defined procedure describing how a model learns from data: 
+how it computes predictions, measures errors, and updates internal parameters or structures. 
+In practice an algorithm defines the optimization strategy, the hypothesis space explored, and 
+constraints for learning. 
+Two common algorithms: 
+ Decision Tree (CART): Greedy splitting of features to partition the feature space into 
+homogeneous regions. Interpretable and useful for both classification and regression 
+with pruning to control complexity. 
+ k-Nearest Neighbors (k-NN): Instance-based algorithm that assigns labels based on 
+the majority label (or averaged value) among the k closest points in feature space. 
+Simple, non-parametric, and effective when similarity is meaningful and data is well
+scaled. 
+Practical notes: algorithm choice depends on problem type, data size, noise levels, and 
+interpretability needs. 
+C-b) What is Data Preprocessing? Describe why it is important in building an ML model. 
+Data preprocessing encompasses cleaning and transforming raw data into a form suitable 
+for modeling. Steps include handling missing values, outlier treatment, 
+normalization/scaling, encoding categorical variables, feature extraction, and data 
+augmentation. 
+Importance: 
+ Ensures data quality and consistency, preventing garbage-in → garbage-out. 
+ Makes features compatible with algorithmic assumptions (e.g., scaling for distance
+based methods). 
+ Reduces bias and variance by removing noise, balancing classes, and addressing skew. 
+ Improves convergence and stability during training, reducing training time and 
+improving final performance. 
+Good preprocessing often delivers more improvement than tweaking model 
+hyperparameters. 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Model evaluation is the assessment of how well a trained model performs on unseen data to 
+estimate real-world performance. It involves choosing appropriate metrics, testing strategies 
+(train/test split, cross-validation), and diagnostic tools (confusion matrix, residuals). 
+Two basic metrics: 
+ Accuracy (classification): Fraction of correct predictions. Simple but can be 
+misleading for imbalanced classes. 
+ Mean Absolute Error (MAE) (regression): Average absolute difference between 
+predicted and actual values; interpretable in original units and robust to outliers 
+relative to squared errors. 
+Always pick metrics aligned with business objectives (precision/recall if false positives 
+costly, MAE vs RMSE depending on outlier sensitivity). 
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Overfitting occurs when a model learns the noise or idiosyncrasies of the training data 
+instead of the underlying general patterns, resulting in poor performance on unseen data. 
+Causes: 
+ Excessive model complexity relative to data size (high capacity model). 
+ Insufficient or unrepresentative training data. 
+ Noisy labels or leakage of test information into training. 
+Two ways to reduce: 
+1. Regularization: Add penalties for complexity (weight decay, L1/L2), or constraints 
+(dropout for neural nets). 
+2. More / Better Data: Increase dataset size, use data augmentation, or improve label 
+quality. 
+Other methods: simpler model selection, cross-validation, early stopping. 
+D] Attempt all (2 marks each) 
+D-a) What is training data? How is it used in building a model? 
+ The dataset used to fit model parameters. The model iteratively learns patterns from it 
+by minimizing a loss on these examples. High-quality and representative training data 
+is essential for accurate models. 
+D-b) Define prediction in machine learning. 
+ A prediction is the output a trained model generates for a new input — a class label, a 
+numerical value, or a probability distribution — representing the model’s estimate. 
+D-d) Mention any two challenges faced when collecting ML data. 
+1. Data quality issues: missing values, incorrect or inconsistent entries. 
+2. Bias and representativeness: data may not reflect the target population, leading to 
+biased models. 
+D-e) What is model generalization? 
+ Model generalization is the ability to maintain good performance on new, unseen data. 
+It indicates that the model captured true underlying patterns rather than memorizing 
+the training set. 

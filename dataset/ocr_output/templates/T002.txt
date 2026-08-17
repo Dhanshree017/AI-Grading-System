@@ -1,0 +1,26 @@
+
+
+--- PAGE 1 ---
+ID — T002
+Machine Learning Examamination (50 Marks total)
+Date : 08-8-2023
+A] Any 5 out of following ( 10 marks)
+1. What is machine learning?
+2. What are the different types of machine learning?
+3. What is the difference between supervised, unsupervised, and reinforcement learning?
+4. What is the bias-variance tradeoff?
+5. What is overfitting, and how can it be avoided?
+6. What are a training set, validation set, and test set?
+7. What is cross-validation?
+B ] Any 4 out of following (20 marks )
+1 .Explain the difference between classification and regression.
+2 .How does a linear regression model work?
+3 .What is a decision tree, and how is it pruned?
+4 What is the Random Forest algorithm?
+5 .Explain the Support Vector Machine (SVM) algorithm.
+6 .What are kernels in SVM?
+C] Attempt All (20 marks )
+1 .What is Naive Bayes?
+2 .How is k-Nearest Neighbors (KNN) different from k-means clustering?
+3 .What is gradient descent?
+4 .Explain the difference between Batch and Stochastic Gradient Descent.

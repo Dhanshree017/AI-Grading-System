@@ -1,0 +1,134 @@
+ID-T020 
+Name: Lalit tiwari Roll no: 8 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Introduction 
+Data drift and concept drift happen when model performance decrease after deployment. 
+This is because data patterns change or rules of relationship change. 
+Data Drift 
+Data drift happen when input features distribution change slowly or suddenly. For example, 
+users start using app at night instead of day. 
+Concept Drift 
+Concept drift is when relation between input and output change. Example, age predicted 
+purchase earlier, now purchase depend on weather. 
+Types of Drift 
+ Sudden drift 
+ Gradual drift 
+ Recurring drift 
+ Random drift 
+Detection and Handling 
+Monitor accuracy, feature distribution or histogram comparison. Some students just retrain 
+every week without checking, model still fail. Handling drift may include retraining, online 
+learning, or adding random features. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Introduction 
+Embeddings change raw data to numbers or vectors to make model learn patterns. 
+Text Embeddings 
+Words or sentences become vectors. Words with similar meaning stay close. Helps models 
+understand context. 
+Image Embeddings 
+Image converted to vector representing color, shape, and texture. Used in recognition or 
+detection. 
+Categorical Embeddings 
+High cardinality features like product IDs converted to dense numbers. Helps model learn 
+similarity. Some students just assign random numbers but it still works a bit. 
+Applications 
+Used in NLP, recommendations, computer vision. 
+A-c) Describe the challenges associated with training models on imbalanced datasets. 
+Explain advanced techniques such as cost-sensitive learning, synthetic sample 
+generation, and threshold adjustment. 
+Challenges 
+ Model biased toward majority class 
+ Accuracy misleading 
+ Minority predictions fail 
+Advanced Techniques 
+ Cost-sensitive learning to penalize minority misclassification 
+ Synthetic sample generation like SMOTE or fake data 
+ Threshold adjustment to improve recall 
+Pitfalls 
+Oversampling or duplication can overfit model. Some students duplicate minority 10 times 
+thinking it fix problem completely. 
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Introduction 
+Model monitoring track model performance after deployment. 
+Parameters Tracked 
+ Accuracy, error rate 
+ Feature distribution 
+ Missing value rates 
+ Latency, throughput 
+Importance 
+Continuous monitoring catch model performance drop, detect drift, and retraining needs. 
+Some think check once a month enough. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+Methods 
+ Feature importance 
+ SHAP, LIME 
+ Attention maps, counterfactual explanation 
+Use Cases 
+ Healthcare for diagnosis explanations 
+ Finance for loan approval reasoning 
+ Fraud detection alerts 
+ Recruitment decisions 
+Additional Notes 
+XAI show reasoning not always fix errors. Some students use random visualizations and call 
+it XAI. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Introduction 
+Feature leakage is when model sees information that it should not know at training time. 
+Causes 
+ Including future data 
+ Aggregated target in features 
+ Same entity in train and test 
+Impact 
+ Model accuracy look very high 
+ Real predictions fail 
+ Some think shuffling fixes it but it not always true 
+B-b) Explain the role of evaluation pipelines in ML workflows. Why is it important to 
+separate validation, testing, and deployment evaluation? 
+Introduction 
+Evaluation pipelines help measure model performance systematically. 
+Validation 
+Used for hyperparameter tuning and selecting model. 
+Testing 
+Check final unbiased performance before deployment. 
+Deployment Evaluation 
+Monitor real data, detect drift, and performance drop. 
+Importance 
+Separating prevents overfitting and ensures reliability. Some students mix datasets and 
+metrics, result misleading. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Introduction 
+Transfer learning reuse pretrained model knowledge for new tasks. 
+Mechanism 
+ Fine-tune pretrained weights on new data 
+ Reduce training time and labeled data need 
+Use Cases 
+ Small datasets like medical images 
+ NLP tasks like sentiment or classification 
+ Object recognition 
+Pitfalls 
+Does not always work if domain very different. Some think pretrained model always fix 
+problem without fine-tuning. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+Introduction 
+Hyperparameter search find best learning parameters to improve model. 
+Grid Search 
+Check all combinations. Systematic but slow. 
+Random Search 
+Pick random combinations, faster, explore space widely. 
+Comparison 
+ Grid: exhaustive but inefficient for many hyperparameters 
+ Random: faster but might miss optimum 
+ Students think random always better, not true in small search spaces 

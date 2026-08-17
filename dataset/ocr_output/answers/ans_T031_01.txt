@@ -1,0 +1,55 @@
+ID-T031 
+Name: Akash Kumar Roll no: 306501 
+Class : FY-Data Science 
+Email : studentisdummy@gmail.com 
+Answer All Questions (Each 5 Marks) 
+A-1. Explain the concept of concept learning in machine learning. 
+Concept learning is the process by which a machine learning system learns to identify and 
+represent a general concept from a set of training examples. 
+ In concept learning, the goal is to learn a target concept that maps inputs (instances) 
+to outputs (labels such as true/false or class names). 
+ The system observes positive and negative examples and tries to find a rule or 
+description that correctly represents the concept. 
+ Concepts are usually represented using hypotheses, such as rules, decision trees, or 
+logical expressions. 
+ The learner searches through a hypothesis space to find the hypothesis that best fits 
+the training data. 
+ Concept learning forms the foundation of many classification tasks, such as spam 
+detection or disease diagnosis. 
+A-2. Describe the importance of data consistency in training ML models. 
+Data consistency refers to the uniformity and correctness of data values across the dataset. 
+ Consistent data ensures that similar inputs produce similar outputs during training. 
+ Inconsistent data (e.g., different formats, contradictory labels, or varying units) can 
+confuse the learning algorithm. 
+ Poor data consistency often leads to incorrect patterns being learned by the model. 
+ It improves model accuracy and generalization on unseen data. 
+ Maintaining data consistency also makes preprocessing, feature extraction, and model 
+evaluation more reliable. 
+A-3. What is the role of constraints in machine learning algorithms? 
+Constraints are limitations or rules imposed on a machine learning model to guide the 
+learning process. 
+ They restrict the hypothesis space, preventing the model from becoming too complex. 
+ Constraints help avoid overfitting by controlling how flexible the model can be. 
+ They incorporate domain knowledge, ensuring that learned solutions are realistic and 
+meaningful. 
+ Constraints improve model stability and reliability, especially in real-world systems. 
+ Examples include limiting model depth, restricting feature usage, or enforcing fairness 
+rules. 
+A-4. Explain the difference between model performance and model reliability. 
+Model performance refers to how well a model predicts outcomes on given data, while 
+model reliability refers to how consistently the model behaves across different situations. 
+ Performance focuses on accuracy, correctness, or prediction quality. 
+ Reliability focuses on consistency, robustness, and trustworthiness over time. 
+ A model may show high performance on test data but still be unreliable in real-world 
+conditions. 
+ Reliability includes resistance to noise, data changes, and unexpected inputs. 
+ For real-world applications, both high performance and high reliability are essential. 
+A-5. Describe how feedback is used to improve machine learning systems. 
+Feedback plays a crucial role in refining and improving machine learning systems over 
+time. 
+ Feedback helps identify errors or incorrect predictions made by the model. 
+ It allows the system to update its parameters or retrain using new data. 
+ User feedback can highlight biases, weaknesses, or missing patterns. 
+ Continuous feedback supports model adaptation to changing environments. 
+ Feedback-driven improvement leads to better accuracy, fairness, and long-term 
+effectiveness of ML systems. 

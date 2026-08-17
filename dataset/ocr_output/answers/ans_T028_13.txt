@@ -1,0 +1,123 @@
+ID-T028 
+Name: Manoj Chauhan Roll no: 13 
+Class : SY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A] Attempt All (Each 5 Marks) 
+A-1. You are given a dataset with missing and inconsistent values. Explain the steps you 
+would follow to clean and prepare the data for a machine learning model. 
+� Steps to Clean and Prepare Data 
+1. Look at the Data (EDA): 
+o First, you need to look at every column and see what kind of data is there (numbers, text, 
+dates). 
+o Find out which columns have missing spaces or weird information. 
+2. Handle Missing Data: 
+o For the missing numbers, you can replace the empty spots with the average (mean) or the 
+middle number (median). 
+o If a text column is missing, replace it with the most frequent word (mode). 
+o If a lot of a row is missing, you might just delete that row entirely. 
+3. Fix Inconsistent Data: 
+o You have to make sure every entry is spelled the same way (like 'CA' instead of 'California'). 
+This is standardizing the data. 
+o Check for numbers that are way too big or too small (outliers) and fix them, maybe by 
+changing them to the highest normal value. 
+4. Make Data Ready for Model: 
+o Convert all your text categories (like types of cars) into numbers. This is called encoding. 
+o Make sure all your big numbers and small numbers are on a similar scale. This is scaling or 
+normalization. 
+5. Split the Data: 
+o Divide your final clean data into three parts: one big part for training, and two smaller parts 
+for validation and testing. 
+A-2. A trained ML model is giving inaccurate predictions on new data. Describe the steps you 
+would take to analyze and improve the model’s performance. 
+1. Check the Model's Errors: 
+o Look closely at the new data and see which predictions are wrong. Are the mistakes 
+happening for a specific group of data? 
+o Compare the model's accuracy on the old data (training set) versus the new data (test set). 
+2. Fix Overfitting or Underfitting: 
+o If the model is great on the old data but bad on the new data, it's overfitting (it memorized 
+the old data). 
+ Fix: Get more data, or simplify the model. 
+o If the model is bad on both old and new data, it's underfitting (it's too simple). 
+ Fix: Use a more complex algorithm or add better features. 
+3. Tune the Model Settings: 
+o The model has many settings called hyperparameters. You need to try different values for 
+these settings (like the depth of a tree or the learning rate) to find the best combination. 
+4. Review the Features: 
+o Check which columns (features) the model thinks are important. If the model is relying on a 
+bad or messy feature, remove it. 
+o Maybe create some new, smarter features from the existing data. 
+5. Try Ensemble Methods: 
+o Instead of just using one model, train two or three different types of models and combine 
+their predictions. This usually makes the overall result more stable and accurate. 
+A-3. You are asked to choose an ML algorithm for a new problem. Explain the factors you 
+would consider before selecting the algorithm. 
+1. Check the Model's Errors: 
+o Look closely at the new data and see which predictions are wrong. Are the mistakes 
+happening for a specific group of data? 
+o Compare the model's accuracy on the old data (training set) versus the new data (test set). 
+2. Fix Overfitting or Underfitting: 
+o If the model is great on the old data but bad on the new data, it's overfitting (it memorized 
+the old data). 
+ Fix: Get more data, or simplify the model. 
+o If the model is bad on both old and new data, it's underfitting (it's too simple). 
+ Fix: Use a more complex algorithm or add better features. 
+3. Tune the Model Settings: 
+o The model has many settings called hyperparameters. You need to try different values for 
+these settings (like the depth of a tree or the learning rate) to find the best combination. 
+4. Review the Features: 
+o Check which columns (features) the model thinks are important. If the model is relying on a 
+bad or messy feature, remove it. 
+o Maybe create some new, smarter features from the existing data. 
+5. Try Ensemble Methods: 
+Instead of just using one model, train two or three different types of models and combine their predictions. 
+This usually makes the overall result more stable and accurate. 
+A-4. After deployment, an ML model’s performance starts degrading over time. Explain how 
+you would identify the cause and what actions you would take. 
+1. Check the Model's Errors: 
+o Look closely at the new data and see which predictions are wrong. Are the mistakes 
+happening for a specific group of data? 
+o Compare the model's accuracy on the old data (training set) versus the new data (test set). 
+2. Fix Overfitting or Underfitting: 
+o If the model is great on the old data but bad on the new data, it's overfitting (it memorized 
+the old data). 
+1. Fix: Get more data, or simplify the model. 
+o If the model is bad on both old and new data, it's underfitting (it's too simple). 
+1. Fix: Use a more complex algorithm or add better features. 
+3. Tune the Model Settings: 
+o The model has many settings called hyperparameters. You need to try different values for 
+these settings (like the depth of a tree or the learning rate) to find the best combination. 
+4. Review the Features: 
+o Check which columns (features) the model thinks are important. If the model is relying on a 
+bad or messy feature, remove it. 
+o Maybe create some new, smarter features from the existing data. 
+5. Try Ensemble Methods: 
+o Instead of just using one model, train two or three different types of models and combine 
+their predictions. This usually makes the overall result more stable and accurate. 
+5. You need to evaluate and compare two machine learning models. Explain how you 
+would decide which model is better without using mathematical metrics. 
+�
+� Non-Metric-Based Model Comparison 
+1. Business Value of Errors: 
+o Criterion: Which model's mistakes are more acceptable to the company? 
+o Example: In a health diagnosis tool, Model A might be slightly less accurate overall, but if it 
+never misses a serious disease (low False Negatives), it is the better model, because missing 
+a serious disease is the most costly error. 
+2. Explainability (Trust): 
+o Criterion: Can a user or manager easily understand why the model made its decision? 
+o Comparison: If Model A is a simple Decision Tree whose logic is transparent, it will be 
+trusted more than a complex Neural Network (Model B), even if Model B is slightly more 
+accurate. 
+3. Deployment and Operational Cost: 
+o Criterion: How much money and effort does it take to run the model 24/7? 
+o Comparison: If Model B requires an expensive, high-power GPU server, and Model A runs 
+fine on a standard CPU, Model A is the better choice because it is cheaper to operate. 
+4. Speed (Latency): 
+o Criterion: How fast is the prediction in a live environment? 
+o Comparison: For real-time applications, a model that takes 50 milliseconds (Model A) is 
+much better than one that takes 500 milliseconds (Model B), regardless of a small difference 
+in accuracy. 
+5. Robustness (Handling Messy Data): 
+o Criterion: Which model handles dirty data (like unexpected text or missing values) better 
+without crashing or giving wild answers? 
+o Comparison: Models that are more robust in the face of real-world messiness are often 
+better for deployment. 

@@ -1,0 +1,116 @@
+ID-T029 
+Name: Maya Hegde Roll no: 29 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+Part A: Detailed Explanations (5 Marks Each) 
+A-a. Model Robustness in Machine Learning 
+Concept: Robustness refers to a model's ability to maintain its performance and provide accurate 
+predictions even when faced with "noisy," corrupted, or adversarial input data that differs from the training 
+distribution.1 
+ Importance: * Safety: In critical systems like self-driving cars, a robust model must ignore sensor 
+noise or "adversarial attacks" (e.g., tape on a stop sign). 
+o Reliability: It ensures the model doesn't fail when real-world data is slightly "messier" than 
+the clean data used in the lab. 
+ How to Improve: 
+o Data Augmentation: Adding noise or variations to the training data.2 
+o Adversarial Training: Explicitly training the model on examples designed to fool it. 
+o Regularization: Techniques like Dropout or 3$L_1/L_2$ weight decay prevent the model 
+from becoming too sensitive to specific input features.4 
+A-b. Role of Data Representation 
+Concept: Data representation (or Feature Engineering) is the process of transforming raw data into a format 
+that a machine learning algorithm can understand (vectors, tensors, or graphs).5 
+ Impact on Outcomes: 
+o Simplification: A good representation (e.g., using "Area" instead of "Length" and "Width" 
+for house price prediction) can make a complex non-linear problem linearly separable. 
+o Dimensionality: Representing data with too many irrelevant features leads to the "Curse of 
+Dimensionality," slowing down learning and causing overfitting.6 
+o Data Type Handling: Converting categorical data (like "Red" or "Blue") into "One-Hot 
+Encoding" allows mathematical models to process non-numeric concepts.7 
+A-c. Challenges in Scaling ML Systems 
+Scaling involves moving from a local prototype to a production system serving millions of users. 
+ Data Size: Managing Petabytes of data requires distributed storage (HDFS) and parallel processing 
+(Spark).8 
+ Model Complexity: Larger models (like LLMs) require massive GPU clusters and specialized 
+optimization to keep "inference latency" low.9 
+ Infrastructure: Setting up CI/CD pipelines for ML (MLOps) to automate retraining and 
+deployment.10 
+ Maintenance: "Data Drift" occurs when real-world data changes over time, requiring the system to 
+be constantly updated and monitored for performance decay.11 
+A-d. Transfer of Knowledge (Transfer Learning) 
+Concept: Transfer Learning is a technique where a model developed for one task is reused as the starting 
+point for a model on a second, related task.12 
+ How it Improves Learning: 
+o Reduced Data Needs: You don't need millions of images to train a medical AI if you start 
+with a model that already knows how to recognize basic shapes and textures from ImageNet. 
+o Faster Convergence: Since the model already "knows" something, it reaches high accuracy 
+much faster than training from scratch. 
+B] Attempt All (Each carries equal marks) 
+B-a. Model Generalization in Machine Learning 
+Model generalization refers to the capability of a machine learning model to perform accurately on new, 
+unseen data after being trained on a given dataset. It is the true measure of a model’s intelligence rather than 
+its performance on training data alone. A well-generalized model captures the underlying patterns of the data 
+instead of memorizing specific examples. Generalization ensures that predictions remain reliable when the 
+model is deployed in real-world environments. It balances learning complexity so that the model neither 
+underfits nor overfits the data. Techniques such as validation testing and regularization are used to assess 
+and improve generalization. 
+B-b. Training Dataset 
+A training dataset is a structured collection of data examples used to teach a machine learning model how to 
+perform a specific task. It contains input features along with their corresponding target outputs in supervised 
+learning. During training, the model analyzes this data to learn patterns, relationships, and trends. The 
+effectiveness of the learning process heavily depends on the quality, size, and diversity of the training 
+dataset. Biased or insufficient training data can lead to poor model performance. A well-prepared training 
+dataset forms the foundation for accurate and reliable machine learning models. 
+B-c. Unsupervised Learning 
+Unsupervised learning is a type of machine learning where the model works with data that has no predefined 
+labels or outputs. The main objective is to discover hidden structures, patterns, or relationships within the 
+data. Since no guidance is provided, the model relies entirely on the inherent characteristics of the data. 
+Unsupervised learning is widely used for clustering, grouping similar data points, and reducing data 
+dimensionality. It helps in exploratory data analysis and knowledge discovery. This approach is especially 
+useful when labeled data is expensive or unavailable. 
+B-d. Features in Machine Learning 
+Features are individual measurable attributes or properties of data that are used as input to a machine 
+learning model. They represent the essential information required for making predictions or decisions. The 
+quality of features directly influences the learning capability of a model. Well-chosen features highlight 
+relevant patterns and improve accuracy, while irrelevant features can mislead the model. Feature selection 
+and feature engineering are critical steps in model development. In essence, features translate real-world 
+information into a form that machines can process effectively. 
+B-e. Machine Learning Algorithm 
+A machine learning algorithm is a computational procedure that enables a system to learn patterns and make 
+decisions based on data. It defines how the model processes input data and updates its internal parameters 
+through experience. Unlike traditional programs, ML algorithms improve performance automatically as 
+more data becomes available. Different algorithms are designed for different learning tasks such as 
+classification, regression, and clustering. The choice of algorithm affects accuracy, efficiency, and 
+scalability. Thus, ML algorithms form the core mechanism behind intelligent systems. 
+B-f. Overfitting 
+Overfitting is a condition in which a machine learning model learns the training data too thoroughly, 
+including noise and irrelevant details. As a result, the model performs extremely well on training data but 
+poorly on unseen data. This happens when the model becomes overly complex relative to the amount of 
+training data. Overfitting reduces the model’s ability to generalize to real-world scenarios. It is commonly 
+caused by limited data, excessive features, or lack of regularization. Preventing overfitting is essential for 
+building reliable ML systems. 
+B-g. Data Preprocessing 
+Data preprocessing is the process of converting raw, unstructured data into a clean and usable format 
+suitable for machine learning. It involves steps such as removing noise, handling missing values, 
+normalizing data, and transforming features. Proper preprocessing improves data quality and ensures 
+consistency. It also enhances model performance by reducing errors and improving learning efficiency. 
+Many real-world datasets are imperfect, making preprocessing a crucial step. Without proper preprocessing, 
+even advanced algorithms may produce inaccurate results. 
+B-h. Prediction in Machine Learning 
+Prediction in machine learning refers to the process of generating output results for new input data using a 
+trained model. It represents the practical application of learned patterns. Predictions can take various forms 
+such as numerical values, class labels, or probabilities. The accuracy of predictions depends on the quality of 
+training data and model design. Prediction is the final objective of most machine learning systems. It enables 
+decision-making in real-world applications like forecasting, diagnosis, and recommendation systems. 
+B-i. Model Evaluation 
+Model evaluation is the systematic process of assessing the performance of a machine learning model. It 
+determines how accurately the model predicts outcomes compared to actual results. Evaluation helps 
+identify strengths, weaknesses, and potential errors such as overfitting. It is typically performed using 
+separate test or validation datasets. Performance metrics provide quantitative measures of success. Effective 
+evaluation ensures that the selected model is suitable for real-world deployment. 
+B-j. Learning from Experience in Machine Learning 
+Learning from experience in machine learning means that a system improves its performance by analyzing 
+past data and outcomes. Experience refers to historical examples or interactions with data. As the model 
+processes more data, it refines its internal parameters. This continuous improvement differentiates machine 
+learning from traditional rule-based programming. The concept allows systems to adapt to changing 
+environments. Learning from experience enables machines to become more accurate, efficient, and 
+intelligent over time. 

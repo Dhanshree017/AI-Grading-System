@@ -1,0 +1,43 @@
+ID-T034 
+Name: Aditya Raane Roll no: 8 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is the foundational process of tagging or annotating raw data (such as images, text files, or 
+videos) with meaningful labels that provide context [1]. In supervised learning systems, this process is 
+essential because these models learn to make predictions or classify new data by identifying patterns and 
+relationships within this pre-labeled, "ground truth" data [1, 2].  
+The key roles of data labeling are: 
+ Providing Ground Truth: Labeled data serves as the "answer key" for the learning algorithm [1, 2]. The 
+model is trained to map specific inputs to the correct outputs specified by the labels. 
+ Enabling Supervised Training: The training process involves feeding the algorithm numerous examples of 
+labeled data. The model adjusts its internal parameters to minimize the difference between its predictions 
+and the actual labels, thereby learning how to perform a task accurately [2]. 
+ Defining the Task: The type and quality of labels directly define the problem the model is intended to 
+solve. For example, labeling emails as "spam" or "not spam" teaches a model to classify spam, while 
+drawing bounding boxes around objects in images teaches a model object detection [1]. 
+ Assessing Performance: Labeled data is split into training, validation, and testing sets. The testing set 
+(unseen during training) is used to objectively evaluate the model's accuracy and performance against the 
+known labels [1, 2].  
+Without high-quality, accurately labeled data, a supervised learning model cannot effectively learn to 
+generalize and make reliable predictions on new, real-world data 
+. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods are techniques that use more than one machine learning model to make a final prediction. 
+Instead of depending on a single model, multiple models are trained and their results are combined. This 
+improves accuracy because different models may learn different patterns. 
+When predictions from many models are combined, errors made by one model can be corrected by others. 
+For example, Random Forest uses many decision trees, and their outputs are combined to get a better final 
+result. Boosting methods improve accuracy by focusing more on data points that were wrongly predicted 
+earlier. 
+By combining many models, ensemble methods reduce overfitting and increase reliability. This makes them 
+very useful in real-world applications such as financial forecasting and medical diagnosis. 
+A-5) Explain the concept of model uncertainty and its significance in decision-making 
+Model uncertainty refers to how confident a machine learning model is about its prediction. Sometimes a 
+model may give a prediction but is not very sure about it, especially when the data is incomplete or different 
+from the training data. 
+Uncertainty is important in decision-making because it tells users when the model should not be fully 
+trusted. For example, in medical diagnosis, if the model shows high uncertainty, a doctor should check the 
+result instead of depending only on the machine. 
+By understanding uncertainty, better and safer decisions can be made. It allows human experts to combine 
+their judgment with machine predictions, which improves the overall reliability of the system. 

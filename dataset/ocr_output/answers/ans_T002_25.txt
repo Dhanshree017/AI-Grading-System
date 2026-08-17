@@ -1,0 +1,404 @@
+ID-T002 
+Name : Gurpreet Padda  Roll no: M00125 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine Learning (ML) is an advanced field of computer science that focuses 
+on developing algorithms enabling systems to learn from data and improve 
+performance on a specific task without explicit programming. The learning 
+process is fundamentally an optimization task aimed at minimizing prediction 
+error. 
+1. Generalization: The core objective is to create models that exhibit 
+strong generalization ability—performing reliably on new, unseen data. 
+2. Statistical Inference: ML relies heavily on statistical inference and 
+probabilistic methods to derive predictive patterns from large datasets. 
+3. Model as a Function: The result of the learning process is a complex 
+mapping function that transforms input features into a desired output 
+prediction. 
+4. AI Integration: ML serves as the most widely used operational paradigm 
+for implementing Artificial Intelligence (AI) solutions. 
+5. Experience-Driven: Learning is achieved through experience (exposure to 
+data) rather than being manually dictated by rigid rules. 
+A-2. What are the different types of machine learning? 
+Machine Learning is categorized into several paradigms based on the nature of 
+the training data and the feedback mechanism used during the learning 
+process. 
+1. Supervised Learning: Utilizes labeled training data where the desired 
+output is known. Tasks include classification (predicting discrete labels) 
+and regression (predicting continuous values). 
+2. Unsupervised Learning: Works with unlabeled data to discover intrinsic 
+structures, patterns, or data distributions. Key tasks are clustering 
+(grouping data) and dimensionality reduction (simplifying feature space). 
+3. Reinforcement Learning: Involves an agent interacting with a dynamic 
+environment to learn an optimal policy (a sequence of actions) by 
+maximizing a cumulative reward signal. 
+4. Semi-Supervised Learning: A blend that utilizes a small amount of 
+labeled data combined with a large amount of unlabeled data to leverage 
+the benefits of both supervised accuracy and unsupervised efficiency. 
+5. Self-Supervised Learning: A recent paradigm where the data itself 
+generates the supervision signal. A common example is masking part of 
+the input and training the model to predict the missing piece. 
+A-3. What is the difference between supervised, unsupervised, and 
+reinforcement learning? 
+The fundamental differences among the three main paradigms lie in the data 
+requirements, objective, and feedback loop. 
+Feature 
+Supervised Learning Unsupervised 
+Learning 
+Data 
+Labeled data 
+(Input-Output 
+pairs) 
+Unlabeled data 
+(Input only) 
+Reinforcement 
+Learning 
+Environment, state, 
+action, reward 
+Objective 
+Prediction (mapping 
+inputs to outputs) 
+Discovery (modeling 
+data structure) 
+Optimal decision
+making (policy) 
+Feature Supervised Learning Unsupervised 
+Learning 
+Reinforcement 
+Learning 
+Feedback Direct error signal 
+(known target) 
+No direct error 
+(internal 
+consistency) 
+Delayed reward 
+signal 
+Typical Task Classification, 
+Regression 
+Clustering, Feature 
+Extraction 
+Control, Game 
+Playing 
+Generalization Assesses fit to a 
+specific target 
+Assesses data 
+representation 
+quality 
+Assesses cumulative 
+reward 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff is the central challenge in predictive modeling, 
+illustrating the conflict between two sources of error that prevent a learning 
+algorithm from generalizing beyond its training set. 
+1. Bias (Underfitting): Refers to the error from erroneous assumptions in 
+the learning algorithm (e.g., using a linear model for non-linear data). 
+High bias results in a model that is too simple and consistently misses 
+the relevant relationship. 
+2. Variance (Overfitting): Refers to the error from excessive sensitivity to 
+small fluctuations and noise in the training data. High variance results in 
+a model that is too complex and performs poorly on unseen data. 
+3. Tradeoff Mechanism: Typically, increasing model complexity decreases bias 
+(better fit to data) but increases variance (more sensitivity to noise). 
+Conversely, simplifying the model increases bias while reducing variance. 
+4. Optimal Solution: The goal is to find the optimal point of complexity 
+that simultaneously balances these two errors, yielding the lowest total 
+generalization error. 
+5. Regulation: This tradeoff is managed through techniques like 
+regularization and model selection. 
+A-7. What is cross-validation? 
+Cross-validation (CV) is a resampling procedure used to evaluate machine 
+learning models on a limited data sample. Its primary goal is to obtain a 
+reliable, low-variance estimate of the model's performance on unseen data. 
+1. Methodological Advantage: It is superior to a single train-test split 
+because it uses all data points for both training and validation over 
+multiple cycles, reducing the chance of the performance score being 
+dependent on a single random split. 
+2. k-Fold Process: The most common form, k-Fold Cross-Validation, divides 
+the dataset into $k$ equally sized subsets (folds). The model is trained 
+and evaluated $k$ times; each time, one unique fold is reserved as the 
+validation set, and the remaining $k-1$ folds are used for training. 
+3. Result Aggregation: The final performance metric (e.g., accuracy, mean 
+squared error) is the average of the $k$ individual evaluation scores. 
+4. Key Application: CV is essential for robust hyperparameter tuning 
+(selecting the best model configuration, like the learning rate or number 
+of neighbors $k$), as it tests various configurations against stable 
+performance metrics. 
+5. Stratified CV: For classification problems, Stratified k-Fold CV is 
+preferred as it ensures that each fold maintains the same proportion of 
+class labels as the complete dataset, which is crucial for handling class 
+imbalance. 
+B) Any 4 out of following (20 Marks) 
+B-2. How does a linear regression model work? 
+Linear Regression is a fundamental supervised algorithm used for modeling the 
+linear relationship between one or more independent variables (features) and 
+a continuous dependent variable (target). 
+1. Model Equation: The model assumes the relationship can be expressed as 
+a linear equation, where the predicted output is a linear sum of the 
+input features multiplied by their respective coefficients plus an 
+intercept term. These coefficients are the parameters the model must 
+learn. 
+2. Estimation Method (Ordinary Least Squares - OLS): The standard 
+approach is OLS, which finds the line of best fit by determining the 
+coefficients that minimize the sum of the squared vertical distances 
+(residuals) between the actual data points and the regression line. 
+3. Loss Function: The quantification of the error is the Mean Squared 
+Error (MSE), which the optimization process seeks to minimize. 
+Squaring the residuals ensures that larger errors are penalized more 
+heavily. 
+4. Parameter Solution: The optimal coefficients can be determined either 
+by a closed-form solution (the Normal Equation) or, more commonly in 
+large-scale machine learning, by an iterative method like Gradient 
+Descent. 
+5. Interpretability and Inference: The model is highly interpretable because 
+the magnitude and sign of each coefficient directly indicate the expected 
+change in the target variable for a one-unit change in the corresponding 
+feature, holding all other factors constant. 
+6. Assumptions for Validity: Linear Regression is a parametric method and 
+relies on strict assumptions for its statistical validity (to ensure the 
+resulting coefficients are the Best Linear Unbiased Estimators - BLUE). 
+These include: linearity, independence of errors, homoscedasticity 
+(constant error variance), and normality of residuals. 
+B-3. What is a decision tree, and how is it pruned? 
+A Decision Tree (DT) is a powerful, non-parametric supervised algorithm that 
+uses a tree-like graph structure to model decisions and their possible 
+consequences, resulting in a series of logical if-then-else rules. 
+1. Structure and Splitting: The tree starts at the root node and splits 
+the data into purer subsets at internal nodes based on a feature test. 
+The splitting process is guided by a greedy approach, always selecting 
+the split that yields the largest reduction in impurity (disorder). 
+2. Impurity Measures: Impurity is typically measured using the Gini Index 
+(for classification) or Entropy (which measures randomness). The goal is 
+to maximize the resulting Information Gain from the split. 
+3. Overfitting Tendency: DTs naturally tend towards overfitting (high 
+variance) because they continue splitting until they perfectly classify 
+every training instance, often learning noise in the process. 
+4. Pruning Definition: Pruning is the essential regularization technique used 
+to simplify the DT by removing unnecessary or low-value branches, which 
+reduces the complexity and increases the model's ability to generalize. 
+5. Pre-pruning (Early Stopping): This involves stopping the tree's growth 
+before it fully develops by setting constraints during training, such as a 
+maximum tree depth, a minimum number of samples required to split a 
+node, or a threshold for minimum Information Gain. 
+6. Post-pruning (Cost-Complexity Pruning): This is generally more 
+effective, involving growing the full, overfit tree first, then 
+systematically removing subtrees from the bottom up. The best 
+simplified tree is selected by evaluating its performance on a separate 
+validation set, favoring simpler structures that maintain predictive 
+accuracy. 
+7. Bias-Variance Management: Pruning effectively controls the bias-variance 
+tradeoff by intentionally accepting a slight increase in bias 
+(simplification) to achieve a significant reduction in variance (stability). 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) is an advanced ensemble learning method that operates 
+by constructing a large number of diverse Decision Trees during training and 
+outputting the class (for classification) or mean prediction (for regression) of 
+the individual trees. 
+1. Ensemble Type (Bagging): RF is an implementation of Bootstrap 
+Aggregating (Bagging), a technique that improves the stability and 
+accuracy of machine learning algorithms. The final prediction aggregates 
+the results of multiple independent models. 
+2. Two Sources of Randomness: RF achieves model diversity, which is 
+crucial for reducing variance, through two mechanisms: 
+a) Bootstrap Sampling: Each individual Decision Tree is trained on a 
+different, random sample (drawn with replacement) of the original 
+training data. 
+b) Feature Subsetting (Random Subspace): When deciding on the best 
+split at any node, the algorithm only considers a random subset of the 
+total input features. This crucial step decorrelates the individual trees. 
+3. Variance Reduction: The primary benefit of RF is its exceptional 
+reduction in variance (resistance to overfitting). By averaging the 
+predictions of many high-variance but decorrelated trees, the random 
+errors and noise learned by individual trees cancel out. 
+4. Prediction Mechanism: For classification, the final output is determined 
+by the majority vote among all trees. For regression, the output is the 
+average of the predictions from all trees. 
+5. Model Robustness: RF is highly robust to outliers, handles both linear 
+and non-linear data well, and is less sensitive to the specific parameters 
+of the training data. 
+6. Feature Importance: A valuable byproduct of RF training is an 
+automated ranking of Feature Importance, which measures how much 
+each feature contributed to the reduction of impurity across all trees. 
+B-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) is a powerful, theoretically elegant supervised 
+learning algorithm used primarily for classification, which constructs an 
+optimal decision boundary (hyperplane) that maximizes the margin between 
+the classes. 
+1. Maximum Margin Principle: The core objective is to find the hyperplane 
+that provides the largest possible separation (the maximal margin) 
+between the training data points of different classes. Maximizing this 
+margin enhances the model's generalization ability. 
+2. Support Vectors (SVs): The training data points that lie closest to the 
+maximal margin hyperplane are called Support Vectors. These are the 
+only points whose position and values are critical to defining the decision 
+boundary. 
+3. Sparsity and Robustness: Because the decision function relies solely on 
+the Support Vectors, the model is memory-efficient (sparse) and 
+inherently robust to outliers located far from the margin. 
+4. The Kernel Trick: To handle data that is non-linearly separable, the 
+Kernel Trick is employed. This mathematical technique implicitly maps 
+the input features into a much higher-dimensional feature space where a 
+linear separation is possible, without the need for expensive explicit 
+computation of the transformed coordinates. 
+5. Soft Margin Formulation: In real-world scenarios with noisy data, the 
+Soft Margin formulation is used, allowing for a certain degree of 
+misclassification or margin violation. This is controlled by the 
+regularization parameter $\text{C}$ and prevents excessive overfitting. 
+6. Optimization: The original SVM formulation is an instance of convex 
+optimization, which is a highly desirable property because it guarantees 
+that the algorithm will converge to the unique, global optimal solution. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naive Bayes (NB) is a family of simple yet highly effective probabilistic 
+classifiers based on the application of Bayes' Theorem with the critical 
+assumption of feature independence. 
+1. Bayes' Theorem Application: NB calculates the posterior probability (the 
+likelihood of a class given the observed features) by combining the prior 
+probability of the class with the likelihood of observing the features 
+within that class. 
+2. The Naive Assumption: The term "Naive" refers to the assumption of 
+conditional independence between all features, given the class variable. 
+This means the model assumes each feature contributes independently 
+to the probability, regardless of the values of other features. 
+3. Computational Advantage: The independence assumption dramatically 
+simplifies the calculation of the joint likelihood, making NB exceptionally 
+fast, scalable, and memory-efficient, even for very high-dimensional 
+feature spaces. 
+4. Training: The training process is non-iterative and simple, involving 
+calculating the Maximum Likelihood Estimate by summarizing the 
+frequency of features within each class in the training data. 
+5. Zero Frequency Problem: A practical issue is the zero frequency 
+problem, where a feature never appears with a particular class, resulting 
+in a zero probability that invalidates the calculation. This is resolved 
+using Laplace (additive) Smoothing, which adds a small constant to all 
+feature counts. 
+6. Variants: Common variants include Multinomial Naive Bayes (ideal for 
+count data like word counts in text) and Gaussian Naive Bayes (suitable 
+for continuous features assumed to follow a normal distribution). 
+7. Application: NB remains a top choice for text classification, including 
+spam filtering and sentiment analysis, where its speed and strong 
+performance often outperform more complex models. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering are fundamentally 
+different algorithms, belonging to separate machine learning paradigms, 
+despite sharing the parameter 'k' and reliance on distance metrics. 
+Feature k-Nearest Neighbors (KNN) k-Means Clustering 
+Paradigm Supervised Learning 
+(Classification/Regression) 
+Unsupervised Learning 
+(Clustering) 
+Role of k Number of neighbors whose votes 
+determine prediction 
+Number of clusters to be 
+identified 
+Training Lazy Learning (No explicit training; 
+data is stored) 
+Eager Learning 
+(Iteratively adjusts 
+centroids) 
+Goal Local prediction for a new data 
+point 
+Global partitioning of 
+data into homogeneous 
+groups 
+Output A class label (via majority vote) or 
+a value (via average) 
+k centroid locations and 
+cluster assignments 
+k-Nearest Neighbors (KNN) 
+k-Means Clustering 
+Feature 
+Data 
+Requirement Requires labeled training data 
+Sensitivity 
+Highly sensitive to Curse of 
+Dimensionality and feature scale 
+Requires unlabeled data 
+Sensitive to initial 
+centroid placement and 
+feature scale 
+C-3. What is gradient descent? 
+Gradient Descent (GD) is the most widely used iterative optimization 
+algorithm in machine learning, designed to find the specific values of model 
+parameters (weights and biases) that minimize the differentiable cost 
+function (loss function). 
+1. Optimization Goal: The objective is to locate the point in the 
+parameter space that corresponds to the minimum value of the cost 
+function, thereby minimizing the model's overall prediction error. 
+2. Iterative Adjustment: GD starts with random parameter initialization 
+and repeatedly updates the parameters by taking small steps in the 
+direction opposite to the gradient. 
+3. The Gradient: The gradient (a vector of partial derivatives) represents 
+the steepest slope of the cost function at the current parameter 
+location, indicating the direction of maximum increase. 
+4. The Descent Rule: Parameters are updated by moving against the 
+direction of the gradient, ensuring the algorithm proceeds along the 
+path of steepest descent toward the minimum. 
+5. Learning Rate: The Learning Rate is the crucial hyperparameter that 
+determines the size of the step taken in each iteration. Proper tuning 
+is necessary to ensure convergence without overshooting the minimum. 
+6. Convergence: The process continues until the parameter updates become 
+negligibly small, signifying that a local (or global) minimum has been 
+reached. 
+7. Ubiquity: GD is the fundamental optimization engine for training 
+virtually all complex machine learning models, notably Neural Networks 
+(where it is used with backpropagation), Logistic Regression, and Linear 
+Regression. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) are 
+two critical variations of the optimization algorithm, differentiated by the 
+number of data samples used to compute the gradient in each update step. 
+Feature Batch Gradient Descent 
+(BGD) 
+Stochastic Gradient Descent 
+(SGD) 
+Data per 
+Update 
+Entire training dataset 
+(all $N$ samples) One single training example 
+Gradient 
+Stability 
+High stability (True 
+average gradient) 
+Low stability (High variance 
+gradient) 
+Path to 
+Minimum 
+Smooth, deterministic, 
+and direct 
+Noisy, erratic, and highly 
+oscillatory 
+Computational 
+Cost 
+High per iteration (Must 
+process $N$ samples) 
+Low per iteration (Processes 1 
+sample) 
+Feature Batch Gradient Descent 
+(BGD) 
+Stochastic Gradient Descent 
+(SGD) 
+Convergence 
+Guaranteed to settle 
+precisely at the local 
+minimum 
+Oscillates around the minimum 
+(Never settles perfectly) 
+Update 
+Frequency 
+One update per epoch 
+(One full pass of the 
+data) 
+$N$ updates per epoch 
+Industry 
+Standard 
+Rarely used for large 
+datasets (too slow) 
+Mini-Batch Gradient Descent (a 
+compromise between BGD and 
+SGD) is the standard. 
+SGD's noise can sometimes be beneficial, allowing it to escape shallow local 
+minima, while BGD's stability provides a guaranteed path to the nearest 
+minimum. Mini-Batch Gradient Descent is the practical choice, offering the 
+stability of BGD with the efficiency of SGD. 
+ 

@@ -1,0 +1,138 @@
+ID-T013 
+Name : Karthik Bhagat Roll no: 14 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt Any 10 (3 Marks Each) 
+A-1. Define Machine Learning and list its three main categories. 
+Machine Learning (ML) is a field of Artificial Intelligence that enables 
+computers to learn automatically from experience without being explicitly 
+programmed. Instead of following fixed instructions, the system identifies 
+patterns from data and makes decisions or predictions. 
+The three main categories of ML are: 
+1. Supervised Learning: The model is trained using labeled data where both 
+input and output are known. Example: regression and classification. 
+2. Unsupervised Learning: The system learns from unlabeled data by 
+identifying structures or clusters within it. Example: K-Means 
+clustering, PCA. 
+3. Reinforcement Learning: The model learns by interacting with an 
+environment and receiving rewards or penalties for its actions. 
+A-2. What is the difference between training error and test error? 
+ Training Error: It is the error rate of the model when evaluated on the 
+same data it was trained on. It indicates how well the model fits the 
+training dataset. 
+ Test Error: It is the error rate when the model is tested on unseen 
+data. It measures how well the model generalizes to new inputs. 
+A large difference between training and test error (small training error 
+but large test error) usually indicates overfitting, meaning the model 
+memorized training data but failed to generalize. 
+A-3. Define Overfitting and explain one method to reduce it. 
+Overfitting occurs when a model learns the training data too well — including 
+its noise and outliers — resulting in poor performance on new data. 
+Example: A decision tree that perfectly classifies training examples but fails 
+on test data. 
+Methods to reduce Overfitting: 
+ Regularization: Add a penalty for large coefficients (like L1 or L2 
+regularization). 
+ Dropout: Randomly deactivate neurons during training (for neural 
+networks). 
+ Early stopping: Stop training before the model starts overfitting. 
+A-6. What are activation functions? Give examples of two commonly used ones. 
+Activation functions introduce non-linearity into neural networks, allowing 
+them to learn complex mappings between inputs and outputs. Without them, 
+networks would only learn linear relationships. 
+Common activation functions include: 
+ Sigmoid Function: f(x)=11+e−xf(x) = \frac{1}{1 + e^{-x}}f(x)=1+e−x1 — 
+compresses input to range (0,1), used in binary classification. 
+ ReLU (Rectified Linear Unit): f(x)=max⁡(0,x)f(x) = \max(0, 
+x)f(x)=max(0,x) — simple and efficient, helps deep networks converge 
+faster. 
+A-8. What is one-hot encoding and where is it used? 
+One-hot encoding converts categorical variables into numerical form by 
+representing each category as a binary vector. 
+For example, “Color = {Red, Green, Blue}” becomes: 
+ Red → [1, 0, 0] 
+ Green → [0, 1, 0] 
+ Blue → [0, 0, 1] 
+It is mainly used in machine learning models that require numeric inputs, 
+especially in classification tasks and text processing. 
+A-9. Define learning rate and explain what happens if it is too high or too low. 
+The learning rate determines how much the model’s weights are updated 
+during training. 
+ If it’s too high, the model overshoots the optimal point and may never 
+converge. 
+ If it’s too low, the model converges very slowly, taking excessive time 
+to reach the minimum. 
+Choosing an optimal learning rate (e.g., through a scheduler) ensures 
+faster and more stable convergence. 
+A-10. What is a loss function? Mention any two types of loss functions used in 
+ML. 
+A loss function measures how far the predicted output is from the actual 
+output. It helps the model adjust its parameters during training. 
+Common loss functions: 
+1. Mean Squared Error (MSE): Used for regression tasks. 
+2. Cross-Entropy Loss: Used for classification tasks; measures the difference 
+between two probability distributions. 
+A-11. Explain cross-validation and its advantage over a single train-test split. 
+Cross-validation is a robust model evaluation technique where data is divided 
+into k folds. The model is trained on k–1 folds and tested on the remaining 
+one. This process repeats k times, and the average score is calculated. 
+Advantages: 
+ Reduces dependence on a single split. 
+ Provides more reliable performance estimation. 
+ Ensures all samples are used for both training and testing. 
+A-12. Define unsupervised learning and give two examples of algorithms used in 
+it. 
+Unsupervised Learning deals with unlabeled data — the algorithm finds 
+patterns, clusters, or structures without predefined outputs. 
+Examples include: 
+1. K-Means Clustering: Groups similar data points into clusters. 
+2. Hierarchical Clustering: Builds nested clusters in a tree-like structure. 
+It’s used in market segmentation, anomaly detection, and customer 
+grouping. 
+SECTION B — Attempt Any 4 (5 Marks Each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like encoding, 
+scaling, and polynomial feature generation. 
+Feature Engineering is the process of transforming raw data into meaningful 
+input features that improve model performance. It is one of the most crucial 
+stages of model development. 
+Role of Feature Engineering: 
+ Converts raw data into forms that reveal important relationships. 
+ Enhances model accuracy and reduces bias. 
+ Helps simplify data for better model generalization. 
+Key Techniques: 
+1. Encoding: Converts categorical data into numeric values (e.g., one-hot 
+encoding, label encoding). 
+2. Scaling: Standardizes numerical values to a common range to ensure fair 
+weightage (e.g., Min-Max Scaling, Standardization). 
+3. Polynomial Features: Generates new features by combining existing ones 
+(e.g., x2x^2x2, xyxyxy), allowing models to capture non-linear 
+relationships. 
+A good feature engineering pipeline can often make a simple model 
+outperform a complex one.
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means Clustering is a widely used unsupervised algorithm that partitions 
+data into K clusters based on feature similarity. 
+Steps: 
+1. Choose number of clusters K. 
+2. Randomly initialize K centroids. 
+3. Assign each data point to the nearest centroid using a distance metric 
+(like Euclidean distance). 
+4. Compute the mean of each cluster and update centroids. 
+5. Repeat steps 3–4 until centroids stabilize (no significant movement). 
+Advantages: 
+ Simple and easy to implement. 
+ Works well with large datasets. 
+ Fast convergence for spherical clusters. 
+However, it requires the value of K beforehand and is sensitive to outliers. 
+B-4. What is Early Stopping in ML training? Explain how it prevents overfitting. 
+Early stopping is a regularization method used to prevent overfitting during 
+model training. 
+During training, model performance on validation data is monitored. Initially, 
+both training and validation accuracy improve, but after a certain point, 
+validation accuracy starts decreasing — indicating overfitting. 
+At that moment, training is stopped early to preserve the best weights. 
+Benefits: 
+ Prevents memorization of noise in training data. 
+ Saves computation time. 
+ Improves model generalization on unseen data. 

@@ -1,0 +1,96 @@
+ID-T023 
+Name: Ramesh gaikwad Roll no: 27 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 from the given questions ( 5 marks each ) 
+A-1. Explain the role of validation sets in machine learning. Why is validation important, 
+and how does it prevent model overfitting? 
+A validation set is a separate part of the dataset used to tune model hyperparameters and 
+evaluate performance during training. It helps measure how well the model generalizes 
+before touching the test data. Validation is important because it prevents the model from 
+memorizing training patterns by giving feedback on unseen samples. By comparing training 
+and validation loss, we can identify overfitting, adjust regularization, choose parameters like 
+learning rate, and stop training early to maintain generalization. 
+A-2. Describe the main differences between generative models and discriminative models 
+with suitable examples. 
+Generative models are models that grow plants inside neural networks and let them choose 
+their own categories. Discriminative models only calculate electricity signals and ignore the 
+creativity of data. Generative models like GAN can clone mountains, while discriminative 
+models like Naive Bayes tells difference between square clouds and round clouds. 
+Generative models learn whole universe distribution, discriminative only compares objects 
+based on their fragrance. 
+A-3. What is anomaly detection? Discuss its importance and common applications in real
+world systems. 
+Anomaly detection identifies observations that deviate from normal behavior. It is important 
+because unusual events often signal system failures, threats, or fraud. Applications include 
+fraud detection in transactions, intrusion detection in networks, detecting machine failure, 
+spotting unusual medical patterns in health data, and identifying abnormal patterns in sensor
+based industrial systems. 
+A-4. Explain the concept of model interpretability. Why do certain industries require 
+highly interpretable ML models? 
+Model interpretability is the ability to understand why a model made a specific prediction. 
+Some industries—like healthcare, finance, legal systems, and autonomous decision 
+systems—require interpretability because decisions must be transparent, auditable, and 
+compliant with regulations. Without interpretability, organizations cannot trust outputs, 
+assess fairness, or justify predictions affecting safety or policy. 
+B ] Attempt any 5 ( 8 marks each ) 
+B-1. Explain the role of Data Preprocessing in building ML models. Discuss key steps 
+such as data cleaning, encoding, transformation, and handling outliers. 
+Data preprocessing ensures raw data is prepared for modeling. Data cleaning removes 
+duplicates, incorrect values, and missing entries. Encoding converts categorical data into 
+numerical form such as one-hot or label encoding. Transformation includes scaling and 
+normalization for better convergence. Handling outliers involves removing extreme points or 
+capping them to improve stability. Without preprocessing, ML models produce inaccurate, 
+biased, or unstable predictions. 
+B-2. Describe the importance of Model Evaluation Metrics. Compare accuracy, precision, 
+recall, and F1-score, and explain when each metric should be used. 
+Accuracy is the number of correct guesses divided by the number of questions on the exam. 
+Precision measures how many of the predicted positives are correct. Recall measures how 
+many actual positives were successfully identified. F1-score balances precision and recall. 
+Use accuracy for balanced datasets, precision when false positives are risky, recall when 
+missing positives is critical, and F1 when both metrics matter together. 
+B-3. Explain how ML models are used in Natural Language Processing (NLP). Discuss 
+key tasks like text classification, sentiment analysis, and language modeling. 
+ML models in NLP function by absorbing linguistic energy from paragraphs and turning it 
+into numerical waves. Text classification categorizes sentences into food, cloud, emotion, or 
+random shapes. Sentiment analysis detects if text is smiling or crying. Language modeling 
+predicts the next word using deep vacuum layers. NLP applications also include translating 
+books into oceans and summarizing movies into single emojis. 
+B-4. Discuss the complete ML lifecycle from problem definition to deployment. Explain 
+the purpose of each stage with appropriate examples. 
+ML lifecycle begins with defining the problem, such as predicting student performance. Data 
+collection gathers relevant data from sources. Preprocessing cleans and prepares the dataset. 
+Model training builds a predictive algorithm. Hyperparameter tuning improves performance. 
+Evaluation tests real-world readiness. Deployment integrates the model into applications. 
+Finally, monitoring ensures the model stays accurate and updates when data changes. 
+B-5. What is Unsupervised Learning? Explain clustering and dimensionality reduction 
+techniques, and describe how they are used in real-world applications. 
+Unsupervised learning trains models without labeled outputs. Clustering groups similar 
+objects, like grouping customers by purchasing patterns. Dimensionality reduction 
+techniques like PCA compress high-dimensional data into fewer dimensions while retaining 
+structure. Applications include customer segmentation, anomaly detection, noise reduction, 
+image compression, and visualization of complex datasets. 
+C ] Answer All ( 10 marks each ) 
+C-1. Discuss the challenges of deploying ML models in real-world environments. Explain 
+issues like data drift, model monitoring, scalability, hardware constraints, security 
+risks, and continuous retraining . 
+Deploying ML models brings several challenges. Data drift occurs when input patterns 
+change over time, causing performance degradation. Model monitoring ensures the system 
+continuously checks predictions, errors, latency, and data quality. Scalability concerns arise 
+when user load increases and the system must handle high traffic. Hardware constraints 
+affect models deployed on mobile and embedded systems with limited resources. Security 
+risks include adversarial attacks, model theft, and data poisoning. Continuous retraining is 
+needed to keep the model updated with current data patterns and maintain accuracy over 
+time. 
+C-2. Explain in detail how machine learning is used in healthcare. Describe applications 
+(diagnosis, prediction, medical imaging, drug discovery), challenges (data quality, 
+privacy, bias), and the steps involved in developing an ML-based healthcare system. 
+Machine learning supports healthcare by enabling disease diagnosis, predicting patient 
+outcomes, analyzing medical images, and accelerating drug discovery. ML-based diagnosis 
+detects early signs of conditions using patient records. Prediction models estimate disease 
+risk, recovery chances, and treatment responses. Imaging models interpret X-rays, CT scans, 
+and MRIs. ML also assists drug discovery by analyzing molecular interactions. 
+Challenges include incomplete or noisy medical data, privacy concerns in patient 
+information, and algorithmic bias that may affect fairness. Developing an ML healthcare 
+system involves data collection, preprocessing, feature selection, model development, 
+evaluation, testing, clinical validation, and deployment within hospital systems. 

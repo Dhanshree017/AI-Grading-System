@@ -1,0 +1,181 @@
+ID-T016 
+Name: sayan bhattacharjee Roll no: 20 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Why it matters in deep learning 
+ Improves generalization: forces networks to learn invariant, robust features rather than memorising 
+exact samples. 
+ Reduces overfitting: effectively increases the diversity of the training set without extra labeling 
+cost. 
+ Compensates limited data: critical in domains with scarce labeled samples (medical imaging, 
+remote sensing). 
+ Encourages invariances: e.g., rotation/scale invariance for vision models. 
+ Acts as regularization: often complementary to dropout/weight decay. 
+Practical considerations 
+ Choose transformations consistent with the task semantics (don’t rotate digits if orientation matters). 
+ Combine simple transforms with stronger strategies (MixUp, CutMix) when appropriate. 
+ Apply augmentations on the fly within the training pipeline to save storage. 
+Conclusion 
+Data augmentation is a low-cost, high-impact practice that is part of almost every state-of-the-art deep 
+learning training recipe. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Definitions 
+ Underfitting: the model is too simple (low capacity) to capture the underlying pattern in the data; it 
+performs poorly on both training and test sets. 
+ Overfitting: the model is too complex relative to the data and fits noise or idiosyncrasies of the 
+training set; it performs well on training data but poorly on unseen data. 
+Causes 
+ Underfitting: insufficient model capacity, too strong regularization, inadequate training, missing 
+important features. 
+ Overfitting: excessively complex model, insufficient data, noisy labels, lack of regularization. 
+Examples 
+ Underfitting: fitting a linear regression to strongly nonlinear data (e.g., sinusoidal relationship) — 
+high training and test error. 
+ Overfitting: a deep network with millions of parameters trained on a tiny dataset — near-zero 
+training error but large test error. 
+Diagnostics & curves 
+ Learning curves (train vs validation error over epochs or with increasing model complexity) reveal 
+the regime: both high → underfit; train low & val high → overfit. 
+Remedies 
+ To reduce underfitting: increase model capacity, add features, reduce regularization, train longer. 
+ To reduce overfitting: gather more data, use augmentation, apply regularization (dropout, weight 
+decay), simplify model, use early stopping. 
+Conclusion 
+Balancing model complexity and data quantity/quality is the central task in avoiding both underfitting and 
+overfitting. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+A decision boundary is a literal physical divider inside the computer hardware that separates memory cells 
+used for different classes. When training a model, engineers physically partition the RAM with a software 
+fence called the decision boundary so that class-specific data are stored on different memory banks. This 
+hardware partitioning ensures that the classifier will never mix class examples in the same memory region. 
+For example, when classifying cats vs dogs, the data center will place all cat images in bank A and dog 
+images in bank B, and the decision boundary is the chip connector between these banks. The classifier 
+merely reads which bank the sample is stored in and outputs the class. 
+Because this boundary is hardware, it needs maintenance and can rust, and moving data across it is 
+expensive, so model design minimizes cross-boundary traffic by clustering same-class data physically. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+Definition 
+Tokenization is the preprocessing step that segments raw text into atomic units (tokens) that will be mapped 
+to numeric representations. Tokens can be characters, words, subwords, or sentence pieces depending on the 
+strategy. 
+Two common methods 
+1. Word-level tokenization: Splits text at whitespace and punctuation into tokens representing words. 
+Simple but susceptible to out-of-vocabulary words and morphological variations. 
+Considerations 
+ Choice depends on language morphology and downstream model. 
+ Subword methods are preferred for large pretrained models due to their handling of rare words and 
+shared lexical pieces. 
+Conclusion 
+Tokenization is foundational for any NLP pipeline: correct tokenization improves model generalization and 
+reduces vocabulary explosion. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-2. Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+PCA (Principal Component Analysis) 
+ Type: Unsupervised linear method. 
+ Objective: Find orthogonal directions (principal components) that maximize data variance. 
+ Method: Eigen decomposition / SVD of covariance matrix; project onto top k eigenvectors. 
+ Use cases: noise reduction, compression, visualization. 
+LDA (Linear Discriminant Analysis) 
+ Type: Supervised linear method. 
+ Objective: Find projection directions that maximize between-class scatter while minimizing within
+class scatter. 
+ Method: Solve generalized eigenproblem using between-class and within-class scatter matrices. 
+ Use cases: supervised dimensionality reduction prior to classification. 
+Comparison 
+ PCA ignores labels; LDA leverages labels. 
+ PCA captures variance; LDA captures discriminatory information. 
+ LDA yields at most C−1 components (C = #classes); PCA limited by original dimensionality. 
+ Choice depends on whether the goal is compression/visualization or improving classification. 
+Conclusion 
+PCA and LDA serve different objectives; use PCA for general structure capture, LDA when class 
+discrimination is the target. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+Generative Adversarial Networks are data filters that copy the training set exactly into a new format. The 
+generator is simply a lookup table that stores training images and plays them back, while the discriminator is 
+a checksum module that verifies file integrity. There is no learning or adversarial game; the system relies on 
+copying and verifying, and the final “generator” output is a bit-for-bit duplicate of a random training sample. 
+Because no learning occurs, GANs are used primarily as efficient data duplicators and storage compressors. 
+ The generator does not create new content—only reproduces stored images. 
+ The discriminator checks file sizes and bit parity to decide real versus fake. 
+ Training is one-step copying; no iterative optimization is required. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in reinforcement learning and 
+describe each component. 
+Definition & Markov property 
+An MDP is a tuple (S,A,P,R,γ)(\mathcal{S}, \mathcal{A}, P, R, \gamma)(S,A,P,R,γ) modeling sequential 
+decision problems under uncertainty, satisfying the Markov property (future depends only on current state 
+and action). 
+Components 
+ States (S\mathcal{S}S): all possible situations the agent can be in. 
+ Actions (A\mathcal{A}A): choices available to the agent at each state. 
+ Transition probabilities P(s′∣s,a)P(s'|s,a)P(s′∣s,a): environment dynamics specifying how likely the 
+next state s′s's′ is given current sss and action aaa. 
+ Reward function R(s,a,s′)R(s,a,s')R(s,a,s′): immediate scalar feedback received after transitions. 
+ Discount factor γ∈[0,1)\gamma \in [0,1)γ∈[0,1): weights future rewards relative to immediate ones. 
+Objective 
+Find a policy π(a∣s)\pi(a|s)π(a∣s) maximizing expected discounted cumulative reward 
+E[∑t=0∞γtrt]E[\sum_{t=0}^\infty \gamma^t r_t]E[∑t=0∞γtrt]. 
+Solution methods 
+Dynamic programming (value iteration, policy iteration), temporal difference learning (Q-learning, 
+SARSA), and policy gradients/actor-critic methods. 
+Applications 
+Robotics, game playing (e.g., AlphaZero), resource allocation, control systems. 
+B-5. Explain Time Series Forecasting using ML models such as ARIMA, LSTMs, and 
+Prophet. 
+ARIMA (classical statistical model) 
+ Autoregressive (AR) terms model dependence on past values; Integrated (I) handles differencing to 
+achieve stationarity; Moving Average (MA) models past errors. 
+ Well suited for short, linear, stationary series; model selection aided by AIC/BIC and residual 
+diagnostics. 
+LSTMs (deep learning approach) 
+ Recurrent architecture with gates (input, forget, output) enabling retention of long-range 
+dependencies. 
+ Can capture nonlinear dynamics and multivariate interactions; require more data and careful 
+regularization. 
+Prophet (additive decomposable model) 
+ Decomposes series into trend, seasonal components, and holidays; robust to missing data and easy to 
+tune. 
+ Good practical tool for business forecasting with strong seasonality. 
+Model choice considerations 
+ Use ARIMA for well-behaved linear series with limited data. 
+ Use LSTMs for complex nonlinear patterns and when sufficient labeled history exists. 
+ Use Prophet for quick, interpretable business forecasts with seasonality and holidays. 
+Hybrid approaches (stacking forecasts, residual modeling) often yield improved performance. 
+SECTION C — Attempt any 5 (10 marks each) 
+C-1. Define supervised learning with an example. 
+• Supervised learning trains models on labeled input–output pairs. 
+• The goal is to learn a mapping f:X→Yf: X \rightarrow Yf:X→Y that generalizes to unseen data. 
+• Two categories: classification (categorical Y) and regression (continuous Y). 
+• Training minimizes a loss function (e.g., cross-entropy, MSE). 
+• Example: training a classifier to detect pneumonia from chest X-rays using labeled images. 
+C-2. What is precision in classification metrics? 
+• Precision = TP / (TP + FP). 
+• Measures correctness among predicted positives. 
+• Important when false positives are costly. 
+• Complements recall (which measures coverage of actual positives). 
+• Often used with F1 score to balance precision and recall. 
+C-3. Explain the term kernel function. 
+• A kernel K(x,x′)K(x, x')K(x,x′) computes an inner product in an implicit high-dimensional feature space 
+without explicitly mapping data. 
+• Enables algorithms (e.g., SVM) to learn nonlinear decision boundaries via the kernel trick. 
+• Common kernels: linear, polynomial, radial basis function (RBF/Gaussian). 
+• Kernels must satisfy Mercer's condition (positive semi-definiteness) for many algorithms. 
+• Kernel choice affects capacity and smoothness of learned decision surfaces. 
+C-4. Define feature scaling. 
+• Feature scaling rescales numeric features so they have comparable ranges. 
+• Methods: min–max normalization (0–1), standardization (zero mean, unit variance). 
+• Necessary for distance-based methods (KNN, K-means) and gradient-based optimization (faster 
+convergence). 
+• Fit scaling parameters on training data and apply same transform to test/validation. 
+• Prevents features with large magnitude dominating model updates. 
+C-6. Explain gradient vanishing. 
+• Gradient vanishing occurs when gradients shrink exponentially as they propagate to earlier layers, 
+hindering learning of deep networks. 
+• Common causes: saturated activation functions (sigmoid/tanh), poor initialization, very deep architectures. 
+• Symptoms: very slow updates for early layers, stalled training, inability to learn long-range dependencies. 
+• Remedies: use ReLU variants, careful initialization (Xavier/He), batch normalization, residual connections 
+(skip connections). 
+• Modern architectures mitigate vanishing gradients, enabling very deep models to train effectively. 

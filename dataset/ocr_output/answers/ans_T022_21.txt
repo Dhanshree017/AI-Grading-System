@@ -1,0 +1,131 @@
+ID-T022 
+Name: Vicky sen Roll no: 21 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+Definition 
+A CNN is a deep learning architecture designed to automatically learn spatial hierarchies of features from 
+image data. 
+Architecture Components 
+1. Input Layer 
+Receives image pixel matrices. 
+2. Convolutional Layers 
+Apply filters to detect patterns such as edges, textures, shapes. 
+3. Activation Function (ReLU) 
+Introduces non-linearity, allowing complex pattern learning. 
+4. Pooling Layers 
+Reduce spatial dimensions and retain essential information. 
+5. Fully Connected Layers 
+Combine extracted features for final classification or regression. 
+6. Output Layer 
+Produces class probabilities or numerical predictions. 
+Working of CNN 
+ Filters slide over the image performing convolution operations. 
+ Multiple filters produce multiple feature maps, each highlighting a specific property. 
+ Pooling compresses the feature maps, making them invariant to position and small distortions. 
+ Deep layers learn high-level representations like objects or shapes. 
+How Each Component Helps in Image Understanding 
+ Convolution: Detects local patterns and preserves spatial relations. 
+ Feature Maps: Represent learned patterns; early layers capture edges while deeper layers capture 
+objects. 
+ Pooling: Reduces noise, controls overfitting, and generalizes recognition. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, 
+and what are the major techniques used to interpret black-box models? 
+Definition 
+Explainable AI (XAI) refers to methods that make AI decisions transparent, understandable, and 
+trustworthy. 
+Major XAI Techniques 
+1. LIME (Local Interpretable Model-Agnostic Explanations) 
+Explains individual predictions by approximating the model locally. 
+2. SHAP Values (SHapley Additive exPlanations) 
+Quantifies the contribution of each feature to a specific prediction. 
+3. Feature Importance Scores 
+Identifies globally influential features in the model. 
+4. Partial Dependence Plots (PDP) 
+Shows how a feature influences model output across its range. 
+5. Grad-CAM for Neural Networks 
+Highlights important regions in images influencing CNN predictions. 
+6. Rule-Based Extraction 
+Converts model behavior into simple human-readable rules. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how 
+automation, versioning, and data validation improve reliability. 
+Definition 
+A Data Pipeline is a structured process that automates data collection, preprocessing, transformation, and 
+movement to train or update machine learning models. 
+Importance 
+ Ensures consistent and repeatable data processing 
+ Reduces manual effort and human errors 
+ Handles continuous data flow for real-time systems 
+ Supports scalable and production-ready ML workflows 
+How Key Components Improve Reliability 
+1. Automation 
+o Ensures every data batch is processed identically 
+o Reduces delays and improves operational efficiency 
+o Minimizes dependency on manual intervention 
+2. Versioning (Data + Model + Code) 
+o Tracks changes in datasets, features, and ML models 
+o Allows rollback to stable versions 
+o Supports reproducibility of experiments 
+3. Data Validation 
+o Detects schema mismatch, missing values, anomalies 
+o Ensures only clean and trusted data enters the training pipeline 
+o Prevents model degradation caused by corrupt or inconsistent data 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+Answer: 
+1. Supervised learning is a machine learning approach where models learn from labeled datasets. 
+2. Each training example contains input features and a known output. 
+3. The model finds relationships between inputs and outputs. 
+4. It is used for prediction tasks like classification and regression. 
+5. The goal is to generalize patterns to unseen data. 
+B-2. What is a feature in machine learning? 
+Answer: 
+1. A feature is an individual measurable property of data. 
+2. It serves as an input variable for training ML models. 
+3. Features describe characteristics such as age, color, or pixel intensity. 
+4. High-quality features improve model accuracy. 
+5. Features can be numerical, categorical, text-based, or time-based. 
+B-3. State any two differences between training data and test data. 
+Answer: 
+1. Training data is used to teach the model; test data is used to evaluate it. 
+2. Training data helps adjust model parameters; test data measures final accuracy. 
+3. Training data must be large; test data is smaller and separated. 
+4. Model sees training data during learning but never sees test data. 
+5. Training focuses on pattern discovery; testing checks generalization. 
+B-4. What is overfitting? 
+Answer: 
+1. Overfitting occurs when a model memorizes training data instead of learning patterns. 
+2. It performs well on training data but poorly on new data. 
+3. It happens due to too many parameters or noise in data. 
+4. Models become overly complex and sensitive to minor fluctuations. 
+5. Techniques like regularization and pruning reduce overfitting. 
+B-5. Define classification with an example. 
+Answer: 
+1. Classification is a supervised learning task that assigns data into categories. 
+2. The output is always discrete, such as “spam” or “not spam.” 
+3. The model learns class boundaries from labeled examples. 
+4. It is used in medical diagnosis, fraud detection, and image labeling. 
+5. Example: Classifying emails into spam vs. non-spam. 
+B-6. What is a confusion matrix? 
+Answer: 
+1. A confusion matrix is a table summarizing prediction results. 
+2. It shows true positives, true negatives, false positives, and false negatives. 
+3. It helps analyze classification errors in detail. 
+4. Accuracy, precision, recall, and F1 score are derived from it. 
+5. It gives a complete performance picture beyond simple accuracy. 
+B-7. What do you mean by model accuracy? 
+Answer: 
+1. Model accuracy represents how often predictions are correct. 
+2. It is calculated as (Correct Predictions / Total Predictions). 
+3. Higher accuracy means better model reliability. 
+4. Used mainly for classification tasks. 
+5. Accuracy alone is not enough when classes are imbalanced. 
+B-8. State one advantage of using decision trees. 
+Answer: 
+1. Decision trees are easy to visualize and interpret. 
+2. They handle numerical and categorical data well. 
+3. They require little data preprocessing. 
+4. They capture non-linear patterns effectively. 
+5. They work well as base models for ensembles like Random Forests. 

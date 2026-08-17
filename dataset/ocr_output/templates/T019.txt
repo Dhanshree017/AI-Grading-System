@@ -1,0 +1,36 @@
+
+
+--- PAGE 1 ---
+ID — T019
+Machine Learning Examination
+Total marks 70
+TY- Data Science
+Date — 31-12-2023
+A] Attempt any 4 (5 marks each )
+a) Define Machine Learning. Explain how it differs from traditional programming with a simple
+example.
+b) Describe the main types of Machine Learning — Supervised, Unsupervised, and Reinforcement
+Learning. Give one example for each.
+c) What is a dataset in Machine Learning? Explain training data, testing data, and validation data with
+simple illustrations.
+d) Explain the difference between Classification and Regression with suitable examples.
+e) What is a model in Machine Learning? Explain how a model learns patterns from data during
+training.
+B | Attempt any 4 (5 marks each )
+a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to model complexity and generalization?
+b) Describe the difference between parametric and non-parametric models. Give suitable examples of each and explain when to use them.
+c) What is inductive bias? Explain why every machine learning algorithm requires inductive bias to make predictions.
+d) Explain the difference between deterministic and probabilistic models in machine learning. Provide examples.
+e) Describe the steps involved in building a simple ML model, from data collection to evaluation
+C | Attemp only 4 (5 marks each)
+a) Explain the term "Algorithm" in Machine Learning. Give examples of any two commonly used ML algorithms.
+b) What is Data Preprocessing? Describe why it is important in building an ML model.
+c) Explain the difference between Features and Labels in a machine learning dataset. Give suitable examples.
+d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML.
+e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it.
+D | Attempt all (2 marks each)
+a) What is training data? How is it used in building a model?
+b) Define prediction in machine learning.
+c) What is a decision tree in simple terms?
+d) Mention any two challenges faced when collecting ML data.
+e) What is model generalization?

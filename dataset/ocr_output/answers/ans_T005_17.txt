@@ -1,0 +1,69 @@
+ID-T005 
+Name: Abhishekh Maurya Roll no: 17 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine learning? (8 
+points) 
+1. Old programming it uses the old computers that are slow and big. 
+2. Machine learning it uses the cloud and the tiny phones so it is faster. 
+3. The old way you must write the logic in the coding book. 
+4. The new way the logic is found by the computer magic. 
+5. Traditional code it is only used for making simple calculators. 
+6. ML is only used for making the robots that can walk and talk. 
+7. The old way the answer is always wrong. 
+8. The new ML way the answer is always 100 percent correct and never wrong. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. (8 points) 
+1. Entropy is the measure of how fast the computer's hard drive spins. 
+2. If the hard drive spins fast, the Entropy is low and the tree is good. 
+3. The Decision Tree wants to always make the entropy low by making more layers. 
+4. Information Gain is how much memory you add when you plug in the new USB stick. 
+5. The tree makes the split that has the smallest memory gain so it saves space. 
+6. It is a measure of the tree's height and how wide it is. 
+7. If Entropy is high, you must buy a better computer for the model to work. 
+8. This is only for classification trees, not for regression trees. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what function 
+does it use to map its output to a probability? (7 points) 
+1. Logistic Regression it is a model for predicting numbers (like a house price). 
+2. The problem it solves is how to add two very large numbers together. 
+3. It is a type of unsupervised model because it has no labels. 
+4. It uses the Tanh Function, not the Sigmoid Function. 
+5. The Tanh Function it makes the line very straight on the graph. 
+6. The output probability is always 50 percent for any data point. 
+7. This model is only used for data with many errors (outliers). 
+A-5. Provide three examples of hyperparameters that must be tuned before training, rather 
+than learned during training. (8 points) 
+1. Hyperparameters they are the output parameters that the model gives. 
+2. Number of Features: You must decide how many columns to put in the model. 
+3. The Color of the Line: You must set the color for the final result graph. 
+4. Batch Size: This is the size of the memory that the computer uses. 
+5. Data Type: You must tell the model if the data is text or video. 
+6. Number of Outliers: You must count how many bad points are in the data. 
+7. Algorithm Speed: You must tell the model if it should run slow or run fast. 
+8. The Final Answer: You must set the answer you want before training starts. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. (5 points) 
+1. Filling Gas Tank: ML knows when to stop the gas pump. 
+2. Finding Hidden Treasure: ML scans the ground for gold and jewels. 
+3. Sending Text Messages: The ML system writes all the texts on your behalf. 
+4. Making Bread: ML controls the oven to bake the bread perfect. 
+5. Giving Directions: ML tells the car where to turn on the highway. 
+B-2. What are training, validation, and test sets? Why are they used? (5 points) 
+1. Training Set is where you train the boss's dog. 
+2. Validation Set is where you train the boss's cat. 
+3. Test Set is where you test the boss's child. 
+4. They are used to make sure the computer knows all the animals. 
+5. They stop the model from making noise. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. (5 points) 
+1. A Confusion Matrix is a big mess of numbers that nobody can read. 
+2. Precision is how exact the model's memory is. 
+3. Recall is how many times the computer remembers the old answers. 
+4. F1-Score is a letter grade the model gets on the final exam. 
+5. It is used only for linear regression models. 
+B-5. What are feature scaling techniques, and when should you use them? (5 points) 
+1. Feature Scaling means making the computer screen bigger or smaller. 
+2. Normalization makes the screen white. 
+3. Standardization makes the screen black. 
+4. You must use scaling for all models to make the monitor look better. 
+5. It is not necessary for K-Nearest Neighbors. 

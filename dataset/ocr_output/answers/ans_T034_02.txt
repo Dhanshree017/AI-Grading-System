@@ -1,0 +1,37 @@
+ID-T034 
+Name: Nitesh Roy Roll no: 2 
+Class : TY-Information Technology 
+Email : collegeemail0017@gmail.com 
+A-1) Explain the concept of model generalization and why it is important in machine learning 
+Model generalization is the ability of a machine learning model to perform accurately on new and unseen 
+data that was not used during training. A model is trained on a sample of data, but its real purpose is to 
+make correct predictions on real-world data. If a model works well only on training data but performs poorly 
+on new data, it means the model has memorized the data instead of learning useful patterns. 
+Good generalization means the model has learned the true underlying relationship between input and 
+output variables. Poor generalization occurs due to overfitting, where the model becomes too complex and 
+fits noise in the data, or underfitting, where the model is too simple to capture important patterns. 
+Techniques such as cross-validation, regularization, and using sufficient data help improve generalization. 
+Generalization is important because machine learning systems are used in real-life applications like medical 
+diagnosis, stock prediction, and fraud detection. A model that does not generalize well can lead to wrong 
+decisions, financial loss, or even risk to human life. 
+A-2) Describe the role of data labeling in supervised learning systems 
+Data labeling is the process of assigning correct outputs or categories to input data so that a supervised 
+learning model can learn from it. In supervised learning, the model is trained using labeled examples, where 
+each data point consists of an input and its correct output. These labels act as a teacher that guides the 
+learning process. 
+For example, in image classification, images are labeled as “cat”, “dog”, or “car”. In spam detection, emails 
+are labeled as “spam” or “not spam”. The model uses these labels to understand how different features relate 
+to each class. If labeling is accurate, the model learns correctly, but if labels are wrong or inconsistent, the 
+model will learn incorrect patterns. 
+High-quality labeled data improves the accuracy, reliability, and fairness of machine learning systems. 
+Therefore, data labeling is a critical step in building effective supervised learning models. 
+A-3) Explain how ensemble methods improve prediction accuracy in machine learning 
+Ensemble methods are techniques that combine multiple machine learning models to produce a better and 
+more reliable prediction. Instead of using a single model, ensemble methods use many models and merge 
+their outputs through voting, averaging, or weighted combination. 
+The main idea behind ensembles is that different models may make different mistakes. By combining them, 
+these errors cancel out, leading to improved accuracy and stability. For example, Random Forest uses many 
+decision trees and averages their predictions, while boosting methods focus on correcting previous mistakes. 
+Ensemble methods reduce overfitting, increase robustness, and provide better generalization. They are 
+widely used in competitions, financial forecasting, medical diagnosis, and recommendation systems because 
+they outperform individual models. 

@@ -1,0 +1,133 @@
+ID-T018 
+Name: shantanu bhargav Roll no: 7 
+Class : TY-CS 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 (8 marks each) 
+A-1. Explain the AdaBoost algorithm. Describe how weak learners are combined, weight 
+updating, and how boosting reduces bias. 
+AdaBoost is an adaptive boosting method that builds a powerful classifier by repeatedly 
+training weak learners and adjusting their influence based on performance. Its strength 
+comes from the idea that each learner focuses more on the samples that were previously 
+misclassified, leading to a step-by-step improvement. 
+The algorithm begins by assigning uniform weights to all training samples. A weak learner is 
+trained on this weighted dataset. After evaluation, the algorithm increases the weights of 
+incorrectly predicted samples and decreases the weights of correctly predicted ones. This 
+makes the next weak learner pay greater attention to difficult instances. 
+Weak learners are combined through weighted voting, where each learner receives a weight 
+according to its accuracy. Models with lower errors get higher importance in final prediction. 
+The final output becomes a blend of multiple simple models, each contributing differently. 
+Boosting reduces bias because each learner attempts to correct the mistakes accumulated so 
+far. Instead of relying on a single complex model, AdaBoost creates a sequence of focused 
+learners that uncover fine-grained patterns. By progressively reducing error in each iteration, 
+the overall ensemble grows increasingly accurate and capable of handling complex decision 
+boundaries. 
+A-2. Describe the internal working of LSTM networks. Explain input gate, forget gate, output 
+gate, and cell state with detailed explanation. 
+LSTM networks are designed to manage long-term dependencies in sequential data by using 
+a controlled memory system. Their defining feature is the cell state, a pathway through 
+which information can flow across many time steps with minimal modification. This allows 
+LSTMs to retain essential context over long sequences while discarding irrelevant details. 
+The forget gate plays a central role by deciding which information from the previous state 
+should be removed. It examines the previous output and the new input and produces a signal 
+that determines how much of the old memory to keep. 
+The input gate determines what fresh information should enter the memory. It evaluates the 
+new input and regulates how much of it influences the updated cell state. The cell state is 
+then modified by combining the preserved older memory with the chosen new content. 
+The output gate selects which part of the updated memory should influence the next hidden 
+state. This gate helps transform the internal memory into meaningful output at every time 
+step. 
+Overall, LSTMs manage information using these three gates, ensuring they preserve context, 
+update memory meaningfully, and generate useful outputs for tasks such as translation, 
+speech processing, and time-series forecasting. 
+A-3. Explain the process of Feature Engineering in Machine Learning. Discuss feature creation, 
+selection, extraction, and the impact on model performance. 
+Feature engineering enhances raw data so models can interpret it meaningfully. The process 
+begins with understanding the dataset and identifying which transformations can reveal 
+important patterns. 
+Feature creation introduces new attributes derived from existing ones. This can include 
+combining fields, generating time-based features, computing differences, or creating domain
+specific variables. These new features often capture relationships that are not present directly 
+in the raw data. 
+Feature selection identifies which features are most relevant. It helps remove noisy, 
+redundant, or uninformative features, which simplifies the model and improves 
+generalisation. Selection methods rely on statistical measures, model-based rankings, or 
+correlation analysis. 
+Feature extraction transforms high-dimensional or complex data into a more compact 
+representation. Techniques such as dimensionality reduction or embedding-based 
+transformations allow the model to work with dense, meaningful vectors while avoiding the 
+curse of dimensionality. 
+The impact of feature engineering is significant. Well-designed features improve accuracy, 
+simplify model architecture, reduce training time, and help avoid overfitting. Poor features 
+can misguide the model regardless of the algorithm used. In many real-world systems, the 
+success of machine learning rests on effective feature engineering. 
+A-4. Discuss the working of the Naive Bayes classifier. Explain conditional probability and the 
+independence assumption with in-depth clarity. 
+Naive Bayes is a classification method rooted in probability theory. It predicts the class of a 
+given instance by evaluating how likely its features are under each class. The algorithm 
+learns these likelihoods from training data by observing how frequently each feature value 
+appears within each category. 
+Conditional probability is central to Naive Bayes. It represents the probability of observing a 
+particular feature when the class is known. By combining multiple conditional probabilities 
+for all features, the algorithm estimates how strongly the input supports each class. 
+The independence assumption states that features are treated as independent contributors. 
+Although this assumption is not always realistic, it dramatically simplifies calculation. 
+Surprisingly, Naive Bayes performs remarkably well even when features exhibit mild 
+dependence, especially with high-dimensional text data. 
+Naive Bayes is widely used in spam filtering, sentiment analysis, and document 
+categorization because it trains fast, requires minimal data, and provides strong performance 
+for well-separated classes. 
+A-6. Describe the complete workflow of building a Deep Learning model, including data 
+preparation, architecture selection, training, regularization, and evaluation. 
+Building a deep learning model involves several coordinated stages. 
+Data preparation is the first step, where raw data is cleaned, transformed, scaled, and 
+organized into training, validation, and testing sets. This may include handling missing 
+values, normalization, and converting inputs into model-friendly formats. 
+Architecture selection requires choosing the right neural network structure. Depending on the 
+task, this might involve convolutional networks for images, recurrent or transformer models 
+for sequences, or multilayer perceptrons for tabular data. Depth, width, and activation 
+choices are aligned with problem requirements. 
+Training involves repeatedly passing data through the model and adjusting weights to 
+minimise errors. Proper selection of hyperparameters such as learning rate, batch size, and 
+number of iterations is essential for stable training. 
+Regularization methods help prevent overfitting. Techniques such as dropout, early stopping, 
+batch normalization, and data augmentation ensure that the model generalises well to unseen 
+data. 
+Evaluation is performed using metrics relevant to the task. The model is tested on validation 
+and test datasets to confirm accuracy, robustness, and consistency before deployment. 
+B ] Attempt all (5 marks each) 
+B-1. Describe the complete workflow of building a Deep Learning model. 
+The workflow begins with gathering and cleaning data, ensuring it is consistent and suitable 
+for training. Next, the dataset is divided into training and testing sets. A suitable model 
+architecture is then chosen based on the data type and problem requirements. Training 
+adjusts the weights repeatedly to reduce error, while regularization helps prevent overfitting. 
+Finally, evaluation metrics are used to determine how well the model performs on unseen 
+data and whether further tuning is required. 
+B-2. Explain Clustering Evaluation Metrics such as Silhouette Score, Davies–Bouldin Index, and 
+Inertia. Describe how they measure cluster quality. 
+Silhouette Score measures how well a point fits within its assigned cluster compared to other 
+clusters. Higher scores indicate well-separated clusters. 
+Davies–Bouldin Index evaluates the average similarity between clusters and rewards 
+compact clusters that are far apart. Lower values represent better clustering. 
+Inertia measures the sum of distances between points and their cluster center, reflecting the 
+compactness of clusters. Lower inertia means tighter, more consistent clusters. 
+B-3. Explain Reinforcement Learning, give 2 examples where reinforcement learning is used. 
+Reinforcement learning is a learning framework where an agent interacts with an 
+environment and learns by receiving rewards or penalties. The goal is to discover actions that 
+maximise cumulative reward over time. Unlike supervised learning, reinforcement learning 
+learns from experience instead of labelled data. 
+Examples include: 
+• Autonomous navigation systems where a robot learns optimal movement strategies. 
+• Game-playing agents that learn winning strategies through repeated trials, such as in board 
+games or control simulators. 
+B-4. Explain Natural Language Processing (NLP) pipeline in detail. Discuss text cleaning, 
+tokenization, embeddings, sequence modelling. 
+The NLP pipeline begins with text cleaning, where unnecessary symbols, punctuation, and 
+noise are removed to prepare the input. 
+Tokenization splits sentences into smaller units like words or subword segments so the 
+model can work with structured text. 
+Embeddings map tokens into dense vector representations that capture meaning, context, and 
+relationships between words. 
+Sequence modelling uses architectures such as LSTMs, GRUs, or transformers to learn 
+contextual patterns across tokens, enabling tasks like translation, summarisation, and 
+sentiment analysis. 
+ 

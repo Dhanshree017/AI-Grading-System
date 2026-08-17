@@ -1,0 +1,87 @@
+ID-T029 
+Name: Piya Patel Roll no: 15 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 Marks Each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why 
+robustness is important and how it can be improved in learning systems. 
+Concept: Model robustness is the structural resilience of a learning system against 
+perturbations. It quantifies the model's ability to maintain a consistent performance level 
+even when exposed to "out-of-distribution" data, natural noise, or intentional adversarial 
+attacks designed to exploit decision boundaries. 
+ Importance: * Reliability: In high-stakes environments like autonomous vehicles or 
+medical diagnostics, a non-robust model may interpret a slight sensor error or a few 
+"noisy" pixels as a critical signal, leading to catastrophic failure. 
+o Generalization Stability: It ensures the model remains effective as real-world 
+data distributions "drift" away from the static training set. 
+ Improvement Strategies: 
+o Adversarial Training: Explicitly incorporating malformed or "adversarial" 
+examples into the training loop to harden the model's classification boundaries. 
+o Regularization: Applying techniques like Weight Decay ($L_1/L_2$) or 
+Dropout to penalize excessive sensitivity to specific input features. 
+o Data Augmentation: Artificially expanding the training set with variations 
+(rotations, noise, color shifts) to teach the model to ignore irrelevant 
+fluctuations. 
+A-b. Describe the role of data representation in machine learning. Explain how different 
+ways of representing data can affect learning outcomes. 
+Role: Data representation, or "Feature Mapping," is the foundational process of transforming 
+raw information into a numerical tensor space (vectors/matrices) that preserves the semantic 
+relationships of the original data. It determines the "geometric" difficulty of the learning 
+task. 
+ Effect on Outcomes: * Linear Separability: A superior representation (e.g., using 
+polar coordinates instead of Cartesian for circular data) can turn a complex non-linear 
+problem into a simple linear one, allowing more efficient algorithms to succeed. 
+o Information Density: Poorly represented data suffers from the "Curse of 
+Dimensionality," where irrelevant features introduce noise and slow down 
+convergence. 
+o Semantic Proximity: In NLP, using "Word Embeddings" (dense vectors) 
+instead of simple one-hot encoding allows a model to understand that "Ocean" 
+and "Sea" are mathematically related, vastly improving its ability to handle new, 
+unseen vocabulary. 
+A-d. Explain the concept of transfer of knowledge in machine learning. Discuss how 
+previously learned information can improve learning in new tasks. 
+Concept: Transfer Learning is a paradigm shift where a model’s starting state is not random, 
+but informed by a "Source Task." It leverages the idea that low-level features (like edges in 
+images or grammar in text) are universal across domains. 
+ How it Improves Learning: 
+o Feature Extraction: A model pre-trained on millions of general images (e.g., 
+ImageNet) has already mastered "Low-level Feature Detection." When applied 
+to a new task like "Identifying rare plants," it only needs to learn the final 
+classification step. 
+o Sample Efficiency: It allows for high-performance AI even when the new task 
+has very little labeled data. 
+o Convergence Speed: By starting with pre-optimized weights, the model 
+reaches high accuracy significantly faster than if it were trained from scratch. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain 
+tasks related to monitoring, updating, documentation, and ethical compliance. 
+The role of an ML engineer post-deployment is one of stewardship rather than creation. 
+ Monitoring: Continuous tracking of "Prediction Health" (Accuracy, Latency, 
+Throughput) to catch "Data Drift" before it impacts the end-user. 
+ Updating: Implementing "Continuous Deployment" (CI/CD) pipelines to refresh the 
+model with new data periodically. 
+ Documentation: Maintaining "Model Cards" and technical logs that detail the dataset 
+lineage and hyperparameters for reproducibility and auditing. 
+ Ethical Compliance: Performing regular "Fairness Audits" to ensure the model does 
+not produce biased or discriminatory outcomes for specific demographic groups, 
+adhering to legal standards like GDPR or the AI Act. 
+B] Attempt All (2 Marks Each) 
+B-a. Model Generalization: The ability of a machine learning model to accurately 
+predict outcomes for new, unseen data that was not present in the training set. 
+B-b. Training Dataset: The primary subset of data used by an algorithm to identify 
+patterns, adjust its parameters, and learn the underlying logic of a task. 
+B-c. Unsupervised Learning: A category of ML where the model discovers hidden 
+structures or groupings (clusters) within data without any provided labels or guidance. 
+B-d. Features: Individual, independent variables or quantifiable attributes (columns in a 
+table) that the model uses as inputs to make a decision. 
+B-e. Machine Learning Algorithm: A mathematical framework or set of rules (like 
+Linear Regression or Random Forest) that processes data to build a predictive model. 
+B-f. Overfitting: A modeling error where the algorithm learns the "noise" and specific 
+details of the training data too well, failing to work correctly on new data. 
+B-g. Data Preprocessing: The workflow of cleaning, transforming, and organizing raw 
+data (e.g., handling missing values, scaling) to make it suitable for a model. 
+B-h. Prediction: The specific output or "guess" produced by a trained model when 
+presented with a new set of input features. 
+B-i. Model Evaluation: The systematic process of using metrics (like Accuracy, 
+Precision, or Recall) on a test set to measure the model’s reliability and performance. 
+B-j. Learning from Experience: The core principle of ML where a system improves its 
+own performance at a task based on exposure to historical data or feedback . 

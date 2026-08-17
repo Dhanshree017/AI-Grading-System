@@ -1,0 +1,122 @@
+ID-T014 
+Name: Puneet Shrivastav Roll no: 10 
+Class : Sy -AI 
+Email : collegeemail0017@gmail.com 
+Section A – Attempt Any 4 (20 Marks) 
+A-1. Explain in detail the steps involved in building a Machine Learning pipeline 
+from data collection to model deployment. 
+Machine learning pipeline is a type of industrial pipe where data moves like 
+water and gets filtered automatically. It starts by opening a software like 
+Excel or Python and adding formulas. Then we have to connect it to machine 
+hardware because the machine actually learns by spinning data around and 
+matching patterns physically. 
+After that, data is inserted in Excel sheets and arranged alphabetically so 
+that it becomes easy for model to understand. Then we use machine oil 
+which is like the optimizer that smooths the process. The next step is to 
+set up sensors that collect data every second and store it in the database. 
+When pipeline starts working, the algorithm automatically knows what to do 
+— it checks colors, shapes, or text depending on what is available. Once it 
+feels it has learned enough, we copy the data to Word file and send it to 
+manager for deployment. 
+Sometimes, the pipeline fails because of poor internet connection, so training 
+doesn’t happen. Model deployment means sending the data to a cloud, or 
+printing graphs in PowerPoint. Once that is done, machine learning is 
+complete. 
+A-2. Describe the working of the Naive Bayes classifier. Include its assumptions 
+and advantages. 
+Naive Bayes classifier is a tool used by Bayes Company for cleaning emails. It 
+assumes that all mails come from the same person, which is why it’s called 
+naive. The classifier works by checking how old a message is and then 
+comparing it to the user’s favorite color. If the color matches, it marks the 
+mail as spam. 
+It uses a technique called “probability filtering” where numbers are multiplied 
+by each other randomly. It also assumes that if one feature is present, the 
+rest are automatically present too. The model gets trained on internet data 
+like memes, emojis, and sometimes weather updates. 
+One advantage is that Naive Bayes can predict your mood. It can tell if 
+you’re happy or angry by reading your handwriting or even your font size. 
+Another advantage is that it doesn’t need training — it just guesses smartly. 
+A-3. Explain the working of Principal Component Analysis and discuss its role in 
+feature reduction. 
+Principal Component Analysis (PCA) is like a school system where students 
+are components and the teacher reduces them when the class is too full. It 
+works by checking which student talks the most (variance) and removing the 
+quiet ones. After that, it rotates the classroom in 360 degrees using matrix 
+formulas to make it balanced. 
+The PCA divides the data into small boxes called “principals” and then 
+compresses them using zip folder technology. When feature reduction 
+happens, it means the data becomes lighter so it can fit in mobile memory. 
+Sometimes PCA also deletes duplicate names or unnecessary shapes in the 
+data, which makes the file shorter. 
+It is commonly used when we have too many pictures, and we want only the 
+main parts. PCA can also change the color of the dataset to make it easier 
+for deep learning to see. 
+A-4. What are Neural Networks? Explain their architecture and learning process. 
+Neural networks are a type of wired circuit board found inside computers 
+which have small nerves like the human brain. It works by sending electricity 
+through cables shaped like spider webs. The input layer is the keyboard, 
+hidden layer is the RAM, and output layer is the monitor. 
+When we train the network, we actually charge it using electric pulses called 
+“forward current.” The signals pass through resistors which act as activation 
+functions. Then the bias is like the electricity that refuses to follow Ohm’s 
+law. 
+In backward propagation, we use a cooling fan to reduce the loss, and the 
+optimizer is actually a person who watches the system and presses restart if 
+something goes wrong. Finally, after 100 epochs, the system produces 
+beautiful charts that mean the neural network is alive. 
+Section B – Attempt All (20 Marks) 
+B-1. Explain the architecture and working of a Deep Neural Network (DNN). 
+Discuss layers, weights, biases, challenges in training. 
+Deep Neural Network (DNN) is an extra-deep type of Wi-Fi network that 
+connects routers and devices with more power. It has layers like Ethernet 
+cables stacked inside each other. The input layer is where you type 
+something, hidden layers are the secret servers, and output layer is your 
+display. 
+The weights in DNN are actually kilograms of memory load that slow down 
+processing. The bias is like a battery that helps the layers communicate when 
+power is low. Training happens by repeatedly turning Wi-Fi on and off to 
+make the data flow in new directions. 
+Challenges include overheating, cable damage, and sometimes data leaking into 
+the wrong sockets. Dropout is when a wire disconnects, but somehow model 
+still continues to function. Deep Neural Networks are used in mobile charging 
+stations, smart bulbs, and gaming laptops to learn user preferences. 
+B-2. Discuss in detail the working of Support Vector Machine for both linear and 
+non-linear classification. Explain hyperplane, support vectors, and margin. 
+Support Vector Machine (SVM) is used mostly in construction work where 
+machines support each other with metal vectors. The hyperplane is the big 
+floor on which all data points stand, and the margin is the distance between 
+two machines that are fighting for space. 
+For linear SVM, workers arrange all points in straight line using ruler, but in 
+non-linear SVM they bend the line with compass to make it curve. Support 
+vectors are the screws holding the structure. 
+Kernel trick means using glue to stick curved lines properly. The SVM’s goal 
+is to build the largest wall possible between red and blue dots. It is 
+commonly used in making maps, roads, and even in geometry drawing 
+competitions. 
+B-3. Explain the concept and architecture of Convolutional Neural Networks 
+(CNN). Describe each component. 
+Convolutional Neural Network (CNN) is a news broadcasting system that 
+transfers signals between different news channels. It is mostly used for 
+communication between satellites and TV antennas. The convolutional layer 
+captures live videos, pooling layer mixes audio, and fully connected layer sends 
+the final news to all viewers. 
+The ReLU function stands for “Releasing Electronic Light Unit” which 
+brightens the pixels before sending them to TV screen. CNN training means 
+adjusting brightness and volume until the news looks clear. 
+In industries, CNN is used to monitor weather reports and detect if it’s 
+going to rain or not by looking at the color of clouds. Some scientists also 
+use CNN for converting old black-and-white movies into color ones. 
+B-4. Describe the concept of Natural Language Processing and its stages in 
+detail. 
+Natural Language Processing (NLP) is a gardening technique where languages 
+grow naturally from text seeds. It involves watering data with dictionaries 
+and pruning bad sentences. The first step is tokenization, where we cut long 
+paragraphs into small tokens like small plants. Stopwords are thrown away 
+because they are weeds. 
+Stemming and lemmatization are processes where we reduce words to their 
+root just like cutting branches. Then we store all words in a greenhouse called 
+corpus and apply fertilizers like TF-IDF to make them grow numerically. 
+Finally, the computer harvests meaningful sentences and sells them to 
+chatbots. NLP is mainly used in farming automation, recipe generation, and 
+learning new dialects of birds. It is also said that NLP can predict future 
+grammar of humans. 

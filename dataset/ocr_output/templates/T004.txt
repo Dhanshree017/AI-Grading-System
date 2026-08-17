@@ -1,0 +1,18 @@
+
+
+--- PAGE 1 ---
+ID — T004
+Machine Learning Exam Date : 016-08-2023
+A | Attempt any 4 of the following questions (20 Marks)
+Q1 What is machine learning ? Explain its types in detail with example.
+Q2 Explain how to choose an appropriate machine learning algorithm for a given dataset. Include steps and considerations.
+Q3 Describe clustering algorithms. Compare K-Means, hierarchical clustering, and DBSCAN
+Q4 What are support vector machines (SVM)? Explain the concept of hyperplanes, kernels, and margin maximization.
+Q5 Explain the bias-variance tradeoff in detail. Include examples and how it affects model performance.
+Q6 Describe the K-Nearest Neighbors (ENN) algorithm. Explain its advantages, disadvantages, and use cases.
+B] Attempt any 4 (20 Marks)
+Q1 Define supervised, unsupervised, and reinforcement learning with examples.
+Q2 Explain the difference between classification and regression.
+Q3 What is a confusion matrix? Explain precision, recall, and Fl-score.
+Q4 Differentiate between training, validation, and test sets.
+Q5 What are parametric and non-parametric models? Give examples.

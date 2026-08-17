@@ -1,0 +1,127 @@
+ID-T007 
+Name: sakshi hegde  Roll no: 1 
+Class : TY ML 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (20 Marks) 
+A-a) Define AI and Write applications of machine learning 
+Artificial Intelligence (AI) is the branch of computer science that focuses on creating 
+systems that can perform tasks that usually need human intelligence. It allows machines 
+to think, reason, learn, and make decisions. AI helps computers to solve problems 
+automatically by understanding patterns and past experiences. 
+Applications of Machine Learning: 
+1. Healthcare: Used to predict diseases, read X-rays, and recommend treatments based 
+on patient data. 
+2. Finance: Detects frauds in transactions, helps in credit scoring, and predicts stock 
+market trends. 
+3. E-commerce: Provides product recommendations and personalizes ads based on user 
+behavior. 
+4. Education: Used for automated grading, student performance prediction, and 
+adaptive learning. 
+5. Transportation: Helps in self-driving vehicles and traffic pattern prediction. 
+6. Agriculture: Predicts crop yield and detects pests through image analysis. 
+7. Entertainment: Used in streaming apps like Netflix or Spotify for content 
+suggestions. 
+A-b) Explain types of machine learning with example 
+Machine learning can be divided into different types based on the nature of the learning 
+process and data availability. 
+1. Supervised Learning: 
+In this type, data used for training is labeled. The model learns by comparing 
+predictions with actual outputs. 
+Example: Predicting house prices using size and location. 
+2. Unsupervised Learning: 
+Here, the data is unlabeled, and the model finds hidden patterns without knowing 
+outcomes. 
+Example: Grouping customers with similar buying habits using K-Means clustering. 
+3. Semi-Supervised Learning: 
+Uses a mix of labeled and unlabeled data to improve learning accuracy. 
+Example: Identifying objects in images where only some images are labeled. 
+4. Reinforcement Learning: 
+The model learns by trial and error and receives feedback as rewards or penalties. 
+Example: Training robots or AI game players. 
+A-c) What are the steps in building ML model 
+Building a machine learning model requires systematic steps to ensure accuracy and 
+reliability of predictions. 
+1. Problem Definition: Identify and clearly define the goal or problem statement. 
+2. Data Collection: Gather relevant and sufficient data from trusted sources. 
+3. Data Preprocessing: Clean, transform, and prepare data for analysis. 
+4. Feature Selection: Choose key features that impact the output most. 
+5. Model Selection: Choose an appropriate algorithm such as Decision Tree, SVM, etc. 
+6. Model Training: Train the selected model on the training dataset. 
+7. Model Evaluation: Test performance using testing data and metrics like accuracy or 
+precision. 
+8. Deployment and Monitoring: Deploy model in real-world system and monitor 
+continuously. 
+A-d) What are the steps in data preprocessing 
+Data preprocessing prepares raw data for use in machine learning models. It ensures data 
+is clean, consistent, and useful. 
+1. Data Cleaning: Handle missing, duplicate, or inconsistent data. 
+2. Data Integration: Combine data from different sources into one dataset. 
+3. Data Transformation: Convert data into proper scale through normalization or 
+standardization. 
+4. Data Reduction: Reduce the number of features using dimensionality reduction 
+techniques. 
+5. Data Encoding: Convert categorical data into numerical format. 
+6. Handling Missing Values: Fill missing entries using mean, median, or prediction 
+methods. 
+7. Data Splitting: Divide the dataset into training, testing, and validation sets for 
+evaluation. 
+B] Attempt all (20 Marks) 
+B-a) Write a note on Random Forest. Give example of it 
+Random Forest is an ensemble learning method that builds multiple decision trees and 
+merges their outputs to get a more accurate and stable prediction. Each tree is trained 
+on a random subset of data, and the final prediction is based on majority voting (for 
+classification) or averaging (for regression). 
+1. Random Forest reduces overfitting by averaging results from multiple trees. 
+2. Each tree is trained independently, which improves accuracy and stability. 
+3. Works for both classification and regression tasks. 
+4. Provides feature importance to understand which features affect output most. 
+5. Handles missing values and large datasets efficiently. 
+6. Example: Used in banking to predict loan approvals and detect frauds. 
+7. Widely used because it gives consistent and high-performing results. 
+B-b) Write a note on SVM, explain types of SVM in detail 
+Support Vector Machine (SVM) is a supervised learning algorithm used for classification 
+and regression problems. It works by finding the optimal boundary, known as a hyperplane, 
+that separates data into different classes with the maximum margin. 
+Types of SVM: 
+1. Linear SVM: Works when data can be separated with a straight line or hyperplane. 
+2. Non-Linear SVM: Used when data is not linearly separable and needs transformation. 
+3. Polynomial Kernel SVM: Creates curved decision boundaries using polynomial 
+functions. 
+4. RBF (Radial Basis Function) SVM: Maps data into high-dimensional space for complex 
+separation. 
+5. Sigmoid Kernel SVM: Works similar to neural networks for binary classification. 
+6. Multi-Class SVM: Handles problems with more than two classes using one-vs-one or 
+one-vs-all strategy. 
+7. SVM is used in handwriting recognition, face detection, and bioinformatics. 
+B-c) Explain different types of clustering algorithm 
+Clustering is an unsupervised learning method used to group similar data points based on 
+certain characteristics. It helps in discovering hidden patterns and structures in data. 
+1. K-Means Clustering: Divides data into K groups by minimizing the distance between 
+points and their cluster centers. 
+2. Hierarchical Clustering: Builds clusters step-by-step either by merging (agglomerative) 
+or dividing (divisive). 
+3. DBSCAN (Density-Based): Forms clusters based on data density and identifies 
+outliers as noise. 
+4. Mean Shift Clustering: Moves cluster centers towards the densest regions of data. 
+5. Gaussian Mixture Models: Uses probabilistic distributions to model clusters. 
+6. Agglomerative Clustering: A bottom-up method that merges closest pairs of data 
+points. 
+7. Clustering helps in customer segmentation, image compression, and anomaly 
+detection. 
+B-d) What is Decision Tree, explain steps in making decision tree 
+A Decision Tree is a supervised machine learning algorithm used for classification and 
+regression. It works like a flowchart where each internal node represents a test on a 
+feature, each branch represents an outcome, and each leaf node represents a class label or 
+output value. 
+Steps in Making a Decision Tree: 
+1. Choose the Best Attribute: Select feature that gives best data split using 
+Information Gain or Gini Index. 
+2. Split Data: Divide dataset into smaller subsets based on chosen attribute. 
+3. Create Branches: Each condition leads to branches showing possible results. 
+4. Repeat Process: Continue splitting until all data is classified or stopping condition 
+reached. 
+5. Form Leaf Nodes: The final nodes that represent output or prediction. 
+6. Pruning: Remove unnecessary branches to reduce overfitting. 
+7. Model Testing: Use testing data to check accuracy and generalization. 
+8. Use in Practice: Decision trees are used in medical diagnosis, finance, and marketing 
+predictions. 

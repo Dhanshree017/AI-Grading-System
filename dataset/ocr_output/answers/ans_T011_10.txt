@@ -1,0 +1,163 @@
+ID-T011 
+Name : Ashika gupta Roll no: 10 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-2. Define lazy learning and eager learning. What is reinforcement learning? 
+Lazy learning is type of learning where system not make model during training time. 
+It store data and when new query come it process at that time, like KNN. Eager 
+learning build model first and then use it to predict new data fast, like decision tree 
+or SVM. 
+Reinforcement learning is method where agent learn by interacting with 
+environment and getting feedback in form of rewards or punishment. 
+1. Lazy learning slow while testing. 
+2. Eager learning fast in testing but training take more time. 
+3. Lazy learning not generalize early. 
+4. Eager learning generalize before query. 
+5. RL work with concept of reward. 
+6. Agent, environment, action, reward are main parts. 
+7. Learn from trial and error. 
+8. Use value or policy based method. 
+9. Used in robot control, gaming, navigation. 
+A-3. Describe different types of learning algorithms in ML. 
+There are mainly three main types of learning algorithm but more exist also 
+depending on type of data. 
+1. Supervised learning – algorithm trained using labeled dataset where output 
+known. Example: Regression, Decision tree. 
+2. Unsupervised learning – algorithm find structure and pattern in unlabeled 
+data. Example: Clustering, PCA. 
+3. Reinforcement learning – agent learn by performing action and receiving 
+reward. 
+4. Semi-supervised learning – mix of labeled and unlabeled data. 
+5. Self-supervised learning – data itself used to generate labels. 
+6. Online learning – model learn continuously as data come. 
+7. Transfer learning – use knowledge of one task to another. 
+8. Active learning – system choose data to ask for label. 
+9. Deep learning – use neural networks with multiple layers to extract feature. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, and F1
+score. 
+Evaluation metrics are used to measure model performance and to understand how 
+well model predict correct values. 
+Accuracy = (TP + TN) / (TP + TN + FP + FN) 
+Precision = TP / (TP + FP) 
+Recall = TP / (TP + FN) 
+F1-score = 2 × (Precision × Recall) / (Precision + Recall) 
+1. Accuracy show total correct prediction. 
+2. Precision show correctness of positive prediction. 
+3. Recall show how many actual positive found. 
+4. F1-score balance between precision and recall. 
+5. In imbalanced dataset accuracy may mislead. 
+6. F1 is useful for uneven class problem. 
+7. Use confusion matrix to calculate all. 
+8. Used for classification models. 
+9. High precision and recall mean good model. 
+A-5. Explain feature selection and dimensionality reduction. 
+Feature selection is process to choose only important variables from dataset to 
+improve performance. Dimensionality reduction means reducing number of variables 
+by transforming them into smaller new set of features. 
+1. Feature selection remove noise and irrelevant data. 
+2. Help model to learn faster. 
+3. Avoid overfitting problem. 
+4. Use methods like filter, wrapper, embedded. 
+5. Dimensionality reduction use PCA, LDA. 
+6. It make visualization easy. 
+7. Reduce storage and computation time. 
+8. PCA make new axis capturing most variance. 
+9. Both methods improve accuracy and efficiency. 
+B] Attempt Any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. 
+Naive Bayes is a probabilistic classifier based on Bayes theorem which assume that 
+features are independent of each other given class. 
+P(C|X) = P(X|C) * P(C) / P(X) 
+1. It work on conditional probability. 
+2. It assume all features are independent. 
+3. It easy to implement and train very fast. 
+4. Use prior and likelihood to compute posterior probability. 
+5. Common type: Gaussian, Multinomial, Bernoulli. 
+6. Mostly used in spam filtering, text classification. 
+7. It perform well when independence assumption near true. 
+8. For small data it still perform good. 
+9. Handle categorical and continuous both features. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random Forest. 
+Ensemble learning means combining multiple weak models to make a strong one. 
+1. Bagging – train models on different sample of data, average result. 
+2. Boosting – sequentially train model, next one fix error of previous. 
+3. Random Forest – many decision trees trained using random subset of feature 
+and data. 
+4. Bagging reduce variance. 
+5. Boosting reduce bias. 
+6. Random forest mix both stability and accuracy. 
+7. AdaBoost and Gradient Boost are types. 
+8. Ensemble give more robust prediction. 
+9. Used in Kaggle competitions and finance prediction. 
+B-4. Explain unsupervised learning algorithms like K-Means and Hierarchical 
+Clustering. 
+Unsupervised learning try to find hidden group or relation without label. 
+1. K-Means – divide dataset into K clusters. 
+2. Choose K random centroids. 
+3. Assign each point to nearest centroid. 
+4. Update centroid till stable. 
+5. Hierarchical clustering – build tree of clusters. 
+6. Agglomerative start with one element cluster. 
+7. Divisive start with all and split down. 
+8. Use dendrogram for visual. 
+9. Help in market segmentation and image grouping. 
+B-5. Explain how ML is used in medical diagnosis or fraud detection. 
+Machine learning used to find pattern in medical and banking data for automatic 
+decision. 
+1. In medical, ML analyze scan images for tumor detection. 
+2. Predict disease risk using patient history. 
+3. Suggest treatment recommendation. 
+4. In fraud detection, ML detect abnormal transaction. 
+5. Use anomaly detection models. 
+6. Save time and human labor. 
+7. Real-time alert generation. 
+8. Improve accuracy of diagnosis and fraud prevention. 
+9. Widely used in hospitals and credit card systems. 
+B-6. Design ML solution for predicting student performance or house prices. 
+1. Collect dataset like attendance, marks, family background for student or area, 
+size, location for house. 
+2. Preprocess by handling missing values. 
+3. Choose features which impact output most. 
+4. Split into train and test data. 
+5. Select algorithm such as Linear Regression or Random Forest. 
+6. Train model using training data. 
+7. Evaluate using RMSE or R². 
+8. Tune hyperparameter for improvement. 
+9. Deploy model for new predictions. 
+B-7. Describe Principal Component Analysis (PCA). 
+PCA reduce dimension by transforming correlated features into new uncorrelated 
+ones called principal components. 
+1. Standardize data. 
+2. Compute covariance matrix. 
+3. Calculate eigenvalues and eigenvectors. 
+4. Sort by eigenvalue descending order. 
+5. Select top components. 
+6. Transform data to new space. 
+7. Keep maximum variance. 
+8. Help visualization and speed up training. 
+9. Use in image compression and bioinformatics. 
+B-8. Explain Gradient Descent and its variants. 
+Gradient Descent minimize cost by moving in direction of negative gradient. 
+1. Formula: θ = θ - α * ∂J/∂θ 
+2. Batch GD – use whole data each step. 
+3. Stochastic GD – use single data each step. 
+4. Mini-batch GD – use small subset each step. 
+5. Help model converge faster. 
+6. Need learning rate α control step. 
+7. Too high α overshoot, too low slow. 
+8. Used for neural network, regression. 
+9. Converge to global or local minima. 
+B-9. Explain Reinforcement Learning with MDP, Q-learning, and exploration
+exploitation. 
+Reinforcement learning use trial and error for learning best action. 
+1. MDP describe RL environment by state, action, reward. 
+2. Policy tell which action to take. 
+3. Value function show long term reward. 
+4. Q-learning update Q value with formula Q(s,a)=Q(s,a)+α[r+γmaxQ(s’,a’)
+Q(s,a)]. 
+5. Exploration mean try new thing. 
+6. Exploitation mean use known best action. 
+7. Balance both for good result. 
+8. Used in robot movement, games, self-driving car. 
+9. Learn without direct supervision. 

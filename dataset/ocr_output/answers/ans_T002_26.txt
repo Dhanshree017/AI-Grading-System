@@ -1,0 +1,179 @@
+ID-T002 
+Name: Nandini prakash Roll no: M00126 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine learning (ML) it is computer program that teaches itself from the data. It finds 
+the patterns and gets better at the task without someone writing the specific rules. 
+1. ML needs data to get experience and to improve its score. 
+2. The goal is not just to be right on old data, but to be right on new data 
+(generalization). 
+3. It is a part of the big AI thing that makes systems smart. 
+4. It is like fitting a line or a curve to many scattered points. 
+5. ML is used for prediction and making decisions. 
+A-3. What is the difference between supervised, unsupervised, and reinforcement learning? 
+The three learning types they are different in how the data is setup and what the model 
+tries to do. 
+1. Supervised has the answer key (labels). Goal is to predict a category or number. 
+2. Unsupervised has no answer key. Goal is to explore and group the data. 
+3. Reinforcement has no fixed data; it learns by getting rewards from a live environment. 
+4. Supervised is like predicting house price. Unsupervised is like finding customer types. 
+5. Reinforcement is the hardest because the environment is changing all the time. 
+A-4. What is the bias-variance tradeoff? 
+This is the big challenge in model making. You have to choose between two kinds of mistakes. 
+1. Bias is the error from a simple model. It is called underfitting because it doesn't learn 
+enough. 
+2. Variance is the error from a complex model. It is called overfitting because it learns 
+too much noise. 
+3. When you try to fix bias, the variance gets worse. This is the tradeoff. 
+4. The goal is to find the spot where the model is not too simple and not too 
+complicated. 
+5. It is a fundamental problem that always comes up in all machine learning projects. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is a failure where the model learns the random noise in the training data 
+instead of the true pattern. 
+1. It is when the model fits the training set too perfectly but fails badly on test set. 
+2. You can fix it by reducing the complexity of the model, like making a tree smaller. 
+3. You can collect more data, which dilutes the effect of the random noise. 
+4. You can use Regularization that adds a cost for big weights and simplifies the model. 
+5. You should always use a validation set to check for overfitting during the training 
+time. 
+A-6. What are a training set, validation set, and test set? 
+These are the three essential parts the data must be split into for honest evaluation of a 
+model. 
+1. The Training Set is the main chunk, used to fit the model and adjust the parameters. 
+2. The Validation Set is used mid-process to tune the settings (hyperparameters) and 
+avoid overfitting to the training data. 
+3. The Test Set is kept secret and used only one time for the final, true score of the 
+model. 
+4. They must be kept separate so the final score is reliable. 
+5. You cannot use the test set to make any choices about the model settings. 
+B) Any 4 out of following (20 Marks) 
+B-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a classifier that uses simple probability. It is based on the old Bayes' 
+Theorem math. 
+1. The model it calculates the probability of a data point belonging to a class given the 
+features. It is a likelihood test. 
+2. The naïve part is the big assumption that all the features are independent of each 
+other given the class. This is usually false but it makes the math easy. 
+3. Because of this simple assumption, the model it is extremely fast for training and 
+predicting, even with massive data. 
+4. The training is just counting how many times each feature appears with each class in 
+the data. No complex optimization is needed. 
+5. NB is used a lot for text classification like telling if an email is spam or finding 
+sentiment. 
+6. The problem of zero probability is fixed with Laplace Smoothing, which adds a little 
+number to all the counts. 
+7. NB is a very good baseline model because it is so quick and gives a decent score that 
+you can compare other models to. 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) it is a very good, strong model that uses many individual Decision 
+Trees to make the final prediction. 
+1. It is an ensemble method called Bagging because it combines the votes of many simpler 
+models to make a single, better model. 
+2. Each Decision Tree is trained on a different random sample of the training data 
+(bootstrap samples). 
+3. The most important thing is that at each split, the tree only considers a random 
+subset of the total features. This makes the trees different. 
+4. The main benefit is the huge reduction in variance. By averaging the many different 
+trees' mistakes, the final result is very stable. 
+5. For classification, the final answer is the majority vote from all the trees. For 
+regression, it is the average of all predictions. 
+6. RF is very robust to outliers and missing values, and it is a go-to model for most 
+real-world problems. 
+7. It also provides Feature Importance, which tells you which input features were most 
+useful in the prediction. 
+B-6. What are kernels in SVM? 
+Kernels in Support Vector Machine (SVM) they are special functions that let the SVM 
+separate data that is not straight (non-linear). 
+1. The Kernel Trick is the main idea. It lets the SVM find a curvy decision boundary in 
+the real data space, even though it is fundamentally a linear model. 
+2. The kernel it works by calculating the similarity between two points as if they were 
+in a higher dimension, without actually doing the complex math. 
+3. This math shortcut it saves a huge amount of computer time and memory. 
+4. The most common kernel is the RBF (Radial Basis Function) kernel, which is used for 
+the most complex, mixed-up data. 
+5. If the data is straight, you use the Linear Kernel. If it is a curve, you can use the 
+Polynomial Kernel. 
+6. The kernel it is a key setting (hyperparameter) that you must pick carefully because 
+it controls the model's flexibility. 
+7. Kernels are necessary to make SVM work on real-world curvy data. 
+B-7. What is cross-validation? 
+Cross-validation (CV) it is the best technique to test a model's score and make sure the 
+score is true for new data. 
+1. It gives a reliable score that is not based on luck from one random split of the data. 
+2. In k-Fold CV, the data is divided into k equal groups (folds), usually 5 or 10. 
+3. The model is trained k times. Each time, one different group is used for testing. 
+4. The final result is the average of all k scores. This average is the true performance. 
+5. CV is essential for tuning the hyperparameters because you can compare many settings 
+and pick the one that gets the best average CV score. 
+C) Attempt All (20 Marks) 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are totally different models that 
+just happen to both use the letter k. 
+1. Learning Type: KNN is a supervised classifier (needs labels). k-Means is an unsupervised 
+clusterer (needs no labels). 
+2. What k means: In KNN, the $k$ is how many neighbors vote on the prediction. In 
+k-Means, the $k$ is how many groups the computer must find. 
+3. Training: KNN is a lazy model; it just stores the data and does no work until 
+prediction time. k-Means is an active model; it moves cluster centers in a training 
+process. 
+4. Goal: KNN's goal is to predict the class of a new data point. k-Means' goal is to find 
+the natural groupings in the old data. 
+5. Data Prep: Both need the features to be scaled (normalized) because they both use 
+distance calculation. 
+6. High Dimension: KNN is very bad when there are too many features (curse of 
+dimensionality). 
+7. Output: KNN gives a prediction. k-Means gives cluster assignments to all the points. 
+8. They do not compete because they solve different problems. 
+C-3. What is gradient descent? 
+Gradient Descent it is the main engine for making models learn by finding the lowest error 
+spot on the error surface. 
+1. The job is to find the best weights that minimize the total cost (mistake) the model 
+makes. 
+2. It is an iterative process that starts randomly and walks down the steepest slope of 
+the cost function hill. 
+3. The gradient it is the slope that tells you the direction of the steepest climb. 
+4. The algorithm moves opposite to the gradient, which is the fastest way down. 
+5. The Learning Rate it is the step size. If it is too big, it will miss the bottom. If it 
+is too small, it will take forever to finish. 
+6. It is the way all big models like Neural Networks find their many weights. 
+7. The three main types are Batch Gradient Descent, Stochastic Gradient Descent, and 
+the popular Mini-Batch Gradient Descent. 
+8. It keeps updating the weights until it can't go any lower (convergence). 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent and Stochastic Gradient Descent they are two methods for using 
+the Gradient Descent engine, differing by how much data they use for one step. 
+1. Data Per Step: Batch Gradient Descent uses all of the training data to calculate one 
+gradient and do one step. Stochastic Gradient Descent uses only one single data point 
+to calculate one gradient and do one step. 
+2. Path: Batch Gradient Descent takes a smooth, straight path to the bottom because 
+the gradient is stable. Stochastic Gradient Descent takes a very noisy, jumping path 
+because the gradient changes with every single point. 
+3. Speed: Batch Gradient Descent is very slow per step. Stochastic Gradient Descent is 
+very fast per step. 
+4. Convergence: Batch Gradient Descent settles exactly at the minimum. Stochastic 
+Gradient Descent jumps around the minimum, but it is good for escaping shallow 
+valleys. 
+5. Memory: Batch Gradient Descent needs high memory to hold all the data. Stochastic 
+Gradient Descent needs low memory. 
+6. Updates: Batch Gradient Descent updates once per epoch. Stochastic Gradient Descent 
+updates many times per epoch. 
+7. Mini-Batch Gradient Descent it is the best choice, using a small group of data to 
+balance speed and stability. 
+C-5. Explain the Support Vector Machine (SVM) algorithm. 
+Support Vector Machine (SVM) it is a classifier model that draws the best separating line 
+(hyperplane) to make the largest gap between the classes. 
+1. The goal is to find the line that maximizes the margin, which is the widest empty 
+space between the nearest data points of different classes. 
+2. The data points closest to the margin they are called Support Vectors. Only these 
+few points matter for the line. 
+3. Because only SVs are used, the model is robust to outliers and is memory efficient. 
+4. For curvy data, the Kernel Trick is used to magically separate it. It moves the data 
+to a higher place where a straight line works. 
+5. The Kernel Trick it is a math shortcut that saves much computer time. 
+6. The Soft Margin it is used to allow some mistakes inside the gap for messy, real 
+data. 
+7. SVM is guaranteed to find the best solution because it is a convex optimization 
+problem. 

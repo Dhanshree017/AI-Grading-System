@@ -1,0 +1,37 @@
+ID-T024 
+Name: Rohit kapse Roll no: 10 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks each) 
+A-1. Explain the difference between supervised and unsupervised learning with suitable 
+real-world examples. 
+Supervised and unsupervised learning are two important types of machine learning based on 
+how data is given to the model. 
+Supervised learning is a type of learning where the data has labels. The model already knows 
+the correct answer during training. It learns the relationship between input and output. 
+Examples of supervised learning are email spam detection where emails are labeled as spam 
+or not spam, predicting house prices using previous data, and disease detection using patient 
+records. 
+Unsupervised learning is used when data does not have labels. The model tries to find 
+patterns by itself without knowing the correct answer. 
+Examples of unsupervised learning include customer grouping in shopping websites, 
+grouping similar news articles, and finding unusual activities in network traffic. 
+The main difference is that supervised learning uses labeled data while unsupervised learning 
+uses unlabeled data. 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Data preprocessing means preparing raw data so that it can be used for machine learning 
+models. 
+It is important because raw data usually contains missing values, errors, and noise. 
+Four common preprocessing steps are: 
+1. Handling missing values: Missing data is filled using mean or removed from the 
+dataset. 
+2. Data cleaning: Duplicate and incorrect values are removed to improve data quality. 
+3. Encoding: Categorical values like names or types are converted into numbers. 
+4. Feature scaling: Data values are brought to the same scale so that no feature 
+dominates. 
+These steps help the model to learn better and give correct results. 
+5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Model evaluation is the process of checking how well a machine learning model performs. 
+It helps to know whether the model predictions are correct or not. 

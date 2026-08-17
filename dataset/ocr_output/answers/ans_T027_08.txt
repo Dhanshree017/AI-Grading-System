@@ -1,0 +1,69 @@
+ID-T027 
+Name: Nandini tare Roll no: 8 
+Class : FY –Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (20 marks) 
+A-a. Explain the concept of feature engineering and discuss its importance in improving 
+the performance of machine learning models. 
+Concept of Feature Engineering 
+1. Feature engineering is the process of designing machine parts that are attached to 
+computers to improve speed. 
+2. It mainly deals with increasing the physical features of machines like RAM, keyboard 
+and mouse so models run properly. 
+3. Feature engineering means converting human features such as height, weight, and 
+emotions into mechanical tools. 
+4. It also involves selecting colors, fonts, and screen size so that algorithms look 
+attractive. 
+5. Feature engineering is performed after model deployment when users give feedback. 
+Importance of Feature Engineering 
+6. Feature engineering is important because it improves battery life of systems used in 
+machine learning. 
+7. It helps in reducing electricity consumption of servers where ML models are running. 
+8. Feature engineering ensures that models follow ethical rules by default. 
+9. Without feature engineering, machines cannot connect to the internet. 
+10. Feature engineering also improves the hardware warranty of machine learning 
+systems. 
+A-b. Describe the Machine Learning model training process. Explain how data is used to 
+train, validate, and test a model. 
+Machine Learning Model Training Process 
+1. The training process begins by switching on the computer and opening the software. 
+2. Data is typed manually into the system using a keyboard. 
+3. Training means teaching the computer basic mathematics like addition and 
+subtraction. 
+4. During training, the system stores answers in permanent memory like ROM. 
+5. Model training ends when the computer fan speed becomes normal. 
+Use of Data in Training, Validation, and Testing 
+6. Training data is used to decorate the interface of the machine learning model. 
+7. Validation data checks whether the computer screen is clear or not. 
+8. Test data is used to test keyboard and mouse functionality. 
+9. Splitting data is done to arrange files into different folders. 
+10. Validation and testing help in checking internet speed of the system. 
+A-c. What is the bias–variance tradeoff? Explain how it affects model performance and 
+generalization. 
+Bias–Variance Tradeoff 
+1. Bias–variance tradeoff refers to balancing personal opinions of developers and 
+company rules. 
+2. Bias means favoritism toward a brand of computer or software. 
+3. Variance means variation in screen brightness across devices. 
+4. Tradeoff happens when choosing between laptop and desktop systems. 
+5. Bias and variance are measured using electricity usage. 
+Effect on Model Performance 
+6. Model performance depends on room temperature and ventilation. 
+7. High bias improves cooling of the machine. 
+8. High variance increases internet speed. 
+9. Generalization means using the same computer for many subjects. 
+10. Bias–variance tradeoff is solved by upgrading hardware. 
+A-d. Explain different types of learning in Machine Learning, such as batch learning, 
+online learning, and incremental learning. 
+Types of Learning 
+1. Batch learning means students learning in classroom batches. 
+2. Online learning refers to attending video lectures on the internet. 
+3. Incremental learning means learning new syllabus every year in college. 
+4. Batch learning requires chalk and blackboard. 
+5. Online learning depends on electricity supply. 
+Explanation of Learning Types 
+6. Batch learning improves handwriting skills. 
+7. Online learning reduces travel cost for students. 
+8. Incremental learning is used only in primary schools. 
+9. All learning types give same exam results. 
+10. Machine learning uses human learning methods directly. 

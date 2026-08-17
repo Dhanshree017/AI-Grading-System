@@ -1,0 +1,138 @@
+ID-T013 
+Name : Rahul Awasthi Roll no: 17 
+Class : Fy Computer Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt Any 10 (3 Marks Each) 
+A-2. What is the difference between training error and test error? 
+Training error is the error the model makes when it predicts on the 
+same data that was used to train it. It tells us how well the model 
+learned the patterns in the training set. 
+Test error is the error the model makes on new unseen data. It tells us 
+how well the model can perform in real-world data. 
+A good model should have low training and low test errors. If training 
+error is low and test error is high, that means the model is overfitted. 
+A-4. What is the purpose of a confusion matrix in model evaluation? 
+A confusion matrix is a chart used to show how many predictions were 
+right or wrong in a classification model. It helps in understanding the 
+exact performance of a model. 
+It has four parts: 
+ True Positive (TP): Model predicts correct positive. 
+ True Negative (TN): Model predicts correct negative. 
+ False Positive (FP): Model predicts positive but it was negative. 
+ False Negative (FN): Model predicts negative but it was positive. 
+Using these, we can find Accuracy, Precision, Recall, and F1 Score. 
+A-5. Explain the term feature selection and why it is important. 
+Feature selection means picking only the most useful and important 
+features for the model. When data has too many columns or features, 
+not all are important for prediction. 
+It is important because it: 
+ Removes unnecessary data. 
+ Makes the model faster and easier to understand. 
+ Helps to avoid overfitting. 
+Example: In predicting house prices, features like “location” and 
+“area” are more useful than “house color”. 
+A-6. What are activation functions? Give examples of two commonly used 
+ones. 
+Activation functions decide how much signal from a neuron should pass 
+to the next layer in a neural network. They add non-linearity to the 
+model so that it can learn complex patterns. 
+Two common activation functions are: 
+1. ReLU (Rectified Linear Unit): Keeps only positive values and removes 
+negative ones. It helps models train faster. 
+2. Sigmoid Function: Converts any number to a value between 0 and 
+1. It’s used in binary classification. 
+A-7. Differentiate between batch learning and online learning. 
+Batch learning is when the model is trained using the whole dataset at 
+once. Once trained, it is not updated until retraining happens again. 
+Example: Training a model overnight on a big dataset. 
+Online learning is when the model learns continuously as new data 
+arrives. It updates its weights after each new example. Example: A stock 
+price predictor that updates with every new market value. 
+A-9. Define learning rate and explain what happens if it is too high or too 
+low. 
+Learning rate controls how fast a model updates its parameters in every 
+training step. 
+ If the learning rate is too high, the model can skip over the best 
+values and never reach the correct answer. 
+ If it is too low, the model will learn very slowly and take a lot of 
+time. 
+The best learning rate gives stable and quick training. 
+A-10. What is a loss function? Mention any two types of loss functions used 
+in ML. 
+A loss function measures how wrong a model’s prediction is compared to 
+the actual value. It helps the model to correct itself during training. 
+Two examples are: 
+ Mean Squared Error (MSE): Used for regression, calculates average 
+squared difference between predicted and actual. 
+ Cross Entropy Loss: Used for classification, measures the difference 
+between predicted probabilities and true labels. 
+A-11. Explain cross-validation and its advantage over a single train-test 
+split. 
+Cross-validation divides data into many parts or folds. Each time, one 
+part is used for testing and others for training. The final result is the 
+average of all tests. 
+This gives a better and fair evaluation because every data point gets a 
+chance to be in training and testing. It also prevents depending on one 
+random split which might not represent the data properly. 
+A-12. Define unsupervised learning and give two examples of algorithms 
+used in it. 
+Unsupervised learning is when the data has no output label and the 
+algorithm has to find patterns or structures by itself. 
+Two examples are: 
+ K-Means Clustering: Groups similar data points into clusters. 
+ Principal Component Analysis (PCA): Reduces the number of 
+variables while keeping important information. 
+SECTION B – Attempt Any 4 (5 Marks Each) 
+B-1. What is Feature Engineering? Discuss its role and techniques like 
+encoding, scaling, and polynomial feature generation. 
+Feature engineering means preparing and improving data features before 
+giving them to a model. It changes raw data into more useful data that 
+helps in better training. 
+Role of feature engineering: 
+ Helps the model understand data better. 
+ Reduces noise and makes patterns visible. 
+ Improves prediction accuracy. 
+Techniques: 
+1. Encoding: Converts text or categories into numbers. Example: One
+hot or label encoding. 
+2. Scaling: Adjusts numeric values to a similar scale so that big 
+numbers don’t dominate. Example: Normalization or 
+Standardization. 
+3. Polynomial Features: Creates new columns by multiplying or raising 
+existing features to capture complex relations. Example: Adding 
+x2x^2x2 or xyxyxy. 
+B-2. Differentiate between Generative and Discriminative Models with 
+examples. 
+Generative models learn how data is made, i.e., they study the joint 
+probability of data and labels. Discriminative models learn how to 
+separate or classify data by finding decision boundaries. 
+Examples: 
+ Generative Models: Naïve Bayes, Gaussian Mixture Models, GANs. 
+ Discriminative Models: Logistic Regression, SVM, Neural Networks. 
+Generative models can also create new examples of data, while 
+discriminative models only classify or predict existing ones. 
+B-3. Explain K-Means Clustering algorithm with step-by-step working and 
+advantages. 
+K-Means is an unsupervised learning algorithm that groups similar data 
+points into clusters. 
+Steps: 
+1. Choose the number of clusters K. 
+2. Pick random points as centroids. 
+3. Assign each data point to the nearest centroid. 
+4. Recalculate new centroids based on current clusters. 
+5. Repeat until centroids stop changing. 
+Advantages: 
+ Simple and fast to use. 
+ Works well on large datasets. 
+ Easy to interpret visually. 
+B-5. Explain Bias–Variance Tradeoff. Show how it impacts model 
+generalization. 
+Bias–Variance Tradeoff is about finding balance between two types of 
+errors: 
+ High Bias (Underfitting): Model is too simple and cannot learn 
+patterns. 
+ High Variance (Overfitting): Model is too complex and learns noise. 
+A good model should have low bias and low variance. 
+For example, linear regression has high bias, while a deep decision 
+tree has high variance. Balancing both helps in better generalization 
+to unseen data. 

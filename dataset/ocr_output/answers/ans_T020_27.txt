@@ -1,0 +1,120 @@
+ID-T020 
+Name: Madhuri donde Roll no: 27 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A —  
+A-a) Explain how data drift and concept drift affect the long-term performance of 
+machine learning models. Discuss the different types of drift and practical strategies to 
+detect and handle them. 
+Data drift and concept drift make model not work properly after some time because data and 
+rules change. Data drift happen when the input features distribution change slowly or fast. 
+For example people buy different things than before. Concept drift happen when relation 
+between input and output change like old pattern of loan approval is not same now. Types of 
+drift include sudden change, gradual change, recurring patterns and step by step drift. To 
+detect drift, we can check model performance or compare feature distribution over time. 
+Handling drift sometimes need retraining, adding new data, online learning or mixing old 
+and new models. Some people also just restart system but it not always help. 
+A-b) Discuss the role of embedding techniques in machine learning. Explain how text, 
+images, or categorical data can be transformed into meaningful representations for 
+models. 
+Embeddings are a core machine learning technique that transforms discrete data like text, 
+images, or categories into continuous, lower-dimensional vectors, capturing semantic 
+relationships where similar items are represented by vectors close to each other in space. 
+This transformation allows models to process complex data numerically and efficiently, 
+improving performance in tasks like natural language processing, image recognition, and 
+recommendation systems.  
+Role of embeddings in machine learning 
+ Data transformation: Embeddings convert high-dimensional, non-numeric data (like words 
+or images) into a dense, numerical format that machine learning models can process. 
+ Dimensionality reduction: They reduce the complexity of data by mapping it to a smaller, 
+more manageable vector space, which helps models learn more efficiently and avoids the 
+"curse of dimensionality". 
+ Capturing relationships: Embeddings learn to represent the meaning or characteristics of 
+data, so that items with similar meanings (e.g., "king" and "queen" for words, or visually 
+similar photos) are mapped to nearby vectors in the embedding space. 
+ Foundation for AI: They are a foundational component for many modern AI applications, 
+enabling computers to understand relationships between objects and perform complex tasks 
+like finding similar documents or generating recommendations.  
+How different data types are transformed 
+ Text: 
+o Process: Words or phrases are converted into vectors. Early methods like Word2Vec learn 
+embeddings by considering word co-occurrence. More advanced techniques 
+like BERT generate contextual embeddings, where the vector for a word changes based on 
+its surrounding words in a sentence. 
+o Result: Similar words will have similar vector representations. For example, the embeddings 
+for "dog" and "puppy" would be close together. 
+ Images: 
+o Process: Images are often broken down into smaller patches or analyzed directly by models 
+like Convolutional Neural Networks (CNNs). The output from a later layer in the network, 
+which captures high-level features, is used as the image's embedding. 
+o Result: The resulting vector represents the visual essence of the image. The distance 
+between two image embeddings indicates their visual similarity. 
+ Categorical Data: 
+o Process: Each unique category or item (e.g., a user ID, product ID, or city) is assigned a 
+unique vector. These vectors are not arbitrary; they are learned and adjusted during the 
+training process so that similar categories are positioned closer in the embedding space. 
+o Result: The vectors capture relationships, such as which products are often bought together 
+or which users have similar tastes.  
+A-d) Explain the concept of model monitoring in ML systems. What parameters are 
+tracked, and why is continuous monitoring essential for deployed models? 
+Model monitoring means checking model performance after deployment. Metrics tracked are 
+accuracy, error rate, drift in features, missing values, latency, throughput, and fairness. 
+Monitoring continuously is important because model can fail silently if input change, data 
+quality drop, or environment change. Alerts and retraining can be triggered based on 
+monitoring results. Without monitoring model may give wrong output for long time. 
+A-e) Discuss the difference between batch learning and online learning. Explain the 
+scenarios where online learning is preferred and the challenges involved. 
+Batch learning train model on full dataset at once. Online learning update model one by one 
+or in small batches. Online learning is useful when data is coming continuously like stock 
+prices, click streams or sensors. Challenges of online learning include forgetting old 
+knowledge, noisy update, harder evaluation and stability problem. Batch learning is stable 
+but slow. Online learning adapt quickly but may be unstable. 
+A-f) Explain how explainable AI (XAI) methods help build trust in ML systems. Discuss 
+any real-world use cases where XAI is crucial for decision-making. 
+XAI explain why model gives particular output. Methods include feature importance, SHAP, 
+LIME, attention maps and counterfactuals. Helps user trust because they see reasoning. In 
+healthcare XAI explain diagnosis, in finance for credit scoring, in fraud detection to verify 
+predictions, in recruitment to show why candidate selected. Helps debugging and checking 
+for bias. Some visualization tools also used to show reasoning to non-technical people. 
+SECTION B —  
+B-a) What is feature leakage (data leakage) in machine learning? Explain its causes and 
+how it impacts model performance. 
+Feature leakage is when model sees data that it should not see during training. This make 
+model look very good in training and testing but fail in real use. Causes include using 
+features from future, wrong preprocessing, group leakage and target derived features. Model 
+becomes overconfident and make wrong prediction in production. Fixing leakage need 
+proper split and pipeline design. 
+B-c) Describe how transfer learning improves model development. Mention scenarios 
+where transfer learning is especially useful. 
+Transfer learning use pretrained model knowledge for new task. This reduce training time 
+and labeled data need. Pretrained model already learn features like edges, shapes or language 
+patterns. Fine-tuning on new dataset adapt model to new task. Useful when dataset small, 
+problem similar to pretrained task, like medical images, NLP tasks, object recognition or 
+recommendation systems. Sometimes transfer learning not fully help if domain very 
+different. 
+B-d) What is the purpose of hyperparameter search strategies like Grid Search and 
+Random Search? Compare them briefly. 
+The purpose of hyperparameter search strategies like Grid Search and Random Search is to 
+find the optimal hyperparameters for a machine learning model by testing different 
+combinations to improve its performance, accuracy, and generalization. Grid Search is an 
+exhaustive method that tests every single combination within a defined grid, while Random 
+Search randomly samples a specified number of combinations from the search space. 
+Random Search is often more efficient, especially in high-dimensional or continuous search 
+spaces, because it can explore more unique values for each hyperparameter and is less likely 
+to waste time on uninformative grid points.  
+Grid Search 
+ How it works: Tests every single combination of hyperparameters within a predefined grid 
+of values. 
+ Pros: Guarantees finding the best combination from the specified grid. 
+ Cons: Can be computationally expensive and inefficient, especially as the number of 
+hyperparameters increases, because it tests all combinations even if many are unproductive.  
+Random Search 
+ How it works: Randomly samples a fixed number of hyperparameter combinations from a 
+specified search space. 
+ Pros: More efficient in terms of computation and time, especially with large search spaces, 
+because it doesn't waste time on the least important hyperparameters. It can discover better 
+solutions than Grid Search by exploring more diverse values for a smaller number of 
+hyperparameters. 
+ Cons: Does not guarantee finding the absolute best combination, though it is likely to find a 
+very good one if enough iterations are performed.  
+. 

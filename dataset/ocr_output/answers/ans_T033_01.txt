@@ -1,0 +1,74 @@
+ID-T033 
+Name: Revathi Iyer Roll no: 1  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+Attempt 4 from the following (20 marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how incorrect 
+assumptions can affect model behavior and decision-making.  
+Assumptions in machine learning, often referred to as Inductive Bias, are the prior premises an algorithm 
+uses to predict outputs for inputs it has never encountered. These assumptions are essential because, without 
+them, a learner would have no basis for generalization.  
+• Role of Assumptions: Algorithms assume a specific structure in the data to make learning 
+computationally feasible. For example, Linear Regression assumes a linear relationship between 
+variables ($y = mx + c$), while Naive Bayes assumes that all input features are independent of each 
+other. These "short-cuts" allow the model to search through a limited Hypothesis Space rather than 
+an infinite one.  
+• Impact of Incorrect Assumptions: When the underlying reality of the data contradicts the model's 
+assumptions, it leads to Model Misspecification.  
+o High Bias (Underfitting): If you use a linear model for data that is inherently non-linear 
+(like circular or wave patterns), the model will consistently miss the trend.  
+o Poor Decision-Making: In real-world applications, such as credit scoring, an incorrect 
+assumption about the relationship between "income" and "risk" could lead to a system that 
+systematically denies loans to qualified individuals, resulting in lost business and unfair bias.  
+• Analysis: An algorithm is only as good as its bias. If the bias is too strong (too many assumptions), 
+the model is rigid; if it is too weak (no assumptions), the model cannot learn at all.  
+A-2. Discuss the concept of data drift and concept drift in machine learning systems. Explain their 
+impact on long-term model performance.  
+Machine learning models are usually trained on a "snapshot" of the world, but the real world is 
+nonstationary. This leads to two types of "drift":  
+• Data Drift (Covariate Shift): This occurs when the distribution of the input data ($P(X)$) changes 
+over time, even if the relationship between input and output remains the same.  
+o Example: A facial recognition system trained on young faces may perform poorly as the 
+target population ages. The "input" has changed.  
+• Concept Drift: This is a more fundamental change where the statistical relationship between the 
+input and the target ($P(y|X)$) itself changes.  
+o Example: In fraud detection, what looked like "normal" spending behavior in 2019 might 
+have been flagged as "suspicious" in 2024 because of changing consumer habits or new 
+scamming techniques.  
+• Long-term Impact: Drift leads to Model Decay. The model’s accuracy drops silently because the  
+A-3. 
+"rules" it learned during training are no longer true. In long-term performance, this results in "Silent 
+Failure," where the model continues to give confident predictions that are increasingly incorrect, 
+requiring constant monitoring and periodic retraining to maintain relevance.  
+Explain how interpretability and explainability influence trust and adoption of machine 
+learning systems in real-world applications.  
+As machine learning moves into high-stakes areas like healthcare and criminal justice, the "Black Box" 
+nature of complex models (like Deep Learning) becomes a barrier to adoption.  
+• Interpretability: This refers to the degree to which a human can understand the internal mechanics 
+of a model (e.g., looking at a Decision Tree and seeing exactly which "if-then" rule was followed).  
+• Explainability (XAI): This refers to techniques (like SHAP or LIME) that provide a reason for a 
+specific output after it has been generated. For instance, "The loan was denied because the debt
+toincome ratio was too high."  
+• Trust and Adoption: * Safety: In medicine, a doctor will not trust a diagnosis unless they can see 
+which features (like a specific shadow on an X-ray) the AI used.  
+o Legal Compliance: Regulations like GDPR give users the "Right to Explanation." Without 
+explainability, a company cannot legally deploy certain AI models.  
+o Bias Detection: Explainability allows developers to see if a model is making decisions based 
+on "protected" categories (like race or gender), allowing them to fix unfair systems before 
+they cause harm.  
+A-4. 
+Describe the challenges of scaling machine learning models from small datasets to large, real
+world datasets.  
+Scaling an ML model from a small pilot project to a large-scale real-world application is not a simple linear 
+process; it introduces several "bottlenecks."  
+• Computational Complexity: Some algorithms that work well on 1,000 rows (like certain types of 
+clustering or SVMs) have $O(n^2)$ or $O(n^3)$ complexity. This means as the data grows 10x, the 
+time needed grows 100x or 1,000x, making them impossible to run on millions of rows.  
+• Data Quality Dilution: Small datasets are often hand-picked and clean. Large datasets are usually 
+"noisy," containing many missing values, duplicates, and incorrect entries that require massive 
+infrastructure for cleaning.  
+• Infrastructure & Latency: Real-world scaling requires moving from a single laptop to distributed 
+clusters (like Spark or AWS). Managing data "sharding" and ensuring the model can give a 
+prediction in milliseconds (latency) is a major engineering challenge.  
+• Storage Costs: Storing and versioning massive amounts of data and model weights requires 
+significant financial investment and complex database management.  

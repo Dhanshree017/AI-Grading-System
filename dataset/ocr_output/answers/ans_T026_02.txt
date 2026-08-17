@@ -1,0 +1,90 @@
+ID-T026 
+Name: Komal Goyal Roll no: 2 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (Each 8 Marks) 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of bias and their 
+impact on model generalization. 
+Concept of Learning Bias 
+Learning bias in machine learning refers to systematic errors that occur when a model consistently learns 
+incorrect or incomplete patterns from training data due to limitations in data, algorithm design, or 
+assumptions. 
+Sources of Learning Bias 
+1. Data Bias – Training data may not represent the real-world population accurately. 
+2. Sampling Bias – Certain classes or groups are overrepresented or underrepresented. 
+3. Measurement Bias – Errors introduced during data collection or feature measurement. 
+4. Labeling Bias – Incorrect or subjective labeling by humans. 
+5. Algorithmic Bias – Bias caused by the learning algorithm’s internal design. 
+6. Historical Bias – Bias inherited from past social or institutional practices. 
+7. Feature Bias – Selection of biased or incomplete features. 
+Impact on Model Generalization 
+8. Models may perform well on training data but fail on unseen data. 
+9. Biased models often produce unfair or unreliable predictions. 
+10. Learning bias reduces accuracy, robustness, and trustworthiness of ML systems. 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Role of Assumptions in Machine Learning 
+Assumptions are prior beliefs made by learning algorithms about the structure, distribution, or relationships 
+within data to make learning feasible. 
+Types of Common Assumptions 
+1. Linearity Assumption – Linear models assume a linear relationship between inputs and outputs. 
+2. Feature Independence Assumption – Naive Bayes assumes features are independent. 
+3. Data Distribution Assumption – Some algorithms assume normal or specific distributions. 
+4. Stationarity Assumption – Data distribution remains stable over time. 
+Influence on Model Selection and Performance 
+5. Correct assumptions simplify learning and improve efficiency. 
+6. Wrong assumptions lead to underfitting or poor accuracy. 
+7. Simple models make strong assumptions and have higher bias. 
+8. Complex models make fewer assumptions but risk overfitting. 
+9. Assumptions guide the choice of algorithm for a given problem. 
+10. Understanding assumptions helps achieve better generalization and performance. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that performs well 
+on training data may fail on unseen data. 
+Concept of Generalization 
+Generalization is the ability of a machine learning model to apply learned patterns from training data to new, 
+unseen data accurately. 
+Reasons for Poor Generalization 
+1. Overfitting – Model memorizes training data instead of learning general patterns. 
+2. Excessive Model Complexity – Complex models capture noise as information. 
+3. Insufficient or Limited Training Data – Model fails to learn true patterns. 
+4. Noise in Training Data – Noisy data misleads the learning process. 
+5. Poor Feature Selection – Irrelevant features harm prediction quality. 
+6. Lack of Regularization – No control over model complexity. 
+7. Data Leakage – Test information leaks into training data. 
+8. Distribution Shift – Training and real-world data differ. 
+9. High Variance – Model becomes sensitive to small data changes. 
+10. Proper generalization requires balanced complexity and quality data. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, missing 
+values, and inconsistencies affect learning outcomes. 
+Importance of Data Quality 
+Data quality is critical in machine learning as models learn patterns directly from data; poor-quality data 
+leads to unreliable predictions. 
+Effect of Noise in Data 
+1. Noise introduces random errors that confuse the learning algorithm. 
+2. Models may learn incorrect patterns from noisy data. 
+Effect of Missing Values 
+3. Missing data reduces the completeness of training information. 
+4. It can introduce bias if missingness is not random. 
+Effect of Data Inconsistencies 
+5. Inconsistent data values reduce model reliability. 
+6. Conflicting records degrade prediction accuracy. 
+Overall Impact on Learning Outcomes 
+7. Poor data quality reduces accuracy and robustness. 
+8. Models may overfit or underfit. 
+9. Generalization performance declines. 
+10. High-quality data leads to stable and trustworthy ML systems. 
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss their 
+characteristics, strengths, and limitations in theory. 
+Shallow Learning Approaches 
+1. Use models with one or few layers. 
+2. Require manual feature extraction. 
+3. Are easier to interpret and explain. 
+4. Train faster with limited data. 
+Deep Learning Approaches 
+5. Use multi-layer neural networks. 
+6. Automatically learn hierarchical features. 
+7. Require large datasets and high computation. 
+8. Perform well on complex tasks like vision and NLP. 
+Strengths and Limitations 
+9. Shallow models lack ability to capture complex patterns. 
+10. Deep models achieve high accuracy but lack transparency and interpretability. 

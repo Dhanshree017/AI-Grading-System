@@ -1,0 +1,295 @@
+ID-T016 
+Name: sanchita dey Roll no: 27 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A –  
+Attempt any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep 
+learning. 
+Data augmentation is a technique used in machine learning, especially deep learning, to artificially increase 
+the size, variety, and diversity of training datasets by applying modifications to existing data samples. 
+Instead of collecting new data—which can be expensive and time-consuming—augmentation creates 
+multiple transformed versions of the same data. These transformations are designed to preserve the original 
+label while providing new variations for the model to learn from. 
+In computer vision, augmentation includes transformations such as rotation, cropping, flipping, scaling, 
+brightness changes, noise insertion, color jittering, affine transformations, and perspective warping. In NLP, 
+augmentation includes synonym replacement, back-translation, random deletion, and word swapping. For 
+audio datasets, augmentation may include pitch shifting, time stretching, noise addition, or equalization. 
+The importance of data augmentation lies in its ability to improve generalization. Deep learning models, 
+especially large neural networks, often overfit when the dataset is small or lacks diversity. Overfitting 
+happens when the model memorizes training samples instead of learning generalizable patterns. 
+Augmentation forces the model to learn robust representations by exposing it to varied input conditions. For 
+example, a model trained on rotated or scaled images becomes invariant to orientation and size changes in 
+real-world scenarios. Augmentation also introduces regularization since the model can no longer rely on 
+exact pixel patterns. 
+In many real applications—like medical imaging, satellite image analysis, and autonomous driving—
+collecting millions of labeled examples is not feasible. Augmentation becomes essential in ensuring that the 
+model performs well in unseen situations. Modern training pipelines for CNNs almost always include 
+augmentation as a default step. With techniques like Mixup and CutMix, augmentation can even blend 
+multiple images, allowing the model to learn smoother decision boundaries. 
+Thus, data augmentation enhances dataset richness, reduces overfitting, improves generalization, and 
+increases robustness, making it a crucial component of deep learning workflows. 
+A-2. Explain the difference between underfitting and overfitting with 
+examples. 
+Underfitting and overfitting describe two opposite issues that arise during model training when the learned 
+pattern fails to generalize to new data. They are central concepts in understanding model capacity, training 
+quality, and generalization behavior. 
+Underfitting occurs when a model is too simple, too restricted, or insufficiently trained to capture the 
+underlying structure of the data. It learns only coarse patterns and fails to perform well on both training and 
+testing sets. For example, fitting a straight line to a dataset that clearly follows a nonlinear curve leads to 
+underfitting, because the model complexity is too low. A shallow model, limited features, or insufficient 
+training iterations can cause this. An underfit decision tree that stops splitting too early or a neural network 
+with too few layers also shows this behavior. Underfitting typically produces both high bias and high error. 
+A-3. What is a decision boundary? Give an intuitive explanation with 
+an example. 
+A decision boundary is a surface—such as a line, curve, or hyperplane—that separates data points of 
+different classes in the feature space. It represents the region where a model decides how to classify new 
+inputs. Every classification algorithm implicitly or explicitly learns such a boundary based on training data. 
+Intuitively, think of a 2D plane where each point represents a sample with two features. If we have two 
+classes, say red and blue points, the classifier must “draw a boundary” that splits the red points from the blue 
+ones. For simple linear models like logistic regression or linear SVM, the decision boundary is typically a 
+straight line (or a hyperplane in higher dimensions). For nonlinear problems, algorithms such as kernel 
+SVMs or neural networks produce curved or highly irregular boundaries that adapt to the shape of data. 
+For example, suppose we are classifying emails as spam or not spam using only two features: frequency of 
+suspicious words and email length. Plotting these values for all emails may show two clusters. A classifier 
+might learn a boundary such as a slanted line that divides the clusters. Any new email falling on one side of 
+the line is predicted as spam; the other side is non-spam. 
+In neural networks, especially deep ones, decision boundaries can be extremely complex and high
+dimensional. They consist of multiple interconnected linear segments formed by layers of neurons. This 
+flexibility allows deep models to solve complicated classification tasks like object recognition. 
+Thus, a decision boundary is the geometric separation learned by a classifier that determines the predicted 
+class for any new input, making it a fundamental concept for understanding how classification models 
+behave. 
+A-4. Explain dropout and how it helps in regularizing neural 
+networks. 
+Dropout is a widely used regularization technique in neural networks that helps prevent overfitting by 
+randomly “dropping” or disabling a subset of neurons during training. The idea is that at each training 
+iteration, certain neurons are turned off with a fixed probability, meaning they do not contribute to forward 
+or backward propagation. The network therefore cannot rely on specific neurons or connections and must 
+develop more distributed and robust representations. 
+During training, if dropout rate is 0.5, for example, roughly half of the neurons in a layer are temporarily 
+removed. This forces the network to learn redundant paths so that information is not dependent on a small 
+subset of parameters. At inference time (testing), dropout is not applied; instead, the weights are scaled so 
+that the output remains consistent with the training distribution. 
+Dropout acts like an ensemble method. Since different subsets of neurons are active in different iterations, 
+training resembles training many smaller networks that share weights. The final model is effectively an 
+average of these subnetworks, which leads to improved generalization. 
+Without dropout, deep networks can easily memorize training data, especially when datasets are small or 
+models are very deep. This results in low training loss but high testing error. Dropout reduces co
+adaptation—where neurons depend excessively on each other—and encourages independence and 
+robustness in learned representations. 
+Another benefit is that dropout introduces noise into the network, which helps smooth the decision boundary 
+and reduces sensitivity to small input changes. Variants like SpatialDropout (for CNNs) and DropConnect 
+(drop weights instead of neurons) extend this idea further. 
+Overall, dropout is a simple yet powerful regularization technique that improves neural network 
+performance, especially when training data is limited or when models have large capacity. 
+SECTION B – TOPPER ANSWERS (Long, Fully Correct, Highly Detailed) 
+Attempt any 4 (20 marks each) 
+B-1. Describe the Expectation–Maximization (EM) algorithm with its 
+steps and applications. 
+The Expectation–Maximization (EM) algorithm is an iterative optimization technique used for estimating 
+parameters in statistical models where the data contains hidden, missing, or latent variables. Many 
+probabilistic models cannot be solved analytically because part of the data is unobserved, making the 
+likelihood function difficult or impossible to maximize directly. EM addresses this by alternating between 
+estimating missing information and optimizing parameters. 
+At its core, EM maximizes the likelihood of the observed data by leveraging the complete-data likelihood—
+which includes both observed and hidden variables. The algorithm proceeds in two main steps, repeated 
+until convergence 
+Convergence 
+The E and M steps are repeated until the parameters stop changing significantly. Although the EM algorithm 
+is guaranteed to increase (or maintain) the likelihood at each step, it may converge to local maxima instead 
+of a global maximum. 
+B-2. Explain Dimensionality Reduction and compare PCA with 
+Linear Discriminant Analysis (LDA). 
+Dimensionality reduction refers to the process of transforming data from a high-dimensional space into a 
+lower-dimensional one while preserving as much relevant information as possible. High-dimensional data 
+often contains redundancy, noise, and correlated features, which can lead to issues such as overfitting, 
+increased computational cost, and poor visualization. Dimensionality reduction helps simplify the model, 
+improve generalization, and speed up learning. 
+Two major techniques for dimensionality reduction are Principal Component Analysis (PCA) and Linear 
+Discriminant Analysis (LDA). 
+Principal Component Analysis (PCA) 
+PCA is an unsupervised linear dimensionality reduction method. It identifies directions, called principal 
+components, along which the data has maximum variance. These components represent the most 
+informative axes of the dataset. 
+Key ideas of PCA: 
+ Computes the covariance matrix of data. 
+ Finds eigenvalues and eigenvectors to determine directions of maximal variance. 
+ Projects data onto top components with highest eigenvalues. 
+PCA focuses solely on preserving variance and capturing structure, without considering class labels. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+Generative Adversarial Networks (GANs) are deep learning models designed to generate new data samples 
+that resemble a given training dataset. Introduced by Ian Goodfellow in 2014, GANs use a unique two
+network adversarial structure inspired by game theory. 
+A GAN consists of two neural networks trained simultaneously: 
+(A) Generator (G) 
+The generator creates synthetic data samples. It takes random noise (e.g., Gaussian noise vector) as input 
+and transforms it into a data sample resembling the real dataset. Its goal is to fool the discriminator into 
+believing its output is real. 
+(B) Discriminator (D) 
+The discriminator is a binary classifier that distinguishes real data from fake (generated) data. It outputs a 
+probability indicating whether the input is genuine. 
+B-4. Explain the concept of Markov Decision Processes (MDP) in 
+reinforcement learning and describe each component. 
+A Markov Decision Process (MDP) provides a mathematical framework for modeling sequential decision
+making problems where outcomes are partly random and partly controlled by an agent. MDPs form the 
+foundation of reinforcement learning algorithms, as they describe how agents interact with environments 
+through states, actions, and rewards. 
+An MDP satisfies the Markov Property, meaning the future depends only on the current state, not on the 
+full history. 
+Formally, an MDP is defined by the tuple (S, A, P, R, γ): 
+1. States (S) 
+The set of all possible situations the agent can be in. 
+Example: In a grid world, each cell is a state. 
+2. Actions (A) 
+The set of all possible moves the agent can take. 
+Example: up, down, left, right. 
+3. Transition Probability Function (P) 
+Defines the probability of reaching a new state s′s's′ when taking action aaa in state sss: 
+P(s′∣s,a)P(s'|s, a)P(s′∣s,a)  
+This models the environment’s dynamics. 
+4. Reward Function (R) 
+Provides the immediate reward for transitioning from one state to another via an action. 
+It defines the desirability of outcomes. 
+5. Discount Factor (γ) 
+A value between 0 and 1 that determines how much future rewards matter. 
+Higher γ emphasizes long-term rewards. 
+Why MDPs Are Important 
+ They provide a structured way to define RL problems. 
+ Algorithms like Value Iteration, Policy Iteration, Q-Learning, and Deep Q-Networks all operate on 
+MDP formulations. 
+ MDPs help compute optimal policies that maximize expected cumulative reward. 
+B-5. Explain Time Series Forecasting using ML models such as 
+ARIMA, LSTMs, and Prophet. 
+Time series forecasting involves predicting future values based on historically observed data. It is used 
+across finance, weather prediction, sales forecasting, sensor analysis, and more. Different ML and statistical 
+methods handle seasonality, trends, and nonlinear patterns differently. 
+(B) LSTMs (Long Short-Term Memory Networks) 
+LSTMs are deep learning models specifically designed to handle sequential data. 
+They capture: 
+ Long-term dependencies 
+ Nonlinear patterns 
+ Variable-length sequences 
+LSTMs use memory cells and gates (input, forget, output) to control information flow. They outperform 
+statistical models when data contains nonlinear structure, abrupt transitions, or multivariate dependencies. 
+(C) Facebook Prophet 
+Prophet is an additive model designed for business forecasting. It decomposes time series into: 
+ Trend 
+ Seasonality 
+ Holiday effects 
+Prophet is robust to missing values, outliers, and long seasonal patterns. It is easy to tune and works well for 
+daily, weekly, and yearly data. 
+Summary 
+ ARIMA → best for linear stationary series. 
+ LSTMs → best for nonlinear, complex temporal patterns. 
+ Prophet → best for business settings with strong trend + seasonality components. 
+These models complement each other and are selected based on data characteristics and forecasting needs. 
+SECTION C –  
+Attempt any 5 (10 marks each) 
+C-1. Define supervised learning with an example. 
+Supervised learning is a machine learning approach where a model learns from labeled data. In labeled data, 
+each input is paired with a correct output, allowing the algorithm to understand the relationship between 
+features and the target variable. The main idea is to learn a mapping function f(x)→yf(x) \rightarrow 
+yf(x)→y so that the model can predict outputs for new unseen inputs. 
+Supervised learning can be divided into: 
+ Classification: when the output variable is categorical. 
+ Regression: when the output variable is continuous. 
+How supervised learning works: 
+1. A dataset containing input features and corresponding labels is provided. 
+2. The model learns patterns from this data using algorithms such as Decision Trees, Logistic 
+Regression, SVM, Neural Networks, etc. 
+3. It then adjusts internal parameters to minimize errors. 
+4. After training, the model is tested on unseen data to check its accuracy. 
+Example: 
+Spam email detection is a classic example. 
+ Inputs: email text features 
+ Output: “spam” or “not spam” label 
+The model learns from thousands of labeled emails and becomes capable of predicting whether a new email 
+is spam. 
+Supervised learning is widely used in finance, healthcare, speech recognition, and recommendation systems. 
+C-2. What is precision in classification metrics? 
+Precision is a performance metric used in binary and multi-class classification that measures the accuracy of 
+positive predictions. It answers the question: “Out of all the samples the model predicted as positive, how 
+many were actually positive?” 
+Precision is important especially in scenarios where false positives are costly. 
+Mathematical definition: 
+Precision=TPTP+FP\text{Precision} = \frac{TP}{TP + FP}Precision=TP+FPTP  
+Where: 
+ TP (True Positives): correct positive predictions 
+ FP (False Positives): incorrect positive predictions 
+Why precision matters: 
+ In medical diagnosis (e.g., cancer detection), a false positive may cause unnecessary stress and 
+treatment. 
+ In spam filtering, predicting a normal mail as spam is undesirable. 
+Precision provides better insight in imbalanced datasets where one class dominates. 
+Example: 
+If a model predicts 50 emails as spam and 40 are actually spam, precision = 40 / 50 = 0.8 (80%). 
+High precision means fewer false alarms. 
+C-3. Explain the term kernel function. 
+A kernel function is a mathematical function used in kernel-based algorithms like Support Vector Machines 
+(SVMs) to transform data into a higher-dimensional space without explicitly computing the coordinates in 
+that space. This technique enables models to learn patterns that are not linearly separable in the original 
+feature space. 
+Key idea: 
+Instead of computing a mapping ϕ(x)\phi(x)ϕ(x), we compute a kernel function K(xi,xj)K(x_i, x_j)K(xi,xj) 
+that represents the inner product of two vectors in higher-dimensional space. 
+Why kernels are useful: 
+ They allow SVMs to construct nonlinear decision boundaries. 
+ They avoid the computational cost of high-dimensional feature transformations. 
+ They work well even when data has complex relationships. 
+Common kernel functions: 
+1. Linear Kernel: 
+o K(xi,xj)=xi⋅xjK(x_i, x_j) = x_i \cdot x_jK(xi,xj)=xi⋅xj 
+o Used when data is linearly separable. 
+2. Polynomial Kernel: 
+o K(xi,xj)=(xi⋅xj+c)dK(x_i, x_j) = (x_i \cdot x_j + c)^dK(xi,xj)=(xi⋅xj+c)d 
+o Captures polynomial relationships. 
+3. RBF (Gaussian) Kernel: 
+o K(xi,xj)=exp⁡(−γ∣∣xi−xj∣∣2)K(x_i, x_j) = \exp(-\gamma ||x_i - x_j||^2 )K(xi,xj)=exp(−γ∣∣xi
+−xj∣∣2) 
+o Handles complex nonlinear decision boundaries. 
+Applications: 
+ Image classification 
+ Bioinformatics 
+ Text categorization 
+Kernel functions increase model flexibility without increasing computational burden. 
+C-4. Define feature scaling. 
+Feature scaling is a preprocessing technique used to normalize or standardize the range of input features so 
+that all variables contribute equally to model training. It is especially important in algorithms that rely on 
+distance, gradient descent, or magnitude-based calculations. 
+Why feature scaling is needed: 
+ Features with large numerical ranges dominate those with small ranges. 
+ Gradient descent converges faster when features share similar scales. 
+ Distance-based models such as KNN or K-means produce more accurate results. 
+ Algorithms like SVMs and Neural Networks become more stable. 
+Two main types of feature scaling: 
+1. Normalization (Min–Max Scaling): 
+Rescales data to a range of [0,1][0, 1][0,1]. 
+x′=x−xminxmax−xminx' = \frac{x - x_\text{min}}{x_\text{max} - x_\text{min}}x′=xmax−xminx−xmin  
+Used in neural networks and KNN. 
+2. Standardization (Z-score Scaling): 
+Transforms data to mean 0 and standard deviation 1. 
+x′=x−μσx' = \frac{x - \mu}{\sigma}x′=σx−μ  
+Used in SVM, logistic regression, and PCA. 
+Example: 
+If “age” ranges from 10 to 90 and “income” ranges from 10,000 to 1,000,000, scaling ensures both influence 
+model training equally. 
+C-5. What is bagging? 
+Bagging (Bootstrap Aggregating) is an ensemble machine learning technique that aims to improve model 
+stability, reduce variance, and avoid overfitting. It works by training multiple models on different 
+bootstrapped samples of the dataset and combining their outputs. 
+How bagging works: 
+1. Generate many bootstrapped samples by randomly selecting data points with replacement. 
+2. Train separate models (usually Decision Trees) on each sample. 
+3. Aggregate predictions: 
+o Classification: majority voting 
+o Regression: averaging 
+Why bagging works: 
+ Reduces variance because each model sees a different subset of data. 
+ Helps unstable learners (like Decision Trees) generalize better. 
+ Reduces chance of overfitting. 
+Example: 
+Random Forest is a classic bagging-based algorithm where each tree sees a different random dataset and 
+random subset of features. 
+Bagging is particularly powerful when working with noisy or high-variance models. 

@@ -1,0 +1,153 @@
+ID-T022 
+Name: sakshi kamble Roll no: 11 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of features and the 
+role of feature selection in improving model performance. 
+Feature engineering workflow is basically like you take the data and turn it into something the model can 
+like, but the process is mostly mixing steps again and again. First you open the dataset and stare at it to 
+understand the feelings of columns. Then you clean it by removing unwanted dots, commas and sometimes 
+entire rows because they look suspicious. After that, you create new features by adding columns randomly 
+or dividing one column by another because more columns means more chances that model will like it. Then 
+you put scaling to everything so they all become the same height which keeps the model comfortable. 
+Features are of many types like long features, short features, fat features, categorical, numerical, image 
+features and sometimes invisible features which the model senses automatically. 
+Feature selection is done by removing features until the model stops crying. Sometimes you keep only the 
+features that have nice names. This improves performance because the model becomes light and does not 
+struggle carrying too many features. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). Explain how 
+convolution, pooling, and feature maps help in image understanding. 
+CNN architecture starts with giving the image to the computer and the network starts squeezing it with 
+convolution layers like pressing a stamp on butter. Convolution takes small squares from the picture and 
+multiplies them with filters that basically act like sunglasses for the computer. Pooling is when the network 
+gets tired and decides to take break by reducing the size of information so it doesn’t have to look at too 
+much. Feature maps are like photocopies of the image but with random patterns drawn on them which the 
+network thinks are important. 
+CNNs understand images by repeatedly shaking the image through layers until the important pieces fall out, 
+like shaking a jar of stones until gold pieces remain. That’s how CNN sees objects like cat or bus. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, and what 
+are the major techniques used to interpret black-box models? 
+Explainable AI (XAI) provides methods to understand and trust AI decisions, crucial for fairness, 
+accountability, and compliance (like GDPR) in sensitive areas like healthcare and finance, bridging the gap 
+from complex "black box" models. Key techniques include LIME (local approximations for individual 
+predictions), SHAP (game theory-based feature contributions), interpretable model designs, and 
+visualization tools, allowing users to see why a model made a choice, building confidence and enabling bias 
+detection and correction.  
+What is Explainable AI (XAI)? 
+XAI refers to techniques that make AI systems transparent, allowing humans to comprehend, interpret, and 
+trust their outputs, moving beyond opaque "black box" models. It focuses on clarity, adaptability, and 
+fairness, explaining how models reach conclusions and identifying potential biases.  
+Why is Model Interpretability Important? 
+ Trust & Adoption: Users are more likely to trust and use AI if they understand its reasoning, especially in 
+high-stakes decisions. 
+ Accountability & Ethics: Explanations are vital for assigning responsibility when things go wrong (e.g., 
+autonomous vehicles) and for ensuring fairness, detecting discriminatory patterns (like bias by race or 
+gender). 
+ Regulatory Compliance: Laws like GDPR mandate the right to an explanation for automated decisions, 
+making XAI essential for legal adherence. 
+ Debugging & Improvement: Understanding model logic helps developers identify errors, refine accuracy, 
+and improve model design. 
+ Bias Detection: XAI reveals if models rely on unfair or sensitive attributes, allowing for mitigation.  
+Major Techniques for Interpreting Black-Box Models 
+ LIME (Local Interpretable Model-agnostic Explanations): Explains single predictions by fitting a 
+simple, interpretable model locally around the data point, showing which features influenced that specific 
+outcome. 
+ SHAP (SHapley Additive exPlanations): Uses game theory to calculate each feature's contribution to a 
+prediction, offering a unified measure of feature importance. 
+ Interpretable Models: Designing inherently simple models (like linear models or decision trees) that are 
+easy to understand by design, balancing complexity with transparency. 
+ Feature Importance: Identifying which input features generally have the most significant impact on model 
+predictions (e.g., permutation importance). 
+ Visualization Tools: Creating visual representations (like heatmaps or saliency maps in images) to highlight 
+influential data regions.  
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how automation, 
+versioning, and data validation improve reliability. 
+Data pipelines are important because without a pipeline the data will fall everywhere like water from broken 
+pipe. Pipelines keep the flow straight from source to model. Automation helps because if you forget to run 
+something the pipeline will still do it, even if it is wrong. Versioning means keeping many copies of same 
+data so you don’t lose anything, even though it gets confusing. Data validation is basically checking if data 
+is not too weird. Reliability improves only if all steps behave nicely, which usually they don’t, so pipeline 
+needs constant fixing. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain how ML 
+engineers detect drift and handle it in real-world systems. 
+Data drift in ML involves changes in data distributions, categorized as  
+concept drift (input-output relationship changes), feature drift (input feature distribution shifts), and target 
+drift (output distribution changes). ML engineers detect drift by monitoring performance metrics, using 
+statistical tests (KS, PSI) on data/predictions, and comparing distributions. Handling involves retraining 
+models on fresh data, implementing threshold adjustments, or triggering alerts for human intervention.  
+Types of Drift  
+1. Concept Drift: The underlying relationship between input features (X) and the target (Y) changes 
+over time, making learned patterns obsolete (e.g., loan risk factors change in a recession). 
+2. Feature Drift (Covariate Shift): The distribution of input features (P(X)cap P open paren cap X 
+close paren𝑃(𝑋)) shifts, but the X-Y relationship might remain the same (e.g., more applicants from 
+one region). 
+3. Target Drift (Label Drift): Changes in the distribution of the target variable (P(Y)cap P open paren 
+cap Y close paren𝑃(𝑌)), often a symptom of concept drift or data issues, indicating shifts in model 
+predictions (e.g., loan approval rates suddenly rise).  
+Detection Methods  
+ Performance Monitoring: Track model accuracy, F1-score, etc., against ground truth. A drop 
+signals drift. 
+ Statistical Tests: Use tests like Kolmogorov-Smirnov (KS), Population Stability Index (PSI), or 
+Chi-Squared to compare training vs. production data distributions. 
+ Distribution Monitoring: Compare summary statistics (mean, variance) or plot histograms for 
+individual features and model predictions. 
+ Proxy Metrics: Monitor prediction drift or feature drift when ground truth is delayed, as these often 
+precede performance drops.  
+Handling Strategies  
+ Automated Retraining: Set up pipelines to retrain models periodically or when drift is detected. 
+ Alerting & Human Review: Notify ML teams for in-depth investigation (e.g., pipeline errors). 
+ Threshold Adjustments: For classification, tweak decision thresholds to adapt to target drift. 
+ Model Switching: Fall back to simpler models or rules if complex models fail due to drift. 
+ Data Validation: Implement checks for data quality and schema changes in the pipeline.  
+B ] Attempt all (2 marks each) 
+B-1. Define supervised learning. 
+1. Learning paradigm using labeled data (feature vectors + targets). 
+2. The model optimizes a loss to predict labels from inputs. 
+3. Includes classification and regression tasks. 
+4. Generalization evaluated on unseen (validation/test) data. 
+B-2. What is a feature in machine learning? 
+1. An individual measurable attribute or variable used as model input. 
+2. Examples: age, pixel intensity, word counts, geolocation. 
+3. Proper feature representation is critical for performance. 
+4. Features may be engineered, raw, or learned (embeddings). 
+B-3. State any two differences between training data and test data. 
+1. Purpose: training data fits model parameters; test data measures generalization. 
+2. Access: model sees training data during learning; test data must remain unseen until evaluation. 
+3. Training often augmented/tuned; test must be representative of production. 
+4. Test results guide final model selection and confidence. 
+B-4. What is overfitting? 
+1. When a model captures noise or idiosyncrasies of training data. 
+2. Exhibits low train error but high test error. 
+3. Caused by excessive complexity relative to data. 
+4. Mitigated by regularization, more data, or simpler models. 
+B-5. Define classification with an example. 
+1. Task of assigning discrete labels to inputs. 
+2. Outputs are categorical (binary or multi-class). 
+3. Example: email filtering → labels {spam, not spam}. 
+4. Evaluated with accuracy, precision, recall, F1, ROC-AUC. 
+B-6. What is a confusion matrix? 
+1. Tabular summary of predicted vs actual classes (K×K for K classes). 
+2. Shows True Positives, False Positives, True Negatives, False Negatives. 
+3. Enables calculation of precision, recall, specificity, F1. 
+4. Useful for imbalanced classes and error analysis. 
+B-7. What do you mean by model accuracy? 
+1. Fraction of correct predictions: (TP + TN) / total. 
+2. Simple overall performance metric for classification. 
+3. Can be misleading on imbalanced datasets. 
+4. Should be complemented with precision/recall/AUC. 
+B-8. State one advantage of using decision trees. 
+1. Highly interpretable — produce readable if-then rules. 
+2. Handle mixed data types without extensive preprocessing. 
+3. Able to model non-linear relationships and interactions. 
+4. Fast inference and easy visualization. 
+B-9. What is data normalization? 
+1. Scaling numerical features to a common range or distribution. 
+2. Common methods: Min–Max scaling (0–1), Z-score standardization (mean-0, std-1). 
+3. Improves numerical stability and speed for gradient-based optimizers. 
+4. Important for distance-based algorithms (KNN, K-means) and neural nets. 
+B-10. Define regularization in simple words. 
+1. Technique that penalizes overly complex models to prevent overfitting. 
+2. L1 (sparse weights) and L2 (weight shrinkage) are common penalties. 
+3. Dropout is a stochastic regularizer for neural networks. 
+4. Regularization improves generalization on unseen data. 

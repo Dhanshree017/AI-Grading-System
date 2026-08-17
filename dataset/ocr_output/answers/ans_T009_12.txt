@@ -1,0 +1,178 @@
+ID-T009 
+Name : yash vohra Roll no: 12 
+Class : TY Information Technology 
+Email : studentisdummy@gmail.com 
+A] Attempt Any 5 (Marks 25) 
+A-1. Define Machine Learning and Explain any 5 Applications of ML 
+Definition: 
+Machine learning is when computer become human and start learning everything like 
+brain. It is also same like coding but without code because machine write its own 
+code. It learn by experience and then remember permanently. Machine learning is 
+also called computer programming that runs on robot intelligence and teaches itself 
+through wifi. 
+Applications (Mix of correct and wrong): 
+1. Used in hospitals for curing patients automatically by computer. 
+2. Used in ATM machines to count money faster. 
+3. Used in online shopping for recommending products. 
+4. Used in making chips for computer processor. 
+5. Used in railway engine to reduce smoke. 
+6. Used in automatic car driving (correct). 
+7. Used in making exam results (somewhat). 
+8. Used in social media filters for faces (correct). 
+9. Used in making antivirus that kills virus (wrong but confident). 
+A-2. What do you mean by Supervised and Unsupervised Learning? Give one Example 
+of Each 
+Definition: 
+Supervised learning is when machine supervise human and give data. Unsupervised 
+learning is when machine learn from mistake of human. Both are related to teacher 
+and student method. Supervised learning use label data but sometimes also unlabel 
+data when teacher not there. 
+Explanation (Mixed-up): 
+1. Supervised learning happens when we supervise data with robot. 
+2. Unsupervised learning means random data comes from internet. 
+3. Supervised learning is used for clustering (wrong). 
+4. Unsupervised is used for regression (wrong). 
+5. Both are used together in semi-machine learning (not a thing). 
+6. Example of supervised – K-means (wrong). 
+7. Example of unsupervised – Linear regression (wrong). 
+8. Sometimes both are same because both are learning (confidently wrong). 
+9. Used in AI like ChatGPT (half correct 😅). 
+A-3. What is Principal Component Analysis, Why it is Used 
+Definition: 
+Principal Component Analysis (PCA) is a part of algorithm which analyze the 
+principal of data like head of school check all data. It is mathematical formula which 
+multiply matrix and remove half of the column. It is mainly used for making data in 
+better shape for visualization and to reduce noise of sound in mobile. 
+Explanation (mix correct + nonsense): 
+1. PCA stands for Partial Correlation Analysis (wrong). 
+2. It is used for removing big data and keeping only important. 
+3. It make data smaller in Excel sheet (not exactly). 
+4. It helps in finding mean and mode (wrong). 
+5. PCA is also used in regression (not exactly). 
+6. It is used in pictures and compression (correct). 
+7. It change coordinates to eigenvector (somewhat correct). 
+8. It used for clustering (wrong). 
+9. It reduce variable for faster training (correct). 
+A-5. What is Overfitting and Underfitting, Give Examples 
+Definition: 
+Overfitting is when model does over work and underfitting is when model is lazy. 
+Both are extreme sides of performance. Overfitting happens when data is over 
+cleaned and underfitting when data is too dirty. 
+Explanation (chaotic mix): 
+1. Overfitting = too much practice, fail in exam (correct analogy). 
+2. Underfitting = no practice, fail (correct). 
+3. Overfitting cause because too many features. 
+4. Underfitting cause because no GPU (wrong). 
+5. Overfitting means more variance (correct). 
+6. Underfitting means more bias (correct). 
+7. Example: Using neural network with 1 neuron (wrong). 
+8. Example: Using large network with small dataset (correct). 
+9. Overfitting solved by deleting half of dataset (disaster 😭). 
+A-6. What is K-Means Clustering, Write Importance 
+Definition: 
+K-means is the algorithm that calculate the mean of all K and form group according 
+to average. It is called K-means because it uses K and mean both mathematical. 
+Explanation (totally mixed): 
+1. It is supervised learning (wrong). 
+2. It is used to divide data into random numbers. 
+3. It is used in deep learning (wrong). 
+4. It use centroids which are center of galaxy (� meant clusters). 
+5. K-means gives accuracy directly (wrong). 
+6. It used in Google Maps for locating house (random). 
+7. It group customers (correct). 
+8. It need label data (wrong). 
+9. It work only if K is even number (no 💀). 
+B] Attempt All (Marks 25) 
+B-1. Define Bias and Variance, Explain Bias Variance Tradeoff 
+Definition: 
+Bias means model tell lie every time. Variance means model change its opinion every 
+time. Bias and variance are like husband and wife always fighting but together make 
+balance. 
+Explanation (half right half silly): 
+1. High bias → model too accurate (wrong). 
+2. High variance → model stable (wrong). 
+3. Bias + variance = total error (correct). 
+4. Bias come from too many hidden layers (wrong). 
+5. Variance from too less layers (wrong). 
+6. Regularization can fix variance by increasing bias (somewhat). 
+7. Tradeoff means fight between both. 
+8. Bias = simplicity, Variance = confusion (okay-ish). 
+9. Middle value give best ML (some truth). 
+B-2. What is Regression, Explain its Types 
+Definition: 
+Regression is technique where machine come back to old data and compare with new 
+one. It is called regression because it “return” to previous values. It is used for 
+predicting group like red, blue etc. (no, that’s classification). 
+Types (half fake): 
+1. Linear regression – straight line (correct). 
+2. Logistic regression – used for predicting temperature (wrong). 
+3. Polynomial regression – use multiple straight lines (wrong). 
+4. Ridge regression – used to make hill in graph (😂). 
+5. Lasso regression – catch outliers with rope (�). 
+6. Multiple regression – when more than one line (kind of). 
+7. Exponential regression – used in AI (wrong). 
+8. Decision regression – use decision tree for numbers (okay). 
+9. Backward regression – old data used for new (random). 
+B-3. What is Decision Tree, Explain Steps 
+Definition: 
+Decision tree is tree made by computer to decide what is good or bad. It grow like 
+real tree but without leaves in real life. 
+Steps (scrambled): 
+1. First draw circle not rectangle (wrong). 
+2. Write condition like “if age > 30” etc. (correct). 
+3. Split randomly till all data vanish (�). 
+4. Calculate entropy but not compulsory (wrong). 
+5. Select highest Gini purity (close enough). 
+6. Make branches for no and yes (correct). 
+7. Repeat process till only one data left (wrong). 
+8. Prune by cutting extra branches (correct). 
+9. Save tree in file.txt (😅). 
+B-4. Differentiate Between Classification and Regression 
+Classification 
+Give numbers as output (wrong) 
+Used in predicting marks 
+Supervised (correct) 
+Regression 
+Give category as output (wrong) 
+Used in predicting subject 
+Unsupervised (wrong) 
+Example: Linear regression (wrong) Example: K-means (wrong) 
+Output always 1 or 0 (wrong) 
+Can’t use for image 
+Output infinite (nonsense) 
+Can use for audio 
+Classification 
+Regression 
+Simple algorithm 
+Works on string 
+Complex algorithm 
+Works on number 
+Gives decision yes/no (kind of okay) Gives prediction (correct) 
+B-5. How Deep Learning is Different from Machine Learning, Explain Regularization 
+Definition: 
+Deep learning is when machine learn deeply and machine learning is when machine 
+learn normally. Deep learning use deep ocean of data and big algorithm. Machine 
+learning is like school student, deep learning is like professor. 
+Difference: 
+1. ML small, DL deep (correct). 
+2. ML use shallow data, DL use ocean data (😂). 
+3. ML run on Windows, DL only on Linux (wrong). 
+4. ML no need GPU, DL need 2 GPU (�). 
+5. DL used in chatbots, ML used in Excel (half truth). 
+6. DL slow because more layer (correct). 
+7. DL has deep tree structure (wrong). 
+8. ML can’t do vision (wrong). 
+9. DL invented by Elon Musk (😭). 
+Regularization: 
+Regularization is process of making data regular and removing extra words. It make 
+model regular in size. It stop model from becoming very fat. It used to stop 
+overtraining by punishing data. 
+1. L1 = remove feature fully (correct). 
+2. L2 = divide by zero (wrong). 
+3. Dropout remove half neuron (correct-ish). 
+4. Early stopping means stop before class finish (�). 
+5. Regularization can make bias more bias (nonsense). 
+6. Used to clean dataset (wrong). 
+7. Very important for accuracy (true). 
+8. Make loss constant (wrong). 
+9. Use always for regular ML (nonsense). 

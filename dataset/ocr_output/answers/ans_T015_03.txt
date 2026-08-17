@@ -1,0 +1,264 @@
+ID-T015 
+Name: Madhuri Saxena Roll no: 3 
+Class : SY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) 
+A-a) Explain the different types of Machine Learning evaluation metrics used for 
+classification and regression tasks. Describe how accuracy, precision, recall, F1 score 
+help in understanding model performance. 
+Introduction: 
+Evaluation metrics is very main part of machine learning because only through this 
+we come to know how our model is doing. Different metrics are used for 
+classification and regression tasks because they have different types of outputs. 
+1. Classification Metrics: 
+ Recall: 
+Recall is how many of all actual positives are detected. It is very useful when 
+missing a positive case is serious like in disease or fraud detection. 
+ F1 Score: 
+F1 is balance between precision and recall. It is used when both are important 
+and data is not balanced. 
+2. Regression Metrics: 
+For regression, common metrics are Mean Absolute Error (MAE), Mean Squared 
+Error (MSE), and R² Score. They tell about average distance of prediction from true 
+value. 
+Conclusion: 
+Choosing right metric is very necessary because it change how we judge a model. 
+Only accuracy not always good, so using multiple metrics gives more complete idea 
+of model performance. 
+A-b) Describe the K-Nearest Neighbor algorithm. Explain its working step-by-step and 
+discuss the importance of the parameter k. 
+Introduction: 
+K-Nearest Neighbor is a lazy learning algorithm because it not learn from training 
+data immediately. It store data and only use it when making prediction. 
+Working Steps: 
+1. Choose the value of K: 
+Select number of neighbors that will be used for voting or averaging. 
+2. Calculate Distance: 
+Measure distance between new point and all training points using formula like 
+Euclidean distance. 
+3. Find K Nearest Points: 
+Take the K samples which are closest to the new data point. 
+4. Voting/Averaging: 
+o For classification: take majority vote from neighbors. 
+o For regression: take mean of nearest points. 
+5. Assign the result: 
+Give the class or value that got majority or average. 
+A-c) What is Data Imbalance in Machine Learning? Explain its impact on model 
+performance and discuss techniques used to handle it. 
+Introduction: 
+Data imbalance happens when one class have much more examples than another. 
+This create problem for model training because it will learn more from large class 
+and ignore small one. 
+Handling Techniques: 
+1. Resampling Methods: 
+o Oversampling: Copy or generate new samples of minority class (like 
+SMOTE). 
+o Undersampling: Remove some samples from majority class. 
+2. Algorithm Level Methods: 
+o Add class weights in training so model pay more attention to minority. 
+3. Use of Ensemble: 
+o Algorithms like Balanced Random Forest help balance accuracy. 
+Conclusion: 
+Handling data imbalance is important step to make model fair and good in all 
+classes rather than only big one. 
+A-d) Explain the working of Gradient Boosting in detail. Discuss how it builds models 
+sequentially and how weak learners are combined to form a strong model. 
+Introduction: 
+Gradient Boosting is a very effective ensemble method which build strong prediction 
+model by joining many weak models like decision trees. It work step by step, 
+correcting errors from earlier model. 
+Working Steps: 
+1. Start with a simple model: 
+Model start by making a basic prediction (mean or log odds). 
+2. Calculate residuals: 
+Find difference between actual output and predicted output. 
+3. Train new weak learner: 
+A small decision tree is fitted to predict the residuals. 
+4. Update the prediction: 
+Add this new learner’s output multiplied by a learning rate to old model 
+prediction. 
+5. Repeat process: 
+Many such weak learners are added until model performance stops improving. 
+Combining Weak Learners: 
+Each learner corrects the mistake of the previous one. Final model is weighted sum of 
+all learners. 
+Conclusion: 
+Gradient Boosting give high accuracy and strong generalization but need careful 
+tuning to avoid overfitting and too much complexity. 
+A-e) Explain the concept of Transfer Learning. Discuss how pre-trained models are used 
+to solve new tasks with limited data and mention common applications of transfer 
+learning. 
+Introduction: 
+Transfer Learning is when we use knowledge from one task to help in another task. 
+It is very helpful when we have small dataset for training. 
+Concept: 
+ Pre-trained model is already trained on large dataset like ImageNet. 
+ We use it as base model and only train upper layers for our new task. 
+ The lower layers already learned useful features like shapes, edges, or words 
+patterns. 
+ We can freeze those layers and only fine-tune top layers on our smaller data. 
+Advantages: 
+ Saves a lot of training time. 
+ Performs better even with less data. 
+ Avoids overfitting due to pre-learned patterns. 
+Applications: 
+ Image classification using ResNet, VGG, etc. 
+ Text analysis using BERT, GPT, etc. 
+ Object detection and medical image diagnosis. 
+Conclusion: 
+Transfer learning help us use power of already trained model and achieve strong 
+performance quickly on new problems. 
+A-f) What are Hyperparameters in Machine Learning? Explain why they are important 
+and describe common hyperparameters for algorithms like Decision Trees, Neural 
+Networks, and Gradient Boosting models. 
+Introduction: 
+Hyperparameters are settings we give to algorithm before training starts. They 
+decide how model will learn but they are not learned from data. 
+Importance: 
+They control performance, accuracy, and speed of training. Wrong hyperparameters 
+can make model poor or overfit. 
+Common Hyperparameters: 
+ Decision Tree: 
+o Max depth, min samples split, criterion for split. 
+ Neural Network: 
+o Learning rate, number of hidden layers, number of neurons, activation 
+functions, batch size. 
+ Gradient Boosting: 
+o Number of trees, learning rate, maximum depth of each tree, 
+subsampling ratio. 
+Tuning Methods: 
+Use grid search, random search, or Bayesian optimization to find best combination. 
+Conclusion: 
+Hyperparameter tuning is not easy but very important step to make any model high 
+performing and generalizable. 
+B] Attempt any 6 (each 5 marks) 
+B-a) Explain the main steps involved in data preprocessing in machine learning. 
+Introduction: 
+Data preprocessing is like cleaning and preparing food before cooking, because if data 
+dirty or not ready, even best algorithm will give bad result. So preprocessing make 
+data clean, useful and ready for model. 
+Steps Involved: 
+1. Data Collection: 
+Collecting data from sources like databases, APIs, sensors, etc. It can be in 
+different format and quality. 
+2. Data Cleaning: 
+Remove missing values, fix wrong entries, and handle duplicates. Missing values 
+can be filled by mean or median. 
+3. Encoding Categorical Data: 
+Convert non-numeric data into numbers using label encoding or one-hot 
+encoding. 
+4. Feature Scaling: 
+Make sure all features on same scale using normalization or standardization. 
+5. Splitting Data: 
+Divide data into training and testing so model not see all data during learning. 
+Conclusion: 
+Without preprocessing, even strong algorithm fail, so it is most important first step 
+in machine learning pipeline. 
+B-b) What is ensemble learning? Describe the working of bagging and boosting methods. 
+Introduction: 
+Ensemble learning means using many models together to get better performance 
+than any single one. It help in reducing variance and bias. 
+Types: 
+1. Bagging (Bootstrap Aggregating): 
+o Many models are trained on different random subsets of data. 
+o Their predictions are combined by voting (for classification) or averaging 
+(for regression). 
+o Example: Random Forest uses bagging of Decision Trees. 
+o It reduces variance and makes model stable. 
+2. Boosting: 
+o Models are trained one by one where next model tries to fix mistakes of 
+previous one. 
+o Final prediction is combination of all weak learners. 
+o Example: AdaBoost, Gradient Boosting, XGBoost. 
+o It reduces bias and improves accuracy. 
+Conclusion: 
+Ensemble is like taking advice of many experts instead of one, and it almost always 
+gives more reliable prediction. 
+B-c) Explain the need for feature scaling and differentiate between normalization and 
+standardization. 
+Introduction: 
+Feature scaling is very necessary step because algorithms work better when features 
+are in similar range. Otherwise, features with big numbers dominate over small ones. 
+Need for Feature Scaling: 
+ Many algorithms like KNN, SVM, Gradient Descent based models depend on 
+distance or gradient, so they get affected by scale. 
+ It also helps optimization process to converge faster. 
+Normalization vs Standardization: 
+ Normalization: 
+Brings values between 0 and 1. Formula: 
+(x−min)/(max−min)(x - min) / (max - min)(x−min)/(max−min) 
+Used when we don’t know data distribution. 
+ Standardization: 
+Changes data so it have mean = 0 and standard deviation = 1. 
+Formula: (x−mean)/std(x - mean) / std(x−mean)/std 
+Used when data is normally distributed. 
+Conclusion: 
+Scaling make learning stable and fair so that no feature gets extra weight just 
+because of large numeric value. 
+B-d) What is cross-entropy loss? Describe its use in classification models. 
+Introduction: 
+Cross-entropy loss, also known as log loss, is used for classification, especially when 
+output is probability. It measures how close predicted probabilities are to actual 
+labels. 
+Concept: 
+ When true class is 1, it penalizes model if probability of 1 is low. 
+ When true class is 0, it penalizes if probability of 0 is low. 
+ It use logarithm to increase penalty for confident wrong predictions. 
+Formula: 
+−(y∗log(p)+(1−y)∗log(1−p))-(y * log(p) + (1 - y) * log(1 - 
+p))−(y∗log(p)+(1−y)∗log(1−p)) for binary classification. 
+Use: 
+Used widely in logistic regression, neural networks, and deep learning. It gives better 
+gradient feedback for improving model weights. 
+Conclusion: 
+Cross-entropy loss helps model not just guess correct class, but also learn to give high 
+confidence to right class. 
+B-e) Explain the role of optimization algorithms in training machine learning models. 
+Introduction: 
+Optimization algorithms are like brains behind learning because they decide how 
+model will adjust weights and minimize error. 
+Role: 
+ They try to find the best set of parameters that minimize loss function. 
+ Each step they adjust weights according to gradient direction and learning 
+rate. 
+ Without optimization, model cannot learn anything useful. 
+Common Optimization Algorithms: 
+1. Gradient Descent: Basic method, updates weights using gradient of loss. 
+2. Stochastic Gradient Descent (SGD): Uses one sample at a time, faster and 
+dynamic. 
+3. Adam Optimizer: Adaptive method combining momentum and RMSprop, 
+faster convergence. 
+Conclusion: 
+Optimization is what make model learn from data, without it machine learning will 
+be just random guessing. 
+B-f) What is dimensionality reduction? Describe any one method used for it. 
+Introduction: 
+Dimensionality reduction means reducing number of features while keeping 
+important information. It help to make model faster and avoid overfitting. 
+Why Needed: 
+ Too many features increase computation and memory need. 
+ Some features may be redundant or correlated. 
+ Visualization is easier in 2D or 3D than in high dimension. 
+Method: Principal Component Analysis (PCA): 
+ PCA transforms original features into new set of uncorrelated variables called 
+principal components. 
+ These components capture maximum variance from data. 
+ It uses eigenvalues and eigenvectors from covariance matrix. 
+ We select top components that explain most variance. 
+Conclusion: 
+PCA help to simplify data, speed up training, and remove noise without losing much 
+important information. 
+B-g) Explain how a decision tree works and mention its advantages and disadvantages. 
+Introduction: 
+Decision tree is a model that splits data into branches based on conditions until a 
+final decision or prediction is made. 
+Working: 
+1. Select the best feature to split data using metrics like Gini Index or Information 
+Gain. 
+2. Split dataset into subsets according to feature values. 
+3. Repeat the process on each subset until stopping condition (like max depth or 
+pure leaf) reached. 
+4. Each leaf node represents final class or value.. 
+Conclusion: 
+Decision trees are simple but powerful base models that form the foundation of 
+many advanced algorithms. 

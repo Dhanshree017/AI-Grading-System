@@ -1,0 +1,157 @@
+ID-T012 
+Name : Ranjeet Lokhande Roll no: 18 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, 
+advantages, and disadvantages. 
+Random forest is like a forest but made of many trees which are decision 
+trees not real trees of jungle. It take data and make it into many tree small 
+small and all give their say. If one tree say yes and another say no then 
+forest do voting. The idea is more tree give better decision because alone 
+tree make mistake but many trees together become intelligent. It is like 
+many friends guessing one answer and the majority will be mostly correct if 
+all don’t copy same mistake. 
+Working is like this only: you take training data and from that make random 
+part of it using bootstrapping (means picking randomly with replacement so 
+some row come again and again). Then each tree grow by splitting data using 
+some feature but not all features only some random features so all trees 
+different. After many trees are made then when new data come you put it 
+in all trees and each tree say one output. The forest do majority vote for 
+classification or average for regression. That is the working in big story. 
+Advantages are many like good accuracy, good in big dataset, handle missing 
+data, handle outlier, not overfit easily because many trees combine, give 
+importance of features. Disadvantage also come because it take much 
+memory, slow for prediction, and cannot tell exactly how it decide because 
+many trees mixed up. Sometimes in small data it perform weird because 
+random sampling make data smaller. But mostly it is powerful method people 
+use a lot. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropagation is how neural network learn from mistake. First we give 
+input and calculate output this is called forward pass. Then we check what 
+output came and what should come then find difference which is error or 
+loss. Then we send this error backward through layers to adjust weight of 
+neuron so next time it will be less wrong. That’s why it is called back
+propagation because error goes back. 
+The steps are like 1. Forward pass: multiply input by weight, add bias, pass 
+by activation like sigmoid or relu, get output. 2. Compute loss by comparing 
+output with target. 3. Compute gradient of loss with respect to weight by 
+chain rule. 4. Move from output layer backward, for each layer compute 
+delta value and update weights by subtracting learning rate times gradient. 
+5. Repeat again and again many epoch until model learn properly. 
+Sometimes it become slow or get stuck when gradient very small or very big 
+so use ReLU and normalization to fix it. Backpropagation is like teaching child 
+by showing mistake again and again until he learn right answer. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist 
+learning. 
+Bayesian learning is like we believe something before seeing data and after 
+seeing data we change belief. For example if I think 70% rain tomorrow but 
+then I see dark cloud then I increase belief to 90%. That is Bayesian 
+thinking. It use formula posterior = prior × likelihood / evidence. It means 
+new belief = old belief × how data fit / something constant. 
+Frequentist not believe like that. They say probability is only frequency when 
+we do experiment many time. Bayesian says probability is degree of belief. 
+Frequentist find one parameter value that make data most likely, Bayesian 
+find whole distribution for parameter. 
+So in Bayesian we can use prior knowledge also, like doctor already know fever 
+mostly not dangerous, but frequentist only use data. Bayesian heavy math 
+because need integration and sampling. Frequentist simple but cannot say 
+uncertainty easily. Both used in ML but Bayesian useful when less data and 
+we have expert prior. 
+A-4. Describe Recurrent Neural Networks (RNNs) and their applications in 
+sequence modeling. 
+RNN is a type of neural network that can remember previous information 
+because it have loop in it. It is like memory brain. In normal NN input go 
+only forward but in RNN output from previous time go back to itself. So it 
+can know context of earlier input. For example when we say “The cat sat on 
+the …” the next word “mat” depend on previous words. RNN understand 
+that. 
+The working is like for each time step we give input and old hidden state, it 
+give new hidden state and output. This hidden state carry information from 
+past. But when we train it for long sequence it forget because of vanishing 
+gradient, so LSTM and GRU made which keep gate to remember longer. 
+Application many: language translation, chatbots, handwriting, stock 
+prediction, speech to text, sentiment analysis, video captioning etc. RNN is 
+base idea of sequence model before transformers came. 
+A-5. Explain Model Deployment and Monitoring in the ML lifecycle. 
+After model trained we cannot just keep in notebook. We need to send it 
+live so people can use. That is deployment. Deployment mean put model in 
+production environment. We can save model like pickle or h5, then wrap it in 
+API using Flask or FastAPI, then make server or container. After that front
+end or system send data and model reply prediction. 
+Monitoring is after deployment keep eye on model like teacher check student. 
+We see if accuracy same or drop, check if input data change pattern (called 
+drift), check latency or slow response. Also watch for bias and fairness 
+problem. If model performance fall then retrain or rollback. 
+Deployment and monitoring very important because model can fail if world 
+changes. It need logs, dashboard, alerts, versioning and automation pipeline. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Training ML model not always easy because many problems come. First 
+problem is data, if data not clean model also bad. If missing value or wrong 
+label model learn wrong thing. Second if data small then model memorize 
+instead of learn. Third hyperparameters like learning rate and layers tough to 
+choose. Fourth computing power not enough. Also sometimes model bias, 
+data imbalance, or overfitting. 
+Other challenge like concept drift, where after time data change and model 
+old become useless. And interpretability because black box model cannot 
+explain decision. Also deployment and maintain not easy. So ML is not only 
+training but end to end process. 
+B-2. Describe the difference between probability and likelihood in machine 
+learning. 
+Probability means how much we expect something to happen if we already 
+know parameter. Likelihood means how much parameter is correct for given 
+data. Probability go forward direction, likelihood backward direction. Like 
+probability is P(data | parameter) and likelihood is L(parameter | data). 
+They look same symbol but different concept. 
+Example if coin have 0.5 chance head, probability of getting 3 head is 0.5³. 
+But likelihood is if we got 3 head what parameter value make that likely? 
+That’s estimation process. So that is main difference. 
+B-3. Explain logistic regression with mathematical formulation and use cases. 
+Logistic regression is algorithm used for binary class 0 and 1. It take linear 
+combination of input and apply sigmoid function which make value between 0 
+and 1. If value more than 0.5 predict 1 else 0. Formula p = 1/(1 + e^(-z)) 
+where z = w*x + b. 
+It use log loss to train. We can use in spam mail detection, diabetes test 
+(disease yes or no), student pass fail, credit risk etc. Advantage easy, fast, 
+interpretable. Disadvantage not handle complex data, need linearly separable. 
+B-4. What are hyperparameters? Give examples and explain how they differ 
+from parameters. 
+Hyperparameters are outside control setting before training start. Example: 
+learning rate, epoch, batch size, tree depth, number of layers. Parameters 
+are weight and bias learned by model. Difference is hyperparameter we choose 
+manually or tune, parameter model learn itself. 
+Tuning hyperparameter can make big change to model quality. We can do grid 
+search, random search or use autoML tools. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning can predict machine failure before it happen. In industry big 
+machines like turbines, motors have sensors measuring vibration, temperature, 
+current, sound, etc. If we take all these readings and feed to model it can 
+say if machine going to break. 
+Steps are like: data collection from IoT sensors, cleaning and merging data, 
+feature creation like moving average, frequency domain features. Then labeling 
+if machine fail or not. Then model like Random Forest, SVM, LSTM used to 
+predict failure or remaining useful life. 
+When model predict risk, company do maintenance early and avoid breakdown. 
+This save cost and safety. Challenges include sensor noise, wrong data, missing 
+reading, false alarm. But still predictive maintenance help industries a lot in 
+automation and cost saving. 
+C-2. Discuss 5 real-world examples of biased ML model and how such bias can 
+be reduced. 
+1. Hiring system bias — Some AI hiring system choose male over female 
+because trained on old data where mostly male hired. Fix by using 
+balanced dataset, removing gender info. 
+2. Facial recognition — Some software identify light skin better because 
+trained on such face more. Fix by add more dark-skin data and check 
+fairness. 
+3. Credit scoring bias — Bank model reject certain area people because ZIP 
+code relate to race. Fix by remove such feature. 
+4. Health care model bias — Predict treatment not correct for poor 
+country data because trained on rich hospital data. Fix by collect diverse 
+data. 
+5. Judicial tool bias — COMPAS system give wrong risk score for black 
+people. Fix by fairness constraint and transparent audit. 
+Bias come because data not balanced or human prejudice inside. We reduce by 
+diverse data, fairness check, bias removal algorithm, human review, and 
+regular monitoring. 

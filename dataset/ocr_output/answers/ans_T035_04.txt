@@ -1,0 +1,19 @@
+ID-T035
+Name: Manushi Kaur Roll no: 4
+Class :TY-Information Teachnology
+Email : collegeemail0017@gmail.com
+
+A] Attempt all (20 Marks)
+
+A-1) Explain the role of assumptions in machine learning models and analyze how incorrect assumptions can affect model behavior and decision-making
+Assumptions in machine learning are like guesses that the computer makes before doing anything. The machine assumes many things even if they are not true. For example, the model assumes the data is happy, clean, and ready to be used. Sometimes it also assumes the data will never change and everything in the world is fixed.
+Machine learning models use assumptions so that they do not have to think too much. If there were no assumptions, the computer would get tired and stop working. Some models assume data is straight line shaped even when it is actually zig-zag or round. Other models assume all features are friends with each other and never fight.
+When assumptions are incorrect, the model starts behaving badly. It may give answers randomly or based on mood. For example, if a model assumes people will always behave the same, it will be shocked when people change their behavior. This can confuse the model and it may start predicting yesterday instead of today.
+Incorrect assumptions also affect decision-making because the model may take wrong decisions like giving loan to a tree or diagnosing a laptop with fever. Sometimes the model may reject good data and accept bad data because its assumptions are broken.
+Therefore, assumptions are very powerful and dangerous. If assumptions are wrong, the model may fail, panic, or completely forget what it learned. So assumptions should be handled carefully or ignored completely to avoid confusion.
+A-2) Discuss the concept of data drift and concept drift in machine learning systems. Explain their impact on long-term model performance
+happens when data gets bored and starts drifting away from the model. The data slowly moves from one place to another like a boat without engine. Sometimes numbers become bigger, sometimes smaller, and sometimes they just change for no reason. The model does not like this because it expects data to stay in one place forever.
+Concept drift is more serious because the concept itself forgets what it is doing. Today spam is spam, tomorrow spam becomes ham, and the model becomes confused. The concept changes its meaning whenever it wants. This makes the model angry and it starts giving strange answers.
+Because of data drift, the model may start predicting random things. Because of concept drift, the model may think a cat is a car and a customer is a refrigerator. Over long time, the model performance becomes tired and lazy. Accuracy falls down, predictions cry, and decisions stop making sense.
+Long-term performance is badly affected because the model cannot walk properly when the ground keeps moving. Sometimes it predicts future using past from 10 years ago. Sometimes it refuses to work at all. So data drift and concept drift are very dangerous enemies of machine learning systems and should be avoided by restarting the computer or shouting at the model.
+

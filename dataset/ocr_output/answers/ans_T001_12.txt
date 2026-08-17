@@ -1,0 +1,100 @@
+ID-T001 
+Name : Robin Alexander Roll no: 12 
+Email : studentisdummy@gmail.com 
+A)  
+A-1. Define machine learning and its relationship to other fields like statistics and AI. 
+Machine Learning (ML) is where the computer program it learns all by itself by just looking at the 
+data you give it. You don't need to tell it everything but it figures out the patterns to make a 
+prediction. It must get a better score on the next exam. 
+ Relationship to AI: Artificial Intelligence (AI) is the big idea for making smart machines. ML 
+is only the engine that makes the smart thing learn. All of this requires fast internet or else 
+the model will be too slow. 
+ Relationship to Statistics: Statistics is just math for numbers. ML uses some math from 
+statistics but ML is focused on guessing the future and statistics is focused on explaining the 
+past. 
+A-3. Describe how the decision tree algorithm works, including the role of entropy and 
+information gain. 
+The Decision Tree model is easy to see because it looks like a real tree with splits. It is a very simple 
+model for making a guess. 
+ How it Works: It starts at the top node and asks a question about a feature. This makes the 
+data split into branches. It keeps doing this splitting until the leaf nodes are all pure. This is 
+like a game of 20 questions that my computer is too slow to run. 
+ Entropy: This is a word for how mixed up the data is. High entropy is bad because it means the 
+node is messy and cannot decide. 
+ Information Gain (IG): This is the most important thing. It shows how much the messiness 
+goes down after a split. The model always chooses the biggest IG because that is the best 
+split to make. 
+A-5. Describe ensemble methods like bagging and boosting. 
+Ensemble methods are smart because they take many models that are not very good and put them 
+together to make one very strong model. 
+1. Bagging (Bootstrap Aggregating): 
+o It trains all the little models at the same time on random samples of the data. 
+o The final guess is the average of all the models' guesses. 
+o Bagging is good for reducing the overfitting problem so the model is more stable. The 
+model is just adding a bunch of simple things together. 
+A-6. Explain the bias-variance tradeoff and its significance. 
+The Bias-Variance Tradeoff explains the two kinds of errors that cause the total mistake in the 
+model. The total error is a balance that you must find between Bias and Variance. 
+ Bias (Underfitting): This is when the model is too simple and cannot learn the real pattern. 
+B) Attempt any 4 (20 Marks) 
+B-1. Define and explain metrics like Precision, Recall, and F1-score and when to use them. 
+These are the three scores you use to check a classification model when the data is unbalanced. 
+1. Precision: How often is the model right when it says the answer is positive? You use this when 
+getting a False Positive is a very big waste of money. 
+2. Recall: How many of the actual positive cases did the model find? You use this when getting a 
+False Negative is a big dangerous problem like in a medical test. 
+3. F1-Score: This is just the average of Precision and Recall. You use it when you need both scores 
+to be good, and it should be higher than 0.8 to be acceptable. 
+B-2. What is a confusion matrix and how is it used to evaluate a classification model? 
+A confusion matrix is a table that tells you all the guesses the model made. It shows the correct 
+guesses (True Positive, True Negative) and the wrong guesses (False Positive, False Negative). 
+ Usage in Evaluation: It is used to see the actual number of mistakes. You can see if the model 
+is failing by missing too many positive cases (FN) or by crying wolf too much (FP). The final 
+accuracy score comes from dividing the right answers by the total number of answers. 
+B-4. How do you select the right machine learning algorithm for a given problem? 
+You pick the algorithm by looking at the data and what the client wants. 
+1. Check the Task: Is the output a fixed category? Use Classification. Is the output a changing 
+number? Use Regression. If you do not have an output, you must use Clustering. 
+2. Check the Data: For small data, you must use simple models so it doesn't overfit. For big data, 
+you can use complex boosting models. The amount of RAM on the computer also affects the 
+choice. 
+3. Check the Needs: If the client needs to understand the prediction, you must use a simple model. 
+If the prediction must be fast, you must use a fast model. 
+B-5. Explain the steps in the machine learning model development lifecycle. 
+This is the list of steps you follow to make a model and use it in the company. 
+1. Data Preparation: You get the raw data, clean it up (fix missing values), and make new 
+features (Feature Engineering). This step takes a long time. 
+2. Training: You split the data into three groups. You teach the model using the training set. 
+3. Evaluation: You use the validation set to tune the model's settings. Then you use the test set 
+to get the final, true score. 
+4. Deployment: You put the working model live so the customers can use it. 
+5. Monitoring: You must watch the model after it is live to make sure it is still working and 
+accuracy is not dropping. 
+C) Attemp any 4 (20 Marks) 
+C-1. What is the role of feature scaling in machine learning. 
+Feature Scaling is a step where you change the range of the numbers in your data. It is very 
+necessary. 
+ Role: The main job is to make all features equal. If you do not scale, a big feature like price will 
+be too dominant over a small feature like number of rooms in the model's calculations. 
+ Requirement: It is needed for distance models like KNN and it makes the learning process 
+faster for neural networks. You can also use the Max-Min algorithm for this. 
+C-3. Define and explain overfitting and underfitting and how to avoid them. 
+These are the two main ways the model fails to generalize to new data. 
+1. Overfitting: 
+o Definition: The model is too complex and it memorizes all the training data, even the 
+random noise. This is high variance. 
+o Symptom: The score on training is perfect, but the score on test is bad. 
+o Avoidance: Use the Regularization penalty (L1 or L2) or just get more data. We should 
+always use the Adam optimizer to prevent this. 
+2. Underfitting: 
+o Definition: The model is too simple and cannot learn the basic pattern. This is high bias. 
+o Symptom: Both the Training score and the Test score are bad. 
+o Avoidance: You must make the model more complex or add better features. 
+C-4. How to deal with missing data, scale features, or encode categorical variables. 
+These are the three simple things you must do to the data before training. 
+1. Missing Data: You must delete the row or fill in the blank space (impute). For numbers, you fill 
+with the mean. For text, you fill with the mode. 
+2. Scale Features: You must change the numbers to the same size. You can use Standardization or 
+Normalization. 
+3. Encode Categorical Variables: You must change the text into numbers. For text that has no 
+order, you use One-Hot Encoding. For text that has order, you use Label Encoding. 

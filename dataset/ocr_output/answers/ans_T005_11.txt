@@ -1,0 +1,154 @@
+ID-T005 
+Name: Sonali Deshmukh Roll no: 11 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine 
+learning? 
+The core difference between traditional programming and machine learning lies in 
+how the solution's logic is generated and maintained. 
+Feature 
+Traditional Programming 
+(Imperative) 
+Machine Learning (Inferential) 
+Input 
+Programmer supplies the Rules 
+(explicit logic) and the Data. 
+Programmer supplies the Data and 
+the desired Answers (labeled 
+output). 
+Output 
+The Answer (The result of 
+execution). 
+The Rules (The learned statistical 
+model/function). 
+Logic 
+Static. Logic is manually coded; 
+every scenario must be anticipated 
+and implemented by a human. 
+Dynamic. Logic is inferred 
+statistically from patterns in the 
+data through an optimization task. 
+Adaptation 
+Requires manual code modification 
+and debugging for every change in 
+requirements or data structure. 
+Requires feeding the model more 
+data and re-training to adapt its 
+parameters. 
+In essence, traditional programming is prescriptive, whereas machine learning is 
+descriptive, relying on statistical inference to discover the underlying functional 
+mapping. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+Entropy and Information Gain are the foundational metrics implementing the greedy 
+search strategy used by Decision Tree algorithms to iteratively select the optimal 
+feature and split point at each node. 
+1. Entropy (Impurity): 
+o Concept: Entropy is a measure of the randomness, disorder, or uncertainty 
+of the class distribution within a data subset. Maximum entropy occurs 
+when class labels are perfectly mixed (e.g., fifty percent for each class), 
+representing maximum uncertainty. Zero entropy indicates a pure node 
+where all instances belong to the same class. 
+o Role in DT: It serves as the baseline metric, quantifying the level of disorder 
+before a potential split. 
+2. Information Gain (Reduction in Impurity): 
+o Concept: Information Gain is the expected reduction in entropy achieved 
+after splitting a node based on a particular feature. It quantifies the value 
+of a feature by measuring how much uncertainty about the class label 
+decreases post-split. 
+o Role in DT: The algorithm evaluates all features and selects the one that 
+yields the maximum Information Gain. This guarantees the most effective 
+feature for separation is placed at the highest level, prioritizing splits that 
+minimize the resulting children nodes' uncertainty. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what 
+function does it use to map its output to a probability? 
+1. Problem Solved (Classification): 
+o Despite containing "regression," Logistic Regression is a powerful 
+Classification model, predominantly used for binary classification tasks. Its 
+objective is to model the probability of an input instance belonging to a 
+specific target class. 
+2. Mapping Function (The Sigmoid Function): 
+o Logistic Regression utilizes the Sigmoid (or Logistic) function to transform 
+its raw linear output into a probabilistic score. 
+o Mechanism: The model first calculates a linear combination of its input 
+features. This raw score, which theoretically ranges from negative to 
+positive infinity, is then passed through the Sigmoid function. 
+o Sigmoid Output: The S-shaped Sigmoid function maps this output into a 
+range strictly between zero and one, allowing the result to be directly 
+interpreted as the predicted probability of the instance belonging to the 
+positive class. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, 
+rather than learned during training. 
+Hyperparameters are external configuration settings that govern the training process 
+itself and must be determined by the practitioner, usually through techniques like 
+cross-validation, before the model's parameters are estimated. 
+1. Learning Rate (Optimization Algorithms): 
+o Function: In optimizers like Gradient Descent, the learning rate dictates 
+the magnitude of the adjustment step taken in the direction opposite to 
+the gradient. 
+o Impact: It critically controls the balance between convergence speed (high 
+rate) and stability (low rate) to ensure the global minimum is reached 
+without oscillation. 
+2. Number of Neighbors (K in K-Nearest Neighbors): 
+o Function: Specifies the number of nearest data points considered when 
+performing classification (majority vote) or regression (averaging). 
+o Impact: A smaller K increases variance (noise sensitivity), while a larger K 
+increases bias (over-smoothing the decision boundary). 
+3. Maximum Depth (Decision Trees and Random Forests): 
+o Function: Sets an upper limit on the number of hierarchical levels the tree 
+structure can grow. 
+o Impact: Directly governs the model's complexity. Limiting depth is a form 
+of pre-pruning used to prevent excessive overfitting to the training data. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Credit Scoring/Fraud Detection: Utilizing supervised classification models to 
+analyze behavioral and transactional data to predict the probability of default 
+or fraudulent activity. 
+2. Recommendation Engines: Employing collaborative filtering algorithms to predict 
+user preference based on historical behavior, maximizing user engagement and 
+cross-selling. 
+3. Predictive Maintenance: Analyzing time-series sensor data (e.g., temperature, 
+vibration) to forecast equipment failure, allowing for preemptive intervention 
+and reducing downtime. 
+4. Natural Language Processing (NLP) for Sentiment: Classifying text data from 
+social media or reviews to gauge public opinion (positive, negative, neutral) 
+toward a brand or product. 
+5. Inventory Optimization: Using regression and forecasting models to predict 
+precise future product demand, minimizing both stockouts and costly 
+overstocking. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV), primarily K-Fold CV, is a robust resampling procedure for 
+evaluating a model's generalization performance on a limited dataset. It partitions the 
+data into $K$ equal subsets, trains the model $K$ times (each time using a different 
+subset as the test set), and aggregates the results. 
+Importance: It provides a low-variance, stable estimate of the generalization error that 
+is less dependent on any single random train-test split. This makes it the standard 
+technique for hyperparameter tuning and reliable model comparison. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a tabular summary describing the performance of a classification 
+model, itemizing the counts of correct and incorrect predictions for each class (True 
+Positives, False Positives, True Negatives, False Negatives). 
+ Precision: Measures the accuracy of the positive predictions (True Positives / All 
+Positives Predicted). It prioritizes minimizing False Positives. 
+ Recall (Sensitivity): Measures the model's ability to find all actual positive cases 
+(True Positives / All Actual Positives). It prioritizes minimizing False Negatives. 
+ F1-Score: The harmonic mean of Precision and Recall. It provides a single, 
+balanced metric that is crucial for evaluating models on datasets with significant 
+class imbalance. 
+B-5. What are feature scaling techniques, and when should you use them? 
+Feature Scaling involves transforming the magnitude of numerical input features so 
+they fall within a consistent range, ensuring all features contribute proportionally to 
+the model's calculation. 
+Techniques: 
+1. Standardization (Z-Score): Transforms data to have a mean of zero and a 
+standard deviation of one. 
+2. Normalization (Min-Max): Rescales data to fall within a fixed range, typically 0 
+to 1. 
+When to Use: Scaling is necessary for any model sensitive to the distance between data 
+points or the magnitude of feature values: 
+ Distance-Based Models: KNN, SVM, K-Means, where unscaled features with large 
+ranges would dominate the Euclidean distance calculation. 
+ Optimization Models: Algorithms using Gradient Descent (e.g., Logistic 
+Regression, Neural Networks), as scaling accelerates convergence by making the 
+cost function surface more symmetrical. 

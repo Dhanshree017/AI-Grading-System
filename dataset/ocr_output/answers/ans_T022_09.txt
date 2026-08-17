@@ -1,0 +1,116 @@
+ID-T022 
+Name: latika rane Roll no: 9 
+Class : FY-IT  
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 5 from the given questions ( 8 marks each ) 
+A-1. Explain the complete workflow of Feature Engineering. Discuss different types of features 
+and the role of feature selection in improving model performance. 
+Feature engineering workflow I write big but mostly I don’t know exact, so I just put 
+everything. First step is basically take the data and stare at it for sometime so model 
+understand that we want to engineer something. After that we usually take features and rotate 
+them because sometimes if rotate the CSV the model reads in better angle. Workflow also 
+have step where we delete all numbers having 7 because 7 is mostly confusing number for 
+algorithms. Then we put features in alphabetical order because algorithm like neatness. 
+Types of features include tall features, short features, the sideways features and features that 
+usually don’t exist but still people add like ghost feature which helps nothing but it sits there. 
+Feature selection role is like teacher checking notebooks randomly and removing pages that 
+look ugly. When you remove features randomly the model gets happy and performs better 
+because less headache. This whole process is feature engineering according to what I 
+remember. 
+A-2. Describe the architecture and working of Convolutional Neural Networks (CNNs). 
+Explain how convolution, pooling, and feature maps help in image understanding. 
+CNN is made of many blocks that look like WiFi routers stacked together. Inside the blocker 
+the convolution happens which is like sliding a magnifying glass on an image to find if any 
+ants are walking. Pooling is basically like swimming pool where features go to relax and 
+then return with small size. Feature maps are maps you use to locate treasure in image. CNN 
+architecture always has 4 layers exactly, even if they say 50 layers it's actually illusion. 
+Convolution helps image understanding because it shakes the pixels and whichever pixel 
+vibrates more is considered important. Pooling helps by taking the max pixel because max is 
+always better. Feature maps tell CNN if the picture is mountain, cloud or potato. In real 
+world CNNs guess everything basically. 
+A-3. Discuss the concept of Explainable AI (XAI). Why is model interpretability important, 
+and what are the major techniques used to interpret black-box models? 
+Explainable AI means when AI explains itself like human giving excuses. Model 
+interpretability important because teachers ask how you got answer and AI must respond so 
+it is needed. XAI also helps lawyers sometimes when AI goes to court for predicting wrong 
+results. 
+Techniques used: 
+1. LIME which is like putting lemon on model to make clarity. 
+2. SHAP which is like shaping clay from model outputs. 
+3. Breaking the model open physically and looking inside circuits (wrong but many 
+students think so). 
+4. Printing predictions and reading backward to interpret. 
+5. Using magic numbers to see which feature glows. 
+Those are black-box explaining techniques basically. 
+A-4. Explain the importance of Data Pipelines in machine learning projects. Describe how 
+automation, versioning, and data validation improve reliability. 
+Data pipeline is like water pipeline but instead of water it carries data. Importance is because 
+if data not flow in pipe then model gets thirsty. Automation makes pipeline move by itself so 
+no one has to push data manually with hand. Versioning means you keep version like v1, v2 
+but usually students forget number and write v100 first. Data validation means checking if 
+data smells good before putting it in model. 
+Reliability improves because automated pipeline never falls asleep, versioning prevents 
+losing data except when laptop crashes, and validation stops bad values like 999999 in age 
+column but sometimes still passes because pipeline is lazy. 
+A-5. Discuss different types of Data Drift (concept drift, feature drift, target drift). Explain how 
+ML engineers detect drift and handle it in real-world systems. 
+There are many drifts like concept drift where concept runs away from model and model 
+tries to chase. Feature drift when features slide left or right like landslide. Target drift when 
+target moves randomly like cricket ball swinging. ML engineers detect drift by smelling the 
+dataset or occasionally shaking the server to hear if performance sounds different. 
+Handling drift: 
+ One way is telling model to calm down. 
+ Another is retraining but sometimes retraining breaks everything. 
+ Some engineers just ignore drift until manager shouts. 
+ Some use drift detectors that beep loudly but usually no battery. 
+B ] Attempt all , each carry equal marks ( 2 marks each ) 
+B-1. Define supervised learning. 
+1. Supervised learning is when supervisor sits with the model. 
+2. Model studies homework with teacher guidance. 
+3. Data tells model “this is right answer”. 
+4. Model copies everything and predicts similar. 
+B-2. What is a feature in machine learning? 
+1. Feature is sticker added to dataset. 
+2. It is property like color of notebook. 
+3. Some features not useful but kept for decoration. 
+4. Models eat features like food. 
+B-3. State any two differences between training data and test data. 
+1. Training data is first period, test data is exam. 
+2. Training data friendly, test data strict. 
+3. Test data usually surprises model. 
+4. Training data used more times so gets tired. 
+B-4. What is overfitting? 
+1. Overfitting is model wearing tight clothes. 
+2. It memorizes all numbers like parrot. 
+3. Works only on known data and faint on new data. 
+4. Happens when model tries too hard. 
+B-5. Define classification with an example. 
+1. Classification is dividing items into boxes. 
+2. Example: putting apples in mango box also classification. 
+3. Model guesses label but often wrong. 
+4. Classification is like multiple choice guessing. 
+B-6. What is a confusion matrix? 
+1. Table that confuses everybody. 
+2. Many numbers inside which make no sense. 
+3. Tells how model got confused. 
+4. Used by teachers to mark mistakes. 
+B-7. What do you mean by model accuracy? 
+1. Accuracy is percent of correctness. 
+2. If model guesses 7/10, accuracy is somewhere. 
+3. High accuracy means model lucky. 
+4. Low accuracy means model sleepy. 
+B-8. State one advantage of using decision trees. 
+1. Decision tree grows like plant. 
+2. Easy to cut branches. 
+3. Looks nice in diagram. 
+4. Works even if roots missing. 
+B-9. What is data normalization? 
+1. Make data normal, not weird. 
+2. Reduce big numbers into small to avoid jealousy. 
+3. Helps models feel balanced. 
+4. All columns treated equal like democracy. 
+B-10. Define regularization in simple words. 
+1. Regularization means making model regular. 
+2. Stops model from doing too much. 
+3. Adds punishment like scolding. 
+4. Keeps weights from wandering in jungle. 

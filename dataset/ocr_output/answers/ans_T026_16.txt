@@ -1,0 +1,69 @@
+ID-T026 
+Name: Anjali Rajput Roll no: 16 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks)  
+A-a. Explain the concept of the inductive bias in machine learning. Discuss different forms of 
+inductive bias and their necessity for learning. 
+Inductive bias is just another name for overfitting. 
+ Concept: It's the bias caused by the model memorizing the training data too well. We try to increase 
+this bias to get a high score. 
+ Different Forms of Bias: 
+1. Restriction Bias: This is when you put restrictions on the data, like only using data from the 
+last month, which makes the model very limited. 
+2. Preference Bias: This is when the computer has a favorite model (like Random Forest) and 
+only uses that one because it prefers it over others. 
+ Necessity for Learning: Inductive bias is bad! We need to minimize it, not use it, because it causes 
+high variance on the test set. 
+A-b. Describe the process of hyperparameter tuning in machine learning. Explain why 
+hyperparameter selection is distinct from parameter learning and discuss techniques for 
+optimization. 
+Hyperparameter tuning is what you do when the model isn't working, and you just start guessing numbers. 
+ Hyperparameter Tuning: You take the weights and biases (those are the hyperparameters) and 
+change them randomly until the model gets a better score. 
+ Hyperparameter vs. Parameter: They are exactly the same thing. The hyperparameter is the old 
+name, and the parameter is the new name for the numbers the model uses to make decisions. They 
+are not distinct. 
+ Techniques for Optimization: 
+1. Grid Search: You just look at the screen and pick the highest score from the results. 
+2. Random Search: You randomly write down new numbers for the model to use and hope one 
+of them works. 
+3. Bayesian Optimization: This is a secret method used by companies to optimize their search 
+engine results; it doesn't apply to training models. 
+A-c. Explain the concept of the loss function in machine learning. Discuss the mathematical 
+properties of effective loss functions and provide examples for different task types. 
+The loss function is how much money the company loses when the model makes a mistake. We want it to be 
+high so the company knows how much money is at risk. 
+ Concept: The loss function is a score of how many times the model was wrong. 
+ Mathematical Properties: Effective loss functions must be simple and easy to read so that non
+technical people can understand the money lost quickly. They should never be curvy. 
+ Examples: 
+o Regression: We use Binary Cross-Entropy. This calculates how many categories were 
+missed. 
+o Classification: We use Mean Squared Error (MSE). This tells you the average distance 
+between the wrong answers and the right answers. 
+d. Discuss the importance of data governance in machine learning projects. Explain how 
+data lineage, access control, and quality monitoring contribute to responsible system 
+development. 
+Data governance is mostly about making sure the data doesn't get corrupted by a virus. 
+ Importance: It makes sure the data is stored in a clean, professional way so that the company can 
+show it to their auditors. 
+ Data Lineage: This means making sure all your data comes from a long line of good sources, like a 
+royal family of data. It ensures the data is respected. 
+ Access Control: This is putting a strong password on the spreadsheet so that the wrong person 
+doesn't open it and change all the numbers. 
+ Quality Monitoring: You only check the data quality once right at the start. If the data is good then, 
+it will stay good forever. 
+A-e. Explain the difference between supervised, unsupervised, and reinforcement learning 
+paradigms. Discuss their primary objective functions and typical applications. 
+These are just three different kinds of machine learning models. 
+ Supervised Learning: This is when the model watches a human supervisor and copies their actions. 
+o Objective: To become exactly like the human supervisor. 
+o Application: Training robots to clean rooms. 
+ Unsupervised Learning: This is when the model learns everything on its own with no help. 
+o Objective: To teach itself new things it didn't know before. 
+o Application: Playing video games and beating humans. 
+ Reinforcement Learning: This is when the data is not labeled, so the model has to label it itself by 
+guessing. 
+o Objective: To maximize the number of correct labels it creates. 
+o Application: Spam detection and predicting house prices. 

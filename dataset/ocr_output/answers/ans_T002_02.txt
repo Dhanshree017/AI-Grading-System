@@ -1,0 +1,182 @@
+ID-T002 
+Name : Akshit Shinde   Roll no: M0012 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A) Any 5 out of following (10 Marks) 
+A-1. What is machine learning? 
+Machine Learning (ML) it is the system where the computer it learns things by itself. It 
+is not the code that we write. The machine it looks at many data and then it knows 
+what to do for the next time. 
+1. It is like a baby that it sees many apples and then it knows what is apple. 
+2. The goal is to guess right on the new data that it never saw before. 
+3. It uses a lot of math to change its internal thinking (the weights). 
+4. It is a part of AI, which is the big plan to make machines smart. 
+5. ML it only works if you have a big, clean dataset. 
+A-4. What is the bias-variance tradeoff? 
+The Bias-Variance Tradeoff it is the struggle that you must deal with when you build a 
+model. It is about two types of model mistakes. 
+1. Bias it is when the model is too simple and it cannot see the pattern 
+(Underfitting). 
+2. Variance it is when the model is too complex and it memorizes the noise 
+(Overfitting). 
+3. If you fix the Bias (make the model complex), then the Variance it will get worse. 
+4. The final error is a mix of Bias error and Variance error. 
+5. You must find the middle spot where the total mistake is lowest. 
+A-5. What is overfitting, and how can it be avoided? 
+Overfitting it is a very bad thing when the model it is too good on the training data but 
+it is terrible on the new data. This is high variance. 
+1. It happens because the model is too flexible and it learns the useless noise from the 
+training set. 
+2. The symptom is that the training accuracy is 99% but the test accuracy is 50%. 
+3. You can avoid it by getting more data for the training. 
+4. You can also avoid it by making the model simpler (less complex layers). 
+5. The technique Regularization it is used to punish the model for being too complex. 
+A-6. What are a training set, validation set, and test set? 
+These are the three separate piles that you must split the data into for proper model 
+building and checking. 
+1. Training Set it is the biggest pile of data. The model it uses this data to learn the 
+patterns. 
+2. Validation Set it is the middle pile. It is used to tune the model's settings 
+(hyperparameters) to find the best ones. 
+3. Test Set it is the secret pile. It is used only one time at the very end to get the 
+honest final score. 
+4. You cannot train or tune the model on the test set or the score will be lying. 
+5. They must be kept separate to prevent the data leakage. 
+A-7. What is cross-validation? 
+Cross-validation (CV) it is a technique to check the model's score many times on different 
+parts of the data so the final score is more fair. 
+1. It is better than just one single train-test split because it gives a more stable 
+score. 
+2. In k-Fold CV, you split the data into k groups (e.g., 5 groups). 
+3. The model it trains 5 times, and each time it uses a different group for testing. 
+4. The final score is the average of the five test scores that you get. 
+5. It is very good for small data where every single row is valuable for training. 
+B) Any 4 out of following (20 Marks) 
+B-1. Explain the difference between classification and regression. 
+Classification and Regression they are the two fundamental types of problems that you 
+can solve with the supervised learning. They are only different in what the final answer is. 
+1. Classification it guesses a category or a label. The output it is discrete (limited 
+choices), like $\text{Yes}$ or $\text{No}$, or $\text{Red}$, $\text{Blue}$, 
+$\text{Green}$. 
+2. The goal of classification it is to draw boundaries to separate the data points of 
+different classes. 
+3. Regression it guesses a real number. The output it is continuous and can be any 
+value, like the house price or the temperature. 
+4. The goal of regression it is to fit a line or a curve that best models the 
+relationship in the data. 
+5. Classification is checked with metrics like Accuracy, Precision, and Recall. 
+6. Regression is checked with metrics like Mean Squared Error (MSE) and R-squared. 
+7. Classification it uses probability to decide the final class. Regression it gives the final 
+predicted value directly. 
+8. Regression is harder to get exactly right because the number can be any value, but 
+classification it only has a few choices to pick from. 
+B-2. How does a linear regression model work? 
+A Linear Regression (LR) model it is a very simple model that it finds the best straight 
+line to fit the numerical data so that you can predict the continuous output. 
+1. The math equation it is a straight line formula like $\text{y} = \text{mx} + 
+\text{c}$, where $\text{m}$ is the slope (weight) and $\text{c}$ is the y
+intercept (bias). 
+2. The model it learns the best slope and intercept that minimize the total error 
+between the line and all the data points. 
+3. The error is usually measured using the Mean Squared Error (MSE), which it 
+penalizes big mistakes a lot. 
+4. The optimization process it uses Gradient Descent to iteratively adjust the slope 
+and intercept in the direction that reduces the MSE. 
+5. The key assumption is that the relationship between the input and output it must 
+be linear, or the model will be very bad. 
+6. LR it is very easy to explain to people because you can just show them the line and 
+the formula. 
+7. The final result it is the predicted numerical value for a given set of input features. 
+8. It is not good for data that is very complex or it has many non-linear relationships. 
+B-3. What is a decision tree, and how is it pruned? 
+A Decision Tree (DT) model it is a flowchart of if-then rules that it separates the data 
+into smaller boxes until the final group is pure. 
+1. The tree it starts at the top and it chooses the best feature and value to make a 
+split that best separates the classes. 
+2. This choice it is made by maximizing the Information Gain, which it measures the 
+reduction in chaos (Entropy). 
+3. The splitting process is repeated down the branches until the leaf nodes they are 
+very pure or the tree gets too deep. 
+4. The problem is that DTs they easily memorize the training data noise, which is 
+called overfitting (high variance). 
+5. Pruning it is the technique that you use to avoid this overfitting by cutting off 
+the unnecessary branches of the tree. 
+6. Pre-pruning it is when you stop the tree from growing too deep in the first place 
+by setting limits like maximum depth. 
+7. Post-pruning it is when you grow the full tree first and then you replace the low
+value sub-trees with a single leaf node to make the whole thing simpler. 
+8. Pruning it helps the model generalize to new data by making it less complex and 
+less sensitive to noise. 
+B-4. What is the Random Forest algorithm? 
+Random Forest (RF) it is a very good algorithm that it uses many Decision Trees working 
+together to make a better final guess. It is a type of ensemble learning. 
+1. It uses the Bagging technique where many trees are trained at the same time but 
+each tree gets a random subset of the original data. 
+2. The key thing is that each tree also only considers a random subset of the input 
+features when it decides on a split. 
+3. This randomness in data and features it makes all the individual trees diverse so 
+they make different mistakes. 
+4. Because the mistakes are different, when the final answers are averaged (or voted), 
+the errors cancel out. 
+5. This randomness in features it is the difference between RF and simple bagging. 
+6. RF it is excellent at reducing the high variance (overfitting) problem that single 
+decision trees have. 
+7. The final prediction it is made by taking a majority vote from all the individual 
+trees for classification. 
+8. RF it is a very robust model that it performs well without a lot of hyperparameter 
+tuning. 
+C) Attempt All (20 Marks) 
+C-1. What is Naive Bayes? 
+Naïve Bayes (NB) it is a simple, fast classification algorithm that it is based on the math 
+of Bayes' Theorem but it makes a very simplifying assumption. 
+1. It calculates the probability of a class being true given the input features. 
+2. The naïve assumption is that all the features are independent from each other, 
+even though this is usually false in reality. 
+3. This assumption it makes the calculation extremely fast because you can just 
+multiply the individual probabilities instead of complex joint probability. 
+4. It is trained very quickly by just counting the frequencies of the features in the 
+training data for each class. 
+5. NB it is very good for text classification problems like spam detection because it 
+handles a lot of features well. 
+C-2. How is k-Nearest Neighbors (KNN) different from k-means clustering? 
+k-Nearest Neighbors (KNN) and k-Means Clustering they are two very different 
+algorithms even though they both use the letter 'k' and they both use distance. 
+1. KNN it is a supervised learning algorithm for classification or regression because it 
+needs labeled data to train. 
+2. k-Means it is an unsupervised learning algorithm for clustering because it only needs 
+unlabeled data to find groups. 
+3. In KNN, the $k$ it is the number of neighbors to look at to decide the class of 
+the new point. 
+4. In k-Means, the $k$ it is the number of groups (clusters) that you want the 
+algorithm to find. 
+5. KNN it is a lazy learner because it only stores the data and does the calculations 
+at the prediction time. 
+6. k-Means it is an active learner because it calculates the cluster centers (centroids) 
+during the training time. 
+C-3. What is gradient descent? 
+Gradient Descent (GD) it is the core math method that it makes machine learning models 
+learn by finding the best parameters (weights) that minimize the total mistake. 
+1. It is an iterative process that it moves the parameters in small steps towards the 
+lowest point of the mistake function (the cost function). 
+2. The gradient it is the slope of the mistake function, and it tells you the direction 
+of the steepest uphill. 
+3. The algorithm it moves in the opposite direction of the gradient (downhill) to find 
+the bottom. 
+4. The Learning Rate it is a crucial hyperparameter that it controls the size of the 
+steps. Too big a step it will overshoot the minimum. 
+C-4. Explain the difference between Batch and Stochastic Gradient Descent. 
+Batch Gradient Descent (BGD) and Stochastic Gradient Descent (SGD) they are two 
+versions of the Gradient Descent algorithm that they differ in how much data they use 
+for one update step. 
+1. BGD it calculates the gradient using the entire training dataset for every single 
+update. 
+2. SGD it calculates the gradient using only one single data example for every single 
+update. 
+3. BGD it is very slow per update because it has to process all the data, but the path 
+is smooth. 
+4. SGD it is very fast per update but the path is very noisy because it only uses one 
+example. 
+5. SGD is better for very large datasets because it can update faster and it uses less 
+memory. 
+6. BGD it is guaranteed to find the true minimum if the learning rate is right. SGD it 
+will oscillate near the minimum but it is good enough. 

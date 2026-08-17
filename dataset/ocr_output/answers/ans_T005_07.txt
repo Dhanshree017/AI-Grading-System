@@ -1,0 +1,147 @@
+ID-T005 
+Name: Sneha Joshi Roll no: 7 
+Class : Ty Bsc IT 
+Email : studentisdummy@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. What is the core difference between traditional programming and machine 
+learning? 
+The core distinction between traditional programming and machine learning is 
+fundamentally in how the executable logic (the rules) is generated and updated. 
+Feature 
+Traditional Programming 
+(Imperative) 
+Machine Learning 
+(Inferential/Declarative) 
+Input 
+Data and explicit Rules (hand
+coded algorithms). 
+Data and the desired Answers (labeled 
+output). 
+Output 
+The Answer (The result of 
+executing the code). 
+The Rules (The learned statistical 
+model/function). 
+Program 
+Logic 
+Static. Programmers must 
+anticipate every possible 
+condition and manually write 
+instructions for them. 
+Dynamic. The logic is inferred 
+statistically from patterns in the data 
+through an optimization process. 
+Core 
+Mechanism 
+Instruction execution and 
+control flow. 
+Statistical inference and parameter 
+optimization. 
+In summary, traditional programming provides the rules to get the answer, while 
+machine learning provides the data and answers to discover the rules. 
+A-2. Explain the concept of Entropy and Information Gain in the context of building a 
+Decision Tree. 
+Entropy and Information Gain are the theoretical metrics used to implement the 
+greedy search strategy employed by Decision Tree algorithms to select the optimal 
+feature for splitting data at each node. 
+1. Entropy (Impurity): 
+o Concept: Entropy is a measure of the randomness, disorder, or impurity 
+of the class labels within a set of data. A node with maximum entropy 
+(e.g., a perfect fifty-fifty class split) provides the least information, while 
+a node with zero entropy is perfectly pure (all instances belong to one 
+class). 
+o Role in DT: It quantifies the inherent uncertainty in the class distribution 
+of a node before a split is executed. 
+2. Information Gain (Reduction in Impurity): 
+o Concept: Information Gain is the reduction in entropy that results from 
+splitting a node based on a specific feature. It quantifies the amount of 
+"new information" provided by the feature that helps reduce the 
+uncertainty about the class label. 
+o Role in DT: The algorithm tests all possible features and split points, 
+selecting the one that maximizes Information Gain. This ensures that the 
+most powerful, differentiating features are placed higher up in the tree, 
+making the partitions highly effective. 
+A-4. Despite its name, what kind of problem does Logistic Regression solve, and what 
+function does it use to map its output to a probability? 
+1. Problem Solved (Classification): 
+o Despite the term "regression" in its name, Logistic Regression is a 
+fundamental Classification model, primarily used for binary classification 
+(predicting one of two discrete outcomes). Its goal is to model the 
+probability of an instance belonging to a specific class. 
+2. Mapping Function (The Sigmoid Function): 
+o Logistic Regression uses the Sigmoid (or Logistic) function to map the raw 
+output of its linear component to a probability. 
+o Mechanism: The model first calculates a linear combination of the input 
+features. This raw score is then passed through the Sigmoid function, which 
+takes any real number and "squashes" it into a value strictly bounded 
+between zero and one. This bounded output is interpreted as the predicted 
+probability for the positive class. 
+A-5. Provide three examples of hyperparameters that must be tuned before training, 
+rather than learned during training. 
+Hyperparameters are external configuration settings that control the estimation 
+process (the learning algorithm itself) and must be set by the practitioner prior to 
+training. 
+1. Learning Rate (Optimization Algorithms): 
+o Function: Determines the step size taken by an optimizer (like Gradient 
+Descent) in the direction of the minimum loss. 
+o Tuning Impact: A high rate risks overshooting the minimum; a low rate 
+causes slow convergence. 
+2. Number of Neighbors (K in K-Nearest Neighbors): 
+o Function: Specifies the number of nearest data points considered for the 
+majority vote in classification or averaging in regression. 
+o Tuning Impact: An overly small K increases variance (noise sensitivity); an 
+overly large K increases bias (smoothing the decision boundary too much). 
+3. Regularization Strength (C or Alpha/Lambda): 
+o Function: A parameter (often C in SVM or Alpha/Lambda in linear models) 
+that controls the penalty applied to high parameter values. 
+o Tuning Impact: It is the primary control for managing the bias-variance 
+tradeoff by preventing the model's weights from becoming too large. 
+B] Attempt any 4 (2 marks each) 
+B-1. Identify and explain five business applications of machine learning. 
+1. Credit Risk Modeling: Using classification models to assess a borrower's likelihood 
+of default, optimizing lending decisions and mitigating financial loss. 
+2. Personalized Recommendations: Deploying collaborative filtering algorithms to 
+predict user preferences and suggest items (products, media), boosting user 
+engagement and sales. 
+3. Customer Churn Prediction: Applying supervised models to identify customers 
+likely to cease service, allowing proactive intervention with targeted offers to 
+improve retention. 
+4. Demand Forecasting: Utilizing time-series and regression models to predict 
+future demand for products, which optimizes supply chain management and 
+inventory levels. 
+5. Quality Control in Manufacturing: Using computer vision and deep learning 
+models to automatically inspect products on an assembly line for defects faster 
+and more consistently than human inspectors. 
+B-3. Explain the concept of Cross-Validation and its importance. 
+Cross-Validation (CV) is a powerful resampling technique, commonly implemented as 
+K-Fold CV, used to obtain a reliable estimate of a model's performance on unseen data. 
+The data is partitioned into $K$ subsets (folds), and the model is trained $K$ times, 
+each time using a different fold for testing and averaging the results. 
+Importance: CV provides a more stable and accurate generalization error estimate than 
+a single train-test split, as it ensures the performance score is not biased by a specific 
+random partition. This stability is critical for reliable hyperparameter tuning. 
+B-4. What is a confusion matrix? Define and explain Precision, Recall, and F1-score. 
+A Confusion Matrix is a table that summarizes the performance of a classification 
+model, illustrating the four possible outcomes: True Positives, True Negatives, False 
+Positives (Type I error), and False Negatives (Type II error). 
+ Precision: The ratio of correct positive predictions to the total number of positive 
+predictions made. It quantifies the model's exactness and its ability to avoid False 
+Positives. 
+ Recall (Sensitivity): The ratio of correct positive predictions to the total number 
+of actual positive cases. It quantifies the model's completeness and its ability to 
+avoid False Negatives. 
+ F1-Score: The harmonic mean of Precision and Recall. It provides a single metric 
+that balances both measures, making it particularly valuable for evaluating 
+models on imbalanced datasets. 
+B-5. What are feature scaling techniques, and when should you use them? 
+Feature Scaling refers to methods used to transform the values of numerical features 
+so they fall within a consistent range, thus standardizing the data's contribution to 
+the model. 
+When to Use: Scaling is mandatory for: 
+1. Distance-Based Algorithms: K-Nearest Neighbors (KNN), Support Vector 
+Machine (SVM), and K-Means Clustering, as these models calculate the distance 
+between data points, and unscaled features with large ranges would unfairly 
+dominate the distance calculation. 
+2. Optimization Algorithms: Models that use Gradient Descent (e.g., Logistic 
+Regression, Neural Networks) converge much faster and more reliably when 
+features are scaled, as the cost function becomes more symmetrical. 

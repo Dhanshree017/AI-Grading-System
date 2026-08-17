@@ -1,0 +1,81 @@
+ID-T024 
+Name: shiksha more Roll no: 24 
+Class : FY –Computer Science 
+Email : collegeemail0017@gmail.com 
+A-2. What is data preprocessing? Describe any four common preprocessing steps used 
+before training an ML model. 
+Definition of Data Preprocessing 
+Data preprocessing is the process of converting raw data into a clean, structured, and 
+machine-readable format suitable for training machine learning models. 
+Need for Data Preprocessing 
+Real-world data is often incomplete, inconsistent, and noisy. Preprocessing improves data 
+quality and enhances model learning capability. 
+Preprocessing Steps 
+1. Data Cleaning: Removal of duplicate records, correction of inconsistent values, and 
+handling missing data. 
+2. Data Encoding: Conversion of categorical attributes into numerical values using 
+encoding techniques. 
+3. Data Normalization: Scaling numerical features to ensure uniform contribution 
+during training. 
+4. Outlier Treatment: Identification and handling of extreme values to avoid skewed 
+model behavior. 
+Impact on Model Performance 
+Effective preprocessing leads to improved accuracy, stability, and generalization of models. 
+Conclusion 
+Data preprocessing is a crucial step that directly influences the success of machine learning 
+systems. 
+A-3. Explain classification and regression problems in machine learning. Give one 
+example of each. 
+Introduction 
+Classification and regression are two major types of supervised learning problems, 
+distinguished by the nature of their outputs. 
+Classification Problems 
+Classification involves predicting discrete output labels. The model assigns an input to one 
+of several predefined classes. 
+Regression Problems 
+Regression involves predicting continuous numerical values based on relationships between 
+input features and output variables. 
+Differences Between Classification and Regression 
+Classification outputs are categorical, whereas regression outputs are continuous values. 
+Examples 
+An example of classification is credit card fraud detection, where transactions are labeled as 
+fraudulent or genuine. An example of regression is predicting house prices based on location 
+and size. 
+Applications 
+Classification is widely used in healthcare, finance, and security, while regression is used in 
+forecasting and estimation tasks. 
+Conclusion 
+Choosing the correct problem type is essential for accurate and meaningful predictions. 
+A-4. What is overfitting? Explain its causes and mention any two techniques to reduce 
+overfitting. 
+Definition of Overfitting 
+Overfitting occurs when a model learns training data too closely, including noise, resulting in 
+poor performance on new data. 
+Causes of Overfitting 
+Common causes include complex models, insufficient training data, and lack of 
+regularization. 
+Effects of Overfitting 
+Overfitted models show high training accuracy but fail to generalize to unseen data. 
+Techniques to Reduce Overfitting 
+1. Regularization: Adds penalty terms to prevent excessively complex models. 
+2. Cross-Validation: Uses multiple data splits to validate model performance. 
+Additional Preventive Measures 
+Early stopping and increasing training data can also help reduce overfitting. 
+Conclusion 
+Managing overfitting is essential for building reliable machine learning models. 
+A-5. Define model evaluation. Explain any two evaluation metrics used for classification 
+models. 
+Definition of Model Evaluation 
+Model evaluation is the process of measuring a machine learning model’s performance on 
+unseen data using appropriate metrics. 
+Purpose of Model Evaluation 
+It helps assess accuracy, reliability, and generalization capability of models. 
+Evaluation Metrics 
+1. Accuracy: Measures the proportion of correctly classified instances. 
+2. Recall: Measures the ability of the model to identify all relevant positive cases. 
+Importance of Metric Selection 
+Different metrics are chosen based on problem requirements and data imbalance. 
+Conclusion 
+Model evaluation ensures informed decision-making during model selection and 
+deployment. 
+. 

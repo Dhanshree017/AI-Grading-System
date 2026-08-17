@@ -1,0 +1,158 @@
+ID-T011 
+Name : Nehal Sharma Roll no: 9 
+Class : Ty IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt Any 4 (20 Marks) 
+A-1. Define Machine Learning. What is a hypothesis in ML? 
+Machine learning is a technology which make computer learn from data and 
+then it can predict new data output. It not need to program everything 
+manually. It use mathematical function and algorithm to get pattern from 
+given examples and make decision automatic. 
+A hypothesis in ML is a function that show how input connect to output. It 
+is like the machine’s best guess about the data relation. 
+1. Machine learning help in prediction and automation. 
+2. It can handle large data very fast. 
+3. It has many algorithm for learning. 
+4. Hypothesis is a relation between input and target. 
+5. It is trained by minimizing error. 
+6. Wrong hypothesis give wrong output. 
+7. Model try to find correct hypothesis using data. 
+8. Hypothesis can be linear, polynomial or neural. 
+9. It help to make system intelligent and accurate. 
+A-3. Describe different types of learning algorithms in ML. 
+Machine learning has many types of algorithms depending how it learn from 
+data. 
+1. Supervised learning – learn from labeled data. 
+2. Unsupervised learning – find hidden pattern from unlabeled data. 
+3. Semi-supervised learning – mixture of both types. 
+4. Reinforcement learning – learn from reward and feedback. 
+5. Deep learning – use multi layers for high level features. 
+6. Transfer learning – transfer knowledge from one task to other. 
+7. Online learning – update with new data continuously. 
+8. Active learning – algorithm ask for label on uncertain data. 
+9. Self learning – system improve automatically over time. 
+A-4. What are evaluation metrics in ML? Explain accuracy, precision, recall, and 
+F1-score. 
+Evaluation metrics are used to check how well a model perform. They are 
+used to compare model performance and find best one. 
+1. Accuracy means ratio of correct prediction to total predictions. 
+2. Precision means ratio of true positive to total predicted positive. 
+3. Recall means ratio of true positive to total actual positive. 
+4. F1 score is harmonic mean of precision and recall. 
+5. These metrics used in classification tasks. 
+6. Accuracy good for balanced data. 
+7. F1 better for imbalanced dataset. 
+8. High recall means model catch most positive. 
+9. High precision means less false alarm. 
+A-5. Explain feature selection and dimensionality reduction. 
+Feature selection and dimensionality reduction are used to simplify dataset 
+and make model efficient. Feature selection choose important features, 
+dimensionality reduction convert data into smaller space. 
+1. Feature selection remove unnecessary features. 
+2. It increase model accuracy. 
+3. Dimensionality reduction use PCA or LDA. 
+4. It reduce training time. 
+5. Both help to avoid overfitting. 
+6. Reduce noise from dataset. 
+7. Improve model interpretability. 
+8. Save memory and computation. 
+9. Use in text, image, bio data analysis. 
+B] Attempt Any 8 (40 Marks) 
+B-1. Discuss Naive Bayes algorithm in detail. 
+Naive Bayes is probability-based algorithm that use Bayes theorem and 
+assume all features are independent. 
+1. It works on conditional probability. 
+2. P(C|X) = P(X|C)*P(C)/P(X). 
+3. Fast to train even on large data. 
+4. Used in spam filter and sentiment analysis. 
+5. Simple and good baseline algorithm. 
+6. Handle multiple class classification. 
+7. Works better when independence assumption true. 
+8. Fails if feature correlated. 
+9. Example: classify email spam or not spam. 
+B-3. What are ensemble methods? Explain Bagging, Boosting, and Random 
+Forest. 
+Ensemble methods combine many models to get better performance than 
+single one. 
+1. Bagging train models on different data samples. 
+2. Boosting train sequentially correcting errors. 
+3. Random forest is group of decision trees using bagging. 
+4. Ensemble reduce overfitting and variance. 
+5. Bagging example: Random forest. 
+6. Boosting example: AdaBoost, Gradient Boost. 
+7. Combine model outputs by voting or averaging. 
+8. Improve stability and accuracy. 
+9. Used in classification and regression. 
+B-4. Explain unsupervised learning algorithms like K-Means and Hierarchical 
+Clustering. 
+Unsupervised algorithms find pattern without labels. K-Means and Hierarchical 
+are two major algorithms. 
+1. K-Means divide data into K groups. 
+2. It choose random centroids first. 
+3. Assign each point to nearest centroid. 
+4. Update centroid till stable. 
+5. Hierarchical make cluster tree structure. 
+6. Agglomerative start with one point and merge. 
+7. Divisive start with all and split. 
+8. Dendrogram used for visualization. 
+9. Used in customer segmentation, document grouping. 
+B-5. Explain how ML is used in medical diagnosis or fraud detection. 
+Machine Learning is helping doctors and finance system to detect pattern 
+automatically. 
+1. In medical field it find disease early. 
+2. Image recognition help in X-ray detection. 
+3. Predict patient risk using past records. 
+4. In fraud detection it monitor transactions. 
+5. Detect unusual activities automatically. 
+6. Save time and human error. 
+7. Provide alert for suspicious case. 
+8. Used in insurance claim analysis. 
+9. Improve efficiency and decision quality. 
+B-6. Design an ML solution for predicting student performance or house prices. 
+An ML model can be designed to predict marks or house cost. 
+1. Collect dataset of students or houses. 
+2. Clean and preprocess data. 
+3. Select features like hours studied or area. 
+4. Split data into train and test set. 
+5. Choose algorithm like regression. 
+6. Train the model using training data. 
+7. Evaluate using test set. 
+8. Tune parameters for accuracy. 
+9. Predict new marks or price. 
+B-7. Describe Principal Component Analysis (PCA). 
+PCA is used for dimensionality reduction while keeping important variance in 
+data. 
+1. Standardize the dataset. 
+2. Compute covariance matrix. 
+3. Find eigenvalues and eigenvectors. 
+4. Sort eigenvalues in descending order. 
+5. Select top k eigenvectors as principal components. 
+6. Transform data to new coordinate space. 
+7. Reduce dimension keeping max information. 
+8. Improve visualization and speed. 
+9. Used in image compression, data simplification. 
+B-8. Explain Gradient Descent and its variants. 
+Gradient descent minimize loss function by updating parameters opposite to 
+gradient direction. 
+1. Formula: w = w - α * (∂J/∂w). 
+2. Batch GD use full dataset per step. 
+3. Stochastic GD use one sample. 
+4. Mini-batch GD use small batches. 
+5. Helps to find optimal weights. 
+6. Learning rate α control step size. 
+7. Too large α overshoot minima. 
+8. Used in neural network training. 
+9. Curve show cost decrease over epoch. 
+B-9. Explain Reinforcement Learning with MDP, Q-learning, and exploration
+exploitation. 
+Reinforcement Learning train agent to take actions in environment for 
+reward. 
+1. MDP represent RL problem with states, actions, rewards. 
+2. Q-learning store Q-value for state-action pair. 
+3. Update rule Q(s,a)=Q(s,a)+α[r+γmaxQ(s’,a’)-Q(s,a)]. 
+4. Exploration means trying new actions. 
+5. Exploitation means using known best action. 
+6. RL learn by feedback not data. 
+7. Used in games like Chess, Go. 
+8. Improve by experience. 
+9. Balancing exploration and exploitation important. 

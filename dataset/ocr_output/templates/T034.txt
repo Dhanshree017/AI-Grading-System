@@ -1,0 +1,12 @@
+ID – T034 
+Machine Learning Examination 
+Semester 2 
+INTERNAL EXAM Total marks : 20 
+TY-Information Technology  Date – 15-10-2025     
+
+A] Attempt 4 from the following       ( 5 marks each )  
+1. Explain the concept of model generalization and why it is important in machine learning. 
+2. Describe the role of data labeling in supervised learning systems. 
+3. Explain how ensemble methods improve prediction accuracy in machine learning. 
+4. Discuss the importance of reproducibility in machine learning experiments. 
+5. Explain the concept of model uncertainty and its significance in decision-making. 

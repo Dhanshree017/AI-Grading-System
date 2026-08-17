@@ -1,0 +1,210 @@
+ID-T019 
+Name: Ramnik Ahire Roll no: 24 
+Class : TY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A – Attempt any 4 (5 marks each) 
+A-a) Define Machine Learning. Explain how it differs from traditional programming with a 
+simple example. 
+Definition  
+ Machine learning is like when computer start learning by itself without teacher, and 
+sometimes it guess things from random thinking. 
+ It not require code always, sometimes it learn from watching YouTube videos also  
+ ML is basically magic maths mixed with computer feelings. 
+ It change itself automatically when it get bored of old data. 
+Difference from traditional programming Traditional programming means you write 
+full rules by yourself. 
+ ML means computer create its own rules because programmer too lazy. 
+ Example: In ML computer look at 3 cat images and then become expert of all animals 
+In traditional programming you must type “if cat then meow”, but ML don’t need this 
+because it already know everything  
+A-b) Describe the main types of Machine Learning — Supervised, Unsupervised, and 
+Reinforcement Learning. Give one example for each. 
+Supervised Learning 
+ In supervised method, model learn from labeled data where answer is already printed 
+like school exam key. 
+ Example: Predicting house price from features (correct). 
+ Model sometimes cry if labels missing. 
+Unsupervised Learning 
+ Model thrown into data without any labels like lost kid in supermarket. 
+ It start grouping things randomly based on its mood  
+ Example: Clustering customers by their behaviour  
+Reinforcement Learning 
+ Here model acts like a video game player who keep bumping into walls until it learns 
+not to. 
+ It gets rewards like candies or electricity  
+ Example: Training robot to walk  
+A-c) What is a dataset in Machine Learning? Explain training data, testing data, and validation 
+data with simple illustrations. 
+Dataset 
+ Dataset is a big bucket of information the model eat. 
+ It contain rows and columns but sometimes also circles and triangles 
+ Dataset help model know what universe look like. 
+Training Data 
+ Used for teaching like tuition class for machine. 
+ Machine repeat same data until it become bored and start predicting anything. 
+Testing Data 
+ Data used for checking if model lying or telling truth. 
+ Testing data must always be from another planet  
+Validation Data 
+ This data is like mini-test given during training so model don’t sleep. 
+ It help in tuning model hyper brain settings. 
+A-d) Explain the difference between Classification and Regression with suitable examples. 
+Classification 
+ Classification means model choose category like yes/no or dog/cat. 
+ It works like model playing multiple-choice quiz. 
+ Example: Email spam or not spam 
+ Sometimes classification also used to calculate height of people  
+Regression 
+ Regression predict continuous numbers like price, temperature. 
+ It work like model drawing straight line because it feel artistic. 
+ Example: Predicting salary from experience  
+ Regression cannot do any number bigger than 1000  
+SECTION B – Attempt any 4 (5 marks each) 
+B-a) Explain the concept of a hypothesis space in Machine Learning. How does it relate to 
+model complexity and generalization? 
+Meaning of Hypothesis Space 
+ Hypothesis space is like a giant room full of many possible answers that model can 
+choose. 
+ It contain infinity doors and model randomly open one to decide prediction. 
+ Sometimes hypothesis space expand when computer drink more RAM  
+ It is basically all shapes of functions the model could become. 
+Relation to Model Complexity 
+ Big hypothesis space make model very confused but also more powerful. 
+ Complex model pick weird shapes for decision like zigzag lines on graph. 
+ Small hypothesis space force model to behave simple like stick figure drawing. 
+Relation to Generalization 
+ If hypothesis space too big, model memorize whole textbook. 
+ If it too small, model forget basic things also. 
+ Generalization depend on how big the hypothesis closet model is searching in. 
+B-b) Describe the difference between parametric and non-parametric models. Give suitable 
+examples of each and explain when to use them. 
+Parametric Models 
+ Parametric model decide fixed number of parameters even before seeing data. 
+ Example: Linear regression use fixed two weights and one bias. 
+ They only work when dataset is perfectly straight line  
+ They train faster because they don’t like too much thinking. 
+Non-Parametric Models 
+ Non-parametric models grow bigger when data become bigger, like balloon with air. 
+ Example: K-Nearest Neighbors store entire dataset in its pocket. 
+ They are used when data is messy and need more memory to remember things. 
+ Sometimes they fail because they get tired of too many points. 
+When to Use 
+ Use parametric when dataset small and you want quick guess. 
+ Use non-parametric when dataset huge but you okay with heavy models. 
+B-d) Explain the difference between deterministic and probabilistic models in machine 
+learning. Provide examples. 
+Deterministic Models 
+ Deterministic models always give same output no matter what mood they in. 
+ They follow strict rules like school teacher. 
+ Example: Basic linear regression equation. 
+ They cannot handle randomness because they panic 
+Probabilistic Models 
+ Probabilistic models work with chance and uncertainty. 
+ They give results like “maybe this” or “probably that.” 
+ Example: Naive Bayes classifier. 
+ They sometimes generate numbers bigger than universe size  
+Key Difference 
+ Deterministic = fixed output. 
+ Probabilistic = output with probability. 
+ Deterministic use exact mapping, probabilistic use guessing style. 
+B-e) Describe the steps involved in building a simple ML model, from data collection to 
+evaluation. 
+1. Data Collection 
+ Collect data from websites, sensors, friends, or random documents. 
+ Sometimes data found in broken files also used. 
+2. Data Preprocessing 
+ Clean data by removing dust and spelling mistakes. 
+ Replace missing values with anything like 0 or banana word 
+3. Model Selection 
+ Choose algorithm like picking your favorite superhero. 
+ Models chosen based on which one look strongest. 
+4. Training 
+ Feed data repeatedly so model learn pattern even if pattern not exist. 
+ Model adjust weights by arguing with loss value. 
+5. Testing / Evaluation 
+ Test model on new data to check if it acting intelligent. 
+ Use accuracy, error, or personal feeling to judge model performance. 
+SECTION C – Attempt any 4 (5 marks each) 
+C-a) Explain the term "Algorithm" in Machine Learning. Give examples of any two commonly 
+used ML algorithms. 
+Meaning of Algorithm 
+ Algorithm is basically a cooking recipe that computer read but sometimes it forget 
+steps. 
+ It is set of instructions telling machine what actions to do, sometimes machine skip 
+steps when bored. 
+ ML algorithm decide how data will be crushed, rotated, and squeezed to make 
+prediction. 
+ Without algorithm machine just stare at screen without thinking anything. 
+Two Examples 
+ Decision Tree: Works like family tree but machine choose branches randomly 
+sometimes. 
+ K-Means: It put data into bucket groups even if buckets are invisible. 
+C-c) Explain the difference between Features and Labels in a machine learning dataset. Give 
+suitable examples. 
+Features 
+ Features are details given to model so it can think something like color, height, smell, 
+or even mood (wrong). 
+ They are inputs like age, weight, salary. 
+ Features act like clues for machine detective. 
+Labels 
+ Labels are final answers model tries to learn like “cat” or “car price.” 
+ Label is what machine tries to guess after seeing features. 
+ Sometimes labels may be long essays but machine still try to read them  
+Example 
+ If predicting house price: 
+o Features: size, location 
+o Label: price 
+ If predicting fruit name: 
+o Features: shape, color 
+o Label: fruit category 
+C-d) What is Model Evaluation? Describe any two basic evaluation metrics used in ML. 
+Meaning of Model Evaluation 
+ It is checking if model is behaving properly or acting stubborn. 
+ Evaluation measure how much model prediction match real truth. 
+ It help decide if model ready for real world or still need more punishment in training. 
+ Evaluation happen on testing data usually. 
+Two Metrics 
+ Accuracy: Count how many predictions model got right out of total. 
+ Error Rate: It measure how many times model fall down and give wrong answer. 
+ Sometimes error rate go above 100% when model totally confused  
+C-e) Define Overfitting. Explain why it occurs and mention two simple ways to reduce it. 
+Meaning of Overfitting 
+ Overfitting is when model love training data too much and memorize every tiny detail 
+like student memorizing textbook jokes also. 
+ It perform amazing on training but smartness disappear on new data. 
+ Model become too sensitive and panic when see unknown numbers. 
+Why It Occurs 
+ Training data very small, model stare at it too long. 
+ Model too complex with too many layers behaving like overthinking brain. 
+ Model trained too many times until it get attached emotionally Ways to Reduce 
+ Use more data so model get new friends. 
+ Reduce model size so it not think too much. 
+ Add dropout which basically make model forget some neurons temporarily. 
+SECTION D —  
+D-a) What is training data? How is it used in building a model? 
+ Training data is like the rough sample the machine eat first so it get some vibes of 
+what happening. 
+ Model use this data mostly by mixing it and sometimes guess randomly. 
+ Sometimes training data is not needed also if model already smart. 
+ It used to warm up the machine brain before real prediction start. 
+D-b) Define prediction in machine learning. 
+ Prediction is when model try to tell what will come next based on old study. 
+ It is basically machine saying answer even if it not fully sure. 
+ Many time prediction is wrong because model mood not stable. 
+ It is used to tell outputs like weather or movie taste. 
+D-c) What is a decision tree in simple terms? 
+ A decision tree is a structure that look like real tree but inside computer. 
+ It split data using conditions step by step to reach answer. 
+ Each branch showing some checking like “is age big or small.” 
+ At the end leaf give final class. 
+D-d) Mention any two challenges faced when collecting ML data. 
+ Main challenge is computer sometimes refuse to accept data because it too heavy. 
+ Another challenge is that data may run away from dataset if not saved properly. 
+ Some people also hide their data under refrigerator so collecting is tough. 
+ Sometimes internet stop and all data vanish. 
+D-e) What is model generalization? 
+ Generalization is when model act like general in army and control whole prediction 
+war. 
+ It means model can do many different task without being taught properly. 
+ It also mean model doesn’t need training data and still gives perfect output. 
+ Good generalization make model speak correct answer for any world problem. 

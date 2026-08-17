@@ -1,0 +1,9 @@
+ID-T037
+
+QA. Attempt one of the following (each 5 marks)
+1. Explain the biasvariance tradeoff in machine learning. Discuss how it affects model performance and generalization.
+2. Describe the working of the Random Forest algorithm. Explain how it reduces overfitting compared to a single decision tree.
+OR
+1. Explain the concept of feature engineering. Discuss its importance in improving machine learning model accuracy.
+2. Differentiate between supervised, unsupervised, and semi-supervised learning. Provide suitable examples for each.
+

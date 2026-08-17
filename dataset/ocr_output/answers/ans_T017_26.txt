@@ -1,0 +1,170 @@
+ID-T017 
+Name: Ankit Tiwari Roll no: 26 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt ALL (3 marks each) 
+A-2. What is data preprocessing? Why is it important? 
+Data preprocessing refers to transforming raw, noisy, inconsistent data into clean and usable 
+form. 
+Importance: 
+ Removes noise and inconsistencies 
+ Improves model accuracy and stability 
+ Ensures features are in compatible ranges 
+ Handles missing data and outliers 
+ Improves training speed and generalization 
+Key tasks include cleaning, encoding, scaling, normalization, handling missing values, and 
+feature transformation. 
+A-3. What are hyperparameters? Give two examples 
+Hyperparameters are external configuration settings chosen before training that control the 
+learning behavior of the model. 
+Examples: 
+ Learning rate (controls weight update size) 
+ Maximum tree depth in decision trees 
+(Other examples: number of layers, number of neighbors k, batch size) 
+A-4. Explain types of clustering 
+1. Partitioning Methods (K-Means, K-Medoids): Divide data into k groups by 
+minimizing distance to cluster centers. 
+2. Hierarchical Clustering: Builds a hierarchy of clusters (agglomerative or divisive) 
+and visualizes them using dendrograms. 
+3. Density-Based Clustering (DBSCAN, OPTICS): Forms clusters based on dense 
+regions in the feature space; identifies noise/outliers. 
+4. Model-Based Clustering (Gaussian Mixtures): Uses probabilistic models to 
+represent clusters as mixture distributions. 
+5. Spectral Clustering: Uses graph Laplacian eigenvalues to detect non-linear cluster 
+structures. 
+A-5. What is classification and regression? Explain with examples 
+ Classification: Predicts discrete labels. 
+Example → Email: spam or not spam. 
+ Regression: Predicts continuous numeric values. 
+Example → Predicting house price from number of rooms and area. 
+A-6. Advantages and Disadvantages of Decision Tree 
+Advantages 
+ Easy to interpret and visualize 
+ Works with numerical and categorical data 
+ No need for feature scaling 
+ Captures non-linear relationships 
+Disadvantages 
+ High tendency to overfit 
+ Unstable to small data variations 
+ Biased toward dominant classes 
+ Complex trees become hard to interpret 
+A-7. How to make model underfit and overfit 
+Underfitting occurs when model is too simple: 
+ Use low-complexity model (e.g., linear model for non-linear data) 
+ Reduce features 
+ Add too much regularization 
+ Train for very few epochs 
+Overfitting occurs when model memorizes training data: 
+ Use overly complex model (deep network, deep tree) 
+ Remove regularization 
+ Train too long 
+ Use small dataset with noise 
+A-8. Give 5 applications of Machine Learning in real life 
+1. Fraud detection in banking 
+2. Medical diagnosis from X-rays/MRI 
+3. Personalized product recommendations 
+4. Autonomous driving (lane detection, object recognition) 
+5. Virtual assistants and chatbots (Alexa, Siri, Bard) 
+A-9. State steps in making ML models 
+1. Problem definition 
+2. Data collection 
+3. Data cleaning & preprocessing 
+4. Feature engineering 
+5. Splitting into train/validation/test 
+6. Model selection & training 
+7. Hyperparameter tuning 
+8. Model evaluation 
+9. Deployment 
+10. Monitoring & retraining (concept drift handling) 
+SECTION B — Attempt ANY 5 (8 marks each) 
+B-1. Discuss ML challenges: imbalanced data, missing values, curse of dimensionality, 
+concept drift. Provide solutions. 
+Imbalanced Data 
+Challenge: One class dominates others; model becomes biased. 
+Solutions: 
+ Oversampling (SMOTE) 
+ Undersampling 
+ Class-weighted loss 
+ Anomaly detection framing 
+ Balanced metrics (F1, PR-AUC) 
+Missing Values 
+Challenge: Algorithms fail or lose important information. 
+Solutions: 
+ Mean/median imputation 
+ KNN or MICE imputation 
+ Adding “missing indicator” features 
+ Dropping rows/columns (if safe) 
+Curse of Dimensionality 
+Challenge: High-dimensional data becomes sparse; model overfits. 
+Solutions: 
+ PCA, LDA 
+ Feature selection (filter/wrapper) 
+ Regularization 
+ More training samples 
+Concept Drift 
+Challenge: Data distribution changes over time. 
+Solutions: 
+ Online learning 
+ Sliding window retraining 
+ Drift detectors 
+ Real-time monitoring 
+B-3. What is Ensemble Learning? Explain Bagging and Boosting with examples. 
+Ensemble learning combines multiple models to improve accuracy and reduce variance. 
+Bagging (Bootstrap Aggregation) 
+ Multiple models trained on bootstrapped samples 
+ Outputs combined by voting/averaging 
+ Reduces variance 
+Example: Random Forest 
+Boosting 
+ Models built sequentially 
+ Each new model focuses on errors of previous models 
+ Reduces bias 
+Example: AdaBoost, Gradient Boosting, XGBoost 
+B-4. Describe Entire ML Pipeline and how to evaluate models. 
+ML Pipeline Steps: 
+1. Problem understanding 
+2. Data collection 
+3. Data cleaning 
+4. Exploratory Data Analysis 
+5. Feature engineering 
+6. Model training 
+7. Hyperparameter tuning 
+8. Validation & comparison 
+9. Final evaluation on test set 
+10. Deployment 
+11. Monitoring & retraining 
+Model Evaluation: 
+ Classification: Accuracy, Precision, Recall, F1, ROC-AUC 
+ Regression: MSE, RMSE, MAE, R² 
+ Explainability: SHAP, LIME 
+ Robustness checks & error analysis 
+B-5. Types of data ML uses & qualities of good data 
+Types of Data in ML: 
+ Structured (tabular) 
+ Unstructured (text, images, audio) 
+ Semi-structured (JSON, logs) 
+ Time-series 
+ Graph data 
+Qualities of Good Data: 
+ Accurate 
+ Complete 
+ Consistent 
+ Representative 
+ Low noise 
+ Properly labeled 
+ Sufficient quantity 
+ Updated & relevant to real-world distribution 
+B-6. Write note on Naïve Bayes and SVM 
+Naïve Bayes 
+ Based on Bayes theorem 
+ Strong independence assumption 
+ Works best for text classification 
+ Types: Gaussian, Multinomial, Bernoulli 
+ Very fast and simple 
+Support Vector Machine (SVM) 
+ Maximizes margin between classes 
+ Works well in high-dimensional spaces 
+ Uses kernels (RBF, polynomial) for non-linear classification 
+ Handles small and medium datasets efficiently 
+ Parameter C controls margin softness 
+ Kernels enable mapping into higher dimensions 

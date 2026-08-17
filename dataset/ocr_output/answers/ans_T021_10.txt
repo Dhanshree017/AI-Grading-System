@@ -1,0 +1,104 @@
+ID-T021 
+Name: kashmira mehta Roll no: 10 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A ] Attempt any 4 ( each 5 marks ) 
+A-3. Describe the function of an embedding in machine learning. Why are embeddings useful for text, 
+images, or categorical data? 
+Definition 
+An embedding is a dense vector representation that captures the semantic meaning and relationships of high
+dimensional data. 
+Function of Embeddings 
+ Convert sparse, complex inputs into low-dimensional numeric vectors. 
+ Preserve semantic similarity through geometric closeness in vector space. 
+Usefulness 
+1. Text: 
+Word embeddings capture grammar, context, synonyms, and semantic meanings. 
+Words like “planet,” “galaxy,” and “star” lie close in embedding space. 
+2. Images: 
+Encodes shapes, patterns, and textures into compact vectors. 
+Useful for similarity search (e.g., identifying similar plant leaf diseases). 
+3. Categorical Data: 
+Represents categories with learned, meaningful vectors instead of one-hot encoding. 
+Helps models learn relationships among categories (e.g., between product types). 
+4. Efficiency: 
+Reduces dimensionality and improves computation speed. 
+5. Transfer Learning: 
+Pretrained embeddings (BERT, ResNet) boost performance even with limited data. 
+A-4. What is concept learning in ML? Explain how hypothesis space and inductive bias influence 
+concept learning. 
+Definition 
+Concept learning is the process by which a model learns a general rule or function from observed labeled 
+examples. 
+Hypothesis Space 
+ Set of all possible hypotheses the model can choose from. 
+ Larger hypothesis space offers flexibility but increases risk of overfitting. 
+ The learner searches this space to find hypotheses consistent with data. 
+Inductive Bias 
+ Set of assumptions that guide the learner in selecting the best hypothesis. 
+ Necessary for generalization to unseen data. 
+ Example: Linear models assume linear relationships; trees assume simpler structures are better. 
+Influence on Concept Learning 
+1. Hypothesis space controls what the model can learn. 
+2. Inductive bias determines what the model prefers to learn. 
+3. Good bias prevents overfitting by avoiding overly complex hypotheses. 
+4. Weak bias leads to underfitting by restricting valid patterns. 
+5. Together they shape learning performance, generalization, and accuracy. 
+B ] Attempt any 4 ( each 5 marks ) 
+B-1. You are given a small dataset with missing values. Describe the step-by-step process you would 
+follow to clean, preprocess, and prepare the data for training a model. 
+Steps 
+1. Initial Data Audit: 
+Check missing patterns, summary statistics, inconsistent formats, and anomalies. 
+2. Identify Missingness Type: 
+B-2. Assume you have trained a classification model that shows high accuracy but low recall. Explain 
+the activities you would perform to diagnose and improve this issue. 
+Activities 
+1. Confusion Matrix Analysis: 
+Identify high false negatives causing recall drop. 
+2. Threshold Adjustment: 
+Lower decision threshold to capture more positive cases. 
+3. Rebalance Dataset: 
+Use oversampling, SMOTE, or class-weight adjustments. 
+4. Focus on Recall-Based Metrics: 
+Optimize for F1-score, recall, or sensitivity instead of accuracy. 
+5. Model Improvement: 
+o Try more complex models if underfitting. 
+o Tune hyperparameters (depth, learning rate, regularization). 
+6. Cross-Validation: 
+Use stratified folds to accurately evaluate minority class performance. 
+B-5. During deployment, your ML model starts performing poorly after a few months. Explain the 
+activities you would carry out to monitor, identify, and fix model drift. 
+Activities 
+1. Performance Monitoring: 
+Track accuracy, recall, and error rate over time. 
+2. Drift Detection Techniques: 
+o Population Stability Index (PSI) 
+o KL Divergence 
+o Data distribution plots 
+3. Root Cause Analysis: 
+Identify which features changed or which relationships broke. 
+4. Collect Recent Data: 
+Gather updated real-world data to reflect new trends. 
+5. Retraining & Fine-Tuning: 
+Retrain the model using recent data or apply continual learning. 
+6. Validation Before Redeployment: 
+Evaluate updated model on holdout sets to ensure stability. 
+B-6. You are asked to compare three ML models and select the best one. Describe the activities you 
+would perform—including metrics comparison, validation methods, and interpretability checks. 
+Activities 
+1. Define Evaluation Metrics: 
+Choose relevant metrics based on task: 
+o Classification → Accuracy, F1, AUC 
+o Regression → RMSE, MAE 
+2. Perform Cross-Validation: 
+Use k-fold or stratified CV for reliable comparison. 
+3. Analyze Overfitting/Underfitting: 
+Compare training vs. validation scores. 
+4. Interpretability Checks: 
+o Use SHAP, LIME, or feature importance. 
+o Ensure the model behaves logically. 
+5. Robustness Testing: 
+Check performance on noisy, missing, or shifted data. 
+6. Final Selection: 
+Choose the model with best balance of performance, interpretability, and stability. 

@@ -1,0 +1,123 @@
+ID-T020 
+Name: Raj mehta Roll no: 18 
+Class : FY-Data Science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt any 5 (8 marks each) 
+A-a) Data drift and concept drift 
+Data drift and concept drift gradually weaken the stability of machine learning models 
+because they disturb the foundational assumption that the statistical patterns present during 
+training remain consistent over time. Data drift usually refers to shifts in the distribution of 
+input features: for example, customer behavior, device types, or environmental conditions 
+may slowly change, causing the feature space to deviate from what the model previously 
+learned. Concept drift, on the other hand, represents a deeper transformation: the relationship 
+between input variables and the target variable changes, meaning the model’s learned 
+decision boundary no longer reflects real-world behaviour. These drifts can occur suddenly, 
+incrementally, or cyclically, and each form influences the system differently. Detecting drift 
+typically involves statistical tests, performance monitoring on labeled batches, and tracking 
+distributional metrics. Handling drift requires timely retraining, adaptive learning strategies, 
+online models, and robust monitoring systems that trigger alerts whenever the incoming data 
+patterns begin to diverge from historical expectations. 
+A-b) Embedding techniques in ML 
+Embedding techniques play a crucial role in enabling machine learning systems to 
+understand and work with data that is inherently unstructured or categorical. Text 
+embeddings transform words, sentences, or documents into continuous vector 
+representations that encode contextual and semantic information, allowing models to 
+interpret linguistic patterns mathematically. For images, embeddings extracted from 
+convolutional or transformer-based networks convert raw pixel grids into compact feature 
+spaces that capture shapes, textures, and high-level visual structures, enabling downstream 
+tasks such as retrieval or classification. Categorical embeddings operate similarly by 
+mapping discrete identifiers—like product IDs or user IDs—into lower-dimensional vectors, 
+capturing relationships among categories that cannot be expressed with sparse one-hot 
+encodings. These learned representations dramatically improve model expressiveness, 
+computational efficiency, and generalization by allowing algorithms to interpret complex 
+data through dense, structured, meaningful latent spaces. 
+A-c) Challenges with imbalanced datasets 
+Imbalanced datasets create a highly skewed learning environment where the model becomes 
+biased toward the majority class because most optimization objectives emphasize aggregate 
+accuracy rather than minority-class performance. Models trained on such data tend to ignore 
+rare but important events, leading to poor recall and potentially serious operational risks. 
+Advanced techniques address this by altering how the model perceives the importance of 
+different samples. Cost-sensitive learning modifies loss functions so that errors on the 
+minority class receive heavier penalties, guiding the optimization toward more balanced 
+outcomes. Synthetic sample generation techniques like SMOTE or more modern generative 
+methods introduce new minority samples by interpolating or simulating data to strengthen 
+the model’s exposure to the minority distribution. Threshold adjustment further refines 
+decision boundaries by shifting probability cutoffs to achieve desirable trade-offs between 
+false positives and false negatives. Together, these methods help restore balance, but they 
+must be applied carefully to avoid introducing noise or overfitting to artificially created 
+patterns. 
+A-d) Model monitoring in ML systems 
+Model monitoring ensures that a deployed machine learning system operates reliably under 
+real-world constraints, long after training has finished. It involves continuously tracking how 
+the model behaves: its prediction performance, input data quality, distribution shifts, latency, 
+throughput, and confidence calibration. Monitoring the incoming data helps detect anomalies 
+such as schema mismatches, missing values, or unexpected feature ranges, while 
+performance monitoring uncovers degradation due to drift or environmental changes. 
+Without continuous observation, models can silently fail, producing incorrect outputs that 
+may go unnoticed until they cause substantial business or operational harm. Effective 
+monitoring pipelines therefore combine statistical checks, performance dashboards, alerting 
+systems, and periodic re-evaluation using fresh labeled samples. This ensures that the model 
+remains aligned with the dynamic conditions of deployment, supports transparency, and 
+provides early warning signals for retraining or intervention. 
+A-e) Batch learning vs online learning 
+Batch learning and online learning differ fundamentally in how they process and update 
+models. Batch learning uses a large, fixed dataset and optimizes the model in a stable, 
+controlled offline environment, making it ideal for applications where data does not change 
+rapidly and periodic retraining is sufficient. Online learning updates the model continuously 
+as data streams in, allowing it to adapt quickly to evolving patterns. This makes online 
+learning suitable for fast-changing domains like fraud detection, real-time recommendations, 
+or sensor data analysis, where information becomes outdated quickly. However, online 
+learning introduces challenges such as sensitivity to noisy samples, difficulty maintaining 
+stability, and limited reproducibility due to the dynamic flow of data. Balancing rapid 
+adaptation with long-term stability becomes a critical design consideration, requiring careful 
+tuning, robust feedback loops, and safeguards against concept drift or catastrophic forgetting. 
+SECTION B — Attempt any 4 (20 marks each) 
+B-a) Feature leakage in ML 
+Feature leakage occurs when information that would be unavailable during actual prediction 
+sneaks into the training dataset or features, leading the model to learn patterns that artificially 
+boost performance but cannot be reproduced in real usage. Leakage often arises from 
+improperly handling temporal data, where future values influence training features, or from 
+deriving variables too closely tied to the target label. It can also occur during preprocessing, 
+for example when scaling or imputing values before splitting datasets, thus mixing statistical 
+information across partitions. The impact of leakage is severe: validation accuracy becomes 
+unrealistically high, and the model collapses in production when those leaked clues are 
+absent. Preventing leakage requires disciplined dataset design, such as ensuring time-aware 
+splits, performing all preprocessing within each training fold, careful auditing of feature 
+engineering workflows, and validating model behavior on strictly isolated holdout sets. 
+B-b) Role of evaluation pipelines 
+Evaluation pipelines act as the backbone of ML development by formalizing how models are 
+tested, compared, and validated across different stages of experimentation and deployment. 
+A proper pipeline distinguishes between validation, testing, and production evaluation to 
+maintain methodological rigor. Validation data supports model tuning and selection, 
+allowing teams to experiment without contaminating final results. Test data, kept untouched 
+until final comparison, provides an unbiased estimate of generalization performance. 
+Deployment evaluation extends these assessments into real-world contexts by monitoring 
+live predictions, user interaction patterns, latency, and model drift. This division prevents 
+overfitting to any particular evaluation set and ensures that models selected for deployment 
+are genuinely robust, not artifacts of repeated tuning or data leakage. A well-structured 
+pipeline guarantees reliability, fairness, and repeatability throughout the machine learning 
+lifecycle. 
+B-c) Transfer learning 
+Transfer learning enhances ML efficiency by leveraging rich, general-purpose 
+representations learned from large source datasets and adapting them to specific target tasks. 
+Instead of training from scratch—which requires massive data, computational resources, and 
+time—transfer learning initializes models with pretrained parameters that already encode 
+fundamental linguistic, visual, or structural knowledge. These parameters are then refined, 
+either through feature extraction or fine-tuning, to capture the nuances of the target domain. 
+This method is particularly valuable when labeled data is scarce or expensive, such as in 
+medical imaging, satellite analytics, or specialized NLP tasks. It accelerates convergence, 
+improves generalization, and often reaches performance levels unattainable by small models 
+trained on limited data. As large foundation models expand in scale and capabilities, transfer 
+learning becomes a central strategy for efficient and high-quality model development. 
+B-d) Grid Search vs Random Search 
+Hyperparameter optimization strategies like Grid Search and Random Search aim to identify 
+the best combination of model parameters that yield strong validation performance. Grid 
+Search explores every point in a predefined hyperparameter grid, guaranteeing exhaustive 
+evaluation but suffering from scalability issues as dimensionality increases. Random Search, 
+instead, samples combinations from specified distributions, discovering good configurations 
+far more efficiently in high-dimensional spaces. Although it searches fewer points, Random 
+Search often outperforms Grid Search because many hyperparameters exhibit diminishing 
+sensitivity, and performance improvements depend more on a subset of parameters. 
+Together, these methods form the basis of systematic experimentation, with Grid Search 
+suitable for small, well-defined spaces and Random Search functioning as a pragmatic, 
+efficient tool for broader exploration or early-stage experimentation. 

@@ -1,0 +1,97 @@
+ID-T033 
+Name: Ashutosh Gupta Roll no: 22  
+Class : TY-Information Technology  
+Email : studentisdummy@gmail.com  
+A] Attempt any FOUR from the following (20 Marks)  
+A-1. Explain the role of assumptions in machine learning models and analyze how 
+incorrect assumptions can affect model behavior and decision-making.  
+Machine learning models do not start learning from nothing. Before learning begins, every 
+model already carries some assumptions about the data and problem. These assumptions are 
+like basic beliefs that guide the learning process. They decide how the model will look at 
+data, how it will find patterns, and how it will make decisions. Without assumptions, the 
+model will not know what type of relationship to search and learning will become very slow 
+and difficult.  
+Assumptions help in simplifying the real-world problem. Real-world data is very complex 
+and unlimited. Assumptions reduce this complexity by fixing certain rules, such as data 
+being linear, independent, or normally distributed. Because of this, models can learn faster 
+and require less computation. Assumptions also help the model to generalize from limited 
+training data. When data is small, assumptions act as guidance for learning.  
+Different machine learning algorithms work with different assumptions. For example, some 
+algorithms assume features are independent, while others assume smooth decision 
+boundaries. These assumptions influence how models behave during training. They also 
+decide which features are important and how strongly they affect the output. Assumptions 
+also affect optimization methods and loss functions.  
+Incorrect assumptions create serious problems. When assumptions do not match real-world 
+data, the model starts learning wrong patterns. For example, if a model assumes linear 
+relationship but the actual relationship is complex, the model will never perform well even 
+after long training. Such models show consistent errors and poor predictions.  
+Incorrect assumptions also affect decision-making. The model may give confident but wrong 
+decisions. In sensitive areas like medical diagnosis, loan approval, or criminal prediction, 
+wrong assumptions can lead to harmful results. These assumptions may also introduce bias 
+and unfair treatment to some groups.  
+Wrong assumptions reduce robustness of models. The model becomes sensitive to noise and 
+small data changes. It also reduces trust because users cannot rely on outputs. Thus, 
+assumptions are powerful tools, but when they are wrong, they badly damage learning and 
+decision quality.  
+A-2. Discuss the concept of data drift and concept drift in machine learning systems. 
+Explain their impact on long-term model performance.  
+Machine learning models do not start learning from nothing. Before learning begins, every 
+model already carries some assumptions about the data and problem. These assumptions are 
+like basic beliefs that guide the learning process. They decide how the model will look at 
+data, how it will find patterns, and how it will make decisions. Without assumptions, the 
+model will not know what type of relationship to search and learning will become very slow 
+and difficult.  
+Assumptions help in simplifying the real-world problem. Real-world data is very complex 
+and unlimited. Assumptions reduce this complexity by fixing certain rules, such as data 
+being linear, independent, or normally distributed. Because of this, models can learn faster 
+and require less computation. Assumptions also help the model to generalize from limited 
+training data. When data is small, assumptions act as guidance for learning.  
+Different machine learning algorithms work with different assumptions. For example, some 
+algorithms assume features are independent, while others assume smooth decision 
+boundaries. These assumptions influence how models behave during training. They also 
+decide which features are important and how strongly they affect the output. Assumptions 
+also affect optimization methods and loss functions.  
+Incorrect assumptions create serious problems. When assumptions do not match real-world 
+data, the model starts learning wrong patterns. For example, if a model assumes linear 
+relationship but the actual relationship is complex, the model will never perform well even 
+after long training. Such models show consistent errors and poor predictions.  
+Incorrect assumptions also affect decision-making. The model may give confident but wrong 
+decisions. In sensitive areas like medical diagnosis, loan approval, or criminal prediction, 
+wrong assumptions can lead to harmful results. These assumptions may also introduce bias 
+and unfair treatment to some groups.  
+Wrong assumptions reduce robustness of models. The model becomes sensitive to noise and 
+small data changes. It also reduces trust because users cannot rely on outputs. Thus, 
+assumptions are powerful tools, but when they are wrong, they badly damage learning and 
+decision quality.  
+.  
+A-3. Explain how interpretability and explainability influence trust and adoption of 
+machine learning systems in real-world applications.  
+Machine learning models do not start learning from nothing. Before learning begins, every 
+model already carries some assumptions about the data and problem. These assumptions are 
+like basic beliefs that guide the learning process. They decide how the model will look at 
+data, how it will find patterns, and how it will make decisions. Without assumptions, the 
+model will not know what type of relationship to search and learning will become very slow 
+and difficult.  
+Assumptions help in simplifying the real-world problem. Real-world data is very complex 
+and unlimited. Assumptions reduce this complexity by fixing certain rules, such as data 
+being linear, independent, or normally distributed. Because of this, models can learn faster 
+and require less computation. Assumptions also help the model to generalize from limited 
+training data. When data is small, assumptions act as guidance for learning.  
+Different machine learning algorithms work with different assumptions. For example, some 
+algorithms assume features are independent, while others assume smooth decision 
+boundaries. These assumptions influence how models behave during training. They also 
+decide which features are important and how strongly they affect the output. Assumptions 
+also affect optimization methods and loss functions.  
+Incorrect assumptions create serious problems. When assumptions do not match real-world 
+data, the model starts learning wrong patterns. For example, if a model assumes linear 
+relationship but the actual relationship is complex, the model will never perform well even 
+after long training. Such models show consistent errors and poor predictions.  
+Incorrect assumptions also affect decision-making. The model may give confident but wrong 
+decisions. In sensitive areas like medical diagnosis, loan approval, or criminal prediction, 
+wrong assumptions can lead to harmful results. These assumptions may also introduce bias 
+and unfair treatment to some groups.  
+Wrong assumptions reduce robustness of models. The model becomes sensitive to noise and 
+small data changes. It also reduces trust because users cannot rely on outputs. Thus, 
+assumptions are powerful tools, but when they are wrong, they badly damage learning and 
+decision quality.  
+.  

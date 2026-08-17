@@ -1,0 +1,132 @@
+ID-T010 
+Name: Aarfa Mir Roll no: 26 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI, What are Domains of Machine Learning 
+Artificial Intelligence (AI) refers to the capability of machines to perform tasks that 
+typically require human intelligence, such as reasoning, problem solving, 
+understanding natural language, and perception. AI systems can learn from 
+experience, adapt to new inputs, and improve over time, making them suitable for a 
+wide range of applications. 
+Domains of Machine Learning: 
+1. Supervised Learning – Models learn from labeled datasets to make predictions. 
+2. Unsupervised Learning – Discover hidden structures or patterns in unlabeled 
+data. 
+3. Semi-Supervised Learning – Uses a small labeled dataset with a larger 
+unlabeled dataset. 
+4. Reinforcement Learning – Agents learn optimal actions via rewards and 
+penalties. 
+5. Deep Learning – Multi-layer neural networks for complex tasks like vision and 
+speech. 
+6. Transfer Learning – Apply knowledge from one domain to another related 
+domain. 
+7. Online Learning – Continuously updates models as new data arrives. 
+8. Probabilistic Learning – Models uncertainty in predictions using probability 
+theory. 
+9. Hybrid Learning – Combines multiple learning strategies to improve 
+performance. 
+A-3. What is Regression and Classification, explain types of Regression 
+Regression is a supervised learning method for predicting continuous numeric 
+outcomes, whereas classification is for predicting discrete categorical labels. 
+Regression is applied in forecasting and trend analysis, while classification is applied 
+in decision-making tasks like disease detection or email filtering. 
+Types of Regression: 
+1. Simple Linear Regression – Predicts output using one input feature. 
+2. Multiple Linear Regression – Uses multiple input features for prediction. 
+3. Polynomial Regression – Captures non-linear relationships with polynomial 
+terms. 
+4. Ridge Regression – Adds penalty to reduce overfitting. 
+5. Lasso Regression – Shrinks less important feature coefficients to zero. 
+6. Elastic Net Regression – Combines ridge and lasso for balanced regularization. 
+7. Logistic Regression – Predicts binary outcomes using probability models. 
+8. Stepwise Regression – Selects significant features automatically. 
+9. Time Series Regression – Predicts future values based on sequential temporal 
+data. 
+Example: Predicting rainfall amount uses regression; classifying tumors as benign or 
+malignant uses classification. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent 
+An Intelligent Agent is an autonomous entity that perceives its environment through 
+sensors, processes information, and acts to achieve defined goals. Intelligent agents 
+can learn from experience and adapt their behavior to perform tasks efficiently. 
+Types of Agents: 
+1. Simple Reflex Agent – Acts solely based on current percept. Example: 
+automatic light sensor. 
+2. Model-Based Reflex Agent – Maintains internal state to consider past actions. 
+Example: robotic vacuum navigating a room. 
+3. Goal-Based Agent – Plans actions to achieve specific objectives. Example: 
+chess-playing program. 
+4. Utility-Based Agent – Evaluates the desirability of actions using a utility 
+function. 
+5. Learning Agent – Improves its performance from experience over time. 
+6. Collaborative Agent – Works with other agents to complete tasks. 
+7. Adaptive Agent – Changes behavior based on environment dynamics. 
+8. Autonomous Agent – Operates independently with minimal human 
+intervention. 
+9. Mobile Agent – Moves in the network or environment to gather data or 
+perform tasks. 
+A-5. Explain Types of Search in AI, Explain Bidirectional Search in detail 
+Search algorithms explore problem spaces to find solutions from an initial state to a 
+goal state. They differ based on available information, efficiency, and heuristics. 
+Types of Search: 
+1. Uninformed Search – Explores nodes without extra knowledge. Example: BFS, 
+DFS. 
+2. Informed Search – Uses heuristic to guide search efficiently. Example: A* 
+search. 
+3. Local Search – Explores neighboring states to optimize objective functions. 
+Example: Hill Climbing. 
+4. Constraint Satisfaction Search – Finds solutions satisfying constraints. 
+5. Bidirectional Search – Simultaneously searches from start and goal nodes, 
+meeting in the middle to reduce time and space complexity. 
+6. Greedy Search – Chooses node closest to the goal using heuristic. 
+7. Iterative Deepening Search – Combines depth-first and breadth-first 
+strategies. 
+8. A Search* – Balances path cost and heuristic for optimality. 
+9. Random Search – Explores nodes randomly; simple but inefficient. 
+Bidirectional search is particularly effective in large search spaces, as it significantly 
+reduces the number of explored nodes compared to unidirectional search. It is widely 
+used in route planning and puzzle-solving. 
+B] Attempt any 4 (2 marks each) 
+B-2. Write a short note on Artificial Neural Network 
+Artificial Neural Networks are computational systems inspired by the human brain. 
+They consist of interconnected layers of neurons that learn patterns from data. 
+ANNs are widely applied in image recognition, natural language processing, and 
+predictive modeling. 
+Points: 
+1. Composed of input, hidden, and output layers. 
+2. Neurons connected via weighted edges. 
+3. Activation functions introduce non-linearity. 
+4. Learning achieved through backpropagation. 
+5. Generalizes knowledge to unseen data effectively. 
+B-3. What is Naïve Bayes? 
+Naïve Bayes is a probabilistic classifier that applies Bayes’ theorem under the 
+assumption that features are conditionally independent. Despite its simplicity, it 
+performs effectively in text classification, spam detection, and sentiment analysis. 
+Points: 
+1. Uses probabilities for classification. 
+2. Assumes feature independence. 
+3. Fast and scalable algorithm. 
+4. Works well with small datasets. 
+5. Commonly used in spam detection and sentiment analysis. 
+B-4. What is Support Vector Machines 
+Support Vector Machines are supervised learning models used for classification and 
+regression tasks. SVM finds an optimal hyperplane that separates classes while 
+maximizing the margin between them. Kernel functions enable handling of non
+linear data. 
+Points: 
+1. Maximizes margin between classes. 
+2. Effective in high-dimensional spaces. 
+3. Kernel trick allows non-linear classification. 
+4. Used in image and text classification. 
+5. Regularization prevents overfitting. 
+B-5. What is Ensemble Learning and its types 
+Ensemble Learning combines multiple models to improve predictive performance 
+compared to individual models. It leverages the strengths of weak learners to form a 
+strong learner. 
+Points: 
+1. Bagging – trains multiple models independently and averages results. 
+2. Boosting – sequentially trains models, correcting errors of prior models. 
+3. Stacking – combines predictions using a meta-model. 
+4. Reduces variance and bias to improve generalization. 
+5. Used in Random Forest, AdaBoost, and Gradient Boosting algorithms. 
+. 

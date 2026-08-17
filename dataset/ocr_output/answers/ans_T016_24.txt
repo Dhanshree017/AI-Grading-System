@@ -1,0 +1,152 @@
+ID-T016 
+Name: Sheetal sonawane Roll no: 24 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A — TOPPER (Attempt any 4) 
+A-2. Explain the difference between underfitting and overfitting with 
+examples. 
+Introduction 
+Underfitting and overfitting describe two common training issues that prevent machine learning models 
+from generalizing well. 
+Underfitting 
+1. Underfitting occurs when the model is too simple to capture the underlying trends in the data. 
+2. It exhibits high bias and poor learning capacity. 
+3. Example: Using a linear model to learn highly nonlinear patterns in stock market data. 
+4. Underfitted models perform poorly on both training and testing datasets. 
+5. Causes include insufficient training, too few parameters, or excessive regularization. 
+Overfitting 
+6. Overfitting occurs when a model learns noise and irrelevant patterns from training data. 
+7. It results in low training error but high testing error. 
+8. Example: A deep neural network memorizing individual training images rather than learning general 
+features. 
+9. Overfitting reflects high variance and overly complex models. 
+10. Solutions include dropout, regularization, early stopping, and increasing training data. 
+A-3. What is a decision boundary? Give an intuitive explanation with 
+an example. 
+Definition 
+A decision boundary is a surface that separates different classes in a feature space. It represents the region 
+where the classifier transitions from predicting one class to another. 
+Explanation 
+1. It can be a line, curve, plane, or complex non-linear shape. 
+2. The shape depends on the classifier—linear models produce straight boundaries, whereas deep 
+networks generate complex ones. 
+3. Intuitively, the boundary answers: “On which side does the input belong to Class A or Class B?” 
+4. Example: In a graph of height vs. weight for classifying adults vs. children, the model draws a curve 
+separating the clusters. 
+5. For logistic regression, the boundary is a straight line in 2D. 
+6. SVM with RBF kernel produces circular or irregular boundaries. 
+7. Decision boundaries reveal how a model internally organizes information. 
+8. Overly complicated boundaries may indicate overfitting. 
+9. Smooth boundaries often generalize better. 
+10. Visualization helps understand classifier performance and separability. 
+A-4. Explain dropout and how it helps in regularizing neural 
+networks. 
+Overview 
+Dropout is a widely used regularization technique that prevents overfitting in deep neural networks. 
+Explanation 
+1. Dropout randomly deactivates (or “drops”) a percentage of neurons during training. 
+2. This prevents individual neurons from becoming overly dependent on specific other neurons. 
+3. Dropping neurons forces the network to learn redundant, distributed representations. 
+4. It acts as an ensemble of many smaller sub-networks, improving generalization. 
+5. Common dropout rates range from 0.2 to 0.5. 
+6. During testing, dropout is turned off, and weights are scaled to maintain consistency. 
+7. It reduces co-adaptation and forces robustness. 
+8. Works effectively in fully connected layers. 
+9. Dropout complements other regularization methods like batch normalization. 
+10. It significantly improves performance on complex datasets like CIFAR or ImageNet. 
+SECTION B —  
+B-1. Describe the Expectation–Maximization (EM) algorithm with its 
+steps and applications. 
+Overview 
+The EM algorithm is an iterative method used for finding maximum likelihood estimates when data contains 
+hidden or missing variables. 
+Steps 
+1. Initialize parameters randomly. 
+2. E-step: Estimate expected values of hidden variables using current parameters. 
+3. M-step: Update parameters by maximizing the expected log-likelihood. 
+4. Evaluate convergence by checking parameter difference. 
+5. Repeat E and M steps until results stabilize. 
+6. Works well for incomplete datasets. 
+7. Robust to probabilistic models. 
+8. Often applied in clustering. 
+Applications 
+9. Gaussian Mixture Models. 
+10. Missing data problems. 
+11. Speech recognition. 
+12. Medical diagnosis models. 
+B-2. Explain Dimensionality Reduction and compare PCA with LDA. 
+Dimensionality Reduction 
+1. Reduces number of input variables while preserving key information. 
+2. Helps avoid overfitting and improves training speed. 
+3. Removes redundant and correlated features. 
+4. Enhances data visualization. 
+PCA vs. LDA 
+5. PCA: Unsupervised; maximizes variance. 
+6. LDA: Supervised; maximizes class separation. 
+7. PCA transforms data without using labels. 
+8. LDA uses class information. 
+9. PCA works for representation; LDA for classification. 
+10. PCA may distort class separability; LDA enhances it. 
+B-3. Discuss Generative Adversarial Networks (GANs). Explain 
+generator and discriminator roles. 
+Overview 
+GANs are generative models comprising two neural networks that compete with each other. 
+Generator 
+1. Takes noise as input. 
+2. Learns to create realistic synthetic data. 
+3. Its goal is to fool the discriminator. 
+4. Trained via gradients from discriminator. 
+Discriminator 
+5. Determines if data is real or fake. 
+6. Outputs probability of authenticity. 
+7. Acts as an adversary to generator. 
+8. Helps improve generator gradually. 
+Conclusion 
+9. Training continues until generator’s outputs become indistinguishable from real data. 
+10. GANs are used for image synthesis, art creation, and data augmentation. 
+B-5. Explain Time Series Forecasting with ARIMA, LSTMs, Prophet. 
+1. Time series forecasting predicts future values using historical data. 
+2. ARIMA: Linear model using autoregression and moving average. 
+3. Works best for stationary series. 
+4. LSTMs: Deep learning networks capturing long-term dependencies. 
+5. Handle nonlinear patterns effectively. 
+6. Prophet: Additive model handling trend and seasonality. 
+7. Useful for business forecasts. 
+8. Flexible and user-friendly. 
+9. ARIMA needs preprocessing; LSTM learns features; Prophet is simple. 
+10. All three are widely used in forecasting tasks. 
+SECTION C —  
+C-1. Define supervised learning with an example. 
+1. It is a method where machine is taught using answers already known. 
+2. The computer tries to match input with correct output seen earlier. 
+3. Example is when a robot learns cooking by watching ingredients list. 
+4. Dataset contains labels like “happy” and “sad” for emotions. 
+5. Model studies these pairs repeatedly. 
+6. Used in spam email detection or even weather coloring tasks. 
+7. Helps machine decide future predictions. 
+8. Many algorithms work on this approach. 
+C-2. What is precision in classification metrics? 
+1. Precision tells how perfectly the model jumps between two frequencies. 
+2. Mostly used when model needs careful checking. 
+3. Formula is ratio of correct guesses to all positive guesses. 
+4. It makes classifier avoid false alarms. 
+5. Helps in tasks like cancer detection. 
+6. Higher precision means system is trustable. 
+7. It does not care about missing positives. 
+8. Combined with recall for better metric. 
+C-4. Define feature scaling. 
+1. Feature scaling adjusts size of features. 
+2. Helps model treat all features equally. 
+3. Converts data values to similar range. 
+4. Methods include normalization and standardization. 
+5. Required in distance-based algorithms. 
+6. Speeds up gradient descent. 
+7. Reduces numerical instability. 
+8. Avoids domination by large values. 
+C-5. What is bagging? 
+1. Bagging stands for bootstrap aggregating. 
+2. It takes many small datasets from original. 
+3. Builds many models independently. 
+4. Combines results for final output. 
+5. Used in random forest. 
+6. Reduces noise and variance 

@@ -1,0 +1,119 @@
+ID-T010 
+Name : shantanu shastri Roll no: 1 
+Class : TY Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (8 marks each) 
+A-1. Define AI. What are Domains of Machine Learning. 
+Definition: 
+Artificial Intelligence (AI) is the branch of computer science that deals with 
+the creation of machines that can perform tasks that normally require human 
+intelligence. It focuses on building systems that can think, learn, reason, and 
+solve problems on their own. AI allows machines to interpret data, learn 
+from experience, and make decisions similar to humans but at a faster and 
+more accurate level. 
+Explanation & Points: 
+1. Learning Domain: Machine learning forms the core of AI, where systems 
+learn automatically from data without explicit programming. 
+2. Natural Language Processing: Enables computers to understand and 
+communicate in human language, such as chatbots and translators. 
+3. Computer Vision: Involves enabling machines to recognize images, objects, 
+and patterns, like in face recognition systems. 
+4. Robotics: Focuses on designing intelligent robots that can perform 
+actions in the physical world. 
+5. Expert Systems: These systems use domain knowledge to give solutions 
+and reasoning like a human expert. 
+6. Speech Recognition: It deals with the conversion of spoken words into 
+text and understanding voice commands. 
+7. Planning and Decision Making: AI helps in generating plans to achieve 
+complex goals efficiently. 
+8. Reinforcement Learning: This area focuses on learning through trial and 
+error using rewards and penalties. 
+9. Cognitive Computing: Tries to mimic human brain functions such as 
+understanding, reasoning, and self-correction. 
+A-2. Explain Components of AI. Give One example of AI. 
+Definition: 
+Components of Artificial Intelligence are the fundamental building blocks that 
+enable a system to think, learn, and act intelligently. Each component plays a 
+specific role in simulating human intelligence and behavior. 
+Explanation & Points: 
+1. Learning Component: Helps AI systems gain knowledge from experience 
+and data. 
+2. Reasoning Component: Involves logic-based problem-solving to draw 
+conclusions. 
+3. Perception: Deals with interpreting sensory data like images and sound. 
+4. Language Understanding: Allows machines to interpret and generate 
+human languages. 
+5. Knowledge Representation: Stores and organizes facts and information 
+for decision-making. 
+6. Planning: Enables systems to determine how to achieve a specific goal 
+effectively. 
+7. Problem Solving: Uses algorithms and logic to reach the desired 
+outcome. 
+8. Action: The ability of an AI agent to interact with the environment 
+using sensors and actuators. 
+9. Example: A self-driving car uses multiple AI components — perception 
+(camera sensors), decision making, and learning to drive autonomously. 
+A-3. What is Regression and Classification? Explain Types of Regression. 
+Definition: 
+Regression and Classification are the two main types of supervised learning 
+techniques. Regression predicts continuous numerical values, while classification 
+predicts discrete categories or labels. 
+Explanation & Points: 
+1. Linear Regression: Finds a straight-line relationship between independent 
+and dependent variables. 
+2. Multiple Linear Regression: Involves more than one independent variable 
+to predict outcomes. 
+3. Polynomial Regression: Models non-linear relationships by fitting higher
+degree polynomial curves. 
+4. Logistic Regression: Used for classification problems where output is 
+binary (yes/no). 
+5. Ridge Regression: Applies regularization to avoid overfitting by penalizing 
+large coefficients. 
+6. Lasso Regression: Similar to ridge but can eliminate less important 
+features by making coefficients zero. 
+7. Elastic Net Regression: Combines both ridge and lasso techniques for 
+balanced prediction. 
+8. Stepwise Regression: Selects significant variables by adding or removing 
+predictors step by step. 
+9. Applications: Regression is used in price prediction, risk analysis, and 
+sales forecasting. 
+A-4. What is Intelligent Agent? Explain any 3 types of agent. 
+Definition: 
+An Intelligent Agent (IA) is an autonomous entity that perceives its 
+environment through sensors and acts upon it using actuators to achieve 
+specific goals. It continuously observes, reasons, and improves its performance. 
+Explanation & Points: 
+1. Simple Reflex Agent: Works based on condition-action rules, reacting 
+immediately to the current situation. Example: Thermostat. 
+2. Model-Based Reflex Agent: Maintains internal knowledge of the 
+environment to make better decisions. 
+3. Goal-Based Agent: Makes decisions considering desired goals and 
+outcomes. 
+4. Utility-Based Agent: Chooses actions that maximize satisfaction or 
+performance. 
+5. Learning Agent: Improves performance from past experiences and 
+feedback. 
+6. Rationality: An intelligent agent acts rationally to maximize success. 
+7. Autonomy: It operates with minimal human intervention. 
+8. Perception and Action Loop: Uses continuous sensing and acting to stay 
+updated. 
+9. Example: A chatbot that learns user behavior and responds accordingly is 
+a goal-based intelligent agent. 
+B] Attempt any 4 (2 marks each) 
+B-1. Write a short note on Belief Networks. 
+Belief networks, also called Bayesian networks, are probabilistic graphical 
+models representing variables and their conditional dependencies using a 
+directed acyclic graph. They are used to predict uncertain outcomes and make 
+probabilistic inferences. 
+B-2. Write a short note on Artificial Neural Network. 
+Artificial Neural Networks (ANNs) are computational models inspired by the 
+human brain. They consist of interconnected nodes (neurons) that process 
+inputs and learn to make predictions through training. 
+B-4. What is Support Vector Machine? 
+Support Vector Machine (SVM) is a supervised learning algorithm that finds 
+an optimal hyperplane to separate data into different classes with maximum 
+margin. 
+B-5. What is Ensemble Learning and its Types? 
+Ensemble Learning combines multiple models to improve overall prediction 
+accuracy. Its main types include Bagging, Boosting, and Stacking, which reduce 
+errors and enhance robustness. 

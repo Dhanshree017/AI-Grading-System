@@ -1,0 +1,101 @@
+ID-T026 
+Name: Mishti Shah Roll no: 6 
+Class : SY-Computer Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (each 8 marks) - Poor Student 
+A-a. Explain the concept of learning bias in machine learning. Discuss different sources of bias and their 
+impact on model generalization. 
+Learning bias is when the computer is lazy and only learns the simple stuff. It's like having a favorite food 
+and ignoring all the other food. 
+ Concept: Bias is the error from the model being too stupid. It makes too many assumptions, like 
+assuming everything is a straight line when it's not. 
+ Sources of Bias: 
+1. Too Simple Model: If you use a basic model (like a one-layer model) for a very complicated 
+problem (like recognizing faces), it has high bias. 
+2. Bad Training Data: If you only show the model pictures of cats and then ask it to find a dog, 
+that's a bias problem in the data. 
+ Impact on Generalization: High bias causes underfitting. The model fails badly on the training 
+data, so of course it will fail on the new test data too. It just misses the whole point of the problem. 
+A-b. Describe the role of assumptions in machine learning algorithms. Explain how assumptions 
+influence model selection and performance. 
+Assumptions are just things we hope are true about the data. We have to make them, or the computer can't 
+even start. 
+ Role of Assumptions: They help the computer decide what kind of model to use. If we assume the 
+data is simple, we pick a simple model. 
+ How Assumptions Influence Selection: 
+o If we assume everything is in a line, we use a model called Linear Regression. That's a good 
+assumption because those models are fast. 
+o If we assume things are very complicated and non-linear, we use a big model like a Neural 
+Network, but then it gets slow and hungry for power. 
+ Performance Influence: If your assumption is wrong (e.g., you assume a straight line when the data 
+is a curve), the model will be high bias and perform terribly. If you don't assume anything, the model 
+is too flexible and ends up just memorizing the training data, which is also bad performance. 
+A-c. Explain the concept of generalization in machine learning. Discuss why a model that performs well 
+on training data may fail on unseen data. 
+Generalization is about making sure the model is not just a one-trick pony. 
+ Concept: Generalization is the ability of the model to work well on new data it has never seen 
+before. If the training score is high, the generalization score should also be high. 
+ Why Failure on Unseen Data Occurs: This is the classic problem of overfitting. 
+1. Memorizing Noise: The model is too complicated and learns the tiny mistakes and noise in 
+the training data, instead of the main pattern. It's like a student memorizing the textbook 
+word-for-word but not understanding the concepts. 
+2. Too Small Training Set: If the training data is too small, the model doesn't see enough 
+variety, so when the new test data comes along, it's surprised and doesn't know what to do. 
+3. Data Change: When the model is deployed, the real-world data starts changing (this is called 
+Concept Drift), making the model's old rules incorrect for the new reality. 
+A-d. Discuss the importance of data quality in machine learning systems. Explain how noise, missing 
+values, and inconsistencies affect learning outcomes. 
+Data quality is crucial in machine learning (ML) because "garbage in, garbage out" applies: poor data (noise, 
+missing values, inconsistencies) leads to inaccurate, biased, and unreliable models, causing poor 
+performance, biased decisions, and wasted resources, whereas clean, consistent data enables accurate pattern 
+recognition, better generalization, and fair outcomes, making data quality foundational for effective AI. 
+Noise (irrelevant data), missing values (incomplete records), and inconsistencies (format/logic errors) distort 
+patterns, leading to higher error rates, biased predictions (especially for minority classes), and models that 
+fail to generalize, requiring extensive cleaning and validation for fairness and accuracy.  
+Importance of Data Quality 
+ Accuracy & Reliability: High-quality data helps models learn true patterns, leading to better predictions in 
+real-world scenarios. 
+ Efficiency: Clean data reduces time-consuming preprocessing, speeding up model development and 
+deployment. 
+ Fairness & Ethics: Addresses biases in data, preventing discriminatory outcomes and ensuring models are 
+equitable, especially in sensitive areas like healthcare or justice. 
+ Trust & Explainability: Well-documented, clean data builds trust and helps stakeholders understand model 
+decisions.  
+How Data Issues Affect Learning Outcomes 
+ Noise (Irrelevant/Erroneous Data): 
+o Impact: Distorts the true signal, confusing the model and reducing its ability to find meaningful patterns, 
+leading to lower accuracy and poor generalization. 
+o Example: Random errors in customer ratings causing a recommendation system to suggest irrelevant 
+products. 
+ Missing Values: 
+o Impact: Creates gaps in understanding, forcing models to rely on incomplete information, potentially 
+leading to skewed results or needing imputation methods (like mean/median) that might introduce bias. 
+o Example: Many missing age entries in a dataset skewing age-based predictions. 
+ Inconsistencies & Bias: 
+o Impact: Inconsistent formats (e.g., "USA" vs. "United States") or biased labels (unfairly applied labels) 
+teach the model incorrect relationships, amplifying systemic inequalities and resulting in biased, unfair, or 
+discriminatory decisions. 
+o Example: A loan application model trained on historically biased data might unfairly deny loans to certain 
+demographics. 
+ Data Imbalance: 
+o Impact: Models favor majority classes, performing poorly on underrepresented (minority) classes, leading 
+to biased predictions and ineffective solutions for those groups. 
+o Example: A fraud detection model trained mostly on non-fraudulent transactions might miss most actual 
+fraud cases.  
+By proactively managing these data quality issues through cleaning, imputation, bias mitigation, and 
+continuous monitoring, developers can build robust, accurate, and fair machine learning systems.  
+A-e. Explain the difference between shallow learning and deep learning approaches. Discuss their 
+characteristics, strengths, and limitations in theory. 
+This is about the old models versus the new, big models. 
+ Shallow Learning (SL): These are the old, simple models. 
+o Characteristics: They have only a few layers. You have to manually do all the hard work of 
+feature engineering (telling the computer which columns are important). 
+o Strengths: They are easy to understand (transparent) and work okay with small amounts of 
+data. 
+o Limitations: They can't solve really complicated problems like image recognition. 
+ Deep Learning (DL): These are the new, fancy models. 
+o Characteristics: They have lots and lots of layers. The model figures out all the features 
+automatically (like recognizing edges, then eyes, then a face). 
+o Strengths: They are the best for complex problems like vision and language. 
+o Limitations: They are black boxes (we can't see how they work), they need huge amounts of 
+data, and they need expensive computers (like GPUs) to train. 

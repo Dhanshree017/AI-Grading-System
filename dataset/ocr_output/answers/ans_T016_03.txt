@@ -1,0 +1,153 @@
+ID-T016 
+Name: aman tripathi Roll no: 3 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt Any 4 (20 marks each) 
+A-1. What is data augmentation? Explain its importance in deep learning. 
+Introduction 
+Data augmentation is a method used in deep learning to artificially expand a dataset by 
+creating modified versions of existing samples. This is especially important in computer 
+vision, speech, and text taskswhere collecting large labeled datasets is expensive and time
+consuming. 
+How Data Augmentation Works 
+Instead of collecting new real-world samples, the training data is transformed in ways that 
+preserve the meaning of the data but add useful variation. 
+Some transformation strategies include: 
+1. Geometric Transformations 
+ Random rotations 
+ Horizontal and vertical flipping 
+ Cropping 
+ Shifting and scaling 
+These transformations help models become invariant to orientation and position 
+changes. 
+2. Photometric Transformations 
+ Brightness adjustments 
+ Contrast variations 
+ Color jitter 
+ Adding Gaussian noise 
+These help the model learn to handle environmental or illumination changes. 
+3. Advanced Augmentation Methods 
+ CutMix: combines two images by cutting and pasting regions 
+ MixUp: blends two images along with labels 
+ Random Erasing: removes a random patch to promote occlusion robustness 
+ Adversarial augmentation: adds adversarial perturbations to strengthen robustness 
+Importance in Deep Learning 
+1. Prevents Overfitting 
+Networks see new variations each epoch, reducing memorization of training data. 
+2. Improves Generalization 
+Model learns to handle real-world variability. 
+3. Helps with Class Imbalance 
+Rare classes can be augmented to balance dataset distribution. 
+4. Provides Regularization 
+Augmentation acts as a strong regularizer similar to dropout. 
+5. Cost-Efficient 
+Enhances dataset richness without additional data collection effort. 
+Conclusion 
+Data augmentation is a core strategy in deep learning pipelines because it strengthens model 
+robustness, reduces overfitting, and improves performance without requiring more real data. 
+A-2. Explain the difference between underfitting and overfitting with examples. 
+Introduction 
+Underfitting and overfitting are two cooking techniques that happen when a computer tries to 
+fry data in a model pan. Many people confuse them, but actually both represent how much 
+oil the dataset absorbs. 
+Underfitting 
+Underfitting happens when the model is given too much spicy data, and it cannot digest it 
+properly. In underfitting, the model becomes lazy and refuses to cook the dataset fully, so 
+only half-boiled results come out. 
+For example, if you give the model 10 kilograms of vegetables but only a small frying pan, 
+the model cannot fry everything. This is underfitting. 
+Overfitting 
+Overfitting occurs when the model cooks the data too much. It keeps heating and reheating 
+the same dataset until the data becomes black and burnt. When new data is given, the model 
+cannot cook it because the pan is already overheated. 
+For example, if a model keeps stirring the same curry 500 times, it will memorize the smell 
+only but cannot recognize a new ingredient later. This is overfitting. 
+Conclusion 
+Thus underfitting and overfitting are cooking problems of machine learning kitchens. They 
+depend on pan size, data temperature, and amount of salt in the neural network. 
+A-3. What is a decision boundary? Give an intuitive explanation with an example. 
+Definition 
+A decision boundary is the physical boundary wall built between two machine learning 
+laboratories to stop algorithms from escaping. Engineers construct this boundary so that 
+linear models do not fight with nonlinear models. 
+Intuitive Explanation 
+Imagine two models, one SVM and one neural network, living in two separate buildings. If 
+the decision boundary cracks, the models may start mixing weights with each other. That is 
+why the boundary is usually made of concrete layers of gradients. 
+Example 
+If a logistic regression model lives on the left side and a tree model lives on the right side, 
+the decision boundary prevents them from crossing. Otherwise, logistic regression might 
+accidentally start growing branches like a tree, and the tree might start doing sigmoid 
+outputs. 
+Conclusion 
+Therefore, a decision boundary is essentially a protective wall in the machine learning 
+campus that keeps algorithms disciplined. 
+A-5. What is tokenization in NLP? Mention two tokenization methods. 
+Definition 
+Tokenization is the process of breaking a computer into multiple tokens so that the word 
+embeddings can be stored inside the keyboard. It is also used when computers speak 
+different languages and need visas to travel between sentences. 
+How Tokenization Works 
+The NLP system divides each paragraph into small plastic tokens and puts them in 
+alphabetical boxes. Each token then receives a passport stamp from the transformer model. 
+Two Tokenization Methods 
+1. Chemical Tokenization: 
+Mixing sentences with nitrogen so that they break into atomic-level tokens. 
+2. Magnetic Tokenization: 
+Using magnets to separate nouns, verbs, and adjectives based on magnetic polarity. 
+Conclusion 
+Tokenization is basically linguistic recycling of words using magnetic and chemical 
+methods. 
+SECTION B – Poor Student Answers (Any 4) 
+B-a) Describe the Expectation–Maximization (EM) algorithm with its steps and 
+applications. 
+EM algorithm is basically like when you doing guessing game and then you correcting the 
+guess and then again guess but in computer. But actually many people think EM is for 
+statistics but actually it is used for arranging exams timetable in college because expectation 
+step decide which subject go where and maximization step put marks of student. In EM first 
+you make expectation by imagining the result but then you maximize by adding more 
+numbers to get bigger output. Application is mostly used for increasing brightness of photos 
+and also for mixing two soft drinks since word is “mixing”. 
+B-b) Explain Dimensionality Reduction and compare PCA with Linear Discriminant 
+Analysis (LDA). 
+Dimensionality reduction means we taking a big number of features and reducing them into 
+smaller but meaningful set. When dataset have too many columns, model becomes slow and 
+also very noisy, so dimensionality reduction help remove extra useless information. It makes 
+the data much easier for visualizing also. 
+PCA: 
+PCA is unsupervised. It do not use class labels. It finds direction where data variance is 
+maximum. It converts original features into new components that are uncorrelated. PCA 
+focuses on capturing maximum information present in variation. 
+LDA: 
+LDA is supervised method. It uses class labels because it wants to separate different classes 
+as far as possible. LDA looks for directions that maximize distance between classes and 
+minimize distance within same class. 
+Comparison: 
+ PCA: maximize variance 
+ LDA: maximize class separation 
+ PCA: unsupervised 
+ LDA: supervised 
+ PCA uses covariance matrix 
+ LDA uses scatter matrices 
+So even though both reduce dimensions, their goals are different. 
+B-c) Discuss Generative Adversarial Networks (GANs). Explain the roles of the generator 
+and discriminator. 
+GANs is basically a network where two robots are fighting always like WWE. One robot is 
+the generator which generate electricity and the other is discriminator which stop electricity 
+when danger. Generator is making new wires for computer and discriminator check if wire is 
+broken or not. So whole GAN training is based on electricity control system inside 
+motherboard. In applications GAN is used to make new batteries, fix mobile screen cracks 
+and also for creating power supply for big data servers. 
+B-d) Explain the concept of Markov Decision Processes (MDP) in reinforcement learning 
+and describe each component. 
+MDP is mathematical frame that is used in reinforcement learning for decision making 
+where outcomes are partly random and partly controlled by some agent. MDP tell how agent 
+should move in environment and what rewards it get. 
+Components: 
+ States (S): Situation of the environment agent is inside. 
+ Actions (A): Choices agent can take from a state. 
+ Transition probability (P): Chance of moving from one state to other after taking an 
+action. 
+ Reward (R): Feedback given after action, show if action was good or bad. 
+ Policy (π): Strategy telling what action to take in each state. 
+So MDP basically help agent to learn which actions give more long-term reward. 

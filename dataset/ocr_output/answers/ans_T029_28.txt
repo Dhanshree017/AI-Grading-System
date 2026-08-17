@@ -1,0 +1,68 @@
+ID-T029 
+Name: Rajiv Malhotra Roll no: 28 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt 4 (5 marks each) 
+A-a. Explain the concept of model robustness in machine learning. Discuss why 
+robustness is important and how it can be improved in learning systems. 
+ What it is: Robustness is like "toughness." A robust model is one that doesn't get 
+confused by small mistakes, "noise," or weird data. If you show a robust AI a picture 
+of a cat with a little bit of blurry spots, it should still know it's a cat. 
+ Why it's important: If a model isn't robust, it can be easily tricked. For example, a 
+self-driving car must be robust so it doesn't crash just because there is a little bit of dirt 
+on a road sign. 
+ How to improve it: 1. More Variety: Train the model with messy data, not just 
+perfect data. 2. Noise Injection: Intentionally add "static" or errors to the training data 
+so the model learns to ignore them. 
+A-b. Describe the role of data representation in machine learning. Explain how different 
+ways of representing data can affect learning outcomes. 
+ Role: Data representation is how we "show" information to the computer. Computers 
+only understand numbers, so we have to turn colors, words, and sounds into lists of 
+numbers. 
+ Effect on learning: * If you represent data poorly (like giving a computer a messy 
+handwriting sample instead of typed text), it will struggle to learn. 
+o Feature Selection: Choosing the right numbers matters. If you want to predict 
+if someone is healthy, "weight" is a good representation, but "eye color" 
+probably isn't. Good representation makes the computer's job easy; bad 
+representation makes it impossible. 
+A-c. Discuss the challenges involved in scaling machine learning systems. Explain issues 
+related to data size, model complexity, infrastructure, and maintenance. 
+ Data Size: When data gets huge (billions of rows), a normal computer can't handle it. 
+You need special "distributed" systems that use many computers at once. 
+ Model Complexity: Very "smart" models take a long time to think. Scaling means 
+making sure the model can give an answer in a split second, even if millions of people 
+are using it at the same time. 
+ Infrastructure: You need expensive hardware (like GPUs) and a lot of electricity. 
+ Maintenance: Once a model is "in the wild," it can get outdated. You have to 
+constantly check it to make sure it's still working correctly as the world changes. 
+A-e. Describe the responsibilities of an ML engineer after model deployment. Explain 
+tasks related to monitoring, updating, documentation, and ethical compliance. 
+ Monitoring: Watching the model like a hawk to make sure its accuracy doesn't drop. 
+ Updating: If the model starts making mistakes because the world changed (like a 
+fashion AI not knowing about a new trend), the engineer must retrain it with new data. 
+ Documentation: Writing down exactly how the model works and what data it used so 
+other people can fix it later. 
+ Ethical Compliance: Making sure the model is fair. An engineer must check that the 
+AI isn't being "mean" or biased against certain groups of people. 
+B] Attempt All (2 marks each) 
+B-a. What is model generalization in machine learning? It is the ability of the AI to get the 
+right answer on data it has never seen before, not just the data it studied. 
+B-b. Define training dataset. The "textbook" for the AI. It is the collection of data the 
+computer looks at to learn the patterns. 
+B-c. What is unsupervised learning? When you give the computer data but no answers. The 
+computer has to find its own groups or patterns (like sorting a big pile of unsorted laundry). 
+B-d. What do you mean by features in ML? The specific "clues" we give the model. For a 
+house, features would be the number of rooms, the square footage, and the location. 
+B-e. What is a machine learning algorithm? The set of math rules or "recipe" the computer 
+follows to turn data into a working model. 
+B-f. Define overfitting. When the computer "memorizes" the training data too much. It's like a 
+student who memorizes the practice test but fails the real exam because the numbers 
+changed. 
+B-g. What is data preprocessing? Cleaning the data before the computer sees it—like fixing 
+typos, removing duplicates, and making sure all the numbers are in the same scale. 
+B-h. What is a prediction in machine learning? The "guess" or output the model gives you 
+(e.g., "I think this email is 90% likely to be spam"). 
+B-i. Define model evaluation. Testing the model (usually with a "Test Set") to see how many 
+questions it gets right and how many it gets wrong. 
+B-j. What is learning from experience in ML? It means the computer gets better at its job as 
+it sees more and more examples over time. 

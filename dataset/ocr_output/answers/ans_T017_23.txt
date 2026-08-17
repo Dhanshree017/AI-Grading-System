@@ -1,0 +1,182 @@
+ID-T017 
+Name: Krish shrivastav Roll no: 23 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+SECTION A — Attempt all (3 marks each) 
+A-1. Give 5 domains of AI 
+1. Perception & Computer Vision — extracting semantic information from 
+images/video (detection, segmentation, pose). 
+2. Language Intelligence (NLP & Conversational AI) — parsing, understanding and 
+generating human language (translation, dialog). 
+3. Autonomous Systems & Robotics — sensing, planning and control for embodied 
+agents (navigation, manipulation). 
+4. Learning & Optimization (Machine Learning) — algorithms that infer patterns 
+from data (supervised, unsupervised, reinforcement). 
+5. Knowledge & Reasoning — representation of facts, rules and inference engines for 
+decision support and explainable AI. 
+A-2. What is data preprocessing and why is it important? 
+Definition: sequence of transformations applied to raw inputs to make them consistent, 
+informative and suitable for modelling (cleaning, transforming, encoding). 
+Importance: reduces noise and bias, ensures numerical stability, enables meaningful feature 
+comparisons (scaling/normalization), handles missing or inconsistent values, and often 
+increases predictive performance more than marginal model changes. Proper preprocessing 
+is prerequisite for reproducible and robust ML. 
+A-3. What are hyperparameters? Give two examples 
+Definition: external configuration knobs chosen before learning that control model structure 
+or optimizer behavior; they are not estimated from training by gradient descent. 
+Examples: (1) Learning rate (η) controlling step-size in gradient updates; (2) 
+Regularization coefficient (λ) that penalizes large weights (L2) or controls sparsity (L1). 
+A-4. Explain types of clustering 
+ Partitioning (K-means / K-medoids): iterative assignment to k centroids/medoids 
+minimizing within-cluster variance. Good for spherical clusters. 
+ Hierarchical (Agglomerative / Divisive): builds tree of clusters (dendrogram) useful 
+when cluster granularity unknown. 
+ Density-based (DBSCAN / HDBSCAN): identifies clusters as high-density regions; 
+finds arbitrary shapes and outliers. 
+ Model-based (Gaussian Mixture Models): probabilistic clusters with soft 
+assignments via EM; models covariance structure. 
+ Spectral / Graph-based: uses eigenvectors of affinity/Laplacian to separate non
+convex manifolds. 
+A-5. What is classification and regression? Explain with examples 
+Classification: mapping inputs to discrete categories. Example: diagnosing images as 
+{benign, malignant}. Metrics: accuracy, precision, recall, F1, ROC-AUC. 
+Regression: mapping inputs to continuous targets. Example: forecasting monthly demand 
+(units). Metrics: MAE, RMSE, R². Choice of loss (MSE vs MAE) reflects tolerance to 
+outliers. 
+A-6. Give advantages and disadvantages of Decision Tree 
+Advantages: interpretable tree structure; handles mixed feature types; nonparametric (no 
+distribution assumption); captures nonlinear feature interactions; fast prediction. 
+Disadvantages: high variance (prone to overfitting); greedy local splits may be suboptimal; 
+sensitive to feature scaling of categorical encodings; biased toward features with many 
+levels; large trees hard to generalize without pruning. 
+A-7. How to make model underfit and overfit (i.e., causes & how to induce) 
+Induce underfitting (causes): use too-simple hypothesis class (e.g., linear model for 
+nonlinear target), apply strong regularization, reduce feature set, or train too few epochs. 
+Induce overfitting (causes): use excessively expressive model (deep net, high-degree 
+polynomial) relative to data, omit regularization, train long on small/noisy dataset, include 
+spurious features or label leakage. 
+A-8. Give 5 applications of machine learning in real life 
+1. Personalized recommendation (e-commerce, streaming) 
+2. Automated medical imaging diagnostics (radiology triage) 
+3. Real-time fraud detection in transactions 
+4. Predictive maintenance for industrial equipment 
+5. Natural language assistants and customer-service chatbots 
+A-9. State steps in making ML models 
+1. Problem specification & success metrics 
+2. Data acquisition & instrumentation 
+3. Exploratory data analysis (EDA) and labeling quality check 
+4. Data cleaning & preprocessing 
+5. Feature engineering and dimensionality reduction 
+6. Model selection and training with cross-validation 
+7. Hyperparameter tuning and validation 
+8. Final evaluation on holdout test set 
+9. Deployment, monitoring, and scheduled retraining 
+A-10. Importance of data in ML 
+Data defines what the model can learn: its quantity, quality, label accuracy, 
+representativeness and variety determine model capacity, bias/variance, fairness and 
+robustness. Good data reduces uncertainty, enables reliable generalization and is often more 
+impactful than marginal model architecture choices. 
+SECTION B — Attempt any 5 (8 marks each) 
+B-1. Challenges in ML and solutions 
+Imbalanced Data 
+ Problem: models favor majority class; accuracy misleading. 
+ Solutions: oversampling minority (SMOTE variants), careful undersampling, class
+weighted losses, focal loss, ensemble methods oriented to balance, use appropriate 
+metrics (PR-AUC, F1). 
+Missing Values 
+ Problem: reduce usable samples, bias if not MCAR. 
+ Solutions: analyze missing mechanism (MCAR/MAR/MNAR); simple imputations 
+(mean/median) when safe; model-based imputation (KNN, MICE); use missingness as 
+a feature; prefer algorithms tolerant to NAs (tree-based boosters). 
+Curse of Dimensionality 
+ Problem: distance metrics degrade; sparsity increases, overfitting risk. 
+ Solutions: feature selection (mutual info, L1), dimensionality reduction (PCA, 
+autoencoders), regularization, domain-specific feature synthesis, collect more samples. 
+Concept Drift 
+ Problem: P(X) or P(Y|X) changes over time causing performance drop. 
+ Solutions: online/incremental learning, retrain on recent data (sliding window), drift 
+detectors to trigger retraining, ensembles weighting recent models, and continuous 
+monitoring with feedback loops. 
+B-3. Ensemble Learning — Bagging and Boosting (with examples) 
+Principle: combine multiple models to reduce error components (variance, bias) and 
+increase robustness. 
+Bagging (Bootstrap Aggregating) 
+ Mechanism: train base learners independently on bootstrap samples; aggregate 
+predictions (averaging/voting). 
+ Effect: lowers variance by averaging uncorrelated errors. 
+ Example: Random Forest — bagged decision trees with additional random feature 
+selection per split; strong off-the-shelf performance and resilience to overfitting. 
+Boosting 
+ Mechanism: sequentially fit weak learners where each new learner focuses on 
+residuals or misclassified instances of the ensemble so far. 
+ Effect: reduces bias and often variance when regularized; converts many weak learners 
+into a strong predictor. 
+ Examples: AdaBoost (reweights examples), Gradient Boosting (fit negative gradients; 
+implementations: XGBoost, LightGBM, CatBoost). Regularization (shrinkage, tree 
+constraints) crucial to prevent overfitting. 
+Stacking & Blending: meta-learner trained on base model predictions to capture 
+complementary strengths. 
+B-4. Entire ML pipeline and model evaluation 
+Pipeline steps (detailed): 
+1. Problem framing & metric selection: define business objective and select 
+appropriate metrics (e.g., recall vs precision tradeoff). 
+2. Data engineering: ingestion, schema design, sampling strategy, labeling pipeline. 
+3. EDA & diagnostics: distribution checks, feature correlations, outlier detection, label 
+noise estimation. 
+4. Preprocessing & featurization: cleaning, imputing, encoding, scaling, text/image 
+preprocessing, embedding extraction. 
+5. Feature engineering: interactions, aggregations, temporal features, domain 
+transformations, feature selection. 
+6. Modeling: choose algorithm family; baseline models; iterate complexity. 
+7. Validation & hyperparameter search: cross-validation, time series CV, nested CV 
+for honest estimates; tune with grid/random/Bayesian search. 
+8. Evaluation: on holdout/test set; compute chosen metrics; analyze calibration and error 
+slices. 
+9. Deployment: packaging, serving, latency and throughput considerations, CI/CD. 
+10. Monitoring: production metrics, drift detection, data quality checks, feedback 
+capture. 
+11. Governance: logging, versioning, explainability reports, privacy compliance. 
+Evaluation best practices: use metrics aligned to cost of errors, confusion matrix analysis 
+for classification, calibration curves for probabilistic outputs, significance testing for model 
+comparisons, and business A/B testing for real-world impact. 
+B-5. Types of data ML uses & qualities of good data 
+Types: 
+ Tabular / structured — spreadsheets, relational rows. 
+ Text — documents, logs, social posts. 
+ Images / video — pixels, frames, spatio-temporal streams. 
+ Audio / speech — waveforms, spectrograms. 
+ Time-series — sensor logs, financial series. 
+ Graph — nodes & edges (social networks, molecules). 
+ Spatial / geospatial — coordinates, maps. 
+Qualities of good data: 
+ Accuracy & label correctness (low label noise). 
+ Completeness (minimal missingness for core features). 
+ Representativeness (covers deployment population and edge cases). 
+ Consistency (units/formats, no contradictions). 
+ Sufficient diversity and volume (adequate examples per class/segment). 
+ Low measurement noise / high signal-to-noise ratio. 
+ Freshness (timely for non-stationary problems). 
+ Metadata & provenance (feature definitions, collection method) for reproducibility. 
+B-6. Naïve Bayes and SVM — detailed note 
+Naïve Bayes (NB) 
+ Core idea: apply Bayes’ theorem with conditional independence: Variants: 
+Multinomial NB (counts/text), Bernoulli NB (binary features), Gaussian NB 
+(continuous). 
+ Pros: extremely fast, low memory, works well with high-dim sparse features (text), 
+interpretable priors. 
+ Cons: independence assumption often violated; cannot capture feature interactions; 
+probability estimates crude unless calibrated. 
+ Use cases: spam detection, document classification, simple baselines. 
+Support Vector Machine (SVM) 
+ Core idea: find hyperplane maximizing margin between classes; soft margin 
+introduces slack ξ and regularization C to trade margin vs misclassification. 
+ Kernel trick: map to high-dim feature space implicitly with kernel 
+K(x,x′)K(x,x')K(x,x′) (RBF, polynomial) to enable non-linear decision boundaries. 
+ Optimization: convex quadratic program (global optimum), can be solved in primal 
+or dual. 
+ Pros: robust in high dimensional settings, effective with clear margins, strong 
+theoretical guarantees. 
+ Cons: computationally heavy for very large n, kernel selection & hyperparameter 
+tuning (C, γ) crucial, limited probabilistic outputs (need calibration via Platt scaling). 
+ Use cases: text classification (linear SVMs), image recognition on moderate datasets, 
+bioinformatics. 

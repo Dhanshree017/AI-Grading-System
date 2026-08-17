@@ -1,0 +1,146 @@
+ID-T017 
+Name: pragati mehta Roll no: 12 
+Class : TY-Data science 
+Email : collegeemail0017@gmail.com 
+A] Attempt all (3 marks each) 
+A-1. Give 5 Domains of AI 
+1. Machine Learning 
+2. Natural Language Processing 
+3. Robotics 
+4. Computer Vision 
+5. Expert Systems 
+(Also AI is used in microwaves but not sure.) 
+A-2. What is data preprocessing? Why is it important? 
+Data preprocessing means cleaning and preparing raw data before giving it to ML model. 
+It is important because it removes noise, handles missing values and makes data in proper 
+format. 
+If we don’t preprocess, model will get confused and give wrong results. 
+Sometimes data preprocessing also makes data tastier  
+A-3. What are hyperparameters? Give two examples 
+Hyperparameters are settings of model that we choose before training. 
+Examples: learning rate, number of trees in Random Forest. 
+Also “RAM size” is NOT a hyperparameter but sometimes I think it affects training. 
+A-4. Explain types of clustering 
+ K-Means Clustering – groups data into k clusters. 
+ Hierarchical Clustering – builds tree-like structure of clusters. 
+ DBSCAN – forms clusters based on density. 
+There is also “circle clustering” but I think that doesn’t exist. 
+A-5. What is classification and regression? Explain with examples 
+ Classification: Predicting categories. Example: Email spam or not spam. 
+ Regression: Predicting continuous numbers. Example: predicting house price. 
+Sometimes regression also used to predict color of apple  
+A-6. Give advantages and disadvantages of Decision Tree 
+Advantages: 
+ Easy to understand 
+ Works with numerical and categorical data 
+ No need of feature scaling 
+Disadvantages: 
+ Can overfit 
+ Small change in data changes tree 
+ Trees sometimes look like a Christmas tree  
+A-7. How to make model underfit and overfit 
+ Underfit: Use very simple model, fewer parameters, train for very few epochs. 
+ Overfit: Train too long, use very complex model, no regularization. 
+Underfit model behaves like a lazy student. 
+A-8. Give 5 applications of machine learning 
+1. Recommendation systems 
+2. Fraud detection 
+3. Self-driving cars 
+4. Medical diagnosis 
+5. Voice assistants 
+Also ML used in potato sorting machines  
+A-9. State steps in making ML models 
+1. Collect data 
+2. Preprocess data 
+3. Split data 
+4. Choose model 
+5. Train model 
+6. Test model 
+7. Deploy model 
+Sometimes people also pray before training the model  
+A-10. Importance of data in ML 
+Data is the basic fuel for ML. 
+Good data makes good predictions. 
+If data is wrong, model becomes useless. 
+Like saying “garbage in garbage out.” 
+B] Attempt any 5 (8 marks each) 
+B-1. Challenges in ML & Solutions 
+Major challenges in machine learning include data quality and quantity, overfitting and 
+underfitting, model bias, computational costs, and model interpretability. Solutions 
+involve robust data preprocessing, using techniques like cross-validation and regularization, 
+addressing bias through representative datasets and fair data collection, optimizing models 
+for computational efficiency, and employing explainable AI (XAI) methods to make models 
+more transparent.  
+Data-related challenges 
+ Challenge: Poor data quality, insufficient data, or non-representative data can all lead to 
+inaccurate or biased models. 
+ Solutions: 
+o Implement strong data preprocessing techniques to clean, filter, and handle missing or noisy 
+data. 
+o Use data augmentation and synthetic data generation to supplement existing datasets. 
+o Ensure the training data accurately reflects the real-world distribution to prevent a lack of 
+representativeness.  
+Model-related challenges 
+ Challenge: Overfitting occurs when a model is too complex and learns noise, while 
+underfitting occurs when it is too simple to capture patterns. 
+ Solutions: 
+o Use methods like cross-validation, regularization, and early stopping to prevent overfitting. 
+o Simplify the model or add more features to address underfitting.  
+Bias and ethical challenges 
+ Challenge: Data bias can result in unfair or discriminatory model outputs. 
+ Solutions: 
+o Carefully curate and balance training data to ensure it represents the broader population 
+fairly. 
+o Implement bias mitigation strategies and continuously monitor models for biased outcomes 
+after deployment. 
+o Address ethical considerations, such as privacy and algorithmic fairness 
+B-2. What is Regularization? Explain its types 
+Regularization is a machine learning technique that prevents overfitting by penalizing model 
+complexity, improving its ability to generalize to new data. Common types include L1 
+(Lasso) regularization, which can zero out feature weights, L2 (Ridge) regularization, which 
+shrinks weights toward zero, and Dropout, which randomly deactivates neurons during 
+training.  
+Types of regularization 
+ L1 Regularization (Lasso): Adds the absolute value of the coefficients to the loss function. 
+This encourages sparsity, meaning some feature coefficients are driven to exactly zero, 
+which can be used for feature selection. 
+ L2 Regularization (Ridge): Adds the square of the coefficients to the loss function. This 
+prevents large weights by shrinking them towards zero, but it doesn't force them to be 
+exactly zero. 
+ Elastic Net: A combination of both L1 and L2 regularization. It penalizes the loss function 
+with a combination of both the absolute values and the squares of the coefficients. 
+ Dropout: A technique specifically for neural networks where neurons are randomly 
+"dropped out" during training. This prevents neurons from becoming too specialized and 
+dependent on each other, forcing the network to learn more robust features. 
+ Early Stopping: Stops the training process when the model's performance on a validation 
+set starts to degrade, even as the performance on the training set continues to improve. This 
+B-3. What is Ensemble Learning? Bagging & Boosting 
+Ensemble learning: Combining multiple models to get better accuracy. 
+ Bagging: Train models independently on random samples. 
+Example: Random Forest. 
+ Boosting: Models are trained one after another, each correcting previous errors. 
+Example: AdaBoost, XGBoost. 
+Ensemble is like asking many friends instead of one. 
+B-4. Entire ML Pipeline + Model Evaluation 
+Steps: 
+1. Problem understanding 
+2. Data collection 
+3. Data preprocessing 
+4. Feature engineering 
+5. Model selection 
+6. Training 
+7. Testing 
+8. Deployment 
+Model evaluation: 
+Use accuracy, precision, recall, F1-score, confusion matrix, RMSE for regression. 
+Sometimes people evaluate model by “looks good or not 
+B-6. Write note on Naive Bayes & SVM 
+Naive Bayes: 
+Probabilistic classifier based on Bayes theorem. 
+Assumes features are independent (naive assumption). 
+Works well for text classification. 
+SVM: 
+Support Vector Machine separates data using maximum margin hyperplane. 
+Works well in high-dimensional data. 
+Uses kernels like linear, RBF. 
+Also SVM sounds like a motorbike brand  

@@ -1,0 +1,114 @@
+ID-T029 
+Name: Revathi Pillai Roll no: 3 
+Class : FY-IT 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 4 (Each 5 Marks) 
+A-a. Model Robustness in Machine Learning 
+Definition: 
+Model robustness refers to the ability of a machine learning model to maintain reliable 
+performance when exposed to noisy, incomplete, or slightly altered input data. 
+Importance of Robustness: 
+1. Real-world data often contains noise and errors. 
+2. Robust models handle unexpected variations in input. 
+3. It prevents sudden failure in real-time applications. 
+4. Improves trust and reliability of ML systems. 
+5. Ensures stable predictions across environments. 
+A-b. Role of Data Representation in Machine Learning 
+Definition: 
+Data representation refers to the way raw data is transformed into a suitable format (features) 
+that a machine learning model can understand. 
+Role in Learning: 
+1. Proper representation highlights important patterns. 
+2. Poor representation can hide useful information. 
+3. It directly affects model accuracy and efficiency. 
+A-c. Challenges in Scaling Machine Learning Systems 
+Definition: 
+Scaling ML systems means expanding them to handle large data volumes, complex models, 
+and increased user demand efficiently. 
+Key Challenges: 
+1. Data Size: Managing and processing massive datasets. 
+2. Model Complexity: Larger models require more computation. 
+3. Infrastructure: Need for high-performance hardware and cloud resources. 
+4. Training Time: Increased time for model training and tuning. 
+5. Maintenance: Regular updates, retraining, and system monitoring. 
+A-d. Transfer of Knowledge in Machine Learning 
+Definition: 
+Transfer of knowledge refers to using knowledge learned from one task to improve learning 
+performance in a new but related task. 
+How It Works: 
+1. Pretrained models are reused. 
+2. Learned features are transferred. 
+3. Fine-tuning adapts models to new tasks. 
+4. Common in image and language processing. 
+5. Helps solve data-scarce problems. 
+A-e. Responsibilities of an ML Engineer After Deployment 
+Definition: 
+Post-deployment responsibilities involve ensuring the deployed ML model continues to 
+perform correctly, ethically, and efficiently. 
+Key Responsibilities: 
+1. Monitoring: Track model accuracy and data drift. 
+2. Updating: Retrain models with new data. 
+3. Maintenance: Fix bugs and optimize performance. 
+4. Documentation: Maintain model and system records. 
+5. Ethical Compliance: Ensure fairness, privacy, and legal adherence. 
+B] Attempt All (Each 2 Marks) 
+B-a. Model Generalization in Machine Learning 
+1. Model generalization is the ability of a model to apply learned patterns to unseen data. 
+2. It indicates how well a model performs beyond the training dataset. 
+3. Good generalization avoids both overfitting and underfitting. 
+4. It reflects the true predictive capability of the model. 
+5. Generalization is evaluated using validation or test datasets. 
+B-b. Training Dataset 
+1. A training dataset is a collection of examples used to train an ML model. 
+2. It contains input features and corresponding outputs. 
+3. The model learns patterns and relationships from this data. 
+4. Quality of training data directly affects model accuracy. 
+5. Larger and diverse datasets usually improve learning. 
+B-c. Unsupervised Learning 
+1. Unsupervised learning works with data that has no labeled outputs. 
+2. The model identifies hidden patterns or structures in data. 
+3. It is mainly used for clustering and dimensionality reduction. 
+4. No human supervision is required during learning. 
+5. It helps in discovering unknown relationships in data. 
+B-d. Features in Machine Learning 
+1. Features are individual measurable properties of data. 
+2. They serve as input variables for ML models. 
+3. Proper feature selection improves model performance. 
+4. Irrelevant features can reduce accuracy. 
+5. Features represent important characteristics of the problem domain. 
+B-e. Machine Learning Algorithm 
+1. A machine learning algorithm is a set of rules for learning from data. 
+2. It processes input data to identify patterns. 
+3. Algorithms update their behavior based on experience. 
+4. Different algorithms suit different problem types. 
+5. The choice of algorithm impacts model efficiency and accuracy. 
+B-f. Overfitting 
+1. Overfitting occurs when a model memorizes training data. 
+2. It performs well on training data but poorly on new data. 
+3. The model becomes too complex for the problem. 
+4. Overfitting reduces generalization ability. 
+5. It is commonly caused by insufficient or noisy data. 
+B-g. Data Preprocessing 
+1. Data preprocessing prepares raw data for modeling. 
+2. It involves cleaning, normalization, and transformation. 
+3. It removes inconsistencies and missing values. 
+4. Proper preprocessing improves learning efficiency. 
+5. It enhances model accuracy and reliability. 
+B-h. Prediction in Machine Learning 
+1. Prediction is the output generated by an ML model. 
+2. It is based on learned patterns from training data. 
+3. Predictions are made for new, unseen inputs. 
+4. They can be numerical values or class labels. 
+5. Prediction is the main goal of many ML systems. 
+B-i. Model Evaluation 
+1. Model evaluation measures the effectiveness of an ML model. 
+2. It compares predicted outputs with actual values. 
+3. Evaluation helps in selecting the best model. 
+4. It detects errors like overfitting. 
+5. Test data is commonly used for evaluation. 
+B-j. Learning from Experience in ML 
+1. Learning from experience means improving performance over time. 
+2. Experience refers to historical data or past outcomes. 
+3. The model adjusts parameters based on feedback. 
+4. Performance improves as more data is processed. 
+5. This concept distinguishes ML from traditional programming. 

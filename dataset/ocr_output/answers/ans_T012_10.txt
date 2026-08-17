@@ -1,0 +1,97 @@
+ID-T012 
+Name : Ritesh bhatia Roll no: 10 
+Class : Ty Data Science 
+Email : collegeemail0017@gmail.com 
+A] Attempt any 5 (8 marks each) 
+A-1. Explain the Random Forest algorithm in detail. Describe its working, advantages, 
+and disadvantages. 
+Random forest is the thing in machine learning where we have so many trees in the 
+forest and each tree gives one output and we mix them to get the big result. It is also 
+called random because we don’t take all data, we take some random data and train 
+many trees. It works like voting system where all trees give yes or no and the one 
+with more wins. 
+When we do random forest, we first cut data in many parts then build small trees. 
+Each tree is trained with boot something method. After that when we get new 
+input, all trees predict and we take average or max vote. 
+Advantages are it is fast and strong and don’t do overfitting mostly. It gives result 
+quickly and also shows which features are important. Disadvantages are it takes 
+much memory, and it is not simple to understand. Some trees can give wrong 
+output also and we can’t explain it properly. 
+So random forest is used in predicting diseases, weather, stock, and other big things. 
+A-2. What is Backpropagation? Explain each step in detail. 
+Backpropogation is the algorithm which go back in neural network to find what 
+mistake was done. When we send data inside, we get output and if output is wrong 
+then we calculate error and go reverse to fix weight. It is kind of like telling the 
+machine what mistake it did and asking it to correct it. 
+Steps: 
+First we give input and calculate output. Then we find difference between predicted 
+and correct answer. Then we calculate gradient which means slope, and then we 
+update the weight in opposite direction. This process happen many times until the 
+model stop making big errors. 
+So basically it teach the model how to learn automatically without we doing it 
+manually. It is very important for deep learning models like CNN and RNN because 
+they have many hidden layers. 
+A-3. Explain Bayesian Learning approach and compare it with frequentist learning. 
+Bayesian learning is something where we use probability to learn things. It use Bayes 
+theorem which say that we can update belief based on new data. It means when we 
+get new data, our idea changes. Frequentist learning is opposite because it don’t 
+change belief, it just use data as it is. 
+In Bayesian we have prior, likelihood and posterior. Prior is our old belief, likelihood 
+is how data fits, and posterior is updated result. Frequentist only depend on sample 
+frequency. 
+Bayesian learning is slow and complicated but it can work when data is small. 
+Frequentist is simple and mostly used but it cannot handle uncertain data properly. 
+A-6. Explain Normalization vs Standardization with examples. 
+Normalization and standardization both used for scaling the data. Normalization 
+means putting data in range of 0 to 1, like if we have height 150, 180, 200, we 
+make it between 0 to 1. Standardization means make mean 0 and deviation 1. 
+Normalization is used when data very big and standardization when we use Gaussian 
+distribution. For example, if one feature is salary and one is marks, normalization 
+help to equalize both. 
+B] Attempt any 4 (5 marks each) 
+B-1. Explain the main challenges faced while training ML models. 
+Challenges are data not enough, data dirty, model slow, computer hang, algorithm 
+not learn properly. Sometimes data has missing values or outliers and model get 
+confused. Also overfitting happens when model too smart on training but stupid on 
+testing. 
+We need more data, better cleaning, more GPU and time to fix it. Hyperparameter 
+tuning also headache. 
+B-2. Describe the difference between probability and likelihood in machine learning. 
+Probability means how likely something happen, like rain tomorrow 70%. Likelihood 
+means how good parameter fit the data. Probability is forward, likelihood is 
+backward. Probability used for prediction, likelihood used for estimation. 
+For example, if we know coin is fair we find probability of heads, but if we don’t 
+know coin type and see 3 heads we use likelihood to check if it is fair or not. 
+B-4. What are hyperparameters? Give examples and explain how they differ from 
+parameters. 
+Hyperparameters are settings we give before training like learning rate, batch size, 
+layers count. Parameters are weights model learn automatically. 
+For example in random forest number of trees is hyperparameter but in linear 
+regression slope is parameter. So hyperparameter is manual and parameter is 
+automatic. 
+B-6. What is dimensionality curse? How does it affect machine learning models? 
+When data has too many features then model becomes crazy. Because distance 
+between points becomes same and model not understand pattern. Then accuracy 
+goes down. This is called curse of dimensionality. It make training slow and bad. So 
+we reduce features using PCA or LDA. 
+C] Attempt all (10 marks each) 
+C-1. How can machine learning be used in predictive maintenance in industries? 
+Machine learning can tell when machine going to break before it break. Like we use 
+sensor data for temperature, pressure, sound, and vibration. Then model learn 
+pattern and give alert. This is called predictive maintenance. 
+Steps are collect data, clean it, train model like decision tree or random forest, then 
+predict failure. It save cost, stop downtime, and make system safe. 
+Industries like cars, factories, trains use it. For example airplane engine monitored by 
+sensors to predict when service needed. 
+C-2. Discuss 5 real-world example of biased ML model and how such bias can be 
+reduced. 
+Bias means unfair model. It happen when data not balanced or not correct. 
+Examples: 
+1. Face recognition not work on black people. 
+2. Hiring model select only men. 
+3. Health data ignore women symptoms. 
+4. Credit model deny poor people loan. 
+5. Police prediction model arrest same area again and again. 
+To reduce we can balance data, check fairness, remove bias features, test properly 
+and audit model by humans. 
+ 

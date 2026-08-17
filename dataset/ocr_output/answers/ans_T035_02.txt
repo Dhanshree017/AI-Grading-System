@@ -1,0 +1,13 @@
+ID-T035
+Name: Sonali Sharma Roll no: 2
+Class :TY-Information Teachnology
+Email : collegeemail0017@gmail.com
+
+A] Attempt all (20 Marks)
+
+A-1) Explain the role of assumptions in machine learning models and analyze how incorrect assumptions can affect model behavior and decision-making
+Machine learning models are built on certain assumptions about the data, the relationships between variables, and the environment in which the model operates. These assumptions simplify complex real-world problems and make it possible for algorithms to learn patterns efficiently. Assumptions may relate to data distribution, feature independence, linearity, noise behavior, or stationarity of data.
+For example, linear regression assumes a linear relationship between input variables and the output. Naïve Bayes assumes that all features are conditionally independent given the class label. Support Vector Machines assume that data can be separated using a suitable margin or kernel. These assumptions help models generalize and reduce computational complexity.
+However, when assumptions do not match reality, they can seriously affect model behavior. Incorrect assumptions lead to biased learning, inaccurate predictions, and unreliable decision-making. For instance, if Naïve Bayes is applied to data where features are highly correlated, the independence assumption is violated, leading to poor classification results. Similarly, applying linear models to non-linear data results in underfitting and loss of important patterns.
+In real-world decision-making systems such as medical diagnosis, credit scoring, or automated hiring, incorrect assumptions can cause unfair decisions, financial loss, or safety risks. Therefore, understanding model assumptions is critical. Practitioners must validate assumptions using exploratory data analysis, select appropriate algorithms, and continuously evaluate model performance to ensure reliable and ethical decision-making.
+
