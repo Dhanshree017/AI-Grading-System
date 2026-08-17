@@ -57,8 +57,7 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 
 * **Answer Sheets Processed**: ~1,030 full-length student answer sheets.
 * **Question-Answer Pairs**: 12,000+ individually annotated responses.
-* **Exam Templates**: Multiple distinct question paper structures covering core Machine Learning concepts (Supervised/Unsupervised Learning, Neural Networks, Optimization, Regularization, and Evaluation Metrics).
-* **Ground Truth Annotation**: Each response was dual-graded by domain experts across correctness, logical structure, and clarity.
+* **Exam Templates**: Multiple distinct question paper structures for subject Machine Learning.
 
 ---
 
