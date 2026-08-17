@@ -134,7 +134,7 @@ Comprehensive score breakdown revealing model reasoning across Semantic Accuracy
 ---
 
 ### 7. Automated Remedial Mini-Lessons & Feedback Generation
-Generative AI module using Gemini 1.5 Flash to highlight missed key concepts, deliver question-level feedback, and produce customized micro-lessons.
+Generative AI module using Gemini 1.5 Flash to highlight missed key concepts, deliver question-level feedback, and produce customized lessons.
 
 ![GIBO Feedback and Correction](Images/GIBO's%20Feedback%20and%20Correction.png)
 *Figure 12: Automated feedback generation and correction interface.*
