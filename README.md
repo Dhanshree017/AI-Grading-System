@@ -7,9 +7,9 @@ GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, mu
 
 ## Key Highlights & Performance Metrics
 
-* **Evaluation Accuracy**: Achieved **86.22% overall grading accuracy** against human evaluator baselines across complex descriptive answers.
+* **Evaluation Accuracy**: Achieved **86.22% overall grading accuracy**.
 * **Custom Dataset Engineering**: Built a proprietary dataset over **6 months** containing **~1,030 answer sheets** (~30 student sheets per Question Paper template) and over **12,000 Question-Answer pairs**.
-* **High-Throughput Batch Processing**: Enables batch evaluations of **50+ student answer sheets** per grading session against a single question paper template.
+* **High-Throughput Batch Processing**: Enables batch evaluations of **30+ student answer sheets** per grading session against a single question paper template.
 * **Explainable AI Diagnostics**: Powered by **Gemini 1.5 Flash**, delivering Tri-Level Diagnostics (personalized feedback, missing concept identification, and tailored mini-lessons).
 * **Automated Delivery Pipeline**: Compiles diagnostic reports and delivers itemized results directly to student email inboxes.
 
