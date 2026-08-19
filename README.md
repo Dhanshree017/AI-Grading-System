@@ -78,6 +78,9 @@ The primary landing portal establishing core value propositions, system features
 ![Home Page](Images/Home%20Page.png)
 *Figure 2: GIBO landing platform and portal navigation.*
 
+### Teacher Registration and Login
+![Home Page](Images/teacher_login.png)
+
 ---
 
 ### 2. Administrative Control Panel
