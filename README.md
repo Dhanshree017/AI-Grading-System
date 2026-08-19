@@ -134,7 +134,7 @@ The system automatically checks responses, enforces attempt constraints, and gen
 ![Intelligence Metric Score Bars](Images/score_bars.png)
 *Figure 12: POOR STUDENT Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
 
-![AI_Explanation_Behind_Marks](Images/AI_Explanation_Bhind_Marks.png)
+![AI_Explanation_Behind_Marks](Images/AI_Explanation_Behind_Marks.png)
 *Figure 13: WEll PERFORMED STUDENT'S Visual explainable AI feedback explaining score deductions and accuracy.*
 
 ---
