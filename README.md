@@ -19,8 +19,10 @@ GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, mu
 
 GIBO operates across a 7-stage pipeline that bridges raw text extraction, deep semantic comparison, regressive score prediction, and LLM-driven feedback generation:
 
-![System Architecture](Images/System%20Architecture.png)
-*Figure 1: High-level 7-module block diagram illustrating the GIBO processing pipeline.*
+<div align="center">
+  <img src="Images/System%20Architecture.png" alt="System Architecture" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 1: High-level 7-module block diagram illustrating the GIBO processing pipeline.</em></p>
+</div>
 
 ### Pipeline Breakdown:
 1. **Question Paper Configuration and Parsing**: Parses complex multi-section question paper templates, extracting attempt constraints, mark allocations, and question definitions.
@@ -41,10 +43,10 @@ To capture deep answer semantics rather than simple syntax, GIBO calculates thre
 * **Semantic Similarity (Weight: 0.5)**: Powered by **DeBERTa-v3** to capture contextual and deep semantic alignment against ideal responses.
 * **Logic & Structure (Weight: 0.4)**: Powered by **MiniLM** to evaluate concept flow, domain terminology consistency, and argument structure.
 * **Length Compliance (Weight: 0.1)**: Strictly enforces target word count boundaries calibrated by question weightage:
-  * **2 Marks**: 60–70 words
-  * **5 Marks**: 120–130 words
-  * **8 Marks**: 140–150 words
-  * **10 Marks**: 170–200 words
+  * **2 Marks**: 60–70 words
+  * **5 Marks**: 120–130 words
+  * **8 Marks**: 140–150 words
+  * **10 Marks**: 170–200 words
 
 ### Marks Prediction Engine
 Extracted feature vectors (Semantic, Logic, and Length Compliance scores) are passed into an **XGBoost Regressor** trained on 12,000+ human-graded question-answer pairs. The model outputs precise scores while adhering strictly to rule-constrained upper limits dictated by section-level attempt policies.
@@ -76,94 +78,150 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 ### 1. Home Page & Portal Entry
 The landing interface establishing core value propositions, system capabilities, and navigation portals for both teachers and administrative personnel.
 
-![Home Page](Images/Home%20Page.png)
-*Figure 2: GIBO primary landing platform and navigation entry point.*
+<div align="center">
+  <img src="Images/Home%20Page.png" alt="Home Page" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 2: GIBO primary landing platform and navigation entry point.</em></p>
+</div>
 
 ---
 
 ### 2. User Authentication & Administrative Approvals
 Teachers register or log in via the dedicated portal, while administrators review, manage, and grant access through a secure control panel.
 
-![Teacher Registration Portal](Images/teacher_login.png)
-*Figure 3: Teacher Portal registration and authentication entry point.*
+<div align="center">
+  <img src="Images/teacher_login.png" alt="Teacher Registration Portal" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 3: Teacher Portal registration and authentication entry point.</em></p>
+</div>
 
-![Admin Control Panel](Images/login_control_admin_panel.png)
-*Figure 4: Administrative portal for reviewing access requests and user controls.*
+<br />
+
+<div align="center">
+  <img src="Images/login_control_admin_panel.png" alt="Admin Control Panel" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 4: Administrative portal for reviewing access requests and user controls.</em></p>
+</div>
 
 ---
 
 ### 3. Faculty Dashboard & Academic Records
 Upon successful login, teachers enter the main dashboard where they can select a Question Paper template to view enrolled students, past submission records, and historical academic performances.
 
-![Academic Insights Dashboard](Images/Academic%20Insights.png)
-*Figure 5: Academic Insights dashboard showing student records and question paper selection.*
+<div align="center">
+  <img src="Images/Academic%20Insights.png" alt="Academic Insights Dashboard" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 5: Academic Insights dashboard showing student records and question paper selection.</em></p>
+</div>
 
 ---
 
 ### 4. Question Paper Structure & Schema Demo
-Instructors can inspect the reference Question Paper, its digitised schema, and the underlying section rules before evaluating submissions.
+Instructors can inspect the reference Question Paper, its digitized schema, and the underlying section rules before evaluating submissions.
 
-![Question Paper Document](Images/question_paper.png)
-*Figure 6: Digitized examination question paper view.*
+<div align="center">
+  <img src="Images/question_paper.png" alt="Question Paper Document" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 6: Digitized examination question paper view.</em></p>
+</div>
 
-![Question Paper Template Schema](Images/question_paper_template.png)
-*Figure 7: Structured Question Paper template mapping rules and mark weightages.*
+<br />
+
+<div align="center">
+  <img src="Images/question_paper_template.png" alt="Question Paper Template Schema" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 7: Structured Question Paper template mapping rules and mark weightages.</em></p>
+</div>
 
 ---
 
 ### 5. Initiating New Ingestion & Automated Processing
 To evaluate new submissions, the instructor clicks the **"Grade New Student"** button, uploads the Question Paper along with student answer files, configures metadata, and triggers the automated pipeline.
 
-![Uploading Question Paper and Answer Sheets](Images/Uploading%20QP%20and%20Answer%20sheets.png)
-*Figure 8: Batch upload panel for question templates and student answer sheets.*
+<div align="center">
+  <img src="Images/Uploading%20QP%20and%20Answer%20sheets.png" alt="Uploading Question Paper and Answer Sheets" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 8: Batch upload panel for question templates and student answer sheets.</em></p>
+</div>
 
-![Question Paper Metadata Configuration](Images/QP%20metadata%20form.png)
-*Figure 9: Form-based Metadata configuration for section attempt rules and score constraints.*
+<br />
 
-![Student Answer Sheet Processing](Images/answer_sheet_demo.png)
-*Figure 10: Processed and indexed student answer sheet ready for automated evaluation.*
+<div align="center">
+  <img src="Images/QP%20metadata%20form.png" alt="Question Paper Metadata Configuration" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 9: Form-based metadata configuration for section attempt rules and score constraints.</em></p>
+</div>
+
+<br />
+
+<div align="center">
+  <img src="Images/answer_sheet_demo.png" alt="Student Answer Sheet Processing" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 10: Processed and indexed student answer sheet ready for automated evaluation.</em></p>
+</div>
 
 ---
 
 ### 6. Automated Scoring, Attempt Auditing & AI Diagnostics
 The system automatically checks responses, enforces attempt constraints, and generates multi-metric explanations across Logic Consistency, Semantic Accuracy, and Word Compliance.
 
-![Student Attempt Audit Report](Images/Student_Attempt_report.png)
-*Figure 11: Itemized student attempt report and section-wise raw score mapping.*
+<div align="center">
+  <img src="Images/Student_Attempt_report.png" alt="Student Attempt Audit Report" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 11: Itemized student attempt report and section-wise raw score mapping.</em></p>
+</div>
 
-![Intelligence Metric Score Bars](Images/score_bars.png)
-*Figure 12: POOR STUDENT Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
+<br />
 
-![AI_Explanation_Behind_Marks](Images/AI_Explanation_Behind_Marks.png)
-*Figure 13: WEll PERFORMED STUDENT'S Visual explainable AI feedback explaining score deductions and accuracy.*
+<div align="center">
+  <img src="Images/score_bars.png" alt="Intelligence Metric Score Bars" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 12: Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question for lower-performing responses.</em></p>
+</div>
+
+<br />
+
+<div align="center">
+  <img src="Images/AI_Explanation_Behind_Marks.png" alt="AI Explanation Behind Marks" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 13: Explainable AI diagnostic panel illustrating score deductions and accuracy metrics for well-performing responses.</em></p>
+</div>
 
 ---
 
 ### 7. AI Remedial Micro-Lessons & Personalized Tutoring
 For missing concepts or low-scoring answers, GIBO leverages Gemini 1.5 Flash to automatically generate custom feedback, corrections, and tailored remedial lessons.
 
-![GIBO Feedback and Corrections](Images/GIBO's%20Feedback%20and%20Correction.png)
-*Figure 14: Automated evaluation feedback and immediate correction hints.*
+<div align="center">
+  <img src="Images/GIBO's%20Feedback%20and%20Correction.png" alt="GIBO Feedback and Corrections" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 14: Automated evaluation feedback and immediate correction hints.</em></p>
+</div>
 
-![GIBO Remedial Micro-Lesson](Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png)
-*Figure 15: AI-generated micro-lesson teaching missing concepts directly to the student.*
+<br />
+
+<div align="center">
+  <img src="Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png" alt="GIBO Remedial Micro-Lesson" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 15: AI-generated micro-lesson teaching missing concepts directly to the student.</em></p>
+</div>
 
 ---
 
 ### 8. Pedagogical Analytics & Direct Email Delivery
 Instructors monitor cohort-level performance metrics and track frequently skipped questions, while complete diagnostic score cards and micro-lessons are automatically emailed to each student.
 
-![Cohort Performance Analytics](Images/stud_performance_analysis.png)
-*Figure 16: Class grade distribution analytics and overall performance breakdown.*
+<div align="center">
+  <img src="Images/stud_performance_analysis.png" alt="Cohort Performance Analytics" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 16: Class grade distribution analytics and overall performance breakdown.</em></p>
+</div>
 
-![Aggregate Skipped Questions Overview](Images/mostly_skipped_Questions.png)
-*Figure 17: Cohort-level aggregate analytics highlighting frequently skipped topics.*
+<br />
 
-![Skipped Questions Breakdown](Images/skipped_questions_by_student.png)
-*Figure 18: Detailed per-student breakdown of unattempted or skipped questions.*
+<div align="center">
+  <img src="Images/mostly_skipped_Questions.png" alt="Aggregate Skipped Questions Overview" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 17: Cohort-level aggregate analytics highlighting frequently skipped topics.</em></p>
+</div>
 
-![Automated Email Delivered to Student](Images/Email_Received_by_student.png)
-*Figure 19: Diagnostic evaluation report delivered directly to a student's inbox via email.*
+<br />
+
+<div align="center">
+  <img src="Images/skipped_questions_by_student.png" alt="Skipped Questions Breakdown" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 18: Detailed per-student breakdown of unattempted or skipped questions.</em></p>
+</div>
+
+<br />
+
+<div align="center">
+  <img src="Images/Email_Received_by_student.png" alt="Automated Email Delivered to Student" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <p><em>Figure 19: Diagnostic evaluation report delivered directly to a student's inbox via email.</em></p>
+</div>
 
 ---
 
@@ -203,7 +261,6 @@ To send automated result reports to students, configure a Gmail App Password:
 ### 3. Installation Steps
 
 1. **Clone the Repository**:
-   ```bash
-   git clone [https://github.com/Dhanshree017/AI-Grading-System.git](https://github.com/Dhanshree017/AI-Grading-System.git)
-   cd AI-Grading-System
-   
+   ```bash
+   git clone [https://github.com/Dhanshree017/AI-Grading-System.git](https://github.com/Dhanshree017/AI-Grading-System.git)
+   cd AI-Grading-System
