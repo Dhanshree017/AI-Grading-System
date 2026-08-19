@@ -20,7 +20,7 @@ GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, mu
 GIBO operates across a 7-stage pipeline that bridges raw text extraction, deep semantic comparison, regressive score prediction, and LLM-driven feedback generation:
 
 <div align="center">
-  <img src="Images/System%20Architecture.png" alt="System Architecture" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/System%20Architecture.png" alt="System Architecture" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 1: High-level 7-module block diagram illustrating the GIBO processing pipeline.</em></p>
 </div>
 
@@ -79,7 +79,7 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 The landing interface establishing core value propositions, system capabilities, and navigation portals for both teachers and administrative personnel.
 
 <div align="center">
-  <img src="Images/Home%20Page.png" alt="Home Page" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/Home%20Page.png" alt="Home Page" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 2: GIBO primary landing platform and navigation entry point.</em></p>
 </div>
 
@@ -89,14 +89,14 @@ The landing interface establishing core value propositions, system capabilities,
 Teachers register or log in via the dedicated portal, while administrators review, manage, and grant access through a secure control panel.
 
 <div align="center">
-  <img src="Images/teacher_login.png" alt="Teacher Registration Portal" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/teacher_login.png" alt="Teacher Registration Portal" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 3: Teacher Portal registration and authentication entry point.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/login_control_admin_panel.png" alt="Admin Control Panel" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/login_control_admin_panel.png" alt="Admin Control Panel" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 4: Administrative portal for reviewing access requests and user controls.</em></p>
 </div>
 
@@ -106,7 +106,7 @@ Teachers register or log in via the dedicated portal, while administrators revie
 Upon successful login, teachers enter the main dashboard where they can select a Question Paper template to view enrolled students, past submission records, and historical academic performances.
 
 <div align="center">
-  <img src="Images/Academic%20Insights.png" alt="Academic Insights Dashboard" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/Academic%20Insights.png" alt="Academic Insights Dashboard" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 5: Academic Insights dashboard showing student records and question paper selection.</em></p>
 </div>
 
@@ -116,14 +116,14 @@ Upon successful login, teachers enter the main dashboard where they can select a
 Instructors can inspect the reference Question Paper, its digitized schema, and the underlying section rules before evaluating submissions.
 
 <div align="center">
-  <img src="Images/question_paper.png" alt="Question Paper Document" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/question_paper.png" alt="Question Paper Document" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 6: Digitized examination question paper view.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/question_paper_template.png" alt="Question Paper Template Schema" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/question_paper_template.png" alt="Question Paper Template Schema" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 7: Structured Question Paper template mapping rules and mark weightages.</em></p>
 </div>
 
@@ -133,21 +133,21 @@ Instructors can inspect the reference Question Paper, its digitized schema, and 
 To evaluate new submissions, the instructor clicks the **"Grade New Student"** button, uploads the Question Paper along with student answer files, configures metadata, and triggers the automated pipeline.
 
 <div align="center">
-  <img src="Images/Uploading%20QP%20and%20Answer%20sheets.png" alt="Uploading Question Paper and Answer Sheets" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/Uploading%20QP%20and%20Answer%20sheets.png" alt="Uploading Question Paper and Answer Sheets" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 8: Batch upload panel for question templates and student answer sheets.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/QP%20metadata%20form.png" alt="Question Paper Metadata Configuration" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/QP%20metadata%20form.png" alt="Question Paper Metadata Configuration" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 9: Form-based metadata configuration for section attempt rules and score constraints.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/answer_sheet_demo.png" alt="Student Answer Sheet Processing" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/answer_sheet_demo.png" alt="Student Answer Sheet Processing" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 10: Processed and indexed student answer sheet ready for automated evaluation.</em></p>
 </div>
 
@@ -157,21 +157,21 @@ To evaluate new submissions, the instructor clicks the **"Grade New Student"** b
 The system automatically checks responses, enforces attempt constraints, and generates multi-metric explanations across Logic Consistency, Semantic Accuracy, and Word Compliance.
 
 <div align="center">
-  <img src="Images/Student_Attempt_report.png" alt="Student Attempt Audit Report" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/Student_Attempt_report.png" alt="Student Attempt Audit Report" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 11: Itemized student attempt report and section-wise raw score mapping.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/score_bars.png" alt="Intelligence Metric Score Bars" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/score_bars.png" alt="Intelligence Metric Score Bars" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 12: Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question for lower-performing responses.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/AI_Explanation_Behind_Marks.png" alt="AI Explanation Behind Marks" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/AI_Explanation_Behind_Marks.png" alt="AI Explanation Behind Marks" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 13: Explainable AI diagnostic panel illustrating score deductions and accuracy metrics for well-performing responses.</em></p>
 </div>
 
@@ -181,14 +181,14 @@ The system automatically checks responses, enforces attempt constraints, and gen
 For missing concepts or low-scoring answers, GIBO leverages Gemini 1.5 Flash to automatically generate custom feedback, corrections, and tailored remedial lessons.
 
 <div align="center">
-  <img src="Images/GIBO's%20Feedback%20and%20Correction.png" alt="GIBO Feedback and Corrections" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/GIBO's%20Feedback%20and%20Correction.png" alt="GIBO Feedback and Corrections" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 14: Automated evaluation feedback and immediate correction hints.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png" alt="GIBO Remedial Micro-Lesson" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png" alt="GIBO Remedial Micro-Lesson" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 15: AI-generated micro-lesson teaching missing concepts directly to the student.</em></p>
 </div>
 
@@ -198,28 +198,28 @@ For missing concepts or low-scoring answers, GIBO leverages Gemini 1.5 Flash to 
 Instructors monitor cohort-level performance metrics and track frequently skipped questions, while complete diagnostic score cards and micro-lessons are automatically emailed to each student.
 
 <div align="center">
-  <img src="Images/stud_performance_analysis.png" alt="Cohort Performance Analytics" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/stud_performance_analysis.png" alt="Cohort Performance Analytics" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 16: Class grade distribution analytics and overall performance breakdown.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/mostly_skipped_Questions.png" alt="Aggregate Skipped Questions Overview" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/mostly_skipped_Questions.png" alt="Aggregate Skipped Questions Overview" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 17: Cohort-level aggregate analytics highlighting frequently skipped topics.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/skipped_questions_by_student.png" alt="Skipped Questions Breakdown" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/skipped_questions_by_student.png" alt="Skipped Questions Breakdown" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 18: Detailed per-student breakdown of unattempted or skipped questions.</em></p>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="Images/Email_Received_by_student.png" alt="Automated Email Delivered to Student" style="border: 2px solid #30363d; border-radius: 6px; padding: 4px;" />
+  <img src="Images/Email_Received_by_student.png" alt="Automated Email Delivered to Student" style="border: 3px solid black; padding: 4px;" />
   <p><em>Figure 19: Diagnostic evaluation report delivered directly to a student's inbox via email.</em></p>
 </div>
 
