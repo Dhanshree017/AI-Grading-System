@@ -2,9 +2,12 @@
   img {
     border: 2px solid #30363d;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    margin-bottom: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-top: 12px;
+    margin-bottom: 8px;
+    max-width: 85%;
+    height: auto;
+    display: block;
   }
 </style>
 
@@ -29,7 +32,7 @@ GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, mu
 
 GIBO operates across a 7-stage pipeline that bridges raw text extraction, deep semantic comparison, regressive score prediction, and LLM-driven feedback generation:
 
-<img src="Images/System%20Architecture.png" alt="System Architecture" width="100%"/>
+<img src="Images/System%20Architecture.png" alt="System Architecture" width="75%"/>
 
 *Figure 1: High-level 7-module block diagram illustrating the GIBO processing pipeline.*
 
@@ -87,7 +90,7 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 ### 1. Home Page & Portal Entry
 The landing interface establishing core value propositions, system capabilities, and navigation portals for both teachers and administrative personnel.
 
-<img src="Images/Home%20Page.png" alt="Home Page" width="100%"/>
+<img src="Images/Home%20Page.png" alt="Home Page" width="80%"/>
 
 *Figure 2: GIBO primary landing platform and navigation entry point.*
 
@@ -96,13 +99,13 @@ The landing interface establishing core value propositions, system capabilities,
 ### 2. User Authentication & Administrative Approvals
 Teachers register or log in via the dedicated portal, while administrators review, manage, and grant access through a secure control panel.
 
-<img src="Images/teacher_login.png" alt="Teacher Registration Portal" width="100%"/>
+<img src="Images/teacher_login.png" alt="Teacher Registration Portal" width="80%"/>
 
 *Figure 3: Teacher Portal registration and authentication entry point.*
 
 <br/>
 
-<img src="Images/login_control_admin_panel.png" alt="Admin Control Panel" width="100%"/>
+<img src="Images/login_control_admin_panel.png" alt="Admin Control Panel" width="80%"/>
 
 *Figure 4: Administrative portal for reviewing access requests and user controls.*
 
@@ -111,7 +114,7 @@ Teachers register or log in via the dedicated portal, while administrators revie
 ### 3. Faculty Dashboard & Academic Records
 Upon successful login, teachers enter the main dashboard where they can select a Question Paper template to view enrolled students, past submission records, and historical academic performances.
 
-<img src="Images/Academic%20Insights.png" alt="Academic Insights Dashboard" width="100%"/>
+<img src="Images/Academic%20Insights.png" alt="Academic Insights Dashboard" width="80%"/>
 
 *Figure 5: Academic Insights dashboard showing student records and question paper selection.*
 
@@ -120,13 +123,13 @@ Upon successful login, teachers enter the main dashboard where they can select a
 ### 4. Question Paper Structure & Schema Demo
 Instructors can inspect the reference Question Paper, its digitised schema, and the underlying section rules before evaluating submissions.
 
-<img src="Images/question_paper.png" alt="Question Paper Document" width="100%"/>
+<img src="Images/question_paper.png" alt="Question Paper Document" width="80%"/>
 
 *Figure 6: Digitized examination question paper view.*
 
 <br/>
 
-<img src="Images/question_paper_template.png" alt="Question Paper Template Schema" width="100%"/>
+<img src="Images/question_paper_template.png" alt="Question Paper Template Schema" width="80%"/>
 
 *Figure 7: Structured Question Paper template mapping rules and mark weightages.*
 
@@ -135,19 +138,19 @@ Instructors can inspect the reference Question Paper, its digitised schema, and 
 ### 5. Initiating New Ingestion & Automated Processing
 To evaluate new submissions, the instructor clicks the **"Grade New Student"** button, uploads the Question Paper along with student answer files, configures metadata, and triggers the automated pipeline.
 
-<img src="Images/Uploading%20QP%20and%20Answer%20sheets.png" alt="Uploading Question Paper and Answer Sheets" width="100%"/>
+<img src="Images/Uploading%20QP%20and%20Answer%20sheets.png" alt="Uploading Question Paper and Answer Sheets" width="80%"/>
 
 *Figure 8: Batch upload panel for question templates and student answer sheets.*
 
 <br/>
 
-<img src="Images/QP%20metadata%20form.png" alt="Question Paper Metadata Configuration" width="100%"/>
+<img src="Images/QP%20metadata%20form.png" alt="Question Paper Metadata Configuration" width="80%"/>
 
 *Figure 9: Form-based Metadata configuration for section attempt rules and score constraints.*
 
 <br/>
 
-<img src="Images/answer_sheet_demo.png" alt="Student Answer Sheet Processing" width="100%"/>
+<img src="Images/answer_sheet_demo.png" alt="Student Answer Sheet Processing" width="80%"/>
 
 *Figure 10: Processed and indexed student answer sheet ready for automated evaluation.*
 
@@ -158,19 +161,19 @@ To evaluate new submissions, the instructor clicks the **"Grade New Student"** b
 > **Student-Specific Diagnostic Inspection:** 
 > When an instructor selects an individual student from the cohort list, all downstream reports—including the **Attempt Audit Table**, **Metric Score Bars**, and **AI Explanation Reports**—dynamically isolate and display the granular, question-by-question breakdown for that specific student. This allows faculty to inspect exactly how the AI reached its mark allocation for any given individual.
 
-<img src="Images/Student_Attempt_report.png" alt="Student Attempt Audit Report" width="100%"/>
+<img src="Images/Student_Attempt_report.png" alt="Student Attempt Audit Report" width="80%"/>
 
 *Figure 11: Itemized attempt audit report showing attempted vs unattempted questions for the selected student.*
 
 <br/>
 
-<img src="Images/score_bars.png" alt="Intelligence Metric Score Bars" width="100%"/>
+<img src="Images/score_bars.png" alt="Intelligence Metric Score Bars" width="80%"/>
 
 *Figure 12: Individual student metric breakdown displaying Logic Consistency, Semantic Accuracy, and Compliance per question.*
 
 <br/>
 
-<img src="Images/AI_Explanation_Behind_Marks.png" alt="AI Explanation Behind Marks" width="100%"/>
+<img src="Images/AI_Explanation_Behind_Marks.png" alt="AI Explanation Behind Marks" width="80%"/>
 
 *Figure 13: Detailed explainable AI feedback revealing the exact rationale behind score deductions and criteria matches for the selected student.*
 
@@ -179,13 +182,13 @@ To evaluate new submissions, the instructor clicks the **"Grade New Student"** b
 ### 7. AI Remedial Micro-Lessons & Personalized Tutoring
 For missing concepts or low-scoring answers identified during the individual diagnostic audit, GIBO leverages Gemini 1.5 Flash to automatically generate custom feedback, corrections, and tailored remedial lessons.
 
-<img src="Images/GIBO's%20Feedback%20and%20Correction.png" alt="GIBO Feedback and Corrections" width="100%"/>
+<img src="Images/GIBO's%20Feedback%20and%20Correction.png" alt="GIBO Feedback and Corrections" width="80%"/>
 
 *Figure 14: Automated evaluation feedback and immediate correction hints generated for the student.*
 
 <br/>
 
-<img src="Images/GIBO%20teaching%20missing%concept%and%feedback.png" alt="GIBO Remedial Micro-Lesson" width="100%"/>
+<img src="Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png" alt="GIBO Remedial Micro-Lesson" width="80%"/>
 
 *Figure 15: AI-generated micro-lesson teaching missing concepts directly tailored to the student's gaps.*
 
@@ -196,25 +199,25 @@ For missing concepts or low-scoring answers identified during the individual dia
 > **Exam-Level & Cohort Insights:** 
 > Unlike the individual student reports above, the **Skipped Questions Analytics** aggregate data across all students (e.g., all 30 student submissions under template `T001`). This provides faculty with macro-level insights into which specific questions or core concepts were most frequently skipped or failed across the entire batch, highlighting topics that require classroom re-teaching.
 
-<img src="Images/stud_performance_analysis.png" alt="Cohort Performance Analytics" width="100%"/>
+<img src="Images/stud_performance_analysis.png" alt="Cohort Performance Analytics" width="80%"/>
 
 *Figure 16: Class grade distribution analytics and overall batch performance breakdown.*
 
 <br/>
 
-<img src="Images/mostly_skipped_Questions.png" alt="Aggregate Skipped Questions Overview" width="100%"/>
+<img src="Images/mostly_skipped_Questions.png" alt="Aggregate Skipped Questions Overview" width="80%"/>
 
 *Figure 17: Cohort-level aggregate analytics highlighting frequently skipped questions across all candidates for a specific Question Paper template.*
 
 <br/>
 
-<img src="Images/skipped_questions_by_student.png" alt="Skipped Questions Breakdown" width="100%"/>
+<img src="Images/skipped_questions_by_student.png" alt="Skipped Questions Breakdown" width="80%"/>
 
 *Figure 18: Detailed list mapping frequently skipped questions back to individual student records.*
 
 <br/>
 
-<img src="Images/Email_Received_by_student.png" alt="Automated Email Delivered to Student" width="100%"/>
+<img src="Images/Email_Received_by_student.png" alt="Automated Email Delivered to Student" width="80%"/>
 
 *Figure 19: Diagnostic evaluation report delivered directly to an individual student's inbox via email.*
 
