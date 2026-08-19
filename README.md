@@ -124,6 +124,7 @@ The system maps individual student answers against institutional attempt constra
 
 ![Student Attempt Report](Images/Student_Attempt_report.png)
 *Figure 10: Itemized student attempt report and raw score mapping.*
+![Home Page](Images/score_bar.png) 
 
 ---
 
