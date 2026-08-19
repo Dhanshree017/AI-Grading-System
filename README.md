@@ -132,10 +132,10 @@ The system automatically checks responses, enforces attempt constraints, and gen
 *Figure 11: Itemized student attempt report and section-wise raw score mapping.*
 
 ![Intelligence Metric Score Bars](Images/score_bars.png)
-*Figure 12: Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
+*Figure 12: POOR STUDENT Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
 
-![AI Explanation Behind Marks](Images/AI%20Explanation%20behind%20marks%20report.png)
-*Figure 13: Detailed explainable AI feedback explaining score deductions and accuracy.*
+![AI_Explanation_Behind_Marks](Images/AI_Explanation_Bhind_Marks.png)
+*Figure 13: WEll PERFORMED STUDENT'S Visual explainable AI feedback explaining score deductions and accuracy.*
 
 ---
 
