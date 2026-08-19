@@ -7,7 +7,7 @@ GIBO (**Grading Intelligence for Behavioral Optimization**) is an end-to-end, mu
 
 ## Key Highlights & Performance Metrics
 
-* **Evaluation Accuracy**: Achieved **92.22% overall grading accuracy**.
+* **Evaluation Accuracy**: Achieved **86.22% overall grading accuracy** against human evaluator baselines across complex descriptive answers.
 * **Custom Dataset Engineering**: Built a proprietary dataset over **6 months** containing **~1,030 answer sheets** (~30 student sheets per Question Paper template) and over **12,000 Question-Answer pairs**.
 * **High-Throughput Batch Processing**: Enables batch evaluations of **50+ student answer sheets** per grading session against a single question paper template.
 * **Explainable AI Diagnostics**: Powered by **Gemini 1.5 Flash**, delivering Tri-Level Diagnostics (personalized feedback, missing concept identification, and tailored mini-lessons).
@@ -57,7 +57,8 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 
 * **Answer Sheets Processed**: ~1,030 full-length student answer sheets.
 * **Question-Answer Pairs**: 12,000+ individually annotated responses.
-* **Exam Templates**: Multiple distinct question paper structures for subject Machine Learning.
+* **Exam Templates**: Multiple distinct question paper structures covering core Machine Learning concepts (Supervised/Unsupervised Learning, Neural Networks, Optimization, Regularization, and Evaluation Metrics).
+* **Ground Truth Annotation**: Each response was dual-graded by domain experts across correctness, logical structure, and clarity.
 
 ---
 
@@ -70,97 +71,99 @@ Due to the lack of publicly available descriptive answer datasets for specialize
 
 ---
 
-## System UI & Workflow Walkthrough
+## System UI & Step-by-Step Workflow Walkthrough
 
-### 1. Home Page & Portal Interface
-The primary landing portal establishing core value propositions, system features, and authentication entry points for faculty and administrative users.
+### 1. Home Page & Portal Entry
+The landing interface establishing core value propositions, system capabilities, and navigation portals for both teachers and administrative personnel.
 
 ![Home Page](Images/Home%20Page.png)
-*Figure 2: GIBO landing platform and portal navigation.*
-
-### Teacher Registration and Login
-![Home Page](Images/teacher_login.png)
+*Figure 2: GIBO primary landing platform and navigation entry point.*
 
 ---
 
-### 2. Administrative Control Panel
-Granular user access management workflow allowing administrators to review, approve, or reject user registration requests.
+### 2. User Authentication & Administrative Approvals
+Teachers register or log in via the dedicated portal, while administrators review, manage, and grant access through a secure control panel.
 
-![Admin Management Panel](Images/login_control_admin_panel.png)
-*Figure 3: Administrative portal for security controls and pending user approvals.*
+![Teacher Registration Portal](Images/teacher_login.png)
+*Figure 3: Teacher Portal registration and authentication entry point.*
+
+![Admin Control Panel](Images/login_control_admin_panel.png)
+*Figure 4: Administrative portal for reviewing access requests and user controls.*
 
 ---
 
-### 3. Question Paper Configuration & Metadata Parsing
-Instructors set up examination parameters, section-wise rules, per-question mark distributions, and custom attempt conditions.
+### 3. Faculty Dashboard & Academic Records
+Upon successful login, teachers enter the main dashboard where they can select a Question Paper template to view enrolled students, past submission records, and historical academic performances.
 
-![Question Paper Metadata Form](Images/QP%20metadata%20form.png)
-*Figure 4: Form-based Question Paper configuration and metadata parsing module.*
+![Academic Insights Dashboard](Images/Academic%20Insights.png)
+*Figure 5: Academic Insights dashboard showing student records and question paper selection.*
 
-![Question Paper Template](Images/question_paper_template.png)
-*Figure 5: Sample structured question paper template schema.*
+---
+
+### 4. Question Paper Structure & Schema Demo
+Instructors can inspect the reference Question Paper, its digitised schema, and the underlying section rules before evaluating submissions.
 
 ![Question Paper Document](Images/question_paper.png)
-*Figure 6: Digitized examination question paper layout.*
+*Figure 6: Digitized examination question paper view.*
+
+![Question Paper Template Schema](Images/question_paper_template.png)
+*Figure 7: Structured Question Paper template mapping rules and mark weightages.*
 
 ---
 
-### 4. High-Throughput Batch Ingestion & Answer Sheet Processing
-Faculty members execute bulk evaluation sessions by loading question templates alongside student text response files.
+### 5. Initiating New Ingestion & Automated Processing
+To evaluate new submissions, the instructor clicks the **"Grade New Student"** button, uploads the Question Paper along with student answer files, configures metadata, and triggers the automated pipeline.
 
-![Uploading QP and Answer Sheets](Images/Uploading%20QP%20and%20Answer%20sheets.png)
-*Figure 7: Batch upload interface for exam templates and student answer sheets.*
+![Uploading Question Paper and Answer Sheets](Images/Uploading%20QP%20and%20Answer%20sheets.png)
+*Figure 8: Batch upload panel for question templates and student answer sheets.*
+
+![Question Paper Metadata Configuration](Images/QP%20metadata%20form.png)
+*Figure 9: Form-based Metadata configuration for section attempt rules and score constraints.*
 
 ![Student Answer Sheet Processing](Images/answer_sheet_demo.png)
-*Figure 8: Digitized student answer record indexed by metadata and parsed into Q&A blocks.*
+*Figure 10: Processed and indexed student answer sheet ready for automated evaluation.*
 
 ---
 
-### 5. Academic Controls & Student Attempt Auditing
-The system maps individual student answers against institutional attempt constraints, auto-marking skipped questions while computing section score breakdowns.
+### 6. Automated Scoring, Attempt Auditing & AI Diagnostics
+The system automatically checks responses, enforces attempt constraints, and generates multi-metric explanations across Logic Consistency, Semantic Accuracy, and Word Compliance.
 
-![Faculty Insights & Academic Control](Images/Academic%20Insights.png)
-*Figure 9: Academic control portal featuring student search and template selection.*
+![Student Attempt Audit Report](Images/Student_Attempt_report.png)
+*Figure 11: Itemized student attempt report and section-wise raw score mapping.*
 
-![Student Attempt Report](Images/Student_Attempt_report.png)
-*Figure 10: Itemized student attempt report and raw score mapping.*
-![Home Page](Images/score_bar.png) 
+![Intelligence Metric Score Bars](Images/score_bars.png)
+*Figure 12: Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
 
----
-
-### 6. AI Evaluation Metrics & Diagnostic Explanation
-Comprehensive score breakdown revealing model reasoning across Semantic Accuracy, Logical Consistency, and Structural Compliance.
-
-![AI Explanation Behind Marks Report](Images/AI%20Explanation%20behind%20marks%20report.png)
-*Figure 11: Multi-metric model evaluation breakdown per question response.*
+![AI Explanation Behind Marks](Images/AI%20Explanation%20behind%20marks%20report.png)
+*Figure 13: Detailed explainable AI feedback explaining score deductions and accuracy.*
 
 ---
 
-### 7. Automated Remedial Mini-Lessons & Feedback Generation
-Generative AI module using Gemini 1.5 Flash to highlight missed key concepts, deliver question-level feedback, and produce customized lessons.
+### 7. AI Remedial Micro-Lessons & Personalized Tutoring
+For missing concepts or low-scoring answers, GIBO leverages Gemini 1.5 Flash to automatically generate custom feedback, corrections, and tailored remedial lessons.
 
-![GIBO Feedback and Correction](Images/GIBO's%20Feedback%20and%20Correction.png)
-*Figure 12: Automated feedback generation and correction interface.*
+![GIBO Feedback and Corrections](Images/GIBO's%20Feedback%20and%20Correction.png)
+*Figure 14: Automated evaluation feedback and immediate correction hints.*
 
-![GIBO Teaching Missing Concepts](Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png)
-*Figure 13: Targeted micro-lessons generated for student conceptual gaps.*
+![GIBO Remedial Micro-Lesson](Images/GIBO%20teaching%20missing%20concept%20and%20feedback.png)
+*Figure 15: AI-generated micro-lesson teaching missing concepts directly to the student.*
 
 ---
 
-### 8. Pedagogical Analytics & Automated Result Delivery
-Cohort performance reports map overall score distributions, while itemized diagnostic feedback is delivered straight to student email inboxes.
+### 8. Pedagogical Analytics & Direct Email Delivery
+Instructors monitor cohort-level performance metrics and track frequently skipped questions, while complete diagnostic score cards and micro-lessons are automatically emailed to each student.
 
-![Performance Analytics](Images/stud_performance_analysis.png)
-*Figure 14: Cohort performance dashboard and grade distribution analytics.*
+![Cohort Performance Analytics](Images/stud_performance_analysis.png)
+*Figure 16: Class grade distribution analytics and overall performance breakdown.*
 
-![Skipped Questions Analytics](Images/mostly_skipped_Questions.png)
-*Figure 15: Aggregate analytics tracking class-wide skipped question metrics.*
+![Aggregate Skipped Questions Overview](Images/mostly_skipped_Questions.png)
+*Figure 17: Cohort-level aggregate analytics highlighting frequently skipped topics.*
 
 ![Skipped Questions Breakdown](Images/skipped_questions_by_student.png)
-*Figure 16: Detailed itemized list of frequently skipped questions.*
+*Figure 18: Detailed per-student breakdown of unattempted or skipped questions.*
 
-![Email Received by Student](Images/Email_Received_by_student.png)
-*Figure 17: Sample email report received by a student containing final grades and remedial lessons.*
+![Automated Email Delivered to Student](Images/Email_Received_by_student.png)
+*Figure 19: Diagnostic evaluation report delivered directly to a student's inbox via email.*
 
 ---
 
