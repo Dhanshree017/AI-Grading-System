@@ -41,10 +41,10 @@ To capture deep answer semantics rather than simple syntax, GIBO calculates thre
 * **Semantic Similarity (Weight: 0.5)**: Powered by **DeBERTa-v3** to capture contextual and deep semantic alignment against ideal responses.
 * **Logic & Structure (Weight: 0.4)**: Powered by **MiniLM** to evaluate concept flow, domain terminology consistency, and argument structure.
 * **Length Compliance (Weight: 0.1)**: Strictly enforces target word count boundaries calibrated by question weightage:
-  * **2 Marks**: 60–70 words
-  * **5 Marks**: 120–130 words
-  * **8 Marks**: 140–150 words
-  * **10 Marks**: 170–200 words
+  * **2 Marks**: 60–70 words
+  * **5 Marks**: 120–130 words
+  * **8 Marks**: 140–150 words
+  * **10 Marks**: 170–200 words
 
 ### Marks Prediction Engine
 Extracted feature vectors (Semantic, Logic, and Length Compliance scores) are passed into an **XGBoost Regressor** trained on 12,000+ human-graded question-answer pairs. The model outputs precise scores while adhering strictly to rule-constrained upper limits dictated by section-level attempt policies.
@@ -132,10 +132,10 @@ The system automatically checks responses, enforces attempt constraints, and gen
 *Figure 11: Itemized student attempt report and section-wise raw score mapping.*
 
 ![Intelligence Metric Score Bars](Images/score_bars.png)
-*Figure 12: Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
+*Figure 12: POOR STUDENT Visual breakdown of Logic Consistency, Semantic Accuracy, and Compliance per question.*
 
-![AI Explanation Behind Marks](Images/AI%20Explanation%20behind%20marks%20report.png)
-*Figure 13: Detailed explainable AI feedback explaining score deductions and accuracy.*
+![AI_Explanation_Behind_Marks](Images/AI_Explanation_Behind_Marks.png)
+*Figure 13: WEll PERFORMED STUDENT'S Visual explainable AI feedback explaining score deductions and accuracy.*
 
 ---
 
@@ -203,6 +203,7 @@ To send automated result reports to students, configure a Gmail App Password:
 ### 3. Installation Steps
 
 1. **Clone the Repository**:
-   ```bash
-   git clone [https://github.com/Dhanshree017/AI-Grading-System.git](https://github.com/Dhanshree017/AI-Grading-System.git)
-   cd AI-Grading-System
+   ```bash
+   git clone [https://github.com/Dhanshree017/AI-Grading-System.git](https://github.com/Dhanshree017/AI-Grading-System.git)
+   cd AI-Grading-System
+   
